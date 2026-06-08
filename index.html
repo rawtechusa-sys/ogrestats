@@ -1259,28 +1259,30 @@ loadStreamList();
     // irisAngle rotates the ellipse so the squish aligns with the travel direction
     const irisAngle = rollAxis;
     
-    // Blood vessels clipped to sclera
-    ctx.save();
-    ctx.scale(scaleAlongAxis, scaleAcrossAxis);
-    ctx.translate(ix, iy);
-    ctx.rotate(irisAngle);
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.clip();
-    for (let i = 0; i < 5; i++) {
-      const a = (i / 5) * Math.PI * 2 + 0.8;
-      ctx.beginPath();
-      ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
-      ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
-      ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.55})`;
-      ctx.lineWidth = 0.7;
-      ctx.stroke();
-    }
-    ctx.restore();
-    
     // Only draw iris/pupil when they're on the front hemisphere
     if (depth > 0) {
-
+  
+      
+      // Blood vessels clipped to sclera
+      ctx.save();
+      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      ctx.translate(ix, iy);
+      ctx.rotate(irisAngle);
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      for (let i = 0; i < 5; i++) {
+        const a = (i / 5) * Math.PI * 2 + 0.8;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
+        ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
+        ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.55})`;
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+      ctx.restore();
+  
+        
       // Clip everything below to the sclera circle
       ctx.save();
       ctx.beginPath();
