@@ -1252,8 +1252,8 @@ loadStreamList();
 
     // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
     // perpendicular axis stays full size -- this gives the correct globe-spinning look
-    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
-    const scaleAcrossAxis = 1.0;
+    //const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
+    //const scaleAcrossAxis = 1.0;
 
     // irisAngle rotates the ellipse so the squish aligns with the travel direction
     const irisAngle = rollAxis;
@@ -1289,8 +1289,7 @@ loadStreamList();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        irisR * scaleAlongAxis,  // squished along travel axis
-        irisR * scaleAcrossAxis, // full size across travel axis
+        irisR, irisR,
         irisAngle, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
       ctx.fill();
@@ -1301,12 +1300,12 @@ loadStreamList();
         const a = (i / 10) * Math.PI * 2;
         ctx.beginPath();
         ctx.moveTo(
-          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
-          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
+          Math.cos(a) * irisR * 0.3,
+          Math.sin(a) * irisR * 0.3
         );
         ctx.lineTo(
-          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
-          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
+          Math.cos(a) * irisR * 0.92,
+          Math.sin(a) * irisR * 0.92
         );
         ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
         ctx.lineWidth = 0.6;
@@ -1320,8 +1319,8 @@ loadStreamList();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        pupilR * scaleAlongAxis,
-        pupilR * scaleAcrossAxis,
+        pupilR,
+        pupilR,
         irisAngle, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
       ctx.fill();
