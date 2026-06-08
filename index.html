@@ -8,29 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
 <style>
   /* ── CONFIG: set your repo here ── */
   /* See GITHUB_OWNER and GITHUB_REPO in the script below */
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bog:       #080e08;
-    --mud:       #0e160e;
-    --earth:     #162010;
-    --stone:     #253520;
-    --mosstone:  #344a2a;
-    --parchment: #b8c9a0;
-    --parch-dim: #6e8558;
-    --ember:     #7ab84a;
-    --ember-hot: #96d45a;
-    --swamp:     #3a6648;
-    --swamp-lt:  #5a9068;
-    --yt-red:    #c0392b;
-    --tw-purple: #7b4fa6;
-    --border:    rgba(100,180,60,0.18);
-    --border-hi: rgba(100,180,60,0.4);
-  }
 
   html, body {
     height: 100%;
@@ -42,15 +25,11 @@
     overflow: hidden;
   }
 
-  /* Firelight vignette */
+  /* Vignette -- background set per theme file */
   body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background:
-      radial-gradient(ellipse 60% 40% at 15% 90%, rgba(40,100,20,0.14) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 30% at 85% 95%, rgba(30,80,15,0.10) 0%, transparent 60%),
-      radial-gradient(ellipse 80% 60% at 50% 110%, rgba(20,60,10,0.18) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
   }
@@ -101,7 +80,7 @@
     font-size: 22px;
     color: var(--ember-hot);
     letter-spacing: 0.04em;
-    text-shadow: 0 0 20px rgba(120,210,60,0.4);
+    text-shadow: 0 0 20px rgba(var(--glow-r),var(--glow-g),var(--glow-b),0.4);
   }
 
   .header-sub {
@@ -109,6 +88,25 @@
     color: var(--parch-dim);
     font-style: italic;
     margin-left: auto;
+  }
+
+  .theme-select {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    background: var(--earth);
+    color: var(--parch-dim);
+    border: 1px solid var(--border-hi);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.05em;
+    margin-left: 12px;
+  }
+
+  .theme-select:hover {
+    border-color: var(--ember);
+    color: var(--ember-hot);
   }
 
   /* ── Sidebar ── */
@@ -238,7 +236,7 @@
     color: var(--ember-hot);
     display: block;
     line-height: 1.1;
-    text-shadow: 0 0 12px rgba(120,210,60,0.3);
+    text-shadow: 0 0 12px rgba(var(--glow-r),var(--glow-g),var(--glow-b),0.3);
   }
 
   .stat-sub {
@@ -409,8 +407,8 @@
   }
 
   @keyframes flicker {
-    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(120,210,60,0.6); }
-    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(120,210,60,0.2); }
+    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(var(--glow-r),var(--glow-g),var(--glow-b),0.6); }
+    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(var(--glow-r),var(--glow-g),var(--glow-b),0.2); }
   }
 
   /* ── Root decorations ── */
@@ -559,7 +557,12 @@
 <div class="layout">
   <header class="header">
     <span class="header-title">The Swamp</span>
-    <span class="header-sub" id="repo-label">stream analytics</span>
+    <select class="theme-select" id="themeSelect" aria-label="Color theme">
+      <option value="green">Bog Moss</option>
+      <option value="amber">Firepit</option>
+      <option value="grey">Dead Stone</option>
+      <option value="void">The Void</option>
+    </select>
   </header>
 
   <nav class="sidebar" id="sidebar">
@@ -965,7 +968,45 @@ function escHtml(str) {
   return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-document.getElementById('repo-label').textContent = `${GITHUB_OWNER}/${GITHUB_REPO}`;
+const THEMES = {
+  green: { file: 'themes/bog-moss.css',  chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',   chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css',chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',  chartGrid: 'rgba(120,120,120,0.08)',  chartTick: '#484848', donBar: 'rgba(100,100,100,0.75)',  donBorder: '#888888', tooltipBg: '#080808', tooltipTitle: '#585858', tooltipBody: '#d0d0d0', donTick: '#484848',  tooltipBorder: 'rgba(120,120,120,0.35)' },
+};
+
+function applyTheme(key) {
+  const t = THEMES[key] || THEMES.green;
+  document.getElementById('theme-css').href = t.file;
+  localStorage.setItem('swamp-theme', key);
+  if (currentChart) {
+    const ds = currentChart.data.datasets;
+    const donDs = ds.find(d => d.label === 'Donations');
+    if (donDs) {
+      donDs.backgroundColor = t.donBar;
+      donDs.borderColor = t.donBorder;
+    }
+    currentChart.options.scales.yViewers.grid.color = t.chartGrid;
+    currentChart.options.scales.yViewers.ticks.color = t.chartTick;
+    currentChart.options.scales.x.grid.color = t.chartGrid;
+    currentChart.options.scales.x.ticks.color = t.chartTick;
+    currentChart.options.scales.yDonations.ticks.color = t.donTick;
+    currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
+    currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
+    currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
+    currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
+    currentChart.update('none');
+  }
+}
+
+const savedTheme = localStorage.getItem('swamp-theme') || 'green';
+document.getElementById('themeSelect').value = savedTheme;
+applyTheme(savedTheme);
+
+document.getElementById('themeSelect').addEventListener('change', e => {
+  applyTheme(e.target.value);
+});
+
 loadStreamList();
 </script>
 
