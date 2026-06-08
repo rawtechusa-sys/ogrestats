@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Swamp — Stream Stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  /* ── CONFIG: set your repo here ── */
+  /* See GITHUB_OWNER and GITHUB_REPO in the script below */
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bog:       #0f0c06;
+    --mud:       #1c150a;
+    --earth:     #2a1f0e;
+    --stone:     #3d3022;
+    --mosstone:  #4a3d28;
+    --parchment: #c8a97a;
+    --parch-dim: #8a7055;
+    --ember:     #c47d2a;
+    --ember-hot: #e8952a;
+    --swamp:     #3a6648;
+    --swamp-lt:  #5a9068;
+    --yt-red:    #c0392b;
+    --tw-purple: #7b4fa6;
+    --border:    rgba(196,125,42,0.18);
+    --border-hi: rgba(196,125,42,0.4);
+  }
+
+  html, body {
+    height: 100%;
+    background: var(--bog);
+    color: var(--parchment);
+    font-family: 'IM Fell English', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  /* Firelight vignette */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 15% 90%, rgba(180,80,20,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 30% at 85% 95%, rgba(140,60,10,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 60% at 50% 110%, rgba(100,50,0,0.15) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Root noise texture overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  .layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 56px 1fr;
+    height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px;
+    background: var(--mud);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--ember), transparent);
+    opacity: 0.5;
+  }
+
+  .header-title {
+    font-family: 'Rye', serif;
+    font-size: 22px;
+    color: var(--ember-hot);
+    letter-spacing: 0.04em;
+    text-shadow: 0 0 20px rgba(232,149,42,0.4);
+  }
+
+  .header-sub {
+    font-size: 13px;
+    color: var(--parch-dim);
+    font-style: italic;
+    margin-left: auto;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    background: var(--mud);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 12px 0;
+    position: relative;
+  }
+
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: var(--mud); }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--mosstone); border-radius: 2px; }
+
+  .sidebar-label {
+    font-family: 'Rye', serif;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--parch-dim);
+    padding: 4px 16px 8px;
+    text-transform: uppercase;
+  }
+
+  .stream-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+    position: relative;
+  }
+
+  .stream-item:hover {
+    background: rgba(196,125,42,0.07);
+    border-left-color: rgba(196,125,42,0.3);
+  }
+
+  .stream-item.active {
+    background: rgba(196,125,42,0.12);
+    border-left-color: var(--ember);
+  }
+
+  .stream-item-date {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--ember);
+    display: block;
+  }
+
+  .stream-item-time {
+    font-size: 12px;
+    color: var(--parch-dim);
+    display: block;
+    margin-top: 1px;
+  }
+
+  .stream-item-badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .badge-yt { background: rgba(192,57,43,0.25); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+  .badge-tw { background: rgba(123,79,166,0.25); color: #b090d0; border: 1px solid rgba(123,79,166,0.3); }
+  .badge-both { background: rgba(90,90,0,0.3); color: #c8b060; border: 1px solid rgba(150,130,0,0.3); }
+
+  .sidebar-empty {
+    padding: 16px;
+    font-size: 13px;
+    color: var(--parch-dim);
+    font-style: italic;
+  }
+
+  /* ── Main content ── */
+  .main {
+    overflow-y: auto;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main::-webkit-scrollbar { width: 4px; }
+  .main::-webkit-scrollbar-track { background: transparent; }
+  .main::-webkit-scrollbar-thumb { background: var(--mosstone); border-radius: 2px; }
+
+  /* ── Stat cards ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--earth);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--ember-hot), transparent);
+    opacity: 0.4;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--parch-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .stat-value {
+    font-family: 'Rye', serif;
+    font-size: 24px;
+    color: var(--ember-hot);
+    display: block;
+    line-height: 1.1;
+    text-shadow: 0 0 12px rgba(232,149,42,0.3);
+  }
+
+  .stat-sub {
+    font-size: 11px;
+    color: var(--parch-dim);
+    margin-top: 3px;
+    display: block;
+    font-style: italic;
+  }
+
+  /* ── Chart panel ── */
+  .chart-panel {
+    background: var(--earth);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .chart-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--parchment);
+    letter-spacing: 0.04em;
+  }
+
+  .chart-legend {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--parch-dim);
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .legend-swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .legend-line {
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+    height: 280px;
+  }
+
+  /* ── Donation table ── */
+  .donations-panel {
+    background: var(--earth);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .donations-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--parchment);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .donations-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .donations-table th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--parch-dim);
+    text-align: left;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .donations-table td {
+    padding: 7px 8px;
+    border-bottom: 1px solid rgba(196,125,42,0.07);
+    vertical-align: top;
+  }
+
+  .donations-table tr:last-child td { border-bottom: none; }
+
+  .donations-table tr:hover td {
+    background: rgba(196,125,42,0.05);
+  }
+
+  .type-badge {
+    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid;
+  }
+
+  .type-superchat  { color: #80c8a0; border-color: rgba(80,180,120,0.35); background: rgba(40,120,70,0.2); }
+  .type-membership { color: #80c8a0; border-color: rgba(80,180,120,0.25); background: rgba(30,100,60,0.15); }
+  .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35); background: rgba(90,50,140,0.2); }
+  .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
+  .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
+
+  .amount-usd {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--ember);
+    font-size: 13px;
+  }
+
+  .username { color: var(--parchment); }
+  .ts-cell {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--parch-dim);
+    white-space: nowrap;
+  }
+  .msg-cell {
+    color: var(--parch-dim);
+    font-style: italic;
+    font-size: 13px;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ── States ── */
+  .loading-state, .empty-state, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 12px;
+    color: var(--parch-dim);
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--ember);
+    animation: flicker 2s ease-in-out infinite;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(232,149,42,0.6); }
+    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(232,149,42,0.2); }
+  }
+
+  /* ── Root decorations ── */
+  .root-deco {
+    position: fixed;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.12;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<svg class="root-deco" style="left:0; width:280px; height:160px;" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,160 Q20,120 10,80 Q5,50 25,30 Q15,60 30,90 Q40,120 20,160" fill="#4a3d28"/>
+  <path d="M30,160 Q50,100 40,60 Q35,30 55,10 Q45,40 55,70 Q65,110 45,160" fill="#3d3022"/>
+  <path d="M60,160 Q80,130 70,100 Q65,75 80,55 Q72,80 82,105 Q90,135 70,160" fill="#4a3d28"/>
+  <path d="M5,160 Q-5,140 8,110 Q15,90 5,70" stroke="#3d3022" stroke-width="4" fill="none"/>
+  <path d="M35,160 Q25,145 38,115" stroke="#4a3d28" stroke-width="3" fill="none"/>
+</svg>
+
+<svg class="root-deco" style="right:0; width:200px; height:120px;" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M200,120 Q180,80 190,50 Q195,25 175,10 Q185,35 178,65 Q170,95 190,120" fill="#4a3d28"/>
+  <path d="M175,120 Q160,90 168,60 Q172,38 155,20 Q163,45 158,72 Q152,100 168,120" fill="#3d3022"/>
+  <path d="M195,120 Q205,100 192,80 Q188,65 198,50" stroke="#3d3022" stroke-width="4" fill="none"/>
+</svg>
+
+<div class="layout">
+  <header class="header">
+    <span class="header-title">The Swamp</span>
+    <span class="header-sub" id="repo-label">stream analytics</span>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="loading-state" style="height:200px;">
+      <span class="loading-glyph">~</span>
+      <span>wading in...</span>
+    </div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="empty-state">
+      <span class="loading-glyph" style="font-size:40px;">☽</span>
+      <span>select a stream from the list</span>
+    </div>
+  </main>
+</div>
+
+<script>
+const GITHUB_OWNER = 'YOUR_GITHUB_USERNAME';
+const GITHUB_REPO  = 'YOUR_REPO_NAME';
+const BRANCH       = 'main';
+
+const RAW   = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+const API   = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
+
+let currentChart = null;
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
+  return r.json();
+}
+
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
+
+function parseJSONL(text) {
+  return text.trim().split('\n').filter(Boolean).map(l => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+}
+
+function fmtDate(ts) {
+  return new Date(ts * 1000).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
+}
+
+function fmtTime(ts) {
+  return new Date(ts * 1000).toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
+}
+
+function fmtDuration(secs) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+}
+
+function fmtElapsed(startTs, ts) {
+  const s = ts - startTs;
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  return h > 0 ? `${h}:${String(m).padStart(2,'0')}:00` : `${m}:00`;
+}
+
+function platformBadge(platforms) {
+  if (!platforms || platforms.length === 0) return '';
+  const hasYT = platforms.includes('youtube');
+  const hasTW = platforms.includes('twitch');
+  if (hasYT && hasTW) return '<span class="stream-item-badge badge-both">YT + TW</span>';
+  if (hasYT) return '<span class="stream-item-badge badge-yt">YouTube</span>';
+  if (hasTW) return '<span class="stream-item-badge badge-tw">Twitch</span>';
+  return '';
+}
+
+async function loadStreamList() {
+  const sidebar = document.getElementById('sidebar');
+  try {
+    const items = await fetchJSON(`${API}/data/streams`);
+    const streams = items
+      .filter(i => i.type === 'dir')
+      .sort((a, b) => b.name.localeCompare(a.name));
+
+    if (streams.length === 0) {
+      sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
+      return;
+    }
+
+    sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
+
+    for (const [idx, s] of streams.entries()) {
+      const div = document.createElement('div');
+      div.className = 'stream-item' + (idx === 0 ? ' active' : '');
+      div.dataset.id = s.name;
+
+      let datePart = s.name;
+      let timePart = '';
+      const m = s.name.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
+      if (m) {
+        datePart = m[1];
+        timePart = `${m[2]}:${m[3]} UTC`;
+      }
+
+      div.innerHTML = `
+        <span class="stream-item-date">${datePart}</span>
+        <span class="stream-item-time">${timePart}</span>
+      `;
+
+      try {
+        const meta = await fetchJSON(`${RAW}/data/streams/${s.name}/metadata.json`);
+        div.innerHTML += platformBadge(meta.platforms);
+        if (meta.end_ts && meta.start_ts) {
+          const dur = fmtDuration(meta.end_ts - meta.start_ts);
+          div.innerHTML += `<span class="stream-item-time">${dur}</span>`;
+        }
+      } catch { /* metadata missing, skip */ }
+
+      div.addEventListener('click', () => {
+        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+        div.classList.add('active');
+        loadStream(s.name);
+      });
+
+      sidebar.appendChild(div);
+    }
+
+    if (streams.length > 0) loadStream(streams[0].name);
+
+  } catch (e) {
+    sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
+  }
+}
+
+async function loadStream(streamId) {
+  const main = document.getElementById('main');
+  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+
+  try {
+    const [meta, eventsText] = await Promise.all([
+      fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
+      fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
+    ]);
+
+    const events    = parseJSONL(eventsText);
+    const snapshots = events.filter(e => e.event === 'viewer_snapshot');
+    const donations = events.filter(e => e.event === 'donation');
+
+    const startTs   = meta.start_ts;
+    const endTs     = meta.end_ts;
+    const duration  = (endTs && startTs) ? endTs - startTs : null;
+    const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
+    const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
+    const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
+    const donCount  = donations.length;
+
+    const platforms = meta.platforms || [];
+    const hasYT = platforms.includes('youtube');
+    const hasTW = platforms.includes('twitch');
+
+    main.innerHTML = '';
+
+    // ── Stat cards ──
+    const grid = document.createElement('div');
+    grid.className = 'stat-grid';
+
+    function card(label, value, sub) {
+      return `<div class="stat-card">
+        <span class="stat-label">${label}</span>
+        <span class="stat-value">${value}</span>
+        ${sub ? `<span class="stat-sub">${sub}</span>` : ''}
+      </div>`;
+    }
+
+    let cards = '';
+    cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
+    cards += card('Peak Viewers', peakTotal.toLocaleString(), hasYT && hasTW ? `YT ${peakYT} · TW ${peakTW}` : '');
+    cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
+
+    const avgYT = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
+    const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
+    cards += card('Avg Viewers', (avgYT + avgTW).toLocaleString(), hasYT && hasTW ? `YT ${avgYT} · TW ${avgTW}` : '');
+
+    grid.innerHTML = cards;
+    main.appendChild(grid);
+
+    // ── Combined chart ──
+    if (snapshots.length > 0 || donations.length > 0) {
+      const panel = document.createElement('div');
+      panel.className = 'chart-panel';
+
+      const legendItems = [];
+      if (hasYT) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#c0392b;"></span>YouTube viewers</span>`);
+      if (hasTW) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#7b4fa6;"></span>Twitch viewers</span>`);
+      legendItems.push(`<span class="legend-item"><span class="legend-swatch" style="background:#c47d2a;"></span>Donations</span>`);
+
+      panel.innerHTML = `
+        <div class="chart-header">
+          <span class="chart-title">Viewers &amp; Donations</span>
+          <div class="chart-legend">${legendItems.join('')}</div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="streamChart" role="img" aria-label="Line chart of viewer counts over stream duration with donation bars overlaid">No chart data available.</canvas>
+        </div>`;
+      main.appendChild(panel);
+
+      buildChart(snapshots, donations, startTs, hasYT, hasTW);
+    }
+
+    // ── Donation log ──
+    if (donations.length > 0) {
+      const panel = document.createElement('div');
+      panel.className = 'donations-panel';
+
+      const sorted = [...donations].sort((a,b) => a.ts - b.ts);
+      const rows = sorted.map(d => {
+        const elapsed = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
+        const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
+        const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
+        return `<tr>
+          <td class="ts-cell">${elapsed}</td>
+          <td><span class="username">${escHtml(d.username)}</span></td>
+          <td><span class="type-badge type-${d.type}">${d.type}</span></td>
+          <td>${usd}</td>
+          <td>${msg}</td>
+        </tr>`;
+      }).join('');
+
+      panel.innerHTML = `
+        <div class="donations-title">Donation Log</div>
+        <table class="donations-table">
+          <thead><tr>
+            <th>Time</th><th>User</th><th>Type</th><th>Amount</th><th>Message</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+      main.appendChild(panel);
+    }
+
+  } catch (e) {
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>failed to load stream<br><small>${e.message}</small></span></div>`;
+  }
+}
+
+function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
+
+  const ctx = document.getElementById('streamChart');
+  if (!ctx) return;
+
+  const snapshotData = snapshots.map(s => ({
+    x: (s.ts - startTs) / 60,
+    yt: s.youtube || 0,
+    tw: s.twitch  || 0,
+  }));
+
+  const donationData = donations.map(d => ({
+    x: (d.ts - startTs) / 60,
+    y: d.amount_usd || 0,
+    label: `${d.username} · ${d.type} · $${(d.amount_usd||0).toFixed(2)}`,
+  }));
+
+  const datasets = [];
+
+  if (hasYT && snapshotData.length > 0) {
+    datasets.push({
+      label: 'YouTube',
+      data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
+      type: 'line',
+      borderColor: '#c0392b',
+      backgroundColor: 'rgba(192,57,43,0.08)',
+      borderWidth: 2,
+      pointRadius: 0,
+      pointHoverRadius: 4,
+      tension: 0.3,
+      fill: true,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  if (hasTW && snapshotData.length > 0) {
+    datasets.push({
+      label: 'Twitch',
+      data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
+      type: 'line',
+      borderColor: '#7b4fa6',
+      backgroundColor: 'rgba(123,79,166,0.08)',
+      borderWidth: 2,
+      pointRadius: 0,
+      pointHoverRadius: 4,
+      tension: 0.3,
+      fill: true,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  if (donationData.length > 0) {
+    datasets.push({
+      label: 'Donations',
+      data: donationData.map(d => ({ x: d.x, y: d.y })),
+      type: 'bar',
+      backgroundColor: 'rgba(196,125,42,0.75)',
+      borderColor: '#e8952a',
+      borderWidth: 1,
+      borderRadius: 2,
+      barThickness: 8,
+      yAxisID: 'yDonations',
+    });
+  }
+
+  const gridColor = 'rgba(196,125,42,0.08)';
+  const tickColor = '#7a6045';
+
+  currentChart = new Chart(ctx, {
+    type: 'bar',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1c150a',
+          borderColor: 'rgba(196,125,42,0.4)',
+          borderWidth: 1,
+          titleColor: '#c47d2a',
+          bodyColor: '#c8a97a',
+          titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
+          bodyFont:  { family: "'IM Fell English', serif", size: 12 },
+          callbacks: {
+            title: items => {
+              const mins = Math.round(items[0].parsed.x);
+              const h = Math.floor(mins / 60);
+              const m = mins % 60;
+              return h > 0 ? `${h}h ${m}m into stream` : `${m}m into stream`;
+            },
+            label: item => {
+              if (item.dataset.label === 'Donations') return ` $${item.parsed.y.toFixed(2)} donated`;
+              return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          title: { display: false },
+          grid: { color: gridColor },
+          ticks: {
+            color: tickColor,
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            callback: v => {
+              const h = Math.floor(v / 60);
+              const m = v % 60;
+              return h > 0 ? `${h}h${m > 0 ? m+'m' : ''}` : `${m}m`;
+            },
+            maxTicksLimit: 10,
+          }
+        },
+        yViewers: {
+          type: 'linear',
+          position: 'left',
+          grid: { color: gridColor },
+          ticks: {
+            color: tickColor,
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            callback: v => v.toLocaleString(),
+            maxTicksLimit: 6,
+          },
+          title: { display: false },
+        },
+        yDonations: {
+          type: 'linear',
+          position: 'right',
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#8a6030',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            callback: v => '$' + v.toFixed(0),
+            maxTicksLimit: 5,
+          },
+          title: { display: false },
+        }
+      }
+    }
+  });
+}
+
+function escHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.getElementById('repo-label').textContent = `${GITHUB_OWNER}/${GITHUB_REPO}`;
+loadStreamList();
+</script>
+</body>
+</html>
