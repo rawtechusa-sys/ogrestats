@@ -569,6 +569,414 @@
   <rect x="1024" y="160" width="138" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
 </svg>
 
+
+<canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('roachCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  const mouse = { x: -999, y: -999 };
+  const FLEE_RADIUS = ROACH_CONFIG.fleeRadius;
+  const ROACH_COUNT = ROACH_CONFIG.count;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  function makeRoach() {
+    return {
+      x:     rand(0, W),
+      y:     rand(0, H),
+      angle: rand(0, Math.PI * 2),
+      speed: ROACH_CONFIG.idleSpeedMin + Math.random() * (ROACH_CONFIG.idleSpeedMax - ROACH_CONFIG.idleSpeedMin),
+      turnSpeed: (ROACH_CONFIG.turnSpeedMin + Math.random() * (ROACH_CONFIG.turnSpeedMax - ROACH_CONFIG.turnSpeedMin)) * (Math.random() < 0.5 ? 1 : -1),
+      legPhase: rand(0, Math.PI * 2),
+      size:  rand(ROACH_CONFIG.sizeMin, ROACH_CONFIG.sizeMax),
+      wanderTimer: rand(0, 60),
+      fleeing: false,
+    };
+  }
+
+  const roaches = Array.from({ length: ROACH_COUNT }, makeRoach);
+
+  function drawRoach(r, t) {
+    ctx.save();
+    ctx.translate(r.x, r.y);
+    ctx.rotate(r.angle + Math.PI / 2);
+
+    const s = r.size;
+    const legSwing = Math.sin(t * 0.18 + r.legPhase) * 0.4;
+    const alpha = ROACH_CONFIG.alpha;
+
+    ctx.strokeStyle = `rgba(101,60,20,${alpha})`;
+    ctx.fillStyle   = `rgba(82,45,12,${alpha})`;
+    ctx.lineWidth   = 0.8;
+
+    // 3 legs each side
+    const legPositions = [-s*0.6, 0, s*0.55];
+    for (let i = 0; i < 3; i++) {
+      const lx = legPositions[i];
+      const swing = legSwing * (i % 2 === 0 ? 1 : -1);
+      // left leg
+      ctx.beginPath();
+      ctx.moveTo(-s*0.35, lx);
+      ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s);
+      ctx.stroke();
+      // right leg
+      ctx.beginPath();
+      ctx.moveTo(s*0.35, lx);
+      ctx.lineTo(s*1.1, lx - s*0.3 - swing * s);
+      ctx.stroke();
+    }
+
+    // antennae
+    const antSwing = Math.sin(t * 0.12 + r.legPhase) * 0.15;
+    ctx.beginPath();
+    ctx.moveTo(-s*0.2, -s*1.1);
+    ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(s*0.2, -s*1.1);
+    ctx.quadraticCurveTo(s*0.6 - antSwing*s, -s*2.2, s*0.3 - antSwing*s*1.5, -s*3.0);
+    ctx.stroke();
+
+    // body -- abdomen (oval)
+    ctx.beginPath();
+    ctx.ellipse(0, s*0.5, s*0.45, s*0.85, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // thorax
+    ctx.beginPath();
+    ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // pronotum shield (head cover)
+    ctx.beginPath();
+    ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // head
+    ctx.beginPath();
+    ctx.ellipse(0, -s*1.5, s*0.2, s*0.22, 0, 0, Math.PI*2);
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function tick(t) {
+    ctx.clearRect(0, 0, W, H);
+
+    for (const r of roaches) {
+      // flee from mouse
+      const dx = r.x - mouse.x;
+      const dy = r.y - mouse.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+
+      if (dist < FLEE_RADIUS) {
+        r.fleeing = true;
+        const fleeAngle = Math.atan2(dy, dx);
+        const diff = fleeAngle - r.angle;
+        const wrap = ((diff + Math.PI * 3) % (Math.PI * 2)) - Math.PI;
+        r.angle += wrap * 0.25;
+        r.speed = Math.min(ROACH_CONFIG.fleeMaxSpeed, r.speed + ROACH_CONFIG.fleeAccel);
+      } else {
+        r.fleeing = false;
+        r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel);
+
+        // idle wander
+        r.wanderTimer--;
+        if (r.wanderTimer <= 0) {
+          r.turnSpeed = rand(ROACH_CONFIG.turnSpeedMin, ROACH_CONFIG.turnSpeedMax) * (Math.random() < 0.5 ? 1 : -1);
+          r.wanderTimer = rand(ROACH_CONFIG.wanderMinFrames, ROACH_CONFIG.wanderMaxFrames);
+        }
+        r.angle += r.turnSpeed;
+      }
+
+      r.x += Math.cos(r.angle) * r.speed;
+      r.y += Math.sin(r.angle) * r.speed;
+
+      // wrap around edges
+      if (r.x < -20)  r.x = W + 20;
+      if (r.x > W+20) r.x = -20;
+      if (r.y < -20)  r.y = H + 20;
+      if (r.y > H+20) r.y = -20;
+
+      drawRoach(r, t);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+})();
+</script>
+
+<canvas id="eyeCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('eyeCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  const mouse = { x: -999, y: -999, px: -999, py: -999 };
+  const BUMP_RADIUS = EYE_CONFIG.bumpRadius;
+  const FRICTION    = EYE_CONFIG.friction;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    // Reposition any eyes that are now out of bounds
+    for (const e of eyes) {
+      if (!e) continue;
+      e.x = Math.min(Math.max(e.x, e.r), W - e.r);
+      e.y = Math.min(Math.max(e.y, e.r), H - e.r);
+    }
+  }
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  // Initialise with placeholder array, populated after resize sets W/H
+  const eyes = [];
+
+  function makeEye() {
+    const r = rand(EYE_CONFIG.sizeMin, EYE_CONFIG.sizeMax);
+    return {
+      x: rand(r, W - r),
+      y: rand(r, H - r),
+      vx: 0, vy: 0,
+      r,
+      rollAngle: 0,       // how far the iris has rolled around the sphere (radians)
+      rollAxis: rand(0, Math.PI * 2), // direction of rolling
+    };
+  }
+
+  window.addEventListener('resize', resize);
+  window.addEventListener('mousemove', e => {
+    mouse.px = mouse.x; mouse.py = mouse.y;
+    mouse.x = e.clientX; mouse.y = e.clientY;
+  });
+  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
+
+  resize();
+  for (let i = 0; i < EYE_CONFIG.count; i++) eyes.push(makeEye());
+
+  function drawEye(e) {
+    const { x, y, r, rollAngle, rollAxis } = e;
+    const alpha = EYE_CONFIG.alpha;
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    // Sclera -- perfectly circular
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(200,195,160,${alpha})`;
+    ctx.fill();
+    ctx.strokeStyle = `rgba(80,60,30,${alpha})`;
+    ctx.lineWidth = 0.8;
+    ctx.stroke();
+
+    // Rolling illusion -- iris and pupil clipped to sclera so they disappear
+    // as they roll behind the eye. cos(rollAngle) drives depth: when it goes
+    // negative the iris is on the back of the sphere, clip hides it naturally.
+    const irisR = r * 0.52;
+    // Iris travels across the sphere face along the roll axis
+    // sin(rollAngle) = screen-space offset, cos(rollAngle) = depth (+ = toward us)
+    const screenOffset = Math.sin(rollAngle) * r * 0.85;
+    const ix = Math.cos(rollAxis) * screenOffset;
+    const iy = Math.sin(rollAxis) * screenOffset;
+
+    const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
+
+    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
+    // perpendicular axis stays full size -- this gives the correct globe-spinning look
+    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
+    const scaleAcrossAxis = 1.0;
+    
+    // irisAngle rotates the ellipse so the squish aligns with the travel direction
+    const irisAngle = rollAxis;
+    
+    // Only draw iris/pupil when they're on the front hemisphere
+    if (depth > 0) {
+        
+      // Clip everything below to the sclera circle
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      
+      // Blood vessels clipped to sclera
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      //ctx.rotate(irisAngle);
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      for (let i = 0; i < 5; i++) {
+        const a = (i / 5) * Math.PI * 2 + 0.8;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
+        ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
+        ctx.strokeStyle = `rgba(210,20,20,${alpha})`;
+        ctx.lineWidth = 1.2;
+        ctx.stroke();
+      }
+      ctx.restore();
+      
+      // Iris
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.beginPath();
+      ctx.ellipse(0, 0,
+        irisR * scaleAlongAxis,  // squished along travel axis
+        irisR * scaleAcrossAxis, // full size across travel axis
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
+      ctx.fill();
+
+      // Iris radial lines
+      ctx.rotate(rollAxis + rollAngle * 0.3);
+      for (let i = 0; i < 10; i++) {
+        const a = (i / 10) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
+        );
+        ctx.lineTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
+        );
+        ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+      
+      ctx.restore();
+
+      // Pupil
+      const pupilR = irisR * 0.5;
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.beginPath();
+      ctx.ellipse(0, 0,
+        pupilR * scaleAlongAxis,
+        pupilR * scaleAcrossAxis,
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
+      ctx.fill();
+      ctx.restore();
+      ctx.restore(); // end sclera clip
+    }
+    
+    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
+    ctx.fill();
+    
+    ctx.restore();
+
+    ctx.restore();
+   
+  } 
+  
+   
+
+  function tick() {
+    ctx.clearRect(0, 0, W, H);
+
+    // Mouse bump
+    if (mouse.x > -900) {
+      const mdx = mouse.x - mouse.px;
+      const mdy = mouse.y - mouse.py;
+      for (const e of eyes) {
+        const dx = e.x - mouse.x;
+        const dy = e.y - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < BUMP_RADIUS + e.r) {
+          const force = (BUMP_RADIUS + e.r - dist) / (BUMP_RADIUS + e.r) * EYE_CONFIG.bumpForce;
+          const angle = Math.atan2(dy, dx);
+          e.vx += Math.cos(angle) * force + mdx * EYE_CONFIG.mouseVelMix;
+          e.vy += Math.sin(angle) * force + mdy * EYE_CONFIG.mouseVelMix;
+        }
+      }
+    }
+
+    // Ball-ball collisions
+    for (let i = 0; i < eyes.length; i++) {
+      for (let j = i + 1; j < eyes.length; j++) {
+        const a = eyes[i], b = eyes[j];
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const minDist = a.r + b.r;
+        if (dist < minDist && dist > 0) {
+          // Separate
+          const overlap = (minDist - dist) / 2;
+          const nx = dx / dist, ny = dy / dist;
+          a.x -= nx * overlap; a.y -= ny * overlap;
+          b.x += nx * overlap; b.y += ny * overlap;
+          // Exchange velocity components along collision normal
+          const dvx = a.vx - b.vx, dvy = a.vy - b.vy;
+          const dot = dvx * nx + dvy * ny;
+          if (dot > 0) {
+            a.vx -= dot * nx; a.vy -= dot * ny;
+            b.vx += dot * nx; b.vy += dot * ny;
+          }
+        }
+      }
+    }
+
+    for (const e of eyes) {
+      // Friction
+      e.vx *= FRICTION;
+      e.vy *= FRICTION;
+
+      // Stop micro-drift
+      if (Math.abs(e.vx) < 0.01) e.vx = 0;
+      if (Math.abs(e.vy) < 0.01) e.vy = 0;
+
+      e.x += e.vx;
+      e.y += e.vy;
+
+      // Wall bounce
+      if (e.x - e.r < 0)    { e.x = e.r;    e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.x + e.r > W)    { e.x = W - e.r; e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.y - e.r < 0)    { e.y = e.r;    e.vy =  Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+      if (e.y + e.r > H)    { e.y = H - e.r; e.vy = -Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+
+      // Advance roll: angle = arc_length / radius, axis = direction of travel
+      const speed = Math.sqrt(e.vx * e.vx + e.vy * e.vy);
+      if (speed > 0.01) {
+        e.rollAxis = Math.atan2(e.vy, e.vx);
+        e.rollAngle += speed / e.r;
+      }
+
+      drawEye(e);
+    }
+
+    // Store previous mouse for velocity
+    mouse.px = mouse.x; mouse.py = mouse.y;
+
+    requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+})();
+</script>
+
 <div class="layout">
   <header class="header">
     <span class="header-title">Ogre World</span>
@@ -1025,411 +1433,5 @@ document.getElementById('themeSelect').addEventListener('change', e => {
 loadStreamList();
 </script>
 
-<canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
-<script>
-(function() {
-  const canvas = document.getElementById('roachCanvas');
-  const ctx = canvas.getContext('2d');
-  let W, H;
-  const mouse = { x: -999, y: -999 };
-  const FLEE_RADIUS = ROACH_CONFIG.fleeRadius;
-  const ROACH_COUNT = ROACH_CONFIG.count;
-
-  function resize() {
-    W = canvas.width  = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-  window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
-
-  function rand(a, b) { return a + Math.random() * (b - a); }
-
-  function makeRoach() {
-    return {
-      x:     rand(0, W),
-      y:     rand(0, H),
-      angle: rand(0, Math.PI * 2),
-      speed: ROACH_CONFIG.idleSpeedMin + Math.random() * (ROACH_CONFIG.idleSpeedMax - ROACH_CONFIG.idleSpeedMin),
-      turnSpeed: (ROACH_CONFIG.turnSpeedMin + Math.random() * (ROACH_CONFIG.turnSpeedMax - ROACH_CONFIG.turnSpeedMin)) * (Math.random() < 0.5 ? 1 : -1),
-      legPhase: rand(0, Math.PI * 2),
-      size:  rand(ROACH_CONFIG.sizeMin, ROACH_CONFIG.sizeMax),
-      wanderTimer: rand(0, 60),
-      fleeing: false,
-    };
-  }
-
-  const roaches = Array.from({ length: ROACH_COUNT }, makeRoach);
-
-  function drawRoach(r, t) {
-    ctx.save();
-    ctx.translate(r.x, r.y);
-    ctx.rotate(r.angle + Math.PI / 2);
-
-    const s = r.size;
-    const legSwing = Math.sin(t * 0.18 + r.legPhase) * 0.4;
-    const alpha = ROACH_CONFIG.alpha;
-
-    ctx.strokeStyle = `rgba(101,60,20,${alpha})`;
-    ctx.fillStyle   = `rgba(82,45,12,${alpha})`;
-    ctx.lineWidth   = 0.8;
-
-    // 3 legs each side
-    const legPositions = [-s*0.6, 0, s*0.55];
-    for (let i = 0; i < 3; i++) {
-      const lx = legPositions[i];
-      const swing = legSwing * (i % 2 === 0 ? 1 : -1);
-      // left leg
-      ctx.beginPath();
-      ctx.moveTo(-s*0.35, lx);
-      ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s);
-      ctx.stroke();
-      // right leg
-      ctx.beginPath();
-      ctx.moveTo(s*0.35, lx);
-      ctx.lineTo(s*1.1, lx - s*0.3 - swing * s);
-      ctx.stroke();
-    }
-
-    // antennae
-    const antSwing = Math.sin(t * 0.12 + r.legPhase) * 0.15;
-    ctx.beginPath();
-    ctx.moveTo(-s*0.2, -s*1.1);
-    ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(s*0.2, -s*1.1);
-    ctx.quadraticCurveTo(s*0.6 - antSwing*s, -s*2.2, s*0.3 - antSwing*s*1.5, -s*3.0);
-    ctx.stroke();
-
-    // body -- abdomen (oval)
-    ctx.beginPath();
-    ctx.ellipse(0, s*0.5, s*0.45, s*0.85, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // thorax
-    ctx.beginPath();
-    ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // pronotum shield (head cover)
-    ctx.beginPath();
-    ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // head
-    ctx.beginPath();
-    ctx.ellipse(0, -s*1.5, s*0.2, s*0.22, 0, 0, Math.PI*2);
-    ctx.fill();
-
-    ctx.restore();
-  }
-
-  function tick(t) {
-    ctx.clearRect(0, 0, W, H);
-
-    for (const r of roaches) {
-      // flee from mouse
-      const dx = r.x - mouse.x;
-      const dy = r.y - mouse.y;
-      const dist = Math.sqrt(dx*dx + dy*dy);
-
-      if (dist < FLEE_RADIUS) {
-        r.fleeing = true;
-        const fleeAngle = Math.atan2(dy, dx);
-        const diff = fleeAngle - r.angle;
-        const wrap = ((diff + Math.PI * 3) % (Math.PI * 2)) - Math.PI;
-        r.angle += wrap * 0.25;
-        r.speed = Math.min(ROACH_CONFIG.fleeMaxSpeed, r.speed + ROACH_CONFIG.fleeAccel);
-      } else {
-        r.fleeing = false;
-        r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel);
-
-        // idle wander
-        r.wanderTimer--;
-        if (r.wanderTimer <= 0) {
-          r.turnSpeed = rand(ROACH_CONFIG.turnSpeedMin, ROACH_CONFIG.turnSpeedMax) * (Math.random() < 0.5 ? 1 : -1);
-          r.wanderTimer = rand(ROACH_CONFIG.wanderMinFrames, ROACH_CONFIG.wanderMaxFrames);
-        }
-        r.angle += r.turnSpeed;
-      }
-
-      r.x += Math.cos(r.angle) * r.speed;
-      r.y += Math.sin(r.angle) * r.speed;
-
-      // wrap around edges
-      if (r.x < -20)  r.x = W + 20;
-      if (r.x > W+20) r.x = -20;
-      if (r.y < -20)  r.y = H + 20;
-      if (r.y > H+20) r.y = -20;
-
-      drawRoach(r, t);
-    }
-
-    requestAnimationFrame(tick);
-  }
-
-  requestAnimationFrame(tick);
-})();
-</script>
-
-<canvas id="eyeCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
-<script>
-(function() {
-  const canvas = document.getElementById('eyeCanvas');
-  const ctx = canvas.getContext('2d');
-  let W, H;
-  const mouse = { x: -999, y: -999, px: -999, py: -999 };
-  const BUMP_RADIUS = EYE_CONFIG.bumpRadius;
-  const FRICTION    = EYE_CONFIG.friction;
-
-  function resize() {
-    W = canvas.width  = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-    // Reposition any eyes that are now out of bounds
-    for (const e of eyes) {
-      if (!e) continue;
-      e.x = Math.min(Math.max(e.x, e.r), W - e.r);
-      e.y = Math.min(Math.max(e.y, e.r), H - e.r);
-    }
-  }
-
-  function rand(a, b) { return a + Math.random() * (b - a); }
-
-  // Initialise with placeholder array, populated after resize sets W/H
-  const eyes = [];
-
-  function makeEye() {
-    const r = rand(EYE_CONFIG.sizeMin, EYE_CONFIG.sizeMax);
-    return {
-      x: rand(r, W - r),
-      y: rand(r, H - r),
-      vx: 0, vy: 0,
-      r,
-      rollAngle: 0,       // how far the iris has rolled around the sphere (radians)
-      rollAxis: rand(0, Math.PI * 2), // direction of rolling
-    };
-  }
-
-  window.addEventListener('resize', resize);
-  window.addEventListener('mousemove', e => {
-    mouse.px = mouse.x; mouse.py = mouse.y;
-    mouse.x = e.clientX; mouse.y = e.clientY;
-  });
-  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
-
-  resize();
-  for (let i = 0; i < EYE_CONFIG.count; i++) eyes.push(makeEye());
-
-  function drawEye(e) {
-    const { x, y, r, rollAngle, rollAxis } = e;
-    const alpha = EYE_CONFIG.alpha;
-
-    ctx.save();
-    ctx.translate(x, y);
-
-    // Sclera -- perfectly circular
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(200,195,160,${alpha})`;
-    ctx.fill();
-    ctx.strokeStyle = `rgba(80,60,30,${alpha})`;
-    ctx.lineWidth = 0.8;
-    ctx.stroke();
-
-    // Rolling illusion -- iris and pupil clipped to sclera so they disappear
-    // as they roll behind the eye. cos(rollAngle) drives depth: when it goes
-    // negative the iris is on the back of the sphere, clip hides it naturally.
-    const irisR = r * 0.52;
-    // Iris travels across the sphere face along the roll axis
-    // sin(rollAngle) = screen-space offset, cos(rollAngle) = depth (+ = toward us)
-    const screenOffset = Math.sin(rollAngle) * r * 0.85;
-    const ix = Math.cos(rollAxis) * screenOffset;
-    const iy = Math.sin(rollAxis) * screenOffset;
-
-    const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
-
-    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
-    // perpendicular axis stays full size -- this gives the correct globe-spinning look
-    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
-    const scaleAcrossAxis = 1.0;
-    
-    // irisAngle rotates the ellipse so the squish aligns with the travel direction
-    const irisAngle = rollAxis;
-    
-    // Only draw iris/pupil when they're on the front hemisphere
-    if (depth > 0) {
-        
-      // Clip everything below to the sclera circle
-      ctx.save();
-      ctx.beginPath();
-      ctx.arc(0, 0, r, 0, Math.PI * 2);
-      ctx.clip();
-      
-      // Blood vessels clipped to sclera
-      ctx.save();
-      ctx.translate(ix, iy);
-      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
-      //ctx.rotate(irisAngle);
-      ctx.beginPath();
-      ctx.arc(0, 0, r, 0, Math.PI * 2);
-      ctx.clip();
-      for (let i = 0; i < 5; i++) {
-        const a = (i / 5) * Math.PI * 2 + 0.8;
-        ctx.beginPath();
-        ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
-        ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
-        ctx.strokeStyle = `rgba(210,20,20,${alpha})`;
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-      }
-      ctx.restore();
-      
-      // Iris
-      ctx.save();
-      ctx.translate(ix, iy);
-      ctx.beginPath();
-      ctx.ellipse(0, 0,
-        irisR * scaleAlongAxis,  // squished along travel axis
-        irisR * scaleAcrossAxis, // full size across travel axis
-        irisAngle, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
-      ctx.fill();
-
-      // Iris radial lines
-      ctx.rotate(rollAxis + rollAngle * 0.3);
-      for (let i = 0; i < 10; i++) {
-        const a = (i / 10) * Math.PI * 2;
-        ctx.beginPath();
-        ctx.moveTo(
-          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
-          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
-        );
-        ctx.lineTo(
-          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
-          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
-        );
-        ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
-        ctx.lineWidth = 0.6;
-        ctx.stroke();
-      }
-      
-      ctx.restore();
-
-      // Pupil
-      const pupilR = irisR * 0.5;
-      ctx.save();
-      ctx.translate(ix, iy);
-      ctx.beginPath();
-      ctx.ellipse(0, 0,
-        pupilR * scaleAlongAxis,
-        pupilR * scaleAcrossAxis,
-        irisAngle, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
-      ctx.fill();
-      ctx.restore();
-      ctx.restore(); // end sclera clip
-    }
-    
-    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
-    ctx.beginPath();
-    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
-    ctx.fill();
-    
-    ctx.restore();
-
-    ctx.restore();
-   
-  } 
-  
-   
-
-  function tick() {
-    ctx.clearRect(0, 0, W, H);
-
-    // Mouse bump
-    if (mouse.x > -900) {
-      const mdx = mouse.x - mouse.px;
-      const mdy = mouse.y - mouse.py;
-      for (const e of eyes) {
-        const dx = e.x - mouse.x;
-        const dy = e.y - mouse.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < BUMP_RADIUS + e.r) {
-          const force = (BUMP_RADIUS + e.r - dist) / (BUMP_RADIUS + e.r) * EYE_CONFIG.bumpForce;
-          const angle = Math.atan2(dy, dx);
-          e.vx += Math.cos(angle) * force + mdx * EYE_CONFIG.mouseVelMix;
-          e.vy += Math.sin(angle) * force + mdy * EYE_CONFIG.mouseVelMix;
-        }
-      }
-    }
-
-    // Ball-ball collisions
-    for (let i = 0; i < eyes.length; i++) {
-      for (let j = i + 1; j < eyes.length; j++) {
-        const a = eyes[i], b = eyes[j];
-        const dx = b.x - a.x;
-        const dy = b.y - a.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const minDist = a.r + b.r;
-        if (dist < minDist && dist > 0) {
-          // Separate
-          const overlap = (minDist - dist) / 2;
-          const nx = dx / dist, ny = dy / dist;
-          a.x -= nx * overlap; a.y -= ny * overlap;
-          b.x += nx * overlap; b.y += ny * overlap;
-          // Exchange velocity components along collision normal
-          const dvx = a.vx - b.vx, dvy = a.vy - b.vy;
-          const dot = dvx * nx + dvy * ny;
-          if (dot > 0) {
-            a.vx -= dot * nx; a.vy -= dot * ny;
-            b.vx += dot * nx; b.vy += dot * ny;
-          }
-        }
-      }
-    }
-
-    for (const e of eyes) {
-      // Friction
-      e.vx *= FRICTION;
-      e.vy *= FRICTION;
-
-      // Stop micro-drift
-      if (Math.abs(e.vx) < 0.01) e.vx = 0;
-      if (Math.abs(e.vy) < 0.01) e.vy = 0;
-
-      e.x += e.vx;
-      e.y += e.vy;
-
-      // Wall bounce
-      if (e.x - e.r < 0)    { e.x = e.r;    e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
-      if (e.x + e.r > W)    { e.x = W - e.r; e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
-      if (e.y - e.r < 0)    { e.y = e.r;    e.vy =  Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
-      if (e.y + e.r > H)    { e.y = H - e.r; e.vy = -Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
-
-      // Advance roll: angle = arc_length / radius, axis = direction of travel
-      const speed = Math.sqrt(e.vx * e.vx + e.vy * e.vy);
-      if (speed > 0.01) {
-        e.rollAxis = Math.atan2(e.vy, e.vx);
-        e.rollAngle += speed / e.r;
-      }
-
-      drawEye(e);
-    }
-
-    // Store previous mouse for velocity
-    mouse.px = mouse.x; mouse.py = mouse.y;
-
-    requestAnimationFrame(tick);
-  }
-
-  requestAnimationFrame(tick);
-})();
-</script>
 </body>
 </html>
