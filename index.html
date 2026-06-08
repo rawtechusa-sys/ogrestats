@@ -1258,12 +1258,6 @@ loadStreamList();
     // irisAngle rotates the ellipse so the squish aligns with the travel direction
     const irisAngle = rollAxis;
     
-    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
-    ctx.beginPath();
-    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(235,230,210,${alpha * 0.85})`;
-    ctx.fill();
-    
     // Blood vessels clipped to sclera
     ctx.save();
     ctx.scale(scaleAlongAxis, scaleAcrossAxis);
@@ -1336,7 +1330,13 @@ loadStreamList();
     }
 
     ctx.restore(); // end sclera clip
-
+    
+    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
+    ctx.fill();
+    
     ctx.restore();
 
   }
