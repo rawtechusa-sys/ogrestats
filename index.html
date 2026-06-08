@@ -1243,8 +1243,8 @@ loadStreamList();
     ctx.beginPath();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
-    for (let i = 0; i < 3; i++) {
-      const a = (i / 3) * Math.PI * 2 + 0.8;
+    for (let i = 0; i < 5; i++) {
+      const a = (i / 3) * Math.PI * 5 + 0.8;
       ctx.beginPath();
       ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
       ctx.quadraticCurveTo(Math.cos(a) * r * 0.4, Math.sin(a) * r * 0.4, 0, 0);
