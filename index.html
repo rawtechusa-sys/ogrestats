@@ -1262,6 +1262,13 @@ loadStreamList();
     // Only draw iris/pupil when they're on the front hemisphere
     if (depth > 0) {
   
+  
+        
+      // Clip everything below to the sclera circle
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
       
       // Blood vessels clipped to sclera
       ctx.save();
@@ -1281,13 +1288,6 @@ loadStreamList();
         ctx.stroke();
       }
       ctx.restore();
-  
-        
-      // Clip everything below to the sclera circle
-      ctx.save();
-      ctx.beginPath();
-      ctx.arc(0, 0, r, 0, Math.PI * 2);
-      ctx.clip();
       
       // Iris
       ctx.save();
