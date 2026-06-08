@@ -6,7 +6,7 @@
 <title>The Swamp — Stream Stats</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
   /* ── CONFIG: set your repo here ── */
@@ -36,8 +36,8 @@
     height: 100%;
     background: var(--bog);
     color: var(--parchment);
-    font-family: 'IM Fell English', serif;
-    font-size: 15px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
     line-height: 1.6;
     overflow: hidden;
   }
@@ -127,7 +127,7 @@
 
   .sidebar-label {
     font-family: 'Rye', serif;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.12em;
     color: var(--parch-dim);
     padding: 4px 16px 8px;
@@ -154,13 +154,13 @@
 
   .stream-item-date {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--ember);
     display: block;
   }
 
   .stream-item-time {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--parch-dim);
     display: block;
     margin-top: 1px;
@@ -168,7 +168,7 @@
 
   .stream-item-badge {
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
     padding: 1px 6px;
     border-radius: 3px;
     margin-top: 4px;
@@ -181,7 +181,7 @@
 
   .sidebar-empty {
     padding: 16px;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--parch-dim);
     font-style: italic;
   }
@@ -225,7 +225,7 @@
   }
 
   .stat-label {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--parch-dim);
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -244,7 +244,7 @@
   }
 
   .stat-sub {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--parch-dim);
     margin-top: 3px;
     display: block;
@@ -283,7 +283,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--parch-dim);
     font-family: 'Share Tech Mono', monospace;
   }
@@ -326,12 +326,12 @@
   .donations-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .donations-table th {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--parch-dim);
@@ -341,7 +341,7 @@
   }
 
   .donations-table td {
-    padding: 7px 8px;
+    padding: 8px 8px;
     border-bottom: 1px solid rgba(196,125,42,0.07);
     vertical-align: top;
   }
@@ -355,7 +355,7 @@
   .type-badge {
     display: inline-block;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
+    font-size: 12px;
     padding: 2px 7px;
     border-radius: 3px;
     border: 1px solid;
@@ -370,20 +370,20 @@
   .amount-usd {
     font-family: 'Share Tech Mono', monospace;
     color: var(--ember);
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .username { color: var(--parchment); }
   .ts-cell {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--parch-dim);
     white-space: nowrap;
   }
   .msg-cell {
+    font-family: 'Lora', serif;
     color: var(--parch-dim);
-    font-style: italic;
-    font-size: 13px;
+    font-size: 14px;
     max-width: 280px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -400,7 +400,7 @@
     gap: 12px;
     color: var(--parch-dim);
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .loading-glyph {
@@ -782,7 +782,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
           titleColor: '#c47d2a',
           bodyColor: '#c8a97a',
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
-          bodyFont:  { family: "'IM Fell English', serif", size: 12 },
+          bodyFont:  { family: "'Lora', serif", size: 13 },
           callbacks: {
             title: items => {
               const mins = Math.round(items[0].parsed.x);
