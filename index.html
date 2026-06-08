@@ -653,12 +653,6 @@ function platformBadge(platforms) {
   return '';
 }
 
-function unslugify(id) {
-  return id
-    .replace(/_/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
-}
-
 async function loadStreamList() {
   const sidebar = document.getElementById('sidebar');
   try {
@@ -678,7 +672,7 @@ async function loadStreamList() {
       div.dataset.id = id;
 
       // Placeholder while metadata loads
-      div.innerHTML = `<span class="stream-item-date">${unslugify(id)}</span>`;
+      div.innerHTML = `<span class="stream-item-date">—</span>`;
 
       try {
         const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
@@ -728,13 +722,17 @@ async function loadStreamList() {
 async function loadStream(streamId) {
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
-  document.getElementById('streamTitle').textContent = unslugify(streamId);
+  document.getElementById('streamTitle').textContent = '';
 
   try {
     const [meta, eventsText] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
       fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
     ]);
+
+    if (meta.title) {
+      document.getElementById('streamTitle').textContent = meta.title;
+    }
 
     const events    = parseJSONL(eventsText);
     const snapshots = events.filter(e => e.event === 'viewer_snapshot');
