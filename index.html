@@ -1238,22 +1238,6 @@ loadStreamList();
     ctx.lineWidth = 0.8;
     ctx.stroke();
 
-    // Blood vessels clipped to sclera
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.clip();
-    for (let i = 0; i < 5; i++) {
-      const a = (i / 5) * Math.PI * 2 + 0.8;
-      ctx.beginPath();
-      ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
-      ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
-      ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.55})`;
-      ctx.lineWidth = 0.7;
-      ctx.stroke();
-    }
-    ctx.restore();
-
     // Rolling illusion -- iris and pupil clipped to sclera so they disappear
     // as they roll behind the eye. cos(rollAngle) drives depth: when it goes
     // negative the iris is on the back of the sphere, clip hides it naturally.
@@ -1282,6 +1266,23 @@ loadStreamList();
 
     // Only draw iris/pupil when they're on the front hemisphere
     if (depth > 0) {
+  
+      // Blood vessels clipped to sclera
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      for (let i = 0; i < 5; i++) {
+        const a = (i / 5) * Math.PI * 2 + 0.8;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
+        ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
+        ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.55})`;
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+      ctx.restore();
+      
       // Iris
       ctx.save();
       ctx.translate(ix, iy);
