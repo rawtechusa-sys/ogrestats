@@ -1,0 +1,25 @@
+:root {
+  --bg-base:       #ffffff;
+  --bg-surface:       #ffffff;
+  --bg-panel:     #ffffff;
+  --bg-subtle:     #9d9d9d;
+  --bg-raised:  #9b9b9b;
+  --text-primary: #1e1e1e;
+  --text-muted: #5c4c18;
+  --accent:     #3b3b22;
+  --accent-bright: #a5a513;
+  --accent-alt:     #50391c;
+  --accent-alt-bright:  #3f2648;
+  --platform-youtube:    #a22323;
+  --platform-twitch: #372a45;
+  --border-default:    rgb(73 73 63 / 89%);
+  --border-default-strong: rgb(56 56 26 / 98%);
+  --accent-glow-r: 180; --accent-glow-g: 180; --accent-glow-b: 170;
+}
+
+body::before {
+  background:
+    radial-gradient(ellipse 60% 40% at 15% 90%, rgba(80,80,75,0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 85% 95%, rgba(60,60,55,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(40,40,38,0.14) 0%, transparent 50%);
+}
