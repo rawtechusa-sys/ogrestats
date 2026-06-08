@@ -585,7 +585,6 @@ const GITHUB_REPO  = 'ogrestats';
 const BRANCH       = 'main';
 
 const RAW   = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
-const API   = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
 
 let currentChart = null;
 
@@ -641,10 +640,8 @@ function platformBadge(platforms) {
 async function loadStreamList() {
   const sidebar = document.getElementById('sidebar');
   try {
-    const items = await fetchJSON(`${API}/data/streams`);
-    const streams = items
-      .filter(i => i.type === 'dir')
-      .sort((a, b) => b.name.localeCompare(a.name));
+    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
+    const streams = [...streamIds].sort((a, b) => b.localeCompare(a));
 
     if (streams.length === 0) {
       sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
@@ -653,14 +650,14 @@ async function loadStreamList() {
 
     sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
 
-    for (const [idx, s] of streams.entries()) {
+    for (const [idx, id] of streams.entries()) {
       const div = document.createElement('div');
       div.className = 'stream-item' + (idx === 0 ? ' active' : '');
-      div.dataset.id = s.name;
+      div.dataset.id = id;
 
-      let datePart = s.name;
+      let datePart = id;
       let timePart = '';
-      const m = s.name.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
+      const m = id.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
       if (m) {
         datePart = m[1];
         timePart = `${m[2]}:${m[3]} UTC`;
@@ -672,7 +669,7 @@ async function loadStreamList() {
       `;
 
       try {
-        const meta = await fetchJSON(`${RAW}/data/streams/${s.name}/metadata.json`);
+        const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
         div.innerHTML += platformBadge(meta.platforms);
         if (meta.end_ts && meta.start_ts) {
           const dur = fmtDuration(meta.end_ts - meta.start_ts);
@@ -683,13 +680,13 @@ async function loadStreamList() {
       div.addEventListener('click', () => {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
         div.classList.add('active');
-        loadStream(s.name);
+        loadStream(id);
       });
 
       sidebar.appendChild(div);
     }
 
-    if (streams.length > 0) loadStream(streams[0].name);
+    if (streams.length > 0) loadStream(streams[0]);
 
   } catch (e) {
     sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
