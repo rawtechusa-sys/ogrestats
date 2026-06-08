@@ -1261,7 +1261,7 @@ loadStreamList();
     const irisAngle = rollAxis;
     
     // Only draw iris/pupil when they're on the front hemisphere
-    if (depth > 0) {
+    //if (depth > 0) {
         
       // Clip everything below to the sclera circle
       ctx.save();
@@ -1315,7 +1315,7 @@ loadStreamList();
         ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
         ctx.lineWidth = 0.6;
         ctx.stroke();
-      }
+      //}
       ctx.restore();
 
       // Pupil
