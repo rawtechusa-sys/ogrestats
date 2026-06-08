@@ -1,20 +1,20 @@
 :root {
-  --bog:       #000000;
-  --mud:       #080808;
-  --earth:     #101010;
-  --stone:     #1a1a1a;
-  --mosstone:  #242424;
-  --parchment: #d0d0d0;
-  --parch-dim: #686868;
-  --ember:     #585858;
-  --ember-hot: #888888;
-  --swamp:     #3a6648;
-  --swamp-lt:  #5a9068;
-  --yt-red:    #c0392b;
-  --tw-purple: #7b4fa6;
-  --border:    rgba(120,120,120,0.15);
-  --border-hi: rgba(120,120,120,0.35);
-  --glow-r: 140; --glow-g: 140; --glow-b: 140;
+  --bg-base:       #000000;
+  --bg-surface:       #080808;
+  --bg-panel:     #101010;
+  --bg-subtle:     #1a1a1a;
+  --bg-raised:  #242424;
+  --text-primary: #d0d0d0;
+  --text-muted: #686868;
+  --accent:     #585858;
+  --accent-bright: #888888;
+  --accent-alt:     #3a6648;
+  --accent-alt-bright:  #5a9068;
+  --platform-youtube:    #c0392b;
+  --platform-twitch: #7b4fa6;
+  --border-default:    rgba(120,120,120,0.15);
+  --border-default-strong: rgba(120,120,120,0.35);
+  --accent-glow-r: 140; --accent-glow-g: 140; --accent-glow-b: 140;
 }
 
 body::before {
