@@ -1,20 +1,20 @@
 :root {
-  --bg-base:       #000000;
-  --bg-surface:       #080808;
-  --bg-panel:     #101010;
-  --bg-subtle:     #1a1a1a;
-  --bg-raised:  #242424;
-  --text-primary: #d0d0d0;
-  --text-muted: #686868;
-  --accent:     #585858;
-  --accent-bright: #888888;
-  --accent-alt:     #3a6648;
+  --bg-base:            #000000;
+  --bg-surface:         #0a0a0a;
+  --bg-panel:           #111111;
+  --bg-subtle:          #1c1c1c;
+  --bg-raised:          #282828;
+  --text-primary:       #f0f0f0;
+  --text-muted:         #a0a0a0;
+  --accent:             #c0c0c0;
+  --accent-bright:      #ffffff;
+  --accent-alt:         #3a6648;
   --accent-alt-bright:  #5a9068;
-  --platform-youtube:    #c0392b;
-  --platform-twitch: #7b4fa6;
-  --border-default:    rgba(120,120,120,0.15);
-  --border-default-strong: rgba(120,120,120,0.35);
-  --accent-glow-r: 140; --accent-glow-g: 140; --accent-glow-b: 140;
+  --platform-youtube:   #e05545;
+  --platform-twitch:    #a07ad0;
+  --border-default:     rgba(255,255,255,0.15);
+  --border-strong:      rgba(255,255,255,0.45);
+  --accent-glow-r: 240; --accent-glow-g: 240; --accent-glow-b: 240;
 }
 
 body::before {
