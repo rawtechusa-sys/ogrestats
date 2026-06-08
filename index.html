@@ -1281,12 +1281,13 @@ loadStreamList();
     // Only draw iris/pupil when they're on the front hemisphere
     if (depth > 0) {
 
-    // Clip everything below to the sclera circle
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.clip();
-        // Iris
+      // Clip everything below to the sclera circle
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      
+      // Iris
       ctx.save();
       ctx.translate(ix, iy);
       ctx.beginPath();
@@ -1328,17 +1329,18 @@ loadStreamList();
       ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
       ctx.fill();
       ctx.restore();
+      ctx.restore(); // end sclera clip
     }
+      
+    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
+    ctx.fill();
 
-    ctx.restore(); // end sclera clip
    
   } 
-    
-  // Specular highlight -- fixed on sclera, drawn outside clip so always visible
-  ctx.beginPath();
-  ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
-  ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
-  ctx.fill();
+  
   ctx.restore();
    
 
