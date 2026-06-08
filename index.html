@@ -1258,16 +1258,21 @@ loadStreamList();
     // as they roll behind the eye. cos(rollAngle) drives depth: when it goes
     // negative the iris is on the back of the sphere, clip hides it naturally.
     const irisR = r * 0.52;
-    const screenOffset = Math.sin(rollAngle) * r * 0.42;
+    // Iris travels across the sphere face along the roll axis
+    // sin(rollAngle) = screen-space offset, cos(rollAngle) = depth (+ = toward us)
+    const screenOffset = Math.sin(rollAngle) * r * 0.85;
     const ix = Math.cos(rollAxis) * screenOffset;
     const iy = Math.sin(rollAxis) * screenOffset;
 
-    // Foreshortening: iris squishes as it rolls toward the edge
-    const depth = Math.cos(rollAngle); // +1 = facing us, -1 = behind
-    // When depth < 0 the iris is behind the sphere -- clip will hide it
-    const irisScaleX = irisR;
-    const irisScaleY = irisR * Math.max(0, Math.abs(depth));
-    const irisAngle  = rollAxis + Math.PI / 2;
+    const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
+
+    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
+    // perpendicular axis stays full size -- this gives the correct globe-spinning look
+    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
+    const scaleAcrossAxis = 1.0;
+
+    // irisAngle rotates the ellipse so the squish aligns with the travel direction
+    const irisAngle = rollAxis;
 
     // Clip everything below to the sclera circle
     ctx.save();
@@ -1275,37 +1280,51 @@ loadStreamList();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
 
-    // Iris
-    ctx.save();
-    ctx.translate(ix, iy);
-    ctx.beginPath();
-    ctx.ellipse(0, 0, irisScaleX, irisScaleY, irisAngle, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
-    ctx.fill();
-
-    // Iris radial lines
-    ctx.rotate(rollAxis + rollAngle * 0.3);
-    for (let i = 0; i < 10; i++) {
-      const a = (i / 10) * Math.PI * 2;
+    // Only draw iris/pupil when they're on the front hemisphere
+    if (depth > 0) {
+      // Iris
+      ctx.save();
+      ctx.translate(ix, iy);
       ctx.beginPath();
-      ctx.moveTo(Math.cos(a) * irisScaleX * 0.3, Math.sin(a) * irisScaleY * 0.3);
-      ctx.lineTo(Math.cos(a) * irisScaleX * 0.92, Math.sin(a) * irisScaleY * 0.92);
-      ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
-      ctx.lineWidth = 0.6;
-      ctx.stroke();
-    }
-    ctx.restore();
+      ctx.ellipse(0, 0,
+        irisR * scaleAlongAxis,  // squished along travel axis
+        irisR * scaleAcrossAxis, // full size across travel axis
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
+      ctx.fill();
 
-    // Pupil
-    const pupilR = irisR * 0.5;
-    const pupilScaleY = pupilR * Math.max(0, Math.abs(depth));
-    ctx.save();
-    ctx.translate(ix, iy);
-    ctx.beginPath();
-    ctx.ellipse(0, 0, pupilR, pupilScaleY, irisAngle, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
-    ctx.fill();
-    ctx.restore();
+      // Iris radial lines
+      ctx.rotate(rollAxis + rollAngle * 0.3);
+      for (let i = 0; i < 10; i++) {
+        const a = (i / 10) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
+        );
+        ctx.lineTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
+        );
+        ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // Pupil
+      const pupilR = irisR * 0.5;
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.beginPath();
+      ctx.ellipse(0, 0,
+        pupilR * scaleAlongAxis,
+        pupilR * scaleAcrossAxis,
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
+      ctx.fill();
+      ctx.restore();
+    }
 
     ctx.restore(); // end sclera clip
 
