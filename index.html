@@ -1257,6 +1257,9 @@ loadStreamList();
 
     // irisAngle rotates the ellipse so the squish aligns with the travel direction
     const irisAngle = rollAxis;
+    
+    // Only draw iris/pupil when they're on the front hemisphere
+    if (depth > 0) {
 
     // Clip everything below to the sclera circle
     ctx.save();
@@ -1280,9 +1283,6 @@ loadStreamList();
       ctx.stroke();
     }
     ctx.restore();
-    
-    // Only draw iris/pupil when they're on the front hemisphere
-    if (depth > 0) {
   
       // Iris
       ctx.save();
