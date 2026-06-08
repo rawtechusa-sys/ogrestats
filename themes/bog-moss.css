@@ -1,0 +1,25 @@
+:root {
+  --bog:       #080e08;
+  --mud:       #0e160e;
+  --earth:     #162010;
+  --stone:     #253520;
+  --mosstone:  #344a2a;
+  --parchment: #b8c9a0;
+  --parch-dim: #6e8558;
+  --ember:     #7ab84a;
+  --ember-hot: #96d45a;
+  --swamp:     #3a6648;
+  --swamp-lt:  #5a9068;
+  --yt-red:    #c0392b;
+  --tw-purple: #7b4fa6;
+  --border:    rgba(100,180,60,0.18);
+  --border-hi: rgba(100,180,60,0.4);
+  --glow-r: 120; --glow-g: 210; --glow-b: 60;
+}
+
+body::before {
+  background:
+    radial-gradient(ellipse 60% 40% at 15% 90%, rgba(40,100,20,0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 85% 95%, rgba(30,80,15,0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(20,60,10,0.18) 0%, transparent 50%);
+}
