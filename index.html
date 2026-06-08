@@ -1272,8 +1272,8 @@ loadStreamList();
       // Blood vessels clipped to sclera
       ctx.save();
       ctx.translate(ix, iy);
-      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
-      ctx.rotate(irisAngle);
+      //ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      //ctx.rotate(irisAngle);
       ctx.beginPath();
       ctx.arc(0, 0, r, 0, Math.PI * 2);
       ctx.clip();
