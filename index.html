@@ -1263,19 +1263,15 @@ loadStreamList();
     ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(235,230,210,${alpha * 0.85})`;
     ctx.fill();
-    
-    // Only draw iris/pupil when they're on the front hemisphere
-    if (depth > 0) {
 
-    // Clip everything below to the sclera circle
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.clip();
+    
 
     // Blood vessels clipped to sclera
     ctx.save();
     ctx.translate(ix, iy);
+    if (depth < 1) {
+      ctx.translate(ix, iy);
+    }
     ctx.beginPath();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
@@ -1289,6 +1285,15 @@ loadStreamList();
       ctx.stroke();
     }
     ctx.restore();
+    
+    // Only draw iris/pupil when they're on the front hemisphere
+    if (depth > 0) {
+
+    // Clip everything below to the sclera circle
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.clip();
   
       // Iris
       ctx.save();
