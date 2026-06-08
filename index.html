@@ -1261,7 +1261,7 @@ loadStreamList();
     const irisAngle = rollAxis;
     
     // Only draw iris/pupil when they're on the front hemisphere
-    //if (depth > 0) {
+    if (depth > 0) {
         
       // Clip everything below to the sclera circle
       ctx.save();
@@ -1272,7 +1272,7 @@ loadStreamList();
       // Blood vessels clipped to sclera
       ctx.save();
       ctx.translate(ix, iy);
-      //ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
       //ctx.rotate(irisAngle);
       ctx.beginPath();
       ctx.arc(0, 0, r, 0, Math.PI * 2);
