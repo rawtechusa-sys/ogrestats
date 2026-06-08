@@ -659,8 +659,21 @@ async function loadStreamList() {
       let timePart = '';
       const m = id.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
       if (m) {
-        datePart = m[1];
-        timePart = `${m[2]}:${m[3]} UTC`;
+        const [year, month, day] = m[1].split('-').map(Number);
+        const hh = +m[2], mm = +m[3];
+        const utcDate = new Date(Date.UTC(year, month - 1, day, hh, mm));
+        const ordinal = n => {
+          const s = ['th','st','nd','rd'], v = n % 100;
+          return n + (s[(v-20)%10] || s[v] || s[0]);
+        };
+        datePart = utcDate.toLocaleDateString('en-US', {
+          timeZone: 'America/New_York',
+          month: 'long', day: 'numeric', year: 'numeric'
+        }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
+        timePart = utcDate.toLocaleTimeString('en-US', {
+          timeZone: 'America/New_York',
+          hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+        });
       }
 
       div.innerHTML = `
