@@ -1280,7 +1280,7 @@ loadStreamList();
       for (let i = 0; i < 5; i++) {
         const a = (i / 5) * Math.PI * 2 + 0.8;
         ctx.beginPath();
-        ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
+        ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
         ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
         ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.75})`;
         ctx.lineWidth = 0.9;
