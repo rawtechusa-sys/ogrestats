@@ -34,5 +34,5 @@ const EYE_CONFIG = {
   bounceDamp: 0.7,   // energy retained on wall bounce (0–1)
   sizeMin:    25,    // minimum eye radius (px)
   sizeMax:    30,    // maximum eye radius (px)
-  alpha:      0.9,   // opacity (0–1)
+  alpha:      0.5,   // opacity (0–1)
 };
