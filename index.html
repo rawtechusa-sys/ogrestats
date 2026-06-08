@@ -1250,28 +1250,19 @@ loadStreamList();
 
     const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
 
-    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
-    // perpendicular axis stays full size -- this gives the correct globe-spinning look
-    //const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
-    //const scaleAcrossAxis = 1.0;
-
-    // irisAngle rotates the ellipse so the squish aligns with the travel direction
-    const irisAngle = rollAxis;
-    
     // Specular highlight -- fixed on sclera, drawn outside clip so always visible
     ctx.beginPath();
     ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(235,230,210,${alpha * 0.85})`;
     ctx.fill();
-
     
-
     // Blood vessels clipped to sclera
     ctx.save();
+    /*
     ctx.translate(ix, iy);
     if (depth < 1) {
       ctx.translate(ix, iy);
-    }
+    }*/
     ctx.beginPath();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
@@ -1279,7 +1270,7 @@ loadStreamList();
       const a = (i / 5) * Math.PI * 2 + 0.8;
       ctx.beginPath();
       ctx.moveTo(Math.cos(a) * r * 0.9, Math.sin(a) * r * 0.9);
-      ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, 0, 0);
+      ctx.quadraticCurveTo(Math.cos(a * 5) * r * 0.64, Math.sin(a * 5) * r * 0.64, ix, iy);
       ctx.strokeStyle = `rgba(180,40,40,${alpha * 0.55})`;
       ctx.lineWidth = 0.7;
       ctx.stroke();
@@ -1301,7 +1292,7 @@ loadStreamList();
       ctx.beginPath();
       ctx.ellipse(0, 0,
         irisR, irisR,
-        irisAngle, 0, Math.PI * 2);
+        0, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
       ctx.fill();
 
@@ -1332,7 +1323,7 @@ loadStreamList();
       ctx.ellipse(0, 0,
         pupilR,
         pupilR,
-        irisAngle, 0, Math.PI * 2);
+        0, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
       ctx.fill();
       ctx.restore();
