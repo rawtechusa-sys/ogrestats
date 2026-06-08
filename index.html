@@ -1331,13 +1331,13 @@ loadStreamList();
 
     ctx.restore(); // end sclera clip
     
+    ctx.restore();
+    
     // Specular highlight -- fixed on sclera, drawn outside clip so always visible
     ctx.beginPath();
     ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
     ctx.fill();
-    
-    ctx.restore();
 
   }
 
