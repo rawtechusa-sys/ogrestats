@@ -90,6 +90,20 @@
     margin-left: auto;
   }
 
+  .header-stream-title {
+    font-family: 'Rye', serif;
+    font-size: 15px;
+    color: var(--accent-bright);
+    letter-spacing: 0.03em;
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 16px;
+    opacity: 0.9;
+  }
+
   .theme-select {
     font-family: 'Share Tech Mono', monospace;
     font-size: 11px;
@@ -557,6 +571,7 @@
 <div class="layout">
   <header class="header">
     <span class="header-title">Ogre World</span>
+    <span class="header-stream-title" id="streamTitle"></span>
     <select class="theme-select" id="themeSelect" aria-label="Color theme">
       <option value="green">Bog Moss</option>
       <option value="amber">Firepit</option>
@@ -638,6 +653,12 @@ function platformBadge(platforms) {
   return '';
 }
 
+function unslugify(id) {
+  return id
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
 async function loadStreamList() {
   const sidebar = document.getElementById('sidebar');
   try {
@@ -656,40 +677,37 @@ async function loadStreamList() {
       div.className = 'stream-item' + (idx === 0 ? ' active' : '');
       div.dataset.id = id;
 
-      let datePart = id;
-      let timePart = '';
-      const m = id.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
-      if (m) {
-        const [year, month, day] = m[1].split('-').map(Number);
-        const hh = +m[2], mm = +m[3];
-        const utcDate = new Date(Date.UTC(year, month - 1, day, hh, mm));
-        const ordinal = n => {
-          const s = ['th','st','nd','rd'], v = n % 100;
-          return n + (s[(v-20)%10] || s[v] || s[0]);
-        };
-        datePart = utcDate.toLocaleDateString('en-US', {
-          timeZone: 'America/New_York',
-          month: 'long', day: 'numeric', year: 'numeric'
-        }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
-        timePart = utcDate.toLocaleTimeString('en-US', {
-          timeZone: 'America/New_York',
-          hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
-        });
-      }
-
-      div.innerHTML = `
-        <span class="stream-item-date">${datePart}</span>
-        <span class="stream-item-time">${timePart}</span>
-      `;
+      // Placeholder while metadata loads
+      div.innerHTML = `<span class="stream-item-date">${unslugify(id)}</span>`;
 
       try {
         const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
-        div.innerHTML += platformBadge(meta.platforms);
-        if (meta.end_ts && meta.start_ts) {
-          const dur = fmtDuration(meta.end_ts - meta.start_ts);
-          div.innerHTML += `<span class="stream-item-time">${dur}</span>`;
+
+        let datePart = '—';
+        let timePart = '';
+        if (meta.start_ts) {
+          const utcDate = new Date(meta.start_ts * 1000);
+          const ordinal = n => {
+            const s = ['th','st','nd','rd'], v = n % 100;
+            return n + (s[(v-20)%10] || s[v] || s[0]);
+          };
+          datePart = utcDate.toLocaleDateString('en-US', {
+            timeZone: 'America/New_York',
+            month: 'long', day: 'numeric', year: 'numeric'
+          }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
+          timePart = utcDate.toLocaleTimeString('en-US', {
+            timeZone: 'America/New_York',
+            hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+          });
         }
-      } catch { /* metadata missing, skip */ }
+
+        div.innerHTML = `
+          <span class="stream-item-date">${datePart}</span>
+          <span class="stream-item-time">${timePart}</span>
+          ${platformBadge(meta.platforms)}
+          ${meta.end_ts && meta.start_ts ? `<span class="stream-item-time">${fmtDuration(meta.end_ts - meta.start_ts)}</span>` : ''}
+        `;
+      } catch { /* metadata missing -- leave placeholder */ }
 
       div.addEventListener('click', () => {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
@@ -710,6 +728,7 @@ async function loadStreamList() {
 async function loadStream(streamId) {
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+  document.getElementById('streamTitle').textContent = unslugify(streamId);
 
   try {
     const [meta, eventsText] = await Promise.all([
