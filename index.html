@@ -1250,11 +1250,13 @@ loadStreamList();
 
     const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
 
-    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
-    ctx.beginPath();
-    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(235,230,210,${alpha * 0.85})`;
-    ctx.fill();
+    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
+    // perpendicular axis stays full size -- this gives the correct globe-spinning look
+    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
+    const scaleAcrossAxis = 1.0;
+    
+    // irisAngle rotates the ellipse so the squish aligns with the travel direction
+    const irisAngle = rollAxis;
     
     // Blood vessels clipped to sclera
     ctx.save();
@@ -1285,14 +1287,14 @@ loadStreamList();
     ctx.beginPath();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
-  
-      // Iris
+        // Iris
       ctx.save();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        irisR, irisR,
-        0, 0, Math.PI * 2);
+        irisR * scaleAlongAxis,  // squished along travel axis
+        irisR * scaleAcrossAxis, // full size across travel axis
+        irisAngle, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
       ctx.fill();
 
@@ -1302,12 +1304,12 @@ loadStreamList();
         const a = (i / 10) * Math.PI * 2;
         ctx.beginPath();
         ctx.moveTo(
-          Math.cos(a) * irisR * 0.3,
-          Math.sin(a) * irisR * 0.3
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
         );
         ctx.lineTo(
-          Math.cos(a) * irisR * 0.92,
-          Math.sin(a) * irisR * 0.92
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
         );
         ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
         ctx.lineWidth = 0.6;
@@ -1321,9 +1323,9 @@ loadStreamList();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        pupilR,
-        pupilR,
-        0, 0, Math.PI * 2);
+        pupilR * scaleAlongAxis,
+        pupilR * scaleAcrossAxis,
+        irisAngle, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
       ctx.fill();
       ctx.restore();
@@ -1331,8 +1333,13 @@ loadStreamList();
 
     ctx.restore(); // end sclera clip
 
-
     ctx.restore();
+
+    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(235,230,210,${alpha * 0.85})`;
+    ctx.fill();
   }
 
   function tick() {
