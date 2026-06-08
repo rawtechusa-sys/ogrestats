@@ -1255,12 +1255,6 @@ loadStreamList();
     //const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
     //const scaleAcrossAxis = 1.0;
 
-    // irisAngle rotates the ellipse so the squish aligns with the travel direction
-    const irisAngle = rollAxis;
-    
-    // Only draw iris/pupil when they're on the front hemisphere
-    if (depth > 0) {
-
     // Clip everything below to the sclera circle
     ctx.save();
     ctx.beginPath();
@@ -1270,6 +1264,10 @@ loadStreamList();
     // Blood vessels clipped to sclera
     ctx.save();
     ctx.translate(ix, iy);
+    if (depth < 0)
+    {
+      ctx.translate(ix, iy);
+    }
     ctx.beginPath();
     ctx.arc(0, 0, r, 0, Math.PI * 2);
     ctx.clip();
@@ -1283,14 +1281,16 @@ loadStreamList();
       ctx.stroke();
     }
     ctx.restore();
+    
+    // Only draw iris/pupil when they're on the front hemisphere
+    if (depth > 0) {
   
       // Iris
       ctx.save();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        irisR, irisR,
-        irisAngle, 0, Math.PI * 2);
+        irisR, irisR, 0, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
       ctx.fill();
 
