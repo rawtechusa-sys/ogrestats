@@ -149,17 +149,16 @@
     border: none;
     display: block;
     background: transparent;
+    pointer-events: none;
   }
 
-  /* ── Root decorations ── */
-  .root-deco {
+  /* Transparent overlay -- captures mouse for animations, passes clicks to iframe via JS */
+  .mouse-overlay {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.28;
+    inset: 0;
+    z-index: 1;
+    pointer-events: all;
+    background: transparent;
   }
 
 </style>
@@ -168,95 +167,6 @@
 <body>
 
 <script src="config.js"></script>
-
-<!-- Stone wall formation spanning full bottom edge -->
-<svg class="root-deco" style="left:0;bottom:0;width:100%;height:220px;" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1400 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="stoneBlur">
-      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.06" numOctaves="4" seed="8" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </defs>
-  <rect x="0"    y="48"  width="138" height="52" rx="3" fill="#3a2e1e"/>
-  <rect x="142"  y="42"  width="112" height="56" rx="3" fill="#2e2418"/>
-  <rect x="258"  y="50"  width="154" height="50" rx="3" fill="#332618"/>
-  <rect x="416"  y="44"  width="126" height="54" rx="3" fill="#2a2014"/>
-  <rect x="546"  y="48"  width="168" height="50" rx="3" fill="#3a2e1e"/>
-  <rect x="718"  y="40"  width="138" height="58" rx="3" fill="#302418"/>
-  <rect x="860"  y="46"  width="152" height="52" rx="3" fill="#2e2418"/>
-  <rect x="1016" y="42"  width="118" height="56" rx="3" fill="#352a1a"/>
-  <rect x="1138" y="48"  width="144" height="50" rx="3" fill="#2a2014"/>
-  <rect x="1286" y="44"  width="114" height="54" rx="3" fill="#3a2e1e"/>
-  <rect x="0"    y="104" width="118" height="58" rx="3" fill="#302418"/>
-  <rect x="122"  y="100" width="156" height="62" rx="3" fill="#3a2e1e"/>
-  <rect x="282"  y="106" width="132" height="56" rx="3" fill="#2e2418"/>
-  <rect x="418"  y="102" width="148" height="60" rx="3" fill="#332618"/>
-  <rect x="570"  y="104" width="122" height="58" rx="3" fill="#2a2014"/>
-  <rect x="696"  y="100" width="160" height="62" rx="3" fill="#3a2e1e"/>
-  <rect x="860"  y="104" width="136" height="58" rx="3" fill="#302418"/>
-  <rect x="1000" y="100" width="152" height="62" rx="3" fill="#2e2418"/>
-  <rect x="1156" y="106" width="128" height="56" rx="3" fill="#352a1a"/>
-  <rect x="1288" y="102" width="112" height="60" rx="3" fill="#3a2e1e"/>
-  <rect x="0"    y="166" width="144" height="54" rx="3" fill="#2e2418"/>
-  <rect x="148"  y="162" width="128" height="58" rx="3" fill="#3a2e1e"/>
-  <rect x="280"  y="166" width="158" height="54" rx="3" fill="#2a2014"/>
-  <rect x="442"  y="160" width="134" height="60" rx="3" fill="#302418"/>
-  <rect x="580"  y="164" width="148" height="56" rx="3" fill="#352a1a"/>
-  <rect x="732"  y="162" width="122" height="58" rx="3" fill="#2e2418"/>
-  <rect x="858"  y="166" width="162" height="54" rx="3" fill="#3a2e1e"/>
-  <rect x="1024" y="160" width="138" height="60" rx="3" fill="#2a2014"/>
-  <rect x="1166" y="164" width="154" height="56" rx="3" fill="#302418"/>
-  <rect x="1324" y="162" width="76"  height="58" rx="3" fill="#352a1a"/>
-  <rect x="0"    y="220" width="130" height="60" rx="3" fill="#332618"/>
-  <rect x="134"  y="216" width="160" height="64" rx="3" fill="#2e2418"/>
-  <rect x="298"  y="220" width="142" height="60" rx="3" fill="#3a2e1e"/>
-  <rect x="444"  y="214" width="128" height="66" rx="3" fill="#2a2014"/>
-  <rect x="576"  y="220" width="156" height="60" rx="3" fill="#302418"/>
-  <rect x="736"  y="216" width="138" height="64" rx="3" fill="#352a1a"/>
-  <rect x="878"  y="220" width="152" height="60" rx="3" fill="#2e2418"/>
-  <rect x="1034" y="214" width="126" height="66" rx="3" fill="#3a2e1e"/>
-  <rect x="1164" y="220" width="148" height="60" rx="3" fill="#332618"/>
-  <rect x="1316" y="216" width="84"  height="64" rx="3" fill="#2a2014"/>
-  <line x1="0" y1="102" x2="1400" y2="102" stroke="#1a1208" stroke-width="3"/>
-  <line x1="0" y1="164" x2="1400" y2="164" stroke="#1a1208" stroke-width="3"/>
-  <line x1="0" y1="220" x2="1400" y2="220" stroke="#1a1208" stroke-width="2.5"/>
-  <line x1="140"  y1="48"  x2="140"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="256"  y1="42"  x2="256"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="414"  y1="50"  x2="414"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="544"  y1="44"  x2="544"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="716"  y1="48"  x2="716"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="858"  y1="40"  x2="858"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1014" y1="46"  x2="1014" y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1136" y1="42"  x2="1136" y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1284" y1="48"  x2="1284" y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="120"  y1="102" x2="120"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="280"  y1="102" x2="280"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="416"  y1="102" x2="416"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="568"  y1="102" x2="568"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="694"  y1="102" x2="694"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="858"  y1="102" x2="858"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="998"  y1="102" x2="998"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1154" y1="102" x2="1154" y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1286" y1="102" x2="1286" y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="146"  y1="164" x2="146"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="278"  y1="164" x2="278"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="440"  y1="164" x2="440"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="578"  y1="164" x2="578"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="730"  y1="164" x2="730"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="856"  y1="164" x2="856"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1022" y1="164" x2="1022" y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1164" y1="164" x2="1164" y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1322" y1="164" x2="1322" y2="220" stroke="#1a1208" stroke-width="2"/>
-  <rect x="142"  y="42"  width="112" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="546"  y="48"  width="168" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="860"  y="46"  width="152" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="282"  y="106" width="132" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="696"  y="100" width="160" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="1000" y="100" width="152" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="148"  y="162" width="128" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="732"  y="162" width="122" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="1024" y="160" width="138" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-</svg>
 
 <div class="shell">
   <header class="header">
@@ -276,8 +186,32 @@
   <iframe class="page-frame" id="pageFrame" src="streams.html" title="Page content"></iframe>
 </div>
 
+<div class="mouse-overlay" id="mouseOverlay"></div>
 <canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
 <canvas id="eyeCanvas"   style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
+
+<script>
+// The mouse overlay captures raw mouse events for the animations (no latency, correct coords).
+// Clicks need to reach the iframe, so we forward them via postMessage and handle in the sub-page.
+const overlay = document.getElementById('mouseOverlay');
+const frame   = document.getElementById('pageFrame');
+
+overlay.addEventListener('click', e => {
+  frame.contentWindow.postMessage({ type: 'click', x: e.clientX, y: e.clientY }, '*');
+});
+
+overlay.addEventListener('dblclick', e => {
+  frame.contentWindow.postMessage({ type: 'dblclick', x: e.clientX, y: e.clientY }, '*');
+});
+
+overlay.addEventListener('scroll', e => {
+  frame.contentWindow.postMessage({ type: 'scroll', deltaY: e.deltaY }, '*');
+}, { passive: true });
+
+overlay.addEventListener('wheel', e => {
+  frame.contentWindow.postMessage({ type: 'wheel', deltaY: e.deltaY }, '*');
+}, { passive: true });
+</script>
 
 <script>
 // ── Site title ────────────────────────────────────────────────────────────────
@@ -311,18 +245,6 @@ document.getElementById('themeSelect').addEventListener('change', e => applyThem
 // Re-apply after iframe navigates to a new page
 document.getElementById('pageFrame').addEventListener('load', () => {
   applyTheme(localStorage.getItem('swamp-theme') || 'green');
-});
-
-// Receive forwarded mouse events from the iframe
-window.addEventListener('message', e => {
-  if (!e.data) return;
-  if (e.data.type === 'mousemove') {
-    const frame = document.getElementById('pageFrame');
-    const offsetY = frame ? frame.getBoundingClientRect().top : 0;
-    window.dispatchEvent(new MouseEvent('mousemove', { clientX: e.data.x, clientY: e.data.y + offsetY, bubbles: true }));
-  } else if (e.data.type === 'mouseleave') {
-    window.dispatchEvent(new MouseEvent('mouseleave', { bubbles: true }));
-  }
 });
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
