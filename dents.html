@@ -74,14 +74,13 @@ function applyTheme(key) {
 }
 
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
-window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });
-
-// Forward mouse events to parent
-document.addEventListener('mousemove', e => {
-  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
-});
-document.addEventListener('mouseleave', () => {
-  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
+window.addEventListener('message', e => {
+  if (!e.data) return;
+  if (e.data.type === 'theme') applyTheme(e.data.key);
+  else if (e.data.type === 'click') {
+    const el = document.elementFromPoint(e.data.x, e.data.y);
+    if (el) el.dispatchEvent(new MouseEvent('click', { clientX: e.data.x, clientY: e.data.y, bubbles: true }));
+  }
 });
 </script>
 </body>
