@@ -21,7 +21,7 @@ const ROACH_CONFIG = {
   wanderMaxFrames: 180, // maximum frames between direction changes
   sizeMin:      7,      // minimum body size (px)
   sizeMax:      11,     // maximum body size (px)
-  alpha:        0.55,   // opacity (0–1)
+  alpha:        1,   // opacity (0–1)
 };
 
 // ── Eyeballs ───────────────────────────────────────────────────────────────────
@@ -34,5 +34,5 @@ const EYE_CONFIG = {
   bounceDamp: 0.7,   // energy retained on wall bounce (0–1)
   sizeMin:    18,    // minimum eye radius (px)
   sizeMax:    25,    // maximum eye radius (px)
-  alpha:      0.45,   // opacity (0–1)
+  alpha:      1,   // opacity (0–1)
 };
