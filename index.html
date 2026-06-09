@@ -1087,7 +1087,7 @@ loadStreamList();
       y: rand(r, H - r),
       vx: 0, vy: 0,
       r,
-      rollAngle: 0,       // how far the iris has rolled around the sphere (radians)
+      rollAngle: rand(0, 0.3),       // how far the iris has rolled around the sphere (radians)
       rollAxis: rand(0, Math.PI * 2), // direction of rolling
     };
   }
