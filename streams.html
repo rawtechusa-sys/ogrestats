@@ -396,6 +396,18 @@ window.addEventListener('message', e => {
   if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
 });
 
+// Forward mouse events to parent so roaches and eyeballs stay interactive
+document.addEventListener('mousemove', e => {
+  try {
+    window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*');
+  } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try {
+    window.parent.postMessage({ type: 'mouseleave' }, '*');
+  } catch(err) {}
+});
+
 // ── Utilities ──────────────────────────────────────────────────────────────────
 async function fetchJSON(url) {
   const r = await fetch(url);
