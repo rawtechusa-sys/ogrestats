@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border-default);
+    overflow-y: auto;
+    padding: 12px 0;
+  }
+
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: var(--bg-surface); }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .sidebar-label {
+    font-family: 'Rye', serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    padding: 4px 16px 8px;
+    text-transform: uppercase;
+  }
+
+  .stream-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+  }
+
+  .stream-item:hover { background: rgba(100,180,60,0.07); border-left-color: rgba(100,180,60,0.3); }
+  .stream-item.active { background: rgba(100,180,60,0.12); border-left-color: var(--accent); }
+
+  .stream-item-date {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    color: var(--accent);
+    display: block;
+  }
+
+  .stream-item-time {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: block;
+    margin-top: 1px;
+  }
+
+  .stream-item-badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .badge-yt   { background: rgba(192,57,43,0.25);  color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+  .badge-tw   { background: rgba(123,79,166,0.25); color: #b090d0; border: 1px solid rgba(123,79,166,0.3); }
+  .badge-both { background: rgba(90,90,0,0.3);     color: #c8b060; border: 1px solid rgba(150,130,0,0.3); }
+
+  .sidebar-empty {
+    padding: 16px;
+    font-size: 15px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ── Main content ── */
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Stream title bar */
+  .stream-title-bar {
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-default);
+    padding: 10px 24px;
+    flex-shrink: 0;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+  }
+
+  .stream-title-text {
+    font-family: 'Rye', serif;
+    font-size: 16px;
+    color: var(--accent-bright);
+    letter-spacing: 0.03em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.9;
+  }
+
+  .main {
+    overflow-y: auto;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+
+  .main::-webkit-scrollbar { width: 4px; }
+  .main::-webkit-scrollbar-track { background: transparent; }
+  .main::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  /* ── Stat cards ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);
+    opacity: 0.4;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .stat-value {
+    font-family: 'Rye', serif;
+    font-size: 24px;
+    color: var(--accent-bright);
+    display: block;
+    line-height: 1.1;
+    text-shadow: 0 0 12px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+  }
+
+  .stat-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 3px;
+    display: block;
+    font-style: italic;
+  }
+
+  /* ── Chart ── */
+  .chart-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .chart-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    letter-spacing: 0.04em;
+  }
+
+  .chart-legend {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .legend-swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .legend-line   { width: 16px; height: 2px;  border-radius: 1px; flex-shrink: 0; }
+
+  .chart-wrap { position: relative; width: 100%; height: 280px; }
+
+  /* ── Donations ── */
+  .donations-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .donations-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .donations-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+
+  .donations-table th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .donations-table td {
+    padding: 8px 8px;
+    border-bottom: 1px solid rgba(100,180,60,0.07);
+    vertical-align: top;
+  }
+
+  .donations-table tr:last-child td { border-bottom: none; }
+  .donations-table tr:hover td { background: rgba(100,180,60,0.05); }
+
+  .type-badge {
+    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid;
+  }
+
+  .type-superchat  { color: #80c8a0; border-color: rgba(80,180,120,0.35);  background: rgba(40,120,70,0.2); }
+  .type-membership { color: #80c8a0; border-color: rgba(80,180,120,0.25);  background: rgba(30,100,60,0.15); }
+  .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35);  background: rgba(90,50,140,0.2); }
+  .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
+  .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
+
+  .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
+  .username   { color: var(--text-primary); }
+  .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+  .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* ── States ── */
+  .loading-state, .empty-state, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.6); }
+    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.2); }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <div class="loading-state" style="height:200px;">
+      <span class="loading-glyph">~</span>
+      <span>wading in...</span>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="stream-title-bar">
+      <span class="stream-title-text" id="streamTitle"></span>
+    </div>
+    <main class="main" id="main">
+      <div class="empty-state">
+        <span class="loading-glyph" style="font-size:40px;">☽</span>
+        <span>select a stream from the list</span>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script>
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+let currentChart = null;
+
+// ── Theme sync from parent ──────────────────────────────────────────────────
+const THEME_MAP = {
+  green: { file: 'themes/bog-moss.css',   chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',    chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css', chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',   chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
+};
+
+function applyTheme(key) {
+  const t = THEME_MAP[key] || THEME_MAP.green;
+  document.getElementById('theme-css').href = t.file;
+  if (currentChart) {
+    const ds = currentChart.data.datasets;
+    const donDs = ds.find(d => d.label === 'Donations');
+    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
+    currentChart.options.scales.yViewers.grid.color = t.chartGrid;
+    currentChart.options.scales.yViewers.ticks.color = t.chartTick;
+    currentChart.options.scales.x.grid.color = t.chartGrid;
+    currentChart.options.scales.x.ticks.color = t.chartTick;
+    currentChart.options.scales.yDonations.ticks.color = t.donTick;
+    currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
+    currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
+    currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
+    currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
+    currentChart.update('none');
+  }
+}
+
+// Apply saved theme on load, then listen for updates from parent
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });
+
+// ── Utilities ────────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
+  return r.json();
+}
+
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
+
+function parseJSONL(text) {
+  return text.trim().split('\n').filter(Boolean).map(l => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+}
+
+function fmtDate(ts) { return new Date(ts * 1000).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' }); }
+function fmtTime(ts) { return new Date(ts * 1000).toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' }); }
+function fmtDuration(secs) { const h = Math.floor(secs/3600), m = Math.floor((secs%3600)/60); return h > 0 ? `${h}h ${m}m` : `${m}m`; }
+function fmtElapsed(startTs, ts) {
+  const s = ts - startTs, h = Math.floor(s/3600), m = Math.floor((s%3600)/60);
+  return h > 0 ? `${h}:${String(m).padStart(2,'0')}:00` : `${m}:00`;
+}
+function fmtET(ms) { return new Date(ms).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }); }
+function escHtml(str) { return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function platformBadge(platforms) {
+  if (!platforms || !platforms.length) return '';
+  const yt = platforms.includes('youtube'), tw = platforms.includes('twitch');
+  if (yt && tw) return '<span class="stream-item-badge badge-both">YT + TW</span>';
+  if (yt) return '<span class="stream-item-badge badge-yt">YouTube</span>';
+  if (tw) return '<span class="stream-item-badge badge-tw">Twitch</span>';
+  return '';
+}
+
+// ── Stream list ───────────────────────────────────────────────────────────────
+async function loadStreamList() {
+  const sidebar = document.getElementById('sidebar');
+  try {
+    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
+    const streams = [...streamIds].sort((a, b) => b.localeCompare(a));
+
+    if (!streams.length) {
+      sidebar.innerHTML = '<div class="sidebar-empty">no streams yet</div>';
+      return;
+    }
+
+    sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
+
+    for (const [idx, id] of streams.entries()) {
+      const div = document.createElement('div');
+      div.className = 'stream-item' + (idx === 0 ? ' active' : '');
+      div.dataset.id = id;
+      div.innerHTML = `<span class="stream-item-date">—</span>`;
+
+      try {
+        const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
+        let datePart = '—', timePart = '';
+        if (meta.start_ts) {
+          const utcDate = new Date(meta.start_ts * 1000);
+          const ordinal = n => { const s = ['th','st','nd','rd'], v = n % 100; return n + (s[(v-20)%10] || s[v] || s[0]); };
+          datePart = utcDate.toLocaleDateString('en-US', { timeZone: 'America/New_York', month: 'long', day: 'numeric', year: 'numeric' })
+            .replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
+          timePart = utcDate.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+        }
+        div.innerHTML = `
+          <span class="stream-item-date">${datePart}</span>
+          <span class="stream-item-time">${timePart}</span>
+          ${platformBadge(meta.platforms)}
+          ${meta.end_ts && meta.start_ts ? `<span class="stream-item-time">${fmtDuration(meta.end_ts - meta.start_ts)}</span>` : ''}
+        `;
+      } catch {}
+
+      div.addEventListener('click', () => {
+        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+        div.classList.add('active');
+        loadStream(id);
+      });
+
+      sidebar.appendChild(div);
+    }
+
+    if (streams.length) loadStream(streams[0]);
+
+  } catch (e) {
+    sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
+  }
+}
+
+// ── Stream detail ─────────────────────────────────────────────────────────────
+async function loadStream(streamId) {
+  const main = document.getElementById('main');
+  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+  document.getElementById('streamTitle').textContent = '';
+
+  try {
+    const [meta, eventsText] = await Promise.all([
+      fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
+      fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
+    ]);
+
+    if (meta.title) document.getElementById('streamTitle').textContent = meta.title;
+
+    const events    = parseJSONL(eventsText);
+    const snapshots = events.filter(e => e.event === 'viewer_snapshot');
+    const donations = events.filter(e => e.event === 'donation');
+
+    const startTs   = meta.start_ts;
+    const endTs     = meta.end_ts;
+    const duration  = (endTs && startTs) ? endTs - startTs : null;
+    const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
+    const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
+    const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
+    const donCount  = donations.length;
+    const platforms = meta.platforms || [];
+    const hasYT = platforms.includes('youtube');
+    const hasTW = platforms.includes('twitch');
+
+    main.innerHTML = '';
+
+    // Stat cards
+    const grid = document.createElement('div');
+    grid.className = 'stat-grid';
+    const avgYT = snapshots.length ? Math.round(snapshots.reduce((s,x) => s+(x.youtube||0), 0) / snapshots.length) : 0;
+    const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s+(x.twitch ||0), 0) / snapshots.length) : 0;
+    function card(label, value, sub) {
+      return `<div class="stat-card"><span class="stat-label">${label}</span><span class="stat-value">${value}</span>${sub ? `<span class="stat-sub">${sub}</span>` : ''}</div>`;
+    }
+    grid.innerHTML =
+      card('Duration',     duration ? fmtDuration(duration) : '—', fmtDate(startTs)) +
+      card('Peak Viewers', peakTotal.toLocaleString(), hasYT && hasTW ? `YT ${peakYT} · TW ${peakTW}` : '') +
+      card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`) +
+      card('Avg Viewers',  (avgYT + avgTW).toLocaleString(), hasYT && hasTW ? `YT ${avgYT} · TW ${avgTW}` : '');
+    main.appendChild(grid);
+
+    // Chart
+    if (snapshots.length > 0 || donations.length > 0) {
+      const panel = document.createElement('div');
+      panel.className = 'chart-panel';
+      const legendItems = [];
+      if (hasYT) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#c0392b;"></span>YouTube viewers</span>`);
+      if (hasTW) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#7b4fa6;"></span>Twitch viewers</span>`);
+      legendItems.push(`<span class="legend-item"><span class="legend-swatch" style="background:var(--accent);"></span>Donations</span>`);
+      panel.innerHTML = `
+        <div class="chart-header">
+          <span class="chart-title">Viewers &amp; Donations</span>
+          <div class="chart-legend">${legendItems.join('')}</div>
+        </div>
+        <div class="chart-wrap"><canvas id="streamChart" role="img" aria-label="Viewer and donation chart"></canvas></div>`;
+      main.appendChild(panel);
+      buildChart(snapshots, donations, startTs, hasYT, hasTW);
+    }
+
+    // Donation log
+    if (donations.length > 0) {
+      const panel = document.createElement('div');
+      panel.className = 'donations-panel';
+      const rows = [...donations].sort((a,b) => a.ts - b.ts).map(d => {
+        const elapsed = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
+        const usd = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
+        const msg = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
+        return `<tr><td class="ts-cell">${elapsed}</td><td><span class="username">${escHtml(d.username)}</span></td><td><span class="type-badge type-${d.type}">${d.type}</span></td><td>${usd}</td><td>${msg}</td></tr>`;
+      }).join('');
+      panel.innerHTML = `
+        <div class="donations-title">Donation Log</div>
+        <table class="donations-table">
+          <thead><tr><th>Time</th><th>User</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+      main.appendChild(panel);
+    }
+
+  } catch (e) {
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>failed to load stream<br><small>${e.message}</small></span></div>`;
+  }
+}
+
+// ── Chart ─────────────────────────────────────────────────────────────────────
+function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
+  const ctx = document.getElementById('streamChart');
+  if (!ctx) return;
+
+  const snapshotData = snapshots.map(s => ({ x: s.ts * 1000, yt: s.youtube || 0, tw: s.twitch || 0 }));
+  const donationData = donations.map(d => ({ x: d.ts * 1000, y: d.amount_usd || 0 }));
+
+  const t = THEME_MAP[localStorage.getItem('swamp-theme') || 'green'] || THEME_MAP.green;
+  const datasets = [];
+
+  if (hasYT && snapshotData.length) datasets.push({
+    label: 'YouTube', data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
+    type: 'line', borderColor: '#c0392b', backgroundColor: 'rgba(192,57,43,0.08)',
+    borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, tension: 0.3, fill: true, yAxisID: 'yViewers',
+  });
+
+  if (hasTW && snapshotData.length) datasets.push({
+    label: 'Twitch', data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
+    type: 'line', borderColor: '#7b4fa6', backgroundColor: 'rgba(123,79,166,0.08)',
+    borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, tension: 0.3, fill: true, yAxisID: 'yViewers',
+  });
+
+  if (donationData.length) datasets.push({
+    label: 'Donations', data: donationData.map(d => ({ x: d.x, y: d.y })),
+    type: 'bar', backgroundColor: t.donBar, borderColor: t.donBorder,
+    borderWidth: 1, borderRadius: 2, barThickness: 8, yAxisID: 'yDonations',
+  });
+
+  currentChart = new Chart(ctx, {
+    type: 'bar',
+    data: { datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: t.tooltipBg, borderColor: t.tooltipBorder, borderWidth: 1,
+          titleColor: t.tooltipTitle, bodyColor: t.tooltipBody,
+          titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
+          bodyFont:  { family: "'Lora', serif", size: 13 },
+          callbacks: {
+            title: items => fmtET(items[0].parsed.x),
+            label: item => item.dataset.label === 'Donations'
+              ? ` $${item.parsed.y.toFixed(2)} donated`
+              : ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`,
+          }
+        }
+      },
+      scales: {
+        x: { type: 'linear', grid: { color: t.chartGrid }, ticks: { color: t.chartTick, font: { family: "'Share Tech Mono', monospace", size: 10 }, callback: v => fmtET(v), maxTicksLimit: 10 } },
+        yViewers:   { type: 'linear', position: 'left',  grid: { color: t.chartGrid }, ticks: { color: t.chartTick, font: { family: "'Share Tech Mono', monospace", size: 10 }, callback: v => v.toLocaleString(), maxTicksLimit: 6 } },
+        yDonations: { type: 'linear', position: 'right', grid: { drawOnChartArea: false }, ticks: { color: t.donTick, font: { family: "'Share Tech Mono', monospace", size: 10 }, callback: v => '$' + v.toFixed(0), maxTicksLimit: 5 } },
+      }
+    }
+  });
+}
+
+loadStreamList();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder {
+    text-align: center;
+    color: var(--text-muted);
+  }
+
+  .placeholder-glyph {
+    font-family: 'Rye', serif;
+    font-size: 48px;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+
+  .placeholder-label {
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+
+  .placeholder-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<div class="placeholder">
+  <span class="placeholder-glyph">⚔</span>
+  <div class="placeholder-label">Dents</div>
+  <div class="placeholder-sub">coming soon</div>
+</div>
+
+<script src="config.js"></script>
+<script>
+// Apply saved theme on load, then listen for updates from parent
+function applyTheme(key) {
+  const themes = {
+    green: 'themes/bog-moss.css',
+    amber: 'themes/firepit.css',
+    grey:  'themes/dead-stone.css',
+    void:  'themes/the-void.css',
+  };
+  document.getElementById('theme-css').href = themes[key] || themes.green;
+}
+
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });
+</script>
+</body>
+</html>

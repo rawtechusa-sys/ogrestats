@@ -1,6 +1,9 @@
 // ── Ogre World Frontend Config ─────────────────────────────────────────────────
 // Edit this file to configure the dashboard without touching index.html.
 
+// ── Site ───────────────────────────────────────────────────────────────────────
+const SITE_TITLE = 'Ogre World';
+
 // ── GitHub repo ────────────────────────────────────────────────────────────────
 const GITHUB_OWNER = 'rawtechusa-sys';
 const GITHUB_REPO  = 'ogrestats';
