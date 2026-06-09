@@ -26,7 +26,7 @@ const ROACH_CONFIG = {
 
 // ── Eyeballs ───────────────────────────────────────────────────────────────────
 const EYE_CONFIG = {
-  count:      5,     // number of eyeballs on screen
+  count:      7,     // number of eyeballs on screen
   bumpRadius: 25,    // px -- mouse contact radius
   bumpForce:  1,     // impulse multiplier on bump
   mouseVelMix: 0.05, // how much mouse velocity transfers to the eye on bump
