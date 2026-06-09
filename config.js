@@ -2,7 +2,7 @@
 // Edit this file to configure the dashboard without touching index.html.
 
 // ── Site ───────────────────────────────────────────────────────────────────────
-const SITE_TITLE = 'Ogre World';
+const SITE_TITLE = 'Ogre Watch';
 
 // ── GitHub repo ────────────────────────────────────────────────────────────────
 const GITHUB_OWNER = 'rawtechusa-sys';
