@@ -245,6 +245,10 @@ function renderTable() {
   }
 
   const sorted = [...tableData].sort((a, b) => {
+    if (sortKey === 'username') {
+      const cmp = a.username.localeCompare(b.username, undefined, { sensitivity: 'base' });
+      return sortAsc ? cmp : -cmp;
+    }
     const av = a[sortKey] ?? 0;
     const bv = b[sortKey] ?? 0;
     return sortAsc ? av - bv : bv - av;
@@ -274,6 +278,7 @@ function renderTable() {
       <td class="rank">${i + 1}</td>
       <td class="username">${escHtml(row.username)}</td>
       <td class="amount-total">${fmtUSD(row.total)}</td>
+      <td class="amount-type">${row.streams}</td>
       ${typeCells}
     </tr>`;
   }).join('');
@@ -282,8 +287,9 @@ function renderTable() {
     <thead>
       <tr>
         <th style="width:36px;"></th>
-        <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Donator${arrow('username')}</th>
+        <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Dent${arrow('username')}</th>
         <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
+        <th class="${thClass('streams')}" data-key="streams">Streams${arrow('streams')}</th>
         ${typeHeaders}
       </tr>
     </thead>
@@ -322,13 +328,15 @@ async function load() {
     for (const result of results) {
       if (result.status !== 'fulfilled') continue;
       const events = parseJSONL(result.value);
+      const seenInStream = new Set();
       for (const e of events) {
         if (e.event !== 'donation') continue;
-        const name = e.username || 'unknown';
+        const name = (e.username || 'unknown').replace(/^@+/, '');
         if (!byUser[name]) {
-          byUser[name] = { username: name, total: 0 };
+          byUser[name] = { username: name, total: 0, streams: 0 };
           for (const t of TYPES) byUser[name][t.key] = 0;
         }
+        seenInStream.add(name);
         const u = byUser[name];
         if (e.type === 'membership') {
           u.membership += 2;
@@ -337,6 +345,9 @@ async function load() {
           u[e.type] = (u[e.type] || 0) + e.amount_usd;
           u.total   += e.amount_usd;
         }
+      }
+      for (const name of seenInStream) {
+        if (byUser[name]) byUser[name].streams += 1;
       }
     }
 
