@@ -247,7 +247,9 @@ if (savedTab) {
 </script>
 
 <script>
-// ── Roaches ───────────────────────────────────────────────────────────────────
+
+<canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;"></canvas>
+<script>
 (function() {
   const canvas = document.getElementById('roachCanvas');
   const ctx = canvas.getContext('2d');
@@ -296,28 +298,65 @@ if (savedTab) {
     ctx.fillStyle   = `rgba(82,45,12,${alpha})`;
     ctx.lineWidth   = 0.8;
 
+    // 3 legs each side
     const legPositions = [-s*0.6, 0, s*0.55];
     for (let i = 0; i < 3; i++) {
       const lx = legPositions[i];
       const swing = legSwing * (i % 2 === 0 ? 1 : -1);
-      ctx.beginPath(); ctx.moveTo(-s*0.35, lx); ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo( s*0.35, lx); ctx.lineTo( s*1.1, lx - s*0.3 - swing * s); ctx.stroke();
+      // left leg
+      ctx.beginPath();
+      ctx.moveTo(-s*0.35, lx);
+      ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s);
+      ctx.stroke();
+      // right leg
+      ctx.beginPath();
+      ctx.moveTo(s*0.35, lx);
+      ctx.lineTo(s*1.1, lx - s*0.3 - swing * s);
+      ctx.stroke();
     }
 
+    // antennae
     const antSwing = Math.sin(t * 0.12 + r.legPhase) * 0.15;
-    ctx.beginPath(); ctx.moveTo(-s*0.2, -s*1.1); ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo( s*0.2, -s*1.1); ctx.quadraticCurveTo( s*0.6 - antSwing*s, -s*2.2,  s*0.3 - antSwing*s*1.5, -s*3.0); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(-s*0.2, -s*1.1);
+    ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(s*0.2, -s*1.1);
+    ctx.quadraticCurveTo(s*0.6 - antSwing*s, -s*2.2, s*0.3 - antSwing*s*1.5, -s*3.0);
+    ctx.stroke();
 
-    ctx.beginPath(); ctx.ellipse(0,  s*0.5,  s*0.45, s*0.85, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
-    ctx.beginPath(); ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
-    ctx.beginPath(); ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
-    ctx.beginPath(); ctx.ellipse(0, -s*1.5,  s*0.2,  s*0.22, 0, 0, Math.PI*2); ctx.fill();
+    // body -- abdomen (oval)
+    ctx.beginPath();
+    ctx.ellipse(0, s*0.5, s*0.45, s*0.85, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // thorax
+    ctx.beginPath();
+    ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // pronotum shield (head cover)
+    ctx.beginPath();
+    ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    // head
+    ctx.beginPath();
+    ctx.ellipse(0, -s*1.5, s*0.2, s*0.22, 0, 0, Math.PI*2);
+    ctx.fill();
+
     ctx.restore();
   }
 
   function tick(t) {
     ctx.clearRect(0, 0, W, H);
+
     for (const r of roaches) {
+      // flee from mouse
       const dx = r.x - mouse.x;
       const dy = r.y - mouse.y;
       const dist = Math.sqrt(dx*dx + dy*dy);
@@ -332,6 +371,8 @@ if (savedTab) {
       } else {
         r.fleeing = false;
         r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel);
+
+        // idle wander
         r.wanderTimer--;
         if (r.wanderTimer <= 0) {
           r.turnSpeed = rand(ROACH_CONFIG.turnSpeedMin, ROACH_CONFIG.turnSpeedMax) * (Math.random() < 0.5 ? 1 : -1);
@@ -343,6 +384,7 @@ if (savedTab) {
       r.x += Math.cos(r.angle) * r.speed;
       r.y += Math.sin(r.angle) * r.speed;
 
+      // wrap around edges
       if (r.x < -20)  r.x = W + 20;
       if (r.x > W+20) r.x = -20;
       if (r.y < -20)  r.y = H + 20;
@@ -350,14 +392,16 @@ if (savedTab) {
 
       drawRoach(r, t);
     }
+
     requestAnimationFrame(tick);
   }
+
   requestAnimationFrame(tick);
 })();
 </script>
 
+<canvas id="eyeCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;"></canvas>
 <script>
-// ── Eyeballs ──────────────────────────────────────────────────────────────────
 (function() {
   const canvas = document.getElementById('eyeCanvas');
   const ctx = canvas.getContext('2d');
@@ -369,6 +413,7 @@ if (savedTab) {
   function resize() {
     W = canvas.width  = window.innerWidth;
     H = canvas.height = window.innerHeight;
+    // Reposition any eyes that are now out of bounds
     for (const e of eyes) {
       if (!e) continue;
       e.x = Math.min(Math.max(e.x, e.r), W - e.r);
@@ -378,6 +423,7 @@ if (savedTab) {
 
   function rand(a, b) { return a + Math.random() * (b - a); }
 
+  // Initialise with placeholder array, populated after resize sets W/H
   const eyes = [];
 
   function makeEye() {
@@ -387,8 +433,8 @@ if (savedTab) {
       y: rand(r, H - r),
       vx: 0, vy: 0,
       r,
-      rollAngle: rand(0, 0.3),
-      rollAxis: rand(0, Math.PI * 2),
+      rollAngle: rand(0, 0.3),       // how far the iris has rolled around the sphere (radians)
+      rollAxis: rand(0, Math.PI * 2), // direction of rolling
     };
   }
 
@@ -418,26 +464,40 @@ if (savedTab) {
     ctx.lineWidth = 0.8;
     ctx.stroke();
 
+    // Rolling illusion -- iris and pupil clipped to sclera so they disappear
+    // as they roll behind the eye. cos(rollAngle) drives depth: when it goes
+    // negative the iris is on the back of the sphere, clip hides it naturally.
     const irisR = r * 0.52;
+    // Iris travels across the sphere face along the roll axis
+    // sin(rollAngle) = screen-space offset, cos(rollAngle) = depth (+ = toward us)
     const screenOffset = Math.sin(rollAngle) * r * 0.85;
     const ix = Math.cos(rollAxis) * screenOffset;
     const iy = Math.sin(rollAxis) * screenOffset;
-    const depth = Math.cos(rollAngle);
+
+    const depth = Math.cos(rollAngle); // +1 = front center, 0 = edge, -1 = behind
+
+    // Squish the iris ALONG the roll axis (travel direction) as it rolls to the edge
+    // perpendicular axis stays full size -- this gives the correct globe-spinning look
     const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
     const scaleAcrossAxis = 1.0;
+    
+    // irisAngle rotates the ellipse so the squish aligns with the travel direction
     const irisAngle = rollAxis;
-
+    
+    // Only draw iris/pupil when they're on the front hemisphere
     if (depth > 0) {
+        
       // Clip everything below to the sclera circle
       ctx.save();
       ctx.beginPath();
       ctx.arc(0, 0, r, 0, Math.PI * 2);
       ctx.clip();
-
+      
       // Blood vessels clipped to sclera
       ctx.save();
       ctx.translate(ix, iy);
       ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      //ctx.rotate(irisAngle);
       ctx.beginPath();
       ctx.arc(0, 0, r, 0, Math.PI * 2);
       ctx.clip();
@@ -446,19 +506,19 @@ if (savedTab) {
         ctx.beginPath();
         ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
         ctx.quadraticCurveTo(Math.cos(a * 12) * r * 0.64, Math.sin(a * 12) * r * 0.64, 0, 0);
-        ctx.strokeStyle = `rgba(180,40,50,${alpha * (0.1 + 0.2 * Math.random())})`;
+        ctx.strokeStyle = `rgba(180,40,50,${alpha}*(0.1+0.2*Math.random()))`;
         ctx.lineWidth = 0.2 + 0.3 * Math.random();
         ctx.stroke();
       }
       ctx.restore();
-
+      
       // Iris
       ctx.save();
       ctx.translate(ix, iy);
       ctx.beginPath();
       ctx.ellipse(0, 0,
-        irisR * scaleAlongAxis,
-        irisR * scaleAcrossAxis,
+        irisR * scaleAlongAxis,  // squished along travel axis
+        irisR * scaleAcrossAxis, // full size across travel axis
         irisAngle, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
       ctx.fill();
@@ -468,12 +528,19 @@ if (savedTab) {
       for (let i = 0; i < 10; i++) {
         const a = (i / 10) * Math.PI * 2;
         ctx.beginPath();
-        ctx.moveTo(Math.cos(a) * irisR * scaleAlongAxis  * 0.3, Math.sin(a) * irisR * scaleAcrossAxis * 0.3);
-        ctx.lineTo(Math.cos(a) * irisR * scaleAlongAxis  * 0.92, Math.sin(a) * irisR * scaleAcrossAxis * 0.92);
+        ctx.moveTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.3,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.3
+        );
+        ctx.lineTo(
+          Math.cos(a) * irisR * scaleAlongAxis  * 0.92,
+          Math.sin(a) * irisR * scaleAcrossAxis * 0.92
+        );
         ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
         ctx.lineWidth = 0.6;
         ctx.stroke();
       }
+      
       ctx.restore();
 
       // Pupil
@@ -488,18 +555,22 @@ if (savedTab) {
       ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
       ctx.fill();
       ctx.restore();
-
       ctx.restore(); // end sclera clip
     }
-
+    
     // Specular highlight -- fixed on sclera, drawn outside clip so always visible
     ctx.beginPath();
     ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
     ctx.fill();
+    
+    ctx.restore();
 
     ctx.restore();
-  }
+   
+  } 
+  
+   
 
   function tick() {
     ctx.clearRect(0, 0, W, H);
@@ -530,10 +601,12 @@ if (savedTab) {
         const dist = Math.sqrt(dx * dx + dy * dy);
         const minDist = a.r + b.r;
         if (dist < minDist && dist > 0) {
+          // Separate
           const overlap = (minDist - dist) / 2;
           const nx = dx / dist, ny = dy / dist;
           a.x -= nx * overlap; a.y -= ny * overlap;
           b.x += nx * overlap; b.y += ny * overlap;
+          // Exchange velocity components along collision normal
           const dvx = a.vx - b.vx, dvy = a.vy - b.vy;
           const dot = dvx * nx + dvy * ny;
           if (dot > 0) {
@@ -545,19 +618,24 @@ if (savedTab) {
     }
 
     for (const e of eyes) {
+      // Friction
       e.vx *= FRICTION;
       e.vy *= FRICTION;
+
+      // Stop micro-drift
       if (Math.abs(e.vx) < 0.01) e.vx = 0;
       if (Math.abs(e.vy) < 0.01) e.vy = 0;
 
       e.x += e.vx;
       e.y += e.vy;
 
-      if (e.x - e.r < 0)    { e.x = e.r;     e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
-      if (e.x + e.r > W)    { e.x = W - e.r;  e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
-      if (e.y - e.r < 0)    { e.y = e.r;     e.vy =  Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
-      if (e.y + e.r > H)    { e.y = H - e.r;  e.vy = -Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+      // Wall bounce
+      if (e.x - e.r < 0)    { e.x = e.r;    e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.x + e.r > W)    { e.x = W - e.r; e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.y - e.r < 0)    { e.y = e.r;    e.vy =  Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+      if (e.y + e.r > H)    { e.y = H - e.r; e.vy = -Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
 
+      // Advance roll: angle = arc_length / radius, axis = direction of travel
       const speed = Math.sqrt(e.vx * e.vx + e.vy * e.vy);
       if (speed > 0.01) {
         e.rollAxis = Math.atan2(e.vy, e.vx);
@@ -567,13 +645,15 @@ if (savedTab) {
       drawEye(e);
     }
 
+    // Store previous mouse for velocity
     mouse.px = mouse.x; mouse.py = mouse.y;
+
     requestAnimationFrame(tick);
   }
 
   requestAnimationFrame(tick);
 })();
 </script>
-
+ 
 </body>
 </html>
