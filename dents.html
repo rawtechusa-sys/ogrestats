@@ -17,72 +17,339 @@
     color: var(--text-primary);
     font-family: 'Lora', serif;
     font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  .page {
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 16px;
   }
 
-  .placeholder {
-    text-align: center;
-    color: var(--text-muted);
-  }
-
-  .placeholder-glyph {
-    font-family: 'Rye', serif;
-    font-size: 48px;
-    color: var(--accent);
-    display: block;
-    margin-bottom: 16px;
-    opacity: 0.5;
-  }
-
-  .placeholder-label {
+  .page-title {
     font-family: 'Rye', serif;
     font-size: 20px;
-    color: var(--text-muted);
+    color: var(--accent-bright);
     letter-spacing: 0.06em;
+    flex-shrink: 0;
   }
 
-  .placeholder-sub {
+  .table-wrap {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+  }
+
+  .table-wrap::-webkit-scrollbar { width: 4px; }
+  .table-wrap::-webkit-scrollbar-track { background: transparent; }
+  .table-wrap::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
     font-size: 14px;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--bg-surface);
+  }
+
+  thead::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--border-default);
+  }
+
+  th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  th:hover { color: var(--accent); }
+
+  th.sorted { color: var(--accent-bright); }
+
+  .sort-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 0.7;
+    font-style: normal;
+  }
+
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid rgba(100,180,60,0.06);
+    vertical-align: middle;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr:hover td { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.04); }
+
+  .rank {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: right;
+    width: 36px;
+  }
+
+  .username {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+  }
+
+  .amount-total {
+    font-family: 'Rye', serif;
+    font-size: 16px;
+    color: var(--accent-bright);
+    text-shadow: 0 0 10px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+    white-space: nowrap;
+  }
+
+  .amount-type {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .amount-type.zero { opacity: 0.2; }
+
+  .loading-state, .empty-state, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 12px;
     color: var(--text-muted);
     font-style: italic;
-    margin-top: 8px;
-    opacity: 0.6;
+  }
+
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.6; }
   }
 </style>
 </head>
 <body>
 
-<div class="placeholder">
-  <span class="placeholder-glyph">⚔</span>
-  <div class="placeholder-label">Dents</div>
-  <div class="placeholder-sub">coming soon</div>
+<div class="page">
+  <div class="page-title">Dents</div>
+  <div class="table-wrap" id="tableWrap">
+    <div class="loading-state">
+      <span class="loading-glyph">~</span>
+      <span>tallying the damage...</span>
+    </div>
+  </div>
 </div>
 
 <script src="config.js"></script>
 <script>
-// Apply saved theme on load, then listen for updates from parent
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+
+// Donation types we track and their display labels
+const TYPES = [
+  { key: 'superchat',  label: 'Superchat' },
+  { key: 'bits',       label: 'Bits' },
+  { key: 'giftsub',    label: 'Gift Sub' },
+  { key: 'sub',        label: 'Sub' },
+  { key: 'membership', label: 'Membership' },
+];
+
+// Theme
 function applyTheme(key) {
   const themes = {
     green: 'themes/bog-moss.css',
     amber: 'themes/firepit.css',
     grey:  'themes/dead-stone.css',
     void:  'themes/the-void.css',
+    white: 'themes/onion-layers.css',
   };
   document.getElementById('theme-css').href = themes[key] || themes.green;
 }
-
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });
 
-// Forward mouse position to parent for roach/eye animations
+// Mouse forwarding
 document.addEventListener('mousemove', e => {
   try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
 });
 document.addEventListener('mouseleave', () => {
   try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
 });
+
+// Fetch helpers
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.json();
+}
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
+function parseJSONL(text) {
+  return text.trim().split('\n').filter(Boolean).map(l => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// Sort state
+let sortKey   = 'total';
+let sortAsc   = false;
+let tableData = [];
+
+function fmtUSD(n) {
+  return n > 0 ? '$' + n.toFixed(2) : '—';
+}
+
+function renderTable() {
+  const wrap = document.getElementById('tableWrap');
+  if (!tableData.length) {
+    wrap.innerHTML = '<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no donations recorded yet</span></div>';
+    return;
+  }
+
+  const sorted = [...tableData].sort((a, b) => {
+    const av = a[sortKey] ?? 0;
+    const bv = b[sortKey] ?? 0;
+    return sortAsc ? av - bv : bv - av;
+  });
+
+  function arrow(key) {
+    if (key !== sortKey) return '';
+    return `<span class="sort-arrow">${sortAsc ? '↑' : '↓'}</span>`;
+  }
+
+  function thClass(key) {
+    return key === sortKey ? 'sorted' : '';
+  }
+
+  const typeHeaders = TYPES.map(t =>
+    `<th class="${thClass(t.key)}" data-key="${t.key}">${escHtml(t.label)}${arrow(t.key)}</th>`
+  ).join('');
+
+  const rows = sorted.map((row, i) => {
+    const typeCells = TYPES.map(t => {
+      const v = row[t.key] || 0;
+      const display = fmtUSD(v);
+      return `<td class="amount-type${v === 0 ? ' zero' : ''}">${display}</td>`;
+    }).join('');
+
+    return `<tr>
+      <td class="rank">${i + 1}</td>
+      <td class="username">${escHtml(row.username)}</td>
+      <td class="amount-total">${fmtUSD(row.total)}</td>
+      ${typeCells}
+    </tr>`;
+  }).join('');
+
+  wrap.innerHTML = `<table>
+    <thead>
+      <tr>
+        <th style="width:36px;"></th>
+        <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Donator${arrow('username')}</th>
+        <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
+        ${typeHeaders}
+      </tr>
+    </thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  // Sort on header click
+  wrap.querySelectorAll('th[data-key]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if (key === sortKey) {
+        sortAsc = !sortAsc;
+      } else {
+        sortKey = key;
+        // Username sorts a→z by default, numbers sort greatest first
+        sortAsc = key === 'username';
+      }
+      renderTable();
+    });
+  });
+}
+
+async function load() {
+  const wrap = document.getElementById('tableWrap');
+  try {
+    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
+
+    // Fetch all streams in parallel
+    const results = await Promise.allSettled(
+      streamIds.map(id => fetchText(`${RAW}/data/streams/${id}/events.jsonl`))
+    );
+
+    // Aggregate by username
+    const byUser = {};
+
+    for (const result of results) {
+      if (result.status !== 'fulfilled') continue;
+      const events = parseJSONL(result.value);
+      for (const e of events) {
+        if (e.event !== 'donation') continue;
+        const name = e.username || 'unknown';
+        if (!byUser[name]) {
+          byUser[name] = { username: name, total: 0 };
+          for (const t of TYPES) byUser[name][t.key] = 0;
+        }
+        const u = byUser[name];
+        if (e.type === 'membership') {
+          u.membership += 2;
+          u.total      += 2;
+        } else if (e.amount_usd != null) {
+          u[e.type] = (u[e.type] || 0) + e.amount_usd;
+          u.total   += e.amount_usd;
+        }
+      }
+    }
+
+    tableData = Object.values(byUser).filter(u => u.total > 0);
+
+    renderTable();
+
+  } catch (e) {
+    wrap.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load dents<br><small>${e.message}</small></span></div>`;
+  }
+}
+
+load();
 </script>
 </body>
 </html>
