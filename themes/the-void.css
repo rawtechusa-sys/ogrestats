@@ -1,7 +1,7 @@
 :root {
   --bg-base:            #000000;
-  --bg-surface:         #0a0a0a;
-  --bg-panel:           #111111;
+  --bg-surface:         #0a0a0ab0;
+  --bg-panel:           #111111b0;
   --bg-subtle:          #1c1c1c;
   --bg-raised:          #282828;
   --text-primary:       #f0f0f0;
