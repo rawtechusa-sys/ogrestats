@@ -149,16 +149,6 @@
     border: none;
     display: block;
     background: transparent;
-    pointer-events: none;
-  }
-
-  /* Transparent overlay -- captures mouse for animations, passes clicks to iframe via JS */
-  .mouse-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    pointer-events: all;
-    background: transparent;
   }
 
 </style>
@@ -186,31 +176,40 @@
   <iframe class="page-frame" id="pageFrame" src="streams.html" title="Page content"></iframe>
 </div>
 
-<div class="mouse-overlay" id="mouseOverlay"></div>
 <canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
 <canvas id="eyeCanvas"   style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
 
 <script>
-// The mouse overlay captures raw mouse events for the animations (no latency, correct coords).
-// Clicks need to reach the iframe, so we forward them via postMessage and handle in the sub-page.
-const overlay = document.getElementById('mouseOverlay');
-const frame   = document.getElementById('pageFrame');
+// Shared mouse state -- written by both native events (header/tab area)
+// and postMessage from the iframe. Animation loops read _mouse directly.
+window._mouse = { x: -999, y: -999, px: -999, py: -999 };
 
-overlay.addEventListener('click', e => {
-  frame.contentWindow.postMessage({ type: 'click', x: e.clientX, y: e.clientY }, '*');
+window.addEventListener('mousemove', e => {
+  window._mouse.px = window._mouse.x;
+  window._mouse.py = window._mouse.y;
+  window._mouse.x = e.clientX;
+  window._mouse.y = e.clientY;
+});
+window.addEventListener('mouseleave', () => {
+  window._mouse.x = -999; window._mouse.y = -999;
 });
 
-overlay.addEventListener('dblclick', e => {
-  frame.contentWindow.postMessage({ type: 'dblclick', x: e.clientX, y: e.clientY }, '*');
+// Receive forwarded mouse coords from iframe, offset by iframe top
+window.addEventListener('message', e => {
+  if (!e.data) return;
+  if (e.data.type === 'mousemove') {
+    const frame = document.getElementById('pageFrame');
+    const offsetY = frame ? frame.getBoundingClientRect().top : 0;
+    window._mouse.px = window._mouse.x;
+    window._mouse.py = window._mouse.y;
+    window._mouse.x = e.data.x;
+    window._mouse.y = e.data.y + offsetY;
+  } else if (e.data.type === 'mouseleave') {
+    window._mouse.x = -999; window._mouse.y = -999;
+  } else if (e.data.type === 'theme') {
+    applyTheme(e.data.key);
+  }
 });
-
-overlay.addEventListener('scroll', e => {
-  frame.contentWindow.postMessage({ type: 'scroll', deltaY: e.deltaY }, '*');
-}, { passive: true });
-
-overlay.addEventListener('wheel', e => {
-  frame.contentWindow.postMessage({ type: 'wheel', deltaY: e.deltaY }, '*');
-}, { passive: true });
 </script>
 
 <script>
@@ -275,7 +274,6 @@ if (savedTab) {
   const canvas = document.getElementById('roachCanvas');
   const ctx = canvas.getContext('2d');
   let W, H;
-  const mouse = { x: -999, y: -999 };
   const FLEE_RADIUS = ROACH_CONFIG.fleeRadius;
   const ROACH_COUNT = ROACH_CONFIG.count;
 
@@ -285,8 +283,6 @@ if (savedTab) {
   }
   resize();
   window.addEventListener('resize', resize);
-  window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
 
   function rand(a, b) { return a + Math.random() * (b - a); }
 
@@ -341,12 +337,11 @@ if (savedTab) {
   function tick(t) {
     ctx.clearRect(0, 0, W, H);
     for (const r of roaches) {
-      const dx = r.x - mouse.x;
-      const dy = r.y - mouse.y;
+      const dx = r.x - window._mouse.x;
+      const dy = r.y - window._mouse.y;
       const dist = Math.sqrt(dx*dx + dy*dy);
 
-      if (dist < FLEE_RADIUS) {
-        r.fleeing = true;
+      if (dist < FLEE_RADIUS) {        r.fleeing = true;
         const fleeAngle = Math.atan2(dy, dx);
         const diff = fleeAngle - r.angle;
         const wrap = ((diff + Math.PI * 3) % (Math.PI * 2)) - Math.PI;
@@ -385,7 +380,6 @@ if (savedTab) {
   const canvas = document.getElementById('eyeCanvas');
   const ctx = canvas.getContext('2d');
   let W, H;
-  const mouse = { x: -999, y: -999, px: -999, py: -999 };
   const BUMP_RADIUS = EYE_CONFIG.bumpRadius;
   const FRICTION    = EYE_CONFIG.friction;
 
@@ -416,11 +410,6 @@ if (savedTab) {
   }
 
   window.addEventListener('resize', resize);
-  window.addEventListener('mousemove', e => {
-    mouse.px = mouse.x; mouse.py = mouse.y;
-    mouse.x = e.clientX; mouse.y = e.clientY;
-  });
-  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
 
   resize();
   for (let i = 0; i < EYE_CONFIG.count; i++) eyes.push(makeEye());
@@ -528,12 +517,12 @@ if (savedTab) {
     ctx.clearRect(0, 0, W, H);
 
     // Mouse bump
-    if (mouse.x > -900) {
-      const mdx = mouse.x - mouse.px;
-      const mdy = mouse.y - mouse.py;
+    if (window._mouse.x > -900) {
+      const mdx = window._mouse.x - window._mouse.px;
+      const mdy = window._mouse.y - window._mouse.py;
       for (const e of eyes) {
-        const dx = e.x - mouse.x;
-        const dy = e.y - mouse.y;
+        const dx = e.x - window._mouse.x;
+        const dy = e.y - window._mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < BUMP_RADIUS + e.r) {
           const force = (BUMP_RADIUS + e.r - dist) / (BUMP_RADIUS + e.r) * EYE_CONFIG.bumpForce;
@@ -590,7 +579,6 @@ if (savedTab) {
       drawEye(e);
     }
 
-    mouse.px = mouse.x; mouse.py = mouse.y;
     requestAnimationFrame(tick);
   }
 
