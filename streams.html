@@ -393,17 +393,15 @@ function applyTheme(key) {
 // Apply theme from localStorage on load, then listen for live updates from parent
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => {
-  if (!e.data) return;
-  if (e.data.type === 'theme') {
-    applyTheme(e.data.key);
-  } else if (e.data.type === 'click') {
-    const el = document.elementFromPoint(e.data.x, e.data.y - document.documentElement.getBoundingClientRect().top);
-    if (el) el.dispatchEvent(new MouseEvent('click', { clientX: e.data.x, clientY: e.data.y, bubbles: true }));
-  } else if (e.data.type === 'wheel') {
-    const el = document.elementFromPoint(e.data.x, e.data.y);
-    const scrollable = el && el.closest('.main, .sidebar');
-    if (scrollable) scrollable.scrollTop += e.data.deltaY;
-  }
+  if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
+});
+
+// Forward mouse position to parent for roach/eye animations
+document.addEventListener('mousemove', e => {
+  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
 });
 
 // ── Utilities ──────────────────────────────────────────────────────────────────
