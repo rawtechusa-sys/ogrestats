@@ -1155,11 +1155,11 @@ loadStreamList();
       ctx.beginPath();
       ctx.arc(0, 0, r, 0, Math.PI * 2);
       ctx.clip();
-      for (let i = 0; i < 15; i++) {
-        const a = (i / 15) * Math.PI * 2 + 0.8;
+      for (let i = 0; i < 30; i++) {
+        const a = (i / 30) * Math.PI * 2 + 0.8;
         ctx.beginPath();
         ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
-        ctx.quadraticCurveTo(Math.cos(a * 2) * r * 0.64, Math.sin(a * 2) * r * 0.64, 0, 0);
+        ctx.quadraticCurveTo(Math.cos(a * 12) * r * 0.64, Math.sin(a * 12) * r * 0.64, 0, 0);
         ctx.strokeStyle = `rgba(180,40,50,${alpha}*(0.1+0.2*Math.random()))`;
         ctx.lineWidth = 0.2 + 0.3 * Math.random();
         ctx.stroke();
