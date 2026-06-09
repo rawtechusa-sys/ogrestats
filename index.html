@@ -317,7 +317,9 @@ document.getElementById('pageFrame').addEventListener('load', () => {
 window.addEventListener('message', e => {
   if (!e.data) return;
   if (e.data.type === 'mousemove') {
-    window.dispatchEvent(new MouseEvent('mousemove', { clientX: e.data.x, clientY: e.data.y, bubbles: true }));
+    const frame = document.getElementById('pageFrame');
+    const offsetY = frame ? frame.getBoundingClientRect().top : 0;
+    window.dispatchEvent(new MouseEvent('mousemove', { clientX: e.data.x, clientY: e.data.y + offsetY, bubbles: true }));
   } else if (e.data.type === 'mouseleave') {
     window.dispatchEvent(new MouseEvent('mouseleave', { bubbles: true }));
   }
