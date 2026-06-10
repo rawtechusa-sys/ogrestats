@@ -238,7 +238,30 @@
   .legend-swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
   .legend-line   { width: 16px; height: 2px;  border-radius: 1px; flex-shrink: 0; }
 
-  .chart-wrap { position: relative; width: 100%; height: 280px; }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .legend-item:hover { color: var(--accent); }
+  .legend-item.hidden { opacity: 0.35; }
+
+  .legend-divider {
+    width: 1px;
+    height: 14px;
+    background: var(--border-default);
+    flex-shrink: 0;
+    margin: 0 2px;
+  }
+
+  .chart-wrap { position: relative; width: 100%; height: 300px; }
 
   /* ── Donation table ── */
   .donations-panel {
@@ -375,7 +398,7 @@ function applyTheme(key) {
   document.getElementById('theme-css').href = t.file;
   if (currentChart) {
     const ds = currentChart.data.datasets;
-    const donDs = ds.find(d => d.label === 'Donations');
+    const donDs = ds.find(d => d.label === DS.DONATIONS);
     if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
     currentChart.options.scales.yViewers.ticks.color = t.chartTick;
@@ -588,22 +611,22 @@ async function loadStream(streamId) {
       const panel = document.createElement('div');
       panel.className = 'chart-panel';
 
-      const legendItems = [];
-      if (hasYT) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#c0392b;"></span>YouTube viewers</span>`);
-      if (hasTW) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#7b4fa6;"></span>Twitch viewers</span>`);
-      legendItems.push(`<span class="legend-item"><span class="legend-swatch" style="background:#c47d2a;"></span>Donations</span>`);
+      const hasChatRate = snapshots.some(s =>
+        s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
+      );
 
       panel.innerHTML = `
         <div class="chart-header">
           <span class="chart-title">Viewers &amp; Donations</span>
-          <div class="chart-legend">${legendItems.join('')}</div>
+          <div class="chart-legend" id="chartLegend"></div>
         </div>
         <div class="chart-wrap">
-          <canvas id="streamChart" role="img" aria-label="Line chart of viewer counts over stream duration with donation bars overlaid">No chart data available.</canvas>
+          <canvas id="streamChart" role="img" aria-label="Viewer counts, donations and chat rate over stream duration"></canvas>
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYT, hasTW);
+      buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate);
+      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0);
     }
 
     // ── Donation log ──
@@ -642,76 +665,130 @@ async function loadStream(streamId) {
 }
 
 // ── Chart ──────────────────────────────────────────────────────────────────────
-function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
+
+// Dataset label constants -- used to match datasets in legend toggle and theme update
+const DS = {
+  YT_VIEWERS:  'YouTube Viewers',
+  TW_VIEWERS:  'Twitch Viewers',
+  DONATIONS:   'Donations',
+  YT_CHAT:     'YouTube Chat',
+  TW_CHAT:     'Twitch Chat',
+  TOTAL_CHAT:  'Total Chat',
+};
+
+function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
   if (!ctx) return;
 
   const snapshotData = snapshots.map(s => ({
-    x: s.ts * 1000,
-    yt: s.youtube || 0,
-    tw: s.twitch  || 0,
+    x:       s.ts * 1000,
+    yt:      s.youtube || 0,
+    tw:      s.twitch  || 0,
+    ytMpm:   s.youtube_messages_per_minute ?? null,
+    twMpm:   s.twitch_messages_per_minute  ?? null,
   }));
 
-  const donationData = donations.map(d => ({
-    x: d.ts * 1000,
-    y: d.amount_usd || 0,
-  }));
+  const donationData = donations.map(d => ({ x: d.ts * 1000, y: d.amount_usd || 0 }));
 
   function fmtET(ms) {
     return new Date(ms).toLocaleTimeString('en-US', {
-      timeZone: 'America/New_York',
-      hour: 'numeric', minute: '2-digit',
+      timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit',
     });
   }
 
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
   const datasets = [];
 
+  // ── Viewer series ──
   if (hasYT && snapshotData.length > 0) {
     datasets.push({
-      label: 'YouTube',
+      label: DS.YT_VIEWERS,
       data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
       type: 'line',
       borderColor: '#c0392b',
       backgroundColor: 'rgba(192,57,43,0.08)',
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 4,
-      tension: 0.3,
-      fill: true,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
   }
 
   if (hasTW && snapshotData.length > 0) {
     datasets.push({
-      label: 'Twitch',
+      label: DS.TW_VIEWERS,
       data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
       type: 'line',
       borderColor: '#7b4fa6',
       backgroundColor: 'rgba(123,79,166,0.08)',
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 4,
-      tension: 0.3,
-      fill: true,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
   }
 
+  // ── Donations ──
   if (donationData.length > 0) {
     datasets.push({
-      label: 'Donations',
+      label: DS.DONATIONS,
       data: donationData.map(d => ({ x: d.x, y: d.y })),
       type: 'bar',
       backgroundColor: t.donBar,
       borderColor: t.donBorder,
-      borderWidth: 1,
-      borderRadius: 2,
-      barThickness: 8,
+      borderWidth: 1, borderRadius: 2, barThickness: 8,
       yAxisID: 'yDonations',
+    });
+  }
+
+  // ── Chat rate series ──
+  if (hasChatRate && snapshotData.length > 0) {
+    const validSnapshots = snapshotData.filter(
+      s => s.ytMpm !== null || s.twMpm !== null
+    );
+
+    if (hasYT) {
+      datasets.push({
+        label: DS.YT_CHAT,
+        data: validSnapshots.map(s => ({ x: s.x, y: s.ytMpm ?? 0 })),
+        type: 'line',
+        borderColor: '#e05545',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [4, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    if (hasTW) {
+      datasets.push({
+        label: DS.TW_CHAT,
+        data: validSnapshots.map(s => ({ x: s.x, y: s.twMpm ?? 0 })),
+        type: 'line',
+        borderColor: '#9b70d0',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [4, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    // Combined -- computed on the fly
+    datasets.push({
+      label: DS.TOTAL_CHAT,
+      data: validSnapshots.map(s => ({
+        x: s.x,
+        y: (s.ytMpm ?? 0) + (s.twMpm ?? 0),
+      })),
+      type: 'line',
+      borderColor: '#a0a090',
+      backgroundColor: 'transparent',
+      borderWidth: 2, borderDash: [6, 3],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false,
+      yAxisID: 'yChatRate',
     });
   }
 
@@ -733,11 +810,17 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
+          filter: item => item.parsed.y !== null && item.parsed.y !== undefined,
           callbacks: {
             title: items => fmtET(items[0].parsed.x),
             label: item => {
-              if (item.dataset.label === 'Donations') return ` $${item.parsed.y.toFixed(2)} donated`;
-              return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
+              switch (item.dataset.label) {
+                case DS.DONATIONS:   return ` $${item.parsed.y.toFixed(2)} donated`;
+                case DS.YT_CHAT:     return ` YT chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.TW_CHAT:     return ` TW chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.TOTAL_CHAT:  return ` Total chat: ${item.parsed.y.toFixed(1)} mpm`;
+                default:             return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
+              }
             }
           }
         }
@@ -745,7 +828,6 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
       scales: {
         x: {
           type: 'linear',
-          title: { display: false },
           grid: { color: t.chartGrid },
           ticks: {
             color: t.chartTick,
@@ -777,10 +859,87 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
             maxTicksLimit: 5,
           },
           title: { display: false },
-        }
+        },
+        yChatRate: {
+          type: 'linear',
+          position: 'right',
+          grid: { drawOnChartArea: false },
+          display: hasChatRate,
+          ticks: {
+            color: '#808070',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            callback: v => v.toFixed(0) + ' mpm',
+            maxTicksLimit: 5,
+          },
+          title: {
+            display: true,
+            text: 'Messages / min',
+            color: '#606050',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
+          },
+        },
       }
     }
   });
+}
+
+// ── Interactive legend ─────────────────────────────────────────────────────────
+function buildLegend(hasYT, hasTW, hasChatRate, hasDonations) {
+  const container = document.getElementById('chartLegend');
+  if (!container || !currentChart) return;
+
+  // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
+  const items = [];
+
+  if (hasYT)      items.push({ label: 'YT Viewers',  type: 'line',   color: '#c0392b', ds: DS.YT_VIEWERS });
+  if (hasTW)      items.push({ label: 'TW Viewers',  type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
+  if (hasDonations) items.push({ label: 'Donations', type: 'bar',    color: '#c47d2a', ds: DS.DONATIONS  });
+
+  if (hasChatRate) {
+    items.push({ label: null }); // divider
+    if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#e05545', ds: DS.YT_CHAT    });
+    if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#9b70d0', ds: DS.TW_CHAT    });
+    items.push(   { label: 'Total Chat', type: 'dashed', color: '#a0a090', ds: DS.TOTAL_CHAT });
+  }
+
+  container.innerHTML = '';
+
+  for (const item of items) {
+    if (item.label === null) {
+      // Divider
+      const div = document.createElement('span');
+      div.className = 'legend-divider';
+      container.appendChild(div);
+      continue;
+    }
+
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.dataset.ds = item.ds;
+
+    let indicator;
+    if (item.type === 'bar') {
+      indicator = `<span class="legend-swatch" style="background:${item.color};"></span>`;
+    } else if (item.type === 'dashed') {
+      // Dashed line indicator: two short segments with a gap
+      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="7" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="11" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
+    } else {
+      indicator = `<span class="legend-line" style="background:${item.color};"></span>`;
+    }
+
+    span.innerHTML = `${indicator}${item.label}`;
+
+    span.addEventListener('click', () => {
+      const dsIndex = currentChart.data.datasets.findIndex(d => d.label === item.ds);
+      if (dsIndex === -1) return;
+      const visible = currentChart.isDatasetVisible(dsIndex);
+      currentChart.setDatasetVisibility(dsIndex, !visible);
+      currentChart.update();
+      span.classList.toggle('hidden', visible);
+    });
+
+    container.appendChild(span);
+  }
 }
 
 loadStreamList();
