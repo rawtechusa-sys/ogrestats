@@ -641,7 +641,7 @@ async function loadStream(streamId) {
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr>
           <td class="ts-cell">${elapsed}</td>
-          <td><span class="username">${escHtml(d.username)}</span></td>
+          <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
           <td><span class="type-badge type-${d.type}">${d.type}</span></td>
           <td>${usd}</td>
           <td>${msg}</td>
