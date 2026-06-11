@@ -19,3 +19,6 @@
 {"ts": 1781206532, "event": "viewer_snapshot", "youtube": 1382, "twitch": 95, "total": 1477, "youtube_messages_per_minute": 1000.0, "twitch_messages_per_minute": 10.0}
 {"ts": 1781206599, "event": "viewer_snapshot", "youtube": 1403, "twitch": 95, "total": 1498, "youtube_messages_per_minute": 869.0, "twitch_messages_per_minute": 0.0}
 {"ts": 1781206683, "event": "viewer_snapshot", "youtube": 1383, "twitch": 90, "total": 1473, "youtube_messages_per_minute": 874.0, "twitch_messages_per_minute": 0.0}
+{"ts": 1781206741, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@ChuckBuried", "amount_raw": "$5.00", "amount_usd": 5.0, "message": "Whatever the lowest possible score on the Rate Army thing is, you might need to add a lower one for this one"}
+{"ts": 1781206800, "event": "viewer_snapshot", "youtube": 1421, "twitch": 90, "total": 1511, "youtube_messages_per_minute": 873.0, "twitch_messages_per_minute": 5.0}
+{"ts": 1781206817, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@JordanFadeaway", "amount_raw": "$2.00", "amount_usd": 2.0, "message": "14 plates is Kat's nickname from the buffet staff"}
