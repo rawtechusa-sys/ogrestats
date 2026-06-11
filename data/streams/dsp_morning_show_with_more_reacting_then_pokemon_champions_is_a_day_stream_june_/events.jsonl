@@ -26,7 +26,7 @@
 {"ts": 1780946829, "event": "viewer_snapshot", "youtube": 250, "twitch": 136, "total": 386}
 {"ts": 1780946889, "event": "viewer_snapshot", "youtube": 249, "twitch": 143, "total": 392}
 {"ts": 1780946949, "event": "viewer_snapshot", "youtube": 251, "twitch": 143, "total": 394}
-{"ts": 1780946955, "event": "donation", "platform": "twitch", "type": "bits", "username": "bleedinbarry", "amount_raw": "55 bits", "amount_usd": null, "message": "Cheer55"}
+{"ts": 1780946955, "event": "donation", "platform": "twitch", "type": "bits", "username": "bleedinbarry", "amount_raw": "55 bits", "amount_usd": 1.99, "message": "Cheer55"}
 {"ts": 1780947009, "event": "viewer_snapshot", "youtube": 260, "twitch": 143, "total": 403}
 {"ts": 1780947107, "event": "viewer_snapshot", "youtube": 271, "twitch": 143, "total": 414}
 {"ts": 1780947167, "event": "viewer_snapshot", "youtube": 263, "twitch": 151, "total": 414}
@@ -151,7 +151,7 @@
 {"ts": 1780953778, "event": "viewer_snapshot", "youtube": 251, "twitch": 273, "total": 524}
 {"ts": 1780953838, "event": "viewer_snapshot", "youtube": 249, "twitch": 281, "total": 530}
 {"ts": 1780953898, "event": "viewer_snapshot", "youtube": 241, "twitch": 281, "total": 522}
-{"ts": 1780953911, "event": "donation", "platform": "twitch", "type": "bits", "username": "dirrtbag", "amount_raw": "100 bits", "amount_usd": null, "message": "Cheer100"}
+{"ts": 1780953911, "event": "donation", "platform": "twitch", "type": "bits", "username": "dirrtbag", "amount_raw": "100 bits", "amount_usd": 1.99, "message": "Cheer100"}
 {"ts": 1780953958, "event": "viewer_snapshot", "youtube": 240, "twitch": 281, "total": 521}
 {"ts": 1780954018, "event": "viewer_snapshot", "youtube": 241, "twitch": 281, "total": 522}
 {"ts": 1780954078, "event": "viewer_snapshot", "youtube": 243, "twitch": 281, "total": 524}
@@ -252,7 +252,7 @@
 {"ts": 1780959568, "event": "viewer_snapshot", "youtube": 195, "twitch": null, "total": 195}
 {"ts": 1780959628, "event": "viewer_snapshot", "youtube": 191, "twitch": null, "total": 191}
 {"ts": 1780959688, "event": "viewer_snapshot", "youtube": 202, "twitch": null, "total": 202}
-{"ts": 1780959706, "event": "donation", "platform": "youtube", "type": "membership", "username": "@OrcsRDorks", "amount_raw": "Member for 60 months", "amount_usd": null, "message": "Hey! Don’t mind me just 60 months of support here!"}
+{"ts": 1780959706, "event": "donation", "platform": "youtube", "type": "membership", "username": "@OrcsRDorks", "amount_raw": "Member for 60 months", "amount_usd": 1.99, "message": "Hey! Don’t mind me just 60 months of support here!"}
 {"ts": 1780959748, "event": "viewer_snapshot", "youtube": 198, "twitch": null, "total": 198}
 {"ts": 1780959808, "event": "viewer_snapshot", "youtube": 198, "twitch": null, "total": 198}
 {"ts": 1780959868, "event": "viewer_snapshot", "youtube": 196, "twitch": null, "total": 196}
