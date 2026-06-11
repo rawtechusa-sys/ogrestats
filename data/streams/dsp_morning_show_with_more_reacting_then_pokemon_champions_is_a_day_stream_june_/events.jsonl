@@ -151,7 +151,7 @@
 {"ts": 1780953778, "event": "viewer_snapshot", "youtube": 251, "twitch": 273, "total": 524}
 {"ts": 1780953838, "event": "viewer_snapshot", "youtube": 249, "twitch": 281, "total": 530}
 {"ts": 1780953898, "event": "viewer_snapshot", "youtube": 241, "twitch": 281, "total": 522}
-{"ts": 1780953911, "event": "donation", "platform": "twitch", "type": "bits", "username": "dirrtbag", "amount_raw": "100 bits", "amount_usd": 1.99, "message": "Cheer100"}
+{"ts": 1780953911, "event": "donation", "platform": "twitch", "type": "bits", "username": "dirrtbag", "amount_raw": "100 bits", "amount_usd": 1.00, "message": "Cheer100"}
 {"ts": 1780953958, "event": "viewer_snapshot", "youtube": 240, "twitch": 281, "total": 521}
 {"ts": 1780954018, "event": "viewer_snapshot", "youtube": 241, "twitch": 281, "total": 522}
 {"ts": 1780954078, "event": "viewer_snapshot", "youtube": 243, "twitch": 281, "total": 524}
