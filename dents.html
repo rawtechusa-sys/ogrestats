@@ -339,8 +339,8 @@ async function load() {
         seenInStream.add(name);
         const u = byUser[name];
         if (e.type === 'membership') {
-          u.membership += 2;
-          u.total      += 2;
+          u.membership += 1.99;
+          u.total      += 1.99;
         } else if (e.amount_usd != null) {
           u[e.type] = (u[e.type] || 0) + e.amount_usd;
           u.total   += e.amount_usd;
