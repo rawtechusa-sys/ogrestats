@@ -486,50 +486,61 @@ async function loadStreamList() {
   const sidebar = document.getElementById('sidebar');
   try {
     const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
-    const streams = [...streamIds].sort((a, b) => b.localeCompare(a));
 
-    if (streams.length === 0) {
+    if (streamIds.length === 0) {
       sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
       return;
     }
 
+    // Fetch all metadata in parallel, then sort newest-first by start_ts.
+    const metaResults = await Promise.allSettled(
+      streamIds.map(id => fetchJSON(`${RAW}/data/streams/${id}/metadata.json`))
+    );
+
+    const streams = streamIds
+      .map((id, i) => ({
+        id,
+        meta: metaResults[i].status === 'fulfilled' ? metaResults[i].value : null,
+      }))
+      .sort((a, b) => {
+        const ta = a.meta?.start_ts ?? 0;
+        const tb = b.meta?.start_ts ?? 0;
+        return tb - ta;  // newest first
+      });
+
     sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
 
-    for (const [idx, id] of streams.entries()) {
+    const ordinal = n => {
+      const s = ['th','st','nd','rd'], v = n % 100;
+      return n + (s[(v-20)%10] || s[v] || s[0]);
+    };
+
+    for (const [idx, { id, meta }] of streams.entries()) {
       const div = document.createElement('div');
       div.className = 'stream-item' + (idx === 0 ? ' active' : '');
       div.dataset.id = id;
 
-      div.innerHTML = `<span class="stream-item-date">—</span>`;
+      let datePart = '—';
+      let timePart = '';
 
-      try {
-        const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
+      if (meta?.start_ts) {
+        const utcDate = new Date(meta.start_ts * 1000);
+        datePart = utcDate.toLocaleDateString('en-US', {
+          timeZone: 'America/New_York',
+          month: 'long', day: 'numeric', year: 'numeric'
+        }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
+        timePart = utcDate.toLocaleTimeString('en-US', {
+          timeZone: 'America/New_York',
+          hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+        });
+      }
 
-        let datePart = '—';
-        let timePart = '';
-        if (meta.start_ts) {
-          const utcDate = new Date(meta.start_ts * 1000);
-          const ordinal = n => {
-            const s = ['th','st','nd','rd'], v = n % 100;
-            return n + (s[(v-20)%10] || s[v] || s[0]);
-          };
-          datePart = utcDate.toLocaleDateString('en-US', {
-            timeZone: 'America/New_York',
-            month: 'long', day: 'numeric', year: 'numeric'
-          }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
-          timePart = utcDate.toLocaleTimeString('en-US', {
-            timeZone: 'America/New_York',
-            hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
-          });
-        }
-
-        div.innerHTML = `
-          <span class="stream-item-date">${datePart}</span>
-          <span class="stream-item-time">${timePart}</span>
-          ${platformBadge(meta.platforms)}
-          ${meta.end_ts && meta.start_ts ? `<span class="stream-item-time">${fmtDuration(meta.end_ts - meta.start_ts)}</span>` : ''}
-        `;
-      } catch { /* metadata missing -- leave placeholder */ }
+      div.innerHTML = `
+        <span class="stream-item-date">${datePart}</span>
+        <span class="stream-item-time">${timePart}</span>
+        ${meta ? platformBadge(meta.platforms) : ''}
+        ${meta?.end_ts && meta?.start_ts ? `<span class="stream-item-time">${fmtDuration(meta.end_ts - meta.start_ts)}</span>` : ''}
+      `;
 
       div.addEventListener('click', () => {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
@@ -540,7 +551,7 @@ async function loadStreamList() {
       sidebar.appendChild(div);
     }
 
-    if (streams.length > 0) loadStream(streams[0]);
+    if (streams.length > 0) loadStream(streams[0].id);
 
   } catch (e) {
     sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
