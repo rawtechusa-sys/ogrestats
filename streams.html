@@ -614,6 +614,7 @@ async function loadStream(streamId) {
       const hasChatRate = snapshots.some(s =>
         s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
       );
+      const hasChatParticipants = hasYT && snapshots.some(s => s.youtube_chat_participants != null);
 
       panel.innerHTML = `
         <div class="chart-header">
@@ -626,7 +627,7 @@ async function loadStream(streamId) {
       main.appendChild(panel);
 
       buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate);
-      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0);
+      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0, hasChatParticipants);
     }
 
     // ── Donation log ──
@@ -674,6 +675,7 @@ const DS = {
   YT_CHAT:     'YouTube Chat',
   TW_CHAT:     'Twitch Chat',
   TOTAL_CHAT:  'Total Chat',
+  YT_CHAT_PARTICIPANTS: 'YT Chat Participants',
 };
 
 function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
@@ -688,6 +690,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
     tw:      s.twitch  || 0,
     ytMpm:   s.youtube_messages_per_minute ?? null,
     twMpm:   s.twitch_messages_per_minute  ?? null,
+    ytChat:  s.youtube_chat_participants  ?? null,
   }));
 
   const donationData = donations.map(d => ({ x: d.ts * 1000, y: d.amount_usd || 0 }));
@@ -724,6 +727,22 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
       backgroundColor: 'rgba(123,79,166,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // ── YT chat participants ──
+  const hasChatParticipants = hasYT && snapshotData.some(s => s.ytChat !== null);
+  if (hasChatParticipants) {
+    datasets.push({
+      label: DS.YT_CHAT_PARTICIPANTS,
+      data: snapshotData.filter(s => s.ytChat !== null).map(s => ({ x: s.x, y: s.ytChat })),
+      type: 'line',
+      borderColor: '#e8952a',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false,
       yAxisID: 'yViewers',
     });
   }
@@ -819,6 +838,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
                 case DS.YT_CHAT:     return ` YT chat: ${item.parsed.y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:     return ` TW chat: ${item.parsed.y.toFixed(1)} mpm`;
                 case DS.TOTAL_CHAT:  return ` Total chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.YT_CHAT_PARTICIPANTS: return ` YT chat participants: ${Math.round(item.parsed.y).toLocaleString()}`;
                 default:             return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
               }
             }
@@ -884,7 +904,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
-function buildLegend(hasYT, hasTW, hasChatRate, hasDonations) {
+function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasChatParticipants) {
   const container = document.getElementById('chartLegend');
   if (!container || !currentChart) return;
 
@@ -893,6 +913,7 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations) {
 
   if (hasYT)      items.push({ label: 'YT Viewers',  type: 'line',   color: '#c0392b', ds: DS.YT_VIEWERS });
   if (hasTW)      items.push({ label: 'TW Viewers',  type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
+  if (hasChatParticipants) items.push({ label: 'YT Chatters', type: 'dashed', color: '#e8952a', ds: DS.YT_CHAT_PARTICIPANTS });
   if (hasDonations) items.push({ label: 'Donations', type: 'bar',    color: '#c47d2a', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
