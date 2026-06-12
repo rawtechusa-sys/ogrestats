@@ -603,6 +603,20 @@ async function loadStream(streamId) {
     const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
     cards += card('Avg Viewers', (avgYT + avgTW).toLocaleString(), hasYT && hasTW ? `YT ${avgYT} · TW ${avgTW}` : '');
 
+    const peakActiveYT = snapshots.reduce((m, s) => Math.max(m, s.active_youtube_chatters || 0), 0);
+    const peakActiveTW = snapshots.reduce((m, s) => Math.max(m, s.active_twitch_chatters  || 0), 0);
+    const hasActiveYTData = snapshots.some(s => s.active_youtube_chatters != null);
+    const hasActiveTWData = snapshots.some(s => s.active_twitch_chatters  != null);
+
+    if (hasActiveYTData || hasActiveTWData) {
+      const bothActive = hasActiveYTData && hasActiveTWData;
+      const activeValue = bothActive
+        ? (peakActiveYT + peakActiveTW).toLocaleString()
+        : hasActiveYTData ? peakActiveYT.toLocaleString() : peakActiveTW.toLocaleString();
+      const activeSub = bothActive ? `YT ${peakActiveYT} · TW ${peakActiveTW}` : '';
+      cards += card('Peak Active Chatters', activeValue, activeSub);
+    }
+
     grid.innerHTML = cards;
     main.appendChild(grid);
 
@@ -614,7 +628,8 @@ async function loadStream(streamId) {
       const hasChatRate = snapshots.some(s =>
         s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
       );
-      const hasChatParticipants = hasYT && snapshots.some(s => s.youtube_chat_participants != null);
+      const hasActiveYT = hasYT && snapshots.some(s => s.active_youtube_chatters != null);
+      const hasActiveTW = hasTW && snapshots.some(s => s.active_twitch_chatters != null);
 
       panel.innerHTML = `
         <div class="chart-header">
@@ -626,8 +641,8 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate);
-      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0, hasChatParticipants);
+      buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW);
+      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW);
     }
 
     // ── Donation log ──
@@ -669,28 +684,30 @@ async function loadStream(streamId) {
 
 // Dataset label constants -- used to match datasets in legend toggle and theme update
 const DS = {
-  YT_VIEWERS:  'YouTube Viewers',
-  TW_VIEWERS:  'Twitch Viewers',
-  DONATIONS:   'Donations',
-  YT_CHAT:     'YouTube Chat',
-  TW_CHAT:     'Twitch Chat',
-  TOTAL_CHAT:  'Total Chat',
-  YT_CHAT_PARTICIPANTS: 'YT Chat Participants',
+  YT_VIEWERS:       'YouTube Viewers',
+  TW_VIEWERS:       'Twitch Viewers',
+  DONATIONS:        'Donations',
+  YT_CHAT:          'YouTube Chat',
+  TW_CHAT:          'Twitch Chat',
+  TOTAL_CHAT:       'Total Chat',
+  YT_ACTIVE_CHATTERS: 'YT Active Chatters',
+  TW_ACTIVE_CHATTERS: 'TW Active Chatters',
 };
 
-function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
+function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
   if (!ctx) return;
 
   const snapshotData = snapshots.map(s => ({
-    x:       s.ts * 1000,
-    yt:      s.youtube || 0,
-    tw:      s.twitch  || 0,
-    ytMpm:   s.youtube_messages_per_minute ?? null,
-    twMpm:   s.twitch_messages_per_minute  ?? null,
-    ytChat:  s.youtube_chat_participants  ?? null,
+    x:        s.ts * 1000,
+    yt:       s.youtube || 0,
+    tw:       s.twitch  || 0,
+    ytMpm:    s.youtube_messages_per_minute ?? null,
+    twMpm:    s.twitch_messages_per_minute  ?? null,
+    ytActive: s.active_youtube_chatters     ?? null,
+    twActive: s.active_twitch_chatters      ?? null,
   }));
 
   const donationData = donations.map(d => ({ x: d.ts * 1000, y: d.amount_usd || 0 }));
@@ -731,14 +748,27 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
     });
   }
 
-  // ── YT chat participants ──
-  const hasChatParticipants = hasYT && snapshotData.some(s => s.ytChat !== null);
-  if (hasChatParticipants) {
+  // ── Active chatter series ──
+  if (hasActiveYT) {
     datasets.push({
-      label: DS.YT_CHAT_PARTICIPANTS,
-      data: snapshotData.filter(s => s.ytChat !== null).map(s => ({ x: s.x, y: s.ytChat })),
+      label: DS.YT_ACTIVE_CHATTERS,
+      data: snapshotData.filter(s => s.ytActive !== null).map(s => ({ x: s.x, y: s.ytActive })),
       type: 'line',
       borderColor: '#e8952a',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  if (hasActiveTW) {
+    datasets.push({
+      label: DS.TW_ACTIVE_CHATTERS,
+      data: snapshotData.filter(s => s.twActive !== null).map(s => ({ x: s.x, y: s.twActive })),
+      type: 'line',
+      borderColor: '#b07de0',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
@@ -834,12 +864,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
             title: items => fmtET(items[0].parsed.x),
             label: item => {
               switch (item.dataset.label) {
-                case DS.DONATIONS:   return ` $${item.parsed.y.toFixed(2)} donated`;
-                case DS.YT_CHAT:     return ` YT chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.TW_CHAT:     return ` TW chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.TOTAL_CHAT:  return ` Total chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.YT_CHAT_PARTICIPANTS: return ` YT chat participants: ${Math.round(item.parsed.y).toLocaleString()}`;
-                default:             return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
+                case DS.DONATIONS:          return ` $${item.parsed.y.toFixed(2)} donated`;
+                case DS.YT_CHAT:            return ` YT chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.TW_CHAT:            return ` TW chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.TOTAL_CHAT:         return ` Total chat: ${item.parsed.y.toFixed(1)} mpm`;
+                case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(item.parsed.y).toLocaleString()}`;
+                case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(item.parsed.y).toLocaleString()}`;
+                default:                    return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
               }
             }
           }
@@ -904,17 +935,18 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate) {
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
-function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasChatParticipants) {
+function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasActiveTW) {
   const container = document.getElementById('chartLegend');
   if (!container || !currentChart) return;
 
   // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
   const items = [];
 
-  if (hasYT)      items.push({ label: 'YT Viewers',  type: 'line',   color: '#c0392b', ds: DS.YT_VIEWERS });
-  if (hasTW)      items.push({ label: 'TW Viewers',  type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
-  if (hasChatParticipants) items.push({ label: 'YT Chatters', type: 'dashed', color: '#e8952a', ds: DS.YT_CHAT_PARTICIPANTS });
-  if (hasDonations) items.push({ label: 'Donations', type: 'bar',    color: '#c47d2a', ds: DS.DONATIONS  });
+  if (hasYT)       items.push({ label: 'YT Viewers',        type: 'line',   color: '#c0392b', ds: DS.YT_VIEWERS });
+  if (hasTW)       items.push({ label: 'TW Viewers',        type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
+  if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e8952a', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#b07de0', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasDonations) items.push({ label: 'Donations',        type: 'bar',    color: '#c47d2a', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
     items.push({ label: null }); // divider
