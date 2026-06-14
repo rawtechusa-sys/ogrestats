@@ -312,46 +312,63 @@ function renderTable() {
   });
 }
 
+// Build tableData from a precomputed leaderboard.json object
+function loadFromLeaderboard(board) {
+  const users = board.users || {};
+  tableData = Object.values(users).filter(u => u.total > 0);
+}
+
+// Fallback: aggregate from every stream's events.jsonl (the original method).
+// Used only when leaderboard.json doesn't exist yet.
+async function loadFromStreams() {
+  const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
+
+  const results = await Promise.allSettled(
+    streamIds.map(id => fetchText(`${RAW}/data/streams/${id}/events.jsonl`))
+  );
+
+  const byUser = {};
+
+  for (const result of results) {
+    if (result.status !== 'fulfilled') continue;
+    const events = parseJSONL(result.value);
+    const seenInStream = new Set();
+    for (const e of events) {
+      if (e.event !== 'donation') continue;
+      const name = (e.username || 'unknown').replace(/^@+/, '');
+      if (!byUser[name]) {
+        byUser[name] = { username: name, total: 0, streams: 0 };
+        for (const t of TYPES) byUser[name][t.key] = 0;
+      }
+      seenInStream.add(name);
+      const u = byUser[name];
+      if (e.type === 'membership') {
+        u.membership += 1.99;
+        u.total      += 1.99;
+      } else if (e.amount_usd != null) {
+        u[e.type] = (u[e.type] || 0) + e.amount_usd;
+        u.total   += e.amount_usd;
+      }
+    }
+    for (const name of seenInStream) {
+      if (byUser[name]) byUser[name].streams += 1;
+    }
+  }
+
+  tableData = Object.values(byUser).filter(u => u.total > 0);
+}
+
 async function load() {
   const wrap = document.getElementById('tableWrap');
   try {
-    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
-
-    // Fetch all streams in parallel
-    const results = await Promise.allSettled(
-      streamIds.map(id => fetchText(`${RAW}/data/streams/${id}/events.jsonl`))
-    );
-
-    // Aggregate by username
-    const byUser = {};
-
-    for (const result of results) {
-      if (result.status !== 'fulfilled') continue;
-      const events = parseJSONL(result.value);
-      const seenInStream = new Set();
-      for (const e of events) {
-        if (e.event !== 'donation') continue;
-        const name = (e.username || 'unknown').replace(/^@+/, '');
-        if (!byUser[name]) {
-          byUser[name] = { username: name, total: 0, streams: 0 };
-          for (const t of TYPES) byUser[name][t.key] = 0;
-        }
-        seenInStream.add(name);
-        const u = byUser[name];
-        if (e.type === 'membership') {
-          u.membership += 1.99;
-          u.total      += 1.99;
-        } else if (e.amount_usd != null) {
-          u[e.type] = (u[e.type] || 0) + e.amount_usd;
-          u.total   += e.amount_usd;
-        }
-      }
-      for (const name of seenInStream) {
-        if (byUser[name]) byUser[name].streams += 1;
-      }
+    // Fast path: single precomputed file.
+    try {
+      const board = await fetchJSON(`${RAW}/data/leaderboard.json`);
+      loadFromLeaderboard(board);
+    } catch (e) {
+      // No leaderboard yet -- fall back to aggregating all streams.
+      await loadFromStreams();
     }
-
-    tableData = Object.values(byUser).filter(u => u.total > 0);
 
     renderTable();
 
