@@ -760,16 +760,18 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   }
 
   // ── Active chatter series ──
+  // Built from the full snapshotData (null where missing) so indices stay
+  // aligned with the viewer series; spanGaps bridges the nulls visually.
   if (hasActiveYT) {
     datasets.push({
       label: DS.YT_ACTIVE_CHATTERS,
-      data: snapshotData.filter(s => s.ytActive !== null).map(s => ({ x: s.x, y: s.ytActive })),
+      data: snapshotData.map(s => ({ x: s.x, y: s.ytActive })),
       type: 'line',
       borderColor: '#e8952a',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: false,
+      tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yViewers',
     });
   }
@@ -777,13 +779,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   if (hasActiveTW) {
     datasets.push({
       label: DS.TW_ACTIVE_CHATTERS,
-      data: snapshotData.filter(s => s.twActive !== null).map(s => ({ x: s.x, y: s.twActive })),
+      data: snapshotData.map(s => ({ x: s.x, y: s.twActive })),
       type: 'line',
       borderColor: '#b07de0',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: false,
+      tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yViewers',
     });
   }
@@ -802,21 +804,20 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   }
 
   // ── Chat rate series ──
+  // Built from the full snapshotData so indices align with the viewer series
+  // (mode:'index' tooltips match by index, not by x). Missing samples map to
+  // null and are bridged with spanGaps; the tooltip filter drops null entries.
   if (hasChatRate && snapshotData.length > 0) {
-    const validSnapshots = snapshotData.filter(
-      s => s.ytMpm !== null || s.twMpm !== null
-    );
-
     if (hasYT) {
       datasets.push({
         label: DS.YT_CHAT,
-        data: validSnapshots.map(s => ({ x: s.x, y: s.ytMpm ?? 0 })),
+        data: snapshotData.map(s => ({ x: s.x, y: s.ytMpm })),
         type: 'line',
         borderColor: '#e05545',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
-        tension: 0.3, fill: false,
+        tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
     }
@@ -824,30 +825,31 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     if (hasTW) {
       datasets.push({
         label: DS.TW_CHAT,
-        data: validSnapshots.map(s => ({ x: s.x, y: s.twMpm ?? 0 })),
+        data: snapshotData.map(s => ({ x: s.x, y: s.twMpm })),
         type: 'line',
         borderColor: '#9b70d0',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
-        tension: 0.3, fill: false,
+        tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
     }
 
-    // Combined -- computed on the fly
+    // Combined -- computed on the fly. Null only when BOTH platforms are
+    // missing a sample; otherwise treat a missing side as 0.
     datasets.push({
       label: DS.TOTAL_CHAT,
-      data: validSnapshots.map(s => ({
+      data: snapshotData.map(s => ({
         x: s.x,
-        y: (s.ytMpm ?? 0) + (s.twMpm ?? 0),
+        y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
       })),
       type: 'line',
       borderColor: '#a0a090',
       backgroundColor: 'transparent',
       borderWidth: 2, borderDash: [6, 3],
       pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: false,
+      tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yChatRate',
     });
   }
@@ -870,7 +872,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
-          filter: item => item.parsed.y !== null && item.parsed.y !== undefined,
+          filter: item => item.parsed.y !== null && item.parsed.y !== undefined && !Number.isNaN(item.parsed.y),
           callbacks: {
             title: items => fmtET(items[0].parsed.x),
             label: item => {
