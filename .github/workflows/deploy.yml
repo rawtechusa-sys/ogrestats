@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment; queued runs are skipped, not cancelled.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject secrets into secrets.js
+        # Using node's JSON.stringify so the key can contain any character
+        # (quotes, backslashes) without breaking the generated JS file.
+        env:
+          RENTON_API_KEY: ${{ secrets.RENTON_API_KEY }}
+        run: |
+          node -e "
+            const fs = require('fs');
+            const key = process.env.RENTON_API_KEY || '';
+            const body = [
+              '// Auto-generated at deploy time by .github/workflows/deploy.yml.',
+              '// Do not commit -- this file is .gitignored.',
+              'window.RENTON_API_KEY = ' + JSON.stringify(key) + ';',
+              ''
+            ].join('\n');
+            fs.writeFileSync('secrets.js', body);
+            console.log('secrets.js written (' + body.length + ' bytes, key length ' + key.length + ')');
+          "
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Adjust if your site lives in a subdirectory.
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
