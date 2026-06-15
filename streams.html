@@ -554,13 +554,24 @@ async function loadStreamList() {
       div.addEventListener('click', () => {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
         div.classList.add('active');
+        sessionStorage.setItem('selected-stream', id);
         loadStream(id);
       });
 
       sidebar.appendChild(div);
     }
 
-    if (streams.length > 0) loadStream(streams[0].id);
+    if (streams.length > 0) {
+      const saved = sessionStorage.getItem('selected-stream');
+      const savedItem = saved && document.querySelector(`.stream-item[data-id="${CSS.escape(saved)}"]`);
+      if (savedItem) {
+        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+        savedItem.classList.add('active');
+        loadStream(saved);
+      } else {
+        loadStream(streams[0].id);
+      }
+    }
 
   } catch (e) {
     sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
