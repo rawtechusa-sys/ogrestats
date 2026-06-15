@@ -326,6 +326,8 @@
   .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
   .username   { color: var(--text-primary); }
   .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+  .ts-link    { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); transition: color 0.15s ease, border-color 0.15s ease; }
+  .ts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); }
   .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
   /* ── States ── */
@@ -460,11 +462,18 @@ function fmtDuration(secs) {
   return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
 
+function elapsedSeconds(startTs, ts) {
+  return Math.max(0, Math.floor(ts - startTs));
+}
+
 function fmtElapsed(startTs, ts) {
-  const s = ts - startTs;
+  const s = elapsedSeconds(startTs, ts);
   const h = Math.floor(s / 3600);
   const m = Math.floor((s % 3600) / 60);
-  return h > 0 ? `${h}:${String(m).padStart(2,'0')}:00` : `${m}:00`;
+  const sec = s % 60;
+  return h > 0
+    ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`
+    : `${m}:${String(sec).padStart(2,'0')}`;
 }
 
 function platformBadge(platforms) {
@@ -661,13 +670,23 @@ async function loadStream(streamId) {
       const panel = document.createElement('div');
       panel.className = 'donations-panel';
 
+      const archiveId = meta.youtube_archive_id;
       const sorted = [...donations].sort((a,b) => a.ts - b.ts);
       const rows = sorted.map(d => {
-        const elapsed = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
+        const elapsedText = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
+        // Deep-link the elapsed time to the YouTube archive at that moment,
+        // when both the archive video ID and a stream start time are known.
+        let tsCell;
+        if (archiveId && startTs) {
+          const tSec = elapsedSeconds(startTs, d.ts);
+          tsCell = `<a class="ts-link" href="https://youtu.be/${encodeURIComponent(archiveId)}?t=${tSec}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
+        } else {
+          tsCell = elapsedText;
+        }
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr>
-          <td class="ts-cell">${elapsed}</td>
+          <td class="ts-cell">${tsCell}</td>
           <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
           <td><span class="type-badge type-${d.type}">${d.type}</span></td>
           <td>${usd}</td>
