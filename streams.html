@@ -721,7 +721,25 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     twActive: s.active_twitch_chatters      ?? null,
   }));
 
-  const donationData = donations.map(d => ({ x: d.ts * 1000, y: d.amount_usd || 0 }));
+  // Bucket donations onto the snapshot index grid so the bar dataset shares the
+  // same index space as the line series. This keeps mode:'index' tooltips
+  // coherent (every dataset's index i is the same timestamp) and prevents a
+  // sparse donation bar from hijacking the nearest-index lookup. Per-donation
+  // detail is preserved in the donation log table below.
+  const donationByIndex = new Array(snapshotData.length).fill(0);
+  if (snapshotData.length > 0) {
+    for (const d of donations) {
+      const dx = d.ts * 1000;
+      let nearest = 0, best = Infinity;
+      for (let i = 0; i < snapshotData.length; i++) {
+        const dist = Math.abs(snapshotData[i].x - dx);
+        if (dist < best) { best = dist; nearest = i; }
+        else if (dist > best) break;  // x is sorted ascending; distance is convex
+      }
+      donationByIndex[nearest] += (d.amount_usd || 0);
+    }
+  }
+  const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
   function fmtET(ms) {
     return new Date(ms).toLocaleTimeString('en-US', {
@@ -791,10 +809,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   }
 
   // ── Donations ──
-  if (donationData.length > 0) {
+  if (hasDonations) {
     datasets.push({
       label: DS.DONATIONS,
-      data: donationData.map(d => ({ x: d.x, y: d.y })),
+      data: snapshotData.map((s, i) => ({
+        x: s.x,
+        y: donationByIndex[i] > 0 ? donationByIndex[i] : null,
+      })),
       type: 'bar',
       backgroundColor: t.donBar,
       borderColor: t.donBorder,
@@ -854,6 +875,21 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
+  // For a series with gaps (null y at some indices), return the value at idx,
+  // or the nearest non-null value by index distance. Lets the tooltip show every
+  // stat at the hovered position even where that stat has no exact sample.
+  function nearestValue(dataArr, idx) {
+    const at = dataArr[idx];
+    if (at && at.y != null && !Number.isNaN(at.y)) return at.y;
+    for (let d = 1; d < dataArr.length; d++) {
+      const lo = dataArr[idx - d];
+      if (lo && lo.y != null && !Number.isNaN(lo.y)) return lo.y;
+      const hi = dataArr[idx + d];
+      if (hi && hi.y != null && !Number.isNaN(hi.y)) return hi.y;
+    }
+    return null;
+  }
+
   currentChart = new Chart(ctx, {
     type: 'bar',
     data: { datasets },
@@ -872,18 +908,32 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
-          filter: item => item.parsed.y !== null && item.parsed.y !== undefined && !Number.isNaN(item.parsed.y),
+          // Donations only show when that bucket actually has a donation.
+          // Continuous series always show -- the label callback fills gaps with
+          // the nearest sample, so every stat appears whenever the tooltip is up.
+          filter: item => {
+            if (item.dataset.yAxisID === 'yDonations') {
+              return item.parsed.y != null && !Number.isNaN(item.parsed.y);
+            }
+            return true;
+          },
           callbacks: {
             title: items => fmtET(items[0].parsed.x),
             label: item => {
+              const isDon = item.dataset.yAxisID === 'yDonations';
+              let y = item.parsed.y;
+              if (!isDon && (y == null || Number.isNaN(y))) {
+                y = nearestValue(item.dataset.data, item.dataIndex);
+              }
+              if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
-                case DS.DONATIONS:          return ` $${item.parsed.y.toFixed(2)} donated`;
-                case DS.YT_CHAT:            return ` YT chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.TW_CHAT:            return ` TW chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.TOTAL_CHAT:         return ` Total chat: ${item.parsed.y.toFixed(1)} mpm`;
-                case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(item.parsed.y).toLocaleString()}`;
-                case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(item.parsed.y).toLocaleString()}`;
-                default:                    return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
+                case DS.DONATIONS:          return ` $${y.toFixed(2)} donated`;
+                case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
+                case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
+                case DS.TOTAL_CHAT:         return ` Total chat: ${y.toFixed(1)} mpm`;
+                case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(y).toLocaleString()}`;
+                default:                    return ` ${item.dataset.label}: ${Math.round(y).toLocaleString()} viewers`;
               }
             }
           }
