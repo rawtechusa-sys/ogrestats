@@ -136,6 +136,13 @@
 
   .amount-type.zero { opacity: 0.2; }
 
+  .dsp-dent {
+    text-align: center;
+    font-size: 16px;
+    width: 90px;
+    line-height: 1;
+  }
+
   .loading-state, .empty-state, .error-state {
     display: flex;
     flex-direction: column;
@@ -173,6 +180,7 @@
 </div>
 
 <script src="config.js"></script>
+<script src="secrets.js"></script>
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
@@ -225,7 +233,124 @@ function parseJSONL(text) {
 }
 
 function escHtml(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── DSP Dent? cross-reference (renton.report) ────────────────────────────────
+// Lazy-loads a per-row check against renton.report's viewer dataset. The fuzzy
+// /search endpoint can return partial matches, so we verify with a strict
+// case-insensitive name match before deciding 'yes'.
+//
+// The API key is injected at deploy time by .github/workflows/deploy.yml from
+// the RENTON_API_KEY repo secret -- see secrets.js. Missing key just means
+// public rate-limited access (60 req/min).
+const RENTON_API     = 'https://renton.report/api';
+const RENTON_API_KEY = window.RENTON_API_KEY || '';
+
+const dspDentCache   = new Map();  // username -> 'yes' | 'no'
+const dspDentPending = new Map();  // username -> Promise (dedupe in-flight)
+
+// Concurrency limiter -- even with the API key bypass, spawning hundreds of
+// simultaneous fetches is wasteful and rude. 6 in flight is plenty given that
+// IntersectionObserver only triggers for visible rows anyway.
+const rentonQueue = (() => {
+  const MAX = 6;
+  let inFlight = 0;
+  const queue  = [];
+  function pump() {
+    while (inFlight < MAX && queue.length) {
+      const { fn, resolve, reject } = queue.shift();
+      inFlight++;
+      Promise.resolve().then(fn).then(resolve, reject).finally(() => {
+        inFlight--;
+        pump();
+      });
+    }
+  }
+  return fn => new Promise((resolve, reject) => {
+    queue.push({ fn, resolve, reject });
+    pump();
+  });
+})();
+
+async function checkDspDent(username) {
+  if (dspDentCache.has(username))   return dspDentCache.get(username);
+  if (dspDentPending.has(username)) return dspDentPending.get(username);
+
+  const p = rentonQueue(async () => {
+    const headers = RENTON_API_KEY ? { 'api-key': RENTON_API_KEY } : {};
+    const url     = `${RENTON_API}/viewers/search?q=${encodeURIComponent(username)}&limit=20`;
+    const r       = await fetch(url, { headers });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+
+    const data = await r.json();
+    // Response envelope shape is undocumented; handle the usual variants.
+    const list = Array.isArray(data) ? data
+               : data.viewers || data.results || data.data || [];
+
+    // Strict match to avoid false positives from fuzzy search ("DSP" matching "DSP_fan").
+    const target = username.toLowerCase().trim();
+    const found  = list.some(v => {
+      const name = v.display_name || v.displayName || v.username || v.name || '';
+      return name.toLowerCase().trim() === target;
+    });
+    return found ? 'yes' : 'no';
+  });
+
+  dspDentPending.set(username, p);
+  try {
+    const result = await p;
+    dspDentCache.set(username, result);
+    return result;
+  } catch {
+    // Don't cache errors -- allow retry next time the row is visible.
+    return 'error';
+  } finally {
+    dspDentPending.delete(username);
+  }
+}
+
+function dspDentGlyph(state) {
+  if (state === 'yes') return '✅';
+  if (state === 'no')  return '❌';
+  return '❔';
+}
+
+// Single observer, rooted on the scrollable table container.
+const dspDentObserver = new IntersectionObserver(entries => {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    const cell     = entry.target;
+    const username = cell.dataset.username;
+    dspDentObserver.unobserve(cell);
+
+    if (dspDentCache.has(username)) {
+      cell.textContent = dspDentGlyph(dspDentCache.get(username));
+      continue;
+    }
+
+    checkDspDent(username).then(result => {
+      // Re-sorts rebuild cells, so update every matching cell, not just this one.
+      document.querySelectorAll(`.dsp-dent[data-username="${CSS.escape(username)}"]`)
+        .forEach(c => { c.textContent = dspDentGlyph(result); });
+    });
+  }
+}, {
+  root: document.getElementById('tableWrap'),
+  rootMargin: '200px',  // start fetching a bit before the row scrolls in
+});
+
+// Re-attach observer to freshly-rendered cells; paint cached values immediately.
+function hydrateDspDentCells() {
+  document.querySelectorAll('.dsp-dent').forEach(cell => {
+    const u = cell.dataset.username;
+    if (dspDentCache.has(u)) {
+      cell.textContent = dspDentGlyph(dspDentCache.get(u));
+    } else {
+      cell.textContent = '❔';
+      dspDentObserver.observe(cell);
+    }
+  });
 }
 
 // Sort state
@@ -247,6 +372,16 @@ function renderTable() {
   const sorted = [...tableData].sort((a, b) => {
     if (sortKey === 'username') {
       const cmp = a.username.localeCompare(b.username, undefined, { sensitivity: 'base' });
+      return sortAsc ? cmp : -cmp;
+    }
+    if (sortKey === 'dsp_dent') {
+      // Rank by cached state: confirmed dents float to the top on desc,
+      // unknowns sit between, confirmed non-dents to the bottom.
+      const rank = u => {
+        const c = dspDentCache.get(u.username);
+        return c === 'yes' ? 2 : c === 'no' ? 0 : 1;
+      };
+      const cmp = rank(a) - rank(b);
       return sortAsc ? cmp : -cmp;
     }
     const av = a[sortKey] ?? 0;
@@ -280,6 +415,7 @@ function renderTable() {
       <td class="amount-total">${fmtUSD(row.total)}</td>
       <td class="amount-type">${row.streams}</td>
       ${typeCells}
+      <td class="dsp-dent" data-username="${escHtml(row.username)}">❔</td>
     </tr>`;
   }).join('');
 
@@ -291,6 +427,7 @@ function renderTable() {
         <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
         <th class="${thClass('streams')}" data-key="streams">Streams${arrow('streams')}</th>
         ${typeHeaders}
+        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="Does this viewer appear on renton.report?">DSP Dent?${arrow('dsp_dent')}</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
@@ -310,6 +447,9 @@ function renderTable() {
       renderTable();
     });
   });
+
+  // After every (re)render, repaint cached values and start lazy fetches for the rest.
+  hydrateDspDentCells();
 }
 
 // Build tableData from a precomputed leaderboard.json object
