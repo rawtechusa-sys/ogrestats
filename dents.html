@@ -180,6 +180,7 @@
 </div>
 
 <script src="config.js"></script>
+<script src="secrets.js"></script>
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
@@ -236,16 +237,16 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ── DSP Dent? cross-reference (renton.report via Worker proxy) ───────────────
+// ── DSP Dent? cross-reference (renton.report) ────────────────────────────────
 // Lazy-loads a per-row check against renton.report's viewer dataset. The fuzzy
 // /search endpoint can return partial matches, so we verify with a strict
 // case-insensitive name match before deciding 'yes'.
 //
-// Requests go through a Cloudflare Worker proxy (see worker.js in the repo)
-// that holds the api-key as a Worker secret and adds CORS headers. Change
-// this URL to your deployed worker -- the default after `wrangler deploy` is
-// https://renton-proxy.<your-account>.workers.dev
-const RENTON_API = 'https://renton-proxy.YOUR-ACCOUNT.workers.dev/api';
+// The API key is injected at deploy time by .github/workflows/deploy.yml from
+// the RENTON_API_KEY repo secret -- see secrets.js. Missing key just means
+// public rate-limited access (60 req/min).
+const RENTON_API     = 'https://renton.report/api';
+const RENTON_API_KEY = window.RENTON_API_KEY || '';
 
 const dspDentCache   = new Map();  // username -> 'yes' | 'no'
 const dspDentPending = new Map();  // username -> Promise (dedupe in-flight)
@@ -278,8 +279,9 @@ async function checkDspDent(username) {
   if (dspDentPending.has(username)) return dspDentPending.get(username);
 
   const p = rentonQueue(async () => {
-    const url = `${RENTON_API}/viewers/search?q=${encodeURIComponent(username)}&limit=20`;
-    const r   = await fetch(url);
+    const headers = RENTON_API_KEY ? { 'api-key': RENTON_API_KEY } : {};
+    const url     = `${RENTON_API}/viewers/search?q=${encodeURIComponent(username)}&limit=20`;
+    const r       = await fetch(url, { headers });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
 
     const data = await r.json();
