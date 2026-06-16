@@ -255,12 +255,22 @@ function escHtml(s) {
 
 // ── DSP Dent? cross-reference ────────────────────────────────────────────────
 // The backend (leaderboard.py update_dsp_dent_info) queries renton.report
-// and stamps user.dsp_dent / user.renton_viewer_id into leaderboard.json on
-// every refresh. We just read those fields directly here.
+// and stamps user.dsp_dent / user.dsp_chatter / user.renton_viewer_id into
+// leaderboard.json on every refresh. We just read those fields directly here.
+//
+// Glyph precedence:
+//   💵  has donated to DSP        (dsp_dent)
+//   💬  has chatted in DSP's stream but not donated  (dsp_chatter only)
+//   ❌  neither, or not found on renton
+
+function dspDentGlyph(row) {
+  if (row.dsp_dent)    return '💵';
+  if (row.dsp_chatter) return '💬';
+  return '❌';
+}
 
 function dspDentCell(row) {
-  const isDent = !!row.dsp_dent;
-  const glyph  = isDent ? '✅' : '❌';
+  const glyph = dspDentGlyph(row);
   if (row.renton_viewer_id) {
     const href = `https://renton.report/viewers/${encodeURIComponent(row.renton_viewer_id)}`;
     return `<a href="${href}" target="_blank" rel="noopener noreferrer"
@@ -291,8 +301,8 @@ function renderTable() {
       return sortAsc ? cmp : -cmp;
     }
     if (sortKey === 'dsp_dent') {
-      // Confirmed dents float to the top on desc; others to the bottom.
-      const rank = u => u.dsp_dent ? 1 : 0;
+      // 3-tier rank: donor (2) > chatter only (1) > neither (0).
+      const rank = u => u.dsp_dent ? 2 : u.dsp_chatter ? 1 : 0;
       const cmp  = rank(a) - rank(b);
       return sortAsc ? cmp : -cmp;
     }
@@ -339,7 +349,7 @@ function renderTable() {
         <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
         <th class="${thClass('streams')}" data-key="streams">Streams${arrow('streams')}</th>
         ${typeHeaders}
-        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="Has this viewer donated to DSP, per renton.report?">DSP Dent?${arrow('dsp_dent')}</th>
+        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${arrow('dsp_dent')}</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
