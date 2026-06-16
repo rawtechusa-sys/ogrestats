@@ -334,7 +334,16 @@ if (savedTab) {
     ctx.restore();
   }
 
+  let _lastT = null;
   function tick(t) {
+    // Framerate-independent stepping. scale = 1 at 60fps so the existing
+    // ROACH_CONFIG values are preserved exactly; halves at 120fps, etc.
+    // Clamp dt to 100ms so a backgrounded tab doesn't fling roaches off-screen
+    // on resume when the rAF gap could be many seconds.
+    const dt = _lastT == null ? 1/60 : Math.min(0.1, (t - _lastT) / 1000);
+    _lastT = t;
+    const scale = dt * 60;
+
     ctx.clearRect(0, 0, W, H);
     for (const r of roaches) {
       const dx = r.x - window._mouse.x;
@@ -345,21 +354,21 @@ if (savedTab) {
         const fleeAngle = Math.atan2(dy, dx);
         const diff = fleeAngle - r.angle;
         const wrap = ((diff + Math.PI * 3) % (Math.PI * 2)) - Math.PI;
-        r.angle += wrap * 0.25;
-        r.speed = Math.min(ROACH_CONFIG.fleeMaxSpeed, r.speed + ROACH_CONFIG.fleeAccel);
+        r.angle += wrap * 0.25 * scale;
+        r.speed = Math.min(ROACH_CONFIG.fleeMaxSpeed, r.speed + ROACH_CONFIG.fleeAccel * scale);
       } else {
         r.fleeing = false;
-        r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel);
-        r.wanderTimer--;
+        r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel * scale);
+        r.wanderTimer -= scale;
         if (r.wanderTimer <= 0) {
           r.turnSpeed = rand(ROACH_CONFIG.turnSpeedMin, ROACH_CONFIG.turnSpeedMax) * (Math.random() < 0.5 ? 1 : -1);
           r.wanderTimer = rand(ROACH_CONFIG.wanderMinFrames, ROACH_CONFIG.wanderMaxFrames);
         }
-        r.angle += r.turnSpeed;
+        r.angle += r.turnSpeed * scale;
       }
 
-      r.x += Math.cos(r.angle) * r.speed;
-      r.y += Math.sin(r.angle) * r.speed;
+      r.x += Math.cos(r.angle) * r.speed * scale;
+      r.y += Math.sin(r.angle) * r.speed * scale;
 
       if (r.x < -20)  r.x = W + 20;
       if (r.x > W+20) r.x = -20;
@@ -513,7 +522,13 @@ if (savedTab) {
     ctx.restore();
   }
 
-  function tick() {
+  let _lastT = null;
+  function tick(t) {
+    // Same dt/scale scheme as the roach loop. See comment there for why.
+    const dt = _lastT == null ? 1/60 : Math.min(0.1, (t - _lastT) / 1000);
+    _lastT = t;
+    const scale = dt * 60;
+
     ctx.clearRect(0, 0, W, H);
 
     // Mouse bump
@@ -527,8 +542,12 @@ if (savedTab) {
         if (dist < BUMP_RADIUS + e.r) {
           const force = (BUMP_RADIUS + e.r - dist) / (BUMP_RADIUS + e.r) * EYE_CONFIG.bumpForce;
           const angle = Math.atan2(dy, dx);
-          e.vx += Math.cos(angle) * force + mdx * EYE_CONFIG.mouseVelMix;
-          e.vy += Math.sin(angle) * force + mdy * EYE_CONFIG.mouseVelMix;
+          // `force` is a continuous per-frame impulse -- scale to keep the same
+          // per-second push regardless of fps. `mdx`/`mdy` are the per-frame
+          // mouse delta (smaller at higher fps), so they're already
+          // framerate-independent in per-second terms -- don't scale those.
+          e.vx += Math.cos(angle) * force * scale + mdx * EYE_CONFIG.mouseVelMix;
+          e.vy += Math.sin(angle) * force * scale + mdy * EYE_CONFIG.mouseVelMix;
         }
       }
     }
@@ -556,14 +575,18 @@ if (savedTab) {
       }
     }
 
+    // Exponential friction: pow() makes the decay rate per-second instead of
+    // per-frame. At scale=1 (60fps) this reduces to the original `*= FRICTION`.
+    const frictionStep = Math.pow(FRICTION, scale);
+
     for (const e of eyes) {
-      e.vx *= FRICTION;
-      e.vy *= FRICTION;
+      e.vx *= frictionStep;
+      e.vy *= frictionStep;
       if (Math.abs(e.vx) < 0.01) e.vx = 0;
       if (Math.abs(e.vy) < 0.01) e.vy = 0;
 
-      e.x += e.vx;
-      e.y += e.vy;
+      e.x += e.vx * scale;
+      e.y += e.vy * scale;
 
       if (e.x - e.r < 0)    { e.x = e.r;     e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
       if (e.x + e.r > W)    { e.x = W - e.r;  e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
@@ -573,7 +596,7 @@ if (savedTab) {
       const speed = Math.sqrt(e.vx * e.vx + e.vy * e.vy);
       if (speed > 0.01) {
         e.rollAxis = Math.atan2(e.vy, e.vx);
-        e.rollAngle += speed / e.r;
+        e.rollAngle += speed / e.r * scale;
       }
 
       drawEye(e);
