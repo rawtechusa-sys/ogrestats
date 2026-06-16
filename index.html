@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ogre World — Stream Stats</title>
+<title>Ogre World</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
 <style>
-  /* ── CONFIG: set your repo here ── */
-  /* See GITHUB_OWNER and GITHUB_REPO in the script below */
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -45,26 +43,26 @@
     opacity: 0.6;
   }
 
-  .layout {
+  /* ── Shell layout ── */
+  .shell {
     position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    grid-template-rows: 56px 1fr;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
   }
 
   /* ── Header ── */
   .header {
-    grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 0 24px;
+    padding: 0 24px 0 0;
     background: var(--bg-surface);
     border-bottom: 1px solid var(--border-default);
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
+    height: 56px;
   }
 
   .header::after {
@@ -72,7 +70,8 @@
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);    opacity: 0.5;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.5;
   }
 
   .header-title {
@@ -81,15 +80,48 @@
     color: var(--accent-bright);
     letter-spacing: 0.04em;
     text-shadow: 0 0 20px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4);
+    padding: 0 24px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  .header-sub {
-    font-size: 13px;
+  /* ── Tabs ── */
+  .tabs {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    flex: 1;
+  }
+
+  .tab {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: var(--text-muted);
-    font-style: italic;
-    margin-left: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 1px;
   }
 
+  .tab:hover {
+    color: var(--accent);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.05);
+  }
+
+  .tab.active {
+    color: var(--accent-bright);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ── Theme select ── */
   .theme-select {
     font-family: 'Share Tech Mono', monospace;
     font-size: 11px;
@@ -102,6 +134,7 @@
     outline: none;
     letter-spacing: 0.05em;
     margin-left: 12px;
+    flex-shrink: 0;
   }
 
   .theme-select:hover {
@@ -109,918 +142,140 @@
     color: var(--accent-bright);
   }
 
-  /* ── Sidebar ── */
-  .sidebar {
-    background: var(--bg-surface);
-    border-right: 1px solid var(--border-default);
-    overflow-y: auto;
-    padding: 12px 0;
-    position: relative;
-  }
-
-  .sidebar::-webkit-scrollbar { width: 4px; }
-  .sidebar::-webkit-scrollbar-track { background: var(--bg-surface); }
-  .sidebar::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
-
-  .sidebar-label {
-    font-family: 'Rye', serif;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    color: var(--text-muted);
-    padding: 4px 16px 8px;
-    text-transform: uppercase;
-  }
-
-  .stream-item {
-    padding: 10px 16px;
-    cursor: pointer;
-    border-left: 3px solid transparent;
-    transition: all 0.15s ease;
-    position: relative;
-  }
-
-  .stream-item:hover {
-    background: rgba(100,180,60,0.07);
-    border-left-color: rgba(100,180,60,0.3);
-  }
-
-  .stream-item.active {
-    background: rgba(100,180,60,0.12);
-    border-left-color: var(--accent);
-  }
-
-  .stream-item-date {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 14px;
-    color: var(--accent);
-    display: block;
-  }
-
-  .stream-item-time {
-    font-size: 13px;
-    color: var(--text-muted);
-    display: block;
-    margin-top: 1px;
-  }
-
-  .stream-item-badge {
-    display: inline-block;
-    font-size: 12px;
-    padding: 1px 6px;
-    border-radius: 3px;
-    margin-top: 4px;
-    font-family: 'Share Tech Mono', monospace;
-  }
-
-  .badge-yt { background: rgba(192,57,43,0.25); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
-  .badge-tw { background: rgba(123,79,166,0.25); color: #b090d0; border: 1px solid rgba(123,79,166,0.3); }
-  .badge-both { background: rgba(90,90,0,0.3); color: #c8b060; border: 1px solid rgba(150,130,0,0.3); }
-
-  .sidebar-empty {
-    padding: 16px;
-    font-size: 15px;
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
-  /* ── Main content ── */
-  .main {
-    overflow-y: auto;
-    padding: 20px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .main::-webkit-scrollbar { width: 4px; }
-  .main::-webkit-scrollbar-track { background: transparent; }
-  .main::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
-
-  /* ── Stat cards ── */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-  }
-
-  .stat-card {
-    background: var(--bg-panel);
-    border: 1px solid var(--border-default);
-    border-radius: 6px;
-    padding: 14px 16px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);    opacity: 0.4;
-  }
-
-  .stat-label {
-    font-size: 12px;
-    color: var(--text-muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-family: 'Share Tech Mono', monospace;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .stat-value {
-    font-family: 'Rye', serif;
-    font-size: 24px;
-    color: var(--accent-bright);
-    display: block;
-    line-height: 1.1;
-    text-shadow: 0 0 12px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
-  }
-
-  .stat-sub {
-    font-size: 13px;
-    color: var(--text-muted);
-    margin-top: 3px;
-    display: block;
-    font-style: italic;
-  }
-
-  /* ── Chart panel ── */
-  .chart-panel {
-    background: var(--bg-panel);
-    border: 1px solid var(--border-default);
-    border-radius: 6px;
-    padding: 16px 20px;
-  }
-
-  .chart-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-  }
-
-  .chart-title {
-    font-family: 'Rye', serif;
-    font-size: 14px;
-    color: var(--text-primary);
-    letter-spacing: 0.04em;
-  }
-
-  .chart-legend {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 13px;
-    color: var(--text-muted);
-    font-family: 'Share Tech Mono', monospace;
-  }
-
-  .legend-swatch {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-  .legend-line {
-    width: 16px;
-    height: 2px;
-    border-radius: 1px;
-    flex-shrink: 0;
-  }
-
-  .chart-wrap {
-    position: relative;
+  /* ── Page iframe ── */
+  .page-frame {
+    flex: 1;
     width: 100%;
-    height: 280px;
-  }
-
-  /* ── Donation table ── */
-  .donations-panel {
-    background: var(--bg-panel);
-    border: 1px solid var(--border-default);
-    border-radius: 6px;
-    padding: 16px 20px;
-  }
-
-  .donations-title {
-    font-family: 'Rye', serif;
-    font-size: 14px;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-    letter-spacing: 0.04em;
-  }
-
-  .donations-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-  }
-
-  .donations-table th {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    text-align: left;
-    padding: 4px 8px 8px;
-    border-bottom: 1px solid var(--border-default);
-  }
-
-  .donations-table td {
-    padding: 8px 8px;
-    border-bottom: 1px solid rgba(100,180,60,0.07);
-    vertical-align: top;
-  }
-
-  .donations-table tr:last-child td { border-bottom: none; }
-
-  .donations-table tr:hover td {
-    background: rgba(100,180,60,0.05);
-  }
-
-  .type-badge {
-    display: inline-block;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 12px;
-    padding: 2px 7px;
-    border-radius: 3px;
-    border: 1px solid;
-  }
-
-  .type-superchat  { color: #80c8a0; border-color: rgba(80,180,120,0.35); background: rgba(40,120,70,0.2); }
-  .type-membership { color: #80c8a0; border-color: rgba(80,180,120,0.25); background: rgba(30,100,60,0.15); }
-  .type-giftmembership { color: #80c8a0; border-color: rgba(80,180,120,0.25); background: rgba(30,100,60,0.15); }
-  .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35); background: rgba(90,50,140,0.2); }
-  .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
-  .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
-
-  .amount-usd {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--accent);
-    font-size: 14px;
-  }
-
-  .username { color: var(--text-primary); }
-  .ts-cell {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 13px;
-    color: var(--text-muted);
-    white-space: nowrap;
-  }
-  .msg-cell {
-    font-family: 'Lora', serif;
-    color: var(--text-muted);
-    font-size: 14px;
-    max-width: 280px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* ── States ── */
-  .loading-state, .empty-state, .error-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 12px;
-    color: var(--text-muted);
-    font-style: italic;
-    font-size: 16px;
-  }
-
-  .loading-glyph {
-    font-family: 'Rye', serif;
-    font-size: 32px;
-    color: var(--accent);
-    animation: flicker 2s ease-in-out infinite;
-  }
-
-  @keyframes flicker {
-    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.6); }
-    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.2); }
-  }
-
-  /* ── Root decorations ── */
-  .root-deco {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.28;
-  }
-
-  .divider {
     border: none;
-    border-top: 1px solid var(--border-default);
-    margin: 0;
+    display: block;
+    background: transparent;
   }
+
 </style>
 </head>
+
 <body>
 
-<!-- Stone wall formation spanning full bottom edge -->
-<svg class="root-deco" style="left:0;bottom:0;width:100%;height:220px;" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1400 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="stoneBlur">
-      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.06" numOctaves="4" seed="8" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </defs>
+<script src="config.js"></script>
 
-  <!-- Row 4 (top, partial) — irregular stones peeking in -->
-  <rect x="0"    y="48"  width="138" height="52" rx="3" fill="#3a2e1e"/>
-  <rect x="142"  y="42"  width="112" height="56" rx="3" fill="#2e2418"/>
-  <rect x="258"  y="50"  width="154" height="50" rx="3" fill="#332618"/>
-  <rect x="416"  y="44"  width="126" height="54" rx="3" fill="#2a2014"/>
-  <rect x="546"  y="48"  width="168" height="50" rx="3" fill="#3a2e1e"/>
-  <rect x="718"  y="40"  width="138" height="58" rx="3" fill="#302418"/>
-  <rect x="860"  y="46"  width="152" height="52" rx="3" fill="#2e2418"/>
-  <rect x="1016" y="42"  width="118" height="56" rx="3" fill="#352a1a"/>
-  <rect x="1138" y="48"  width="144" height="50" rx="3" fill="#2a2014"/>
-  <rect x="1286" y="44"  width="114" height="54" rx="3" fill="#3a2e1e"/>
-
-  <!-- Row 3 -->
-  <rect x="0"    y="104" width="118" height="58" rx="3" fill="#302418"/>
-  <rect x="122"  y="100" width="156" height="62" rx="3" fill="#3a2e1e"/>
-  <rect x="282"  y="106" width="132" height="56" rx="3" fill="#2e2418"/>
-  <rect x="418"  y="102" width="148" height="60" rx="3" fill="#332618"/>
-  <rect x="570"  y="104" width="122" height="58" rx="3" fill="#2a2014"/>
-  <rect x="696"  y="100" width="160" height="62" rx="3" fill="#3a2e1e"/>
-  <rect x="860"  y="104" width="136" height="58" rx="3" fill="#302418"/>
-  <rect x="1000" y="100" width="152" height="62" rx="3" fill="#2e2418"/>
-  <rect x="1156" y="106" width="128" height="56" rx="3" fill="#352a1a"/>
-  <rect x="1288" y="102" width="112" height="60" rx="3" fill="#3a2e1e"/>
-
-  <!-- Row 2 -->
-  <rect x="0"    y="166" width="144" height="54" rx="3" fill="#2e2418"/>
-  <rect x="148"  y="162" width="128" height="58" rx="3" fill="#3a2e1e"/>
-  <rect x="280"  y="166" width="158" height="54" rx="3" fill="#2a2014"/>
-  <rect x="442"  y="160" width="134" height="60" rx="3" fill="#302418"/>
-  <rect x="580"  y="164" width="148" height="56" rx="3" fill="#352a1a"/>
-  <rect x="732"  y="162" width="122" height="58" rx="3" fill="#2e2418"/>
-  <rect x="858"  y="166" width="162" height="54" rx="3" fill="#3a2e1e"/>
-  <rect x="1024" y="160" width="138" height="60" rx="3" fill="#2a2014"/>
-  <rect x="1166" y="164" width="154" height="56" rx="3" fill="#302418"/>
-  <rect x="1324" y="162" width="76"  height="58" rx="3" fill="#352a1a"/>
-
-  <!-- Row 1 (bottom, fully visible) -->
-  <rect x="0"    y="220" width="130" height="60" rx="3" fill="#332618"/>
-  <rect x="134"  y="216" width="160" height="64" rx="3" fill="#2e2418"/>
-  <rect x="298"  y="220" width="142" height="60" rx="3" fill="#3a2e1e"/>
-  <rect x="444"  y="214" width="128" height="66" rx="3" fill="#2a2014"/>
-  <rect x="576"  y="220" width="156" height="60" rx="3" fill="#302418"/>
-  <rect x="736"  y="216" width="138" height="64" rx="3" fill="#352a1a"/>
-  <rect x="878"  y="220" width="152" height="60" rx="3" fill="#2e2418"/>
-  <rect x="1034" y="214" width="126" height="66" rx="3" fill="#3a2e1e"/>
-  <rect x="1164" y="220" width="148" height="60" rx="3" fill="#332618"/>
-  <rect x="1316" y="216" width="84"  height="64" rx="3" fill="#2a2014"/>
-
-  <!-- Mortar lines (horizontal) -->
-  <line x1="0" y1="102" x2="1400" y2="102" stroke="#1a1208" stroke-width="3"/>
-  <line x1="0" y1="164" x2="1400" y2="164" stroke="#1a1208" stroke-width="3"/>
-  <line x1="0" y1="220" x2="1400" y2="220" stroke="#1a1208" stroke-width="2.5"/>
-
-  <!-- Mortar lines (vertical, row 4) -->
-  <line x1="140"  y1="48"  x2="140"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="256"  y1="42"  x2="256"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="414"  y1="50"  x2="414"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="544"  y1="44"  x2="544"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="716"  y1="48"  x2="716"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="858"  y1="40"  x2="858"  y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1014" y1="46"  x2="1014" y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1136" y1="42"  x2="1136" y2="102" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1284" y1="48"  x2="1284" y2="102" stroke="#1a1208" stroke-width="2"/>
-
-  <!-- Mortar lines (vertical, row 3) -->
-  <line x1="120"  y1="102" x2="120"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="280"  y1="102" x2="280"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="416"  y1="102" x2="416"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="568"  y1="102" x2="568"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="694"  y1="102" x2="694"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="858"  y1="102" x2="858"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="998"  y1="102" x2="998"  y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1154" y1="102" x2="1154" y2="164" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1286" y1="102" x2="1286" y2="164" stroke="#1a1208" stroke-width="2"/>
-
-  <!-- Mortar lines (vertical, row 2) -->
-  <line x1="146"  y1="164" x2="146"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="278"  y1="164" x2="278"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="440"  y1="164" x2="440"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="578"  y1="164" x2="578"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="730"  y1="164" x2="730"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="856"  y1="164" x2="856"  y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1022" y1="164" x2="1022" y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1164" y1="164" x2="1164" y2="220" stroke="#1a1208" stroke-width="2"/>
-  <line x1="1322" y1="164" x2="1322" y2="220" stroke="#1a1208" stroke-width="2"/>
-
-  <!-- Stone surface detail: cracks and chips -->
-  <line x1="60"   y1="54"  x2="72"  y2="68"  stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="210"  y1="46"  x2="218" y2="58"  stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="340"  y1="108" x2="350" y2="122" stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="500"  y1="104" x2="492" y2="118" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="630"  y1="50"  x2="640" y2="62"  stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="780"  y1="106" x2="790" y2="118" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="920"  y1="48"  x2="930" y2="60"  stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="1070" y1="102" x2="1080" y2="115" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="1200" y1="50"  x2="1210" y2="64"  stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="180"  y1="168" x2="190" y2="180" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="360"  y1="166" x2="368" y2="178" stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="650"  y1="168" x2="660" y2="180" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-  <line x1="950"  y1="164" x2="958" y2="176" stroke="#1e1610" stroke-width="1" opacity="0.6"/>
-  <line x1="1240" y1="168" x2="1248" y2="180" stroke="#1e1610" stroke-width="1" opacity="0.5"/>
-
-  <!-- Mossy highlights on top edges of some stones -->
-  <rect x="142"  y="42"  width="112" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="546"  y="48"  width="168" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="860"  y="46"  width="152" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="282"  y="106" width="132" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="696"  y="100" width="160" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="1000" y="100" width="152" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="148"  y="162" width="128" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-  <rect x="732"  y="162" width="122" height="3" rx="1" fill="#2a3820" opacity="0.4"/>
-  <rect x="1024" y="160" width="138" height="4" rx="1" fill="#2a3820" opacity="0.5"/>
-</svg>
-
-<div class="layout">
+<div class="shell">
   <header class="header">
-    <span class="header-title">Ogre World</span>
+    <span class="header-title" id="siteTitle">Ogre World</span>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-page="streams.html">Streams</button>
+      <button class="tab" data-page="dents.html">Dents</button>
+    </nav>
     <select class="theme-select" id="themeSelect" aria-label="Color theme">
       <option value="green">Bog Moss</option>
       <option value="amber">Firepit</option>
       <option value="grey">Dead Stone</option>
       <option value="void">The Void</option>
+      <option value="white">Onion Layers</option>
     </select>
   </header>
-
-  <nav class="sidebar" id="sidebar">
-    <div class="loading-state" style="height:200px;">
-      <span class="loading-glyph">~</span>
-      <span>wading in...</span>
-    </div>
-  </nav>
-
-  <main class="main" id="main">
-    <div class="empty-state">
-      <span class="loading-glyph" style="font-size:40px;">☽</span>
-      <span>select a stream from the list</span>
-    </div>
-  </main>
+  <iframe class="page-frame" id="pageFrame" src="streams.html" title="Page content"></iframe>
 </div>
 
+<canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
+<canvas id="eyeCanvas"   style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
+
 <script>
-const GITHUB_OWNER = 'rawtechusa-sys';
-const GITHUB_REPO  = 'ogrestats';
-const BRANCH       = 'main';
+// Shared mouse state -- written by both native events (header/tab area)
+// and postMessage from the iframe. Animation loops read _mouse directly.
+window._mouse = { x: -999, y: -999, px: -999, py: -999 };
 
-const RAW   = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+window.addEventListener('mousemove', e => {
+  window._mouse.px = window._mouse.x;
+  window._mouse.py = window._mouse.y;
+  window._mouse.x = e.clientX;
+  window._mouse.y = e.clientY;
+});
+window.addEventListener('mouseleave', () => {
+  window._mouse.x = -999; window._mouse.y = -999;
+});
 
-let currentChart = null;
-
-async function fetchJSON(url) {
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
-  return r.json();
-}
-
-async function fetchText(url) {
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(`${r.status} — ${url}`);
-  return r.text();
-}
-
-function parseJSONL(text) {
-  return text.trim().split('\n').filter(Boolean).map(l => {
-    try { return JSON.parse(l); } catch { return null; }
-  }).filter(Boolean);
-}
-
-function fmtDate(ts) {
-  return new Date(ts * 1000).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
-}
-
-function fmtTime(ts) {
-  return new Date(ts * 1000).toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
-}
-
-function fmtDuration(secs) {
-  const h = Math.floor(secs / 3600);
-  const m = Math.floor((secs % 3600) / 60);
-  return h > 0 ? `${h}h ${m}m` : `${m}m`;
-}
-
-function fmtElapsed(startTs, ts) {
-  const s = ts - startTs;
-  const h = Math.floor(s / 3600);
-  const m = Math.floor((s % 3600) / 60);
-  return h > 0 ? `${h}:${String(m).padStart(2,'0')}:00` : `${m}:00`;
-}
-
-function platformBadge(platforms) {
-  if (!platforms || platforms.length === 0) return '';
-  const hasYT = platforms.includes('youtube');
-  const hasTW = platforms.includes('twitch');
-  if (hasYT && hasTW) return '<span class="stream-item-badge badge-both">YT + TW</span>';
-  if (hasYT) return '<span class="stream-item-badge badge-yt">YouTube</span>';
-  if (hasTW) return '<span class="stream-item-badge badge-tw">Twitch</span>';
-  return '';
-}
-
-async function loadStreamList() {
-  const sidebar = document.getElementById('sidebar');
-  try {
-    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
-    const streams = [...streamIds].sort((a, b) => b.localeCompare(a));
-
-    if (streams.length === 0) {
-      sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
-      return;
-    }
-
-    sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
-
-    for (const [idx, id] of streams.entries()) {
-      const div = document.createElement('div');
-      div.className = 'stream-item' + (idx === 0 ? ' active' : '');
-      div.dataset.id = id;
-
-      let datePart = id;
-      let timePart = '';
-      const m = id.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
-      if (m) {
-        const [year, month, day] = m[1].split('-').map(Number);
-        const hh = +m[2], mm = +m[3];
-        const utcDate = new Date(Date.UTC(year, month - 1, day, hh, mm));
-        const ordinal = n => {
-          const s = ['th','st','nd','rd'], v = n % 100;
-          return n + (s[(v-20)%10] || s[v] || s[0]);
-        };
-        datePart = utcDate.toLocaleDateString('en-US', {
-          timeZone: 'America/New_York',
-          month: 'long', day: 'numeric', year: 'numeric'
-        }).replace(/(\d+),/, (_, d) => ordinal(+d) + ',');
-        timePart = utcDate.toLocaleTimeString('en-US', {
-          timeZone: 'America/New_York',
-          hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
-        });
-      }
-
-      div.innerHTML = `
-        <span class="stream-item-date">${datePart}</span>
-        <span class="stream-item-time">${timePart}</span>
-      `;
-
-      try {
-        const meta = await fetchJSON(`${RAW}/data/streams/${id}/metadata.json`);
-        div.innerHTML += platformBadge(meta.platforms);
-        if (meta.end_ts && meta.start_ts) {
-          const dur = fmtDuration(meta.end_ts - meta.start_ts);
-          div.innerHTML += `<span class="stream-item-time">${dur}</span>`;
-        }
-      } catch { /* metadata missing, skip */ }
-
-      div.addEventListener('click', () => {
-        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
-        div.classList.add('active');
-        loadStream(id);
-      });
-
-      sidebar.appendChild(div);
-    }
-
-    if (streams.length > 0) loadStream(streams[0]);
-
-  } catch (e) {
-    sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
+// Receive forwarded mouse coords from iframe, offset by iframe top
+window.addEventListener('message', e => {
+  if (!e.data) return;
+  if (e.data.type === 'mousemove') {
+    const frame = document.getElementById('pageFrame');
+    const offsetY = frame ? frame.getBoundingClientRect().top : 0;
+    window._mouse.px = window._mouse.x;
+    window._mouse.py = window._mouse.y;
+    window._mouse.x = e.data.x;
+    window._mouse.y = e.data.y + offsetY;
+  } else if (e.data.type === 'mouseleave') {
+    window._mouse.x = -999; window._mouse.y = -999;
+  } else if (e.data.type === 'theme') {
+    applyTheme(e.data.key);
   }
-}
+});
+</script>
 
-async function loadStream(streamId) {
-  const main = document.getElementById('main');
-  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+<script>
+// ── Site title ────────────────────────────────────────────────────────────────
+document.getElementById('siteTitle').textContent = SITE_TITLE || 'Ogre World';
+document.title = SITE_TITLE || 'Ogre World';
 
-  try {
-    const [meta, eventsText] = await Promise.all([
-      fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
-      fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
-    ]);
-
-    const events    = parseJSONL(eventsText);
-    const snapshots = events.filter(e => e.event === 'viewer_snapshot');
-    const donations = events.filter(e => e.event === 'donation');
-
-    const startTs   = meta.start_ts;
-    const endTs     = meta.end_ts;
-    const duration  = (endTs && startTs) ? endTs - startTs : null;
-    const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
-    const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
-    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
-    const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
-    const donCount  = donations.length;
-
-    const platforms = meta.platforms || [];
-    const hasYT = platforms.includes('youtube');
-    const hasTW = platforms.includes('twitch');
-
-    main.innerHTML = '';
-
-    // ── Stat cards ──
-    const grid = document.createElement('div');
-    grid.className = 'stat-grid';
-
-    function card(label, value, sub) {
-      return `<div class="stat-card">
-        <span class="stat-label">${label}</span>
-        <span class="stat-value">${value}</span>
-        ${sub ? `<span class="stat-sub">${sub}</span>` : ''}
-      </div>`;
-    }
-
-    let cards = '';
-    cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
-    cards += card('Peak Viewers', peakTotal.toLocaleString(), hasYT && hasTW ? `YT ${peakYT} · TW ${peakTW}` : '');
-    cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
-
-    const avgYT = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
-    const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
-    cards += card('Avg Viewers', (avgYT + avgTW).toLocaleString(), hasYT && hasTW ? `YT ${avgYT} · TW ${avgTW}` : '');
-
-    grid.innerHTML = cards;
-    main.appendChild(grid);
-
-    // ── Combined chart ──
-    if (snapshots.length > 0 || donations.length > 0) {
-      const panel = document.createElement('div');
-      panel.className = 'chart-panel';
-
-      const legendItems = [];
-      if (hasYT) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#c0392b;"></span>YouTube viewers</span>`);
-      if (hasTW) legendItems.push(`<span class="legend-item"><span class="legend-line" style="background:#7b4fa6;"></span>Twitch viewers</span>`);
-      legendItems.push(`<span class="legend-item"><span class="legend-swatch" style="background:#c47d2a;"></span>Donations</span>`);
-
-      panel.innerHTML = `
-        <div class="chart-header">
-          <span class="chart-title">Viewers &amp; Donations</span>
-          <div class="chart-legend">${legendItems.join('')}</div>
-        </div>
-        <div class="chart-wrap">
-          <canvas id="streamChart" role="img" aria-label="Line chart of viewer counts over stream duration with donation bars overlaid">No chart data available.</canvas>
-        </div>`;
-      main.appendChild(panel);
-
-      buildChart(snapshots, donations, startTs, hasYT, hasTW);
-    }
-
-    // ── Donation log ──
-    if (donations.length > 0) {
-      const panel = document.createElement('div');
-      panel.className = 'donations-panel';
-
-      const sorted = [...donations].sort((a,b) => a.ts - b.ts);
-      const rows = sorted.map(d => {
-        const elapsed = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
-        const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
-        const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
-        return `<tr>
-          <td class="ts-cell">${elapsed}</td>
-          <td><span class="username">${escHtml(d.username)}</span></td>
-          <td><span class="type-badge type-${d.type}">${d.type}</span></td>
-          <td>${usd}</td>
-          <td>${msg}</td>
-        </tr>`;
-      }).join('');
-
-      panel.innerHTML = `
-        <div class="donations-title">Donation Log</div>
-        <table class="donations-table">
-          <thead><tr>
-            <th>Time</th><th>User</th><th>Type</th><th>Amount</th><th>Message</th>
-          </tr></thead>
-          <tbody>${rows}</tbody>
-        </table>`;
-      main.appendChild(panel);
-    }
-
-  } catch (e) {
-    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>failed to load stream<br><small>${e.message}</small></span></div>`;
-  }
-}
-
-function buildChart(snapshots, donations, startTs, hasYT, hasTW) {
-  if (currentChart) { currentChart.destroy(); currentChart = null; }
-
-  const ctx = document.getElementById('streamChart');
-  if (!ctx) return;
-
-  const snapshotData = snapshots.map(s => ({
-    x: (s.ts - startTs) / 60,
-    yt: s.youtube || 0,
-    tw: s.twitch  || 0,
-  }));
-
-  const donationData = donations.map(d => ({
-    x: (d.ts - startTs) / 60,
-    y: d.amount_usd || 0,
-    label: `${d.username} · ${d.type} · $${(d.amount_usd||0).toFixed(2)}`,
-  }));
-
-  const datasets = [];
-
-  if (hasYT && snapshotData.length > 0) {
-    datasets.push({
-      label: 'YouTube',
-      data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
-      type: 'line',
-      borderColor: '#c0392b',
-      backgroundColor: 'rgba(192,57,43,0.08)',
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 4,
-      tension: 0.3,
-      fill: true,
-      yAxisID: 'yViewers',
-    });
-  }
-
-  if (hasTW && snapshotData.length > 0) {
-    datasets.push({
-      label: 'Twitch',
-      data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
-      type: 'line',
-      borderColor: '#7b4fa6',
-      backgroundColor: 'rgba(123,79,166,0.08)',
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 4,
-      tension: 0.3,
-      fill: true,
-      yAxisID: 'yViewers',
-    });
-  }
-
-  if (donationData.length > 0) {
-    datasets.push({
-      label: 'Donations',
-      data: donationData.map(d => ({ x: d.x, y: d.y })),
-      type: 'bar',
-      backgroundColor: 'rgba(100,180,60,0.75)',
-      borderColor: '#96d45a',
-      borderWidth: 1,
-      borderRadius: 2,
-      barThickness: 8,
-      yAxisID: 'yDonations',
-    });
-  }
-
-  const gridColor = 'rgba(100,180,60,0.08)';
-  const tickColor = '#4a7038';
-
-  currentChart = new Chart(ctx, {
-    type: 'bar',
-    data: { datasets },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: 'index', intersect: false },
-      animation: { duration: 400 },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#0e160e',
-          borderColor: 'rgba(100,180,60,0.4)',
-          borderWidth: 1,
-          titleColor: '#7ab84a',
-          bodyColor: '#b8c9a0',
-          titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
-          bodyFont:  { family: "'Lora', serif", size: 13 },
-          callbacks: {
-            title: items => {
-              const mins = Math.round(items[0].parsed.x);
-              const h = Math.floor(mins / 60);
-              const m = mins % 60;
-              return h > 0 ? `${h}h ${m}m into stream` : `${m}m into stream`;
-            },
-            label: item => {
-              if (item.dataset.label === 'Donations') return ` $${item.parsed.y.toFixed(2)} donated`;
-              return ` ${item.dataset.label}: ${Math.round(item.parsed.y).toLocaleString()} viewers`;
-            }
-          }
-        }
-      },
-      scales: {
-        x: {
-          type: 'linear',
-          title: { display: false },
-          grid: { color: gridColor },
-          ticks: {
-            color: tickColor,
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
-            callback: v => {
-              const h = Math.floor(v / 60);
-              const m = v % 60;
-              return h > 0 ? `${h}h${m > 0 ? m+'m' : ''}` : `${m}m`;
-            },
-            maxTicksLimit: 10,
-          }
-        },
-        yViewers: {
-          type: 'linear',
-          position: 'left',
-          grid: { color: gridColor },
-          ticks: {
-            color: tickColor,
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
-            callback: v => v.toLocaleString(),
-            maxTicksLimit: 6,
-          },
-          title: { display: false },
-        },
-        yDonations: {
-          type: 'linear',
-          position: 'right',
-          grid: { drawOnChartArea: false },
-          ticks: {
-            color: '#4a7038',
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
-            callback: v => '$' + v.toFixed(0),
-            maxTicksLimit: 5,
-          },
-          title: { display: false },
-        }
-      }
-    }
-  });
-}
-
-function escHtml(str) {
-  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-const THEMES = {
-  green: { file: 'themes/bog-moss.css',  chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
-  amber: { file: 'themes/firepit.css',   chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
-  grey:  { file: 'themes/dead-stone.css',chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
-  void:  { file: 'themes/the-void.css',  chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
+// ── Theme ─────────────────────────────────────────────────────────────────────
+const THEME_FILES = {
+  green: 'themes/bog-moss.css',
+  amber: 'themes/firepit.css',
+  grey:  'themes/dead-stone.css',
+  void:  'themes/the-void.css',
+  white: 'themes/onion-layers.css',
 };
 
 function applyTheme(key) {
-  const t = THEMES[key] || THEMES.green;
-  document.getElementById('theme-css').href = t.file;
+  document.getElementById('theme-css').href = THEME_FILES[key] || THEME_FILES.green;
   localStorage.setItem('swamp-theme', key);
-  if (currentChart) {
-    const ds = currentChart.data.datasets;
-    const donDs = ds.find(d => d.label === 'Donations');
-    if (donDs) {
-      donDs.backgroundColor = t.donBar;
-      donDs.borderColor = t.donBorder;
-    }
-    currentChart.options.scales.yViewers.grid.color = t.chartGrid;
-    currentChart.options.scales.yViewers.ticks.color = t.chartTick;
-    currentChart.options.scales.x.grid.color = t.chartGrid;
-    currentChart.options.scales.x.ticks.color = t.chartTick;
-    currentChart.options.scales.yDonations.ticks.color = t.donTick;
-    currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
-    currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
-    currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
-    currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
-    currentChart.update('none');
-  }
+  // Notify iframe -- it also reads localStorage directly on load,
+  // but this keeps live switching instant.
+  const f = document.getElementById('pageFrame');
+  try { f.contentWindow.postMessage({ type: 'theme', key }, '*'); } catch(e) {}
 }
 
 const savedTheme = localStorage.getItem('swamp-theme') || 'green';
 document.getElementById('themeSelect').value = savedTheme;
 applyTheme(savedTheme);
 
-document.getElementById('themeSelect').addEventListener('change', e => {
-  applyTheme(e.target.value);
+document.getElementById('themeSelect').addEventListener('change', e => applyTheme(e.target.value));
+
+// Re-apply after iframe navigates to a new page
+document.getElementById('pageFrame').addEventListener('load', () => {
+  applyTheme(localStorage.getItem('swamp-theme') || 'green');
 });
 
-loadStreamList();
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+document.getElementById('tabs').addEventListener('click', e => {
+  const tab = e.target.closest('.tab');
+  if (!tab) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  document.getElementById('pageFrame').src = tab.dataset.page;
+  localStorage.setItem('swamp-tab', tab.dataset.page);
+});
+
+// Restore last active tab
+const savedTab = localStorage.getItem('swamp-tab');
+if (savedTab) {
+  const match = document.querySelector(`.tab[data-page="${savedTab}"]`);
+  if (match && !match.classList.contains('active')) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    match.classList.add('active');
+    document.getElementById('pageFrame').src = savedTab;
+  }
+}
 </script>
 
-<canvas id="roachCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;"></canvas>
 <script>
+// ── Roaches ───────────────────────────────────────────────────────────────────
 (function() {
   const canvas = document.getElementById('roachCanvas');
   const ctx = canvas.getContext('2d');
   let W, H;
-  const mouse = { x: -999, y: -999 };
-  const FLEE_RADIUS = 120;
-  const FLEE_FORCE  = 4.2;
-  const ROACH_COUNT = 11;
+  const FLEE_RADIUS = ROACH_CONFIG.fleeRadius;
+  const ROACH_COUNT = ROACH_CONFIG.count;
 
   function resize() {
     W = canvas.width  = window.innerWidth;
@@ -1028,8 +283,6 @@ loadStreamList();
   }
   resize();
   window.addEventListener('resize', resize);
-  window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-  window.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
 
   function rand(a, b) { return a + Math.random() * (b - a); }
 
@@ -1038,10 +291,10 @@ loadStreamList();
       x:     rand(0, W),
       y:     rand(0, H),
       angle: rand(0, Math.PI * 2),
-      speed: rand(0.15, 0.35),
-      turnSpeed: rand(0.003, 0.012) * (Math.random() < 0.5 ? 1 : -1),
+      speed: ROACH_CONFIG.idleSpeedMin + Math.random() * (ROACH_CONFIG.idleSpeedMax - ROACH_CONFIG.idleSpeedMin),
+      turnSpeed: (ROACH_CONFIG.turnSpeedMin + Math.random() * (ROACH_CONFIG.turnSpeedMax - ROACH_CONFIG.turnSpeedMin)) * (Math.random() < 0.5 ? 1 : -1),
       legPhase: rand(0, Math.PI * 2),
-      size:  rand(7, 11),
+      size:  rand(ROACH_CONFIG.sizeMin, ROACH_CONFIG.sizeMax),
       wanderTimer: rand(0, 60),
       fleeing: false,
     };
@@ -1056,91 +309,51 @@ loadStreamList();
 
     const s = r.size;
     const legSwing = Math.sin(t * 0.18 + r.legPhase) * 0.4;
-    const alpha = 0.55;
+    const alpha = ROACH_CONFIG.alpha;
 
     ctx.strokeStyle = `rgba(101,60,20,${alpha})`;
     ctx.fillStyle   = `rgba(82,45,12,${alpha})`;
     ctx.lineWidth   = 0.8;
 
-    // 3 legs each side
     const legPositions = [-s*0.6, 0, s*0.55];
     for (let i = 0; i < 3; i++) {
       const lx = legPositions[i];
       const swing = legSwing * (i % 2 === 0 ? 1 : -1);
-      // left leg
-      ctx.beginPath();
-      ctx.moveTo(-s*0.35, lx);
-      ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s);
-      ctx.stroke();
-      // right leg
-      ctx.beginPath();
-      ctx.moveTo(s*0.35, lx);
-      ctx.lineTo(s*1.1, lx - s*0.3 - swing * s);
-      ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(-s*0.35, lx); ctx.lineTo(-s*1.1, lx - s*0.3 + swing * s); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo( s*0.35, lx); ctx.lineTo( s*1.1, lx - s*0.3 - swing * s); ctx.stroke();
     }
 
-    // antennae
     const antSwing = Math.sin(t * 0.12 + r.legPhase) * 0.15;
-    ctx.beginPath();
-    ctx.moveTo(-s*0.2, -s*1.1);
-    ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(s*0.2, -s*1.1);
-    ctx.quadraticCurveTo(s*0.6 - antSwing*s, -s*2.2, s*0.3 - antSwing*s*1.5, -s*3.0);
-    ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(-s*0.2, -s*1.1); ctx.quadraticCurveTo(-s*0.6 + antSwing*s, -s*2.2, -s*0.3 + antSwing*s*1.5, -s*3.0); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo( s*0.2, -s*1.1); ctx.quadraticCurveTo( s*0.6 - antSwing*s, -s*2.2,  s*0.3 - antSwing*s*1.5, -s*3.0); ctx.stroke();
 
-    // body -- abdomen (oval)
-    ctx.beginPath();
-    ctx.ellipse(0, s*0.5, s*0.45, s*0.85, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // thorax
-    ctx.beginPath();
-    ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // pronotum shield (head cover)
-    ctx.beginPath();
-    ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2);
-    ctx.fill();
-    ctx.stroke();
-
-    // head
-    ctx.beginPath();
-    ctx.ellipse(0, -s*1.5, s*0.2, s*0.22, 0, 0, Math.PI*2);
-    ctx.fill();
-
+    ctx.beginPath(); ctx.ellipse(0,  s*0.5,  s*0.45, s*0.85, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(0, -s*0.35, s*0.38, s*0.55, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(0, -s*1.05, s*0.32, s*0.38, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(0, -s*1.5,  s*0.2,  s*0.22, 0, 0, Math.PI*2); ctx.fill();
     ctx.restore();
   }
 
   function tick(t) {
     ctx.clearRect(0, 0, W, H);
-
     for (const r of roaches) {
-      // flee from mouse
-      const dx = r.x - mouse.x;
-      const dy = r.y - mouse.y;
+      const dx = r.x - window._mouse.x;
+      const dy = r.y - window._mouse.y;
       const dist = Math.sqrt(dx*dx + dy*dy);
 
-      if (dist < FLEE_RADIUS) {
-        r.fleeing = true;
+      if (dist < FLEE_RADIUS) {        r.fleeing = true;
         const fleeAngle = Math.atan2(dy, dx);
         const diff = fleeAngle - r.angle;
         const wrap = ((diff + Math.PI * 3) % (Math.PI * 2)) - Math.PI;
         r.angle += wrap * 0.25;
-        r.speed = Math.min(2.2, r.speed + 0.25);
+        r.speed = Math.min(ROACH_CONFIG.fleeMaxSpeed, r.speed + ROACH_CONFIG.fleeAccel);
       } else {
         r.fleeing = false;
-        r.speed = Math.max(rand(0.15, 0.35), r.speed - 0.04);
-
-        // idle wander
+        r.speed = Math.max(rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax), r.speed - ROACH_CONFIG.idleDecel);
         r.wanderTimer--;
         if (r.wanderTimer <= 0) {
-          r.turnSpeed = rand(0.003, 0.012) * (Math.random() < 0.5 ? 1 : -1);
-          r.wanderTimer = rand(60, 180);
+          r.turnSpeed = rand(ROACH_CONFIG.turnSpeedMin, ROACH_CONFIG.turnSpeedMax) * (Math.random() < 0.5 ? 1 : -1);
+          r.wanderTimer = rand(ROACH_CONFIG.wanderMinFrames, ROACH_CONFIG.wanderMaxFrames);
         }
         r.angle += r.turnSpeed;
       }
@@ -1148,13 +361,222 @@ loadStreamList();
       r.x += Math.cos(r.angle) * r.speed;
       r.y += Math.sin(r.angle) * r.speed;
 
-      // wrap around edges
       if (r.x < -20)  r.x = W + 20;
       if (r.x > W+20) r.x = -20;
       if (r.y < -20)  r.y = H + 20;
       if (r.y > H+20) r.y = -20;
 
       drawRoach(r, t);
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
+
+<script>
+// ── Eyeballs ──────────────────────────────────────────────────────────────────
+(function() {
+  const canvas = document.getElementById('eyeCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  const BUMP_RADIUS = EYE_CONFIG.bumpRadius;
+  const FRICTION    = EYE_CONFIG.friction;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    for (const e of eyes) {
+      if (!e) continue;
+      e.x = Math.min(Math.max(e.x, e.r), W - e.r);
+      e.y = Math.min(Math.max(e.y, e.r), H - e.r);
+    }
+  }
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  const eyes = [];
+
+  function makeEye() {
+    const r = rand(EYE_CONFIG.sizeMin, EYE_CONFIG.sizeMax);
+    return {
+      x: rand(r, W - r),
+      y: rand(r, H - r),
+      vx: 0, vy: 0,
+      r,
+      rollAngle: rand(0, 0.3),
+      rollAxis: rand(0, Math.PI * 2),
+    };
+  }
+
+  window.addEventListener('resize', resize);
+
+  resize();
+  for (let i = 0; i < EYE_CONFIG.count; i++) eyes.push(makeEye());
+
+  function drawEye(e) {
+    const { x, y, r, rollAngle, rollAxis } = e;
+    const alpha = EYE_CONFIG.alpha;
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    // Sclera -- perfectly circular
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(200,195,160,${alpha})`;
+    ctx.fill();
+    ctx.strokeStyle = `rgba(80,60,30,${alpha})`;
+    ctx.lineWidth = 0.8;
+    ctx.stroke();
+
+    const irisR = r * 0.52;
+    const screenOffset = Math.sin(rollAngle) * r * 0.85;
+    const ix = Math.cos(rollAxis) * screenOffset;
+    const iy = Math.sin(rollAxis) * screenOffset;
+    const depth = Math.cos(rollAngle);
+    const scaleAlongAxis  = Math.max(0.01, Math.abs(depth));
+    const scaleAcrossAxis = 1.0;
+    const irisAngle = rollAxis;
+
+    if (depth > 0) {
+      // Clip everything below to the sclera circle
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+
+      // Blood vessels clipped to sclera
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.scale(scaleAlongAxis, scaleAcrossAxis);
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.clip();
+      for (let i = 0; i < 30; i++) {
+        const a = (i / 30) * Math.PI * 2 + 0.8;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * r * 3, Math.sin(a) * r * 3);
+        ctx.quadraticCurveTo(Math.cos(a * 12) * r * 0.64, Math.sin(a * 12) * r * 0.64, 0, 0);
+        ctx.strokeStyle = `rgba(180,40,50,${alpha * (0.1 + 0.2 * Math.random())})`;
+        ctx.lineWidth = 0.2 + 0.3 * Math.random();
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // Iris
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.beginPath();
+      ctx.ellipse(0, 0,
+        irisR * scaleAlongAxis,
+        irisR * scaleAcrossAxis,
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(55,85,35,${alpha + 0.1})`;
+      ctx.fill();
+
+      // Iris radial lines
+      ctx.rotate(rollAxis + rollAngle * 0.3);
+      for (let i = 0; i < 10; i++) {
+        const a = (i / 10) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a) * irisR * scaleAlongAxis  * 0.3, Math.sin(a) * irisR * scaleAcrossAxis * 0.3);
+        ctx.lineTo(Math.cos(a) * irisR * scaleAlongAxis  * 0.92, Math.sin(a) * irisR * scaleAcrossAxis * 0.92);
+        ctx.strokeStyle = `rgba(25,50,15,${alpha * 0.5})`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // Pupil
+      const pupilR = irisR * 0.5;
+      ctx.save();
+      ctx.translate(ix, iy);
+      ctx.beginPath();
+      ctx.ellipse(0, 0,
+        pupilR * scaleAlongAxis,
+        pupilR * scaleAcrossAxis,
+        irisAngle, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(6,4,3,${alpha + 0.25})`;
+      ctx.fill();
+      ctx.restore();
+
+      ctx.restore(); // end sclera clip
+    }
+
+    // Specular highlight -- fixed on sclera, drawn outside clip so always visible
+    ctx.beginPath();
+    ctx.ellipse(-r * 0.22, -r * 0.25, r * 0.1, r * 0.08, -0.4, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(250,240,230,${alpha * 0.85})`;
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function tick() {
+    ctx.clearRect(0, 0, W, H);
+
+    // Mouse bump
+    if (window._mouse.x > -900) {
+      const mdx = window._mouse.x - window._mouse.px;
+      const mdy = window._mouse.y - window._mouse.py;
+      for (const e of eyes) {
+        const dx = e.x - window._mouse.x;
+        const dy = e.y - window._mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < BUMP_RADIUS + e.r) {
+          const force = (BUMP_RADIUS + e.r - dist) / (BUMP_RADIUS + e.r) * EYE_CONFIG.bumpForce;
+          const angle = Math.atan2(dy, dx);
+          e.vx += Math.cos(angle) * force + mdx * EYE_CONFIG.mouseVelMix;
+          e.vy += Math.sin(angle) * force + mdy * EYE_CONFIG.mouseVelMix;
+        }
+      }
+    }
+
+    // Ball-ball collisions
+    for (let i = 0; i < eyes.length; i++) {
+      for (let j = i + 1; j < eyes.length; j++) {
+        const a = eyes[i], b = eyes[j];
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const minDist = a.r + b.r;
+        if (dist < minDist && dist > 0) {
+          const overlap = (minDist - dist) / 2;
+          const nx = dx / dist, ny = dy / dist;
+          a.x -= nx * overlap; a.y -= ny * overlap;
+          b.x += nx * overlap; b.y += ny * overlap;
+          const dvx = a.vx - b.vx, dvy = a.vy - b.vy;
+          const dot = dvx * nx + dvy * ny;
+          if (dot > 0) {
+            a.vx -= dot * nx; a.vy -= dot * ny;
+            b.vx += dot * nx; b.vy += dot * ny;
+          }
+        }
+      }
+    }
+
+    for (const e of eyes) {
+      e.vx *= FRICTION;
+      e.vy *= FRICTION;
+      if (Math.abs(e.vx) < 0.01) e.vx = 0;
+      if (Math.abs(e.vy) < 0.01) e.vy = 0;
+
+      e.x += e.vx;
+      e.y += e.vy;
+
+      if (e.x - e.r < 0)    { e.x = e.r;     e.vx =  Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.x + e.r > W)    { e.x = W - e.r;  e.vx = -Math.abs(e.vx) * EYE_CONFIG.bounceDamp; }
+      if (e.y - e.r < 0)    { e.y = e.r;     e.vy =  Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+      if (e.y + e.r > H)    { e.y = H - e.r;  e.vy = -Math.abs(e.vy) * EYE_CONFIG.bounceDamp; }
+
+      const speed = Math.sqrt(e.vx * e.vx + e.vy * e.vy);
+      if (speed > 0.01) {
+        e.rollAxis = Math.atan2(e.vy, e.vx);
+        e.rollAngle += speed / e.r;
+      }
+
+      drawEye(e);
     }
 
     requestAnimationFrame(tick);
@@ -1163,5 +585,6 @@ loadStreamList();
   requestAnimationFrame(tick);
 })();
 </script>
+
 </body>
 </html>
