@@ -282,7 +282,53 @@
     margin: 0 2px;
   }
 
-  .chart-wrap { position: relative; width: 100%; height: 300px; }
+  .chart-wrap { position: relative; width: 100%; height: 400px; }
+
+  /* ── Scrub-and-zoom scrollbar ── */
+  .chart-scrollbar {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    margin-top: 10px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+  }
+  .chart-scrollbar-thumb {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(var(--accent-glow-r), var(--accent-glow-g), var(--accent-glow-b), 0.22);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    cursor: grab;
+  }
+  .chart-scrollbar-thumb:active { cursor: grabbing; }
+  .chart-scrollbar-handle {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    width: 9px;
+    cursor: ew-resize;
+  }
+  .chart-scrollbar-handle.left  { left: -1px; }
+  .chart-scrollbar-handle.right { right: -1px; }
+  .chart-scrollbar-handle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; height: 9px;
+    background: var(--accent);
+    border-radius: 1px;
+    opacity: 0.85;
+  }
 
   /* ── Donation table ── */
   .donations-panel {
@@ -689,6 +735,12 @@ async function loadStream(streamId) {
         </div>
         <div class="chart-wrap">
           <canvas id="streamChart" role="img" aria-label="Viewer counts, donations and chat rate over stream duration"></canvas>
+        </div>
+        <div class="chart-scrollbar" id="chartScrollbar">
+          <div class="chart-scrollbar-thumb" id="chartScrollbarThumb">
+            <div class="chart-scrollbar-handle left"></div>
+            <div class="chart-scrollbar-handle right"></div>
+          </div>
         </div>`;
       main.appendChild(panel);
 
@@ -1149,11 +1201,15 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         // X-axis zoom/pan. Wheel + pinch zoom and drag-to-pan, clamped to the
         // stream's own time range. Double-click the chart to reset (see below).
         zoom: {
-          pan: { enabled: true, mode: 'x' },
+          pan: {
+            enabled: true, mode: 'x',
+            onPan: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
+          },
           zoom: {
             wheel: { enabled: true },
             pinch: { enabled: true },
             mode: 'x',
+            onZoom: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
           },
           limits: { x: { min: 'original', max: 'original' } },
         },
@@ -1241,7 +1297,96 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   });
 
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
-  ctx.ondblclick = () => { if (currentChart && currentChart.resetZoom) currentChart.resetZoom(); };
+  ctx.ondblclick = () => {
+    if (currentChart && currentChart.resetZoom) {
+      currentChart.resetZoom();
+      if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
+    }
+  };
+
+  setupScrollbar();
+}
+
+// ── Scrub-and-zoom scrollbar ───────────────────────────────────────────────────
+// A track under the chart whose thumb shows the visible x-window: drag the thumb
+// body to scroll/pan, drag a handle to resize (zoom). Stays in sync with wheel
+// zoom and chart panning via the zoom plugin's onZoom/onPan callbacks.
+function setupScrollbar() {
+  const track = document.getElementById('chartScrollbar');
+  const thumb = document.getElementById('chartScrollbarThumb');
+  if (!track || !thumb || !currentChart) return;
+
+  const fullMin = currentChart.scales.x.min;
+  const fullMax = currentChart.scales.x.max;
+  const fullRange = (fullMax - fullMin) || 1;
+  const minRange = fullRange * 0.02; // smallest window the thumb can shrink to
+
+  function updateScrollbar() {
+    const xs = currentChart.scales.x;
+    let lo = Math.max(0, Math.min(1, (xs.min - fullMin) / fullRange));
+    let hi = Math.max(0, Math.min(1, (xs.max - fullMin) / fullRange));
+    thumb.style.left = (lo * 100) + '%';
+    thumb.style.width = Math.max(0, (hi - lo) * 100) + '%';
+  }
+
+  function applyRange(min, max) {
+    if (max - min < minRange) max = min + minRange;
+    if (min < fullMin) { max += (fullMin - min); min = fullMin; }
+    if (max > fullMax) { min -= (max - fullMax); max = fullMax; }
+    min = Math.max(fullMin, min);
+    max = Math.min(fullMax, max);
+    currentChart.zoomScale('x', { min, max }, 'none');
+    updateScrollbar();
+  }
+
+  // Let the zoom plugin's callbacks refresh the thumb during wheel/drag on the chart.
+  currentChart.$updateScrollbar = updateScrollbar;
+
+  function startDrag(e, mode) {
+    e.preventDefault();
+    e.stopPropagation();
+    const trackW = track.clientWidth || 1;
+    const startX = e.touches ? e.touches[0].clientX : e.clientX;
+    const startMin = currentChart.scales.x.min;
+    const startMax = currentChart.scales.x.max;
+    function onMove(ev) {
+      const cx = ev.touches ? ev.touches[0].clientX : ev.clientX;
+      const dxVal = ((cx - startX) / trackW) * fullRange;
+      if (mode === 'pan')        applyRange(startMin + dxVal, startMax + dxVal);
+      else if (mode === 'left')  applyRange(Math.min(startMin + dxVal, startMax - minRange), startMax);
+      else if (mode === 'right') applyRange(startMin, Math.max(startMax + dxVal, startMin + minRange));
+    }
+    function onUp() {
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onUp);
+    }
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onUp);
+  }
+
+  thumb.addEventListener('mousedown', e => startDrag(e, 'pan'));
+  thumb.addEventListener('touchstart', e => startDrag(e, 'pan'), { passive: false });
+  const hLeft = thumb.querySelector('.chart-scrollbar-handle.left');
+  const hRight = thumb.querySelector('.chart-scrollbar-handle.right');
+  if (hLeft)  { hLeft.addEventListener('mousedown', e => startDrag(e, 'left'));   hLeft.addEventListener('touchstart', e => startDrag(e, 'left'), { passive: false }); }
+  if (hRight) { hRight.addEventListener('mousedown', e => startDrag(e, 'right')); hRight.addEventListener('touchstart', e => startDrag(e, 'right'), { passive: false }); }
+
+  // Click empty track to recenter the current window where you clicked.
+  track.addEventListener('mousedown', e => {
+    if (e.target !== track) return; // ignore clicks that land on the thumb/handles
+    const rect = track.getBoundingClientRect();
+    const frac = (e.clientX - rect.left) / (rect.width || 1);
+    const xs = currentChart.scales.x;
+    const half = (xs.max - xs.min) / 2;
+    const center = fullMin + frac * fullRange;
+    applyRange(center - half, center + half);
+  });
+
+  updateScrollbar();
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
