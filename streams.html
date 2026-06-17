@@ -389,11 +389,11 @@ let currentChart = null;
 
 // ── Theme ─────────────────────────────────────────────────────────────────────
 const THEMES = {
-  green: { file: 'themes/bog-moss.css',      chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
-  amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
-  grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
-  void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
-  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  green: { file: 'themes/bog-moss.css',      chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
+  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
 };
 
 function applyTheme(key) {
@@ -401,10 +401,8 @@ function applyTheme(key) {
   document.getElementById('theme-css').href = t.file;
   if (currentChart) {
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
-    currentChart.options.scales.yViewers.ticks.color = t.chartTick;
     currentChart.options.scales.x.grid.color = t.chartGrid;
     currentChart.options.scales.x.ticks.color = t.chartTick;
-    currentChart.options.scales.yDonations.ticks.color = t.donTick;
     currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
     currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
     currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
@@ -601,7 +599,7 @@ async function loadStream(streamId) {
     const duration  = (endTs && startTs) ? endTs - startTs : null;
     const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
     const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
-    const peakTotal = snapshots.reduce((m, s) => Math.max(m, (s.youtube || 0) + (s.twitch || 0)), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
     const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
     const donCount  = donations.length;
 
@@ -749,9 +747,9 @@ const DS = {
   TW_VIEWERS:       'Twitch Viewers',
   TOTAL_VIEWERS:    'Total Viewers',
   DONATIONS:        'Donations',
-  YT_CHAT:          'YouTube Chat Rate',
-  TW_CHAT:          'Twitch Chat Rate',
-  TOTAL_CHAT:       'Total Chat Rate',
+  YT_CHAT:          'YouTube Chat',
+  TW_CHAT:          'Twitch Chat',
+  TOTAL_CHAT:       'Total Chat',
   YT_ACTIVE_CHATTERS: 'YT Active Chatters',
   TW_ACTIVE_CHATTERS: 'TW Active Chatters',
 };
@@ -843,9 +841,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.YT_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
       type: 'line',
-      borderColor: '#e84040',
-      backgroundColor: 'rgba(232,64,64,0.08)',
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
+      borderColor: '#4a90e2',
+      backgroundColor: 'rgba(74,144,226,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
@@ -857,26 +855,23 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.TW_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
       type: 'line',
-      borderColor: '#8855dd',
-      backgroundColor: 'rgba(136,85,221,0.08)',
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
+      borderColor: '#6650d8',
+      backgroundColor: 'rgba(102,80,216,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
   }
 
-  // ── Total viewers (computed) ──
-  // YT + TW summed per snapshot. Only shown when both platforms are live, since
-  // for a single-platform stream the total just duplicates that platform's line.
   if (hasYT && hasTW && snapshotData.length > 0) {
     datasets.push({
       label: DS.TOTAL_VIEWERS,
       hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw })),
       type: 'line',
-      borderColor: '#909090',
+      borderColor: '#40c4ff',
       backgroundColor: 'transparent',
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false,
       yAxisID: 'yViewers',
     });
@@ -891,10 +886,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.YT_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.ytActive })),
       type: 'line',
-      borderColor: '#e84040',
+      borderColor: '#26b89a',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
-      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
+      pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yActiveChatters',
     });
@@ -906,10 +901,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.TW_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.twActive })),
       type: 'line',
-      borderColor: '#8855dd',
+      borderColor: '#1a9280',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
-      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
+      pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yActiveChatters',
     });
@@ -926,11 +921,11 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       })),
       type: 'line',
       borderColor: '#e8c020',
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(232,192,32,0.12)',
       borderWidth: 2,
-      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
+      pointRadius: 0, pointHoverRadius: 4,
       tension: 0,
-      fill: false,
+      fill: true,
       yAxisID: 'yDonations',
     });
   }
@@ -946,10 +941,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         hidden: hiddenDatasets.has(DS.YT_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.ytMpm })),
         type: 'line',
-        borderColor: '#e84040',
+        borderColor: '#d49a20',
         backgroundColor: 'transparent',
-        borderWidth: 1.5, borderDash: [2, 5],
-        pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
+        borderWidth: 1.5, borderDash: [4, 3],
+        pointRadius: 0, pointHoverRadius: 4,
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
@@ -961,10 +956,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         hidden: hiddenDatasets.has(DS.TW_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.twMpm })),
         type: 'line',
-        borderColor: '#8855dd',
+        borderColor: '#c87030',
         backgroundColor: 'transparent',
-        borderWidth: 1.5, borderDash: [2, 5],
-        pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
+        borderWidth: 1.5, borderDash: [4, 3],
+        pointRadius: 0, pointHoverRadius: 4,
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
@@ -980,10 +975,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
       })),
       type: 'line',
-      borderColor: '#909090',
+      borderColor: '#4caf50',
       backgroundColor: 'transparent',
-      borderWidth: 2, borderDash: [2, 5],
-      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
+      borderWidth: 2, borderDash: [6, 3],
+      pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yChatRate',
     });
@@ -1025,9 +1020,6 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           borderWidth: 1,
           titleColor: t.tooltipTitle,
           bodyColor: t.tooltipBody,
-          usePointStyle: true,
-          boxWidth: 16,
-          boxHeight: 8,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
           // Donations only show when that bucket actually has a donation.
@@ -1075,15 +1067,20 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         yViewers: {
           type: 'linear',
           position: 'left',
-          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS]),
+          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS]),
           grid: { color: t.chartGrid },
           ticks: {
-            color: t.chartTick,
-            font: { family: "'Share Tech Mono', monospace", size: 13 },
+            color: '#40c4ff',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 6,
           },
-          title: { display: false },
+          title: {
+            display: true,
+            text: 'viewers',
+            color: '#40c4ff',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
+          },
         },
         yActiveChatters: {
           type: 'linear',
@@ -1091,12 +1088,17 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#1a9070',
-            font: { family: "'Share Tech Mono', monospace", size: 13 },
+            color: '#26b89a',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 5,
           },
-          title: { display: false },
+          title: {
+            display: true,
+            text: 'chatters',
+            color: '#26b89a',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
+          },
         },
         yDonations: {
           type: 'linear',
@@ -1104,8 +1106,8 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.DONATIONS]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: t.donTick,
-            font: { family: "'Share Tech Mono', monospace", size: 13 },
+            color: '#e8c020',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => '$' + v.toFixed(0),
             maxTicksLimit: 5,
           },
@@ -1117,16 +1119,16 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#a07818',
-            font: { family: "'Share Tech Mono', monospace", size: 13 },
+            color: '#4caf50',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toFixed(0) + ' mpm',
             maxTicksLimit: 5,
           },
           title: {
             display: true,
             text: 'msg / min',
-            color: '#806010',
-            font: { family: "'Share Tech Mono', monospace", size: 11 },
+            color: '#4caf50',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
       }
@@ -1142,18 +1144,18 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
   const items = [];
 
-  if (hasYT)       items.push({ label: 'YT Viewers',         type: 'line',   color: '#e84040', ds: DS.YT_VIEWERS });
-  if (hasTW)       items.push({ label: 'TW Viewers',         type: 'line',   color: '#8855dd', ds: DS.TW_VIEWERS });
-  if (hasYT && hasTW) items.push({ label: 'Total Viewers',   type: 'line',   color: '#909090', ds: DS.TOTAL_VIEWERS });
-  if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#8855dd', ds: DS.TW_ACTIVE_CHATTERS });
-  if (hasDonations) items.push({ label: 'Donations',         type: 'line',   color: '#e8c020', ds: DS.DONATIONS  });
+  if (hasYT)          items.push({ label: 'YT Viewers',         type: 'line',   color: '#4a90e2', ds: DS.YT_VIEWERS });
+  if (hasTW)          items.push({ label: 'TW Viewers',         type: 'line',   color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasYT && hasTW) items.push({ label: 'Total Viewers',      type: 'line',   color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasActiveYT)    items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW)    items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasDonations)   items.push({ label: 'Donations',          type: 'line',   color: '#e8c020', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
     items.push({ label: null }); // divider
-    if (hasYT) items.push({ label: 'YT Chat Rate',    type: 'dotted', color: '#e84040', ds: DS.YT_CHAT    });
-    if (hasTW) items.push({ label: 'TW Chat Rate',    type: 'dotted', color: '#8855dd', ds: DS.TW_CHAT    });
-    items.push(   { label: 'Total Chat Rate', type: 'dotted', color: '#909090', ds: DS.TOTAL_CHAT });
+    if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT    });
+    if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#c87030', ds: DS.TW_CHAT    });
+    items.push(   { label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
   }
 
   container.innerHTML = '';
@@ -1174,9 +1176,6 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
     let indicator;
     if (item.type === 'bar') {
       indicator = `<span class="legend-swatch" style="background:${item.color};"></span>`;
-    } else if (item.type === 'dotted') {
-      // Dotted line indicator: three short segments with wider gaps
-      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="4" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="8" y1="4" x2="12" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="16" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
     } else if (item.type === 'dashed') {
       // Dashed line indicator: two short segments with a gap
       indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="7" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="11" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
