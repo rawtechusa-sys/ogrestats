@@ -400,14 +400,9 @@ function applyTheme(key) {
   const t = THEMES[key] || THEMES.green;
   document.getElementById('theme-css').href = t.file;
   if (currentChart) {
-    const ds = currentChart.data.datasets;
-    const donDs = ds.find(d => d.label === DS.DONATIONS);
-    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
-    currentChart.options.scales.yViewers.ticks.color = t.chartTick;
     currentChart.options.scales.x.grid.color = t.chartGrid;
     currentChart.options.scales.x.ticks.color = t.chartTick;
-    currentChart.options.scales.yDonations.ticks.color = t.donTick;
     currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
     currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
     currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
@@ -750,6 +745,7 @@ async function loadStream(streamId) {
 const DS = {
   YT_VIEWERS:       'YouTube Viewers',
   TW_VIEWERS:       'Twitch Viewers',
+  TOTAL_VIEWERS:    'Total Viewers',
   DONATIONS:        'Donations',
   YT_CHAT:          'YouTube Chat',
   TW_CHAT:          'Twitch Chat',
@@ -767,7 +763,7 @@ const hiddenDatasets = new Set(
 function syncAxisDisplay() {
   if (!currentChart) return;
   const axisMap = {
-    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS],
+    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS],
     yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS],
     yDonations:      [DS.DONATIONS],
     yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT],
@@ -867,6 +863,20 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
+  if (hasYT && hasTW && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.TOTAL_VIEWERS,
+      hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw })),
+      type: 'line',
+      borderColor: '#40c4ff',
+      backgroundColor: 'transparent',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false,
+      yAxisID: 'yViewers',
+    });
+  }
+
   // ── Active chatter series ──
   // Built from the full snapshotData (null where missing) so indices stay
   // aligned with the viewer series; spanGaps bridges the nulls visually.
@@ -910,8 +920,8 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         y: donationCumByIndex[i],
       })),
       type: 'line',
-      borderColor: t.donBorder,
-      backgroundColor: t.donBar,
+      borderColor: '#e8c020',
+      backgroundColor: 'rgba(232,192,32,0.12)',
       borderWidth: 2,
       pointRadius: 0, pointHoverRadius: 4,
       tension: 0,
@@ -965,7 +975,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
       })),
       type: 'line',
-      borderColor: '#e8c040',
+      borderColor: '#4caf50',
       backgroundColor: 'transparent',
       borderWidth: 2, borderDash: [6, 3],
       pointRadius: 0, pointHoverRadius: 4,
@@ -1057,15 +1067,20 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         yViewers: {
           type: 'linear',
           position: 'left',
-          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS]),
+          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS]),
           grid: { color: t.chartGrid },
           ticks: {
-            color: t.chartTick,
+            color: '#40c4ff',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 6,
           },
-          title: { display: false },
+          title: {
+            display: true,
+            text: 'viewers',
+            color: '#40c4ff',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
+          },
         },
         yActiveChatters: {
           type: 'linear',
@@ -1073,12 +1088,17 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#1a9070',
+            color: '#26b89a',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 5,
           },
-          title: { display: false },
+          title: {
+            display: true,
+            text: 'chatters',
+            color: '#26b89a',
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
+          },
         },
         yDonations: {
           type: 'linear',
@@ -1086,7 +1106,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.DONATIONS]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: t.donTick,
+            color: '#e8c020',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => '$' + v.toFixed(0),
             maxTicksLimit: 5,
@@ -1099,7 +1119,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#a07818',
+            color: '#4caf50',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toFixed(0) + ' mpm',
             maxTicksLimit: 5,
@@ -1107,7 +1127,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           title: {
             display: true,
             text: 'msg / min',
-            color: '#806010',
+            color: '#4caf50',
             font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
@@ -1124,17 +1144,18 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
   const items = [];
 
-  if (hasYT)       items.push({ label: 'YT Viewers',         type: 'line',   color: '#4a90e2', ds: DS.YT_VIEWERS });
-  if (hasTW)       items.push({ label: 'TW Viewers',         type: 'line',   color: '#6650d8', ds: DS.TW_VIEWERS });
-  if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
-  if (hasDonations) items.push({ label: 'Donations',         type: 'line',   color: '#c47d2a', ds: DS.DONATIONS  });
+  if (hasYT)          items.push({ label: 'YT Viewers',         type: 'line',   color: '#4a90e2', ds: DS.YT_VIEWERS });
+  if (hasTW)          items.push({ label: 'TW Viewers',         type: 'line',   color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasYT && hasTW) items.push({ label: 'Total Viewers',      type: 'line',   color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasActiveYT)    items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW)    items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasDonations)   items.push({ label: 'Donations',          type: 'line',   color: '#e8c020', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
     items.push({ label: null }); // divider
     if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT    });
     if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#c87030', ds: DS.TW_CHAT    });
-    items.push(   { label: 'Total Chat', type: 'dashed', color: '#e8c040', ds: DS.TOTAL_CHAT });
+    items.push(   { label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
   }
 
   container.innerHTML = '';
