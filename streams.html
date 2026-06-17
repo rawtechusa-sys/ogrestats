@@ -1217,6 +1217,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       scales: {
         x: {
           type: 'linear',
+          offset: false, // override the bar-chart default so lines span edge-to-edge (no slot padding that grows when zoomed)
           grid: { color: t.chartGrid },
           ticks: {
             color: t.chartTick,
