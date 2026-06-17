@@ -601,7 +601,7 @@ async function loadStream(streamId) {
     const duration  = (endTs && startTs) ? endTs - startTs : null;
     const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
     const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
-    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, (s.youtube || 0) + (s.twitch || 0)), 0);
     const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
     const donCount  = donations.length;
 
@@ -747,6 +747,7 @@ async function loadStream(streamId) {
 const DS = {
   YT_VIEWERS:       'YouTube Viewers',
   TW_VIEWERS:       'Twitch Viewers',
+  TOTAL_VIEWERS:    'Total Viewers',
   DONATIONS:        'Donations',
   YT_CHAT:          'YouTube Chat Rate',
   TW_CHAT:          'Twitch Chat Rate',
@@ -764,7 +765,7 @@ const hiddenDatasets = new Set(
 function syncAxisDisplay() {
   if (!currentChart) return;
   const axisMap = {
-    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS],
+    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS],
     yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS],
     yDonations:      [DS.DONATIONS],
     yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT],
@@ -860,6 +861,23 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       backgroundColor: 'rgba(136,85,221,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
       tension: 0.3, fill: true,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // ── Total viewers (computed) ──
+  // YT + TW summed per snapshot. Only shown when both platforms are live, since
+  // for a single-platform stream the total just duplicates that platform's line.
+  if (hasYT && hasTW && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.TOTAL_VIEWERS,
+      hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw })),
+      type: 'line',
+      borderColor: '#909090',
+      backgroundColor: 'transparent',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
+      tension: 0.3, fill: false,
       yAxisID: 'yViewers',
     });
   }
@@ -1126,6 +1144,7 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
 
   if (hasYT)       items.push({ label: 'YT Viewers',         type: 'line',   color: '#e84040', ds: DS.YT_VIEWERS });
   if (hasTW)       items.push({ label: 'TW Viewers',         type: 'line',   color: '#8855dd', ds: DS.TW_VIEWERS });
+  if (hasYT && hasTW) items.push({ label: 'Total Viewers',   type: 'line',   color: '#909090', ds: DS.TOTAL_VIEWERS });
   if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
   if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#8855dd', ds: DS.TW_ACTIVE_CHATTERS });
   if (hasDonations) items.push({ label: 'Donations',         type: 'line',   color: '#e8c020', ds: DS.DONATIONS  });
