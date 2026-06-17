@@ -324,7 +324,7 @@
   .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
   .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
 
-  .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 28px; }
+  .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
   .username   { color: var(--text-primary); }
   .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
   .ts-link    { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); transition: color 0.15s ease, border-color 0.15s ease; }
@@ -755,6 +755,15 @@ const DS = {
   TOTAL_ACTIVE_CHATTERS: 'Total Active Chatters',
 };
 
+// Canonical ordering for tooltip rows -- mirrors the legend grouping in
+// buildLegend (Donations | Viewers | Active Chatters | Msg/Min, Total first).
+const LEGEND_ORDER = [
+  DS.DONATIONS,
+  DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS,
+  DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS,
+  DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT,
+];
+
 // Persisted set of dataset labels the user has toggled off; survives stream changes.
 const hiddenDatasets = new Set(
   JSON.parse(localStorage.getItem('stream-chart-hidden') || '[]')
@@ -1045,6 +1054,8 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
+          // Order tooltip rows to match the legend on top of the chart.
+          itemSort: (a, b) => LEGEND_ORDER.indexOf(a.dataset.label) - LEGEND_ORDER.indexOf(b.dataset.label),
           // Donations only show when that bucket actually has a donation.
           // Continuous series always show -- the label callback fills gaps with
           // the nearest sample, so every stat appears whenever the tooltip is up.
@@ -1095,7 +1106,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { color: t.chartGrid },
           ticks: {
             color: '#40c4ff',
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 6,
           },
@@ -1103,7 +1114,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'viewers',
             color: '#40c4ff',
-            font: { family: "'Share Tech Mono', monospace", size: 18 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
         yActiveChatters: {
@@ -1113,7 +1124,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#909090',
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 5,
           },
@@ -1121,7 +1132,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'chatters',
             color: '#909090',
-            font: { family: "'Share Tech Mono', monospace", size: 18 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
         yDonations: {
@@ -1131,7 +1142,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#e8c020',
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
             callback: v => '$' + v.toFixed(0),
             maxTicksLimit: 5,
           },
@@ -1144,7 +1155,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#4caf50',
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
             callback: v => v.toFixed(0),
             maxTicksLimit: 5,
           },
@@ -1152,7 +1163,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'msg / min',
             color: '#4caf50',
-            font: { family: "'Share Tech Mono', monospace", size: 18 },
+            font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
       }
