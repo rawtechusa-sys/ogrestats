@@ -402,7 +402,7 @@ function applyTheme(key) {
   if (currentChart) {
     const ds = currentChart.data.datasets;
     const donDs = ds.find(d => d.label === DS.DONATIONS);
-    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; donDs.pointBackgroundColor = t.donBorder; }
+    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
     currentChart.options.scales.yViewers.ticks.color = t.chartTick;
     currentChart.options.scales.x.grid.color = t.chartGrid;
@@ -770,6 +770,17 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       donationByIndex[nearest] += (d.amount_usd || 0);
     }
   }
+  // Running total across the snapshot grid: the donation line is the cumulative
+  // money raised up to each point, so it climbs with each donation and plateaus
+  // at the stream total. Every index carries a value, making the line solid.
+  const donationCumByIndex = new Array(snapshotData.length).fill(0);
+  {
+    let running = 0;
+    for (let i = 0; i < snapshotData.length; i++) {
+      running += donationByIndex[i];
+      donationCumByIndex[i] = running;
+    }
+  }
   const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
   function fmtET(ms) {
@@ -839,24 +850,21 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
-  // ── Donations ──
+  // ── Donations (cumulative) ──
   if (hasDonations) {
     datasets.push({
       label: DS.DONATIONS,
       data: snapshotData.map((s, i) => ({
         x: s.x,
-        y: donationByIndex[i] > 0 ? donationByIndex[i] : null,
+        y: donationCumByIndex[i],
       })),
       type: 'line',
       borderColor: t.donBorder,
       backgroundColor: t.donBar,
       borderWidth: 2,
-      pointRadius: 4, pointHoverRadius: 6,
-      pointBackgroundColor: t.donBorder,
+      pointRadius: 0, pointHoverRadius: 4,
       tension: 0,
-      stepped: false,
-      spanGaps: false,
-      fill: false,
+      fill: true,
       yAxisID: 'yDonations',
     });
   }
@@ -964,7 +972,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
               }
               if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
-                case DS.DONATIONS:          return ` $${y.toFixed(2)} donated`;
+                case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
                 case DS.TOTAL_CHAT:         return ` Total chat: ${y.toFixed(1)} mpm`;
