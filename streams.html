@@ -8,6 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"></script>
+<script>
+  // The UMD zoom plugin auto-registers, but register explicitly as a fallback
+  // (re-registering the same plugin is a no-op in Chart.js).
+  if (window.Chart && window.ChartZoom) { try { Chart.register(window.ChartZoom); } catch (e) {} }
+</script>
 <link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
 <style>
 
@@ -213,11 +220,25 @@
     margin-bottom: 12px;
   }
 
+  .chart-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
   .chart-title {
     font-family: 'Rye', serif;
     font-size: 14px;
     color: var(--text-primary);
     letter-spacing: 0.04em;
+  }
+
+  .chart-hint {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
   }
 
   .chart-legend {
@@ -660,7 +681,10 @@ async function loadStream(streamId) {
 
       panel.innerHTML = `
         <div class="chart-header">
-          <span class="chart-title">Viewers &amp; Donations</span>
+          <div class="chart-title-wrap">
+            <span class="chart-title">Viewers &amp; Donations</span>
+            <span class="chart-hint">scroll to zoom &middot; drag to pan &middot; double-click to reset</span>
+          </div>
           <div class="chart-legend" id="chartLegend"></div>
         </div>
         <div class="chart-wrap">
@@ -1121,7 +1145,18 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
               }
             }
           }
-        }
+        },
+        // X-axis zoom/pan. Wheel + pinch zoom and drag-to-pan, clamped to the
+        // stream's own time range. Double-click the chart to reset (see below).
+        zoom: {
+          pan: { enabled: true, mode: 'x' },
+          zoom: {
+            wheel: { enabled: true },
+            pinch: { enabled: true },
+            mode: 'x',
+          },
+          limits: { x: { min: 'original', max: 'original' } },
+        },
       },
       scales: {
         x: {
@@ -1204,6 +1239,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       }
     }
   });
+
+  // Double-click anywhere on the chart to reset an x-axis zoom/pan.
+  ctx.ondblclick = () => { if (currentChart && currentChart.resetZoom) currentChart.resetZoom(); };
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
