@@ -758,6 +758,30 @@ const DS = {
   TW_ACTIVE_CHATTERS: 'TW Active Chatters',
 };
 
+// Persisted set of dataset labels the user has toggled off; survives stream changes.
+const hiddenDatasets = new Set(
+  JSON.parse(localStorage.getItem('stream-chart-hidden') || '[]')
+);
+
+// Show/hide each y-axis based on whether any of its datasets are currently visible.
+function syncAxisDisplay() {
+  if (!currentChart) return;
+  const axisMap = {
+    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS],
+    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS],
+    yDonations:      [DS.DONATIONS],
+    yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT],
+  };
+  for (const [axisId, labels] of Object.entries(axisMap)) {
+    const anyVisible = labels.some(label => {
+      const idx = currentChart.data.datasets.findIndex(d => d.label === label);
+      return idx !== -1 && currentChart.isDatasetVisible(idx);
+    });
+    currentChart.options.scales[axisId].display = anyVisible;
+  }
+  currentChart.update('none');
+}
+
 function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
@@ -818,10 +842,11 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   if (hasYT && snapshotData.length > 0) {
     datasets.push({
       label: DS.YT_VIEWERS,
+      hidden: hiddenDatasets.has(DS.YT_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
       type: 'line',
-      borderColor: '#c0392b',
-      backgroundColor: 'rgba(192,57,43,0.08)',
+      borderColor: '#4a90e2',
+      backgroundColor: 'rgba(74,144,226,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
@@ -831,10 +856,11 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   if (hasTW && snapshotData.length > 0) {
     datasets.push({
       label: DS.TW_VIEWERS,
+      hidden: hiddenDatasets.has(DS.TW_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
       type: 'line',
-      borderColor: '#7b4fa6',
-      backgroundColor: 'rgba(123,79,166,0.08)',
+      borderColor: '#6650d8',
+      backgroundColor: 'rgba(102,80,216,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
@@ -847,28 +873,30 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   if (hasActiveYT) {
     datasets.push({
       label: DS.YT_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.YT_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.ytActive })),
       type: 'line',
-      borderColor: '#e8952a',
+      borderColor: '#26b89a',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
-      yAxisID: 'yViewers',
+      yAxisID: 'yActiveChatters',
     });
   }
 
   if (hasActiveTW) {
     datasets.push({
       label: DS.TW_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.TW_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.twActive })),
       type: 'line',
-      borderColor: '#b07de0',
+      borderColor: '#1a9280',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
-      yAxisID: 'yViewers',
+      yAxisID: 'yActiveChatters',
     });
   }
 
@@ -876,6 +904,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   if (hasDonations) {
     datasets.push({
       label: DS.DONATIONS,
+      hidden: hiddenDatasets.has(DS.DONATIONS),
       data: snapshotData.map((s, i) => ({
         x: s.x,
         y: donationCumByIndex[i],
@@ -899,9 +928,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     if (hasYT) {
       datasets.push({
         label: DS.YT_CHAT,
+        hidden: hiddenDatasets.has(DS.YT_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.ytMpm })),
         type: 'line',
-        borderColor: '#e05545',
+        borderColor: '#d49a20',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
@@ -913,9 +943,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     if (hasTW) {
       datasets.push({
         label: DS.TW_CHAT,
+        hidden: hiddenDatasets.has(DS.TW_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.twMpm })),
         type: 'line',
-        borderColor: '#9b70d0',
+        borderColor: '#c87030',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
@@ -928,12 +959,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     // missing a sample; otherwise treat a missing side as 0.
     datasets.push({
       label: DS.TOTAL_CHAT,
+      hidden: hiddenDatasets.has(DS.TOTAL_CHAT),
       data: snapshotData.map(s => ({
         x: s.x,
         y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
       })),
       type: 'line',
-      borderColor: '#a0a090',
+      borderColor: '#e8c040',
       backgroundColor: 'transparent',
       borderWidth: 2, borderDash: [6, 3],
       pointRadius: 0, pointHoverRadius: 4,
@@ -955,6 +987,11 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       if (hi && hi.y != null && !Number.isNaN(hi.y)) return hi.y;
     }
     return null;
+  }
+
+  // Is at least one dataset for this axis group present in this stream AND not hidden by the user?
+  function axisHasVisibleDs(labels) {
+    return labels.some(l => datasets.some(d => d.label === l) && !hiddenDatasets.has(l));
   }
 
   currentChart = new Chart(ctx, {
@@ -1020,6 +1057,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         yViewers: {
           type: 'linear',
           position: 'left',
+          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS]),
           grid: { color: t.chartGrid },
           ticks: {
             color: t.chartTick,
@@ -1029,9 +1067,23 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           },
           title: { display: false },
         },
+        yActiveChatters: {
+          type: 'linear',
+          position: 'left',
+          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS]),
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#1a9070',
+            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            callback: v => v.toLocaleString(),
+            maxTicksLimit: 5,
+          },
+          title: { display: false },
+        },
         yDonations: {
           type: 'linear',
           position: 'right',
+          display: axisHasVisibleDs([DS.DONATIONS]),
           grid: { drawOnChartArea: false },
           ticks: {
             color: t.donTick,
@@ -1044,18 +1096,18 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         yChatRate: {
           type: 'linear',
           position: 'right',
+          display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT]),
           grid: { drawOnChartArea: false },
-          display: hasChatRate,
           ticks: {
-            color: '#808070',
+            color: '#a07818',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toFixed(0) + ' mpm',
             maxTicksLimit: 5,
           },
           title: {
             display: true,
-            text: 'Messages / min',
-            color: '#606050',
+            text: 'msg / min',
+            color: '#806010',
             font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
@@ -1072,17 +1124,17 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
   const items = [];
 
-  if (hasYT)       items.push({ label: 'YT Viewers',        type: 'line',   color: '#c0392b', ds: DS.YT_VIEWERS });
-  if (hasTW)       items.push({ label: 'TW Viewers',        type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
-  if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e8952a', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#b07de0', ds: DS.TW_ACTIVE_CHATTERS });
-  if (hasDonations) items.push({ label: 'Donations',        type: 'line',   color: '#c47d2a', ds: DS.DONATIONS  });
+  if (hasYT)       items.push({ label: 'YT Viewers',         type: 'line',   color: '#4a90e2', ds: DS.YT_VIEWERS });
+  if (hasTW)       items.push({ label: 'TW Viewers',         type: 'line',   color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasDonations) items.push({ label: 'Donations',         type: 'line',   color: '#c47d2a', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
     items.push({ label: null }); // divider
-    if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#e05545', ds: DS.YT_CHAT    });
-    if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#9b70d0', ds: DS.TW_CHAT    });
-    items.push(   { label: 'Total Chat', type: 'dashed', color: '#a0a090', ds: DS.TOTAL_CHAT });
+    if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT    });
+    if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#c87030', ds: DS.TW_CHAT    });
+    items.push(   { label: 'Total Chat', type: 'dashed', color: '#e8c040', ds: DS.TOTAL_CHAT });
   }
 
   container.innerHTML = '';
@@ -1111,14 +1163,18 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
     }
 
     span.innerHTML = `${indicator}${item.label}`;
+    if (hiddenDatasets.has(item.ds)) span.classList.add('hidden');
 
     span.addEventListener('click', () => {
       const dsIndex = currentChart.data.datasets.findIndex(d => d.label === item.ds);
       if (dsIndex === -1) return;
-      const visible = currentChart.isDatasetVisible(dsIndex);
-      currentChart.setDatasetVisibility(dsIndex, !visible);
-      currentChart.update();
-      span.classList.toggle('hidden', visible);
+      const nowVisible = currentChart.isDatasetVisible(dsIndex);
+      currentChart.setDatasetVisibility(dsIndex, !nowVisible);
+      span.classList.toggle('hidden', nowVisible);
+      if (nowVisible) hiddenDatasets.add(item.ds);
+      else hiddenDatasets.delete(item.ds);
+      localStorage.setItem('stream-chart-hidden', JSON.stringify([...hiddenDatasets]));
+      syncAxisDisplay();
     });
 
     container.appendChild(span);
