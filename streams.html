@@ -1054,6 +1054,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
+          // Draw each row's key as a line in the dataset's color (not a filled
+          // square) so the tooltip key reads like the chart line it represents.
+          usePointStyle: true,
           // Order tooltip rows to match the legend on top of the chart.
           itemSort: (a, b) => LEGEND_ORDER.indexOf(a.dataset.label) - LEGEND_ORDER.indexOf(b.dataset.label),
           // Donations only show when that bucket actually has a donation.
@@ -1067,6 +1070,12 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           },
           callbacks: {
             title: items => fmtET(items[0].parsed.x),
+            // Key = a short horizontal line in the dataset's stroke color.
+            labelPointStyle: () => ({ pointStyle: 'line', rotation: 0 }),
+            labelColor: item => ({
+              borderColor: item.dataset.borderColor,
+              backgroundColor: item.dataset.borderColor,
+            }),
             label: item => {
               const isDon = item.dataset.yAxisID === 'yDonations';
               let y = item.parsed.y;
