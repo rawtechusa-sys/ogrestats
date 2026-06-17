@@ -752,6 +752,7 @@ const DS = {
   TOTAL_CHAT:       'Total Chat',
   YT_ACTIVE_CHATTERS: 'YT Active Chatters',
   TW_ACTIVE_CHATTERS: 'TW Active Chatters',
+  TOTAL_ACTIVE_CHATTERS: 'Total Active Chatters',
 };
 
 // Persisted set of dataset labels the user has toggled off; survives stream changes.
@@ -764,7 +765,7 @@ function syncAxisDisplay() {
   if (!currentChart) return;
   const axisMap = {
     yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS],
-    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS],
+    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
     yDonations:      [DS.DONATIONS],
     yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT],
   };
@@ -910,6 +911,28 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
+  // Combined active chatters -- YT + TW. Only shown when both platforms are
+  // live, since for a single-platform stream the total duplicates that line.
+  // Null only when BOTH platforms are missing a sample; otherwise a missing
+  // side counts as 0.
+  if (hasActiveYT && hasActiveTW) {
+    datasets.push({
+      label: DS.TOTAL_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.TOTAL_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({
+        x: s.x,
+        y: (s.ytActive == null && s.twActive == null) ? null : (s.ytActive ?? 0) + (s.twActive ?? 0),
+      })),
+      type: 'line',
+      borderColor: '#909090',
+      backgroundColor: 'transparent',
+      borderWidth: 2, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
   // ── Donations (cumulative) ──
   if (hasDonations) {
     datasets.push({
@@ -943,7 +966,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         type: 'line',
         borderColor: '#e84040',
         backgroundColor: 'transparent',
-        borderWidth: 1.5, borderDash: [4, 3],
+        borderWidth: 1.5, borderDash: [8, 3],
         pointRadius: 0, pointHoverRadius: 4,
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
@@ -958,7 +981,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         type: 'line',
         borderColor: '#6650d8',
         backgroundColor: 'transparent',
-        borderWidth: 1.5, borderDash: [4, 3],
+        borderWidth: 1.5, borderDash: [8, 3],
         pointRadius: 0, pointHoverRadius: 4,
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
@@ -977,7 +1000,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       type: 'line',
       borderColor: '#4caf50',
       backgroundColor: 'transparent',
-      borderWidth: 2, borderDash: [6, 3],
+      borderWidth: 2, borderDash: [12, 3],
       pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yChatRate',
@@ -1047,6 +1070,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
                 case DS.TOTAL_CHAT:         return ` Total chat: ${y.toFixed(1)} mpm`;
                 case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(y).toLocaleString()}`;
                 case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.TOTAL_ACTIVE_CHATTERS: return ` Total active chatters: ${Math.round(y).toLocaleString()}`;
                 default:                    return ` ${item.dataset.label}: ${Math.round(y).toLocaleString()} viewers`;
               }
             }
@@ -1085,7 +1109,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         yActiveChatters: {
           type: 'linear',
           position: 'left',
-          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS]),
+          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS]),
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#909090',
@@ -1158,15 +1182,16 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   groups.push(gViewers);
 
   const gActive = [];
+  if (hasActiveYT && hasActiveTW) gActive.push({ label: 'Total Active Chatters', type: 'dashed', color: '#909090', ds: DS.TOTAL_ACTIVE_CHATTERS });
   if (hasActiveYT) gActive.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
   if (hasActiveTW) gActive.push({ label: 'TW Active Chatters', type: 'dashed', color: '#6650d8', ds: DS.TW_ACTIVE_CHATTERS });
   groups.push(gActive);
 
   const gChat = [];
   if (hasChatRate) {
-    gChat.push({ label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
-    if (hasYT) gChat.push({ label: 'YT Chat', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
-    if (hasTW) gChat.push({ label: 'TW Chat', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
+    gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
+    if (hasYT) gChat.push({ label: 'YT Msg/Min', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
+    if (hasTW) gChat.push({ label: 'TW Msg/Min', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
   }
   groups.push(gChat);
 
