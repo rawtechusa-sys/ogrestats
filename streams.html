@@ -324,7 +324,7 @@
   .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
   .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
 
-  .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
+  .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 28px; }
   .username   { color: var(--text-primary); }
   .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
   .ts-link    { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); transition: color 0.15s ease, border-color 0.15s ease; }
@@ -1103,7 +1103,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'viewers',
             color: '#40c4ff',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 18 },
           },
         },
         yActiveChatters: {
@@ -1121,7 +1121,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'chatters',
             color: '#909090',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 18 },
           },
         },
         yDonations: {
@@ -1145,14 +1145,14 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           ticks: {
             color: '#4caf50',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
-            callback: v => v.toFixed(0) + ' mpm',
+            callback: v => v.toFixed(0),
             maxTicksLimit: 5,
           },
           title: {
             display: true,
             text: 'msg / min',
             color: '#4caf50',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 18 },
           },
         },
       }
