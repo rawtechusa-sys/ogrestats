@@ -1142,20 +1142,38 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   if (!container || !currentChart) return;
 
   // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
-  const items = [];
+  // Grouped by category; dividers are inserted only between non-empty groups
+  // so a stream missing a whole category never gets a stray separator.
+  // Order: Donations | Total/YT/TW Viewers | Active Chatters | Total/YT/TW Chat
+  const groups = [];
 
-  if (hasYT)          items.push({ label: 'YT Viewers',         type: 'line',   color: '#4a90e2', ds: DS.YT_VIEWERS });
-  if (hasTW)          items.push({ label: 'TW Viewers',         type: 'line',   color: '#6650d8', ds: DS.TW_VIEWERS });
-  if (hasYT && hasTW) items.push({ label: 'Total Viewers',      type: 'line',   color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
-  if (hasActiveYT)    items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW)    items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
-  if (hasDonations)   items.push({ label: 'Donations',          type: 'line',   color: '#e8c020', ds: DS.DONATIONS  });
+  const gDonations = [];
+  if (hasDonations) gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
+  groups.push(gDonations);
 
+  const gViewers = [];
+  if (hasYT && hasTW) gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasYT)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#4a90e2', ds: DS.YT_VIEWERS });
+  if (hasTW)          gViewers.push({ label: 'TW Viewers',    type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
+  groups.push(gViewers);
+
+  const gActive = [];
+  if (hasActiveYT) gActive.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW) gActive.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
+  groups.push(gActive);
+
+  const gChat = [];
   if (hasChatRate) {
-    items.push({ label: null }); // divider
-    if (hasYT) items.push({ label: 'YT Chat',    type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT    });
-    if (hasTW) items.push({ label: 'TW Chat',    type: 'dashed', color: '#c87030', ds: DS.TW_CHAT    });
-    items.push(   { label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
+    gChat.push({ label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
+    if (hasYT) gChat.push({ label: 'YT Chat', type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT });
+    if (hasTW) gChat.push({ label: 'TW Chat', type: 'dashed', color: '#c87030', ds: DS.TW_CHAT });
+  }
+  groups.push(gChat);
+
+  const items = [];
+  for (const g of groups.filter(g => g.length > 0)) {
+    if (items.length > 0) items.push({ label: null }); // divider between groups
+    items.push(...g);
   }
 
   container.innerHTML = '';
