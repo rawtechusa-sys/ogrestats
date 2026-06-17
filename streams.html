@@ -764,6 +764,30 @@ const LEGEND_ORDER = [
   DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT,
 ];
 
+// Tooltip keys: Chart.js can't dash its built-in line glyph, but pointStyle
+// accepts a canvas (drawPoint renders it verbatim). So we draw a small line
+// with the dataset's exact color + dash pattern and use it as the key. Cached
+// by color+dash so we don't rebuild one every tooltip render.
+const _lineKeyCache = {};
+function lineKeyCanvas(color, dash) {
+  const pattern = (dash && dash.length) ? dash.join(',') : 'solid';
+  const cacheKey = color + '|' + pattern;
+  if (_lineKeyCache[cacheKey]) return _lineKeyCache[cacheKey];
+  const w = 26, h = 10;
+  const cv = document.createElement('canvas');
+  cv.width = w; cv.height = h;
+  const cx = cv.getContext('2d');
+  cx.strokeStyle = color;
+  cx.lineWidth = 2;
+  cx.setLineDash((dash && dash.length) ? dash : []);
+  cx.beginPath();
+  cx.moveTo(1, h / 2);
+  cx.lineTo(w - 1, h / 2);
+  cx.stroke();
+  _lineKeyCache[cacheKey] = cv;
+  return cv;
+}
+
 // Persisted set of dataset labels the user has toggled off; survives stream changes.
 const hiddenDatasets = new Set(
   JSON.parse(localStorage.getItem('stream-chart-hidden') || '[]')
@@ -1054,9 +1078,12 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           bodyColor: t.tooltipBody,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
-          // Draw each row's key as a line in the dataset's color (not a filled
-          // square) so the tooltip key reads like the chart line it represents.
+          // Draw each row's key as a line matching the dataset's color AND dash
+          // pattern (see lineKeyCanvas) so the tooltip key mirrors the chart line.
           usePointStyle: true,
+          boxWidth: 26,
+          boxHeight: 10,
+          boxPadding: 6,
           // Order tooltip rows to match the legend on top of the chart.
           itemSort: (a, b) => LEGEND_ORDER.indexOf(a.dataset.label) - LEGEND_ORDER.indexOf(b.dataset.label),
           // Donations only show when that bucket actually has a donation.
@@ -1070,11 +1097,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           },
           callbacks: {
             title: items => fmtET(items[0].parsed.x),
-            // Key = a short horizontal line in the dataset's stroke color.
-            labelPointStyle: () => ({ pointStyle: 'line', rotation: 0 }),
-            labelColor: item => ({
-              borderColor: item.dataset.borderColor,
-              backgroundColor: item.dataset.borderColor,
+            // Key = a short line in the dataset's color + dash pattern.
+            labelPointStyle: item => ({
+              pointStyle: lineKeyCanvas(item.dataset.borderColor, item.dataset.borderDash),
+              rotation: 0,
             }),
             label: item => {
               const isDon = item.dataset.yAxisID === 'yDonations';
