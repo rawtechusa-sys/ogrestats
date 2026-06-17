@@ -1329,14 +1329,45 @@ function setupScrollbar() {
     thumb.style.width = Math.max(0, (hi - lo) * 100) + '%';
   }
 
-  function applyRange(min, max) {
+  function clampRange(min, max) {
     if (max - min < minRange) max = min + minRange;
     if (min < fullMin) { max += (fullMin - min); min = fullMin; }
     if (max > fullMax) { min -= (max - fullMax); max = fullMax; }
-    min = Math.max(fullMin, min);
-    max = Math.min(fullMax, max);
+    return { min: Math.max(fullMin, min), max: Math.min(fullMax, max) };
+  }
+
+  // Instant apply -- used for resize (zoom) where immediate feedback feels best.
+  function applyRange(min, max) {
+    const r = clampRange(min, max);
+    currentChart.zoomScale('x', r, 'none');
+    updateScrollbar();
+  }
+
+  // Smoothed apply -- used for scrolling/panning. Drags are damped (less
+  // sensitive) and the view eases toward the target instead of snapping.
+  const PAN_SENSITIVITY = 0.6; // < 1 => view moves less than the cursor
+  const PAN_SMOOTH = 0.3;      // fraction eased toward target per frame
+  let targetMin = null, targetMax = null, rafId = null;
+
+  function animateToward() {
+    if (!currentChart || !currentChart.scales || !currentChart.scales.x) { rafId = null; return; }
+    const xs = currentChart.scales.x;
+    let min = xs.min + (targetMin - xs.min) * PAN_SMOOTH;
+    let max = xs.max + (targetMax - xs.max) * PAN_SMOOTH;
+    const eps = fullRange * 0.0004;
+    if (Math.abs(targetMin - min) < eps && Math.abs(targetMax - max) < eps) {
+      min = targetMin; max = targetMax; rafId = null;
+    } else {
+      rafId = requestAnimationFrame(animateToward);
+    }
     currentChart.zoomScale('x', { min, max }, 'none');
     updateScrollbar();
+  }
+
+  function smoothTo(min, max) {
+    const r = clampRange(min, max);
+    targetMin = r.min; targetMax = r.max;
+    if (rafId == null) rafId = requestAnimationFrame(animateToward);
   }
 
   // Let the zoom plugin's callbacks refresh the thumb during wheel/drag on the chart.
@@ -1352,7 +1383,7 @@ function setupScrollbar() {
     function onMove(ev) {
       const cx = ev.touches ? ev.touches[0].clientX : ev.clientX;
       const dxVal = ((cx - startX) / trackW) * fullRange;
-      if (mode === 'pan')        applyRange(startMin + dxVal, startMax + dxVal);
+      if (mode === 'pan')        smoothTo(startMin + dxVal * PAN_SENSITIVITY, startMax + dxVal * PAN_SENSITIVITY);
       else if (mode === 'left')  applyRange(Math.min(startMin + dxVal, startMax - minRange), startMax);
       else if (mode === 'right') applyRange(startMin, Math.max(startMax + dxVal, startMin + minRange));
     }
@@ -1383,7 +1414,7 @@ function setupScrollbar() {
     const xs = currentChart.scales.x;
     const half = (xs.max - xs.min) / 2;
     const center = fullMin + frac * fullRange;
-    applyRange(center - half, center + half);
+    smoothTo(center - half, center + half);
   });
 
   updateScrollbar();
