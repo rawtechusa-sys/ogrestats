@@ -389,20 +389,17 @@ let currentChart = null;
 
 // ── Theme ─────────────────────────────────────────────────────────────────────
 const THEMES = {
-  green: { file: 'themes/bog-moss.css',      chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
-  amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
-  grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
-  void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
-  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  green: { file: 'themes/bog-moss.css',      chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
+  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
 };
 
 function applyTheme(key) {
   const t = THEMES[key] || THEMES.green;
   document.getElementById('theme-css').href = t.file;
   if (currentChart) {
-    const ds = currentChart.data.datasets;
-    const donDs = ds.find(d => d.label === DS.DONATIONS);
-    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
     currentChart.options.scales.yViewers.ticks.color = t.chartTick;
     currentChart.options.scales.x.grid.color = t.chartGrid;
@@ -847,7 +844,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       type: 'line',
       borderColor: '#4a90e2',
       backgroundColor: 'rgba(74,144,226,0.08)',
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
@@ -861,7 +858,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       type: 'line',
       borderColor: '#6650d8',
       backgroundColor: 'rgba(102,80,216,0.08)',
-      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
     });
@@ -879,7 +876,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       borderColor: '#26b89a',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
-      pointRadius: 0, pointHoverRadius: 4,
+      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yActiveChatters',
     });
@@ -894,7 +891,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       borderColor: '#1a9280',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
-      pointRadius: 0, pointHoverRadius: 4,
+      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yActiveChatters',
     });
@@ -910,12 +907,12 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         y: donationCumByIndex[i],
       })),
       type: 'line',
-      borderColor: t.donBorder,
-      backgroundColor: t.donBar,
+      borderColor: '#c47d2a',
+      backgroundColor: 'transparent',
       borderWidth: 2,
-      pointRadius: 0, pointHoverRadius: 4,
+      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'line',
       tension: 0,
-      fill: true,
+      fill: false,
       yAxisID: 'yDonations',
     });
   }
@@ -934,7 +931,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         borderColor: '#d49a20',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
-        pointRadius: 0, pointHoverRadius: 4,
+        pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
@@ -949,7 +946,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         borderColor: '#c87030',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
-        pointRadius: 0, pointHoverRadius: 4,
+        pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
         tension: 0.3, fill: false, spanGaps: true,
         yAxisID: 'yChatRate',
       });
@@ -968,7 +965,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       borderColor: '#e8c040',
       backgroundColor: 'transparent',
       borderWidth: 2, borderDash: [6, 3],
-      pointRadius: 0, pointHoverRadius: 4,
+      pointRadius: 0, pointHoverRadius: 4, pointStyle: 'dash',
       tension: 0.3, fill: false, spanGaps: true,
       yAxisID: 'yChatRate',
     });
@@ -1010,6 +1007,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           borderWidth: 1,
           titleColor: t.tooltipTitle,
           bodyColor: t.tooltipBody,
+          usePointStyle: true,
+          boxWidth: 16,
+          boxHeight: 8,
           titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
           bodyFont:  { family: "'Lora', serif", size: 13 },
           // Donations only show when that bucket actually has a donation.
