@@ -1206,7 +1206,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             onPan: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
           },
           zoom: {
-            wheel: { enabled: true },
+            // Wheel zoom is handled manually in setupScrollbar so it can be eased
+            // and less sensitive; pinch stays on the plugin for touch devices.
+            wheel: { enabled: false },
             pinch: { enabled: true },
             mode: 'x',
             onZoom: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
@@ -1300,6 +1302,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
   ctx.ondblclick = () => {
     if (currentChart && currentChart.resetZoom) {
+      if (currentChart.$stopZoomAnim) currentChart.$stopZoomAnim();
       currentChart.resetZoom();
       if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
     }
@@ -1348,6 +1351,7 @@ function setupScrollbar() {
   // sensitive) and the view eases toward the target instead of snapping.
   const PAN_SENSITIVITY = 0.6; // < 1 => view moves less than the cursor
   const PAN_SMOOTH = 0.3;      // fraction eased toward target per frame
+  const ZOOM_STEP = 0.0007;    // wheel-zoom sensitivity (smaller => less sensitive)
   let targetMin = null, targetMax = null, rafId = null;
 
   function animateToward() {
@@ -1373,6 +1377,11 @@ function setupScrollbar() {
 
   // Let the zoom plugin's callbacks refresh the thumb during wheel/drag on the chart.
   currentChart.$updateScrollbar = updateScrollbar;
+  // Cancel any in-flight easing so a reset isn't fought by a pending animation.
+  currentChart.$stopZoomAnim = () => {
+    if (rafId != null) { cancelAnimationFrame(rafId); rafId = null; }
+    targetMin = targetMax = null;
+  };
 
   function startDrag(e, mode) {
     e.preventDefault();
@@ -1417,6 +1426,30 @@ function setupScrollbar() {
     const center = fullMin + frac * fullRange;
     smoothTo(center - half, center + half);
   });
+
+  // Eased, less-sensitive wheel zoom toward the cursor (replaces the plugin's
+  // built-in wheel zoom, which is instant and steppy). Normalizes wheel delta
+  // across devices, caps each step, then eases toward the target via smoothTo.
+  const canvas = currentChart.canvas;
+  if (canvas) {
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      let d = e.deltaY;
+      if (e.deltaMode === 1) d *= 16;        // line units -> approx pixels
+      else if (e.deltaMode === 2) d *= 400;  // page units -> approx pixels
+      d = Math.max(-80, Math.min(80, d));    // cap the per-event zoom step
+      const factor = Math.exp(d * ZOOM_STEP); // >1 zoom out, <1 zoom in
+      // Build on the in-flight target while animating so fast scrolls accumulate.
+      const animating = rafId != null && targetMin != null;
+      const baseMin = animating ? targetMin : currentChart.scales.x.min;
+      const baseMax = animating ? targetMax : currentChart.scales.x.max;
+      const area = currentChart.chartArea;
+      const rect = canvas.getBoundingClientRect();
+      const frac = Math.max(0, Math.min(1, (e.clientX - rect.left - area.left) / ((area.right - area.left) || 1)));
+      const cursor = baseMin + frac * (baseMax - baseMin);
+      smoothTo(cursor - (cursor - baseMin) * factor, cursor + (baseMax - cursor) * factor);
+    }, { passive: false });
+  }
 
   updateScrollbar();
 }
