@@ -329,7 +329,7 @@
   .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
   .ts-link    { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); transition: color 0.15s ease, border-color 0.15s ease; }
   .ts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); }
-  .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; word-break: break-word; }
 
   /* ── States ── */
   .loading-state, .empty-state, .error-state {
@@ -402,7 +402,7 @@ function applyTheme(key) {
   if (currentChart) {
     const ds = currentChart.data.datasets;
     const donDs = ds.find(d => d.label === DS.DONATIONS);
-    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; }
+    if (donDs) { donDs.backgroundColor = t.donBar; donDs.borderColor = t.donBorder; donDs.pointBackgroundColor = t.donBorder; }
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
     currentChart.options.scales.yViewers.ticks.color = t.chartTick;
     currentChart.options.scales.x.grid.color = t.chartGrid;
@@ -847,10 +847,16 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         x: s.x,
         y: donationByIndex[i] > 0 ? donationByIndex[i] : null,
       })),
-      type: 'bar',
-      backgroundColor: t.donBar,
+      type: 'line',
       borderColor: t.donBorder,
-      borderWidth: 1, borderRadius: 2, barThickness: 8,
+      backgroundColor: t.donBar,
+      borderWidth: 2,
+      pointRadius: 4, pointHoverRadius: 6,
+      pointBackgroundColor: t.donBorder,
+      tension: 0,
+      stepped: false,
+      spanGaps: false,
+      fill: false,
       yAxisID: 'yDonations',
     });
   }
@@ -1040,7 +1046,7 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   if (hasTW)       items.push({ label: 'TW Viewers',        type: 'line',   color: '#7b4fa6', ds: DS.TW_VIEWERS });
   if (hasActiveYT) items.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e8952a', ds: DS.YT_ACTIVE_CHATTERS });
   if (hasActiveTW) items.push({ label: 'TW Active Chatters', type: 'dashed', color: '#b07de0', ds: DS.TW_ACTIVE_CHATTERS });
-  if (hasDonations) items.push({ label: 'Donations',        type: 'bar',    color: '#c47d2a', ds: DS.DONATIONS  });
+  if (hasDonations) items.push({ label: 'Donations',        type: 'line',   color: '#c47d2a', ds: DS.DONATIONS  });
 
   if (hasChatRate) {
     items.push({ label: null }); // divider
