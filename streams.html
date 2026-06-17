@@ -841,8 +841,8 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.YT_VIEWERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
       type: 'line',
-      borderColor: '#4a90e2',
-      backgroundColor: 'rgba(74,144,226,0.08)',
+      borderColor: '#e84040',
+      backgroundColor: 'rgba(232,64,64,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
       tension: 0.3, fill: true,
       yAxisID: 'yViewers',
@@ -886,7 +886,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.YT_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.ytActive })),
       type: 'line',
-      borderColor: '#26b89a',
+      borderColor: '#e84040',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
@@ -901,7 +901,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       hidden: hiddenDatasets.has(DS.TW_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({ x: s.x, y: s.twActive })),
       type: 'line',
-      borderColor: '#1a9280',
+      borderColor: '#6650d8',
       backgroundColor: 'transparent',
       borderWidth: 1.5, borderDash: [2, 2],
       pointRadius: 0, pointHoverRadius: 4,
@@ -941,7 +941,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         hidden: hiddenDatasets.has(DS.YT_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.ytMpm })),
         type: 'line',
-        borderColor: '#d49a20',
+        borderColor: '#e84040',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
@@ -956,7 +956,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         hidden: hiddenDatasets.has(DS.TW_CHAT),
         data: snapshotData.map(s => ({ x: s.x, y: s.twMpm })),
         type: 'line',
-        borderColor: '#c87030',
+        borderColor: '#6650d8',
         backgroundColor: 'transparent',
         borderWidth: 1.5, borderDash: [4, 3],
         pointRadius: 0, pointHoverRadius: 4,
@@ -1088,7 +1088,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS]),
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#26b89a',
+            color: '#909090',
             font: { family: "'Share Tech Mono', monospace", size: 10 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 5,
@@ -1096,7 +1096,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           title: {
             display: true,
             text: 'chatters',
-            color: '#26b89a',
+            color: '#909090',
             font: { family: "'Share Tech Mono', monospace", size: 9 },
           },
         },
@@ -1153,20 +1153,20 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
 
   const gViewers = [];
   if (hasYT && hasTW) gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
-  if (hasYT)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#4a90e2', ds: DS.YT_VIEWERS });
+  if (hasYT)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
   if (hasTW)          gViewers.push({ label: 'TW Viewers',    type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
   groups.push(gViewers);
 
   const gActive = [];
-  if (hasActiveYT) gActive.push({ label: 'YT Active Chatters', type: 'dashed', color: '#26b89a', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW) gActive.push({ label: 'TW Active Chatters', type: 'dashed', color: '#1a9280', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasActiveYT) gActive.push({ label: 'YT Active Chatters', type: 'dashed', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW) gActive.push({ label: 'TW Active Chatters', type: 'dashed', color: '#6650d8', ds: DS.TW_ACTIVE_CHATTERS });
   groups.push(gActive);
 
   const gChat = [];
   if (hasChatRate) {
     gChat.push({ label: 'Total Chat', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
-    if (hasYT) gChat.push({ label: 'YT Chat', type: 'dashed', color: '#d49a20', ds: DS.YT_CHAT });
-    if (hasTW) gChat.push({ label: 'TW Chat', type: 'dashed', color: '#c87030', ds: DS.TW_CHAT });
+    if (hasYT) gChat.push({ label: 'YT Chat', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
+    if (hasTW) gChat.push({ label: 'TW Chat', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
   }
   groups.push(gChat);
 
