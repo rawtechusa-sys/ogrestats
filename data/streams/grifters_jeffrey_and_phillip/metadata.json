@@ -2,10 +2,14 @@
   "stream_id": "grifters_jeffrey_and_phillip",
   "title": "Grifters, Jeffrey, And Phillip",
   "start_ts": 1781652548,
-  "end_ts": 1781654662,
+  "end_ts": 1781677912,
   "platforms": [
     "youtube",
     "twitch"
   ],
-  "youtube_archive_id": "-XbaxVPTtLs"
+  "youtube_archive_id": "-XbaxVPTtLs",
+  "segments": [
+    { "archive_id": "-XbaxVPTtLs", "start_ts": 1781652548 },
+    { "archive_id": "et2ueGG_lRM", "start_ts": 1781656449 }
+  ]
 }

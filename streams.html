@@ -682,16 +682,38 @@ async function loadStream(streamId) {
       const panel = document.createElement('div');
       panel.className = 'donations-panel';
 
-      const archiveId = meta.youtube_archive_id;
+      // Resolve the archive(s) this stream was broadcast to. A normal stream has
+      // a single youtube_archive_id; a stream whose output broadcast split into
+      // multiple videos carries a `segments` array of {archive_id, start_ts}, so
+      // each donation can deep-link into whichever video was live at its moment.
+      const segments = (Array.isArray(meta.segments) && meta.segments.length)
+        ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
+        : (meta.youtube_archive_id
+            ? [{ archive_id: meta.youtube_archive_id, start_ts: startTs }]
+            : []);
+
+      // The last segment that had started by ts, clamped to the first segment for
+      // any donation predating all of them.
+      function segmentFor(ts) {
+        let chosen = segments[0] || null;
+        for (const seg of segments) {
+          if (seg.start_ts <= ts) chosen = seg;
+          else break;
+        }
+        return chosen;
+      }
+
       const sorted = [...donations].sort((a,b) => a.ts - b.ts);
       const rows = sorted.map(d => {
         const elapsedText = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
-        // Deep-link the elapsed time to the YouTube archive at that moment,
-        // when both the archive video ID and a stream start time are known.
+        // The displayed time stays on the overall stream timeline; only the link
+        // target is per-segment, so a post-split donation reads as its true stream
+        // time but jumps to the correct video at its offset within that video.
+        const seg = segmentFor(d.ts);
         let tsCell;
-        if (archiveId && startTs) {
-          const tSec = elapsedSeconds(startTs, d.ts);
-          tsCell = `<a class="ts-link" href="https://youtu.be/${encodeURIComponent(archiveId)}?t=${tSec}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
+        if (seg && seg.archive_id && seg.start_ts != null) {
+          const tSec = Math.max(0, Math.floor(d.ts - seg.start_ts));
+          tsCell = `<a class="ts-link" href="https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
         } else {
           tsCell = elapsedText;
         }
