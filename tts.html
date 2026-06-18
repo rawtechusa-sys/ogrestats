@@ -222,6 +222,7 @@
     display: flex;
     flex-direction: column;
     padding: 12px 14px;
+    transition: padding 0.2s ease;
   }
 
   .tts-card .voice {
@@ -234,6 +235,7 @@
                  0 1px 3px rgba(0,0,0,0.8);
     word-break: break-word;
     flex-shrink: 0;
+    transition: font-size 0.2s ease;
   }
   .tts-card .summary {
     margin-top: 6px;
@@ -247,12 +249,16 @@
     text-shadow: 0 1px 3px rgba(0,0,0,0.85);
     transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
   }
-  /* Deselected cards collapse their description to take up less space. */
+  /* Deselected cards collapse — both the description and their overall width. */
+  .tts-card:not(.active) { min-width: 0; }
+  .tts-card:not(.active) .card-content { padding: 8px 11px; }
+  .tts-card:not(.active) .voice { font-size: 15px; }
   .tts-card:not(.active) .summary {
     max-height: 0;
     opacity: 0;
     margin-top: 0;
   }
+  .tts-card:not(.active) .uses { font-size: 10px; margin-top: 3px; }
   .tts-card .summary a { color: var(--accent-bright); text-decoration: underline; }
   .tts-card .summary a:hover { color: var(--text-primary); }
   .tts-card .uses {
@@ -265,6 +271,7 @@
     margin-top: 6px;
     flex-shrink: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.85);
+    transition: font-size 0.2s ease, margin-top 0.2s ease;
   }
 
   /* ── Message list ──────────────────────────────────────────── */
@@ -484,28 +491,53 @@ let enabled      = new Set();  // currently toggled-on voices
 let donors       = [];         // [{name, count}], sorted by count desc
 let selected     = new Set();  // currently selected donor names
 let DESCRIPTIONS = {};         // { lowercasedVoice: {name, desc} }
+let VOICE_NAMES  = {};         // { lowercasedVoice: canonicalName } from the whitelist
+let WHITELIST_ON = false;      // true once tts-voices.txt loads with ≥1 entry
+
+// Parse tts-voices.txt (one voice name per line) into { lowercased: canonical }.
+function parseVoices(text) {
+  const map = {};
+  for (const raw of (text || '').split(/\r?\n/)) {
+    const name = raw.trim();
+    if (!name || name.startsWith('#')) continue;
+    map[name.toLowerCase()] = name;
+  }
+  return map;
+}
+
+// A command counts as a real voice only if it's whitelisted (or, as a safety
+// fallback, if the whitelist failed to load so we don't hide everything).
+function isVoice(c) {
+  return !WHITELIST_ON || Object.prototype.hasOwnProperty.call(VOICE_NAMES, String(c).toLowerCase());
+}
+
+// Proper-case display name: whitelist first (covers every voice), then the
+// descriptions file, else just capitalize the lowercased key.
+function displayName(voice) {
+  const lc = voice.toLowerCase();
+  const info = DESCRIPTIONS[lc];
+  return VOICE_NAMES[lc] || (info && info.name) || voice.charAt(0).toUpperCase() + voice.slice(1);
+}
 
 // ── Cards ────────────────────────────────────────────────────────────────────
 function renderCards() {
   const el = document.getElementById('cards');
   const cmds = Object.entries(DATA.commands || {})
-    .sort((a, b) => b[1] - a[1]);   // most-used first
+    .filter(([voice]) => isVoice(voice))   // only whitelisted voices
+    .sort((a, b) => b[1] - a[1]);          // most-used first
 
   if (!cmds.length) { el.innerHTML = ''; return; }
 
   el.innerHTML = cmds.map(([voice, count]) => {
     const on = enabled.has(voice);
     const info = DESCRIPTIONS[voice.toLowerCase()];
-    // Use the proper-case name from the descriptions file when known, otherwise
-    // capitalize the first letter (the stored voice key is always lowercased).
-    const display = (info && info.name) ? info.name : voice.charAt(0).toUpperCase() + voice.slice(1);
     const summary = info && info.desc
       ? `<div class="summary">${mdInline(info.desc)}</div>`
       : '';
     return `<div class="tts-card${on ? ' active' : ''}" data-voice="${escHtml(voice)}">
       <div class="card-bg"></div>
       <div class="card-content">
-        <span class="voice">${escHtml(display)}</span>
+        <span class="voice">${escHtml(displayName(voice))}</span>
         ${summary}
         <span class="uses">${count} use${count === 1 ? '' : 's'}</span>
       </div>
@@ -514,8 +546,7 @@ function renderCards() {
 
   el.querySelectorAll('.tts-card').forEach(card => {
     const voice = card.dataset.voice;
-    const info = DESCRIPTIONS[voice.toLowerCase()];
-    loadCardBackground(card, voice, info && info.name);
+    loadCardBackground(card, voice, displayName(voice));
 
     card.addEventListener('click', e => {
       // Let links inside the summary work without toggling the card.
@@ -538,7 +569,7 @@ function syncCardClasses() {
 // ── Card selection controls ──────────────────────────────────────────────────
 function wireCardControls() {
   document.getElementById('cardControls').style.display = '';
-  const allVoices = () => Object.keys(DATA.commands || {});
+  const allVoices = () => Object.keys(DATA.commands || {}).filter(isVoice);
 
   document.getElementById('selAll').addEventListener('click', () => {
     enabled = new Set(allVoices());
@@ -561,6 +592,7 @@ function wireCardControls() {
 function buildDonors() {
   const counts = {};
   for (const m of DATA.messages || []) {
+    if (!m.commands.some(isVoice)) continue;   // ignore messages with no real voice
     counts[m.username] = (counts[m.username] || 0) + 1;
   }
   donors = Object.entries(counts)
@@ -671,8 +703,8 @@ function renderMessages() {
   }
 
   wrap.innerHTML = msgs.map(m => {
-    const badges = m.commands.map(c =>
-      `<span class="cmd-badge${enabled.has(c) ? '' : ' off'}">${escHtml(c)}</span>`
+    const badges = m.commands.filter(isVoice).map(c =>
+      `<span class="cmd-badge${enabled.has(c) ? '' : ' off'}">${escHtml(displayName(c))}</span>`
     ).join('');
     const vod = vodLink(m);
     const meta = [
@@ -705,14 +737,22 @@ async function load() {
       return;
     }
 
-    // Descriptions are optional — don't fail the page if the file is missing.
+    // Descriptions and the voice whitelist are optional — load best-effort so a
+    // missing file never breaks the page.
     try {
       DESCRIPTIONS = parseDescriptions(await fetchText(`${RAW}/tts-descriptions.md`));
     } catch (e) {
       DESCRIPTIONS = {};
     }
+    try {
+      VOICE_NAMES = parseVoices(await fetchText(`${RAW}/tts-voices.txt`));
+      WHITELIST_ON = Object.keys(VOICE_NAMES).length > 0;
+    } catch (e) {
+      VOICE_NAMES = {}; WHITELIST_ON = false;
+    }
 
-    enabled = new Set(Object.keys(DATA.commands));   // default: all voices on
+    // default: all (whitelisted) voices on
+    enabled = new Set(Object.keys(DATA.commands).filter(isVoice));
     buildDonors();
     renderCards();
     wireCardControls();
