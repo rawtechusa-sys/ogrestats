@@ -45,6 +45,32 @@
     letter-spacing: 0.06em;
   }
 
+  .title-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* Shared small-button look (matches the donor trigger) */
+  .btn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    background: var(--bg-panel);
+    color: var(--text-muted);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent-bright); }
+
+  .card-controls { display: flex; gap: 6px; }
+
   /* ── Donor dropdown ────────────────────────────────────────── */
   .donor-dropdown { position: relative; flex-shrink: 0; }
 
@@ -107,6 +133,21 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+  .donor-opt.all .all-check { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+  .donor-invert {
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 3px;
+    padding: 2px 7px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .donor-invert:hover { border-color: var(--accent); color: var(--accent-bright); }
 
   /* ── Cards ─────────────────────────────────────────────────── */
   .cards {
@@ -126,8 +167,8 @@
     background: var(--bg-panel);
     border: 1px solid var(--border-default);
     border-radius: 6px;
-    padding: 12px 16px;
-    min-width: 120px;
+    width: 210px;
+    height: 168px;          /* fixed so cards align regardless of summary length */
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -143,6 +184,7 @@
     background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);
     opacity: 0;
     transition: opacity 0.15s ease;
+    z-index: 2;
   }
   .tts-card:hover { border-color: var(--border-default-strong); }
   .tts-card.active {
@@ -152,15 +194,56 @@
   }
   .tts-card.active::before { opacity: 0.5; }
 
+  /* Background image layer: fills the card (cover), sits behind text at 50% brightness */
+  .tts-card .card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    z-index: 0;
+    display: none;          /* shown only once an image actually loads */
+  }
+  .tts-card.has-bg .card-bg { display: block; }
+
+  /* Text layer above the image */
+  .tts-card .card-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 14px;
+  }
+
   .tts-card .voice {
     font-family: 'Rye', serif;
     font-size: 22px;
     color: var(--accent-bright);
     display: block;
     line-height: 1.1;
-    text-shadow: 0 0 12px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+    text-shadow: 0 0 12px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3),
+                 0 1px 3px rgba(0,0,0,0.8);
     word-break: break-word;
+    flex-shrink: 0;
   }
+  .tts-card .summary {
+    flex: 1 1 auto;
+    min-height: 0;          /* allow the flex child to shrink and scroll */
+    overflow-y: auto;
+    margin-top: 6px;
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    line-height: 1.35;
+    color: var(--text-primary);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.85);
+  }
+  .tts-card .summary::-webkit-scrollbar { width: 3px; }
+  .tts-card .summary::-webkit-scrollbar-track { background: transparent; }
+  .tts-card .summary::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+  .tts-card .summary a { color: var(--accent-bright); text-decoration: underline; }
+  .tts-card .summary a:hover { color: var(--text-primary); }
   .tts-card .uses {
     font-family: 'Share Tech Mono', monospace;
     font-size: 11px;
@@ -169,6 +252,8 @@
     text-transform: uppercase;
     display: block;
     margin-top: 6px;
+    flex-shrink: 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.85);
   }
 
   /* ── Message list ──────────────────────────────────────────── */
@@ -260,7 +345,14 @@
 
 <div class="page">
   <div class="title-row">
-    <div class="page-title">TTS</div>
+    <div class="title-left">
+      <div class="page-title">TTS</div>
+      <div class="card-controls" id="cardControls" style="display:none;">
+        <button class="btn" id="selAll">Select All</button>
+        <button class="btn" id="selNone">Select None</button>
+        <button class="btn" id="selInvert">Invert Selection</button>
+      </div>
+    </div>
     <div class="donor-dropdown" id="donorDropdown" style="display:none;">
       <button class="donor-trigger" id="donorTrigger">
         <span id="donorLabel">All donors</span><span class="caret">▾</span>
@@ -311,15 +403,78 @@ async function fetchJSON(url) {
   if (!r.ok) throw new Error(`${r.status} — ${url}`);
   return r.json();
 }
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
 function escHtml(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// ── Minimal inline markdown ──────────────────────────────────────────────────
+// Supports [text](url), **bold**, __underline__, *italic*. Input is HTML-escaped
+// first, so the only tags that survive are the ones we emit here.
+function mdInline(src) {
+  let s = escHtml(src);
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, text, url) => {
+    const safe = /^(https?:|mailto:)/i.test(url) ? url : '#';
+    return `<a href="${safe}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+  });
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');   // bold (before italic)
+  s = s.replace(/__([^_]+)__/g, '<u>$1</u>');                 // underline
+  s = s.replace(/\*([^*]+)\*/g, '<em>$1</em>');               // italic
+  return s;
+}
+
+// Parse "Name: description" lines into { lowercasedName: {name, desc} }.
+function parseDescriptions(text) {
+  const map = {};
+  for (const raw of (text || '').split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line) continue;
+    const idx = line.indexOf(':');
+    if (idx === -1) continue;
+    const name = line.slice(0, idx).trim();
+    const desc = line.slice(idx + 1).trim();
+    if (!name) continue;
+    map[name.toLowerCase()] = { name, desc };
+  }
+  return map;
+}
+
+// Find a background image for a voice by trying name-casing variants × common
+// web image extensions; sets it on the card once one loads (filenames are
+// case-sensitive on GitHub raw / most static hosts, so we try a few spellings).
+const BG_EXTS = ['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif'];
+function loadCardBackground(cardEl, voice, canonicalName) {
+  const cap = voice.charAt(0).toUpperCase() + voice.slice(1);
+  const names = [...new Set([canonicalName, cap, voice, voice.toUpperCase()].filter(Boolean))];
+  const candidates = [];
+  for (const n of names) for (const e of BG_EXTS) candidates.push(`${RAW}/tts-backgrounds/${encodeURIComponent(n)}.${e}`);
+
+  let i = 0;
+  const tryNext = () => {
+    if (i >= candidates.length) return;
+    const url = candidates[i++];
+    const img = new Image();
+    img.onload = () => {
+      const layer = cardEl.querySelector('.card-bg');
+      if (layer) layer.style.backgroundImage = `url("${url}")`;
+      cardEl.classList.add('has-bg');
+    };
+    img.onerror = tryNext;
+    img.src = url;
+  };
+  tryNext();
+}
+
 // ── State ────────────────────────────────────────────────────────────────────
-let DATA      = null;          // the loaded tts.json
-let enabled   = new Set();     // currently toggled-on voices
-let donors    = [];            // [{name, count}], sorted by count desc
-let selected  = new Set();     // currently selected donor names
+let DATA         = null;       // the loaded tts.json
+let enabled      = new Set();  // currently toggled-on voices
+let donors       = [];         // [{name, count}], sorted by count desc
+let selected     = new Set();  // currently selected donor names
+let DESCRIPTIONS = {};         // { lowercasedVoice: {name, desc} }
 
 // ── Cards ────────────────────────────────────────────────────────────────────
 function renderCards() {
@@ -331,19 +486,62 @@ function renderCards() {
 
   el.innerHTML = cmds.map(([voice, count]) => {
     const on = enabled.has(voice);
+    const info = DESCRIPTIONS[voice.toLowerCase()];
+    const summary = info && info.desc
+      ? `<div class="summary">${mdInline(info.desc)}</div>`
+      : '<div class="summary"></div>';
     return `<div class="tts-card${on ? ' active' : ''}" data-voice="${escHtml(voice)}">
-      <span class="voice">${escHtml(voice)}</span>
-      <span class="uses">${count} use${count === 1 ? '' : 's'}</span>
+      <div class="card-bg"></div>
+      <div class="card-content">
+        <span class="voice">${escHtml(voice)}</span>
+        ${summary}
+        <span class="uses">${count} use${count === 1 ? '' : 's'}</span>
+      </div>
     </div>`;
   }).join('');
 
   el.querySelectorAll('.tts-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const v = card.dataset.voice;
-      if (enabled.has(v)) enabled.delete(v); else enabled.add(v);
-      card.classList.toggle('active', enabled.has(v));
+    const voice = card.dataset.voice;
+    const info = DESCRIPTIONS[voice.toLowerCase()];
+    loadCardBackground(card, voice, info && info.name);
+
+    card.addEventListener('click', e => {
+      // Let links inside the summary work without toggling the card.
+      if (e.target.closest('a')) return;
+      if (enabled.has(voice)) enabled.delete(voice); else enabled.add(voice);
+      card.classList.toggle('active', enabled.has(voice));
       renderMessages();
     });
+  });
+}
+
+// Toggle .active on existing cards without rebuilding them (avoids reloading
+// the background images on every Select All / None / Invert).
+function syncCardClasses() {
+  document.querySelectorAll('#cards .tts-card').forEach(card => {
+    card.classList.toggle('active', enabled.has(card.dataset.voice));
+  });
+}
+
+// ── Card selection controls ──────────────────────────────────────────────────
+function wireCardControls() {
+  document.getElementById('cardControls').style.display = '';
+  const allVoices = () => Object.keys(DATA.commands || {});
+
+  document.getElementById('selAll').addEventListener('click', () => {
+    enabled = new Set(allVoices());
+    syncCardClasses();
+    renderMessages();
+  });
+  document.getElementById('selNone').addEventListener('click', () => {
+    enabled = new Set();
+    syncCardClasses();
+    renderMessages();
+  });
+  document.getElementById('selInvert').addEventListener('click', () => {
+    enabled = new Set(allVoices().filter(v => !enabled.has(v)));
+    syncCardClasses();
+    renderMessages();
   });
 }
 
@@ -377,14 +575,25 @@ function renderDonorPanel() {
     </label>`).join('');
 
   panel.innerHTML = `
-    <label class="donor-opt all">
-      <input type="checkbox" id="donorAll" ${allChecked ? 'checked' : ''}>
-      <span>All</span>
-    </label>${opts}`;
+    <div class="donor-opt all">
+      <label class="all-check">
+        <input type="checkbox" id="donorAll" ${allChecked ? 'checked' : ''}>
+        <span>All</span>
+      </label>
+      <button type="button" class="donor-invert" id="donorInvert">Invert</button>
+    </div>${opts}`;
 
   panel.querySelector('#donorAll').addEventListener('change', e => {
     if (e.target.checked) selected = new Set(donors.map(d => d.name));
     else selected = new Set();
+    renderDonorPanel();
+    updateDonorLabel();
+    renderMessages();
+  });
+
+  panel.querySelector('#donorInvert').addEventListener('click', e => {
+    e.stopPropagation();
+    selected = new Set(donors.filter(d => !selected.has(d.name)).map(d => d.name));
     renderDonorPanel();
     updateDonorLabel();
     renderMessages();
@@ -484,9 +693,17 @@ async function load() {
       return;
     }
 
+    // Descriptions are optional — don't fail the page if the file is missing.
+    try {
+      DESCRIPTIONS = parseDescriptions(await fetchText(`${RAW}/tts-descriptions.md`));
+    } catch (e) {
+      DESCRIPTIONS = {};
+    }
+
     enabled = new Set(Object.keys(DATA.commands));   // default: all voices on
     buildDonors();
     renderCards();
+    wireCardControls();
     wireDonorDropdown();
     renderMessages();
 
