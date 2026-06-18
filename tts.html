@@ -149,26 +149,34 @@
   }
   .donor-invert:hover { border-color: var(--accent); color: var(--accent-bright); }
 
+  /* ── Scroll section (cards + list share one scrollbar) ─────── */
+  .scroll-area {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 4px;
+  }
+  .scroll-area::-webkit-scrollbar { width: 4px; }
+  .scroll-area::-webkit-scrollbar-track { background: transparent; }
+  .scroll-area::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
   /* ── Cards ─────────────────────────────────────────────────── */
   .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     flex-shrink: 0;
-    max-height: 38vh;
-    overflow-y: auto;
-    padding-right: 4px;
+    align-items: flex-start;   /* cards size to their own content, top-aligned */
   }
-  .cards::-webkit-scrollbar { width: 4px; }
-  .cards::-webkit-scrollbar-track { background: transparent; }
-  .cards::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
 
   .tts-card {
     background: var(--bg-panel);
     border: 1px solid var(--border-default);
     border-radius: 6px;
-    width: 210px;
-    height: 168px;          /* fixed so cards align regardless of summary length */
+    min-width: 130px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -211,7 +219,6 @@
   .tts-card .card-content {
     position: relative;
     z-index: 1;
-    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 12px 14px;
@@ -229,19 +236,23 @@
     flex-shrink: 0;
   }
   .tts-card .summary {
-    flex: 1 1 auto;
-    min-height: 0;          /* allow the flex child to shrink and scroll */
-    overflow-y: auto;
     margin-top: 6px;
+    max-width: 240px;       /* let long descriptions wrap instead of stretching the card */
+    max-height: 320px;
+    overflow: hidden;
     font-family: 'Lora', serif;
     font-size: 12px;
     line-height: 1.35;
     color: var(--text-primary);
     text-shadow: 0 1px 3px rgba(0,0,0,0.85);
+    transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
   }
-  .tts-card .summary::-webkit-scrollbar { width: 3px; }
-  .tts-card .summary::-webkit-scrollbar-track { background: transparent; }
-  .tts-card .summary::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+  /* Deselected cards collapse their description to take up less space. */
+  .tts-card:not(.active) .summary {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+  }
   .tts-card .summary a { color: var(--accent-bright); text-decoration: underline; }
   .tts-card .summary a:hover { color: var(--text-primary); }
   .tts-card .uses {
@@ -258,15 +269,11 @@
 
   /* ── Message list ──────────────────────────────────────────── */
   .list-wrap {
-    flex: 1;
-    overflow-y: auto;
+    flex-shrink: 0;
     background: var(--bg-panel);
     border: 1px solid var(--border-default);
     border-radius: 6px;
   }
-  .list-wrap::-webkit-scrollbar { width: 4px; }
-  .list-wrap::-webkit-scrollbar-track { background: transparent; }
-  .list-wrap::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
 
   .msg {
     padding: 10px 16px;
@@ -361,12 +368,14 @@
     </div>
   </div>
 
-  <div class="cards" id="cards"></div>
+  <div class="scroll-area">
+    <div class="cards" id="cards"></div>
 
-  <div class="list-wrap" id="listWrap">
-    <div class="loading-state">
-      <span class="loading-glyph">~</span>
-      <span>summoning the voices...</span>
+    <div class="list-wrap" id="listWrap">
+      <div class="loading-state">
+        <span class="loading-glyph">~</span>
+        <span>summoning the voices...</span>
+      </div>
     </div>
   </div>
 </div>
@@ -487,13 +496,16 @@ function renderCards() {
   el.innerHTML = cmds.map(([voice, count]) => {
     const on = enabled.has(voice);
     const info = DESCRIPTIONS[voice.toLowerCase()];
+    // Use the proper-case name from the descriptions file when known, otherwise
+    // capitalize the first letter (the stored voice key is always lowercased).
+    const display = (info && info.name) ? info.name : voice.charAt(0).toUpperCase() + voice.slice(1);
     const summary = info && info.desc
       ? `<div class="summary">${mdInline(info.desc)}</div>`
-      : '<div class="summary"></div>';
+      : '';
     return `<div class="tts-card${on ? ' active' : ''}" data-voice="${escHtml(voice)}">
       <div class="card-bg"></div>
       <div class="card-content">
-        <span class="voice">${escHtml(voice)}</span>
+        <span class="voice">${escHtml(display)}</span>
         ${summary}
         <span class="uses">${count} use${count === 1 ? '' : 's'}</span>
       </div>
