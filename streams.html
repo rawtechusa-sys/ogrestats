@@ -888,62 +888,8 @@ function syncAxisDisplay() {
   currentChart.update('none');
 }
 
-// ── Eased y-axis rescaling ──────────────────────────────────────────────────
-// Toggling a line (or rebuilding the data) changes how much sits on a y-axis,
-// so Chart.js recomputes that axis's min/max. By default the new range snaps in.
-// This plugin reads each y-axis's freshly-computed data limits (the target) and
-// eases the *applied* limits toward them over a few frames, so the gridlines and
-// the lines glide to the new scale instead of jumping. It self-drives via a
-// requestAnimationFrame'd update('none') until the scale settles.
-const Y_EASE = 0.18; // fraction eased toward the new scale per frame
-const yEaseScalePlugin = {
-  id: 'yEaseScale',
-  afterDataLimits(chart, args) {
-    const scale = args.scale;
-    if (scale.axis !== 'y') return;            // x-axis is driven by zoom/pan, leave it
-    chart.$yEase = chart.$yEase || {};
-    const target = { min: scale.min, max: scale.max };
-    // Degenerate axis (all its lines hidden, or a single flat value): drop the
-    // stored state so the axis snaps fresh the next time it has a real range.
-    if (!isFinite(target.min) || !isFinite(target.max) || target.max <= target.min) {
-      delete chart.$yEase[scale.id];
-      return;
-    }
-    let s = chart.$yEase[scale.id];
-    if (!s) {
-      // First sight of this axis: adopt the target immediately, no tween.
-      s = chart.$yEase[scale.id] = { min: target.min, max: target.max };
-    } else {
-      s.min += (target.min - s.min) * Y_EASE;
-      s.max += (target.max - s.max) * Y_EASE;
-      const span = (target.max - target.min) || 1;
-      if (Math.abs(target.min - s.min) < span * 0.002 &&
-          Math.abs(target.max - s.max) < span * 0.002) {
-        s.min = target.min; s.max = target.max; // close enough -> snap to exact
-      } else {
-        chart.$yEaseNeedsFrame = true;          // not settled -> drive another frame
-      }
-    }
-    scale.min = s.min;
-    scale.max = s.max;
-  },
-  afterUpdate(chart) {
-    if (!chart.$yEaseNeedsFrame) return;
-    chart.$yEaseNeedsFrame = false;
-    if (chart.$yEaseRaf != null) return;
-    chart.$yEaseRaf = requestAnimationFrame(() => {
-      chart.$yEaseRaf = null;
-      if (chart.canvas) chart.update('none'); // skip if the chart was destroyed meanwhile
-    });
-  },
-};
-
 function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
-  if (currentChart) {
-    if (currentChart.$yEaseRaf != null) cancelAnimationFrame(currentChart.$yEaseRaf);
-    currentChart.destroy();
-    currentChart = null;
-  }
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
   if (!ctx) return;
@@ -1193,7 +1139,6 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   currentChart = new Chart(ctx, {
     type: 'bar',
     data: { datasets },
-    plugins: [yEaseScalePlugin],
     options: {
       responsive: true,
       maintainAspectRatio: false,
