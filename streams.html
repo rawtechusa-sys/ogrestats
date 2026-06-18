@@ -1223,7 +1223,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { color: t.chartGrid },
           ticks: {
             color: t.chartTick,
-            font: { family: "'Share Tech Mono', monospace", size: 10 },
+            font: { family: "'Share Tech Mono', monospace", size: 15 },
             callback: v => fmtET(v),
             maxTicksLimit: 10,
           }
@@ -1235,7 +1235,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { color: t.chartGrid },
           ticks: {
             color: '#40c4ff',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 6,
           },
@@ -1243,7 +1243,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'viewers',
             color: '#40c4ff',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
         },
         yActiveChatters: {
@@ -1253,7 +1253,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#909090',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: v => v.toLocaleString(),
             maxTicksLimit: 5,
           },
@@ -1261,7 +1261,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'chatters',
             color: '#909090',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
         },
         yDonations: {
@@ -1271,7 +1271,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#e8c020',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: v => '$' + v.toFixed(0),
             maxTicksLimit: 5,
           },
@@ -1284,7 +1284,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#4caf50',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: v => v.toFixed(0),
             maxTicksLimit: 5,
           },
@@ -1292,7 +1292,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             display: true,
             text: 'msg / min',
             color: '#4caf50',
-            font: { family: "'Share Tech Mono', monospace", size: 9 },
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
         },
       }
