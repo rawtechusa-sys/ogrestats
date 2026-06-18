@@ -247,7 +247,7 @@
     line-height: 1.35;
     color: var(--text-primary);
     text-shadow: 0 1px 3px rgba(0,0,0,0.85);
-    transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
+    transition: max-height 0.2s ease, max-width 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
   }
   /* Deselected cards collapse — both the description and their overall width. */
   .tts-card:not(.active) { min-width: 0; }
@@ -255,6 +255,7 @@
   .tts-card:not(.active) .voice { font-size: 15px; }
   .tts-card:not(.active) .summary {
     max-height: 0;
+    max-width: 0;        /* so the collapsed description no longer dictates card width */
     opacity: 0;
     margin-top: 0;
   }
