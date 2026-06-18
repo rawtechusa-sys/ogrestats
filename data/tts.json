@@ -1,22 +1,19 @@
 {
   "version": 1,
-  "updated_ts": 1781768383,
+  "updated_ts": 1781805090,
   "counted_streams": [
-    "chaunceycc",
     "grifters_jeffrey_and_phillip",
-    "rtustreams",
     "short_stream_with_updates",
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "so_moist_so_man_so_meaningfulso_robust",
-    "the_swaycation_day_4_the_swaycast_157",
     "we_did_it_bois_100k"
   ],
   "commands": {
     "stan": 20,
-    "masterchief": 18,
+    "masterchief": 21,
     "grandpa": 9,
-    "phil": 41,
-    "trump": 24,
+    "phil": 46,
+    "trump": 26,
     "doom": 3,
     "harman": 8,
     "eric": 18,
@@ -35,45 +32,30 @@
     "something": 1
   },
   "streams": {
-    "chaunceycc": {
-      "title": "ChaunceyCC",
-      "start_ts": 1781737622,
-      "youtube_archive_id": "y9SeR9HILoA"
-    },
     "grifters_jeffrey_and_phillip": {
       "title": "Grifters, Jeffrey, And Phillip",
-      "start_ts": 1781652548,
-      "youtube_archive_id": "-XbaxVPTtLs"
-    },
-    "rtustreams": {
-      "title": "RTUStreams",
-      "start_ts": 1781570892,
-      "youtube_archive_id": null
+      "start_ts": 1781656449,
+      "youtube_archive_id": "et2ueGG_lRM"
     },
     "short_stream_with_updates": {
       "title": "Short Stream With Updates",
-      "start_ts": 1781571249,
+      "start_ts": 1781571438,
       "youtube_archive_id": "x6cYCeYkygk"
     },
     "smash_jt_has_lost_his_damn_mind_smashjt": {
       "title": "Smash JT Has Lost His Damn Mind #SmashJT",
-      "start_ts": 1781133982,
-      "youtube_archive_id": "qZTdQicVmxg"
+      "start_ts": 1781134398,
+      "youtube_archive_id": null
     },
     "so_moist_so_man_so_meaningfulso_robust": {
       "title": "So Moist. So Man. So Meaningful...So Robust",
       "start_ts": 1781740694,
       "youtube_archive_id": "iWzIDdhxST0"
     },
-    "the_swaycation_day_4_the_swaycast_157": {
-      "title": "The Swaycation - Day 4 || The Swaycast #157",
-      "start_ts": 1781736810,
-      "youtube_archive_id": "m1jPNf44wrw"
-    },
     "we_did_it_bois_100k": {
       "title": "We Did It Bois (100k)",
       "start_ts": 1781225147,
-      "youtube_archive_id": "muoCmuLCvaM"
+      "youtube_archive_id": null
     }
   },
   "messages": [
@@ -813,6 +795,26 @@
       ]
     },
     {
+      "ts": 1781571679,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Trump: The UFC Freedom 250 was a success. Our founding fathers and Jeffery Epstein would have been proud.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1781571665,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Trump: The UFC Freedom 250 was a success. Our founding fathers and Jeffery Epstein would have been proud.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
       "ts": 1781571451,
       "username": "@niallwilliamson3540",
       "platform": "youtube",
@@ -823,11 +825,91 @@
       ]
     },
     {
+      "ts": 1781571361,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Masterchief: men, i have found something great. twisted tea extreme. I am already 2 cans down. I can see all! I can see the future! embrace the farts!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1781571361,
+      "username": "@U3jnwKk",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Phil: Demon on the wall behind you",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781571361,
+      "username": "@hulkhogansgianttaint",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Phil: Yummy yummy yummy tummy taco bell (fart) uhhghgh",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781571347,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Masterchief: men, i have found something great. twisted tea extreme. I am already 2 cans down. I can see all! I can see the future! embrace the farts!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1781571347,
+      "username": "@U3jnwKk",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Phil: Demon on the wall behind you",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781571347,
+      "username": "@hulkhogansgianttaint",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Phil: Yummy yummy yummy tummy taco bell (fart) uhhghgh",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
       "ts": 1781571327,
       "username": "@hulkhogansgianttaint",
       "platform": "youtube",
       "stream_id": "short_stream_with_updates",
       "message": "Phil: Yummy yummy yummy tummy taco bell (fart) uhhghgh",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781571307,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Masterchief: men, i have found something great. twisted tea extreme. I am already 2 cans down. I can see all! I can see the future! embrace the farts!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1781571307,
+      "username": "@U3jnwKk",
+      "platform": "youtube",
+      "stream_id": "short_stream_with_updates",
+      "message": "Phil: Demon on the wall behind you",
       "commands": [
         "phil"
       ]
