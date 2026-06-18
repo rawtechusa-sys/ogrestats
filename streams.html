@@ -888,6 +888,124 @@ function syncAxisDisplay() {
   currentChart.update('none');
 }
 
+// ── Smooth (non-snapping) y-axis auto-fit ───────────────────────────────────
+// When the x-axis is zoomed/panned, Chart.js fits each y-axis to ONLY the points
+// inside the visible x-window. That inclusion is binary, so the y-scale snaps the
+// instant a tall/short point crosses the visible edge. To make the scale move
+// continuously, smoothYExtent() computes each axis's min/max itself, letting
+// off-screen points still contribute with a weight that decays with distance past
+// the edge -- so a peak's influence fades in/out instead of popping. The plugin
+// that applies this lives inline in the Chart config (see "smoothYFit").
+const MARGIN_FRAC = 0.6;       // off-screen influence band, as a fraction of the visible range
+const Y_HEADROOM = 0.05;       // top padding, mirroring Chart.js's auto headroom
+const ANCHOR_MIN_ZERO = false; // keep the floating min (set true to floor every axis at 0)
+
+// Smoothstep falloff: 1 at the visible edge (u<=0), 0 beyond the band (u>=1), with a
+// continuous slope between. w=1 exactly at the edge so an off-screen point matches its
+// own value the moment it scrolls into view -- that equality at the crossing is what
+// removes the snap.
+function falloff(u) {
+  if (u <= 0) return 1;
+  if (u >= 1) return 0;
+  return 1 - (3 * u * u - 2 * u * u * u);
+}
+
+// Distance-weighted [min,max] for one y-axis over its currently-visible datasets.
+// Returns null when the axis has no usable data (caller then leaves Chart's default).
+function smoothYExtent(chart, axisId) {
+  // Resolve the intended x-window. $xWindow is stashed wherever the window is driven
+  // (pan/zoom/reset); fall back to the live x-scale, then to the full data extent so
+  // the very first render (before the scrollbar is wired) matches today's full fit.
+  let xmin, xmax;
+  if (chart.$xWindow) { xmin = chart.$xWindow.min; xmax = chart.$xWindow.max; }
+  else if (chart.scales.x && isFinite(chart.scales.x.min)) { xmin = chart.scales.x.min; xmax = chart.scales.x.max; }
+
+  const sets = [];
+  chart.data.datasets.forEach((ds, i) => {
+    if (ds.yAxisID === axisId && chart.isDatasetVisible(i)) sets.push(ds.data);
+  });
+  if (sets.length === 0) return null;
+
+  // If we still have no x-window, fit the full extent of the visible data.
+  if (xmin == null || !isFinite(xmin) || !isFinite(xmax)) {
+    let lo = Infinity, hi = -Infinity;
+    for (const data of sets) for (const p of data) {
+      if (p.y == null || Number.isNaN(p.y)) continue;
+      if (p.y < lo) lo = p.y;
+      if (p.y > hi) hi = p.y;
+    }
+    if (lo > hi) return null;
+    return padExtent(lo, hi);
+  }
+
+  const R = xmax - xmin;
+  const M = MARGIN_FRAC * R;
+
+  // Pass 1: extent of points strictly inside the window.
+  let visMin = Infinity, visMax = -Infinity, haveInterior = false;
+  // Track the nearest bracketing point on each side for the empty-interior fallback.
+  let leftPt = null, leftDist = Infinity, rightPt = null, rightDist = Infinity;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) {
+      haveInterior = true;
+      if (p.y < visMin) visMin = p.y;
+      if (p.y > visMax) visMax = p.y;
+    } else if (p.x < xmin) {
+      const d = xmin - p.x;
+      if (d < leftDist) { leftDist = d; leftPt = p; }
+    } else {
+      const d = p.x - xmax;
+      if (d < rightDist) { rightDist = d; rightPt = p; }
+    }
+  }
+
+  if (!haveInterior) {
+    // Window sits between samples: seed the extent from the nearest bracketing
+    // point(s) at full value so the axis stays meaningful (it can't fade to a
+    // collapsed range). It meets the interior case continuously: the instant such
+    // a point scrolls in it becomes visMin/visMax directly.
+    const seeds = [];
+    if (leftPt)  seeds.push(leftPt.y);
+    if (rightPt) seeds.push(rightPt.y);
+    if (seeds.length === 0) return null;
+    visMin = Math.min(...seeds);
+    visMax = Math.max(...seeds);
+  }
+
+  // Pass 2: let off-screen points pull the envelope outward, fading with distance.
+  // Each point's faded candidate is measured from the interior extent (visMin/visMax),
+  // and we keep the most extreme candidate -- a nearer, lower peak must not overwrite a
+  // farther, taller one, so compare candidates, not raw values.
+  let yMin = visMin, yMax = visMax;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) continue;
+    const d = p.x < xmin ? xmin - p.x : p.x - xmax;
+    const w = M > 0 ? falloff(d / M) : 0;
+    if (w === 0) continue;
+    if (p.y > visMax) {
+      const cand = visMax + w * (p.y - visMax);
+      if (cand > yMax) yMax = cand;
+    } else if (p.y < visMin) {
+      const cand = visMin + w * (p.y - visMin);
+      if (cand < yMin) yMin = cand;
+    }
+  }
+
+  return padExtent(yMin, yMax);
+}
+
+// Add headroom and guarantee min < max for a finite [lo,hi] pair.
+function padExtent(lo, hi) {
+  let range = hi - lo;
+  if (range <= 0) range = Math.max(Math.abs(hi), 1) * 0.1;
+  hi += Y_HEADROOM * range;
+  if (ANCHOR_MIN_ZERO) lo = Math.min(lo, 0);
+  if (hi <= lo) hi = lo + (Math.max(Math.abs(lo), 1) * 0.1);
+  return { min: lo, max: hi };
+}
+
 function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
@@ -1296,7 +1414,23 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           },
         },
       }
-    }
+    },
+    plugins: [{
+      // Override each y-axis's auto-fit with the distance-weighted envelope so the
+      // scale moves continuously during x zoom/pan instead of snapping. Runs on every
+      // update (incl. the 'none'-mode zoomScale frames), reads state and writes
+      // scale.min/max in place -- no re-entrant update(), so no animation loop.
+      id: 'smoothYFit',
+      afterDataLimits(chart, args) {
+        const scale = args.scale;
+        if (!scale || scale.axis !== 'y') return;       // leave the x-axis to the zoom plugin
+        if (scale.options.display === false) return;     // skip hidden axes
+        const ext = smoothYExtent(chart, scale.id);      // scale.id === 'yViewers', etc.
+        if (!ext) return;
+        scale.min = ext.min;
+        scale.max = ext.max;
+      },
+    }],
   });
 
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
@@ -1304,6 +1438,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     if (currentChart && currentChart.resetZoom) {
       if (currentChart.$stopZoomAnim) currentChart.$stopZoomAnim();
       currentChart.resetZoom();
+      currentChart.$xWindow = { min: currentChart.scales.x.min, max: currentChart.scales.x.max };
       if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
     }
   };
@@ -1324,6 +1459,9 @@ function setupScrollbar() {
   const fullMax = currentChart.scales.x.max;
   const fullRange = (fullMax - fullMin) || 1;
   const minRange = fullRange * 0.02; // smallest window the thumb can shrink to
+  currentChart.$xWindow = { min: fullMin, max: fullMax }; // smoothYFit reads this for the y-fit
+
+
 
   function updateScrollbar() {
     const xs = currentChart.scales.x;
@@ -1343,6 +1481,7 @@ function setupScrollbar() {
   // Instant apply -- used for resize (zoom) where immediate feedback feels best.
   function applyRange(min, max) {
     const r = clampRange(min, max);
+    currentChart.$xWindow = { min: r.min, max: r.max };
     currentChart.zoomScale('x', r, 'none');
     updateScrollbar();
   }
@@ -1365,6 +1504,7 @@ function setupScrollbar() {
     } else {
       rafId = requestAnimationFrame(animateToward);
     }
+    currentChart.$xWindow = { min, max };
     currentChart.zoomScale('x', { min, max }, 'none');
     updateScrollbar();
   }
