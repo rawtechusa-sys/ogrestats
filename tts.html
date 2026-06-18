@@ -215,6 +215,26 @@
   }
   .tts-card.has-bg .card-bg { display: block; }
 
+  /* White (Onion Layers) theme: text on cards is dark, so lighten the image
+     instead of darkening it, and swap the dark text halos for light ones. */
+  html[data-theme="white"] .tts-card .card-bg { filter: brightness(1.6); opacity: 0.5; }
+  /* Light scrim over the faded image so dark text always has a readable base,
+     even on dark source artwork. */
+  html[data-theme="white"] .tts-card.has-bg .card-content::before {
+    content: '';
+    position: absolute;
+    inset: -8px -10px;
+    background: radial-gradient(ellipse at center, rgba(251,247,238,0.82) 0%, rgba(251,247,238,0.55) 70%, transparent 100%);
+    z-index: -1;
+    pointer-events: none;
+  }
+  html[data-theme="white"] .tts-card .voice {
+    text-shadow: 0 1px 2px rgba(255,250,240,1), 0 0 10px rgba(255,250,240,0.9);
+  }
+  html[data-theme="white"] .tts-card .summary {
+    text-shadow: 0 1px 2px rgba(255,250,240,1), 0 0 6px rgba(255,250,240,0.85);
+  }
+
   /* Text layer above the image */
   .tts-card .card-content {
     position: relative;
@@ -403,6 +423,7 @@ function applyTheme(key) {
     white: 'themes/onion-layers.css',
   };
   document.getElementById('theme-css').href = themes[key] || themes.green;
+  document.documentElement.setAttribute('data-theme', key);
 }
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });

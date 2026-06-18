@@ -1,25 +1,25 @@
 :root {
-  --bg-base:       #ffffff;
-  --bg-surface:       #ffffffb0;
-  --bg-panel:     #ffffffb0;
-  --bg-subtle:     #9d9d9d;
-  --bg-raised:  #9b9b9b;
-  --text-primary: #1e1e1e;
-  --text-muted: #5c4c18;
-  --accent:     #3b3b22;
-  --accent-bright: #a5a513;
-  --accent-alt:     #50391c;
-  --accent-alt-bright:  #3f2648;
-  --platform-youtube:    #a22323;
-  --platform-twitch: #372a45;
-  --border-default:    rgb(73 73 63 / 89%);
-  --border-default-strong: rgb(56 56 26 / 98%);
-  --accent-glow-r: 180; --accent-glow-g: 180; --accent-glow-b: 170;
+  --bg-base:       #e7dcc4;
+  --bg-surface:       #fbf7eecc;
+  --bg-panel:     #fdfbf4cc;
+  --bg-subtle:     #d8cba9;
+  --bg-raised:  #c8b88f;
+  --text-primary: #2a2316;
+  --text-muted: #6a5731;
+  --accent:     #a06d1c;
+  --accent-bright: #8a4d08;
+  --accent-alt:     #5a3a8c;
+  --accent-alt-bright:  #7a52b0;
+  --platform-youtube:    #b32222;
+  --platform-twitch: #5a3a8c;
+  --border-default:    rgb(120 92 38 / 38%);
+  --border-default-strong: rgb(120 92 38 / 70%);
+  --accent-glow-r: 150; --accent-glow-g: 105; --accent-glow-b: 40;
 }
 
 body::before {
   background:
-    radial-gradient(ellipse 60% 40% at 15% 90%, rgba(80,80,75,0.10) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 30% at 85% 95%, rgba(60,60,55,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(40,40,38,0.14) 0%, transparent 50%);
+    radial-gradient(ellipse 60% 40% at 15% 90%, rgba(150,110,50,0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 85% 95%, rgba(130,95,45,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(110,80,35,0.18) 0%, transparent 50%);
 }

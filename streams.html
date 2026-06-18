@@ -76,6 +76,16 @@
     border-left-color: var(--accent);
   }
 
+  /* White (Onion Layers) theme: replace the hardcoded green highlight with the
+     theme's warm amber so the selection doesn't clash with the parchment. */
+  html[data-theme="white"] .stream-item:hover {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10);
+    border-left-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.45);
+  }
+  html[data-theme="white"] .stream-item.active {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+
   .stream-item-date {
     font-family: 'Share Tech Mono', monospace;
     font-size: 14px;
@@ -102,6 +112,12 @@
   .badge-yt   { background: rgba(192,57,43,0.25);  color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
   .badge-tw   { background: rgba(123,79,166,0.25); color: #b090d0; border: 1px solid rgba(123,79,166,0.3); }
   .badge-both { background: rgba(90,90,0,0.3);     color: #c8b060; border: 1px solid rgba(150,130,0,0.3); }
+
+  /* White (Onion Layers) theme: the dark-theme badge colors wash out on the
+     light parchment, so use darker saturated text on lighter, stronger fills. */
+  html[data-theme="white"] .badge-yt   { background: rgba(179,34,34,0.14);  color: #9c1818; border-color: rgba(179,34,34,0.5); }
+  html[data-theme="white"] .badge-tw   { background: rgba(90,58,140,0.14);  color: #54338a; border-color: rgba(90,58,140,0.5); }
+  html[data-theme="white"] .badge-both { background: rgba(160,109,28,0.16); color: #7a4406; border-color: rgba(160,109,28,0.55); }
 
   .sidebar-empty {
     padding: 16px;
@@ -375,6 +391,13 @@
     background: rgba(100,180,60,0.05);
   }
 
+  html[data-theme="white"] .donations-table td {
+    border-bottom-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+  html[data-theme="white"] .donations-table tr:hover td {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.07);
+  }
+
   .type-badge {
     display: inline-block;
     font-family: 'Share Tech Mono', monospace;
@@ -390,6 +413,14 @@
   .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35);  background: rgba(90,50,140,0.2); }
   .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
   .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
+
+  /* White (Onion Layers) theme: darker text on lighter fills for legibility. */
+  html[data-theme="white"] .type-superchat,
+  html[data-theme="white"] .type-membership,
+  html[data-theme="white"] .type-giftmembership { color: #237046; border-color: rgba(35,112,70,0.45); background: rgba(35,112,70,0.13); }
+  html[data-theme="white"] .type-bits,
+  html[data-theme="white"] .type-giftsub,
+  html[data-theme="white"] .type-sub { color: #54338a; border-color: rgba(90,58,140,0.45); background: rgba(90,58,140,0.13); }
 
   .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
   .username   { color: var(--text-primary); }
@@ -460,12 +491,13 @@ const THEMES = {
   amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
   grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
   void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
-  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(120,92,38,0.14)',    chartTick: '#6a5731', donBar: 'rgba(160,109,28,0.80)',  donBorder: '#8a4d08', tooltipBg: '#fbf7ee', tooltipTitle: '#8a4d08', tooltipBody: '#2a2316', donTick: '#6a5731',  tooltipBorder: 'rgba(120,92,38,0.5)' },
 };
 
 function applyTheme(key) {
   const t = THEMES[key] || THEMES.green;
   document.getElementById('theme-css').href = t.file;
+  document.documentElement.setAttribute('data-theme', key);
   if (currentChart) {
     currentChart.options.scales.yViewers.grid.color = t.chartGrid;
     currentChart.options.scales.x.grid.color = t.chartGrid;

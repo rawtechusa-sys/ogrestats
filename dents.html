@@ -220,6 +220,7 @@ function applyTheme(key) {
     white: 'themes/onion-layers.css',
   };
   document.getElementById('theme-css').href = themes[key] || themes.green;
+  document.documentElement.setAttribute('data-theme', key);
 }
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });

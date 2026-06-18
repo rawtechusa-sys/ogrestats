@@ -258,6 +258,7 @@ const THEME_FILES = {
 
 function applyTheme(key) {
   document.getElementById('theme-css').href = THEME_FILES[key] || THEME_FILES.green;
+  document.documentElement.setAttribute('data-theme', key);
   localStorage.setItem('swamp-theme', key);
   // Notify iframe -- it also reads localStorage directly on load,
   // but this keeps live switching instant.
