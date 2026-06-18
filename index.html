@@ -142,6 +142,31 @@
     color: var(--accent-bright);
   }
 
+  /* ── Background toggle ── */
+  .bg-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    cursor: pointer;
+    margin-left: 12px;
+    flex-shrink: 0;
+    user-select: none;
+  }
+
+  .bg-toggle:hover {
+    color: var(--accent-bright);
+  }
+
+  .bg-toggle input {
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+
   /* ── Page iframe ── */
   .page-frame {
     flex: 1;
@@ -166,6 +191,10 @@
       <button class="tab" data-page="dents.html">Dents</button>
       <button class="tab" data-page="tts.html">TTS</button>
     </nav>
+    <label class="bg-toggle" title="Toggle background critters">
+      <input type="checkbox" id="bgToggle" checked>
+      <span>Critters</span>
+    </label>
     <select class="theme-select" id="themeSelect" aria-label="Color theme">
       <option value="green">Bog Moss</option>
       <option value="amber">Firepit</option>
@@ -267,6 +296,25 @@ if (savedTab) {
     document.getElementById('pageFrame').src = savedTab;
   }
 }
+
+// ── Background critters toggle ─────────────────────────────────────────────────
+// Single switch for both canvas animations (roaches + eyeballs). The loops read
+// window._bgEnabled each frame and skip drawing when off; the canvases are also
+// hidden so no frozen frame lingers. Persisted in localStorage like theme/tab.
+const bgToggle = document.getElementById('bgToggle');
+
+function applyBg(on) {
+  window._bgEnabled = on;
+  bgToggle.checked = on;
+  localStorage.setItem('swamp-bg', on ? '1' : '0');
+  for (const id of ['roachCanvas', 'eyeCanvas']) {
+    const c = document.getElementById(id);
+    if (c) c.style.display = on ? '' : 'none';
+  }
+}
+
+applyBg(localStorage.getItem('swamp-bg') !== '0');
+bgToggle.addEventListener('change', e => applyBg(e.target.checked));
 </script>
 
 <script>
@@ -337,6 +385,10 @@ if (savedTab) {
 
   let _lastT = null;
   function tick(t) {
+    requestAnimationFrame(tick);
+    // Honor the background toggle -- keep the loop alive but skip all work
+    // when disabled. _lastT resets so dt doesn't spike on re-enable.
+    if (!window._bgEnabled) { _lastT = null; return; }
     // Framerate-independent stepping. scale = 1 at 60fps so the existing
     // ROACH_CONFIG values are preserved exactly; halves at 120fps, etc.
     // Clamp dt to 100ms so a backgrounded tab doesn't fling roaches off-screen
@@ -378,7 +430,6 @@ if (savedTab) {
 
       drawRoach(r, t);
     }
-    requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);
 })();
@@ -525,6 +576,9 @@ if (savedTab) {
 
   let _lastT = null;
   function tick(t) {
+    requestAnimationFrame(tick);
+    // Honor the background toggle -- see the roach loop for rationale.
+    if (!window._bgEnabled) { _lastT = null; return; }
     // Same dt/scale scheme as the roach loop. See comment there for why.
     const dt = _lastT == null ? 1/60 : Math.min(0.1, (t - _lastT) / 1000);
     _lastT = t;
@@ -602,8 +656,6 @@ if (savedTab) {
 
       drawEye(e);
     }
-
-    requestAnimationFrame(tick);
   }
 
   requestAnimationFrame(tick);
