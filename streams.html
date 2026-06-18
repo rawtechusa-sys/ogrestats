@@ -1006,6 +1006,19 @@ function padExtent(lo, hi) {
   return { min: lo, max: hi };
 }
 
+// Tick label callback that clamps tick values to whole numbers. With bounds:'data'
+// the axis edges (and thus the first/last tick) sit at the exact smooth min/max,
+// which are fractional -- so round every tick to an integer and drop a label that
+// repeats the previous tick's rounded value (the fractional edge tick can collide
+// with its neighbour in tight ranges). `fmt` renders the final integer.
+function intTick(fmt) {
+  return (v, i, ticks) => {
+    const r = Math.round(v);
+    if (i > 0 && Math.round(ticks[i - 1].value) === r) return null;
+    return fmt(r);
+  };
+}
+
 function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
@@ -1350,11 +1363,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           type: 'linear',
           position: 'left',
           display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS]),
+          bounds: 'data', // keep smoothYFit's exact min/max; 'ticks' (default) would round them to tick steps and re-snap the scale
           grid: { color: t.chartGrid },
           ticks: {
             color: '#40c4ff',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: v => v.toLocaleString(),
+            callback: intTick(v => v.toLocaleString()),
+            precision: 0,
             maxTicksLimit: 6,
           },
           title: {
@@ -1368,11 +1383,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           type: 'linear',
           position: 'left',
           display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS]),
+          bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#909090',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: v => v.toLocaleString(),
+            callback: intTick(v => v.toLocaleString()),
+            precision: 0,
             maxTicksLimit: 5,
           },
           title: {
@@ -1386,11 +1403,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           type: 'linear',
           position: 'right',
           display: axisHasVisibleDs([DS.DONATIONS]),
+          bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#e8c020',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: v => '$' + v.toFixed(0),
+            callback: intTick(v => '$' + v.toLocaleString()),
+            precision: 0,
             maxTicksLimit: 5,
           },
           title: { display: false },
@@ -1399,11 +1418,13 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
           type: 'linear',
           position: 'right',
           display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT]),
+          bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
             color: '#4caf50',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: v => v.toFixed(0),
+            callback: intTick(v => v.toLocaleString()),
+            precision: 0,
             maxTicksLimit: 5,
           },
           title: {
