@@ -187,9 +187,9 @@
   <header class="header">
     <span class="header-title" id="siteTitle">Ogre World</span>
     <nav class="tabs" id="tabs">
-      <button class="tab active" data-page="streams.html">Streams</button>
-      <button class="tab" data-page="dents.html">Dents</button>
-      <button class="tab" data-page="tts.html">TTS</button>
+      <button class="tab active" data-page="streams.html" data-slug="streams">Streams</button>
+      <button class="tab" data-page="dents.html" data-slug="dents">Dents</button>
+      <button class="tab" data-page="tts.html" data-slug="tts">TTS</button>
     </nav>
     <label class="bg-toggle" title="Toggle background critters">
       <input type="checkbox" id="bgToggle" checked>
@@ -277,25 +277,46 @@ document.getElementById('pageFrame').addEventListener('load', () => {
 });
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
+// The URL hash (#streams / #dents / #tts) is the source of truth for the active
+// tab, so links and refreshes deep-link to a tab. localStorage just remembers the
+// last tab when the page is opened with no hash.
+function tabForSlug(slug) {
+  return document.querySelector(`.tab[data-slug="${slug}"]`);
+}
+
+function activateTab(tab) {
+  if (!tab) return;
+  const frame = document.getElementById('pageFrame');
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  if (frame.getAttribute('src') !== tab.dataset.page) frame.src = tab.dataset.page;
+  localStorage.setItem('swamp-tab', tab.dataset.slug);
+}
+
+// Pick the tab implied by the current hash, falling back to the saved tab, then
+// the first tab.
+function syncTabFromHash() {
+  const slug = location.hash.replace(/^#/, '');
+  const tab = tabForSlug(slug)
+    || tabForSlug(localStorage.getItem('swamp-tab'))
+    || document.querySelector('.tab');
+  activateTab(tab);
+}
+
 document.getElementById('tabs').addEventListener('click', e => {
   const tab = e.target.closest('.tab');
   if (!tab) return;
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  tab.classList.add('active');
-  document.getElementById('pageFrame').src = tab.dataset.page;
-  localStorage.setItem('swamp-tab', tab.dataset.page);
+  // Setting the hash fires 'hashchange', which calls activateTab via
+  // syncTabFromHash. If the hash is already correct (re-click), activate directly.
+  if (location.hash.replace(/^#/, '') === tab.dataset.slug) {
+    activateTab(tab);
+  } else {
+    location.hash = tab.dataset.slug;
+  }
 });
 
-// Restore last active tab
-const savedTab = localStorage.getItem('swamp-tab');
-if (savedTab) {
-  const match = document.querySelector(`.tab[data-page="${savedTab}"]`);
-  if (match && !match.classList.contains('active')) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    match.classList.add('active');
-    document.getElementById('pageFrame').src = savedTab;
-  }
-}
+window.addEventListener('hashchange', syncTabFromHash);
+syncTabFromHash();
 
 // ── Background critters toggle ─────────────────────────────────────────────────
 // Single switch for both canvas animations (roaches + eyeballs). The loops read
