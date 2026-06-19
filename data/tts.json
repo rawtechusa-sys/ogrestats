@@ -1,16 +1,12 @@
 {
   "version": 1,
-  "updated_ts": 1781906768,
+  "updated_ts": 1781908184,
   "counted_streams": [
-    "cobras_cantina_247_kingcobrajfs_tv",
-    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026",
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "so_moist_so_man_so_meaningfulso_robust",
-    "swollendingus",
-    "we_did_it_bois_100k",
-    "whoa_its_a_friday_morning_in_america_lets_hang_out"
+    "we_did_it_bois_100k"
   ],
   "commands": {
     "stan": 20,
@@ -36,16 +32,6 @@
     "something": 1
   },
   "streams": {
-    "cobras_cantina_247_kingcobrajfs_tv": {
-      "title": "Cobra's Cantina - 24/7 KingCobraJFS TV",
-      "start_ts": 1781884409,
-      "youtube_archive_id": "4dNMdzYptbw"
-    },
-    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026": {
-      "title": "DSP Morning Show; Then Pokemon Brilliant Diamond RETURNS! June 18, 2026",
-      "start_ts": 1781815189,
-      "youtube_archive_id": "v2x_PHf-3bM"
-    },
     "grifters_jeffrey_and_phillip": {
       "title": "Grifters, Jeffrey, And Phillip",
       "start_ts": 1781656449,
@@ -66,20 +52,10 @@
       "start_ts": 1781740694,
       "youtube_archive_id": "iWzIDdhxST0"
     },
-    "swollendingus": {
-      "title": "swollendingus",
-      "start_ts": 1781846484,
-      "youtube_archive_id": "aam6KuAtyUY"
-    },
     "we_did_it_bois_100k": {
       "title": "We Did It Bois (100k)",
       "start_ts": 1781225147,
       "youtube_archive_id": null
-    },
-    "whoa_its_a_friday_morning_in_america_lets_hang_out": {
-      "title": "WHOA ITS A FRIDAY MORNING IN AMERICA LETS HANG OUT",
-      "start_ts": 1781884409,
-      "youtube_archive_id": "4dNMdzYptbw"
     }
   },
   "messages": [
