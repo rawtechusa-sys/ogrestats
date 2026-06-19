@@ -1,14 +1,13 @@
 {
   "version": 1,
-  "updated_ts": 1781828702,
+  "updated_ts": 1781828953,
   "counted_streams": [
+    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026",
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "so_moist_so_man_so_meaningfulso_robust",
-    "we_did_it_bois_100k",
-    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026",
-    "shroomdukem"
+    "we_did_it_bois_100k"
   ],
   "commands": {
     "stan": 20,
@@ -34,6 +33,11 @@
     "something": 1
   },
   "streams": {
+    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026": {
+      "title": "DSP Morning Show; Then Pokemon Brilliant Diamond RETURNS! June 18, 2026",
+      "start_ts": 1781815189,
+      "youtube_archive_id": "v2x_PHf-3bM"
+    },
     "grifters_jeffrey_and_phillip": {
       "title": "Grifters, Jeffrey, And Phillip",
       "start_ts": 1781656449,
@@ -58,16 +62,6 @@
       "title": "We Did It Bois (100k)",
       "start_ts": 1781225147,
       "youtube_archive_id": null
-    },
-    "dsp_morning_show_then_pokemon_brilliant_diamond_returns_june_18_2026": {
-      "title": "DSP Morning Show; Then Pokemon Brilliant Diamond RETURNS! June 18, 2026",
-      "start_ts": 1781815189,
-      "youtube_archive_id": "v2x_PHf-3bM"
-    },
-    "shroomdukem": {
-      "title": "ShroomDukem",
-      "start_ts": 1781815189,
-      "youtube_archive_id": "v2x_PHf-3bM"
     }
   },
   "messages": [
