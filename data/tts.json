@@ -1,35 +1,39 @@
 {
   "version": 1,
-  "updated_ts": 1781908184,
+  "updated_ts": 1781940918,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "so_moist_so_man_so_meaningfulso_robust",
-    "we_did_it_bois_100k"
+    "we_did_it_bois_100k",
+    "random_late_man_stream_for_men"
   ],
   "commands": {
-    "stan": 20,
-    "masterchief": 21,
-    "grandpa": 9,
-    "phil": 46,
-    "trump": 26,
+    "stan": 27,
+    "masterchief": 23,
+    "grandpa": 12,
+    "phil": 50,
+    "trump": 30,
     "doom": 3,
-    "harman": 8,
-    "eric": 18,
-    "witch": 1,
+    "harman": 12,
+    "eric": 30,
+    "witch": 2,
     "glorious": 1,
     "linus": 2,
     "girlfriend": 1,
     "hence": 1,
-    "kratos": 3,
+    "kratos": 4,
     "dagoth": 2,
     "they": 1,
     "today": 1,
     "phile": 1,
     "emoguy": 1,
     "phill": 1,
-    "something": 1
+    "something": 1,
+    "hobo": 2,
+    "gnome": 1,
+    "rich": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -56,9 +60,380 @@
       "title": "We Did It Bois (100k)",
       "start_ts": 1781225147,
       "youtube_archive_id": null
+    },
+    "random_late_man_stream_for_men": {
+      "title": "Random Late-Man Stream (For Men)",
+      "start_ts": 1781924703,
+      "youtube_archive_id": "DbPzYdAYGs0"
     }
   },
   "messages": [
+    {
+      "ts": 1781940702,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Phil: I'm sorry honey, I know it's late! Sorry Kat",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781940448,
+      "username": "@FinTurismo",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "harman: my Pikachu is my towel! (yoda)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1781940231,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Harman: The PC Dust means Pikachu's Come Dust! Uh!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1781939658,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Stan: I got a USB thumb drive from Randy Pitchford at Medievel Times! Let's see what's on it. (yoda) Oh my, this ain't Borderlands! Oh yeah baby! Yum!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781939366,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Stan: plug this in your pc\u2019s hole or I\u2019m gonna plug your hole ! Oh yeah daddy ! Mmmmmm mmmmm !",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781935223,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: I\u2019ll take away your applause like my dad took away my alcohol !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781934524,
+      "username": "@AaronBood1999",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Kratos: I have walked through the rainbow bifr\u00f6st to get to Asgard and I am now gay. I blame the bisexual lightning",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1781933803,
+      "username": "@Throbbingat37PakistaniAmerican",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Phil: 4 slices meat lover pizza, 9 chicken wings. Then the throne I sit on. Ahhhh. Don't forget Penguinzo video. laughed realy hard. Free Palestine",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781931562,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Harman: looking at the lighting on Eric\u2019s set, no wonder he\u2019s bisexual. I wonder if he would invite me over. Eric: I sure would ! And bring Pikachu !",
+      "commands": [
+        "harman",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781931351,
+      "username": "@Throbbingat37PakistaniAmerican",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Phil: can we watch penguinzo today's video after this on ice cream owner woman freaked out over 1review she literally traced and flagged him down.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781930653,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Not a dad, but I coach kids wrestling drunk!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781930439,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: say what you want about me but I finally trimmed my beard at least. It\u2019s gonna tickle your tipples real nice I bet !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781929937,
+      "username": "@nevablowingbubbles1337",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: I'm a functional alcoholic & peak manliness.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781929359,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: I was so angry I made this video sober! Also, my dad took away my booze so I had no choice. Don't worry, I'll be a drunk mess again very soon!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781929082,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Hold on, let me make a video about Rich tomorrow and tweet a bunch of stuff because he has gone off the deep end. I am more entertaining than U",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781928545,
+      "username": "@Throbbingat37PakistaniAmerican",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "what's up everyone! Trump: taking dump tomorrow on algae reflected pool in DC. ticket is free. I love science diagarees with me. what a loser I am",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1781928416,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Stan: I wanna visit Luigi in his jail cell! (yoda)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781928341,
+      "username": "@DeportedSicilianGamer",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Listen Rich: Did you know Jay now sometimes streams with another large man. I can't help but be offended on your behalf. How are you with this?",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1781928224,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: You can't use Billy for clicks! Only I can!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781928060,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Grandpa: im gona whip it out, and your going to like it! or else! Trump: no poppy no, not again! why me! Stan: alrighty pops let get some!",
+      "commands": [
+        "grandpa",
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781927868,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Rich my gnome-like body is petite and drunk!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781927657,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Listen, don't talk about Billy because fat.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781927463,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Witch: leegroygen",
+      "commands": [
+        "witch"
+      ]
+    },
+    {
+      "ts": 1781927304,
+      "username": "@Phils_Lost_DoorDash_Shrimp",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Rich send me a zoom link Stan: I\u2019ll moderate",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781927271,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Eric: Hey baby, want to come back to my ROOM(yoda)",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1781927043,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Grandpa: I need a healthcare person. Stan: OhBABY!",
+      "commands": [
+        "grandpa",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781926688,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Masterchief: men, my brother is a mad man. this fucker had me load my truck up with 2 grand of fireworks. it was squatting pretty hard. looks like we will have a multiple explosions of satisfaction on the 4th. Grandpa: shart!",
+      "commands": [
+        "masterchief",
+        "grandpa"
+      ]
+    },
+    {
+      "ts": 1781926497,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Stan: Smash JT needs money, he just does. Tipples!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1781926349,
+      "username": "@Blaqk_Sheep",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Gnome:",
+      "commands": [
+        "gnome"
+      ]
+    },
+    {
+      "ts": 1781926186,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Masterchief: men, forgive my tardiness. I was enjoying a colossal shit. big beautiful turds. a 3 flusher special, and yes, I farted. embrace the farts. the council approves this stream of mens ass!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1781925972,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Trump: I've embargoed Steam Controllers until 2027",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1781925763,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Phil: I deep throw ted a robust chicken sandwich!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1781925728,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Trump: I'm gonna get the collector's edition, a fully grown fledged man waiting deep by Best Buy on release day. I will be going home hurd tremendousy",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1781925535,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Hobo: Rich you man listen better pre-order GTA 6",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1781925179,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Harman: I always feeEeeEeel like, Gabe Newell is watching meeEeeEee eeEeeEee!! eeEeeEeeEee! e, EeeEeeEeeEee!! eeEeeEee, eeEeeEeeEee!!!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1781925092,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "random_late_man_stream_for_men",
+      "message": "Hobo: Good lord Im a bout to bust rich, GTA 6 is comming by next thursday and so will I. Also got me a 2nd ps5 controller with TMR joysticks added to.",
+      "commands": [
+        "hobo"
+      ]
+    },
     {
       "ts": 1781762336,
       "username": "@BloodyGB175",
