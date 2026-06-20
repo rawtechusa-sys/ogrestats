@@ -942,6 +942,16 @@ function falloff(u) {
   return 1 - (3 * u * u - 2 * u * u * u);
 }
 
+// Pin the smoothYFit x-window to the live x-scale. The scrollbar paths set $xWindow
+// explicitly before each instant zoomScale; the zoom plugin's chart-body pan/pinch
+// instead move the live x-scale directly, so call this from their onPan/onZoom so the
+// y-axes refit to the new region instead of staying pinned to the old window.
+function syncXWindow(chart) {
+  const x = chart.scales && chart.scales.x;
+  if (!x || !isFinite(x.min) || !isFinite(x.max)) return;
+  chart.$xWindow = { min: x.min, max: x.max };
+}
+
 // Distance-weighted [min,max] for one y-axis over its currently-visible datasets.
 // Returns null when the axis has no usable data (caller then leaves Chart's default).
 function smoothYExtent(chart, axisId) {
@@ -1366,7 +1376,10 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
         zoom: {
           pan: {
             enabled: true, mode: 'x',
-            onPan: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
+            // Sync $xWindow to the live x-scale so smoothYFit refits the y-axes to the
+            // panned region (the scrollbar drag does the same at line ~1560). Without
+            // this the y-scale stays pinned to the pre-drag window.
+            onPan: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
           },
           zoom: {
             // Wheel zoom is handled manually in setupScrollbar so it can be eased
@@ -1374,7 +1387,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
             wheel: { enabled: false },
             pinch: { enabled: true },
             mode: 'x',
-            onZoom: ({ chart }) => chart.$updateScrollbar && chart.$updateScrollbar(),
+            onZoom: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
           },
           limits: { x: { min: 'original', max: 'original' } },
         },
@@ -1490,8 +1503,9 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   ctx.ondblclick = () => {
     if (currentChart && currentChart.resetZoom) {
       if (currentChart.$stopZoomAnim) currentChart.$stopZoomAnim();
-      currentChart.resetZoom();
+      currentChart.resetZoom('none');  // instant reset; afterDataLimits fits y to the (stale) window here
       currentChart.$xWindow = { min: currentChart.scales.x.min, max: currentChart.scales.x.max };
+      currentChart.update('none');     // re-run smoothYFit against the restored full window so y refits too
       if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
     }
   };
