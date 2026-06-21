@@ -290,11 +290,16 @@ async function fetchJSON(url) {
   return r.json();
 }
 
+// Axis ticks: month + 2-digit year (e.g. "Jun '26"). The chart can span years of
+// subscriber history, so a year-less label would be ambiguous; the apostrophe
+// keeps it from reading as a day-of-month. UTC matches the data's date stamps.
 function fmtAxisDate(ms) {
-  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const d = new Date(ms);
+  const mon = d.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+  return `${mon} '${String(d.getUTCFullYear()).slice(-2)}`;
 }
 function fmtFullDate(ms) {
-  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 }
 
 // ── Dataset label constants ──────────────────────────────────────────────────

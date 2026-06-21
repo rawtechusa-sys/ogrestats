@@ -1,12 +1,1711 @@
 {
   "version": 1,
-  "updated_ts": 1781924703,
-  "_note": "source:'manual' points are seeded by hand (replace these with real Social Blade / channel numbers). source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
+  "updated_ts": 1781568000,
+  "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
-    { "ts": 1780000000, "count": 97000,  "source": "manual", "stream_id": null },
-    { "ts": 1781133982, "count": 99200,  "source": "manual", "stream_id": null },
-    { "ts": 1781225147, "count": 100000, "source": "manual", "stream_id": null },
-    { "ts": 1781571249, "count": 100600, "source": "manual", "stream_id": null },
-    { "ts": 1781924703, "count": 101200, "source": "manual", "stream_id": null }
+    {
+      "ts": 1546128000,
+      "count": 22663,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1548374400,
+      "count": 22532,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1550534400,
+      "count": 22421,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1551830400,
+      "count": 22348,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1553558400,
+      "count": 22319,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1556496000,
+      "count": 26909,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1560556800,
+      "count": 27289,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1561075200,
+      "count": 27280,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1561852800,
+      "count": 27261,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1562371200,
+      "count": 27235,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1562889600,
+      "count": 27209,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1563667200,
+      "count": 27201,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1564185600,
+      "count": 27166,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1564876800,
+      "count": 27150,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1565222400,
+      "count": 27125,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1566086400,
+      "count": 27818,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1566604800,
+      "count": 27852,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1567123200,
+      "count": 27858,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1567900800,
+      "count": 27849,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1602115200,
+      "count": 27600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1618704000,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1619308800,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1619913600,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1620518400,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1621123200,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1621728000,
+      "count": 26700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1622332800,
+      "count": 26600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1622937600,
+      "count": 26600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1623542400,
+      "count": 26600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1624147200,
+      "count": 26600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1624752000,
+      "count": 26500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1625270400,
+      "count": 31000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1625961600,
+      "count": 35600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1626566400,
+      "count": 36600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1627171200,
+      "count": 37900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1627776000,
+      "count": 39600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1628380800,
+      "count": 40000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1628985600,
+      "count": 41200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1629590400,
+      "count": 41600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1630195200,
+      "count": 41800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1630800000,
+      "count": 42100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1631404800,
+      "count": 42200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1632009600,
+      "count": 42800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1632614400,
+      "count": 42900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1633219200,
+      "count": 43200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1633824000,
+      "count": 43400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1634428800,
+      "count": 43700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1635033600,
+      "count": 43900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1635638400,
+      "count": 44100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1636243200,
+      "count": 44700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1636848000,
+      "count": 45700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1637452800,
+      "count": 46800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1638057600,
+      "count": 47600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1638662400,
+      "count": 48200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1639267200,
+      "count": 48800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1639872000,
+      "count": 49000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1640476800,
+      "count": 49600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1641081600,
+      "count": 49800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1641686400,
+      "count": 49800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1642291200,
+      "count": 50000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1642896000,
+      "count": 50300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1643500800,
+      "count": 50300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1644105600,
+      "count": 50300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1644710400,
+      "count": 50400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1645315200,
+      "count": 50700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1645920000,
+      "count": 50700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1646524800,
+      "count": 50700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1647129600,
+      "count": 50800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1647734400,
+      "count": 51000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1648339200,
+      "count": 51300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1648944000,
+      "count": 51500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1649548800,
+      "count": 51800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1650153600,
+      "count": 52200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1650758400,
+      "count": 52500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1651363200,
+      "count": 53600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1651968000,
+      "count": 53900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1652572800,
+      "count": 53900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1653177600,
+      "count": 54100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1653782400,
+      "count": 54100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1654387200,
+      "count": 54100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1654992000,
+      "count": 54900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1655596800,
+      "count": 65400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1656201600,
+      "count": 67000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1656806400,
+      "count": 67000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1657411200,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1658016000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1658620800,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1659225600,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1659830400,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1660435200,
+      "count": 66500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1661040000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1661644800,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1662249600,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1662854400,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1663459200,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1664064000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1664668800,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1665273600,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1665878400,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1666483200,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1667088000,
+      "count": 66600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1667692800,
+      "count": 66600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1668297600,
+      "count": 66500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1668902400,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1669507200,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1670112000,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1670716800,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1671321600,
+      "count": 66600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1671926400,
+      "count": 66500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1672531200,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1673136000,
+      "count": 66300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1673740800,
+      "count": 66300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1674345600,
+      "count": 66300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1674950400,
+      "count": 66200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1675555200,
+      "count": 66200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1676160000,
+      "count": 66200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1676764800,
+      "count": 66200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1677369600,
+      "count": 66300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1677974400,
+      "count": 66500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1678579200,
+      "count": 66600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1679184000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1679788800,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1680393600,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1680998400,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1681603200,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1682208000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1682812800,
+      "count": 66700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1683417600,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1684022400,
+      "count": 67000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1684627200,
+      "count": 67800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1685232000,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1685836800,
+      "count": 68100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1686441600,
+      "count": 68100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1687046400,
+      "count": 68000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1687651200,
+      "count": 68000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1688256000,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1688860800,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1689465600,
+      "count": 67800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1690070400,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1690675200,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1691280000,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1691884800,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1692489600,
+      "count": 67800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1693094400,
+      "count": 67700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1693699200,
+      "count": 67700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1694304000,
+      "count": 67600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1694908800,
+      "count": 67500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1695513600,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1696118400,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1696723200,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1697328000,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1697932800,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1698537600,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1699142400,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1699747200,
+      "count": 67500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1700265600,
+      "count": 67800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1700956800,
+      "count": 67800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1701561600,
+      "count": 67900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1702166400,
+      "count": 68000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1702684800,
+      "count": 68100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1703289600,
+      "count": 68200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1703980800,
+      "count": 68200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1704585600,
+      "count": 68200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1705190400,
+      "count": 68200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1705795200,
+      "count": 68500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1706400000,
+      "count": 68600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1707004800,
+      "count": 68600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1707609600,
+      "count": 68500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1708214400,
+      "count": 68400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1708819200,
+      "count": 68100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1709251200,
+      "count": 67700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1710028800,
+      "count": 67500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1710547200,
+      "count": 67400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1711152000,
+      "count": 67300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1711756800,
+      "count": 66900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1712448000,
+      "count": 66600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1713052800,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1713571200,
+      "count": 66400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1714262400,
+      "count": 66200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1714435200,
+      "count": 66100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1715472000,
+      "count": 66000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1716076800,
+      "count": 65900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1716681600,
+      "count": 66000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1717286400,
+      "count": 66000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1717632000,
+      "count": 65900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1720483200,
+      "count": 65500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1721952000,
+      "count": 65200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1722384000,
+      "count": 65099,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1723075200,
+      "count": 65000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1723766400,
+      "count": 64900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1724112000,
+      "count": 64900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1724976000,
+      "count": 64700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1725667200,
+      "count": 64700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1726358400,
+      "count": 64599,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1727481600,
+      "count": 64300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1728691200,
+      "count": 64200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1729209600,
+      "count": 64200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1729900800,
+      "count": 64500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1730246400,
+      "count": 64400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1730937600,
+      "count": 64400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1731715200,
+      "count": 64200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1732406400,
+      "count": 63900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1732924800,
+      "count": 63900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1733529600,
+      "count": 63700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1734220800,
+      "count": 63700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1734825600,
+      "count": 63600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1735344000,
+      "count": 63600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1736035200,
+      "count": 63500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1736553600,
+      "count": 63400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1737072000,
+      "count": 63400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1737763200,
+      "count": 63300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1738454400,
+      "count": 63200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1738713600,
+      "count": 63100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1739491200,
+      "count": 63000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1740268800,
+      "count": 63200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1740873600,
+      "count": 63200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1741478400,
+      "count": 63200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1741996800,
+      "count": 63100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1742688000,
+      "count": 63000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1742947200,
+      "count": 63000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1743811200,
+      "count": 63900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1744502400,
+      "count": 65700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1745107200,
+      "count": 66500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1745712000,
+      "count": 66800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1746316800,
+      "count": 68000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1746921600,
+      "count": 69200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1747526400,
+      "count": 69700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1748131200,
+      "count": 69700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1748736000,
+      "count": 69900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1749254400,
+      "count": 70100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1749945600,
+      "count": 70700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1750550400,
+      "count": 70900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1751155200,
+      "count": 71000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1751760000,
+      "count": 71100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1752192000,
+      "count": 71100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1752883200,
+      "count": 71200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1753574400,
+      "count": 71400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1754179200,
+      "count": 71500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1754524800,
+      "count": 71700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1755302400,
+      "count": 72500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1755993600,
+      "count": 72900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1756598400,
+      "count": 72900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1757116800,
+      "count": 73100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1757721600,
+      "count": 73200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1758412800,
+      "count": 72900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1759017600,
+      "count": 72800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1759449600,
+      "count": 72700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1760227200,
+      "count": 73100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1760745600,
+      "count": 73200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1761436800,
+      "count": 73300,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1762041600,
+      "count": 73400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1762646400,
+      "count": 73400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1763251200,
+      "count": 73500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1763856000,
+      "count": 73600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1764460800,
+      "count": 73800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1765065600,
+      "count": 74000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1765670400,
+      "count": 74200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1766188800,
+      "count": 74900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1766793600,
+      "count": 75200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1767484800,
+      "count": 76400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1768089600,
+      "count": 79100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1768694400,
+      "count": 80600,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1769299200,
+      "count": 81100,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1769904000,
+      "count": 82500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1770508800,
+      "count": 86000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1771027200,
+      "count": 88500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1771632000,
+      "count": 90500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1772323200,
+      "count": 91800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1772928000,
+      "count": 92200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1773532800,
+      "count": 93000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1774051200,
+      "count": 93500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1774742400,
+      "count": 94800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1775260800,
+      "count": 96000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1775779200,
+      "count": 96400,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1776556800,
+      "count": 96700,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1776902400,
+      "count": 96900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1777766400,
+      "count": 97500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1778371200,
+      "count": 97900,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1778889600,
+      "count": 98200,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1779408000,
+      "count": 98500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1780185600,
+      "count": 99500,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1780617600,
+      "count": 99800,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1781395200,
+      "count": 100000,
+      "source": "manual",
+      "stream_id": null
+    },
+    {
+      "ts": 1781568000,
+      "count": 100000,
+      "source": "manual",
+      "stream_id": null
+    }
   ]
 }
