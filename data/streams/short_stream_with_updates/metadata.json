@@ -1,11 +1,13 @@
 {
   "stream_id": "short_stream_with_updates",
   "title": "Short Stream With Updates",
-  "start_ts": 1781571249,
-  "end_ts": 1781574730,
+  "start_ts": 1781571438,
+  "end_ts": 1781574979,
   "platforms": [
     "youtube",
     "twitch"
   ],
+  "source_channel": "ReviewTechUSARTU",
+  "source_platform": "youtube",
   "youtube_archive_id": "x6cYCeYkygk"
 }
