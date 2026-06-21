@@ -1,13 +1,14 @@
 {
   "version": 1,
-  "updated_ts": 1781940918,
+  "updated_ts": 1782060911,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "so_moist_so_man_so_meaningfulso_robust",
     "we_did_it_bois_100k",
-    "random_late_man_stream_for_men"
+    "random_late_man_stream_for_men",
+    "so_i_was_just_fired_from_tech_talk"
   ],
   "commands": {
     "stan": 27,
@@ -65,6 +66,11 @@
       "title": "Random Late-Man Stream (For Men)",
       "start_ts": 1781924703,
       "youtube_archive_id": "DbPzYdAYGs0"
+    },
+    "so_i_was_just_fired_from_tech_talk": {
+      "title": "So, I Was Just Fired From Tech Talk",
+      "start_ts": 1739943987,
+      "youtube_archive_id": "mJluoTFfhWo"
     }
   },
   "messages": [
