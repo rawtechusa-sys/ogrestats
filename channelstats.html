@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channel Stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"></script>
+<script>
+  // The UMD zoom plugin auto-registers, but register explicitly as a fallback
+  // (re-registering the same plugin is a no-op in Chart.js).
+  if (window.Chart && window.ChartZoom) { try { Chart.register(window.ChartZoom); } catch (e) {} }
+</script>
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  .main {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main::-webkit-scrollbar { width: 4px; }
+  .main::-webkit-scrollbar-track { background: transparent; }
+  .main::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .page-title {
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    color: var(--accent-bright);
+    letter-spacing: 0.03em;
+    text-shadow: 0 0 16px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+  }
+  .page-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: -10px;
+  }
+
+  /* ── Stat cards ── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .stat-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);
+    opacity: 0.4;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .stat-value {
+    font-family: 'Rye', serif;
+    font-size: 24px;
+    color: var(--accent-bright);
+    display: block;
+    line-height: 1.1;
+    text-shadow: 0 0 12px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+  }
+  .stat-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 3px;
+    display: block;
+    font-style: italic;
+  }
+
+  /* ── Chart panel ── */
+  .chart-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chart-title-wrap { display: flex; flex-direction: column; gap: 2px; }
+  .chart-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    letter-spacing: 0.04em;
+  }
+  .chart-hint {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+  }
+  .chart-legend { display: flex; gap: 14px; flex-wrap: wrap; }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease;
+  }
+  .legend-item:hover { color: var(--accent); }
+  .legend-item.hidden { opacity: 0.35; }
+  .legend-line   { width: 16px; height: 2px;  border-radius: 1px; flex-shrink: 0; }
+  .legend-divider {
+    width: 1px;
+    height: 14px;
+    background: var(--border-default);
+    flex-shrink: 0;
+    margin: 0 2px;
+  }
+
+  .chart-wrap { position: relative; width: 100%; height: 460px; }
+
+  /* ── Scrub-and-zoom scrollbar ── */
+  .chart-scrollbar {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    margin-top: 10px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+  }
+  .chart-scrollbar-thumb {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(var(--accent-glow-r), var(--accent-glow-g), var(--accent-glow-b), 0.22);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    cursor: grab;
+  }
+  .chart-scrollbar-thumb:active { cursor: grabbing; }
+  .chart-scrollbar-handle {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    width: 9px;
+    cursor: ew-resize;
+  }
+  .chart-scrollbar-handle.left  { left: -1px; }
+  .chart-scrollbar-handle.right { right: -1px; }
+  .chart-scrollbar-handle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; height: 9px;
+    background: var(--accent);
+    border-radius: 1px;
+    opacity: 0.85;
+  }
+
+  /* ── States ── */
+  .loading-state, .empty-state, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    gap: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 16px;
+  }
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.6); }
+    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.2); }
+  }
+
+</style>
+</head>
+<body>
+
+<main class="main" id="main">
+  <div class="loading-state">
+    <span class="loading-glyph">~</span>
+    <span>surveying the channel...</span>
+  </div>
+</main>
+
+<script src="config.js"></script>
+<script>
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+
+let currentChart = null;
+
+// ── Theme ─────────────────────────────────────────────────────────────────────
+const THEMES = {
+  green: { file: 'themes/bog-moss.css',    chartGrid: 'rgba(100,180,60,0.08)',  chartTick: '#4a7038', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',     chartGrid: 'rgba(196,125,42,0.08)',  chartTick: '#7a6045', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css',  chartGrid: 'rgba(160,160,148,0.08)', chartTick: '#606058', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',    chartGrid: 'rgba(255,255,255,0.08)', chartTick: '#a0a0a0', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', tooltipBorder: 'rgba(255,255,255,0.45)' },
+  white: { file: 'themes/onion-layers.css',chartGrid: 'rgba(120,92,38,0.14)',   chartTick: '#6a5731', tooltipBg: '#fbf7ee', tooltipTitle: '#8a4d08', tooltipBody: '#2a2316', tooltipBorder: 'rgba(120,92,38,0.5)' },
+};
+
+function applyTheme(key) {
+  const t = THEMES[key] || THEMES.green;
+  document.getElementById('theme-css').href = t.file;
+  document.documentElement.setAttribute('data-theme', key);
+  if (currentChart) {
+    const sc = currentChart.options.scales;
+    sc.x.grid.color = t.chartGrid;
+    sc.x.ticks.color = t.chartTick;
+    if (sc.ySubs) sc.ySubs.grid.color = t.chartGrid;
+    const tt = currentChart.options.plugins.tooltip;
+    tt.backgroundColor = t.tooltipBg;
+    tt.titleColor = t.tooltipTitle;
+    tt.bodyColor = t.tooltipBody;
+    tt.borderColor = t.tooltipBorder;
+    currentChart.update('none');
+  }
+}
+
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+window.addEventListener('message', e => {
+  if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
+});
+
+// Forward mouse position to parent for roach/eye animations
+document.addEventListener('mousemove', e => {
+  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
+});
+
+// ── Utilities ──────────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
+  return r.json();
+}
+
+function fmtAxisDate(ms) {
+  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+function fmtFullDate(ms) {
+  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// ── Dataset label constants ──────────────────────────────────────────────────
+const DS = {
+  SUBSCRIBERS:     'Subscribers',
+  DON_PER_STREAM:  'Donations / Stream',
+  DON_CUMULATIVE:  'Cumulative Donations',
+  DON_PER_MIN:     'Donations / Min',
+  PEAK_VIEWERS:    'Peak Viewers',
+  AVG_VIEWERS:     'Avg Viewers',
+  CHAT_MPM:        'Avg Chat Rate',
+  ACTIVE_CHATTERS: 'Avg Active Chatters',
+};
+
+// Which datasets sit on which y-axis (used to show/hide axes with their series).
+const AXIS_MAP = {
+  ySubs:       [DS.SUBSCRIBERS],
+  yDollars:    [DS.DON_PER_STREAM, DS.DON_CUMULATIVE],
+  yRate:       [DS.DON_PER_MIN],
+  yViewers:    [DS.PEAK_VIEWERS, DS.AVG_VIEWERS],
+  yEngagement: [DS.CHAT_MPM, DS.ACTIVE_CHATTERS],
+};
+
+// Legend rows in display order; `null` marks a divider between groups.
+const LEGEND_SPECS = [
+  { label: 'Subscribers',      color: '#40c4ff', type: 'line',   ds: DS.SUBSCRIBERS },
+  null,
+  { label: 'Donations/Stream', color: '#e8c020', type: 'line',   ds: DS.DON_PER_STREAM },
+  { label: 'Cumulative $',     color: '#96d45a', type: 'line',   ds: DS.DON_CUMULATIVE },
+  { label: 'Donations/Min',    color: '#e8952a', type: 'line',   ds: DS.DON_PER_MIN },
+  null,
+  { label: 'Peak Viewers',     color: '#e84040', type: 'line',   ds: DS.PEAK_VIEWERS },
+  { label: 'Avg Viewers',      color: '#6650d8', type: 'line',   ds: DS.AVG_VIEWERS },
+  null,
+  { label: 'Chat Rate',        color: '#4caf50', type: 'dashed', ds: DS.CHAT_MPM },
+  { label: 'Active Chatters',  color: '#909090', type: 'dotted', ds: DS.ACTIVE_CHATTERS },
+];
+
+// Default-visible: subscribers + the two donation-dollar series. The rest start
+// hidden so the chart opens uncluttered; the legend toggles them on.
+const DEFAULT_HIDDEN = [
+  DS.DON_PER_MIN, DS.PEAK_VIEWERS, DS.AVG_VIEWERS, DS.CHAT_MPM, DS.ACTIVE_CHATTERS,
+];
+const _storedHidden = localStorage.getItem('channel-chart-hidden');
+const hiddenDatasets = new Set(_storedHidden ? JSON.parse(_storedHidden) : DEFAULT_HIDDEN);
+
+// Tooltip key: a short line in the dataset's exact color + dash pattern (Chart.js
+// can't dash its built-in glyph, but pointStyle accepts a canvas). Cached.
+const _lineKeyCache = {};
+function lineKeyCanvas(color, dash) {
+  const pattern = (dash && dash.length) ? dash.join(',') : 'solid';
+  const cacheKey = color + '|' + pattern;
+  if (_lineKeyCache[cacheKey]) return _lineKeyCache[cacheKey];
+  const w = 26, h = 10;
+  const cv = document.createElement('canvas');
+  cv.width = w; cv.height = h;
+  const cx = cv.getContext('2d');
+  cx.strokeStyle = color;
+  cx.lineWidth = 2;
+  cx.setLineDash((dash && dash.length) ? dash : []);
+  cx.beginPath();
+  cx.moveTo(1, h / 2);
+  cx.lineTo(w - 1, h / 2);
+  cx.stroke();
+  _lineKeyCache[cacheKey] = cv;
+  return cv;
+}
+
+// Show/hide each y-axis based on whether any of its datasets are visible.
+function syncAxisDisplay() {
+  if (!currentChart) return;
+  for (const [axisId, labels] of Object.entries(AXIS_MAP)) {
+    if (!currentChart.options.scales[axisId]) continue;
+    const anyVisible = labels.some(label => {
+      const idx = currentChart.data.datasets.findIndex(d => d.label === label);
+      return idx !== -1 && currentChart.isDatasetVisible(idx);
+    });
+    currentChart.options.scales[axisId].display = anyVisible;
+  }
+  currentChart.update('none');
+}
+
+// ── Smooth (non-snapping) y-axis auto-fit ───────────────────────────────────
+// Lifted from streams.html: lets off-screen points contribute to each y-axis's
+// extent with a weight that decays past the visible edge, so the scale glides
+// during x zoom/pan instead of snapping when a point crosses the edge.
+const MARGIN_FRAC = 0.6;
+const Y_HEADROOM = 0.05;
+const ANCHOR_MIN_ZERO = false;
+
+function falloff(u) {
+  if (u <= 0) return 1;
+  if (u >= 1) return 0;
+  return 1 - (3 * u * u - 2 * u * u * u);
+}
+
+function syncXWindow(chart) {
+  const x = chart.scales && chart.scales.x;
+  if (!x || !isFinite(x.min) || !isFinite(x.max)) return;
+  chart.$xWindow = { min: x.min, max: x.max };
+}
+
+function smoothYExtent(chart, axisId) {
+  let xmin, xmax;
+  if (chart.$xWindow) { xmin = chart.$xWindow.min; xmax = chart.$xWindow.max; }
+  else if (chart.scales.x && isFinite(chart.scales.x.min)) { xmin = chart.scales.x.min; xmax = chart.scales.x.max; }
+
+  const sets = [];
+  chart.data.datasets.forEach((ds, i) => {
+    if (ds.yAxisID === axisId && chart.isDatasetVisible(i)) sets.push(ds.data);
+  });
+  if (sets.length === 0) return null;
+
+  if (xmin == null || !isFinite(xmin) || !isFinite(xmax)) {
+    let lo = Infinity, hi = -Infinity;
+    for (const data of sets) for (const p of data) {
+      if (p.y == null || Number.isNaN(p.y)) continue;
+      if (p.y < lo) lo = p.y;
+      if (p.y > hi) hi = p.y;
+    }
+    if (lo > hi) return null;
+    return padExtent(lo, hi);
+  }
+
+  const R = xmax - xmin;
+  const M = MARGIN_FRAC * R;
+
+  let visMin = Infinity, visMax = -Infinity, haveInterior = false;
+  let leftPt = null, leftDist = Infinity, rightPt = null, rightDist = Infinity;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) {
+      haveInterior = true;
+      if (p.y < visMin) visMin = p.y;
+      if (p.y > visMax) visMax = p.y;
+    } else if (p.x < xmin) {
+      const d = xmin - p.x;
+      if (d < leftDist) { leftDist = d; leftPt = p; }
+    } else {
+      const d = p.x - xmax;
+      if (d < rightDist) { rightDist = d; rightPt = p; }
+    }
+  }
+
+  if (!haveInterior) {
+    const seeds = [];
+    if (leftPt)  seeds.push(leftPt.y);
+    if (rightPt) seeds.push(rightPt.y);
+    if (seeds.length === 0) return null;
+    visMin = Math.min(...seeds);
+    visMax = Math.max(...seeds);
+  }
+
+  let yMin = visMin, yMax = visMax;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) continue;
+    const d = p.x < xmin ? xmin - p.x : p.x - xmax;
+    const w = M > 0 ? falloff(d / M) : 0;
+    if (w === 0) continue;
+    if (p.y > visMax) {
+      const cand = visMax + w * (p.y - visMax);
+      if (cand > yMax) yMax = cand;
+    } else if (p.y < visMin) {
+      const cand = visMin + w * (p.y - visMin);
+      if (cand < yMin) yMin = cand;
+    }
+  }
+
+  return padExtent(yMin, yMax);
+}
+
+function padExtent(lo, hi) {
+  let range = hi - lo;
+  if (range <= 0) range = Math.max(Math.abs(hi), 1) * 0.1;
+  hi += Y_HEADROOM * range;
+  if (ANCHOR_MIN_ZERO) lo = Math.min(lo, 0);
+  if (hi <= lo) hi = lo + (Math.max(Math.abs(lo), 1) * 0.1);
+  return { min: lo, max: hi };
+}
+
+function intTick(fmt) {
+  return (v, i, ticks) => {
+    const r = Math.round(v);
+    if (i > 0 && Math.round(ticks[i - 1].value) === r) return null;
+    return fmt(r);
+  };
+}
+
+// ── Build ──────────────────────────────────────────────────────────────────────
+function fmtMoney(n) {
+  return '$' + Number(n).toLocaleString('en-US', { maximumFractionDigits: 0 });
+}
+
+function buildPage(channelStats, subsData) {
+  const main = document.getElementById('main');
+
+  const streams = Object.values(channelStats.streams || {})
+    .filter(s => s.start_ts)
+    .sort((a, b) => a.start_ts - b.start_ts);
+
+  const subs = (subsData && Array.isArray(subsData.snapshots) ? subsData.snapshots : [])
+    .filter(s => s.ts != null && s.count != null)
+    .sort((a, b) => a.ts - b.ts);
+
+  if (streams.length === 0 && subs.length === 0) {
+    main.innerHTML = `<div class="empty-state"><span class="loading-glyph">☽</span><span>no channel data yet — check back after the next broadcast</span></div>`;
+    return;
+  }
+
+  // ── Summary cards ──
+  const lifetimeUSD = streams.reduce((s, x) => s + (x.total_donations_usd || 0), 0);
+  const rates = streams.map(s => s.donations_per_min).filter(v => v != null);
+  const avgRate = rates.length ? rates.reduce((a, b) => a + b, 0) / rates.length : null;
+  const latestSubs = subs.length ? subs[subs.length - 1].count : null;
+  const peakReach = streams.reduce((m, s) => Math.max(m, s.peak_viewers || 0), 0);
+
+  function card(label, value, sub) {
+    return `<div class="stat-card">
+      <span class="stat-label">${label}</span>
+      <span class="stat-value">${value}</span>
+      ${sub ? `<span class="stat-sub">${sub}</span>` : ''}
+    </div>`;
+  }
+
+  let cards = '';
+  cards += card('Subscribers', latestSubs != null ? latestSubs.toLocaleString() : '—',
+                latestSubs != null ? 'latest tracked' : 'no data yet');
+  cards += card('Lifetime Raised', '$' + lifetimeUSD.toFixed(2), `${streams.length} stream${streams.length !== 1 ? 's' : ''}`);
+  cards += card('Avg $/min', avgRate != null ? '$' + avgRate.toFixed(2) : '—', 'per-stream average');
+  cards += card('Peak Reach', peakReach ? peakReach.toLocaleString() : '—', 'best concurrent viewers');
+
+  main.innerHTML = `
+    <div>
+      <div class="page-title">Channel Stats — @ReviewTechUSARTU</div>
+    </div>
+    <div class="page-sub">Long-term trends across every published restream.</div>
+    <div class="stat-grid">${cards}</div>
+    <div class="chart-panel">
+      <div class="chart-header">
+        <div class="chart-title-wrap">
+          <span class="chart-title">Long-Term Trends</span>
+          <span class="chart-hint">scroll to zoom &middot; drag to pan &middot; double-click to reset</span>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="channelChart" role="img" aria-label="Channel subscriber, donation, viewer and engagement trends over time"></canvas>
+      </div>
+      <div class="chart-scrollbar" id="chartScrollbar">
+        <div class="chart-scrollbar-thumb" id="chartScrollbarThumb">
+          <div class="chart-scrollbar-handle left"></div>
+          <div class="chart-scrollbar-handle right"></div>
+        </div>
+      </div>
+    </div>`;
+
+  buildChart(streams, subs);
+  buildLegend();
+}
+
+function buildChart(streams, subs) {
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
+  const ctx = document.getElementById('channelChart');
+  if (!ctx) return;
+
+  // Per-stream points share an x = start_ts. Each carries its title for tooltips.
+  const pt = (s, y) => ({ x: s.start_ts * 1000, y: (y == null ? null : y), title: s.title || s.stream_id });
+
+  // Cumulative donations: running lifetime total in chronological order.
+  let running = 0;
+  const cumData = streams.map(s => {
+    running += (s.total_donations_usd || 0);
+    return { x: s.start_ts * 1000, y: Math.round(running * 100) / 100, title: s.title || s.stream_id };
+  });
+
+  const subData = subs.map(p => ({ x: p.ts * 1000, y: p.count, source: p.source }));
+
+  const datasets = [];
+  function add(label, data, color, opts = {}) {
+    datasets.push(Object.assign({
+      label,
+      hidden: hiddenDatasets.has(label),
+      data,
+      type: 'line',
+      borderColor: color,
+      backgroundColor: opts.fill ? (opts.bg || color) : 'transparent',
+      borderWidth: opts.borderWidth || 2,
+      borderDash: opts.dash || [],
+      pointRadius: opts.pointRadius != null ? opts.pointRadius : 3,
+      pointHoverRadius: 5,
+      pointBackgroundColor: color,
+      tension: opts.tension != null ? opts.tension : 0.25,
+      fill: opts.fill || false,
+      spanGaps: true,
+      yAxisID: opts.yAxisID,
+    }, {}));
+  }
+
+  // Subscribers (left, primary). Sparse but continuous trend line.
+  add(DS.SUBSCRIBERS, subData, '#40c4ff', { yAxisID: 'ySubs', pointRadius: 2.5 });
+
+  // Donations -- dollars (right).
+  add(DS.DON_CUMULATIVE, cumData, '#96d45a',
+      { yAxisID: 'yDollars', fill: true, bg: 'rgba(150,212,90,0.10)', pointRadius: 0, tension: 0 });
+  add(DS.DON_PER_STREAM, streams.map(s => pt(s, s.total_donations_usd)), '#e8c020',
+      { yAxisID: 'yDollars' });
+
+  // Donations per minute (right).
+  add(DS.DON_PER_MIN, streams.map(s => pt(s, s.donations_per_min)), '#e8952a',
+      { yAxisID: 'yRate' });
+
+  // Viewers (left).
+  add(DS.PEAK_VIEWERS, streams.map(s => pt(s, s.peak_viewers)), '#e84040',
+      { yAxisID: 'yViewers' });
+  add(DS.AVG_VIEWERS, streams.map(s => pt(s, s.avg_viewers)), '#6650d8',
+      { yAxisID: 'yViewers' });
+
+  // Engagement (right).
+  add(DS.CHAT_MPM, streams.map(s => pt(s, s.avg_chat_mpm)), '#4caf50',
+      { yAxisID: 'yEngagement', dash: [8, 3], borderWidth: 1.5 });
+  add(DS.ACTIVE_CHATTERS, streams.map(s => pt(s, s.avg_active_chatters)), '#909090',
+      { yAxisID: 'yEngagement', dash: [2, 2], borderWidth: 1.5 });
+
+  function axisHasVisibleDs(labels) {
+    return labels.some(l => datasets.some(d => d.label === l) && !hiddenDatasets.has(l));
+  }
+
+  const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
+
+  const yCommon = (color, title, fmt) => ({
+    type: 'linear',
+    bounds: 'data',
+    ticks: {
+      color,
+      font: { family: "'Share Tech Mono', monospace", size: 13 },
+      callback: intTick(fmt),
+      precision: 0,
+      maxTicksLimit: 6,
+    },
+    title: { display: true, text: title, color, font: { family: "'Share Tech Mono', monospace", size: 13 } },
+  });
+
+  currentChart = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: t.tooltipBg,
+          borderColor: t.tooltipBorder,
+          borderWidth: 1,
+          titleColor: t.tooltipTitle,
+          bodyColor: t.tooltipBody,
+          titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
+          bodyFont:  { family: "'Lora', serif", size: 13 },
+          usePointStyle: true,
+          boxWidth: 26, boxHeight: 10, boxPadding: 6,
+          callbacks: {
+            title: items => {
+              const it = items[0];
+              const date = fmtFullDate(it.parsed.x);
+              const title = it.raw && it.raw.title;
+              return title ? `${title} — ${date}` : date;
+            },
+            labelPointStyle: item => ({
+              pointStyle: lineKeyCanvas(item.dataset.borderColor, item.dataset.borderDash),
+              rotation: 0,
+            }),
+            label: item => {
+              const y = item.parsed.y;
+              if (y == null || Number.isNaN(y)) return null;
+              switch (item.dataset.label) {
+                case DS.SUBSCRIBERS:     return ` ${Math.round(y).toLocaleString()} subscribers`;
+                case DS.DON_PER_STREAM:  return ` $${y.toFixed(2)} raised`;
+                case DS.DON_CUMULATIVE:  return ` ${fmtMoney(y)} all-time`;
+                case DS.DON_PER_MIN:     return ` $${y.toFixed(2)} / min`;
+                case DS.PEAK_VIEWERS:    return ` peak ${Math.round(y).toLocaleString()} viewers`;
+                case DS.AVG_VIEWERS:     return ` avg ${Math.round(y).toLocaleString()} viewers`;
+                case DS.CHAT_MPM:        return ` ${y.toFixed(1)} msg/min`;
+                case DS.ACTIVE_CHATTERS: return ` ${Math.round(y).toLocaleString()} active chatters`;
+                default:                 return ` ${y}`;
+              }
+            }
+          }
+        },
+        zoom: {
+          pan: {
+            enabled: true, mode: 'x',
+            onPan: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
+          },
+          zoom: {
+            wheel: { enabled: false },   // handled manually in setupScrollbar
+            pinch: { enabled: true },
+            mode: 'x',
+            onZoom: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
+          },
+          limits: { x: { min: 'original', max: 'original' } },
+        },
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          offset: false,
+          grid: { color: t.chartGrid },
+          ticks: {
+            color: t.chartTick,
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: v => fmtAxisDate(v),
+            maxTicksLimit: 9,
+          },
+        },
+        ySubs: Object.assign(yCommon('#40c4ff', 'subscribers', v => v.toLocaleString()), {
+          position: 'left',
+          display: axisHasVisibleDs(AXIS_MAP.ySubs),
+          grid: { color: t.chartGrid },
+        }),
+        yViewers: Object.assign(yCommon('#e84040', 'viewers', v => v.toLocaleString()), {
+          position: 'left',
+          display: axisHasVisibleDs(AXIS_MAP.yViewers),
+          grid: { drawOnChartArea: false },
+        }),
+        yDollars: Object.assign(yCommon('#e8c020', '$ raised', v => '$' + v.toLocaleString()), {
+          position: 'right',
+          display: axisHasVisibleDs(AXIS_MAP.yDollars),
+          grid: { drawOnChartArea: false },
+        }),
+        yRate: Object.assign(yCommon('#e8952a', '$ / min', v => '$' + v.toLocaleString()), {
+          position: 'right',
+          display: axisHasVisibleDs(AXIS_MAP.yRate),
+          grid: { drawOnChartArea: false },
+        }),
+        yEngagement: Object.assign(yCommon('#4caf50', 'chat', v => v.toLocaleString()), {
+          position: 'right',
+          display: axisHasVisibleDs(AXIS_MAP.yEngagement),
+          grid: { drawOnChartArea: false },
+        }),
+      }
+    },
+    plugins: [{
+      id: 'smoothYFit',
+      afterDataLimits(chart, args) {
+        const scale = args.scale;
+        if (!scale || scale.axis !== 'y') return;
+        if (scale.options.display === false) return;
+        const ext = smoothYExtent(chart, scale.id);
+        if (!ext) return;
+        scale.min = ext.min;
+        scale.max = ext.max;
+      },
+    }],
+  });
+
+  ctx.ondblclick = () => {
+    if (currentChart && currentChart.resetZoom) {
+      if (currentChart.$stopZoomAnim) currentChart.$stopZoomAnim();
+      currentChart.resetZoom('none');
+      currentChart.$xWindow = { min: currentChart.scales.x.min, max: currentChart.scales.x.max };
+      currentChart.update('none');
+      if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
+    }
+  };
+
+  setupScrollbar();
+}
+
+// ── Scrub-and-zoom scrollbar (lifted from streams.html) ────────────────────────
+function setupScrollbar() {
+  const track = document.getElementById('chartScrollbar');
+  const thumb = document.getElementById('chartScrollbarThumb');
+  if (!track || !thumb || !currentChart) return;
+
+  const fullMin = currentChart.scales.x.min;
+  const fullMax = currentChart.scales.x.max;
+  const fullRange = (fullMax - fullMin) || 1;
+  const minRange = fullRange * 0.02;
+  currentChart.$xWindow = { min: fullMin, max: fullMax };
+
+  function updateScrollbar() {
+    const xs = currentChart.scales.x;
+    let lo = Math.max(0, Math.min(1, (xs.min - fullMin) / fullRange));
+    let hi = Math.max(0, Math.min(1, (xs.max - fullMin) / fullRange));
+    thumb.style.left = (lo * 100) + '%';
+    thumb.style.width = Math.max(0, (hi - lo) * 100) + '%';
+  }
+
+  function clampRange(min, max) {
+    if (max - min < minRange) max = min + minRange;
+    if (min < fullMin) { max += (fullMin - min); min = fullMin; }
+    if (max > fullMax) { min -= (max - fullMax); max = fullMax; }
+    return { min: Math.max(fullMin, min), max: Math.min(fullMax, max) };
+  }
+
+  function applyRange(min, max) {
+    const r = clampRange(min, max);
+    currentChart.$xWindow = { min: r.min, max: r.max };
+    currentChart.zoomScale('x', r, 'none');
+    updateScrollbar();
+  }
+
+  const PAN_SENSITIVITY = 0.6;
+  const PAN_SMOOTH = 0.3;
+  const ZOOM_STEP = 0.0007;
+  let targetMin = null, targetMax = null, rafId = null;
+
+  function animateToward() {
+    if (!currentChart || !currentChart.scales || !currentChart.scales.x) { rafId = null; return; }
+    const xs = currentChart.scales.x;
+    let min = xs.min + (targetMin - xs.min) * PAN_SMOOTH;
+    let max = xs.max + (targetMax - xs.max) * PAN_SMOOTH;
+    const eps = fullRange * 0.0004;
+    if (Math.abs(targetMin - min) < eps && Math.abs(targetMax - max) < eps) {
+      min = targetMin; max = targetMax; rafId = null;
+    } else {
+      rafId = requestAnimationFrame(animateToward);
+    }
+    currentChart.$xWindow = { min, max };
+    currentChart.zoomScale('x', { min, max }, 'none');
+    updateScrollbar();
+  }
+
+  function smoothTo(min, max) {
+    const r = clampRange(min, max);
+    targetMin = r.min; targetMax = r.max;
+    if (rafId == null) rafId = requestAnimationFrame(animateToward);
+  }
+
+  currentChart.$updateScrollbar = updateScrollbar;
+  currentChart.$stopZoomAnim = () => {
+    if (rafId != null) { cancelAnimationFrame(rafId); rafId = null; }
+    targetMin = targetMax = null;
+  };
+
+  function startDrag(e, mode) {
+    e.preventDefault();
+    e.stopPropagation();
+    const trackW = track.clientWidth || 1;
+    const startX = e.touches ? e.touches[0].clientX : e.clientX;
+    const startMin = currentChart.scales.x.min;
+    const startMax = currentChart.scales.x.max;
+    function onMove(ev) {
+      const cx = ev.touches ? ev.touches[0].clientX : ev.clientX;
+      const dxVal = ((cx - startX) / trackW) * fullRange;
+      if (mode === 'pan')        smoothTo(startMin + dxVal * PAN_SENSITIVITY, startMax + dxVal * PAN_SENSITIVITY);
+      else if (mode === 'left')  applyRange(Math.min(startMin + dxVal, startMax - minRange), startMax);
+      else if (mode === 'right') applyRange(startMin, Math.max(startMax + dxVal, startMin + minRange));
+    }
+    function onUp() {
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onUp);
+    }
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onUp);
+  }
+
+  thumb.addEventListener('mousedown', e => startDrag(e, 'pan'));
+  thumb.addEventListener('touchstart', e => startDrag(e, 'pan'), { passive: false });
+  const hLeft = thumb.querySelector('.chart-scrollbar-handle.left');
+  const hRight = thumb.querySelector('.chart-scrollbar-handle.right');
+  if (hLeft)  { hLeft.addEventListener('mousedown', e => startDrag(e, 'left'));   hLeft.addEventListener('touchstart', e => startDrag(e, 'left'), { passive: false }); }
+  if (hRight) { hRight.addEventListener('mousedown', e => startDrag(e, 'right')); hRight.addEventListener('touchstart', e => startDrag(e, 'right'), { passive: false }); }
+
+  track.addEventListener('mousedown', e => {
+    if (e.target !== track) return;
+    const rect = track.getBoundingClientRect();
+    const frac = (e.clientX - rect.left) / (rect.width || 1);
+    const xs = currentChart.scales.x;
+    const half = (xs.max - xs.min) / 2;
+    const center = fullMin + frac * fullRange;
+    smoothTo(center - half, center + half);
+  });
+
+  const canvas = currentChart.canvas;
+  if (canvas) {
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      let d = e.deltaY;
+      if (e.deltaMode === 1) d *= 16;
+      else if (e.deltaMode === 2) d *= 400;
+      d = Math.max(-80, Math.min(80, d));
+      const factor = Math.exp(d * ZOOM_STEP);
+      const animating = rafId != null && targetMin != null;
+      const baseMin = animating ? targetMin : currentChart.scales.x.min;
+      const baseMax = animating ? targetMax : currentChart.scales.x.max;
+      const area = currentChart.chartArea;
+      const rect = canvas.getBoundingClientRect();
+      const frac = Math.max(0, Math.min(1, (e.clientX - rect.left - area.left) / ((area.right - area.left) || 1)));
+      const cursor = baseMin + frac * (baseMax - baseMin);
+      smoothTo(cursor - (cursor - baseMin) * factor, cursor + (baseMax - cursor) * factor);
+    }, { passive: false });
+  }
+
+  updateScrollbar();
+}
+
+// ── Interactive legend ─────────────────────────────────────────────────────────
+function buildLegend() {
+  const container = document.getElementById('chartLegend');
+  if (!container || !currentChart) return;
+  container.innerHTML = '';
+
+  // Drop dividers that would sit at the very start, or back-to-back, after any
+  // empty groups (here all series always exist, but keep it robust).
+  for (let i = 0; i < LEGEND_SPECS.length; i++) {
+    const item = LEGEND_SPECS[i];
+    if (item === null) {
+      if (!container.lastChild || container.lastChild.classList.contains('legend-divider')) continue;
+      const div = document.createElement('span');
+      div.className = 'legend-divider';
+      container.appendChild(div);
+      continue;
+    }
+
+    // Skip a row whose dataset isn't present in the chart at all.
+    if (currentChart.data.datasets.findIndex(d => d.label === item.ds) === -1) continue;
+
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.dataset.ds = item.ds;
+
+    let indicator;
+    if (item.type === 'dashed') {
+      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="7" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="11" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
+    } else if (item.type === 'dotted') {
+      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2" stroke-dasharray="2 2"/></svg>`;
+    } else {
+      indicator = `<span class="legend-line" style="background:${item.color};"></span>`;
+    }
+
+    span.innerHTML = `${indicator}${item.label}`;
+    if (hiddenDatasets.has(item.ds)) span.classList.add('hidden');
+
+    span.addEventListener('click', () => {
+      const dsIndex = currentChart.data.datasets.findIndex(d => d.label === item.ds);
+      if (dsIndex === -1) return;
+      const nowVisible = currentChart.isDatasetVisible(dsIndex);
+      currentChart.setDatasetVisibility(dsIndex, !nowVisible);
+      span.classList.toggle('hidden', nowVisible);
+      if (nowVisible) hiddenDatasets.add(item.ds);
+      else hiddenDatasets.delete(item.ds);
+      localStorage.setItem('channel-chart-hidden', JSON.stringify([...hiddenDatasets]));
+      syncAxisDisplay();
+    });
+
+    container.appendChild(span);
+  }
+}
+
+// ── Load ─────────────────────────────────────────────────────────────────────
+async function load() {
+  const main = document.getElementById('main');
+  try {
+    // Subscribers are optional (the file may not exist yet); tolerate a 404.
+    const [channelStats, subsData] = await Promise.all([
+      fetchJSON(`${RAW}/data/channel_stats.json`),
+      fetchJSON(`${RAW}/data/channel_subscribers.json`).catch(() => ({ snapshots: [] })),
+    ]);
+    buildPage(channelStats, subsData);
+  } catch (e) {
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load channel stats<br><small>${e.message}</small></span></div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>

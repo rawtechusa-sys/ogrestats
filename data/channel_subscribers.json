@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "updated_ts": 1781924703,
+  "_note": "source:'manual' points are seeded by hand (replace these with real Social Blade / channel numbers). source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
+  "snapshots": [
+    { "ts": 1780000000, "count": 97000,  "source": "manual", "stream_id": null },
+    { "ts": 1781133982, "count": 99200,  "source": "manual", "stream_id": null },
+    { "ts": 1781225147, "count": 100000, "source": "manual", "stream_id": null },
+    { "ts": 1781571249, "count": 100600, "source": "manual", "stream_id": null },
+    { "ts": 1781924703, "count": 101200, "source": "manual", "stream_id": null }
+  ]
+}
