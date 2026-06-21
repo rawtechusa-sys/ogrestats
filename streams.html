@@ -789,11 +789,26 @@ async function loadStream(streamId) {
       // a single youtube_archive_id; a stream whose output broadcast split into
       // multiple videos carries a `segments` array of {archive_id, start_ts}, so
       // each donation can deep-link into whichever video was live at its moment.
+      // A durable archive (archive_builder.py) also carries an archive_org_id
+      // Internet Archive mirror used as a fallback, anchored at archive_start_ts.
       const segments = (Array.isArray(meta.segments) && meta.segments.length)
         ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
-        : (meta.youtube_archive_id
-            ? [{ archive_id: meta.youtube_archive_id, start_ts: startTs }]
+        : ((meta.youtube_archive_id || meta.archive_org_id)
+            ? [{ archive_id: meta.youtube_archive_id || null,
+                 archive_org_id: meta.archive_org_id || null,
+                 start_ts: meta.archive_start_ts != null ? meta.archive_start_ts : startTs }]
             : []);
+
+      // Prefer the YouTube copy; fall back to the Internet Archive mirror when the
+      // YouTube id is absent (e.g. the upload was struck/removed). archive.org's
+      // embed player honors ?start=<seconds> just like youtu.be honors ?t=.
+      function buildVodLink(seg, tSec) {
+        if (seg.archive_id)
+          return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+        if (seg.archive_org_id)
+          return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}?start=${tSec}`;
+        return null;
+      }
 
       // The last segment that had started by ts, clamped to the first segment for
       // any donation predating all of them.
@@ -813,12 +828,13 @@ async function loadStream(streamId) {
         // target is per-segment, so a post-split donation reads as its true stream
         // time but jumps to the correct video at its offset within that video.
         const seg = segmentFor(d.ts);
-        let tsCell;
-        if (seg && seg.archive_id && seg.start_ts != null) {
+        let tsCell = elapsedText;
+        if (seg && seg.start_ts != null) {
           const tSec = Math.max(0, Math.floor(d.ts - seg.start_ts));
-          tsCell = `<a class="ts-link" href="https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
-        } else {
-          tsCell = elapsedText;
+          const href = buildVodLink(seg, tSec);
+          if (href) {
+            tsCell = `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
+          }
         }
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
