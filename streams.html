@@ -698,7 +698,7 @@ async function loadStream(streamId) {
     const duration  = (endTs && startTs) ? endTs - startTs : null;
     const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
     const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
-    const peakTotal = snapshots.reduce((m, s) => Math.max(m, s.total   || 0), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, (s.youtube || 0) + (s.twitch || 0)), 0);
     const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
     const donCount  = donations.length;
 
