@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099708,
+  "updated_ts": 1782099717,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -268,7 +268,8 @@
     "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
     "dspgamings_chickengate",
     "dspgamings_direct_capture_saga",
-    "dspgamings_may_1st_burst_anniversary_show"
+    "dspgamings_may_1st_burst_anniversary_show",
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4542,6 +4543,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.13,
       "avg_active_chatters": 47.98
+    },
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil": {
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+      "title": "DSPGAMING'S MAY 1ST BURST ANNIVERSARY SHOW (Back To Phil)",
+      "start_ts": 1682980932,
+      "end_ts": 1682989476,
+      "duration_sec": 8544,
+      "youtube_archive_id": "MoYJi71cPsg",
+      "source_platform": "youtube",
+      "total_donations_usd": 196.75,
+      "donation_count": 60,
+      "donations_per_min": 1.3817,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.03,
+      "avg_active_chatters": 34.01
     }
   }
 }
