@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099017,
+  "updated_ts": 1782099025,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -184,7 +184,8 @@
     "chatting_with_intro_guy",
     "chicken_suit_ep_9_discussing_elden_ring",
     "chris_watts_in_4k",
-    "christmas_night_shoulders"
+    "christmas_night_shoulders",
+    "clearing_the_air_and_watching_jordan_peterson"
   ],
   "commands": {
     "stan": 27,
@@ -215,12 +216,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 45,
+    "eyes": 46,
     "africa": 1,
     "face": 151,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 115,
+    "joy": 116,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -253,7 +254,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 20,
+    "rooster": 21,
     "peach": 3,
     "fire": 11,
     "kendal": 1,
@@ -1378,6 +1379,11 @@
       "title": "Christmas Night Shoulders",
       "start_ts": 1672019652,
       "youtube_archive_id": "tM8bwtlYmH0"
+    },
+    "clearing_the_air_and_watching_jordan_peterson": {
+      "title": "Clearing The Air And Watching Jordan Peterson",
+      "start_ts": 1664581419,
+      "youtube_archive_id": "_CLbq9mC5Ak"
     }
   },
   "messages": [
@@ -8071,6 +8077,36 @@
       "message": "they just dont make games like heterosexual rebirth anymore. can't beat the classics :folded_hands: also really liked the fake ps5 vid",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1664588351,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "clearing_the_air_and_watching_jordan_peterson",
+      "message": "we\u2019ve seen streams from 2017 dat sound the same! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1664584561,
+      "username": "@Thecoolistgamerever",
+      "platform": "youtube",
+      "stream_id": "clearing_the_air_and_watching_jordan_peterson",
+      "message": "Seven <o<ks for 7 months :rooster::rooster::rooster::rooster::rooster::rooster::rooster: Also can we watch some Gamedude",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1664581952,
+      "username": "@ayylmaoitsbrando4912",
+      "platform": "youtube",
+      "stream_id": "clearing_the_air_and_watching_jordan_peterson",
+      "message": "Hey Richie kiss the birds for me and relax your shoulders pimp look here listen it up too :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
