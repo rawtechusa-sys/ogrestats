@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100221,
+  "updated_ts": 1782100230,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -326,7 +326,8 @@
     "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
     "im_just_a_little_stoned_right_now",
     "im_just_a_man_on_the_damn_internet",
-    "im_just_a_man_thats_all"
+    "im_just_a_man_thats_all",
+    "im_kind_of_back_what_happened"
   ],
   "commands": {
     "stan": 27,
@@ -359,13 +360,13 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 309,
+    "face": 311,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 221,
+    "joy": 222,
     "gameboy": 1,
-    "chick": 1,
-    "carlos": 26,
+    "chick": 2,
+    "carlos": 28,
     "away": 5,
     "idea": 4,
     "fear": 3,
@@ -373,7 +374,7 @@
     "cucumber": 38,
     "biceps": 3,
     "tongue": 6,
-    "heart": 100,
+    "heart": 102,
     "shorts": 1,
     "laughing": 123,
     "news": 18,
@@ -381,7 +382,7 @@
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 27,
+    "hand": 28,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -453,7 +454,7 @@
     "wilkins": 1,
     "vomiting": 4,
     "moment": 1,
-    "suit": 2,
+    "suit": 3,
     "mouth": 12,
     "papo": 1,
     "monkey": 1,
@@ -646,7 +647,7 @@
     "sbmm": 1,
     "currently": 1,
     "article": 1,
-    "life": 1,
+    "life": 2,
     "monocle": 4,
     "store": 1,
     "pump": 1,
@@ -736,7 +737,9 @@
     "turtle": 1,
     "psa": 1,
     "tipster": 1,
-    "review": 1
+    "review": 1,
+    "doctor": 1,
+    "joke": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2363,6 +2366,11 @@
       "title": "I'm Just A Man. That's All",
       "start_ts": 1681342258,
       "youtube_archive_id": "YeRN-j-vnL4"
+    },
+    "im_kind_of_back_what_happened": {
+      "title": "I'm (Kind Of) Back, What Happened?",
+      "start_ts": 1677804453,
+      "youtube_archive_id": "oI2xnmA1HW8"
     }
   },
   "messages": [
@@ -11011,6 +11019,136 @@
       "message": "Kung Fu my freaking :peach:",
       "commands": [
         "peach"
+      ]
+    },
+    {
+      "ts": 1677815100,
+      "username": "@Carfaxxx",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Miss you Rich, Jay is doing a pretty banging job for you right now though. On a side note we gotta have a live stream for the biggie and wings fight :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1677813727,
+      "username": "@HeyItsTippyXO",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "WELCOME BACK RICH!!! :heart_suit:",
+      "commands": [
+        "suit"
+      ]
+    },
+    {
+      "ts": 1677813694,
+      "username": "@trollmctrollington3693",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Here's a joke: Jay walks into a bar and BAM Asses in his face as he is tied up by Ropes all over the room",
+      "commands": [
+        "joke"
+      ]
+    },
+    {
+      "ts": 1677813425,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Rich, glad to hear your daughter is on the mend. I know you\u2019re not good, but you\u2019re at least better. You\u2019re a good man and good dad, sir :victory_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1677812849,
+      "username": "@TheDreamSama",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Welcome back handsome dad! Give a kiss to a chicken. Jay the man!:_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1677811824,
+      "username": "@Peepystan",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Just saw this! I'm glad you're somewhat back Rich. DM'd you awhile back but you've been busy and I'm sure you've gotten a million tweets. Bird King :front_facing_baby_chick:",
+      "commands": [
+        "chick"
+      ]
+    },
+    {
+      "ts": 1677811583,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Here's to a quick recovery for your daughter and I hope she receives a lot of Teddy Bears. I wish her well and you get better too Rich. <3<3 :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1677808678,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Dsp plays WWE but he is not a champion. :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1677806990,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "One time I had a problem breathing went to see the doctor. My Doctor: you have pneumonia and your oxygen is low Do you want to go to the ER? Me::face_with_raised_eyebrow::face_with_raised_eyebrow::face_with_raised_eyebrow:yes",
+      "commands": [
+        "doctor"
+      ]
+    },
+    {
+      "ts": 1677806971,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "How much to get you to play Half-Life: Alyx stoned",
+      "commands": [
+        "life"
+      ]
+    },
+    {
+      "ts": 1677806788,
+      "username": "@Kowkarot",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "I'm really glad she's doing better. I spent time in a hospital with pneumonia when I was 3. It's a vague memory for me now, but it was unforgettable for my parents. So take care of yourself too Rich :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1677806415,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "See? Us Canadians are loved!.... I think :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1677806088,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "im_kind_of_back_what_happened",
+      "message": "Listen, buy your daughter a burrito from the FBI, then have her sleep on the floor of dreamcast guy\u2019s closet. If that doesn\u2019t help, give her and your family my very best of wishes, much love:mending_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
