@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100755,
+  "updated_ts": 1782100763,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -390,7 +390,8 @@
     "lets_discover_def_noodles_together",
     "lets_discuss_e3_and_next_gen_consoles",
     "lets_discuss_my_budget_pc_build",
-    "lets_discuss_nick_mercs_road_to_1000_members"
+    "lets_discuss_nick_mercs_road_to_1000_members",
+    "lets_discuss_sam_hyde_and_the_quartering"
   ],
   "commands": {
     "stan": 27,
@@ -426,7 +427,7 @@
     "face": 368,
     "petersonxhhanson": 1,
     "poo": 21,
-    "joy": 257,
+    "joy": 258,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -854,7 +855,8 @@
     "women": 1,
     "bag": 1,
     "honest": 1,
-    "verse": 1
+    "verse": 1,
+    "remember": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2801,6 +2803,11 @@
       "title": "Let's Discuss Nick Mercs (Road To 1000 Members)",
       "start_ts": 1686439743,
       "youtube_archive_id": "oiuuRimAFAI"
+    },
+    "lets_discuss_sam_hyde_and_the_quartering": {
+      "title": "Let's Discuss Sam Hyde And The Quartering",
+      "start_ts": 1686702187,
+      "youtube_archive_id": "zRoRgmmuEks"
     }
   },
   "messages": [
@@ -10675,6 +10682,26 @@
       "commands": [
         "bubble",
         "reality"
+      ]
+    },
+    {
+      "ts": 1686711004,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_sam_hyde_and_the_quartering",
+      "message": "since being in the US I actually miss so many UK foods, it's crazy, my mum's actually had to send me some food via the mail that I miss :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1686707530,
+      "username": "@MagicTaint",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_sam_hyde_and_the_quartering",
+      "message": "Rich we all love and support you. Just remember: you could be Phillip Burnell the man.",
+      "commands": [
+        "remember"
       ]
     },
     {
