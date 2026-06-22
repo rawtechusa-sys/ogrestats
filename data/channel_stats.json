@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099232,
+  "updated_ts": 1782099240,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -211,7 +211,8 @@
     "come_ask_questions_and_stare_at_me",
     "come_ask_questions_day_time_edition",
     "come_ask_questions_no_vids_tonight",
-    "come_ask_questions_watching_my_old_keemstar_debate"
+    "come_ask_questions_watching_my_old_keemstar_debate",
+    "come_ask_shirtless_men_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3573,6 +3574,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.21,
       "avg_active_chatters": 29.48
+    },
+    "come_ask_shirtless_men_questions": {
+      "stream_id": "come_ask_shirtless_men_questions",
+      "title": "Come Ask Shirtless Men Questions",
+      "start_ts": 1628556486,
+      "end_ts": 1628569128,
+      "duration_sec": 12642,
+      "youtube_archive_id": "rtSbsbXEbUM",
+      "source_platform": "youtube",
+      "total_donations_usd": 420.35,
+      "donation_count": 102,
+      "donations_per_min": 1.995,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.7,
+      "avg_active_chatters": 58.73
     }
   }
 }
