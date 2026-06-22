@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101120,
+  "updated_ts": 1782101127,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -440,7 +440,8 @@
     "man_vs_qvc",
     "man_vs_steven_seagal",
     "may_1st",
-    "may_1st_part_2_has_occured"
+    "may_1st_part_2_has_occured",
+    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -471,9 +472,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 102,
+    "eyes": 103,
     "africa": 1,
-    "face": 416,
+    "face": 417,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 277,
@@ -3128,6 +3129,11 @@
       "title": "May 1st Part 2 Has Occured",
       "start_ts": 1718671753,
       "youtube_archive_id": "AhvD137mEdg"
+    },
+    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members": {
+      "title": "Melonie Mac Goes Full Mask Off Pt.2 (Road To 1000 Members)",
+      "start_ts": 1686268802,
+      "youtube_archive_id": "fGaAyrjywEA"
     }
   },
   "messages": [
@@ -11595,6 +11601,26 @@
       "message": "I got my shirt today, tagged you on twitter :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1686276816,
+      "username": "@yrysroda8592",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
+      "message": "Jay I have a cat too, he's 14 & I had him since he was born :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1686269507,
+      "username": "@Goldenknight01",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
+      "message": "Has it been a year already since the Tickled Man made the big news about his fake Elden Ring review? :eyes: I hit sub 190 lbs btw. Close to 180 main goal.",
+      "commands": [
+        "eyes"
       ]
     },
     {
