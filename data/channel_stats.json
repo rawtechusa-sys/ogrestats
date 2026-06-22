@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102066,
+  "updated_ts": 1782102071,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -581,7 +581,8 @@
     "shave_my_legs_live_from_canada",
     "sick_stoned_and_streaming",
     "sick_stoned_and_streaming_pt2",
-    "slow_news_day_and_reviewing_things"
+    "slow_news_day_and_reviewing_things",
+    "slushii_and_someordinarygamers_join_dad"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9863,6 +9864,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.33,
       "avg_active_chatters": 20.33
+    },
+    "slushii_and_someordinarygamers_join_dad": {
+      "stream_id": "slushii_and_someordinarygamers_join_dad",
+      "title": "Slushii And SomeOrdinaryGamers Join Dad!",
+      "start_ts": 1628900409,
+      "end_ts": 1628910485,
+      "duration_sec": 10076,
+      "youtube_archive_id": "v4fK4-J7saA",
+      "source_platform": "youtube",
+      "total_donations_usd": 303.24,
+      "donation_count": 50,
+      "donations_per_min": 1.8057,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.3,
+      "avg_active_chatters": 31.9
     }
   }
 }
