@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096898,
+  "updated_ts": 1782096963,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -106,7 +106,8 @@
     "a_technical_test_man_stream",
     "a_thanksgiving_manbird_stream",
     "a_thanksgving_2_man_stream_feat_birds_and_men",
-    "a_thanksgving_2_man_stream_pt2_feat_birds_and_men"
+    "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+    "a_thequartering_man_experience"
   ],
   "commands": {
     "stan": 27,
@@ -139,7 +140,7 @@
     "turkey": 5,
     "eyes": 27,
     "africa": 1,
-    "face": 90,
+    "face": 91,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 72,
@@ -160,7 +161,7 @@
     "chicken": 13,
     "cake": 1,
     "d": 1,
-    "halo": 1,
+    "halo": 2,
     "hand": 6,
     "popper": 1,
     "straw": 1,
@@ -201,7 +202,7 @@
     "bk": 1,
     "gift": 1,
     "bird": 6,
-    "richsmile": 1,
+    "richsmile": 2,
     "dsp": 3,
     "story": 1,
     "tree": 1,
@@ -302,7 +303,10 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 2
+    "notes": 2,
+    "wars": 1,
+    "points": 1,
+    "wastebasket": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -829,6 +833,11 @@
       "title": "A Thanksgving 2-Man Stream Pt.2  (Feat. Birds And Men)",
       "start_ts": 1700789980,
       "youtube_archive_id": "pu1LEhkdK0o"
+    },
+    "a_thequartering_man_experience": {
+      "title": "A TheQuartering Man Experience",
+      "start_ts": 1637631541,
+      "youtube_archive_id": "z81OL_uawFw"
     }
   },
   "messages": [
@@ -7009,6 +7018,66 @@
       "message": "Feed the birds, hit the like :thumbs_up:. They're hungry.:chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1637640835,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "I just sent you a friend request :_RichSmile:",
+      "commands": [
+        "richsmile"
+      ]
+    },
+    {
+      "ts": 1637638642,
+      "username": "@toddstem",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "The new resident evil movie looks like :wastebasket:",
+      "commands": [
+        "wastebasket"
+      ]
+    },
+    {
+      "ts": 1637636447,
+      "username": "@splattown9767",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "Ngl You would have 1mil if you didnt cover the election since you made a conservative audience back in the day but I respect u keeping it real man :hundred_points:",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1637634874,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "Jeremy Wars: The Rise Of SkyQuarter",
+      "commands": [
+        "wars"
+      ]
+    },
+    {
+      "ts": 1637634324,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "I miss the 90s... Simpler times :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637633004,
+      "username": "@AndrewRS19",
+      "platform": "youtube",
+      "stream_id": "a_thequartering_man_experience",
+      "message": "Rich! Great news, my fianc\u00e9 and I are pregnant! :smiling_face_with_halo:",
+      "commands": [
+        "halo"
       ]
     },
     {
