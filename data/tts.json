@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093726,
+  "updated_ts": 1782093772,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -49,7 +49,8 @@
     "a_large_man_ama",
     "a_large_man_is_streaming",
     "a_large_man_returns_feat_birds",
-    "a_large_man_with_seltzer_livestreams"
+    "a_large_man_with_seltzer_livestreams",
+    "a_late_night_middle_aged_youtuber_is_livestreaming"
   ],
   "commands": {
     "stan": 27,
@@ -85,10 +86,10 @@
     "face": 37,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 27,
+    "joy": 28,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 9,
+    "carlos": 10,
     "away": 2,
     "idea": 1,
     "fear": 1,
@@ -427,6 +428,11 @@
       "title": "A Large Man With Seltzer Livestreams",
       "start_ts": 1525306613,
       "youtube_archive_id": "c8iwRG2XrOY"
+    },
+    "a_late_night_middle_aged_youtuber_is_livestreaming": {
+      "title": "A Late Night Middle-Aged YouTuber Is Livestreaming",
+      "start_ts": 1636081151,
+      "youtube_archive_id": "Q0fzvMN2_6Y"
     }
   },
   "messages": [
@@ -4362,6 +4368,26 @@
       "message": "Few good things: Almost have my Car Loan paid off, my Birthday is next month and I got a date this weekend! Booyah!!",
       "commands": [
         "things"
+      ]
+    },
+    {
+      "ts": 1636091088,
+      "username": "@danielharo8791",
+      "platform": "youtube",
+      "stream_id": "a_late_night_middle_aged_youtuber_is_livestreaming",
+      "message": "Brest till 3 am :face_with_tears_of_joy: I love your customer service",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1636090153,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "a_late_night_middle_aged_youtuber_is_livestreaming",
+      "message": "those outfits though. It's like the Newsies went on strike and got new jobs at a coffee shop..:_RichSmile::_RichSmile::_Carlos:",
+      "commands": [
+        "carlos"
       ]
     },
     {
