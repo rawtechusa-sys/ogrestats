@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101420,
+  "updated_ts": 1782101427,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -483,7 +483,8 @@
     "more_spicy_intellivision_amico_family_fun",
     "more_tcap_and_bird_fun",
     "more_thorough_tickling_live",
-    "more_tickled_television_excitement"
+    "more_tickled_television_excitement",
+    "more_wii_u_man_fun_yes_it_works"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8197,6 +8198,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.24,
       "avg_active_chatters": 41.49
+    },
+    "more_wii_u_man_fun_yes_it_works": {
+      "stream_id": "more_wii_u_man_fun_yes_it_works",
+      "title": "More Wii U Man Fun (Yes, It Works)",
+      "start_ts": 1645897254,
+      "end_ts": 1645906401,
+      "duration_sec": 9147,
+      "youtube_archive_id": "8sWvNofuas8",
+      "source_platform": "youtube",
+      "total_donations_usd": 174.96,
+      "donation_count": 38,
+      "donations_per_min": 1.1477,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.93,
+      "avg_active_chatters": 25.23
     }
   }
 }
