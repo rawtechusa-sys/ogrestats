@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098570,
+  "updated_ts": 1782098578,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -128,7 +128,8 @@
     "an_exciting_sunday_night_man_experience",
     "an_explanation",
     "an_important_announcements",
-    "an_important_update"
+    "an_important_update",
+    "an_unofficial_man_return_feat_large_men"
   ],
   "commands": {
     "stan": 27,
@@ -154,17 +155,17 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 9,
+    "rich": 10,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
     "eyes": 29,
     "africa": 1,
-    "face": 108,
+    "face": 109,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 82,
+    "joy": 83,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -224,7 +225,7 @@
     "gift": 1,
     "bird": 6,
     "richsmile": 2,
-    "dsp": 3,
+    "dsp": 5,
     "story": 1,
     "tree": 2,
     "skull": 4,
@@ -347,7 +348,10 @@
     "birds": 1,
     "goat": 2,
     "listen": 1,
-    "oldies": 1
+    "oldies": 1,
+    "lollipop": 1,
+    "reviewwatchmojousa": 1,
+    "cartoon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -984,6 +988,11 @@
       "title": "An Important Update",
       "start_ts": 1678930970,
       "youtube_archive_id": "1A153jQ_0VY"
+    },
+    "an_unofficial_man_return_feat_large_men": {
+      "title": "An Unofficial Man Return (Feat. Large Men)",
+      "start_ts": 1711925247,
+      "youtube_archive_id": "CvjifnSssbw"
     }
   },
   "messages": [
@@ -2766,6 +2775,86 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1711944100,
+      "username": "@requiem7x132",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "Rich, you are a man with horses and Nick Cage :saluting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1711941875,
+      "username": "@BrenR",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": ":face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1711939682,
+      "username": "@mr.0lvera922",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "Look up short cartoon: boogie2988 Looks for a Job",
+      "commands": [
+        "cartoon"
+      ]
+    },
+    {
+      "ts": 1711937241,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "ReviewWatchMojoUSA: top 10 things to shove up DSP\u2019s relaxed enus",
+      "commands": [
+        "reviewwatchmojousa"
+      ]
+    },
+    {
+      "ts": 1711937084,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "DSP: a ho, and I mean a farming tool not the derangotory term for women",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1711936789,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "DSP: Madam Web is the worst superhero movie, and I\u2019m not just saying that because my wife kat is insecure about me looking at other women.",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1711933165,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "Why is Phil licking a :cucumber:like :lollipop: in the thumbnail?",
+      "commands": [
+        "lollipop"
+      ]
+    },
+    {
+      "ts": 1711929774,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "an_unofficial_man_return_feat_large_men",
+      "message": "Rich: Have you seen the \u201cQuiet on Set\u201d Documentary yet? It is quite the salacious and disturbing eye-opening iceberg about Nickelodeon. Check it out!",
+      "commands": [
+        "rich"
       ]
     },
     {
