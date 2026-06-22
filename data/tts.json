@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093248,
+  "updated_ts": 1782093289,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -38,7 +38,8 @@
     "a_family_friendly_heterosexual_stream",
     "a_floor_thrusting_man_stream",
     "a_fun_dspgaming_man_stream",
-    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream"
+    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+    "a_grand_theft_auto_trilogy_bird_stream"
   ],
   "commands": {
     "stan": 27,
@@ -107,7 +108,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 1,
-    "rooster": 3,
+    "rooster": 4,
     "peach": 1,
     "fire": 2,
     "kendal": 1,
@@ -158,7 +159,8 @@
     "update": 1,
     "wings": 1,
     "advice": 1,
-    "ghostwire": 1
+    "ghostwire": 1,
+    "guy": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -345,6 +347,11 @@
       "title": "A G4TV, Quantum TV, Intellivision Amico Disaster Stream",
       "start_ts": 1647909271,
       "youtube_archive_id": "P4os9YRhYeM"
+    },
+    "a_grand_theft_auto_trilogy_bird_stream": {
+      "title": "A Grand Theft Auto Trilogy Bird Stream",
+      "start_ts": 1637438336,
+      "youtube_archive_id": "0X2SSUFVBAc"
     }
   },
   "messages": [
@@ -3688,6 +3695,26 @@
       "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1637442570,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_grand_theft_auto_trilogy_bird_stream",
+      "message": "Rich can I have a taste of your bird? :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1637439884,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "a_grand_theft_auto_trilogy_bird_stream",
+      "message": "\u201cRockstar Headquarters?\u201d Tourette\u2019s Guy: \u201cHello. I bought GTA Trilogy Remastered. AND IT MADE ME FEEL LIKE A PIECE OF $#!+\u201d",
+      "commands": [
+        "guy"
       ]
     },
     {
