@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101209,
+  "updated_ts": 1782101217,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -452,7 +452,8 @@
     "men_discuss_def_noodles_feat_christhenarc",
     "men_feat_men",
     "men_vs_chris_chan",
-    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds"
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
+    "middle_aged_men_complain_about_video_games"
   ],
   "commands": {
     "stan": 27,
@@ -501,7 +502,7 @@
     "tongue": 8,
     "heart": 140,
     "shorts": 2,
-    "laughing": 168,
+    "laughing": 169,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -951,7 +952,9 @@
     "arms": 1,
     "source": 1,
     "reviewbullyingusa": 1,
-    "reviewgossipusa": 1
+    "reviewgossipusa": 1,
+    "exposure": 1,
+    "th": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3208,6 +3211,11 @@
       "title": "Middle Aged Man Plays Elden Ring Terribly MARATHON (Feat. Birds)",
       "start_ts": 1651682368,
       "youtube_archive_id": "zWMuMpjN1pE"
+    },
+    "middle_aged_men_complain_about_video_games": {
+      "title": "Middle-Aged Men Complain About Video Games",
+      "start_ts": 1640565760,
+      "youtube_archive_id": "Rbo-ZhkKenw"
     }
   },
   "messages": [
@@ -22783,6 +22791,27 @@
       "message": "RIP Betty White :pensive_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1640566619,
+      "username": "@FamKamASMR",
+      "platform": "youtube",
+      "stream_id": "middle_aged_men_complain_about_video_games",
+      "message": "Message to 7th: assuming I found the right channel, you fucking broke me with the Jaws parody song about Maneater being a broken game. Well done. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "th",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1640566197,
+      "username": "@FamKamASMR",
+      "platform": "youtube",
+      "stream_id": "middle_aged_men_complain_about_video_games",
+      "message": "It's time for some self exposure: This is probably the first time in at least a half a year that I made it here during the Starting Soon screen.",
+      "commands": [
+        "exposure"
       ]
     },
     {
