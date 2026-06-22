@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099504,
+  "updated_ts": 1782099512,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -243,7 +243,8 @@
     "dads_back_for_a_bit",
     "daniel_keem_is_a_man",
     "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
-    "darrell_brooks_is_a_psychopath_feat_angry_birds"
+    "darrell_brooks_is_a_psychopath_feat_angry_birds",
+    "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian"
   ],
   "commands": {
     "stan": 27,
@@ -274,9 +275,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 62,
+    "eyes": 63,
     "africa": 1,
-    "face": 216,
+    "face": 218,
     "petersonxhhanson": 1,
     "poo": 13,
     "joy": 148,
@@ -415,7 +416,7 @@
     "rocket": 1,
     "droplets": 7,
     "tomato": 3,
-    "hearts": 3,
+    "hearts": 4,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -518,7 +519,7 @@
     "gonjiam": 1,
     "spaghetti": 1,
     "pizza": 2,
-    "out": 1,
+    "out": 2,
     "music": 1,
     "ask": 1,
     "wrong": 1,
@@ -567,7 +568,8 @@
     "monocle": 1,
     "store": 1,
     "pump": 1,
-    "robot": 1
+    "robot": 1,
+    "splayed": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1779,6 +1781,11 @@
       "title": "Darrell Brooks Is A Psychopath (Feat. Angry Birds)",
       "start_ts": 1667693396,
       "youtube_archive_id": "Cq1mfr2DzC0"
+    },
+    "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian": {
+      "title": "Discussing Boogie2988's Video, And An Open Invitation To Pat Ian",
+      "start_ts": 1666823286,
+      "youtube_archive_id": "Owb2U1UPp0Y"
     }
   },
   "messages": [
@@ -9034,6 +9041,66 @@
       "message": "I hear it's amazing when the famous purple stuffed worm in flap-jaw space with the tuning fork does a raw blink on Hara-Kiri Rock. I need scissors! 61! :robot:",
       "commands": [
         "robot"
+      ]
+    },
+    {
+      "ts": 1666831020,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "Your a delicious baked good :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1666829764,
+      "username": "@GaryBusey-sLaserdiscCollection",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "Rich I figured it out: He's salty the steam deck runs elden ring better than the games he likes.",
+      "commands": [
+        "out"
+      ]
+    },
+    {
+      "ts": 1666829365,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "his ignorance has to be the most annoying thing about him man holy crap. he does not know anything that hes saying. :_Rich::_Rich::_Rich::loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1666825925,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "I\u2019m not gonna put it in a bottle and breastfeed it to you. Can I be a mod? I\u2019ll calibrate your tv!!:grinning_face_with_big_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1666823731,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "my ps5 won't eject disc's anymore. Going to take it to bb to see if geek squad can fix it :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1666823575,
+      "username": "@bradley163",
+      "platform": "youtube",
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "message": "Birds, breasts, and :hand_with_fingers_splayed: jobs all around!",
+      "commands": [
+        "splayed"
       ]
     },
     {
