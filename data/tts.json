@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098702,
+  "updated_ts": 1782098711,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -145,7 +145,8 @@
     "ask_a_man_random_things_while_you_stare_at_birds",
     "ask_me_anything",
     "ask_me_anything_992019",
-    "asmongolds_the_act_man_interview_reaction"
+    "asmongolds_the_act_man_interview_reaction",
+    "back_to_watching_phil_fail_looking_into_derich"
   ],
   "commands": {
     "stan": 27,
@@ -171,16 +172,16 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 10,
+    "rich": 11,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 31,
+    "eyes": 32,
     "africa": 1,
     "face": 115,
     "petersonxhhanson": 1,
-    "poo": 7,
+    "poo": 8,
     "joy": 89,
     "gameboy": 1,
     "chick": 1,
@@ -192,15 +193,15 @@
     "cucumber": 12,
     "biceps": 3,
     "tongue": 4,
-    "heart": 44,
+    "heart": 45,
     "shorts": 1,
-    "laughing": 45,
+    "laughing": 46,
     "news": 9,
     "chicken": 21,
     "cake": 1,
     "d": 1,
     "halo": 2,
-    "hand": 6,
+    "hand": 7,
     "popper": 1,
     "straw": 1,
     "glasses": 2,
@@ -228,7 +229,7 @@
     "hands": 10,
     "horns": 4,
     "crab": 2,
-    "superhero": 10,
+    "superhero": 11,
     "legends": 1,
     "dog": 3,
     "is": 4,
@@ -273,7 +274,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 2,
-    "mouth": 10,
+    "mouth": 11,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -331,7 +332,7 @@
     "sweat": 4,
     "twist": 2,
     "quote": 1,
-    "beverage": 1,
+    "beverage": 2,
     "peanuts": 1,
     "glass": 1,
     "example": 1,
@@ -354,7 +355,7 @@
     "spoiler": 1,
     "mug": 1,
     "pachter": 1,
-    "eagle": 1,
+    "eagle": 2,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
     "say": 1,
@@ -381,7 +382,9 @@
     "dove": 1,
     "time": 1,
     "marry": 1,
-    "rino": 1
+    "rino": 1,
+    "trophy": 1,
+    "door": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1103,6 +1106,11 @@
       "title": "Asmongold's The Act Man Interview Reaction",
       "start_ts": 1655165591,
       "youtube_archive_id": "zNaXRq-i_GI"
+    },
+    "back_to_watching_phil_fail_looking_into_derich": {
+      "title": "Back To Watching Phil Fail (Looking Into Derich)",
+      "start_ts": 1704493736,
+      "youtube_archive_id": "p4Hy3Lny_Og"
     }
   },
   "messages": [
@@ -3318,6 +3326,117 @@
       "message": "Can't believe it's been this long.:slightly_smiling_face: Glad to finally catch a stream live. Breasts.",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1704517000,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Rich: If you enjoy Coffee as much as I think you do, you should def get yourself a Spinn Coffee Maker. Seriously godlike for anything Coffee. :hot_beverage::hot_beverage::hot_beverage:",
+      "commands": [
+        "rich",
+        "beverage"
+      ]
+    },
+    {
+      "ts": 1704512496,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Metro just said that today\u2019s National Bird Day. :eagle:",
+      "commands": [
+        "eagle"
+      ]
+    },
+    {
+      "ts": 1704509557,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Derich\u2019s Door: FBI OPEN UP!!!!!!!!!!!!",
+      "commands": [
+        "door"
+      ]
+    },
+    {
+      "ts": 1704507317,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Thirsty Canadian kid Derrich. :face_with_diagonal_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1704505961,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "That was an Oscar :trophy: winning worthy speech Rich",
+      "commands": [
+        "trophy"
+      ]
+    },
+    {
+      "ts": 1704503226,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Nah guys. Rich should play the modern classic Balan Wonderworld :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1704502521,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Cue \u201cYou Say Run\u201d from My Hero Academia. :face_with_tears_of_joy::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1704497618,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "word i get that, i'll be on the bench coach :superhero:",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1704494964,
+      "username": "@DigitalDemonicDavros",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "I will be 48 next month, get what you can because old age gets ya when you least expect it, thank for all the laughs Rich you are awesome :ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1704494841,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "who do I need to consentually give positive chill feedback for emotes? also likihood the dsp doc will be a :pile_of_poo: show? Natsumi birds",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1704494718,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "message": "Quick update on Sheriff Walters and then I\u2019ll shut the hell up about him. He\u2019s doing great right now and much happier than the other night. I\u2019m not asking for an unban, just giving some intel. :blue_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
