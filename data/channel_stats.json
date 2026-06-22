@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093636,
+  "updated_ts": 1782093682,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -47,7 +47,8 @@
     "a_jcs_stream",
     "a_jodi_arias_holiday_special",
     "a_large_man_ama",
-    "a_large_man_is_streaming"
+    "a_large_man_is_streaming",
+    "a_large_man_returns_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -785,6 +786,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.07,
       "avg_active_chatters": 34.55
+    },
+    "a_large_man_returns_feat_birds": {
+      "stream_id": "a_large_man_returns_feat_birds",
+      "title": "A Large Man Returns (Feat. Birds)",
+      "start_ts": 1704492283,
+      "end_ts": 1704493217,
+      "duration_sec": 934,
+      "youtube_archive_id": "gY0XUQlQlsU",
+      "source_platform": "youtube",
+      "total_donations_usd": 39.24,
+      "donation_count": 11,
+      "donations_per_min": 2.5208,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.25,
+      "avg_active_chatters": 41.06
     }
   }
 }
