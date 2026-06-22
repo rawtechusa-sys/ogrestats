@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101722,
+  "updated_ts": 1782101729,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -520,7 +520,8 @@
     "phillip_burnell_is_a_man",
     "phils_miraculous_man_cheeks",
     "playing_bloodborne_i_think",
-    "playing_castlevania_with_a_fat_old_man"
+    "playing_castlevania_with_a_fat_old_man",
+    "playing_doom_eternal_on_the_rog_ally"
   ],
   "commands": {
     "stan": 27,
@@ -593,7 +594,7 @@
     "peach": 15,
     "fire": 25,
     "kendal": 1,
-    "up": 45,
+    "up": 47,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 13,
@@ -3666,6 +3667,11 @@
       "title": "Playing Castlevania With A Fat, Old Man",
       "start_ts": 1691031253,
       "youtube_archive_id": "1XRvxaMiuhM"
+    },
+    "playing_doom_eternal_on_the_rog_ally": {
+      "title": "Playing Doom Eternal On The ROG Ally",
+      "start_ts": 1688086081,
+      "youtube_archive_id": "byqZbeV1VeQ"
     }
   },
   "messages": [
@@ -13057,6 +13063,26 @@
       "message": "2 wisdoms and a molar removed today, let's get into it :grinning_squinting_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1688086818,
+      "username": "@bengordon8773",
+      "platform": "youtube",
+      "stream_id": "playing_doom_eternal_on_the_rog_ally",
+      "message": "Hey Rich, would you ever want to do a 2023 office tour video? Thanks for the streams and keep up the good work :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1688086404,
+      "username": "@HackySmack53",
+      "platform": "youtube",
+      "stream_id": "playing_doom_eternal_on_the_rog_ally",
+      "message": "more videos on the main channel lately :thumbs_up:",
+      "commands": [
+        "up"
       ]
     },
     {
