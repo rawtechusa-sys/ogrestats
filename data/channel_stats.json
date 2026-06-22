@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101716,
+  "updated_ts": 1782101724,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -523,7 +523,8 @@
     "philip_paul_burnell_is_a_220_man",
     "phillip_burnell_is_a_man",
     "phils_miraculous_man_cheeks",
-    "playing_bloodborne_i_think"
+    "playing_bloodborne_i_think",
+    "playing_castlevania_with_a_fat_old_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8877,6 +8878,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.1,
       "avg_active_chatters": 24.05
+    },
+    "playing_castlevania_with_a_fat_old_man": {
+      "stream_id": "playing_castlevania_with_a_fat_old_man",
+      "title": "Playing Castlevania With A Fat, Old Man",
+      "start_ts": 1691031253,
+      "end_ts": 1691036794,
+      "duration_sec": 5541,
+      "youtube_archive_id": "1XRvxaMiuhM",
+      "source_platform": "youtube",
+      "total_donations_usd": 54.97,
+      "donation_count": 10,
+      "donations_per_min": 0.5952,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.54,
+      "avg_active_chatters": 30.3
     }
   }
 }
