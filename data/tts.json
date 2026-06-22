@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098600,
+  "updated_ts": 1782098609,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -132,7 +132,8 @@
     "an_unofficial_man_return_feat_large_men",
     "and_the_nintendo_switch_oled_winners_are",
     "andrew_taint_is_a_man",
-    "andrew_tate_is_a_man"
+    "andrew_tate_is_a_man",
+    "andrew_tate_man_stream_he_got_arrested"
   ],
   "commands": {
     "stan": 27,
@@ -165,7 +166,7 @@
     "turkey": 5,
     "eyes": 30,
     "africa": 1,
-    "face": 110,
+    "face": 111,
     "petersonxhhanson": 1,
     "poo": 6,
     "joy": 86,
@@ -209,11 +210,11 @@
     "note": 5,
     "eyebrow": 1,
     "facepalming": 4,
-    "shrugging": 1,
+    "shrugging": 2,
     "donation": 1,
     "naruto": 1,
     "hands": 10,
-    "horns": 3,
+    "horns": 4,
     "crab": 2,
     "superhero": 10,
     "legends": 1,
@@ -260,7 +261,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 2,
-    "mouth": 9,
+    "mouth": 10,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -358,7 +359,8 @@
     "msg": 1,
     "yesterday": 1,
     "wonka": 1,
-    "simulator": 1
+    "simulator": 1,
+    "though": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1015,6 +1017,11 @@
       "title": "Andrew Tate Is A Man",
       "start_ts": 1672610066,
       "youtube_archive_id": "_glPcoNgqn0"
+    },
+    "andrew_tate_man_stream_he_got_arrested": {
+      "title": "Andrew Tate Man Stream (He Got ARRESTED)",
+      "start_ts": 1672362905,
+      "youtube_archive_id": "SeySwE1xtks"
     }
   },
   "messages": [
@@ -6148,6 +6155,56 @@
       "message": "Tallarico can't even buy his own furniture :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1672367894,
+      "username": "@LyricalThesisDJ",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "message": "Can I throw my hat in? I just finished a DSP video lol. Let me know what you think :man_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1672367495,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "message": "But honest question though: is it satire if he\u2019s calling you a p. Do? I mean, people will see the thumbnail and run with that\u2026 Also you missed a lot of SCs including mine",
+      "commands": [
+        "though"
+      ]
+    },
+    {
+      "ts": 1672364874,
+      "username": "@NeoGotYa1111",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "message": "Hey Rich, you\u2019ve inspired me to get a stream deck to use it as a sound board, I can\u2019t wait to voice chat troll people :smiling_face_with_horns:",
+      "commands": [
+        "horns"
+      ]
+    },
+    {
+      "ts": 1672364687,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "message": "RICH I HAVE GOTTEN THE STEAM DICK!!! i mean steam deck :face_with_open_eyes_and_hand_over_mouth::face_with_open_eyes_and_hand_over_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1672363856,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "message": "Rumor is amico promised a certain yter a full time job if things panned out and they obviously shilled. Everyone on the subreddit thinking its DJC. :thinking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
