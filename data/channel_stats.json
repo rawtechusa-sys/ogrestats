@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099406,
+  "updated_ts": 1782099414,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -232,7 +232,8 @@
     "come_stare_at_a_man",
     "come_stare_at_a_man_and_ask_his_birds_questions",
     "come_stare_at_a_middle_aged_man_livestream",
-    "come_stare_at_me_talk_into_a_microphone_and_say_words"
+    "come_stare_at_me_talk_into_a_microphone_and_say_words",
+    "come_stream_with_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3930,6 +3931,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.05,
       "avg_active_chatters": 32.64
+    },
+    "come_stream_with_a_man": {
+      "stream_id": "come_stream_with_a_man",
+      "title": "Come Stream With A Man",
+      "start_ts": 1647135645,
+      "end_ts": 1647142079,
+      "duration_sec": 6434,
+      "youtube_archive_id": "CLbBLdU6msU",
+      "source_platform": "youtube",
+      "total_donations_usd": 166.86,
+      "donation_count": 46,
+      "donations_per_min": 1.556,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.98,
+      "avg_active_chatters": 29.62
     }
   }
 }
