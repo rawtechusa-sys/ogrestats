@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100471,
+  "updated_ts": 1782100480,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -354,7 +354,8 @@
     "its_time_to_take_games_back_gamers_who_game",
     "itsagundams_dspgaming_video_is_a_masterpiece",
     "jaysus_gaming_test_stream",
-    "just_a_man_and_birds"
+    "just_a_man_and_birds",
+    "just_a_man_streaming_and_answering_questions_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -387,7 +388,7 @@
     "turkey": 7,
     "eyes": 80,
     "africa": 1,
-    "face": 329,
+    "face": 332,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 240,
@@ -398,7 +399,7 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 42,
+    "cucumber": 44,
     "biceps": 3,
     "tongue": 6,
     "heart": 108,
@@ -423,7 +424,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 37,
+    "rooster": 38,
     "peach": 10,
     "fire": 21,
     "kendal": 1,
@@ -443,7 +444,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 17,
-    "kiss": 21,
+    "kiss": 22,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -552,7 +553,7 @@
     "this": 1,
     "notes": 14,
     "wars": 1,
-    "points": 6,
+    "points": 7,
     "wastebasket": 1,
     "left": 3,
     "flag": 1,
@@ -792,7 +793,9 @@
     "tiddies": 1,
     "fruit": 1,
     "while": 1,
-    "television": 1
+    "television": 1,
+    "ring": 2,
+    "games": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2559,6 +2562,11 @@
       "title": "Just A Man And Birds",
       "start_ts": 1651281884,
       "youtube_archive_id": "5b05_D4gEyQ"
+    },
+    "just_a_man_streaming_and_answering_questions_feat_birds": {
+      "title": "Just A Man Streaming And Answering Questions (Feat. Birds)",
+      "start_ts": 1649811206,
+      "youtube_archive_id": "blb-KUto6Is"
     }
   },
   "messages": [
@@ -16630,6 +16638,88 @@
       "message": "we love cucumbers :cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1649816714,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "Missed previous SC. Hero's Graves in E :ring: are Gr8!",
+      "commands": [
+        "ring"
+      ]
+    },
+    {
+      "ts": 1649816283,
+      "username": "@beagleboygaming1701",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "all souls games: when I'm doubt go to big castle",
+      "commands": [
+        "games"
+      ]
+    },
+    {
+      "ts": 1649815708,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "due to the rotation of the earth, time zones, and morning wood, there is a constant crowd wave of :cucumber: :cucumber: :cucumber:, encircling the globe",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1649815530,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "You heard what happened in Brooklyn? :slightly_frowning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1649815430,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "Did U C Sunpi's take on Steam Deck? UR E :ring: Live :hundred_points:",
+      "commands": [
+        "ring",
+        "points"
+      ]
+    },
+    {
+      "ts": 1649814272,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "This is the type of guy who would struggle on Lego Star Wars as well :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1649813731,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "Rich, you getting me to at least wanting to -try- Eldin Ring. I'm an Legend of Zelda fan but seeing the gameplay has me at least curious . :winking_face: :face_blowing_a_kiss:",
+      "commands": [
+        "face",
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1649811631,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "message": "was watching the AVGN ep featuring gilbert from 2019 he looked pretty frial and at times struggled a bit it's sad :disappointed_face:",
+      "commands": [
+        "face"
       ]
     },
     {
