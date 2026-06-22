@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101113,
+  "updated_ts": 1782101120,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -439,7 +439,8 @@
     "man_vs_men_live",
     "man_vs_qvc",
     "man_vs_steven_seagal",
-    "may_1st"
+    "may_1st",
+    "may_1st_part_2_has_occured"
   ],
   "commands": {
     "stan": 27,
@@ -470,7 +471,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 101,
+    "eyes": 102,
     "africa": 1,
     "face": 416,
     "petersonxhhanson": 1,
@@ -490,7 +491,7 @@
     "shorts": 1,
     "laughing": 168,
     "news": 20,
-    "chicken": 50,
+    "chicken": 51,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -3122,6 +3123,11 @@
       "title": "May 1st",
       "start_ts": 1714606929,
       "youtube_archive_id": "KcVt_jdKIsY"
+    },
+    "may_1st_part_2_has_occured": {
+      "title": "May 1st Part 2 Has Occured",
+      "start_ts": 1718671753,
+      "youtube_archive_id": "AhvD137mEdg"
     }
   },
   "messages": [
@@ -5470,6 +5476,26 @@
       "message": "Idiots: \u201cRich really needs to take a break from YouTube. He\u2019s clearly been unstable since everything happened with his daughter.\u201d Also idiots: \u201cRich only visited three times because he doesn\u2019t care.\u201d",
       "commands": [
         "idiots"
+      ]
+    },
+    {
+      "ts": 1718680089,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "may_1st_part_2_has_occured",
+      "message": "Remember special edition consoles? 7th gen :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1718676022,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "may_1st_part_2_has_occured",
+      "message": "rich look, look I have golden cucumber!:chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
