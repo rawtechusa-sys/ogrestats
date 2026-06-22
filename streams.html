@@ -640,6 +640,9 @@ async function loadStreamList() {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
         div.classList.add('active');
         sessionStorage.setItem('selected-stream', id);
+        // Reflect the selection in the URL so the view is shareable / deep-linkable
+        // (e.g. the donation links on dents.html point here as streams.html#<id>).
+        location.hash = id;
         loadStream(id);
       });
 
@@ -647,13 +650,19 @@ async function loadStreamList() {
     }
 
     if (streams.length > 0) {
-      const saved = sessionStorage.getItem('selected-stream');
-      const savedItem = saved && document.querySelector(`.stream-item[data-id="${CSS.escape(saved)}"]`);
-      if (savedItem) {
+      // Deep-link priority: URL hash (#<stream_id>, e.g. from dents.html donation
+      // links) first, then the last selection saved this session, then newest.
+      const hashId = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+      const selected = (hashId && document.querySelector(`.stream-item[data-id="${CSS.escape(hashId)}"]`))
+        ? hashId
+        : sessionStorage.getItem('selected-stream');
+      const selectedItem = selected && document.querySelector(`.stream-item[data-id="${CSS.escape(selected)}"]`);
+      if (selectedItem) {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
-        savedItem.classList.add('active');
-        savedItem.scrollIntoView({ block: 'nearest' });
-        loadStream(saved);
+        selectedItem.classList.add('active');
+        selectedItem.scrollIntoView({ block: 'nearest' });
+        sessionStorage.setItem('selected-stream', selected);
+        loadStream(selected);
       } else {
         loadStream(streams[0].id);
       }

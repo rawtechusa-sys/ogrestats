@@ -175,6 +175,100 @@
     0%, 100% { opacity: 1; }
     50%       { opacity: 0.6; }
   }
+
+  /* ── Expandable donor rows ── */
+  tr.dent-row { cursor: pointer; }
+
+  .caret {
+    display: inline-block;
+    width: 1em;
+    margin-right: 6px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+  tr.dent-row:hover .caret { color: var(--accent-bright); }
+
+  /* The detail row that holds a donor's itemized donations. */
+  .donations-row > td {
+    padding: 0;
+    background: var(--bg-base);
+    border-bottom: 1px solid var(--border-default);
+  }
+  /* Don't apply the generic row-hover accent wash to the panel cell. */
+  .donations-row:hover > td { background: var(--bg-base); }
+
+  .donor-panel { padding: 6px 14px 14px 46px; }
+
+  .donor-loading, .donor-empty {
+    padding: 14px 0 6px;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  /* Itemized donations sub-table (ported from streams.html). */
+  .donations-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .donations-table th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .donations-table td {
+    padding: 7px 8px;
+    border-bottom: 1px solid rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.07);
+    vertical-align: top;
+  }
+  .donations-table tr:last-child td { border-bottom: none; }
+  .donations-table tr:hover td {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.05);
+  }
+
+  .type-badge {
+    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+  .type-superchat      { color: #80c8a0; border-color: rgba(80,180,120,0.35); background: rgba(40,120,70,0.2); }
+  .type-membership     { color: #80c8a0; border-color: rgba(80,180,120,0.25); background: rgba(30,100,60,0.15); }
+  .type-giftmembership { color: #80c8a0; border-color: rgba(80,180,120,0.25); background: rgba(30,100,60,0.15); }
+  .type-bits           { color: #b090d0; border-color: rgba(130,80,180,0.35); background: rgba(90,50,140,0.2); }
+  .type-giftsub        { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
+  .type-sub            { color: #b090d0; border-color: rgba(130,80,180,0.25); background: rgba(70,40,110,0.15); }
+
+  /* White (Onion Layers) theme: darker text on lighter fills for legibility. */
+  html[data-theme="white"] .donations-table td {
+    border-bottom-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+  html[data-theme="white"] .type-superchat,
+  html[data-theme="white"] .type-membership,
+  html[data-theme="white"] .type-giftmembership { color: #237046; border-color: rgba(35,112,70,0.45); background: rgba(35,112,70,0.13); }
+  html[data-theme="white"] .type-bits,
+  html[data-theme="white"] .type-giftsub,
+  html[data-theme="white"] .type-sub { color: #54338a; border-color: rgba(90,58,140,0.45); background: rgba(90,58,140,0.13); }
+
+  .donations-table .ts-cell  { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+  .donations-table .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 13px; white-space: nowrap; }
+  .donations-table .msg-cell { font-family: 'Lora', serif; color: var(--text-muted); font-size: 13px; word-break: break-word; }
+  .stream-link {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4);
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .stream-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
 </style>
 </head>
 <body>
@@ -274,8 +368,87 @@ let sortKey   = 'total';
 let sortAsc   = false;
 let tableData = [];
 
+// ── Expandable per-donor donations ───────────────────────────────────────────
+// dents loads only leaderboard.json (aggregates) on page load. The individual
+// donations behind each donor live in data/donor_donations.json (built by the
+// backend, keyed by the same normalized username as leaderboard.json). That file
+// is large, so we lazy-load it once -- only when the first row is expanded -- and
+// cache it for the session.
+const expanded   = new Set();   // usernames whose detail panel is open
+let donorData    = null;        // the parsed donor_donations.json, once fetched
+let donorPromise = null;        // in-flight fetch (dedupes concurrent expands)
+let donorError   = null;        // message if the fetch failed
+
+function ensureDonorData() {
+  if (donorData) return Promise.resolve(donorData);
+  if (!donorPromise) {
+    donorPromise = fetchJSON(`${RAW}/data/donor_donations.json`)
+      .then(d => { donorData = d; donorError = null; renderTable(); return d; })
+      .catch(e => { donorError = e.message; donorPromise = null; renderTable(); });
+  }
+  return donorPromise;
+}
+
 function fmtUSD(n) {
   return n > 0 ? '$' + n.toFixed(2) : '—';
+}
+
+function fmtDateTime(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts * 1000);
+  const opts = { month: '2-digit', day: '2-digit', year: '2-digit' };
+  const tOpts = { hour: 'numeric', minute: '2-digit' };
+  // Honor the dashboard's timezone config if config.js provides withTZ.
+  const tz = (typeof withTZ === 'function') ? withTZ : (o => o);
+  return d.toLocaleDateString('en-US', tz(opts)) + ' ' + d.toLocaleTimeString('en-US', tz(tOpts));
+}
+
+// Build the itemized-donations panel for one donor.
+function donorPanelHTML(username) {
+  if (!donorData) {
+    if (donorError) return `<div class="donor-empty">couldn't load donations — ${escHtml(donorError)}</div>`;
+    return `<div class="donor-loading"><span class="loading-glyph" style="font-size:18px;">~</span> loading donations…</div>`;
+  }
+  const recs = (donorData.donors && donorData.donors[username]) || [];
+  if (!recs.length) return `<div class="donor-empty">No itemized donations recorded.</div>`;
+
+  const streams = donorData.streams || {};
+  const rows = recs.map(d => {
+    const sid   = d.stream_id;
+    const smeta = sid && streams[sid];
+    const label = (smeta && smeta.title) ? smeta.title : (sid || '—');
+    const streamCell = sid
+      ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener">${escHtml(label)}</a>`
+      : '—';
+    const type = d.type || '';
+    const amt  = (d.amount_usd != null && d.amount_usd > 0)
+      ? fmtUSD(d.amount_usd)
+      : (d.amount_raw ? escHtml(String(d.amount_raw)) : '—');
+    const msg  = d.message ? escHtml(d.message) : '';
+    return `<tr>
+      <td class="ts-cell">${fmtDateTime(d.ts)}</td>
+      <td>${streamCell}</td>
+      <td><span class="type-badge type-${escHtml(type)}">${escHtml(type) || '—'}</span></td>
+      <td class="amount-usd">${amt}</td>
+      <td class="msg-cell">${msg}</td>
+    </tr>`;
+  }).join('');
+
+  return `<table class="donations-table">
+    <thead><tr><th>Date</th><th>Stream</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+// Toggle a donor's panel open/closed, lazy-loading the data on first open.
+function toggleDonor(username) {
+  if (expanded.has(username)) {
+    expanded.delete(username);
+  } else {
+    expanded.add(username);
+    ensureDonorData();   // fire-and-forget; re-renders when it resolves
+  }
+  renderTable();
 }
 
 function renderTable() {
@@ -314,6 +487,9 @@ function renderTable() {
     `<th class="${thClass(t.key)}" data-key="${t.key}">${escHtml(t.label)}${arrow(t.key)}</th>`
   ).join('');
 
+  // Total column count, used for the expanded detail row's colspan.
+  const COLS = 4 + TYPES.length + 1;
+
   const rows = sorted.map((row, i) => {
     const typeCells = TYPES.map(t => {
       const v = row[t.key] || 0;
@@ -321,14 +497,23 @@ function renderTable() {
       return `<td class="amount-type${v === 0 ? ' zero' : ''}">${display}</td>`;
     }).join('');
 
-    return `<tr>
+    const isOpen = expanded.has(row.username);
+    const caret  = `<span class="caret">${isOpen ? '▾' : '▸'}</span>`;
+
+    const mainRow = `<tr class="dent-row" data-user="${escHtml(row.username)}">
       <td class="rank">${i + 1}</td>
-      <td class="username">${escHtml(row.username)}</td>
+      <td class="username">${caret}${escHtml(row.username)}</td>
       <td class="amount-total">${fmtUSD(row.total)}</td>
       <td class="amount-type">${row.streams}</td>
       ${typeCells}
       <td class="dsp-dent">${dspDentCell(row)}</td>
     </tr>`;
+
+    const detailRow = isOpen
+      ? `<tr class="donations-row"><td colspan="${COLS}"><div class="donor-panel">${donorPanelHTML(row.username)}</div></td></tr>`
+      : '';
+
+    return mainRow + detailRow;
   }).join('');
 
   wrap.innerHTML = `<table>
@@ -357,6 +542,15 @@ function renderTable() {
         sortAsc = key === 'username';
       }
       renderTable();
+    });
+  });
+
+  // Expand/collapse a donor's itemized donations on row click. Ignore clicks on
+  // links inside the row (e.g. the renton.report DSP-dent link) so they navigate.
+  wrap.querySelectorAll('tr.dent-row').forEach(tr => {
+    tr.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      toggleDonor(tr.dataset.user);
     });
   });
 }
