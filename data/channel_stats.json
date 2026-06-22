@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100056,
+  "updated_ts": 1782100065,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -308,7 +308,8 @@
     "i_got_screwed",
     "i_got_trolled_hard_by_ethan_ralph",
     "i_have_no_water_so_i_may_as_well_keep_streaming",
-    "i_have_no_words_and_im_frustrated"
+    "i_have_no_words_and_im_frustrated",
+    "i_have_some_very_important_things_to_discuss"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5222,6 +5223,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.84,
       "avg_active_chatters": 40.36
+    },
+    "i_have_some_very_important_things_to_discuss": {
+      "stream_id": "i_have_some_very_important_things_to_discuss",
+      "title": "I Have Some Very Important Things To Discuss",
+      "start_ts": 1719510663,
+      "end_ts": 1719511616,
+      "duration_sec": 953,
+      "youtube_archive_id": "hgMxPFsbfC0",
+      "source_platform": "youtube",
+      "total_donations_usd": 108.97,
+      "donation_count": 9,
+      "donations_per_min": 6.8607,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 29.12,
+      "avg_active_chatters": 64.75
     }
   }
 }
