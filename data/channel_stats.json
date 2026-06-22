@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099381,
+  "updated_ts": 1782099389,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -229,7 +229,8 @@
     "come_listen_me_complain_and_answer_questions",
     "come_look_at_this_man_and_chat_with_him",
     "come_speak_to_a_man",
-    "come_stare_at_a_man"
+    "come_stare_at_a_man",
+    "come_stare_at_a_man_and_ask_his_birds_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3879,6 +3880,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.35,
       "avg_active_chatters": 23.78
+    },
+    "come_stare_at_a_man_and_ask_his_birds_questions": {
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "title": "Come Stare At A Man And Ask His Birds Questions",
+      "start_ts": 1638491045,
+      "end_ts": 1638498318,
+      "duration_sec": 7273,
+      "youtube_archive_id": "punPakGgLkA",
+      "source_platform": "youtube",
+      "total_donations_usd": 296.01,
+      "donation_count": 68,
+      "donations_per_min": 2.442,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.4,
+      "avg_active_chatters": 28.43
     }
   }
 }
