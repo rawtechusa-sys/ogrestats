@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092411,
+  "updated_ts": 1782092430,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -11,7 +11,8 @@
     "so_i_was_just_fired_from_tech_talk",
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
-    "12_hour_man_stream_feat_men_part_2"
+    "12_hour_man_stream_feat_men_part_2",
+    "1_man_1_bird"
   ],
   "commands": {
     "stan": 27,
@@ -42,7 +43,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 1,
-    "eyes": 1,
+    "eyes": 2,
     "africa": 1,
     "face": 4,
     "petersonxhhanson": 1,
@@ -53,7 +54,12 @@
     "carlos": 1,
     "away": 1,
     "idea": 1,
-    "fear": 1
+    "fear": 1,
+    "voice": 1,
+    "cucumber": 1,
+    "biceps": 1,
+    "tongue": 1,
+    "heart": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -105,6 +111,11 @@
       "title": "12-Hour Man Stream (Feat. Men) Part 2",
       "start_ts": 1675123662,
       "youtube_archive_id": "yZMloDGg3dY"
+    },
+    "1_man_1_bird": {
+      "title": "1 Man, 1 Bird",
+      "start_ts": 1683936394,
+      "youtube_archive_id": "UcdWkPZzBoo"
     }
   },
   "messages": [
@@ -1887,6 +1898,66 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1683945796,
+      "username": "@mcquackery",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "richard masucci, i want you in my coochie. hope you and yours are well man :red_heart: slap that bird and put it in a bottle and breastfeed it to me. breasts",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1683942050,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "Sorry I\u2019m late for class, Mr. Masucci. I was playing Kingdom Hearts III instead. :winking_face_with_tongue: Can I get a Boobies and Breasts battle?",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1683941432,
+      "username": "@alexcoop6359",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "dunno what the goal was but I appreciate the hustle :flexed_biceps:",
+      "commands": [
+        "biceps"
+      ]
+    },
+    {
+      "ts": 1683939365,
+      "username": "@MothersNutMilk",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "Love you Ricardo :smiling_cat_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1683938897,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "wheres the 3am gang at? Cucumbers :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1683936905,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird",
+      "message": "Wings voice: Ban anyone named ReviewChinaUSA",
+      "commands": [
+        "voice"
       ]
     },
     {
