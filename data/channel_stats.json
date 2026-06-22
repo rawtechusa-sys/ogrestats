@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102269,
+  "updated_ts": 1782102274,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -612,7 +612,8 @@
     "streaming_fear_2_for_a_bit_then_being_a_reacting_man",
     "streaming_till_2_am",
     "streaming_till_2_am_featuring_birds",
-    "streaming_until_2_am_road_to_1000_members"
+    "streaming_until_2_am_road_to_1000_members",
+    "streaming_until_3_am_chris_hansen_edp_445"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10390,6 +10391,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.74,
       "avg_active_chatters": 22.14
+    },
+    "streaming_until_3_am_chris_hansen_edp_445": {
+      "stream_id": "streaming_until_3_am_chris_hansen_edp_445",
+      "title": "STREAMING UNTIL 3 AM (CHRIS HANSEN EDP 445)",
+      "start_ts": 1672967193,
+      "end_ts": 1672992029,
+      "duration_sec": 24836,
+      "youtube_archive_id": "8WSeeRan4oc",
+      "source_platform": "youtube",
+      "total_donations_usd": 585.42,
+      "donation_count": 156,
+      "donations_per_min": 1.4143,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.36,
+      "avg_active_chatters": 28.02
     }
   }
 }
