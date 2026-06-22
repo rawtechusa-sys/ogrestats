@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782068350,
+  "updated_ts": 1782092379,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -8,7 +8,8 @@
     "smash_jt_has_lost_his_damn_mind_smashjt",
     "short_stream_with_updates",
     "random_late_man_stream_for_men",
-    "grifters_jeffrey_and_phillip"
+    "grifters_jeffrey_and_phillip",
+    "100_certified_man_stream_feat_beautiful_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -122,6 +123,22 @@
       "avg_viewers": 348.93,
       "avg_chat_mpm": 9.09,
       "avg_active_chatters": 20.58
+    },
+    "100_certified_man_stream_feat_beautiful_birds": {
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "title": "100% Certified Man Stream (Feat. Beautiful Birds)",
+      "start_ts": 1651880087,
+      "end_ts": 1651888180,
+      "duration_sec": 8093,
+      "youtube_archive_id": "DXBZhByCv4I",
+      "source_platform": "youtube",
+      "total_donations_usd": 361.79,
+      "donation_count": 70,
+      "donations_per_min": 2.6822,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.71,
+      "avg_active_chatters": 26.66
     }
   }
 }
