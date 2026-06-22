@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092450,
+  "updated_ts": 1782092473,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -13,7 +13,8 @@
     "12_hour_man_stream_feat_men",
     "12_hour_man_stream_feat_men_part_2",
     "1_man_1_bird",
-    "1_man_1_bird_all_live"
+    "1_man_1_bird_all_live",
+    "1_million_sub_special_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -207,6 +208,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.63,
       "avg_active_chatters": 39.94
+    },
+    "1_million_sub_special_feat_birds": {
+      "stream_id": "1_million_sub_special_feat_birds",
+      "title": "1 Million Sub Special (Feat. Birds)",
+      "start_ts": 1651621929,
+      "end_ts": 1651631462,
+      "duration_sec": 9533,
+      "youtube_archive_id": "kcKEfJG_ENI",
+      "source_platform": "youtube",
+      "total_donations_usd": 980.56,
+      "donation_count": 160,
+      "donations_per_min": 6.1716,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.57,
+      "avg_active_chatters": 40.79
     }
   }
 }
