@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100979,
+  "updated_ts": 1782100986,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -423,7 +423,8 @@
     "man_and_birds_baked_and_live",
     "man_and_birds_vs_karens",
     "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
-    "man_friendly_family_fun"
+    "man_friendly_family_fun",
+    "man_in_birdsuit_ep_7_chris_chan_family_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7177,6 +7178,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.17,
       "avg_active_chatters": 34.44
+    },
+    "man_in_birdsuit_ep_7_chris_chan_family_fun": {
+      "stream_id": "man_in_birdsuit_ep_7_chris_chan_family_fun",
+      "title": "Man In Birdsuit Ep. 7 (Chris Chan Family Fun)",
+      "start_ts": 1652744783,
+      "end_ts": 1652751125,
+      "duration_sec": 6342,
+      "youtube_archive_id": "3xFhozvKzP0",
+      "source_platform": "youtube",
+      "total_donations_usd": 129.93,
+      "donation_count": 36,
+      "donations_per_min": 1.2292,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.57,
+      "avg_active_chatters": 26.9
     }
   }
 }
