@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094839,
+  "updated_ts": 1782094892,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -71,7 +71,8 @@
     "a_man_marathon_feat_birds",
     "a_man_stream_then_some_metroid_dread",
     "a_man_streams_like_a_man",
-    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions"
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+    "a_man_vs_the_playstation_showcase_2023_playstationshowcase"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1193,6 +1194,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.5,
       "avg_active_chatters": 35.31
+    },
+    "a_man_vs_the_playstation_showcase_2023_playstationshowcase": {
+      "stream_id": "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
+      "title": "A Man Vs. The PlayStation Showcase 2023 #PlayStationShowcase",
+      "start_ts": 1684955591,
+      "end_ts": 1684962865,
+      "duration_sec": 7274,
+      "youtube_archive_id": "3nHYUnNJ1z4",
+      "source_platform": "youtube",
+      "total_donations_usd": 137.61,
+      "donation_count": 37,
+      "donations_per_min": 1.1351,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.39,
+      "avg_active_chatters": 40.11
     }
   }
 }
