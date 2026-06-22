@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099699,
+  "updated_ts": 1782099707,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -266,7 +266,8 @@
     "dspgaming_ragequit_extravaganza_road_to_1000_members",
     "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
     "dspgamings_chickengate",
-    "dspgamings_direct_capture_saga"
+    "dspgamings_direct_capture_saga",
+    "dspgamings_may_1st_burst_anniversary_show"
   ],
   "commands": {
     "stan": 27,
@@ -299,10 +300,10 @@
     "turkey": 6,
     "eyes": 67,
     "africa": 1,
-    "face": 241,
+    "face": 243,
     "petersonxhhanson": 1,
     "poo": 15,
-    "joy": 175,
+    "joy": 178,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -313,16 +314,16 @@
     "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
-    "heart": 78,
+    "heart": 79,
     "shorts": 1,
-    "laughing": 78,
+    "laughing": 81,
     "news": 14,
-    "chicken": 35,
+    "chicken": 36,
     "cake": 7,
     "d": 2,
     "halo": 3,
     "hand": 19,
-    "popper": 5,
+    "popper": 6,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -354,7 +355,7 @@
     "dog": 4,
     "is": 6,
     "spose": 1,
-    "sunglasses": 12,
+    "sunglasses": 13,
     "kiss": 15,
     "earlier": 1,
     "ghost": 1,
@@ -379,7 +380,7 @@
     "reviewseinfeldusa": 1,
     "things": 2,
     "down": 2,
-    "tomorrow": 10,
+    "tomorrow": 11,
     "horse": 5,
     "bug": 1,
     "violin": 1,
@@ -436,7 +437,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 7,
+    "droplets": 9,
     "tomato": 3,
     "hearts": 7,
     "million": 1,
@@ -470,8 +471,8 @@
     "flag": 1,
     "restaraunt": 1,
     "highter": 1,
-    "glove": 1,
-    "collision": 1,
+    "glove": 2,
+    "collision": 2,
     "spoiler": 1,
     "mug": 1,
     "pachter": 2,
@@ -617,7 +618,9 @@
     "check": 1,
     "king": 1,
     "unrelated": 1,
-    "duck": 1
+    "duck": 1,
+    "reads": 1,
+    "unlocked": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1944,6 +1947,11 @@
       "title": "DSPGaming's Direct Capture Saga",
       "start_ts": 1701306160,
       "youtube_archive_id": "uviNoc1s5oM"
+    },
+    "dspgamings_may_1st_burst_anniversary_show": {
+      "title": "DSPGAMING'S MAY 1ST BURST ANNIVERSARY SHOW",
+      "start_ts": 1682959016,
+      "youtube_archive_id": "m735gIOv7gk"
     }
   },
   "messages": [
@@ -8409,6 +8417,187 @@
       "message": "Wings' cant Rocko died. Rest in Piece :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1682978457,
+      "username": "@Felix-hi2kb",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Coach Phil says \"Rope a dope!\":boxing_glove:",
+      "commands": [
+        "glove"
+      ]
+    },
+    {
+      "ts": 1682977549,
+      "username": "@Bowblax1",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Happy May 1st :weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1682976889,
+      "username": "@SchalaZeal",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Achievement unlocked: Phil blocked me on Twitter",
+      "commands": [
+        "unlocked"
+      ]
+    },
+    {
+      "ts": 1682975784,
+      "username": "@mintypigeon869",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Can I please have a oooooh it hurts spam please :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1682973887,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "How was this ever Funny? :face_with_tears_of_joy: it's so bad.",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1682969163,
+      "username": "@yrysroda8592",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": ":yellow_heart:Because my kids are not idiots:yellow_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1682965260,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "I accidentally bought a chicken sandwich today :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1682964877,
+      "username": "@DMCsaji",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "how much to lick jeremey's feet? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1682964441,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Playing MGSV and watching this. Best day ever. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1682963575,
+      "username": "@DANIELRONCA716",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "Rich Tomorrow: DSP hates me again!!",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1682963027,
+      "username": "@Felix-hi2kb",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "He didn't clean up before starting the show :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1682962040,
+      "username": "@powdertoastman83",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "May the thirst make you all burst :collision: :sweat_droplets:",
+      "commands": [
+        "collision",
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1682961175,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "\"Today\", a haiku. It reads: May 1st is today. Phillip shot ropes. Seven years, it has been.",
+      "commands": [
+        "reads"
+      ]
+    },
+    {
+      "ts": 1682960942,
+      "username": "@TurboPikachu",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "May the Burst be euphoric :sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1682960796,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": ":rolling_on_the_floor_laughing: there it is, 1K viewers",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1682959809,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "I\u2019m at work busting a nut to celebrate :party_popper: see you later guys",
+      "commands": [
+        "popper"
+      ]
+    },
+    {
+      "ts": 1682959677,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": "10 minutes in and we've broken Rich :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1682959424,
+      "username": "@E.C.01",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show",
+      "message": ":chicken::chicken::chicken::chicken::chicken::chicken::chicken::chicken::chicken::chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
