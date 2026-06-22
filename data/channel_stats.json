@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099768,
+  "updated_ts": 1782099777,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -275,7 +275,8 @@
     "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
     "eating_extremely_spicy_food_and_watching_weird_crap",
     "edp445_looked_for_another_cupcake",
-    "edp445_strikes_again_dsp_is_salty_more_anker_drama"
+    "edp445_strikes_again_dsp_is_salty_more_anker_drama",
+    "elden_ring_fails_compilation_marathon_eldenring"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4661,6 +4662,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.53,
       "avg_active_chatters": 29.26
+    },
+    "elden_ring_fails_compilation_marathon_eldenring": {
+      "stream_id": "elden_ring_fails_compilation_marathon_eldenring",
+      "title": "Elden Ring Fails Compilation Marathon #EldenRing",
+      "start_ts": 1650911910,
+      "end_ts": 1650923822,
+      "duration_sec": 11912,
+      "youtube_archive_id": "omNOH1S998E",
+      "source_platform": "youtube",
+      "total_donations_usd": 306.59,
+      "donation_count": 57,
+      "donations_per_min": 1.5443,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.04,
+      "avg_active_chatters": 22.61
     }
   }
 }
