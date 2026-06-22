@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098849,
+  "updated_ts": 1782098856,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -164,7 +164,8 @@
     "birds_and_a_man_feat_birds",
     "birds_and_men_live",
     "birds_are_satisfying_feat_a_man",
-    "birds_are_satisfying_kinda_livestream_feat_birds"
+    "birds_are_satisfying_kinda_livestream_feat_birds",
+    "birds_pot_halo_infinite_and_the_game_awards_discussion"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2774,6 +2775,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.09,
       "avg_active_chatters": 29.96
+    },
+    "birds_pot_halo_infinite_and_the_game_awards_discussion": {
+      "stream_id": "birds_pot_halo_infinite_and_the_game_awards_discussion",
+      "title": "Birds, Pot, Halo Infinite And The Game Awards Discussion",
+      "start_ts": 1639166125,
+      "end_ts": 1639175392,
+      "duration_sec": 9267,
+      "youtube_archive_id": "m_dn6LNqnC0",
+      "source_platform": "youtube",
+      "total_donations_usd": 209.88,
+      "donation_count": 41,
+      "donations_per_min": 1.3589,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.04,
+      "avg_active_chatters": 22.33
     }
   }
 }
