@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101263,
+  "updated_ts": 1782101270,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -462,7 +462,8 @@
     "more_chris_chan_insanity",
     "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
     "more_chris_chan_insanity_then_maybe_elden_ring",
-    "more_cringe_feat_a_man"
+    "more_cringe_feat_a_man",
+    "more_e3_talk"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7840,6 +7841,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.54,
       "avg_active_chatters": 34.3
+    },
+    "more_e3_talk": {
+      "stream_id": "more_e3_talk",
+      "title": "More E3 Talk",
+      "start_ts": 1528423335,
+      "end_ts": 1528428832,
+      "duration_sec": 5497,
+      "youtube_archive_id": "CY2C8oX1dYc",
+      "source_platform": "youtube",
+      "total_donations_usd": 134.67,
+      "donation_count": 29,
+      "donations_per_min": 1.4699,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.34,
+      "avg_active_chatters": 35.18
     }
   }
 }
