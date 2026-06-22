@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098476,
+  "updated_ts": 1782098483,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -116,7 +116,8 @@
     "a_woman_is_with_us",
     "a_wonderful_qvc_roast",
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
-    "a_xmas_eve_bird_stream"
+    "a_xmas_eve_bird_stream",
+    "a_xmas_eve_bird_stream_pt2"
   ],
   "commands": {
     "stan": 27,
@@ -149,7 +150,7 @@
     "turkey": 5,
     "eyes": 28,
     "africa": 1,
-    "face": 96,
+    "face": 98,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 80,
@@ -167,7 +168,7 @@
     "shorts": 1,
     "laughing": 38,
     "news": 7,
-    "chicken": 15,
+    "chicken": 16,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -318,7 +319,8 @@
     "wastebasket": 1,
     "left": 1,
     "flag": 1,
-    "restaraunt": 1
+    "restaraunt": 1,
+    "highter": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -895,6 +897,11 @@
       "title": "A Xmas Eve Bird Stream",
       "start_ts": 1640379739,
       "youtube_archive_id": "bcpmvqBLjJI"
+    },
+    "a_xmas_eve_bird_stream_pt2": {
+      "title": "A Xmas Eve Bird Stream Pt.2",
+      "start_ts": 1640395923,
+      "youtube_archive_id": "L-p3yUl6Buo"
     }
   },
   "messages": [
@@ -6833,6 +6840,46 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1640399248,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream_pt2",
+      "message": "Merry Horsemas, Rich! Love you! :horse::racehorse::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1640398447,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream_pt2",
+      "message": "My granny:i just want the seat in the car to go a little highter: My uncle:drink more egg nog get a bigger ass!",
+      "commands": [
+        "highter"
+      ]
+    },
+    {
+      "ts": 1640398374,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream_pt2",
+      "message": "Feliz Navidad Rich and Nuevo ano tambien! :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1640397692,
+      "username": "@ISP4RKl",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream_pt2",
+      "message": "Hey Rich, merry Christmas & wish you all the best for next year :slightly_smiling_face:",
+      "commands": [
+        "face"
       ]
     },
     {
