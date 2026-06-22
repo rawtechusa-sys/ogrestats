@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102092,
+  "updated_ts": 1782102097,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -585,7 +585,8 @@
     "slushii_and_someordinarygamers_join_dad",
     "so_apparently_im_a_playstation_fanboy",
     "so_hows_quantum_tv_been",
-    "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game"
+    "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game",
+    "so_i_beat_eldenrings_malenia_on_the_second_try"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9931,6 +9932,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.51,
       "avg_active_chatters": 34.93
+    },
+    "so_i_beat_eldenrings_malenia_on_the_second_try": {
+      "stream_id": "so_i_beat_eldenrings_malenia_on_the_second_try",
+      "title": "So I Beat #EldenRing's Malenia On The Second Try",
+      "start_ts": 1652903053,
+      "end_ts": 1652907392,
+      "duration_sec": 4339,
+      "youtube_archive_id": "DZ-lMtPorg0",
+      "source_platform": "youtube",
+      "total_donations_usd": 112.48,
+      "donation_count": 30,
+      "donations_per_min": 1.5554,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.99,
+      "avg_active_chatters": 30.56
     }
   }
 }
