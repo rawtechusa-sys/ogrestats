@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100081,
+  "updated_ts": 1782100089,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -310,7 +310,8 @@
     "i_have_no_words_and_im_frustrated",
     "i_have_some_very_important_things_to_discuss",
     "i_just_went_through_youtube_hell_let_me_explain",
-    "i_listened_and_made_changes_wings_of_redemption_doc"
+    "i_listened_and_made_changes_wings_of_redemption_doc",
+    "i_think_i_fixed_it"
   ],
   "commands": {
     "stan": 27,
@@ -709,7 +710,9 @@
     "hulk": 1,
     "qvc": 1,
     "grandma": 1,
-    "rule": 1
+    "rule": 1,
+    "reviewmidlifecrisisusa": 1,
+    "reviewbrielarsonusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2256,6 +2259,11 @@
       "title": "I Listened, And Made Changes (Wings of Redemption Doc)",
       "start_ts": 1694908726,
       "youtube_archive_id": "mUrtrGlJLQg"
+    },
+    "i_think_i_fixed_it": {
+      "title": "I Think I Fixed It...",
+      "start_ts": 1689224080,
+      "youtube_archive_id": "GCFv3dXQkto"
     }
   },
   "messages": [
@@ -8716,6 +8724,26 @@
       "message": "I've been here a year can I have standard mod :red_heart::red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1689224755,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "i_think_i_fixed_it",
+      "message": "ReviewBrieLarsonUSA: I don\u2019t need a 40 year old Italian man to tell me what didn\u2019t work for him in tears of the kingdom, it wasn\u2019t made for him.",
+      "commands": [
+        "reviewbrielarsonusa"
+      ]
+    },
+    {
+      "ts": 1689224445,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "i_think_i_fixed_it",
+      "message": "ReviewMidLifeCrisisUSA: Nintendo is nothing without gamers like me",
+      "commands": [
+        "reviewmidlifecrisisusa"
       ]
     },
     {
