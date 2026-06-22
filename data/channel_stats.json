@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099339,
+  "updated_ts": 1782099348,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -224,7 +224,8 @@
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
     "come_hang_out_for_a_bit",
     "come_hang_out_with_a_man",
-    "come_hang_out_with_a_man_and_ask_questions_feat_birds"
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds",
+    "come_hang_out_with_a_man_freedom_phone"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3794,6 +3795,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.94,
       "avg_active_chatters": 34.55
+    },
+    "come_hang_out_with_a_man_freedom_phone": {
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "title": "Come Hang Out With A Man (Freedom Phone)",
+      "start_ts": 1626573164,
+      "end_ts": 1626582321,
+      "duration_sec": 9157,
+      "youtube_archive_id": "2LXV3_6HqME",
+      "source_platform": "youtube",
+      "total_donations_usd": 381.69,
+      "donation_count": 104,
+      "donations_per_min": 2.501,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.51,
+      "avg_active_chatters": 38.5
     }
   }
 }
