@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100902,
+  "updated_ts": 1782100908,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -412,7 +412,8 @@
     "lets_watch_becky_screw_me_over",
     "lets_watch_jims_sterlings_elden_ring_video",
     "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
-    "listen"
+    "listen",
+    "live_from_canada"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6990,6 +6991,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.92,
       "avg_active_chatters": 40.83
+    },
+    "live_from_canada": {
+      "stream_id": "live_from_canada",
+      "title": "LIVE FROM CANADA!",
+      "start_ts": 1692662518,
+      "end_ts": 1692665011,
+      "duration_sec": 2493,
+      "youtube_archive_id": "GkCsu8Qj7wQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 176.89,
+      "donation_count": 23,
+      "donations_per_min": 4.2573,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.79,
+      "avg_active_chatters": 50.19
     }
   }
 }
