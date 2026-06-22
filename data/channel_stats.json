@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100038,
+  "updated_ts": 1782100047,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -306,7 +306,8 @@
     "i_failed_no_phil_november",
     "i_formally_invited_quantum_tv_on_for_an_interview",
     "i_got_screwed",
-    "i_got_trolled_hard_by_ethan_ralph"
+    "i_got_trolled_hard_by_ethan_ralph",
+    "i_have_no_water_so_i_may_as_well_keep_streaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5188,6 +5189,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 25.73,
       "avg_active_chatters": 59.41
+    },
+    "i_have_no_water_so_i_may_as_well_keep_streaming": {
+      "stream_id": "i_have_no_water_so_i_may_as_well_keep_streaming",
+      "title": "I Have No Water. So I May As Well Keep Streaming",
+      "start_ts": 1663647481,
+      "end_ts": 1663655734,
+      "duration_sec": 8253,
+      "youtube_archive_id": "ss8T7Csj5qo",
+      "source_platform": "youtube",
+      "total_donations_usd": 103.9,
+      "donation_count": 24,
+      "donations_per_min": 0.7554,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.46,
+      "avg_active_chatters": 22.47
     }
   }
 }
