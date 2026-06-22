@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098864,
+  "updated_ts": 1782098872,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -166,7 +166,8 @@
     "birds_are_satisfying_feat_a_man",
     "birds_are_satisfying_kinda_livestream_feat_birds",
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
-    "birthday_bird_and_man_stream"
+    "birthday_bird_and_man_stream",
+    "birthday_marathon_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2808,6 +2809,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.04,
       "avg_active_chatters": 38.19
+    },
+    "birthday_marathon_man_stream": {
+      "stream_id": "birthday_marathon_man_stream",
+      "title": "Birthday Marathon Man Stream",
+      "start_ts": 1689529358,
+      "end_ts": 1689552771,
+      "duration_sec": 23413,
+      "youtube_archive_id": "06dKATh0JEs",
+      "source_platform": "youtube",
+      "total_donations_usd": 923.59,
+      "donation_count": 179,
+      "donations_per_min": 2.3669,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.43,
+      "avg_active_chatters": 44.49
     }
   }
 }
