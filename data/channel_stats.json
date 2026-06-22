@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099717,
+  "updated_ts": 1782099725,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -269,7 +269,8 @@
     "dspgamings_chickengate",
     "dspgamings_direct_capture_saga",
     "dspgamings_may_1st_burst_anniversary_show",
-    "dspgamings_may_1st_burst_anniversary_show_back_to_phil"
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+    "dude_wtf_is_even_going_on"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4559,6 +4560,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.03,
       "avg_active_chatters": 34.01
+    },
+    "dude_wtf_is_even_going_on": {
+      "stream_id": "dude_wtf_is_even_going_on",
+      "title": "Dude WTF Is Even Going On?",
+      "start_ts": 1695171372,
+      "end_ts": 1695182624,
+      "duration_sec": 11252,
+      "youtube_archive_id": "0AdYjHRhWw8",
+      "source_platform": "youtube",
+      "total_donations_usd": 99.88,
+      "donation_count": 33,
+      "donations_per_min": 0.5326,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.43,
+      "avg_active_chatters": 42.44
     }
   }
 }
