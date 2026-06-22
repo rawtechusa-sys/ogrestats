@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100177,
+  "updated_ts": 1782100185,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -321,7 +321,8 @@
     "im_at_a_crossroads",
     "im_back",
     "im_back_and_on_a_warpath",
-    "im_back_and_only_half_dead_come_hang_out"
+    "im_back_and_only_half_dead_come_hang_out",
+    "im_buzzed_off_caffeine_come_chat_with_me"
   ],
   "commands": {
     "stan": 27,
@@ -354,7 +355,7 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 302,
+    "face": 304,
     "petersonxhhanson": 1,
     "poo": 18,
     "joy": 220,
@@ -376,7 +377,7 @@
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 25,
+    "hand": 26,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -463,7 +464,7 @@
     "live": 1,
     "saying": 1,
     "it": 11,
-    "food": 3,
+    "food": 4,
     "play": 1,
     "video": 1,
     "one": 3,
@@ -2331,6 +2332,11 @@
       "title": "I'm Back And Only Half-Dead. Come Hang Out!",
       "start_ts": 1646958520,
       "youtube_archive_id": "P6a1wZAwkm8"
+    },
+    "im_buzzed_off_caffeine_come_chat_with_me": {
+      "title": "I'm Buzzed Off Caffeine. Come Chat With Me.",
+      "start_ts": 1628910955,
+      "youtube_archive_id": "c_99tFCn5L8"
     }
   },
   "messages": [
@@ -20104,6 +20110,46 @@
       "commands": [
         "follows",
         "hand"
+      ]
+    },
+    {
+      "ts": 1628912300,
+      "username": "@LeesReviews69",
+      "platform": "youtube",
+      "stream_id": "im_buzzed_off_caffeine_come_chat_with_me",
+      "message": "Bubbly tastes artificial :nauseated_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628912039,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "im_buzzed_off_caffeine_come_chat_with_me",
+      "message": "So that wasn\u2019t u I was chatting on tinder :crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628911950,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "im_buzzed_off_caffeine_come_chat_with_me",
+      "message": "Hi Rich. :waving_hand: Can you explain the don't give the trolls attention vs speaking on drama. I just want to understand so I can learn who gets the attention.",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1628911088,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "im_buzzed_off_caffeine_come_chat_with_me",
+      "message": "Hi RGT'S dad. I'm drinking a can of Mother :face_savoring_food:",
+      "commands": [
+        "food"
       ]
     },
     {
