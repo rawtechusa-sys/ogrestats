@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098728,
+  "updated_ts": 1782098736,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -149,7 +149,8 @@
     "asmongolds_the_act_man_interview_reaction",
     "back_to_watching_phil_fail_looking_into_derich",
     "bad_chefs_are_bad",
-    "bad_commercials_and_trump"
+    "bad_commercials_and_trump",
+    "ban_anybody_watching_the_wingsofredemption_documentary"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2519,6 +2520,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.84,
       "avg_active_chatters": 42.02
+    },
+    "ban_anybody_watching_the_wingsofredemption_documentary": {
+      "stream_id": "ban_anybody_watching_the_wingsofredemption_documentary",
+      "title": "Ban Anybody Watching The WingsOfRedemption Documentary",
+      "start_ts": 1701476817,
+      "end_ts": 1701500744,
+      "duration_sec": 23927,
+      "youtube_archive_id": "1FyN5hG0OoM",
+      "source_platform": "youtube",
+      "total_donations_usd": 227.72,
+      "donation_count": 80,
+      "donations_per_min": 0.571,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.53,
+      "avg_active_chatters": 32.64
     }
   }
 }
