@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101129,
+  "updated_ts": 1782101137,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -444,7 +444,8 @@
     "man_vs_steven_seagal",
     "may_1st",
     "may_1st_part_2_has_occured",
-    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members"
+    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
+    "melonie_mac_goes_full_mask_off_road_to_1000_members"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7534,6 +7535,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.8,
       "avg_active_chatters": 25.44
+    },
+    "melonie_mac_goes_full_mask_off_road_to_1000_members": {
+      "stream_id": "melonie_mac_goes_full_mask_off_road_to_1000_members",
+      "title": "Melonie Mac Goes Full Mask Off (Road To 1000 Members)",
+      "start_ts": 1686182067,
+      "end_ts": 1686196669,
+      "duration_sec": 14602,
+      "youtube_archive_id": "L6aBE09M8P8",
+      "source_platform": "youtube",
+      "total_donations_usd": 995.82,
+      "donation_count": 99,
+      "donations_per_min": 4.0919,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.31,
+      "avg_active_chatters": 25.02
     }
   }
 }
