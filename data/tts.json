@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100344,
+  "updated_ts": 1782100353,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -340,7 +340,8 @@
     "intellivision_amico_family_fun_night_plus_newegg_drama",
     "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
     "intellivision_family_fun_keffals_and_lady_decade",
-    "irl_streaming_from_poughkeepsie_ny"
+    "irl_streaming_from_poughkeepsie_ny",
+    "irl_streaming_on_a_hot_day"
   ],
   "commands": {
     "stan": 27,
@@ -373,10 +374,10 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 318,
+    "face": 319,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 230,
+    "joy": 231,
     "gameboy": 1,
     "chick": 2,
     "carlos": 29,
@@ -2458,6 +2459,11 @@
       "title": "IRL STREAMING FROM POUGHKEEPSIE NY",
       "start_ts": 1658864046,
       "youtube_archive_id": "s8_m4K2T6H8"
+    },
+    "irl_streaming_on_a_hot_day": {
+      "title": "IRL STREAMING ON A HOT DAY",
+      "start_ts": 1659036885,
+      "youtube_archive_id": "SvV1aVgUd0I"
     }
   },
   "messages": [
@@ -13809,6 +13815,26 @@
       "message": "just watched the stalker video and it was the greatest thing I've watched in awhile. Uhh hi Richy! Let's get coffee :face_with_tears_of_joy: sorry to laugh at misfortune",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1659038584,
+      "username": "@LunaAzzurro",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_on_a_hot_day",
+      "message": "Watching you do this in public is making me anxious. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1659038369,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_on_a_hot_day",
+      "message": "Record rainfall in STL again today :crying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
