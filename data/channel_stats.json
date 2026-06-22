@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099456,
+  "updated_ts": 1782099464,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -238,7 +238,8 @@
     "come_talk_with_liana_k_and_i_about_video_games",
     "cringing_at_the_avgn_movie",
     "dad_had_some_ipas_come_ask_questions",
-    "dad_is_back"
+    "dad_is_back",
+    "dad_streams_the_playstation_showcase_2021"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4032,6 +4033,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.49,
       "avg_active_chatters": 32.27
+    },
+    "dad_streams_the_playstation_showcase_2021": {
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "title": "Dad Streams The PlayStation Showcase 2021",
+      "start_ts": 1631213310,
+      "end_ts": 1631220441,
+      "duration_sec": 7131,
+      "youtube_archive_id": "-5lUFwmcWyA",
+      "source_platform": "youtube",
+      "total_donations_usd": 209.05,
+      "donation_count": 64,
+      "donations_per_min": 1.7589,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.07,
+      "avg_active_chatters": 57.87
     }
   }
 }
