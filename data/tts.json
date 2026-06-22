@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095738,
+  "updated_ts": 1782095798,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -87,13 +87,14 @@
     "a_new_bird_approaches",
     "a_philtacular_man_sunday",
     "a_plain_old_normal_man_stream_feat_men",
-    "a_pre_stream_man_stream"
+    "a_pre_stream_man_stream",
+    "a_pulsating_new_years_eve"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 54,
+    "phil": 56,
     "trump": 30,
     "doom": 4,
     "harman": 12,
@@ -120,7 +121,7 @@
     "turkey": 4,
     "eyes": 21,
     "africa": 1,
-    "face": 73,
+    "face": 78,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 53,
@@ -131,12 +132,12 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 6,
+    "cucumber": 7,
     "biceps": 3,
-    "tongue": 2,
-    "heart": 30,
+    "tongue": 3,
+    "heart": 32,
     "shorts": 1,
-    "laughing": 26,
+    "laughing": 27,
     "news": 5,
     "chicken": 11,
     "cake": 1,
@@ -167,23 +168,23 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 7,
+    "hands": 8,
     "horns": 2,
     "crab": 2,
-    "superhero": 9,
+    "superhero": 10,
     "legends": 1,
     "dog": 2,
     "is": 3,
     "spose": 1,
     "sunglasses": 2,
-    "kiss": 6,
+    "kiss": 7,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
     "gift": 1,
-    "bird": 4,
+    "bird": 5,
     "richsmile": 1,
-    "dsp": 2,
+    "dsp": 3,
     "story": 1,
     "tree": 1,
     "skull": 4,
@@ -262,11 +263,13 @@
     "hearts": 1,
     "million": 1,
     "people": 1,
-    "point": 1,
+    "point": 2,
     "superchat": 1,
     "reviewquentintartinousa": 1,
     "fact": 1,
-    "both": 1
+    "both": 1,
+    "syne": 1,
+    "father": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -698,6 +701,11 @@
       "title": "A Pre-Stream Man Stream",
       "start_ts": 1684621607,
       "youtube_archive_id": "JgNMx-1MBZs"
+    },
+    "a_pulsating_new_years_eve": {
+      "title": "A Pulsating New Years Eve",
+      "start_ts": 1704061642,
+      "youtube_archive_id": "FNfQMcAT_i4"
     }
   },
   "messages": [
@@ -2813,6 +2821,196 @@
       "message": "Can't believe it's been this long.:slightly_smiling_face: Glad to finally catch a stream live. Breasts.",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1704084532,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Last Superchat of 2023. I renewed my cucumber early in celebration of the New Year. I wish all of you a good 2024! :blue_heart: Birdjobs all around Hoot Wireless",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1704079014,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "this rant gave me depression :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704078787,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "proud to say I clipped this & caused the drama :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1704075268,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Hello father I hope this year is thee best for you and you\u2019re family :folded_hands::folded_hands::folded_hands::folded_hands: and everyone hear",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1704075017,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "I\u2019ll keep an eye on the homie Sheriff Walters. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1704073444,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Now give us your honest opinion, father: is Phil truly clueless and can't tell that video is all about him, or does he realize and just plays dumb and deflects as defense? I truly can't decide...",
+      "commands": [
+        "father"
+      ]
+    },
+    {
+      "ts": 1704071590,
+      "username": "@karasub2836",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "happy new years big bird :bird:",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1704070318,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "you miss mine on purpose because you r mean to me:squinting_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1704070105,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Sheriff Walters is a good guy. In fact he\u2019s my best friend. He was having a really bad day today. Please unban him. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704068957,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Happy New Year Rich and Chat! :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1704068264,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "I\u2019d wreck you in COD mobile. Noone can aim on IOS:grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704068220,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Miltank is a Normal-type cow Pok\u00e9mon. :nerd_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704067569,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "bruh dsp is the perfect Hey Arnold Character :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704066329,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "phil: has a 24 hr sub requirement to chat. also phil: I will ban you for not talking about me or the game 'snort' ok",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1704066064,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "just know hero in :man_superhero:",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1704065047,
+      "username": "@xabosen",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": ":horse::horse::horse::cucumber::cucumber::cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1704064178,
+      "username": "@TheWastelander.-rx1mx",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "From Phils point: Darrick is a huge fan who's done nothing illegal (as of yet/ we know of) why would i ban him",
+      "commands": [
+        "point"
+      ]
+    },
+    {
+      "ts": 1704063269,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Feasting with DSP: ReviewTechUSA\u2019s cucumber",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1704062357,
+      "username": "@Plynthophone",
+      "platform": "youtube",
+      "stream_id": "a_pulsating_new_years_eve",
+      "message": "Phil Lang Syne: Should sandwiches be pulsating And tips donated by a fan? When the camera's on, we all know that Philip Burnell is a man. Happy New Year all & Rich thank you for entertaining us!",
+      "commands": [
+        "syne"
       ]
     },
     {
