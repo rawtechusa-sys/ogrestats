@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101341,
+  "updated_ts": 1782101349,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -470,7 +470,8 @@
     "more_intellivision_amico_family_fun",
     "more_intellivision_amico_manbird_fun",
     "more_man_more_birds",
-    "more_man_more_karens"
+    "more_man_more_karens",
+    "more_of_the_quantum_tv_interview"
   ],
   "commands": {
     "stan": 27,
@@ -501,7 +502,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 9,
-    "eyes": 108,
+    "eyes": 109,
     "africa": 1,
     "face": 439,
     "petersonxhhanson": 1,
@@ -514,7 +515,7 @@
     "idea": 4,
     "fear": 4,
     "voice": 5,
-    "cucumber": 50,
+    "cucumber": 51,
     "biceps": 5,
     "tongue": 10,
     "heart": 141,
@@ -648,7 +649,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 7,
+    "fact": 9,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -982,7 +983,8 @@
     "tonight": 1,
     "bia": 1,
     "battle": 1,
-    "yoga": 1
+    "yoga": 1,
+    "aka": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3329,6 +3331,11 @@
       "title": "More Man, More Karens",
       "start_ts": 1660263797,
       "youtube_archive_id": "xn7WRllBOFc"
+    },
+    "more_of_the_quantum_tv_interview": {
+      "title": "More Of The Quantum TV Interview",
+      "start_ts": 1656637399,
+      "youtube_archive_id": "S7YPJt7xtuw"
     }
   },
   "messages": [
@@ -18690,6 +18697,47 @@
       "message": "Watch Westside Tech say you were doxing him :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1656638754,
+      "username": "@phill_larrup",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview",
+      "message": "Check out Philions Bored Ape vid. Also. :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1656638647,
+      "username": "@chrischansfantabottlecolle4368",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview",
+      "message": "Dad gimme some FARTS. Love your content. Glad the strike was removed. :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1656638431,
+      "username": "@fireblade5059",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview",
+      "message": "Fun Fact: A comment on my old account called \"cafinatedgaming\" it made into one of the dsp compilations , I said his french accent was terrible lol",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1656638001,
+      "username": "@Thecoolistgamerever",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview",
+      "message": "Fun fact: the the first I learned of DSP was from Guru Larry AKA: the fact hunt guy",
+      "commands": [
+        "fact",
+        "aka"
       ]
     },
     {
