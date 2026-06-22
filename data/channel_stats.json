@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102045,
+  "updated_ts": 1782102054,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -578,7 +578,8 @@
     "screw_anxiety_im_streaming",
     "setting_the_record_straight",
     "sex",
-    "shave_my_legs_live_from_canada"
+    "shave_my_legs_live_from_canada",
+    "sick_stoned_and_streaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9812,6 +9813,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.71,
       "avg_active_chatters": 16.66
+    },
+    "sick_stoned_and_streaming": {
+      "stream_id": "sick_stoned_and_streaming",
+      "title": "Sick, Stoned, And Streaming",
+      "start_ts": 1674166192,
+      "end_ts": 1674181147,
+      "duration_sec": 14955,
+      "youtube_archive_id": "T2G2e9vG4tM",
+      "source_platform": "youtube",
+      "total_donations_usd": 452.81,
+      "donation_count": 127,
+      "donations_per_min": 1.8167,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.85,
+      "avg_active_chatters": 26.05
     }
   }
 }
