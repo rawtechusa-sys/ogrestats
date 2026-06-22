@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100841,
+  "updated_ts": 1782100848,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -402,7 +402,8 @@
     "lets_laugh_at_alex_jones_again",
     "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
     "lets_laugh_at_crap_crowdfunding_campaigns",
-    "lets_laugh_at_qvc"
+    "lets_laugh_at_qvc",
+    "lets_shop_and_then_go_to_war"
   ],
   "commands": {
     "stan": 27,
@@ -435,10 +436,10 @@
     "turkey": 7,
     "eyes": 94,
     "africa": 1,
-    "face": 380,
+    "face": 387,
     "petersonxhhanson": 1,
     "poo": 23,
-    "joy": 260,
+    "joy": 262,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -449,11 +450,11 @@
     "cucumber": 48,
     "biceps": 4,
     "tongue": 7,
-    "heart": 121,
+    "heart": 124,
     "shorts": 1,
     "laughing": 157,
     "news": 19,
-    "chicken": 43,
+    "chicken": 44,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -472,7 +473,7 @@
     "disclaimer": 1,
     "hole": 7,
     "rooster": 41,
-    "peach": 12,
+    "peach": 13,
     "fire": 22,
     "kendal": 1,
     "up": 38,
@@ -487,7 +488,7 @@
     "crab": 2,
     "superhero": 27,
     "legends": 2,
-    "dog": 7,
+    "dog": 8,
     "is": 6,
     "spose": 1,
     "sunglasses": 19,
@@ -496,13 +497,13 @@
     "ghost": 1,
     "bk": 1,
     "gift": 3,
-    "bird": 12,
+    "bird": 13,
     "richsmile": 5,
     "dsp": 23,
     "story": 1,
     "tree": 3,
-    "skull": 9,
-    "eggplant": 3,
+    "skull": 10,
+    "eggplant": 4,
     "bite": 1,
     "take": 6,
     "states": 1,
@@ -875,7 +876,8 @@
     "jones": 1,
     "constantly": 1,
     "syringe": 1,
-    "weapon": 1
+    "weapon": 1,
+    "penguin": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2882,6 +2884,11 @@
       "title": "Let's Laugh At QVC",
       "start_ts": 1641256836,
       "youtube_archive_id": "iwTmvZwUSno"
+    },
+    "lets_shop_and_then_go_to_war": {
+      "title": "Let's Shop And Then Go To \"War\"",
+      "start_ts": 1684882867,
+      "youtube_archive_id": "Um7ZK9j2sRk"
     }
   },
   "messages": [
@@ -11186,6 +11193,187 @@
       "message": "The YouTube live chat on mobile is broken. :face_with_rolling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1684909050,
+      "username": "@timculhane625",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "love you guys, it hurts, got my :bird: merch Boiimg",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1684908521,
+      "username": "@yrysroda8592",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "I need to go sleep, great to see you Rich & Jay :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684907999,
+      "username": "@johnskouroukos",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "love you guys :beating_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1684907020,
+      "username": "@sonialysette",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "on behalf of Flutter Bully, they asked to remind you, that you are on until 2:30AM :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684904328,
+      "username": "@LyricalThesisDJ",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "Please don't Doxx me Rich, my name is not Ryan :confused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684903616,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "You both are amazing, sending all the birds :baby_chick::bird::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1684903537,
+      "username": "@xRaymond9250",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "Rich can i be on the show? I\u2019m a nobody but ily :pleading_face::green_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1684899837,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "Rich, Jay, just keep in mind... I love you guys :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1684899566,
+      "username": "@JacobstanfordOCD",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "Jeremy's feet look like :eggplant: but you'll lose, sureeee",
+      "commands": [
+        "eggplant"
+      ]
+    },
+    {
+      "ts": 1684897710,
+      "username": "@brotherhoodcreed725",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "But kids think about kid stuff, not sexuality :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684895444,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": ":hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1684892649,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "That :peach: holy Jesus!!!",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1684892065,
+      "username": "@DonicaJLewinski",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "You need an ad blocker. :face_with_tears_of_joy:\ud83e\udd26\ud83c\udffd\u200d\u2642:skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1684889687,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "I wonder if Alice from last night messaged Jay :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1684888946,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": ":racehorse:I IMPULSE BOUGHT A SWITCH OLED TEARS OF THE KINGDOM EDITION.:penguin: I ALREADY HAVE 2 SWITCHES :melting_face:Also F u and ur mother :pleading_face:",
+      "commands": [
+        "penguin",
+        "face"
+      ]
+    },
+    {
+      "ts": 1684886736,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "Okay, so now I\u2019m confused\u2026 Ackdolf Von Pigler is the detractor who called the mall, at first I got the impression he confirmed the tire theft but now he clearly says security didnt get any reports so maybe Phil is lying? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684885180,
+      "username": "@MidTownMike212",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "I find it weird that someone yesterday in stream said that someone took a photo of Kat at the supermarket and today her tire was stolen off their car :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684884990,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "lets_shop_and_then_go_to_war",
+      "message": "jay was upset with me last night as I said he didn't have a bulge when he pulled up his pants super high to cover his man breasts :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
