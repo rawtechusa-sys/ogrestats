@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101174,
+  "updated_ts": 1782101182,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -450,7 +450,8 @@
     "men",
     "men_and_food_road_to_1000_members",
     "men_birds_and_samurai_cop",
-    "men_birds_and_samurai_cop_part_deux"
+    "men_birds_and_samurai_cop_part_deux",
+    "men_chatting"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7636,6 +7637,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.65,
       "avg_active_chatters": 31.34
+    },
+    "men_chatting": {
+      "stream_id": "men_chatting",
+      "title": "Men Chatting",
+      "start_ts": 1702340700,
+      "end_ts": 1702365790,
+      "duration_sec": 25090,
+      "youtube_archive_id": "W1C-PaXDPPk",
+      "source_platform": "youtube",
+      "total_donations_usd": 911.94,
+      "donation_count": 126,
+      "donations_per_min": 2.1808,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.91,
+      "avg_active_chatters": 43.73
     }
   }
 }
