@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093018,
+  "updated_ts": 1782093056,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -32,7 +32,8 @@
     "a_colorful_man",
     "a_crispy_peanut_butter_complexion_livestream",
     "a_detrahktor_discusses_her_grievances_with_me",
-    "a_dspgaming_and_wingsofredemption_man_stream"
+    "a_dspgaming_and_wingsofredemption_man_stream",
+    "a_dspgaming_family_fun_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -530,6 +531,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.74,
       "avg_active_chatters": 28.93
+    },
+    "a_dspgaming_family_fun_stream": {
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "title": "A DSPGaming Family Fun Stream",
+      "start_ts": 1672790254,
+      "end_ts": 1672801435,
+      "duration_sec": 11181,
+      "youtube_archive_id": "LTUOKpjuUtQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 331.75,
+      "donation_count": 69,
+      "donations_per_min": 1.7803,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.2,
+      "avg_active_chatters": 34.06
     }
   }
 }
