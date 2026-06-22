@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101402,
+  "updated_ts": 1782101413,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -481,7 +481,8 @@
     "more_quantum_tv_tickling",
     "more_russia_ukraine_discussion",
     "more_spicy_intellivision_amico_family_fun",
-    "more_tcap_and_bird_fun"
+    "more_tcap_and_bird_fun",
+    "more_thorough_tickling_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8163,6 +8164,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.71,
       "avg_active_chatters": 33.8
+    },
+    "more_thorough_tickling_live": {
+      "stream_id": "more_thorough_tickling_live",
+      "title": "More Thorough Tickling LIVE",
+      "start_ts": 1656292334,
+      "end_ts": 1656303120,
+      "duration_sec": 10786,
+      "youtube_archive_id": "cjDqabRKQTk",
+      "source_platform": "youtube",
+      "total_donations_usd": 433.56,
+      "donation_count": 100,
+      "donations_per_min": 2.4118,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.49,
+      "avg_active_chatters": 50.36
     }
   }
 }
