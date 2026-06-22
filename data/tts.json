@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099183,
+  "updated_ts": 1782099190,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -204,7 +204,8 @@
     "come_ask_questions_7202021",
     "come_ask_questions_742021",
     "come_ask_questions_752021",
-    "come_ask_questions_812021"
+    "come_ask_questions_812021",
+    "come_ask_questions_822021"
   ],
   "commands": {
     "stan": 27,
@@ -230,20 +231,20 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 15,
+    "rich": 16,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 179,
+    "face": 180,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 122,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 17,
+    "carlos": 18,
     "away": 5,
     "idea": 1,
     "fear": 3,
@@ -259,7 +260,7 @@
     "cake": 7,
     "d": 1,
     "halo": 2,
-    "hand": 13,
+    "hand": 15,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -354,7 +355,7 @@
     "cap": 1,
     "adventures": 1,
     "head": 2,
-    "like": 4,
+    "like": 5,
     "memory": 1,
     "fight": 1,
     "leaf": 1,
@@ -493,7 +494,9 @@
     "vampire": 1,
     "basketball": 1,
     "intelivsion": 1,
-    "topic": 1
+    "topic": 1,
+    "doody": 1,
+    "ex": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1510,6 +1513,11 @@
       "title": "Come Ask Questions 8/1/2021",
       "start_ts": 1627866688,
       "youtube_archive_id": "RwT15wgAdcA"
+    },
+    "come_ask_questions_822021": {
+      "title": "Come Ask Questions 8/2/2021",
+      "start_ts": 1627951250,
+      "youtube_archive_id": "iEBYcmv5Mew"
     }
   },
   "messages": [
@@ -13357,6 +13365,77 @@
       "message": "Guys who cheat: thats a nice warzone you got there, it'll be a shame if i did something to it",
       "commands": [
         "cheat"
+      ]
+    },
+    {
+      "ts": 1627957929,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Just communicate. ex: be honest u want sex only :)",
+      "commands": [
+        "ex"
+      ]
+    },
+    {
+      "ts": 1627956357,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Meat Canyon be like: U got a tight little manpussi on u, dontcha? Ack! It stinks. Nice and good.",
+      "commands": [
+        "like"
+      ]
+    },
+    {
+      "ts": 1627954927,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Mussolini? What kinda pasta is that? I prefer ravioli myself. Cheese Ravioli. Meat Ravioli. Fried Ravioli. Is aaaaaall gooooooooood:victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627954470,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Trump is such a meme. Anything he says or does is just a joke and I thank entertainers who exploit that at his expense. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627952608,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Sup Gamer Nation. I'm gonna say the N-Word. What I mean is N\u2010O TO DRUGS. Weed is ok doe (blaze it). Keep blazing and gaming. Amogus Chungus Out. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627952284,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "Cocka-Doody: Cold Chicken:_Carlos:",
+      "commands": [
+        "doody",
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1627951536,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_822021",
+      "message": "5 farts to get this show on the road!:_Rich:",
+      "commands": [
+        "rich"
       ]
     },
     {
