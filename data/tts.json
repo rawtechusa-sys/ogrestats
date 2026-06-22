@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100666,
+  "updated_ts": 1782100673,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -378,7 +378,8 @@
     "large_man_with_large_birds_talks_into_microphone_feat_birds",
     "large_men",
     "last_hour_lets_go_road_to_1000_members",
-    "late_hairy_man_action"
+    "late_hairy_man_action",
+    "late_night_man_gaming"
   ],
   "commands": {
     "stan": 27,
@@ -411,7 +412,7 @@
     "turkey": 7,
     "eyes": 84,
     "africa": 1,
-    "face": 350,
+    "face": 351,
     "petersonxhhanson": 1,
     "poo": 20,
     "joy": 255,
@@ -2725,6 +2726,11 @@
       "title": "Late Hairy Man Action",
       "start_ts": 1663898172,
       "youtube_archive_id": "sdz37kqI_GQ"
+    },
+    "late_night_man_gaming": {
+      "title": "Late Night Man Gaming",
+      "start_ts": 1645159854,
+      "youtube_archive_id": "Tsr8QQ-479o"
     }
   },
   "messages": [
@@ -18684,6 +18690,16 @@
       "message": ":rooster::dashing_away:",
       "commands": [
         "away"
+      ]
+    },
+    {
+      "ts": 1645161935,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "late_night_man_gaming",
+      "message": "how much for you to play an RPG rich? :winking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
