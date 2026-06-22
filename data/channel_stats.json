@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101944,
+  "updated_ts": 1782101950,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -562,7 +562,8 @@
     "random_hump_day_man_logan_paul_apology",
     "random_man_stream",
     "random_man_streams_games_with_birds",
-    "random_mid_afrternoon_man_stream"
+    "random_mid_afrternoon_man_stream",
+    "rated_m_for_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9540,6 +9541,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.78,
       "avg_active_chatters": 40.51
+    },
+    "rated_m_for_man": {
+      "stream_id": "rated_m_for_man",
+      "title": "Rated M For Man",
+      "start_ts": 1629507581,
+      "end_ts": 1629514569,
+      "duration_sec": 6988,
+      "youtube_archive_id": "0TFMz2t5Deg",
+      "source_platform": "youtube",
+      "total_donations_usd": 322.82,
+      "donation_count": 93,
+      "donations_per_min": 2.7718,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.91,
+      "avg_active_chatters": 43.06
     }
   }
 }
