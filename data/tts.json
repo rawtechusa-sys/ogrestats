@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101041,
+  "updated_ts": 1782101048,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -429,7 +429,8 @@
     "man_in_chicken_suit_ep6_more_quantum_karen_tv",
     "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
     "man_news_live",
-    "man_on_man_livestream_featuring_masculine_birds"
+    "man_on_man_livestream_featuring_masculine_birds",
+    "man_stares_at_artificial_birds_live"
   ],
   "commands": {
     "stan": 27,
@@ -460,12 +461,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 99,
+    "eyes": 100,
     "africa": 1,
-    "face": 408,
+    "face": 411,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 274,
+    "joy": 275,
     "gameboy": 1,
     "chick": 3,
     "carlos": 34,
@@ -476,7 +477,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 130,
+    "heart": 131,
     "shorts": 1,
     "laughing": 166,
     "news": 20,
@@ -505,7 +506,7 @@
     "up": 41,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 10,
+    "facepalming": 11,
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
@@ -612,7 +613,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 17,
+    "sweat": 18,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -3057,6 +3058,11 @@
       "title": "Man On Man Livestream Featuring Masculine Birds",
       "start_ts": 1683849635,
       "youtube_archive_id": "yUg-a8tlZV0"
+    },
+    "man_stares_at_artificial_birds_live": {
+      "title": "Man Stares At Artificial Birds LIVE",
+      "start_ts": 1647304640,
+      "youtube_archive_id": "yDmjBEnKLHo"
     }
   },
   "messages": [
@@ -20444,6 +20450,86 @@
       "message": "Just do it for the support, the birds and the cucumber :cucumber: gl to everyone",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1647311355,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "This week anime, next week G4 has Furries. :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1647310992,
+      "username": "@TrueDarkMajin",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "This is funny and sad at the same time\u2026.. watching a slow death\u2026.I kinda feel bad\u2026. But it\u2019s their own fault. :grinning_squinting_face::grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647310935,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "I'd like to see your skills in Ninja Gaiden Sigma sometime. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1647309429,
+      "username": "@UglyNacho",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "Bring back \u201cmy jaw\u2019s hittin the ground\u201d :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647307146,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "This is why it's hard to be a female gamer. :pouting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647306392,
+      "username": "@timmarcoux",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "Why are you staring at artificial birds, sir? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1647306066,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "DMed you your new mascot on Twitter You'll :red_heart: it",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1647305967,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "man_stares_at_artificial_birds_live",
+      "message": "Jordan Peterson is now pushing ivermectin :man_facepalming:",
+      "commands": [
+        "facepalming"
       ]
     },
     {
