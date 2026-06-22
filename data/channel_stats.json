@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100400,
+  "updated_ts": 1782100408,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -347,7 +347,8 @@
     "is_the_ps5_revision_that_bad_feat_joker_productions",
     "its_a_question",
     "its_all_about_casey",
-    "its_all_about_keemstar_and_birds"
+    "its_all_about_keemstar_and_birds",
+    "its_all_about_the_tipples"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5885,6 +5886,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.91,
       "avg_active_chatters": 34.68
+    },
+    "its_all_about_the_tipples": {
+      "stream_id": "its_all_about_the_tipples",
+      "title": "It's All About The Tipples",
+      "start_ts": 1739155615,
+      "end_ts": 1739167261,
+      "duration_sec": 11646,
+      "youtube_archive_id": "HalUqrF-Mlg",
+      "source_platform": "youtube",
+      "total_donations_usd": 368.06,
+      "donation_count": 104,
+      "donations_per_min": 1.8962,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.66,
+      "avg_active_chatters": 28.16
     }
   }
 }
