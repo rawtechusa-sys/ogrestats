@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100937,
+  "updated_ts": 1782100944,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -417,7 +417,8 @@
     "live_from_canada_is_pissed_off",
     "live_ghost_hunt_from_canada",
     "logan_paul_is_a_human_turd",
-    "logan_paul_is_a_man"
+    "logan_paul_is_a_man",
+    "lolcow_and_boogie2988"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7075,6 +7076,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.78,
       "avg_active_chatters": 29.02
+    },
+    "lolcow_and_boogie2988": {
+      "stream_id": "lolcow_and_boogie2988",
+      "title": "Lolcow and Boogie2988",
+      "start_ts": 1705530892,
+      "end_ts": 1705543395,
+      "duration_sec": 12503,
+      "youtube_archive_id": "r_nMYw0P--w",
+      "source_platform": "youtube",
+      "total_donations_usd": 329.85,
+      "donation_count": 80,
+      "donations_per_min": 1.5829,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.93,
+      "avg_active_chatters": 46.98
     }
   }
 }
