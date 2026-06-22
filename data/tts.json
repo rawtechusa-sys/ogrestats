@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095390,
+  "updated_ts": 1782095448,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -81,7 +81,8 @@
     "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
     "a_middle_aged_man_reacks",
     "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
-    "a_middle_aged_man_surrounded_by_poultry"
+    "a_middle_aged_man_surrounded_by_poultry",
+    "a_middle_aged_man_surrounded_by_poultry_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -114,10 +115,10 @@
     "turkey": 3,
     "eyes": 20,
     "africa": 1,
-    "face": 68,
+    "face": 69,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 50,
+    "joy": 51,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -654,6 +655,11 @@
       "title": "A Middle-Aged Man Surrounded By Poultry",
       "start_ts": 1653438647,
       "youtube_archive_id": "DP3W0_c8uuA"
+    },
+    "a_middle_aged_man_surrounded_by_poultry_feat_birds": {
+      "title": "A Middle-Aged Man Surrounded By Poultry (Feat. Birds)",
+      "start_ts": 1653608100,
+      "youtube_archive_id": "K_1t5ipUdLY"
     }
   },
   "messages": [
@@ -4632,6 +4638,26 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1653614287,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry_feat_birds",
+      "message": "Jimmy Fallon has the personality of a wet paper towel :face_with_tears_of_joy: find him annoying personally",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1653610971,
+      "username": "@TheCelebrityChase",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry_feat_birds",
+      "message": "Subways Future is going to be in the 7th Chapter:grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
