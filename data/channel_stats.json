@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099257,
+  "updated_ts": 1782099265,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -214,7 +214,8 @@
     "come_ask_questions_watching_my_old_keemstar_debate",
     "come_ask_shirtless_men_questions",
     "come_be_tired_and_miserable_with_me",
-    "come_chat_with_a_man"
+    "come_chat_with_a_man",
+    "come_chat_with_dad_plus_amouranth_disaster"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3624,6 +3625,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.86,
       "avg_active_chatters": 33.56
+    },
+    "come_chat_with_dad_plus_amouranth_disaster": {
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "title": "Come Chat With Dad (Plus Amouranth Disaster)",
+      "start_ts": 1629245742,
+      "end_ts": 1629256507,
+      "duration_sec": 10765,
+      "youtube_archive_id": "FKG7VyvsmW8",
+      "source_platform": "youtube",
+      "total_donations_usd": 358.76,
+      "donation_count": 87,
+      "donations_per_min": 1.9996,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.11,
+      "avg_active_chatters": 36.81
     }
   }
 }
