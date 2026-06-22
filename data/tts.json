@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100098,
+  "updated_ts": 1782100107,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -312,7 +312,8 @@
     "i_just_went_through_youtube_hell_let_me_explain",
     "i_listened_and_made_changes_wings_of_redemption_doc",
     "i_think_i_fixed_it",
-    "i_wasnt_gonna_stream_but_here_i_am"
+    "i_wasnt_gonna_stream_but_here_i_am",
+    "i_won_but_my_pc_is_dying"
   ],
   "commands": {
     "stan": 27,
@@ -713,7 +714,8 @@
     "grandma": 1,
     "rule": 1,
     "reviewmidlifecrisisusa": 1,
-    "reviewbrielarsonusa": 1
+    "reviewbrielarsonusa": 1,
+    "sign": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2270,6 +2272,11 @@
       "title": "I Wasn't Gonna Stream, But Here I Am",
       "start_ts": 1691540279,
       "youtube_archive_id": "OWOfebWwZ0A"
+    },
+    "i_won_but_my_pc_is_dying": {
+      "title": "I WON!!! But My PC Is Dying...",
+      "start_ts": 1738206035,
+      "youtube_archive_id": "L8roMdrYeKw"
     }
   },
   "messages": [
@@ -4354,6 +4361,16 @@
       "message": "Grifters silent about Kingdom Come 2's success :clown_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1738209577,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "i_won_but_my_pc_is_dying",
+      "message": "A possible good sign: There were some Special Elections over the past day in DEEP RED COUNTIES where the Democratic candidate won overwhelmingly.",
+      "commands": [
+        "sign"
       ]
     },
     {
