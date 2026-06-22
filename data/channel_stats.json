@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095449,
+  "updated_ts": 1782095507,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -82,7 +82,8 @@
     "a_middle_aged_man_reacks",
     "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
     "a_middle_aged_man_surrounded_by_poultry",
-    "a_middle_aged_man_surrounded_by_poultry_feat_birds"
+    "a_middle_aged_man_surrounded_by_poultry_feat_birds",
+    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1380,6 +1381,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.17,
       "avg_active_chatters": 27.96
+    },
+    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5": {
+      "stream_id": "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
+      "title": "A Middle-Aged Stoned Man Plays GTA V On The PS5",
+      "start_ts": 1664394538,
+      "end_ts": 1664400177,
+      "duration_sec": 5639,
+      "youtube_archive_id": "Xv639RPUxHQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 105.72,
+      "donation_count": 23,
+      "donations_per_min": 1.1249,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.45,
+      "avg_active_chatters": 32.76
     }
   }
 }
