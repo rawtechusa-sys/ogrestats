@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099757,
+  "updated_ts": 1782099766,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -273,7 +273,8 @@
     "early_sunday_man_a_thon",
     "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
     "eating_extremely_spicy_food_and_watching_weird_crap",
-    "edp445_looked_for_another_cupcake"
+    "edp445_looked_for_another_cupcake",
+    "edp445_strikes_again_dsp_is_salty_more_anker_drama"
   ],
   "commands": {
     "stan": 27,
@@ -299,7 +300,7 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 16,
+    "rich": 17,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -320,7 +321,7 @@
     "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
-    "heart": 83,
+    "heart": 84,
     "shorts": 1,
     "laughing": 82,
     "news": 16,
@@ -627,7 +628,7 @@
     "duck": 1,
     "reads": 1,
     "unlocked": 1,
-    "cupcake": 1,
+    "cupcake": 2,
     "futurama": 1
   },
   "streams": {
@@ -1990,6 +1991,11 @@
       "title": "EDP445 Looked For Another Cupcake",
       "start_ts": 1693964751,
       "youtube_archive_id": "l5n4_1SAIok"
+    },
+    "edp445_strikes_again_dsp_is_salty_more_anker_drama": {
+      "title": "EDP445 Strikes Again, DSP Is Salty, More Anker Drama",
+      "start_ts": 1670376292,
+      "youtube_archive_id": "Z-27pg9CHdY"
     }
   },
   "messages": [
@@ -10319,6 +10325,27 @@
       "message": "Bugatti? More like a used Toyota Camry with 5k :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1670382848,
+      "username": "@inviz_i",
+      "platform": "youtube",
+      "stream_id": "edp445_strikes_again_dsp_is_salty_more_anker_drama",
+      "message": "Tremendous \"security\" :_Rich:",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1670376945,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "edp445_strikes_again_dsp_is_salty_more_anker_drama",
+      "message": "Giving all the cupcakes, :cupcake::cupcake::cupcake::cupcake::cupcake: love you boo! :red_heart:",
+      "commands": [
+        "cupcake",
+        "heart"
       ]
     },
     {
