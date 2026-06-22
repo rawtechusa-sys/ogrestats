@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100850,
+  "updated_ts": 1782100857,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -405,7 +405,8 @@
     "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
     "lets_laugh_at_crap_crowdfunding_campaigns",
     "lets_laugh_at_qvc",
-    "lets_shop_and_then_go_to_war"
+    "lets_shop_and_then_go_to_war",
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6871,6 +6872,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.12,
       "avg_active_chatters": 31.15
+    },
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound": {
+      "stream_id": "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+      "title": "Let's Shop For Bugs For Me To Eat (And Maybe Earthbound)",
+      "start_ts": 1663029438,
+      "end_ts": 1663039046,
+      "duration_sec": 9608,
+      "youtube_archive_id": "6eyfPBivxsA",
+      "source_platform": "youtube",
+      "total_donations_usd": 310.53,
+      "donation_count": 77,
+      "donations_per_min": 1.9392,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.28,
+      "avg_active_chatters": 27.68
     }
   }
 }
