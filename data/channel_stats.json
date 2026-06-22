@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095335,
+  "updated_ts": 1782095391,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -80,7 +80,8 @@
     "a_middle_aged_man_plays_video_games_with_birds",
     "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
     "a_middle_aged_man_reacks",
-    "a_middle_aged_man_suffers_through_kingdom_hearts_iii"
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+    "a_middle_aged_man_surrounded_by_poultry"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1346,6 +1347,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.2,
       "avg_active_chatters": 27.51
+    },
+    "a_middle_aged_man_surrounded_by_poultry": {
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "title": "A Middle-Aged Man Surrounded By Poultry",
+      "start_ts": 1653438647,
+      "end_ts": 1653449291,
+      "duration_sec": 10644,
+      "youtube_archive_id": "DP3W0_c8uuA",
+      "source_platform": "youtube",
+      "total_donations_usd": 362.11,
+      "donation_count": 106,
+      "donations_per_min": 2.0412,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.67,
+      "avg_active_chatters": 37.18
     }
   }
 }
