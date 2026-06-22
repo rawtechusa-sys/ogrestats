@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101531,
+  "updated_ts": 1782101539,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -498,7 +498,8 @@
     "non_stop_vegan_tickling",
     "normal_man_stream_almost_burnt_down_my_house",
     "nye_with_a_man_and_birds",
-    "obese_man_eats_live_on_stream_come_ask_questions"
+    "obese_man_eats_live_on_stream_come_ask_questions",
+    "oh_ice_poseidon"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8452,6 +8453,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.1,
       "avg_active_chatters": 28.16
+    },
+    "oh_ice_poseidon": {
+      "stream_id": "oh_ice_poseidon",
+      "title": "Oh Ice Poseidon...",
+      "start_ts": 1643764913,
+      "end_ts": 1643770783,
+      "duration_sec": 5870,
+      "youtube_archive_id": "24Tsv6QD0zo",
+      "source_platform": "youtube",
+      "total_donations_usd": 209.88,
+      "donation_count": 51,
+      "donations_per_min": 2.1453,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.71,
+      "avg_active_chatters": 27.35
     }
   }
 }
