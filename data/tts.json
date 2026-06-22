@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101619,
+  "updated_ts": 1782101626,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -506,7 +506,8 @@
     "philip_burnell_and_tommy_tallarico_live",
     "philip_burnell_chicken_sandwich_madness",
     "philip_burnell_feat_tickled_television_incorporated",
-    "philip_burnell_is_a_lover_of_horses"
+    "philip_burnell_is_a_lover_of_horses",
+    "philip_burnell_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -537,12 +538,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 12,
-    "eyes": 118,
+    "eyes": 121,
     "africa": 1,
-    "face": 477,
+    "face": 478,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 311,
+    "joy": 314,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
@@ -552,10 +553,10 @@
     "voice": 5,
     "cucumber": 54,
     "biceps": 5,
-    "tongue": 11,
-    "heart": 146,
+    "tongue": 12,
+    "heart": 148,
     "shorts": 2,
-    "laughing": 189,
+    "laughing": 190,
     "news": 22,
     "chicken": 58,
     "cake": 7,
@@ -579,7 +580,7 @@
     "peach": 15,
     "fire": 25,
     "kendal": 1,
-    "up": 44,
+    "up": 45,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 13,
@@ -595,7 +596,7 @@
     "is": 8,
     "spose": 1,
     "sunglasses": 23,
-    "kiss": 24,
+    "kiss": 25,
     "earlier": 1,
     "ghost": 2,
     "bk": 1,
@@ -3573,6 +3574,11 @@
       "title": "Philip Burnell Is A Lover Of Horses",
       "start_ts": 1697329906,
       "youtube_archive_id": "UODhJqw3Xpc"
+    },
+    "philip_burnell_is_a_man": {
+      "title": "Philip Burnell Is A Man",
+      "start_ts": 1689378774,
+      "youtube_archive_id": "qO-2wSWuI7M"
     }
   },
   "messages": [
@@ -12019,6 +12025,136 @@
       "message": "Happy Birthday Rich! Also can I be mod again sir :smiling_face_with_smiling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1689397219,
+      "username": "@crumdrum",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "COD just brings out the worse in people :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689392539,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "play the SpongeBob power wash sim :face_with_tears_of_joy::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689392498,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "Asked you billion times to check out CV2 Remake :squinting_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1689391957,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "this is for chat and rich but what is your age and the youngest you'd date? just curious :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689391669,
+      "username": "@TILR",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "Could I get my mod back, I could use those Blue Cross Blue Shield Benefits, you just mentioned, to help cure my Cat's Diarhea :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1689389358,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "that tiktok woman yesterday, YES YES YES :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689385692,
+      "username": "@HeyItsTippyXO",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "Didn\u2019t catch your commentary. But no worries. You\u2019re still my oomfie Rich. :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1689384860,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "goal? or on til whenever you feel like it??:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1689384363,
+      "username": "@guyshook8239",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": ":thumbs_up::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1689382821,
+      "username": "@trippysavage",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "Cseth says, \"Augie looks Gluten intolerant.. Like he can't eat a Croissant.\" :disguised_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1689380828,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "what we drinking on Sunday then?:eyes::eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689380679,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "All those pictures of quantum last night :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689380428,
+      "username": "@AxleTh3Fox",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man",
+      "message": "I'm 31 and I want a pair of your stained underwear :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
