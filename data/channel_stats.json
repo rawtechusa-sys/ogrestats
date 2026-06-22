@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092684,
+  "updated_ts": 1782092714,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -22,7 +22,8 @@
     "3_men_live_camelot331_and_boogie2988",
     "42_year_old_man_plays_video_games_terribly",
     "a_baked_middle_aged_man_plays_video_games",
-    "a_baked_middle_aged_man_plays_video_games_again"
+    "a_baked_middle_aged_man_plays_video_games_again",
+    "a_beautiful_man_becomes_more_beautiful_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -360,6 +361,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.1,
       "avg_active_chatters": 29.05
+    },
+    "a_beautiful_man_becomes_more_beautiful_live": {
+      "stream_id": "a_beautiful_man_becomes_more_beautiful_live",
+      "title": "A Beautiful Man Becomes More Beautiful LIVE",
+      "start_ts": 1633394352,
+      "end_ts": 1633403436,
+      "duration_sec": 9084,
+      "youtube_archive_id": "SPm7D8bta-M",
+      "source_platform": "youtube",
+      "total_donations_usd": 447.57,
+      "donation_count": 118,
+      "donations_per_min": 2.9562,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.95,
+      "avg_active_chatters": 38.81
     }
   }
 }
