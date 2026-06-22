@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100508,
+  "updated_ts": 1782100517,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -359,7 +359,8 @@
     "just_a_man_streaming_and_answering_questions_feat_birds",
     "just_a_man_streaming_for_a_bit",
     "just_being_a_man",
-    "just_chatting_and_watching_the_completionist_discord_call"
+    "just_chatting_and_watching_the_completionist_discord_call",
+    "just_chatting_feat_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6089,6 +6090,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.18,
       "avg_active_chatters": 45.47
+    },
+    "just_chatting_feat_a_man": {
+      "stream_id": "just_chatting_feat_a_man",
+      "title": "Just Chatting (Feat. A Man)",
+      "start_ts": 1643852362,
+      "end_ts": 1643863573,
+      "duration_sec": 11211,
+      "youtube_archive_id": "i_ewW9QL-1E",
+      "source_platform": "youtube",
+      "total_donations_usd": 204.26,
+      "donation_count": 56,
+      "donations_per_min": 1.0932,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.56,
+      "avg_active_chatters": 29.7
     }
   }
 }
