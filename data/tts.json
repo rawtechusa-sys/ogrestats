@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099555,
+  "updated_ts": 1782099563,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -249,7 +249,8 @@
     "dkoldies_is_at_it_again_part_347",
     "dkoldies_strikes_again",
     "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
-    "donald_trump_magical_ball_requests"
+    "donald_trump_magical_ball_requests",
+    "donald_trump_vs_joe_biden_ai_debate"
   ],
   "commands": {
     "stan": 27,
@@ -282,7 +283,7 @@
     "turkey": 6,
     "eyes": 64,
     "africa": 1,
-    "face": 221,
+    "face": 222,
     "petersonxhhanson": 1,
     "poo": 14,
     "joy": 153,
@@ -296,7 +297,7 @@
     "cucumber": 26,
     "biceps": 3,
     "tongue": 5,
-    "heart": 72,
+    "heart": 74,
     "shorts": 1,
     "laughing": 70,
     "news": 13,
@@ -427,7 +428,7 @@
     "point": 2,
     "superchat": 1,
     "reviewquentintartinousa": 1,
-    "fact": 2,
+    "fact": 3,
     "both": 1,
     "syne": 1,
     "father": 1,
@@ -579,7 +580,8 @@
     "game": 1,
     "dialogue": 1,
     "perspective": 1,
-    "honeybee": 2
+    "honeybee": 2,
+    "locomotive": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1821,6 +1823,11 @@
       "title": "Donald Trump Magical Ball Requests",
       "start_ts": 1684973346,
       "youtube_archive_id": "EBdR03MF548"
+    },
+    "donald_trump_vs_joe_biden_ai_debate": {
+      "title": "Donald Trump Vs. Joe Biden AI Debate",
+      "start_ts": 1687132897,
+      "youtube_archive_id": "M-MIzEoU0J0"
     }
   },
   "messages": [
@@ -7293,6 +7300,56 @@
       "message": "Hello father, just got here. Hot take: Khet has nothing to do with his weird reactions to anything remotely sexual, he\u2019s always been weird but before he\u2019d hide discomfort behind crappy jokes. Cheers!",
       "commands": [
         "take"
+      ]
+    },
+    {
+      "ts": 1687145427,
+      "username": "@qvonmonocle",
+      "platform": "youtube",
+      "stream_id": "donald_trump_vs_joe_biden_ai_debate",
+      "message": "Fun Fact: she's a trust fund baby.",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1687140075,
+      "username": "@doommama",
+      "platform": "youtube",
+      "stream_id": "donald_trump_vs_joe_biden_ai_debate",
+      "message": "How much for you to dress full leather daddy? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1687138052,
+      "username": "@AndrewRS19",
+      "platform": "youtube",
+      "stream_id": "donald_trump_vs_joe_biden_ai_debate",
+      "message": "Happy Fathers Day Poppa Rich. I hope your daughter is well, & you can have her home soon. Thankful to have you to watch as I get my kids to bed. :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1687136320,
+      "username": "@daboiracing3848",
+      "platform": "youtube",
+      "stream_id": "donald_trump_vs_joe_biden_ai_debate",
+      "message": "Choo Choo :locomotive: next stop Karen's house",
+      "commands": [
+        "locomotive"
+      ]
+    },
+    {
+      "ts": 1687134529,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "donald_trump_vs_joe_biden_ai_debate",
+      "message": "What makes me laugh tho is say idk \u201cPok\u00e9maine \u201cwill get $500 and she be like \u201cok thanks tickleshitz, bob sends $5 and then \u201cOMG THANKS BOB, I :red_heart: U!!!\u201d",
+      "commands": [
+        "heart"
       ]
     },
     {
