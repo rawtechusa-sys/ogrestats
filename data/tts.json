@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100256,
+  "updated_ts": 1782100265,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -330,7 +330,8 @@
     "im_kind_of_back_what_happened",
     "im_not_dead",
     "im_not_well_endowed",
-    "im_now_a_home_owner"
+    "im_now_a_home_owner",
+    "im_so_sorry"
   ],
   "commands": {
     "stan": 27,
@@ -366,7 +367,7 @@
     "face": 314,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 225,
+    "joy": 227,
     "gameboy": 1,
     "chick": 2,
     "carlos": 28,
@@ -377,7 +378,7 @@
     "cucumber": 39,
     "biceps": 3,
     "tongue": 6,
-    "heart": 103,
+    "heart": 104,
     "shorts": 1,
     "laughing": 125,
     "news": 18,
@@ -443,8 +444,8 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 2,
-    "tomorrow": 15,
-    "horse": 6,
+    "tomorrow": 16,
+    "horse": 7,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -458,7 +459,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 3,
-    "mouth": 12,
+    "mouth": 13,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -2393,6 +2394,11 @@
       "title": "I'm Now A Home Owner...",
       "start_ts": 1632274481,
       "youtube_archive_id": "rqfdyfXe33Q"
+    },
+    "im_so_sorry": {
+      "title": "I'm So Sorry...",
+      "start_ts": 1627175923,
+      "youtube_archive_id": "sOoguesUiaw"
     }
   },
   "messages": [
@@ -21573,6 +21579,66 @@
       "message": "I emailed you like a straight up Stan trying to talk about content creation to your rich@reviewtechusa.com email brother. :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1627180389,
+      "username": "@ABritishPotato",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "roast me daddy :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1627179288,
+      "username": "@elitose",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "Rich Tomorrow: I'M STILL NOT SORRY! EAT MY DONKEY",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1627179271,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "Imagine Ratchet & Clank Rift Apart on a SD card.:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1627178152,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "If ur my body, my choice. U sound pro-life :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1627177809,
+      "username": "@RUDAMENTRY",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "a supervisor sent and employee home for having the virus and never told anyone or had the building decontaminated I work in the same building. :face_with_symbols_on_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1627176296,
+      "username": "@MelodieOctavia",
+      "platform": "youtube",
+      "stream_id": "im_so_sorry",
+      "message": "Rich is sorry that you don't have a spoon nice enough to eat his :horse: with.",
+      "commands": [
+        "horse"
       ]
     },
     {
