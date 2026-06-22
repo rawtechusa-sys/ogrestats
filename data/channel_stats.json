@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102555,
+  "updated_ts": 1782102561,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -662,7 +662,8 @@
     "the_may_1st_man_extravaganza_dad_is_back",
     "the_middle_aged_man_stream",
     "the_ouya_console_failure_experience",
-    "the_perfect_man_stream"
+    "the_perfect_man_stream",
+    "the_philip_burnell_dspgaming_marathon_continues"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11240,6 +11241,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.57,
       "avg_active_chatters": 25.29
+    },
+    "the_philip_burnell_dspgaming_marathon_continues": {
+      "stream_id": "the_philip_burnell_dspgaming_marathon_continues",
+      "title": "The Philip Burnell (DSPGaming) Marathon Continues!",
+      "start_ts": 1645231989,
+      "end_ts": 1645250968,
+      "duration_sec": 18979,
+      "youtube_archive_id": "_YSi4qVN7BQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 447.58,
+      "donation_count": 100,
+      "donations_per_min": 1.415,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.77,
+      "avg_active_chatters": 25.88
     }
   }
 }
