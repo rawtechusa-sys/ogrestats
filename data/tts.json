@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096708,
+  "updated_ts": 1782096770,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -103,7 +103,8 @@
     "a_stream_for_men",
     "a_streaming_man",
     "a_surprise_stream",
-    "a_technical_test_man_stream"
+    "a_technical_test_man_stream",
+    "a_thanksgiving_manbird_stream"
   ],
   "commands": {
     "stan": 27,
@@ -152,9 +153,9 @@
     "tongue": 3,
     "heart": 36,
     "shorts": 1,
-    "laughing": 37,
+    "laughing": 38,
     "news": 6,
-    "chicken": 12,
+    "chicken": 13,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -809,6 +810,11 @@
       "title": "A Technical Test Man Stream",
       "start_ts": 1689220746,
       "youtube_archive_id": "4Qm509KIDPI"
+    },
+    "a_thanksgiving_manbird_stream": {
+      "title": "A Thanksgiving Man/Bird Stream",
+      "start_ts": 1637893195,
+      "youtube_archive_id": "A5LGvIbOWqU"
     }
   },
   "messages": [
@@ -6769,6 +6775,26 @@
       "message": "the way they're marketing it, it's targeting people like my grandparents who can't find a power button on their laptop:loudly_crying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1637898851,
+      "username": "@FlukasMcDoogle",
+      "platform": "youtube",
+      "stream_id": "a_thanksgiving_manbird_stream",
+      "message": "Rich, I am fatter, balder, older, louder mouthed and a bigger dumbass than you. Happy Thanksgiving to my favorite loudmouth on YouTube! :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1637898268,
+      "username": "@derylalexander189",
+      "platform": "youtube",
+      "stream_id": "a_thanksgiving_manbird_stream",
+      "message": "Feed the birds, hit the like :thumbs_up:. They're hungry.:chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
