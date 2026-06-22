@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100819,
+  "updated_ts": 1782100827,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -399,7 +399,8 @@
     "lets_discuss_xbox_and_activision",
     "lets_have_some_fun",
     "lets_laugh_at_alex_jones",
-    "lets_laugh_at_alex_jones_again"
+    "lets_laugh_at_alex_jones_again",
+    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -432,7 +433,7 @@
     "turkey": 7,
     "eyes": 93,
     "africa": 1,
-    "face": 376,
+    "face": 378,
     "petersonxhhanson": 1,
     "poo": 23,
     "joy": 260,
@@ -448,7 +449,7 @@
     "tongue": 7,
     "heart": 121,
     "shorts": 1,
-    "laughing": 153,
+    "laughing": 155,
     "news": 19,
     "chicken": 43,
     "cake": 7,
@@ -467,12 +468,12 @@
     "kill": 2,
     "enough": 1,
     "disclaimer": 1,
-    "hole": 6,
-    "rooster": 40,
+    "hole": 7,
+    "rooster": 41,
     "peach": 12,
     "fire": 22,
     "kendal": 1,
-    "up": 37,
+    "up": 38,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -569,7 +570,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 14,
+    "droplets": 15,
     "tomato": 3,
     "hearts": 9,
     "million": 1,
@@ -869,7 +870,8 @@
     "era": 1,
     "classic": 1,
     "quartering": 2,
-    "jones": 1
+    "jones": 1,
+    "constantly": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2861,6 +2863,11 @@
       "title": "Let's Laugh At Alex Jones Again",
       "start_ts": 1659924091,
       "youtube_archive_id": "erykKZYNZpc"
+    },
+    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man": {
+      "title": "Let's Laugh At Alex Jones And Philip Burnell (Is A Man)",
+      "start_ts": 1659830104,
+      "youtube_archive_id": "YWb8lsT1eFs"
     }
   },
   "messages": [
@@ -15938,6 +15945,78 @@
       "message": "Was at the gym today and accidentally saw a grandpa's mushroom, he was weighing himself naked. It looked like an elephants nose...it's haunting me :disappointed_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1659838432,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "So does this mean you're part of DSP lore now? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1659836730,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "DSP mad?:thinking_face: He didn't get John Cena in WWE, huh? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "face",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1659836576,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "Slow mode on? how dare you!? :rolling_on_the_floor_laughing:JK. much love bro :beaming_face_with_smiling_eyes::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1659832952,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "Wings says constantly: \u201cI only do this for money\u201d",
+      "commands": [
+        "constantly"
+      ]
+    },
+    {
+      "ts": 1659831593,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "Finishing touches on my Elden Ring highlight reel of ya! Tried to surprise you by getting Jay to do the thumbnail, but my DM's to him die :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1659830439,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "if I had know it was gonna be that kinda party I'd have stuck my :rooster: in the mashed potatoes how are ya Rich. got a PS5, picked up purple plates for it.",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1659830398,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "message": "If I relax my :hole: I will only end up soiling my garments and that\u2019s not good while in a pool. Other than that; come on in Rich, the water is fine :smiling_face_with_sunglasses::rooster::dashing_away::sweat_droplets:",
+      "commands": [
+        "hole",
+        "droplets"
       ]
     },
     {
