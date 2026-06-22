@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099580,
+  "updated_ts": 1782099588,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -252,7 +252,8 @@
     "donald_trump_magical_ball_requests",
     "donald_trump_vs_joe_biden_ai_debate",
     "dr_cocos_house_of_healing",
-    "drinking_stories_with_intro_guy"
+    "drinking_stories_with_intro_guy",
+    "drunk_women_phil_and_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -288,10 +289,10 @@
     "face": 224,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 153,
+    "joy": 154,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 22,
+    "carlos": 23,
     "away": 5,
     "idea": 2,
     "fear": 3,
@@ -301,7 +302,7 @@
     "tongue": 5,
     "heart": 75,
     "shorts": 1,
-    "laughing": 71,
+    "laughing": 72,
     "news": 13,
     "chicken": 33,
     "cake": 7,
@@ -1842,6 +1843,11 @@
       "title": "Drinking Stories With Intro Guy",
       "start_ts": 1556062673,
       "youtube_archive_id": "NH643bmMdEs"
+    },
+    "drunk_women_phil_and_a_man": {
+      "title": "Drunk Women, Phil, And A Man",
+      "start_ts": 1685059216,
+      "youtube_archive_id": "9ioZrJiZkcY"
     }
   },
   "messages": [
@@ -7483,6 +7489,36 @@
       "platform": "youtube",
       "stream_id": "a_short_stream_with_a_man",
       "message": "Dad check your dms, i sent something for you and Jay :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1685070217,
+      "username": "@PutoPlatano",
+      "platform": "youtube",
+      "stream_id": "drunk_women_phil_and_a_man",
+      "message": "How sad is a person's life that a target display upsets them so much...they need a good tickling :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1685066486,
+      "username": "@HaunchoJackHD",
+      "platform": "youtube",
+      "stream_id": "drunk_women_phil_and_a_man",
+      "message": "Ps5 controller got joystick drift after a month yet my ps4 controller form 2014 still doesn\u2019t have it :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1685060000,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "drunk_women_phil_and_a_man",
+      "message": "Sony's big penultimate reveal? a MOVIE TRAILER! :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
       ]
