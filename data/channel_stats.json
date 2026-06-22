@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101050,
+  "updated_ts": 1782101057,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -433,7 +433,8 @@
     "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
     "man_news_live",
     "man_on_man_livestream_featuring_masculine_birds",
-    "man_stares_at_artificial_birds_live"
+    "man_stares_at_artificial_birds_live",
+    "man_versus_bird_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7347,6 +7348,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.87,
       "avg_active_chatters": 38.31
+    },
+    "man_versus_bird_live": {
+      "stream_id": "man_versus_bird_live",
+      "title": "Man Versus Bird LIVE",
+      "start_ts": 1628640442,
+      "end_ts": 1628648185,
+      "duration_sec": 7743,
+      "youtube_archive_id": "65NR5mRNPz4",
+      "source_platform": "youtube",
+      "total_donations_usd": 384.2,
+      "donation_count": 84,
+      "donations_per_min": 2.9771,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.55,
+      "avg_active_chatters": 37.25
     }
   }
 }
