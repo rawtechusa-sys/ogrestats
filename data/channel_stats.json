@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102469,
+  "updated_ts": 1782102474,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -647,7 +647,8 @@
     "the_four_hour_man_stream",
     "the_fragrance_of_my_farts",
     "the_game_awards_2022_feat_jay_and_birds",
-    "the_game_awards_and_a_man_with_birds"
+    "the_game_awards_and_a_man_with_birds",
+    "the_gamerfrommars_chris_chan_documentary"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10985,6 +10986,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 40.03,
       "avg_active_chatters": 96.59
+    },
+    "the_gamerfrommars_chris_chan_documentary": {
+      "stream_id": "the_gamerfrommars_chris_chan_documentary",
+      "title": "The GamerFromMars Chris Chan Documentary",
+      "start_ts": 1647823183,
+      "end_ts": 1647830544,
+      "duration_sec": 7361,
+      "youtube_archive_id": "4q5k96FVb5I",
+      "source_platform": "youtube",
+      "total_donations_usd": 238.82,
+      "donation_count": 56,
+      "donations_per_min": 1.9466,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.39,
+      "avg_active_chatters": 42.14
     }
   }
 }
