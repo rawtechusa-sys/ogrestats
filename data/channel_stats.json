@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101256,
+  "updated_ts": 1782101263,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -461,7 +461,8 @@
     "more_amico_family_fun",
     "more_chris_chan_insanity",
     "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
-    "more_chris_chan_insanity_then_maybe_elden_ring"
+    "more_chris_chan_insanity_then_maybe_elden_ring",
+    "more_cringe_feat_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7823,6 +7824,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.48,
       "avg_active_chatters": 33.73
+    },
+    "more_cringe_feat_a_man": {
+      "stream_id": "more_cringe_feat_a_man",
+      "title": "More Cringe (Feat. A Man)",
+      "start_ts": 1671322102,
+      "end_ts": 1671330574,
+      "duration_sec": 8472,
+      "youtube_archive_id": "2FHV4QJwQYA",
+      "source_platform": "youtube",
+      "total_donations_usd": 275.43,
+      "donation_count": 70,
+      "donations_per_min": 1.9506,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.54,
+      "avg_active_chatters": 34.3
     }
   }
 }
