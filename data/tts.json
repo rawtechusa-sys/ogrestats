@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099125,
+  "updated_ts": 1782099134,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -197,7 +197,8 @@
     "come_ask_me_literally_anything_this_is_a_mistake",
     "come_ask_me_things",
     "come_ask_me_whatever_the_hell_you_want",
-    "come_ask_questions"
+    "come_ask_questions",
+    "come_ask_questions_10_9_2021"
   ],
   "commands": {
     "stan": 27,
@@ -230,10 +231,10 @@
     "turkey": 5,
     "eyes": 54,
     "africa": 1,
-    "face": 162,
+    "face": 167,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 121,
+    "joy": 122,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -244,9 +245,9 @@
     "cucumber": 18,
     "biceps": 3,
     "tongue": 4,
-    "heart": 56,
+    "heart": 58,
     "shorts": 1,
-    "laughing": 56,
+    "laughing": 57,
     "news": 12,
     "chicken": 28,
     "cake": 7,
@@ -266,11 +267,11 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 21,
+    "rooster": 22,
     "peach": 3,
-    "fire": 11,
+    "fire": 12,
     "kendal": 1,
-    "up": 14,
+    "up": 15,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -285,8 +286,8 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 4,
-    "kiss": 12,
+    "sunglasses": 5,
+    "kiss": 13,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -481,7 +482,8 @@
     "here": 1,
     "hamburger": 1,
     "chipmunk": 1,
-    "cupcaketv": 1
+    "cupcaketv": 1,
+    "stuff": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1463,6 +1465,11 @@
       "title": "Come Ask Questions",
       "start_ts": 1669776082,
       "youtube_archive_id": "jLng_LB1qyc"
+    },
+    "come_ask_questions_10_9_2021": {
+      "title": "Come Ask Questions 10-9-2021",
+      "start_ts": 1633824297,
+      "youtube_archive_id": "USJkNH9samE"
     }
   },
   "messages": [
@@ -12131,6 +12138,137 @@
       "message": "Earthworm Jim 4 is a thing & Its Amico Exclusive :angry_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1633840592,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "Didnt get a SNES til 96 Pilotwings and DK Country:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1633838392,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "look up epic rap battles of history w/Napoleon v Napoleon :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1633838273,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "gosh darn it rich, make yourself a dang casedilla:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1633834571,
+      "username": "@Pat12345-A",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "I just paid for it the under card is good :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1633833959,
+      "username": "@CaMMA30k",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "Rich do you like El Pollo Loco? Mac n cheese is :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1633833643,
+      "username": "@luisel_menor5215",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "PETA wants to cancel far cry 6 cuz of :rooster: fighting",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1633833391,
+      "username": "@SwowChowsk",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "I fixed a cops computer with beast on it :nauseated_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1633831017,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "Damn when games had soul :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1633827809,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "She\u2019s cute tho. I-I\u2019d hold her hand...UWU :smirking_face: :smirking_face: :red_heart:",
+      "commands": [
+        "face",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1633826896,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "How QVC sells their stuff: have different colors and make a big deal about it.",
+      "commands": [
+        "stuff"
+      ]
+    },
+    {
+      "ts": 1633825178,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "Im finally going back to school, majoring billing and coding, wish me luck :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1633825060,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "I got the job at radioshack today :grinning_face: feels weird to work at the last one in existance.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1633824963,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_10_9_2021",
+      "message": "Hi rich. Hope you are doing well. I\u2019m feeling nauseous but doing okay. Here is a smooch for the chat::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
       ]
     },
     {
