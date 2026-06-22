@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098616,
+  "updated_ts": 1782098624,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -134,7 +134,8 @@
     "andrew_taint_is_a_man",
     "andrew_tate_is_a_man",
     "andrew_tate_man_stream_he_got_arrested",
-    "angrily_chatting_and_playing_elden_ring"
+    "angrily_chatting_and_playing_elden_ring",
+    "another_interesting_pat_the_nes_punk_twist"
   ],
   "commands": {
     "stan": 27,
@@ -165,12 +166,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 30,
+    "eyes": 31,
     "africa": 1,
     "face": 111,
     "petersonxhhanson": 1,
     "poo": 6,
-    "joy": 86,
+    "joy": 88,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -297,7 +298,7 @@
     "struck": 1,
     "joker": 1,
     "racehorse": 2,
-    "question": 4,
+    "question": 5,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
@@ -362,7 +363,9 @@
     "wonka": 1,
     "simulator": 1,
     "though": 1,
-    "salt": 1
+    "salt": 1,
+    "x": 1,
+    "now": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1029,6 +1032,11 @@
       "title": "Angrily Chatting And Playing Elden Ring",
       "start_ts": 1648512684,
       "youtube_archive_id": "xSVmDNIboUM"
+    },
+    "another_interesting_pat_the_nes_punk_twist": {
+      "title": "Another Interesting Pat The NES Punk Twist",
+      "start_ts": 1675901084,
+      "youtube_archive_id": "_cqBgtnAxJM"
     }
   },
   "messages": [
@@ -5902,6 +5910,66 @@
       "message": "You are a man! But for seriously you are so awesome for doing this for Rich, I will always come down for you. :kissing_face_with_closed_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1675907617,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "I\u2019m back for another stream with Birdfather. Do you like my nickname for you? :beaming_face_with_smiling_eyes: If not, I\u2019ll discard it. Here\u2019s five dollars for being awesome.",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1675906965,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "Honest question: how old are these clowns?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1675906168,
+      "username": "@Superyeet482",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "I said DSP looks like Joel Edgerton from the Star Wars Prequels lol but Meth\u2019d out:face_with_tears_of_joy: sorry listening to the stream while frantically at work",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675905875,
+      "username": "@Superyeet482",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "Sent my last SC as you went to go to the bathroom lol\u2026if you look at a picture Rich, DSP looks like a Meth\u2019d out Joel Edgerton:skull:Luke Skywalkers Uncle from the prequels\u2026worth a google:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675904015,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "Youtube mods right now: \"....The fuck is guy?\"",
+      "commands": [
+        "now"
+      ]
+    },
+    {
+      "ts": 1675902646,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "message": "Toy 2 X: Toys In Space",
+      "commands": [
+        "x"
       ]
     },
     {
