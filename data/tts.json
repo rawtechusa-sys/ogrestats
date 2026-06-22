@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100812,
+  "updated_ts": 1782100819,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -398,7 +398,8 @@
     "lets_discuss_the_steam_deck",
     "lets_discuss_xbox_and_activision",
     "lets_have_some_fun",
-    "lets_laugh_at_alex_jones"
+    "lets_laugh_at_alex_jones",
+    "lets_laugh_at_alex_jones_again"
   ],
   "commands": {
     "stan": 27,
@@ -429,9 +430,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 92,
+    "eyes": 93,
     "africa": 1,
-    "face": 375,
+    "face": 376,
     "petersonxhhanson": 1,
     "poo": 23,
     "joy": 260,
@@ -447,7 +448,7 @@
     "tongue": 7,
     "heart": 121,
     "shorts": 1,
-    "laughing": 151,
+    "laughing": 153,
     "news": 19,
     "chicken": 43,
     "cake": 7,
@@ -568,7 +569,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 13,
+    "droplets": 14,
     "tomato": 3,
     "hearts": 9,
     "million": 1,
@@ -867,7 +868,8 @@
     "as": 1,
     "era": 1,
     "classic": 1,
-    "quartering": 2
+    "quartering": 2,
+    "jones": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2854,6 +2856,11 @@
       "title": "Let's Laugh At Alex Jones",
       "start_ts": 1659746871,
       "youtube_archive_id": "xeDkJ2zB3KE"
+    },
+    "lets_laugh_at_alex_jones_again": {
+      "title": "Let's Laugh At Alex Jones Again",
+      "start_ts": 1659924091,
+      "youtube_archive_id": "erykKZYNZpc"
     }
   },
   "messages": [
@@ -15871,6 +15878,66 @@
       "message": "Coldfeet Crowder called for a civil war :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1659928657,
+      "username": "@LinkleProductions",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "Alex Jones: A Man who needs to take a shit",
+      "commands": [
+        "jones"
+      ]
+    },
+    {
+      "ts": 1659926304,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "i wonder if alex jones experimented at camp? :eggplant::sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1659926033,
+      "username": "@348frank348",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "you didn't read my super chat 2 yrs ago :face_with_rolling_eyes::face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1659924974,
+      "username": "@CronusSaturn",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "Rich send DSP gaming and Alex Jones a cucumber. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1659924658,
+      "username": "@CronusSaturn",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "Rich plz read my other superchat :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1659924575,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "message": "Was at the gym today and accidentally saw a grandpa's mushroom, he was weighing himself naked. It looked like an elephants nose...it's haunting me :disappointed_face:",
+      "commands": [
+        "face"
       ]
     },
     {
