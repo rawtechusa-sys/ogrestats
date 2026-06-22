@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100302,
+  "updated_ts": 1782100311,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -336,7 +336,8 @@
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
     "im_wired_and_streaming_cause_why_not",
-    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds"
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
+    "intellivision_amico_family_fun_and_the_quartering_swatted"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5698,6 +5699,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.92,
       "avg_active_chatters": 33.7
+    },
+    "intellivision_amico_family_fun_and_the_quartering_swatted": {
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "title": "Intellivision Amico Family Fun And The Quartering Swatted",
+      "start_ts": 1655337418,
+      "end_ts": 1655347748,
+      "duration_sec": 10330,
+      "youtube_archive_id": "W5l8iSHKqGk",
+      "source_platform": "youtube",
+      "total_donations_usd": 602.09,
+      "donation_count": 128,
+      "donations_per_min": 3.4971,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.03,
+      "avg_active_chatters": 39.93
     }
   }
 }
