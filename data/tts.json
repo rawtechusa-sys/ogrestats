@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100054,
+  "updated_ts": 1782100063,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -307,7 +307,8 @@
     "i_got_screwed",
     "i_got_trolled_hard_by_ethan_ralph",
     "i_have_no_water_so_i_may_as_well_keep_streaming",
-    "i_have_no_words_and_im_frustrated"
+    "i_have_no_words_and_im_frustrated",
+    "i_have_some_very_important_things_to_discuss"
   ],
   "commands": {
     "stan": 27,
@@ -401,7 +402,7 @@
     "ghost": 1,
     "bk": 1,
     "gift": 3,
-    "bird": 8,
+    "bird": 10,
     "richsmile": 5,
     "dsp": 19,
     "story": 1,
@@ -2237,6 +2238,11 @@
       "title": "I Have No Words And I'm Frustrated",
       "start_ts": 1632527209,
       "youtube_archive_id": "Y7X-C-nnK50"
+    },
+    "i_have_some_very_important_things_to_discuss": {
+      "title": "I Have Some Very Important Things To Discuss",
+      "start_ts": 1719510663,
+      "youtube_archive_id": "hgMxPFsbfC0"
     }
   },
   "messages": [
@@ -4361,6 +4367,16 @@
       "message": "I LOVE YOU :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1719511314,
+      "username": "@karasub2836",
+      "platform": "youtube",
+      "stream_id": "i_have_some_very_important_things_to_discuss",
+      "message": "wait wat going on..... hey big bird :bird: :black_bird:",
+      "commands": [
+        "bird"
       ]
     },
     {
