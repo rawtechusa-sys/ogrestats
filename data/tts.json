@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100869,
+  "updated_ts": 1782100877,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -406,7 +406,8 @@
     "lets_shop_and_then_go_to_war",
     "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
-    "lets_talk_for_a_bit_boogie2988_and_quantum_tv"
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+    "lets_watch_becky_screw_me_over"
   ],
   "commands": {
     "stan": 27,
@@ -439,9 +440,9 @@
     "turkey": 7,
     "eyes": 95,
     "africa": 1,
-    "face": 388,
+    "face": 390,
     "petersonxhhanson": 1,
-    "poo": 23,
+    "poo": 24,
     "joy": 263,
     "gameboy": 1,
     "chick": 2,
@@ -456,7 +457,7 @@
     "heart": 124,
     "shorts": 1,
     "laughing": 158,
-    "news": 19,
+    "news": 20,
     "chicken": 44,
     "cake": 7,
     "d": 4,
@@ -476,7 +477,7 @@
     "disclaimer": 1,
     "hole": 7,
     "rooster": 41,
-    "peach": 13,
+    "peach": 14,
     "fire": 23,
     "kendal": 1,
     "up": 39,
@@ -519,7 +520,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
-    "tomorrow": 19,
+    "tomorrow": 20,
     "horse": 11,
     "bug": 1,
     "violin": 1,
@@ -578,7 +579,7 @@
     "rocket": 1,
     "droplets": 15,
     "tomato": 3,
-    "hearts": 9,
+    "hearts": 10,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -2908,6 +2909,11 @@
       "title": "Let's Talk For A Bit... (Boogie2988 and Quantum TV)",
       "start_ts": 1696125034,
       "youtube_archive_id": "kAF8plMsVKc"
+    },
+    "lets_watch_becky_screw_me_over": {
+      "title": "Let's Watch Becky Screw Me Over",
+      "start_ts": 1739494883,
+      "youtube_archive_id": "gRl_P_BI040"
     }
   },
   "messages": [
@@ -4720,6 +4726,76 @@
       "message": "this is for :fuel_pump:",
       "commands": [
         "pump"
+      ]
+    },
+    {
+      "ts": 1739504656,
+      "username": "@HollowToob",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Let's talk on tech talk today :two_hearts: you can solo this my guy. you got this! Let's get ready for a banger! Your co-host was chomping out in a monkey suit with bananas and concussed himself so rip.",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1739503454,
+      "username": "@IWantTo69WithRich",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Watching a DSP stream Is like playing a live service game. Everything is locked behind a paywall. Pay him $20 to take a :pile_of_poo:",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1739501435,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Yeah i take mounjaro once a week. Unlike Becky, i put in the work to lose the weight. This latina is classy while she will always be trashy. :peach::face_blowing_a_kiss::slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1739500890,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "At least i gave you one more. :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1739500116,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Dang Flo went from progressive to selling :peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1739498892,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Breaking news: Danny Devito spotted at NY Walmart",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1739496533,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "message": "Rich tomorrow: so Becky Is making her own yeast beer, let\u2019s get into.",
+      "commands": [
+        "tomorrow"
       ]
     },
     {
