@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100265,
+  "updated_ts": 1782100274,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -331,7 +331,8 @@
     "im_not_dead",
     "im_not_well_endowed",
     "im_now_a_home_owner",
-    "im_so_sorry"
+    "im_so_sorry",
+    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged"
   ],
   "commands": {
     "stan": 27,
@@ -382,7 +383,7 @@
     "shorts": 1,
     "laughing": 125,
     "news": 18,
-    "chicken": 38,
+    "chicken": 39,
     "cake": 7,
     "d": 4,
     "halo": 3,
@@ -2399,6 +2400,11 @@
       "title": "I'm So Sorry...",
       "start_ts": 1627175923,
       "youtube_archive_id": "sOoguesUiaw"
+    },
+    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged": {
+      "title": "I'm Tired, But G4TV and Intellivision Family Friendly News Has Emerged",
+      "start_ts": 1663209270,
+      "youtube_archive_id": "aacfAwtfLig"
     }
   },
   "messages": [
@@ -12964,6 +12970,16 @@
       "message": "RIP Carlos :loudly_crying_face::broken_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1663210043,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
+      "message": "I will become a dad next year! with birds! :chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
