@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100168,
+  "updated_ts": 1782100177,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -320,7 +320,8 @@
     "im_a_man",
     "im_at_a_crossroads",
     "im_back",
-    "im_back_and_on_a_warpath"
+    "im_back_and_on_a_warpath",
+    "im_back_and_only_half_dead_come_hang_out"
   ],
   "commands": {
     "stan": 27,
@@ -353,10 +354,10 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 298,
+    "face": 302,
     "petersonxhhanson": 1,
-    "poo": 17,
-    "joy": 219,
+    "poo": 18,
+    "joy": 220,
     "gameboy": 1,
     "chick": 1,
     "carlos": 26,
@@ -364,7 +365,7 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 36,
+    "cucumber": 37,
     "biceps": 3,
     "tongue": 6,
     "heart": 99,
@@ -727,7 +728,8 @@
     "right": 1,
     "centrist": 1,
     "club": 1,
-    "turtle": 1
+    "turtle": 1,
+    "psa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2324,6 +2326,11 @@
       "title": "I'm Back And On A Warpath",
       "start_ts": 1641168322,
       "youtube_archive_id": "7rPn8JoNSbY"
+    },
+    "im_back_and_only_half_dead_come_hang_out": {
+      "title": "I'm Back And Only Half-Dead. Come Hang Out!",
+      "start_ts": 1646958520,
+      "youtube_archive_id": "P6a1wZAwkm8"
     }
   },
   "messages": [
@@ -15570,6 +15577,86 @@
       "message": "With Nintendo pulling out :smiling_face_with_horns: of Russia, looks like that terrible Nintendo of Russia president is probably out of a job indefinitely",
       "commands": [
         "horns"
+      ]
+    },
+    {
+      "ts": 1646966545,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "I voted for Biden but I miss Donald care :sad_but_relieved_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1646961877,
+      "username": "@garrisonbroome5525",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "they can eat a cucumber :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1646961453,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "Fart sound + stinks like :pile_of_poo: sound + wings MMM sound",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1646960928,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "So i got laid off in my job, i was in a Russian company, so you probably get the hint :frowning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1646960232,
+      "username": "@jcruz6453",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "I was just thinking today. Ukraine is being invaded and DSP never got his Burger King chicken sandwich situation resolved. both = as bad. :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1646960096,
+      "username": "@maltz6172",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "Wassup Rich, got any tips with coping during a bad semester of college? Realizing this semester is not gonna go my way :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1646960093,
+      "username": "@timmarcoux",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "I watched once upon a time in Hollywood today, weird movie, is 21 too young to watch Tarantino? :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1646959284,
+      "username": "@RobustUrbanGarlicFlavor",
+      "platform": "youtube",
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "message": "Glad you're better(Phil flop) We interrupt your regularly scheduled broadcast for a PSA: I Dream of a World Where everybody knows thatthebirdistheword",
+      "commands": [
+        "psa"
       ]
     },
     {
