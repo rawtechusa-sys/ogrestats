@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094838,
+  "updated_ts": 1782094891,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -71,7 +71,8 @@
     "a_man_marathon_feat_birds",
     "a_man_stream_then_some_metroid_dread",
     "a_man_streams_like_a_man",
-    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions"
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+    "a_man_vs_the_playstation_showcase_2023_playstationshowcase"
   ],
   "commands": {
     "stan": 27,
@@ -102,12 +103,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 17,
+    "eyes": 18,
     "africa": 1,
     "face": 51,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 46,
+    "joy": 47,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -582,6 +583,11 @@
       "title": "A Man Unboxes The Retail Aya Neo  Console (Come Ask Questions)",
       "start_ts": 1628122077,
       "youtube_archive_id": "dy_OwsgbTS8"
+    },
+    "a_man_vs_the_playstation_showcase_2023_playstationshowcase": {
+      "title": "A Man Vs. The PlayStation Showcase 2023 #PlayStationShowcase",
+      "start_ts": 1684955591,
+      "youtube_archive_id": "3nHYUnNJ1z4"
     }
   },
   "messages": [
@@ -3563,6 +3569,26 @@
       "message": "Hello father, just got here. Hot take: Khet has nothing to do with his weird reactions to anything remotely sexual, he\u2019s always been weird but before he\u2019d hide discomfort behind crappy jokes. Cheers!",
       "commands": [
         "take"
+      ]
+    },
+    {
+      "ts": 1684960897,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
+      "message": "LSD - Lucy in the sky with diamonds game :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1684956260,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
+      "message": "The YouTube live chat on mobile is broken. :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
