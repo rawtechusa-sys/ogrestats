@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100461,
+  "updated_ts": 1782100471,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -353,7 +353,8 @@
     "its_time_to_party",
     "its_time_to_take_games_back_gamers_who_game",
     "itsagundams_dspgaming_video_is_a_masterpiece",
-    "jaysus_gaming_test_stream"
+    "jaysus_gaming_test_stream",
+    "just_a_man_and_birds"
   ],
   "commands": {
     "stan": 27,
@@ -389,10 +390,10 @@
     "face": 329,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 239,
+    "joy": 240,
     "gameboy": 1,
     "chick": 2,
-    "carlos": 31,
+    "carlos": 32,
     "away": 6,
     "idea": 4,
     "fear": 3,
@@ -402,9 +403,9 @@
     "tongue": 6,
     "heart": 108,
     "shorts": 1,
-    "laughing": 134,
+    "laughing": 137,
     "news": 18,
-    "chicken": 40,
+    "chicken": 41,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -422,8 +423,8 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 36,
-    "peach": 9,
+    "rooster": 37,
+    "peach": 10,
     "fire": 21,
     "kendal": 1,
     "up": 35,
@@ -790,7 +791,8 @@
     "rere": 1,
     "tiddies": 1,
     "fruit": 1,
-    "while": 1
+    "while": 1,
+    "television": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2552,6 +2554,11 @@
       "title": "Jaysus Gaming Test Stream",
       "start_ts": 1705173044,
       "youtube_archive_id": "YDzoaz6B7Eg"
+    },
+    "just_a_man_and_birds": {
+      "title": "Just A Man And Birds",
+      "start_ts": 1651281884,
+      "youtube_archive_id": "5b05_D4gEyQ"
     }
   },
   "messages": [
@@ -16412,6 +16419,96 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1651287098,
+      "username": "@kooliad101dead",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "any predictions when will the niple get dry :thinking_face:Q :television:",
+      "commands": [
+        "television"
+      ]
+    },
+    {
+      "ts": 1651286827,
+      "username": "@kooliad101dead",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "how come you never rip on samsung when they remove the SD card slot from the note 20+ please rip them for me change the niple leave QTV niple alone :pensive_face::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1651285587,
+      "username": "@kooliad101dead",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "can we agree that quantum TV is the gift that keeps on giving (please use that quote on your next video about him also sp@mmm that \u00e7:rooster:c:chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1651284536,
+      "username": "@LaughingShip",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "as an amazon driver i refuse to deliver a package to carlos:_Carlos: unless im breastfeed by rich plus im a member now i enjoy your content",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1651284397,
+      "username": "@neonmunky",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "Hahaha love the new soundboard \ud83d\udc4d\ud83c\udffc:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1651283394,
+      "username": "@neonmunky",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "He's a tickled pickle :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1651283294,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "I\u2019m writing a quarting and reviewtechusa erotica novel right now :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1651283133,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "You know what, i take it all back, Quantum was write the whole time, he is above the law, he owns youtube, and is the president of the united states, he is also a God. This is ReviewTechUsa signing out, have a good one. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1651282807,
+      "username": "@LemStar0623",
+      "platform": "youtube",
+      "stream_id": "just_a_man_and_birds",
+      "message": "Can you play the relax your :peach: remix while screaming \u201cMEN\u201d at the top of your lungs? Please dad.",
+      "commands": [
+        "peach"
       ]
     },
     {
