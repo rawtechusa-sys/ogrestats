@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094946,
+  "updated_ts": 1782094999,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -73,7 +73,8 @@
     "a_man_streams_like_a_man",
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
     "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
-    "a_man_with_birds"
+    "a_man_with_birds",
+    "a_man_with_birds_streams_on_halloween"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1227,6 +1228,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.9,
       "avg_active_chatters": 30.7
+    },
+    "a_man_with_birds_streams_on_halloween": {
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "title": "A MAN WITH BIRDS STREAMS ON HALLOWEEN",
+      "start_ts": 1635730809,
+      "end_ts": 1635743528,
+      "duration_sec": 12719,
+      "youtube_archive_id": "WcJZuaL6yBs",
+      "source_platform": "youtube",
+      "total_donations_usd": 392.77,
+      "donation_count": 108,
+      "donations_per_min": 1.8528,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.33,
+      "avg_active_chatters": 33.71
     }
   }
 }
