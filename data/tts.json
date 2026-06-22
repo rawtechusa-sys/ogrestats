@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100002,
+  "updated_ts": 1782100010,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -301,7 +301,8 @@
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
     "i_am_him_i_will_continue_to_be_him",
     "i_am_not_well_endowed_and_im_streaming_about_phil",
-    "i_dunno_wtf_im_doing"
+    "i_dunno_wtf_im_doing",
+    "i_failed_no_phil_november"
   ],
   "commands": {
     "stan": 27,
@@ -331,10 +332,10 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 6,
+    "turkey": 7,
     "eyes": 75,
     "africa": 1,
-    "face": 276,
+    "face": 277,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 210,
@@ -2190,6 +2191,11 @@
       "title": "I Dunno WTF I'm Doing",
       "start_ts": 1683332146,
       "youtube_archive_id": "B3I51to6nss"
+    },
+    "i_failed_no_phil_november": {
+      "title": "I Failed No-Phil November",
+      "start_ts": 1668731308,
+      "youtube_archive_id": "iw0vBb4yVWI"
     }
   },
   "messages": [
@@ -11546,6 +11552,26 @@
       "message": "Happy Thanksgiving. PS6 release date potentially 2028! :party_popper: Maybe they will have some cool PS5 games by then lol",
       "commands": [
         "popper"
+      ]
+    },
+    {
+      "ts": 1668740841,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "i_failed_no_phil_november",
+      "message": "We need Steve back for Thanksgiving. :turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1668739428,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "i_failed_no_phil_november",
+      "message": "Which AI App/Program do you use to make \"Art\"?? :upside_down_face:",
+      "commands": [
+        "face"
       ]
     },
     {
