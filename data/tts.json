@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101552,
+  "updated_ts": 1782101559,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -497,7 +497,8 @@
     "obese_man_eats_live_on_stream_come_ask_questions",
     "oh_ice_poseidon",
     "one_woman_with_two_men_live",
-    "peter_popoff_is_a_man"
+    "peter_popoff_is_a_man",
+    "phil_boogie_men"
   ],
   "commands": {
     "stan": 27,
@@ -568,7 +569,7 @@
     "hole": 9,
     "rooster": 52,
     "peach": 15,
-    "fire": 24,
+    "fire": 25,
     "kendal": 1,
     "up": 44,
     "note": 6,
@@ -1028,7 +1029,8 @@
     "bros": 1,
     "light": 1,
     "jomtron": 1,
-    "angel": 1
+    "angel": 1,
+    "spoon": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3510,6 +3512,11 @@
       "title": "Peter Popoff Is A Man",
       "start_ts": 1656531769,
       "youtube_archive_id": "-vtm1VEThtI"
+    },
+    "phil_boogie_men": {
+      "title": "Phil, Boogie, Men",
+      "start_ts": 1710101213,
+      "youtube_archive_id": "WUsyTtxwRxE"
     }
   },
   "messages": [
@@ -6240,6 +6247,26 @@
       "message": "What up rich, just Came here to say hi and for an introguys fart, dont judge me:face_with_peeking_eye:",
       "commands": [
         "eye"
+      ]
+    },
+    {
+      "ts": 1710104905,
+      "username": "@IzzybellStar",
+      "platform": "youtube",
+      "stream_id": "phil_boogie_men",
+      "message": ":spoon::spoon::spoon::spoon: Eat It :spoon::spoon::spoon::spoon:",
+      "commands": [
+        "spoon"
+      ]
+    },
+    {
+      "ts": 1710102883,
+      "username": "@jeffreyrivera2755",
+      "platform": "youtube",
+      "stream_id": "phil_boogie_men",
+      "message": "Mod me? Also elden ring with ultrawide mod id:fire::fire:",
+      "commands": [
+        "fire"
       ]
     },
     {
