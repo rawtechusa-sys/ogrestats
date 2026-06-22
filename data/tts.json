@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092775,
+  "updated_ts": 1782092807,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -25,7 +25,8 @@
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_beautiful_man_becomes_more_beautiful_live",
     "a_birdman_family_friendly_love_stream",
-    "a_boomer_plays_elden_ring_plus_birds"
+    "a_boomer_plays_elden_ring_plus_birds",
+    "a_catfish_is_streaming"
   ],
   "commands": {
     "stan": 27,
@@ -65,16 +66,16 @@
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
-    "away": 1,
+    "away": 2,
     "idea": 1,
     "fear": 1,
     "voice": 1,
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 8,
+    "heart": 9,
     "shorts": 1,
-    "laughing": 4,
+    "laughing": 5,
     "news": 3,
     "chicken": 3,
     "cake": 1,
@@ -105,7 +106,9 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 1
+    "hands": 1,
+    "horns": 1,
+    "crab": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -227,6 +230,11 @@
       "title": "A Boomer Plays Elden Ring (Plus Birds)",
       "start_ts": 1648248623,
       "youtube_archive_id": "GRbSMySvuow"
+    },
+    "a_catfish_is_streaming": {
+      "title": "A Catfish Is Streaming...",
+      "start_ts": 1629160169,
+      "youtube_archive_id": "oVHXKrN5VIE"
     }
   },
   "messages": [
@@ -3015,6 +3023,47 @@
       "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1629168236,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "a_catfish_is_streaming",
+      "message": "Vista was peak mid 2000s Aesthetics I miss it :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1629165409,
+      "username": "@W1Kilo",
+      "platform": "youtube",
+      "stream_id": "a_catfish_is_streaming",
+      "message": ":crab::crab::crab: IT'S NEVER COMING OUT! :crab::crab::crab:",
+      "commands": [
+        "crab"
+      ]
+    },
+    {
+      "ts": 1629162413,
+      "username": "@SaggyMelonz",
+      "platform": "youtube",
+      "stream_id": "a_catfish_is_streaming",
+      "message": "No debate with me cause I don\u2019t think you\u2019re ready for that :dashing_away: :smiling_face_with_horns:",
+      "commands": [
+        "away",
+        "horns"
+      ]
+    },
+    {
+      "ts": 1629162319,
+      "username": "@MLZsVideos",
+      "platform": "youtube",
+      "stream_id": "a_catfish_is_streaming",
+      "message": "I was just busting your balls about raycons. :rolling_on_the_floor_laughing: What\u2019s the biggest piece of advice you can give to content creators?",
+      "commands": [
+        "laughing"
       ]
     }
   ]
