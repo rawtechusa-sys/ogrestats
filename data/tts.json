@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094467,
+  "updated_ts": 1782094520,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -64,7 +64,8 @@
     "a_man_in_poughkeepsie_irl_streaming",
     "a_man_is_back_for_a_bit",
     "a_man_is_back_sexecoco_style",
-    "a_man_is_staying_on_till_1_am"
+    "a_man_is_staying_on_till_1_am",
+    "a_man_is_streaming_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -97,10 +98,10 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 46,
+    "face": 47,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 39,
+    "joy": 40,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -532,6 +533,11 @@
       "title": "A Man Is Staying On Till 1 Am",
       "start_ts": 1698102152,
       "youtube_archive_id": "KA5timea4xg"
+    },
+    "a_man_is_streaming_feat_birds": {
+      "title": "A Man Is Streaming (Feat. Birds)",
+      "start_ts": 1656012673,
+      "youtube_archive_id": "ZmKrQdDc66s"
     }
   },
   "messages": [
@@ -4092,6 +4098,26 @@
       "platform": "youtube",
       "stream_id": "a_man",
       "message": "Watch Westside Tech say you were doxing him :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656018886,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_feat_birds",
+      "message": "Might want to up brightness plus 1 :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656013033,
+      "username": "@RO-in9qe",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_feat_birds",
+      "message": "applied for 5 more jobs :face_with_tears_of_joy: who knew trying to get would be so hard, even tho the gov said they added plenty of jobs.",
       "commands": [
         "joy"
       ]
