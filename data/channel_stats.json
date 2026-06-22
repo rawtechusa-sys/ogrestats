@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099624,
+  "updated_ts": 1782099633,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -258,7 +258,8 @@
     "dsp_dkoldies_and_a_man",
     "dsp_intellivision_family_fun_and_prank_calls",
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
-    "dsp_loves_derich"
+    "dsp_loves_derich",
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4372,6 +4373,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.01,
       "avg_active_chatters": 45.55
+    },
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted": {
+      "stream_id": "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
+      "title": "DSP Treats Everyone Terrible (KingCobraJFS Evicted)",
+      "start_ts": 1713574924,
+      "end_ts": 1713584174,
+      "duration_sec": 9250,
+      "youtube_archive_id": "G5Br1qlBmrk",
+      "source_platform": "youtube",
+      "total_donations_usd": 60.89,
+      "donation_count": 19,
+      "donations_per_min": 0.395,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.88,
+      "avg_active_chatters": 25.68
     }
   }
 }
