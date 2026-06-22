@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101157,
+  "updated_ts": 1782101164,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -445,7 +445,8 @@
     "melonie_mac_goes_full_mask_off_road_to_1000_members",
     "melonie_mac_responded",
     "men",
-    "men_and_food_road_to_1000_members"
+    "men_and_food_road_to_1000_members",
+    "men_birds_and_samurai_cop"
   ],
   "commands": {
     "stan": 27,
@@ -476,12 +477,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 104,
+    "eyes": 105,
     "africa": 1,
     "face": 418,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 278,
+    "joy": 279,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -3162,6 +3163,11 @@
       "title": "Men And Food (Road To 1000 Members)",
       "start_ts": 1685661099,
       "youtube_archive_id": "E-ZVBLJd8OM"
+    },
+    "men_birds_and_samurai_cop": {
+      "title": "Men, Birds And Samurai Cop",
+      "start_ts": 1642455022,
+      "youtube_archive_id": "kmrKt2riDlQ"
     }
   },
   "messages": [
@@ -21897,6 +21903,26 @@
       "message": "Saw the news today and immediately knew that the Ponies need to be put on suicide watch :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1642457716,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop",
+      "message": "Saw on Spawnwave that Konami made around $160k off of their Castlevania NFTs Some going for around $10k.Why are people spending this much on nothing?:face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1642457151,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop",
+      "message": "are u eating the reaper jerky during the movie? :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
