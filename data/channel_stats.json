@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093056,
+  "updated_ts": 1782093094,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -33,7 +33,8 @@
     "a_crispy_peanut_butter_complexion_livestream",
     "a_detrahktor_discusses_her_grievances_with_me",
     "a_dspgaming_and_wingsofredemption_man_stream",
-    "a_dspgaming_family_fun_stream"
+    "a_dspgaming_family_fun_stream",
+    "a_family_friendly_christian_straight_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -547,6 +548,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.2,
       "avg_active_chatters": 34.06
+    },
+    "a_family_friendly_christian_straight_man_stream": {
+      "stream_id": "a_family_friendly_christian_straight_man_stream",
+      "title": "A Family-Friendly Christian, Straight Man Stream",
+      "start_ts": 1687648839,
+      "end_ts": 1687676410,
+      "duration_sec": 27571,
+      "youtube_archive_id": "WcfNm1IvEzg",
+      "source_platform": "youtube",
+      "total_donations_usd": 749.73,
+      "donation_count": 75,
+      "donations_per_min": 1.6316,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 5.78,
+      "avg_active_chatters": 13.14
     }
   }
 }
