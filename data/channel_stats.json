@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102205,
+  "updated_ts": 1782102210,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -601,7 +601,8 @@
     "spooky_from_canada",
     "spooky_stories_from_the_haunted_church",
     "sssniperwolf_has_a",
-    "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled"
+    "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled",
+    "steven_crowder_fallout_and_colleen_ballinger_is_racist"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10203,6 +10204,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.17,
       "avg_active_chatters": 30.65
+    },
+    "steven_crowder_fallout_and_colleen_ballinger_is_racist": {
+      "stream_id": "steven_crowder_fallout_and_colleen_ballinger_is_racist",
+      "title": "Steven Crowder Fallout And Colleen Ballinger Is Racist",
+      "start_ts": 1690064727,
+      "end_ts": 1690084769,
+      "duration_sec": 20042,
+      "youtube_archive_id": "xvxXVAKMoyE",
+      "source_platform": "youtube",
+      "total_donations_usd": 349.63,
+      "donation_count": 90,
+      "donations_per_min": 1.0467,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.73,
+      "avg_active_chatters": 37.52
     }
   }
 }
