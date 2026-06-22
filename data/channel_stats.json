@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093290,
+  "updated_ts": 1782093330,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -39,7 +39,8 @@
     "a_floor_thrusting_man_stream",
     "a_fun_dspgaming_man_stream",
     "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
-    "a_grand_theft_auto_trilogy_bird_stream"
+    "a_grand_theft_auto_trilogy_bird_stream",
+    "a_heartwarming_man_and_bird_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -649,6 +650,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.73,
       "avg_active_chatters": 51.67
+    },
+    "a_heartwarming_man_and_bird_stream": {
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "title": "A Heartwarming Man And Bird Stream",
+      "start_ts": 1630027707,
+      "end_ts": 1630038714,
+      "duration_sec": 11007,
+      "youtube_archive_id": "etThUGIG6o4",
+      "source_platform": "youtube",
+      "total_donations_usd": 421.19,
+      "donation_count": 100,
+      "donations_per_min": 2.2959,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.46,
+      "avg_active_chatters": 31.82
     }
   }
 }
