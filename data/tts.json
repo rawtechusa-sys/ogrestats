@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100899,
+  "updated_ts": 1782100907,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -410,7 +410,8 @@
     "lets_watch_becky_screw_me_over",
     "lets_watch_jims_sterlings_elden_ring_video",
     "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
-    "listen"
+    "listen",
+    "live_from_canada"
   ],
   "commands": {
     "stan": 27,
@@ -457,7 +458,7 @@
     "cucumber": 50,
     "biceps": 4,
     "tongue": 7,
-    "heart": 124,
+    "heart": 125,
     "shorts": 1,
     "laughing": 159,
     "news": 20,
@@ -2932,6 +2933,11 @@
       "title": "Listen...",
       "start_ts": 1690928875,
       "youtube_archive_id": "kFoa5G9QUN0"
+    },
+    "live_from_canada": {
+      "title": "LIVE FROM CANADA!",
+      "start_ts": 1692662518,
+      "youtube_archive_id": "GkCsu8Qj7wQ"
     }
   },
   "messages": [
@@ -9758,6 +9764,16 @@
       "message": "Listen, swim back to the tip of the soup bowl. Be a member for 25 months just so you can flex a golden cucumber :cucumber: that no one gives a shit about.",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1692663224,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "live_from_canada",
+      "message": "Hey Jay. Did you hear about Charles Martinet stepping down as Mario today? I\u2019m serious. Also, thank you for the stream. :blue_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
