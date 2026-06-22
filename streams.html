@@ -68,6 +68,44 @@
     text-transform: uppercase;
   }
 
+  /* ── Sidebar search (floats at top of the list while it scrolls) ── */
+  .sidebar-search {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg-surface);
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .sidebar-search input {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 7px 9px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .sidebar-search input::placeholder { color: var(--text-muted); opacity: 0.7; }
+
+  .sidebar-search input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+  }
+
+  .search-noresults {
+    padding: 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
   .stream-item {
     padding: 7px 16px;
     cursor: pointer;
@@ -75,11 +113,31 @@
     transition: all 0.15s ease;
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  /* First line of an item: Date | Time | Length */
+  .stream-item-meta {
+    display: flex;
     align-items: baseline;
     gap: 6px;
     white-space: nowrap;
     overflow: hidden;
   }
+
+  /* Second line: the stream title (ellipsised) */
+  .stream-item-title {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+  }
+  .stream-item.active .stream-item-title { color: var(--text-primary); }
 
   .stream-item:hover {
     background: rgba(100,180,60,0.07);
@@ -466,9 +524,15 @@
 
 <div class="layout">
   <nav class="sidebar" id="sidebar">
-    <div class="loading-state" style="height:200px;">
-      <span class="loading-glyph">~</span>
-      <span>wading in...</span>
+    <div class="sidebar-search">
+      <input id="streamSearch" type="search" placeholder="search streams…"
+             autocomplete="off" spellcheck="false" aria-label="Search streams">
+    </div>
+    <div id="streamList">
+      <div class="loading-state" style="height:200px;">
+        <span class="loading-glyph">~</span>
+        <span>wading in...</span>
+      </div>
     </div>
   </nav>
 
@@ -490,6 +554,10 @@
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
 let currentChart = null;
+
+// Parallel array to the rendered sidebar rows, used by the search filter:
+// [{ el, id, startTs, title /* lowercased */ }]. Rebuilt by loadStreamList.
+let searchIndex = [];
 
 // ── Theme ─────────────────────────────────────────────────────────────────────
 const THEMES = {
@@ -591,12 +659,24 @@ function escHtml(str) {
 
 // ── Stream list ────────────────────────────────────────────────────────────────
 async function loadStreamList() {
-  const sidebar = document.getElementById('sidebar');
+  const listEl = document.getElementById('streamList');
   try {
-    const index = await fetchJSON(`${RAW}/data/streams/index.json`);
+    // index.json carries no titles; channel_stats.json has them for every stream in
+    // one fetch. Fetch both in parallel and build an id->title map. A failed/blocked
+    // channel_stats must not break the list -- titles just degrade to de-slugified ids.
+    const [index, titleMap] = await Promise.all([
+      fetchJSON(`${RAW}/data/streams/index.json`),
+      fetchJSON(`${RAW}/data/channel_stats.json`)
+        .then(rows => {
+          const m = new Map();
+          for (const r of rows) if (r && r.stream_id && r.title) m.set(r.stream_id, String(r.title));
+          return m;
+        })
+        .catch(() => new Map()),
+    ]);
 
     if (index.length === 0) {
-      sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
+      listEl.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
       return;
     }
 
@@ -620,7 +700,8 @@ async function loadStreamList() {
     // Newest-first by start_ts.
     streams.sort((a, b) => (b.meta?.start_ts ?? 0) - (a.meta?.start_ts ?? 0));
 
-    sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
+    listEl.innerHTML = '<div class="sidebar-label">Streams</div>';
+    searchIndex = [];
 
     for (const [idx, { id, meta }] of streams.entries()) {
       const div = document.createElement('div');
@@ -645,11 +726,18 @@ async function loadStreamList() {
       const lengthPart = (meta?.end_ts && meta?.start_ts)
         ? fmtDuration(meta.end_ts - meta.start_ts) : '';
 
+      // index.json has no title; prefer channel_stats.json, fall back to a
+      // de-slugified id (the id is a lossy slug, but better than nothing).
+      const title = titleMap.get(id) || id.replace(/_/g, ' ');
+
       div.innerHTML = `
-        <span class="stream-item-date">${datePart}</span>
-        <span class="stream-item-sep">|</span>
-        <span class="stream-item-time">${timePart}</span>
-        ${lengthPart ? `<span class="stream-item-sep">|</span><span class="stream-item-length">${lengthPart}</span>` : ''}
+        <div class="stream-item-meta">
+          <span class="stream-item-date">${datePart}</span>
+          <span class="stream-item-sep">|</span>
+          <span class="stream-item-time">${timePart}</span>
+          ${lengthPart ? `<span class="stream-item-sep">|</span><span class="stream-item-length">${lengthPart}</span>` : ''}
+        </div>
+        <div class="stream-item-title">${escHtml(title)}</div>
       `;
 
       div.addEventListener('click', () => {
@@ -664,8 +752,19 @@ async function loadStreamList() {
         loadStream(id);
       });
 
-      sidebar.appendChild(div);
+      listEl.appendChild(div);
+      searchIndex.push({
+        el: div,
+        id,
+        startTs: meta?.start_ts || null,
+        title: title.toLowerCase(),
+      });
     }
+
+    // A timezone switch re-runs loadStreamList; re-apply any active filter so date
+    // matching reflects the newly-formatted dates and the list isn't reset.
+    const searchInput = document.getElementById('streamSearch');
+    if (searchInput && searchInput.value.trim()) applyFilter(searchInput.value);
 
     if (streams.length > 0) {
       // Selection priority: the stream stashed by the shell / last session, else
@@ -679,8 +778,174 @@ async function loadStreamList() {
     }
 
   } catch (e) {
-    sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
+    listEl.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
   }
+}
+
+// ── Sidebar search ───────────────────────────────────────────────────────────
+// Self-contained (no fuzzy-search library): a subsequence title matcher plus a
+// multi-format/partial date parser, combined so "smash jt march 2022" requires
+// both the title fuzzy-match and the date to hold.
+
+// Order-preserving subsequence: every char of `n` appears in `h` in order.
+function isSubseq(n, h) {
+  let i = 0;
+  for (let j = 0; j < h.length && i < n.length; j++) if (h[j] === n[i]) i++;
+  return i === n.length;
+}
+function fuzzyTitleMatch(tokens, title) {
+  return tokens.every(t => isSubseq(t, title));
+}
+
+// A stream's tz-local Y/M/D, via en-CA's stable YYYY-MM-DD, so date matching agrees
+// with the MM/DD/YY shown on each row (both go through withTZ).
+function tsParts(ts) {
+  const [y, m, d] = new Date(ts * 1000)
+    .toLocaleDateString('en-CA', withTZ({ year: 'numeric', month: '2-digit', day: '2-digit' }))
+    .split('-').map(Number);
+  return { y, m, d };
+}
+
+const MONTHS = ['january','february','march','april','may','june','july',
+                'august','september','october','november','december'];
+function monthNum(w) {
+  w = w.toLowerCase().replace(/,$/, '');
+  let i = MONTHS.indexOf(w);
+  if (i >= 0) return i + 1;
+  if (w.length >= 3) { i = MONTHS.findIndex(m => m.slice(0, 3) === w.slice(0, 3)); if (i >= 0) return i + 1; }
+  return null;
+}
+
+// Expand a 2-digit year to a 4-digit one (all real data is 2000s).
+function expandYear(yy) { return yy < 70 ? 2000 + yy : 1900 + yy; }
+
+// Choose {m,d} from a numeric pair. Default US MM/DD (matches the row display);
+// switch to DD/MM only when the first number can't be a month but the second can.
+// Both > 12 -> null (no valid date).
+function monthDay(a, b) {
+  if (a >= 1 && a <= 12 && b >= 1 && b <= 31) return { m: a, d: b };   // MM/DD
+  if (a > 12 && a <= 31 && b >= 1 && b <= 12) return { m: b, d: a };   // DD/MM
+  return null;
+}
+
+// Parse one date-ish token -> partial {y?,m?,d?} or null.
+function parseDateFragment(str) {
+  // ISO-ish: 2022 | 2022-03 | 2022-03-22
+  let m = /^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?$/.exec(str);
+  if (m) {
+    const out = { y: +m[1] };
+    if (m[2] != null) out.m = +m[2];
+    if (m[3] != null) out.d = +m[3];
+    if (out.m != null && (out.m < 1 || out.m > 12)) return null;
+    if (out.d != null && (out.d < 1 || out.d > 31)) return null;
+    return out;
+  }
+  // Slash/dot numeric: A/B/C, A.B.C, A/B, A.B (year may be 4-digit anywhere, or 2-digit last)
+  const parts = str.split(/[/.]/);
+  if (parts.length === 2 || parts.length === 3) {
+    if (!parts.every(p => /^\d{1,4}$/.test(p) && p.length > 0)) return null;
+    const nums = parts.map(Number);
+    let year = null, md = null;
+    if (parts.length === 3) {
+      const yi = parts.findIndex(p => p.length === 4);
+      if (yi === 0) { year = nums[0]; md = monthDay(nums[1], nums[2]); }       // YYYY/MM/DD-ish
+      else { year = parts[2].length === 4 ? nums[2] : expandYear(nums[2]); md = monthDay(nums[0], nums[1]); }
+    } else {
+      md = monthDay(nums[0], nums[1]);                                          // A/B, no year
+    }
+    if (!md) return null;
+    const out = { m: md.m, d: md.d };
+    if (year != null) out.y = year;
+    return out;
+  }
+  return null;
+}
+
+// Split a raw query into date fragment(s) + title tokens.
+// Lone 1-2 digit numbers stay as title tokens (so titles like "top 10" aren't hijacked).
+function parseQuery(raw) {
+  const q = raw.trim().toLowerCase();
+  if (!q) return { empty: true };
+  const tokens = q.split(/\s+/);
+  const dateParts = [], titleTokens = [];
+  let i = 0;
+  while (i < tokens.length) {
+    const tok = tokens[i];
+    if (/^\d{4}$/.test(tok)
+        || /^\d{4}-\d{1,2}(-\d{1,2})?$/.test(tok)
+        || /^\d{1,4}[/.]\d{1,4}([/.]\d{1,4})?$/.test(tok)) {
+      const p = parseDateFragment(tok);
+      if (p) { dateParts.push(p); i++; continue; }
+    }
+    const mn = monthNum(tok);
+    if (mn != null) {
+      // Month name, optionally followed by a day and/or a 4-digit year.
+      let j = i + 1, day = null, year = null;
+      while (j < tokens.length) {
+        const nxt = tokens[j].replace(/,$/, '');
+        if (/^\d{4}$/.test(nxt) && year == null) { year = +nxt; j++; continue; }
+        if (/^\d{1,2}$/.test(nxt) && +nxt >= 1 && +nxt <= 31 && day == null) { day = +nxt; j++; continue; }
+        break;
+      }
+      const p = { m: mn };
+      if (day != null) p.d = day;
+      if (year != null) p.y = year;
+      dateParts.push(p);
+      i = j;
+      continue;
+    }
+    titleTokens.push(tok);
+    i++;
+  }
+  return { empty: false, dateParts, titleTokens };
+}
+
+function buildDatePredicate(parts) {
+  return (ts) => {
+    if (!ts) return false;
+    const p = tsParts(ts);
+    if (parts.y != null && p.y !== parts.y) return false;
+    if (parts.m != null && p.m !== parts.m) return false;
+    if (parts.d != null && p.d !== parts.d) return false;
+    return true;
+  };
+}
+
+function showNoResults(listEl) {
+  if (listEl.querySelector('.search-noresults')) return;
+  const div = document.createElement('div');
+  div.className = 'search-noresults';
+  div.textContent = 'no streams match…';
+  listEl.appendChild(div);
+}
+function removeNoResults(listEl) {
+  const el = listEl.querySelector('.search-noresults');
+  if (el) el.remove();
+}
+
+function applyFilter(raw) {
+  const listEl = document.getElementById('streamList');
+  const labelEl = listEl.querySelector('.sidebar-label');
+  const parsed = parseQuery(raw);
+
+  if (parsed.empty) {
+    for (const e of searchIndex) e.el.style.display = '';
+    removeNoResults(listEl);
+    if (labelEl) labelEl.textContent = 'Streams';
+    return;
+  }
+
+  const datePreds = parsed.dateParts.map(buildDatePredicate);
+  let shown = 0;
+  for (const e of searchIndex) {
+    const dateOk  = datePreds.every(fn => fn(e.startTs));
+    const titleOk = parsed.titleTokens.length === 0 || fuzzyTitleMatch(parsed.titleTokens, e.title);
+    const ok = dateOk && titleOk;
+    e.el.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  }
+  if (labelEl) labelEl.textContent = shown + (shown === 1 ? ' Stream' : ' Streams');
+  if (shown === 0) showNoResults(listEl); else removeNoResults(listEl);
 }
 
 // Select a stream in the sidebar by id (mark active, scroll into view, persist,
@@ -1802,6 +2067,18 @@ function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasA
     container.appendChild(span);
   }
 }
+
+// ── Wire up the sidebar search box (the input lives outside the rebuilt list, so
+// this binds once and its value/focus survive timezone-switch rebuilds). ──
+(function () {
+  const searchInput = document.getElementById('streamSearch');
+  if (!searchInput) return;
+  let searchDebounce = null;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(() => applyFilter(searchInput.value), 120);
+  });
+})();
 
 loadStreamList();
 </script>
