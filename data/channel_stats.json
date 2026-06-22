@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100695,
+  "updated_ts": 1782100702,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -383,7 +383,8 @@
     "late_night_man_gaming",
     "late_night_stream_feat_a_horse",
     "late_night_stream_for_no_reason",
-    "learning_how_to_be_a_man_feat_birds"
+    "learning_how_to_be_a_man_feat_birds",
+    "legal_eagles_xqc_video"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6497,6 +6498,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.41,
       "avg_active_chatters": 34.46
+    },
+    "legal_eagles_xqc_video": {
+      "stream_id": "legal_eagles_xqc_video",
+      "title": "Legal Eagle's xQc Video",
+      "start_ts": 1695515878,
+      "end_ts": 1695531590,
+      "duration_sec": 15712,
+      "youtube_archive_id": "UG47AoNHyoY",
+      "source_platform": "youtube",
+      "total_donations_usd": 246.36,
+      "donation_count": 50,
+      "donations_per_min": 0.9408,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.79,
+      "avg_active_chatters": 24.06
     }
   }
 }
