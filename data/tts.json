@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101334,
+  "updated_ts": 1782101341,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -469,7 +469,8 @@
     "more_intellivision_amico_family_bird_fun",
     "more_intellivision_amico_family_fun",
     "more_intellivision_amico_manbird_fun",
-    "more_man_more_birds"
+    "more_man_more_birds",
+    "more_man_more_karens"
   ],
   "commands": {
     "stan": 27,
@@ -500,12 +501,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 9,
-    "eyes": 107,
+    "eyes": 108,
     "africa": 1,
-    "face": 438,
+    "face": 439,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 286,
+    "joy": 287,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -518,7 +519,7 @@
     "tongue": 10,
     "heart": 141,
     "shorts": 2,
-    "laughing": 173,
+    "laughing": 179,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -597,7 +598,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 4,
-    "mouth": 16,
+    "mouth": 17,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -618,7 +619,7 @@
     "cow": 2,
     "cap": 1,
     "adventures": 1,
-    "head": 3,
+    "head": 4,
     "like": 6,
     "memory": 2,
     "fight": 1,
@@ -813,7 +814,7 @@
     "tries": 1,
     "person": 1,
     "tt": 1,
-    "sc": 1,
+    "sc": 2,
     "sun": 1,
     "part": 1,
     "milk": 5,
@@ -980,7 +981,8 @@
     "context": 1,
     "tonight": 1,
     "bia": 1,
-    "battle": 1
+    "battle": 1,
+    "yoga": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3322,6 +3324,11 @@
       "title": "More Man, More Birds",
       "start_ts": 1657420251,
       "youtube_archive_id": "24ZdBwO8nHM"
+    },
+    "more_man_more_karens": {
+      "title": "More Man, More Karens",
+      "start_ts": 1660263797,
+      "youtube_archive_id": "xn7WRllBOFc"
     }
   },
   "messages": [
@@ -17583,6 +17590,127 @@
       "message": "I'm at Chrysler building cars rn I love you Rick pee in my basement and handjobs all around. been subbed for YEARS B :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1660273531,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Phil\u2019s yoga: Snorting Fowl into Begging Doggy",
+      "commands": [
+        "yoga"
+      ]
+    },
+    {
+      "ts": 1660271156,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "YO, you better soundboard that or I WILL :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660270478,
+      "username": "@whitegold679",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Sup Rich just finished the Jaffe stream that started a little rough! but ended well I think. Also I had gastric, I have four scars. You don\u2019t you\u2019ve shirt less a lot proof on live streams!! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1660269947,
+      "username": "@turboexpress3841",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Do you want to know what's in my closet. Games :exploding_head:",
+      "commands": [
+        "head"
+      ]
+    },
+    {
+      "ts": 1660269810,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "If someone tips him during this, I'm gonna cry :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660268758,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "That's a Lemon Tree haircut if there ever was one:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660267358,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Just looked at a chicken sandwich...& cried :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660266491,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "When I worked at GameStop, they expected us to chase anyone who was stealing and ran out the store:face_with_diagonal_mouth: My employees & I didn't get paid to do that sh*t:rolling_on_the_floor_laughing:",
+      "commands": [
+        "mouth",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660265342,
+      "username": "@TCCneo",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Those are some HANDSOME birds you got there :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1660265293,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Wanted to call in but don\u2019t use discord so I\u2019ll just SC: I like you and your content but I wouldn\u2019t trust you or your emotions in politics",
+      "commands": [
+        "sc"
+      ]
+    },
+    {
+      "ts": 1660265288,
+      "username": "@Dreamvillien",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "Hi Rich! The first caller here. No, I wasn\u2019t trolling, I was nervous. And when I did try to send evidence I got banned off David\u2019s Discord\u2026 Oh well. :upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1660264271,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "more_man_more_karens",
+      "message": "God those first two callers were something :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
