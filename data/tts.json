@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101432,
+  "updated_ts": 1782101440,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -482,7 +482,8 @@
     "more_thorough_tickling_live",
     "more_tickled_television_excitement",
     "more_wii_u_man_fun_yes_it_works",
-    "moving_on_to_philip_burnell_a_man"
+    "moving_on_to_philip_burnell_a_man",
+    "muta_just_absolutely_bodied_boogie2988"
   ],
   "commands": {
     "stan": 27,
@@ -513,12 +514,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 114,
+    "eyes": 115,
     "africa": 1,
-    "face": 446,
+    "face": 447,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 290,
+    "joy": 292,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -526,7 +527,7 @@
     "idea": 4,
     "fear": 4,
     "voice": 5,
-    "cucumber": 52,
+    "cucumber": 53,
     "biceps": 5,
     "tongue": 10,
     "heart": 141,
@@ -565,7 +566,7 @@
     "hands": 30,
     "horns": 8,
     "crab": 2,
-    "superhero": 28,
+    "superhero": 29,
     "legends": 2,
     "dog": 11,
     "is": 8,
@@ -1000,7 +1001,8 @@
     "finisher": 1,
     "hansen": 1,
     "exclusive": 1,
-    "gpu": 1
+    "gpu": 1,
+    "cook": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3407,6 +3409,11 @@
       "title": "Moving On To Philip Burnell (A Man)",
       "start_ts": 1698974154,
       "youtube_archive_id": "RW9iR1fumLg"
+    },
+    "muta_just_absolutely_bodied_boogie2988": {
+      "title": "Muta Just Absolutely Bodied Boogie2988",
+      "start_ts": 1699577919,
+      "youtube_archive_id": "X_JHZzsVnmc"
     }
   },
   "messages": [
@@ -9115,6 +9122,67 @@
       "message": "I need Phil's hot man gravy for my Bird :bird:",
       "commands": [
         "bird"
+      ]
+    },
+    {
+      "ts": 1699594182,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "Love you Father :_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1699588243,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "Just know Hero in :man_superhero: WTF Rich :grinning_squinting_face::grinning_squinting_face::grinning_squinting_face:",
+      "commands": [
+        "superhero",
+        "face"
+      ]
+    },
+    {
+      "ts": 1699587181,
+      "username": "@Ultraslimm",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "Stay strong rich :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1699584435,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "You\u2019re allowed to stream snipe me. :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1699581171,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "Dang Muta really cooking Boogie :cook:",
+      "commands": [
+        "cook"
+      ]
+    },
+    {
+      "ts": 1699580766,
+      "username": "@WhatABunchOfBananaOil",
+      "platform": "youtube",
+      "stream_id": "muta_just_absolutely_bodied_boogie2988",
+      "message": "did his horse consented? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
