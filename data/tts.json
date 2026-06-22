@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101559,
+  "updated_ts": 1782101567,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -498,7 +498,8 @@
     "oh_ice_poseidon",
     "one_woman_with_two_men_live",
     "peter_popoff_is_a_man",
-    "phil_boogie_men"
+    "phil_boogie_men",
+    "phil_discusses_the_documentary_and_complains_about_me"
   ],
   "commands": {
     "stan": 27,
@@ -529,9 +530,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 116,
+    "eyes": 117,
     "africa": 1,
-    "face": 474,
+    "face": 475,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 309,
@@ -548,8 +549,8 @@
     "heart": 145,
     "shorts": 2,
     "laughing": 187,
-    "news": 20,
-    "chicken": 57,
+    "news": 21,
+    "chicken": 58,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -597,7 +598,7 @@
     "dsp": 23,
     "story": 2,
     "tree": 3,
-    "skull": 13,
+    "skull": 15,
     "eggplant": 4,
     "bite": 1,
     "take": 7,
@@ -1030,7 +1031,11 @@
     "light": 1,
     "jomtron": 1,
     "angel": 1,
-    "spoon": 2
+    "spoon": 2,
+    "documentary": 1,
+    "tazer": 1,
+    "reviewtrumpqvc": 1,
+    "seattle": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3517,6 +3522,11 @@
       "title": "Phil, Boogie, Men",
       "start_ts": 1710101213,
       "youtube_archive_id": "WUsyTtxwRxE"
+    },
+    "phil_discusses_the_documentary_and_complains_about_me": {
+      "title": "Phil Discusses The Documentary, And Complains About Me",
+      "start_ts": 1704322812,
+      "youtube_archive_id": "wNHyAvQ72EI"
     }
   },
   "messages": [
@@ -7648,6 +7658,106 @@
       "message": "Quick update on Sheriff Walters and then I\u2019ll shut the hell up about him. He\u2019s doing great right now and much happier than the other night. I\u2019m not asking for an unban, just giving some intel. :blue_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1704339352,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Just got here, my 2 cents on the move to Seattle: he wanted to get as far away from his parents while also isolating Panda in a place she had no one to support her against him, very common move.",
+      "commands": [
+        "seattle"
+      ]
+    },
+    {
+      "ts": 1704337898,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "I\u2019m on that Member list on screen! :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1704336023,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "ReviewTrumpQVC: Big beautiful webcam you\u2019re gonna be so proud of your tremendous webcam.",
+      "commands": [
+        "reviewtrumpqvc"
+      ]
+    },
+    {
+      "ts": 1704332611,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "did you see boogie was on the Jeffery list? :nauseated_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704330216,
+      "username": "@Adam201028",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Clum better discuss in detail Phil :chicken: Sandwich",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1704329798,
+      "username": "@Enraged-Gecko",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Tazer: Hands-free attitude adjustment since 1976",
+      "commands": [
+        "tazer"
+      ]
+    },
+    {
+      "ts": 1704327462,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Mike clums next documentary: Tommy Tallerico",
+      "commands": [
+        "documentary"
+      ]
+    },
+    {
+      "ts": 1704326969,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "\u201cHooked on Phil\u201d you got it champ :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1704326749,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Close up Phil basically a SpongeBob gross up :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1704323848,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "phil_discusses_the_documentary_and_complains_about_me",
+      "message": "Breaking news: I\u2019m a Christian straight Man.",
+      "commands": [
+        "news"
       ]
     },
     {
