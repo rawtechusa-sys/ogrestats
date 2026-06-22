@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101127,
+  "updated_ts": 1782101134,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -441,7 +441,8 @@
     "man_vs_steven_seagal",
     "may_1st",
     "may_1st_part_2_has_occured",
-    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members"
+    "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
+    "melonie_mac_goes_full_mask_off_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -472,12 +473,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 103,
+    "eyes": 104,
     "africa": 1,
     "face": 417,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 277,
+    "joy": 278,
     "gameboy": 1,
     "chick": 3,
     "carlos": 35,
@@ -488,7 +489,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 8,
-    "heart": 139,
+    "heart": 140,
     "shorts": 1,
     "laughing": 168,
     "news": 20,
@@ -932,7 +933,8 @@
     "swords": 1,
     "ctr": 1,
     "confession": 1,
-    "racing": 1
+    "racing": 1,
+    "burning": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3134,6 +3136,11 @@
       "title": "Melonie Mac Goes Full Mask Off Pt.2 (Road To 1000 Members)",
       "start_ts": 1686268802,
       "youtube_archive_id": "fGaAyrjywEA"
+    },
+    "melonie_mac_goes_full_mask_off_road_to_1000_members": {
+      "title": "Melonie Mac Goes Full Mask Off (Road To 1000 Members)",
+      "start_ts": 1686182067,
+      "youtube_archive_id": "L6aBE09M8P8"
     }
   },
   "messages": [
@@ -11621,6 +11628,46 @@
       "message": "Has it been a year already since the Tickled Man made the big news about his fake Elden Ring review? :eyes: I hit sub 190 lbs btw. Close to 180 main goal.",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1686191563,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_road_to_1000_members",
+      "message": "Hey Rich and Jay. As a devout Christian myself who does his daily devotion and prayer, I don't agree in homosexuality and whatnot, but I think the LGBT community deserves love and peace like I do. :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1686190412,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_road_to_1000_members",
+      "message": "1am rich??:beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1686189814,
+      "username": "@LyricalThesisDJ",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_road_to_1000_members",
+      "message": "I spent a week or so on this DSP video lol. At least get me to 100 views Rich :face_with_tears_of_joy: https://youtu.be/8QR10KWJ83Y love ya!",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1686184495,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_goes_full_mask_off_road_to_1000_members",
+      "message": "My take about flag burning: LGBTQIA flags represent an oppressed minority, burning their flag is an attack to people who are already attacked daily. Burning US flag is mostly an attack to government, it's just not the same.",
+      "commands": [
+        "burning"
       ]
     },
     {
