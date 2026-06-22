@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101276,
+  "updated_ts": 1782101282,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -461,7 +461,8 @@
     "more_chris_chan_insanity_then_maybe_elden_ring",
     "more_cringe_feat_a_man",
     "more_e3_talk",
-    "more_edp445_more_man"
+    "more_edp445_more_man",
+    "more_elden_ring_fail_compilations_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -510,7 +511,7 @@
     "tongue": 9,
     "heart": 141,
     "shorts": 2,
-    "laughing": 170,
+    "laughing": 171,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -623,7 +624,7 @@
     "day": 1,
     "struck": 3,
     "joker": 1,
-    "racehorse": 8,
+    "racehorse": 9,
     "question": 11,
     "mushroom": 3,
     "trilogy": 1,
@@ -3272,6 +3273,11 @@
       "title": "More EDP445, More Man",
       "start_ts": 1670459982,
       "youtube_archive_id": "vjVvevVOfcM"
+    },
+    "more_elden_ring_fail_compilations_feat_birds": {
+      "title": "More Elden Ring Fail Compilations (Feat. Birds)",
+      "start_ts": 1651102623,
+      "youtube_archive_id": "EWOOYpnKTiY"
     }
   },
   "messages": [
@@ -20440,6 +20446,26 @@
       "message": "Can you play the relax your :peach: remix while screaming \u201cMEN\u201d at the top of your lungs? Please dad.",
       "commands": [
         "peach"
+      ]
+    },
+    {
+      "ts": 1651109872,
+      "username": "@MythicalSphinx",
+      "platform": "youtube",
+      "stream_id": "more_elden_ring_fail_compilations_feat_birds",
+      "message": "Yo Rich look for At Dead of Night jumpscares :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1651107123,
+      "username": "@hybridtile7878",
+      "platform": "youtube",
+      "stream_id": "more_elden_ring_fail_compilations_feat_birds",
+      "message": "Hey Rich, hope you\u2019ve been having a good week :rooster::turkey::racehorse:",
+      "commands": [
+        "racehorse"
       ]
     },
     {
