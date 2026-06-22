@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099414,
+  "updated_ts": 1782099422,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -233,7 +233,8 @@
     "come_stare_at_a_man_and_ask_his_birds_questions",
     "come_stare_at_a_middle_aged_man_livestream",
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
-    "come_stream_with_a_man"
+    "come_stream_with_a_man",
+    "come_talk_to_a_man_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3947,6 +3948,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.98,
       "avg_active_chatters": 29.62
+    },
+    "come_talk_to_a_man_feat_birds": {
+      "stream_id": "come_talk_to_a_man_feat_birds",
+      "title": "Come Talk To A Man (Feat Birds)",
+      "start_ts": 1643771155,
+      "end_ts": 1643777246,
+      "duration_sec": 6091,
+      "youtube_archive_id": "C7nI7UIGzYg",
+      "source_platform": "youtube",
+      "total_donations_usd": 242.75,
+      "donation_count": 46,
+      "donations_per_min": 2.3912,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.01,
+      "avg_active_chatters": 31.39
     }
   }
 }
