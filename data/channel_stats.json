@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099027,
+  "updated_ts": 1782099036,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -186,7 +186,8 @@
     "chicken_suit_ep_9_discussing_elden_ring",
     "chris_watts_in_4k",
     "christmas_night_shoulders",
-    "clearing_the_air_and_watching_jordan_peterson"
+    "clearing_the_air_and_watching_jordan_peterson",
+    "colleen_ballinger_is_an_absolute_weirdo"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3148,6 +3149,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.14,
       "avg_active_chatters": 28.33
+    },
+    "colleen_ballinger_is_an_absolute_weirdo": {
+      "stream_id": "colleen_ballinger_is_an_absolute_weirdo",
+      "title": "Colleen Ballinger Is An Absolute Weirdo",
+      "start_ts": 1689984162,
+      "end_ts": 1689997445,
+      "duration_sec": 13283,
+      "youtube_archive_id": "pFer07sLXug",
+      "source_platform": "youtube",
+      "total_donations_usd": 189.88,
+      "donation_count": 40,
+      "donations_per_min": 0.8577,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.38,
+      "avg_active_chatters": 37.01
     }
   }
 }
