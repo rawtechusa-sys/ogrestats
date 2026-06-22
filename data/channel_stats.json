@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098618,
+  "updated_ts": 1782098625,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -135,7 +135,8 @@
     "andrew_taint_is_a_man",
     "andrew_tate_is_a_man",
     "andrew_tate_man_stream_he_got_arrested",
-    "angrily_chatting_and_playing_elden_ring"
+    "angrily_chatting_and_playing_elden_ring",
+    "another_interesting_pat_the_nes_punk_twist"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2281,6 +2282,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.97,
       "avg_active_chatters": 40.07
+    },
+    "another_interesting_pat_the_nes_punk_twist": {
+      "stream_id": "another_interesting_pat_the_nes_punk_twist",
+      "title": "Another Interesting Pat The NES Punk Twist",
+      "start_ts": 1675901084,
+      "end_ts": 1675909348,
+      "duration_sec": 8264,
+      "youtube_archive_id": "_cqBgtnAxJM",
+      "source_platform": "youtube",
+      "total_donations_usd": 384.13,
+      "donation_count": 61,
+      "donations_per_min": 2.7889,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.39,
+      "avg_active_chatters": 23.45
     }
   }
 }
