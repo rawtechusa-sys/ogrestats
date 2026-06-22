@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100047,
+  "updated_ts": 1782100056,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -307,7 +307,8 @@
     "i_formally_invited_quantum_tv_on_for_an_interview",
     "i_got_screwed",
     "i_got_trolled_hard_by_ethan_ralph",
-    "i_have_no_water_so_i_may_as_well_keep_streaming"
+    "i_have_no_water_so_i_may_as_well_keep_streaming",
+    "i_have_no_words_and_im_frustrated"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5205,6 +5206,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.46,
       "avg_active_chatters": 22.47
+    },
+    "i_have_no_words_and_im_frustrated": {
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "title": "I Have No Words And I'm Frustrated",
+      "start_ts": 1632527209,
+      "end_ts": 1632535200,
+      "duration_sec": 7991,
+      "youtube_archive_id": "Y7X-C-nnK50",
+      "source_platform": "youtube",
+      "total_donations_usd": 574.5,
+      "donation_count": 119,
+      "donations_per_min": 4.3136,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.84,
+      "avg_active_chatters": 40.36
     }
   }
 }
