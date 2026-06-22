@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098855,
+  "updated_ts": 1782098862,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -164,7 +164,8 @@
     "birds_and_men_live",
     "birds_are_satisfying_feat_a_man",
     "birds_are_satisfying_kinda_livestream_feat_birds",
-    "birds_pot_halo_infinite_and_the_game_awards_discussion"
+    "birds_pot_halo_infinite_and_the_game_awards_discussion",
+    "birthday_bird_and_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -190,14 +191,14 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 12,
+    "rich": 13,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 36,
+    "eyes": 37,
     "africa": 1,
-    "face": 131,
+    "face": 133,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 104,
@@ -211,16 +212,16 @@
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 48,
+    "heart": 50,
     "shorts": 1,
     "laughing": 51,
     "news": 11,
-    "chicken": 23,
-    "cake": 1,
+    "chicken": 24,
+    "cake": 3,
     "d": 1,
     "halo": 2,
     "hand": 8,
-    "popper": 1,
+    "popper": 2,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -257,7 +258,7 @@
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
-    "gift": 1,
+    "gift": 2,
     "bird": 7,
     "richsmile": 2,
     "dsp": 7,
@@ -324,7 +325,7 @@
     "giants": 1,
     "trinity": 1,
     "day": 1,
-    "struck": 1,
+    "struck": 2,
     "joker": 1,
     "racehorse": 3,
     "question": 6,
@@ -417,14 +418,15 @@
     "laugh": 1,
     "shirt": 1,
     "vhs": 1,
-    "pov": 1,
+    "pov": 2,
     "circle": 2,
     "bar": 1,
     "cells": 1,
     "tv": 1,
     "apple": 1,
     "channel": 1,
-    "specs": 1
+    "specs": 1,
+    "balloon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1241,6 +1243,11 @@
       "title": "Birds, Pot, Halo Infinite And The Game Awards Discussion",
       "start_ts": 1639166125,
       "youtube_archive_id": "m_dn6LNqnC0"
+    },
+    "birthday_bird_and_man_stream": {
+      "title": "Birthday Bird And Man Stream",
+      "start_ts": 1657932689,
+      "youtube_archive_id": "aThKckUZ9No"
     }
   },
   "messages": [
@@ -7640,6 +7647,101 @@
       "message": "bazinga!!! how you been Richie? or should i say dickers? lmfao :grinning_squinting_face: is bird the word?",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1657939577,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "Happy Born Day! Celebrating in Chicago! :red_heart::red_heart::red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1657938020,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "My 24th birthday tomorrow Rich can I please have a cucumber fight! :_Cucumber::_Rich:",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1657937835,
+      "username": "@BlueWolfSp1r1t",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "Happy Birthday Rich :birthday_cake: Carlos better have sung happy birthday to your holes",
+      "commands": [
+        "cake"
+      ]
+    },
+    {
+      "ts": 1657936273,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "POV: I e-beg while you listen and refuse to donate",
+      "commands": [
+        "pov"
+      ]
+    },
+    {
+      "ts": 1657935998,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "Happy bird day dad :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1657933407,
+      "username": "@Fanto_Sir",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "for 7 days we're the same age, until my Bday. :partying_face::partying_face::partying_face::partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1657933289,
+      "username": "@chrischansfantabottlecolle4368",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "HAPPY BIRTHDAY DAD! Been watching since 2012, love all the streams. :smiling_face_with_smiling_eyes: gimme some FARTS, anus and shoulders. :red_heart::red_heart:",
+      "commands": [
+        "eyes",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1657933269,
+      "username": "@BlackPopeye44",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "Happy Birthday Rich :birthday_cake: :partying_face: :party_popper: :balloon: :wrapped_gift:",
+      "commands": [
+        "cake",
+        "face",
+        "popper",
+        "balloon",
+        "gift"
+      ]
+    },
+    {
+      "ts": 1657933029,
+      "username": "@patquinn115",
+      "platform": "youtube",
+      "stream_id": "birthday_bird_and_man_stream",
+      "message": "Happy birthday dear Rich!!:star_struck:",
+      "commands": [
+        "struck"
       ]
     },
     {
