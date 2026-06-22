@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101634,
+  "updated_ts": 1782101641,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -508,7 +508,8 @@
     "philip_burnell_feat_tickled_television_incorporated",
     "philip_burnell_is_a_lover_of_horses",
     "philip_burnell_is_a_man",
-    "philip_burnell_is_a_man_partwhatever"
+    "philip_burnell_is_a_man_partwhatever",
+    "philip_burnell_is_a_man_plus_newegg_drama"
   ],
   "commands": {
     "stan": 27,
@@ -541,7 +542,7 @@
     "turkey": 12,
     "eyes": 121,
     "africa": 1,
-    "face": 480,
+    "face": 481,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 314,
@@ -555,9 +556,9 @@
     "cucumber": 54,
     "biceps": 5,
     "tongue": 12,
-    "heart": 148,
+    "heart": 149,
     "shorts": 2,
-    "laughing": 190,
+    "laughing": 191,
     "news": 22,
     "chicken": 58,
     "cake": 7,
@@ -859,7 +860,7 @@
     "check": 1,
     "king": 1,
     "unrelated": 1,
-    "duck": 3,
+    "duck": 4,
     "reads": 1,
     "unlocked": 1,
     "cupcake": 2,
@@ -1048,7 +1049,8 @@
     "bat": 1,
     "knife": 1,
     "pebkac": 1,
-    "skills": 1
+    "skills": 1,
+    "crossover": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3585,6 +3587,11 @@
       "title": "Philip Burnell Is A Man (Part...Whatever)",
       "start_ts": 1645922385,
       "youtube_archive_id": "93fcsePUne0"
+    },
+    "philip_burnell_is_a_man_plus_newegg_drama": {
+      "title": "Philip Burnell Is A Man (Plus Newegg Drama)",
+      "start_ts": 1644972994,
+      "youtube_archive_id": "p7EQHmQHyhc"
     }
   },
   "messages": [
@@ -23984,6 +23991,56 @@
       "message": "Pat and Ian called you a \"Shirtless Shill\" today :face_with_rolling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1644978427,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "message": "Its free real estate :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1644975889,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "message": "When will you be getting a porcelain Duck to complete the bird trio? A Duck would fit in perfectly as they lay turds like crazy :duck:Quack! :duck:",
+      "commands": [
+        "duck"
+      ]
+    },
+    {
+      "ts": 1644975733,
+      "username": "@NeoGotYa1111",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "message": "Rich when I started watching you I was just old enough to buy T rated games, now I can buy alcohol! love your content! sorry if I made you feel old :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1644974237,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "message": "Rich, any advice on a capture card? I'm a casual gamer. Also, can i get some chicken clucks? :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1644973546,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "message": "I guess uh, we'll never get a ReviewTechUSA/DSP crossover: https://twitter.com/TheyCallMeDSP/sta...",
+      "commands": [
+        "crossover"
       ]
     },
     {
