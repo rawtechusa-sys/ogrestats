@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101485,
+  "updated_ts": 1782101492,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -488,7 +488,8 @@
     "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga",
     "my_subscribers_give_me_criticism",
     "nightly_hang_out",
-    "nintendo_direct_event_292022"
+    "nintendo_direct_event_292022",
+    "nintendo_direct_recap_reaction"
   ],
   "commands": {
     "stan": 27,
@@ -521,7 +522,7 @@
     "turkey": 10,
     "eyes": 115,
     "africa": 1,
-    "face": 453,
+    "face": 457,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 298,
@@ -535,7 +536,7 @@
     "cucumber": 53,
     "biceps": 5,
     "tongue": 10,
-    "heart": 142,
+    "heart": 143,
     "shorts": 2,
     "laughing": 183,
     "news": 20,
@@ -552,7 +553,7 @@
     "leg": 2,
     "severance": 2,
     "gta": 5,
-    "me": 7,
+    "me": 8,
     "kill": 2,
     "enough": 1,
     "disclaimer": 1,
@@ -576,7 +577,7 @@
     "dog": 11,
     "is": 8,
     "spose": 1,
-    "sunglasses": 21,
+    "sunglasses": 22,
     "kiss": 22,
     "earlier": 1,
     "ghost": 2,
@@ -615,7 +616,7 @@
     "wilkins": 1,
     "vomiting": 4,
     "moment": 1,
-    "suit": 4,
+    "suit": 5,
     "mouth": 17,
     "papo": 1,
     "monkey": 1,
@@ -854,7 +855,7 @@
     "choice": 1,
     "baseball": 1,
     "jontron": 1,
-    "nintendo": 1,
+    "nintendo": 2,
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
@@ -1014,7 +1015,8 @@
     "spaces": 1,
     "carrot": 1,
     "reviewbidenusa": 1,
-    "critique": 1
+    "critique": 1,
+    "characters": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3451,6 +3453,11 @@
       "title": "Nintendo Direct Event 2/9/2022",
       "start_ts": 1644441978,
       "youtube_archive_id": "I-lxEx4zRGU"
+    },
+    "nintendo_direct_recap_reaction": {
+      "title": "Nintendo Direct Recap Reaction",
+      "start_ts": 1632449833,
+      "youtube_archive_id": "W_jOd2cPB7k"
     }
   },
   "messages": [
@@ -27409,6 +27416,88 @@
       "platform": "youtube",
       "stream_id": "i_have_no_words_and_im_frustrated",
       "message": "I love ya buddy. I haven't been able to join the streams recently but I have been listening on my morning runs. The DSP chicken video was hilarious:grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632455792,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "My guess they'll add Gamecube/GBA on expansion later making the price worth it. Roast or Not, I'll still respect & stay subbed. Just :heart_suit: your goofy self",
+      "commands": [
+        "suit"
+      ]
+    },
+    {
+      "ts": 1632454945,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Me: But NINTENDO, WE LOVE YOU!!! Nintendo: and i love you......Money :red_heart:",
+      "commands": [
+        "me",
+        "nintendo",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1632454671,
+      "username": "@OnePumpMaan",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Could you imagine if Xbox or PlayStation did an \u201cexpansion\u201d for GamePass or PSPlus. :grinning_squinting_face: my god.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632454551,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Aw man hearing that SEGA theme brought me back to my childhood back in 96' playing my Sega Game Gear Sonic Game. I still have that Game Gear today :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632452982,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "the ultimate chicken as a smash dlc? cool :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1632452346,
+      "username": "@fadi5956",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Cast of characters: Mario - daddy Rich Luigi - intro guy Bowser - Carlos Princess peach - DSP",
+      "commands": [
+        "characters"
+      ]
+    },
+    {
+      "ts": 1632450743,
+      "username": "@ThePunkStix",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Your Gassy and Sassy! $5 for the glasses\u2026 :money_bag::money_mouth_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632449924,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_recap_reaction",
+      "message": "Hope you and Carlos are having a great day :grinning_face:",
       "commands": [
         "face"
       ]
