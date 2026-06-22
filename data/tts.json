@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100239,
+  "updated_ts": 1782100248,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -328,7 +328,8 @@
     "im_just_a_man_on_the_damn_internet",
     "im_just_a_man_thats_all",
     "im_kind_of_back_what_happened",
-    "im_not_dead"
+    "im_not_dead",
+    "im_not_well_endowed"
   ],
   "commands": {
     "stan": 27,
@@ -359,12 +360,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 77,
+    "eyes": 78,
     "africa": 1,
-    "face": 311,
+    "face": 312,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 223,
+    "joy": 225,
     "gameboy": 1,
     "chick": 2,
     "carlos": 28,
@@ -377,11 +378,11 @@
     "tongue": 6,
     "heart": 102,
     "shorts": 1,
-    "laughing": 123,
+    "laughing": 125,
     "news": 18,
     "chicken": 38,
     "cake": 7,
-    "d": 3,
+    "d": 4,
     "halo": 3,
     "hand": 28,
     "popper": 6,
@@ -397,15 +398,15 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 32,
+    "rooster": 33,
     "peach": 8,
-    "fire": 18,
+    "fire": 19,
     "kendal": 1,
-    "up": 33,
+    "up": 34,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 8,
-    "shrugging": 4,
+    "facepalming": 9,
+    "shrugging": 5,
     "donation": 3,
     "naruto": 1,
     "hands": 20,
@@ -740,7 +741,9 @@
     "tipster": 1,
     "review": 1,
     "doctor": 1,
-    "joke": 1
+    "joke": 1,
+    "the": 1,
+    "quantum": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2377,6 +2380,11 @@
       "title": "I'm Not Dead",
       "start_ts": 1673723793,
       "youtube_archive_id": "DEIyZyG3LHQ"
+    },
+    "im_not_well_endowed": {
+      "title": "I'm Not Well Endowed :-(",
+      "start_ts": 1655596419,
+      "youtube_archive_id": "yCQFGuWRbhg"
     }
   },
   "messages": [
@@ -14233,6 +14241,137 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1655602713,
+      "username": "@FrankkCozmo",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Don't forget about Nicocado Avocados OnlyFans :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1655602644,
+      "username": "@TeamRed96",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "YouTube needs figure things out, I can't believe it has gotten to this point.:man_facepalming: Looking forward to the future streams btw",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1655602087,
+      "username": "@HaloMillennium",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Quantum: I'm vegan. Also Quantum: I hate putting cucumbers in my mouth",
+      "commands": [
+        "quantum"
+      ]
+    },
+    {
+      "ts": 1655601784,
+      "username": "@trippysavage",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Rich he's untouchable he called Susan's mom:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655601572,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Not all battles are won. Let YouTube deal the with consequences. While Rome burns, Quantum will be left, playing the fiddle. It\u2019s best to walk away. We will all remember what the good guys tried. :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1655601207,
+      "username": "@trippysavage",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Anonymous is quantum and :thumbs_up: reviews on his channel",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1655600633,
+      "username": "@FrankkCozmo",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Been watching this whole thing unfold since the beginning, crazy how big it's gotten. Keep strong Pops. Also, I think you missed my last superchat :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1655600144,
+      "username": "@grimreaper6540",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "I hear Soulja boy is selling snes onthis website :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655600071,
+      "username": "@theBio.",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "65\u201d OLED filled with blaring white RadioShack D:",
+      "commands": [
+        "d"
+      ]
+    },
+    {
+      "ts": 1655599933,
+      "username": "@norby9k879",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Im steam cleaning my shower and messaging a internet weirdo high and drunk\u2026 :man_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1655599868,
+      "username": "@KadinNation",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "I got a warning for using the: Look at this dude meme. The original one not an edit.. I was promoting hate speech apparently :face_with_tears_of_joy:",
+      "commands": [
+        "the",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1655599764,
+      "username": "@garrettaylor4777",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "I\u2019ve been watching you since 2015 you\u2019re of my favorite YouTubers I hate what YouTube\u2019s doing to you can\u2019t believe quantum hasn\u2019t been removed yet just keep your head up man and keep making bangers :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1655598575,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "im_not_well_endowed",
+      "message": "Rich pleas check recent twitter message from me :slightly_smiling_face:",
+      "commands": [
+        "face"
       ]
     },
     {
