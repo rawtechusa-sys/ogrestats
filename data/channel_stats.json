@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100196,
+  "updated_ts": 1782100204,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -324,7 +324,8 @@
     "im_back_and_on_a_warpath",
     "im_back_and_only_half_dead_come_hang_out",
     "im_buzzed_off_caffeine_come_chat_with_me",
-    "im_done_with_weed_slopes_tommy_tallarico_video_pt3"
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+    "im_just_a_little_stoned_right_now"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5494,6 +5495,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 6.78,
       "avg_active_chatters": 18.62
+    },
+    "im_just_a_little_stoned_right_now": {
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "title": "I'm Just A Little Stoned Right Now...",
+      "start_ts": 1647473922,
+      "end_ts": 1647482015,
+      "duration_sec": 8093,
+      "youtube_archive_id": "yYnNfBVnqTE",
+      "source_platform": "youtube",
+      "total_donations_usd": 301.28,
+      "donation_count": 73,
+      "donations_per_min": 2.2336,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.4,
+      "avg_active_chatters": 30.01
     }
   }
 }
