@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099192,
+  "updated_ts": 1782099200,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -206,7 +206,8 @@
     "come_ask_questions_742021",
     "come_ask_questions_752021",
     "come_ask_questions_812021",
-    "come_ask_questions_822021"
+    "come_ask_questions_822021",
+    "come_ask_questions_about_the_pixel_6_pro"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3488,6 +3489,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.24,
       "avg_active_chatters": 34.86
+    },
+    "come_ask_questions_about_the_pixel_6_pro": {
+      "stream_id": "come_ask_questions_about_the_pixel_6_pro",
+      "title": "Come Ask Questions About The Pixel 6 Pro",
+      "start_ts": 1635295942,
+      "end_ts": 1635308965,
+      "duration_sec": 13023,
+      "youtube_archive_id": "1TBd2yzjw5w",
+      "source_platform": "youtube",
+      "total_donations_usd": 317.26,
+      "donation_count": 90,
+      "donations_per_min": 1.4617,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.18,
+      "avg_active_chatters": 21.79
     }
   }
 }
