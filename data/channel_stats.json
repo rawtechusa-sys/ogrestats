@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102584,
+  "updated_ts": 1782102589,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -667,7 +667,8 @@
     "the_philip_burnell_interview_experience_feat_a_stoned_man",
     "the_philip_burnell_interview_experience_pt1_of_689",
     "the_philip_burnell_interview_experience_pt_16418",
-    "the_philip_burnell_interview_experience_pt_357"
+    "the_philip_burnell_interview_experience_pt_357",
+    "the_philip_burnell_interview_experience_pt_607214"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11325,6 +11326,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.59,
       "avg_active_chatters": 27.5
+    },
+    "the_philip_burnell_interview_experience_pt_607214": {
+      "stream_id": "the_philip_burnell_interview_experience_pt_607214",
+      "title": "The Philip Burnell Interview Experience Pt. 607,214",
+      "start_ts": 1679420916,
+      "end_ts": 1679426814,
+      "duration_sec": 5898,
+      "youtube_archive_id": "PnB6k3Hc3EQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 99.8,
+      "donation_count": 27,
+      "donations_per_min": 1.0153,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.75,
+      "avg_active_chatters": 24.33
     }
   }
 }
