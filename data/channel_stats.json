@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098430,
+  "updated_ts": 1782098438,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -111,7 +111,8 @@
     "a_two_man_marathon_stream_watching_cyraxx",
     "a_very_late_man",
     "a_very_late_man_part_deux_totally_baked",
-    "a_very_stoned_man_discusses_repzion_and_the_completionist"
+    "a_very_stoned_man_discusses_repzion_and_the_completionist",
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1873,6 +1874,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 30.0,
       "avg_active_chatters": 47.88
+    },
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working": {
+      "stream_id": "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+      "title": "A Very Stoned Man Discusses Repzion And The Completionist (WORKING)",
+      "start_ts": 1701574136,
+      "end_ts": 1701590397,
+      "duration_sec": 16261,
+      "youtube_archive_id": "0wRkY2FULQE",
+      "source_platform": "youtube",
+      "total_donations_usd": 412.64,
+      "donation_count": 81,
+      "donations_per_min": 1.5226,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.74,
+      "avg_active_chatters": 37.04
     }
   }
 }
