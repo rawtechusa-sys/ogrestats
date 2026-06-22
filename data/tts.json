@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100652,
+  "updated_ts": 1782100659,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -376,7 +376,8 @@
     "large_man_in_front_of_mic_live",
     "large_man_live",
     "large_man_with_large_birds_talks_into_microphone_feat_birds",
-    "large_men"
+    "large_men",
+    "last_hour_lets_go_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -2713,6 +2714,11 @@
       "title": "Large Men",
       "start_ts": 1682120829,
       "youtube_archive_id": "QjshYZtF5yc"
+    },
+    "last_hour_lets_go_road_to_1000_members": {
+      "title": "LAST HOUR. LET'S GO (Road To 1000 Members)",
+      "start_ts": 1686547210,
+      "youtube_archive_id": "tRPewiwLzcY"
     }
   },
   "messages": [
