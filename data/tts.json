@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094998,
+  "updated_ts": 1782095052,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -74,7 +74,8 @@
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
     "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
     "a_man_with_birds",
-    "a_man_with_birds_streams_on_halloween"
+    "a_man_with_birds_streams_on_halloween",
+    "a_middle_aged_man_plays_halo_infinite"
   ],
   "commands": {
     "stan": 27,
@@ -107,9 +108,9 @@
     "turkey": 3,
     "eyes": 19,
     "africa": 1,
-    "face": 53,
+    "face": 55,
     "petersonxhhanson": 1,
-    "poo": 4,
+    "poo": 5,
     "joy": 47,
     "gameboy": 1,
     "chick": 1,
@@ -121,7 +122,7 @@
     "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 28,
+    "heart": 29,
     "shorts": 1,
     "laughing": 25,
     "news": 5,
@@ -154,7 +155,7 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 6,
+    "hands": 7,
     "horns": 1,
     "crab": 2,
     "superhero": 8,
@@ -605,6 +606,11 @@
       "title": "A MAN WITH BIRDS STREAMS ON HALLOWEEN",
       "start_ts": 1635730809,
       "youtube_archive_id": "WcJZuaL6yBs"
+    },
+    "a_middle_aged_man_plays_halo_infinite": {
+      "title": "A Middle-Aged Man Plays Halo Infinite",
+      "start_ts": 1637256625,
+      "youtube_archive_id": "44xyHdIKpIE"
     }
   },
   "messages": [
@@ -5385,6 +5391,56 @@
       "message": "\u201cRockstar Headquarters?\u201d Tourette\u2019s Guy: \u201cHello. I bought GTA Trilogy Remastered. AND IT MADE ME FEEL LIKE A PIECE OF $#!+\u201d",
       "commands": [
         "guy"
+      ]
+    },
+    {
+      "ts": 1637266206,
+      "username": "@sanchezs7614",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_halo_infinite",
+      "message": "Battlefield will be great just give it time Mr. Rich :red_heart::folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1637261385,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_halo_infinite",
+      "message": "Basically your doing a 24 live stream :upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637259471,
+      "username": "@DengrayKai211",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_halo_infinite",
+      "message": "No swearing. This is a Christian Family Stream :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1637259393,
+      "username": "@suppasandwich3310",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_halo_infinite",
+      "message": "Welcome to halo infinite richey, its so much fun :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637258326,
+      "username": "@AdrianCardoza",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_halo_infinite",
+      "message": "When does your Christmas tree go up? Mine is the first week of November. Can I get a Carlos :pile_of_poo: in my stocking for being a good boy?",
+      "commands": [
+        "poo"
       ]
     },
     {
