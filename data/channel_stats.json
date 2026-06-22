@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099676,
+  "updated_ts": 1782099684,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -264,7 +264,8 @@
     "dspgaming_is_a_tad_salty_plus_drphil",
     "dspgaming_is_back_feat_jaysus",
     "dspgaming_live_in_20_mins",
-    "dspgaming_ragequit_extravaganza_road_to_1000_members"
+    "dspgaming_ragequit_extravaganza_road_to_1000_members",
+    "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4474,6 +4475,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.11,
       "avg_active_chatters": 25.63
+    },
+    "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues": {
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "title": "DSPGaming's Announcement And Quantum TV's Steam Deck Meltdown Continues",
+      "start_ts": 1666575153,
+      "end_ts": 1666585610,
+      "duration_sec": 10457,
+      "youtube_archive_id": "8fXb5YbVUKI",
+      "source_platform": "youtube",
+      "total_donations_usd": 364.62,
+      "donation_count": 108,
+      "donations_per_min": 2.0921,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.21,
+      "avg_active_chatters": 39.06
     }
   }
 }
