@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099616,
+  "updated_ts": 1782099624,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -257,7 +257,8 @@
     "drunk_women_phil_and_a_man",
     "dsp_dkoldies_and_a_man",
     "dsp_intellivision_family_fun_and_prank_calls",
-    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update"
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+    "dsp_loves_derich"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4355,6 +4356,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.92,
       "avg_active_chatters": 35.74
+    },
+    "dsp_loves_derich": {
+      "stream_id": "dsp_loves_derich",
+      "title": "DSP Loves Derich",
+      "start_ts": 1701132303,
+      "end_ts": 1701151256,
+      "duration_sec": 18953,
+      "youtube_archive_id": "Xnn-XX8e_hQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 338.19,
+      "donation_count": 88,
+      "donations_per_min": 1.0706,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.01,
+      "avg_active_chatters": 45.55
     }
   }
 }
