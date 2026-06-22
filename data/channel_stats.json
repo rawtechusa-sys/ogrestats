@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099828,
+  "updated_ts": 1782099837,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -282,7 +282,8 @@
     "exposing_the_anti_woke_frauds",
     "father_is_sick_jaysus_saves",
     "final_chicken_suit_stream_featuring_birds",
-    "friday_night_internet_man"
+    "friday_night_internet_man",
+    "friday_night_man_fun_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4780,6 +4781,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.96,
       "avg_active_chatters": 30.8
+    },
+    "friday_night_man_fun_feat_birds": {
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "title": "Friday Night Man Fun (Feat. Birds)",
+      "start_ts": 1663373809,
+      "end_ts": 1663385307,
+      "duration_sec": 11498,
+      "youtube_archive_id": "gO32ZN2umsQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 458.41,
+      "donation_count": 101,
+      "donations_per_min": 2.3921,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.03,
+      "avg_active_chatters": 32.03
     }
   }
 }
