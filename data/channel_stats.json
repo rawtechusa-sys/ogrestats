@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099987,
+  "updated_ts": 1782099996,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -300,7 +300,8 @@
     "i_am_alive",
     "i_am_beyond_furious",
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
-    "i_am_him_i_will_continue_to_be_him"
+    "i_am_him_i_will_continue_to_be_him",
+    "i_am_not_well_endowed_and_im_streaming_about_phil"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5086,6 +5087,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.19,
       "avg_active_chatters": 38.51
+    },
+    "i_am_not_well_endowed_and_im_streaming_about_phil": {
+      "stream_id": "i_am_not_well_endowed_and_im_streaming_about_phil",
+      "title": "I Am Not Well Endowed And I'm Streaming About Phil",
+      "start_ts": 1672101849,
+      "end_ts": 1672111564,
+      "duration_sec": 9715,
+      "youtube_archive_id": "d8Qd_jATzLs",
+      "source_platform": "youtube",
+      "total_donations_usd": 276.51,
+      "donation_count": 82,
+      "donations_per_min": 1.7077,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.3,
+      "avg_active_chatters": 29.96
     }
   }
 }
