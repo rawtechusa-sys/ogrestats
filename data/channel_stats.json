@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101211,
+  "updated_ts": 1782101219,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -455,7 +455,8 @@
     "men_discuss_def_noodles_feat_christhenarc",
     "men_feat_men",
     "men_vs_chris_chan",
-    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds"
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
+    "middle_aged_men_complain_about_video_games"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7721,6 +7722,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.94,
       "avg_active_chatters": 28.02
+    },
+    "middle_aged_men_complain_about_video_games": {
+      "stream_id": "middle_aged_men_complain_about_video_games",
+      "title": "Middle-Aged Men Complain About Video Games",
+      "start_ts": 1640565760,
+      "end_ts": 1640573444,
+      "duration_sec": 7684,
+      "youtube_archive_id": "Rbo-ZhkKenw",
+      "source_platform": "youtube",
+      "total_donations_usd": 71.95,
+      "donation_count": 17,
+      "donations_per_min": 0.5618,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.77,
+      "avg_active_chatters": 27.07
     }
   }
 }
