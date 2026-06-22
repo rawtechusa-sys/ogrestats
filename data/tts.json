@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098679,
+  "updated_ts": 1782098687,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -142,7 +142,8 @@
     "answering_questions_feat_birds",
     "answering_questions_while_i_stare_at_birds",
     "antelope_hill_publishing_and_the_quartering",
-    "ask_a_man_random_things_while_you_stare_at_birds"
+    "ask_a_man_random_things_while_you_stare_at_birds",
+    "ask_me_anything"
   ],
   "commands": {
     "stan": 27,
@@ -1085,6 +1086,11 @@
       "title": "Ask A Man Random Things While You Stare At Birds",
       "start_ts": 1636769696,
       "youtube_archive_id": "GsaTt5xyn50"
+    },
+    "ask_me_anything": {
+      "title": "Ask Me Anything!",
+      "start_ts": 1527119093,
+      "youtube_archive_id": "EA05yEUZZ2w"
     }
   },
   "messages": [
