@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101918,
+  "updated_ts": 1782101924,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -558,7 +558,8 @@
     "qvc_is_amazing",
     "qvc_vs_man",
     "racism_is_so_disgusting",
-    "random_afternoon_stream"
+    "random_afternoon_stream",
+    "random_hump_day_man_logan_paul_apology"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9472,6 +9473,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.81,
       "avg_active_chatters": 40.1
+    },
+    "random_hump_day_man_logan_paul_apology": {
+      "stream_id": "random_hump_day_man_logan_paul_apology",
+      "title": "Random Hump Day Man (Logan Paul Apology)",
+      "start_ts": 1674085910,
+      "end_ts": 1674095351,
+      "duration_sec": 9441,
+      "youtube_archive_id": "-KhR2KWiX_U",
+      "source_platform": "youtube",
+      "total_donations_usd": 272.02,
+      "donation_count": 73,
+      "donations_per_min": 1.7288,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.66,
+      "avg_active_chatters": 23.88
     }
   }
 }
