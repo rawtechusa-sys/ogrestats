@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101314,
+  "updated_ts": 1782101321,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -469,7 +469,8 @@
     "more_family_man_fun_dad_is_back",
     "more_games_and_a_man",
     "more_gta_iii_remastered_with_birds",
-    "more_intellivision_amico_family_bird_fun"
+    "more_intellivision_amico_family_bird_fun",
+    "more_intellivision_amico_family_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7959,6 +7960,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.06,
       "avg_active_chatters": 31.93
+    },
+    "more_intellivision_amico_family_fun": {
+      "stream_id": "more_intellivision_amico_family_fun",
+      "title": "More Intellivision Amico Family Fun",
+      "start_ts": 1644282033,
+      "end_ts": 1644290704,
+      "duration_sec": 8671,
+      "youtube_archive_id": "nDU-LTdfzus",
+      "source_platform": "youtube",
+      "total_donations_usd": 293.37,
+      "donation_count": 85,
+      "donations_per_min": 2.03,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.05,
+      "avg_active_chatters": 34.22
     }
   }
 }
