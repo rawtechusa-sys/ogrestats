@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101142,
+  "updated_ts": 1782101149,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -443,7 +443,8 @@
     "may_1st_part_2_has_occured",
     "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
     "melonie_mac_goes_full_mask_off_road_to_1000_members",
-    "melonie_mac_responded"
+    "melonie_mac_responded",
+    "men"
   ],
   "commands": {
     "stan": 27,
@@ -476,13 +477,13 @@
     "turkey": 7,
     "eyes": 104,
     "africa": 1,
-    "face": 417,
+    "face": 418,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 278,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 35,
+    "carlos": 36,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -491,7 +492,7 @@
     "biceps": 5,
     "tongue": 8,
     "heart": 140,
-    "shorts": 1,
+    "shorts": 2,
     "laughing": 168,
     "news": 20,
     "chicken": 51,
@@ -520,7 +521,7 @@
     "note": 6,
     "eyebrow": 2,
     "facepalming": 13,
-    "shrugging": 5,
+    "shrugging": 6,
     "donation": 3,
     "naruto": 1,
     "hands": 28,
@@ -935,7 +936,9 @@
     "ctr": 1,
     "confession": 1,
     "racing": 1,
-    "burning": 1
+    "burning": 1,
+    "jeans": 1,
+    "engine": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3147,6 +3150,11 @@
       "title": "Melonie Mac Responded",
       "start_ts": 1687298376,
       "youtube_archive_id": "6vvnTdfOPLI"
+    },
+    "men": {
+      "title": "Men",
+      "start_ts": 1704830454,
+      "youtube_archive_id": "xvtRrSNQ3FQ"
     }
   },
   "messages": [
@@ -6833,6 +6841,66 @@
       "message": "psychos are hard work but worth it n the bedroom :winking_face_with_tongue:",
       "commands": [
         "tongue"
+      ]
+    },
+    {
+      "ts": 1704851075,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": "I\u2019ll gladly ring her bells :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704847305,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": "Jeff Gordon used to come in my work when he was racing. I asked him once if he would pull a Ricky Bobby at Talladega he said he don't run he drive:woman_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1704847286,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": "I have a solid snake in my pants :snake::shorts:",
+      "commands": [
+        "shorts"
+      ]
+    },
+    {
+      "ts": 1704838672,
+      "username": "@spaceburrito215",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": ":fire_engine::fire_engine::fire_engine::police_car_light::police_car_light::police_car_light::fire_engine::fire_engine::fire_engine:",
+      "commands": [
+        "engine"
+      ]
+    },
+    {
+      "ts": 1704836060,
+      "username": "@brian_27",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": "Yo yo:_Carlos::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1704833424,
+      "username": "@alphadaddy3046",
+      "platform": "youtube",
+      "stream_id": "men",
+      "message": "Chronic moisture rising. In my pants :jeans: horses",
+      "commands": [
+        "jeans"
       ]
     },
     {
