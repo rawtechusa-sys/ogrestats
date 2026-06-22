@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095799,
+  "updated_ts": 1782095859,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -88,7 +88,8 @@
     "a_philtacular_man_sunday",
     "a_plain_old_normal_man_stream_feat_men",
     "a_pre_stream_man_stream",
-    "a_pulsating_new_years_eve"
+    "a_pulsating_new_years_eve",
+    "a_pure_man_experience"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1482,6 +1483,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.17,
       "avg_active_chatters": 44.39
+    },
+    "a_pure_man_experience": {
+      "stream_id": "a_pure_man_experience",
+      "title": "A Pure Man Experience",
+      "start_ts": 1657840337,
+      "end_ts": 1657846303,
+      "duration_sec": 5966,
+      "youtube_archive_id": "MHE7E9gdNH4",
+      "source_platform": "youtube",
+      "total_donations_usd": 127.41,
+      "donation_count": 40,
+      "donations_per_min": 1.2814,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.24,
+      "avg_active_chatters": 39.72
     }
   }
 }
