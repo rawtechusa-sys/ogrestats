@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100624,
+  "updated_ts": 1782100631,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -372,7 +372,8 @@
     "keem_vs_boogie2988_vs_wings_lolcow_live",
     "king_cobra_and_phil",
     "large_freshly_showered_man_streams",
-    "large_man_alert"
+    "large_man_alert",
+    "large_man_in_front_of_mic_live"
   ],
   "commands": {
     "stan": 27,
@@ -405,9 +406,9 @@
     "turkey": 7,
     "eyes": 83,
     "africa": 1,
-    "face": 341,
+    "face": 344,
     "petersonxhhanson": 1,
-    "poo": 19,
+    "poo": 20,
     "joy": 248,
     "gameboy": 1,
     "chick": 2,
@@ -419,7 +420,7 @@
     "cucumber": 45,
     "biceps": 3,
     "tongue": 7,
-    "heart": 115,
+    "heart": 116,
     "shorts": 1,
     "laughing": 143,
     "news": 18,
@@ -452,7 +453,7 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 23,
+    "hands": 24,
     "horns": 7,
     "crab": 2,
     "superhero": 27,
@@ -544,7 +545,7 @@
     "rocket": 1,
     "droplets": 13,
     "tomato": 3,
-    "hearts": 8,
+    "hearts": 9,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -2684,6 +2685,11 @@
       "title": "LARGE MAN ALERT",
       "start_ts": 1713654709,
       "youtube_archive_id": "W0SXIVSyIrU"
+    },
+    "large_man_in_front_of_mic_live": {
+      "title": "Large Man In Front Of Mic LIVE",
+      "start_ts": 1664671913,
+      "youtube_archive_id": "92u2IVXE4kc"
     }
   },
   "messages": [
@@ -13951,6 +13957,58 @@
       "message": ":red_heart: Good Evening Rich! Hope you are doing awesome tonight! :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1664677719,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "large_man_in_front_of_mic_live",
+      "message": "It\u2019s okay! :grinning_squinting_face: all good Rich! :smiling_face_with_hearts:",
+      "commands": [
+        "face",
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1664677651,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "large_man_in_front_of_mic_live",
+      "message": "Hahahaha! I feel honored! :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1664677377,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "large_man_in_front_of_mic_live",
+      "message": "3 months as a proud Bird member! :clapping_hands: so sad to see Phil as part of the cancel culture. As sad as his life is, he doesn\u2019t deserve it. He needs a hug :hugging_face:",
+      "commands": [
+        "hands",
+        "face"
+      ]
+    },
+    {
+      "ts": 1664675249,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "large_man_in_front_of_mic_live",
+      "message": "I shoved something live down my girlfriend's throat last night if you know what I mean :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1664672810,
+      "username": "@BlackPopeye44",
+      "platform": "youtube",
+      "stream_id": "large_man_in_front_of_mic_live",
+      "message": "do you still have the STINKS LIKE :pile_of_poo: sound?",
+      "commands": [
+        "poo"
       ]
     },
     {
