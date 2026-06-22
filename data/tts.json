@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099206,
+  "updated_ts": 1782099215,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -207,7 +207,8 @@
     "come_ask_questions_812021",
     "come_ask_questions_822021",
     "come_ask_questions_about_the_pixel_6_pro",
-    "come_ask_questions_and_stare_at_me"
+    "come_ask_questions_and_stare_at_me",
+    "come_ask_questions_day_time_edition"
   ],
   "commands": {
     "stan": 27,
@@ -285,7 +286,7 @@
     "eyebrow": 2,
     "facepalming": 5,
     "shrugging": 3,
-    "donation": 2,
+    "donation": 3,
     "naruto": 1,
     "hands": 15,
     "horns": 5,
@@ -1531,6 +1532,11 @@
       "title": "Come Ask Questions And Stare At Me",
       "start_ts": 1627345503,
       "youtube_archive_id": "dlj75VzwXLU"
+    },
+    "come_ask_questions_day_time_edition": {
+      "title": "Come Ask Questions (Day Time Edition)",
+      "start_ts": 1628013620,
+      "youtube_archive_id": "6vpgXnV-Mtc"
     }
   },
   "messages": [
@@ -13439,6 +13445,16 @@
       "message": "Guys who cheat: thats a nice warzone you got there, it'll be a shame if i did something to it",
       "commands": [
         "cheat"
+      ]
+    },
+    {
+      "ts": 1628014267,
+      "username": "@H01618506",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_day_time_edition",
+      "message": "Long time fan, first time donation: I bought the Aukey 10 port USB charging station you recommended a few years ago, still works awesome. Thank you!",
+      "commands": [
+        "donation"
       ]
     },
     {
