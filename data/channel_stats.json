@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102643,
+  "updated_ts": 1782102649,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -678,7 +678,8 @@
     "the_quarteringintellivision_family_fun_continues",
     "the_quest_for_a_cupcake",
     "the_rtustreams_karenthon_feat_birds",
-    "the_sexiest_live_streamer_of_all_time"
+    "the_sexiest_live_streamer_of_all_time",
+    "the_swatting_needs_to_stop"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11512,6 +11513,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.72,
       "avg_active_chatters": 26.64
+    },
+    "the_swatting_needs_to_stop": {
+      "stream_id": "the_swatting_needs_to_stop",
+      "title": "The Swatting Needs To Stop",
+      "start_ts": 1644371508,
+      "end_ts": 1644379612,
+      "duration_sec": 8104,
+      "youtube_archive_id": "9IbUBM3KEtI",
+      "source_platform": "youtube",
+      "total_donations_usd": 193.85,
+      "donation_count": 53,
+      "donations_per_min": 1.4352,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.01,
+      "avg_active_chatters": 40.07
     }
   }
 }
