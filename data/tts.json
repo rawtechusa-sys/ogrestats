@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100019,
+  "updated_ts": 1782100028,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -303,7 +303,8 @@
     "i_am_not_well_endowed_and_im_streaming_about_phil",
     "i_dunno_wtf_im_doing",
     "i_failed_no_phil_november",
-    "i_formally_invited_quantum_tv_on_for_an_interview"
+    "i_formally_invited_quantum_tv_on_for_an_interview",
+    "i_got_screwed"
   ],
   "commands": {
     "stan": 27,
@@ -325,7 +326,7 @@
     "today": 3,
     "phile": 1,
     "emoguy": 1,
-    "phill": 1,
+    "phill": 2,
     "something": 1,
     "hobo": 2,
     "gnome": 1,
@@ -339,7 +340,7 @@
     "face": 283,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 211,
+    "joy": 213,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -486,7 +487,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 11,
+    "sweat": 12,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -624,7 +625,7 @@
     "currently": 1,
     "article": 1,
     "life": 1,
-    "monocle": 3,
+    "monocle": 4,
     "store": 1,
     "pump": 1,
     "robot": 1,
@@ -694,7 +695,9 @@
     "thoughts": 1,
     "rainbow": 1,
     "sekiro": 1,
-    "banana": 1
+    "banana": 1,
+    "pitt": 1,
+    "beel": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2206,6 +2209,11 @@
       "title": "I Formally Invited Quantum TV On For An Interview",
       "start_ts": 1655420787,
       "youtube_archive_id": "5xB1OWT8nnI"
+    },
+    "i_got_screwed": {
+      "title": "I Got Screwed",
+      "start_ts": 1642902538,
+      "youtube_archive_id": "lRoNYW1h-ig"
     }
   },
   "messages": [
@@ -15229,6 +15237,67 @@
       "message": "I do Facebook posts like u title ur streams. Example: \u201ca bearded hippie man and his dog walked yoo the lake today\u201d",
       "commands": [
         "example"
+      ]
+    },
+    {
+      "ts": 1642915493,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "You missed my above super Chat Rich on QVC LOL! :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1642914851,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "If I\u2019m senator I promise to all my people and DSP Burger King will pay for there crimes for Chicken gate 21 :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1642907359,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "I see you have sing party for the wiiu will you sing? :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1642907320,
+      "username": "@TheLafyFladi",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "following up on Beel: dark souls phill to heck",
+      "commands": [
+        "beel"
+      ]
+    },
+    {
+      "ts": 1642906587,
+      "username": "@beagleboygaming1701",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "Brad Pitt: what's in the box Phill: nothing",
+      "commands": [
+        "pitt",
+        "phill"
+      ]
+    },
+    {
+      "ts": 1642905074,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "i_got_screwed",
+      "message": "Why not watch some eBay scam videos later :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
