@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098830,
+  "updated_ts": 1782098839,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -161,7 +161,8 @@
     "bird_love_live_dating_nightmares",
     "birds_a_man_and_seltzer",
     "birds_and_a_man_feat_birds",
-    "birds_and_men_live"
+    "birds_and_men_live",
+    "birds_are_satisfying_feat_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -192,9 +193,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 35,
+    "eyes": 36,
     "africa": 1,
-    "face": 129,
+    "face": 131,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 104,
@@ -205,10 +206,10 @@
     "idea": 1,
     "fear": 2,
     "voice": 2,
-    "cucumber": 15,
+    "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 47,
+    "heart": 48,
     "shorts": 1,
     "laughing": 51,
     "news": 11,
@@ -241,7 +242,7 @@
     "shrugging": 2,
     "donation": 1,
     "naruto": 1,
-    "hands": 12,
+    "hands": 14,
     "horns": 4,
     "crab": 2,
     "superhero": 11,
@@ -257,7 +258,7 @@
     "gift": 1,
     "bird": 7,
     "richsmile": 2,
-    "dsp": 6,
+    "dsp": 7,
     "story": 1,
     "tree": 2,
     "skull": 4,
@@ -278,7 +279,7 @@
     "horse": 2,
     "bug": 1,
     "violin": 1,
-    "update": 3,
+    "update": 4,
     "wings": 1,
     "advice": 2,
     "ghostwire": 1,
@@ -310,7 +311,7 @@
     "cow": 1,
     "cap": 1,
     "adventures": 1,
-    "head": 1,
+    "head": 2,
     "like": 1,
     "memory": 1,
     "fight": 1,
@@ -323,7 +324,7 @@
     "day": 1,
     "struck": 1,
     "joker": 1,
-    "racehorse": 2,
+    "racehorse": 3,
     "question": 6,
     "mushroom": 2,
     "trilogy": 1,
@@ -1220,6 +1221,11 @@
       "title": "Birds And Men LIVE",
       "start_ts": 1648258584,
       "youtube_archive_id": "KDa9ucEVz_c"
+    },
+    "birds_are_satisfying_feat_a_man": {
+      "title": "Birds Are Satisfying (Feat. A Man)",
+      "start_ts": 1689291579,
+      "youtube_archive_id": "nEgsUq9Vyqo"
     }
   },
   "messages": [
@@ -5613,6 +5619,116 @@
       "message": "Hello father :chicken: i have a solution to the mod problem, make everyone who doesn't wanna be a mod, a mod. (some people wanna be mkds too badly... :racehorse:)",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1689298932,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Update: Being mailed the CCTV that shows the wreck I was in, hopefully it turns the tide for liability",
+      "commands": [
+        "update"
+      ]
+    },
+    {
+      "ts": 1689297024,
+      "username": "@EricHallmark",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "OG listener since 2012. Mod me please :pleading_face::folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1689295988,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Instead of modding me, give me the Horse Reward. :racehorse::racehorse::racehorse: (Horse sound)",
+      "commands": [
+        "racehorse"
+      ]
+    },
+    {
+      "ts": 1689295866,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Don\u2019t forget to mod me great father. Also that includes Google Fish & Abbhi :folded_hands::folded_hands::folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1689295709,
+      "username": "@phill_larrup",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Mod me Papa bear. Or I'll never blow bubble again.:_RichSmile::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1689295138,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "DSP: ban anyone who says cheese taste like glass",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1689293857,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Make Diogo Bolinhus a mod. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689293235,
+      "username": "@JoshJonesDrums",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "Lowkey 2 weeks ago I had a dream you modded me :exploding_head:",
+      "commands": [
+        "head"
+      ]
+    },
+    {
+      "ts": 1689292883,
+      "username": "@WickedGrom",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "I'm an OG mod on the RTU channel. then you took my power away here like a handsom man you are. also what's the goal for b00ty cucumber stuffing? I missed that in the video :hot_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1689292391,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "I will be responsible I did not ban anybody ever :saluting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1689292327,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_feat_a_man",
+      "message": "I've been here a year can I have standard mod :red_heart::red_heart::red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
