@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101349,
+  "updated_ts": 1782101356,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -471,7 +471,8 @@
     "more_intellivision_amico_manbird_fun",
     "more_man_more_birds",
     "more_man_more_karens",
-    "more_of_the_quantum_tv_interview"
+    "more_of_the_quantum_tv_interview",
+    "more_of_the_quantum_tv_interview_chris_the_narc"
   ],
   "commands": {
     "stan": 27,
@@ -497,14 +498,14 @@
     "something": 2,
     "hobo": 2,
     "gnome": 1,
-    "rich": 26,
+    "rich": 27,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 9,
-    "eyes": 109,
+    "eyes": 110,
     "africa": 1,
-    "face": 439,
+    "face": 440,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 287,
@@ -535,7 +536,7 @@
     "leg": 2,
     "severance": 2,
     "gta": 5,
-    "me": 6,
+    "me": 7,
     "kill": 2,
     "enough": 1,
     "disclaimer": 1,
@@ -984,7 +985,8 @@
     "bia": 1,
     "battle": 1,
     "yoga": 1,
-    "aka": 1
+    "aka": 1,
+    "westside": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3336,6 +3338,11 @@
       "title": "More Of The Quantum TV Interview",
       "start_ts": 1656637399,
       "youtube_archive_id": "S7YPJt7xtuw"
+    },
+    "more_of_the_quantum_tv_interview_chris_the_narc": {
+      "title": "More Of The Quantum TV Interview (Chris The Narc)",
+      "start_ts": 1656642996,
+      "youtube_archive_id": "XpnhB5F54Lo"
     }
   },
   "messages": [
@@ -18697,6 +18704,38 @@
       "message": "Watch Westside Tech say you were doxing him :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1656647025,
+      "username": "@NightmareFI",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview_chris_the_narc",
+      "message": "rich: speaks about westside's concerning playlists. Westside: Rich is a white supremacist me: West side needs a shower",
+      "commands": [
+        "rich",
+        "westside",
+        "me"
+      ]
+    },
+    {
+      "ts": 1656645783,
+      "username": "@guinnessbuddha",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview_chris_the_narc",
+      "message": ":winking_face: (sorry, had to Rich. love ya man)",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656645224,
+      "username": "@CronusSaturn",
+      "platform": "youtube",
+      "stream_id": "more_of_the_quantum_tv_interview_chris_the_narc",
+      "message": "Rich bring on Matt now, if you can. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
