@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094013,
+  "updated_ts": 1782094062,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -55,7 +55,8 @@
     "a_long_day_of_elden_ring_feat_birds",
     "a_major_philip_burnell_man_emrgency_has_occured",
     "a_man",
-    "a_man_and_bird_lushes_stream"
+    "a_man_and_bird_lushes_stream",
+    "a_man_and_his_birds"
   ],
   "commands": {
     "stan": 27,
@@ -91,7 +92,7 @@
     "face": 41,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 31,
+    "joy": 32,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -104,9 +105,9 @@
     "tongue": 2,
     "heart": 18,
     "shorts": 1,
-    "laughing": 18,
+    "laughing": 20,
     "news": 5,
-    "chicken": 8,
+    "chicken": 9,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -126,7 +127,7 @@
     "hole": 2,
     "rooster": 8,
     "peach": 1,
-    "fire": 3,
+    "fire": 4,
     "kendal": 1,
     "up": 5,
     "note": 1,
@@ -196,7 +197,9 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 1
+    "it": 1,
+    "food": 1,
+    "play": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -468,6 +471,11 @@
       "title": "A Man And Bird Lushes Stream",
       "start_ts": 1630285652,
       "youtube_archive_id": "01ee41S46SE"
+    },
+    "a_man_and_his_birds": {
+      "title": "A Man And His Birds",
+      "start_ts": 1681170352,
+      "youtube_archive_id": "TriP14lacFo"
     }
   },
   "messages": [
@@ -3267,6 +3275,76 @@
       "message": "me: 2 men online, wonder what this is about *joins live* \"oh yeah touch me\"",
       "commands": [
         "me"
+      ]
+    },
+    {
+      "ts": 1681186622,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "Hello father :chicken: hope things are getting better, as someone who was diagnosed with an autoimmune disease as a child I understand how tough it can be.",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1681186173,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "I just clipped a part of a recent Cody stream that got him flack for the whole trans kids thing :rolling_on_the_floor_laughing: the comments were on fire",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1681183921,
+      "username": "@JacobstanfordOCD",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "\"Cuz it's from china\" As the Donald would say :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1681178128,
+      "username": "@reviewscientologyusa",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "Richy we need a RTU/thug shaker collab! :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1681177086,
+      "username": "@TheDreamSama",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "Good evening dad, please play: dont get bfed trust me, ow it hurts, shove bubbles up your, ow it hurts, bubbles",
+      "commands": [
+        "play"
+      ]
+    },
+    {
+      "ts": 1681175381,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "this is for your delicious breasts :face_savoring_food:",
+      "commands": [
+        "food"
+      ]
+    },
+    {
+      "ts": 1681171712,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "a_man_and_his_birds",
+      "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
+      "commands": [
+        "joy"
       ]
     },
     {
