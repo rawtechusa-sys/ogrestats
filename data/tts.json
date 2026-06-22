@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100603,
+  "updated_ts": 1782100610,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -369,7 +369,8 @@
     "just_two_men_feat_men",
     "just_watching_some_butt_slapping_competitions",
     "karens_and_birds",
-    "keem_vs_boogie2988_vs_wings_lolcow_live"
+    "keem_vs_boogie2988_vs_wings_lolcow_live",
+    "king_cobra_and_phil"
   ],
   "commands": {
     "stan": 27,
@@ -438,7 +439,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 38,
+    "rooster": 39,
     "peach": 10,
     "fire": 22,
     "kendal": 1,
@@ -656,7 +657,7 @@
     "cupcaketv": 1,
     "stuff": 1,
     "vampire": 1,
-    "basketball": 1,
+    "basketball": 2,
     "intelivsion": 1,
     "topic": 2,
     "doody": 1,
@@ -822,7 +823,8 @@
     "rain": 1,
     "off": 1,
     "hoarders": 1,
-    "either": 1
+    "either": 1,
+    "reviewojsimpsonusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2664,6 +2666,11 @@
       "title": "KEEM VS BOOGIE2988 VS WINGS (LOLCOW LIVE)",
       "start_ts": 1702867192,
       "youtube_archive_id": "h0BA3MA9BXU"
+    },
+    "king_cobra_and_phil": {
+      "title": "King Cobra And Phil",
+      "start_ts": 1713311234,
+      "youtube_archive_id": "6vhIas1e5ZA"
     }
   },
   "messages": [
@@ -4972,6 +4979,27 @@
       "message": "Sending a message for Seymour Demonica: Your Tipster image is bleeding into Jordan Peterson. Big Birds!",
       "commands": [
         "demonica"
+      ]
+    },
+    {
+      "ts": 1713315934,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "king_cobra_and_phil",
+      "message": "ReviewOJSimpsonUSA: Well he\u2019s dead so",
+      "commands": [
+        "reviewojsimpsonusa"
+      ]
+    },
+    {
+      "ts": 1713311794,
+      "username": "@Quasi360",
+      "platform": "youtube",
+      "stream_id": "king_cobra_and_phil",
+      "message": "Rich, have a good stream! It\u2019s NBA basketball :basketball: insanity here in California!! I\u2019ll catch the restream later:rooster:",
+      "commands": [
+        "basketball",
+        "rooster"
       ]
     },
     {
