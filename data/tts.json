@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101232,
+  "updated_ts": 1782101240,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -455,7 +455,8 @@
     "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
     "middle_aged_men_complain_about_video_games",
     "monday_night_man",
-    "more_amico_family_fun"
+    "more_amico_family_fun",
+    "more_chris_chan_insanity"
   ],
   "commands": {
     "stan": 27,
@@ -488,10 +489,10 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 428,
+    "face": 430,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 282,
+    "joy": 283,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -959,7 +960,8 @@
     "th": 1,
     "by": 1,
     "tupac": 1,
-    "arbys": 1
+    "arbys": 1,
+    "soon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3231,6 +3233,11 @@
       "title": "More Amico Family Fun",
       "start_ts": 1645909897,
       "youtube_archive_id": "MWqbjOI-SDk"
+    },
+    "more_chris_chan_insanity": {
+      "title": "More Chris Chan Insanity",
+      "start_ts": 1634084622,
+      "youtube_archive_id": "IeWnGYM-d34"
     }
   },
   "messages": [
@@ -25109,6 +25116,46 @@
       "message": "imagine Jim Ryan walked \u00edn and lost his temper :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1634090489,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity",
+      "message": "Im sorry wut :worried_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1634088762,
+      "username": "@iamgreekboy4321",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity",
+      "message": "The laugh track gets me every time dude :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1634086061,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity",
+      "message": "I like TheQuarting, but that\u2019s unacceptable. That\u2019s like some ReviewHellUsa type crap. :grimacing_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1634084749,
+      "username": "@MelodieOctavia",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity",
+      "message": "Coming up soon: What the hell did Chris do now?",
+      "commands": [
+        "soon"
       ]
     },
     {
