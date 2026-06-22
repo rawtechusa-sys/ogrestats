@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099986,
+  "updated_ts": 1782099994,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -299,7 +299,8 @@
     "i_am_alive",
     "i_am_beyond_furious",
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
-    "i_am_him_i_will_continue_to_be_him"
+    "i_am_him_i_will_continue_to_be_him",
+    "i_am_not_well_endowed_and_im_streaming_about_phil"
   ],
   "commands": {
     "stan": 27,
@@ -685,7 +686,8 @@
     "word": 1,
     "wrestling": 1,
     "tcap": 1,
-    "salad": 1
+    "salad": 1,
+    "of": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2177,6 +2179,11 @@
       "title": "I AM HIM! I WILL CONTINUE TO BE HIM!",
       "start_ts": 1706051264,
       "youtube_archive_id": "Fy7TbT0ihX8"
+    },
+    "i_am_not_well_endowed_and_im_streaming_about_phil": {
+      "title": "I Am Not Well Endowed And I'm Streaming About Phil",
+      "start_ts": 1672101849,
+      "youtube_archive_id": "d8Qd_jATzLs"
     }
   },
   "messages": [
@@ -11111,6 +11118,16 @@
       "message": "One last thing: He answered to me asking him if he would react to Secret Limited\u2018s video and he replied. Want me to send you a Timestamp tomorrow?",
       "commands": [
         "thing"
+      ]
+    },
+    {
+      "ts": 1672106204,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "i_am_not_well_endowed_and_im_streaming_about_phil",
+      "message": "just got here during work so thanks for another episode of: HERES PHIL TO TELL YOU MORE!",
+      "commands": [
+        "of"
       ]
     },
     {
