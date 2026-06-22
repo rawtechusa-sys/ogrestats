@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096398,
+  "updated_ts": 1782096458,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -98,7 +98,8 @@
     "a_random_short_man_stream_with_special_guest_birds",
     "a_satisfying_incel_stream",
     "a_short_stream",
-    "a_short_stream_with_a_man"
+    "a_short_stream_with_a_man",
+    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes"
   ],
   "commands": {
     "stan": 27,
@@ -134,7 +135,7 @@
     "face": 84,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 61,
+    "joy": 63,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -286,7 +287,8 @@
     "quote": 1,
     "beverage": 1,
     "peanuts": 1,
-    "glass": 1
+    "glass": 1,
+    "example": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -773,6 +775,11 @@
       "title": "A Short Stream With A Man.",
       "start_ts": 1685407297,
       "youtube_archive_id": "2AId2nItv54"
+    },
+    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes": {
+      "title": "A Stoned, Irrelevant YouTuber Plays Sim City On The SNES",
+      "start_ts": 1643404631,
+      "youtube_archive_id": "YnGOIjZAncg"
     }
   },
   "messages": [
@@ -6100,6 +6107,36 @@
       "message": "Square Enix games usually contain incredibly well done graphics, character, and voice acting. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1643409328,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+      "message": "What about the city going into a disaster rich?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1643406624,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+      "message": "Don't forget connect power line to power plant :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1643406090,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+      "message": "I do Facebook posts like u title ur streams. Example: \u201ca bearded hippie man and his dog walked yoo the lake today\u201d",
+      "commands": [
+        "example"
       ]
     },
     {
