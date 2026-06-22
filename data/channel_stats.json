@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099897,
+  "updated_ts": 1782099905,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -290,7 +290,8 @@
     "furry_cringe_feat_keemstar",
     "g4tv_family_fun",
     "getting_high_on_a_saturday_a_brewing_brony_war",
-    "girlfriend_kicked_me_out_of_bed_so_im_back"
+    "girlfriend_kicked_me_out_of_bed_so_im_back",
+    "grandpa_is_playing_call_of_duty_loud_farts"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4916,6 +4917,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.32,
       "avg_active_chatters": 36.7
+    },
+    "grandpa_is_playing_call_of_duty_loud_farts": {
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "title": "Grandpa Is Playing Call of Duty (Loud Farts)",
+      "start_ts": 1706478949,
+      "end_ts": 1706504456,
+      "duration_sec": 25507,
+      "youtube_archive_id": "je4Gm215Dx4",
+      "source_platform": "youtube",
+      "total_donations_usd": 456.12,
+      "donation_count": 125,
+      "donations_per_min": 1.0729,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.84,
+      "avg_active_chatters": 35.04
     }
   }
 }
