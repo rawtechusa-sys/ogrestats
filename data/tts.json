@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099042,
+  "updated_ts": 1782099051,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -187,7 +187,8 @@
     "christmas_night_shoulders",
     "clearing_the_air_and_watching_jordan_peterson",
     "colleen_ballinger_is_an_absolute_weirdo",
-    "come_ask_a_man_and_a_bird_questions"
+    "come_ask_a_man_and_a_bird_questions",
+    "come_ask_a_man_and_bird_questions"
   ],
   "commands": {
     "stan": 27,
@@ -213,14 +214,14 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 13,
+    "rich": 14,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 47,
+    "eyes": 48,
     "africa": 1,
-    "face": 153,
+    "face": 155,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 117,
@@ -236,9 +237,9 @@
     "tongue": 4,
     "heart": 55,
     "shorts": 1,
-    "laughing": 53,
+    "laughing": 54,
     "news": 12,
-    "chicken": 26,
+    "chicken": 27,
     "cake": 7,
     "d": 1,
     "halo": 2,
@@ -300,7 +301,7 @@
     "reviewseinfeldusa": 1,
     "things": 2,
     "down": 2,
-    "tomorrow": 6,
+    "tomorrow": 7,
     "horse": 2,
     "bug": 1,
     "violin": 1,
@@ -464,7 +465,9 @@
     "pizza": 1,
     "out": 1,
     "music": 1,
-    "ask": 1
+    "ask": 1,
+    "wrong": 1,
+    "distance": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1396,6 +1399,11 @@
       "title": "Come Ask A Man And A Bird Questions",
       "start_ts": 1628208922,
       "youtube_archive_id": "1fkURq0nZFQ"
+    },
+    "come_ask_a_man_and_bird_questions": {
+      "title": "Come Ask A Man And Bird Questions",
+      "start_ts": 1635811880,
+      "youtube_archive_id": "4GbrXoRdgqo"
     }
   },
   "messages": [
@@ -11451,6 +11459,68 @@
       "message": "Steve has those pumpkin :jack_o_lantern: :jack_o_lantern: bottom jeans on",
       "commands": [
         "lantern"
+      ]
+    },
+    {
+      "ts": 1635821677,
+      "username": "@Alexander-y7z6r",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "My Bee-Bee hurts when I Boo-Boo, my Mii-Mii hurts when I Moo-Moo, and don't even get me STARTED about my Pee-Pee :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1635818031,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "I sent the video suggestion email about it before. Badlands Big Chug Booker eats 100 chicken feet. Must have forgot. Thought we'd all have fun w/ it:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1635815176,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "Rich: more flops=more power. tim allen in distance: *grunts* me:: *looks around* Hello?",
+      "commands": [
+        "rich",
+        "distance"
+      ]
+    },
+    {
+      "ts": 1635814488,
+      "username": "@jdx4527",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "Rich Tomorrow: \"According to creditable sources have claimed that carlos will appear exclusively on the KFC console as a launch title! Also he a bird:chicken:",
+      "commands": [
+        "tomorrow",
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1635814314,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "Rich, the birds are multiplying, i think you may wanna get that checked :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1635813820,
+      "username": "@JeremyGunn11",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_bird_questions",
+      "message": "Wrong: the answer is Dr.Pepper",
+      "commands": [
+        "wrong"
       ]
     },
     {
