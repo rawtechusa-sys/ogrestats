@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092472,
+  "updated_ts": 1782092496,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -14,7 +14,8 @@
     "12_hour_man_stream_feat_men_part_2",
     "1_man_1_bird",
     "1_man_1_bird_all_live",
-    "1_million_sub_special_feat_birds"
+    "1_million_sub_special_feat_birds",
+    "2_birds_and_a_man_live"
   ],
   "commands": {
     "stan": 27,
@@ -44,16 +45,16 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 2,
+    "turkey": 3,
     "eyes": 3,
     "africa": 1,
-    "face": 6,
+    "face": 7,
     "petersonxhhanson": 1,
     "poo": 1,
-    "joy": 5,
+    "joy": 7,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 2,
+    "carlos": 3,
     "away": 1,
     "idea": 1,
     "fear": 1,
@@ -63,9 +64,9 @@
     "tongue": 1,
     "heart": 3,
     "shorts": 1,
-    "laughing": 1,
+    "laughing": 2,
     "news": 1,
-    "chicken": 1,
+    "chicken": 2,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -73,7 +74,11 @@
     "popper": 1,
     "straw": 1,
     "glasses": 1,
-    "ball": 1
+    "ball": 1,
+    "lantern": 2,
+    "leg": 1,
+    "severance": 1,
+    "gta": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -140,6 +145,11 @@
       "title": "1 Million Sub Special (Feat. Birds)",
       "start_ts": 1651621929,
       "youtube_archive_id": "kcKEfJG_ENI"
+    },
+    "2_birds_and_a_man_live": {
+      "title": "2 Birds And A Man LIVE",
+      "start_ts": 1635900094,
+      "youtube_archive_id": "aASk6Yr1O-I"
     }
   },
   "messages": [
@@ -2375,6 +2385,107 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1635908344,
+      "username": "@diamonddisc89",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "u think this looks better? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1635907401,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "I want someone to make a cartoon of your 2 birds called \"The Adventures of Cock and Gobbler.\" Just saying...:_RichSmile::_Cucumber::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1635907373,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "I got the hot sauce :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1635905674,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "Christopher Nolan is making a movie about Robert Oppenheimer. Think it will\u2026 bomb? :zany_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1635905526,
+      "username": "@vincehowell1018",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "Hey Rich, I'm interested in GTA: Definitive Edition, but do you find it strange that it's a week away from being released with no gameplay demo?",
+      "commands": [
+        "gta"
+      ]
+    },
+    {
+      "ts": 1635905053,
+      "username": "@kyleklukken",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "I'm excited because they did a remaster of Severance: Blade of Darkness",
+      "commands": [
+        "severance"
+      ]
+    },
+    {
+      "ts": 1635903680,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "There\u2019s a new video of Biden shaking his hands at the air in a conference :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1635903459,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "We have indeed two birds and one professional man:poultry_leg:",
+      "commands": [
+        "leg"
+      ]
+    },
+    {
+      "ts": 1635903012,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "Steve has the booty Carlos with the chesticles best of both birbs.. :chicken: :turkey:",
+      "commands": [
+        "chicken",
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1635902522,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "2_birds_and_a_man_live",
+      "message": "Steve has those pumpkin :jack_o_lantern: :jack_o_lantern: bottom jeans on",
+      "commands": [
+        "lantern"
       ]
     }
   ]
