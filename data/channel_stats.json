@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101079,
+  "updated_ts": 1782101086,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -437,7 +437,8 @@
     "man_versus_bird_live",
     "man_versus_carolina_reaper_jerky",
     "man_vs_birdemic_the_film_feat_birds",
-    "man_vs_birds_vs_wii_u_its_fixed"
+    "man_vs_birds_vs_wii_u_its_fixed",
+    "man_vs_demon_souls_remake"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7415,6 +7416,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.1,
       "avg_active_chatters": 31.14
+    },
+    "man_vs_demon_souls_remake": {
+      "stream_id": "man_vs_demon_souls_remake",
+      "title": "Man Vs. Demon Souls (Remake)",
+      "start_ts": 1688436996,
+      "end_ts": 1688442277,
+      "duration_sec": 5281,
+      "youtube_archive_id": "MwuDeim_-BE",
+      "source_platform": "youtube",
+      "total_donations_usd": 28.94,
+      "donation_count": 10,
+      "donations_per_min": 0.3288,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 7.9,
+      "avg_active_chatters": 14.52
     }
   }
 }
