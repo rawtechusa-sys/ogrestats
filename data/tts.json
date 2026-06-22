@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099388,
+  "updated_ts": 1782099396,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -229,7 +229,8 @@
     "come_look_at_this_man_and_chat_with_him",
     "come_speak_to_a_man",
     "come_stare_at_a_man",
-    "come_stare_at_a_man_and_ask_his_birds_questions"
+    "come_stare_at_a_man_and_ask_his_birds_questions",
+    "come_stare_at_a_middle_aged_man_livestream"
   ],
   "commands": {
     "stan": 27,
@@ -265,7 +266,7 @@
     "face": 202,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 137,
+    "joy": 138,
     "gameboy": 1,
     "chick": 1,
     "carlos": 21,
@@ -278,7 +279,7 @@
     "tongue": 5,
     "heart": 66,
     "shorts": 1,
-    "laughing": 63,
+    "laughing": 64,
     "news": 13,
     "chicken": 32,
     "cake": 7,
@@ -1677,6 +1678,11 @@
       "title": "Come Stare At A Man And Ask His Birds Questions",
       "start_ts": 1638491045,
       "youtube_archive_id": "punPakGgLkA"
+    },
+    "come_stare_at_a_middle_aged_man_livestream": {
+      "title": "Come Stare At A Middle-Aged Man Livestream",
+      "start_ts": 1633221670,
+      "youtube_archive_id": "LqB7N-3tSMM"
     }
   },
   "messages": [
@@ -13161,6 +13167,26 @@
       "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1633223549,
+      "username": "@The_Travelin_Panda",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_middle_aged_man_livestream",
+      "message": "I pop into the stream for 20 seconds and hear \"I believe the age of consent should be 12.\" :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1633222336,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_middle_aged_man_livestream",
+      "message": "I decided to shout lyrics from the expose song and my brother was wondering wtf was going on :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
