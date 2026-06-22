@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102419,
+  "updated_ts": 1782102425,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -638,7 +638,8 @@
     "the_completionist_and_philip_burnell_are_men",
     "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video",
     "the_dsp_and_ltg_situation_plus_unhinged_fan_livestreams",
-    "the_dspgaming_chickengate_saga_continues"
+    "the_dspgaming_chickengate_saga_continues",
+    "the_dspgaming_computer_situation"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10832,6 +10833,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.98,
       "avg_active_chatters": 33.49
+    },
+    "the_dspgaming_computer_situation": {
+      "stream_id": "the_dspgaming_computer_situation",
+      "title": "The DSPGaming Computer Situation",
+      "start_ts": 1658620184,
+      "end_ts": 1658635445,
+      "duration_sec": 15261,
+      "youtube_archive_id": "1jXhYfL_vXY",
+      "source_platform": "youtube",
+      "total_donations_usd": 378.6,
+      "donation_count": 106,
+      "donations_per_min": 1.4885,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.19,
+      "avg_active_chatters": 29.53
     }
   }
 }
