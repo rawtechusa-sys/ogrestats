@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100533,
+  "updated_ts": 1782100542,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -361,7 +361,8 @@
     "just_chatting_and_watching_the_completionist_discord_call",
     "just_chatting_feat_a_man",
     "just_chatting_like_a_man",
-    "just_chatting_with_vaush"
+    "just_chatting_with_vaush",
+    "just_discussing_future_plans_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -446,7 +447,7 @@
     "crab": 2,
     "superhero": 25,
     "legends": 2,
-    "dog": 5,
+    "dog": 6,
     "is": 6,
     "spose": 1,
     "sunglasses": 17,
@@ -803,7 +804,9 @@
     "ring": 2,
     "games": 1,
     "reviewphilosphyusa": 1,
-    "rtusa": 1
+    "rtusa": 1,
+    "kid": 1,
+    "tear": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2605,6 +2608,11 @@
       "title": "Just Chatting With Vaush",
       "start_ts": 1631203838,
       "youtube_archive_id": "OUFfOcXN29I"
+    },
+    "just_discussing_future_plans_road_to_1000_members": {
+      "title": "Just Discussing Future Plans (Road To 1000 Members)",
+      "start_ts": 1685572573,
+      "youtube_archive_id": "qPfpilN8_zM"
     }
   },
   "messages": [
@@ -10005,6 +10013,36 @@
       "message": "One the girls from the previous stream, xia, she was on Cody's show and yes they are fake melons but good ones :cat_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1685579352,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "just_discussing_future_plans_road_to_1000_members",
+      "message": "Phil gets his man pus beat up by Khat. Ack Ack :hot_dog::hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1685575448,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "just_discussing_future_plans_road_to_1000_members",
+      "message": "I wanted to have you, Jay, Cody and me on a stream, 2 men and their editors but Cody hates me :cat_with_tears_of_joy::smiling_face_with_tear::smiling_face_with_tear:",
+      "commands": [
+        "tear"
+      ]
+    },
+    {
+      "ts": 1685574373,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "just_discussing_future_plans_road_to_1000_members",
+      "message": "Al with his kid: say hello to my little friend",
+      "commands": [
+        "kid"
       ]
     },
     {
