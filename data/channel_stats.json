@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102012,
+  "updated_ts": 1782102018,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -572,7 +572,8 @@
     "reviewthorusa_i_got_soulja_boys_console",
     "rip_onlyfans",
     "russia_ukraine_war_discussion",
-    "saturday_night_man_and_bird_love"
+    "saturday_night_man_and_bird_love",
+    "saturday_night_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9710,6 +9711,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.13,
       "avg_active_chatters": 29.89
+    },
+    "saturday_night_man_stream": {
+      "stream_id": "saturday_night_man_stream",
+      "title": "Saturday Night Man Stream",
+      "start_ts": 1635032046,
+      "end_ts": 1635044160,
+      "duration_sec": 12114,
+      "youtube_archive_id": "ue79XQHcu6s",
+      "source_platform": "youtube",
+      "total_donations_usd": 524.43,
+      "donation_count": 92,
+      "donations_per_min": 2.5975,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.08,
+      "avg_active_chatters": 23.45
     }
   }
 }
