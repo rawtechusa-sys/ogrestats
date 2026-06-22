@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101373,
+  "updated_ts": 1782101381,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -477,7 +477,8 @@
     "more_of_the_quantum_tv_interview",
     "more_of_the_quantum_tv_interview_chris_the_narc",
     "more_phil_more_alpha_males_more_birds",
-    "more_predator_roasting"
+    "more_predator_roasting",
+    "more_quantum_tv_tickling"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8095,6 +8096,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.55,
       "avg_active_chatters": 32.34
+    },
+    "more_quantum_tv_tickling": {
+      "stream_id": "more_quantum_tv_tickling",
+      "title": "More Quantum TV Tickling",
+      "start_ts": 1660870099,
+      "end_ts": 1660883605,
+      "duration_sec": 13506,
+      "youtube_archive_id": "HNXHbNVMh_w",
+      "source_platform": "youtube",
+      "total_donations_usd": 358.69,
+      "donation_count": 96,
+      "donations_per_min": 1.5935,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.94,
+      "avg_active_chatters": 35.97
     }
   }
 }
