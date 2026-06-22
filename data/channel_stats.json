@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100821,
+  "updated_ts": 1782100829,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -401,7 +401,8 @@
     "lets_discuss_xbox_and_activision",
     "lets_have_some_fun",
     "lets_laugh_at_alex_jones",
-    "lets_laugh_at_alex_jones_again"
+    "lets_laugh_at_alex_jones_again",
+    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6803,6 +6804,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.81,
       "avg_active_chatters": 35.26
+    },
+    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man": {
+      "stream_id": "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+      "title": "Let's Laugh At Alex Jones And Philip Burnell (Is A Man)",
+      "start_ts": 1659830104,
+      "end_ts": 1659840841,
+      "duration_sec": 10737,
+      "youtube_archive_id": "YWb8lsT1eFs",
+      "source_platform": "youtube",
+      "total_donations_usd": 301.82,
+      "donation_count": 72,
+      "donations_per_min": 1.6866,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.56,
+      "avg_active_chatters": 33.32
     }
   }
 }
