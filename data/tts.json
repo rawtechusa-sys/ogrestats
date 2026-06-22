@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098578,
+  "updated_ts": 1782098586,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -129,7 +129,8 @@
     "an_explanation",
     "an_important_announcements",
     "an_important_update",
-    "an_unofficial_man_return_feat_large_men"
+    "an_unofficial_man_return_feat_large_men",
+    "and_the_nintendo_switch_oled_winners_are"
   ],
   "commands": {
     "stan": 27,
@@ -148,7 +149,7 @@
     "kratos": 4,
     "dagoth": 2,
     "they": 1,
-    "today": 2,
+    "today": 3,
     "phile": 1,
     "emoguy": 1,
     "phill": 1,
@@ -162,10 +163,10 @@
     "turkey": 5,
     "eyes": 29,
     "africa": 1,
-    "face": 109,
+    "face": 110,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 83,
+    "joy": 85,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -351,7 +352,10 @@
     "oldies": 1,
     "lollipop": 1,
     "reviewwatchmojousa": 1,
-    "cartoon": 1
+    "cartoon": 1,
+    "msg": 1,
+    "yesterday": 1,
+    "wonka": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -993,6 +997,11 @@
       "title": "An Unofficial Man Return (Feat. Large Men)",
       "start_ts": 1711925247,
       "youtube_archive_id": "CvjifnSssbw"
+    },
+    "and_the_nintendo_switch_oled_winners_are": {
+      "title": "And The Nintendo Switch OLED Winners Are...",
+      "start_ts": 1649199377,
+      "youtube_archive_id": "_5DZJV3U1EQ"
     }
   },
   "messages": [
@@ -7111,6 +7120,58 @@
       "message": "we love cucumbers :cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1649205503,
+      "username": "@bradley163",
+      "platform": "youtube",
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "message": "Regarding tonight's stream, I quote Gene Wilder's Willy Wonka: \"The suspense is terrible. I hope it'll last.\" This is more riveting than any Dateline:face_with_tears_of_joy:",
+      "commands": [
+        "wonka",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1649202046,
+      "username": "@joshiecon722",
+      "platform": "youtube",
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "message": "Rich my young niece slobber on my xbox s x. it wasn't alot but I freaked out. :grimacing_face::grimacing_face: some went in the fan. is it ruined?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1649201778,
+      "username": "@skymenlegacy1376",
+      "platform": "youtube",
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "message": "rich yesterday: I draw the line at animal sex. rich today: these birds are sexy.",
+      "commands": [
+        "yesterday",
+        "today"
+      ]
+    },
+    {
+      "ts": 1649201049,
+      "username": "@XToxic_AssassinX",
+      "platform": "youtube",
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "message": "I don't know alot about what transpired after. All I know is that they began doing ghost videos and exploring haunted places. its on my Recommend tab:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1649200589,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "message": "Just to be sure you get my Twitter msg: in my This Is How You Don't Play edit I'm doing... would 5 seconds of Gary Jules' \"Mad World\" be too much for Overlord Susan? Don't wanna get ya struck.",
+      "commands": [
+        "msg"
       ]
     },
     {
