@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099330,
+  "updated_ts": 1782099338,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -222,7 +222,8 @@
     "come_hang_out",
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
     "come_hang_out_for_a_bit",
-    "come_hang_out_with_a_man"
+    "come_hang_out_with_a_man",
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -253,7 +254,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 59,
+    "eyes": 60,
     "africa": 1,
     "face": 197,
     "petersonxhhanson": 1,
@@ -269,7 +270,7 @@
     "cucumber": 23,
     "biceps": 3,
     "tongue": 5,
-    "heart": 63,
+    "heart": 64,
     "shorts": 1,
     "laughing": 62,
     "news": 13,
@@ -1629,6 +1630,11 @@
       "title": "Come Hang Out With A Man",
       "start_ts": 1633912109,
       "youtube_archive_id": "KnRAsT2wENo"
+    },
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds": {
+      "title": "Come Hang Out With A Man And Ask Questions (Feat. Birds)",
+      "start_ts": 1663291903,
+      "youtube_archive_id": "cU-Et_njyLg"
     }
   },
   "messages": [
@@ -8592,6 +8598,26 @@
       "message": "Apple: You want USB in the iPhone 15, we'll give you USB! [installs USB micro]",
       "commands": [
         "apple"
+      ]
+    },
+    {
+      "ts": 1663294564,
+      "username": "@petez726",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_and_ask_questions_feat_birds",
+      "message": "Eat it shirtless :beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1663292947,
+      "username": "@Strawberry-jp5wv",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_and_ask_questions_feat_birds",
+      "message": "RIP Carlos :loudly_crying_face::broken_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
