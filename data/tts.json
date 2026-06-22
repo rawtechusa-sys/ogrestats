@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101194,
+  "updated_ts": 1782101202,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -450,7 +450,8 @@
     "men_birds_and_samurai_cop_part_deux",
     "men_chatting",
     "men_discuss_def_noodles_feat_christhenarc",
-    "men_feat_men"
+    "men_feat_men",
+    "men_vs_chris_chan"
   ],
   "commands": {
     "stan": 27,
@@ -483,7 +484,7 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 424,
+    "face": 425,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 281,
@@ -501,7 +502,7 @@
     "shorts": 2,
     "laughing": 168,
     "news": 20,
-    "chicken": 51,
+    "chicken": 52,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -521,7 +522,7 @@
     "hole": 9,
     "rooster": 44,
     "peach": 15,
-    "fire": 23,
+    "fire": 24,
     "kendal": 1,
     "up": 41,
     "note": 6,
@@ -657,7 +658,7 @@
     "glove": 3,
     "collision": 3,
     "spoiler": 1,
-    "mug": 2,
+    "mug": 3,
     "pachter": 3,
     "eagle": 5,
     "reviewkaynewestusa": 1,
@@ -947,7 +948,9 @@
     "engine": 1,
     "pineapple": 1,
     "arms": 1,
-    "source": 1
+    "source": 1,
+    "reviewbullyingusa": 1,
+    "reviewgossipusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3194,6 +3197,11 @@
       "title": "Men (feat. Men)",
       "start_ts": 1674699409,
       "youtube_archive_id": "zDE7_HZlgLw"
+    },
+    "men_vs_chris_chan": {
+      "title": "Men Vs. Chris Chan",
+      "start_ts": 1691798587,
+      "youtube_archive_id": "0SCnAWt2v_c"
     }
   },
   "messages": [
@@ -10504,6 +10512,66 @@
       "message": "People I know have spotted Fouseytube at my local mall because he lived like one town away, real life Bigfoot/cryptid encounter. NJ is cursed :skull::skull::skull:",
       "commands": [
         "skull"
+      ]
+    },
+    {
+      "ts": 1691807466,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "Jay Met Charlie Chaplin at one point and had a :beer_mug:",
+      "commands": [
+        "mug"
+      ]
+    },
+    {
+      "ts": 1691806012,
+      "username": "@GatheringHall",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "LightSydeBill would be 100% :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1691802276,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "the event everyone has been waiting for guys :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1691800580,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "ReviewGossipUSA: Jay is gay for AlphaOmegaSin",
+      "commands": [
+        "reviewgossipusa"
+      ]
+    },
+    {
+      "ts": 1691799988,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "Alpha Omega Sin is extremely cringe :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691799788,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "men_vs_chris_chan",
+      "message": "ReviewBullyingUSA: making fun SssniperWolf\u2019s lips",
+      "commands": [
+        "reviewbullyingusa"
       ]
     },
     {
