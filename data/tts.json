@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099239,
+  "updated_ts": 1782099247,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -211,7 +211,8 @@
     "come_ask_questions_day_time_edition",
     "come_ask_questions_no_vids_tonight",
     "come_ask_questions_watching_my_old_keemstar_debate",
-    "come_ask_shirtless_men_questions"
+    "come_ask_shirtless_men_questions",
+    "come_be_tired_and_miserable_with_me"
   ],
   "commands": {
     "stan": 27,
@@ -244,7 +245,7 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 188,
+    "face": 189,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 125,
@@ -324,7 +325,7 @@
     "reviewseinfeldusa": 1,
     "things": 2,
     "down": 2,
-    "tomorrow": 7,
+    "tomorrow": 8,
     "horse": 3,
     "bug": 1,
     "violin": 1,
@@ -1556,6 +1557,11 @@
       "title": "Come Ask Shirtless Men Questions",
       "start_ts": 1628556486,
       "youtube_archive_id": "rtSbsbXEbUM"
+    },
+    "come_be_tired_and_miserable_with_me": {
+      "title": "Come Be Tired And Miserable With Me",
+      "start_ts": 1625703797,
+      "youtube_archive_id": "6IpgwlHOKvY"
     }
   },
   "messages": [
@@ -14076,6 +14082,26 @@
       "message": "Rich agreeing with Pat :face_screaming_in_fear:",
       "commands": [
         "fear"
+      ]
+    },
+    {
+      "ts": 1625710627,
+      "username": "@Undecided0",
+      "platform": "youtube",
+      "stream_id": "come_be_tired_and_miserable_with_me",
+      "message": "Rich Tomorrow: Switch OLED. Can it run Crysis?",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1625704673,
+      "username": "@realLeeewith3Es",
+      "platform": "youtube",
+      "stream_id": "come_be_tired_and_miserable_with_me",
+      "message": "also you should make a discord for rtu :winking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
