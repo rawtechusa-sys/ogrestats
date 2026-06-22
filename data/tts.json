@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096156,
+  "updated_ts": 1782096216,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -94,7 +94,8 @@
     "a_quick_ask_me_anything_stream_power_wash_simulator",
     "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
     "a_quick_stream",
-    "a_quick_thank_you_and_boxing_update"
+    "a_quick_thank_you_and_boxing_update",
+    "a_random_short_man_stream_with_special_guest_birds"
   ],
   "commands": {
     "stan": 27,
@@ -127,7 +128,7 @@
     "turkey": 4,
     "eyes": 21,
     "africa": 1,
-    "face": 81,
+    "face": 82,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 57,
@@ -163,7 +164,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 3,
-    "rooster": 12,
+    "rooster": 13,
     "peach": 2,
     "fire": 4,
     "kendal": 1,
@@ -278,7 +279,8 @@
     "father": 1,
     "request": 1,
     "sweat": 1,
-    "twist": 1
+    "twist": 1,
+    "quote": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -745,6 +747,11 @@
       "title": "A Quick Thank You And Boxing Update",
       "start_ts": 1684298862,
       "youtube_archive_id": "9UO1E-Te31c"
+    },
+    "a_random_short_man_stream_with_special_guest_birds": {
+      "title": "A Random, Short Man-Stream (With Special Guest: Birds)",
+      "start_ts": 1653788907,
+      "youtube_archive_id": "oapMYYTc2_E"
     }
   },
   "messages": [
@@ -5227,6 +5234,36 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1653794057,
+      "username": "@Sorukun",
+      "platform": "youtube",
+      "stream_id": "a_random_short_man_stream_with_special_guest_birds",
+      "message": "There's that one Batman quote: 'You die a hero, or live long enough to see yourself a villain.' I might be wrong about the shooting situation, but ye.",
+      "commands": [
+        "quote"
+      ]
+    },
+    {
+      "ts": 1653790746,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "a_random_short_man_stream_with_special_guest_birds",
+      "message": "The Martian is extremely good if you haven\u2019t seen:rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1653790739,
+      "username": "@stryderblaze80",
+      "platform": "youtube",
+      "stream_id": "a_random_short_man_stream_with_special_guest_birds",
+      "message": "I finally got my Retroid Pocket 2+ I have found my dream retro handheld console. Plays up to Dreamcast perfectly. Just wanted to share :slightly_smiling_face:",
+      "commands": [
+        "face"
       ]
     },
     {
