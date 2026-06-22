@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096337,
+  "updated_ts": 1782096398,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -97,7 +97,8 @@
     "a_quick_thank_you_and_boxing_update",
     "a_random_short_man_stream_with_special_guest_birds",
     "a_satisfying_incel_stream",
-    "a_short_stream"
+    "a_short_stream",
+    "a_short_stream_with_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -130,10 +131,10 @@
     "turkey": 4,
     "eyes": 24,
     "africa": 1,
-    "face": 83,
+    "face": 84,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 60,
+    "joy": 61,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -144,9 +145,9 @@
     "cucumber": 8,
     "biceps": 3,
     "tongue": 3,
-    "heart": 34,
+    "heart": 35,
     "shorts": 1,
-    "laughing": 31,
+    "laughing": 33,
     "news": 6,
     "chicken": 11,
     "cake": 1,
@@ -168,9 +169,9 @@
     "hole": 3,
     "rooster": 13,
     "peach": 2,
-    "fire": 4,
+    "fire": 5,
     "kendal": 1,
-    "up": 10,
+    "up": 11,
     "note": 3,
     "eyebrow": 1,
     "facepalming": 3,
@@ -222,7 +223,7 @@
     "message": 1,
     "lied": 1,
     "wilkins": 1,
-    "vomiting": 3,
+    "vomiting": 4,
     "moment": 1,
     "suit": 2,
     "mouth": 4,
@@ -767,6 +768,11 @@
       "title": "A Short Stream",
       "start_ts": 1629334186,
       "youtube_archive_id": "5jWzljM_1vY"
+    },
+    "a_short_stream_with_a_man": {
+      "title": "A Short Stream With A Man.",
+      "start_ts": 1685407297,
+      "youtube_archive_id": "2AId2nItv54"
     }
   },
   "messages": [
@@ -4235,6 +4241,86 @@
       "message": "Hello father, just got here. Hot take: Khet has nothing to do with his weird reactions to anything remotely sexual, he\u2019s always been weird but before he\u2019d hide discomfort behind crappy jokes. Cheers!",
       "commands": [
         "take"
+      ]
+    },
+    {
+      "ts": 1685426080,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "me and elf can model the Phil fap bikini :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1685425937,
+      "username": "@doommama",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "I need the snort song back please :crying_face::crying_face::crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1685425890,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "Don't forget to see Cody vtuber clip :cat_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1685410871,
+      "username": "@camman7006",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "I played it on Series X 30FPS :face_vomiting::face_vomiting::face_vomiting:",
+      "commands": [
+        "vomiting"
+      ]
+    },
+    {
+      "ts": 1685410679,
+      "username": "@AxelLazuli",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "Try to relax your annnnus :victory_hand::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1685410177,
+      "username": "@AxelLazuli",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "Supporting lavender in your hole :rolling_on_the_floor_laughing::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1685409839,
+      "username": "@camman7006",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "Hey dad. Got the M.2, installing a bunch of games on it now, and gonna pre order Alan Wake 2 when I get paid, thanks for the good times, Elf is hot :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1685407612,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "a_short_stream_with_a_man",
+      "message": "Dad check your dms, i sent something for you and Jay :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
