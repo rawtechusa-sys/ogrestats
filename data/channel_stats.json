@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099489,
+  "updated_ts": 1782099498,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -242,7 +242,8 @@
     "dad_streams_the_playstation_showcase_2021",
     "dads_40th_birthday_stream",
     "dads_back_for_a_bit",
-    "daniel_keem_is_a_man"
+    "daniel_keem_is_a_man",
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4100,6 +4101,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.92,
       "avg_active_chatters": 24.23
+    },
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric": {
+      "stream_id": "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+      "title": "DARK SOULS WOULDN'T RUN. SO LET'S REACT TO PHIL AND ERIC",
+      "start_ts": 1739832090,
+      "end_ts": 1739843235,
+      "duration_sec": 11145,
+      "youtube_archive_id": "yWWUb5EFTBQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 309.33,
+      "donation_count": 58,
+      "donations_per_min": 1.6653,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.48,
+      "avg_active_chatters": 17.5
     }
   }
 }
