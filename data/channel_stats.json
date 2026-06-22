@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100778,
+  "updated_ts": 1782100785,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -395,7 +395,8 @@
     "lets_discuss_nick_mercs_road_to_1000_members",
     "lets_discuss_sam_hyde_and_the_quartering",
     "lets_discuss_some_important_things_road_to_1000_members",
-    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement"
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6701,6 +6702,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 25.96,
       "avg_active_chatters": 70.1
+    },
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed": {
+      "stream_id": "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+      "title": "Let's Discuss The Nintendo Switch OLED #NintendoSwitchOLED",
+      "start_ts": 1625619247,
+      "end_ts": 1625624403,
+      "duration_sec": 5156,
+      "youtube_archive_id": "LtE63VFWrO4",
+      "source_platform": "youtube",
+      "total_donations_usd": 483.54,
+      "donation_count": 102,
+      "donations_per_min": 5.6269,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.6,
+      "avg_active_chatters": 55.38
     }
   }
 }
