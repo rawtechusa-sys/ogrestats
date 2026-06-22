@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100877,
+  "updated_ts": 1782100885,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -407,7 +407,8 @@
     "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
     "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
-    "lets_watch_becky_screw_me_over"
+    "lets_watch_becky_screw_me_over",
+    "lets_watch_jims_sterlings_elden_ring_video"
   ],
   "commands": {
     "stan": 27,
@@ -438,9 +439,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 95,
+    "eyes": 96,
     "africa": 1,
-    "face": 390,
+    "face": 391,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 263,
@@ -495,7 +496,7 @@
     "dog": 8,
     "is": 6,
     "spose": 1,
-    "sunglasses": 19,
+    "sunglasses": 20,
     "kiss": 22,
     "earlier": 1,
     "ghost": 1,
@@ -2914,6 +2915,11 @@
       "title": "Let's Watch Becky Screw Me Over",
       "start_ts": 1739494883,
       "youtube_archive_id": "gRl_P_BI040"
+    },
+    "lets_watch_jims_sterlings_elden_ring_video": {
+      "title": "Let's Watch Jim's Sterling's Elden Ring Video",
+      "start_ts": 1650069512,
+      "youtube_archive_id": "5zwuLCGk9lM"
     }
   },
   "messages": [
@@ -18889,6 +18895,36 @@
       "message": "I would never vote for Elon Musk to be president. :thumbs_down: This is coming from someone who owns a Tesla.",
       "commands": [
         "down"
+      ]
+    },
+    {
+      "ts": 1650075991,
+      "username": "@PraiseTheSun01",
+      "platform": "youtube",
+      "stream_id": "lets_watch_jims_sterlings_elden_ring_video",
+      "message": "fun fact. U cant overlevel in Sekiro:grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1650070963,
+      "username": "@DmanDaGr8",
+      "platform": "youtube",
+      "stream_id": "lets_watch_jims_sterlings_elden_ring_video",
+      "message": "All I got to say for people to know me is Columbia SC CTS V :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1650070054,
+      "username": "@deathproof8732",
+      "platform": "youtube",
+      "stream_id": "lets_watch_jims_sterlings_elden_ring_video",
+      "message": "Seagal dyes his sack hair black and puts :dark_sunglasses: on them",
+      "commands": [
+        "sunglasses"
       ]
     },
     {
