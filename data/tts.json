@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098547,
+  "updated_ts": 1782098555,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -125,7 +125,8 @@
     "an_easter_eve_man",
     "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
     "an_elden_man_playes_elden_ring",
-    "an_exciting_sunday_night_man_experience"
+    "an_exciting_sunday_night_man_experience",
+    "an_explanation"
   ],
   "commands": {
     "stan": 27,
@@ -169,7 +170,7 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 10,
+    "cucumber": 11,
     "biceps": 3,
     "tongue": 4,
     "heart": 43,
@@ -236,7 +237,7 @@
     "board": 1,
     "reviewtrumpusa": 2,
     "reviewseinfeldusa": 1,
-    "things": 1,
+    "things": 2,
     "down": 2,
     "tomorrow": 4,
     "horse": 2,
@@ -253,7 +254,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 2,
-    "mouth": 7,
+    "mouth": 9,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -962,6 +963,11 @@
       "title": "An Exciting Sunday Night Man Experience",
       "start_ts": 1683501982,
       "youtube_archive_id": "L6fU41dTeYo"
+    },
+    "an_explanation": {
+      "title": "An Explanation...",
+      "start_ts": 1696211308,
+      "youtube_archive_id": "OtnpVIR-GwU"
     }
   },
   "messages": [
@@ -4364,6 +4370,46 @@
       "commands": [
         "superhero",
         "biceps"
+      ]
+    },
+    {
+      "ts": 1696214362,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "an_explanation",
+      "message": "Two different things: 1 is Phil can\u2019t get actual sponsorships since he\u2019s toxic af, so he begs. 2 is he won\u2019t do anything he considers beneath him, so no podcast or others. Pride and toxicity!",
+      "commands": [
+        "things"
+      ]
+    },
+    {
+      "ts": 1696214095,
+      "username": "@MstrMatt",
+      "platform": "youtube",
+      "stream_id": "an_explanation",
+      "message": "Hey Rich, Why do you think Phil\u2019s mouth looks sideways like a South Park Canadian? Also can we get some PRONOUNS! birds:cucumber::cucumber::cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1696213538,
+      "username": "@Pickmans_Model",
+      "platform": "youtube",
+      "stream_id": "an_explanation",
+      "message": "Smile like a doughnut with my banana Phil :face_with_open_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1696212770,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "an_explanation",
+      "message": "Just watched Open Mic on the John Campea show from Friday\u2026I know what\u2019s like to have a missed super..Saw X chat was read, but chat about an old host making a silly noise was glossed over. :face_with_diagonal_mouth:",
+      "commands": [
+        "mouth"
       ]
     },
     {
