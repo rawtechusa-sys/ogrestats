@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093457,
+  "updated_ts": 1782093500,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -43,7 +43,8 @@
     "a_heartwarming_man_and_bird_stream",
     "a_heterosexual_christian_man_stream_watching_cyraxx",
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
-    "a_jcs_and_dsp_stream"
+    "a_jcs_and_dsp_stream",
+    "a_jcs_stream"
   ],
   "commands": {
     "stan": 27,
@@ -74,12 +75,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 11,
+    "eyes": 12,
     "africa": 1,
     "face": 32,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 23,
+    "joy": 24,
     "gameboy": 1,
     "chick": 1,
     "carlos": 9,
@@ -93,8 +94,8 @@
     "heart": 18,
     "shorts": 1,
     "laughing": 14,
-    "news": 3,
-    "chicken": 6,
+    "news": 4,
+    "chicken": 7,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -123,7 +124,7 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 3,
+    "hands": 4,
     "horns": 1,
     "crab": 2,
     "superhero": 4,
@@ -156,7 +157,7 @@
     "reviewseinfeldusa": 1,
     "things": 1,
     "down": 1,
-    "tomorrow": 2,
+    "tomorrow": 3,
     "horse": 1,
     "bug": 1,
     "violin": 1,
@@ -171,7 +172,10 @@
     "vomiting": 2,
     "moment": 1,
     "suit": 1,
-    "mouth": 1
+    "mouth": 1,
+    "papo": 1,
+    "monkey": 1,
+    "psychology": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -383,6 +387,11 @@
       "title": "A JCS And DSP Stream",
       "start_ts": 1639532640,
       "youtube_archive_id": "6vcApeVc3Fg"
+    },
+    "a_jcs_stream": {
+      "title": "A JCS Stream",
+      "start_ts": 1639443333,
+      "youtube_archive_id": "lAq0o_rx49g"
     }
   },
   "messages": [
@@ -3896,6 +3905,87 @@
       "message": "i think you should buy a Makka Pakka doll :face_blowing_a_kiss:",
       "commands": [
         "kiss"
+      ]
+    },
+    {
+      "ts": 1639453260,
+      "username": "@bubbles4120",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "JCS - Criminal Psychology: The Bizzare case of Phillip Burnell",
+      "commands": [
+        "psychology"
+      ]
+    },
+    {
+      "ts": 1639450890,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "Breaking news: donald trump hires dalia dippolito due to her having the same ability as him to just deny basic reality",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1639450193,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "Rich tomorrow: so edp445 and dalia dippolito sent me their sex tape form jail, lets get into it",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1639449641,
+      "username": "@Effect4882",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": ":see_no_evil_monkey::hear_no_evil_monkey:",
+      "commands": [
+        "monkey"
+      ]
+    },
+    {
+      "ts": 1639448897,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "Papo: can you tell us the story of you going around saying \"I'm Breast Man\" in the restaurant",
+      "commands": [
+        "papo"
+      ]
+    },
+    {
+      "ts": 1639447980,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "Foil Grim Timmy is a real trooper :clapping_hands: :chicken:",
+      "commands": [
+        "hands",
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1639447354,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "Life comes at you fast man in this video :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1639444282,
+      "username": "@Effect4882",
+      "platform": "youtube",
+      "stream_id": "a_jcs_stream",
+      "message": "It's not a lot but I hope it helps:grinning_cat_with_smiling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
