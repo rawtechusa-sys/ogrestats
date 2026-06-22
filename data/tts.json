@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101098,
+  "updated_ts": 1782101105,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -437,7 +437,8 @@
     "man_vs_birds_vs_wii_u_its_fixed",
     "man_vs_demon_souls_remake",
     "man_vs_men_live",
-    "man_vs_qvc"
+    "man_vs_qvc",
+    "man_vs_steven_seagal"
   ],
   "commands": {
     "stan": 27,
@@ -470,7 +471,7 @@
     "turkey": 7,
     "eyes": 101,
     "africa": 1,
-    "face": 415,
+    "face": 416,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 276,
@@ -551,7 +552,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 21,
-    "horse": 11,
+    "horse": 12,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -615,7 +616,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 6,
+    "fact": 7,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -927,7 +928,8 @@
     "population": 1,
     "swords": 1,
     "ctr": 1,
-    "confession": 1
+    "confession": 1,
+    "racing": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3109,6 +3111,11 @@
       "title": "Man Vs. QVC",
       "start_ts": 1638323063,
       "youtube_archive_id": "0s11ddN-tM4"
+    },
+    "man_vs_steven_seagal": {
+      "title": "Man Vs. Steven Seagal",
+      "start_ts": 1649981273,
+      "youtube_archive_id": "AZUmrO2Wqt0"
     }
   },
   "messages": [
@@ -19918,6 +19925,46 @@
       "message": "Seagal dyes his sack hair black and puts :dark_sunglasses: on them",
       "commands": [
         "sunglasses"
+      ]
+    },
+    {
+      "ts": 1649987893,
+      "username": "@Mistha_J",
+      "platform": "youtube",
+      "stream_id": "man_vs_steven_seagal",
+      "message": "Go to the radhan horse festival :horse::racehorse::horse_racing:",
+      "commands": [
+        "racing"
+      ]
+    },
+    {
+      "ts": 1649985720,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "man_vs_steven_seagal",
+      "message": "You killed that Wyrm like a man :horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1649982380,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "man_vs_steven_seagal",
+      "message": "Steven Seagal early 90s movie are so bad but yet they are comedy gold also. Ripping them apart is a good past time. They are hilarious. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1649982259,
+      "username": "@chaomayhem",
+      "platform": "youtube",
+      "stream_id": "man_vs_steven_seagal",
+      "message": "True Fact: Steven Seagal once tried running for Congress and the only polling he did was on how long people liked his pony tail.",
+      "commands": [
+        "fact"
       ]
     },
     {
