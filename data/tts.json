@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099289,
+  "updated_ts": 1782099296,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -217,7 +217,8 @@
     "come_chat_with_dad_plus_amouranth_disaster",
     "come_chat_with_me",
     "come_chat_with_men_live_edp445_apology",
-    "come_critcize_the_hell_out_of_me_yes_im_serious"
+    "come_critcize_the_hell_out_of_me_yes_im_serious",
+    "come_discuss_the_playstation_showcase_with_your_dad"
   ],
   "commands": {
     "stan": 27,
@@ -250,10 +251,10 @@
     "turkey": 5,
     "eyes": 58,
     "africa": 1,
-    "face": 191,
+    "face": 194,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 126,
+    "joy": 127,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -317,7 +318,7 @@
     "story": 1,
     "tree": 3,
     "skull": 5,
-    "eggplant": 1,
+    "eggplant": 2,
     "bite": 1,
     "take": 3,
     "states": 1,
@@ -1594,6 +1595,11 @@
       "title": "Come Critcize The Hell Out Of Me (Yes, I'm Serious)",
       "start_ts": 1688342080,
       "youtube_archive_id": "yV1IxH9YDD8"
+    },
+    "come_discuss_the_playstation_showcase_with_your_dad": {
+      "title": "Come Discuss The PlayStation Showcase With Your Dad",
+      "start_ts": 1631235607,
+      "youtube_archive_id": "ie5IWKCvn3s"
     }
   },
   "messages": [
@@ -13046,6 +13052,56 @@
       "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
       "commands": [
         "spose"
+      ]
+    },
+    {
+      "ts": 1631241943,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "message": "He was so much cuter when he was skinny :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631241857,
+      "username": "@Eli-J",
+      "platform": "youtube",
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "message": "My nausea is immeasurable and my appetite is ruined :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1631240412,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "message": "Im gay but he's hella gay too much for me :confused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631238110,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "message": "We need more Radio voice Rich :grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631236288,
+      "username": "@Kanti12311",
+      "platform": "youtube",
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "message": "Stop messing with cucumber and move on to eggplant :eggplant: please",
+      "commands": [
+        "eggplant"
       ]
     },
     {
