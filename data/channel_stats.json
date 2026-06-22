@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102122,
+  "updated_ts": 1782102132,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -589,7 +589,8 @@
     "so_i_beat_eldenrings_malenia_on_the_second_try",
     "so_i_got_the_google_pixel_6_pro",
     "so_much_man_feat_birds",
-    "so_much_man_so_many_birds"
+    "so_much_man_so_many_birds",
+    "so_much_st_to_talk_about"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9999,6 +10000,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.71,
       "avg_active_chatters": 37.34
+    },
+    "so_much_st_to_talk_about": {
+      "stream_id": "so_much_st_to_talk_about",
+      "title": "So Much S%&T To Talk About",
+      "start_ts": 1720915543,
+      "end_ts": 1720928265,
+      "duration_sec": 12722,
+      "youtube_archive_id": "E5K9JmnEq7w",
+      "source_platform": "youtube",
+      "total_donations_usd": 408.76,
+      "donation_count": 64,
+      "donations_per_min": 1.9278,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.72,
+      "avg_active_chatters": 25.79
     }
   }
 }
