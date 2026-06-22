@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100126,
+  "updated_ts": 1782100134,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -316,7 +316,8 @@
     "i_wasnt_gonna_stream_but_here_i_am",
     "i_won_but_my_pc_is_dying",
     "idubbz_video_going_shopping_to_become_a_vtuber",
-    "im_a_baked_man_come_discuss_tech_with_your_dad"
+    "im_a_baked_man_come_discuss_tech_with_your_dad",
+    "im_a_bully_plus_i_react_to_large_muscular_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5358,6 +5359,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.45,
       "avg_active_chatters": 45.13
+    },
+    "im_a_bully_plus_i_react_to_large_muscular_men": {
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "title": "I'm A \"Bully\" Plus I React To Large, Muscular Men",
+      "start_ts": 1668472739,
+      "end_ts": 1668486301,
+      "duration_sec": 13562,
+      "youtube_archive_id": "jsZ9e3ZQaTk",
+      "source_platform": "youtube",
+      "total_donations_usd": 326.45,
+      "donation_count": 102,
+      "donations_per_min": 1.4443,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.77,
+      "avg_active_chatters": 34.93
     }
   }
 }
