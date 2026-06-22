@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094520,
+  "updated_ts": 1782094573,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -65,7 +65,8 @@
     "a_man_is_back_for_a_bit",
     "a_man_is_back_sexecoco_style",
     "a_man_is_staying_on_till_1_am",
-    "a_man_is_streaming_feat_birds"
+    "a_man_is_streaming_feat_birds",
+    "a_man_is_streaming_with_birds_till_130_am"
   ],
   "commands": {
     "stan": 27,
@@ -98,14 +99,14 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 47,
+    "face": 48,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 40,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 10,
-    "away": 2,
+    "carlos": 11,
+    "away": 3,
     "idea": 1,
     "fear": 2,
     "voice": 1,
@@ -148,7 +149,7 @@
     "hands": 6,
     "horns": 1,
     "crab": 2,
-    "superhero": 6,
+    "superhero": 7,
     "legends": 1,
     "dog": 2,
     "is": 3,
@@ -206,7 +207,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 3,
+    "it": 4,
     "food": 1,
     "play": 1,
     "video": 1,
@@ -216,7 +217,8 @@
     "adventures": 1,
     "head": 1,
     "like": 1,
-    "memory": 1
+    "memory": 1,
+    "fight": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -538,6 +540,11 @@
       "title": "A Man Is Streaming (Feat. Birds)",
       "start_ts": 1656012673,
       "youtube_archive_id": "ZmKrQdDc66s"
+    },
+    "a_man_is_streaming_with_birds_till_130_am": {
+      "title": "A MAN IS STREAMING WITH BIRDS TILL 130 AM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "start_ts": 1688947584,
+      "youtube_archive_id": "FQIT-_I_gKk"
     }
   },
   "messages": [
@@ -3419,6 +3426,66 @@
       "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
       "commands": [
         "coco"
+      ]
+    },
+    {
+      "ts": 1688962418,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "..... the hell is going on :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1688957182,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "Oh thank christ Phil is gone, Hero in :man_superhero:",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1688953763,
+      "username": "@mr.0lvera922",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "Do you still have your jump scare fart sound?:peach::dashing_away: Ah",
+      "commands": [
+        "away"
+      ]
+    },
+    {
+      "ts": 1688953444,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "DSP tries it: triggered by sex scenes in video games.",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1688953126,
+      "username": "@XBlackwoodX",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "I ordered a Phil Fap T. Thanks, Rich :_Cucumber::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1688952718,
+      "username": "@evildetrution5426",
+      "platform": "youtube",
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "message": "who'd win in a fight: Derich or EDDP445",
+      "commands": [
+        "fight"
       ]
     },
     {
