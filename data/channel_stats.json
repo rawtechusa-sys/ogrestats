@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102594,
+  "updated_ts": 1782102599,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -669,7 +669,8 @@
     "the_philip_burnell_interview_experience_pt_16418",
     "the_philip_burnell_interview_experience_pt_357",
     "the_philip_burnell_interview_experience_pt_607214",
-    "the_philip_burnell_interview_experience_w_dad_only"
+    "the_philip_burnell_interview_experience_w_dad_only",
+    "the_philip_burnell_man_immersion_pak"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11359,6 +11360,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.11,
       "avg_active_chatters": 27.76
+    },
+    "the_philip_burnell_man_immersion_pak": {
+      "stream_id": "the_philip_burnell_man_immersion_pak",
+      "title": "The Philip Burnell Man Immersion Pak",
+      "start_ts": 1690678515,
+      "end_ts": 1690688076,
+      "duration_sec": 9561,
+      "youtube_archive_id": "b6aHQsUC5Os",
+      "source_platform": "youtube",
+      "total_donations_usd": 568.18,
+      "donation_count": 62,
+      "donations_per_min": 3.5656,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.24,
+      "avg_active_chatters": 39.0
     }
   }
 }
