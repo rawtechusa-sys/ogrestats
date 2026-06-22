@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099590,
+  "updated_ts": 1782099598,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -254,7 +254,8 @@
     "donald_trump_vs_joe_biden_ai_debate",
     "dr_cocos_house_of_healing",
     "drinking_stories_with_intro_guy",
-    "drunk_women_phil_and_a_man"
+    "drunk_women_phil_and_a_man",
+    "dsp_dkoldies_and_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4304,6 +4305,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 6.86,
       "avg_active_chatters": 17.44
+    },
+    "dsp_dkoldies_and_a_man": {
+      "stream_id": "dsp_dkoldies_and_a_man",
+      "title": "DSP, DKOldies, And A Man.",
+      "start_ts": 1674685464,
+      "end_ts": 1674693454,
+      "duration_sec": 7990,
+      "youtube_archive_id": "wIlXPsF-HPw",
+      "source_platform": "youtube",
+      "total_donations_usd": 308.81,
+      "donation_count": 73,
+      "donations_per_min": 2.319,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.78,
+      "avg_active_chatters": 37.2
     }
   }
 }
