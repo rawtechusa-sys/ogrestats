@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096520,
+  "updated_ts": 1782096583,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -100,7 +100,8 @@
     "a_short_stream",
     "a_short_stream_with_a_man",
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
-    "a_stream_for_men"
+    "a_stream_for_men",
+    "a_streaming_man"
   ],
   "commands": {
     "stan": 27,
@@ -133,10 +134,10 @@
     "turkey": 4,
     "eyes": 25,
     "africa": 1,
-    "face": 84,
+    "face": 86,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 64,
+    "joy": 65,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -149,7 +150,7 @@
     "tongue": 3,
     "heart": 36,
     "shorts": 1,
-    "laughing": 34,
+    "laughing": 35,
     "news": 6,
     "chicken": 12,
     "cake": 1,
@@ -176,7 +177,7 @@
     "up": 11,
     "note": 3,
     "eyebrow": 1,
-    "facepalming": 3,
+    "facepalming": 4,
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
@@ -263,11 +264,11 @@
     "struck": 1,
     "joker": 1,
     "racehorse": 2,
-    "question": 2,
+    "question": 3,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
-    "ear": 1,
+    "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
     "droplets": 3,
@@ -291,7 +292,8 @@
     "glass": 1,
     "example": 1,
     "theory": 1,
-    "says": 1
+    "says": 1,
+    "wave": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -788,6 +790,11 @@
       "title": "A Stream For Men",
       "start_ts": 1704236144,
       "youtube_archive_id": "pkOMlLRW8JM"
+    },
+    "a_streaming_man": {
+      "title": "A Streaming Man",
+      "start_ts": 1632360270,
+      "youtube_archive_id": "HGOJ8nlVUjs"
     }
   },
   "messages": [
@@ -7411,6 +7418,77 @@
       "message": "That DSP chicken may really have been that bad. Look what a terrible Burger King burger did to Robert Downy Jr. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1632368825,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "this what you watch when I don't show up Rich?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632365905,
+      "username": "@kole5826",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "wHEN YOU PAUSE THE SCREEN AT THE RITE TIME HES MAKING EVERY FACE ON HIS SHIRT :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632364366,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "Hes gonna paint some brown trees later. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1632361881,
+      "username": "@PraiseTheSun01",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "ive done the math and i came to the conclusion that Quatering makes about $100k a month or more and still begs for subscribers in subscribe star. :person_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1632361502,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "My holes, Rich! My :ear: earholes that is!",
+      "commands": [
+        "ear"
+      ]
+    },
+    {
+      "ts": 1632361438,
+      "username": "@FlukasMcDoogle",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "Congrats on becoming a home owner. New Red Murder Room or bust! :grinning_face: Personal question: Are you a person?",
+      "commands": [
+        "face",
+        "question"
+      ]
+    },
+    {
+      "ts": 1632360850,
+      "username": "@michaeljohnson8688",
+      "platform": "youtube",
+      "stream_id": "a_streaming_man",
+      "message": "I Heart Cannabis!!!:star_struck::water_wave: Finally oceanfront!!",
+      "commands": [
+        "wave"
       ]
     },
     {
