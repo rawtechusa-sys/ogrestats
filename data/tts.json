@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101611,
+  "updated_ts": 1782101619,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -505,7 +505,8 @@
     "phil_is_an_angry_man_and_more_thecompletionist_drama",
     "philip_burnell_and_tommy_tallarico_live",
     "philip_burnell_chicken_sandwich_madness",
-    "philip_burnell_feat_tickled_television_incorporated"
+    "philip_burnell_feat_tickled_television_incorporated",
+    "philip_burnell_is_a_lover_of_horses"
   ],
   "commands": {
     "stan": 27,
@@ -541,7 +542,7 @@
     "face": 477,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 310,
+    "joy": 311,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
@@ -552,9 +553,9 @@
     "cucumber": 54,
     "biceps": 5,
     "tongue": 11,
-    "heart": 145,
+    "heart": 146,
     "shorts": 2,
-    "laughing": 188,
+    "laughing": 189,
     "news": 22,
     "chicken": 58,
     "cake": 7,
@@ -3567,6 +3568,11 @@
       "title": "Philip Burnell Feat. Tickled Television Incorporated",
       "start_ts": 1666392169,
       "youtube_archive_id": "cllU626B654"
+    },
+    "philip_burnell_is_a_lover_of_horses": {
+      "title": "Philip Burnell Is A Lover Of Horses",
+      "start_ts": 1697329906,
+      "youtube_archive_id": "UODhJqw3Xpc"
     }
   },
   "messages": [
@@ -10182,6 +10188,36 @@
       "message": "Richard you big beautiful man. Thank you honey :face_blowing_a_kiss:",
       "commands": [
         "kiss"
+      ]
+    },
+    {
+      "ts": 1697334676,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_lover_of_horses",
+      "message": "Just wanted to say that me and Sheriff Walters from my livestream on Cosmic Productions say hello from all you beautiful people here. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1697334551,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_lover_of_horses",
+      "message": "XQC to show up at ur house next if u critize him:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1697330967,
+      "username": "@requiem7x132",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_lover_of_horses",
+      "message": "Hey Rich me and a friend of mine watched your DKOldies series and we cannot stop laughing hard of the Joey heads popping out :face_with_tears_of_joy::face_with_tears_of_joy: sing the DKOldies song",
+      "commands": [
+        "joy"
       ]
     },
     {
