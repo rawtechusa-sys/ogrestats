@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098920,
+  "updated_ts": 1782098928,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -172,7 +172,8 @@
     "brand_new_set_same_old_man",
     "breaking_news_im_an_idiot",
     "breaking_steven_crowder_is_human_garbage_shocking",
-    "canada_returns"
+    "canada_returns",
+    "celebreating_15_years_of_philip_paul_burnell_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -205,13 +206,13 @@
     "turkey": 5,
     "eyes": 41,
     "africa": 1,
-    "face": 141,
+    "face": 143,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 109,
+    "joy": 111,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 14,
+    "carlos": 15,
     "away": 5,
     "idea": 1,
     "fear": 2,
@@ -224,11 +225,11 @@
     "laughing": 52,
     "news": 11,
     "chicken": 24,
-    "cake": 6,
+    "cake": 7,
     "d": 1,
     "halo": 2,
     "hand": 8,
-    "popper": 2,
+    "popper": 3,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -243,7 +244,7 @@
     "hole": 5,
     "rooster": 18,
     "peach": 3,
-    "fire": 9,
+    "fire": 10,
     "kendal": 1,
     "up": 12,
     "note": 5,
@@ -268,7 +269,7 @@
     "gift": 2,
     "bird": 7,
     "richsmile": 2,
-    "dsp": 8,
+    "dsp": 9,
     "story": 1,
     "tree": 2,
     "skull": 4,
@@ -322,7 +323,7 @@
     "cap": 1,
     "adventures": 1,
     "head": 2,
-    "like": 1,
+    "like": 2,
     "memory": 1,
     "fight": 1,
     "leaf": 1,
@@ -355,7 +356,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 5,
+    "sweat": 6,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -440,7 +441,9 @@
     "reviewmusicusa": 1,
     "snake": 1,
     "fap": 1,
-    "piece": 1
+    "piece": 1,
+    "staple": 1,
+    "bubbles": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1297,6 +1300,11 @@
       "title": "CANADA RETURNS",
       "start_ts": 1678319571,
       "youtube_archive_id": "WB3vivH6y1M"
+    },
+    "celebreating_15_years_of_philip_paul_burnell_a_man": {
+      "title": "Celebreating 15 Years of Philip Paul Burnell (A Man)",
+      "start_ts": 1693676706,
+      "youtube_archive_id": "x5Ehdtap9Y8"
     }
   },
   "messages": [
@@ -5527,6 +5535,109 @@
       "message": ":cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1693685083,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "New DSP sound? Never heard that one. :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1693682983,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "I loved watching you play Kingdom Hearts 3 a year ago. I had so much fun watching you get ultra confused while I knew all the context. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1693680927,
+      "username": "@elvis94",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "BUBBLES :bubbles: :bubbles::bubbles:",
+      "commands": [
+        "bubbles"
+      ]
+    },
+    {
+      "ts": 1693680378,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "Another Phil staple: shit on every one more successful then him, and claim his stuff is much better or meaningful or whatever. What an ass\u2026",
+      "commands": [
+        "staple"
+      ]
+    },
+    {
+      "ts": 1693680320,
+      "username": "@This_Drummer",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "My chicken passed away today peacefully. :crying_face: Can I get some bird clucks to cheer me up? :_Carlos:",
+      "commands": [
+        "face",
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1693680020,
+      "username": "@Adam_W86",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "Rich it\u2019s my Birthday!!! :partying_face: :birthday_cake: :party_popper: Random Phil noises please.",
+      "commands": [
+        "face",
+        "cake",
+        "popper"
+      ]
+    },
+    {
+      "ts": 1693678290,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "I have some great sounds on my soundboard too, including a Zarbon moan, Mr. Popo saying he\u2019s fucking high, a fart sound, Captain Falcon saying Yes. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1693678290,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "I\u2019ve been working a lot, so haven\u2019t been able to catch the streams\u2026 But I watch the videos, loved the mini PC one! Also just to add fuel to the fire: Phil let slip that he doordashed Wendy\u2019s ice cream the other day, imagine.",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1693677612,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "DSP: what the trolls and detractors are doing to me is the same as what Russia is doing to Ukraine.",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1693677372,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "celebreating_15_years_of_philip_paul_burnell_a_man",
+      "message": "DSP be like: why are people so focused on all the celebrity death the past 2 weeks you people should be focused on giving me money that\u2019s important.",
+      "commands": [
+        "like"
       ]
     },
     {
