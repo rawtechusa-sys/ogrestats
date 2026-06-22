@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098563,
+  "updated_ts": 1782098570,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -127,7 +127,8 @@
     "an_elden_man_playes_elden_ring",
     "an_exciting_sunday_night_man_experience",
     "an_explanation",
-    "an_important_announcements"
+    "an_important_announcements",
+    "an_important_update"
   ],
   "commands": {
     "stan": 27,
@@ -158,9 +159,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 28,
+    "eyes": 29,
     "africa": 1,
-    "face": 106,
+    "face": 108,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 82,
@@ -176,7 +177,7 @@
     "tongue": 4,
     "heart": 43,
     "shorts": 1,
-    "laughing": 40,
+    "laughing": 41,
     "news": 7,
     "chicken": 17,
     "cake": 1,
@@ -196,7 +197,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 3,
-    "rooster": 13,
+    "rooster": 14,
     "peach": 3,
     "fire": 8,
     "kendal": 1,
@@ -207,7 +208,7 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 9,
+    "hands": 10,
     "horns": 3,
     "crab": 2,
     "superhero": 10,
@@ -290,7 +291,7 @@
     "struck": 1,
     "joker": 1,
     "racehorse": 2,
-    "question": 3,
+    "question": 4,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
@@ -342,7 +343,11 @@
     "say": 1,
     "officer": 1,
     "bread": 1,
-    "bomb": 1
+    "bomb": 1,
+    "birds": 1,
+    "goat": 2,
+    "listen": 1,
+    "oldies": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -974,6 +979,11 @@
       "title": "An Important Announcement(s)",
       "start_ts": 1646353521,
       "youtube_archive_id": "V6v2gG2ilD0"
+    },
+    "an_important_update": {
+      "title": "An Important Update",
+      "start_ts": 1678930970,
+      "youtube_archive_id": "1A153jQ_0VY"
     }
   },
   "messages": [
@@ -5595,6 +5605,108 @@
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1678933952,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "You hear Bobby Caldwell passed away RIP to the :goat:",
+      "commands": [
+        "goat"
+      ]
+    },
+    {
+      "ts": 1678933845,
+      "username": "@Mistha_J",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "Hey rich could you send me the try to relax your anus on twitter I sent you a dm, been here since trump had his rally :rolling_on_the_floor_laughing: love you too jay :smirking_face:",
+      "commands": [
+        "laughing",
+        "face"
+      ]
+    },
+    {
+      "ts": 1678933726,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "Joey from Dk oldies: Hey Rich sorry what\u2019s been going on and because of that I\u2019ll throw u in a little gift :grinning_face_with_big_eyes:",
+      "commands": [
+        "oldies",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1678933330,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "I feel so like heartbroken for your daughter I saw a shared video of her eating ice cream on Facebook.I wish I can give you a hug Rich.Poor baby girl:loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1678933136,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "Listen: complain about lag, call every single developer lazy, switch to easy mode, look for your shrimp, demand a refund for your chicken sandwich.",
+      "commands": [
+        "listen"
+      ]
+    },
+    {
+      "ts": 1678932509,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "Take all the time you need Rich. :goat:",
+      "commands": [
+        "goat"
+      ]
+    },
+    {
+      "ts": 1678931882,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "I\u2019m real sorry to hear about your daughter. I can tell from the tone of your voice recently that you\u2019ve not been feeling well lately. Much love. :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1678931818,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "Family comes first Rich. Jay you are amazing :raising_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1678931261,
+      "username": "@JackOfFlames",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "I've got to ask the real, burning question: Are you going to be buying an MTG Set Booster Box of Commander Masters this August for $500 USD?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1678931177,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "an_important_update",
+      "message": "I accept Jay like I accept my birds: right up my ass baby, I love it.",
+      "commands": [
+        "birds"
       ]
     },
     {
