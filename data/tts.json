@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101371,
+  "updated_ts": 1782101378,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -474,7 +474,8 @@
     "more_of_the_quantum_tv_interview",
     "more_of_the_quantum_tv_interview_chris_the_narc",
     "more_phil_more_alpha_males_more_birds",
-    "more_predator_roasting"
+    "more_predator_roasting",
+    "more_quantum_tv_tickling"
   ],
   "commands": {
     "stan": 27,
@@ -505,7 +506,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 110,
+    "eyes": 112,
     "africa": 1,
     "face": 441,
     "petersonxhhanson": 1,
@@ -669,7 +670,7 @@
     "wave": 1,
     "mugs": 3,
     "ties": 1,
-    "this": 1,
+    "this": 2,
     "notes": 14,
     "wars": 1,
     "points": 9,
@@ -720,7 +721,7 @@
     "dpsn": 1,
     "correction": 1,
     "sunset": 2,
-    "fist": 5,
+    "fist": 6,
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
@@ -836,7 +837,7 @@
     "ps": 2,
     "jay": 2,
     "jar": 1,
-    "translation": 1,
+    "translation": 2,
     "choice": 1,
     "baseball": 1,
     "jontron": 1,
@@ -3357,6 +3358,11 @@
       "title": "More Predator Roasting",
       "start_ts": 1643332202,
       "youtube_archive_id": "ixspitz-awo"
+    },
+    "more_quantum_tv_tickling": {
+      "title": "More Quantum TV Tickling",
+      "start_ts": 1660870099,
+      "youtube_archive_id": "HNXHbNVMh_w"
     }
   },
   "messages": [
@@ -17325,6 +17331,56 @@
       "message": "is that Chris my god love your content my bro :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1660880196,
+      "username": "@Hladio92",
+      "platform": "youtube",
+      "stream_id": "more_quantum_tv_tickling",
+      "message": "Not joking when I ask this: Does he do anything else but complain about stuff?",
+      "commands": [
+        "this"
+      ]
+    },
+    {
+      "ts": 1660879116,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_quantum_tv_tickling",
+      "message": "If you EVER wanna collab :beaming_face_with_smiling_eyes:you got FIRE bro, solid:oncoming_fist:",
+      "commands": [
+        "fist"
+      ]
+    },
+    {
+      "ts": 1660879068,
+      "username": "@theBio.",
+      "platform": "youtube",
+      "stream_id": "more_quantum_tv_tickling",
+      "message": "Ever get a chance to check the Doom mod I sent? :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1660877189,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "more_quantum_tv_tickling",
+      "message": "Translation: \u201cDonate to my PayPal\u201d",
+      "commands": [
+        "translation"
+      ]
+    },
+    {
+      "ts": 1660874549,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "more_quantum_tv_tickling",
+      "message": "You should have Googlefish on :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
