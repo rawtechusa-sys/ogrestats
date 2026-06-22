@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100857,
+  "updated_ts": 1782100864,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -406,7 +406,8 @@
     "lets_laugh_at_crap_crowdfunding_campaigns",
     "lets_laugh_at_qvc",
     "lets_shop_and_then_go_to_war",
-    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound"
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+    "lets_talk_about_blizzard_developers_bill_cosby_suite"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6888,6 +6889,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.28,
       "avg_active_chatters": 27.68
+    },
+    "lets_talk_about_blizzard_developers_bill_cosby_suite": {
+      "stream_id": "lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "title": "Let's Talk About Blizzard Developers' Bill 'Cosby Suite'",
+      "start_ts": 1627519802,
+      "end_ts": 1627531520,
+      "duration_sec": 11718,
+      "youtube_archive_id": "1OhL02hqwGE",
+      "source_platform": "youtube",
+      "total_donations_usd": 311.76,
+      "donation_count": 78,
+      "donations_per_min": 1.5963,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.57,
+      "avg_active_chatters": 41.84
     }
   }
 }
