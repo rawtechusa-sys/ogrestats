@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094263,
+  "updated_ts": 1782094314,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -60,7 +60,8 @@
     "a_man_experience_feat_birds",
     "a_man_feat_birds",
     "a_man_from_canada_is_here",
-    "a_man_from_canada_until_6am"
+    "a_man_from_canada_until_6am",
+    "a_man_in_poughkeepsie_irl_streaming"
   ],
   "commands": {
     "stan": 27,
@@ -96,7 +97,7 @@
     "face": 43,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 37,
+    "joy": 38,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -503,6 +504,11 @@
       "title": "A MAN FROM CANADA UNTIL 6AM",
       "start_ts": 1683263448,
       "youtube_archive_id": "ZCb9IZDJocM"
+    },
+    "a_man_in_poughkeepsie_irl_streaming": {
+      "title": "A Man In Poughkeepsie IRL Streaming",
+      "start_ts": 1659468621,
+      "youtube_archive_id": "pUldXtUg0Gk"
     }
   },
   "messages": [
@@ -3710,6 +3716,16 @@
       "platform": "youtube",
       "stream_id": "a_dspgaming_family_fun_stream",
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1659468758,
+      "username": "@Sixfootdig",
+      "platform": "youtube",
+      "stream_id": "a_man_in_poughkeepsie_irl_streaming",
+      "message": "just watched the stalker video and it was the greatest thing I've watched in awhile. Uhh hi Richy! Let's get coffee :face_with_tears_of_joy: sorry to laugh at misfortune",
       "commands": [
         "joy"
       ]
