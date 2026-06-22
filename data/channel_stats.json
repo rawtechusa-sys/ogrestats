@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101961,
+  "updated_ts": 1782101966,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -565,7 +565,8 @@
     "random_mid_afrternoon_man_stream",
     "rated_m_for_man",
     "reacting_to_xqc_reacting_and_roasting_a_malicious_hater",
-    "reddit_cringe_feat_birds"
+    "reddit_cringe_feat_birds",
+    "remastering_intro_guys_incredible_fart"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9591,6 +9592,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.26,
       "avg_active_chatters": 42.16
+    },
+    "remastering_intro_guys_incredible_fart": {
+      "stream_id": "remastering_intro_guys_incredible_fart",
+      "title": "Remastering Intro Guy's Incredible Fart",
+      "start_ts": 1642641764,
+      "end_ts": 1642647442,
+      "duration_sec": 5678,
+      "youtube_archive_id": "6mOpGZUCFWg",
+      "source_platform": "youtube",
+      "total_donations_usd": 140.34,
+      "donation_count": 49,
+      "donations_per_min": 1.483,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.72,
+      "avg_active_chatters": 36.97
     }
   }
 }
