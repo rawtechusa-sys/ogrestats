@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099304,
+  "updated_ts": 1782099313,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -219,7 +219,8 @@
     "come_chat_with_men_live_edp445_apology",
     "come_critcize_the_hell_out_of_me_yes_im_serious",
     "come_discuss_the_playstation_showcase_with_your_dad",
-    "come_hang_out"
+    "come_hang_out",
+    "come_hang_out_10_18_2021_crowbcat_video_reaction"
   ],
   "commands": {
     "stan": 27,
@@ -250,12 +251,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 58,
+    "eyes": 59,
     "africa": 1,
-    "face": 195,
+    "face": 196,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 128,
+    "joy": 130,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -268,7 +269,7 @@
     "tongue": 5,
     "heart": 63,
     "shorts": 1,
-    "laughing": 60,
+    "laughing": 61,
     "news": 13,
     "chicken": 31,
     "cake": 7,
@@ -292,7 +293,7 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 17,
+    "up": 18,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -514,8 +515,9 @@
     "curious": 1,
     "extinguisher": 1,
     "russia": 1,
-    "arrow": 1,
-    "owl": 1
+    "arrow": 2,
+    "owl": 1,
+    "hell": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1607,6 +1609,11 @@
       "title": "Come Hang Out",
       "start_ts": 1675471225,
       "youtube_archive_id": "fcXhoHnX0-s"
+    },
+    "come_hang_out_10_18_2021_crowbcat_video_reaction": {
+      "title": "Come Hang Out! 10-18-2021 (Crowbcat Video Reaction)",
+      "start_ts": 1634602728,
+      "youtube_archive_id": "LaxjMSZBhME"
     }
   },
   "messages": [
@@ -12407,6 +12414,86 @@
       "message": "Still have day 1 Switch, gonna wait for that (possible) Botw2 Special OLED :eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1634613769,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "Not what I was expecting, but thank you Rich! :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1634613637,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "Any plans on continuing Metroid Dread for one last stream? :right_arrow::right_arrow::right_arrow: Also, may I please get 1 muthaphukaaaah from the soundboard?",
+      "commands": [
+        "arrow"
+      ]
+    },
+    {
+      "ts": 1634613418,
+      "username": "@johndoe2635",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "They need to bring back the Colosseum :smiling_face_with_sunglasses::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1634609077,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "My condolences to people who played ride to hell: retribution",
+      "commands": [
+        "hell"
+      ]
+    },
+    {
+      "ts": 1634606935,
+      "username": "@CrazyCracka831",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "Can we get an F for \u201cThe Billion Dollar Franchise\u201d Lawbreakers? Lol it didn\u2019t even hit 1 billion Pesos:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1634606512,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "These are my people happens at cons all the time:slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1634606119,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "NEVER CELEBRATE EARLY :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1634603446,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "message": "Hey I managed to get a bunch of boxed virtual boy games (some sealed) for $30 each so I took the plunge and got one. I like it but why they thought marketing it as portable was smart I'll ever know :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
