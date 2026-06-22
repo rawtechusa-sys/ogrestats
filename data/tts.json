@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100037,
+  "updated_ts": 1782100045,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -305,7 +305,8 @@
     "i_failed_no_phil_november",
     "i_formally_invited_quantum_tv_on_for_an_interview",
     "i_got_screwed",
-    "i_got_trolled_hard_by_ethan_ralph"
+    "i_got_trolled_hard_by_ethan_ralph",
+    "i_have_no_water_so_i_may_as_well_keep_streaming"
   ],
   "commands": {
     "stan": 27,
@@ -456,7 +457,7 @@
     "adventures": 1,
     "head": 3,
     "like": 6,
-    "memory": 1,
+    "memory": 2,
     "fight": 1,
     "leaf": 1,
     "random": 1,
@@ -488,7 +489,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 12,
+    "sweat": 13,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -700,7 +701,8 @@
     "pitt": 1,
     "beel": 1,
     "love": 1,
-    "importantquestion": 1
+    "importantquestion": 1,
+    "hulk": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2222,6 +2224,11 @@
       "title": "I GOT TROLLED HARD BY ETHAN RALPH",
       "start_ts": 1705964783,
       "youtube_archive_id": "2kNeio4-NDU"
+    },
+    "i_have_no_water_so_i_may_as_well_keep_streaming": {
+      "title": "I Have No Water. So I May As Well Keep Streaming",
+      "start_ts": 1663647481,
+      "youtube_archive_id": "ss8T7Csj5qo"
     }
   },
   "messages": [
@@ -12061,6 +12068,36 @@
       "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
       "commands": [
         "hearts"
+      ]
+    },
+    {
+      "ts": 1663653692,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "i_have_no_water_so_i_may_as_well_keep_streaming",
+      "message": "Is Bright Memory: Infinite the sequel of Bright Memory?",
+      "commands": [
+        "memory"
+      ]
+    },
+    {
+      "ts": 1663650647,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "i_have_no_water_so_i_may_as_well_keep_streaming",
+      "message": "Good morning Rich, you're up late tonight:grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1663650100,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "i_have_no_water_so_i_may_as_well_keep_streaming",
+      "message": "Hulk: Ultimate destruction is one of the goats man\u2026 but yeah they need to do a game for newer hardware",
+      "commands": [
+        "hulk"
       ]
     },
     {
