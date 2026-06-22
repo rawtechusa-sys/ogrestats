@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100694,
+  "updated_ts": 1782100700,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -381,7 +381,8 @@
     "late_hairy_man_action",
     "late_night_man_gaming",
     "late_night_stream_for_no_reason",
-    "learning_how_to_be_a_man_feat_birds"
+    "learning_how_to_be_a_man_feat_birds",
+    "legal_eagles_xqc_video"
   ],
   "commands": {
     "stan": 27,
@@ -412,7 +413,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 84,
+    "eyes": 85,
     "africa": 1,
     "face": 353,
     "petersonxhhanson": 1,
@@ -454,7 +455,7 @@
     "peach": 12,
     "fire": 22,
     "kendal": 1,
-    "up": 36,
+    "up": 37,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -2745,6 +2746,11 @@
       "title": "Learning How To Be A Man (Feat. Birds)",
       "start_ts": 1665534019,
       "youtube_archive_id": "Ux-kXVyPsC0"
+    },
+    "legal_eagles_xqc_video": {
+      "title": "Legal Eagle's xQc Video",
+      "start_ts": 1695515878,
+      "youtube_archive_id": "UG47AoNHyoY"
     }
   },
   "messages": [
@@ -8749,6 +8755,17 @@
       "message": "Disclaimer: the Switch port of MK1 was NOT handled by Netherrealm. WB outsourced the Switch port efforts to a developer called Shiver Entertainment.",
       "commands": [
         "disclaimer"
+      ]
+    },
+    {
+      "ts": 1695527708,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "legal_eagles_xqc_video",
+      "message": "Just know :index_pointing_up: Hero in ... :eyes: ayo we gaming?!?!",
+      "commands": [
+        "up",
+        "eyes"
       ]
     },
     {
