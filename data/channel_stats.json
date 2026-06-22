@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101901,
+  "updated_ts": 1782101907,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -555,7 +555,8 @@
     "quantum_tvsdiscordleaked_plus_im_making_drinks",
     "quick_bird_stream",
     "quick_test",
-    "qvc_is_amazing"
+    "qvc_is_amazing",
+    "qvc_vs_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9421,6 +9422,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.66,
       "avg_active_chatters": 24.9
+    },
+    "qvc_vs_man": {
+      "stream_id": "qvc_vs_man",
+      "title": "QVC Vs. Man",
+      "start_ts": 1635986617,
+      "end_ts": 1635996785,
+      "duration_sec": 10168,
+      "youtube_archive_id": "_hfHK7ISfeA",
+      "source_platform": "youtube",
+      "total_donations_usd": 463.72,
+      "donation_count": 113,
+      "donations_per_min": 2.7363,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.74,
+      "avg_active_chatters": 30.62
     }
   }
 }
