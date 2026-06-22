@@ -589,28 +589,32 @@ function escHtml(str) {
 async function loadStreamList() {
   const sidebar = document.getElementById('sidebar');
   try {
-    const streamIds = await fetchJSON(`${RAW}/data/streams/index.json`);
+    const index = await fetchJSON(`${RAW}/data/streams/index.json`);
 
-    if (streamIds.length === 0) {
+    if (index.length === 0) {
       sidebar.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
       return;
     }
 
-    // Fetch all metadata in parallel, then sort newest-first by start_ts.
-    const metaResults = await Promise.allSettled(
-      streamIds.map(id => fetchJSON(`${RAW}/data/streams/${id}/metadata.json`))
-    );
-
-    const streams = streamIds
-      .map((id, i) => ({
+    let streams;
+    if (typeof index[0] === 'object' && index[0] !== null) {
+      // Fat index: each entry is {id, start_ts, end_ts, platforms} — everything
+      // the sidebar renders is already here, so no per-stream metadata fetch.
+      // The full metadata.json + events.jsonl load lazily on click (loadStream).
+      streams = index.map(e => ({ id: e.id, meta: e }));
+    } else {
+      // Legacy string-array index: fall back to fetching each metadata.json.
+      const metaResults = await Promise.allSettled(
+        index.map(id => fetchJSON(`${RAW}/data/streams/${id}/metadata.json`))
+      );
+      streams = index.map((id, i) => ({
         id,
         meta: metaResults[i].status === 'fulfilled' ? metaResults[i].value : null,
-      }))
-      .sort((a, b) => {
-        const ta = a.meta?.start_ts ?? 0;
-        const tb = b.meta?.start_ts ?? 0;
-        return tb - ta;  // newest first
-      });
+      }));
+    }
+
+    // Newest-first by start_ts.
+    streams.sort((a, b) => (b.meta?.start_ts ?? 0) - (a.meta?.start_ts ?? 0));
 
     sidebar.innerHTML = '<div class="sidebar-label">Streams</div>';
 
