@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092840,
+  "updated_ts": 1782092873,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -27,7 +27,8 @@
     "a_birdman_family_friendly_love_stream",
     "a_boomer_plays_elden_ring_plus_birds",
     "a_catfish_is_streaming",
-    "a_christian_heterosexual_and_tickled_livestream"
+    "a_christian_heterosexual_and_tickled_livestream",
+    "a_christian_straight_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -60,7 +61,7 @@
     "turkey": 3,
     "eyes": 7,
     "africa": 1,
-    "face": 18,
+    "face": 19,
     "petersonxhhanson": 1,
     "poo": 3,
     "joy": 13,
@@ -245,6 +246,11 @@
       "title": "A Christian, Heterosexual And Tickled Livestream",
       "start_ts": 1693266319,
       "youtube_archive_id": "YSi6Gx0HjxQ"
+    },
+    "a_christian_straight_man_stream": {
+      "title": "A Christian, Straight-Man Stream",
+      "start_ts": 1688168337,
+      "youtube_archive_id": "KGXHa0crL7I"
     }
   },
   "messages": [
@@ -2221,6 +2227,16 @@
       "message": "Just know hero in :superhero: my wife is white hot",
       "commands": [
         "superhero"
+      ]
+    },
+    {
+      "ts": 1688173987,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_christian_straight_man_stream",
+      "message": "2 wisdoms and a molar removed today, let's get into it :grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
