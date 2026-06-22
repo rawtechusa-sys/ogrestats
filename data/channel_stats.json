@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100179,
+  "updated_ts": 1782100187,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -322,7 +322,8 @@
     "im_at_a_crossroads",
     "im_back",
     "im_back_and_on_a_warpath",
-    "im_back_and_only_half_dead_come_hang_out"
+    "im_back_and_only_half_dead_come_hang_out",
+    "im_buzzed_off_caffeine_come_chat_with_me"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5460,6 +5461,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.88,
       "avg_active_chatters": 26.3
+    },
+    "im_buzzed_off_caffeine_come_chat_with_me": {
+      "stream_id": "im_buzzed_off_caffeine_come_chat_with_me",
+      "title": "I'm Buzzed Off Caffeine. Come Chat With Me.",
+      "start_ts": 1628910955,
+      "end_ts": 1628915820,
+      "duration_sec": 4865,
+      "youtube_archive_id": "c_99tFCn5L8",
+      "source_platform": "youtube",
+      "total_donations_usd": 218.87,
+      "donation_count": 56,
+      "donations_per_min": 2.6993,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.22,
+      "avg_active_chatters": 44.38
     }
   }
 }
