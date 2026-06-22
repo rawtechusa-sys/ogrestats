@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101590,
+  "updated_ts": 1782101597,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -502,7 +502,8 @@
     "phil_discusses_the_documentary_and_complains_about_me",
     "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
     "phil_is_a_man",
-    "phil_is_an_angry_man_and_more_thecompletionist_drama"
+    "phil_is_an_angry_man_and_more_thecompletionist_drama",
+    "philip_burnell_and_tommy_tallarico_live"
   ],
   "commands": {
     "stan": 27,
@@ -541,7 +542,7 @@
     "joy": 310,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 40,
+    "carlos": 41,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -551,7 +552,7 @@
     "tongue": 11,
     "heart": 145,
     "shorts": 2,
-    "laughing": 187,
+    "laughing": 188,
     "news": 22,
     "chicken": 58,
     "cake": 7,
@@ -630,7 +631,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 5,
-    "mouth": 17,
+    "mouth": 18,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -3545,6 +3546,11 @@
       "title": "PHIL IS AN ANGRY MAN, AND MORE THECOMPLETIONIST DRAMA",
       "start_ts": 1700615378,
       "youtube_archive_id": "A0L2cs-4Low"
+    },
+    "philip_burnell_and_tommy_tallarico_live": {
+      "title": "Philip Burnell And Tommy Tallarico LIVE",
+      "start_ts": 1664409015,
+      "youtube_archive_id": "Eg0uTdU50qY"
     }
   },
   "messages": [
@@ -17514,6 +17520,36 @@
       "message": "Hey Richie kiss the birds for me and relax your shoulders pimp look here listen it up too :beaming_face_with_smiling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1664413952,
+      "username": "@sameerswagin2953",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_and_tommy_tallarico_live",
+      "message": "If Apple does, the analog sticks will be paired to the motherboard, so you'll have to give it to apple and get it fixed for 50USD:_Cucumber::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1664413410,
+      "username": "@FrogForce",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_and_tommy_tallarico_live",
+      "message": "Coolio is in Gangsta paradise now :face_without_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1664411556,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_and_tommy_tallarico_live",
+      "message": "Card company and \"Love Hotels\" I wouldn't be surprised Nintendo had/has some Yakuza connections! :face_with_tears_of_joy::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
