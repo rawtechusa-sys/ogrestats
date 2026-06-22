@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099852,
+  "updated_ts": 1782099861,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -284,7 +284,8 @@
     "friday_night_internet_man",
     "friday_night_man_fun_feat_birds",
     "friday_night_man_stream",
-    "friday_night_new_york_man_stream"
+    "friday_night_new_york_man_stream",
+    "friday_night_shoulders"
   ],
   "commands": {
     "stan": 27,
@@ -320,7 +321,7 @@
     "face": 261,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 192,
+    "joy": 193,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -333,7 +334,7 @@
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 87,
+    "laughing": 89,
     "news": 17,
     "chicken": 37,
     "cake": 7,
@@ -383,7 +384,7 @@
     "dsp": 16,
     "story": 1,
     "tree": 3,
-    "skull": 6,
+    "skull": 7,
     "eggplant": 3,
     "bite": 1,
     "take": 4,
@@ -647,7 +648,8 @@
     "jay": 1,
     "jar": 1,
     "translation": 1,
-    "choice": 1
+    "choice": 1,
+    "baseball": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2064,6 +2066,11 @@
       "title": "Friday Night New York Man Stream",
       "start_ts": 1628300200,
       "youtube_archive_id": "vdMEP0C2_UA"
+    },
+    "friday_night_shoulders": {
+      "title": "Friday Night Shoulders",
+      "start_ts": 1669424858,
+      "youtube_archive_id": "iWdQQAX1UHo"
     }
   },
   "messages": [
@@ -10774,6 +10781,56 @@
       "message": "Did you and Cody talk about the video I used you cameo for? :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1669434185,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "friday_night_shoulders",
+      "message": "That was legendary :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1669432614,
+      "username": "@sonofjohn2750",
+      "platform": "youtube",
+      "stream_id": "friday_night_shoulders",
+      "message": "Rich, Kanye announced that he is running for President 2024 (reported from BBC).:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1669428269,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "friday_night_shoulders",
+      "message": "MLD looks like a sexy crouton:skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1669427622,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "friday_night_shoulders",
+      "message": "What the heck are my eyes watching? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1669425929,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "friday_night_shoulders",
+      "message": "I\u2019m washing my :baseball::baseball: lol",
+      "commands": [
+        "baseball"
       ]
     },
     {
