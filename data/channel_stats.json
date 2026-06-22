@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098594,
+  "updated_ts": 1782098602,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -132,7 +132,8 @@
     "an_important_update",
     "an_unofficial_man_return_feat_large_men",
     "and_the_nintendo_switch_oled_winners_are",
-    "andrew_taint_is_a_man"
+    "andrew_taint_is_a_man",
+    "andrew_tate_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2230,6 +2231,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.69,
       "avg_active_chatters": 31.67
+    },
+    "andrew_tate_is_a_man": {
+      "stream_id": "andrew_tate_is_a_man",
+      "title": "Andrew Tate Is A Man",
+      "start_ts": 1672610066,
+      "end_ts": 1672623880,
+      "duration_sec": 13814,
+      "youtube_archive_id": "_glPcoNgqn0",
+      "source_platform": "youtube",
+      "total_donations_usd": 391.78,
+      "donation_count": 82,
+      "donations_per_min": 1.7017,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.43,
+      "avg_active_chatters": 30.81
     }
   }
 }
