@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099059,
+  "updated_ts": 1782099067,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -189,7 +189,8 @@
     "colleen_ballinger_is_an_absolute_weirdo",
     "come_ask_a_man_and_a_bird_questions",
     "come_ask_a_man_and_bird_questions",
-    "come_ask_a_man_anything_8_3_2021"
+    "come_ask_a_man_anything_8_3_2021",
+    "come_ask_a_man_questions"
   ],
   "commands": {
     "stan": 27,
@@ -220,12 +221,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 48,
+    "eyes": 49,
     "africa": 1,
-    "face": 156,
+    "face": 157,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 117,
+    "joy": 118,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -245,7 +246,7 @@
     "d": 1,
     "halo": 2,
     "hand": 8,
-    "popper": 3,
+    "popper": 4,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -1411,6 +1412,11 @@
       "title": "Come Ask A Man Anything 8-3-2021",
       "start_ts": 1628034947,
       "youtube_archive_id": "B1Eipt-zak0"
+    },
+    "come_ask_a_man_questions": {
+      "title": "Come Ask A Man Questions",
+      "start_ts": 1669340472,
+      "youtube_archive_id": "gnueUK9I50A"
     }
   },
   "messages": [
@@ -8044,6 +8050,46 @@
       "message": "Christianity is now a minority religion in England and Wales. :thinking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1669343225,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions",
+      "message": "Andrew taint is starring you down whilst shitting:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1669342370,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions",
+      "message": "said he was flown from car, seemingly no seatbelt, wear your seatbelt guys :pensive_face: it isnt worth not wearing one, takes 1 second to put on",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1669341415,
+      "username": "@chrischansfantabottlecolle4368",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions",
+      "message": "Happy Thanksgiving bird father. :smiling_face_with_smiling_eyes: hope you and yours are well. Please give me intro farts and your anus and shoulders.",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1669341019,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions",
+      "message": "Happy Thanksgiving. PS6 release date potentially 2028! :party_popper: Maybe they will have some cool PS5 games by then lol",
+      "commands": [
+        "popper"
       ]
     },
     {
