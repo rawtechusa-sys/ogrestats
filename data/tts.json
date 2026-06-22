@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100362,
+  "updated_ts": 1782100370,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -342,7 +342,8 @@
     "intellivision_family_fun_keffals_and_lady_decade",
     "irl_streaming_from_poughkeepsie_ny",
     "irl_streaming_on_a_hot_day",
-    "irrelevant_youtuber_plays_saints_row_2022"
+    "irrelevant_youtuber_plays_saints_row_2022",
+    "is_the_ps5_revision_that_bad_feat_joker_productions"
   ],
   "commands": {
     "stan": 27,
@@ -456,7 +457,7 @@
     "things": 2,
     "down": 2,
     "tomorrow": 16,
-    "horse": 7,
+    "horse": 8,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -2470,6 +2471,11 @@
       "title": "Irrelevant YouTuber Plays Saints Row (2022)",
       "start_ts": 1661302240,
       "youtube_archive_id": "ZbnRBE_2nbI"
+    },
+    "is_the_ps5_revision_that_bad_feat_joker_productions": {
+      "title": "Is The PS5 Revision THAT BAD? feat. Joker Productions",
+      "start_ts": 1630628376,
+      "youtube_archive_id": "JgCFKT4tJ3E"
     }
   },
   "messages": [
@@ -20773,6 +20779,16 @@
       "message": "you don't like my stream? *movies Carlos an inch to the side* what about now?:face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1630628730,
+      "username": "@spacedovahkiin1364",
+      "platform": "youtube",
+      "stream_id": "is_the_ps5_revision_that_bad_feat_joker_productions",
+      "message": "THE HORSES ARE COMING :horse::horse::horse:",
+      "commands": [
+        "horse"
       ]
     },
     {
