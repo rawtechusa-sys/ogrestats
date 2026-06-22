@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages are meant to live inside the index.html shell
+     (which owns the tabs, theme and background). If loaded top-level, bounce into
+     the shell at this page's tab, carrying any deep-link sub-slug. -->
+<script>(function(){
+  if (window.self !== window.top) return;            // embedded in the shell -> normal
+  var slug = 'tts';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
 <title>TTS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages are meant to live inside the index.html shell
+     (which owns the tabs, theme and background). If loaded top-level, bounce into
+     the shell at this page's tab, carrying any deep-link sub-slug (a stream slug
+     here) so streams.html#<slug> -> index.html#streams/<slug> stays shareable. -->
+<script>(function(){
+  if (window.self !== window.top) return;            // embedded in the shell -> normal
+  var slug = 'streams';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
 <title>Streams</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -512,6 +522,12 @@ window.addEventListener('message', e => {
   if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
   // Live timezone switch: rebuild the sidebar dates and reload the selected stream.
   else if (e.data && e.data.type === 'timezone') loadStreamList();
+  // Shell deep-link: select a stream by slug (e.g. index.html#streams/<slug>).
+  // Stash it too, so it also works if the sidebar hasn't rendered yet.
+  else if (e.data && e.data.type === 'selectstream' && e.data.slug) {
+    try { sessionStorage.setItem('selected-stream', e.data.slug); } catch (err) {}
+    selectStreamById(e.data.slug);
+  }
 });
 
 // Forward mouse position to parent for roach/eye animations
@@ -640,9 +656,11 @@ async function loadStreamList() {
         document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
         div.classList.add('active');
         sessionStorage.setItem('selected-stream', id);
-        // Reflect the selection in the URL so the view is shareable / deep-linkable
-        // (e.g. the donation links on dents.html point here as streams.html#<id>).
-        location.hash = id;
+        // Tell the shell so it can reflect the selection in the parent URL as
+        // index.html#streams/<id> -- keeping the view shareable/deep-linkable.
+        if (window.parent !== window) {
+          try { window.parent.postMessage({ type: 'streamselected', slug: id }, '*'); } catch (err) {}
+        }
         loadStream(id);
       });
 
@@ -650,20 +668,12 @@ async function loadStreamList() {
     }
 
     if (streams.length > 0) {
-      // Deep-link priority: URL hash (#<stream_id>, e.g. from dents.html donation
-      // links) first, then the last selection saved this session, then newest.
-      const hashId = decodeURIComponent((location.hash || '').replace(/^#/, ''));
-      const selected = (hashId && document.querySelector(`.stream-item[data-id="${CSS.escape(hashId)}"]`))
-        ? hashId
-        : sessionStorage.getItem('selected-stream');
-      const selectedItem = selected && document.querySelector(`.stream-item[data-id="${CSS.escape(selected)}"]`);
-      if (selectedItem) {
-        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
-        selectedItem.classList.add('active');
-        selectedItem.scrollIntoView({ block: 'nearest' });
-        sessionStorage.setItem('selected-stream', selected);
-        loadStream(selected);
-      } else {
+      // Selection priority: the stream stashed by the shell / last session, else
+      // the newest. Deep links (streams.html#<slug>) arrive via the shell, which
+      // stashes the slug into sessionStorage and/or posts a 'selectstream' message
+      // (see the message handler), so we don't read location.hash here directly.
+      const selected = sessionStorage.getItem('selected-stream');
+      if (!selectStreamById(selected)) {
         loadStream(streams[0].id);
       }
     }
@@ -671,6 +681,20 @@ async function loadStreamList() {
   } catch (e) {
     sidebar.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
   }
+}
+
+// Select a stream in the sidebar by id (mark active, scroll into view, persist,
+// load). Returns true if the stream exists in the current list, false otherwise.
+function selectStreamById(id) {
+  if (!id) return false;
+  const item = document.querySelector(`.stream-item[data-id="${CSS.escape(id)}"]`);
+  if (!item) return false;
+  document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+  item.classList.add('active');
+  item.scrollIntoView({ block: 'nearest' });
+  sessionStorage.setItem('selected-stream', id);
+  loadStream(id);
+  return true;
 }
 
 // ── Stream detail ──────────────────────────────────────────────────────────────

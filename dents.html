@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages are meant to live inside the index.html shell
+     (which owns the tabs, theme and background). If loaded top-level, bounce into
+     the shell at this page's tab, carrying any deep-link sub-slug. -->
+<script>(function(){
+  if (window.self !== window.top) return;            // embedded in the shell -> normal
+  var slug = 'dents';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
 <title>Dents</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -267,8 +276,24 @@
     text-decoration: none;
     border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4);
     transition: color 0.15s ease, border-color 0.15s ease;
+    /* Truncate long stream titles; full name shown via the title tooltip. */
+    display: inline-block;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
   }
   .stream-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
+
+  .ts-link {
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4);
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .ts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
 </style>
 </head>
 <body>
@@ -403,6 +428,70 @@ function fmtDateTime(ts) {
   return d.toLocaleDateString('en-US', tz(opts)) + ' ' + d.toLocaleTimeString('en-US', tz(tOpts));
 }
 
+// ── VOD timestamp deep links (ported from streams.html) ──────────────────────
+// Each donation links to the moment it happened in the rebroadcast VOD, using
+// ts - start_ts as the offset. A normal stream has one youtube_archive_id; a
+// split broadcast carries a `segments` array; a durable archive also has an
+// archive.org mirror anchored at archive_start_ts.
+function fmtElapsed(startTs, ts) {
+  const s = Math.max(0, Math.floor(ts - startTs));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  return h > 0
+    ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`
+    : `${m}:${String(sec).padStart(2,'0')}`;
+}
+
+function buildVodLink(seg, tSec) {
+  if (seg.archive_id)
+    return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+  if (seg.archive_org_id)
+    return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}?start=${tSec}`;
+  return null;
+}
+
+// Resolve the segment list for a stream's meta (mirrors streams.html: prefer an
+// explicit `segments` array, else synthesize a single segment from the archive
+// ids anchored at archive_start_ts ?? start_ts).
+function streamSegments(smeta) {
+  if (!smeta) return [];
+  if (Array.isArray(smeta.segments) && smeta.segments.length)
+    return [...smeta.segments].sort((a, b) => a.start_ts - b.start_ts);
+  if (smeta.youtube_archive_id || smeta.archive_org_id)
+    return [{ archive_id: smeta.youtube_archive_id || null,
+              archive_org_id: smeta.archive_org_id || null,
+              start_ts: smeta.archive_start_ts != null ? smeta.archive_start_ts : smeta.start_ts }];
+  return [];
+}
+
+// The last segment that had started by ts, clamped to the first for any donation
+// predating all of them.
+function segmentFor(segments, ts) {
+  let chosen = segments[0] || null;
+  for (const seg of segments) {
+    if (seg.start_ts <= ts) chosen = seg;
+    else break;
+  }
+  return chosen;
+}
+
+// The Timestamp cell: elapsed H:MM:SS into the stream, linking into the VOD when
+// an archive id is available, otherwise plain text.
+function timestampCell(smeta, ts) {
+  const startTs = smeta && smeta.start_ts;
+  const label = startTs ? fmtElapsed(startTs, ts) : '—';
+  const seg = segmentFor(streamSegments(smeta), ts);
+  if (seg && seg.start_ts != null) {
+    const tSec = Math.max(0, Math.floor(ts - seg.start_ts));
+    const href = buildVodLink(seg, tSec);
+    if (href) {
+      return `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    }
+  }
+  return label;
+}
+
 // Build the itemized-donations panel for one donor.
 function donorPanelHTML(username) {
   if (!donorData) {
@@ -418,8 +507,9 @@ function donorPanelHTML(username) {
     const smeta = sid && streams[sid];
     const label = (smeta && smeta.title) ? smeta.title : (sid || '—');
     const streamCell = sid
-      ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener">${escHtml(label)}</a>`
+      ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener" title="${escHtml(label)}">${escHtml(label)}</a>`
       : '—';
+    const tsCell = smeta ? timestampCell(smeta, d.ts) : '—';
     const type = d.type || '';
     const amt  = (d.amount_usd != null && d.amount_usd > 0)
       ? fmtUSD(d.amount_usd)
@@ -428,6 +518,7 @@ function donorPanelHTML(username) {
     return `<tr>
       <td class="ts-cell">${fmtDateTime(d.ts)}</td>
       <td>${streamCell}</td>
+      <td class="ts-cell">${tsCell}</td>
       <td><span class="type-badge type-${escHtml(type)}">${escHtml(type) || '—'}</span></td>
       <td class="amount-usd">${amt}</td>
       <td class="msg-cell">${msg}</td>
@@ -435,7 +526,7 @@ function donorPanelHTML(username) {
   }).join('');
 
   return `<table class="donations-table">
-    <thead><tr><th>Date</th><th>Stream</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
+    <thead><tr><th>Date</th><th>Stream</th><th>Timestamp</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
 }

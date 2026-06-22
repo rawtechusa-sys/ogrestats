@@ -220,6 +220,14 @@
 // and postMessage from the iframe. Animation loops read _mouse directly.
 window._mouse = { x: -999, y: -999, px: -999, py: -999 };
 
+// Deep-link routing state for the streams sub-slug (#streams/<stream_slug>).
+// `pendingStreamSlug` is the stream to push into the streams iframe; it's set
+// from the hash or from a 'streamselected' message and (re)sent on iframe load.
+// `suppressHashSync` skips one hashchange when WE rewrote the hash (so an
+// in-iframe selection doesn't bounce back into a redundant reload).
+var pendingStreamSlug = null;
+var suppressHashSync = false;
+
 window.addEventListener('mousemove', e => {
   window._mouse.px = window._mouse.x;
   window._mouse.py = window._mouse.y;
@@ -249,6 +257,16 @@ window.addEventListener('message', e => {
     // hash fires 'hashchange' -> syncTabFromHash, which reloads the iframe.
     if (location.hash.replace(/^#/, '') === e.data.slug) syncTabFromHash();
     else location.hash = e.data.slug;
+  } else if (e.data.type === 'streamselected' && e.data.slug) {
+    // The streams iframe reports a user selection -- reflect it in the parent URL
+    // as #streams/<slug> so the address bar stays a shareable deep link. Don't
+    // reload the iframe (the iframe is already showing it): suppress the echo.
+    pendingStreamSlug = e.data.slug;
+    const target = 'streams/' + encodeURIComponent(e.data.slug);
+    if (location.hash.replace(/^#/, '') !== target) {
+      suppressHashSync = true;
+      location.hash = target;
+    }
   }
 });
 </script>
@@ -296,9 +314,11 @@ const tzSelect = document.getElementById('tzSelect');
 tzSelect.value = getTZMode();
 tzSelect.addEventListener('change', e => applyTimezone(e.target.value));
 
-// Re-apply after iframe navigates to a new page
+// Re-apply after iframe navigates to a new page; also (re)push any pending
+// stream selection now that the page's message listener is alive.
 document.getElementById('pageFrame').addEventListener('load', () => {
   applyTheme(localStorage.getItem('swamp-theme') || 'green');
+  sendPendingStream();
 });
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
@@ -318,14 +338,37 @@ function activateTab(tab) {
   localStorage.setItem('swamp-tab', tab.dataset.slug);
 }
 
+// The hash is #<tab> or #<tab>/<sub>. For the streams tab the sub-slug is a
+// stream id, so streams.html#<slug> deep links survive as index.html#streams/<slug>.
+function parseHash() {
+  const raw = location.hash.replace(/^#/, '');
+  const i = raw.indexOf('/');
+  return i === -1
+    ? { slug: raw, sub: '' }
+    : { slug: raw.slice(0, i), sub: raw.slice(i + 1) };
+}
+
+// Push the pending stream selection into the streams iframe.
+function sendPendingStream() {
+  if (!pendingStreamSlug) return;
+  const f = document.getElementById('pageFrame');
+  try { f.contentWindow.postMessage({ type: 'selectstream', slug: pendingStreamSlug }, '*'); } catch (e) {}
+}
+
 // Pick the tab implied by the current hash, falling back to the saved tab, then
-// the first tab.
+// the first tab. A streams sub-slug is stashed (sessionStorage, the channel
+// streams.html reads) and posted to the iframe.
 function syncTabFromHash() {
-  const slug = location.hash.replace(/^#/, '');
+  const { slug, sub } = parseHash();
   const tab = tabForSlug(slug)
     || tabForSlug(localStorage.getItem('swamp-tab'))
     || document.querySelector('.tab');
+  if (slug === 'streams' && sub) {
+    pendingStreamSlug = decodeURIComponent(sub);
+    try { sessionStorage.setItem('selected-stream', pendingStreamSlug); } catch (e) {}
+  }
   activateTab(tab);
+  sendPendingStream();
 }
 
 document.getElementById('tabs').addEventListener('click', e => {
@@ -340,7 +383,12 @@ document.getElementById('tabs').addEventListener('click', e => {
   }
 });
 
-window.addEventListener('hashchange', syncTabFromHash);
+window.addEventListener('hashchange', () => {
+  // Skip the one hashchange we triggered ourselves from a 'streamselected'
+  // message -- the iframe already shows that stream; re-syncing would reload it.
+  if (suppressHashSync) { suppressHashSync = false; return; }
+  syncTabFromHash();
+});
 syncTabFromHash();
 
 // ── Background critters toggle ─────────────────────────────────────────────────
