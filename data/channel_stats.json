@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098994,
+  "updated_ts": 1782099002,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -182,7 +182,8 @@
     "chatting_and_streaming",
     "chatting_watching_chris_chan_documentary_gamerfrommars",
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
-    "chatting_with_intro_guy"
+    "chatting_with_intro_guy",
+    "chicken_suit_ep_9_discussing_elden_ring"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3080,6 +3081,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.11,
       "avg_active_chatters": 41.14
+    },
+    "chicken_suit_ep_9_discussing_elden_ring": {
+      "stream_id": "chicken_suit_ep_9_discussing_elden_ring",
+      "title": "Chicken Suit Ep. 9 (Discussing Elden Ring)",
+      "start_ts": 1652915326,
+      "end_ts": 1652918321,
+      "duration_sec": 2995,
+      "youtube_archive_id": "CiI5nQsff-g",
+      "source_platform": "youtube",
+      "total_donations_usd": 34.97,
+      "donation_count": 12,
+      "donations_per_min": 0.7006,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.7,
+      "avg_active_chatters": 26.26
     }
   }
 }
