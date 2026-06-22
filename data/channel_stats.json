@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099871,
+  "updated_ts": 1782099880,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -287,7 +287,8 @@
     "friday_night_man_stream",
     "friday_night_new_york_man_stream",
     "friday_night_shoulders",
-    "furry_cringe_feat_keemstar"
+    "furry_cringe_feat_keemstar",
+    "g4tv_family_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4865,6 +4866,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.85,
       "avg_active_chatters": 38.77
+    },
+    "g4tv_family_fun": {
+      "stream_id": "g4tv_family_fun",
+      "title": "G4TV Family Fun",
+      "start_ts": 1644021147,
+      "end_ts": 1644031534,
+      "duration_sec": 10387,
+      "youtube_archive_id": "0icV7Ln6vp8",
+      "source_platform": "youtube",
+      "total_donations_usd": 582.64,
+      "donation_count": 106,
+      "donations_per_min": 3.3656,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.57,
+      "avg_active_chatters": 26.02
     }
   }
 }
