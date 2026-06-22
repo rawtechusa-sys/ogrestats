@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093589,
+  "updated_ts": 1782093634,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -46,7 +46,8 @@
     "a_jcs_and_dsp_stream",
     "a_jcs_stream",
     "a_jodi_arias_holiday_special",
-    "a_large_man_ama"
+    "a_large_man_ama",
+    "a_large_man_is_streaming"
   ],
   "commands": {
     "stan": 27,
@@ -77,9 +78,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 12,
+    "eyes": 13,
     "africa": 1,
-    "face": 36,
+    "face": 37,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 27,
@@ -409,6 +410,11 @@
       "title": "A Large Man AMA",
       "start_ts": 1632958420,
       "youtube_archive_id": "YStZIEozr3s"
+    },
+    "a_large_man_is_streaming": {
+      "title": "A Large Man Is Streaming...",
+      "start_ts": 1569113362,
+      "youtube_archive_id": "zm2J2frZA9A"
     }
   },
   "messages": [
@@ -4806,6 +4812,26 @@
       "message": "I was just busting your balls about raycons. :rolling_on_the_floor_laughing: What\u2019s the biggest piece of advice you can give to content creators?",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1569115517,
+      "username": "@FlukasMcDoogle",
+      "platform": "youtube",
+      "stream_id": "a_large_man_is_streaming",
+      "message": "RTU is streaming? RICH, we don't need to hear you going to the bathroom aga... OOOHHH Not that kind of stream. :grinning_face: Just kidding. How's ur weekend man?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1569114331,
+      "username": "@seanryanfarthead",
+      "platform": "youtube",
+      "stream_id": "a_large_man_is_streaming",
+      "message": "Just wanted to say congrats on the weight loss! Looking a lot better these days dude! Very inspiring and amazing! :grinning_face_with_big_eyes:",
+      "commands": [
+        "eyes"
       ]
     }
   ]
