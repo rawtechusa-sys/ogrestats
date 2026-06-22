@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093289,
+  "updated_ts": 1782093329,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -39,7 +39,8 @@
     "a_floor_thrusting_man_stream",
     "a_fun_dspgaming_man_stream",
     "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
-    "a_grand_theft_auto_trilogy_bird_stream"
+    "a_grand_theft_auto_trilogy_bird_stream",
+    "a_heartwarming_man_and_bird_stream"
   ],
   "commands": {
     "stan": 27,
@@ -72,10 +73,10 @@
     "turkey": 3,
     "eyes": 8,
     "africa": 1,
-    "face": 28,
+    "face": 29,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 21,
+    "joy": 22,
     "gameboy": 1,
     "chick": 1,
     "carlos": 7,
@@ -88,7 +89,7 @@
     "tongue": 1,
     "heart": 15,
     "shorts": 1,
-    "laughing": 9,
+    "laughing": 11,
     "news": 3,
     "chicken": 6,
     "cake": 1,
@@ -160,7 +161,9 @@
     "wings": 1,
     "advice": 1,
     "ghostwire": 1,
-    "guy": 1
+    "guy": 1,
+    "message": 1,
+    "lied": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -352,6 +355,11 @@
       "title": "A Grand Theft Auto Trilogy Bird Stream",
       "start_ts": 1637438336,
       "youtube_archive_id": "0X2SSUFVBAc"
+    },
+    "a_heartwarming_man_and_bird_stream": {
+      "title": "A Heartwarming Man And Bird Stream",
+      "start_ts": 1630027707,
+      "youtube_archive_id": "etThUGIG6o4"
     }
   },
   "messages": [
@@ -4066,6 +4074,66 @@
       "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
       "commands": [
         "spose"
+      ]
+    },
+    {
+      "ts": 1630034985,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "I Lied: 1 last message... Thanks for the suggestion. Also, check Ordinary Sausage YT, He makes sausages out of almost anything. He's fun to watch.",
+      "commands": [
+        "lied"
+      ]
+    },
+    {
+      "ts": 1630034350,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "I just woke myself up with a good fart LOL:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1630033887,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "Last Message: My BT Headphones broke today and I hate ear buds, so Raycon is not an option. Any suggestions for a pair on a budget?",
+      "commands": [
+        "message"
+      ]
+    },
+    {
+      "ts": 1630032930,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "Tommy Telirico and Crap Gamer... that'd be quite the show. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1630030717,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "I wonder Scalpers will also buy all the amicos up:thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1630028184,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "a_heartwarming_man_and_bird_stream",
+      "message": "Not American but what the is deal with Ben Shapiro watched him for 1st time today he talks/looks like an alien pretending to be human :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
