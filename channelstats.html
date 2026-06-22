@@ -156,6 +156,7 @@
   .legend-item:hover { color: var(--accent); }
   .legend-item.hidden { opacity: 0.35; }
   .legend-line   { width: 16px; height: 2px;  border-radius: 1px; flex-shrink: 0; }
+  .legend-bar    { width: 12px; height: 10px; border-radius: 1px; flex-shrink: 0; }
   .legend-divider {
     width: 1px;
     height: 14px;
@@ -391,9 +392,9 @@ const AXIS_MAP = {
 const LEGEND_SPECS = [
   { label: 'Subscribers',      color: '#40c4ff', type: 'line',   ds: DS.SUBSCRIBERS },
   null,
-  { label: 'Donations/Stream', color: '#e8c020', type: 'line',   ds: DS.DON_PER_STREAM },
+  { label: 'Donations/Stream', color: '#e8c020', type: 'bar',    ds: DS.DON_PER_STREAM },
   { label: 'Cumulative $',     color: '#96d45a', type: 'line',   ds: DS.DON_CUMULATIVE },
-  { label: 'Donations/Min',    color: '#e8952a', type: 'line',   ds: DS.DON_PER_MIN },
+  { label: 'Donations/Min',    color: '#e8952a', type: 'bar',    ds: DS.DON_PER_MIN },
   null,
   { label: 'Peak Viewers',     color: '#e84040', type: 'line',   ds: DS.PEAK_VIEWERS },
   { label: 'Avg Viewers',      color: '#6650d8', type: 'line',   ds: DS.AVG_VIEWERS },
@@ -645,14 +646,16 @@ function buildChart(streams, subs) {
 
   const datasets = [];
   function add(label, data, color, opts = {}) {
+    const isBar = opts.type === 'bar';
     datasets.push(Object.assign({
       label,
       hidden: hiddenDatasets.has(label),
       data,
-      type: 'line',
+      type: opts.type || 'line',
       borderColor: color,
-      backgroundColor: opts.fill ? (opts.bg || color) : 'transparent',
-      borderWidth: opts.borderWidth || 2,
+      backgroundColor: isBar ? (opts.bg || color)
+                             : (opts.fill ? (opts.bg || color) : 'transparent'),
+      borderWidth: isBar ? 0 : (opts.borderWidth || 2),
       borderDash: opts.dash || [],
       pointRadius: opts.pointRadius != null ? opts.pointRadius : 3,
       pointHoverRadius: 5,
@@ -661,6 +664,8 @@ function buildChart(streams, subs) {
       fill: opts.fill || false,
       spanGaps: true,
       yAxisID: opts.yAxisID,
+      // Bars on a linear (time) x-axis: cap width so sparse points stay readable.
+      maxBarThickness: isBar ? 14 : undefined,
     }, {}));
   }
 
@@ -671,11 +676,11 @@ function buildChart(streams, subs) {
   add(DS.DON_CUMULATIVE, cumData, '#96d45a',
       { yAxisID: 'yDollars', fill: true, bg: 'rgba(150,212,90,0.10)', pointRadius: 0, tension: 0 });
   add(DS.DON_PER_STREAM, streams.map(s => pt(s, s.total_donations_usd)), '#e8c020',
-      { yAxisID: 'yPerStream' });
+      { yAxisID: 'yPerStream', type: 'bar' });
 
   // Donations per minute (right).
   add(DS.DON_PER_MIN, streams.map(s => pt(s, s.donations_per_min)), '#e8952a',
-      { yAxisID: 'yRate' });
+      { yAxisID: 'yRate', type: 'bar' });
 
   // Viewers (left).
   add(DS.PEAK_VIEWERS, streams.map(s => pt(s, s.peak_viewers)), '#e84040',
@@ -1025,6 +1030,8 @@ function buildLegend() {
       indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="7" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="11" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
     } else if (item.type === 'dotted') {
       indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2" stroke-dasharray="2 2"/></svg>`;
+    } else if (item.type === 'bar') {
+      indicator = `<span class="legend-bar" style="background:${item.color};"></span>`;
     } else {
       indicator = `<span class="legend-line" style="background:${item.color};"></span>`;
     }
