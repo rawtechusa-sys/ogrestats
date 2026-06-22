@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100737,
+  "updated_ts": 1782100743,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -389,7 +389,8 @@
     "lets_be_disappointed_by_the_nintendo_direct_together",
     "lets_chat",
     "lets_chat_plus_birds",
-    "lets_discover_def_noodles_together"
+    "lets_discover_def_noodles_together",
+    "lets_discuss_e3_and_next_gen_consoles"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6599,6 +6600,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.71,
       "avg_active_chatters": 32.35
+    },
+    "lets_discuss_e3_and_next_gen_consoles": {
+      "stream_id": "lets_discuss_e3_and_next_gen_consoles",
+      "title": "Let's Discuss E3 and Next Gen Consoles",
+      "start_ts": 1529108149,
+      "end_ts": 1529114826,
+      "duration_sec": 6677,
+      "youtube_archive_id": "OIJofrObuD8",
+      "source_platform": "youtube",
+      "total_donations_usd": 231.72,
+      "donation_count": 41,
+      "donations_per_min": 2.0823,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.08,
+      "avg_active_chatters": 28.42
     }
   }
 }
