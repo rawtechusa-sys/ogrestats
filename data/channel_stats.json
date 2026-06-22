@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100170,
+  "updated_ts": 1782100179,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -321,7 +321,8 @@
     "im_a_man",
     "im_at_a_crossroads",
     "im_back",
-    "im_back_and_on_a_warpath"
+    "im_back_and_on_a_warpath",
+    "im_back_and_only_half_dead_come_hang_out"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5443,6 +5444,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.61,
       "avg_active_chatters": 45.59
+    },
+    "im_back_and_only_half_dead_come_hang_out": {
+      "stream_id": "im_back_and_only_half_dead_come_hang_out",
+      "title": "I'm Back And Only Half-Dead. Come Hang Out!",
+      "start_ts": 1646958520,
+      "end_ts": 1646967161,
+      "duration_sec": 8641,
+      "youtube_archive_id": "P6a1wZAwkm8",
+      "source_platform": "youtube",
+      "total_donations_usd": 251.75,
+      "donation_count": 71,
+      "donations_per_min": 1.7481,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.88,
+      "avg_active_chatters": 26.3
     }
   }
 }
