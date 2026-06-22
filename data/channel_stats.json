@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101971,
+  "updated_ts": 1782101976,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -567,7 +567,8 @@
     "reacting_to_xqc_reacting_and_roasting_a_malicious_hater",
     "reddit_cringe_feat_birds",
     "remastering_intro_guys_incredible_fart",
-    "reviewbirdsusa"
+    "reviewbirdsusa",
+    "revieweldenringusa_eldenring"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9625,6 +9626,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.08,
       "avg_active_chatters": 29.59
+    },
+    "revieweldenringusa_eldenring": {
+      "stream_id": "revieweldenringusa_eldenring",
+      "title": "ReviewEldenRingUSA #EldenRing",
+      "start_ts": 1650827495,
+      "end_ts": 1650835339,
+      "duration_sec": 7844,
+      "youtube_archive_id": "UBzBQYROIiQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 272.82,
+      "donation_count": 64,
+      "donations_per_min": 2.0868,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.5,
+      "avg_active_chatters": 34.54
     }
   }
 }
