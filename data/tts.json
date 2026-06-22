@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100921,
+  "updated_ts": 1782100928,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -413,7 +413,8 @@
     "listen",
     "live_from_canada",
     "live_from_canada_is_pissed_off",
-    "live_ghost_hunt_from_canada"
+    "live_ghost_hunt_from_canada",
+    "logan_paul_is_a_human_turd"
   ],
   "commands": {
     "stan": 27,
@@ -446,10 +447,10 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 395,
+    "face": 396,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 267,
+    "joy": 268,
     "gameboy": 1,
     "chick": 2,
     "carlos": 33,
@@ -462,7 +463,7 @@
     "tongue": 7,
     "heart": 126,
     "shorts": 1,
-    "laughing": 159,
+    "laughing": 160,
     "news": 20,
     "chicken": 46,
     "cake": 7,
@@ -486,7 +487,7 @@
     "peach": 14,
     "fire": 23,
     "kendal": 1,
-    "up": 40,
+    "up": 41,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -694,7 +695,7 @@
     "wrong": 1,
     "distance": 1,
     "cheat": 1,
-    "here": 2,
+    "here": 3,
     "hamburger": 2,
     "chipmunk": 1,
     "cupcaketv": 1,
@@ -2951,6 +2952,11 @@
       "title": "LIVE GHOST HUNT FROM CANADA",
       "start_ts": 1692834896,
       "youtube_archive_id": "-CW6q4TgNjg"
+    },
+    "logan_paul_is_a_human_turd": {
+      "title": "Logan Paul Is A Human Turd",
+      "start_ts": 1672273738,
+      "youtube_archive_id": "jH7OV6MfiCQ"
     }
   },
   "messages": [
@@ -14387,6 +14393,56 @@
       "message": "Rumor is amico promised a certain yter a full time job if things panned out and they obviously shilled. Everyone on the subreddit thinking its DJC. :thinking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1672283474,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_human_turd",
+      "message": "The lesson learned here: If it's too good to be true, it's probably a scam. Logan Paul will reap what he sows one day and so will the rest.",
+      "commands": [
+        "here"
+      ]
+    },
+    {
+      "ts": 1672280995,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_human_turd",
+      "message": "I couldn\u2019t lead a company well. Much like Tommy. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1672280649,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_human_turd",
+      "message": "I\u2019m the new CEO of Intellivision Amico. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1672274580,
+      "username": "@RehabExecution",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_human_turd",
+      "message": "Take your sweater off and do a giveaway for it:loudly_crying_face::weary_face::weary_face::weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1672274295,
+      "username": "@michaeld2799md",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_human_turd",
+      "message": "What\u2019s GOOOOD Rich, I finally got my \u201887 BMW 5 series on the road this week:thumbs_up: Also Can I get uhhh, 2 Try to relax your Anus\u2019s and a medium Breasts?",
+      "commands": [
+        "up"
       ]
     },
     {
