@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100862,
+  "updated_ts": 1782100869,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -405,7 +405,8 @@
     "lets_laugh_at_qvc",
     "lets_shop_and_then_go_to_war",
     "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
-    "lets_talk_about_blizzard_developers_bill_cosby_suite"
+    "lets_talk_about_blizzard_developers_bill_cosby_suite",
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv"
   ],
   "commands": {
     "stan": 27,
@@ -436,7 +437,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 94,
+    "eyes": 95,
     "africa": 1,
     "face": 388,
     "petersonxhhanson": 1,
@@ -454,7 +455,7 @@
     "tongue": 7,
     "heart": 124,
     "shorts": 1,
-    "laughing": 157,
+    "laughing": 158,
     "news": 19,
     "chicken": 44,
     "cake": 7,
@@ -476,7 +477,7 @@
     "hole": 7,
     "rooster": 41,
     "peach": 13,
-    "fire": 22,
+    "fire": 23,
     "kendal": 1,
     "up": 39,
     "note": 6,
@@ -2902,6 +2903,11 @@
       "title": "Let's Talk About Blizzard Developers' Bill 'Cosby Suite'",
       "start_ts": 1627519802,
       "youtube_archive_id": "1OhL02hqwGE"
+    },
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv": {
+      "title": "Let's Talk For A Bit... (Boogie2988 and Quantum TV)",
+      "start_ts": 1696125034,
+      "youtube_archive_id": "kAF8plMsVKc"
     }
   },
   "messages": [
@@ -8795,6 +8801,36 @@
       "message": "Just watched Open Mic on the John Campea show from Friday\u2026I know what\u2019s like to have a missed super..Saw X chat was read, but chat about an old host making a silly noise was glossed over. :face_with_diagonal_mouth:",
       "commands": [
         "mouth"
+      ]
+    },
+    {
+      "ts": 1696129489,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+      "message": "Phil should\u2019ve been Paul Giamanti in Sideways. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1696129164,
+      "username": "@twinkie415",
+      "platform": "youtube",
+      "stream_id": "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+      "message": "how funny would it be watching Phil screaming for help outside of PayPal HQ? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1696125277,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+      "message": "This mix is :fire: dad. Glad you got into beats",
+      "commands": [
+        "fire"
       ]
     },
     {
