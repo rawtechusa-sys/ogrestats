@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094624,
+  "updated_ts": 1782094679,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -67,7 +67,8 @@
     "a_man_is_staying_on_till_1_am",
     "a_man_is_streaming_feat_birds",
     "a_man_is_streaming_with_birds_till_130_am",
-    "a_man_marathon"
+    "a_man_marathon",
+    "a_man_marathon_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -103,7 +104,7 @@
     "face": 49,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 42,
+    "joy": 43,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -551,6 +552,11 @@
       "title": "A Man Marathon",
       "start_ts": 1657745135,
       "youtube_archive_id": "LNLvS0LFGbY"
+    },
+    "a_man_marathon_feat_birds": {
+      "title": "A Man Marathon (Feat. Birds)",
+      "start_ts": 1678482095,
+      "youtube_archive_id": "GuqzBLN_HLY"
     }
   },
   "messages": [
@@ -3810,6 +3816,16 @@
       "platform": "youtube",
       "stream_id": "a_man_and_his_birds",
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1678489866,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_man_marathon_feat_birds",
+      "message": "The best part is that the lieutenant gov didn\u2019t even try to deny it by saying he was hacked or it was an intern or it was the ambien :face_with_tears_of_joy:",
       "commands": [
         "joy"
       ]
