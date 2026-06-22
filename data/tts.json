@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100913,
+  "updated_ts": 1782100921,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -412,7 +412,8 @@
     "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
     "listen",
     "live_from_canada",
-    "live_from_canada_is_pissed_off"
+    "live_from_canada_is_pissed_off",
+    "live_ghost_hunt_from_canada"
   ],
   "commands": {
     "stan": 27,
@@ -445,7 +446,7 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 394,
+    "face": 395,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 267,
@@ -485,7 +486,7 @@
     "peach": 14,
     "fire": 23,
     "kendal": 1,
-    "up": 39,
+    "up": 40,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -503,7 +504,7 @@
     "sunglasses": 20,
     "kiss": 22,
     "earlier": 1,
-    "ghost": 1,
+    "ghost": 2,
     "bk": 1,
     "gift": 3,
     "bird": 13,
@@ -575,7 +576,7 @@
     "struck": 3,
     "joker": 1,
     "racehorse": 8,
-    "question": 10,
+    "question": 11,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 2,
@@ -2945,6 +2946,11 @@
       "title": "LIVE FROM CANADA IS PISSED OFF",
       "start_ts": 1692665109,
       "youtube_archive_id": "-9O1jw0426g"
+    },
+    "live_ghost_hunt_from_canada": {
+      "title": "LIVE GHOST HUNT FROM CANADA",
+      "start_ts": 1692834896,
+      "youtube_archive_id": "-CW6q4TgNjg"
     }
   },
   "messages": [
@@ -9771,6 +9777,46 @@
       "message": "Listen, swim back to the tip of the soup bowl. Be a member for 25 months just so you can flex a golden cucumber :cucumber: that no one gives a shit about.",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1692843566,
+      "username": "@jetmaximum90",
+      "platform": "youtube",
+      "stream_id": "live_ghost_hunt_from_canada",
+      "message": "can I get one more? Jay's next meal. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1692843429,
+      "username": "@AndrewMorales928",
+      "platform": "youtube",
+      "stream_id": "live_ghost_hunt_from_canada",
+      "message": "Jay I have 2 wait 10-13 week 2 renew my passport:sad_but_relieved_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1692837784,
+      "username": "@Jomacx-24",
+      "platform": "youtube",
+      "stream_id": "live_ghost_hunt_from_canada",
+      "message": "Starship Troopers Question: Carmen or Dizzy?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1692835166,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "live_ghost_hunt_from_canada",
+      "message": "Jay, you should book a ghost tour when you see Rich and film it for a future video to react to on stream. :ghost:",
+      "commands": [
+        "ghost"
       ]
     },
     {
