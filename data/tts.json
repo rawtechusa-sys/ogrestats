@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101070,
+  "updated_ts": 1782101077,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -433,7 +433,8 @@
     "man_stares_at_artificial_birds_live",
     "man_versus_bird_live",
     "man_versus_carolina_reaper_jerky",
-    "man_vs_birdemic_the_film_feat_birds"
+    "man_vs_birdemic_the_film_feat_birds",
+    "man_vs_birds_vs_wii_u_its_fixed"
   ],
   "commands": {
     "stan": 27,
@@ -466,7 +467,7 @@
     "turkey": 7,
     "eyes": 101,
     "africa": 1,
-    "face": 412,
+    "face": 414,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 276,
@@ -480,7 +481,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 131,
+    "heart": 132,
     "shorts": 1,
     "laughing": 167,
     "news": 20,
@@ -503,7 +504,7 @@
     "disclaimer": 1,
     "hole": 9,
     "rooster": 44,
-    "peach": 14,
+    "peach": 15,
     "fire": 23,
     "kendal": 1,
     "up": 41,
@@ -611,7 +612,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 5,
+    "fact": 6,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -921,7 +922,8 @@
     "sparkles": 1,
     "cod": 1,
     "population": 1,
-    "swords": 1
+    "swords": 1,
+    "ctr": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3083,6 +3085,11 @@
       "title": "Man Vs. Birdemic (The Film) ((FEAT. BIRDS))",
       "start_ts": 1643326732,
       "youtube_archive_id": "2ucdlymVzJA"
+    },
+    "man_vs_birds_vs_wii_u_its_fixed": {
+      "title": "Man Vs. Birds. Vs. Wii U (It's Fixed)",
+      "start_ts": 1645579736,
+      "youtube_archive_id": "E29VgJcAwgg"
     }
   },
   "messages": [
@@ -20810,6 +20817,57 @@
       "message": "Hey! Do I have an opportunity for you! You sell your current console on eBay and I'll give you the chance to win the newest next gen system! :grinning_face_with_sweat::face_with_tears_of_joy::rolling_on_the_floor_laughing::face_with_rolling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1645588679,
+      "username": "@Calvin-zy6vh",
+      "platform": "youtube",
+      "stream_id": "man_vs_birds_vs_wii_u_its_fixed",
+      "message": "My :peach: was not pounded tonight unfortunately hence why I am here :pensive_face:, love you the content rich :red_heart:",
+      "commands": [
+        "peach",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1645587727,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "man_vs_birds_vs_wii_u_its_fixed",
+      "message": "Fun fact: The son of Ubisoft's CEO at the time thought the 1st game was boring, so the devs literally added a bunch side quests 5 days before shipping",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1645581671,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "man_vs_birds_vs_wii_u_its_fixed",
+      "message": "ctr: crash team racing?",
+      "commands": [
+        "ctr"
+      ]
+    },
+    {
+      "ts": 1645581021,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "man_vs_birds_vs_wii_u_its_fixed",
+      "message": "You flat out acted like DSP with this game :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1645580822,
+      "username": "@ericwachsman3619",
+      "platform": "youtube",
+      "stream_id": "man_vs_birds_vs_wii_u_its_fixed",
+      "message": "play this game on Xbox series or PC its an amazing racing game but the WiiU version is a dumpster fire, it runs at 60fps on those too :winking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
