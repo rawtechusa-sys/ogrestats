@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092627,
+  "updated_ts": 1782092655,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -20,7 +20,8 @@
     "2_men_live_featmen",
     "2_middle_aged_men_are_livestreaming",
     "3_men_live_camelot331_and_boogie2988",
-    "42_year_old_man_plays_video_games_terribly"
+    "42_year_old_man_plays_video_games_terribly",
+    "a_baked_middle_aged_man_plays_video_games"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -326,6 +327,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.36,
       "avg_active_chatters": 33.5
+    },
+    "a_baked_middle_aged_man_plays_video_games": {
+      "stream_id": "a_baked_middle_aged_man_plays_video_games",
+      "title": "A Baked, Middle-Aged Man Plays Video Games",
+      "start_ts": 1638739230,
+      "end_ts": 1638743805,
+      "duration_sec": 4575,
+      "youtube_archive_id": "PG-1EH5dFv4",
+      "source_platform": "youtube",
+      "total_donations_usd": 276.36,
+      "donation_count": 59,
+      "donations_per_min": 3.6244,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.95,
+      "avg_active_chatters": 30.21
     }
   }
 }
