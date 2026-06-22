@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100864,
+  "updated_ts": 1782100871,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -407,7 +407,8 @@
     "lets_laugh_at_qvc",
     "lets_shop_and_then_go_to_war",
     "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
-    "lets_talk_about_blizzard_developers_bill_cosby_suite"
+    "lets_talk_about_blizzard_developers_bill_cosby_suite",
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6905,6 +6906,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.57,
       "avg_active_chatters": 41.84
+    },
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv": {
+      "stream_id": "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+      "title": "Let's Talk For A Bit... (Boogie2988 and Quantum TV)",
+      "start_ts": 1696125034,
+      "end_ts": 1696130993,
+      "duration_sec": 5959,
+      "youtube_archive_id": "kAF8plMsVKc",
+      "source_platform": "youtube",
+      "total_donations_usd": 105.85,
+      "donation_count": 32,
+      "donations_per_min": 1.0658,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.5,
+      "avg_active_chatters": 43.25
     }
   }
 }
