@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099801,
+  "updated_ts": 1782099809,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -278,7 +278,8 @@
     "elden_ring_fails_compilation_marathon_eldenring",
     "elon_musk_bought_me_a_bird",
     "everyone_on_the_internet_loves_me",
-    "exposing_the_anti_woke_frauds"
+    "exposing_the_anti_woke_frauds",
+    "father_is_sick_jaysus_saves"
   ],
   "commands": {
     "stan": 27,
@@ -367,7 +368,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 13,
-    "kiss": 15,
+    "kiss": 16,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -419,7 +420,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 7,
+    "it": 9,
     "food": 2,
     "play": 1,
     "video": 1,
@@ -474,7 +475,7 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 8,
+    "notes": 11,
     "wars": 1,
     "points": 5,
     "wastebasket": 1,
@@ -637,7 +638,9 @@
     "pie": 1,
     "parrot": 1,
     "chuds": 1,
-    "ps": 1
+    "ps": 1,
+    "jay": 1,
+    "jar": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2024,6 +2027,11 @@
       "title": "Exposing The \"Anti-Woke\" Frauds",
       "start_ts": 1738625745,
       "youtube_archive_id": "5sPhcsX2Xu4"
+    },
+    "father_is_sick_jaysus_saves": {
+      "title": "Father Is Sick, Jaysus Saves",
+      "start_ts": 1705618828,
+      "youtube_archive_id": "ZVUGtPzRvRY"
     }
   },
   "messages": [
@@ -4528,6 +4536,76 @@
       "message": "this stream is brought to you by horse :chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1705630882,
+      "username": "@RazorSharpRust",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": "One Jay one Jar :jar:",
+      "commands": [
+        "jar"
+      ]
+    },
+    {
+      "ts": 1705625806,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": "Jay: Nintendo is releasing a Switch successor this year. Would you rather Nintendo choose to revive F-Zero or Star Fox as a launch title for it?",
+      "commands": [
+        "jay"
+      ]
+    },
+    {
+      "ts": 1705624206,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": ":musical_notes: Winnie the Pooh, Winnie the Pooh! Tubby little cubby all stuffed with fluff :musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1705621513,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": "DSP tries it: Drrich\u2019s trader joe tacos",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1705620687,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": "waiting on that train run :winking_face::face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1705619928,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": ":musical_note::musical_notes:I gotta get up, I gotta get going. I'm gonna see a friend of mine. He's round and he's fuzzy, I love him because he's just--Jay bear! Winnie the Jay bear!:musical_note::musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1705619261,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "father_is_sick_jaysus_saves",
+      "message": "DSP tries it: shoving Melonie Mac up his enus",
+      "commands": [
+        "it"
       ]
     },
     {
