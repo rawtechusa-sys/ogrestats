@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100328,
+  "updated_ts": 1782100337,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -339,7 +339,8 @@
     "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
     "intellivision_amico_family_fun_and_the_quartering_swatted",
     "intellivision_amico_family_fun_night_plus_newegg_drama",
-    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live"
+    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
+    "intellivision_family_fun_keffals_and_lady_decade"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5749,6 +5750,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.02,
       "avg_active_chatters": 30.81
+    },
+    "intellivision_family_fun_keffals_and_lady_decade": {
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "title": "Intellivision Family Fun, Keffals And Lady Decade",
+      "start_ts": 1660175140,
+      "end_ts": 1660185613,
+      "duration_sec": 10473,
+      "youtube_archive_id": "wFKIO1rxKRs",
+      "source_platform": "youtube",
+      "total_donations_usd": 464.25,
+      "donation_count": 78,
+      "donations_per_min": 2.6597,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.17,
+      "avg_active_chatters": 36.3
     }
   }
 }
