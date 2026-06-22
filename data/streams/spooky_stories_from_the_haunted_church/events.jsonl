@@ -50,7 +50,7 @@
 {"ts": 1692752780, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 50, "active_twitch_chatters": null, "youtube_messages_per_minute": 14.0, "twitch_messages_per_minute": 0}
 {"ts": 1692752840, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 49, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1692752900, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 48, "active_twitch_chatters": null, "youtube_messages_per_minute": 14.0, "twitch_messages_per_minute": 0}
-{"ts": 1692752953, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Badog473", "amount_raw": "SEK 20.00", "amount_usd": 20.0, "message": "hi Jay"}
+{"ts": 1692752953, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Badog473", "amount_raw": "SEK 20.00", "amount_usd": 1.92, "message": "hi Jay"}
 {"ts": 1692752960, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 59, "active_twitch_chatters": null, "youtube_messages_per_minute": 59.0, "twitch_messages_per_minute": 0}
 {"ts": 1692752969, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@gorillapimpbeats", "amount_raw": "$1.99", "amount_usd": 1.99, "message": "Quija board and drunk yes"}
 {"ts": 1692753020, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 57, "active_twitch_chatters": null, "youtube_messages_per_minute": 15.0, "twitch_messages_per_minute": 0}
@@ -69,7 +69,7 @@
 {"ts": 1692753560, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 36, "active_twitch_chatters": null, "youtube_messages_per_minute": 9.0, "twitch_messages_per_minute": 0}
 {"ts": 1692753620, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 38, "active_twitch_chatters": null, "youtube_messages_per_minute": 28.0, "twitch_messages_per_minute": 0}
 {"ts": 1692753680, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 41, "active_twitch_chatters": null, "youtube_messages_per_minute": 18.0, "twitch_messages_per_minute": 0}
-{"ts": 1692753708, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@GlamerousFrog", "amount_raw": "£1.99", "amount_usd": 1.99, "message": "This is pure gold. Be careful tho kitty"}
+{"ts": 1692753708, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@GlamerousFrog", "amount_raw": "£1.99", "amount_usd": 2.53, "message": "This is pure gold. Be careful tho kitty"}
 {"ts": 1692753740, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 44, "active_twitch_chatters": null, "youtube_messages_per_minute": 24.0, "twitch_messages_per_minute": 0}
 {"ts": 1692753800, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 43, "active_twitch_chatters": null, "youtube_messages_per_minute": 12.0, "twitch_messages_per_minute": 0}
 {"ts": 1692753812, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Vopilu", "amount_raw": "$4.99", "amount_usd": 4.99, "message": "Fun Fact: Cats are more likely to survive a 10,000 feet fall than a 5,000 feet fall. Or something like that. I’m serious. It’s science. Look it up."}
