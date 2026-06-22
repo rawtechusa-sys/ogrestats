@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100915,
+  "updated_ts": 1782100923,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -414,7 +414,8 @@
     "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
     "listen",
     "live_from_canada",
-    "live_from_canada_is_pissed_off"
+    "live_from_canada_is_pissed_off",
+    "live_ghost_hunt_from_canada"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7024,6 +7025,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.29,
       "avg_active_chatters": 37.46
+    },
+    "live_ghost_hunt_from_canada": {
+      "stream_id": "live_ghost_hunt_from_canada",
+      "title": "LIVE GHOST HUNT FROM CANADA",
+      "start_ts": 1692834896,
+      "end_ts": 1692844326,
+      "duration_sec": 9430,
+      "youtube_archive_id": "-CW6q4TgNjg",
+      "source_platform": "youtube",
+      "total_donations_usd": 206.75,
+      "donation_count": 55,
+      "donations_per_min": 1.3155,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.87,
+      "avg_active_chatters": 45.34
     }
   }
 }
