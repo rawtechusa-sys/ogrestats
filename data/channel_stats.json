@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101546,
+  "updated_ts": 1782101554,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -500,7 +500,8 @@
     "nye_with_a_man_and_birds",
     "obese_man_eats_live_on_stream_come_ask_questions",
     "oh_ice_poseidon",
-    "one_woman_with_two_men_live"
+    "one_woman_with_two_men_live",
+    "peter_popoff_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8486,6 +8487,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.01,
       "avg_active_chatters": 17.45
+    },
+    "peter_popoff_is_a_man": {
+      "stream_id": "peter_popoff_is_a_man",
+      "title": "Peter Popoff Is A Man",
+      "start_ts": 1656531769,
+      "end_ts": 1656537735,
+      "duration_sec": 5966,
+      "youtube_archive_id": "-vtm1VEThtI",
+      "source_platform": "youtube",
+      "total_donations_usd": 241.23,
+      "donation_count": 65,
+      "donations_per_min": 2.426,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.55,
+      "avg_active_chatters": 33.58
     }
   }
 }
