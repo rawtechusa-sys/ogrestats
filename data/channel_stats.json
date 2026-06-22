@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102528,
+  "updated_ts": 1782102534,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -657,7 +657,8 @@
     "the_karening_strikes_again_part_deux",
     "the_late_night_man_hour",
     "the_linus_tech_tips_situation_is_wild",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "the_may_1st_burst_aftermath_feat_multiple_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11155,6 +11156,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 2.89,
       "avg_active_chatters": 9.76
+    },
+    "the_may_1st_burst_aftermath_feat_multiple_birds": {
+      "stream_id": "the_may_1st_burst_aftermath_feat_multiple_birds",
+      "title": "The May 1st Burst Aftermath (Feat. Multiple Birds)",
+      "start_ts": 1683068773,
+      "end_ts": 1683078605,
+      "duration_sec": 9832,
+      "youtube_archive_id": "PdrEayPmjJw",
+      "source_platform": "youtube",
+      "total_donations_usd": 517.12,
+      "donation_count": 79,
+      "donations_per_min": 3.1557,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.83,
+      "avg_active_chatters": 35.26
     }
   }
 }
