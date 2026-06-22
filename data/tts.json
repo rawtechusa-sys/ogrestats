@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096646,
+  "updated_ts": 1782096708,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -102,7 +102,8 @@
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
     "a_stream_for_men",
     "a_streaming_man",
-    "a_surprise_stream"
+    "a_surprise_stream",
+    "a_technical_test_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -133,7 +134,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 4,
-    "eyes": 25,
+    "eyes": 26,
     "africa": 1,
     "face": 87,
     "petersonxhhanson": 1,
@@ -151,7 +152,7 @@
     "tongue": 3,
     "heart": 36,
     "shorts": 1,
-    "laughing": 36,
+    "laughing": 37,
     "news": 6,
     "chicken": 12,
     "cake": 1,
@@ -295,7 +296,8 @@
     "theory": 1,
     "says": 1,
     "wave": 1,
-    "mugs": 1
+    "mugs": 1,
+    "ties": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -802,6 +804,11 @@
       "title": "A Surprise Stream",
       "start_ts": 1633135016,
       "youtube_archive_id": "sUmB7FhsICE"
+    },
+    "a_technical_test_man_stream": {
+      "title": "A Technical Test Man Stream",
+      "start_ts": 1689220746,
+      "youtube_archive_id": "4Qm509KIDPI"
     }
   },
   "messages": [
@@ -4280,6 +4287,27 @@
       "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
       "commands": [
         "coco"
+      ]
+    },
+    {
+      "ts": 1689223600,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "a_technical_test_man_stream",
+      "message": "Limited Run is finally going to release Plumbers Don't Wear Ties: The Definitive Edition. Are you going to buy it and play it on stream? :grinning_face_with_big_eyes:",
+      "commands": [
+        "ties",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689220838,
+      "username": "@LumbyMcGumby",
+      "platform": "youtube",
+      "stream_id": "a_technical_test_man_stream",
+      "message": "Thanks for doing the mass unmute man good to be back after a year ban :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
