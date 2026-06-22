@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094365,
+  "updated_ts": 1782094416,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -62,7 +62,8 @@
     "a_man_from_canada_is_here",
     "a_man_from_canada_until_6am",
     "a_man_in_poughkeepsie_irl_streaming",
-    "a_man_is_back_for_a_bit"
+    "a_man_is_back_for_a_bit",
+    "a_man_is_back_sexecoco_style"
   ],
   "commands": {
     "stan": 27,
@@ -95,7 +96,7 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 43,
+    "face": 44,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 38,
@@ -132,10 +133,10 @@
     "disclaimer": 1,
     "hole": 2,
     "rooster": 9,
-    "peach": 1,
+    "peach": 2,
     "fire": 4,
     "kendal": 1,
-    "up": 5,
+    "up": 6,
     "note": 1,
     "eyebrow": 1,
     "facepalming": 2,
@@ -145,13 +146,13 @@
     "hands": 6,
     "horns": 1,
     "crab": 2,
-    "superhero": 5,
+    "superhero": 6,
     "legends": 1,
     "dog": 2,
     "is": 2,
     "spose": 1,
     "sunglasses": 2,
-    "kiss": 5,
+    "kiss": 6,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -209,7 +210,8 @@
     "video": 1,
     "one": 1,
     "cow": 1,
-    "cap": 1
+    "cap": 1,
+    "adventures": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -516,6 +518,11 @@
       "title": "A Man Is Back (For A Bit)",
       "start_ts": 1696989207,
       "youtube_archive_id": "3T3Y5DiFU_o"
+    },
+    "a_man_is_back_sexecoco_style": {
+      "title": "A Man Is Back (sexecoco style)",
+      "start_ts": 1698012438,
+      "youtube_archive_id": "eqH3NNiieBY"
     }
   },
   "messages": [
@@ -2840,6 +2847,57 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1698014966,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_sexecoco_style",
+      "message": "To quote Batman Adventures: \"Man or women. A sick mind is capable of anything.\" Anyone is capable of doing anything, regardless of color or gender.",
+      "commands": [
+        "adventures"
+      ]
+    },
+    {
+      "ts": 1698014472,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_sexecoco_style",
+      "message": "ReviewTechUSA is my favorite anime. :peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1698013126,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_sexecoco_style",
+      "message": "Just know :index_pointing_up: Hero in :man_superhero: im working what u doing",
+      "commands": [
+        "up",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1698013078,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_sexecoco_style",
+      "message": "Rich I missed listening to your livestreams at work the constant farting really gives me motivation throughout the day. Speaking of farts spam it :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698012551,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_sexecoco_style",
+      "message": "Richard you big beautiful man. Thank you honey :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
       ]
     },
     {
