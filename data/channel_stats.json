@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100117,
+  "updated_ts": 1782100126,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -315,7 +315,8 @@
     "i_think_i_fixed_it",
     "i_wasnt_gonna_stream_but_here_i_am",
     "i_won_but_my_pc_is_dying",
-    "idubbz_video_going_shopping_to_become_a_vtuber"
+    "idubbz_video_going_shopping_to_become_a_vtuber",
+    "im_a_baked_man_come_discuss_tech_with_your_dad"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5341,6 +5342,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.88,
       "avg_active_chatters": 25.6
+    },
+    "im_a_baked_man_come_discuss_tech_with_your_dad": {
+      "stream_id": "im_a_baked_man_come_discuss_tech_with_your_dad",
+      "title": "I'm A Baked Man. Come DIscuss Tech With Your Dad...",
+      "start_ts": 1626739570,
+      "end_ts": 1626750053,
+      "duration_sec": 10483,
+      "youtube_archive_id": "-hnNodmuNp4",
+      "source_platform": "youtube",
+      "total_donations_usd": 409.11,
+      "donation_count": 112,
+      "donations_per_min": 2.3416,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.45,
+      "avg_active_chatters": 45.13
     }
   }
 }
