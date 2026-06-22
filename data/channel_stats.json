@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102316,
+  "updated_ts": 1782102322,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -620,7 +620,8 @@
     "sunday_night_birds_more_quantum_tv_fun",
     "sunday_night_hangout",
     "sweaty_men_feat_a_man_summer_game_fest",
-    "talking_about_crap_with_liana_kerzner"
+    "talking_about_crap_with_liana_kerzner",
+    "talking_to_an_angry_former_fan"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10526,6 +10527,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.7,
       "avg_active_chatters": 34.09
+    },
+    "talking_to_an_angry_former_fan": {
+      "stream_id": "talking_to_an_angry_former_fan",
+      "title": "Talking To An Angry Former Fan",
+      "start_ts": 1690239853,
+      "end_ts": 1690260542,
+      "duration_sec": 20689,
+      "youtube_archive_id": "qq0ugGS9dNY",
+      "source_platform": "youtube",
+      "total_donations_usd": 1002.76,
+      "donation_count": 173,
+      "donations_per_min": 2.9081,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 32.77,
+      "avg_active_chatters": 72.49
     }
   }
 }
