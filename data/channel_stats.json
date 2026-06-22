@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102638,
+  "updated_ts": 1782102643,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -677,7 +677,8 @@
     "the_pre_stream_i_finished_setting_up_the_monitor_early",
     "the_quarteringintellivision_family_fun_continues",
     "the_quest_for_a_cupcake",
-    "the_rtustreams_karenthon_feat_birds"
+    "the_rtustreams_karenthon_feat_birds",
+    "the_sexiest_live_streamer_of_all_time"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11495,6 +11496,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.03,
       "avg_active_chatters": 37.51
+    },
+    "the_sexiest_live_streamer_of_all_time": {
+      "stream_id": "the_sexiest_live_streamer_of_all_time",
+      "title": "The Sexiest Live Streamer Of All Time",
+      "start_ts": 1675739866,
+      "end_ts": 1675747107,
+      "duration_sec": 7241,
+      "youtube_archive_id": "pae5KsQLPyM",
+      "source_platform": "youtube",
+      "total_donations_usd": 173.86,
+      "donation_count": 38,
+      "donations_per_min": 1.4406,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.72,
+      "avg_active_chatters": 26.64
     }
   }
 }
