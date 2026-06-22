@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099348,
+  "updated_ts": 1782099356,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -225,7 +225,8 @@
     "come_hang_out_for_a_bit",
     "come_hang_out_with_a_man",
     "come_hang_out_with_a_man_and_ask_questions_feat_birds",
-    "come_hang_out_with_a_man_freedom_phone"
+    "come_hang_out_with_a_man_freedom_phone",
+    "come_listen_me_complain_and_answer_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3811,6 +3812,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.51,
       "avg_active_chatters": 38.5
+    },
+    "come_listen_me_complain_and_answer_questions": {
+      "stream_id": "come_listen_me_complain_and_answer_questions",
+      "title": "Come Listen Me Complain And Answer Questions",
+      "start_ts": 1630542581,
+      "end_ts": 1630551891,
+      "duration_sec": 9310,
+      "youtube_archive_id": "uNkmJQGaknk",
+      "source_platform": "youtube",
+      "total_donations_usd": 325.87,
+      "donation_count": 75,
+      "donations_per_min": 2.1001,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.53,
+      "avg_active_chatters": 30.69
     }
   }
 }
