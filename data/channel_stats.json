@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099224,
+  "updated_ts": 1782099232,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -210,7 +210,8 @@
     "come_ask_questions_about_the_pixel_6_pro",
     "come_ask_questions_and_stare_at_me",
     "come_ask_questions_day_time_edition",
-    "come_ask_questions_no_vids_tonight"
+    "come_ask_questions_no_vids_tonight",
+    "come_ask_questions_watching_my_old_keemstar_debate"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3556,6 +3557,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.38,
       "avg_active_chatters": 34.74
+    },
+    "come_ask_questions_watching_my_old_keemstar_debate": {
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "title": "Come Ask Questions (Watching My Old Keemstar Debate)",
+      "start_ts": 1635470549,
+      "end_ts": 1635479329,
+      "duration_sec": 8780,
+      "youtube_archive_id": "eKd5nwNk-XE",
+      "source_platform": "youtube",
+      "total_donations_usd": 404.31,
+      "donation_count": 111,
+      "donations_per_min": 2.7629,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.21,
+      "avg_active_chatters": 29.48
     }
   }
 }
