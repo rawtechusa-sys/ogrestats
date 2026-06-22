@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100276,
+  "updated_ts": 1782100285,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -333,7 +333,8 @@
     "im_not_well_endowed",
     "im_now_a_home_owner",
     "im_so_sorry",
-    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged"
+    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
+    "im_too_stoned_for_dkoldies_drama_but_here_it_is"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5647,6 +5648,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.09,
       "avg_active_chatters": 38.79
+    },
+    "im_too_stoned_for_dkoldies_drama_but_here_it_is": {
+      "stream_id": "im_too_stoned_for_dkoldies_drama_but_here_it_is",
+      "title": "I'm Too Stoned For DKOldies Drama (But Here It Is)",
+      "start_ts": 1680654817,
+      "end_ts": 1680661940,
+      "duration_sec": 7123,
+      "youtube_archive_id": "S7MM7RNw7nM",
+      "source_platform": "youtube",
+      "total_donations_usd": 256.07,
+      "donation_count": 71,
+      "donations_per_min": 2.157,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.95,
+      "avg_active_chatters": 30.4
     }
   }
 }
