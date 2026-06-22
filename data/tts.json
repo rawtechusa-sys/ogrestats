@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101048,
+  "updated_ts": 1782101055,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -430,7 +430,8 @@
     "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
     "man_news_live",
     "man_on_man_livestream_featuring_masculine_birds",
-    "man_stares_at_artificial_birds_live"
+    "man_stares_at_artificial_birds_live",
+    "man_versus_bird_live"
   ],
   "commands": {
     "stan": 27,
@@ -463,10 +464,10 @@
     "turkey": 7,
     "eyes": 100,
     "africa": 1,
-    "face": 411,
+    "face": 412,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 275,
+    "joy": 276,
     "gameboy": 1,
     "chick": 3,
     "carlos": 34,
@@ -481,11 +482,11 @@
     "shorts": 1,
     "laughing": 166,
     "news": 20,
-    "chicken": 48,
+    "chicken": 49,
     "cake": 7,
     "d": 4,
     "halo": 4,
-    "hand": 30,
+    "hand": 31,
     "popper": 8,
     "straw": 1,
     "glasses": 2,
@@ -506,11 +507,11 @@
     "up": 41,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 11,
+    "facepalming": 12,
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 26,
+    "hands": 27,
     "horns": 7,
     "crab": 2,
     "superhero": 28,
@@ -661,7 +662,7 @@
     "salt": 1,
     "x": 1,
     "now": 1,
-    "breaking": 4,
+    "breaking": 5,
     "eye": 2,
     "dove": 2,
     "time": 1,
@@ -916,7 +917,8 @@
     "servers": 1,
     "pikachu": 1,
     "sparkles": 1,
-    "cod": 1
+    "cod": 1,
+    "population": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3063,6 +3065,11 @@
       "title": "Man Stares At Artificial Birds LIVE",
       "start_ts": 1647304640,
       "youtube_archive_id": "yDmjBEnKLHo"
+    },
+    "man_versus_bird_live": {
+      "title": "Man Versus Bird LIVE",
+      "start_ts": 1628640442,
+      "youtube_archive_id": "65NR5mRNPz4"
     }
   },
   "messages": [
@@ -26085,6 +26092,86 @@
       "message": "Hi RGT'S dad. I'm drinking a can of Mother :face_savoring_food:",
       "commands": [
         "food"
+      ]
+    },
+    {
+      "ts": 1628647881,
+      "username": "@mclaine33",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "Breaking: SEC has confirmed via FOIA that Citidel Securities is under criminal investigation. Presumably regarding the market manipulation related GME",
+      "commands": [
+        "breaking"
+      ]
+    },
+    {
+      "ts": 1628643366,
+      "username": "@lightspeedmurphy7546",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "U still own me a reaction I sent on Twitter DM :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628642157,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "Sup gamers, how's your night? You better remember to rule out the impostors in your life and complete your tasks. Amogus Chungus Out. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1628641830,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "Tom Hank's son made an anti vax rant :woman_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1628641576,
+      "username": "@LeesReviews69",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "I thought you were doing away with the horse and gags and u were going to be serious, did it not work? Also, have you played Population: One on Quest?",
+      "commands": [
+        "population"
+      ]
+    },
+    {
+      "ts": 1628641051,
+      "username": "@Brandonchecker",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "i got the cvc number again:chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1628640964,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "Rich. Can You please give me that wonderful touch feeling? :folded_hands: pretty please with Carlos on top?",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1628640861,
+      "username": "@BM1620",
+      "platform": "youtube",
+      "stream_id": "man_versus_bird_live",
+      "message": "Did u think about Boogies nut when you brushed your teeth this morning?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
