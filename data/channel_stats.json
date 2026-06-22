@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102446,
+  "updated_ts": 1782102452,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -643,7 +643,8 @@
     "the_dspgaming_wwe_champions_man_stream_feat_birds",
     "the_e3_discussion_and_channel_update_stream",
     "the_fallout_3_marathon_man_stream",
-    "the_first_stream"
+    "the_first_stream",
+    "the_four_hour_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10917,6 +10918,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.4,
       "avg_active_chatters": 55.52
+    },
+    "the_four_hour_man_stream": {
+      "stream_id": "the_four_hour_man_stream",
+      "title": "The Four Hour Man Stream",
+      "start_ts": 1625958481,
+      "end_ts": 1625972871,
+      "duration_sec": 14390,
+      "youtube_archive_id": "yduRyknR3dw",
+      "source_platform": "youtube",
+      "total_donations_usd": 426.17,
+      "donation_count": 115,
+      "donations_per_min": 1.7769,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.29,
+      "avg_active_chatters": 35.56
     }
   }
 }
