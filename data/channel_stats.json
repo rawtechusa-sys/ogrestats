@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099265,
+  "updated_ts": 1782099274,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -215,7 +215,8 @@
     "come_ask_shirtless_men_questions",
     "come_be_tired_and_miserable_with_me",
     "come_chat_with_a_man",
-    "come_chat_with_dad_plus_amouranth_disaster"
+    "come_chat_with_dad_plus_amouranth_disaster",
+    "come_chat_with_me"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3641,6 +3642,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.11,
       "avg_active_chatters": 36.81
+    },
+    "come_chat_with_me": {
+      "stream_id": "come_chat_with_me",
+      "title": "Come Chat With Me",
+      "start_ts": 1641783704,
+      "end_ts": 1641790836,
+      "duration_sec": 7132,
+      "youtube_archive_id": "VSdVXA9iDlQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 212.87,
+      "donation_count": 49,
+      "donations_per_min": 1.7908,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.22,
+      "avg_active_chatters": 34.17
     }
   }
 }
