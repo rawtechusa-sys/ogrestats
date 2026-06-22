@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099725,
+  "updated_ts": 1782099733,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -270,7 +270,8 @@
     "dspgamings_direct_capture_saga",
     "dspgamings_may_1st_burst_anniversary_show",
     "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
-    "dude_wtf_is_even_going_on"
+    "dude_wtf_is_even_going_on",
+    "early_sunday_man_a_thon"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4576,6 +4577,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.43,
       "avg_active_chatters": 42.44
+    },
+    "early_sunday_man_a_thon": {
+      "stream_id": "early_sunday_man_a_thon",
+      "title": "Early Sunday Man-A-Thon",
+      "start_ts": 1678037500,
+      "end_ts": 1678049313,
+      "duration_sec": 11813,
+      "youtube_archive_id": "-xKrKwfu2S0",
+      "source_platform": "youtube",
+      "total_donations_usd": 225.29,
+      "donation_count": 51,
+      "donations_per_min": 1.1443,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 6.8,
+      "avg_active_chatters": 19.18
     }
   }
 }
