@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099978,
+  "updated_ts": 1782099987,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -299,7 +299,8 @@
     "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
     "i_am_alive",
     "i_am_beyond_furious",
-    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii"
+    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
+    "i_am_him_i_will_continue_to_be_him"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5069,6 +5070,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.98,
       "avg_active_chatters": 26.32
+    },
+    "i_am_him_i_will_continue_to_be_him": {
+      "stream_id": "i_am_him_i_will_continue_to_be_him",
+      "title": "I AM HIM! I WILL CONTINUE TO BE HIM!",
+      "start_ts": 1706051264,
+      "end_ts": 1706073074,
+      "duration_sec": 21810,
+      "youtube_archive_id": "Fy7TbT0ihX8",
+      "source_platform": "youtube",
+      "total_donations_usd": 440.62,
+      "donation_count": 158,
+      "donations_per_min": 1.2122,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.19,
+      "avg_active_chatters": 38.51
     }
   }
 }
