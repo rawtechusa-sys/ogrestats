@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102573,
+  "updated_ts": 1782102578,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -665,7 +665,8 @@
     "the_perfect_man_stream",
     "the_philip_burnell_dspgaming_marathon_continues",
     "the_philip_burnell_interview_experience_feat_a_stoned_man",
-    "the_philip_burnell_interview_experience_pt1_of_689"
+    "the_philip_burnell_interview_experience_pt1_of_689",
+    "the_philip_burnell_interview_experience_pt_16418"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11291,6 +11292,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.4,
       "avg_active_chatters": 34.9
+    },
+    "the_philip_burnell_interview_experience_pt_16418": {
+      "stream_id": "the_philip_burnell_interview_experience_pt_16418",
+      "title": "The Philip Burnell Interview Experience Pt. 16,418",
+      "start_ts": 1679357284,
+      "end_ts": 1679365297,
+      "duration_sec": 8013,
+      "youtube_archive_id": "T_QrVls0CZY",
+      "source_platform": "youtube",
+      "total_donations_usd": 162.91,
+      "donation_count": 46,
+      "donations_per_min": 1.2198,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.63,
+      "avg_active_chatters": 31.77
     }
   }
 }
