@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101292,
+  "updated_ts": 1782101299,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -466,7 +466,8 @@
     "more_e3_talk",
     "more_edp445_more_man",
     "more_elden_ring_fail_compilations_feat_birds",
-    "more_family_man_fun_dad_is_back"
+    "more_family_man_fun_dad_is_back",
+    "more_games_and_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7908,6 +7909,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.67,
       "avg_active_chatters": 28.74
+    },
+    "more_games_and_a_man": {
+      "stream_id": "more_games_and_a_man",
+      "title": "More Games And A Man",
+      "start_ts": 1637452726,
+      "end_ts": 1637456521,
+      "duration_sec": 3795,
+      "youtube_archive_id": "Q_kYn---zJY",
+      "source_platform": "youtube",
+      "total_donations_usd": 83.95,
+      "donation_count": 30,
+      "donations_per_min": 1.3273,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.19,
+      "avg_active_chatters": 29.69
     }
   }
 }
