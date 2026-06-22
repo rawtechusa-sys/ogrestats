@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099371,
+  "updated_ts": 1782099380,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -227,7 +227,8 @@
     "come_hang_out_with_a_man_freedom_phone",
     "come_listen_me_complain_and_answer_questions",
     "come_look_at_this_man_and_chat_with_him",
-    "come_speak_to_a_man"
+    "come_speak_to_a_man",
+    "come_stare_at_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -529,7 +530,9 @@
     "tip": 1,
     "dies": 1,
     "stone": 1,
-    "rockstar": 1
+    "rockstar": 1,
+    "thing": 1,
+    "woman": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1661,6 +1664,11 @@
       "title": "COME SPEAK TO A MAN",
       "start_ts": 1637202837,
       "youtube_archive_id": "Zcd5OBM7NZ4"
+    },
+    "come_stare_at_a_man": {
+      "title": "Come Stare At A Man",
+      "start_ts": 1672176884,
+      "youtube_archive_id": "0bGd3bbShaM"
     }
   },
   "messages": [
@@ -8254,6 +8262,26 @@
       "message": "Rumor is amico promised a certain yter a full time job if things panned out and they obviously shilled. Everyone on the subreddit thinking its DJC. :thinking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1672179299,
+      "username": "@Mailmansson",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man",
+      "message": "Its cold as shit on my mail route. Can I order a Cameo for my wife pregnant :pregnant_woman: Announcement ? can i share on social media for friend &family?",
+      "commands": [
+        "woman"
+      ]
+    },
+    {
+      "ts": 1672178752,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man",
+      "message": "One last thing: He answered to me asking him if he would react to Secret Limited\u2018s video and he replied. Want me to send you a Timestamp tomorrow?",
+      "commands": [
+        "thing"
       ]
     },
     {
