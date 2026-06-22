@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100892,
+  "updated_ts": 1782100899,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -409,7 +409,8 @@
     "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
     "lets_watch_becky_screw_me_over",
     "lets_watch_jims_sterlings_elden_ring_video",
-    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind"
+    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
+    "listen"
   ],
   "commands": {
     "stan": 27,
@@ -442,10 +443,10 @@
     "turkey": 7,
     "eyes": 96,
     "africa": 1,
-    "face": 392,
+    "face": 394,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 265,
+    "joy": 266,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -453,14 +454,14 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 49,
+    "cucumber": 50,
     "biceps": 4,
     "tongue": 7,
     "heart": 124,
     "shorts": 1,
     "laughing": 159,
     "news": 20,
-    "chicken": 45,
+    "chicken": 46,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -2926,6 +2927,11 @@
       "title": "Linus Responds, Phil Is A Man, FouseyTube Lost His Mind",
       "start_ts": 1692145110,
       "youtube_archive_id": "E0AiEuPy4x4"
+    },
+    "listen": {
+      "title": "Listen...",
+      "start_ts": 1690928875,
+      "youtube_archive_id": "kFoa5G9QUN0"
     }
   },
   "messages": [
@@ -10032,6 +10038,56 @@
       "username": "@guyshook8239",
       "platform": "youtube",
       "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": ":cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1690934453,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "listen",
+      "message": "TUCKER CARLSON 2024:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1690933469,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "listen",
+      "message": "listen rich listen :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1690930268,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "listen",
+      "message": "Speaking of global warming, the world is silently coming to an end and we\u2019re all sitting on our asses watching Phil. Ever think about that? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1690929730,
+      "username": "@Joeblah6",
+      "platform": "youtube",
+      "stream_id": "listen",
+      "message": "Listen Rich, I watched your newest videos today and have some criticisms. Please don't take this to heart but I think you need to work on your sexy :worried_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1690929109,
+      "username": "@guyshook8239",
+      "platform": "youtube",
+      "stream_id": "listen",
       "message": ":cucumber:",
       "commands": [
         "cucumber"
