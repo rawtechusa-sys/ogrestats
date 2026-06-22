@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102452,
+  "updated_ts": 1782102458,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -644,7 +644,8 @@
     "the_e3_discussion_and_channel_update_stream",
     "the_fallout_3_marathon_man_stream",
     "the_first_stream",
-    "the_four_hour_man_stream"
+    "the_four_hour_man_stream",
+    "the_fragrance_of_my_farts"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10934,6 +10935,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.29,
       "avg_active_chatters": 35.56
+    },
+    "the_fragrance_of_my_farts": {
+      "stream_id": "the_fragrance_of_my_farts",
+      "title": "The Fragrance Of My Farts",
+      "start_ts": 1690594264,
+      "end_ts": 1690604200,
+      "duration_sec": 9936,
+      "youtube_archive_id": "RPLHo1Yg5aE",
+      "source_platform": "youtube",
+      "total_donations_usd": 258.67,
+      "donation_count": 64,
+      "donations_per_min": 1.562,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.22,
+      "avg_active_chatters": 43.15
     }
   }
 }
