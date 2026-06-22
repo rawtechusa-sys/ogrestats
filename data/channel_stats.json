@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098625,
+  "updated_ts": 1782098633,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -136,7 +136,8 @@
     "andrew_tate_is_a_man",
     "andrew_tate_man_stream_he_got_arrested",
     "angrily_chatting_and_playing_elden_ring",
-    "another_interesting_pat_the_nes_punk_twist"
+    "another_interesting_pat_the_nes_punk_twist",
+    "another_surprise_stream_feat_a_man_and_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2298,6 +2299,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.39,
       "avg_active_chatters": 23.45
+    },
+    "another_surprise_stream_feat_a_man_and_birds": {
+      "stream_id": "another_surprise_stream_feat_a_man_and_birds",
+      "title": "Another Surprise Stream (Feat. A Man And Birds)",
+      "start_ts": 1653855269,
+      "end_ts": 1653858787,
+      "duration_sec": 3518,
+      "youtube_archive_id": "y_J3F7NPde4",
+      "source_platform": "youtube",
+      "total_donations_usd": 50.74,
+      "donation_count": 16,
+      "donations_per_min": 0.8654,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.71,
+      "avg_active_chatters": 24.56
     }
   }
 }
