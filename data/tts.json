@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100928,
+  "updated_ts": 1782100935,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -414,7 +414,8 @@
     "live_from_canada",
     "live_from_canada_is_pissed_off",
     "live_ghost_hunt_from_canada",
-    "logan_paul_is_a_human_turd"
+    "logan_paul_is_a_human_turd",
+    "logan_paul_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -447,7 +448,7 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 396,
+    "face": 398,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 268,
@@ -461,7 +462,7 @@
     "cucumber": 50,
     "biceps": 4,
     "tongue": 7,
-    "heart": 126,
+    "heart": 127,
     "shorts": 1,
     "laughing": 160,
     "news": 20,
@@ -483,7 +484,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 8,
-    "rooster": 41,
+    "rooster": 42,
     "peach": 14,
     "fire": 23,
     "kendal": 1,
@@ -765,7 +766,7 @@
     "check": 1,
     "king": 1,
     "unrelated": 1,
-    "duck": 2,
+    "duck": 3,
     "reads": 1,
     "unlocked": 1,
     "cupcake": 2,
@@ -890,7 +891,8 @@
     "weapon": 1,
     "penguin": 1,
     "experiment": 1,
-    "beaver": 1
+    "beaver": 1,
+    "sal": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2957,6 +2959,11 @@
       "title": "Logan Paul Is A Human Turd",
       "start_ts": 1672273738,
       "youtube_archive_id": "jH7OV6MfiCQ"
+    },
+    "logan_paul_is_a_man": {
+      "title": "Logan Paul Is A Man",
+      "start_ts": 1672879370,
+      "youtube_archive_id": "oPCB1qrCe4c"
     }
   },
   "messages": [
@@ -14143,6 +14150,66 @@
       "message": "Phil will only listen to Our Lord and Savior Moistcr1tikal! :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1672886632,
+      "username": "@captainwafer7965",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "I'm Sal: https://youtu.be/oSaMSGIRLVs",
+      "commands": [
+        "sal"
+      ]
+    },
+    {
+      "ts": 1672885667,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "Q tv is the arbiter of truth don\u2019t you know birds:rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1672885130,
+      "username": "@neda_88",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "Whatup rich, just came here for this years first intromans fart:drooling_face: Hope ur doing great, wish u the best\ud83d\udcaa\ud83c\udffc",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1672882381,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "Is that M.2 from Walmart online? :upside_down_face::upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1672882256,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "I enjoy breaking down my ps5 for cleaning-also wanted to say I love all you guys in chat for adding on to the good time:blue_heart: Jim Bakkers:bucket:\u2019s on the way.",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1672882051,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "logan_paul_is_a_man",
+      "message": "Happy New Year bud. CAMELOT331 is a nekkid beech. Also, Dishonoured 1 and 2, and The Evil Within 2 are free on Prime Gaming if anyone cares. :duck::duck:",
+      "commands": [
+        "duck"
       ]
     },
     {
