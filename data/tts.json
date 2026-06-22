@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099215,
+  "updated_ts": 1782099223,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -208,7 +208,8 @@
     "come_ask_questions_822021",
     "come_ask_questions_about_the_pixel_6_pro",
     "come_ask_questions_and_stare_at_me",
-    "come_ask_questions_day_time_edition"
+    "come_ask_questions_day_time_edition",
+    "come_ask_questions_no_vids_tonight"
   ],
   "commands": {
     "stan": 27,
@@ -241,10 +242,10 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 183,
+    "face": 184,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 123,
+    "joy": 124,
     "gameboy": 1,
     "chick": 1,
     "carlos": 18,
@@ -1537,6 +1538,11 @@
       "title": "Come Ask Questions (Day Time Edition)",
       "start_ts": 1628013620,
       "youtube_archive_id": "6vpgXnV-Mtc"
+    },
+    "come_ask_questions_no_vids_tonight": {
+      "title": "Come Ask Questions (No Vids Tonight)",
+      "start_ts": 1641954586,
+      "youtube_archive_id": "tay5PO9aFWE"
     }
   },
   "messages": [
@@ -10567,6 +10573,26 @@
       "message": "Wings troll donation: when are you gonna show us the ipad your bought granny with the surgery cash",
       "commands": [
         "donation"
+      ]
+    },
+    {
+      "ts": 1641959758,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_no_vids_tonight",
+      "message": "i sent vid in email pls watch :loudly_crying_face::loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641955131,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_no_vids_tonight",
+      "message": "I have reported you to P.E.T.A. for bird abuse in your most recent Reviewtechusa video.They are coming to take all of your pets away a long with giving you a hefty fine and there also maybe jailtime:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
