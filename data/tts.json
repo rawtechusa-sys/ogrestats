@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101663,
+  "updated_ts": 1782101670,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -512,7 +512,8 @@
     "philip_burnell_is_a_man_plus_newegg_drama",
     "philip_burnell_is_excited",
     "philip_burnell_is_under_attack_now_playing_bloodborne",
-    "philip_burnells_brilliant_pc_advice"
+    "philip_burnells_brilliant_pc_advice",
+    "philip_burnells_chickengate_anniversary_celebration"
   ],
   "commands": {
     "stan": 27,
@@ -538,17 +539,17 @@
     "something": 2,
     "hobo": 2,
     "gnome": 1,
-    "rich": 28,
+    "rich": 30,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 12,
-    "eyes": 121,
+    "eyes": 122,
     "africa": 1,
-    "face": 489,
+    "face": 490,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 318,
+    "joy": 319,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
@@ -556,10 +557,10 @@
     "idea": 5,
     "fear": 4,
     "voice": 5,
-    "cucumber": 54,
+    "cucumber": 55,
     "biceps": 5,
     "tongue": 12,
-    "heart": 149,
+    "heart": 150,
     "shorts": 2,
     "laughing": 192,
     "news": 22,
@@ -581,7 +582,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 52,
+    "rooster": 53,
     "peach": 15,
     "fire": 25,
     "kendal": 1,
@@ -702,7 +703,7 @@
     "peanuts": 1,
     "glass": 3,
     "example": 1,
-    "theory": 3,
+    "theory": 4,
     "says": 1,
     "wave": 1,
     "mugs": 3,
@@ -3614,6 +3615,11 @@
       "title": "Philip Burnell's Brilliant PC Advice",
       "start_ts": 1680051229,
       "youtube_archive_id": "7erXZBsykVU"
+    },
+    "philip_burnells_chickengate_anniversary_celebration": {
+      "title": "Philip Burnell's #Chickengate Anniversary Celebration",
+      "start_ts": 1694220369,
+      "youtube_archive_id": "NIVAYPTcbc4"
     }
   },
   "messages": [
@@ -10815,6 +10821,86 @@
       "message": "Got starfield for the PRONOUNS fiasco-it\u2019s funny because I was really gonna hold off just to have a game to get for Xmas lol-Love you Rich and Chat:light_blue_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1694235115,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "My brother in Christ cronyism is capitalism birds:rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1694233917,
+      "username": "@arcticstudios",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "The Hodgetwins vs Kingslytee is a debate I need to see. :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1694227019,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "much love :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1694224824,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "My theory: Phil didn\u2019t want to spend money so he set his wife up by taking her to a closed restaurant so they\u2019d end up at BK, and because she got sad he turned it into a whole thing to distract her.",
+      "commands": [
+        "theory"
+      ]
+    },
+    {
+      "ts": 1694223193,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "My Gf loves anal, not sure how much I can take:eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1694222613,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "Finally! A non-political stream! :partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1694221944,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": "Rich: no one will take you seriously dressed up as a cupcake. Also Rich: let\u2019s talk about pedo and homophobic while make jokes about chickens and cucumbers",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1694221557,
+      "username": "@sheed_rock",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_chickengate_anniversary_celebration",
+      "message": ":cucumber::cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
