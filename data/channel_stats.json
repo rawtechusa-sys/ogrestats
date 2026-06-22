@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100799,
+  "updated_ts": 1782100806,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -398,7 +398,8 @@
     "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
     "lets_discuss_the_steam_deck",
-    "lets_discuss_xbox_and_activision"
+    "lets_discuss_xbox_and_activision",
+    "lets_have_some_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6752,6 +6753,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.99,
       "avg_active_chatters": 56.89
+    },
+    "lets_have_some_fun": {
+      "stream_id": "lets_have_some_fun",
+      "title": "Let's Have Some Fun",
+      "start_ts": 1657305411,
+      "end_ts": 1657314991,
+      "duration_sec": 9580,
+      "youtube_archive_id": "yV3k9GZW1Zk",
+      "source_platform": "youtube",
+      "total_donations_usd": 520.09,
+      "donation_count": 97,
+      "donations_per_min": 3.2573,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.96,
+      "avg_active_chatters": 35.16
     }
   }
 }
