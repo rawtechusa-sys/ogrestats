@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101180,
+  "updated_ts": 1782101187,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -448,7 +448,8 @@
     "men_and_food_road_to_1000_members",
     "men_birds_and_samurai_cop",
     "men_birds_and_samurai_cop_part_deux",
-    "men_chatting"
+    "men_chatting",
+    "men_discuss_def_noodles_feat_christhenarc"
   ],
   "commands": {
     "stan": 27,
@@ -481,7 +482,7 @@
     "turkey": 8,
     "eyes": 105,
     "africa": 1,
-    "face": 419,
+    "face": 422,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 280,
@@ -3182,6 +3183,11 @@
       "title": "Men Chatting",
       "start_ts": 1702340700,
       "youtube_archive_id": "W1C-PaXDPPk"
+    },
+    "men_discuss_def_noodles_feat_christhenarc": {
+      "title": "Men Discuss Def Noodles (Feat. ChrisTheNarc)",
+      "start_ts": 1661130639,
+      "youtube_archive_id": "Kcw1pbDJKq8"
     }
   },
   "messages": [
@@ -16950,6 +16956,36 @@
       "message": "Even DSP knew better and skipped this. Phil is snorting and laughing at you. PS: Someone keeps calling you by the way",
       "commands": [
         "ps"
+      ]
+    },
+    {
+      "ts": 1661137473,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "men_discuss_def_noodles_feat_christhenarc",
+      "message": "As a soulless ginger boi, I'm offended :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661135571,
+      "username": "@vanguarddnice",
+      "platform": "youtube",
+      "stream_id": "men_discuss_def_noodles_feat_christhenarc",
+      "message": "both Chris, Minxy, Rich etc many are the best :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661133753,
+      "username": "@vanguarddnice",
+      "platform": "youtube",
+      "stream_id": "men_discuss_def_noodles_feat_christhenarc",
+      "message": "is that Chris my god love your content my bro :slightly_smiling_face:",
+      "commands": [
+        "face"
       ]
     },
     {
