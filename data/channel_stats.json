@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101494,
+  "updated_ts": 1782101501,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -493,7 +493,8 @@
     "new_years_eve_man_live_feat_birds",
     "nightly_hang_out",
     "nintendo_direct_event_292022",
-    "nintendo_direct_recap_reaction"
+    "nintendo_direct_recap_reaction",
+    "no_bird_suit_but_a_new_bird"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8367,6 +8368,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.7,
       "avg_active_chatters": 49.42
+    },
+    "no_bird_suit_but_a_new_bird": {
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "title": "No Bird Suit (But A New Bird)?",
+      "start_ts": 1652824595,
+      "end_ts": 1652837438,
+      "duration_sec": 12843,
+      "youtube_archive_id": "G9ZyfrD4GgU",
+      "source_platform": "youtube",
+      "total_donations_usd": 493.5,
+      "donation_count": 98,
+      "donations_per_min": 2.3055,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.15,
+      "avg_active_chatters": 36.07
     }
   }
 }
