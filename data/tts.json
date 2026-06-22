@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098719,
+  "updated_ts": 1782098726,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -147,7 +147,8 @@
     "ask_me_anything_992019",
     "asmongolds_the_act_man_interview_reaction",
     "back_to_watching_phil_fail_looking_into_derich",
-    "bad_chefs_are_bad"
+    "bad_chefs_are_bad",
+    "bad_commercials_and_trump"
   ],
   "commands": {
     "stan": 27,
@@ -178,9 +179,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 32,
+    "eyes": 33,
     "africa": 1,
-    "face": 115,
+    "face": 116,
     "petersonxhhanson": 1,
     "poo": 8,
     "joy": 90,
@@ -191,10 +192,10 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 12,
+    "cucumber": 13,
     "biceps": 3,
     "tongue": 4,
-    "heart": 45,
+    "heart": 46,
     "shorts": 1,
     "laughing": 47,
     "news": 9,
@@ -227,7 +228,7 @@
     "shrugging": 2,
     "donation": 1,
     "naruto": 1,
-    "hands": 10,
+    "hands": 11,
     "horns": 4,
     "crab": 2,
     "superhero": 11,
@@ -347,7 +348,7 @@
     "wars": 1,
     "points": 3,
     "wastebasket": 1,
-    "left": 1,
+    "left": 2,
     "flag": 1,
     "restaraunt": 1,
     "highter": 1,
@@ -385,7 +386,8 @@
     "marry": 1,
     "rino": 1,
     "trophy": 1,
-    "door": 1
+    "door": 1,
+    "tangent": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1117,6 +1119,11 @@
       "title": "Bad Chefs Are Bad...",
       "start_ts": 1634174686,
       "youtube_archive_id": "LgIw6U9zqaQ"
+    },
+    "bad_commercials_and_trump": {
+      "title": "Bad Commercials And Trump",
+      "start_ts": 1668559683,
+      "youtube_archive_id": "OF7xmM1eWk0"
     }
   },
   "messages": [
@@ -6521,6 +6528,76 @@
       "message": "Bugatti? More like a used Toyota Camry with 5k :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1668563692,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "I love your tech videos, Rich. I loved your videos on the Game Boy, Wii U, fake 25 TB drive, and fake PS5. They\u2019re some of your best videos. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1668562771,
+      "username": "@ToyJesusLovesTequilla",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "Write in Bernie\u2019s Breast+AOCs soup :magnifying_glass_tilted_left: squirrel maze",
+      "commands": [
+        "left"
+      ]
+    },
+    {
+      "ts": 1668562141,
+      "username": "@GameOnTheGamer",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "Hey Rich, quick tangent: durian is my favorite fruit but it's awful imported. It needs to be eaten fresh. Visit SEA sometime.",
+      "commands": [
+        "tangent"
+      ]
+    },
+    {
+      "ts": 1668562015,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "Can I get sound bites too Rich? Like Minx got?? :_Rich::winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1668561526,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "In other news, there\u2019s cucumbers in my salad :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1668561430,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "I found out last year I had cancer as well, and had to have a hysterectomy. I feel for Boogie and hope all is well. :red_heart::red_heart::red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1668560246,
+      "username": "@iswordlogici7760",
+      "platform": "youtube",
+      "stream_id": "bad_commercials_and_trump",
+      "message": "they just dont make games like heterosexual rebirth anymore. can't beat the classics :folded_hands: also really liked the fake ps5 vid",
+      "commands": [
+        "hands"
       ]
     },
     {
