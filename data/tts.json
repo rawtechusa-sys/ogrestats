@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099150,
+  "updated_ts": 1782099158,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -200,7 +200,8 @@
     "come_ask_questions",
     "come_ask_questions_10_9_2021",
     "come_ask_questions_712021",
-    "come_ask_questions_7142021"
+    "come_ask_questions_7142021",
+    "come_ask_questions_7202021"
   ],
   "commands": {
     "stan": 27,
@@ -233,7 +234,7 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 170,
+    "face": 171,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 122,
@@ -255,7 +256,7 @@
     "cake": 7,
     "d": 1,
     "halo": 2,
-    "hand": 9,
+    "hand": 10,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -288,14 +289,14 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 7,
+    "sunglasses": 8,
     "kiss": 13,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
     "gift": 2,
     "bird": 7,
-    "richsmile": 3,
+    "richsmile": 4,
     "dsp": 9,
     "story": 1,
     "tree": 3,
@@ -1485,6 +1486,11 @@
       "title": "Come Ask Questions! 7/14/2021",
       "start_ts": 1626310242,
       "youtube_archive_id": "4H2jpyM6Jhg"
+    },
+    "come_ask_questions_7202021": {
+      "title": "Come Ask Questions 7/20/2021",
+      "start_ts": 1626827779,
+      "youtube_archive_id": "bm8aXr6NQIU"
     }
   },
   "messages": [
@@ -13342,6 +13348,46 @@
       "message": "BREAKING: Filene's under fire after allegations emerge of an employee hopped up on angel dust slapped asses whilst screaming \"DICKERS! DICK! DICK!\"",
       "commands": [
         "breaking"
+      ]
+    },
+    {
+      "ts": 1626833962,
+      "username": "@ComicBookChat395",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7202021",
+      "message": "is it just me or does Jeff Bezos ship look familiar :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626832823,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7202021",
+      "message": "PS5 is obsolete. Work on the PS6, codename Piss.:smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1626831509,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7202021",
+      "message": "Hello epic gamers. Hope u having a based day. I'm here to say that all sussy bakas will be uninvited to my bday party. Amogus Chungus out. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1626827893,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7202021",
+      "message": "Dad is beautiful:_RichSmile:",
+      "commands": [
+        "richsmile"
       ]
     },
     {
