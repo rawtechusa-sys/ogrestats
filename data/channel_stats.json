@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098633,
+  "updated_ts": 1782098640,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -137,7 +137,8 @@
     "andrew_tate_man_stream_he_got_arrested",
     "angrily_chatting_and_playing_elden_ring",
     "another_interesting_pat_the_nes_punk_twist",
-    "another_surprise_stream_feat_a_man_and_birds"
+    "another_surprise_stream_feat_a_man_and_birds",
+    "another_swatting_disaster_and_activisionubisoft_allegations"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2315,6 +2316,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.71,
       "avg_active_chatters": 24.56
+    },
+    "another_swatting_disaster_and_activisionubisoft_allegations": {
+      "stream_id": "another_swatting_disaster_and_activisionubisoft_allegations",
+      "title": "Another Swatting Disaster, And Activision/Ubisoft Allegations",
+      "start_ts": 1627000326,
+      "end_ts": 1627008073,
+      "duration_sec": 7747,
+      "youtube_archive_id": "d6t9RpLmBaw",
+      "source_platform": "youtube",
+      "total_donations_usd": 438.55,
+      "donation_count": 93,
+      "donations_per_min": 3.3965,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.72,
+      "avg_active_chatters": 50.8
     }
   }
 }
