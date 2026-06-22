@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100949,
+  "updated_ts": 1782100956,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -417,7 +417,8 @@
     "logan_paul_is_a_human_turd",
     "logan_paul_is_a_man",
     "lolcow_and_boogie2988",
-    "maidenless_birds_play_eldenring_plus_man"
+    "maidenless_birds_play_eldenring_plus_man",
+    "man_and_birds_baked_and_live"
   ],
   "commands": {
     "stan": 27,
@@ -462,11 +463,11 @@
     "fear": 3,
     "voice": 4,
     "cucumber": 50,
-    "biceps": 4,
+    "biceps": 5,
     "tongue": 7,
     "heart": 127,
     "shorts": 1,
-    "laughing": 160,
+    "laughing": 161,
     "news": 20,
     "chicken": 46,
     "cake": 7,
@@ -503,7 +504,7 @@
     "superhero": 28,
     "legends": 2,
     "dog": 9,
-    "is": 6,
+    "is": 7,
     "spose": 1,
     "sunglasses": 20,
     "kiss": 22,
@@ -896,7 +897,9 @@
     "beaver": 1,
     "sal": 1,
     "pregnant": 1,
-    "zelda": 1
+    "zelda": 1,
+    "crisis": 1,
+    "answer": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2978,6 +2981,11 @@
       "title": "Maidenless Birds Play #EldenRing (Plus Man)",
       "start_ts": 1650052403,
       "youtube_archive_id": "SXSqRdBx_Uc"
+    },
+    "man_and_birds_baked_and_live": {
+      "title": "Man And Birds Baked AND LIVE",
+      "start_ts": 1649462654,
+      "youtube_archive_id": "KAobZogfCzo"
     }
   },
   "messages": [
@@ -19488,6 +19496,56 @@
       "message": "hey rich I started losing weight and in about 2 months I lost 30 pounds :thumbs_up: also which bird is better at elden ring? I'm thinking carlos",
       "commands": [
         "up"
+      ]
+    },
+    {
+      "ts": 1649470749,
+      "username": "@mcquackery",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_baked_and_live",
+      "message": "sent dm on twitter. wondering if you want to borrow my xScreen from UPspec for review if i get mine before you get yours. bought the full package :flexed_biceps:",
+      "commands": [
+        "biceps"
+      ]
+    },
+    {
+      "ts": 1649467512,
+      "username": "@Manga64",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_baked_and_live",
+      "message": "How many porcelain birds can the MRP of the Amico buy? Quick answer: Not enough! You can never have enough porcelain birds!",
+      "commands": [
+        "answer"
+      ]
+    },
+    {
+      "ts": 1649467472,
+      "username": "@patquinn115",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_baked_and_live",
+      "message": "Can't wait for your Amico review video:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1649465093,
+      "username": "@cha0sxiii63",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_baked_and_live",
+      "message": "No, the take is: \"At first, they did too little, and now they're doing too much\". That's what Rich is saying. Also, Will's wife hasn't let him come in YEARS.",
+      "commands": [
+        "is"
+      ]
+    },
+    {
+      "ts": 1649463909,
+      "username": "@gabenewell6998",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_baked_and_live",
+      "message": "Hey Rich, what do you think is likelier at this point with the state of the supply chain crisis: an earlier than expected PS6 sometime in 2025 (if not possibly earlier) or a PS5 Pro in 2023/2024?",
+      "commands": [
+        "crisis"
       ]
     },
     {
