@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100956,
+  "updated_ts": 1782100963,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -418,7 +418,8 @@
     "logan_paul_is_a_man",
     "lolcow_and_boogie2988",
     "maidenless_birds_play_eldenring_plus_man",
-    "man_and_birds_baked_and_live"
+    "man_and_birds_baked_and_live",
+    "man_and_birds_vs_karens"
   ],
   "commands": {
     "stan": 27,
@@ -451,7 +452,7 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 398,
+    "face": 399,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 269,
@@ -467,9 +468,9 @@
     "tongue": 7,
     "heart": 127,
     "shorts": 1,
-    "laughing": 161,
+    "laughing": 162,
     "news": 20,
-    "chicken": 46,
+    "chicken": 47,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -512,7 +513,7 @@
     "ghost": 2,
     "bk": 1,
     "gift": 3,
-    "bird": 13,
+    "bird": 14,
     "richsmile": 5,
     "dsp": 23,
     "story": 1,
@@ -2986,6 +2987,11 @@
       "title": "Man And Birds Baked AND LIVE",
       "start_ts": 1649462654,
       "youtube_archive_id": "KAobZogfCzo"
+    },
+    "man_and_birds_vs_karens": {
+      "title": "Man And Birds Vs. Karens",
+      "start_ts": 1642814069,
+      "youtube_archive_id": "jcLJL4X1Wmk"
     }
   },
   "messages": [
@@ -20668,6 +20674,46 @@
       "message": "Why not watch some eBay scam videos later :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1642825015,
+      "username": "@lindalarkins-takai4245",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_vs_karens",
+      "message": ":bird: birds",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1642818175,
+      "username": "@OopiDoopi",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_vs_karens",
+      "message": "you should do a Bingo card for this video rich. also tell your birds I love them :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1642817065,
+      "username": "@KyleDriver",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_vs_karens",
+      "message": "my mom's name is Karen :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1642814677,
+      "username": "@TrayXCooper",
+      "platform": "youtube",
+      "stream_id": "man_and_birds_vs_karens",
+      "message": "We ate Meatloaf for dinner to celebrate his life R.I.P Meatloaf:pleading_face::sneezing_face:",
+      "commands": [
+        "face"
       ]
     },
     {
