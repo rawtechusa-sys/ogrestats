@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100498,
+  "updated_ts": 1782100506,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -357,7 +357,8 @@
     "just_a_man_and_birds",
     "just_a_man_streaming_and_answering_questions_feat_birds",
     "just_a_man_streaming_for_a_bit",
-    "just_being_a_man"
+    "just_being_a_man",
+    "just_chatting_and_watching_the_completionist_discord_call"
   ],
   "commands": {
     "stan": 27,
@@ -388,12 +389,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 80,
+    "eyes": 81,
     "africa": 1,
     "face": 334,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 240,
+    "joy": 241,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -404,9 +405,9 @@
     "cucumber": 44,
     "biceps": 3,
     "tongue": 6,
-    "heart": 109,
+    "heart": 110,
     "shorts": 1,
-    "laughing": 137,
+    "laughing": 138,
     "news": 18,
     "chicken": 41,
     "cake": 7,
@@ -2580,6 +2581,11 @@
       "title": "Just Being A Man",
       "start_ts": 1709944038,
       "youtube_archive_id": "PO6YcLDZ6LM"
+    },
+    "just_chatting_and_watching_the_completionist_discord_call": {
+      "title": "Just Chatting And Watching The Completionist Discord Call",
+      "start_ts": 1703040486,
+      "youtube_archive_id": "GmnyPiqkkVo"
     }
   },
   "messages": [
@@ -6619,6 +6625,46 @@
       "message": "Merry Birdmas! :rooster::christmas_tree::wrapped_gift:",
       "commands": [
         "gift"
+      ]
+    },
+    {
+      "ts": 1703044948,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "just_chatting_and_watching_the_completionist_discord_call",
+      "message": "My YouTube account will be ten years old on the 21st. I\u2019ve been watching ReviewTechUSA almost as long. What a great time to be an RTU enjoyer. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1703043683,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "just_chatting_and_watching_the_completionist_discord_call",
+      "message": "man time flies rich i remember being there live for your 2020 election stream :face_with_tears_of_joy: golden times. you should def do it again for 24'",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1703043543,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "just_chatting_and_watching_the_completionist_discord_call",
+      "message": "Me and Julie are still waiting on Pok\u00e9mon. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1703041176,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "just_chatting_and_watching_the_completionist_discord_call",
+      "message": "I\u2019m laughing at these dumbass scalpers trying to sell PS Portals for 350$. Let me know when you want to sell them for 80 lmao. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
