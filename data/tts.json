@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099313,
+  "updated_ts": 1782099322,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -220,7 +220,8 @@
     "come_critcize_the_hell_out_of_me_yes_im_serious",
     "come_discuss_the_playstation_showcase_with_your_dad",
     "come_hang_out",
-    "come_hang_out_10_18_2021_crowbcat_video_reaction"
+    "come_hang_out_10_18_2021_crowbcat_video_reaction",
+    "come_hang_out_for_a_bit"
   ],
   "commands": {
     "stan": 27,
@@ -250,13 +251,13 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 5,
+    "turkey": 6,
     "eyes": 59,
     "africa": 1,
-    "face": 196,
+    "face": 197,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 130,
+    "joy": 131,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -264,7 +265,7 @@
     "idea": 2,
     "fear": 3,
     "voice": 3,
-    "cucumber": 22,
+    "cucumber": 23,
     "biceps": 3,
     "tongue": 5,
     "heart": 63,
@@ -517,7 +518,10 @@
     "russia": 1,
     "arrow": 2,
     "owl": 1,
-    "hell": 1
+    "hell": 1,
+    "pig": 1,
+    "tip": 1,
+    "dies": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1614,6 +1618,11 @@
       "title": "Come Hang Out! 10-18-2021 (Crowbcat Video Reaction)",
       "start_ts": 1634602728,
       "youtube_archive_id": "LaxjMSZBhME"
+    },
+    "come_hang_out_for_a_bit": {
+      "title": "Come Hang Out (For A Bit)",
+      "start_ts": 1637457261,
+      "youtube_archive_id": "gF84SRNlrWY"
     }
   },
   "messages": [
@@ -11626,6 +11635,76 @@
       "message": "Rich! Great news, my fianc\u00e9 and I are pregnant! :smiling_face_with_halo:",
       "commands": [
         "halo"
+      ]
+    },
+    {
+      "ts": 1637464992,
+      "username": "@GIR00027",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "Teabag the next kill \ud83d\udc4d\ud83c\udffd:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637464549,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "Man and I thought you be the next eSports player:upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637462387,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "Rich\u2019s last word before he dies: my jaws are hittin the ground",
+      "commands": [
+        "dies"
+      ]
+    },
+    {
+      "ts": 1637460595,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "I got an RTX 2060 laptop today for only $550 after tax. What GPU shortage? Pfft :_Carlos::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1637458672,
+      "username": "@ryanarchuleta6231",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "Another tip: The mangler (brute revolver) only needs 1 shot and 1 melee. Or two body shots to break shields then pop a headshot.",
+      "commands": [
+        "tip"
+      ]
+    },
+    {
+      "ts": 1637458557,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "Just finished watching \u2018Pig\u2019 with Nicholas Cage, I was expecting a dumb Cage fest but I\u2019m literally sitting here in tears, please make me laugh, dad:pig:",
+      "commands": [
+        "pig"
+      ]
+    },
+    {
+      "ts": 1637458036,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_for_a_bit",
+      "message": "This just in! Carlos:rooster:&Steve:turkey: will be plucking and cooking Rich for their Thanksgiving meal and then will be taking over the show!EXPOSED! #BirdTechUSA",
+      "commands": [
+        "turkey"
       ]
     },
     {
