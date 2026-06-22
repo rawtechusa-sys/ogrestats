@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100444,
+  "updated_ts": 1782100453,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -352,7 +352,8 @@
     "its_dspgamings_birthday",
     "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
     "its_time_to_party",
-    "its_time_to_take_games_back_gamers_who_game"
+    "its_time_to_take_games_back_gamers_who_game",
+    "itsagundams_dspgaming_video_is_a_masterpiece"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5970,6 +5971,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.66,
       "avg_active_chatters": 34.02
+    },
+    "itsagundams_dspgaming_video_is_a_masterpiece": {
+      "stream_id": "itsagundams_dspgaming_video_is_a_masterpiece",
+      "title": "It'sAGundam's DSPGaming Video Is A Masterpiece",
+      "start_ts": 1673741771,
+      "end_ts": 1673762431,
+      "duration_sec": 20660,
+      "youtube_archive_id": "_KodVG9qoPE",
+      "source_platform": "youtube",
+      "total_donations_usd": 996.46,
+      "donation_count": 107,
+      "donations_per_min": 2.8939,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.81,
+      "avg_active_chatters": 27.43
     }
   }
 }
