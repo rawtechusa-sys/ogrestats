@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098438,
+  "updated_ts": 1782098446,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -112,7 +112,8 @@
     "a_very_late_man",
     "a_very_late_man_part_deux_totally_baked",
     "a_very_stoned_man_discusses_repzion_and_the_completionist",
-    "a_very_stoned_man_discusses_repzion_and_the_completionist_working"
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+    "a_wingsofredemption_marathon_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1890,6 +1891,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.74,
       "avg_active_chatters": 37.04
+    },
+    "a_wingsofredemption_marathon_stream": {
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "title": "A WingsOfRedemption Marathon Stream",
+      "start_ts": 1656806041,
+      "end_ts": 1656819579,
+      "duration_sec": 13538,
+      "youtube_archive_id": "YSP4GkKzkmk",
+      "source_platform": "youtube",
+      "total_donations_usd": 356.87,
+      "donation_count": 100,
+      "donations_per_min": 1.5816,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.99,
+      "avg_active_chatters": 34.76
     }
   }
 }
