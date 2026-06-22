@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100223,
+  "updated_ts": 1782100232,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -327,7 +327,8 @@
     "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
     "im_just_a_little_stoned_right_now",
     "im_just_a_man_on_the_damn_internet",
-    "im_just_a_man_thats_all"
+    "im_just_a_man_thats_all",
+    "im_kind_of_back_what_happened"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5545,6 +5546,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.4,
       "avg_active_chatters": 29.27
+    },
+    "im_kind_of_back_what_happened": {
+      "stream_id": "im_kind_of_back_what_happened",
+      "title": "I'm (Kind Of) Back, What Happened?",
+      "start_ts": 1677804453,
+      "end_ts": 1677815395,
+      "duration_sec": 10942,
+      "youtube_archive_id": "oI2xnmA1HW8",
+      "source_platform": "youtube",
+      "total_donations_usd": 1188.59,
+      "donation_count": 190,
+      "donations_per_min": 6.5176,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.43,
+      "avg_active_chatters": 40.02
     }
   }
 }
