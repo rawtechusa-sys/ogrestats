@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099322,
+  "updated_ts": 1782099330,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -221,7 +221,8 @@
     "come_discuss_the_playstation_showcase_with_your_dad",
     "come_hang_out",
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
-    "come_hang_out_for_a_bit"
+    "come_hang_out_for_a_bit",
+    "come_hang_out_with_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -257,7 +258,7 @@
     "face": 197,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 131,
+    "joy": 134,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -270,7 +271,7 @@
     "tongue": 5,
     "heart": 63,
     "shorts": 1,
-    "laughing": 61,
+    "laughing": 62,
     "news": 13,
     "chicken": 31,
     "cake": 7,
@@ -294,10 +295,10 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 18,
+    "up": 19,
     "note": 5,
     "eyebrow": 2,
-    "facepalming": 5,
+    "facepalming": 6,
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
@@ -1623,6 +1624,11 @@
       "title": "Come Hang Out (For A Bit)",
       "start_ts": 1637457261,
       "youtube_archive_id": "gF84SRNlrWY"
+    },
+    "come_hang_out_with_a_man": {
+      "title": "Come Hang Out With A Man",
+      "start_ts": 1633912109,
+      "youtube_archive_id": "KnRAsT2wENo"
     }
   },
   "messages": [
@@ -12693,6 +12699,57 @@
       "message": "Earthworm Jim 4 is a thing & Its Amico Exclusive :angry_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1633915800,
+      "username": "@LeesReviews69",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man",
+      "message": "I started watching u in 2013 I was 25y/o :man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1633914273,
+      "username": "@michaeld2799md",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man",
+      "message": "Forgot to mention I got my first vaccine last week:thumbs_up: by the way try nick all star brawl, powdered toast man is in the damn game :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "up",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1633914223,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man",
+      "message": "Lol the games are coming before the system!! :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1633913719,
+      "username": "@justinslater1165",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man",
+      "message": "Heres five bucks from my new job at Starbucks, wish I could make Daddy rich a coffee for his hole :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1633912432,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man",
+      "message": "hey rich I just got hired at a tech job for the NYC department of Social services so I'm happy for that! Also you know what to do now! :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
