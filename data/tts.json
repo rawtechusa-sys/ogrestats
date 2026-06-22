@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101641,
+  "updated_ts": 1782101648,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -509,7 +509,8 @@
     "philip_burnell_is_a_lover_of_horses",
     "philip_burnell_is_a_man",
     "philip_burnell_is_a_man_partwhatever",
-    "philip_burnell_is_a_man_plus_newegg_drama"
+    "philip_burnell_is_a_man_plus_newegg_drama",
+    "philip_burnell_is_excited"
   ],
   "commands": {
     "stan": 27,
@@ -542,15 +543,15 @@
     "turkey": 12,
     "eyes": 121,
     "africa": 1,
-    "face": 481,
+    "face": 484,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 314,
+    "joy": 318,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
     "away": 7,
-    "idea": 4,
+    "idea": 5,
     "fear": 4,
     "voice": 5,
     "cucumber": 54,
@@ -1050,7 +1051,9 @@
     "knife": 1,
     "pebkac": 1,
     "skills": 1,
-    "crossover": 1
+    "crossover": 1,
+    "groups": 1,
+    "nutshell": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3592,6 +3595,11 @@
       "title": "Philip Burnell Is A Man (Plus Newegg Drama)",
       "start_ts": 1644972994,
       "youtube_archive_id": "p7EQHmQHyhc"
+    },
+    "philip_burnell_is_excited": {
+      "title": "Philip Burnell Is Excited!",
+      "start_ts": 1679530417,
+      "youtube_archive_id": "jK9EVFhef9g"
     }
   },
   "messages": [
@@ -15006,6 +15014,106 @@
       "message": "Nicknames you\u2019ve given Phil on past livestreams: Darksydekaren, Philip I can outmaneuver Mike Tyson Burnell, Phillip way too little way too late Burnell, Philita sarkeesian... (1/2)",
       "commands": [
         "livestreams"
+      ]
+    },
+    {
+      "ts": 1679547327,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Legit idea: is it possible to fight or challenge Phil on WWE Champions? You could create an account and try to fight him lol",
+      "commands": [
+        "idea"
+      ]
+    },
+    {
+      "ts": 1679546973,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "$998 to go :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1679545864,
+      "username": "@reviewscientologyusa",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Crapgamer makes the same content 10 years later:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1679540313,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Yo imagine if Phil did a music video to the Drip song :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:\u2026.but sadly he\u2019s worried about his 15 yEaR lEgAcY :upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1679540043,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Hey Rich! Hoping all is well man. Yo question\u2026how much to run a stream EXACTLY like DSP would? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1679539891,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "I don't know who Steel Toe are, but why does he look like a Low-budget Will Arnett? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1679535839,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Instead of MegaCon, it's Beg-A-Con, also hey bud:disguised_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1679534294,
+      "username": "@drunkbottlemaniac",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "Phil in a Nutshell: Its okay if he does it but not okay if someone else does it. This fits too many scenarios way too well with this man & his career.",
+      "commands": [
+        "nutshell"
+      ]
+    },
+    {
+      "ts": 1679532476,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "he yelled at YT cuz labour day delayed his pay :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1679531090,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_excited",
+      "message": "in a criminal justice system DSP Gaming represent two separate, yet equally important, groups: May 1st, Cameras on; and the begging who prosecute the \"Detractors\". These are his stores",
+      "commands": [
+        "groups"
       ]
     },
     {
