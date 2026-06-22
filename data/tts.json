@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100300,
+  "updated_ts": 1782100309,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -335,7 +335,8 @@
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
     "im_wired_and_streaming_cause_why_not",
-    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds"
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
+    "intellivision_amico_family_fun_and_the_quartering_swatted"
   ],
   "commands": {
     "stan": 27,
@@ -368,28 +369,28 @@
     "turkey": 7,
     "eyes": 78,
     "africa": 1,
-    "face": 314,
+    "face": 315,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 228,
+    "joy": 229,
     "gameboy": 1,
     "chick": 2,
-    "carlos": 28,
+    "carlos": 29,
     "away": 6,
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 39,
+    "cucumber": 41,
     "biceps": 3,
     "tongue": 6,
-    "heart": 104,
+    "heart": 106,
     "shorts": 1,
     "laughing": 125,
     "news": 18,
     "chicken": 39,
     "cake": 7,
     "d": 4,
-    "halo": 3,
+    "halo": 4,
     "hand": 28,
     "popper": 7,
     "straw": 1,
@@ -505,7 +506,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 10,
+    "droplets": 11,
     "tomato": 3,
     "hearts": 8,
     "million": 1,
@@ -521,7 +522,7 @@
     "sweat": 14,
     "twist": 2,
     "quote": 1,
-    "beverage": 2,
+    "beverage": 3,
     "peanuts": 1,
     "glass": 1,
     "example": 1,
@@ -755,7 +756,8 @@
     "repair": 1,
     "a": 1,
     "b": 1,
-    "c": 1
+    "c": 1,
+    "bottle": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2427,6 +2429,11 @@
       "title": "In Search Of 100K Runes In Elden Ring (Feat. Beautiful Birds)",
       "start_ts": 1649719856,
       "youtube_archive_id": "udNjQplYcbQ"
+    },
+    "intellivision_amico_family_fun_and_the_quartering_swatted": {
+      "title": "Intellivision Amico Family Fun And The Quartering Swatted",
+      "start_ts": 1655337418,
+      "youtube_archive_id": "W5l8iSHKqGk"
     }
   },
   "messages": [
@@ -14678,6 +14685,107 @@
       "message": "We're behind you all the way rich :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1655344527,
+      "username": "@FrankkCozmo",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "Rich's Bird Brew:hot_beverage: will keep you THOROUGHLY tickled",
+      "commands": [
+        "beverage"
+      ]
+    },
+    {
+      "ts": 1655343203,
+      "username": "@trumpsteaks1401",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "Hey rich, i was watching you earlier stream and my manager came by and thought you were an actor for the Scary Movie series:face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1655342447,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "Now that ReviewChinaUSA has a teet :baby_bottle: to suck on (QTV\u2019s) he is back from the grave. Shame on YouTube for backing up trolls and stand next to hate",
+      "commands": [
+        "bottle"
+      ]
+    },
+    {
+      "ts": 1655342231,
+      "username": "@Star77th",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "LORD HAVE MERCY I'M ABOUT TO BUST :sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1655341830,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "Pre-ordered Amico = Buying NFTs! :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655339400,
+      "username": "@Dirk_Mcousky",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "sorry to hear what's been happening with all u guys latley but just stick to your guns & keep your head up as always. big :cucumber: love",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1655338481,
+      "username": "@Thecoolistgamerever",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "can i get rapid cucumbers:_Cucumber: and birds:_Carlos:",
+      "commands": [
+        "cucumber",
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1655338416,
+      "username": "@AdrianCardoza",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "I tweeted the stream highlights suggestion. :red_heart: u!",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1655338184,
+      "username": "@jayayy9217",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "Your own pursuit of happiness is what matters the most, despite how YouTube has handled the current situation. Sorry to hear about the RTUSA channel, but I\u2019ll continue to support you wherever you go :black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1655337686,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_and_the_quartering_swatted",
+      "message": "We love you Rich! No matter where you go. :crying_face::smiling_face_with_halo:",
+      "commands": [
+        "halo"
       ]
     },
     {
