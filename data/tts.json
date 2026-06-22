@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098847,
+  "updated_ts": 1782098855,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -163,7 +163,8 @@
     "birds_and_a_man_feat_birds",
     "birds_and_men_live",
     "birds_are_satisfying_feat_a_man",
-    "birds_are_satisfying_kinda_livestream_feat_birds"
+    "birds_are_satisfying_kinda_livestream_feat_birds",
+    "birds_pot_halo_infinite_and_the_game_awards_discussion"
   ],
   "commands": {
     "stan": 27,
@@ -422,7 +423,8 @@
     "cells": 1,
     "tv": 1,
     "apple": 1,
-    "channel": 1
+    "channel": 1,
+    "specs": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1234,6 +1236,11 @@
       "title": "Birds Are Satisfying Kinda Livestream (Feat. Birds)",
       "start_ts": 1663463312,
       "youtube_archive_id": "jHxN2UI2lRk"
+    },
+    "birds_pot_halo_infinite_and_the_game_awards_discussion": {
+      "title": "Birds, Pot, Halo Infinite And The Game Awards Discussion",
+      "start_ts": 1639166125,
+      "youtube_archive_id": "m_dn6LNqnC0"
     }
   },
   "messages": [
@@ -9535,6 +9542,16 @@
       "message": "It's not a lot but I hope it helps:grinning_cat_with_smiling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1639174087,
+      "username": "@GamlielEliyahu",
+      "platform": "youtube",
+      "stream_id": "birds_pot_halo_infinite_and_the_game_awards_discussion",
+      "message": "I haven't really experienced or noticed any of these issues on PC. Specs: i9 10850K, RTX 3090, 32 GB DDR4, 1 TB NVME SSD. I play in 4K on High",
+      "commands": [
+        "specs"
       ]
     },
     {
