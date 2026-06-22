@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093915,
+  "updated_ts": 1782093963,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -53,7 +53,8 @@
     "a_late_night_middle_aged_youtuber_is_livestreaming",
     "a_late_stream",
     "a_long_day_of_elden_ring_feat_birds",
-    "a_major_philip_burnell_man_emrgency_has_occured"
+    "a_major_philip_burnell_man_emrgency_has_occured",
+    "a_man"
   ],
   "commands": {
     "stan": 27,
@@ -86,10 +87,10 @@
     "turkey": 3,
     "eyes": 13,
     "africa": 1,
-    "face": 40,
+    "face": 41,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 29,
+    "joy": 31,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -102,7 +103,7 @@
     "tongue": 2,
     "heart": 18,
     "shorts": 1,
-    "laughing": 16,
+    "laughing": 18,
     "news": 5,
     "chicken": 8,
     "cake": 1,
@@ -122,14 +123,14 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 2,
-    "rooster": 6,
+    "rooster": 8,
     "peach": 1,
     "fire": 3,
     "kendal": 1,
     "up": 5,
     "note": 1,
     "eyebrow": 1,
-    "facepalming": 1,
+    "facepalming": 2,
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
@@ -456,6 +457,11 @@
       "title": "A MAJOR PHILIP BURNELL MAN EMRGENCY HAS OCCURED!",
       "start_ts": 1701217716,
       "youtube_archive_id": "jkh3Qh4GqbQ"
+    },
+    "a_man": {
+      "title": "A Man",
+      "start_ts": 1656719035,
+      "youtube_archive_id": "zca1A65iKog"
     }
   },
   "messages": [
@@ -3433,6 +3439,86 @@
       "platform": "youtube",
       "stream_id": "a_dspgaming_family_fun_stream",
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656732956,
+      "username": "@LizardFairyKing",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "But RICH she said she was 51!!! I'm dyslexic, don't shame me for my predatory dyslexia :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1656732675,
+      "username": "@LizardFairyKing",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "But RICH! She said she was 41 :hear_no_evil_monkey::speak_no_evil_monkey::see_no_evil_monkey::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1656732361,
+      "username": "@LizardFairyKing",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "I thought she said 41 :rolling_on_the_floor_laughing::man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1656728258,
+      "username": "@bigshuu1919",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "Hello I'm Chris Hansen \"You're Boned\"!:face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656724395,
+      "username": "@Tjackson1998",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "I got a Ps4 Pro instead of a ps5 right call :thinking_face::thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656721253,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "The Enemy of my Enemy is my friend :owl::crossed_swords::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1656720664,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "Rich, just caught up on yesterdays stream. I would most definitely drink the Bird Breast flavored seltzer & Wing\u2019s Wife\u2019s Wet Fart flavor too :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1656719765,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "a_man",
+      "message": "Watch Westside Tech say you were doxing him :face_with_tears_of_joy:",
       "commands": [
         "joy"
       ]
