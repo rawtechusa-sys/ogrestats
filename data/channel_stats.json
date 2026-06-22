@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098587,
+  "updated_ts": 1782098594,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -131,7 +131,8 @@
     "an_important_announcements",
     "an_important_update",
     "an_unofficial_man_return_feat_large_men",
-    "and_the_nintendo_switch_oled_winners_are"
+    "and_the_nintendo_switch_oled_winners_are",
+    "andrew_taint_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2213,6 +2214,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.96,
       "avg_active_chatters": 41.06
+    },
+    "andrew_taint_is_a_man": {
+      "stream_id": "andrew_taint_is_a_man",
+      "title": "Andrew Taint Is A Man",
+      "start_ts": 1671844925,
+      "end_ts": 1671850774,
+      "duration_sec": 5849,
+      "youtube_archive_id": "zcFIdKI4Gms",
+      "source_platform": "youtube",
+      "total_donations_usd": 260.74,
+      "donation_count": 68,
+      "donations_per_min": 2.6747,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.69,
+      "avg_active_chatters": 31.67
     }
   }
 }
