@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092496,
+  "updated_ts": 1782092520,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -15,7 +15,8 @@
     "1_man_1_bird",
     "1_man_1_bird_all_live",
     "1_million_sub_special_feat_birds",
-    "2_birds_and_a_man_live"
+    "2_birds_and_a_man_live",
+    "2_man_mini_marathon_stream_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -150,6 +151,11 @@
       "title": "2 Birds And A Man LIVE",
       "start_ts": 1635900094,
       "youtube_archive_id": "aASk6Yr1O-I"
+    },
+    "2_man_mini_marathon_stream_feat_birds": {
+      "title": "2 Man Mini Marathon Stream Feat. Birds",
+      "start_ts": 1703450428,
+      "youtube_archive_id": "ZCaqd1uATps"
     }
   },
   "messages": [
