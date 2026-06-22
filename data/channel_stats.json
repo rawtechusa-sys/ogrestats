@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101471,
+  "updated_ts": 1782101479,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -490,7 +490,8 @@
     "my_final_thoughts_pat_and_ian",
     "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga",
     "my_subscribers_give_me_criticism",
-    "new_years_eve_man_live_feat_birds"
+    "new_years_eve_man_live_feat_birds",
+    "nightly_hang_out"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8316,6 +8317,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.41,
       "avg_active_chatters": 27.28
+    },
+    "nightly_hang_out": {
+      "stream_id": "nightly_hang_out",
+      "title": "Nightly Hang Out",
+      "start_ts": 1650330866,
+      "end_ts": 1650341960,
+      "duration_sec": 11094,
+      "youtube_archive_id": "7S-XerVA1SU",
+      "source_platform": "youtube",
+      "total_donations_usd": 293.7,
+      "donation_count": 72,
+      "donations_per_min": 1.5884,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.8,
+      "avg_active_chatters": 27.61
     }
   }
 }
