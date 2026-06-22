@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099936,
+  "updated_ts": 1782099944,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -294,7 +294,8 @@
     "grandpa_is_playing_call_of_duty_loud_farts",
     "happy_fking_halloween",
     "he_admitted_itwtf",
-    "hes_back_and_thoroughly_tickled"
+    "hes_back_and_thoroughly_tickled",
+    "hes_back_and_thoroughly_tickledpart_deux"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4984,6 +4985,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.37,
       "avg_active_chatters": 61.99
+    },
+    "hes_back_and_thoroughly_tickledpart_deux": {
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "title": "He's Back, And Thoroughly Tickled...(Part Deux)",
+      "start_ts": 1660692817,
+      "end_ts": 1660704761,
+      "duration_sec": 11944,
+      "youtube_archive_id": "p-lcmai_nh8",
+      "source_platform": "youtube",
+      "total_donations_usd": 766.09,
+      "donation_count": 155,
+      "donations_per_min": 3.8484,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.75,
+      "avg_active_chatters": 52.41
     }
   }
 }
