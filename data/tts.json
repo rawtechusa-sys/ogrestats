@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101692,
+  "updated_ts": 1782101699,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -516,7 +516,8 @@
     "philip_burnells_chickengate_anniversary_celebration",
     "philip_burnells_new_sweater",
     "philip_paul_burnell_has_incredible_technical_knowledge",
-    "philip_paul_burnell_is_a_220_man"
+    "philip_paul_burnell_is_a_220_man",
+    "phillip_burnell_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -549,10 +550,10 @@
     "turkey": 12,
     "eyes": 122,
     "africa": 1,
-    "face": 497,
+    "face": 498,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 320,
+    "joy": 324,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
@@ -699,7 +700,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 25,
+    "sweat": 26,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -1063,7 +1064,9 @@
     "logic": 1,
     "all": 1,
     "dlc": 1,
-    "brain": 1
+    "brain": 1,
+    "same": 1,
+    "symbol": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3640,6 +3643,11 @@
       "title": "Philip Paul Burnell Is A 220 Man",
       "start_ts": 1739856828,
       "youtube_archive_id": "VLitqa0y638"
+    },
+    "phillip_burnell_is_a_man": {
+      "title": "Phillip Burnell Is A Man...",
+      "start_ts": 1656377618,
+      "youtube_archive_id": "OjScHzb-jv0"
     }
   },
   "messages": [
@@ -20851,6 +20859,86 @@
       "message": ":cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1656386511,
+      "username": "@axiominfinity",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "Brown because 6 month membership:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656382736,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "Qtv sits & crosses his legs to pee:grinning_squinting_face::grinning_squinting_face: DSP laugh,plz",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656381687,
+      "username": "@SitterOfGoats",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "oof :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1656380866,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "It\u2019s been confirmed many of his fans are :wheelchair_symbol:",
+      "commands": [
+        "symbol"
+      ]
+    },
+    {
+      "ts": 1656380652,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "I can\u2019t be hom\u00f3fobic if I\u2019m vegan and tanned :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656379660,
+      "username": "@johnny112115",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "Phil talks to his audience like someone talks in a board meeting on the current status of a company in a current downturn situation. Explaining every aspect :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656379592,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "Wings does the same: \u201cI only stream for the money\u201d",
+      "commands": [
+        "same"
+      ]
+    },
+    {
+      "ts": 1656379355,
+      "username": "@AOneArmedWolf",
+      "platform": "youtube",
+      "stream_id": "phillip_burnell_is_a_man",
+      "message": "Thanks for the great content, I feel like an idiot since I thought \u201ctry to relax your anus\u201d was Will Ferrell until tonight :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
