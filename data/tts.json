@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099571,
+  "updated_ts": 1782099580,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -251,7 +251,8 @@
     "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
     "donald_trump_magical_ball_requests",
     "donald_trump_vs_joe_biden_ai_debate",
-    "dr_cocos_house_of_healing"
+    "dr_cocos_house_of_healing",
+    "drinking_stories_with_intro_guy"
   ],
   "commands": {
     "stan": 27,
@@ -282,9 +283,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 64,
+    "eyes": 65,
     "africa": 1,
-    "face": 222,
+    "face": 224,
     "petersonxhhanson": 1,
     "poo": 14,
     "joy": 153,
@@ -298,9 +299,9 @@
     "cucumber": 26,
     "biceps": 3,
     "tongue": 5,
-    "heart": 74,
+    "heart": 75,
     "shorts": 1,
-    "laughing": 70,
+    "laughing": 71,
     "news": 13,
     "chicken": 33,
     "cake": 7,
@@ -331,7 +332,7 @@
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
-    "hands": 16,
+    "hands": 17,
     "horns": 6,
     "crab": 2,
     "superhero": 15,
@@ -339,7 +340,7 @@
     "dog": 4,
     "is": 6,
     "spose": 1,
-    "sunglasses": 11,
+    "sunglasses": 12,
     "kiss": 15,
     "earlier": 1,
     "ghost": 1,
@@ -497,7 +498,7 @@
     "dpsn": 1,
     "correction": 1,
     "sunset": 2,
-    "fist": 1,
+    "fist": 2,
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
@@ -1836,6 +1837,11 @@
       "title": "Dr. Cocos house of healing",
       "start_ts": 1686872753,
       "youtube_archive_id": "hi-0ZTV6kjA"
+    },
+    "drinking_stories_with_intro_guy": {
+      "title": "Drinking Stories With Intro Guy",
+      "start_ts": 1556062673,
+      "youtube_archive_id": "NH643bmMdEs"
     }
   },
   "messages": [
@@ -16429,6 +16435,86 @@
       "message": "i don't think you support spying.It happens a lot by many actors just means we should try to stop/limit it. Also I didn't know about that building :astonished_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1556070871,
+      "username": "@Joe--",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "This is for Intro Guy's cut :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1556068089,
+      "username": "@Joe--",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "Should stream w/ Kyle Kulinski, he's also Seltzer:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1556067717,
+      "username": "@brennandoherty1778",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "can u pull out the cucumber for me Richie? :smiling_face_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1556065675,
+      "username": "@danielj9779",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "will next gen games cost more money :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1556065635,
+      "username": "@FlukasMcDoogle",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "Rich, copyright claim on the cucumber. Jk, u r :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1556065425,
+      "username": "@camden35",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "I told you about spawn wave awhile back in a stream hope so love your content man keep it up man would be a awesome podcast of you and joe :oncoming_fist:",
+      "commands": [
+        "fist"
+      ]
+    },
+    {
+      "ts": 1556065193,
+      "username": "@camden35",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "I would pay for a Rich joe Rogan podcast :clapping_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1556064536,
+      "username": "@danielj9779",
+      "platform": "youtube",
+      "stream_id": "drinking_stories_with_intro_guy",
+      "message": "intro Guy looks like Rich's body guard :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     }
   ]
