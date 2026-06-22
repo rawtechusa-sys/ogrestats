@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102708,
+  "updated_ts": 1782102714,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -689,7 +689,8 @@
     "thequartering_is_coming_on_in_20_minutes",
     "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv",
     "thequartering_is_scared_of_me_so_im_gonna_stream_and_laugh_at_him",
-    "thequartering_loves_elons_musk_feat_christhenarc"
+    "thequartering_loves_elons_musk_feat_christhenarc",
+    "thequartering_loves_elons_musk_part_2"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11699,6 +11700,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.82,
       "avg_active_chatters": 34.56
+    },
+    "thequartering_loves_elons_musk_part_2": {
+      "stream_id": "thequartering_loves_elons_musk_part_2",
+      "title": "TheQuartering Loves Elon's Musk Part. 2",
+      "start_ts": 1671589292,
+      "end_ts": 1671596388,
+      "duration_sec": 7096,
+      "youtube_archive_id": "rbmX3FHo7nU",
+      "source_platform": "youtube",
+      "total_donations_usd": 242.81,
+      "donation_count": 61,
+      "donations_per_min": 2.0531,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.44,
+      "avg_active_chatters": 34.97
     }
   }
 }
