@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102485,
+  "updated_ts": 1782102490,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -650,7 +650,8 @@
     "the_game_awards_and_a_man_with_birds",
     "the_gamerfrommars_chris_chan_documentary",
     "the_giga_chad_of_youtube_is_streaming",
-    "the_humble_bean_merchant_and_chris_chan"
+    "the_humble_bean_merchant_and_chris_chan",
+    "the_intellivision_amico_family_fun_continues"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11036,6 +11037,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.89,
       "avg_active_chatters": 33.81
+    },
+    "the_intellivision_amico_family_fun_continues": {
+      "stream_id": "the_intellivision_amico_family_fun_continues",
+      "title": "The Intellivision Amico Family Fun Continues!",
+      "start_ts": 1644539377,
+      "end_ts": 1644554075,
+      "duration_sec": 14698,
+      "youtube_archive_id": "quIXT6KYG6o",
+      "source_platform": "youtube",
+      "total_donations_usd": 315.44,
+      "donation_count": 81,
+      "donations_per_min": 1.2877,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.39,
+      "avg_active_chatters": 33.52
     }
   }
 }
