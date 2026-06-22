@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102441,
+  "updated_ts": 1782102446,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -642,7 +642,8 @@
     "the_dspgaming_computer_situation",
     "the_dspgaming_wwe_champions_man_stream_feat_birds",
     "the_e3_discussion_and_channel_update_stream",
-    "the_fallout_3_marathon_man_stream"
+    "the_fallout_3_marathon_man_stream",
+    "the_first_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10900,6 +10901,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.22,
       "avg_active_chatters": 33.66
+    },
+    "the_first_stream": {
+      "stream_id": "the_first_stream",
+      "title": "The First Stream",
+      "start_ts": 1555106156,
+      "end_ts": 1555114920,
+      "duration_sec": 8764,
+      "youtube_archive_id": "XrQuFGxWvmk",
+      "source_platform": "youtube",
+      "total_donations_usd": 360.69,
+      "donation_count": 62,
+      "donations_per_min": 2.4694,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.4,
+      "avg_active_chatters": 55.52
     }
   }
 }
