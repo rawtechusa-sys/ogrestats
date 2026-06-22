@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095977,
+  "updated_ts": 1782096036,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -91,7 +91,8 @@
     "a_pulsating_new_years_eve",
     "a_pure_man_experience",
     "a_quality_qvc_bird_roast",
-    "a_quick_ask_me_anything_stream_power_wash_simulator"
+    "a_quick_ask_me_anything_stream_power_wash_simulator",
+    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update"
   ],
   "commands": {
     "stan": 27,
@@ -127,7 +128,7 @@
     "face": 79,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 56,
+    "joy": 57,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -273,7 +274,9 @@
     "both": 1,
     "syne": 1,
     "father": 1,
-    "request": 1
+    "request": 1,
+    "sweat": 1,
+    "twist": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -725,6 +728,11 @@
       "title": "A Quick Ask Me Anything Stream (Power Wash Simulator)",
       "start_ts": 1662167620,
       "youtube_archive_id": "Cf6AdaDZcYc"
+    },
+    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update": {
+      "title": "A Quick Man Stream (Plus Nintendo Switch OLED Giveaway Update)",
+      "start_ts": 1648860702,
+      "youtube_archive_id": "eqIVZ4VnjP4"
     }
   },
   "messages": [
@@ -5569,6 +5577,36 @@
       "message": "we love cucumbers :cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1648864780,
+      "username": "@timmarcoux",
+      "platform": "youtube",
+      "stream_id": "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
+      "message": "Big plot twist: QTV wins the switch",
+      "commands": [
+        "twist"
+      ]
+    },
+    {
+      "ts": 1648863906,
+      "username": "@timmarcoux",
+      "platform": "youtube",
+      "stream_id": "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
+      "message": "What if I live in the Mariana's Trench, Richard?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1648863773,
+      "username": "@daedricxarmor1430",
+      "platform": "youtube",
+      "stream_id": "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
+      "message": "can u send me used socks if i win,plz pretty plz:grinning_face_with_sweat::grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
       ]
     },
     {
