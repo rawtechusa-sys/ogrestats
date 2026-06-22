@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094111,
+  "updated_ts": 1782094161,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -57,7 +57,8 @@
     "a_man",
     "a_man_and_bird_lushes_stream",
     "a_man_and_his_birds",
-    "a_man_experience_feat_birds"
+    "a_man_experience_feat_birds",
+    "a_man_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -90,10 +91,10 @@
     "turkey": 3,
     "eyes": 13,
     "africa": 1,
-    "face": 41,
+    "face": 42,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 33,
+    "joy": 35,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -104,7 +105,7 @@
     "cucumber": 5,
     "biceps": 1,
     "tongue": 2,
-    "heart": 18,
+    "heart": 19,
     "shorts": 1,
     "laughing": 20,
     "news": 5,
@@ -145,7 +146,7 @@
     "dog": 2,
     "is": 2,
     "spose": 1,
-    "sunglasses": 1,
+    "sunglasses": 2,
     "kiss": 5,
     "earlier": 1,
     "ghost": 1,
@@ -201,7 +202,9 @@
     "it": 1,
     "food": 1,
     "play": 1,
-    "video": 1
+    "video": 1,
+    "one": 1,
+    "cow": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -483,6 +486,11 @@
       "title": "A Man Experience (Feat. Birds)",
       "start_ts": 1658880465,
       "youtube_archive_id": "suWt_vzHLWg"
+    },
+    "a_man_feat_birds": {
+      "title": "A Man Feat. Birds",
+      "start_ts": 1683417020,
+      "youtube_archive_id": "7GHrE8-szZo"
     }
   },
   "messages": [
@@ -3282,6 +3290,76 @@
       "message": "me: 2 men online, wonder what this is about *joins live* \"oh yeah touch me\"",
       "commands": [
         "me"
+      ]
+    },
+    {
+      "ts": 1683439116,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "goodnight chat, sleep well, I'll be up drinking :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683437182,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "what we on and how much for 3am dad :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1683427425,
+      "username": "@MothersNutMilk",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "Play exposed I miss it :crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1683425434,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "Pretty sure she's Cajun or something, not Hispanic :rolling_on_the_floor_laughing::cat_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683424329,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "Describe cow milking in aroused old lady voice :glass_of_milk::cow:",
+      "commands": [
+        "cow"
+      ]
+    },
+    {
+      "ts": 1683424182,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "Hey Rich. Can you catch me up on what\u2019s going on? Here\u2019s five dollars for being such an amazing entertainer and great human being. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1683419519,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "a_man_feat_birds",
+      "message": "Oh I can answer that one: Phil despises all content creators more successful than him, so basically he only likes people who \u201cgive him a fair shake\u201d.",
+      "commands": [
+        "one"
       ]
     },
     {
