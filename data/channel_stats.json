@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094469,
+  "updated_ts": 1782094522,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -64,7 +64,8 @@
     "a_man_in_poughkeepsie_irl_streaming",
     "a_man_is_back_for_a_bit",
     "a_man_is_back_sexecoco_style",
-    "a_man_is_staying_on_till_1_am"
+    "a_man_is_staying_on_till_1_am",
+    "a_man_is_streaming_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1074,6 +1075,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.92,
       "avg_active_chatters": 39.2
+    },
+    "a_man_is_streaming_feat_birds": {
+      "stream_id": "a_man_is_streaming_feat_birds",
+      "title": "A Man Is Streaming (Feat. Birds)",
+      "start_ts": 1656012673,
+      "end_ts": 1656018948,
+      "duration_sec": 6275,
+      "youtube_archive_id": "ZmKrQdDc66s",
+      "source_platform": "youtube",
+      "total_donations_usd": 99.72,
+      "donation_count": 29,
+      "donations_per_min": 0.9535,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.38,
+      "avg_active_chatters": 30.7
     }
   }
 }
