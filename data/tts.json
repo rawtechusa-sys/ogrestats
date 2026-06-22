@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101670,
+  "updated_ts": 1782101677,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -513,7 +513,8 @@
     "philip_burnell_is_excited",
     "philip_burnell_is_under_attack_now_playing_bloodborne",
     "philip_burnells_brilliant_pc_advice",
-    "philip_burnells_chickengate_anniversary_celebration"
+    "philip_burnells_chickengate_anniversary_celebration",
+    "philip_burnells_new_sweater"
   ],
   "commands": {
     "stan": 27,
@@ -546,7 +547,7 @@
     "turkey": 12,
     "eyes": 122,
     "africa": 1,
-    "face": 490,
+    "face": 492,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 319,
@@ -560,7 +561,7 @@
     "cucumber": 55,
     "biceps": 5,
     "tongue": 12,
-    "heart": 150,
+    "heart": 151,
     "shorts": 2,
     "laughing": 192,
     "news": 22,
@@ -582,7 +583,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 53,
+    "rooster": 54,
     "peach": 15,
     "fire": 25,
     "kendal": 1,
@@ -593,10 +594,10 @@
     "shrugging": 6,
     "donation": 3,
     "naruto": 1,
-    "hands": 31,
+    "hands": 32,
     "horns": 8,
     "crab": 2,
-    "superhero": 30,
+    "superhero": 31,
     "legends": 2,
     "dog": 11,
     "is": 8,
@@ -696,7 +697,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 24,
+    "sweat": 25,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -722,7 +723,7 @@
     "spoiler": 2,
     "mug": 4,
     "pachter": 3,
-    "eagle": 7,
+    "eagle": 8,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
     "say": 4,
@@ -1058,7 +1059,8 @@
     "groups": 1,
     "nutshell": 1,
     "logic": 1,
-    "all": 1
+    "all": 1,
+    "dlc": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3620,6 +3622,11 @@
       "title": "Philip Burnell's #Chickengate Anniversary Celebration",
       "start_ts": 1694220369,
       "youtube_archive_id": "NIVAYPTcbc4"
+    },
+    "philip_burnells_new_sweater": {
+      "title": "Philip Burnell's New Sweater",
+      "start_ts": 1703645030,
+      "youtube_archive_id": "DQl9Gp1a928"
     }
   },
   "messages": [
@@ -8321,6 +8328,69 @@
       "message": "Why do horses run on courses song later? please :folded_hands:",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1703654954,
+      "username": "@Adam201028",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "Power wash simulator DLC: Clean derich's bedroom",
+      "commands": [
+        "dlc"
+      ]
+    },
+    {
+      "ts": 1703647986,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "also Merry Christmas!! I forgot last stream :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1703647875,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "Hero in :man_superhero: that voice sounds like bob Sagat :grinning_squinting_face:",
+      "commands": [
+        "superhero",
+        "face"
+      ]
+    },
+    {
+      "ts": 1703646085,
+      "username": "@bradicalprime",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "Merry Horsemas and Happy New Birds everyone :horse::rooster: Also Rich, I recently got a Quest 3 and wanted to confirm it is adjustable for us glasses wearers :nerd_face:",
+      "commands": [
+        "rooster",
+        "face"
+      ]
+    },
+    {
+      "ts": 1703645553,
+      "username": "@BohabIdot199",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "Good evening Dad, merry Christmas & DSP is a man with an ass. Phil sounds please :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1703645500,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_new_sweater",
+      "message": "Good evening Birdfather. :blue_heart: I\u2019m sorry that I asked to be unmodded last stream. Anyway, in better news, I wanna be a bird Pok\u00e9mon, just like my pic. :eagle:",
+      "commands": [
+        "heart",
+        "eagle"
       ]
     },
     {
