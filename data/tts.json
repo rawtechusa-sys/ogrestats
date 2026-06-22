@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099886,
+  "updated_ts": 1782099895,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -288,7 +288,8 @@
     "friday_night_shoulders",
     "furry_cringe_feat_keemstar",
     "g4tv_family_fun",
-    "getting_high_on_a_saturday_a_brewing_brony_war"
+    "getting_high_on_a_saturday_a_brewing_brony_war",
+    "girlfriend_kicked_me_out_of_bed_so_im_back"
   ],
   "commands": {
     "stan": 27,
@@ -609,7 +610,7 @@
     "currently": 1,
     "article": 1,
     "life": 1,
-    "monocle": 2,
+    "monocle": 3,
     "store": 1,
     "pump": 1,
     "robot": 1,
@@ -656,7 +657,9 @@
     "jontron": 1,
     "nintendo": 1,
     "spoilers": 1,
-    "dmx": 1
+    "dmx": 1,
+    "anyway": 1,
+    "said": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2093,6 +2096,11 @@
       "title": "Getting High On A Saturday (A Brewing Brony War)",
       "start_ts": 1684021732,
       "youtube_archive_id": "oQsKhi5uHmo"
+    },
+    "girlfriend_kicked_me_out_of_bed_so_im_back": {
+      "title": "Girlfriend Kicked Me Out Of Bed. So I'm Back.",
+      "start_ts": 1670814696,
+      "youtube_archive_id": "B0lTNeO-8k4"
     }
   },
   "messages": [
@@ -10772,6 +10780,27 @@
       "message": "Hey Rich. From your stream last night, I just wanted to say thank you for being a great entertainer and showing empathy for me when I lost my mother. Here\u2019s ten bucks for being a man with birds. :duck:",
       "commands": [
         "duck"
+      ]
+    },
+    {
+      "ts": 1670817951,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "girlfriend_kicked_me_out_of_bed_so_im_back",
+      "message": "Just jumped on, and see Rich shirtless watching \"To catch a predator\"... I'm so confused. :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1670815131,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "girlfriend_kicked_me_out_of_bed_so_im_back",
+      "message": "Hey Rich, sorry for not being active lately, I\u2018m in Dubai for my Holidays. Anyway: imagine the kid at TGA would have said: I would like to dedicate this award, to my thoroughly tickled man, Quantum TV",
+      "commands": [
+        "anyway",
+        "said"
       ]
     },
     {
