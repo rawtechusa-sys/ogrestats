@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100388,
+  "updated_ts": 1782100398,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -345,7 +345,8 @@
     "irrelevant_youtuber_plays_saints_row_2022",
     "is_the_ps5_revision_that_bad_feat_joker_productions",
     "its_a_question",
-    "its_all_about_casey"
+    "its_all_about_casey",
+    "its_all_about_keemstar_and_birds"
   ],
   "commands": {
     "stan": 27,
@@ -378,10 +379,10 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 323,
+    "face": 324,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 234,
+    "joy": 236,
     "gameboy": 1,
     "chick": 2,
     "carlos": 29,
@@ -394,7 +395,7 @@
     "tongue": 6,
     "heart": 106,
     "shorts": 1,
-    "laughing": 133,
+    "laughing": 134,
     "news": 18,
     "chicken": 40,
     "cake": 7,
@@ -414,7 +415,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 35,
+    "rooster": 36,
     "peach": 9,
     "fire": 20,
     "kendal": 1,
@@ -430,10 +431,10 @@
     "crab": 2,
     "superhero": 25,
     "legends": 2,
-    "dog": 4,
+    "dog": 5,
     "is": 6,
     "spose": 1,
-    "sunglasses": 16,
+    "sunglasses": 17,
     "kiss": 21,
     "earlier": 1,
     "ghost": 1,
@@ -507,7 +508,7 @@
     "day": 1,
     "struck": 3,
     "joker": 1,
-    "racehorse": 7,
+    "racehorse": 8,
     "question": 8,
     "mushroom": 2,
     "trilogy": 1,
@@ -771,7 +772,8 @@
     "case": 1,
     "way": 1,
     "judge": 1,
-    "system": 1
+    "system": 1,
+    "mark": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2493,6 +2495,11 @@
       "title": "It's All About Casey...",
       "start_ts": 1639702646,
       "youtube_archive_id": "dQwevWaSfho"
+    },
+    "its_all_about_keemstar_and_birds": {
+      "title": "It's All About Keemstar (And Birds)",
+      "start_ts": 1641346931,
+      "youtube_archive_id": "4b80dTR7law"
     }
   },
   "messages": [
@@ -17287,6 +17294,96 @@
       "platform": "youtube",
       "stream_id": "come_ask_a_man_questions_poultry_edition",
       "message": "You think that's bad, here we have Ted Cruz and John Cornyn :upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641354042,
+      "username": "@knifeyboy82",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "I need an hour loop please :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641352881,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "Say a sentence or 2 as Biden please. I\u2019m high :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1641349792,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "I pray to the Gods for one day for me to have such a thick and mighty :rooster: like you do there Rich. The longer I gaze at it the more I am hypnotized",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1641349774,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "If anyone is interested in getting a L.E RTUSA grip from Satisfye gaming email them as they said they were interested in doing one with Rich but had to:check_mark: with the higher ups 1st.More that do > chance",
+      "commands": [
+        "mark"
+      ]
+    },
+    {
+      "ts": 1641349565,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "Samsung's new QD OLED TV supports 144Hz 4K too. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1641349515,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "Yeah but what my hands tasted like Chicken? :face_with_tears_of_joy: Like Carlos\u2019s but",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1641349259,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "I had to take a covid test at my job. So I look around and I ask the guy where the test is, he came up to me with a dog. :dog: The dog licked my hand and he was like, ok your good to go. I shit you not.",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1641347995,
+      "username": "@beagleboygaming1701",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "goodbyeeeee :racehorse: horseeesss",
+      "commands": [
+        "racehorse"
+      ]
+    },
+    {
+      "ts": 1641347720,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "message": "Both of my trump supporting neighbors got covid and passed away today :disappointed_face: i hate their political beliefs but they were good people, i'll miss them",
       "commands": [
         "face"
       ]
