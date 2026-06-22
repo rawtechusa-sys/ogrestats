@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100829,
+  "updated_ts": 1782100836,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -402,7 +402,8 @@
     "lets_have_some_fun",
     "lets_laugh_at_alex_jones",
     "lets_laugh_at_alex_jones_again",
-    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man"
+    "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
+    "lets_laugh_at_crap_crowdfunding_campaigns"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6820,6 +6821,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.56,
       "avg_active_chatters": 33.32
+    },
+    "lets_laugh_at_crap_crowdfunding_campaigns": {
+      "stream_id": "lets_laugh_at_crap_crowdfunding_campaigns",
+      "title": "Let's Laugh At Crap Crowdfunding Campaigns",
+      "start_ts": 1646013590,
+      "end_ts": 1646022912,
+      "duration_sec": 9322,
+      "youtube_archive_id": "fe8DOqT0v-g",
+      "source_platform": "youtube",
+      "total_donations_usd": 195.83,
+      "donation_count": 51,
+      "donations_per_min": 1.2604,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.31,
+      "avg_active_chatters": 26.18
     }
   }
 }
