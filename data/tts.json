@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093130,
+  "updated_ts": 1782093169,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -35,7 +35,8 @@
     "a_dspgaming_and_wingsofredemption_man_stream",
     "a_dspgaming_family_fun_stream",
     "a_family_friendly_christian_straight_man_stream",
-    "a_family_friendly_heterosexual_stream"
+    "a_family_friendly_heterosexual_stream",
+    "a_floor_thrusting_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -82,11 +83,11 @@
     "cucumber": 4,
     "biceps": 1,
     "tongue": 1,
-    "heart": 14,
+    "heart": 15,
     "shorts": 1,
     "laughing": 8,
     "news": 3,
-    "chicken": 4,
+    "chicken": 5,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -141,7 +142,11 @@
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 1,
-    "reviewtoddhowardusa": 1
+    "reviewtoddhowardusa": 1,
+    "coco": 1,
+    "board": 1,
+    "reviewtrumpusa": 1,
+    "reviewseinfeldusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -313,6 +318,11 @@
       "title": "A Family Friendly Heterosexual Stream",
       "start_ts": 1694044855,
       "youtube_archive_id": "vO5k3zSGQYk"
+    },
+    "a_floor_thrusting_man_stream": {
+      "title": "A Floor Thrusting Man Stream",
+      "start_ts": 1691708299,
+      "youtube_archive_id": "-AQcgzlkPqs"
     }
   },
   "messages": [
@@ -2612,6 +2622,66 @@
       "message": "Just know hero in :superhero: my wife is white hot",
       "commands": [
         "superhero"
+      ]
+    },
+    {
+      "ts": 1691721766,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "ReviewSeinfeldUSA: DSP needs a team like the elephant man.",
+      "commands": [
+        "reviewseinfeldusa"
+      ]
+    },
+    {
+      "ts": 1691721623,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "ReviewTrumpUSA: Make Reactions Great Again.",
+      "commands": [
+        "reviewtrumpusa"
+      ]
+    },
+    {
+      "ts": 1691718718,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "Mystery Science theater 3000 is great example of reaction, and transformative content. :clapper_board: *breasts*",
+      "commands": [
+        "board"
+      ]
+    },
+    {
+      "ts": 1691718601,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "here Richie for the goal :mushroom::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1691711883,
+      "username": "@LilVinny395",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "Srry rich, tried to be funny there. That was my first superchat ever, been watching you for 3 yrs, since before the birds. U helped get me through some tough times. :red_heart: your content. DSP blows bubbles",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1691709120,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_floor_thrusting_man_stream",
+      "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
+      "commands": [
+        "coco"
       ]
     },
     {
