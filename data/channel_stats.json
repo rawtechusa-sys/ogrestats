@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099803,
+  "updated_ts": 1782099811,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -279,7 +279,8 @@
     "elden_ring_fails_compilation_marathon_eldenring",
     "elon_musk_bought_me_a_bird",
     "everyone_on_the_internet_loves_me",
-    "exposing_the_anti_woke_frauds"
+    "exposing_the_anti_woke_frauds",
+    "father_is_sick_jaysus_saves"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4729,6 +4730,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.55,
       "avg_active_chatters": 24.32
+    },
+    "father_is_sick_jaysus_saves": {
+      "stream_id": "father_is_sick_jaysus_saves",
+      "title": "Father Is Sick, Jaysus Saves",
+      "start_ts": 1705618828,
+      "end_ts": 1705633485,
+      "duration_sec": 14657,
+      "youtube_archive_id": "ZVUGtPzRvRY",
+      "source_platform": "youtube",
+      "total_donations_usd": 330.55,
+      "donation_count": 76,
+      "donations_per_min": 1.3531,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.9,
+      "avg_active_chatters": 32.39
     }
   }
 }
