@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101091,
+  "updated_ts": 1782101098,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -436,7 +436,8 @@
     "man_vs_birdemic_the_film_feat_birds",
     "man_vs_birds_vs_wii_u_its_fixed",
     "man_vs_demon_souls_remake",
-    "man_vs_men_live"
+    "man_vs_men_live",
+    "man_vs_qvc"
   ],
   "commands": {
     "stan": 27,
@@ -482,8 +483,8 @@
     "voice": 5,
     "cucumber": 50,
     "biceps": 5,
-    "tongue": 7,
-    "heart": 134,
+    "tongue": 8,
+    "heart": 139,
     "shorts": 1,
     "laughing": 167,
     "news": 20,
@@ -512,7 +513,7 @@
     "up": 41,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 12,
+    "facepalming": 13,
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
@@ -925,7 +926,8 @@
     "cod": 1,
     "population": 1,
     "swords": 1,
-    "ctr": 1
+    "ctr": 1,
+    "confession": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3102,6 +3104,11 @@
       "title": "Man Vs. Men LIVE",
       "start_ts": 1693612994,
       "youtube_archive_id": "qoJw9idGSmg"
+    },
+    "man_vs_qvc": {
+      "title": "Man Vs. QVC",
+      "start_ts": 1638323063,
+      "youtube_archive_id": "0s11ddN-tM4"
     }
   },
   "messages": [
@@ -22774,6 +22781,56 @@
       "message": "Mister-Meh-Review-TekherUSA Stream: Let\u2019s go Jim!",
       "commands": [
         "stream"
+      ]
+    },
+    {
+      "ts": 1638331011,
+      "username": "@Billy-Dillinger",
+      "platform": "youtube",
+      "stream_id": "man_vs_qvc",
+      "message": "I remember being stoned back in the day watching QVC trying to sell a disc man and they stumbled just as hard selling that as this switch lite. :man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1638329937,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "man_vs_qvc",
+      "message": "shocking confession: I never cared for ads as kid I just wanted to watch cartoons and anime. I remember most ads ending with a blue screen",
+      "commands": [
+        "confession"
+      ]
+    },
+    {
+      "ts": 1638328748,
+      "username": "@itsjustrobby",
+      "platform": "youtube",
+      "stream_id": "man_vs_qvc",
+      "message": "best buy protech for $199 so f worth bro :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1638328524,
+      "username": "@shawmann8414",
+      "platform": "youtube",
+      "stream_id": "man_vs_qvc",
+      "message": "sorry Rich, thought I did that a long time ago. Wife and I are fans sir .... well , of Carlos , get that bird some feed please sir :face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1638328126,
+      "username": "@itsjustrobby",
+      "platform": "youtube",
+      "stream_id": "man_vs_qvc",
+      "message": "Mod me Rich :red_heart: I'm not a fly by the night type of guy and you can always @ me in discord and via Cody -- ya'll streamers can @ me :red_heart: :red_heart: :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
