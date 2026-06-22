@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099092,
+  "updated_ts": 1782099100,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -193,7 +193,8 @@
     "come_ask_a_man_questions",
     "come_ask_a_man_questions_poultry_edition",
     "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
-    "come_ask_me_almost_anything"
+    "come_ask_me_almost_anything",
+    "come_ask_me_literally_anything_this_is_a_mistake"
   ],
   "commands": {
     "stan": 27,
@@ -226,10 +227,10 @@
     "turkey": 5,
     "eyes": 52,
     "africa": 1,
-    "face": 158,
+    "face": 160,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 119,
+    "joy": 120,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -310,7 +311,7 @@
     "horse": 2,
     "bug": 1,
     "violin": 1,
-    "update": 4,
+    "update": 5,
     "wings": 1,
     "advice": 2,
     "ghostwire": 1,
@@ -359,7 +360,7 @@
     "question": 6,
     "mushroom": 2,
     "trilogy": 1,
-    "spider": 1,
+    "spider": 2,
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
@@ -474,7 +475,8 @@
     "wrong": 1,
     "distance": 1,
     "cheat": 1,
-    "here": 1
+    "here": 1,
+    "hamburger": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1436,6 +1438,11 @@
       "title": "Come Ask Me (Almost) Anything",
       "start_ts": 1635122822,
       "youtube_archive_id": "juZTaRzGdwg"
+    },
+    "come_ask_me_literally_anything_this_is_a_mistake": {
+      "title": "Come Ask Me Literally Anything (This is A Mistake)",
+      "start_ts": 1662428201,
+      "youtube_archive_id": "rXR3PJFRDpQ"
     }
   },
   "messages": [
@@ -8319,6 +8326,66 @@
       "message": "I wanna see Tobey Maguire\u2019s holes:spider_web:",
       "commands": [
         "web"
+      ]
+    },
+    {
+      "ts": 1662432722,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "You have to try Fried Maggots. Its so good :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1662431538,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "Did :hamburger: King Ever Respond to Phil? Rich I must Know!",
+      "commands": [
+        "hamburger"
+      ]
+    },
+    {
+      "ts": 1662430701,
+      "username": "@black2785",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "You ready for an Elden Ring Remake/Remaster? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662429807,
+      "username": "@jaymundo223",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "hell yeah im excited for mw2 idk ps5 or Xbox X? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1662428949,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "I wanna see the holes:spider_web::spider:",
+      "commands": [
+        "spider"
+      ]
+    },
+    {
+      "ts": 1662428660,
+      "username": "@WickedGrom",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "message": "PC Update: Went to microcenter and walked out with a 3070 TI, Ryzen 7 5800X, 32GB more ram, and a AIO cooler...haha",
+      "commands": [
+        "update"
       ]
     },
     {
