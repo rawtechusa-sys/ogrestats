@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099471,
+  "updated_ts": 1782099480,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -239,7 +239,8 @@
     "dad_had_some_ipas_come_ask_questions",
     "dad_is_back",
     "dad_streams_the_playstation_showcase_2021",
-    "dads_40th_birthday_stream"
+    "dads_40th_birthday_stream",
+    "dads_back_for_a_bit"
   ],
   "commands": {
     "stan": 27,
@@ -283,10 +284,10 @@
     "idea": 2,
     "fear": 3,
     "voice": 4,
-    "cucumber": 24,
+    "cucumber": 25,
     "biceps": 3,
     "tongue": 5,
-    "heart": 70,
+    "heart": 71,
     "shorts": 1,
     "laughing": 68,
     "news": 13,
@@ -312,7 +313,7 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 21,
+    "up": 22,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -322,7 +323,7 @@
     "hands": 15,
     "horns": 6,
     "crab": 2,
-    "superhero": 14,
+    "superhero": 15,
     "legends": 1,
     "dog": 4,
     "is": 5,
@@ -558,7 +559,9 @@
     "reminder": 1,
     "sbmm": 1,
     "currently": 1,
-    "article": 1
+    "article": 1,
+    "life": 1,
+    "monocle": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1750,6 +1753,11 @@
       "title": "Dad's 40th Birthday Stream",
       "start_ts": 1626396637,
       "youtube_archive_id": "JGjqnuh7SrQ"
+    },
+    "dads_back_for_a_bit": {
+      "title": "Dad's Back. For A Bit...",
+      "start_ts": 1692931187,
+      "youtube_archive_id": "gdOKs26S2-c"
     }
   },
   "messages": [
@@ -6487,6 +6495,57 @@
       "message": "Just know hero in :superhero: my wife is white hot",
       "commands": [
         "superhero"
+      ]
+    },
+    {
+      "ts": 1692938608,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dads_back_for_a_bit",
+      "message": "She looks so happy to see that church burn ! Almost like it validates her prejudices ! :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1692935460,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "dads_back_for_a_bit",
+      "message": "Initialize, my brotha. The NAVY can be fun my bros+ sisters. RTU is a good man and you should talk to recruiter today!!! HM or PS Admin is hard! :red_heart::red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1692935166,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "dads_back_for_a_bit",
+      "message": "just know :index_pointing_up: you can start my poll :man_superhero:",
+      "commands": [
+        "up",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1692935165,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "dads_back_for_a_bit",
+      "message": "I\u2019m sorry about everything. We had a confident president and idk want to say. Free medical and retirement for life: I joined USN to save livesZ you\u2019re not alone. Corpsman for life!!!!",
+      "commands": [
+        "life"
+      ]
+    },
+    {
+      "ts": 1692935139,
+      "username": "@rtusburritoeattingbrother",
+      "platform": "youtube",
+      "stream_id": "dads_back_for_a_bit",
+      "message": "Listen, swim back to the tip of the soup bowl. Be a member for 25 months just so you can flex a golden cucumber :cucumber: that no one gives a shit about.",
+      "commands": [
+        "cucumber"
       ]
     },
     {
