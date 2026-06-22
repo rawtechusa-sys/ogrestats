@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102248,
+  "updated_ts": 1782102258,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -609,7 +609,8 @@
     "story_time_from_canada",
     "straight_white_men_discuss_sidescrollers",
     "stream_vs_man",
-    "streaming_fear_2_for_a_bit_then_being_a_reacting_man"
+    "streaming_fear_2_for_a_bit_then_being_a_reacting_man",
+    "streaming_till_2_am"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10339,6 +10340,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.44,
       "avg_active_chatters": 20.2
+    },
+    "streaming_till_2_am": {
+      "stream_id": "streaming_till_2_am",
+      "title": "Streaming Till 2 AM",
+      "start_ts": 1684364408,
+      "end_ts": 1684389634,
+      "duration_sec": 25226,
+      "youtube_archive_id": "QB9wBqOUaD8",
+      "source_platform": "youtube",
+      "total_donations_usd": 713.71,
+      "donation_count": 87,
+      "donations_per_min": 1.6976,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.98,
+      "avg_active_chatters": 22.3
     }
   }
 }
