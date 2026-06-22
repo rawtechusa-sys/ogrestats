@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101881,
+  "updated_ts": 1782101891,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -552,7 +552,8 @@
     "quantum_tv_intellivision_and_more_elden_ring",
     "quantum_tvs_former_ally_comes_to_tell_his_story_featuring_tickled_birds",
     "quantum_tvs_terrible_god_of_war_ragnarok_review",
-    "quantum_tvsdiscordleaked_plus_im_making_drinks"
+    "quantum_tvsdiscordleaked_plus_im_making_drinks",
+    "quick_bird_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9370,6 +9371,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 22.48,
       "avg_active_chatters": 75.59
+    },
+    "quick_bird_stream": {
+      "stream_id": "quick_bird_stream",
+      "title": "Quick Bird Stream",
+      "start_ts": 1678591449,
+      "end_ts": 1678602746,
+      "duration_sec": 11297,
+      "youtube_archive_id": "RPuTO0Mc1LY",
+      "source_platform": "youtube",
+      "total_donations_usd": 212.79,
+      "donation_count": 62,
+      "donations_per_min": 1.1302,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.47,
+      "avg_active_chatters": 26.64
     }
   }
 }
