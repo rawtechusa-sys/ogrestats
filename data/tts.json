@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099247,
+  "updated_ts": 1782099255,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -212,7 +212,8 @@
     "come_ask_questions_no_vids_tonight",
     "come_ask_questions_watching_my_old_keemstar_debate",
     "come_ask_shirtless_men_questions",
-    "come_be_tired_and_miserable_with_me"
+    "come_be_tired_and_miserable_with_me",
+    "come_chat_with_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -243,7 +244,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 55,
+    "eyes": 56,
     "africa": 1,
     "face": 189,
     "petersonxhhanson": 1,
@@ -262,7 +263,7 @@
     "heart": 63,
     "shorts": 1,
     "laughing": 59,
-    "news": 12,
+    "news": 13,
     "chicken": 31,
     "cake": 7,
     "d": 1,
@@ -505,7 +506,8 @@
     "doody": 1,
     "ex": 1,
     "curious": 1,
-    "extinguisher": 1
+    "extinguisher": 1,
+    "russia": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1562,6 +1564,11 @@
       "title": "Come Be Tired And Miserable With Me",
       "start_ts": 1625703797,
       "youtube_archive_id": "6IpgwlHOKvY"
+    },
+    "come_chat_with_a_man": {
+      "title": "Come Chat With A Man",
+      "start_ts": 1645666014,
+      "youtube_archive_id": "ewFASGGmFwg"
     }
   },
   "messages": [
@@ -10420,6 +10427,36 @@
       "message": "Hey rich, bought the Hisense u7g it arrives tomorrow along with gran turismo 7 can\u2019t wait, love the streams as well!\ud83e\udd18\ud83c\udffe:fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1645670249,
+      "username": "@theballard49er",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_a_man",
+      "message": "Hey we have wings of redemption, Russia: hold my vodka",
+      "commands": [
+        "russia"
+      ]
+    },
+    {
+      "ts": 1645666832,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_a_man",
+      "message": "Breaking news: DSP uprecutted to the moon after trying to fight mike tyson, upon his impact with the moon the echo of \"stinks like shit* could be herd",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1645666359,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_a_man",
+      "message": "Hey! Do I have an opportunity for you! You sell your current console on eBay and I'll give you the chance to win the newest next gen system! :grinning_face_with_sweat::face_with_tears_of_joy::rolling_on_the_floor_laughing::face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
