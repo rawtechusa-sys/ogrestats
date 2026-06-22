@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100326,
+  "updated_ts": 1782100335,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -338,7 +338,8 @@
     "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
     "intellivision_amico_family_fun_and_the_quartering_swatted",
     "intellivision_amico_family_fun_night_plus_newegg_drama",
-    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live"
+    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
+    "intellivision_family_fun_keffals_and_lady_decade"
   ],
   "commands": {
     "stan": 27,
@@ -371,7 +372,7 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 316,
+    "face": 318,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 230,
@@ -387,7 +388,7 @@
     "tongue": 6,
     "heart": 106,
     "shorts": 1,
-    "laughing": 126,
+    "laughing": 128,
     "news": 18,
     "chicken": 39,
     "cake": 7,
@@ -536,7 +537,7 @@
     "this": 1,
     "notes": 13,
     "wars": 1,
-    "points": 5,
+    "points": 6,
     "wastebasket": 1,
     "left": 3,
     "flag": 1,
@@ -2446,6 +2447,11 @@
       "title": "Intellivision Family Fun, AYA NEO AIR UNBOXING, WATCHING MEN LIVE",
       "start_ts": 1659654243,
       "youtube_archive_id": "1hzARw3MSt0"
+    },
+    "intellivision_family_fun_keffals_and_lady_decade": {
+      "title": "Intellivision Family Fun, Keffals And Lady Decade",
+      "start_ts": 1660175140,
+      "youtube_archive_id": "wFKIO1rxKRs"
     }
   },
   "messages": [
@@ -13697,6 +13703,56 @@
       "commands": [
         "face",
         "sweat"
+      ]
+    },
+    {
+      "ts": 1660180322,
+      "username": "@ScroffToffee1309",
+      "platform": "youtube",
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "message": "My Dog is in the room as I watch and when you burped made my dog bark :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1660179805,
+      "username": "@Dirk_Mcousky",
+      "platform": "youtube",
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "message": "creative freedom is a good way to keep your mental health in a good place. all for it :hundred_points:",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1660179595,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "message": "DSP O-face, Chicken sandwich, Kat cries. It's Wed:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660176814,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "message": "Hi rich, hope you're well. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1660176526,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "intellivision_family_fun_keffals_and_lady_decade",
+      "message": "Coldfeet Crowder called for a civil war :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
