@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099596,
+  "updated_ts": 1782099605,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -254,7 +254,8 @@
     "dr_cocos_house_of_healing",
     "drinking_stories_with_intro_guy",
     "drunk_women_phil_and_a_man",
-    "dsp_dkoldies_and_a_man"
+    "dsp_dkoldies_and_a_man",
+    "dsp_intellivision_family_fun_and_prank_calls"
   ],
   "commands": {
     "stan": 27,
@@ -290,7 +291,7 @@
     "face": 225,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 157,
+    "joy": 159,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -303,7 +304,7 @@
     "tongue": 5,
     "heart": 75,
     "shorts": 1,
-    "laughing": 73,
+    "laughing": 74,
     "news": 13,
     "chicken": 33,
     "cake": 7,
@@ -588,7 +589,8 @@
     "locomotive": 1,
     "bubble": 1,
     "reality": 1,
-    "popcorn": 1
+    "popcorn": 1,
+    "lemon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1855,6 +1857,11 @@
       "title": "DSP, DKOldies, And A Man.",
       "start_ts": 1674685464,
       "youtube_archive_id": "wIlXPsF-HPw"
+    },
+    "dsp_intellivision_family_fun_and_prank_calls": {
+      "title": "DSP, Intellivision Family Fun, And Prank Calls",
+      "start_ts": 1657756333,
+      "youtube_archive_id": "mIo2uU23SFE"
     }
   },
   "messages": [
@@ -10338,6 +10345,46 @@
       "message": "quantum at it again on controversial truth :rolling_on_the_floor_laughing: watch",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1657763982,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "dsp_intellivision_family_fun_and_prank_calls",
+      "message": "His PC doesn't like being an accomplice to fappin:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1657763576,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "dsp_intellivision_family_fun_and_prank_calls",
+      "message": "His pc still a windows 8 pc :face_with_tears_of_joy:the 3k :lemon:",
+      "commands": [
+        "lemon"
+      ]
+    },
+    {
+      "ts": 1657762929,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "dsp_intellivision_family_fun_and_prank_calls",
+      "message": "Yo, at THAT point, you throw the cookies and RUN:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1657762860,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "dsp_intellivision_family_fun_and_prank_calls",
+      "message": "Tommy Amiico is the Mario Lopez no one asked for :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
