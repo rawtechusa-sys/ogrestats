@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102627,
+  "updated_ts": 1782102633,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -675,7 +675,8 @@
     "the_piers_morgan_ye_interview_pt2",
     "the_power_of_a_man_feat_birds",
     "the_pre_stream_i_finished_setting_up_the_monitor_early",
-    "the_quarteringintellivision_family_fun_continues"
+    "the_quarteringintellivision_family_fun_continues",
+    "the_quest_for_a_cupcake"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11461,6 +11462,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.5,
       "avg_active_chatters": 32.55
+    },
+    "the_quest_for_a_cupcake": {
+      "stream_id": "the_quest_for_a_cupcake",
+      "title": "The Quest For A Cupcake",
+      "start_ts": 1680996742,
+      "end_ts": 1681009523,
+      "duration_sec": 12781,
+      "youtube_archive_id": "IiUgWo2ynuA",
+      "source_platform": "youtube",
+      "total_donations_usd": 620.94,
+      "donation_count": 114,
+      "donations_per_min": 2.915,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.77,
+      "avg_active_chatters": 28.04
     }
   }
 }
