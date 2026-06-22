@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099826,
+  "updated_ts": 1782099835,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -281,7 +281,8 @@
     "exposing_the_anti_woke_frauds",
     "father_is_sick_jaysus_saves",
     "final_chicken_suit_stream_featuring_birds",
-    "friday_night_internet_man"
+    "friday_night_internet_man",
+    "friday_night_man_fun_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -314,10 +315,10 @@
     "turkey": 6,
     "eyes": 69,
     "africa": 1,
-    "face": 256,
+    "face": 258,
     "petersonxhhanson": 1,
-    "poo": 16,
-    "joy": 186,
+    "poo": 17,
+    "joy": 187,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -330,8 +331,8 @@
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 84,
-    "news": 16,
+    "laughing": 85,
+    "news": 17,
     "chicken": 37,
     "cake": 7,
     "d": 2,
@@ -350,7 +351,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 25,
+    "rooster": 26,
     "peach": 6,
     "fire": 17,
     "kendal": 1,
@@ -422,7 +423,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 9,
+    "it": 10,
     "food": 2,
     "play": 1,
     "video": 1,
@@ -444,7 +445,7 @@
     "struck": 2,
     "joker": 1,
     "racehorse": 5,
-    "question": 7,
+    "question": 8,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 2,
@@ -2044,6 +2045,11 @@
       "title": "Friday Night internet Man",
       "start_ts": 1631923859,
       "youtube_archive_id": "58ia75XRkR8"
+    },
+    "friday_night_man_fun_feat_birds": {
+      "title": "Friday Night Man Fun (Feat. Birds)",
+      "start_ts": 1663373809,
+      "youtube_archive_id": "gO32ZN2umsQ"
     }
   },
   "messages": [
@@ -11166,6 +11172,96 @@
       "message": "Apple: You want USB in the iPhone 15, we'll give you USB! [installs USB micro]",
       "commands": [
         "apple"
+      ]
+    },
+    {
+      "ts": 1663384337,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "If Sony loses cod they have to reboot resistance:rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1663380605,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "This game disturbed me when i was younger :pleading_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1663378365,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "Breaking news: man potentially cheating in high level chess game using morse code vibrating anal beads , i wish i was kiding but i'm not i swear",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1663378178,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "DSP tries it: bugs",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1663375810,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "R Play Games With Us and let us join , be fun :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1663375809,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "someone was spamming him about wwe. he lost his :pile_of_poo:",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1663375399,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "real question: did you get giggity and bazinga on your sound board? not a priority, if you don't, you don't, just curious",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1663375286,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "it's all good pimp. I was being an ass. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1663374512,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_fun_feat_birds",
+      "message": "flonting your gigantic :rooster:on stream. yeah that's very engaging :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
