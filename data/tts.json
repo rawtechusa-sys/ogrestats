@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101522,
+  "updated_ts": 1782101529,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -493,7 +493,8 @@
     "no_bird_suit_but_a_new_bird",
     "non_stop_vegan_tickling",
     "normal_man_stream_almost_burnt_down_my_house",
-    "nye_with_a_man_and_birds"
+    "nye_with_a_man_and_birds",
+    "obese_man_eats_live_on_stream_come_ask_questions"
   ],
   "commands": {
     "stan": 27,
@@ -526,13 +527,13 @@
     "turkey": 10,
     "eyes": 116,
     "africa": 1,
-    "face": 470,
+    "face": 473,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 301,
+    "joy": 305,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 38,
+    "carlos": 39,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -540,7 +541,7 @@
     "cucumber": 54,
     "biceps": 5,
     "tongue": 10,
-    "heart": 144,
+    "heart": 145,
     "shorts": 2,
     "laughing": 186,
     "news": 20,
@@ -820,7 +821,7 @@
     "robot": 1,
     "splayed": 1,
     "crown": 2,
-    "game": 4,
+    "game": 5,
     "dialogue": 1,
     "perspective": 1,
     "honeybee": 2,
@@ -1021,7 +1022,9 @@
     "reviewbidenusa": 1,
     "critique": 1,
     "characters": 1,
-    "bros": 1
+    "bros": 1,
+    "light": 1,
+    "jomtron": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3483,6 +3486,11 @@
       "title": "NYE With A Man And Birds",
       "start_ts": 1641000448,
       "youtube_archive_id": "ZoX5otQCh54"
+    },
+    "obese_man_eats_live_on_stream_come_ask_questions": {
+      "title": "Obese Man Eats Live On Stream (Come Ask Questions)",
+      "start_ts": 1673910960,
+      "youtube_archive_id": "LOqyXCoZckA"
     }
   },
   "messages": [
@@ -15521,6 +15529,117 @@
       "message": "Surprising absolutely no one: Jeremy nuked it.",
       "commands": [
         "one"
+      ]
+    },
+    {
+      "ts": 1673927627,
+      "username": "@smokeboytone7146",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "Jontron workplace safety video:pleading_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1673927539,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "jomtron: \"but why, why would you do that?\"",
+      "commands": [
+        "jomtron"
+      ]
+    },
+    {
+      "ts": 1673923718,
+      "username": "@MaxwellMcQuade",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "I was watching the stream live when you made that cameo and r n im dying laughing. :face_with_tears_of_joy: put the horse in your breasts and kiss it and give me breast sound board clips",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1673923681,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "I don\u2019t care about the word gamer. I like it. :video_game:",
+      "commands": [
+        "game"
+      ]
+    },
+    {
+      "ts": 1673919540,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "Phil needs sex and I think he hasn\u2019t had it in a while. He must of made a glory hole when he was looking at the wall the other day. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1673918808,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "My favorite video game song is Luma. It almost always makes me cry when I play Super Mario Galaxy, especially that black hole scene. :weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1673918767,
+      "username": "@TurboPikachu",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "I love snes sim city music :red_heart: I suggest listening to the restored version of Capital that uses the uncompressed samples from user Church of Kondo",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1673917733,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": ":fire::fire:Dad, can you make an album of your mixes. I would totally give you my money. your mixes are ...:fire::fire::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1673913283,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "Rich you know who it was who got Phil to say Humping Steven Crowder :smirking_face: Also where is that new DSP Soundclip from? :face_with_tears_of_joy:",
+      "commands": [
+        "face",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1673912656,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": "I have long hair and a beard. Think mix of Jason mamoa and John Lennon. Amouranth rated me nice hair but pass on smash or pass on Twitch :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1673912321,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "obese_man_eats_live_on_stream_come_ask_questions",
+      "message": ":police_car_light:BURRITO SWAT TEAM OUTSIDE:police_car_light:",
+      "commands": [
+        "light"
       ]
     },
     {
