@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101592,
+  "updated_ts": 1782101599,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -506,7 +506,8 @@
     "phil_discusses_the_documentary_and_complains_about_me",
     "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
     "phil_is_a_man",
-    "phil_is_an_angry_man_and_more_thecompletionist_drama"
+    "phil_is_an_angry_man_and_more_thecompletionist_drama",
+    "philip_burnell_and_tommy_tallarico_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8588,6 +8589,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.08,
       "avg_active_chatters": 49.19
+    },
+    "philip_burnell_and_tommy_tallarico_live": {
+      "stream_id": "philip_burnell_and_tommy_tallarico_live",
+      "title": "Philip Burnell And Tommy Tallarico LIVE",
+      "start_ts": 1664409015,
+      "end_ts": 1664417660,
+      "duration_sec": 8645,
+      "youtube_archive_id": "Eg0uTdU50qY",
+      "source_platform": "youtube",
+      "total_donations_usd": 282.83,
+      "donation_count": 53,
+      "donations_per_min": 1.963,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.08,
+      "avg_active_chatters": 33.17
     }
   }
 }
