@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093682,
+  "updated_ts": 1782093728,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -48,7 +48,8 @@
     "a_jodi_arias_holiday_special",
     "a_large_man_ama",
     "a_large_man_is_streaming",
-    "a_large_man_returns_feat_birds"
+    "a_large_man_returns_feat_birds",
+    "a_large_man_with_seltzer_livestreams"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -802,6 +803,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.25,
       "avg_active_chatters": 41.06
+    },
+    "a_large_man_with_seltzer_livestreams": {
+      "stream_id": "a_large_man_with_seltzer_livestreams",
+      "title": "A Large Man With Seltzer Livestreams",
+      "start_ts": 1525306613,
+      "end_ts": 1525311852,
+      "duration_sec": 5239,
+      "youtube_archive_id": "c8iwRG2XrOY",
+      "source_platform": "youtube",
+      "total_donations_usd": 31.98,
+      "donation_count": 10,
+      "donations_per_min": 0.3663,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 6.67,
+      "avg_active_chatters": 21.22
     }
   }
 }
