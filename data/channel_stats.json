@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100589,
+  "updated_ts": 1782100598,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -368,7 +368,8 @@
     "just_manstreaming_quantum_tv_and_melonie_mac",
     "just_the_tip_tipster_late_night_man_stream",
     "just_two_men_feat_men",
-    "just_watching_some_butt_slapping_competitions"
+    "just_watching_some_butt_slapping_competitions",
+    "karens_and_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6242,6 +6243,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.04,
       "avg_active_chatters": 36.36
+    },
+    "karens_and_birds": {
+      "stream_id": "karens_and_birds",
+      "title": "Karens And Birds",
+      "start_ts": 1660347376,
+      "end_ts": 1660354872,
+      "duration_sec": 7496,
+      "youtube_archive_id": "mQL9VdejTZ8",
+      "source_platform": "youtube",
+      "total_donations_usd": 248.73,
+      "donation_count": 74,
+      "donations_per_min": 1.9909,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.2,
+      "avg_active_chatters": 37.14
     }
   }
 }
