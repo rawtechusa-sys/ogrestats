@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102237,
+  "updated_ts": 1782102242,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -607,7 +607,8 @@
     "stoned_and_streaming_feat_birds_pt2",
     "stoned_as_hell_discussing_the_game_awards",
     "story_time_from_canada",
-    "straight_white_men_discuss_sidescrollers"
+    "straight_white_men_discuss_sidescrollers",
+    "stream_vs_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10305,6 +10306,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 27.05,
       "avg_active_chatters": 62.22
+    },
+    "stream_vs_man": {
+      "stream_id": "stream_vs_man",
+      "title": "Stream Vs. Man",
+      "start_ts": 1631403131,
+      "end_ts": 1631413125,
+      "duration_sec": 9994,
+      "youtube_archive_id": "j4wvEVcmRok",
+      "source_platform": "youtube",
+      "total_donations_usd": 423.83,
+      "donation_count": 83,
+      "donations_per_min": 2.5445,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.07,
+      "avg_active_chatters": 28.22
     }
   }
 }
