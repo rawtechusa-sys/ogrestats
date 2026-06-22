@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098609,
+  "updated_ts": 1782098616,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -133,7 +133,8 @@
     "and_the_nintendo_switch_oled_winners_are",
     "andrew_taint_is_a_man",
     "andrew_tate_is_a_man",
-    "andrew_tate_man_stream_he_got_arrested"
+    "andrew_tate_man_stream_he_got_arrested",
+    "angrily_chatting_and_playing_elden_ring"
   ],
   "commands": {
     "stan": 27,
@@ -182,9 +183,9 @@
     "tongue": 4,
     "heart": 44,
     "shorts": 1,
-    "laughing": 41,
+    "laughing": 43,
     "news": 7,
-    "chicken": 17,
+    "chicken": 18,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -201,7 +202,7 @@
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
-    "hole": 3,
+    "hole": 4,
     "rooster": 14,
     "peach": 3,
     "fire": 8,
@@ -360,7 +361,8 @@
     "yesterday": 1,
     "wonka": 1,
     "simulator": 1,
-    "though": 1
+    "though": 1,
+    "salt": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1022,6 +1024,11 @@
       "title": "Andrew Tate Man Stream (He Got ARRESTED)",
       "start_ts": 1672362905,
       "youtube_archive_id": "SeySwE1xtks"
+    },
+    "angrily_chatting_and_playing_elden_ring": {
+      "title": "Angrily Chatting And Playing Elden Ring",
+      "start_ts": 1648512684,
+      "youtube_archive_id": "xSVmDNIboUM"
     }
   },
   "messages": [
@@ -7342,6 +7349,47 @@
       "message": "can u send me used socks if i win,plz pretty plz:grinning_face_with_sweat::grinning_face_with_sweat:",
       "commands": [
         "sweat"
+      ]
+    },
+    {
+      "ts": 1648516688,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "angrily_chatting_and_playing_elden_ring",
+      "message": "Biden said \u201cnew world order is coming\u201d Imagine alex Jones\u2019s reaction :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1648515811,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "angrily_chatting_and_playing_elden_ring",
+      "message": "Sadly NC also doesn\u2019t allow staking grain of :salt:",
+      "commands": [
+        "salt"
+      ]
+    },
+    {
+      "ts": 1648513519,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "angrily_chatting_and_playing_elden_ring",
+      "message": "Dad your video timing is amazing because Will just now publicly apologized to Chris :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1648513288,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "angrily_chatting_and_playing_elden_ring",
+      "message": "Keep my birds out of your F\u2019ing hole :hole: :chicken:",
+      "commands": [
+        "hole",
+        "chicken"
       ]
     },
     {
