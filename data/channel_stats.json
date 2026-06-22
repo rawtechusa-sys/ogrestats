@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093209,
+  "updated_ts": 1782093249,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -37,7 +37,8 @@
     "a_family_friendly_christian_straight_man_stream",
     "a_family_friendly_heterosexual_stream",
     "a_floor_thrusting_man_stream",
-    "a_fun_dspgaming_man_stream"
+    "a_fun_dspgaming_man_stream",
+    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -615,6 +616,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.07,
       "avg_active_chatters": 37.32
+    },
+    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream": {
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "title": "A G4TV, Quantum TV, Intellivision Amico Disaster Stream",
+      "start_ts": 1647909271,
+      "end_ts": 1647920474,
+      "duration_sec": 11203,
+      "youtube_archive_id": "P4os9YRhYeM",
+      "source_platform": "youtube",
+      "total_donations_usd": 300.69,
+      "donation_count": 81,
+      "donations_per_min": 1.6104,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.82,
+      "avg_active_chatters": 32.19
     }
   }
 }
