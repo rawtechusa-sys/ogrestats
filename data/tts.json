@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101019,
+  "updated_ts": 1782101025,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -426,7 +426,8 @@
     "man_in_birdsuit_livestreams_feat_birds",
     "man_in_chicken_suit_ep2_feat_beautiful_birds",
     "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
-    "man_in_chicken_suit_ep6_more_quantum_karen_tv"
+    "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+    "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds"
   ],
   "commands": {
     "stan": 27,
@@ -457,9 +458,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 97,
+    "eyes": 98,
     "africa": 1,
-    "face": 406,
+    "face": 407,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 273,
@@ -475,7 +476,7 @@
     "tongue": 7,
     "heart": 129,
     "shorts": 1,
-    "laughing": 164,
+    "laughing": 166,
     "news": 20,
     "chicken": 48,
     "cake": 7,
@@ -3039,6 +3040,11 @@
       "title": "Man In Chicken Suit Ep.6 (More Quantum Karen TV)",
       "start_ts": 1652660320,
       "youtube_archive_id": "KrWhbx4mVaw"
+    },
+    "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds": {
+      "title": "Man In Chicken Suit Watches Predator Vids Ep.3 (Feat. Beautiful Birds)",
+      "start_ts": 1652312781,
+      "youtube_archive_id": "EI61zpZqumk"
     }
   },
   "messages": [
@@ -19164,6 +19170,46 @@
       "message": "May the golden order shine upon the chicken man :sparkles:",
       "commands": [
         "sparkles"
+      ]
+    },
+    {
+      "ts": 1652319795,
+      "username": "@ArcanePhantom95",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
+      "message": "Congratulations on the 1M Subs Rich :beaming_face_with_smiling_eyes: Love your Videos Keep up the good work!",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1652316543,
+      "username": "@RealGhostbuster",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
+      "message": "Rich, one time a a scammer called me about my car warranty. He asked what car I drive in which I said a 1959 Cadillac meteor Miller with a no Ghost logo. Pure silence and was told to F off :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1652315900,
+      "username": "@RealGhostbuster",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
+      "message": "Rich I farted and now my pants feels suspect. :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652313478,
+      "username": "@o0stray570o",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
+      "message": "props for actually wearing a chicken suit :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
