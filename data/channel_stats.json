@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102328,
+  "updated_ts": 1782102333,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -622,7 +622,8 @@
     "sweaty_men_feat_a_man_summer_game_fest",
     "talking_about_crap_with_liana_kerzner",
     "talking_to_an_angry_former_fan",
-    "talking_with_keffals"
+    "talking_with_keffals",
+    "tell_your_dad_about_this_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10560,6 +10561,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 28.28,
       "avg_active_chatters": 80.87
+    },
+    "tell_your_dad_about_this_stream": {
+      "stream_id": "tell_your_dad_about_this_stream",
+      "title": "Tell Your Dad About This Stream",
+      "start_ts": 1634691878,
+      "end_ts": 1634701005,
+      "duration_sec": 9127,
+      "youtube_archive_id": "Ft0tWYJmxnk",
+      "source_platform": "youtube",
+      "total_donations_usd": 510.32,
+      "donation_count": 122,
+      "donations_per_min": 3.3548,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.09,
+      "avg_active_chatters": 41.35
     }
   }
 }
