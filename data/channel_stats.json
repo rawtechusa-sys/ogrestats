@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102263,
+  "updated_ts": 1782102269,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -611,7 +611,8 @@
     "stream_vs_man",
     "streaming_fear_2_for_a_bit_then_being_a_reacting_man",
     "streaming_till_2_am",
-    "streaming_till_2_am_featuring_birds"
+    "streaming_till_2_am_featuring_birds",
+    "streaming_until_2_am_road_to_1000_members"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10373,6 +10374,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.22,
       "avg_active_chatters": 23.11
+    },
+    "streaming_until_2_am_road_to_1000_members": {
+      "stream_id": "streaming_until_2_am_road_to_1000_members",
+      "title": "STREAMING UNTIL 2 AM (Road To 1000 Members)",
+      "start_ts": 1686523264,
+      "end_ts": 1686546110,
+      "duration_sec": 22846,
+      "youtube_archive_id": "2smSdG4V3Q0",
+      "source_platform": "youtube",
+      "total_donations_usd": 814.28,
+      "donation_count": 79,
+      "donations_per_min": 2.1385,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.74,
+      "avg_active_chatters": 22.14
     }
   }
 }
