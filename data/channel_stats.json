@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099282,
+  "updated_ts": 1782099290,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -217,7 +217,8 @@
     "come_chat_with_a_man",
     "come_chat_with_dad_plus_amouranth_disaster",
     "come_chat_with_me",
-    "come_chat_with_men_live_edp445_apology"
+    "come_chat_with_men_live_edp445_apology",
+    "come_critcize_the_hell_out_of_me_yes_im_serious"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3675,6 +3676,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.13,
       "avg_active_chatters": 30.11
+    },
+    "come_critcize_the_hell_out_of_me_yes_im_serious": {
+      "stream_id": "come_critcize_the_hell_out_of_me_yes_im_serious",
+      "title": "Come Critcize The Hell Out Of Me (Yes, I'm Serious)",
+      "start_ts": 1688342080,
+      "end_ts": 1688351881,
+      "duration_sec": 9801,
+      "youtube_archive_id": "yV1IxH9YDD8",
+      "source_platform": "youtube",
+      "total_donations_usd": 173.36,
+      "donation_count": 44,
+      "donations_per_min": 1.0613,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.34,
+      "avg_active_chatters": 21.32
     }
   }
 }
