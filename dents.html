@@ -385,6 +385,11 @@ async function fetchJSON(url) {
 function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
+// Escape a username for use inside an [data-user="…"] attribute selector
+// (usernames can contain quotes/brackets). CSS.escape is in all current browsers.
+function cssEscape(s) {
+  return (window.CSS && CSS.escape) ? CSS.escape(s) : String(s).replace(/["\\\]]/g, '\\$&');
+}
 
 // ── DSP Dent? cross-reference ────────────────────────────────────────────────
 // The backend (leaderboard.py update_dsp_dent_info) queries renton.report
@@ -417,6 +422,21 @@ let sortKey   = 'total';
 let sortAsc   = false;
 let tableData = [];
 
+// Total column count of the outer table, used for the expanded detail row's
+// colspan. Static (TYPES is fixed) so it lives at module scope — toggleDonor
+// needs it to build a detail row without a full re-render.
+const COLS = 5 + TYPES.length + 1;
+
+// ── Windowed rendering ───────────────────────────────────────────────────────
+// There are 4000+ donors. Putting every row in the DOM at once costs ~4s of
+// style & layout on load (CSS containment can't help here — `content-visibility`
+// is ignored on table-internal display types). So we render the sorted list in
+// chunks: an initial batch big enough to fill the viewport, then more appended
+// as the user scrolls toward the bottom. Sorting rebuilds from the first chunk.
+const CHUNK = 100;          // donor rows appended per batch
+let sortedRows    = [];     // the full sorted donor list (all rows live here…)
+let renderedCount = 0;      // …but only this many are currently in the DOM
+
 // ── Expandable per-donor donations ───────────────────────────────────────────
 // dents loads only leaderboard.json (aggregates) on page load. The individual
 // donations behind each donor live in data/donor_donations.json (built by the
@@ -432,10 +452,24 @@ function ensureDonorData() {
   if (donorData) return Promise.resolve(donorData);
   if (!donorPromise) {
     donorPromise = fetchJSON(`${RAW}/data/donor_donations.json`)
-      .then(d => { donorData = d; donorError = null; renderTable(); return d; })
-      .catch(e => { donorError = e.message; donorPromise = null; renderTable(); });
+      .then(d => { donorData = d; donorError = null; refreshOpenPanels(); return d; })
+      .catch(e => { donorError = e.message; donorPromise = null; refreshOpenPanels(); });
   }
   return donorPromise;
+}
+
+// Re-render the inner panel of every currently-open donor in place. Called once
+// after donor_donations.json finishes loading (the panels were showing a
+// "loading…" placeholder) — far cheaper than rebuilding the whole 4000-row table.
+function refreshOpenPanels() {
+  const wrap = document.getElementById('tableWrap');
+  wrap.querySelectorAll('tbody.dent-group > tr.donations-row .donor-panel').forEach(panel => {
+    const tb = panel.closest('tbody.dent-group');
+    if (tb && tb.dataset.user != null) {
+      panel.innerHTML = donorPanelInner(tb.dataset.user);
+      fillDonorPanel(panel, tb.dataset.user);
+    }
+  });
 }
 
 function fmtUSD(n) {
@@ -516,8 +550,41 @@ function timestampCell(smeta, ts) {
   return label;
 }
 
-// Build the itemized-donations panel for one donor.
-function donorPanelHTML(username) {
+// One donation's <tr> for the itemized sub-table.
+function donationRowHTML(d, streams) {
+  const sid   = d.stream_id;
+  const smeta = sid && streams[sid];
+  const label = (smeta && smeta.title) ? smeta.title : (sid || '—');
+  const streamCell = sid
+    ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener" title="${escHtml(label)}">${escHtml(label)}</a>`
+    : '—';
+  const tsCell = smeta ? timestampCell(smeta, d.ts) : '—';
+  const type = d.type || '';
+  const amt  = (d.amount_usd != null && d.amount_usd > 0)
+    ? fmtUSD(d.amount_usd)
+    : (d.amount_raw ? escHtml(String(d.amount_raw)) : '—');
+  const msg  = d.message ? escHtml(d.message) : '';
+  return `<tr>
+      <td class="ts-cell">${fmtDateTime(d.ts)}</td>
+      <td>${streamCell}</td>
+      <td class="ts-cell">${tsCell}</td>
+      <td><span class="type-badge type-${escHtml(type)}">${escHtml(type) || '—'}</span></td>
+      <td class="amount-usd">${amt}</td>
+      <td class="msg-cell">${msg}</td>
+    </tr>`;
+}
+
+// A heavy donor can have 1800+ donations; rendering them all in one synchronous
+// pass is the lag you see on expand. So a panel renders only its first batch up
+// front (instant), tags the sub-table with the full count, and the rest are
+// appended across animation frames by fillDonorPanel() — no single long task.
+const SUB_FIRST = 60;   // rows rendered synchronously when a panel opens
+const SUB_MORE  = 200;  // rows appended per animation frame thereafter
+
+// Inner HTML of a donor's `.donor-panel`: a load/empty status, or the donations
+// sub-table seeded with up to SUB_FIRST rows (data-total carries the real count
+// so fillDonorPanel knows there's more to append).
+function donorPanelInner(username) {
   if (!donorData) {
     if (donorError) return `<div class="donor-empty">couldn't load donations — ${escHtml(donorError)}</div>`;
     return `<div class="donor-loading"><span class="loading-glyph" style="font-size:18px;">~</span> loading donations…</div>`;
@@ -526,44 +593,146 @@ function donorPanelHTML(username) {
   if (!recs.length) return `<div class="donor-empty">No itemized donations recorded.</div>`;
 
   const streams = donorData.streams || {};
-  const rows = recs.map(d => {
-    const sid   = d.stream_id;
-    const smeta = sid && streams[sid];
-    const label = (smeta && smeta.title) ? smeta.title : (sid || '—');
-    const streamCell = sid
-      ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener" title="${escHtml(label)}">${escHtml(label)}</a>`
-      : '—';
-    const tsCell = smeta ? timestampCell(smeta, d.ts) : '—';
-    const type = d.type || '';
-    const amt  = (d.amount_usd != null && d.amount_usd > 0)
-      ? fmtUSD(d.amount_usd)
-      : (d.amount_raw ? escHtml(String(d.amount_raw)) : '—');
-    const msg  = d.message ? escHtml(d.message) : '';
-    return `<tr>
-      <td class="ts-cell">${fmtDateTime(d.ts)}</td>
-      <td>${streamCell}</td>
-      <td class="ts-cell">${tsCell}</td>
-      <td><span class="type-badge type-${escHtml(type)}">${escHtml(type) || '—'}</span></td>
-      <td class="amount-usd">${amt}</td>
-      <td class="msg-cell">${msg}</td>
-    </tr>`;
-  }).join('');
-
-  return `<table class="donations-table">
+  const first = recs.slice(0, SUB_FIRST).map(d => donationRowHTML(d, streams)).join('');
+  return `<table class="donations-table" data-total="${recs.length}">
     <thead><tr><th>Date</th><th>Stream</th><th>Timestamp</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
-    <tbody>${rows}</tbody>
+    <tbody>${first}</tbody>
   </table>`;
 }
 
-// Toggle a donor's panel open/closed, lazy-loading the data on first open.
-function toggleDonor(username) {
-  if (expanded.has(username)) {
-    expanded.delete(username);
-  } else {
-    expanded.add(username);
-    ensureDonorData();   // fire-and-forget; re-renders when it resolves
+// Progressively append the remaining donation rows of an open panel, a frame at
+// a time. Each run is tagged on the <tbody> so collapsing the panel (or a later
+// re-fill) supersedes an in-flight one; it also continues from however many rows
+// are already present, so it's safe to call repeatedly.
+function fillDonorPanel(panel, username) {
+  if (!donorData) return;
+  const body = panel.querySelector('table.donations-table > tbody');
+  if (!body) return;
+  const recs = (donorData.donors && donorData.donors[username]) || [];
+  const streams = donorData.streams || {};
+  const myGen = (body.__fillGen = (body.__fillGen || 0) + 1);
+  function step() {
+    if (body.__fillGen !== myGen || !body.isConnected) return;   // superseded / collapsed
+    const start = body.children.length;
+    if (start >= recs.length) return;
+    const end = Math.min(start + SUB_MORE, recs.length);
+    let html = '';
+    for (let i = start; i < end; i++) html += donationRowHTML(recs[i], streams);
+    body.insertAdjacentHTML('beforeend', html);
+    if (end < recs.length) requestAnimationFrame(step);
   }
-  renderTable();
+  if (body.children.length < recs.length) requestAnimationFrame(step);
+}
+
+// Toggle a donor's panel open/closed, lazy-loading the data on first open.
+// Updates only the affected donor's <tbody> in place — rebuilding the whole
+// 4000-row table here is what made expanding a heavy donor (1800+ donations)
+// visibly lag, since it re-stringified and re-laid-out every other row too.
+function toggleDonor(username) {
+  const opening = !expanded.has(username);
+  if (opening) {
+    expanded.add(username);
+    ensureDonorData();   // fire-and-forget; refreshes this panel when it resolves
+  } else {
+    expanded.delete(username);
+  }
+
+  const wrap = document.getElementById('tableWrap');
+  const tb = [...wrap.querySelectorAll('tbody.dent-group')]
+    .find(t => t.dataset.user === username);
+  if (!tb) { renderTable(); return; }   // fallback: row not found, full redraw
+
+  const mainRow = tb.querySelector('tr.dent-row');
+  mainRow.classList.toggle('sticky-dent', opening);
+  const caret = mainRow.querySelector('.caret');
+  if (caret) caret.textContent = opening ? '▾' : '▸';
+
+  let detail = tb.querySelector('tr.donations-row');
+  if (opening) {
+    if (!detail) {
+      detail = document.createElement('tr');
+      detail.className = 'donations-row';
+      detail.innerHTML = `<td colspan="${COLS}"><div class="donor-panel">${donorPanelInner(username)}</div></td>`;
+      tb.appendChild(detail);
+      fillDonorPanel(detail.querySelector('.donor-panel'), username);
+    }
+  } else if (detail) {
+    detail.remove();
+  }
+}
+
+function sortArrow(key) {
+  if (key !== sortKey) return '';
+  return `<span class="sort-arrow">${sortAsc ? '↑' : '↓'}</span>`;
+}
+function thClass(key) {
+  return key === sortKey ? 'sorted' : '';
+}
+
+// The <tbody> markup for a single donor (main row + its detail panel if open).
+// `i` is the donor's overall rank in the sorted list (for the rank cell).
+function rowGroupHTML(row, i) {
+  const typeCells = TYPES.map(t => {
+    const v = row[t.key] || 0;
+    return `<td class="amount-type${v === 0 ? ' zero' : ''}">${fmtUSD(v)}</td>`;
+  }).join('');
+
+  const isOpen = expanded.has(row.username);
+  const caret  = `<span class="caret">${isOpen ? '▾' : '▸'}</span>`;
+
+  const mainRow = `<tr class="dent-row${isOpen ? ' sticky-dent' : ''}" data-user="${escHtml(row.username)}">
+      <td class="rank">${i + 1}</td>
+      <td class="username">${caret}${escHtml(row.username)}</td>
+      <td class="amount-total">${fmtUSD(row.total)}</td>
+      <td class="amount-type">${row.streams}</td>
+      <td class="amount-type">${row.donations || 0}</td>
+      ${typeCells}
+      <td class="dsp-dent">${dspDentCell(row)}</td>
+    </tr>`;
+
+  const detailRow = isOpen
+    ? `<tr class="donations-row"><td colspan="${COLS}"><div class="donor-panel">${donorPanelInner(row.username)}</div></td></tr>`
+    : '';
+
+  // Each donor (main row + its detail panel) gets its own <tbody> so the
+  // pinned/sticky main row is constrained to this section: it stays under the
+  // header while its panel scrolls, then releases as the next donor scrolls up.
+  // data-user lets toggleDonor find this section to update it in place.
+  return `<tbody class="dent-group" data-user="${escHtml(row.username)}">${mainRow}${detailRow}</tbody>`;
+}
+
+// Append the next CHUNK of donor rows to the table (no-op once all are rendered).
+function appendChunk() {
+  if (renderedCount >= sortedRows.length) return;
+  const table = document.querySelector('#tableWrap table');
+  if (!table) return;
+  const end = Math.min(renderedCount + CHUNK, sortedRows.length);
+  let html = '';
+  for (let i = renderedCount; i < end; i++) html += rowGroupHTML(sortedRows[i], i);
+  table.insertAdjacentHTML('beforeend', html);
+  // Any donor already expanded that landed in this chunk got only its first
+  // batch of donations from rowGroupHTML — kick off the progressive fill.
+  for (let i = renderedCount; i < end; i++) {
+    const u = sortedRows[i].username;
+    if (expanded.has(u)) {
+      const panel = table.querySelector(`tbody.dent-group[data-user="${cssEscape(u)}"] .donor-panel`);
+      if (panel) fillDonorPanel(panel, u);
+    }
+  }
+  renderedCount = end;
+}
+
+// Keep appending until the list overflows its scroll container (so there's
+// something to scroll), or every row is rendered. Guards against an infinite
+// loop if measurements ever go sideways.
+function fillViewport() {
+  const wrap = document.getElementById('tableWrap');
+  let guard = 0;
+  while (renderedCount < sortedRows.length &&
+         wrap.scrollHeight <= wrap.clientHeight + 300 &&
+         guard++ < 100) {
+    appendChunk();
+  }
 }
 
 function renderTable() {
@@ -573,7 +742,7 @@ function renderTable() {
     return;
   }
 
-  const sorted = [...tableData].sort((a, b) => {
+  sortedRows = [...tableData].sort((a, b) => {
     if (sortKey === 'username') {
       const cmp = a.username.localeCompare(b.username, undefined, { sensitivity: 'base' });
       return sortAsc ? cmp : -cmp;
@@ -589,95 +758,75 @@ function renderTable() {
     return sortAsc ? av - bv : bv - av;
   });
 
-  function arrow(key) {
-    if (key !== sortKey) return '';
-    return `<span class="sort-arrow">${sortAsc ? '↑' : '↓'}</span>`;
-  }
-
-  function thClass(key) {
-    return key === sortKey ? 'sorted' : '';
-  }
-
   const typeHeaders = TYPES.map(t =>
-    `<th class="${thClass(t.key)}" data-key="${t.key}">${escHtml(t.label)}${arrow(t.key)}</th>`
+    `<th class="${thClass(t.key)}" data-key="${t.key}">${escHtml(t.label)}${sortArrow(t.key)}</th>`
   ).join('');
 
-  // Total column count, used for the expanded detail row's colspan.
-  const COLS = 5 + TYPES.length + 1;
-
-  const rows = sorted.map((row, i) => {
-    const typeCells = TYPES.map(t => {
-      const v = row[t.key] || 0;
-      const display = fmtUSD(v);
-      return `<td class="amount-type${v === 0 ? ' zero' : ''}">${display}</td>`;
-    }).join('');
-
-    const isOpen = expanded.has(row.username);
-    const caret  = `<span class="caret">${isOpen ? '▾' : '▸'}</span>`;
-
-    const mainRow = `<tr class="dent-row${isOpen ? ' sticky-dent' : ''}" data-user="${escHtml(row.username)}">
-      <td class="rank">${i + 1}</td>
-      <td class="username">${caret}${escHtml(row.username)}</td>
-      <td class="amount-total">${fmtUSD(row.total)}</td>
-      <td class="amount-type">${row.streams}</td>
-      <td class="amount-type">${row.donations || 0}</td>
-      ${typeCells}
-      <td class="dsp-dent">${dspDentCell(row)}</td>
-    </tr>`;
-
-    const detailRow = isOpen
-      ? `<tr class="donations-row"><td colspan="${COLS}"><div class="donor-panel">${donorPanelHTML(row.username)}</div></td></tr>`
-      : '';
-
-    // Each donor (main row + its detail panel) gets its own <tbody> so the
-    // pinned/sticky main row is constrained to this section: it stays under the
-    // header while its panel scrolls, then releases as the next donor scrolls up.
-    return `<tbody class="dent-group">${mainRow}${detailRow}</tbody>`;
-  }).join('');
-
+  // Render only the header up front; rows are appended in chunks below. Resetting
+  // scrollTop matters on re-sort so the (now reordered) first chunk is in view.
+  renderedCount = 0;
+  wrap.scrollTop = 0;
   wrap.innerHTML = `<table>
     <thead>
       <tr>
         <th style="width:36px;"></th>
-        <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Dent${arrow('username')}</th>
-        <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
-        <th class="${thClass('streams')}" data-key="streams">Streams${arrow('streams')}</th>
-        <th class="${thClass('donations')}" data-key="donations">Donations${arrow('donations')}</th>
+        <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Dent${sortArrow('username')}</th>
+        <th class="${thClass('total')}" data-key="total">Total${sortArrow('total')}</th>
+        <th class="${thClass('streams')}" data-key="streams">Streams${sortArrow('streams')}</th>
+        <th class="${thClass('donations')}" data-key="donations">Donations${sortArrow('donations')}</th>
         ${typeHeaders}
-        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${arrow('dsp_dent')}</th>
+        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${sortArrow('dsp_dent')}</th>
       </tr>
     </thead>
-    ${rows}
   </table>`;
+
+  appendChunk();
+  fillViewport();
 
   // The sticky donor row pins just below the (sticky) header; measure the
   // header's rendered height so the pin sits flush under it across themes.
   const thd = wrap.querySelector('thead');
   if (thd) document.documentElement.style.setProperty('--thead-h', thd.offsetHeight + 'px');
+}
 
-  // Sort on header click
-  wrap.querySelectorAll('th[data-key]').forEach(th => {
-    th.addEventListener('click', () => {
+// Click handling is delegated to the persistent #tableWrap container, attached
+// once — not re-bound per row on every render. With 4000+ rows, attaching a
+// listener to each was a large chunk of render cost and re-ran on every redraw.
+let delegationReady = false;
+function setupDelegation() {
+  if (delegationReady) return;
+  delegationReady = true;
+  const wrap = document.getElementById('tableWrap');
+  wrap.addEventListener('click', e => {
+    // Sort on header click.
+    const th = e.target.closest('th[data-key]');
+    if (th) {
       const key = th.dataset.key;
       if (key === sortKey) {
         sortAsc = !sortAsc;
       } else {
         sortKey = key;
-        // Username sorts a→z by default, numbers sort greatest first
+        // Username sorts a→z by default, numbers sort greatest first.
         sortAsc = key === 'username';
       }
       renderTable();
-    });
+      return;
+    }
+    // Ignore clicks on links inside a row (e.g. the renton.report DSP-dent
+    // link) so they navigate instead of toggling the panel.
+    if (e.target.closest('a')) return;
+    // Expand/collapse a donor's itemized donations on row click.
+    const tr = e.target.closest('tr.dent-row');
+    if (tr) toggleDonor(tr.dataset.user);
   });
 
-  // Expand/collapse a donor's itemized donations on row click. Ignore clicks on
-  // links inside the row (e.g. the renton.report DSP-dent link) so they navigate.
-  wrap.querySelectorAll('tr.dent-row').forEach(tr => {
-    tr.addEventListener('click', e => {
-      if (e.target.closest('a')) return;
-      toggleDonor(tr.dataset.user);
-    });
-  });
+  // Windowed rendering: append the next chunk of donor rows as the user nears
+  // the bottom of the scroll container, so the DOM grows on demand instead of
+  // holding all 4000+ rows from the start.
+  wrap.addEventListener('scroll', () => {
+    if (renderedCount >= sortedRows.length) return;
+    if (wrap.scrollTop + wrap.clientHeight >= wrap.scrollHeight - 600) appendChunk();
+  }, { passive: true });
 }
 
 // Build tableData from a precomputed leaderboard.json object
@@ -696,6 +845,7 @@ async function load() {
     // of fetches (~tens of MB) and hang the browser.
     const board = await fetchJSON(`${RAW}/data/leaderboard.json`);
     loadFromLeaderboard(board);
+    setupDelegation();
     renderTable();
   } catch (e) {
     wrap.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load dents<br><small>${e.message}</small></span></div>`;
