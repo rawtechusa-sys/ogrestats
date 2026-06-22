@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093459,
+  "updated_ts": 1782093502,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -43,7 +43,8 @@
     "a_heartwarming_man_and_bird_stream",
     "a_heterosexual_christian_man_stream_watching_cyraxx",
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
-    "a_jcs_and_dsp_stream"
+    "a_jcs_and_dsp_stream",
+    "a_jcs_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -717,6 +718,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.34,
       "avg_active_chatters": 37.12
+    },
+    "a_jcs_stream": {
+      "stream_id": "a_jcs_stream",
+      "title": "A JCS Stream",
+      "start_ts": 1639443333,
+      "end_ts": 1639455889,
+      "duration_sec": 12556,
+      "youtube_archive_id": "lAq0o_rx49g",
+      "source_platform": "youtube",
+      "total_donations_usd": 445.46,
+      "donation_count": 99,
+      "donations_per_min": 2.1287,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.36,
+      "avg_active_chatters": 37.13
     }
   }
 }
