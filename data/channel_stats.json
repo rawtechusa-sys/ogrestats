@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102649,
+  "updated_ts": 1782102654,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -679,7 +679,8 @@
     "the_quest_for_a_cupcake",
     "the_rtustreams_karenthon_feat_birds",
     "the_sexiest_live_streamer_of_all_time",
-    "the_swatting_needs_to_stop"
+    "the_swatting_needs_to_stop",
+    "the_thirst_of_may_1st_countdown_secret_unlimited_video"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11529,6 +11530,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.01,
       "avg_active_chatters": 40.07
+    },
+    "the_thirst_of_may_1st_countdown_secret_unlimited_video": {
+      "stream_id": "the_thirst_of_may_1st_countdown_secret_unlimited_video",
+      "title": "The Thirst Of May 1st Countdown (Secret Unlimited Video)",
+      "start_ts": 1680567423,
+      "end_ts": 1680576100,
+      "duration_sec": 8677,
+      "youtube_archive_id": "KJc4ICSKTVo",
+      "source_platform": "youtube",
+      "total_donations_usd": 211.31,
+      "donation_count": 61,
+      "donations_per_min": 1.4612,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.31,
+      "avg_active_chatters": 23.54
     }
   }
 }
