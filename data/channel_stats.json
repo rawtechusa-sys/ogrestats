@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100074,
+  "updated_ts": 1782100082,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -310,7 +310,8 @@
     "i_have_no_water_so_i_may_as_well_keep_streaming",
     "i_have_no_words_and_im_frustrated",
     "i_have_some_very_important_things_to_discuss",
-    "i_just_went_through_youtube_hell_let_me_explain"
+    "i_just_went_through_youtube_hell_let_me_explain",
+    "i_listened_and_made_changes_wings_of_redemption_doc"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5256,6 +5257,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.53,
       "avg_active_chatters": 36.05
+    },
+    "i_listened_and_made_changes_wings_of_redemption_doc": {
+      "stream_id": "i_listened_and_made_changes_wings_of_redemption_doc",
+      "title": "I Listened, And Made Changes (Wings of Redemption Doc)",
+      "start_ts": 1694908726,
+      "end_ts": 1694926957,
+      "duration_sec": 18231,
+      "youtube_archive_id": "mUrtrGlJLQg",
+      "source_platform": "youtube",
+      "total_donations_usd": 265.27,
+      "donation_count": 69,
+      "donations_per_min": 0.873,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.75,
+      "avg_active_chatters": 26.86
     }
   }
 }
