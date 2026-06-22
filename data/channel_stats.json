@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099692,
+  "updated_ts": 1782099700,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -266,7 +266,8 @@
     "dspgaming_live_in_20_mins",
     "dspgaming_ragequit_extravaganza_road_to_1000_members",
     "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
-    "dspgamings_chickengate"
+    "dspgamings_chickengate",
+    "dspgamings_direct_capture_saga"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4508,6 +4509,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.82,
       "avg_active_chatters": 39.7
+    },
+    "dspgamings_direct_capture_saga": {
+      "stream_id": "dspgamings_direct_capture_saga",
+      "title": "DSPGaming's Direct Capture Saga",
+      "start_ts": 1701306160,
+      "end_ts": 1701324008,
+      "duration_sec": 17848,
+      "youtube_archive_id": "uviNoc1s5oM",
+      "source_platform": "youtube",
+      "total_donations_usd": 543.91,
+      "donation_count": 143,
+      "donations_per_min": 1.8285,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.46,
+      "avg_active_chatters": 51.12
     }
   }
 }
