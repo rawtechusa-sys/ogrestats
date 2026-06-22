@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101055,
+  "updated_ts": 1782101062,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -431,7 +431,8 @@
     "man_news_live",
     "man_on_man_livestream_featuring_masculine_birds",
     "man_stares_at_artificial_birds_live",
-    "man_versus_bird_live"
+    "man_versus_bird_live",
+    "man_versus_carolina_reaper_jerky"
   ],
   "commands": {
     "stan": 27,
@@ -462,7 +463,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 100,
+    "eyes": 101,
     "africa": 1,
     "face": 412,
     "petersonxhhanson": 1,
@@ -480,9 +481,9 @@
     "tongue": 7,
     "heart": 131,
     "shorts": 1,
-    "laughing": 166,
+    "laughing": 167,
     "news": 20,
-    "chicken": 49,
+    "chicken": 50,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -490,7 +491,7 @@
     "popper": 8,
     "straw": 1,
     "glasses": 2,
-    "ball": 1,
+    "ball": 2,
     "lantern": 2,
     "leg": 1,
     "severance": 2,
@@ -519,7 +520,7 @@
     "dog": 9,
     "is": 7,
     "spose": 1,
-    "sunglasses": 20,
+    "sunglasses": 21,
     "kiss": 22,
     "earlier": 1,
     "ghost": 2,
@@ -575,7 +576,7 @@
     "it": 18,
     "food": 4,
     "play": 1,
-    "video": 1,
+    "video": 2,
     "one": 3,
     "cow": 2,
     "cap": 1,
@@ -636,7 +637,7 @@
     "restaraunt": 1,
     "highter": 1,
     "glove": 3,
-    "collision": 2,
+    "collision": 3,
     "spoiler": 1,
     "mug": 2,
     "pachter": 3,
@@ -901,7 +902,7 @@
     "era": 1,
     "classic": 1,
     "quartering": 2,
-    "jones": 1,
+    "jones": 2,
     "constantly": 1,
     "syringe": 1,
     "weapon": 1,
@@ -918,7 +919,8 @@
     "pikachu": 1,
     "sparkles": 1,
     "cod": 1,
-    "population": 1
+    "population": 1,
+    "swords": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3070,6 +3072,11 @@
       "title": "Man Versus Bird LIVE",
       "start_ts": 1628640442,
       "youtube_archive_id": "65NR5mRNPz4"
+    },
+    "man_versus_carolina_reaper_jerky": {
+      "title": "Man Versus Carolina Reaper Jerky",
+      "start_ts": 1642727617,
+      "youtube_archive_id": "vd0P-fyhqVs"
     }
   },
   "messages": [
@@ -21263,6 +21270,87 @@
       "message": "We ate Meatloaf for dinner to celebrate his life R.I.P Meatloaf:pleading_face::sneezing_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1642738917,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "Had a nightmare where DSP was my bar of soap. In a fetal position. And Everytime I picked him up he would scream \u201cWash your :soccer_ball: :soccer_ball:s\u201d Im scared to blink",
+      "commands": [
+        "ball"
+      ]
+    },
+    {
+      "ts": 1642736866,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "I was joy riding around here in the Chicago area and Found NetherRealm Studios by accident. They were closed because it was Sunday. But I looked through the front window and saw cool memorabilia. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1642735429,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "State of the art Sega with an E-Ink Display. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1642731125,
+      "username": "@MR24470478",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "Next video: Gfuel mukbang let's get into it :collision:",
+      "commands": [
+        "video",
+        "collision"
+      ]
+    },
+    {
+      "ts": 1642729453,
+      "username": "@Prolyfyk",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "You're a light weight my guy :winking_face::smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1642729228,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "Dono for torturing yourself:cow:also who do you think will win the Great War to come, birds or men?:rooster::crossed_swords:",
+      "commands": [
+        "swords"
+      ]
+    },
+    {
+      "ts": 1642729211,
+      "username": "@Thecoolistgamerever",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "Alex jones: JUSTIN BEIBER",
+      "commands": [
+        "jones"
+      ]
+    },
+    {
+      "ts": 1642729051,
+      "username": "@OopiDoopi",
+      "platform": "youtube",
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "message": "save some for your birds rich :chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
