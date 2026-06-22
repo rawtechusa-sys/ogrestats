@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098695,
+  "updated_ts": 1782098702,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -144,7 +144,8 @@
     "antelope_hill_publishing_and_the_quartering",
     "ask_a_man_random_things_while_you_stare_at_birds",
     "ask_me_anything",
-    "ask_me_anything_992019"
+    "ask_me_anything_992019",
+    "asmongolds_the_act_man_interview_reaction"
   ],
   "commands": {
     "stan": 27,
@@ -179,8 +180,8 @@
     "africa": 1,
     "face": 115,
     "petersonxhhanson": 1,
-    "poo": 6,
-    "joy": 88,
+    "poo": 7,
+    "joy": 89,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -188,14 +189,14 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 11,
+    "cucumber": 12,
     "biceps": 3,
     "tongue": 4,
     "heart": 44,
     "shorts": 1,
     "laughing": 45,
-    "news": 8,
-    "chicken": 20,
+    "news": 9,
+    "chicken": 21,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -215,7 +216,7 @@
     "hole": 5,
     "rooster": 15,
     "peach": 3,
-    "fire": 8,
+    "fire": 9,
     "kendal": 1,
     "up": 12,
     "note": 5,
@@ -229,7 +230,7 @@
     "crab": 2,
     "superhero": 10,
     "legends": 1,
-    "dog": 2,
+    "dog": 3,
     "is": 4,
     "spose": 1,
     "sunglasses": 4,
@@ -1097,6 +1098,11 @@
       "title": "Ask Me Anything 9/9/2019",
       "start_ts": 1568309077,
       "youtube_archive_id": "UE275lqmB_k"
+    },
+    "asmongolds_the_act_man_interview_reaction": {
+      "title": "Asmongold's The Act Man Interview Reaction",
+      "start_ts": 1655165591,
+      "youtube_archive_id": "zNaXRq-i_GI"
     }
   },
   "messages": [
@@ -7063,6 +7069,76 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1655173429,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "I make my girlfriend's throat moist if you know what I mean :hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1655171150,
+      "username": "@madaction9373",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "Hey Rich! Did you hear that Ghostface Killiah and Raekwon did a track for the new TMNT Shredder\u2019s Revenge game? It\u2019s :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1655171100,
+      "username": "@GMillion2112",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "If I swing that way I\u2019m free :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1655170921,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "check twitter dms I used an ai art generator to create a picture of pewdiepie with a cucumber :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1655170715,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "Turd rhymes with bird. :rooster::pile_of_poo:",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1655169498,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": "Breaking news: act mans mother reports that she saw a man in a grass suit hiding in the bushes outside her house, the man was confirmed to be quantum",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1655168641,
+      "username": "@ExcellentChef",
+      "platform": "youtube",
+      "stream_id": "asmongolds_the_act_man_interview_reaction",
+      "message": ":chicken::chicken::chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
