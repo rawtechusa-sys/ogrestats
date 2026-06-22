@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100970,
+  "updated_ts": 1782100977,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -420,7 +420,8 @@
     "maidenless_birds_play_eldenring_plus_man",
     "man_and_birds_baked_and_live",
     "man_and_birds_vs_karens",
-    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update"
+    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
+    "man_friendly_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -456,18 +457,18 @@
     "face": 399,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 269,
+    "joy": 270,
     "gameboy": 1,
     "chick": 2,
     "carlos": 33,
     "away": 7,
     "idea": 4,
     "fear": 3,
-    "voice": 4,
+    "voice": 5,
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 127,
+    "heart": 128,
     "shorts": 1,
     "laughing": 162,
     "news": 20,
@@ -901,7 +902,8 @@
     "pregnant": 1,
     "zelda": 1,
     "crisis": 1,
-    "answer": 1
+    "answer": 1,
+    "claus": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2998,6 +3000,11 @@
       "title": "Man Electrocuted Through Controller, J. Allen Brack RUNS, PS5 Availability Update",
       "start_ts": 1628011281,
       "youtube_archive_id": "p_HRN6TPCBY"
+    },
+    "man_friendly_family_fun": {
+      "title": "Man-Friendly Family Fun",
+      "start_ts": 1670807080,
+      "youtube_archive_id": "Bp2dt0tVrb8"
     }
   },
   "messages": [
@@ -14736,6 +14743,46 @@
       "commands": [
         "anyway",
         "said"
+      ]
+    },
+    {
+      "ts": 1670811489,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "man_friendly_family_fun",
+      "message": "You should be a shirtless Santa. :santa_claus:",
+      "commands": [
+        "claus"
+      ]
+    },
+    {
+      "ts": 1670810595,
+      "username": "@MaxwellMcQuade",
+      "platform": "youtube",
+      "stream_id": "man_friendly_family_fun",
+      "message": "I love you dad. game with asmongold. grandpa excited for howard sterns peni5. this is my comfort stream ty. looking for job and coping w/break up :purple_heart::purple_heart::purple_heart::purple_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1670808010,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "man_friendly_family_fun",
+      "message": "Deplatform and floatplane only. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1670808008,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "man_friendly_family_fun",
+      "message": "JP voice: Let's see who cancels the birds",
+      "commands": [
+        "voice"
       ]
     },
     {
