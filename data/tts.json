@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099904,
+  "updated_ts": 1782099916,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -290,7 +290,8 @@
     "g4tv_family_fun",
     "getting_high_on_a_saturday_a_brewing_brony_war",
     "girlfriend_kicked_me_out_of_bed_so_im_back",
-    "grandpa_is_playing_call_of_duty_loud_farts"
+    "grandpa_is_playing_call_of_duty_loud_farts",
+    "happy_fking_halloween"
   ],
   "commands": {
     "stan": 27,
@@ -321,15 +322,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 70,
+    "eyes": 71,
     "africa": 1,
-    "face": 263,
+    "face": 265,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 197,
+    "joy": 199,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 24,
+    "carlos": 25,
     "away": 5,
     "idea": 2,
     "fear": 3,
@@ -343,7 +344,7 @@
     "news": 17,
     "chicken": 37,
     "cake": 7,
-    "d": 2,
+    "d": 3,
     "halo": 3,
     "hand": 21,
     "popper": 6,
@@ -373,7 +374,7 @@
     "hands": 19,
     "horns": 7,
     "crab": 2,
-    "superhero": 19,
+    "superhero": 20,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -386,7 +387,7 @@
     "gift": 3,
     "bird": 8,
     "richsmile": 5,
-    "dsp": 17,
+    "dsp": 18,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -432,7 +433,7 @@
     "live": 1,
     "saying": 1,
     "it": 10,
-    "food": 2,
+    "food": 3,
     "play": 1,
     "video": 1,
     "one": 3,
@@ -548,7 +549,7 @@
     "bar": 1,
     "cells": 1,
     "tv": 1,
-    "apple": 1,
+    "apple": 2,
     "channel": 1,
     "specs": 1,
     "balloon": 1,
@@ -589,7 +590,7 @@
     "owl": 1,
     "hell": 1,
     "pig": 1,
-    "tip": 1,
+    "tip": 2,
     "dies": 1,
     "stone": 1,
     "rockstar": 1,
@@ -662,7 +663,8 @@
     "anyway": 1,
     "said": 1,
     "reviewimprovusa": 1,
-    "smo": 1
+    "smo": 1,
+    "blood": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2109,6 +2111,11 @@
       "title": "Grandpa Is Playing Call of Duty (Loud Farts)",
       "start_ts": 1706478949,
       "youtube_archive_id": "je4Gm215Dx4"
+    },
+    "happy_fking_halloween": {
+      "title": "Happy F*$king Halloween",
+      "start_ts": 1698795238,
+      "youtube_archive_id": "j6d8g5WWWFw"
     }
   },
   "messages": [
@@ -6594,6 +6601,118 @@
       "message": "I need Phil's hot man gravy for my Bird :bird:",
       "commands": [
         "bird"
+      ]
+    },
+    {
+      "ts": 1698811590,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "Tip: You\u2019ll want to move your character away from the wild Pok\u00e9mon so you don\u2019t take damage. In this game, you have to dodge your character too.",
+      "commands": [
+        "tip"
+      ]
+    },
+    {
+      "ts": 1698809987,
+      "username": "@AndrewMorales928",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "Dad love the streams. This game look like they add Vaseline on it. Also hopefully the OLED M3 ipad pro comes out in 2024. It's time Tim :red_apple:",
+      "commands": [
+        "apple"
+      ]
+    },
+    {
+      "ts": 1698807316,
+      "username": "@sheed_rock",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "how much to play Disney Dreamlight Valley? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1698802562,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "DSP: I jack off on livestream. Please hire me.",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1698801704,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "So many games heat up my Deck. Even the \"Verified\" ports. That can't be good for it D:",
+      "commands": [
+        "d"
+      ]
+    },
+    {
+      "ts": 1698797736,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "Just kno hero in :man_superhero: been awake too long gotta :sleeping_face:",
+      "commands": [
+        "superhero",
+        "face"
+      ]
+    },
+    {
+      "ts": 1698796729,
+      "username": "@go_programming_is_hard",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "I'm super intrigued. I really want to see reactions of \"people\" drinking that shit :grinning_squinting_face: kinda like morbid curiosity.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698796456,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "I\u2019m totally making a highlight video of your Pok\u00e9mon playthrough if that\u2019s okay with you. I\u2019m so excited. Hoot Wireless. :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1698796244,
+      "username": "@Pickmans_Model",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "Now if you could be so kind as to move the iPad plz :eyes: ty :jack_o_lantern::kitchen_knife::drop_of_blood:",
+      "commands": [
+        "eyes",
+        "blood"
+      ]
+    },
+    {
+      "ts": 1698796040,
+      "username": "@ScroffToffee1309",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "Rich holy crap dude!!! The ears!! :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1698795848,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "happy_fking_halloween",
+      "message": "I had a Halloween ectoplasm over you Rich. mmmm :face_savoring_food:",
+      "commands": [
+        "food"
       ]
     },
     {
