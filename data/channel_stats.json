@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098672,
+  "updated_ts": 1782098680,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -142,7 +142,8 @@
     "answering_questions",
     "answering_questions_feat_birds",
     "answering_questions_while_i_stare_at_birds",
-    "antelope_hill_publishing_and_the_quartering"
+    "antelope_hill_publishing_and_the_quartering",
+    "ask_a_man_random_things_while_you_stare_at_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2400,6 +2401,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.12,
       "avg_active_chatters": 35.32
+    },
+    "ask_a_man_random_things_while_you_stare_at_birds": {
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "title": "Ask A Man Random Things While You Stare At Birds",
+      "start_ts": 1636769696,
+      "end_ts": 1636779272,
+      "duration_sec": 9576,
+      "youtube_archive_id": "GsaTt5xyn50",
+      "source_platform": "youtube",
+      "total_donations_usd": 510.6,
+      "donation_count": 91,
+      "donations_per_min": 3.1992,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.97,
+      "avg_active_chatters": 36.73
     }
   }
 }
