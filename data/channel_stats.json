@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092981,
+  "updated_ts": 1782093018,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -31,7 +31,8 @@
     "a_christian_straight_man_stream",
     "a_colorful_man",
     "a_crispy_peanut_butter_complexion_livestream",
-    "a_detrahktor_discusses_her_grievances_with_me"
+    "a_detrahktor_discusses_her_grievances_with_me",
+    "a_dspgaming_and_wingsofredemption_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -513,6 +514,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.42,
       "avg_active_chatters": 39.33
+    },
+    "a_dspgaming_and_wingsofredemption_man_stream": {
+      "stream_id": "a_dspgaming_and_wingsofredemption_man_stream",
+      "title": "A DSPGaming And WingsofRedemption Man Stream",
+      "start_ts": 1645145546,
+      "end_ts": 1645159316,
+      "duration_sec": 13770,
+      "youtube_archive_id": "-nEv__Duf_E",
+      "source_platform": "youtube",
+      "total_donations_usd": 324.33,
+      "donation_count": 77,
+      "donations_per_min": 1.4132,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.74,
+      "avg_active_chatters": 28.93
     }
   }
 }
