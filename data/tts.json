@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098671,
+  "updated_ts": 1782098679,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -141,7 +141,8 @@
     "answering_questions",
     "answering_questions_feat_birds",
     "answering_questions_while_i_stare_at_birds",
-    "antelope_hill_publishing_and_the_quartering"
+    "antelope_hill_publishing_and_the_quartering",
+    "ask_a_man_random_things_while_you_stare_at_birds"
   ],
   "commands": {
     "stan": 27,
@@ -174,7 +175,7 @@
     "turkey": 5,
     "eyes": 31,
     "africa": 1,
-    "face": 112,
+    "face": 113,
     "petersonxhhanson": 1,
     "poo": 6,
     "joy": 88,
@@ -191,7 +192,7 @@
     "heart": 44,
     "shorts": 1,
     "laughing": 45,
-    "news": 7,
+    "news": 8,
     "chicken": 20,
     "cake": 1,
     "d": 1,
@@ -304,7 +305,7 @@
     "struck": 1,
     "joker": 1,
     "racehorse": 2,
-    "question": 5,
+    "question": 6,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
@@ -375,7 +376,9 @@
     "breaking": 1,
     "eye": 1,
     "dove": 1,
-    "time": 1
+    "time": 1,
+    "marry": 1,
+    "rino": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1077,6 +1080,11 @@
       "title": "Antelope Hill Publishing And The Quartering",
       "start_ts": 1695001903,
       "youtube_archive_id": "4fpF3jltR_o"
+    },
+    "ask_a_man_random_things_while_you_stare_at_birds": {
+      "title": "Ask A Man Random Things While You Stare At Birds",
+      "start_ts": 1636769696,
+      "youtube_archive_id": "GsaTt5xyn50"
     }
   },
   "messages": [
@@ -8855,6 +8863,56 @@
       "message": "Few good things: Almost have my Car Loan paid off, my Birthday is next month and I got a date this weekend! Booyah!!",
       "commands": [
         "things"
+      ]
+    },
+    {
+      "ts": 1636775935,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "message": "RINO: Republican In Name Only",
+      "commands": [
+        "rino"
+      ]
+    },
+    {
+      "ts": 1636772959,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "message": "F, kill, marry: Carlos, Steve, a New York pigeon",
+      "commands": [
+        "marry"
+      ]
+    },
+    {
+      "ts": 1636771628,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "message": "Random question: If Elon Musk asked you to go into space and help colonize Mars, would you do it??",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1636771245,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "message": "I wonder what game is more milked, Skyrim, GTA or COD? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636770605,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "ask_a_man_random_things_while_you_stare_at_birds",
+      "message": "Breaking news: EDP445 retruns to youtube as a rapper under a new name but what gave him away aws the name of his new single, i love kids",
+      "commands": [
+        "news"
       ]
     },
     {
