@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100721,
+  "updated_ts": 1782100727,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -385,7 +385,8 @@
     "legal_eagles_xqc_video",
     "lets_argue_about_nintendo",
     "lets_be_disappointed_by_the_nintendo_direct_together",
-    "lets_chat"
+    "lets_chat",
+    "lets_chat_plus_birds"
   ],
   "commands": {
     "stan": 27,
@@ -416,12 +417,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 86,
+    "eyes": 87,
     "africa": 1,
     "face": 361,
     "petersonxhhanson": 1,
     "poo": 21,
-    "joy": 256,
+    "joy": 257,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -434,7 +435,7 @@
     "tongue": 7,
     "heart": 117,
     "shorts": 1,
-    "laughing": 145,
+    "laughing": 147,
     "news": 18,
     "chicken": 43,
     "cake": 7,
@@ -499,7 +500,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 17,
-    "horse": 10,
+    "horse": 11,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -568,7 +569,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 15,
+    "sweat": 16,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -848,7 +849,8 @@
     "hustle": 1,
     "women": 1,
     "bag": 1,
-    "honest": 1
+    "honest": 1,
+    "verse": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2770,6 +2772,11 @@
       "title": "Let's Chat",
       "start_ts": 1698352164,
       "youtube_archive_id": "M4uXNL7bE-c"
+    },
+    "lets_chat_plus_birds": {
+      "title": "Let's Chat (Plus Birds)",
+      "start_ts": 1641432207,
+      "youtube_archive_id": "oAJsMyHmsio"
     }
   },
   "messages": [
@@ -19375,6 +19382,76 @@
       "message": "You think that's bad, here we have Ted Cruz and John Cornyn :upside_down_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1641441019,
+      "username": "@darce2019",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "The looks he keeps giving these people:grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1641441016,
+      "username": "@Goldenknight01",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": ":rolling_on_the_floor_laughing: I love this. Also losing weight as am breaking the 230lb mark. I'd swear, this decade is going to be hell or interesting on just about everything.",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641440205,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "Life comes at you fast man :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641440082,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "They make me feel better about my intelligence :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1641438422,
+      "username": "@mskihammer",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "q mobile :horse::horse::horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1641436630,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "Was watching Spawnwave this morning and apparently Playstation is compensating people to coach/help people on games for :trophy:s or to get through a game now:face_with_rolling_eyes: Umm just go to YouTube and watch a playthrough",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1641433903,
+      "username": "@AJ.MP3",
+      "platform": "youtube",
+      "stream_id": "lets_chat_plus_birds",
+      "message": "Sen. Josh Hawley wishes he had enough masculinity to listen to Porter Robinson\u2019s \u201cMother\u201d and shed a tear while doing so. Rich please sing the verse: \u201cI\u2019m on your side for the rest of your life.\u201d",
+      "commands": [
+        "verse"
       ]
     },
     {
