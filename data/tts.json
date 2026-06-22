@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098515,
+  "updated_ts": 1782098523,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -121,7 +121,8 @@
     "after_immense_pressure_thecowarding_finally_responded",
     "alpha_males_only",
     "alright_im_back",
-    "am_i_attracted_to_my_cousin"
+    "am_i_attracted_to_my_cousin",
+    "an_easter_eve_man"
   ],
   "commands": {
     "stan": 27,
@@ -233,7 +234,7 @@
     "reviewtrumpusa": 2,
     "reviewseinfeldusa": 1,
     "things": 1,
-    "down": 1,
+    "down": 2,
     "tomorrow": 4,
     "horse": 2,
     "bug": 1,
@@ -326,7 +327,8 @@
     "restaraunt": 1,
     "highter": 1,
     "glove": 1,
-    "collision": 1
+    "collision": 1,
+    "spoiler": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -928,6 +930,11 @@
       "title": "Am I Attracted To My Cousin?",
       "start_ts": 1685147491,
       "youtube_archive_id": "nZJ8KA-Hhjs"
+    },
+    "an_easter_eve_man": {
+      "title": "An Easter Eve Man",
+      "start_ts": 1650155707,
+      "youtube_archive_id": "qx3ZRl2AuAI"
     }
   },
   "messages": [
@@ -6593,6 +6600,26 @@
       "message": "Saw your video about Apple not including chargers. What really got to me is that all the phone co stopped installing wired headphones jacks so u have to buy an adapter which is total bs Rich :pouting_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1650160761,
+      "username": "@beagleboygaming1701",
+      "platform": "youtube",
+      "stream_id": "an_easter_eve_man",
+      "message": "spoiler: you fight Margit again true name Morgot",
+      "commands": [
+        "spoiler"
+      ]
+    },
+    {
+      "ts": 1650156938,
+      "username": "@SparkingHands0",
+      "platform": "youtube",
+      "stream_id": "an_easter_eve_man",
+      "message": "I would never vote for Elon Musk to be president. :thumbs_down: This is coming from someone who owns a Tesla.",
+      "commands": [
+        "down"
       ]
     },
     {
