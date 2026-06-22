@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099355,
+  "updated_ts": 1782099363,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -225,7 +225,8 @@
     "come_hang_out_with_a_man",
     "come_hang_out_with_a_man_and_ask_questions_feat_birds",
     "come_hang_out_with_a_man_freedom_phone",
-    "come_listen_me_complain_and_answer_questions"
+    "come_listen_me_complain_and_answer_questions",
+    "come_look_at_this_man_and_chat_with_him"
   ],
   "commands": {
     "stan": 27,
@@ -256,12 +257,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 60,
+    "eyes": 61,
     "africa": 1,
-    "face": 198,
+    "face": 199,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 135,
+    "joy": 136,
     "gameboy": 1,
     "chick": 1,
     "carlos": 21,
@@ -272,14 +273,14 @@
     "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
-    "heart": 64,
+    "heart": 65,
     "shorts": 1,
     "laughing": 63,
     "news": 13,
-    "chicken": 31,
+    "chicken": 32,
     "cake": 7,
     "d": 2,
-    "halo": 2,
+    "halo": 3,
     "hand": 17,
     "popper": 4,
     "straw": 1,
@@ -313,8 +314,8 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 10,
-    "kiss": 14,
+    "sunglasses": 11,
+    "kiss": 15,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -1648,6 +1649,11 @@
       "title": "Come Listen Me Complain And Answer Questions",
       "start_ts": 1630542581,
       "youtube_archive_id": "uNkmJQGaknk"
+    },
+    "come_look_at_this_man_and_chat_with_him": {
+      "title": "Come Look At This Man And Chat With Him",
+      "start_ts": 1627606802,
+      "youtube_archive_id": "xH-5dyzyByw"
     }
   },
   "messages": [
@@ -14421,6 +14427,77 @@
       "message": "Superhorses running on all courses!:_Carlos:",
       "commands": [
         "carlos"
+      ]
+    },
+    {
+      "ts": 1627611933,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "Hi. Have a kiss. :face_blowing_a_kiss::face_blowing_a_kiss: Amogus Chungus says hello.:smiling_face_with_sunglasses:",
+      "commands": [
+        "kiss",
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1627611168,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "Richie you beast of a man you! :smiling_face_with_heart_eyes: Which comes first Carlos or the egg?",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1627610864,
+      "username": "@SaggyMelonz",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "People who played the game>People who watch a video js :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1627609304,
+      "username": "@ThatScandinavianFella",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "Carlos for President 2024 :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1627609194,
+      "username": "@Alexander-y7z6r",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "My uncle is ex-cardinal Theodore McCarrick, now they want to put him in jail, but if they do that who else is going to massage me to sleep at night :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627608760,
+      "username": "@beastyorionmusic",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "awful day at work. boutta walk out this mf :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1627607882,
+      "username": "@Alexander-y7z6r",
+      "platform": "youtube",
+      "stream_id": "come_look_at_this_man_and_chat_with_him",
+      "message": "I was \"invited\" to play the Halo: Infinite flights",
+      "commands": [
+        "halo"
       ]
     },
     {
