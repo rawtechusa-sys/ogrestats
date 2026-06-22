@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100107,
+  "updated_ts": 1782100115,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -313,7 +313,8 @@
     "i_listened_and_made_changes_wings_of_redemption_doc",
     "i_think_i_fixed_it",
     "i_wasnt_gonna_stream_but_here_i_am",
-    "i_won_but_my_pc_is_dying"
+    "i_won_but_my_pc_is_dying",
+    "idubbz_video_going_shopping_to_become_a_vtuber"
   ],
   "commands": {
     "stan": 27,
@@ -344,12 +345,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 75,
+    "eyes": 76,
     "africa": 1,
-    "face": 290,
+    "face": 292,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 215,
+    "joy": 216,
     "gameboy": 1,
     "chick": 1,
     "carlos": 26,
@@ -378,7 +379,7 @@
     "severance": 2,
     "gta": 5,
     "me": 6,
-    "kill": 1,
+    "kill": 2,
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
@@ -715,7 +716,10 @@
     "rule": 1,
     "reviewmidlifecrisisusa": 1,
     "reviewbrielarsonusa": 1,
-    "sign": 1
+    "sign": 1,
+    "dems": 1,
+    "right": 1,
+    "centrist": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2277,6 +2281,11 @@
       "title": "I WON!!! But My PC Is Dying...",
       "start_ts": 1738206035,
       "youtube_archive_id": "L8roMdrYeKw"
+    },
+    "idubbz_video_going_shopping_to_become_a_vtuber": {
+      "title": "iDubbz Video. Going Shopping To Become A Vtuber",
+      "start_ts": 1684451316,
+      "youtube_archive_id": "gyJZ7NNPpXQ"
     }
   },
   "messages": [
@@ -9500,6 +9509,68 @@
       "message": "I'm tipsy, hello :waving_hand: not drunk just yet",
       "commands": [
         "hand"
+      ]
+    },
+    {
+      "ts": 1684469863,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "Fuck/marry/kill: 2016 Rich, beardless Rich, 2023 Rich.",
+      "commands": [
+        "kill"
+      ]
+    },
+    {
+      "ts": 1684463765,
+      "username": "@arcticstudios",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "Remember your unboxing of the Xbox One SAD Edition? :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1684460407,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "Left not dems: we want free healthcare and equality Right: we want a white enthostate Centrist: I cAn\u2019T sEe A dIfFrEnCE",
+      "commands": [
+        "dems",
+        "right",
+        "centrist"
+      ]
+    },
+    {
+      "ts": 1684455089,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "If you\u2019re interested, the Super Mario Bros. Movie is now officially available outside theaters. :beaming_face_with_smiling_eyes: Digitally, of course.",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1684452858,
+      "username": "@DaveCalzone",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "Was gonna buy a calzone for dinner with this but I\u2019d rather see you stream until 2 :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684452393,
+      "username": "@illuminaughty_420",
+      "platform": "youtube",
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "message": "lawyer says not getting crap bcz the driver that hit me was underinsured and med exceed the 15k in they had on their crap policy sigh love ya rich :pensive_face:",
+      "commands": [
+        "face"
       ]
     },
     {
