@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101189,
+  "updated_ts": 1782101196,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -452,7 +452,8 @@
     "men_birds_and_samurai_cop",
     "men_birds_and_samurai_cop_part_deux",
     "men_chatting",
-    "men_discuss_def_noodles_feat_christhenarc"
+    "men_discuss_def_noodles_feat_christhenarc",
+    "men_feat_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7670,6 +7671,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 21.44,
       "avg_active_chatters": 45.86
+    },
+    "men_feat_men": {
+      "stream_id": "men_feat_men",
+      "title": "Men (feat. Men)",
+      "start_ts": 1674699409,
+      "end_ts": 1674703133,
+      "duration_sec": 3724,
+      "youtube_archive_id": "zDE7_HZlgLw",
+      "source_platform": "youtube",
+      "total_donations_usd": 159.07,
+      "donation_count": 49,
+      "donations_per_min": 2.5629,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.38,
+      "avg_active_chatters": 37.06
     }
   }
 }
