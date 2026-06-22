@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101648,
+  "updated_ts": 1782101655,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -510,7 +510,8 @@
     "philip_burnell_is_a_man",
     "philip_burnell_is_a_man_partwhatever",
     "philip_burnell_is_a_man_plus_newegg_drama",
-    "philip_burnell_is_excited"
+    "philip_burnell_is_excited",
+    "philip_burnell_is_under_attack_now_playing_bloodborne"
   ],
   "commands": {
     "stan": 27,
@@ -543,7 +544,7 @@
     "turkey": 12,
     "eyes": 121,
     "africa": 1,
-    "face": 484,
+    "face": 485,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 318,
@@ -3600,6 +3601,11 @@
       "title": "Philip Burnell Is Excited!",
       "start_ts": 1679530417,
       "youtube_archive_id": "jK9EVFhef9g"
+    },
+    "philip_burnell_is_under_attack_now_playing_bloodborne": {
+      "title": "Philip Burnell Is Under Attack! Now Playing Bloodborne)",
+      "start_ts": 1661384791,
+      "youtube_archive_id": "Cm0Gd3QP3UU"
     }
   },
   "messages": [
@@ -18692,6 +18698,16 @@
       "message": "Alex Jones 2024:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1661389797,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_under_attack_now_playing_bloodborne",
+      "message": "anything at all interesting happen today in youtube world? did we have The Incident 2- Electric Beggaloo. Yes, I know who is messing with phil :loudly_crying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
