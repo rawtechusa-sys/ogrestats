@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100776,
+  "updated_ts": 1782100783,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -393,7 +393,8 @@
     "lets_discuss_nick_mercs_road_to_1000_members",
     "lets_discuss_sam_hyde_and_the_quartering",
     "lets_discuss_some_important_things_road_to_1000_members",
-    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement"
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed"
   ],
   "commands": {
     "stan": 27,
@@ -495,7 +496,7 @@
     "skull": 9,
     "eggplant": 3,
     "bite": 1,
-    "take": 5,
+    "take": 6,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -506,7 +507,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
-    "tomorrow": 18,
+    "tomorrow": 19,
     "horse": 11,
     "bug": 1,
     "violin": 1,
@@ -859,7 +860,8 @@
     "honest": 1,
     "verse": 1,
     "remember": 1,
-    "as": 1
+    "as": 1,
+    "era": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2821,6 +2823,11 @@
       "title": "Let's Discuss Soulja Boy's Twitch TRDR Pocket Statement",
       "start_ts": 1631752734,
       "youtube_archive_id": "eINuzUrQFMg"
+    },
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed": {
+      "title": "Let's Discuss The Nintendo Switch OLED #NintendoSwitchOLED",
+      "start_ts": 1625619247,
+      "youtube_archive_id": "LtE63VFWrO4"
     }
   },
   "messages": [
@@ -25309,6 +25316,36 @@
       "message": "also you should make a discord for rtu :winking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1625621683,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+      "message": "Rich Tomorrow: Nintendo has hired me and my luscious nips to build a new better switch, lets get into it",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1625621511,
+      "username": "@HatchlingByHeart",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+      "message": "Hot Take: It's not Nintendo's fault people are pissed at there being no \"Switch Pro\". Blame the rumormongers and \"leakers\" who lied for clout.",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1625621034,
+      "username": "@Thomas-Witt",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+      "message": "If Sony never entered gaming, who would've won the 32 bit era: Sega Saturn or N64?",
+      "commands": [
+        "era"
       ]
     },
     {
