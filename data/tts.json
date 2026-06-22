@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100559,
+  "updated_ts": 1782100568,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -364,7 +364,8 @@
     "just_chatting_with_vaush",
     "just_discussing_future_plans_road_to_1000_members",
     "just_doing_man_things",
-    "just_manstreaming_quantum_tv_and_melonie_mac"
+    "just_manstreaming_quantum_tv_and_melonie_mac",
+    "just_the_tip_tipster_late_night_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -481,7 +482,7 @@
     "horse": 10,
     "bug": 1,
     "violin": 1,
-    "update": 5,
+    "update": 6,
     "wings": 1,
     "advice": 4,
     "ghostwire": 1,
@@ -811,7 +812,9 @@
     "tear": 1,
     "are": 1,
     "keemstar": 1,
-    "tbf": 1
+    "tbf": 1,
+    "prohibited": 1,
+    "gates": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2628,6 +2631,11 @@
       "title": "Just Manstreaming (Quantum TV And Melonie Mac)",
       "start_ts": 1689121250,
       "youtube_archive_id": "h7AgWZBgjFE"
+    },
+    "just_the_tip_tipster_late_night_man_stream": {
+      "title": "Just The Tip (Tipster Late Night Man Stream)",
+      "start_ts": 1711069081,
+      "youtube_archive_id": "Q9fAaZLpiCc"
     }
   },
   "messages": [
@@ -5096,6 +5104,36 @@
       "message": "Did you play Stroke the Horse yet :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1711080569,
+      "username": "@Adam201028",
+      "platform": "youtube",
+      "stream_id": "just_the_tip_tipster_late_night_man_stream",
+      "message": "bill gates: man simulator 2K24",
+      "commands": [
+        "gates"
+      ]
+    },
+    {
+      "ts": 1711075881,
+      "username": "@aurubaru",
+      "platform": "youtube",
+      "stream_id": "just_the_tip_tipster_late_night_man_stream",
+      "message": "Thoughts on Dr. Umar? Snowbunnies N E V A H :prohibited:",
+      "commands": [
+        "prohibited"
+      ]
+    },
+    {
+      "ts": 1711070180,
+      "username": "@JoshJonesDrums",
+      "platform": "youtube",
+      "stream_id": "just_the_tip_tipster_late_night_man_stream",
+      "message": "Update: article is in the fact check edit stage",
+      "commands": [
+        "update"
       ]
     },
     {
