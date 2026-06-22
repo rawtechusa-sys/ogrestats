@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099716,
+  "updated_ts": 1782099724,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -268,7 +268,8 @@
     "dspgamings_chickengate",
     "dspgamings_direct_capture_saga",
     "dspgamings_may_1st_burst_anniversary_show",
-    "dspgamings_may_1st_burst_anniversary_show_back_to_phil"
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+    "dude_wtf_is_even_going_on"
   ],
   "commands": {
     "stan": 27,
@@ -318,7 +319,7 @@
     "heart": 79,
     "shorts": 1,
     "laughing": 81,
-    "news": 14,
+    "news": 15,
     "chicken": 36,
     "cake": 7,
     "d": 2,
@@ -351,7 +352,7 @@
     "hands": 18,
     "horns": 6,
     "crab": 2,
-    "superhero": 15,
+    "superhero": 16,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -1958,6 +1959,11 @@
       "title": "DSPGAMING'S MAY 1ST BURST ANNIVERSARY SHOW (Back To Phil)",
       "start_ts": 1682980932,
       "youtube_archive_id": "MoYJi71cPsg"
+    },
+    "dude_wtf_is_even_going_on": {
+      "title": "Dude WTF Is Even Going On?",
+      "start_ts": 1695171372,
+      "youtube_archive_id": "0AdYjHRhWw8"
     }
   },
   "messages": [
@@ -6689,6 +6695,26 @@
       "message": "Hey dad, I accepted a job at the company that I interned at. I start a month after I graduate. I\u2019m so excited :star_struck:",
       "commands": [
         "struck"
+      ]
+    },
+    {
+      "ts": 1695179315,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "dude_wtf_is_even_going_on",
+      "message": "Breaking News: Optimus follows QTV 4 dating advice",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1695174173,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "dude_wtf_is_even_going_on",
+      "message": "Just know hero in :man_superhero: , missed a couple my b",
+      "commands": [
+        "superhero"
       ]
     },
     {
