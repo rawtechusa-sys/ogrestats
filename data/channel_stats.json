@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101035,
+  "updated_ts": 1782101043,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -431,7 +431,8 @@
     "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
     "man_in_chicken_suit_ep6_more_quantum_karen_tv",
     "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
-    "man_news_live"
+    "man_news_live",
+    "man_on_man_livestream_featuring_masculine_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7313,6 +7314,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.57,
       "avg_active_chatters": 23.38
+    },
+    "man_on_man_livestream_featuring_masculine_birds": {
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "title": "Man On Man Livestream Featuring Masculine Birds",
+      "start_ts": 1683849635,
+      "end_ts": 1683869825,
+      "duration_sec": 20190,
+      "youtube_archive_id": "yUg-a8tlZV0",
+      "source_platform": "youtube",
+      "total_donations_usd": 429.19,
+      "donation_count": 99,
+      "donations_per_min": 1.2755,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.91,
+      "avg_active_chatters": 24.72
     }
   }
 }
