@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100204,
+  "updated_ts": 1782100213,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -325,7 +325,8 @@
     "im_back_and_only_half_dead_come_hang_out",
     "im_buzzed_off_caffeine_come_chat_with_me",
     "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
-    "im_just_a_little_stoned_right_now"
+    "im_just_a_little_stoned_right_now",
+    "im_just_a_man_on_the_damn_internet"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5511,6 +5512,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.4,
       "avg_active_chatters": 30.01
+    },
+    "im_just_a_man_on_the_damn_internet": {
+      "stream_id": "im_just_a_man_on_the_damn_internet",
+      "title": "I'M JUST A MAN ON THE DAMN INTERNET!",
+      "start_ts": 1628992435,
+      "end_ts": 1629001969,
+      "duration_sec": 9534,
+      "youtube_archive_id": "_8E5jrETRCk",
+      "source_platform": "youtube",
+      "total_donations_usd": 443.66,
+      "donation_count": 108,
+      "donations_per_min": 2.7921,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.31,
+      "avg_active_chatters": 36.21
     }
   }
 }
