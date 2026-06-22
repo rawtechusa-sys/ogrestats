@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100568,
+  "updated_ts": 1782100578,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -365,7 +365,8 @@
     "just_discussing_future_plans_road_to_1000_members",
     "just_doing_man_things",
     "just_manstreaming_quantum_tv_and_melonie_mac",
-    "just_the_tip_tipster_late_night_man_stream"
+    "just_the_tip_tipster_late_night_man_stream",
+    "just_two_men_feat_men"
   ],
   "commands": {
     "stan": 27,
@@ -398,10 +399,10 @@
     "turkey": 7,
     "eyes": 82,
     "africa": 1,
-    "face": 339,
+    "face": 341,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 245,
+    "joy": 246,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -411,10 +412,10 @@
     "voice": 4,
     "cucumber": 45,
     "biceps": 3,
-    "tongue": 6,
+    "tongue": 7,
     "heart": 114,
     "shorts": 1,
-    "laughing": 141,
+    "laughing": 142,
     "news": 18,
     "chicken": 42,
     "cake": 7,
@@ -814,7 +815,9 @@
     "keemstar": 1,
     "tbf": 1,
     "prohibited": 1,
-    "gates": 1
+    "gates": 1,
+    "rain": 1,
+    "off": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2636,6 +2639,11 @@
       "title": "Just The Tip (Tipster Late Night Man Stream)",
       "start_ts": 1711069081,
       "youtube_archive_id": "Q9fAaZLpiCc"
+    },
+    "just_two_men_feat_men": {
+      "title": "Just Two Men (Feat. Men)",
+      "start_ts": 1692403737,
+      "youtube_archive_id": "33nT2YQqERo"
     }
   },
   "messages": [
@@ -9120,6 +9128,67 @@
       "message": "Listen, swim back to the tip of the soup bowl. Be a member for 25 months just so you can flex a golden cucumber :cucumber: that no one gives a shit about.",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1692417215,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "Come to Texas jay where we have a dictator governor oh yeah and senator Cruz :woozy_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1692417071,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "I\u2019m captivated by the new Conan spin-off: the adventures of Keemstar the barbarian ! Don\u2019t put clothes on him Rich, it would kind of kill the vibe :face_with_tears_of_joy:",
+      "commands": [
+        "off",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1692410312,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "You guys are hilarious. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1692409228,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "Soundboard the Good Canadian burp! :winking_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1692406252,
+      "username": "@OhChristopher",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "Theirs a hurricane heading my way wish me luck :folded_hands::cloud_with_lightning_and_rain:",
+      "commands": [
+        "rain"
+      ]
+    },
+    {
+      "ts": 1692405395,
+      "username": "@DMCsaji",
+      "platform": "youtube",
+      "stream_id": "just_two_men_feat_men",
+      "message": "Let Jay hear putz12 sub sound:rolling_on_the_floor_laughing: also Phil belch",
+      "commands": [
+        "laughing"
       ]
     },
     {
