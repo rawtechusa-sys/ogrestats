@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098649,
+  "updated_ts": 1782098657,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -139,7 +139,8 @@
     "another_interesting_pat_the_nes_punk_twist",
     "another_surprise_stream_feat_a_man_and_birds",
     "another_swatting_disaster_and_activisionubisoft_allegations",
-    "answering_questions"
+    "answering_questions",
+    "answering_questions_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2349,6 +2350,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.5,
       "avg_active_chatters": 24.98
+    },
+    "answering_questions_feat_birds": {
+      "stream_id": "answering_questions_feat_birds",
+      "title": "Answering Questions (Feat. Birds)",
+      "start_ts": 1661716662,
+      "end_ts": 1661723467,
+      "duration_sec": 6805,
+      "youtube_archive_id": "yOZBozd5lbQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 89.88,
+      "donation_count": 29,
+      "donations_per_min": 0.7925,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.77,
+      "avg_active_chatters": 29.82
     }
   }
 }
