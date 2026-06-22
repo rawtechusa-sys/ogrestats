@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099707,
+  "updated_ts": 1782099716,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -267,7 +267,8 @@
     "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
     "dspgamings_chickengate",
     "dspgamings_direct_capture_saga",
-    "dspgamings_may_1st_burst_anniversary_show"
+    "dspgamings_may_1st_burst_anniversary_show",
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil"
   ],
   "commands": {
     "stan": 27,
@@ -298,9 +299,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 67,
+    "eyes": 68,
     "africa": 1,
-    "face": 243,
+    "face": 245,
     "petersonxhhanson": 1,
     "poo": 15,
     "joy": 178,
@@ -347,7 +348,7 @@
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
-    "hands": 17,
+    "hands": 18,
     "horns": 6,
     "crab": 2,
     "superhero": 15,
@@ -1952,6 +1953,11 @@
       "title": "DSPGAMING'S MAY 1ST BURST ANNIVERSARY SHOW",
       "start_ts": 1682959016,
       "youtube_archive_id": "m735gIOv7gk"
+    },
+    "dspgamings_may_1st_burst_anniversary_show_back_to_phil": {
+      "title": "DSPGAMING'S MAY 1ST BURST ANNIVERSARY SHOW (Back To Phil)",
+      "start_ts": 1682980932,
+      "youtube_archive_id": "MoYJi71cPsg"
     }
   },
   "messages": [
@@ -8417,6 +8423,46 @@
       "message": "Wings' cant Rocko died. Rest in Piece :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1682985970,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+      "message": "I\u2019m from Alabama. Incest with cousins is legal here, but no one I know here likes it. I know I sure as hell don\u2019t. :nauseated_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1682984958,
+      "username": "@CASHM3REgoat",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+      "message": "Praise Be :egg2::folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1682983007,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+      "message": "Glad to be back! My night class was cut super short, so now I\u2019m back. Today is the best May 1st in my entire life, no cap. :beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes: Can I get Beavis Boobs?",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1682981948,
+      "username": "@HaunchoJackHD",
+      "platform": "youtube",
+      "stream_id": "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
+      "message": "Red dead redemption 2 is starting to look dated and that makes me sad :disappointed_face: it needs a remaster",
+      "commands": [
+        "face"
       ]
     },
     {
