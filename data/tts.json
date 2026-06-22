@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092713,
+  "updated_ts": 1782092743,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -23,7 +23,8 @@
     "42_year_old_man_plays_video_games_terribly",
     "a_baked_middle_aged_man_plays_video_games",
     "a_baked_middle_aged_man_plays_video_games_again",
-    "a_beautiful_man_becomes_more_beautiful_live"
+    "a_beautiful_man_becomes_more_beautiful_live",
+    "a_birdman_family_friendly_love_stream"
   ],
   "commands": {
     "stan": 27,
@@ -49,7 +50,7 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 1,
+    "rich": 2,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -73,7 +74,7 @@
     "heart": 7,
     "shorts": 1,
     "laughing": 4,
-    "news": 2,
+    "news": 3,
     "chicken": 3,
     "cake": 1,
     "d": 1,
@@ -98,7 +99,11 @@
     "kendal": 1,
     "up": 1,
     "note": 1,
-    "eyebrow": 1
+    "eyebrow": 1,
+    "facepalming": 1,
+    "shrugging": 1,
+    "donation": 1,
+    "naruto": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -210,6 +215,11 @@
       "title": "A Beautiful Man Becomes More Beautiful LIVE",
       "start_ts": 1633394352,
       "youtube_archive_id": "SPm7D8bta-M"
+    },
+    "a_birdman_family_friendly_love_stream": {
+      "title": "A Bird/Man Family-Friendly Love Stream",
+      "start_ts": 1641868752,
+      "youtube_archive_id": "jqNfTaLXdrI"
     }
   },
   "messages": [
@@ -2646,6 +2656,66 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1641875463,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "breaking news: I almost got a ps5 physical for $643 on ebay but was out bid in the last 30 seconds",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1641872651,
+      "username": "@creativeusername7951",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "Wanna watch some Naruto: The Last Airbender?",
+      "commands": [
+        "naruto"
+      ]
+    },
+    {
+      "ts": 1641871034,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "wings troll donation: hey wings ur life is a real life truman show except your fat and you cry at video games",
+      "commands": [
+        "donation"
+      ]
+    },
+    {
+      "ts": 1641870221,
+      "username": "@vdmaster1",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "I replaced soda with AHA and havent looked back :_Rich:",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1641870170,
+      "username": "@Mattman524",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "I'm assuming you have seen the leaked 007 achievements for xbox do actually think it's gonna happen reminder hitman dev is working on a 007 game :man_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1641869408,
+      "username": "@jimchackan560",
+      "platform": "youtube",
+      "stream_id": "a_birdman_family_friendly_love_stream",
+      "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
+      "commands": [
+        "facepalming"
       ]
     },
     {
