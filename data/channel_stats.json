@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099650,
+  "updated_ts": 1782099658,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -261,7 +261,8 @@
     "dsp_loves_derich",
     "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
     "dspgaming_gets_schooled_by_beardstar_keemstar",
-    "dspgaming_is_a_tad_salty_plus_drphil"
+    "dspgaming_is_a_tad_salty_plus_drphil",
+    "dspgaming_is_back_feat_jaysus"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4423,6 +4424,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.38,
       "avg_active_chatters": 27.93
+    },
+    "dspgaming_is_back_feat_jaysus": {
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "title": "DSPGaming IS BACK (Feat. Jaysus)",
+      "start_ts": 1683245518,
+      "end_ts": 1683262363,
+      "duration_sec": 16845,
+      "youtube_archive_id": "i2Bd2HFMGqk",
+      "source_platform": "youtube",
+      "total_donations_usd": 582.51,
+      "donation_count": 135,
+      "donations_per_min": 2.0748,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.44,
+      "avg_active_chatters": 31.4
     }
   }
 }
