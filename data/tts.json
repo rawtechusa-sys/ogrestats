@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100797,
+  "updated_ts": 1782100804,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -396,7 +396,8 @@
     "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
     "lets_discuss_the_steam_deck",
-    "lets_discuss_xbox_and_activision"
+    "lets_discuss_xbox_and_activision",
+    "lets_have_some_fun"
   ],
   "commands": {
     "stan": 27,
@@ -422,17 +423,17 @@
     "something": 2,
     "hobo": 2,
     "gnome": 1,
-    "rich": 24,
+    "rich": 25,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 89,
+    "eyes": 92,
     "africa": 1,
-    "face": 372,
+    "face": 375,
     "petersonxhhanson": 1,
     "poo": 21,
-    "joy": 259,
+    "joy": 260,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -524,7 +525,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 4,
-    "mouth": 15,
+    "mouth": 16,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -798,7 +799,7 @@
     "rule": 1,
     "reviewmidlifecrisisusa": 1,
     "reviewbrielarsonusa": 1,
-    "sign": 1,
+    "sign": 2,
     "dems": 1,
     "right": 1,
     "centrist": 1,
@@ -864,7 +865,8 @@
     "remember": 1,
     "as": 1,
     "era": 1,
-    "classic": 1
+    "classic": 1,
+    "quartering": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2841,6 +2843,11 @@
       "title": "Let's Discuss Xbox And Activision",
       "start_ts": 1642555954,
       "youtube_archive_id": "xwiMObajnyA"
+    },
+    "lets_have_some_fun": {
+      "title": "Let's Have Some Fun",
+      "start_ts": 1657305411,
+      "youtube_archive_id": "yV3k9GZW1Zk"
     }
   },
   "messages": [
@@ -16294,6 +16301,117 @@
       "message": "Act Man is back making paper :flexed_biceps:",
       "commands": [
         "biceps"
+      ]
+    },
+    {
+      "ts": 1657314519,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": ":eyes: Where's Merch shop? I'd support that. :heavy_dollar_sign::heavy_dollar_sign::heavy_dollar_sign:",
+      "commands": [
+        "eyes",
+        "sign"
+      ]
+    },
+    {
+      "ts": 1657313337,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "The behavior diff between this vid & last night.:face_screaming_in_fear::grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1657312601,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "AugieRFC has a vid about Keffals & TheQuartering :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1657310846,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "Can I be a mod Rich pls? Been here for a while :smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1657309332,
+      "username": "@neonmunky",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "50 equals shirt off mate, wanna see ya do butthead interview with Jeremy like that :winking_face: Also what does it take to be a mod? Normally when you stream I am asleep or at work until now mate",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1657308314,
+      "username": "@Goldenknight01",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "Woorah for 2 months! Let's keep this hilarious train going! Got my Stream Deck XL in the mail and going to have alot of fun with it. :_Rich:",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1657307706,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "I'm thoroughly tickled! :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1657307573,
+      "username": "@The_Iron_Jungle",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "Rich, we love ya man\u2026just let him dig his own hole to lay in\u2026he\u2019s 4 feet in already\u2026and by the way, I was a member before but it won\u2019t let me now:face_with_diagonal_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1657306891,
+      "username": "@MagicTaint",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "New name for The Quartering: The Tickling",
+      "commands": [
+        "quartering"
+      ]
+    },
+    {
+      "ts": 1657306236,
+      "username": "@MagicTaint",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "New name for The Quartering: The Tickling",
+      "commands": [
+        "quartering"
+      ]
+    },
+    {
+      "ts": 1657305980,
+      "username": "@joshberry2991",
+      "platform": "youtube",
+      "stream_id": "lets_have_some_fun",
+      "message": "Yes I want my team to win, I want the Dallas Cowboys to go to the Super Bowl this time :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
