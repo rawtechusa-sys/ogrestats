@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102163,
+  "updated_ts": 1782102168,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -595,7 +595,8 @@
     "so_today_was_a_day",
     "some_hot_e_begging_action",
     "some_old_school_phil",
-    "someordinarygamers_dspgaming_the_completionist_its_insane"
+    "someordinarygamers_dspgaming_the_completionist_its_insane",
+    "sony_state_of_man_marathon_stream_state_of_play_2022"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10101,6 +10102,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.9,
       "avg_active_chatters": 46.52
+    },
+    "sony_state_of_man_marathon_stream_state_of_play_2022": {
+      "stream_id": "sony_state_of_man_marathon_stream_state_of_play_2022",
+      "title": "Sony State Of Man Marathon Stream (State Of Play 2022)",
+      "start_ts": 1654194686,
+      "end_ts": 1654208975,
+      "duration_sec": 14289,
+      "youtube_archive_id": "_qJBHog_EAw",
+      "source_platform": "youtube",
+      "total_donations_usd": 270.75,
+      "donation_count": 70,
+      "donations_per_min": 1.1369,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.94,
+      "avg_active_chatters": 34.28
     }
   }
 }
