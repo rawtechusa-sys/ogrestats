@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100735,
+  "updated_ts": 1782100741,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -387,7 +387,8 @@
     "lets_be_disappointed_by_the_nintendo_direct_together",
     "lets_chat",
     "lets_chat_plus_birds",
-    "lets_discover_def_noodles_together"
+    "lets_discover_def_noodles_together",
+    "lets_discuss_e3_and_next_gen_consoles"
   ],
   "commands": {
     "stan": 27,
@@ -434,7 +435,7 @@
     "cucumber": 45,
     "biceps": 4,
     "tongue": 7,
-    "heart": 117,
+    "heart": 119,
     "shorts": 1,
     "laughing": 147,
     "news": 18,
@@ -2783,6 +2784,11 @@
       "title": "Let's Discover Def Noodles Together",
       "start_ts": 1660517163,
       "youtube_archive_id": "dvRoRuZhIvc"
+    },
+    "lets_discuss_e3_and_next_gen_consoles": {
+      "title": "Let's Discuss E3 and Next Gen Consoles",
+      "start_ts": 1529108149,
+      "youtube_archive_id": "OIJofrObuD8"
     }
   },
   "messages": [
@@ -25321,6 +25327,26 @@
       "message": "intro Guy looks like Rich's body guard :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1529114243,
+      "username": "@StayNightGaming",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_e3_and_next_gen_consoles",
+      "message": "Riccchhhiiiieeeeeee :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1529113359,
+      "username": "@Moaracc",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_e3_and_next_gen_consoles",
+      "message": "Will you be getting a ASUS PG27UQ? 4k 144Hz :red_heart:",
+      "commands": [
+        "heart"
       ]
     }
   ]
