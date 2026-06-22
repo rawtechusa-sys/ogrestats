@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101626,
+  "updated_ts": 1782101634,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -507,7 +507,8 @@
     "philip_burnell_chicken_sandwich_madness",
     "philip_burnell_feat_tickled_television_incorporated",
     "philip_burnell_is_a_lover_of_horses",
-    "philip_burnell_is_a_man"
+    "philip_burnell_is_a_man",
+    "philip_burnell_is_a_man_partwhatever"
   ],
   "commands": {
     "stan": 27,
@@ -540,7 +541,7 @@
     "turkey": 12,
     "eyes": 121,
     "africa": 1,
-    "face": 478,
+    "face": 480,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 314,
@@ -595,7 +596,7 @@
     "dog": 11,
     "is": 8,
     "spose": 1,
-    "sunglasses": 23,
+    "sunglasses": 24,
     "kiss": 25,
     "earlier": 1,
     "ghost": 2,
@@ -3579,6 +3580,11 @@
       "title": "Philip Burnell Is A Man",
       "start_ts": 1689378774,
       "youtube_archive_id": "qO-2wSWuI7M"
+    },
+    "philip_burnell_is_a_man_partwhatever": {
+      "title": "Philip Burnell Is A Man (Part...Whatever)",
+      "start_ts": 1645922385,
+      "youtube_archive_id": "93fcsePUne0"
     }
   },
   "messages": [
@@ -23695,6 +23701,36 @@
       "message": "He looks like Ben Shapiro:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1645928697,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_partwhatever",
+      "message": "it sounded like phil really fell down a hole and they guy yelled down the whole to tell him to relax his anus for advice :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1645928204,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_partwhatever",
+      "message": "I wish Carlos would replace Yoshi in Mario world :sad_but_relieved_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1645926048,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_is_a_man_partwhatever",
+      "message": "The drink fell down a he- HOLE bro. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
       ]
     },
     {
