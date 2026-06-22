@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096036,
+  "updated_ts": 1782096096,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -92,7 +92,8 @@
     "a_pure_man_experience",
     "a_quality_qvc_bird_roast",
     "a_quick_ask_me_anything_stream_power_wash_simulator",
-    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update"
+    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
+    "a_quick_stream"
   ],
   "commands": {
     "stan": 27,
@@ -125,7 +126,7 @@
     "turkey": 4,
     "eyes": 21,
     "africa": 1,
-    "face": 79,
+    "face": 81,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 57,
@@ -166,7 +167,7 @@
     "fire": 4,
     "kendal": 1,
     "up": 9,
-    "note": 2,
+    "note": 3,
     "eyebrow": 1,
     "facepalming": 3,
     "shrugging": 1,
@@ -733,6 +734,11 @@
       "title": "A Quick Man Stream (Plus Nintendo Switch OLED Giveaway Update)",
       "start_ts": 1648860702,
       "youtube_archive_id": "eqIVZ4VnjP4"
+    },
+    "a_quick_stream": {
+      "title": "A Quick Stream",
+      "start_ts": 1650678936,
+      "youtube_archive_id": "xj_WkzK9MDc"
     }
   },
   "messages": [
@@ -5535,6 +5541,36 @@
       "platform": "youtube",
       "stream_id": "1_million_sub_special_feat_birds",
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1650681074,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_quick_stream",
+      "message": "HELLO RICH AND CHAT. I AM HERE. THAT OBLIVION MUSIC IS LIT. LOVE THE RIP ON QTV. CAN I GET AN APPLAUSE FOR EVERYONE HERE? THANKS :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1650680296,
+      "username": "@GaryBusey-sLaserdiscCollection",
+      "platform": "youtube",
+      "stream_id": "a_quick_stream",
+      "message": "Less serious note: Adult Swim has some newly made aqua teen clips on their youtube channel. It's like they never stopped making it.",
+      "commands": [
+        "note"
+      ]
+    },
+    {
+      "ts": 1650680029,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_quick_stream",
+      "message": "Saw your video about Apple not including chargers. What really got to me is that all the phone co stopped installing wired headphones jacks so u have to buy an adapter which is total bs Rich :pouting_face:",
       "commands": [
         "face"
       ]
