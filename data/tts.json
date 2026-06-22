@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098952,
+  "updated_ts": 1782098960,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -176,7 +176,8 @@
     "celebreating_15_years_of_philip_paul_burnell_a_man",
     "certified_alpha_male_stream_for_men",
     "certified_man_stream",
-    "chat_game_night"
+    "chat_game_night",
+    "chatting_and_karens"
   ],
   "commands": {
     "stan": 27,
@@ -209,7 +210,7 @@
     "turkey": 5,
     "eyes": 43,
     "africa": 1,
-    "face": 144,
+    "face": 145,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 113,
@@ -219,7 +220,7 @@
     "away": 5,
     "idea": 1,
     "fear": 2,
-    "voice": 2,
+    "voice": 3,
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
@@ -274,7 +275,7 @@
     "richsmile": 2,
     "dsp": 9,
     "story": 1,
-    "tree": 2,
+    "tree": 3,
     "skull": 5,
     "eggplant": 1,
     "bite": 1,
@@ -448,7 +449,8 @@
     "staple": 1,
     "bubbles": 2,
     "web": 1,
-    "gonjiam": 1
+    "gonjiam": 1,
+    "spaghetti": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1325,6 +1327,11 @@
       "title": "CHAT & GAME NIGHT",
       "start_ts": 1706309990,
       "youtube_archive_id": "PAbnFt_rgng"
+    },
+    "chatting_and_karens": {
+      "title": "Chatting And Karens",
+      "start_ts": 1669861158,
+      "youtube_archive_id": "CMDj4-SPyF0"
     }
   },
   "messages": [
@@ -7718,6 +7725,46 @@
       "message": "Bugatti? More like a used Toyota Camry with 5k :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1669871358,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "chatting_and_karens",
+      "message": "MW2 Voice: Don't worry Phil we'll get em next time",
+      "commands": [
+        "voice"
+      ]
+    },
+    {
+      "ts": 1669864808,
+      "username": "@DengrayKai211",
+      "platform": "youtube",
+      "stream_id": "chatting_and_karens",
+      "message": "I\u2019m eating ragu spaghetti :spaghetti:",
+      "commands": [
+        "spaghetti"
+      ]
+    },
+    {
+      "ts": 1669862549,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "chatting_and_karens",
+      "message": "Last month of the year, cant wait to end it off\ud83d\udd7a\ud83c\udffe:christmas_tree:",
+      "commands": [
+        "tree"
+      ]
+    },
+    {
+      "ts": 1669862494,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "chatting_and_karens",
+      "message": "Christianity is now a minority religion in England and Wales. :thinking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
