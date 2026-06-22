@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101655,
+  "updated_ts": 1782101663,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -511,7 +511,8 @@
     "philip_burnell_is_a_man_partwhatever",
     "philip_burnell_is_a_man_plus_newegg_drama",
     "philip_burnell_is_excited",
-    "philip_burnell_is_under_attack_now_playing_bloodborne"
+    "philip_burnell_is_under_attack_now_playing_bloodborne",
+    "philip_burnells_brilliant_pc_advice"
   ],
   "commands": {
     "stan": 27,
@@ -544,7 +545,7 @@
     "turkey": 12,
     "eyes": 121,
     "africa": 1,
-    "face": 485,
+    "face": 489,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 318,
@@ -560,7 +561,7 @@
     "tongue": 12,
     "heart": 149,
     "shorts": 2,
-    "laughing": 191,
+    "laughing": 192,
     "news": 22,
     "chicken": 58,
     "cake": 7,
@@ -894,7 +895,7 @@
     "muta": 2,
     "o": 1,
     "fingers": 3,
-    "word": 2,
+    "word": 3,
     "wrestling": 1,
     "tcap": 1,
     "salad": 1,
@@ -1054,7 +1055,9 @@
     "skills": 1,
     "crossover": 1,
     "groups": 1,
-    "nutshell": 1
+    "nutshell": 1,
+    "logic": 1,
+    "all": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3606,6 +3609,11 @@
       "title": "Philip Burnell Is Under Attack! Now Playing Bloodborne)",
       "start_ts": 1661384791,
       "youtube_archive_id": "Cm0Gd3QP3UU"
+    },
+    "philip_burnells_brilliant_pc_advice": {
+      "title": "Philip Burnell's Brilliant PC Advice",
+      "start_ts": 1680051229,
+      "youtube_archive_id": "7erXZBsykVU"
     }
   },
   "messages": [
@@ -15000,6 +15008,86 @@
       "message": "DSP tries: delete system32",
       "commands": [
         "tries"
+      ]
+    },
+    {
+      "ts": 1680058612,
+      "username": "@monktribal951",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "My fianc\u00e9 is watching this for the first time and is like wtf is this. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1680058494,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "One word: projection",
+      "commands": [
+        "word"
+      ]
+    },
+    {
+      "ts": 1680058110,
+      "username": "@DD_Boo",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "\u2022play the oblivion music for this I have some deep poetry for you all: I leave this place broken hearted I came to shit, but only farted",
+      "commands": [
+        "all"
+      ]
+    },
+    {
+      "ts": 1680056149,
+      "username": "@Kowkarot",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "$500 for new PC, $2000 for WWE Champions :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680055253,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "Got a new baby coming :partying_face: can you play oblivion music + finish this song? I need that money. I really really do. I need that money. Jasper needs some litter, and kat does too Bacon grease in my toilet__",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680053948,
+      "username": "@raymarkable96",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "DSP logic: new Zelda needs to be on virtual boy",
+      "commands": [
+        "logic"
+      ]
+    },
+    {
+      "ts": 1680053928,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "bro i can imagine Phil having kids :worried_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680053288,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "message": "Kanye is so insane, a Jonah Hill movie made him reconsider his Anti-Semitism. :grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
