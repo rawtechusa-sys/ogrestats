@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099338,
+  "updated_ts": 1782099346,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -223,7 +223,8 @@
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
     "come_hang_out_for_a_bit",
     "come_hang_out_with_a_man",
-    "come_hang_out_with_a_man_and_ask_questions_feat_birds"
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds",
+    "come_hang_out_with_a_man_freedom_phone"
   ],
   "commands": {
     "stan": 27,
@@ -256,23 +257,23 @@
     "turkey": 6,
     "eyes": 60,
     "africa": 1,
-    "face": 197,
+    "face": 198,
     "petersonxhhanson": 1,
-    "poo": 9,
+    "poo": 10,
     "joy": 134,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 19,
+    "carlos": 20,
     "away": 5,
     "idea": 2,
     "fear": 3,
     "voice": 3,
-    "cucumber": 23,
+    "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
     "heart": 64,
     "shorts": 1,
-    "laughing": 62,
+    "laughing": 63,
     "news": 13,
     "chicken": 31,
     "cake": 7,
@@ -299,7 +300,7 @@
     "up": 19,
     "note": 5,
     "eyebrow": 2,
-    "facepalming": 6,
+    "facepalming": 7,
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
@@ -1635,6 +1636,11 @@
       "title": "Come Hang Out With A Man And Ask Questions (Feat. Birds)",
       "start_ts": 1663291903,
       "youtube_archive_id": "cU-Et_njyLg"
+    },
+    "come_hang_out_with_a_man_freedom_phone": {
+      "title": "Come Hang Out With A Man (Freedom Phone)",
+      "start_ts": 1626573164,
+      "youtube_archive_id": "2LXV3_6HqME"
     }
   },
   "messages": [
@@ -14497,6 +14503,66 @@
       "message": "Dad is beautiful:_RichSmile:",
       "commands": [
         "richsmile"
+      ]
+    },
+    {
+      "ts": 1626582060,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "Dad looking luscious on my 4K HDR OLED :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1626578206,
+      "username": "@jaycour6423",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "It still won\u2019t let me become member. I\u2019m from RI :person_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1626576920,
+      "username": "@mclaine33",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "I\u2019m a Rep but I don\u2019t like Trump Even I can smell bull :pile_of_poo: from a mile away Rich. It\u2019s an obvious scam lol. Also i preordered Steam Deck 512gb Q2 2022",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1626575772,
+      "username": "@AnthonyLeuzziJr",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "I can't wait for the Freedom Console to go with my soulja console :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1626575727,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "This is so dystopian is not even funny. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626574871,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_hang_out_with_a_man_freedom_phone",
+      "message": "Greetings, Horse Father:_Cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
