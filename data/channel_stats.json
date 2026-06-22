@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102226,
+  "updated_ts": 1782102231,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -605,7 +605,8 @@
     "steven_crowder_fallout_and_colleen_ballinger_is_racist",
     "stoned_and_streaming_feat_birds",
     "stoned_and_streaming_feat_birds_pt2",
-    "stoned_as_hell_discussing_the_game_awards"
+    "stoned_as_hell_discussing_the_game_awards",
+    "story_time_from_canada"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10271,6 +10272,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.98,
       "avg_active_chatters": 31.36
+    },
+    "story_time_from_canada": {
+      "stream_id": "story_time_from_canada",
+      "title": "STORY TIME FROM CANADA",
+      "start_ts": 1680220775,
+      "end_ts": 1680225947,
+      "duration_sec": 5172,
+      "youtube_archive_id": "UvOoJ96xOac",
+      "source_platform": "youtube",
+      "total_donations_usd": 93.17,
+      "donation_count": 36,
+      "donations_per_min": 1.0809,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.87,
+      "avg_active_chatters": 29.77
     }
   }
 }
