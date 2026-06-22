@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102550,
+  "updated_ts": 1782102555,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -661,7 +661,8 @@
     "the_may_1st_burst_aftermath_feat_multiple_birds",
     "the_may_1st_man_extravaganza_dad_is_back",
     "the_middle_aged_man_stream",
-    "the_ouya_console_failure_experience"
+    "the_ouya_console_failure_experience",
+    "the_perfect_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11223,6 +11224,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.65,
       "avg_active_chatters": 43.04
+    },
+    "the_perfect_man_stream": {
+      "stream_id": "the_perfect_man_stream",
+      "title": "The Perfect Man Stream",
+      "start_ts": 1632612400,
+      "end_ts": 1632621808,
+      "duration_sec": 9408,
+      "youtube_archive_id": "9oraohQ8gIo",
+      "source_platform": "youtube",
+      "total_donations_usd": 416.83,
+      "donation_count": 98,
+      "donations_per_min": 2.6584,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.57,
+      "avg_active_chatters": 25.29
     }
   }
 }
