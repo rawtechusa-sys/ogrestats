@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095448,
+  "updated_ts": 1782095506,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -82,7 +82,8 @@
     "a_middle_aged_man_reacks",
     "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
     "a_middle_aged_man_surrounded_by_poultry",
-    "a_middle_aged_man_surrounded_by_poultry_feat_birds"
+    "a_middle_aged_man_surrounded_by_poultry_feat_birds",
+    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5"
   ],
   "commands": {
     "stan": 27,
@@ -129,11 +130,11 @@
     "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 29,
+    "heart": 30,
     "shorts": 1,
     "laughing": 25,
     "news": 5,
-    "chicken": 10,
+    "chicken": 11,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -253,7 +254,8 @@
     "reviewlexlutherusa": 1,
     "rocket": 1,
     "droplets": 1,
-    "tomato": 1
+    "tomato": 1,
+    "hearts": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -660,6 +662,11 @@
       "title": "A Middle-Aged Man Surrounded By Poultry (Feat. Birds)",
       "start_ts": 1653608100,
       "youtube_archive_id": "K_1t5ipUdLY"
+    },
+    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5": {
+      "title": "A Middle-Aged Stoned Man Plays GTA V On The PS5",
+      "start_ts": 1664394538,
+      "youtube_archive_id": "Xv639RPUxHQ"
     }
   },
   "messages": [
@@ -4366,6 +4373,36 @@
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1664396134,
+      "username": "@AndrewRS19",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
+      "message": "Rich! Watching Chickengate over again is freaking hilarious. I have been rewatching streams while working. Couldn't stop laughing. Hope all is well :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1664395903,
+      "username": "@tjlearnsbankai",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
+      "message": "sent u it Rich! Stay yourself! Thanks to you ive been dancing with a bucket on my head for fun on stream on Twitch!! Stay sexy with the Birds :chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1664395171,
+      "username": "@tjlearnsbankai",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
+      "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
       ]
     },
     {
