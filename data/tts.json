@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100992,
+  "updated_ts": 1782100998,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -423,7 +423,8 @@
     "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
     "man_friendly_family_fun",
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
-    "man_in_birdsuit_livestreams_feat_birds"
+    "man_in_birdsuit_livestreams_feat_birds",
+    "man_in_chicken_suit_ep2_feat_beautiful_birds"
   ],
   "commands": {
     "stan": 27,
@@ -461,7 +462,7 @@
     "poo": 24,
     "joy": 273,
     "gameboy": 1,
-    "chick": 2,
+    "chick": 3,
     "carlos": 33,
     "away": 7,
     "idea": 4,
@@ -472,9 +473,9 @@
     "tongue": 7,
     "heart": 128,
     "shorts": 1,
-    "laughing": 163,
+    "laughing": 164,
     "news": 20,
-    "chicken": 47,
+    "chicken": 48,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -906,7 +907,8 @@
     "crisis": 1,
     "answer": 1,
     "claus": 1,
-    "servers": 1
+    "servers": 1,
+    "pikachu": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3018,6 +3020,11 @@
       "title": "Man In Birdsuit Livestreams (Feat Birds)",
       "start_ts": 1652140782,
       "youtube_archive_id": "cSeIcM8x1LE"
+    },
+    "man_in_chicken_suit_ep2_feat_beautiful_birds": {
+      "title": "Man In Chicken Suit Ep.2 (Feat. Beautiful Birds)",
+      "start_ts": 1652227081,
+      "youtube_archive_id": "ydSQZ3lmlyk"
     }
   },
   "messages": [
@@ -19033,6 +19040,37 @@
       "message": "Unless QuantumTV does something as crazy or more :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1652231128,
+      "username": "@guinnessbuddha",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep2_feat_beautiful_birds",
+      "message": "Sorry... consequences have, birds? :chicken::baby_chick:",
+      "commands": [
+        "chick"
+      ]
+    },
+    {
+      "ts": 1652229569,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep2_feat_beautiful_birds",
+      "message": "e girls dressed as pikachu: Boring Rich dressed as chicken: Hell yeah!",
+      "commands": [
+        "pikachu",
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1652229308,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep2_feat_beautiful_birds",
+      "message": "OMG! This is Racine WI on I-94. I'm literally 3 minutes away from this exact location at this very moment. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
