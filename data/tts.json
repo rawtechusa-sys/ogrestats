@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099994,
+  "updated_ts": 1782100002,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -300,7 +300,8 @@
     "i_am_beyond_furious",
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
     "i_am_him_i_will_continue_to_be_him",
-    "i_am_not_well_endowed_and_im_streaming_about_phil"
+    "i_am_not_well_endowed_and_im_streaming_about_phil",
+    "i_dunno_wtf_im_doing"
   ],
   "commands": {
     "stan": 27,
@@ -331,7 +332,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 74,
+    "eyes": 75,
     "africa": 1,
     "face": 276,
     "petersonxhhanson": 1,
@@ -344,7 +345,7 @@
     "idea": 3,
     "fear": 3,
     "voice": 4,
-    "cucumber": 33,
+    "cucumber": 34,
     "biceps": 3,
     "tongue": 6,
     "heart": 93,
@@ -389,7 +390,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 14,
-    "kiss": 19,
+    "kiss": 20,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -481,7 +482,7 @@
     "fact": 3,
     "both": 1,
     "syne": 1,
-    "father": 1,
+    "father": 3,
     "request": 2,
     "sweat": 11,
     "twist": 2,
@@ -647,7 +648,7 @@
     "sc": 1,
     "sun": 1,
     "part": 1,
-    "milk": 1,
+    "milk": 2,
     "check": 1,
     "king": 1,
     "unrelated": 1,
@@ -2184,6 +2185,11 @@
       "title": "I Am Not Well Endowed And I'm Streaming About Phil",
       "start_ts": 1672101849,
       "youtube_archive_id": "d8Qd_jATzLs"
+    },
+    "i_dunno_wtf_im_doing": {
+      "title": "I Dunno WTF I'm Doing",
+      "start_ts": 1683332146,
+      "youtube_archive_id": "B3I51to6nss"
     }
   },
   "messages": [
@@ -9435,6 +9441,66 @@
       "message": "Oh I can answer that one: Phil despises all content creators more successful than him, so basically he only likes people who \u201cgive him a fair shake\u201d.",
       "commands": [
         "one"
+      ]
+    },
+    {
+      "ts": 1683342786,
+      "username": "@adamespinosa7019",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "Rich!!! Hi from Tucson, AZ! :waving_hand::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1683340124,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "I keep telling you, father: the difference between you and Phil is that you\u2019re fully self aware. Phil refuses to acknowledge his reality, you don\u2019t.",
+      "commands": [
+        "father"
+      ]
+    },
+    {
+      "ts": 1683335795,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "Dad your audio is skipping baaaaad also mod me :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1683334222,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "Think you missed my SC father: who\u2019s more delusional/professional victim, Phil or Tickled TV?",
+      "commands": [
+        "father"
+      ]
+    },
+    {
+      "ts": 1683333617,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "1 fart, 1 explosion and may I be mod? :cow::glass_of_milk:",
+      "commands": [
+        "milk"
+      ]
+    },
+    {
+      "ts": 1683333227,
+      "username": "@Esta-Beed",
+      "platform": "youtube",
+      "stream_id": "i_dunno_wtf_im_doing",
+      "message": "Qcumber TV takes zero accountability the POS :cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
