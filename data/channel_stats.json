@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095859,
+  "updated_ts": 1782095918,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -89,7 +89,8 @@
     "a_plain_old_normal_man_stream_feat_men",
     "a_pre_stream_man_stream",
     "a_pulsating_new_years_eve",
-    "a_pure_man_experience"
+    "a_pure_man_experience",
+    "a_quality_qvc_bird_roast"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1499,6 +1500,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.24,
       "avg_active_chatters": 39.72
+    },
+    "a_quality_qvc_bird_roast": {
+      "stream_id": "a_quality_qvc_bird_roast",
+      "title": "A Quality QVC Bird Roast",
+      "start_ts": 1637979963,
+      "end_ts": 1637986090,
+      "duration_sec": 6127,
+      "youtube_archive_id": "8EZBmUEhi1Y",
+      "source_platform": "youtube",
+      "total_donations_usd": 288.21,
+      "donation_count": 71,
+      "donations_per_min": 2.8224,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.9,
+      "avg_active_chatters": 31.14
     }
   }
 }
