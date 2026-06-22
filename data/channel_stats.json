@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102359,
+  "updated_ts": 1782102364,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -627,7 +627,8 @@
     "testing_out_simulcasting_feat_men",
     "the_amico_family_fun_continues_part_3284",
     "the_andrew_tate_documentary_is_bizarre",
-    "the_asmongold_ban_saga_feat_birds"
+    "the_asmongold_ban_saga_feat_birds",
+    "the_best_looking_man_on_youtube_is_livestreaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10645,6 +10646,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.22,
       "avg_active_chatters": 45.09
+    },
+    "the_best_looking_man_on_youtube_is_livestreaming": {
+      "stream_id": "the_best_looking_man_on_youtube_is_livestreaming",
+      "title": "The Best Looking Man On YouTube Is Livestreaming",
+      "start_ts": 1663805017,
+      "end_ts": 1663815434,
+      "duration_sec": 10417,
+      "youtube_archive_id": "F6LW4C9iNBE",
+      "source_platform": "youtube",
+      "total_donations_usd": 346.24,
+      "donation_count": 91,
+      "donations_per_min": 1.9943,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.68,
+      "avg_active_chatters": 34.64
     }
   }
 }
