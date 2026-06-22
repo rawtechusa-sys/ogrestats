@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100783,
+  "updated_ts": 1782100790,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -394,7 +394,8 @@
     "lets_discuss_sam_hyde_and_the_quartering",
     "lets_discuss_some_important_things_road_to_1000_members",
     "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
-    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed"
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+    "lets_discuss_the_steam_deck"
   ],
   "commands": {
     "stan": 27,
@@ -425,9 +426,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 88,
+    "eyes": 89,
     "africa": 1,
-    "face": 369,
+    "face": 370,
     "petersonxhhanson": 1,
     "poo": 21,
     "joy": 259,
@@ -438,18 +439,18 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 46,
+    "cucumber": 47,
     "biceps": 4,
     "tongue": 7,
     "heart": 120,
     "shorts": 1,
-    "laughing": 148,
+    "laughing": 149,
     "news": 19,
     "chicken": 43,
     "cake": 7,
     "d": 4,
     "halo": 4,
-    "hand": 28,
+    "hand": 29,
     "popper": 8,
     "straw": 1,
     "glasses": 2,
@@ -482,7 +483,7 @@
     "dog": 7,
     "is": 6,
     "spose": 1,
-    "sunglasses": 17,
+    "sunglasses": 19,
     "kiss": 22,
     "earlier": 1,
     "ghost": 1,
@@ -686,7 +687,7 @@
     "topic": 2,
     "doody": 1,
     "ex": 1,
-    "curious": 1,
+    "curious": 2,
     "extinguisher": 1,
     "russia": 1,
     "arrow": 2,
@@ -837,7 +838,7 @@
     "games": 1,
     "reviewphilosphyusa": 1,
     "rtusa": 1,
-    "kid": 1,
+    "kid": 2,
     "tear": 2,
     "are": 1,
     "keemstar": 1,
@@ -2828,6 +2829,11 @@
       "title": "Let's Discuss The Nintendo Switch OLED #NintendoSwitchOLED",
       "start_ts": 1625619247,
       "youtube_archive_id": "LtE63VFWrO4"
+    },
+    "lets_discuss_the_steam_deck": {
+      "title": "Let's Discuss The Steam Deck",
+      "start_ts": 1626482998,
+      "youtube_archive_id": "xXdFOk6IX9g"
     }
   },
   "messages": [
@@ -25066,6 +25072,87 @@
       "message": "Greetings, Horse Father:_Cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1626488826,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Limewire was based. Kids these days don't know. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1626487225,
+      "username": "@DarkspinePony15",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Alright Rich, am curious: which PlayStation external design is your favorite?",
+      "commands": [
+        "curious"
+      ]
+    },
+    {
+      "ts": 1626487091,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "hey rich wanna sell me your ps5? :rolling_on_the_floor_laughing: jk... unless:eyes:",
+      "commands": [
+        "laughing",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1626486039,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Wondeful touch feeling. :weary_face::sweat_droplets::sweat_droplets::sweat_droplets::weary_face::weary_face::weary_face::sweat_droplets::sweat_droplets::weary_face::sweat_droplets::sweat_droplets::weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626485454,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "I have a crappy game I used to love as a kid: Tonka Space Station for the PS1. Crappy game, but I play it from time to time for the feels/ nostalgia",
+      "commands": [
+        "kid"
+      ]
+    },
+    {
+      "ts": 1626485040,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Happy belated, dad. I love you:_Carlos::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1626484968,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Say \"Happy Birthday Aesthetic\" pls. :smiling_face_with_sunglasses::smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1626483400,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_steam_deck",
+      "message": "Good evening, gamers. Hope you had a #1 Victory Royale day. Epic wins for everyone. Amogus Chungus out. :smiling_face_with_sunglasses::smiling_face_with_sunglasses::victory_hand::victory_hand::ok_hand::ok_hand:",
+      "commands": [
+        "hand"
       ]
     },
     {
