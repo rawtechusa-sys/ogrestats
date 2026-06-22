@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101891,
+  "updated_ts": 1782101896,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -553,7 +553,8 @@
     "quantum_tvs_former_ally_comes_to_tell_his_story_featuring_tickled_birds",
     "quantum_tvs_terrible_god_of_war_ragnarok_review",
     "quantum_tvsdiscordleaked_plus_im_making_drinks",
-    "quick_bird_stream"
+    "quick_bird_stream",
+    "quick_test"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9387,6 +9388,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.47,
       "avg_active_chatters": 26.64
+    },
+    "quick_test": {
+      "stream_id": "quick_test",
+      "title": "quick test",
+      "start_ts": 1650600454,
+      "end_ts": 1650600688,
+      "duration_sec": 234,
+      "youtube_archive_id": "ehGfOmUEkIo",
+      "source_platform": "youtube",
+      "total_donations_usd": 2.79,
+      "donation_count": 1,
+      "donations_per_min": 0.7154,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 22.5,
+      "avg_active_chatters": 46.25
     }
   }
 }
