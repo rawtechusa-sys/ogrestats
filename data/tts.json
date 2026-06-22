@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099174,
+  "updated_ts": 1782099183,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -203,7 +203,8 @@
     "come_ask_questions_7142021",
     "come_ask_questions_7202021",
     "come_ask_questions_742021",
-    "come_ask_questions_752021"
+    "come_ask_questions_752021",
+    "come_ask_questions_812021"
   ],
   "commands": {
     "stan": 27,
@@ -236,13 +237,13 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 173,
+    "face": 179,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 122,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 16,
+    "carlos": 17,
     "away": 5,
     "idea": 1,
     "fear": 3,
@@ -258,7 +259,7 @@
     "cake": 7,
     "d": 1,
     "halo": 2,
-    "hand": 10,
+    "hand": 13,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -353,7 +354,7 @@
     "cap": 1,
     "adventures": 1,
     "head": 2,
-    "like": 3,
+    "like": 4,
     "memory": 1,
     "fight": 1,
     "leaf": 1,
@@ -491,7 +492,8 @@
     "stuff": 1,
     "vampire": 1,
     "basketball": 1,
-    "intelivsion": 1
+    "intelivsion": 1,
+    "topic": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1503,6 +1505,11 @@
       "title": "Come Ask Questions! 7/5/2021",
       "start_ts": 1625541372,
       "youtube_archive_id": "ieBOP8DTlu8"
+    },
+    "come_ask_questions_812021": {
+      "title": "Come Ask Questions 8/1/2021",
+      "start_ts": 1627866688,
+      "youtube_archive_id": "RwT15wgAdcA"
     }
   },
   "messages": [
@@ -13350,6 +13357,126 @@
       "message": "Guys who cheat: thats a nice warzone you got there, it'll be a shame if i did something to it",
       "commands": [
         "cheat"
+      ]
+    },
+    {
+      "ts": 1627873440,
+      "username": "@DarkspinePony15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "As a change in topic: Top 3 favorite fiction genres? (sci-fi, fantasy, thriller, etc?)",
+      "commands": [
+        "topic"
+      ]
+    },
+    {
+      "ts": 1627871577,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "you want a review, Mr. \"REVIEWTECHUSA\"!? :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627871479,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "i feel like what ever time icome into, i'll never be unsatisfied with your streams rich :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627871199,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "Trump still owes me an authographed paper towel.:loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627871027,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "I won the election. Gimme my Big PP Paycheck. :smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627870077,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "Pastor was like: I'm the Scatman! skippy bitty bip",
+      "commands": [
+        "like"
+      ]
+    },
+    {
+      "ts": 1627869742,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "I\u2019m trying not to laugh :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627869498,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "you missed my superchats .. :loudly_crying_face::loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627869368,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "I just like Amogus Chungus, bro. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627869088,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "Sup gamers. Remember to lube up your nips this summer to avoid shafing them while grinding it out in Warzone. #1 Vic Royale. Amogus Chungus Out. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627868200,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "Day 5 of suffering Covid :disappointed_face: worst pain of my life.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627866982,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_812021",
+      "message": "Superhorses running on all courses!:_Carlos:",
+      "commands": [
+        "carlos"
       ]
     },
     {
