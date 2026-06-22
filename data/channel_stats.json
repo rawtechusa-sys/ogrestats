@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101203,
+  "updated_ts": 1782101211,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -454,7 +454,8 @@
     "men_chatting",
     "men_discuss_def_noodles_feat_christhenarc",
     "men_feat_men",
-    "men_vs_chris_chan"
+    "men_vs_chris_chan",
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7704,6 +7705,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.71,
       "avg_active_chatters": 46.49
+    },
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds": {
+      "stream_id": "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
+      "title": "Middle Aged Man Plays Elden Ring Terribly MARATHON (Feat. Birds)",
+      "start_ts": 1651682368,
+      "end_ts": 1651690660,
+      "duration_sec": 8292,
+      "youtube_archive_id": "zWMuMpjN1pE",
+      "source_platform": "youtube",
+      "total_donations_usd": 177.83,
+      "donation_count": 52,
+      "donations_per_min": 1.2868,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.94,
+      "avg_active_chatters": 28.02
     }
   }
 }
