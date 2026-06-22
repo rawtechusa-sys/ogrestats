@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096338,
+  "updated_ts": 1782096399,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -97,7 +97,8 @@
     "a_quick_thank_you_and_boxing_update",
     "a_random_short_man_stream_with_special_guest_birds",
     "a_satisfying_incel_stream",
-    "a_short_stream"
+    "a_short_stream",
+    "a_short_stream_with_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1635,6 +1636,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.15,
       "avg_active_chatters": 32.06
+    },
+    "a_short_stream_with_a_man": {
+      "stream_id": "a_short_stream_with_a_man",
+      "title": "A Short Stream With A Man.",
+      "start_ts": 1685407297,
+      "end_ts": 1685426428,
+      "duration_sec": 19131,
+      "youtube_archive_id": "2AId2nItv54",
+      "source_platform": "youtube",
+      "total_donations_usd": 272.84,
+      "donation_count": 62,
+      "donations_per_min": 0.8557,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.3,
+      "avg_active_chatters": 21.36
     }
   }
 }
