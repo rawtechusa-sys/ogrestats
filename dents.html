@@ -126,7 +126,9 @@
      Constrained to its own <tbody>, so it releases as the next donor arrives. */
   tr.dent-row.sticky-dent > td {
     position: sticky;
-    top: var(--thead-h, 38px);
+    /* Pull up 1px so the row tucks under the header (which paints on top at a
+       higher z-index), closing the sub-pixel gap left by rounded measurement. */
+    top: calc(var(--thead-h, 38px) - 1px);
     z-index: 2;
     /* Opaque so the scrolling donation list can't show through the pinned row. */
     background: linear-gradient(var(--bg-panel), var(--bg-panel)), var(--bg-base);
