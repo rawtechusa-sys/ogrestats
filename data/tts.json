@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101105,
+  "updated_ts": 1782101113,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -438,7 +438,8 @@
     "man_vs_demon_souls_remake",
     "man_vs_men_live",
     "man_vs_qvc",
-    "man_vs_steven_seagal"
+    "man_vs_steven_seagal",
+    "may_1st"
   ],
   "commands": {
     "stan": 27,
@@ -474,7 +475,7 @@
     "face": 416,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 276,
+    "joy": 277,
     "gameboy": 1,
     "chick": 3,
     "carlos": 35,
@@ -487,7 +488,7 @@
     "tongue": 8,
     "heart": 139,
     "shorts": 1,
-    "laughing": 167,
+    "laughing": 168,
     "news": 20,
     "chicken": 50,
     "cake": 7,
@@ -518,12 +519,12 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 27,
+    "hands": 28,
     "horns": 7,
     "crab": 2,
     "superhero": 28,
     "legends": 2,
-    "dog": 9,
+    "dog": 10,
     "is": 7,
     "spose": 1,
     "sunglasses": 21,
@@ -547,7 +548,7 @@
     "reviewtoddhowardusa": 1,
     "coco": 1,
     "board": 1,
-    "reviewtrumpusa": 2,
+    "reviewtrumpusa": 3,
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
@@ -3116,6 +3117,11 @@
       "title": "Man Vs. Steven Seagal",
       "start_ts": 1649981273,
       "youtube_archive_id": "AZUmrO2Wqt0"
+    },
+    "may_1st": {
+      "title": "May 1st",
+      "start_ts": 1714606929,
+      "youtube_archive_id": "KcVt_jdKIsY"
     }
   },
   "messages": [
@@ -5464,6 +5470,56 @@
       "message": "Idiots: \u201cRich really needs to take a break from YouTube. He\u2019s clearly been unstable since everything happened with his daughter.\u201d Also idiots: \u201cRich only visited three times because he doesn\u2019t care.\u201d",
       "commands": [
         "idiots"
+      ]
+    },
+    {
+      "ts": 1714612770,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "may_1st",
+      "message": "May The Force Cum be with you all :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1714611506,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "may_1st",
+      "message": ":hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1714611020,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "may_1st",
+      "message": "ReviewTrumpUSA: grab em by the DSP",
+      "commands": [
+        "reviewtrumpusa"
+      ]
+    },
+    {
+      "ts": 1714607892,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "may_1st",
+      "message": "El Papo delivers. Play StreetFighter x20 thanks :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1714607562,
+      "username": "@This_Drummer",
+      "platform": "youtube",
+      "stream_id": "may_1st",
+      "message": "Call your wifi \u201cMay 1st Hub\u201d :face_with_tears_of_joy: Also, spread your cheeks & just go to town.",
+      "commands": [
+        "joy"
       ]
     },
     {
