@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099934,
+  "updated_ts": 1782099942,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -293,7 +293,8 @@
     "grandpa_is_playing_call_of_duty_loud_farts",
     "happy_fking_halloween",
     "he_admitted_itwtf",
-    "hes_back_and_thoroughly_tickled"
+    "hes_back_and_thoroughly_tickled",
+    "hes_back_and_thoroughly_tickledpart_deux"
   ],
   "commands": {
     "stan": 27,
@@ -326,10 +327,10 @@
     "turkey": 6,
     "eyes": 71,
     "africa": 1,
-    "face": 266,
+    "face": 269,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 199,
+    "joy": 201,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -342,8 +343,8 @@
     "tongue": 5,
     "heart": 87,
     "shorts": 1,
-    "laughing": 91,
-    "news": 17,
+    "laughing": 96,
+    "news": 18,
     "chicken": 37,
     "cake": 7,
     "d": 3,
@@ -382,7 +383,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 14,
-    "kiss": 17,
+    "kiss": 18,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -476,7 +477,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 9,
+    "sweat": 10,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -669,7 +670,9 @@
     "blood": 1,
     "idiots": 2,
     "recommendation": 1,
-    "shot": 1
+    "shot": 1,
+    "creed": 1,
+    "protip": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2131,6 +2134,11 @@
       "title": "He's Back, And Thoroughly Tickled...",
       "start_ts": 1660609009,
       "youtube_archive_id": "JOBtedmZnNA"
+    },
+    "hes_back_and_thoroughly_tickledpart_deux": {
+      "title": "He's Back, And Thoroughly Tickled...(Part Deux)",
+      "start_ts": 1660692817,
+      "youtube_archive_id": "p-lcmai_nh8"
     }
   },
   "messages": [
@@ -12178,6 +12186,147 @@
       "message": "Alex Jones 2024:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1660703197,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "I\u2019ll never forget the nut face-nor the fact it upsets his wife apparently :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1660701489,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "I'm beginning to think Burger King trolled him :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660701472,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "This is the best stream ever, love you all! :face_blowing_a_kiss::face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1660701241,
+      "username": "@theBio.",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Just sent you the DOOM mod :winking_face: Lmao enjoy man.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1660700625,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "DSPs O-face is like disappointment incarnate:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660699765,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Somewhere, there's a Kat crying, I imagine :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660699250,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "The 4 Musketeers taking down Tickled TV! :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660698987,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Quantasauros-rex for quantum tv :grinning_squinting_face: :grinning_face_with_sweat:",
+      "commands": [
+        "face",
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1660698451,
+      "username": "@metalspoon80",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "protip: keep out of arms reach of the quartering, his beard will consume and absorb your flesh like tetsuo in akira",
+      "commands": [
+        "protip"
+      ]
+    },
+    {
+      "ts": 1660697805,
+      "username": "@TheSwedishEmblem",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Isn't Deadpool pansexual as well?:rolling_on_the_floor_laughing::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1660697635,
+      "username": "@CloakedOnyx",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "In Assassin's Creed: Odyssey, a NPC says \"It was the Roman's invented the orgy, but it was the Greeks who added women!\"",
+      "commands": [
+        "creed"
+      ]
+    },
+    {
+      "ts": 1660695221,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "So no musk? :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1660694108,
+      "username": "@arcadefever6711",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Preparing to get tickled. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660693201,
+      "username": "@novaacraane",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickledpart_deux",
+      "message": "Hi! Guy who paid $100 for you to press a fart button. Did you miss me? Also breaking news: Quantum TV has tickled DSP\u2019s big, veiny weiner. Let\u2019s get into it.",
+      "commands": [
+        "news"
       ]
     },
     {
