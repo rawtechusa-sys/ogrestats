@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100021,
+  "updated_ts": 1782100030,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -304,7 +304,8 @@
     "i_am_not_well_endowed_and_im_streaming_about_phil",
     "i_dunno_wtf_im_doing",
     "i_failed_no_phil_november",
-    "i_formally_invited_quantum_tv_on_for_an_interview"
+    "i_formally_invited_quantum_tv_on_for_an_interview",
+    "i_got_screwed"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5154,6 +5155,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 29.95,
       "avg_active_chatters": 101.87
+    },
+    "i_got_screwed": {
+      "stream_id": "i_got_screwed",
+      "title": "I Got Screwed",
+      "start_ts": 1642902538,
+      "end_ts": 1642915688,
+      "duration_sec": 13150,
+      "youtube_archive_id": "lRoNYW1h-ig",
+      "source_platform": "youtube",
+      "total_donations_usd": 225.59,
+      "donation_count": 64,
+      "donations_per_min": 1.0293,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.61,
+      "avg_active_chatters": 34.03
     }
   }
 }
