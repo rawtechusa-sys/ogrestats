@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101815,
+  "updated_ts": 1782101821,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -540,7 +540,8 @@
     "playing_wii_u_games_like_a_man_yes_its_working",
     "playing_wii_u_launch_games_like_a_man",
     "playing_wii_u_launch_games_like_a_man_pt_2_with_facecam",
-    "prank_calls_and_other_weirdness"
+    "prank_calls_and_other_weirdness",
+    "pranks_predators_phil_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9166,6 +9167,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.13,
       "avg_active_chatters": 31.01
+    },
+    "pranks_predators_phil_birds": {
+      "stream_id": "pranks_predators_phil_birds",
+      "title": "Pranks, Predators, Phil, Birds...",
+      "start_ts": 1670974005,
+      "end_ts": 1670985992,
+      "duration_sec": 11987,
+      "youtube_archive_id": "a1vTLIg5zzM",
+      "source_platform": "youtube",
+      "total_donations_usd": 299.16,
+      "donation_count": 92,
+      "donations_per_min": 1.4974,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.26,
+      "avg_active_chatters": 35.23
     }
   }
 }
