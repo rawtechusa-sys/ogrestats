@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100258,
+  "updated_ts": 1782100267,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -331,7 +331,8 @@
     "im_kind_of_back_what_happened",
     "im_not_dead",
     "im_not_well_endowed",
-    "im_now_a_home_owner"
+    "im_now_a_home_owner",
+    "im_so_sorry"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5613,6 +5614,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.14,
       "avg_active_chatters": 47.34
+    },
+    "im_so_sorry": {
+      "stream_id": "im_so_sorry",
+      "title": "I'm So Sorry...",
+      "start_ts": 1627175923,
+      "end_ts": 1627181006,
+      "duration_sec": 5083,
+      "youtube_archive_id": "sOoguesUiaw",
+      "source_platform": "youtube",
+      "total_donations_usd": 472.68,
+      "donation_count": 84,
+      "donations_per_min": 5.5795,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.2,
+      "avg_active_chatters": 58.24
     }
   }
 }
