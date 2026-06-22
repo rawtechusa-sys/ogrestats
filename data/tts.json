@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100480,
+  "updated_ts": 1782100489,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -355,7 +355,8 @@
     "itsagundams_dspgaming_video_is_a_masterpiece",
     "jaysus_gaming_test_stream",
     "just_a_man_and_birds",
-    "just_a_man_streaming_and_answering_questions_feat_birds"
+    "just_a_man_streaming_and_answering_questions_feat_birds",
+    "just_a_man_streaming_for_a_bit"
   ],
   "commands": {
     "stan": 27,
@@ -388,7 +389,7 @@
     "turkey": 7,
     "eyes": 80,
     "africa": 1,
-    "face": 332,
+    "face": 334,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 240,
@@ -402,7 +403,7 @@
     "cucumber": 44,
     "biceps": 3,
     "tongue": 6,
-    "heart": 108,
+    "heart": 109,
     "shorts": 1,
     "laughing": 137,
     "news": 18,
@@ -469,7 +470,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 16,
-    "horse": 9,
+    "horse": 10,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -795,7 +796,8 @@
     "while": 1,
     "television": 1,
     "ring": 2,
-    "games": 1
+    "games": 1,
+    "reviewphilosphyusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2567,6 +2569,11 @@
       "title": "Just A Man Streaming And Answering Questions (Feat. Birds)",
       "start_ts": 1649811206,
       "youtube_archive_id": "blb-KUto6Is"
+    },
+    "just_a_man_streaming_for_a_bit": {
+      "title": "Just A Man Streaming For A Bit",
+      "start_ts": 1694484965,
+      "youtube_archive_id": "AfwzquzfFBU"
     }
   },
   "messages": [
@@ -8382,6 +8389,56 @@
       "message": "You look like a big Edward Norton for American history X the skinhead lol :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1694489110,
+      "username": "@Adrian-Adrianos",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_for_a_bit",
+      "message": "Would Phil be a dictator if he ran a country? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1694489100,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_for_a_bit",
+      "message": "ReviewPhilosphyUSA: if you tell a lie over and over again you believe it to be true.",
+      "commands": [
+        "reviewphilosphyusa"
+      ]
+    },
+    {
+      "ts": 1694487133,
+      "username": "@Adrian-Adrianos",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_for_a_bit",
+      "message": "Hey Rich, do you think Konami will screw up the MGS3 remake? I want the remake to be amazing but I don't trust Konami :confused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1694485680,
+      "username": "@alphadaddy3046",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_for_a_bit",
+      "message": "Will u help me rebuild my horse? He\u2019s moist Rich.. so freakin moist.. nay nay nay Carlos mounted by a horse :horse: followed by Steve",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1694485258,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "just_a_man_streaming_for_a_bit",
+      "message": "Got starfield for the PRONOUNS fiasco-it\u2019s funny because I was really gonna hold off just to have a game to get for Xmas lol-Love you Rich and Chat:light_blue_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
