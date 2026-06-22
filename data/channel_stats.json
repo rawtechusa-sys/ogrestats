@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102539,
+  "updated_ts": 1782102544,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -659,7 +659,8 @@
     "the_linus_tech_tips_situation_is_wild",
     "the_livestreams_return",
     "the_may_1st_burst_aftermath_feat_multiple_birds",
-    "the_may_1st_man_extravaganza_dad_is_back"
+    "the_may_1st_man_extravaganza_dad_is_back",
+    "the_middle_aged_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11189,6 +11190,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.48,
       "avg_active_chatters": 28.69
+    },
+    "the_middle_aged_man_stream": {
+      "stream_id": "the_middle_aged_man_stream",
+      "title": "The Middle Aged Man Stream",
+      "start_ts": 1636510627,
+      "end_ts": 1636520422,
+      "duration_sec": 9795,
+      "youtube_archive_id": "KtNYlHpuXWk",
+      "source_platform": "youtube",
+      "total_donations_usd": 425.18,
+      "donation_count": 113,
+      "donations_per_min": 2.6045,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.9,
+      "avg_active_chatters": 38.54
     }
   }
 }
