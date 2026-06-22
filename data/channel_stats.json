@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099481,
+  "updated_ts": 1782099489,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -241,7 +241,8 @@
     "dad_is_back",
     "dad_streams_the_playstation_showcase_2021",
     "dads_40th_birthday_stream",
-    "dads_back_for_a_bit"
+    "dads_back_for_a_bit",
+    "daniel_keem_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4083,6 +4084,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.62,
       "avg_active_chatters": 37.61
+    },
+    "daniel_keem_is_a_man": {
+      "stream_id": "daniel_keem_is_a_man",
+      "title": "Daniel Keem Is A Man",
+      "start_ts": 1672703951,
+      "end_ts": 1672722118,
+      "duration_sec": 18167,
+      "youtube_archive_id": "Rj2TPwcmpoU",
+      "source_platform": "youtube",
+      "total_donations_usd": 287.14,
+      "donation_count": 89,
+      "donations_per_min": 0.9483,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.92,
+      "avg_active_chatters": 24.23
     }
   }
 }
