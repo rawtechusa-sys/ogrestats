@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101454,
+  "updated_ts": 1782101462,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -485,7 +485,8 @@
     "moving_on_to_philip_burnell_a_man",
     "muta_just_absolutely_bodied_boogie2988",
     "my_final_thoughts_pat_and_ian",
-    "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga"
+    "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga",
+    "my_subscribers_give_me_criticism"
   ],
   "commands": {
     "stan": 27,
@@ -518,10 +519,10 @@
     "turkey": 10,
     "eyes": 115,
     "africa": 1,
-    "face": 450,
+    "face": 453,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 295,
+    "joy": 296,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -532,7 +533,7 @@
     "cucumber": 53,
     "biceps": 5,
     "tongue": 10,
-    "heart": 141,
+    "heart": 142,
     "shorts": 2,
     "laughing": 183,
     "news": 20,
@@ -554,21 +555,21 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 50,
+    "rooster": 51,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
-    "up": 42,
+    "up": 44,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 13,
     "shrugging": 6,
     "donation": 3,
     "naruto": 1,
-    "hands": 30,
+    "hands": 31,
     "horns": 8,
     "crab": 2,
-    "superhero": 29,
+    "superhero": 30,
     "legends": 2,
     "dog": 11,
     "is": 8,
@@ -694,7 +695,7 @@
     "spoiler": 1,
     "mug": 3,
     "pachter": 3,
-    "eagle": 5,
+    "eagle": 6,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
     "say": 4,
@@ -732,7 +733,7 @@
     "correction": 1,
     "sunset": 2,
     "fist": 6,
-    "frog": 1,
+    "frog": 2,
     "gwyn": 1,
     "livestreams": 1,
     "laugh": 1,
@@ -1005,7 +1006,13 @@
     "exclusive": 1,
     "gpu": 1,
     "cook": 1,
-    "turok": 1
+    "turok": 1,
+    "reviewdramausa": 1,
+    "bacon": 1,
+    "spaces": 1,
+    "carrot": 1,
+    "reviewbidenusa": 1,
+    "critique": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3427,6 +3434,11 @@
       "title": "My Jaws Hitting The Ground WIth This Intellivison Amico Take... (Plus Switch Dusk Gameplay!)",
       "start_ts": 1635380135,
       "youtube_archive_id": "JYIgTzsVmzQ"
+    },
+    "my_subscribers_give_me_criticism": {
+      "title": "My Subscribers Give Me Criticism",
+      "start_ts": 1705875315,
+      "youtube_archive_id": "6szpJJVB6VA"
     }
   },
   "messages": [
@@ -6681,6 +6693,177 @@
       "message": "Just got my S24 Ultra early through my wireless job. Smoothest data transfer ever, Galxay AI is the best thing I've ever used :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1705889816,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "also discord link for next halo night plz :index_pointing_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1705889359,
+      "username": "@woody4077",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "critique: you have a bad habit of going on tangents and ignoring the chat and superchats",
+      "commands": [
+        "critique"
+      ]
+    },
+    {
+      "ts": 1705888866,
+      "username": "@GlamerousFrog",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Birds are out frogs are in :frog:",
+      "commands": [
+        "frog"
+      ]
+    },
+    {
+      "ts": 1705886707,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "ReviewBidenUSA: Snort Hogan was cornpop, he was a bad dude, come on man.",
+      "commands": [
+        "reviewbidenusa"
+      ]
+    },
+    {
+      "ts": 1705885585,
+      "username": "@thesmockinggunYT",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "The Smocking Gun, or as Jay says the smocking c*ck is back. It's time to let the Canadian Stallion run wild and free. Look at those GD locks. :eagle::eagle::eagle:",
+      "commands": [
+        "eagle"
+      ]
+    },
+    {
+      "ts": 1705885110,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Farm :thinking_face: can I get intro guy Fertilizer, sound board",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705884476,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": ":index_pointing_up: he's not babysitting it's called Tip Auditing :grinning_squinting_face:",
+      "commands": [
+        "up",
+        "face"
+      ]
+    },
+    {
+      "ts": 1705884295,
+      "username": "@someguy13",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Shout out Jay and shout out Dad. Birds :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1705883517,
+      "username": "@soulsjersey",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Rich go marry Phil and play with his balls :carrot:",
+      "commands": [
+        "carrot"
+      ]
+    },
+    {
+      "ts": 1705883269,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Snort Hogan on Twitter Spaces: .....",
+      "commands": [
+        "spaces"
+      ]
+    },
+    {
+      "ts": 1705881510,
+      "username": "@rafaelchicas7635",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "What up rich and jays big Canadian :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1705880452,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "it's true :drooling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705879224,
+      "username": "@silentprotagonist6587",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Jenna followed me on Twitter and Insta :face_with_tears_of_joy: sorry Chill you lost",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1705878898,
+      "username": "@silentprotagonist6587",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Big ups Chill Murray and the Bacon Social Club :bacon:",
+      "commands": [
+        "bacon"
+      ]
+    },
+    {
+      "ts": 1705877383,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "the whole thing is stupid please settle it soon :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1705877263,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "Just know hero in :man_superhero: was that ames?",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705875585,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "my_subscribers_give_me_criticism",
+      "message": "ReviewDramaUSA: DSP\u2019s detractors chose war with me",
+      "commands": [
+        "reviewdramausa"
       ]
     },
     {
