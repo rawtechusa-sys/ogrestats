@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094681,
+  "updated_ts": 1782094734,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -68,7 +68,8 @@
     "a_man_is_streaming_feat_birds",
     "a_man_is_streaming_with_birds_till_130_am",
     "a_man_marathon",
-    "a_man_marathon_feat_birds"
+    "a_man_marathon_feat_birds",
+    "a_man_stream_then_some_metroid_dread"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1142,6 +1143,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.41,
       "avg_active_chatters": 30.19
+    },
+    "a_man_stream_then_some_metroid_dread": {
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "title": "A Man Stream Then Some Metroid Dread",
+      "start_ts": 1634000255,
+      "end_ts": 1634012370,
+      "duration_sec": 12115,
+      "youtube_archive_id": "9QaeEngrJpM",
+      "source_platform": "youtube",
+      "total_donations_usd": 369.02,
+      "donation_count": 106,
+      "donations_per_min": 1.8276,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.6,
+      "avg_active_chatters": 40.77
     }
   }
 }
