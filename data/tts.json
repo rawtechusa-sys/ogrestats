@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094733,
+  "updated_ts": 1782094786,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -69,7 +69,8 @@
     "a_man_is_streaming_with_birds_till_130_am",
     "a_man_marathon",
     "a_man_marathon_feat_birds",
-    "a_man_stream_then_some_metroid_dread"
+    "a_man_stream_then_some_metroid_dread",
+    "a_man_streams_like_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -102,7 +103,7 @@
     "turkey": 3,
     "eyes": 16,
     "africa": 1,
-    "face": 50,
+    "face": 51,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 44,
@@ -116,7 +117,7 @@
     "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 25,
+    "heart": 26,
     "shorts": 1,
     "laughing": 23,
     "news": 5,
@@ -124,7 +125,7 @@
     "cake": 1,
     "d": 1,
     "halo": 1,
-    "hand": 4,
+    "hand": 5,
     "popper": 1,
     "straw": 1,
     "glasses": 1,
@@ -567,6 +568,11 @@
       "title": "A Man Stream Then Some Metroid Dread",
       "start_ts": 1634000255,
       "youtube_archive_id": "9QaeEngrJpM"
+    },
+    "a_man_streams_like_a_man": {
+      "title": "A Man Streams Like A MAN",
+      "start_ts": 1630716547,
+      "youtube_archive_id": "0u68DYBHt98"
     }
   },
   "messages": [
@@ -5816,6 +5822,36 @@
       "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
       "commands": [
         "spose"
+      ]
+    },
+    {
+      "ts": 1630718768,
+      "username": "@ALittleSnowFairySaga",
+      "platform": "youtube",
+      "stream_id": "a_man_streams_like_a_man",
+      "message": "Ever play DUST 514 on PS3? I spent over 1k hrs, :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1630718413,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "a_man_streams_like_a_man",
+      "message": "Sup gamers! Guess who's hypertensive? It's ya boiii. I feel like I'm fucking 50 years old with all these health issues. Amogus Chungus Out. :victory_hand::weary_face::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1630717015,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "a_man_streams_like_a_man",
+      "message": "I'm dancing in my bday suit watching Richie! :hugging_face:",
+      "commands": [
+        "face"
       ]
     },
     {
