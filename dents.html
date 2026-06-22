@@ -579,7 +579,7 @@ function renderTable() {
   ).join('');
 
   // Total column count, used for the expanded detail row's colspan.
-  const COLS = 4 + TYPES.length + 1;
+  const COLS = 5 + TYPES.length + 1;
 
   const rows = sorted.map((row, i) => {
     const typeCells = TYPES.map(t => {
@@ -596,6 +596,7 @@ function renderTable() {
       <td class="username">${caret}${escHtml(row.username)}</td>
       <td class="amount-total">${fmtUSD(row.total)}</td>
       <td class="amount-type">${row.streams}</td>
+      <td class="amount-type">${row.donations || 0}</td>
       ${typeCells}
       <td class="dsp-dent">${dspDentCell(row)}</td>
     </tr>`;
@@ -614,6 +615,7 @@ function renderTable() {
         <th class="${thClass('username')}" data-key="username" style="min-width:160px;">Dent${arrow('username')}</th>
         <th class="${thClass('total')}" data-key="total">Total${arrow('total')}</th>
         <th class="${thClass('streams')}" data-key="streams">Streams${arrow('streams')}</th>
+        <th class="${thClass('donations')}" data-key="donations">Donations${arrow('donations')}</th>
         ${typeHeaders}
         <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${arrow('dsp_dent')}</th>
       </tr>
