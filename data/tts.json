@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101134,
+  "updated_ts": 1782101142,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -442,7 +442,8 @@
     "may_1st",
     "may_1st_part_2_has_occured",
     "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
-    "melonie_mac_goes_full_mask_off_road_to_1000_members"
+    "melonie_mac_goes_full_mask_off_road_to_1000_members",
+    "melonie_mac_responded"
   ],
   "commands": {
     "stan": 27,
@@ -527,7 +528,7 @@
     "crab": 2,
     "superhero": 28,
     "legends": 2,
-    "dog": 10,
+    "dog": 11,
     "is": 7,
     "spose": 1,
     "sunglasses": 21,
@@ -544,7 +545,7 @@
     "skull": 11,
     "eggplant": 4,
     "bite": 1,
-    "take": 6,
+    "take": 7,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -606,7 +607,7 @@
     "joker": 1,
     "racehorse": 8,
     "question": 11,
-    "mushroom": 2,
+    "mushroom": 3,
     "trilogy": 1,
     "spider": 2,
     "ear": 2,
@@ -3141,6 +3142,11 @@
       "title": "Melonie Mac Goes Full Mask Off (Road To 1000 Members)",
       "start_ts": 1686182067,
       "youtube_archive_id": "L6aBE09M8P8"
+    },
+    "melonie_mac_responded": {
+      "title": "Melonie Mac Responded",
+      "start_ts": 1687298376,
+      "youtube_archive_id": "6vvnTdfOPLI"
     }
   },
   "messages": [
@@ -11447,6 +11453,36 @@
       "message": "Don't stop being real. We come here for the experience. Not just to be entertained. Bring on your variety show! reality is pretty varied and wild :call_me_hand:",
       "commands": [
         "hand"
+      ]
+    },
+    {
+      "ts": 1687321349,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_responded",
+      "message": ":hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1687312953,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_responded",
+      "message": "bad take: i'd rather give Phil money than these pasters",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1687301942,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "melonie_mac_responded",
+      "message": "Penetrate my belly button with your mushroom :mushroom:",
+      "commands": [
+        "mushroom"
       ]
     },
     {
