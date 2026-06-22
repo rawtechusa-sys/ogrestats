@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098936,
+  "updated_ts": 1782098944,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -174,7 +174,8 @@
     "breaking_steven_crowder_is_human_garbage_shocking",
     "canada_returns",
     "celebreating_15_years_of_philip_paul_burnell_a_man",
-    "certified_alpha_male_stream_for_men"
+    "certified_alpha_male_stream_for_men",
+    "certified_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -205,12 +206,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 42,
+    "eyes": 43,
     "africa": 1,
     "face": 144,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 111,
+    "joy": 113,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -223,7 +224,7 @@
     "tongue": 4,
     "heart": 53,
     "shorts": 1,
-    "laughing": 52,
+    "laughing": 53,
     "news": 11,
     "chicken": 24,
     "cake": 7,
@@ -438,13 +439,14 @@
     "balloon": 1,
     "bear": 1,
     "philitizer": 1,
-    "cat": 1,
+    "cat": 2,
     "reviewmusicusa": 1,
     "snake": 1,
     "fap": 1,
     "piece": 1,
     "staple": 1,
-    "bubbles": 2
+    "bubbles": 2,
+    "web": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1311,6 +1313,11 @@
       "title": "CERTIFIED ALPHA MALE STREAM (FOR MEN)",
       "start_ts": 1676766896,
       "youtube_archive_id": "boplYAtJ4ew"
+    },
+    "certified_man_stream": {
+      "title": "Certified Man Stream",
+      "start_ts": 1662940952,
+      "youtube_archive_id": "Qu0PTdGLWwA"
     }
   },
   "messages": [
@@ -7784,6 +7791,66 @@
       "message": "Apple: You want USB in the iPhone 15, we'll give you USB! [installs USB micro]",
       "commands": [
         "apple"
+      ]
+    },
+    {
+      "ts": 1662952693,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "Play Stray, now that's a real mans game :kissing_cat:",
+      "commands": [
+        "cat"
+      ]
+    },
+    {
+      "ts": 1662950102,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "the actual sound or a reminder that I asked? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662950026,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "if you're going to add to the sound board, can you add \"bazinga\" & \"giggity \"? obviously not in the middle of a game :grinning_face_with_sweat::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662942646,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "Ubisoft announces 5 new assassins creed games :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1662942314,
+      "username": "@doodystreams",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "rich, would u be willing to do a cameo about dsp? if so, would u be willing to take a superchat? I'll cover the 30% cut to youtube. unban my twitter:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1662941477,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "certified_man_stream",
+      "message": "I wanna see Tobey Maguire\u2019s holes:spider_web:",
+      "commands": [
+        "web"
       ]
     },
     {
