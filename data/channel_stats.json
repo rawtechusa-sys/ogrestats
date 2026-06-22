@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098808,
+  "updated_ts": 1782098816,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -159,7 +159,8 @@
     "bill_gates_is_a_man",
     "bird_and_man_mayhem",
     "bird_and_man_mayhem_live_chris_chan",
-    "bird_love_live_dating_nightmares"
+    "bird_love_live_dating_nightmares",
+    "birds_a_man_and_seltzer"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2689,6 +2690,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.69,
       "avg_active_chatters": 32.76
+    },
+    "birds_a_man_and_seltzer": {
+      "stream_id": "birds_a_man_and_seltzer",
+      "title": "Birds, A Man, And Seltzer",
+      "start_ts": 1661995811,
+      "end_ts": 1662003755,
+      "duration_sec": 7944,
+      "youtube_archive_id": "z1cTrKbFCfw",
+      "source_platform": "youtube",
+      "total_donations_usd": 234.46,
+      "donation_count": 78,
+      "donations_per_min": 1.7708,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.69,
+      "avg_active_chatters": 33.99
     }
   }
 }
