@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102621,
+  "updated_ts": 1782102627,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -674,7 +674,8 @@
     "the_piers_morgan_ye_interview",
     "the_piers_morgan_ye_interview_pt2",
     "the_power_of_a_man_feat_birds",
-    "the_pre_stream_i_finished_setting_up_the_monitor_early"
+    "the_pre_stream_i_finished_setting_up_the_monitor_early",
+    "the_quarteringintellivision_family_fun_continues"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11444,6 +11445,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.88,
       "avg_active_chatters": 26.11
+    },
+    "the_quarteringintellivision_family_fun_continues": {
+      "stream_id": "the_quarteringintellivision_family_fun_continues",
+      "title": "The Quartering/Intellivision Family Fun Continues!",
+      "start_ts": 1645490347,
+      "end_ts": 1645501600,
+      "duration_sec": 11253,
+      "youtube_archive_id": "HlW2VSnPs64",
+      "source_platform": "youtube",
+      "total_donations_usd": 259.71,
+      "donation_count": 73,
+      "donations_per_min": 1.3848,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.5,
+      "avg_active_chatters": 32.55
     }
   }
 }
