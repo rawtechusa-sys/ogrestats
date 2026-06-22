@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101217,
+  "updated_ts": 1782101225,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -453,7 +453,8 @@
     "men_feat_men",
     "men_vs_chris_chan",
     "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
-    "middle_aged_men_complain_about_video_games"
+    "middle_aged_men_complain_about_video_games",
+    "monday_night_man"
   ],
   "commands": {
     "stan": 27,
@@ -486,7 +487,7 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 426,
+    "face": 428,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 281,
@@ -499,7 +500,7 @@
     "voice": 5,
     "cucumber": 50,
     "biceps": 5,
-    "tongue": 8,
+    "tongue": 9,
     "heart": 140,
     "shorts": 2,
     "laughing": 169,
@@ -567,7 +568,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 21,
-    "horse": 12,
+    "horse": 13,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -954,7 +955,10 @@
     "reviewbullyingusa": 1,
     "reviewgossipusa": 1,
     "exposure": 1,
-    "th": 1
+    "th": 1,
+    "by": 1,
+    "tupac": 1,
+    "arbys": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3216,6 +3220,11 @@
       "title": "Middle-Aged Men Complain About Video Games",
       "start_ts": 1640565760,
       "youtube_archive_id": "Rbo-ZhkKenw"
+    },
+    "monday_night_man": {
+      "title": "Monday Night Man",
+      "start_ts": 1630975832,
+      "youtube_archive_id": "UeNxSDD4ZEs"
     }
   },
   "messages": [
@@ -26404,6 +26413,76 @@
       "message": "Can I get new laptop least 16ram gd specs 4 600US:chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1630982835,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "Arbys: where they heat up lunch meat on a bun 4 5$",
+      "commands": [
+        "arbys"
+      ]
+    },
+    {
+      "ts": 1630980991,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "Lulu from FFX gonna make me act up. :weary_face::weary_face::weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1630980087,
+      "username": "@onetoughnerd4795",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "Did you respond to DSP`s email? :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1630979118,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "To lighten the mood, can we get a carlos kiss? :winking_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1630978558,
+      "username": "@NvixMedia",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": ":horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse::horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1630978383,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "Being a women, AB topic is always gonna be front in center with me. No disrespect but men CANNOT carry a baby and to quote tupac: 'Since a man cannot make one, He has no right to tell a women where and when to create one.'",
+      "commands": [
+        "tupac"
+      ]
+    },
+    {
+      "ts": 1630977348,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "monday_night_man",
+      "message": "Expression I live by: \"Don't shoot unless you are prepared to be shot.\" If you say something that puts a target on your back, people WILL take aim.",
+      "commands": [
+        "by"
       ]
     },
     {
