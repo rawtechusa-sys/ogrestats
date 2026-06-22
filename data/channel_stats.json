@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098602,
+  "updated_ts": 1782098610,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -133,7 +133,8 @@
     "an_unofficial_man_return_feat_large_men",
     "and_the_nintendo_switch_oled_winners_are",
     "andrew_taint_is_a_man",
-    "andrew_tate_is_a_man"
+    "andrew_tate_is_a_man",
+    "andrew_tate_man_stream_he_got_arrested"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2247,6 +2248,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.43,
       "avg_active_chatters": 30.81
+    },
+    "andrew_tate_man_stream_he_got_arrested": {
+      "stream_id": "andrew_tate_man_stream_he_got_arrested",
+      "title": "Andrew Tate Man Stream (He Got ARRESTED)",
+      "start_ts": 1672362905,
+      "end_ts": 1672374189,
+      "duration_sec": 11284,
+      "youtube_archive_id": "SeySwE1xtks",
+      "source_platform": "youtube",
+      "total_donations_usd": 339.64,
+      "donation_count": 94,
+      "donations_per_min": 1.806,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.01,
+      "avg_active_chatters": 30.27
     }
   }
 }
