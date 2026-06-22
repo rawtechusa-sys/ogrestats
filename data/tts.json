@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099563,
+  "updated_ts": 1782099571,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -250,7 +250,8 @@
     "dkoldies_strikes_again",
     "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
     "donald_trump_magical_ball_requests",
-    "donald_trump_vs_joe_biden_ai_debate"
+    "donald_trump_vs_joe_biden_ai_debate",
+    "dr_cocos_house_of_healing"
   ],
   "commands": {
     "stan": 27,
@@ -581,7 +582,9 @@
     "dialogue": 1,
     "perspective": 1,
     "honeybee": 2,
-    "locomotive": 1
+    "locomotive": 1,
+    "bubble": 1,
+    "reality": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1828,6 +1831,11 @@
       "title": "Donald Trump Vs. Joe Biden AI Debate",
       "start_ts": 1687132897,
       "youtube_archive_id": "M-MIzEoU0J0"
+    },
+    "dr_cocos_house_of_healing": {
+      "title": "Dr. Cocos house of healing",
+      "start_ts": 1686872753,
+      "youtube_archive_id": "hi-0ZTV6kjA"
     }
   },
   "messages": [
@@ -7350,6 +7358,17 @@
       "message": "What makes me laugh tho is say idk \u201cPok\u00e9maine \u201cwill get $500 and she be like \u201cok thanks tickleshitz, bob sends $5 and then \u201cOMG THANKS BOB, I :red_heart: U!!!\u201d",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1686877728,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "dr_cocos_house_of_healing",
+      "message": "Phil in the safety of his bubble: I\u2019d beat that 11yo. Phil in reality: sorry Mr. 11yo sir, I agree with you. The 2 times I saw him confronted he caved",
+      "commands": [
+        "bubble",
+        "reality"
       ]
     },
     {
