@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100109,
+  "updated_ts": 1782100117,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -314,7 +314,8 @@
     "i_listened_and_made_changes_wings_of_redemption_doc",
     "i_think_i_fixed_it",
     "i_wasnt_gonna_stream_but_here_i_am",
-    "i_won_but_my_pc_is_dying"
+    "i_won_but_my_pc_is_dying",
+    "idubbz_video_going_shopping_to_become_a_vtuber"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5324,6 +5325,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.54,
       "avg_active_chatters": 30.86
+    },
+    "idubbz_video_going_shopping_to_become_a_vtuber": {
+      "stream_id": "idubbz_video_going_shopping_to_become_a_vtuber",
+      "title": "iDubbz Video. Going Shopping To Become A Vtuber",
+      "start_ts": 1684451316,
+      "end_ts": 1684476092,
+      "duration_sec": 24776,
+      "youtube_archive_id": "gyJZ7NNPpXQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 478.13,
+      "donation_count": 92,
+      "donations_per_min": 1.1579,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.88,
+      "avg_active_chatters": 25.6
     }
   }
 }
