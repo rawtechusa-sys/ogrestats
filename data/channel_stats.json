@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099498,
+  "updated_ts": 1782099506,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -243,7 +243,8 @@
     "dads_40th_birthday_stream",
     "dads_back_for_a_bit",
     "daniel_keem_is_a_man",
-    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric"
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+    "darrell_brooks_is_a_psychopath_feat_angry_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4117,6 +4118,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.48,
       "avg_active_chatters": 17.5
+    },
+    "darrell_brooks_is_a_psychopath_feat_angry_birds": {
+      "stream_id": "darrell_brooks_is_a_psychopath_feat_angry_birds",
+      "title": "Darrell Brooks Is A Psychopath (Feat. Angry Birds)",
+      "start_ts": 1667693396,
+      "end_ts": 1667702307,
+      "duration_sec": 8911,
+      "youtube_archive_id": "Cq1mfr2DzC0",
+      "source_platform": "youtube",
+      "total_donations_usd": 312.81,
+      "donation_count": 62,
+      "donations_per_min": 2.1062,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.38,
+      "avg_active_chatters": 29.66
     }
   }
 }
