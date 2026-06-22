@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093132,
+  "updated_ts": 1782093170,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -35,7 +35,8 @@
     "a_dspgaming_and_wingsofredemption_man_stream",
     "a_dspgaming_family_fun_stream",
     "a_family_friendly_christian_straight_man_stream",
-    "a_family_friendly_heterosexual_stream"
+    "a_family_friendly_heterosexual_stream",
+    "a_floor_thrusting_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -581,6 +582,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.65,
       "avg_active_chatters": 44.37
+    },
+    "a_floor_thrusting_man_stream": {
+      "stream_id": "a_floor_thrusting_man_stream",
+      "title": "A Floor Thrusting Man Stream",
+      "start_ts": 1691708299,
+      "end_ts": 1691722890,
+      "duration_sec": 14591,
+      "youtube_archive_id": "-AQcgzlkPqs",
+      "source_platform": "youtube",
+      "total_donations_usd": 344.12,
+      "donation_count": 92,
+      "donations_per_min": 1.4151,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.5,
+      "avg_active_chatters": 37.41
     }
   }
 }
