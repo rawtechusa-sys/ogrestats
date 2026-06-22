@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099094,
+  "updated_ts": 1782099102,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -194,7 +194,8 @@
     "come_ask_a_man_questions",
     "come_ask_a_man_questions_poultry_edition",
     "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
-    "come_ask_me_almost_anything"
+    "come_ask_me_almost_anything",
+    "come_ask_me_literally_anything_this_is_a_mistake"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3284,6 +3285,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.6,
       "avg_active_chatters": 27.89
+    },
+    "come_ask_me_literally_anything_this_is_a_mistake": {
+      "stream_id": "come_ask_me_literally_anything_this_is_a_mistake",
+      "title": "Come Ask Me Literally Anything (This is A Mistake)",
+      "start_ts": 1662428201,
+      "end_ts": 1662436610,
+      "duration_sec": 8409,
+      "youtube_archive_id": "rXR3PJFRDpQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 261.8,
+      "donation_count": 87,
+      "donations_per_min": 1.868,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.91,
+      "avg_active_chatters": 35.43
     }
   }
 }
