@@ -380,7 +380,8 @@ const DS = {
 // Which datasets sit on which y-axis (used to show/hide axes with their series).
 const AXIS_MAP = {
   ySubs:       [DS.SUBSCRIBERS],
-  yDollars:    [DS.DON_PER_STREAM, DS.DON_CUMULATIVE],
+  yDollars:    [DS.DON_CUMULATIVE],
+  yPerStream:  [DS.DON_PER_STREAM],
   yRate:       [DS.DON_PER_MIN],
   yViewers:    [DS.PEAK_VIEWERS, DS.AVG_VIEWERS],
   yEngagement: [DS.CHAT_MPM, DS.ACTIVE_CHATTERS],
@@ -670,7 +671,7 @@ function buildChart(streams, subs) {
   add(DS.DON_CUMULATIVE, cumData, '#96d45a',
       { yAxisID: 'yDollars', fill: true, bg: 'rgba(150,212,90,0.10)', pointRadius: 0, tension: 0 });
   add(DS.DON_PER_STREAM, streams.map(s => pt(s, s.total_donations_usd)), '#e8c020',
-      { yAxisID: 'yDollars' });
+      { yAxisID: 'yPerStream' });
 
   // Donations per minute (right).
   add(DS.DON_PER_MIN, streams.map(s => pt(s, s.donations_per_min)), '#e8952a',
@@ -812,9 +813,14 @@ function buildChart(streams, subs) {
           display: axisHasVisibleDs(AXIS_MAP.yViewers),
           grid: { drawOnChartArea: false },
         }),
-        yDollars: Object.assign(yCommon('#e8c020', '$ raised', v => '$' + v.toLocaleString()), {
+        yDollars: Object.assign(yCommon('#96d45a', 'cumulative $', v => '$' + v.toLocaleString()), {
           position: 'right',
           display: axisHasVisibleDs(AXIS_MAP.yDollars),
+          grid: { drawOnChartArea: false },
+        }),
+        yPerStream: Object.assign(yCommon('#e8c020', '$ / stream', v => '$' + v.toLocaleString()), {
+          position: 'right',
+          display: axisHasVisibleDs(AXIS_MAP.yPerStream),
           grid: { drawOnChartArea: false },
         }),
         yRate: Object.assign(yCommon('#e8952a', '$ / min', v => '$' + v.toLocaleString()), {
