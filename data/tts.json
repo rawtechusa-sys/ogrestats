@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098436,
+  "updated_ts": 1782098444,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -111,7 +111,8 @@
     "a_two_man_marathon_stream_watching_cyraxx",
     "a_very_late_man",
     "a_very_stoned_man_discusses_repzion_and_the_completionist",
-    "a_very_stoned_man_discusses_repzion_and_the_completionist_working"
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+    "a_wingsofredemption_marathon_stream"
   ],
   "commands": {
     "stan": 27,
@@ -144,10 +145,10 @@
     "turkey": 5,
     "eyes": 27,
     "africa": 1,
-    "face": 92,
+    "face": 94,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 75,
+    "joy": 76,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -185,7 +186,7 @@
     "fire": 5,
     "kendal": 1,
     "up": 11,
-    "note": 4,
+    "note": 5,
     "eyebrow": 1,
     "facepalming": 4,
     "shrugging": 1,
@@ -239,7 +240,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 2,
-    "mouth": 5,
+    "mouth": 6,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -862,6 +863,11 @@
       "title": "A Very Stoned Man Discusses Repzion And The Completionist (WORKING)",
       "start_ts": 1701574136,
       "youtube_archive_id": "0wRkY2FULQE"
+    },
+    "a_wingsofredemption_marathon_stream": {
+      "title": "A WingsOfRedemption Marathon Stream",
+      "start_ts": 1656806041,
+      "youtube_archive_id": "YSP4GkKzkmk"
     }
   },
   "messages": [
@@ -5674,6 +5680,56 @@
       "message": "Act Man is back making paper :flexed_biceps:",
       "commands": [
         "biceps"
+      ]
+    },
+    {
+      "ts": 1656815410,
+      "username": "@tonymendez4801",
+      "platform": "youtube",
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "message": "YOU KNOW WHAT TIME IT IS RICH. :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656814466,
+      "username": "@GMillion2112",
+      "platform": "youtube",
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "message": "How often do u blow cats:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656811209,
+      "username": "@Manga64",
+      "platform": "youtube",
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "message": "feel sorry for him honestly :unamused_face: too much hate!",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656809994,
+      "username": "@ScottyPimpin69",
+      "platform": "youtube",
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "message": "Pepsi Pimpin\u2026 quit ruining the family name :face_with_symbols_on_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1656806544,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "a_wingsofredemption_marathon_stream",
+      "message": "Please react to liquid richard banworld song!!!!:musical_note:",
+      "commands": [
+        "note"
       ]
     },
     {
