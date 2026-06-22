@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098928,
+  "updated_ts": 1782098936,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -173,7 +173,8 @@
     "breaking_news_im_an_idiot",
     "breaking_steven_crowder_is_human_garbage_shocking",
     "canada_returns",
-    "celebreating_15_years_of_philip_paul_burnell_a_man"
+    "celebreating_15_years_of_philip_paul_burnell_a_man",
+    "certified_alpha_male_stream_for_men"
   ],
   "commands": {
     "stan": 27,
@@ -204,9 +205,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 41,
+    "eyes": 42,
     "africa": 1,
-    "face": 143,
+    "face": 144,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 111,
@@ -272,7 +273,7 @@
     "dsp": 9,
     "story": 1,
     "tree": 2,
-    "skull": 4,
+    "skull": 5,
     "eggplant": 1,
     "bite": 1,
     "take": 2,
@@ -1305,6 +1306,11 @@
       "title": "Celebreating 15 Years of Philip Paul Burnell (A Man)",
       "start_ts": 1693676706,
       "youtube_archive_id": "x5Ehdtap9Y8"
+    },
+    "certified_alpha_male_stream_for_men": {
+      "title": "CERTIFIED ALPHA MALE STREAM (FOR MEN)",
+      "start_ts": 1676766896,
+      "youtube_archive_id": "boplYAtJ4ew"
     }
   },
   "messages": [
@@ -7168,6 +7174,36 @@
       "message": "You are a man! But for seriously you are so awesome for doing this for Rich, I will always come down for you. :kissing_face_with_closed_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1676772981,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "certified_alpha_male_stream_for_men",
+      "message": "I feel morally and intellectually superior to grifters. There are better ways to spend your time on this planet. We only have so time to live. :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1676771869,
+      "username": "@Blicky_Bandit",
+      "platform": "youtube",
+      "stream_id": "certified_alpha_male_stream_for_men",
+      "message": "I did nothing wrong she invited me for cookies :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1676767771,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "certified_alpha_male_stream_for_men",
+      "message": ":grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
