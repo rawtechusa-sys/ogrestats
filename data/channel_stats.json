@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100091,
+  "updated_ts": 1782100100,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -312,7 +312,8 @@
     "i_have_some_very_important_things_to_discuss",
     "i_just_went_through_youtube_hell_let_me_explain",
     "i_listened_and_made_changes_wings_of_redemption_doc",
-    "i_think_i_fixed_it"
+    "i_think_i_fixed_it",
+    "i_wasnt_gonna_stream_but_here_i_am"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5290,6 +5291,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.11,
       "avg_active_chatters": 36.17
+    },
+    "i_wasnt_gonna_stream_but_here_i_am": {
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "title": "I Wasn't Gonna Stream, But Here I Am",
+      "start_ts": 1691540279,
+      "end_ts": 1691551691,
+      "duration_sec": 11412,
+      "youtube_archive_id": "OWOfebWwZ0A",
+      "source_platform": "youtube",
+      "total_donations_usd": 171.18,
+      "donation_count": 63,
+      "donations_per_min": 0.9,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.82,
+      "avg_active_chatters": 38.71
     }
   }
 }
