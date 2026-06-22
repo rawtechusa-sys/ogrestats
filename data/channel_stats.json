@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098610,
+  "updated_ts": 1782098618,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -134,7 +134,8 @@
     "and_the_nintendo_switch_oled_winners_are",
     "andrew_taint_is_a_man",
     "andrew_tate_is_a_man",
-    "andrew_tate_man_stream_he_got_arrested"
+    "andrew_tate_man_stream_he_got_arrested",
+    "angrily_chatting_and_playing_elden_ring"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2264,6 +2265,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.01,
       "avg_active_chatters": 30.27
+    },
+    "angrily_chatting_and_playing_elden_ring": {
+      "stream_id": "angrily_chatting_and_playing_elden_ring",
+      "title": "Angrily Chatting And Playing Elden Ring",
+      "start_ts": 1648512684,
+      "end_ts": 1648521827,
+      "duration_sec": 9143,
+      "youtube_archive_id": "xSVmDNIboUM",
+      "source_platform": "youtube",
+      "total_donations_usd": 254.44,
+      "donation_count": 80,
+      "donations_per_min": 1.6697,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.97,
+      "avg_active_chatters": 40.07
     }
   }
 }
