@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096277,
+  "updated_ts": 1782096337,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -96,7 +96,8 @@
     "a_quick_stream",
     "a_quick_thank_you_and_boxing_update",
     "a_random_short_man_stream_with_special_guest_birds",
-    "a_satisfying_incel_stream"
+    "a_satisfying_incel_stream",
+    "a_short_stream"
   ],
   "commands": {
     "stan": 27,
@@ -127,15 +128,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 4,
-    "eyes": 23,
+    "eyes": 24,
     "africa": 1,
-    "face": 82,
+    "face": 83,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 58,
+    "joy": 60,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 11,
+    "carlos": 12,
     "away": 4,
     "idea": 1,
     "fear": 2,
@@ -281,7 +282,10 @@
     "request": 1,
     "sweat": 2,
     "twist": 1,
-    "quote": 1
+    "quote": 1,
+    "beverage": 1,
+    "peanuts": 1,
+    "glass": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -758,6 +762,11 @@
       "title": "A Satisfying Incel Stream",
       "start_ts": 1656025858,
       "youtube_archive_id": "faO09A1UurQ"
+    },
+    "a_short_stream": {
+      "title": "A Short Stream",
+      "start_ts": 1629334186,
+      "youtube_archive_id": "5jWzljM_1vY"
     }
   },
   "messages": [
@@ -7371,6 +7380,77 @@
       "message": "Not American but what the is deal with Ben Shapiro watched him for 1st time today he talks/looks like an alien pretending to be human :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1629340778,
+      "username": "@notsoepic8066",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "How is wearing a chicken suit bad, you\u2019ll be one with Carlos :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1629339995,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "I remember watching you back when you lived in some apartment in 2012 talking about the Wii U. You are the first YouTuber I ever started watching. You\u2019ve truly come a long way man. Cheers. :wine_glass: :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "glass",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1629339654,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "Sing the horse song, dad! :_Rich::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1629336615,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "They\u2019re cool though, rich. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1629336225,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "I just wanna say Hi to ya Rich and to the rest of the chat, a friendly smooch. *smooch* :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1629335939,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "NFT? Nips, Farts and Testees? :peanuts:",
+      "commands": [
+        "peanuts"
+      ]
+    },
+    {
+      "ts": 1629335191,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "a_short_stream",
+      "message": "Hot or ice coffee? :horse::cucumber::chicken::hot_beverage:",
+      "commands": [
+        "beverage"
       ]
     },
     {
