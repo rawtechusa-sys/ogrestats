@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100346,
+  "updated_ts": 1782100355,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -341,7 +341,8 @@
     "intellivision_amico_family_fun_night_plus_newegg_drama",
     "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
     "intellivision_family_fun_keffals_and_lady_decade",
-    "irl_streaming_from_poughkeepsie_ny"
+    "irl_streaming_from_poughkeepsie_ny",
+    "irl_streaming_on_a_hot_day"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5783,6 +5784,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 31.89,
       "avg_active_chatters": 76.39
+    },
+    "irl_streaming_on_a_hot_day": {
+      "stream_id": "irl_streaming_on_a_hot_day",
+      "title": "IRL STREAMING ON A HOT DAY",
+      "start_ts": 1659036885,
+      "end_ts": 1659038868,
+      "duration_sec": 1983,
+      "youtube_archive_id": "SvV1aVgUd0I",
+      "source_platform": "youtube",
+      "total_donations_usd": 217.94,
+      "donation_count": 22,
+      "donations_per_min": 6.5943,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 25.09,
+      "avg_active_chatters": 60.97
     }
   }
 }
