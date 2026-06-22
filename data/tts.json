@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101319,
+  "updated_ts": 1782101327,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -467,7 +467,8 @@
     "more_games_and_a_man",
     "more_gta_iii_remastered_with_birds",
     "more_intellivision_amico_family_bird_fun",
-    "more_intellivision_amico_family_fun"
+    "more_intellivision_amico_family_fun",
+    "more_intellivision_amico_manbird_fun"
   ],
   "commands": {
     "stan": 27,
@@ -497,13 +498,13 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 8,
-    "eyes": 106,
+    "turkey": 9,
+    "eyes": 107,
     "africa": 1,
-    "face": 437,
+    "face": 438,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 285,
+    "joy": 286,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -536,7 +537,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 44,
+    "rooster": 46,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
@@ -553,7 +554,7 @@
     "superhero": 28,
     "legends": 2,
     "dog": 11,
-    "is": 7,
+    "is": 8,
     "spose": 1,
     "sunglasses": 21,
     "kiss": 22,
@@ -581,7 +582,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 22,
-    "horse": 13,
+    "horse": 14,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -629,7 +630,7 @@
     "day": 1,
     "struck": 3,
     "joker": 1,
-    "racehorse": 9,
+    "racehorse": 10,
     "question": 11,
     "mushroom": 3,
     "trilogy": 1,
@@ -650,7 +651,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 21,
+    "sweat": 22,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -976,7 +977,8 @@
     "called": 1,
     "moon": 1,
     "context": 1,
-    "tonight": 1
+    "tonight": 1,
+    "bia": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3308,6 +3310,11 @@
       "title": "More Intellivision Amico Family Fun",
       "start_ts": 1644282033,
       "youtube_archive_id": "nDU-LTdfzus"
+    },
+    "more_intellivision_amico_manbird_fun": {
+      "title": "More Intellivision Amico Man/Bird Fun",
+      "start_ts": 1638237774,
+      "youtube_archive_id": "9VDBRxoM4uI"
     }
   },
   "messages": [
@@ -23931,6 +23938,98 @@
       "message": "Mod me Rich :red_heart: I'm not a fly by the night type of guy and you can always @ me in discord and via Cody -- ya'll streamers can @ me :red_heart: :red_heart: :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1638245756,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "mainly Halo infinite and Bia: hells highway",
+      "commands": [
+        "bia"
+      ]
+    },
+    {
+      "ts": 1638242335,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Hey Rich. There\u2019s a skateboarding game with Birds :rooster: called SkateBird. You definitely need to play it on stream. :face_with_tears_of_joy:",
+      "commands": [
+        "rooster",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1638241481,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Why does he sound like he's constipated!?:grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1638240270,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Question is: is it better than the soulja boy console?",
+      "commands": [
+        "is"
+      ]
+    },
+    {
+      "ts": 1638240049,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Day one buy.glad for the demo on sound settings. :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1638239628,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Man :horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1638239607,
+      "username": "@OnePumpMaan",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Rich! what do you think would realistically happen if aliens finally introduced themselves and they turn out to just be advanced human beings? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1638238802,
+      "username": "@OnePumpMaan",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": "Keep effing those chickens! :rooster: :turkey:",
+      "commands": [
+        "rooster",
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1638238277,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_manbird_fun",
+      "message": ":chicken:Does it have a speaker system on it though :racehorse:",
+      "commands": [
+        "racehorse"
       ]
     },
     {
