@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093092,
+  "updated_ts": 1782093130,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -34,7 +34,8 @@
     "a_detrahktor_discusses_her_grievances_with_me",
     "a_dspgaming_and_wingsofredemption_man_stream",
     "a_dspgaming_family_fun_stream",
-    "a_family_friendly_christian_straight_man_stream"
+    "a_family_friendly_christian_straight_man_stream",
+    "a_family_friendly_heterosexual_stream"
   ],
   "commands": {
     "stan": 27,
@@ -67,10 +68,10 @@
     "turkey": 3,
     "eyes": 8,
     "africa": 1,
-    "face": 23,
+    "face": 26,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 19,
+    "joy": 20,
     "gameboy": 1,
     "chick": 1,
     "carlos": 7,
@@ -78,7 +79,7 @@
     "idea": 1,
     "fear": 1,
     "voice": 1,
-    "cucumber": 3,
+    "cucumber": 4,
     "biceps": 1,
     "tongue": 1,
     "heart": 14,
@@ -107,7 +108,7 @@
     "peach": 1,
     "fire": 2,
     "kendal": 1,
-    "up": 3,
+    "up": 4,
     "note": 1,
     "eyebrow": 1,
     "facepalming": 1,
@@ -136,7 +137,11 @@
     "skull": 1,
     "eggplant": 1,
     "bite": 1,
-    "take": 1
+    "take": 1,
+    "states": 1,
+    "tiger": 1,
+    "reviewrodneykingusa": 1,
+    "reviewtoddhowardusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -303,6 +308,11 @@
       "title": "A Family-Friendly Christian, Straight Man Stream",
       "start_ts": 1687648839,
       "youtube_archive_id": "WcfNm1IvEzg"
+    },
+    "a_family_friendly_heterosexual_stream": {
+      "title": "A Family Friendly Heterosexual Stream",
+      "start_ts": 1694044855,
+      "youtube_archive_id": "vO5k3zSGQYk"
     }
   },
   "messages": [
@@ -2418,6 +2428,97 @@
       "message": "Disclaimer: the Switch port of MK1 was NOT handled by Netherrealm. WB outsourced the Switch port efforts to a developer called Shiver Entertainment.",
       "commands": [
         "disclaimer"
+      ]
+    },
+    {
+      "ts": 1694053818,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "Just know :index_pointing_up: Hero in, I'm taking a dump :confounded_face:",
+      "commands": [
+        "up",
+        "face"
+      ]
+    },
+    {
+      "ts": 1694050634,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "what's the joke behind her and butter? :confused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1694049593,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "ReviewToddHowardUSA: the best part about having outrage over pronouns is that\u2026 it just works.",
+      "commands": [
+        "reviewtoddhowardusa"
+      ]
+    },
+    {
+      "ts": 1694048958,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "ReviewRodneyKingUSA: Can\u2019t\u2026can\u2019t we all just get along for the kids and the old folks.",
+      "commands": [
+        "reviewrodneykingusa"
+      ]
+    },
+    {
+      "ts": 1694048793,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "Tony the Tiger: let\u2019s make America grrreat again",
+      "commands": [
+        "tiger"
+      ]
+    },
+    {
+      "ts": 1694048590,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "We need a Liquid Richard song about the Pronouns Guy, fr. :face_with_tears_of_joy: Can I get a Beavis Boobs and Chris Hansen Breasts five times?",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1694046615,
+      "username": "@jankjaws9815",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "Fun fact about the porn in res states: they usually watch some of the most ironic stuff. I can\u2019t say what is but I know Alabama top search is funny.",
+      "commands": [
+        "states"
+      ]
+    },
+    {
+      "ts": 1694045976,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": "You missed my Superchat. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1694045085,
+      "username": "@guyshook8239",
+      "platform": "youtube",
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "message": ":cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
