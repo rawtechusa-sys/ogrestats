@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099429,
+  "updated_ts": 1782099438,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -234,7 +234,8 @@
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
     "come_stream_with_a_man",
     "come_talk_to_a_man_feat_birds",
-    "come_talk_with_liana_k_and_i_about_video_games"
+    "come_talk_with_liana_k_and_i_about_video_games",
+    "cringing_at_the_avgn_movie"
   ],
   "commands": {
     "stan": 27,
@@ -265,15 +266,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 61,
+    "eyes": 62,
     "africa": 1,
-    "face": 209,
+    "face": 210,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 143,
+    "joy": 144,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 21,
+    "carlos": 22,
     "away": 5,
     "idea": 2,
     "fear": 3,
@@ -281,7 +282,7 @@
     "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
-    "heart": 66,
+    "heart": 67,
     "shorts": 1,
     "laughing": 66,
     "news": 13,
@@ -307,7 +308,7 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 19,
+    "up": 20,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 7,
@@ -317,7 +318,7 @@
     "hands": 15,
     "horns": 6,
     "crab": 2,
-    "superhero": 12,
+    "superhero": 14,
     "legends": 1,
     "dog": 4,
     "is": 5,
@@ -367,7 +368,7 @@
     "monkey": 1,
     "psychology": 1,
     "lindell": 1,
-    "movie": 1,
+    "movie": 2,
     "hour": 1,
     "nose": 2,
     "kelly": 1,
@@ -375,7 +376,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 5,
+    "it": 6,
     "food": 2,
     "play": 1,
     "video": 1,
@@ -546,7 +547,10 @@
     "cons": 1,
     "crossbones": 1,
     "sound": 1,
-    "talk": 1
+    "talk": 1,
+    "wokeism": 1,
+    "burnell": 1,
+    "victim": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1713,6 +1717,11 @@
       "title": "Come Talk With Liana K And I About Video Games",
       "start_ts": 1637026697,
       "youtube_archive_id": "_dcnEWzfKDI"
+    },
+    "cringing_at_the_avgn_movie": {
+      "title": "Cringing At The AVGN Movie",
+      "start_ts": 1702253015,
+      "youtube_archive_id": "G8q7Y12ewSs"
     }
   },
   "messages": [
@@ -4983,6 +4992,127 @@
       "message": "Merry Birdmas! :rooster::christmas_tree::wrapped_gift:",
       "commands": [
         "gift"
+      ]
+    },
+    {
+      "ts": 1702278409,
+      "username": "@MagicTaint",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Im still waiting for the DSP movie: Fapping Fury",
+      "commands": [
+        "movie"
+      ]
+    },
+    {
+      "ts": 1702277028,
+      "username": "@chrischansfantabottlecolle4368",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Maaaan 20 months.. Love you, bird father :_Cucumber::_Carlos::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1702268796,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "I still remember the two Samurai Cop streams. Those were two hell of streams. Amazing how I\u2019ve watching these streams for four years, it\u2019s wild. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1702268053,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "DSP playing the victim: you see, Rich threatened to assault me because of what I said over a sandwich",
+      "commands": [
+        "victim"
+      ]
+    },
+    {
+      "ts": 1702266467,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Philip \"Contraditcions\" Burnell: he often claims he doesn't watch other YouTubers, and yet every couple weeks he slips up and admits he watches them... I wonder if it's some form of cucking from Khet.",
+      "commands": [
+        "burnell"
+      ]
+    },
+    {
+      "ts": 1702262697,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Right-wokeism: Always looking for something to be upset about. Tremendously sad. :ok_hand:Believe me, believe me:ok_hand:.",
+      "commands": [
+        "wokeism"
+      ]
+    },
+    {
+      "ts": 1702261104,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "DSP tries it: girls with shlongs",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1702259940,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "not saying it's ok just saying :man_superhero:",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1702258020,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Just know :index_pointing_up: hero in pride can be a bitch :man_superhero: I'm just glad jirard paid and things will go back to normal",
+      "commands": [
+        "up",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1702257866,
+      "username": "@Matt5447",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "As someone in the legal field, I can assure you that there\u2019s so many variables and unknowns for him to come to a conclusions this. Screw law school. :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1702254953,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "Phill claims child friendly, but cusses out chat:grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1702254867,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "cringing_at_the_avgn_movie",
+      "message": "the bear thing is something you can do in BG3 :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
