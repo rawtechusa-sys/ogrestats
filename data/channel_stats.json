@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100408,
+  "updated_ts": 1782100417,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -348,7 +348,8 @@
     "its_a_question",
     "its_all_about_casey",
     "its_all_about_keemstar_and_birds",
-    "its_all_about_the_tipples"
+    "its_all_about_the_tipples",
+    "its_dspgamings_birthday"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5902,6 +5903,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.66,
       "avg_active_chatters": 28.16
+    },
+    "its_dspgamings_birthday": {
+      "stream_id": "its_dspgamings_birthday",
+      "title": "IT'S DSPGAMING'S BIRTHDAY",
+      "start_ts": 1680910415,
+      "end_ts": 1680930083,
+      "duration_sec": 19668,
+      "youtube_archive_id": "tuiQB2kLK7E",
+      "source_platform": "youtube",
+      "total_donations_usd": 623.61,
+      "donation_count": 126,
+      "donations_per_min": 1.9024,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.65,
+      "avg_active_chatters": 23.63
     }
   }
 }
