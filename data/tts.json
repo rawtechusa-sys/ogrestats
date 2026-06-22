@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100089,
+  "updated_ts": 1782100098,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -311,7 +311,8 @@
     "i_have_some_very_important_things_to_discuss",
     "i_just_went_through_youtube_hell_let_me_explain",
     "i_listened_and_made_changes_wings_of_redemption_doc",
-    "i_think_i_fixed_it"
+    "i_think_i_fixed_it",
+    "i_wasnt_gonna_stream_but_here_i_am"
   ],
   "commands": {
     "stan": 27,
@@ -344,23 +345,23 @@
     "turkey": 7,
     "eyes": 75,
     "africa": 1,
-    "face": 289,
+    "face": 290,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 214,
+    "joy": 215,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 25,
+    "carlos": 26,
     "away": 5,
     "idea": 3,
     "fear": 3,
     "voice": 4,
-    "cucumber": 35,
+    "cucumber": 36,
     "biceps": 3,
     "tongue": 6,
     "heart": 97,
     "shorts": 1,
-    "laughing": 111,
+    "laughing": 116,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -384,7 +385,7 @@
     "peach": 8,
     "fire": 18,
     "kendal": 1,
-    "up": 28,
+    "up": 30,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -638,7 +639,7 @@
     "robot": 1,
     "splayed": 1,
     "crown": 2,
-    "game": 2,
+    "game": 3,
     "dialogue": 1,
     "perspective": 1,
     "honeybee": 2,
@@ -2264,6 +2265,11 @@
       "title": "I Think I Fixed It...",
       "start_ts": 1689224080,
       "youtube_archive_id": "GCFv3dXQkto"
+    },
+    "i_wasnt_gonna_stream_but_here_i_am": {
+      "title": "I Wasn't Gonna Stream, But Here I Am",
+      "start_ts": 1691540279,
+      "youtube_archive_id": "OWOfebWwZ0A"
     }
   },
   "messages": [
@@ -8300,6 +8306,86 @@
       "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
       "commands": [
         "coco"
+      ]
+    },
+    {
+      "ts": 1691549338,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": ":index_pointing_up:just know :rolling_on_the_floor_laughing: :rolling_on_the_floor_laughing: :rolling_on_the_floor_laughing: :rolling_on_the_floor_laughing: :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1691547290,
+      "username": "@Mr.Nobody12",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "We need a peanut butter complexion sound now :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1691545171,
+      "username": "@thedeepfriar745",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "Any chance you or Jay would ever do a video on the game: Alien Isolation?",
+      "commands": [
+        "game"
+      ]
+    },
+    {
+      "ts": 1691543448,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "Sorry Dad my new Gf has been garggling :eyes::eggplant::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1691543174,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "Leafy hates trans women because they\u2019re trans, I hate them cause they\u2019re women. Trans Inclusionary Radical Mysoginy. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1691542696,
+      "username": "@steveragna9409",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "Bird:_Carlos::_Carlos::_Carlos::_Carlos::_Carlos::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1691542115,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": "Your facial countenance appears rather youthful, sir. :anguished_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691541512,
+      "username": "@guyshook8239",
+      "platform": "youtube",
+      "stream_id": "i_wasnt_gonna_stream_but_here_i_am",
+      "message": ":cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
