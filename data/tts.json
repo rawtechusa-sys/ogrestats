@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098862,
+  "updated_ts": 1782098871,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -165,7 +165,8 @@
     "birds_are_satisfying_feat_a_man",
     "birds_are_satisfying_kinda_livestream_feat_birds",
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
-    "birthday_bird_and_man_stream"
+    "birthday_bird_and_man_stream",
+    "birthday_marathon_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -196,15 +197,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 37,
+    "eyes": 40,
     "africa": 1,
-    "face": 133,
+    "face": 137,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 104,
+    "joy": 108,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 13,
+    "carlos": 14,
     "away": 5,
     "idea": 1,
     "fear": 2,
@@ -217,7 +218,7 @@
     "laughing": 51,
     "news": 11,
     "chicken": 24,
-    "cake": 3,
+    "cake": 6,
     "d": 1,
     "halo": 2,
     "hand": 8,
@@ -234,7 +235,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 16,
+    "rooster": 17,
     "peach": 3,
     "fire": 9,
     "kendal": 1,
@@ -248,7 +249,7 @@
     "hands": 14,
     "horns": 4,
     "crab": 2,
-    "superhero": 11,
+    "superhero": 12,
     "legends": 1,
     "dog": 4,
     "is": 4,
@@ -374,7 +375,7 @@
     "spoiler": 1,
     "mug": 1,
     "pachter": 2,
-    "eagle": 4,
+    "eagle": 5,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
     "say": 1,
@@ -426,7 +427,9 @@
     "apple": 1,
     "channel": 1,
     "specs": 1,
-    "balloon": 1
+    "balloon": 1,
+    "bear": 1,
+    "philitizer": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1248,6 +1251,11 @@
       "title": "Birthday Bird And Man Stream",
       "start_ts": 1657932689,
       "youtube_archive_id": "aThKckUZ9No"
+    },
+    "birthday_marathon_man_stream": {
+      "title": "Birthday Marathon Man Stream",
+      "start_ts": 1689529358,
+      "youtube_archive_id": "06dKATh0JEs"
     }
   },
   "messages": [
@@ -5641,6 +5649,179 @@
       "message": "Hello father :chicken: i have a solution to the mod problem, make everyone who doesn't wanna be a mod, a mod. (some people wanna be mkds too badly... :racehorse:)",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1689548898,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Typical Bruins Fan :grinning_squinting_face: spam intro guy farts",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1689546763,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "when are you having an alcoholic beverage plus what beverage will you be having? I'm waiting with my beer :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689540148,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "I can\u2019t believe I\u2019m saying this, but can I be a mod again? I\u2019ll support you either way. Happy Birthday again. You\u2019re an awesome guy. :beaming_face_with_smiling_eyes: Hoot Wireless.",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1689539798,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy birthday :birthday_cake: :partying_face:. I wish you many more :slightly_smiling_face:",
+      "commands": [
+        "cake",
+        "face"
+      ]
+    },
+    {
+      "ts": 1689538383,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Rich Please Watch \u201eThe Bad Touch\u201c AI Phil song real quick. :face_with_tears_of_joy: It\u2018s on the same YouTube channel as before. I sent you the link on Twitter in the DM.",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689536883,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Shirt off while you watch these AI Videos of Phil. You gotta watch as many as you can. Trust me! :face_with_tears_of_joy::face_with_tears_of_joy: Happy Birthday!",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689536741,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Also Happy Birthday!!!! :birthday_cake:",
+      "commands": [
+        "cake"
+      ]
+    },
+    {
+      "ts": 1689536701,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Just know hero in :man_superhero: this is actually tolerable:grinning_squinting_face:",
+      "commands": [
+        "superhero",
+        "face"
+      ]
+    },
+    {
+      "ts": 1689534551,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "For the Philitizer: Can you please listen to one of his AI Songs? I sent you one on Twitter. Trust me, you won\u2018t regret it! It sounds sooo good! PLS:face_with_tears_of_joy:",
+      "commands": [
+        "philitizer",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689531456,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Hey Rich ! Happy Birthday ! All the best and I hope this year ends on a much better note than it started for you ! :partying_face::partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1689531390,
+      "username": "@MetroGaming75",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy Birthday Rich:birthday_cake: I hope you're having a great day and can I be a mod? also bird clucks",
+      "commands": [
+        "cake"
+      ]
+    },
+    {
+      "ts": 1689531066,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "happy birthday you sexy beast of a bear :bear::bear:",
+      "commands": [
+        "bear"
+      ]
+    },
+    {
+      "ts": 1689531058,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy Birthday, Rich! Planned to make a kickass video today, but I think I\u2019ll put that off for now. Best wishes to you and your family. Birds. :eagle::eagle::eagle:",
+      "commands": [
+        "eagle"
+      ]
+    },
+    {
+      "ts": 1689530987,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy Birthday again Bird Father! :red_heart::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1689530849,
+      "username": "@brian_27",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy birthday Rich:_Carlos::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1689530296,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Check Twitter DM for AI Phil Songs YT Channel. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1689529833,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "birthday_marathon_man_stream",
+      "message": "Happy Birthday Rich! Also can I be mod again sir :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
