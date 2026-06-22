@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098484,
+  "updated_ts": 1782098492,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -118,7 +118,8 @@
     "a_wonderful_qvc_roast",
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
     "a_xmas_eve_bird_stream",
-    "a_xmas_eve_bird_stream_pt2"
+    "a_xmas_eve_bird_stream_pt2",
+    "after_immense_pressure_thecowarding_finally_responded"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1992,6 +1993,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.99,
       "avg_active_chatters": 29.88
+    },
+    "after_immense_pressure_thecowarding_finally_responded": {
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "title": "After Immense Pressure, TheCowarding Finally Responded",
+      "start_ts": 1681866742,
+      "end_ts": 1681887654,
+      "duration_sec": 20912,
+      "youtube_archive_id": "1oP0A6gHPrY",
+      "source_platform": "youtube",
+      "total_donations_usd": 695.41,
+      "donation_count": 121,
+      "donations_per_min": 1.9952,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.14,
+      "avg_active_chatters": 24.8
     }
   }
 }
