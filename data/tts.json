@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100142,
+  "updated_ts": 1782100151,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -317,7 +317,8 @@
     "idubbz_video_going_shopping_to_become_a_vtuber",
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "im_a_bully_plus_i_react_to_large_muscular_men",
-    "im_a_man"
+    "im_a_man",
+    "im_at_a_crossroads"
   ],
   "commands": {
     "stan": 27,
@@ -364,15 +365,15 @@
     "cucumber": 36,
     "biceps": 3,
     "tongue": 6,
-    "heart": 98,
+    "heart": 99,
     "shorts": 1,
-    "laughing": 120,
+    "laughing": 121,
     "news": 18,
     "chicken": 37,
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 23,
+    "hand": 24,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -2306,6 +2307,11 @@
       "title": "I'm A Man",
       "start_ts": 1647996414,
       "youtube_archive_id": "D-1_zdfcf6w"
+    },
+    "im_at_a_crossroads": {
+      "title": "I'm At A Crossroads",
+      "start_ts": 1687474422,
+      "youtube_archive_id": "MtspSv3N63Q"
     }
   },
   "messages": [
@@ -9157,6 +9163,36 @@
       "message": "Hello father, just got here. Hot take: Khet has nothing to do with his weird reactions to anything remotely sexual, he\u2019s always been weird but before he\u2019d hide discomfort behind crappy jokes. Cheers!",
       "commands": [
         "take"
+      ]
+    },
+    {
+      "ts": 1687480511,
+      "username": "@agesicki7404",
+      "platform": "youtube",
+      "stream_id": "im_at_a_crossroads",
+      "message": "DSP recently whined about YT comments 14 yrs ago:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1687477424,
+      "username": "@HeyItsTippyXO",
+      "platform": "youtube",
+      "stream_id": "im_at_a_crossroads",
+      "message": "Showed up late to the stream and missed the start. But I ran it back and I just wanted you to know we are here for you brother. Stay strong. Love you, buddy. :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1687476013,
+      "username": "@Tom_Fuckery",
+      "platform": "youtube",
+      "stream_id": "im_at_a_crossroads",
+      "message": "Don't stop being real. We come here for the experience. Not just to be entertained. Bring on your variety show! reality is pretty varied and wild :call_me_hand:",
+      "commands": [
+        "hand"
       ]
     },
     {
