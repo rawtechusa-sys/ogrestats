@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099869,
+  "updated_ts": 1782099878,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -286,7 +286,8 @@
     "friday_night_man_stream",
     "friday_night_new_york_man_stream",
     "friday_night_shoulders",
-    "furry_cringe_feat_keemstar"
+    "furry_cringe_feat_keemstar",
+    "g4tv_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -322,7 +323,7 @@
     "face": 262,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 193,
+    "joy": 194,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -335,7 +336,7 @@
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 89,
+    "laughing": 90,
     "news": 17,
     "chicken": 37,
     "cake": 7,
@@ -482,7 +483,7 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 11,
+    "notes": 12,
     "wars": 1,
     "points": 5,
     "wastebasket": 1,
@@ -2079,6 +2080,11 @@
       "title": "Furry Cringe (Feat. Keemstar)",
       "start_ts": 1671240104,
       "youtube_archive_id": "NGuHKJdIzWM"
+    },
+    "g4tv_family_fun": {
+      "title": "G4TV Family Fun",
+      "start_ts": 1644021147,
+      "youtube_archive_id": "0icV7Ln6vp8"
     }
   },
   "messages": [
@@ -13699,6 +13705,36 @@
       "message": "Square Enix games usually contain incredibly well done graphics, character, and voice acting. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1644028086,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "g4tv_family_fun",
+      "message": "It brings you closer by getting grandpa excited :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1644027487,
+      "username": "@DonicaJLewinski",
+      "platform": "youtube",
+      "stream_id": "g4tv_family_fun",
+      "message": "You keep setting off my home pod mini. Lmao :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1644022575,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "g4tv_family_fun",
+      "message": "BIRD KOMBAT!!! :musical_notes:Que music:musical_notes: FINISH HIM! STEVE WINS! FLAWLESS VICTORY! FRIED CHICKEN-ALITY!!!!!!",
+      "commands": [
+        "notes"
       ]
     },
     {
