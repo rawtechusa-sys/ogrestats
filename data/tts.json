@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099724,
+  "updated_ts": 1782099732,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -269,7 +269,8 @@
     "dspgamings_direct_capture_saga",
     "dspgamings_may_1st_burst_anniversary_show",
     "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
-    "dude_wtf_is_even_going_on"
+    "dude_wtf_is_even_going_on",
+    "early_sunday_man_a_thon"
   ],
   "commands": {
     "stan": 27,
@@ -305,7 +306,7 @@
     "face": 245,
     "petersonxhhanson": 1,
     "poo": 15,
-    "joy": 178,
+    "joy": 180,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -316,9 +317,9 @@
     "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
-    "heart": 79,
+    "heart": 80,
     "shorts": 1,
-    "laughing": 81,
+    "laughing": 82,
     "news": 15,
     "chicken": 36,
     "cake": 7,
@@ -339,7 +340,7 @@
     "disclaimer": 1,
     "hole": 5,
     "rooster": 22,
-    "peach": 4,
+    "peach": 5,
     "fire": 17,
     "kendal": 1,
     "up": 23,
@@ -1964,6 +1965,11 @@
       "title": "Dude WTF Is Even Going On?",
       "start_ts": 1695171372,
       "youtube_archive_id": "0AdYjHRhWw8"
+    },
+    "early_sunday_man_a_thon": {
+      "title": "Early Sunday Man-A-Thon",
+      "start_ts": 1678037500,
+      "youtube_archive_id": "-xKrKwfu2S0"
     }
   },
   "messages": [
@@ -9232,6 +9238,56 @@
       "message": "Dead Cells: Return to Castlevania stream when?",
       "commands": [
         "cells"
+      ]
+    },
+    {
+      "ts": 1678046103,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "early_sunday_man_a_thon",
+      "message": "Unable to support this month, but thanks for the nips, men, and hope your daughter comes home earlier than expected :red_heart: Slather Jay in Canuck merch.",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1678045583,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "early_sunday_man_a_thon",
+      "message": "There\u2019s a guy on my Nintendo Switch Friend List who plays a lot of hentai games and waifu simulators. I always find it funny for some reason. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1678040046,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "early_sunday_man_a_thon",
+      "message": "On a lighter note, watching you react to the guy who compared dsp to mr.beast was hilarious!:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1678037831,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "early_sunday_man_a_thon",
+      "message": "Sent you a DM with a Phil parody song. Pls watch :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1678037593,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "early_sunday_man_a_thon",
+      "message": "Kung Fu my freaking :peach:",
+      "commands": [
+        "peach"
       ]
     },
     {
