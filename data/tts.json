@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099380,
+  "updated_ts": 1782099388,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -228,7 +228,8 @@
     "come_listen_me_complain_and_answer_questions",
     "come_look_at_this_man_and_chat_with_him",
     "come_speak_to_a_man",
-    "come_stare_at_a_man"
+    "come_stare_at_a_man",
+    "come_stare_at_a_man_and_ask_his_birds_questions"
   ],
   "commands": {
     "stan": 27,
@@ -261,7 +262,7 @@
     "turkey": 6,
     "eyes": 61,
     "africa": 1,
-    "face": 201,
+    "face": 202,
     "petersonxhhanson": 1,
     "poo": 11,
     "joy": 137,
@@ -271,11 +272,11 @@
     "away": 5,
     "idea": 2,
     "fear": 3,
-    "voice": 3,
+    "voice": 4,
     "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
-    "heart": 65,
+    "heart": 66,
     "shorts": 1,
     "laughing": 63,
     "news": 13,
@@ -342,7 +343,7 @@
     "things": 2,
     "down": 2,
     "tomorrow": 10,
-    "horse": 4,
+    "horse": 5,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -532,7 +533,9 @@
     "stone": 1,
     "rockstar": 1,
     "thing": 1,
-    "woman": 1
+    "woman": 1,
+    "stream": 1,
+    "cane": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1669,6 +1672,11 @@
       "title": "Come Stare At A Man",
       "start_ts": 1672176884,
       "youtube_archive_id": "0bGd3bbShaM"
+    },
+    "come_stare_at_a_man_and_ask_his_birds_questions": {
+      "title": "Come Stare At A Man And Ask His Birds Questions",
+      "start_ts": 1638491045,
+      "youtube_archive_id": "punPakGgLkA"
     }
   },
   "messages": [
@@ -11581,6 +11589,66 @@
       "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1638497829,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "Only use me anu$ Horse anu$. :horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1638496103,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "Rich it's taking me forever to level up in halo :unamused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1638494401,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "My wife\u2019s bf and I :red_heart: your channel. Jerome says Hi",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1638494179,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "DSP voice: fuck you and your mother GIVE ME MONEY",
+      "commands": [
+        "voice"
+      ]
+    },
+    {
+      "ts": 1638494165,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "Thanks YT notifications 50 mins late :person_with_white_cane:",
+      "commands": [
+        "cane"
+      ]
+    },
+    {
+      "ts": 1638492924,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_a_man_and_ask_his_birds_questions",
+      "message": "Mister-Meh-Review-TekherUSA Stream: Let\u2019s go Jim!",
+      "commands": [
+        "stream"
       ]
     },
     {
