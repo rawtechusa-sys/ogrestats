@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099639,
+  "updated_ts": 1782099648,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -259,7 +259,8 @@
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
     "dsp_loves_derich",
     "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
-    "dspgaming_gets_schooled_by_beardstar_keemstar"
+    "dspgaming_gets_schooled_by_beardstar_keemstar",
+    "dspgaming_is_a_tad_salty_plus_drphil"
   ],
   "commands": {
     "stan": 27,
@@ -292,10 +293,10 @@
     "turkey": 6,
     "eyes": 66,
     "africa": 1,
-    "face": 227,
+    "face": 228,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 162,
+    "joy": 164,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -323,7 +324,7 @@
     "leg": 1,
     "severance": 2,
     "gta": 4,
-    "me": 5,
+    "me": 6,
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
@@ -600,7 +601,11 @@
     "conspiracy": 1,
     "camera": 1,
     "demonica": 1,
-    "tries": 1
+    "tries": 1,
+    "person": 1,
+    "tt": 1,
+    "sc": 1,
+    "sun": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1892,6 +1897,11 @@
       "title": "DSPGaming Get's Schooled By Beardstar (Keemstar)",
       "start_ts": 1680134811,
       "youtube_archive_id": "xFM_Cney7NU"
+    },
+    "dspgaming_is_a_tad_salty_plus_drphil": {
+      "title": "DSPGaming Is A Tad Salty (Plus Dr.Phil)",
+      "start_ts": 1668208698,
+      "youtube_archive_id": "ON-KGaiiJrw"
     }
   },
   "messages": [
@@ -9678,6 +9688,77 @@
       "message": "they just dont make games like heterosexual rebirth anymore. can't beat the classics :folded_hands: also really liked the fake ps5 vid",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1668219839,
+      "username": "@samgallu7413",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "They\u2019re laughing at each other\u2026what if they know exactly what they\u2019re hucking and have rigs with 4090s at home that they built themselves :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1668219377,
+      "username": "@GatheringHall",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "Yo Rich! That video of the nut camp. Can you remember the name of the video? Want to show my wife what I have planed for the summer :sun:",
+      "commands": [
+        "sun"
+      ]
+    },
+    {
+      "ts": 1668215205,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "Atp it\u2019d be fair game:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1668214214,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "One last SC: Is your Twitch content basically you and Jay and Phil instead of you and Phil?",
+      "commands": [
+        "sc"
+      ]
+    },
+    {
+      "ts": 1668211424,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "TT: No good reviews of Amico,no roblox oof for you",
+      "commands": [
+        "tt"
+      ]
+    },
+    {
+      "ts": 1668211200,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "person: who would you like to be president, Joe Biden or Donald Trump? Me: Peter Moore",
+      "commands": [
+        "person",
+        "me"
+      ]
+    },
+    {
+      "ts": 1668209676,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "message": "SO rich. Where can i get that sweater? :winking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
