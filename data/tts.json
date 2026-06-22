@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099000,
+  "updated_ts": 1782099009,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -182,7 +182,8 @@
     "chatting_watching_chris_chan_documentary_gamerfrommars",
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
     "chatting_with_intro_guy",
-    "chicken_suit_ep_9_discussing_elden_ring"
+    "chicken_suit_ep_9_discussing_elden_ring",
+    "chris_watts_in_4k"
   ],
   "commands": {
     "stan": 27,
@@ -251,7 +252,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 19,
+    "rooster": 20,
     "peach": 3,
     "fire": 11,
     "kendal": 1,
@@ -1364,6 +1365,11 @@
       "title": "Chicken Suit Ep. 9 (Discussing Elden Ring)",
       "start_ts": 1652915326,
       "youtube_archive_id": "CiI5nQsff-g"
+    },
+    "chris_watts_in_4k": {
+      "title": "Chris Watts In 4K",
+      "start_ts": 1639796551,
+      "youtube_archive_id": "fSNpaaK9FMk"
     }
   },
   "messages": [
@@ -10415,6 +10421,16 @@
       "commands": [
         "face",
         "up"
+      ]
+    },
+    {
+      "ts": 1639801997,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "chris_watts_in_4k",
+      "message": "Rapid DSP laugh please:rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
