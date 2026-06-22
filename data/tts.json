@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098839,
+  "updated_ts": 1782098847,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -162,7 +162,8 @@
     "birds_a_man_and_seltzer",
     "birds_and_a_man_feat_birds",
     "birds_and_men_live",
-    "birds_are_satisfying_feat_a_man"
+    "birds_are_satisfying_feat_a_man",
+    "birds_are_satisfying_kinda_livestream_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -419,7 +420,9 @@
     "circle": 2,
     "bar": 1,
     "cells": 1,
-    "tv": 1
+    "tv": 1,
+    "apple": 1,
+    "channel": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1226,6 +1229,11 @@
       "title": "Birds Are Satisfying (Feat. A Man)",
       "start_ts": 1689291579,
       "youtube_archive_id": "nEgsUq9Vyqo"
+    },
+    "birds_are_satisfying_kinda_livestream_feat_birds": {
+      "title": "Birds Are Satisfying Kinda Livestream (Feat. Birds)",
+      "start_ts": 1663463312,
+      "youtube_archive_id": "jHxN2UI2lRk"
     }
   },
   "messages": [
@@ -7193,6 +7201,26 @@
       "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
       "commands": [
         "hearts"
+      ]
+    },
+    {
+      "ts": 1663466508,
+      "username": "@deycallmenumba2",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_kinda_livestream_feat_birds",
+      "message": "ODDtv conspiracy channel: short videos too",
+      "commands": [
+        "channel"
+      ]
+    },
+    {
+      "ts": 1663464629,
+      "username": "@backnforth8401",
+      "platform": "youtube",
+      "stream_id": "birds_are_satisfying_kinda_livestream_feat_birds",
+      "message": "Apple: You want USB in the iPhone 15, we'll give you USB! [installs USB micro]",
+      "commands": [
+        "apple"
       ]
     },
     {
