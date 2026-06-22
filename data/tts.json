@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095680,
+  "updated_ts": 1782095738,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -86,7 +86,8 @@
     "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
     "a_new_bird_approaches",
     "a_philtacular_man_sunday",
-    "a_plain_old_normal_man_stream_feat_men"
+    "a_plain_old_normal_man_stream_feat_men",
+    "a_pre_stream_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -117,12 +118,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 4,
-    "eyes": 20,
+    "eyes": 21,
     "africa": 1,
     "face": 73,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 52,
+    "joy": 53,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -141,7 +142,7 @@
     "cake": 1,
     "d": 1,
     "halo": 1,
-    "hand": 5,
+    "hand": 6,
     "popper": 1,
     "straw": 1,
     "glasses": 1,
@@ -692,6 +693,11 @@
       "title": "A Plain Old Normal Man Stream (Feat. Men)",
       "start_ts": 1698367645,
       "youtube_archive_id": "LWufjuVjt7A"
+    },
+    "a_pre_stream_man_stream": {
+      "title": "A Pre-Stream Man Stream",
+      "start_ts": 1684621607,
+      "youtube_archive_id": "JgNMx-1MBZs"
     }
   },
   "messages": [
@@ -3990,6 +3996,27 @@
       "message": "The YouTube live chat on mobile is broken. :face_with_rolling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1684626104,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_pre_stream_man_stream",
+      "message": "naughty me comes out when drunk:beaming_face_with_smiling_eyes: watch out chat :face_with_tears_of_joy:",
+      "commands": [
+        "eyes",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1684626008,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_pre_stream_man_stream",
+      "message": "I'm tipsy, hello :waving_hand: not drunk just yet",
+      "commands": [
+        "hand"
       ]
     },
     {
