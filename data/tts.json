@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099529,
+  "updated_ts": 1782099538,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -246,7 +246,8 @@
     "darrell_brooks_is_a_psychopath_feat_angry_birds",
     "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
     "discussing_dspgamings_derich",
-    "dkoldies_is_at_it_again_part_347"
+    "dkoldies_is_at_it_again_part_347",
+    "dkoldies_strikes_again"
   ],
   "commands": {
     "stan": 27,
@@ -279,10 +280,10 @@
     "turkey": 6,
     "eyes": 64,
     "africa": 1,
-    "face": 218,
+    "face": 219,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 149,
+    "joy": 152,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -575,7 +576,8 @@
     "crown": 1,
     "game": 1,
     "dialogue": 1,
-    "perspective": 1
+    "perspective": 1,
+    "honeybee": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1802,6 +1804,11 @@
       "title": "DKOldies Is At It Again (Part 347)",
       "start_ts": 1676681904,
       "youtube_archive_id": "6blqRcw_8Jw"
+    },
+    "dkoldies_strikes_again": {
+      "title": "DKOldies Strikes Again",
+      "start_ts": 1681256300,
+      "youtube_archive_id": "hWS7kgvWPWo"
     }
   },
   "messages": [
@@ -7845,6 +7852,56 @@
       "message": ":boxing_glove::_RichSmile:VS \ud83e\uddd4\ud83c\udffc:boxing_glove: THIS IS YOUR LIFE NOW",
       "commands": [
         "glove"
+      ]
+    },
+    {
+      "ts": 1681265097,
+      "username": "@jdeltaruff",
+      "platform": "youtube",
+      "stream_id": "dkoldies_strikes_again",
+      "message": "My mental health has declined since you put the shirt back on, I hope you at least don't have pants on. Also, buzz buzz :honeybee: :honeybee:",
+      "commands": [
+        "honeybee"
+      ]
+    },
+    {
+      "ts": 1681264277,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "dkoldies_strikes_again",
+      "message": "We need some Phil emojis here. Imagine having a crap tons of his fap face , :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1681260438,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dkoldies_strikes_again",
+      "message": "I literally have class the night of May 1st. :pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1681259725,
+      "username": "@novaacraane",
+      "platform": "youtube",
+      "stream_id": "dkoldies_strikes_again",
+      "message": "I'm missing NXT to watch a man sing Micheal Jackson songs. This is terrific. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1681257870,
+      "username": "@novaacraane",
+      "platform": "youtube",
+      "stream_id": "dkoldies_strikes_again",
+      "message": "This whole channel feels like a giant Tim and Eric skit, and I love it :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
