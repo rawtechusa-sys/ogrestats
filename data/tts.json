@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092743,
+  "updated_ts": 1782092775,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -24,7 +24,8 @@
     "a_baked_middle_aged_man_plays_video_games",
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_beautiful_man_becomes_more_beautiful_live",
-    "a_birdman_family_friendly_love_stream"
+    "a_birdman_family_friendly_love_stream",
+    "a_boomer_plays_elden_ring_plus_birds"
   ],
   "commands": {
     "stan": 27,
@@ -60,7 +61,7 @@
     "face": 15,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 9,
+    "joy": 10,
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
@@ -71,7 +72,7 @@
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 7,
+    "heart": 8,
     "shorts": 1,
     "laughing": 4,
     "news": 3,
@@ -79,7 +80,7 @@
     "cake": 1,
     "d": 1,
     "halo": 1,
-    "hand": 1,
+    "hand": 2,
     "popper": 1,
     "straw": 1,
     "glasses": 1,
@@ -103,7 +104,8 @@
     "facepalming": 1,
     "shrugging": 1,
     "donation": 1,
-    "naruto": 1
+    "naruto": 1,
+    "hands": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -220,6 +222,11 @@
       "title": "A Bird/Man Family-Friendly Love Stream",
       "start_ts": 1641868752,
       "youtube_archive_id": "jqNfTaLXdrI"
+    },
+    "a_boomer_plays_elden_ring_plus_birds": {
+      "title": "A Boomer Plays Elden Ring (Plus Birds)",
+      "start_ts": 1648248623,
+      "youtube_archive_id": "GRbSMySvuow"
     }
   },
   "messages": [
@@ -2656,6 +2663,37 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1648254759,
+      "username": "@hunterchao197",
+      "platform": "youtube",
+      "stream_id": "a_boomer_plays_elden_ring_plus_birds",
+      "message": "also ladies and gents watching him try not to spoil things for him. Also rich don't let chat laser focus you into doing things before you are ready. the world is huge you can always lvl then come back. peace :victory_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1648254495,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_boomer_plays_elden_ring_plus_birds",
+      "message": "We :red_heart: you Rich! Even if you are maidenless...:face_with_tears_of_joy:",
+      "commands": [
+        "heart",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1648249876,
+      "username": "@eRox1661",
+      "platform": "youtube",
+      "stream_id": "a_boomer_plays_elden_ring_plus_birds",
+      "message": "i wanna see you play DMC5 mission 19 please :folded_hands:",
+      "commands": [
+        "hands"
       ]
     },
     {
