@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099255,
+  "updated_ts": 1782099264,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -213,7 +213,8 @@
     "come_ask_questions_watching_my_old_keemstar_debate",
     "come_ask_shirtless_men_questions",
     "come_be_tired_and_miserable_with_me",
-    "come_chat_with_a_man"
+    "come_chat_with_a_man",
+    "come_chat_with_dad_plus_amouranth_disaster"
   ],
   "commands": {
     "stan": 27,
@@ -244,12 +245,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 56,
+    "eyes": 57,
     "africa": 1,
-    "face": 189,
+    "face": 190,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 125,
+    "joy": 126,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -257,16 +258,16 @@
     "idea": 1,
     "fear": 3,
     "voice": 3,
-    "cucumber": 21,
+    "cucumber": 22,
     "biceps": 3,
     "tongue": 5,
     "heart": 63,
     "shorts": 1,
-    "laughing": 59,
+    "laughing": 60,
     "news": 13,
     "chicken": 31,
     "cake": 7,
-    "d": 1,
+    "d": 2,
     "halo": 2,
     "hand": 16,
     "popper": 4,
@@ -327,7 +328,7 @@
     "things": 2,
     "down": 2,
     "tomorrow": 8,
-    "horse": 3,
+    "horse": 4,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -1569,6 +1570,11 @@
       "title": "Come Chat With A Man",
       "start_ts": 1645666014,
       "youtube_archive_id": "ewFASGGmFwg"
+    },
+    "come_chat_with_dad_plus_amouranth_disaster": {
+      "title": "Come Chat With Dad (Plus Amouranth Disaster)",
+      "start_ts": 1629245742,
+      "youtube_archive_id": "FKG7VyvsmW8"
     }
   },
   "messages": [
@@ -13295,6 +13301,67 @@
       "message": "Hot or ice coffee? :horse::cucumber::chicken::hot_beverage:",
       "commands": [
         "beverage"
+      ]
+    },
+    {
+      "ts": 1629252860,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "why we not talking about keem and h3h3?:eyes: lmao :rolling_on_the_floor_laughing:",
+      "commands": [
+        "eyes",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1629251544,
+      "username": "@KadinNation",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "Fair point. Protect the horses we don\u2019t want another mr hands D:",
+      "commands": [
+        "d"
+      ]
+    },
+    {
+      "ts": 1629249974,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "DO YOU HAVE BALLS! That sponsor in 2days video :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1629248515,
+      "username": "@404NotJosh",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "That\u2019s birds got a putty mouth, maybe you could cover him in Mayo and feed him a peanut butter and jelly sandwich sometime? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1629246641,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "You're my friend? Right, dad?:_RichSmile::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1629246345,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_dad_plus_amouranth_disaster",
+      "message": "HELLO HORSE DADDY :horse:",
+      "commands": [
+        "horse"
       ]
     },
     {
