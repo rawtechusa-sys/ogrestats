@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099274,
+  "updated_ts": 1782099282,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -216,7 +216,8 @@
     "come_be_tired_and_miserable_with_me",
     "come_chat_with_a_man",
     "come_chat_with_dad_plus_amouranth_disaster",
-    "come_chat_with_me"
+    "come_chat_with_me",
+    "come_chat_with_men_live_edp445_apology"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3658,6 +3659,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.22,
       "avg_active_chatters": 34.17
+    },
+    "come_chat_with_men_live_edp445_apology": {
+      "stream_id": "come_chat_with_men_live_edp445_apology",
+      "title": "Come Chat With Men Live (EDP445 APOLOGY)",
+      "start_ts": 1688935167,
+      "end_ts": 1688943725,
+      "duration_sec": 8558,
+      "youtube_archive_id": "umSWLEmpLF4",
+      "source_platform": "youtube",
+      "total_donations_usd": 484.6,
+      "donation_count": 50,
+      "donations_per_min": 3.3975,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.13,
+      "avg_active_chatters": 30.11
     }
   }
 }
