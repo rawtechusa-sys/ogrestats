@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100553,
+  "updated_ts": 1782100561,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -364,7 +364,8 @@
     "just_chatting_like_a_man",
     "just_chatting_with_vaush",
     "just_discussing_future_plans_road_to_1000_members",
-    "just_doing_man_things"
+    "just_doing_man_things",
+    "just_manstreaming_quantum_tv_and_melonie_mac"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6174,6 +6175,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.64,
       "avg_active_chatters": 39.92
+    },
+    "just_manstreaming_quantum_tv_and_melonie_mac": {
+      "stream_id": "just_manstreaming_quantum_tv_and_melonie_mac",
+      "title": "Just Manstreaming (Quantum TV And Melonie Mac)",
+      "start_ts": 1689121250,
+      "end_ts": 1689138046,
+      "duration_sec": 16796,
+      "youtube_archive_id": "h7AgWZBgjFE",
+      "source_platform": "youtube",
+      "total_donations_usd": 1090.18,
+      "donation_count": 144,
+      "donations_per_min": 3.8944,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.14,
+      "avg_active_chatters": 38.56
     }
   }
 }
