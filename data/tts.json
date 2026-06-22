@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099025,
+  "updated_ts": 1782099034,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -185,7 +185,8 @@
     "chicken_suit_ep_9_discussing_elden_ring",
     "chris_watts_in_4k",
     "christmas_night_shoulders",
-    "clearing_the_air_and_watching_jordan_peterson"
+    "clearing_the_air_and_watching_jordan_peterson",
+    "colleen_ballinger_is_an_absolute_weirdo"
   ],
   "commands": {
     "stan": 27,
@@ -218,7 +219,7 @@
     "turkey": 5,
     "eyes": 46,
     "africa": 1,
-    "face": 151,
+    "face": 152,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 116,
@@ -1384,6 +1385,11 @@
       "title": "Clearing The Air And Watching Jordan Peterson",
       "start_ts": 1664581419,
       "youtube_archive_id": "_CLbq9mC5Ak"
+    },
+    "colleen_ballinger_is_an_absolute_weirdo": {
+      "title": "Colleen Ballinger Is An Absolute Weirdo",
+      "start_ts": 1689984162,
+      "youtube_archive_id": "pFer07sLXug"
     }
   },
   "messages": [
@@ -6060,6 +6066,16 @@
       "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
       "commands": [
         "coco"
+      ]
+    },
+    {
+      "ts": 1689986983,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "colleen_ballinger_is_an_absolute_weirdo",
+      "message": "8K was on the box of the PS5 never forget :grinning_squinting_face: Also give me a random DSP compilation the worse the better",
+      "commands": [
+        "face"
       ]
     },
     {
