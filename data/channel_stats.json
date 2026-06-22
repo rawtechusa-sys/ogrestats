@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099888,
+  "updated_ts": 1782099897,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -289,7 +289,8 @@
     "friday_night_shoulders",
     "furry_cringe_feat_keemstar",
     "g4tv_family_fun",
-    "getting_high_on_a_saturday_a_brewing_brony_war"
+    "getting_high_on_a_saturday_a_brewing_brony_war",
+    "girlfriend_kicked_me_out_of_bed_so_im_back"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4899,6 +4900,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.75,
       "avg_active_chatters": 31.34
+    },
+    "girlfriend_kicked_me_out_of_bed_so_im_back": {
+      "stream_id": "girlfriend_kicked_me_out_of_bed_so_im_back",
+      "title": "Girlfriend Kicked Me Out Of Bed. So I'm Back.",
+      "start_ts": 1670814696,
+      "end_ts": 1670818455,
+      "duration_sec": 3759,
+      "youtube_archive_id": "B0lTNeO-8k4",
+      "source_platform": "youtube",
+      "total_donations_usd": 69.89,
+      "donation_count": 25,
+      "donations_per_min": 1.1156,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.32,
+      "avg_active_chatters": 36.7
     }
   }
 }
