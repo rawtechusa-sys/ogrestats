@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100012,
+  "updated_ts": 1782100021,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -303,7 +303,8 @@
     "i_am_him_i_will_continue_to_be_him",
     "i_am_not_well_endowed_and_im_streaming_about_phil",
     "i_dunno_wtf_im_doing",
-    "i_failed_no_phil_november"
+    "i_failed_no_phil_november",
+    "i_formally_invited_quantum_tv_on_for_an_interview"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5137,6 +5138,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.19,
       "avg_active_chatters": 27.78
+    },
+    "i_formally_invited_quantum_tv_on_for_an_interview": {
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "title": "I Formally Invited Quantum TV On For An Interview",
+      "start_ts": 1655420787,
+      "end_ts": 1655433364,
+      "duration_sec": 12577,
+      "youtube_archive_id": "5xB1OWT8nnI",
+      "source_platform": "youtube",
+      "total_donations_usd": 1105.44,
+      "donation_count": 253,
+      "donations_per_min": 5.2736,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 29.95,
+      "avg_active_chatters": 101.87
     }
   }
 }
