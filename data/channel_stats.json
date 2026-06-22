@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100187,
+  "updated_ts": 1782100196,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -323,7 +323,8 @@
     "im_back",
     "im_back_and_on_a_warpath",
     "im_back_and_only_half_dead_come_hang_out",
-    "im_buzzed_off_caffeine_come_chat_with_me"
+    "im_buzzed_off_caffeine_come_chat_with_me",
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5477,6 +5478,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.22,
       "avg_active_chatters": 44.38
+    },
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3": {
+      "stream_id": "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+      "title": "I'm Done With Weed (Slopes Tommy Tallarico Video Pt.3)",
+      "start_ts": 1676490244,
+      "end_ts": 1676507930,
+      "duration_sec": 17686,
+      "youtube_archive_id": "Ww-80jeRPBc",
+      "source_platform": "youtube",
+      "total_donations_usd": 316.28,
+      "donation_count": 53,
+      "donations_per_min": 1.073,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 6.78,
+      "avg_active_chatters": 18.62
     }
   }
 }
