@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096583,
+  "updated_ts": 1782096646,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -101,7 +101,8 @@
     "a_short_stream_with_a_man",
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
     "a_stream_for_men",
-    "a_streaming_man"
+    "a_streaming_man",
+    "a_surprise_stream"
   ],
   "commands": {
     "stan": 27,
@@ -134,7 +135,7 @@
     "turkey": 4,
     "eyes": 25,
     "africa": 1,
-    "face": 86,
+    "face": 87,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 65,
@@ -145,12 +146,12 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 8,
+    "cucumber": 9,
     "biceps": 3,
     "tongue": 3,
     "heart": 36,
     "shorts": 1,
-    "laughing": 35,
+    "laughing": 36,
     "news": 6,
     "chicken": 12,
     "cake": 1,
@@ -159,7 +160,7 @@
     "hand": 6,
     "popper": 1,
     "straw": 1,
-    "glasses": 1,
+    "glasses": 2,
     "ball": 1,
     "lantern": 2,
     "leg": 1,
@@ -215,7 +216,7 @@
     "things": 1,
     "down": 1,
     "tomorrow": 4,
-    "horse": 1,
+    "horse": 2,
     "bug": 1,
     "violin": 1,
     "update": 3,
@@ -293,7 +294,8 @@
     "example": 1,
     "theory": 1,
     "says": 1,
-    "wave": 1
+    "wave": 1,
+    "mugs": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -795,6 +797,11 @@
       "title": "A Streaming Man",
       "start_ts": 1632360270,
       "youtube_archive_id": "HGOJ8nlVUjs"
+    },
+    "a_surprise_stream": {
+      "title": "A Surprise Stream",
+      "start_ts": 1633135016,
+      "youtube_archive_id": "sUmB7FhsICE"
     }
   },
   "messages": [
@@ -7308,6 +7315,66 @@
       "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1633145418,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "Karen Drinking Game-Every Swear or Jesus, take a :clinking_beer_mugs:",
+      "commands": [
+        "mugs"
+      ]
+    },
+    {
+      "ts": 1633145089,
+      "username": "@holisticpsychologybyobrien",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "You know him, you love him, Vernon Schillinger! :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1633144359,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "Cursing? Religeous? She must be a Catholicker :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1633137817,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "THIS..... is what a man looks like! :horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1633135521,
+      "username": "@MsTechNotFancy",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "Happy Friday :clinking_glasses::clinking_glasses::clinking_glasses:",
+      "commands": [
+        "glasses"
+      ]
+    },
+    {
+      "ts": 1633135485,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_surprise_stream",
+      "message": "So, as stated... Bandai/Namco screwed up their logo and made a new one. Looks like the Twitch.TV Logo and it's Hyper steralized. :nauseated_face::nauseated_face::nauseated_face:",
+      "commands": [
+        "face"
       ]
     },
     {
