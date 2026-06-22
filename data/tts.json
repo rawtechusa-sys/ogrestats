@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099878,
+  "updated_ts": 1782099886,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -287,7 +287,8 @@
     "friday_night_new_york_man_stream",
     "friday_night_shoulders",
     "furry_cringe_feat_keemstar",
-    "g4tv_family_fun"
+    "g4tv_family_fun",
+    "getting_high_on_a_saturday_a_brewing_brony_war"
   ],
   "commands": {
     "stan": 27,
@@ -320,7 +321,7 @@
     "turkey": 6,
     "eyes": 70,
     "africa": 1,
-    "face": 262,
+    "face": 263,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 194,
@@ -334,7 +335,7 @@
     "cucumber": 28,
     "biceps": 3,
     "tongue": 5,
-    "heart": 85,
+    "heart": 86,
     "shorts": 1,
     "laughing": 90,
     "news": 17,
@@ -360,7 +361,7 @@
     "peach": 6,
     "fire": 17,
     "kendal": 1,
-    "up": 26,
+    "up": 27,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -613,7 +614,7 @@
     "pump": 1,
     "robot": 1,
     "splayed": 1,
-    "crown": 1,
+    "crown": 2,
     "game": 1,
     "dialogue": 1,
     "perspective": 1,
@@ -653,7 +654,9 @@
     "choice": 1,
     "baseball": 1,
     "jontron": 1,
-    "nintendo": 1
+    "nintendo": 1,
+    "spoilers": 1,
+    "dmx": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2085,6 +2088,11 @@
       "title": "G4TV Family Fun",
       "start_ts": 1644021147,
       "youtube_archive_id": "0icV7Ln6vp8"
+    },
+    "getting_high_on_a_saturday_a_brewing_brony_war": {
+      "title": "Getting High On A Saturday (A Brewing Brony War)",
+      "start_ts": 1684021732,
+      "youtube_archive_id": "oQsKhi5uHmo"
     }
   },
   "messages": [
@@ -8671,6 +8679,66 @@
       "message": "I'm tipsy, hello :waving_hand: not drunk just yet",
       "commands": [
         "hand"
+      ]
+    },
+    {
+      "ts": 1684037795,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "Professor dmX: \"Y'all gonna make me USE MA MIND!\"",
+      "commands": [
+        "dmx"
+      ]
+    },
+    {
+      "ts": 1684037036,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "As an Indian, I approve of your accent. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1684034825,
+      "username": "@themorenacoder",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "Rich can you pls be the DJ for my wedding? :pink_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1684027650,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "Hey Rich. Glad I could arrive. I was going to have a party to celebrate my college graduation, but it was postponed because I got stung by a wasp. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684023095,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "Spoilers: Phil wins the Wings vs. Boogie fight",
+      "commands": [
+        "spoilers"
+      ]
+    },
+    {
+      "ts": 1684022155,
+      "username": "@joshcrow777",
+      "platform": "youtube",
+      "stream_id": "getting_high_on_a_saturday_a_brewing_brony_war",
+      "message": "\"Two Men, Four Breasts\" coming to Fox this fall.:crown:",
+      "commands": [
+        "crown"
       ]
     },
     {
