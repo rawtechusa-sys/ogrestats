@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100578,
+  "updated_ts": 1782100587,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -366,7 +366,8 @@
     "just_doing_man_things",
     "just_manstreaming_quantum_tv_and_melonie_mac",
     "just_the_tip_tipster_late_night_man_stream",
-    "just_two_men_feat_men"
+    "just_two_men_feat_men",
+    "just_watching_some_butt_slapping_competitions"
   ],
   "commands": {
     "stan": 27,
@@ -402,7 +403,7 @@
     "face": 341,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 246,
+    "joy": 248,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -465,7 +466,7 @@
     "dsp": 23,
     "story": 1,
     "tree": 3,
-    "skull": 7,
+    "skull": 8,
     "eggplant": 3,
     "bite": 1,
     "take": 5,
@@ -2644,6 +2645,11 @@
       "title": "Just Two Men (Feat. Men)",
       "start_ts": 1692403737,
       "youtube_archive_id": "33nT2YQqERo"
+    },
+    "just_watching_some_butt_slapping_competitions": {
+      "title": "Just Watching Some Butt Slapping Competitions",
+      "start_ts": 1645415893,
+      "youtube_archive_id": "uRajRPWAV04"
     }
   },
   "messages": [
@@ -17956,6 +17962,36 @@
       "message": "Hey! Do I have an opportunity for you! You sell your current console on eBay and I'll give you the chance to win the newest next gen system! :grinning_face_with_sweat::face_with_tears_of_joy::rolling_on_the_floor_laughing::face_with_rolling_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1645418392,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "just_watching_some_butt_slapping_competitions",
+      "message": "I love how the 3 stooges dsp, wings and quartering all sh*t the bed at the same time and get involved in some sort of drama LMAO :skull::skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1645418384,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "just_watching_some_butt_slapping_competitions",
+      "message": "He should follow his own advice :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1645418004,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "just_watching_some_butt_slapping_competitions",
+      "message": "notice how rich never paused it once :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
