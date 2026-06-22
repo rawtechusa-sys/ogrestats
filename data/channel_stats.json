@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092412,
+  "updated_ts": 1782092432,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -11,7 +11,8 @@
     "grifters_jeffrey_and_phillip",
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
-    "12_hour_man_stream_feat_men_part_2"
+    "12_hour_man_stream_feat_men_part_2",
+    "1_man_1_bird"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -173,6 +174,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.31,
       "avg_active_chatters": 27.09
+    },
+    "1_man_1_bird": {
+      "stream_id": "1_man_1_bird",
+      "title": "1 Man, 1 Bird",
+      "start_ts": 1683936394,
+      "end_ts": 1683954333,
+      "duration_sec": 17939,
+      "youtube_archive_id": "UcdWkPZzBoo",
+      "source_platform": "youtube",
+      "total_donations_usd": 372.35,
+      "donation_count": 106,
+      "donations_per_min": 1.2454,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.81,
+      "avg_active_chatters": 25.67
     }
   }
 }
