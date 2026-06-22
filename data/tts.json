@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094786,
+  "updated_ts": 1782094838,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -70,7 +70,8 @@
     "a_man_marathon",
     "a_man_marathon_feat_birds",
     "a_man_stream_then_some_metroid_dread",
-    "a_man_streams_like_a_man"
+    "a_man_streams_like_a_man",
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions"
   ],
   "commands": {
     "stan": 27,
@@ -101,12 +102,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 16,
+    "eyes": 17,
     "africa": 1,
     "face": 51,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 44,
+    "joy": 46,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -117,9 +118,9 @@
     "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 26,
+    "heart": 27,
     "shorts": 1,
-    "laughing": 23,
+    "laughing": 25,
     "news": 5,
     "chicken": 10,
     "cake": 1,
@@ -187,7 +188,7 @@
     "horse": 1,
     "bug": 1,
     "violin": 1,
-    "update": 2,
+    "update": 3,
     "wings": 1,
     "advice": 1,
     "ghostwire": 1,
@@ -226,7 +227,10 @@
     "leaf": 1,
     "random": 1,
     "moai": 1,
-    "meeting": 1
+    "meeting": 1,
+    "giants": 1,
+    "trinity": 1,
+    "day": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -573,6 +577,11 @@
       "title": "A Man Streams Like A MAN",
       "start_ts": 1630716547,
       "youtube_archive_id": "0u68DYBHt98"
+    },
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions": {
+      "title": "A Man Unboxes The Retail Aya Neo  Console (Come Ask Questions)",
+      "start_ts": 1628122077,
+      "youtube_archive_id": "dy_OwsgbTS8"
     }
   },
   "messages": [
@@ -6014,6 +6023,97 @@
       "commands": [
         "follows",
         "hand"
+      ]
+    },
+    {
+      "ts": 1628131385,
+      "username": "@Twizty360",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "Rich, ya gotta add Corn Pop was a BAD DUDE :face_with_tears_of_joy: :rolling_on_the_floor_laughing:",
+      "commands": [
+        "joy",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1628130625,
+      "username": "@RUDAMENTRY",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "tell the chicken youre going 2 cook him w almond flour :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1628129762,
+      "username": "@Seamorehoffman789",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "final hot take of the day: sushi is terrible and Campbells SpaghettiOs where a massively underrated caned food and it deserves more love good night and god bless America",
+      "commands": [
+        "day"
+      ]
+    },
+    {
+      "ts": 1628129035,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "Update: My grandma's back from the hospital. Her body is full of tumors. Dunno how long she'll last. Thanks for the well wishes yesterday.",
+      "commands": [
+        "update"
+      ]
+    },
+    {
+      "ts": 1628126889,
+      "username": "@axiominfinity",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "Might as well use LABO then :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628126781,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "The holy trinity: Dennis, Johnny Thunder, & SPERM",
+      "commands": [
+        "trinity"
+      ]
+    },
+    {
+      "ts": 1628126663,
+      "username": "@phillipangolemmo3556",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "Rich, give me a Cuomo impression pls :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1628125356,
+      "username": "@Twizty360",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "CORN POP was a BAD DUDE :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1628122765,
+      "username": "@gregarious1",
+      "platform": "youtube",
+      "stream_id": "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "message": "Rich, I am curious to know your opinion on each of the three streaming giants: Netflix, Disney+, and HBO Max.",
+      "commands": [
+        "giants"
       ]
     },
     {
