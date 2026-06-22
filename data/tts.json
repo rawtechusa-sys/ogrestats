@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093208,
+  "updated_ts": 1782093248,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -37,7 +37,8 @@
     "a_family_friendly_christian_straight_man_stream",
     "a_family_friendly_heterosexual_stream",
     "a_floor_thrusting_man_stream",
-    "a_fun_dspgaming_man_stream"
+    "a_fun_dspgaming_man_stream",
+    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream"
   ],
   "commands": {
     "stan": 27,
@@ -70,10 +71,10 @@
     "turkey": 3,
     "eyes": 8,
     "africa": 1,
-    "face": 27,
+    "face": 28,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 20,
+    "joy": 21,
     "gameboy": 1,
     "chick": 1,
     "carlos": 7,
@@ -86,7 +87,7 @@
     "tongue": 1,
     "heart": 15,
     "shorts": 1,
-    "laughing": 8,
+    "laughing": 9,
     "news": 3,
     "chicken": 6,
     "cake": 1,
@@ -126,7 +127,7 @@
     "is": 1,
     "spose": 1,
     "sunglasses": 1,
-    "kiss": 2,
+    "kiss": 3,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -136,7 +137,7 @@
     "dsp": 2,
     "story": 1,
     "tree": 1,
-    "skull": 1,
+    "skull": 2,
     "eggplant": 1,
     "bite": 1,
     "take": 1,
@@ -150,10 +151,14 @@
     "reviewseinfeldusa": 1,
     "things": 1,
     "down": 1,
-    "tomorrow": 1,
+    "tomorrow": 2,
     "horse": 1,
     "bug": 1,
-    "violin": 1
+    "violin": 1,
+    "update": 1,
+    "wings": 1,
+    "advice": 1,
+    "ghostwire": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -335,6 +340,11 @@
       "title": "A Fun DSPGAMING Man Stream",
       "start_ts": 1636944744,
       "youtube_archive_id": "0DT5OOoIKgw"
+    },
+    "a_g4tv_quantum_tv_intellivision_amico_disaster_stream": {
+      "title": "A G4TV, Quantum TV, Intellivision Amico Disaster Stream",
+      "start_ts": 1647909271,
+      "youtube_archive_id": "P4os9YRhYeM"
     }
   },
   "messages": [
@@ -3368,6 +3378,106 @@
       "message": "i wanna see you play DMC5 mission 19 please :folded_hands:",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1647920391,
+      "username": "@josueperez5381",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "Tommy's stuck in the 90s :face_with_tears_of_joy: Also, Retro Bro is back",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1647917016,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "can i play ghostwire: Tokyo on the amico?",
+      "commands": [
+        "ghostwire"
+      ]
+    },
+    {
+      "ts": 1647916735,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "my girlfriend does that to me everyday :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1647916354,
+      "username": "@sonofjohn2750",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "Rich, please give me financial advice: I have a 2020 truck that gets 23/21 MPG city/hwy, and has 39k miles, in excellent condition (no accidents), should I get a Tesla or Hybrid (due to Gas prices)?",
+      "commands": [
+        "advice"
+      ]
+    },
+    {
+      "ts": 1647916346,
+      "username": "@richardmasucci3490",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "EDP is trying to trademark the name/brand EDP445:skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1647914316,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "Rich, will there be popcorn for this event? :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647913604,
+      "username": "@jdx4527",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "Rich tomorrow: credible sources claim that carlos will appear exclusively on the kfc console. Also hes a handsome bird!",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1647913579,
+      "username": "@BrenR",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "Wings\u2019 wife *farts* Wings: \u201cmmm\u201d",
+      "commands": [
+        "wings"
+      ]
+    },
+    {
+      "ts": 1647912298,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "another status update: One Hassle's fans claims to have my dox and will be living my address out so people can \"come party with me\"",
+      "commands": [
+        "update"
+      ]
+    },
+    {
+      "ts": 1647911197,
+      "username": "@laynlayned",
+      "platform": "youtube",
+      "stream_id": "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
+      "message": "His Spider-Man and LOU2 reviews are just as bigoted as the posts. Were those by hackers and mods also?:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
