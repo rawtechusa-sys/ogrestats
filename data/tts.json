@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099272,
+  "updated_ts": 1782099280,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -215,7 +215,8 @@
     "come_be_tired_and_miserable_with_me",
     "come_chat_with_a_man",
     "come_chat_with_dad_plus_amouranth_disaster",
-    "come_chat_with_me"
+    "come_chat_with_me",
+    "come_chat_with_men_live_edp445_apology"
   ],
   "commands": {
     "stan": 27,
@@ -246,9 +247,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 57,
+    "eyes": 58,
     "africa": 1,
-    "face": 190,
+    "face": 191,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 126,
@@ -256,7 +257,7 @@
     "chick": 1,
     "carlos": 19,
     "away": 5,
-    "idea": 1,
+    "idea": 2,
     "fear": 3,
     "voice": 3,
     "cucumber": 22,
@@ -310,7 +311,7 @@
     "bk": 1,
     "gift": 2,
     "bird": 7,
-    "richsmile": 4,
+    "richsmile": 5,
     "dsp": 9,
     "story": 1,
     "tree": 3,
@@ -1582,6 +1583,11 @@
       "title": "Come Chat With Me",
       "start_ts": 1641783704,
       "youtube_archive_id": "VSdVXA9iDlQ"
+    },
+    "come_chat_with_men_live_edp445_apology": {
+      "title": "Come Chat With Men Live (EDP445 APOLOGY)",
+      "start_ts": 1688935167,
+      "youtube_archive_id": "umSWLEmpLF4"
     }
   },
   "messages": [
@@ -6712,6 +6718,46 @@
       "message": "who'd win in a fight: Derich or EDDP445",
       "commands": [
         "fight"
+      ]
+    },
+    {
+      "ts": 1688939816,
+      "username": "@eskeroutcome2229",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_men_live_edp445_apology",
+      "message": "Merch idea: seltzer coozie for all your seltzer needs",
+      "commands": [
+        "idea"
+      ]
+    },
+    {
+      "ts": 1688938535,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_men_live_edp445_apology",
+      "message": "Can you spam intro guys amazing noises :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1688938526,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_men_live_edp445_apology",
+      "message": "I ordered a Jaysus tank top :beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1688937737,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "come_chat_with_men_live_edp445_apology",
+      "message": "Not only did they fix the live chat on mobile, but they also gave it a nice makeover. It\u2019s rare when YouTube makes good new design choices. :_RichSmile:",
+      "commands": [
+        "richsmile"
       ]
     },
     {
