@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102610,
+  "updated_ts": 1782102616,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -672,7 +672,8 @@
     "the_philip_burnell_interview_experience_w_dad_only",
     "the_philip_burnell_man_immersion_pak",
     "the_piers_morgan_ye_interview",
-    "the_piers_morgan_ye_interview_pt2"
+    "the_piers_morgan_ye_interview_pt2",
+    "the_power_of_a_man_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11410,6 +11411,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.15,
       "avg_active_chatters": 31.85
+    },
+    "the_power_of_a_man_feat_birds": {
+      "stream_id": "the_power_of_a_man_feat_birds",
+      "title": "The Power Of A Man (Feat. Birds)",
+      "start_ts": 1661213245,
+      "end_ts": 1661221796,
+      "duration_sec": 8551,
+      "youtube_archive_id": "3oWxB8iuF80",
+      "source_platform": "youtube",
+      "total_donations_usd": 182.78,
+      "donation_count": 53,
+      "donations_per_min": 1.2825,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.02,
+      "avg_active_chatters": 36.5
     }
   }
 }
