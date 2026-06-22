@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094062,
+  "updated_ts": 1782094111,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -56,7 +56,8 @@
     "a_major_philip_burnell_man_emrgency_has_occured",
     "a_man",
     "a_man_and_bird_lushes_stream",
-    "a_man_and_his_birds"
+    "a_man_and_his_birds",
+    "a_man_experience_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -92,7 +93,7 @@
     "face": 41,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 32,
+    "joy": 33,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -111,7 +112,7 @@
     "cake": 1,
     "d": 1,
     "halo": 1,
-    "hand": 3,
+    "hand": 4,
     "popper": 1,
     "straw": 1,
     "glasses": 1,
@@ -125,7 +126,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 2,
-    "rooster": 8,
+    "rooster": 9,
     "peach": 1,
     "fire": 4,
     "kendal": 1,
@@ -199,7 +200,8 @@
     "saying": 1,
     "it": 1,
     "food": 1,
-    "play": 1
+    "play": 1,
+    "video": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -476,6 +478,11 @@
       "title": "A Man And His Birds",
       "start_ts": 1681170352,
       "youtube_archive_id": "TriP14lacFo"
+    },
+    "a_man_experience_feat_birds": {
+      "title": "A Man Experience (Feat. Birds)",
+      "start_ts": 1658880465,
+      "youtube_archive_id": "suWt_vzHLWg"
     }
   },
   "messages": [
@@ -3524,6 +3531,37 @@
       "stream_id": "a_dspgaming_family_fun_stream",
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
       "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1658887404,
+      "username": "@Sea_Dragon-2401",
+      "platform": "youtube",
+      "stream_id": "a_man_experience_feat_birds",
+      "message": "These people are allowed to vote btw :ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1658884128,
+      "username": "@TheXimena711",
+      "platform": "youtube",
+      "stream_id": "a_man_experience_feat_birds",
+      "message": "Rich, spoiler alert to that GN video: Noah Katz legally changed his name. More than likely to avoid anyone recognizing him or looking him up",
+      "commands": [
+        "video"
+      ]
+    },
+    {
+      "ts": 1658881670,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "a_man_experience_feat_birds",
+      "message": "Show the 85ft :rooster: Tim Pool put in Time Square to advertise chicken city :face_with_tears_of_joy: It's on Twitter",
+      "commands": [
+        "rooster",
         "joy"
       ]
     },
