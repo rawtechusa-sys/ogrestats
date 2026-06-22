@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098774,
+  "updated_ts": 1782098782,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -154,7 +154,8 @@
     "ban_dark_souls_remastered_members_only",
     "being_terrible_at_halo_infinite_live",
     "between_two_birds_feat_men",
-    "big_problems_over_at_youtube"
+    "big_problems_over_at_youtube",
+    "bill_gates_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -187,10 +188,10 @@
     "turkey": 5,
     "eyes": 34,
     "africa": 1,
-    "face": 122,
+    "face": 123,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 94,
+    "joy": 97,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -234,7 +235,7 @@
     "shrugging": 2,
     "donation": 1,
     "naruto": 1,
-    "hands": 11,
+    "hands": 12,
     "horns": 4,
     "crab": 2,
     "superhero": 11,
@@ -299,7 +300,7 @@
     "food": 1,
     "play": 1,
     "video": 1,
-    "one": 2,
+    "one": 3,
     "cow": 1,
     "cap": 1,
     "adventures": 1,
@@ -1171,6 +1172,11 @@
       "title": "Big Problems Over At YouTube",
       "start_ts": 1661644768,
       "youtube_archive_id": "uO7l7AUk2lY"
+    },
+    "bill_gates_is_a_man": {
+      "title": "Bill Gates Is A Man",
+      "start_ts": 1674005681,
+      "youtube_archive_id": "rm5d2e-t_AI"
     }
   },
   "messages": [
@@ -6628,6 +6634,66 @@
       "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
       "commands": [
         "petersonxhhanson"
+      ]
+    },
+    {
+      "ts": 1674011414,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "Fart - ban Amber heards turd please :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1674011384,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "Phil should do it but looking at the wall live streaming. FEEL MY PRESENCE :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1674010674,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "Behold! The power of Jesus Christ! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1674010211,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "I\u2019m finally home off from work. Time to look at my wall :flushed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1674006984,
+      "username": "@louisrossmannsrecedinghair7703",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "That pic looked like phil was waiting for Kat to do the amazon position :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1674006269,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "bill_gates_is_a_man",
+      "message": "Surprising absolutely no one: Jeremy nuked it.",
+      "commands": [
+        "one"
       ]
     },
     {
