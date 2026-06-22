@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101144,
+  "updated_ts": 1782101151,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -446,7 +446,8 @@
     "may_1st_part_2_has_occured",
     "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
     "melonie_mac_goes_full_mask_off_road_to_1000_members",
-    "melonie_mac_responded"
+    "melonie_mac_responded",
+    "men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7568,6 +7569,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.52,
       "avg_active_chatters": 18.85
+    },
+    "men": {
+      "stream_id": "men",
+      "title": "Men",
+      "start_ts": 1704830454,
+      "end_ts": 1704855665,
+      "duration_sec": 25211,
+      "youtube_archive_id": "xvtRrSNQ3FQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 649.3,
+      "donation_count": 163,
+      "donations_per_min": 1.5453,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.85,
+      "avg_active_chatters": 44.72
     }
   }
 }
