@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099633,
+  "updated_ts": 1782099641,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -259,7 +259,8 @@
     "dsp_intellivision_family_fun_and_prank_calls",
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
     "dsp_loves_derich",
-    "dsp_treats_everyone_terrible_kingcobrajfs_evicted"
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
+    "dspgaming_gets_schooled_by_beardstar_keemstar"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4389,6 +4390,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.88,
       "avg_active_chatters": 25.68
+    },
+    "dspgaming_gets_schooled_by_beardstar_keemstar": {
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "title": "DSPGaming Get's Schooled By Beardstar (Keemstar)",
+      "start_ts": 1680134811,
+      "end_ts": 1680144237,
+      "duration_sec": 9426,
+      "youtube_archive_id": "xFM_Cney7NU",
+      "source_platform": "youtube",
+      "total_donations_usd": 309.79,
+      "donation_count": 86,
+      "donations_per_min": 1.9719,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.61,
+      "avg_active_chatters": 31.37
     }
   }
 }
