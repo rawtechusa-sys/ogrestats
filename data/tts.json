@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098631,
+  "updated_ts": 1782098639,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -136,7 +136,8 @@
     "andrew_tate_man_stream_he_got_arrested",
     "angrily_chatting_and_playing_elden_ring",
     "another_interesting_pat_the_nes_punk_twist",
-    "another_surprise_stream_feat_a_man_and_birds"
+    "another_surprise_stream_feat_a_man_and_birds",
+    "another_swatting_disaster_and_activisionubisoft_allegations"
   ],
   "commands": {
     "stan": 27,
@@ -366,7 +367,8 @@
     "though": 1,
     "salt": 1,
     "x": 1,
-    "now": 1
+    "now": 1,
+    "breaking": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1043,6 +1045,11 @@
       "title": "Another Surprise Stream (Feat. A Man And Birds)",
       "start_ts": 1653855269,
       "youtube_archive_id": "y_J3F7NPde4"
+    },
+    "another_swatting_disaster_and_activisionubisoft_allegations": {
+      "title": "Another Swatting Disaster, And Activision/Ubisoft Allegations",
+      "start_ts": 1627000326,
+      "youtube_archive_id": "d6t9RpLmBaw"
     }
   },
   "messages": [
@@ -9868,6 +9875,16 @@
       "message": "Rich, I am curious to know your opinion on each of the three streaming giants: Netflix, Disney+, and HBO Max.",
       "commands": [
         "giants"
+      ]
+    },
+    {
+      "ts": 1627005821,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "another_swatting_disaster_and_activisionubisoft_allegations",
+      "message": "BREAKING: Filene's under fire after allegations emerge of an employee hopped up on angel dust slapped asses whilst screaming \"DICKERS! DICK! DICK!\"",
+      "commands": [
+        "breaking"
       ]
     },
     {
