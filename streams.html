@@ -706,6 +706,13 @@ async function loadStream(streamId) {
     const hasYT = platforms.includes('youtube');
     const hasTW = platforms.includes('twitch');
 
+    // Viewer-data availability is separate from platform membership: streams
+    // that predate YouTube viewer collection store youtube as null for every
+    // snapshot. Treat those as "no data" (N/A, no viewer line) rather than 0.
+    const hasYTViewers = snapshots.some(s => s.youtube != null);
+    const hasTWViewers = snapshots.some(s => s.twitch  != null);
+    const hasViewers   = hasYTViewers || hasTWViewers;
+
     main.innerHTML = '';
 
     // ── Stat cards ──
@@ -720,14 +727,19 @@ async function loadStream(streamId) {
       </div>`;
     }
 
+    const bothViewers = hasYTViewers && hasTWViewers;
     let cards = '';
     cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
-    cards += card('Peak Viewers', peakTotal.toLocaleString(), hasYT && hasTW ? `YT ${peakYT} · TW ${peakTW}` : '');
+    cards += card('Peak Viewers',
+      hasViewers ? peakTotal.toLocaleString() : 'N/A',
+      bothViewers ? `YT ${peakYT} · TW ${peakTW}` : '');
     cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
 
     const avgYT = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
     const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
-    cards += card('Avg Viewers', (avgYT + avgTW).toLocaleString(), hasYT && hasTW ? `YT ${avgYT} · TW ${avgTW}` : '');
+    cards += card('Avg Viewers',
+      hasViewers ? (avgYT + avgTW).toLocaleString() : 'N/A',
+      bothViewers ? `YT ${avgYT} · TW ${avgTW}` : '');
 
     const peakActiveYT = snapshots.reduce((m, s) => Math.max(m, s.active_youtube_chatters || 0), 0);
     const peakActiveTW = snapshots.reduce((m, s) => Math.max(m, s.active_twitch_chatters  || 0), 0);
@@ -776,8 +788,8 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW);
-      buildLegend(hasYT, hasTW, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW);
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasChatRate, hasActiveYT, hasActiveTW, hasYT, hasTW);
+      buildLegend(hasYTViewers, hasTWViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasYT, hasTW);
     }
 
     // ── Donation log ──
@@ -1077,7 +1089,7 @@ function intTick(fmt) {
   };
 }
 
-function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, hasActiveYT, hasActiveTW) {
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasChatRate, hasActiveYT, hasActiveTW, hasYTPlat, hasTWPlat) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
@@ -1136,7 +1148,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   const datasets = [];
 
   // ── Viewer series ──
-  if (hasYT && snapshotData.length > 0) {
+  if (hasYTViewers && snapshotData.length > 0) {
     datasets.push({
       label: DS.YT_VIEWERS,
       hidden: hiddenDatasets.has(DS.YT_VIEWERS),
@@ -1150,7 +1162,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
-  if (hasTW && snapshotData.length > 0) {
+  if (hasTWViewers && snapshotData.length > 0) {
     datasets.push({
       label: DS.TW_VIEWERS,
       hidden: hiddenDatasets.has(DS.TW_VIEWERS),
@@ -1164,7 +1176,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
     });
   }
 
-  if (hasYT && hasTW && snapshotData.length > 0) {
+  if (hasYTViewers && hasTWViewers && snapshotData.length > 0) {
     datasets.push({
       label: DS.TOTAL_VIEWERS,
       hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
@@ -1258,7 +1270,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   // (mode:'index' tooltips match by index, not by x). Missing samples map to
   // null and are bridged with spanGaps; the tooltip filter drops null entries.
   if (hasChatRate && snapshotData.length > 0) {
-    if (hasYT) {
+    if (hasYTPlat) {
       datasets.push({
         label: DS.YT_CHAT,
         hidden: hiddenDatasets.has(DS.YT_CHAT),
@@ -1273,7 +1285,7 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
       });
     }
 
-    if (hasTW) {
+    if (hasTWPlat) {
       datasets.push({
         label: DS.TW_CHAT,
         hidden: hiddenDatasets.has(DS.TW_CHAT),
@@ -1680,7 +1692,7 @@ function setupScrollbar() {
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
-function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasActiveTW) {
+function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasYTPlat, hasTWPlat) {
   const container = document.getElementById('chartLegend');
   if (!container || !currentChart) return;
 
@@ -1695,9 +1707,9 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   groups.push(gDonations);
 
   const gViewers = [];
-  if (hasYT && hasTW) gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
-  if (hasYT)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
-  if (hasTW)          gViewers.push({ label: 'TW Viewers',    type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasYTViewers && hasTWViewers) gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasYTViewers)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
+  if (hasTWViewers)          gViewers.push({ label: 'TW Viewers',    type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
   groups.push(gViewers);
 
   const gActive = [];
@@ -1709,8 +1721,8 @@ function buildLegend(hasYT, hasTW, hasChatRate, hasDonations, hasActiveYT, hasAc
   const gChat = [];
   if (hasChatRate) {
     gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
-    if (hasYT) gChat.push({ label: 'YT Msg/Min', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
-    if (hasTW) gChat.push({ label: 'TW Msg/Min', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
+    if (hasYTPlat) gChat.push({ label: 'YT Msg/Min', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
+    if (hasTWPlat) gChat.push({ label: 'TW Msg/Min', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
   }
   groups.push(gChat);
 
