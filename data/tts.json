@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101418,
+  "updated_ts": 1782101425,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -480,7 +480,8 @@
     "more_spicy_intellivision_amico_family_fun",
     "more_tcap_and_bird_fun",
     "more_thorough_tickling_live",
-    "more_tickled_television_excitement"
+    "more_tickled_television_excitement",
+    "more_wii_u_man_fun_yes_it_works"
   ],
   "commands": {
     "stan": 27,
@@ -516,7 +517,7 @@
     "face": 445,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 289,
+    "joy": 290,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -996,7 +997,8 @@
     "aka": 1,
     "westside": 1,
     "finisher": 1,
-    "hansen": 1
+    "hansen": 1,
+    "exclusive": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3393,6 +3395,11 @@
       "title": "More Tickled Television Excitement",
       "start_ts": 1663546481,
       "youtube_archive_id": "bxSNXQovVM4"
+    },
+    "more_wii_u_man_fun_yes_it_works": {
+      "title": "More Wii U Man Fun (Yes, It Works)",
+      "start_ts": 1645897254,
+      "youtube_archive_id": "8sWvNofuas8"
     }
   },
   "messages": [
@@ -22263,6 +22270,26 @@
       "platform": "youtube",
       "stream_id": "more_amico_family_fun",
       "message": "So Angry Joe livestreamed his review of Balan Wonderworld with O.J. & Alex. After he was done he said he felt dizzy, nauseous,& a headache. So, when will you be doing a livestream of it Rich? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1645902974,
+      "username": "@TruExtentChannel",
+      "platform": "youtube",
+      "stream_id": "more_wii_u_man_fun_yes_it_works",
+      "message": "Wii U exclusive: On the notepad, type Nintendo stuff like \"Super Mario\" \"Zelda\" anything else",
+      "commands": [
+        "exclusive"
+      ]
+    },
+    {
+      "ts": 1645901068,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "more_wii_u_man_fun_yes_it_works",
+      "message": "I have to confess something to you. I've been cheating on you with another streamer while you were sick. What did you expect when you left us bored?:face_with_tears_of_joy:",
       "commands": [
         "joy"
       ]
