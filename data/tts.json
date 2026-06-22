@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099648,
+  "updated_ts": 1782099657,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -260,7 +260,8 @@
     "dsp_loves_derich",
     "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
     "dspgaming_gets_schooled_by_beardstar_keemstar",
-    "dspgaming_is_a_tad_salty_plus_drphil"
+    "dspgaming_is_a_tad_salty_plus_drphil",
+    "dspgaming_is_back_feat_jaysus"
   ],
   "commands": {
     "stan": 27,
@@ -296,7 +297,7 @@
     "face": 228,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 164,
+    "joy": 166,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -307,7 +308,7 @@
     "cucumber": 26,
     "biceps": 3,
     "tongue": 5,
-    "heart": 75,
+    "heart": 76,
     "shorts": 1,
     "laughing": 76,
     "news": 13,
@@ -432,7 +433,7 @@
     "rocket": 1,
     "droplets": 7,
     "tomato": 3,
-    "hearts": 4,
+    "hearts": 5,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -605,7 +606,9 @@
     "person": 1,
     "tt": 1,
     "sc": 1,
-    "sun": 1
+    "sun": 1,
+    "part": 1,
+    "milk": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1902,6 +1905,11 @@
       "title": "DSPGaming Is A Tad Salty (Plus Dr.Phil)",
       "start_ts": 1668208698,
       "youtube_archive_id": "ON-KGaiiJrw"
+    },
+    "dspgaming_is_back_feat_jaysus": {
+      "title": "DSPGaming IS BACK (Feat. Jaysus)",
+      "start_ts": 1683245518,
+      "youtube_archive_id": "i2Bd2HFMGqk"
     }
   },
   "messages": [
@@ -8076,6 +8084,66 @@
       "message": ":grinning_squinting_face: I learned playing bass 2005 Epiphone 4 string",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1683261848,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "Daddy can you please flex pecks to snorts?:cow::glass_of_milk:",
+      "commands": [
+        "milk"
+      ]
+    },
+    {
+      "ts": 1683259913,
+      "username": "@anthonyestrada5446",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "Sup Guys how you guys doing tonight? What did i stumble into about hair jobs and what did wes do to donate 500? What the hell happen :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683258187,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "The dynamic duo! :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1683256699,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "But father that\u2019s the fascinating part: in his mind he truly believes to be above everyone else, only reason he\u2019s not given his due is the detractors.",
+      "commands": [
+        "part"
+      ]
+    },
+    {
+      "ts": 1683255201,
+      "username": "@SilentGrace1605",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "oh Pooh Jay keep it up brother :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683249259,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "dspgaming_is_back_feat_jaysus",
+      "message": "Wings' cant Rocko died. Rest in Piece :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
