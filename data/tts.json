@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093681,
+  "updated_ts": 1782093726,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -48,7 +48,8 @@
     "a_jodi_arias_holiday_special",
     "a_large_man_ama",
     "a_large_man_is_streaming",
-    "a_large_man_returns_feat_birds"
+    "a_large_man_returns_feat_birds",
+    "a_large_man_with_seltzer_livestreams"
   ],
   "commands": {
     "stan": 27,
@@ -421,6 +422,11 @@
       "title": "A Large Man Returns (Feat. Birds)",
       "start_ts": 1704492283,
       "youtube_archive_id": "gY0XUQlQlsU"
+    },
+    "a_large_man_with_seltzer_livestreams": {
+      "title": "A Large Man With Seltzer Livestreams",
+      "start_ts": 1525306613,
+      "youtube_archive_id": "c8iwRG2XrOY"
     }
   },
   "messages": [
