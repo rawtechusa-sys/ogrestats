@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099605,
+  "updated_ts": 1782099614,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -255,7 +255,8 @@
     "drinking_stories_with_intro_guy",
     "drunk_women_phil_and_a_man",
     "dsp_dkoldies_and_a_man",
-    "dsp_intellivision_family_fun_and_prank_calls"
+    "dsp_intellivision_family_fun_and_prank_calls",
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update"
   ],
   "commands": {
     "stan": 27,
@@ -291,7 +292,7 @@
     "face": 225,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 159,
+    "joy": 160,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -590,7 +591,9 @@
     "bubble": 1,
     "reality": 1,
     "popcorn": 1,
-    "lemon": 1
+    "lemon": 1,
+    "devs": 1,
+    "unity": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1862,6 +1865,11 @@
       "title": "DSP, Intellivision Family Fun, And Prank Calls",
       "start_ts": 1657756333,
       "youtube_archive_id": "mIo2uU23SFE"
+    },
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update": {
+      "title": "DSP Is Actually Right About Something, EDP445 Victim Speaks Out, Chris Chan Update",
+      "start_ts": 1694825482,
+      "youtube_archive_id": "DMitvMzDgGo"
     }
   },
   "messages": [
@@ -6342,6 +6350,46 @@
       "message": "Hey dad, I accepted a job at the company that I interned at. I start a month after I graduate. I\u2019m so excited :star_struck:",
       "commands": [
         "struck"
+      ]
+    },
+    {
+      "ts": 1694827828,
+      "username": "@DANIELRONCA716",
+      "platform": "youtube",
+      "stream_id": "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+      "message": "Unity: Yeah, we want to fail that much harder. We also have stock in Epic Games. lol",
+      "commands": [
+        "unity"
+      ]
+    },
+    {
+      "ts": 1694827606,
+      "username": "@DANIELRONCA716",
+      "platform": "youtube",
+      "stream_id": "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+      "message": "Unity: We used to care!",
+      "commands": [
+        "unity"
+      ]
+    },
+    {
+      "ts": 1694827506,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+      "message": "Indie Devs: Friendship ended with Unity. Friendship started with Godot!",
+      "commands": [
+        "devs"
+      ]
+    },
+    {
+      "ts": 1694826169,
+      "username": "@matthewreed1078",
+      "platform": "youtube",
+      "stream_id": "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+      "message": "You look like a big Edward Norton for American history X the skinhead lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
