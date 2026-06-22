@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101477,
+  "updated_ts": 1782101485,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -487,7 +487,8 @@
     "my_final_thoughts_pat_and_ian",
     "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga",
     "my_subscribers_give_me_criticism",
-    "nightly_hang_out"
+    "nightly_hang_out",
+    "nintendo_direct_event_292022"
   ],
   "commands": {
     "stan": 27,
@@ -523,7 +524,7 @@
     "face": 453,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 297,
+    "joy": 298,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -3445,6 +3446,11 @@
       "title": "Nightly Hang Out",
       "start_ts": 1650330866,
       "youtube_archive_id": "7S-XerVA1SU"
+    },
+    "nintendo_direct_event_292022": {
+      "title": "Nintendo Direct Event 2/9/2022",
+      "start_ts": 1644441978,
+      "youtube_archive_id": "I-lxEx4zRGU"
     }
   },
   "messages": [
@@ -22954,6 +22960,16 @@
       "message": "DSP: I don't like/play puzzle games! (plays Resident Evil games)",
       "commands": [
         "dsp"
+      ]
+    },
+    {
+      "ts": 1644444594,
+      "username": "@ThePaulg123",
+      "platform": "youtube",
+      "stream_id": "nintendo_direct_event_292022",
+      "message": "half way through its life :face_with_tears_of_joy: gotta love nintendo",
+      "commands": [
+        "joy"
       ]
     },
     {
