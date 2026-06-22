@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101100,
+  "updated_ts": 1782101107,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -440,7 +440,8 @@
     "man_vs_birds_vs_wii_u_its_fixed",
     "man_vs_demon_souls_remake",
     "man_vs_men_live",
-    "man_vs_qvc"
+    "man_vs_qvc",
+    "man_vs_steven_seagal"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7466,6 +7467,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.21,
       "avg_active_chatters": 35.12
+    },
+    "man_vs_steven_seagal": {
+      "stream_id": "man_vs_steven_seagal",
+      "title": "Man Vs. Steven Seagal",
+      "start_ts": 1649981273,
+      "end_ts": 1649991686,
+      "duration_sec": 10413,
+      "youtube_archive_id": "AZUmrO2Wqt0",
+      "source_platform": "youtube",
+      "total_donations_usd": 196.64,
+      "donation_count": 58,
+      "donations_per_min": 1.133,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.74,
+      "avg_active_chatters": 27.61
     }
   }
 }
