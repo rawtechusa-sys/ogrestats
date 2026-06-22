@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099742,
+  "updated_ts": 1782099751,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -272,7 +272,8 @@
     "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
     "dude_wtf_is_even_going_on",
     "early_sunday_man_a_thon",
-    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness"
+    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+    "eating_extremely_spicy_food_and_watching_weird_crap"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4610,6 +4611,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.9,
       "avg_active_chatters": 42.37
+    },
+    "eating_extremely_spicy_food_and_watching_weird_crap": {
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "title": "Eating Extremely Spicy Food And Watching Weird Crap",
+      "start_ts": 1688420273,
+      "end_ts": 1688434231,
+      "duration_sec": 13958,
+      "youtube_archive_id": "f90J_Ei6D8o",
+      "source_platform": "youtube",
+      "total_donations_usd": 627.58,
+      "donation_count": 69,
+      "donations_per_min": 2.6977,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.15,
+      "avg_active_chatters": 21.06
     }
   }
 }
