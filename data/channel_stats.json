@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101000,
+  "updated_ts": 1782101006,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -426,7 +426,8 @@
     "man_friendly_family_fun",
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
     "man_in_birdsuit_livestreams_feat_birds",
-    "man_in_chicken_suit_ep2_feat_beautiful_birds"
+    "man_in_chicken_suit_ep2_feat_beautiful_birds",
+    "man_in_chicken_suit_ep4"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7228,6 +7229,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.68,
       "avg_active_chatters": 29.73
+    },
+    "man_in_chicken_suit_ep4": {
+      "stream_id": "man_in_chicken_suit_ep4",
+      "title": "Man In Chicken Suit Ep.4",
+      "start_ts": 1652401556,
+      "end_ts": 1652409664,
+      "duration_sec": 8108,
+      "youtube_archive_id": "1P308M1yhvs",
+      "source_platform": "youtube",
+      "total_donations_usd": 239.81,
+      "donation_count": 59,
+      "donations_per_min": 1.7746,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.2,
+      "avg_active_chatters": 34.66
     }
   }
 }
