@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098750,
+  "updated_ts": 1782098757,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -151,7 +151,8 @@
     "bad_commercials_and_trump",
     "ban_anybody_watching_the_wingsofredemption_documentary",
     "ban_anybody_who_discusses_wingsofredemption",
-    "ban_dark_souls_remastered_members_only"
+    "ban_dark_souls_remastered_members_only",
+    "being_terrible_at_halo_infinite_live"
   ],
   "commands": {
     "stan": 27,
@@ -200,7 +201,7 @@
     "tongue": 4,
     "heart": 46,
     "shorts": 1,
-    "laughing": 47,
+    "laughing": 48,
     "news": 9,
     "chicken": 21,
     "cake": 1,
@@ -1151,6 +1152,11 @@
       "title": "Ban Dark Souls Remastered (Members Only)",
       "start_ts": 1739223913,
       "youtube_archive_id": "7YkEiD1Y5OQ"
+    },
+    "being_terrible_at_halo_infinite_live": {
+      "title": "Being Terrible At Halo Infinite LIVE",
+      "start_ts": 1639515915,
+      "youtube_archive_id": "q3zjyvQPkFs"
     }
   },
   "messages": [
@@ -8900,6 +8906,16 @@
       "message": "i think you should buy a Makka Pakka doll :face_blowing_a_kiss:",
       "commands": [
         "kiss"
+      ]
+    },
+    {
+      "ts": 1639517541,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "being_terrible_at_halo_infinite_live",
+      "message": "imagine if DSP got that custom message from Dbrand :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
