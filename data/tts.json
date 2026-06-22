@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098655,
+  "updated_ts": 1782098663,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -139,7 +139,8 @@
     "another_surprise_stream_feat_a_man_and_birds",
     "another_swatting_disaster_and_activisionubisoft_allegations",
     "answering_questions",
-    "answering_questions_feat_birds"
+    "answering_questions_feat_birds",
+    "answering_questions_while_i_stare_at_birds"
   ],
   "commands": {
     "stan": 27,
@@ -172,7 +173,7 @@
     "turkey": 5,
     "eyes": 31,
     "africa": 1,
-    "face": 111,
+    "face": 112,
     "petersonxhhanson": 1,
     "poo": 6,
     "joy": 88,
@@ -188,9 +189,9 @@
     "tongue": 4,
     "heart": 44,
     "shorts": 1,
-    "laughing": 43,
+    "laughing": 45,
     "news": 7,
-    "chicken": 19,
+    "chicken": 20,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -321,8 +322,8 @@
     "both": 1,
     "syne": 1,
     "father": 1,
-    "request": 1,
-    "sweat": 3,
+    "request": 2,
+    "sweat": 4,
     "twist": 2,
     "quote": 1,
     "beverage": 1,
@@ -372,7 +373,8 @@
     "now": 1,
     "breaking": 1,
     "eye": 1,
-    "dove": 1
+    "dove": 1,
+    "time": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1064,6 +1066,11 @@
       "title": "Answering Questions (Feat. Birds)",
       "start_ts": 1661716662,
       "youtube_archive_id": "yOZBozd5lbQ"
+    },
+    "answering_questions_while_i_stare_at_birds": {
+      "title": "Answering Questions While I Stare At Birds",
+      "start_ts": 1658710302,
+      "youtube_archive_id": "Lh49dPGJieg"
     }
   },
   "messages": [
@@ -6539,6 +6546,76 @@
       "commands": [
         "rooster",
         "joy"
+      ]
+    },
+    {
+      "ts": 1658717849,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "you should do your own version of Camelots naked snake :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1658717757,
+      "username": "@Honky-Kong19",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "Ost request: The best is yet to come - SilvaGunner",
+      "commands": [
+        "request"
+      ]
+    },
+    {
+      "ts": 1658717343,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "welp, don't know what i'm gonna do with this troll bridge :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1658717270,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "be honest rich, do you see me as a troll? don't to be:grinning_face_with_sweat::grinning_face_with_sweat::grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1658713931,
+      "username": "@Sea_Dragon-2401",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "Preference time: Mic pop filter or 720P Webcam?",
+      "commands": [
+        "time"
+      ]
+    },
+    {
+      "ts": 1658713221,
+      "username": "@Sea_Dragon-2401",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "#ReviewPauseUSA:cucumber::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1658711961,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "answering_questions_while_i_stare_at_birds",
+      "message": "bazinga!!! how you been Richie? or should i say dickers? lmfao :grinning_squinting_face: is bird the word?",
+      "commands": [
+        "face"
       ]
     },
     {
