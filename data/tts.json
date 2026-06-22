@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100707,
+  "updated_ts": 1782100714,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -383,7 +383,8 @@
     "late_night_stream_for_no_reason",
     "learning_how_to_be_a_man_feat_birds",
     "legal_eagles_xqc_video",
-    "lets_argue_about_nintendo"
+    "lets_argue_about_nintendo",
+    "lets_be_disappointed_by_the_nintendo_direct_together"
   ],
   "commands": {
     "stan": 27,
@@ -416,9 +417,9 @@
     "turkey": 7,
     "eyes": 86,
     "africa": 1,
-    "face": 359,
+    "face": 361,
     "petersonxhhanson": 1,
-    "poo": 20,
+    "poo": 21,
     "joy": 256,
     "gameboy": 1,
     "chick": 2,
@@ -2758,6 +2759,11 @@
       "title": "Let's Argue About Nintendo",
       "start_ts": 1636249041,
       "youtube_archive_id": "NUpPKZZAacQ"
+    },
+    "lets_be_disappointed_by_the_nintendo_direct_together": {
+      "title": "Let's Be Disappointed By The Nintendo Direct Together",
+      "start_ts": 1675892537,
+      "youtube_archive_id": "NMD50Ql9FVI"
     }
   },
   "messages": [
@@ -12929,6 +12935,27 @@
       "message": "Toy 2 X: Toys In Space",
       "commands": [
         "x"
+      ]
+    },
+    {
+      "ts": 1675893758,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "lets_be_disappointed_by_the_nintendo_direct_together",
+      "message": "Arlo is losing his :pile_of_poo: right now. :grinning_squinting_face:",
+      "commands": [
+        "poo",
+        "face"
+      ]
+    },
+    {
+      "ts": 1675893070,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "lets_be_disappointed_by_the_nintendo_direct_together",
+      "message": "Gimme those gorgeous BIRD SCENTS Rich :weary_face:",
+      "commands": [
+        "face"
       ]
     },
     {
