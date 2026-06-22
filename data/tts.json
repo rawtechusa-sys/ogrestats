@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101677,
+  "updated_ts": 1782101684,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -514,7 +514,8 @@
     "philip_burnell_is_under_attack_now_playing_bloodborne",
     "philip_burnells_brilliant_pc_advice",
     "philip_burnells_chickengate_anniversary_celebration",
-    "philip_burnells_new_sweater"
+    "philip_burnells_new_sweater",
+    "philip_paul_burnell_has_incredible_technical_knowledge"
   ],
   "commands": {
     "stan": 27,
@@ -547,21 +548,21 @@
     "turkey": 12,
     "eyes": 122,
     "africa": 1,
-    "face": 492,
+    "face": 497,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 319,
+    "joy": 320,
     "gameboy": 1,
     "chick": 3,
     "carlos": 41,
     "away": 7,
-    "idea": 5,
+    "idea": 6,
     "fear": 4,
     "voice": 5,
     "cucumber": 55,
     "biceps": 5,
     "tongue": 12,
-    "heart": 151,
+    "heart": 152,
     "shorts": 2,
     "laughing": 192,
     "news": 22,
@@ -597,7 +598,7 @@
     "hands": 32,
     "horns": 8,
     "crab": 2,
-    "superhero": 31,
+    "superhero": 32,
     "legends": 2,
     "dog": 11,
     "is": 8,
@@ -677,7 +678,7 @@
     "struck": 3,
     "joker": 1,
     "racehorse": 10,
-    "question": 12,
+    "question": 13,
     "mushroom": 3,
     "trilogy": 1,
     "spider": 2,
@@ -735,7 +736,7 @@
     "listen": 1,
     "oldies": 1,
     "lollipop": 1,
-    "reviewwatchmojousa": 2,
+    "reviewwatchmojousa": 3,
     "cartoon": 1,
     "msg": 1,
     "yesterday": 1,
@@ -884,7 +885,7 @@
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
-    "said": 4,
+    "said": 5,
     "reviewimprovusa": 1,
     "smo": 1,
     "blood": 1,
@@ -976,7 +977,7 @@
     "corner": 1,
     "hustle": 1,
     "women": 1,
-    "bag": 2,
+    "bag": 3,
     "honest": 1,
     "verse": 1,
     "remember": 1,
@@ -1060,7 +1061,8 @@
     "nutshell": 1,
     "logic": 1,
     "all": 1,
-    "dlc": 1
+    "dlc": 1,
+    "brain": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3627,6 +3629,11 @@
       "title": "Philip Burnell's New Sweater",
       "start_ts": 1703645030,
       "youtube_archive_id": "DQl9Gp1a928"
+    },
+    "philip_paul_burnell_has_incredible_technical_knowledge": {
+      "title": "Philip Paul Burnell Has Incredible Technical Knowledge",
+      "start_ts": 1691447767,
+      "youtube_archive_id": "4My0E0UNypM"
     }
   },
   "messages": [
@@ -11852,6 +11859,146 @@
       "message": ":cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1691462718,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "What\u2019s 1,601,627 times 5? 8008135! :brain:",
+      "commands": [
+        "brain"
+      ]
+    },
+    {
+      "ts": 1691461678,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "ReviewWatchMojoUSA: top 10 excuses from DSPGaming",
+      "commands": [
+        "reviewwatchmojousa"
+      ]
+    },
+    {
+      "ts": 1691457618,
+      "username": "@twinkie415",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "i read the stream title & realized Phil's name is P. P. Burnell lmao :grinning_squinting_face::grinning_squinting_face::grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691454966,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "just kno hero in :man_superhero: Phil sucks, glad your back",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1691454564,
+      "username": "@SwaggBae",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Glad to support the Birds, Horses, Jaysus, and the fam. Phillip Burnell is a man. (Woo right up my bass without the b, and Yeah if on soundboard) :yellow_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1691454549,
+      "username": "@Cavs2027Champs",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Serious question: is there any purpose in expanding the PS5 or Series X storage if you aren\u2019t running out of space?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1691452877,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Chrono trigger is on mobile :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691452099,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Phil will be here in 5 mins :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691451567,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "His face when he opens it up :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691450152,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Didn't you offer to send him a pc and he said no? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1691450122,
+      "username": "@Tomenheimer",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Merch Idea: seltzer called DSP\u2019s Cooling Gel.",
+      "commands": [
+        "idea"
+      ]
+    },
+    {
+      "ts": 1691449881,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Dsp was the one that said: open your wallet and give me all of your monies, look it up it doesnt take not even 5 mins",
+      "commands": [
+        "said"
+      ]
+    },
+    {
+      "ts": 1691449287,
+      "username": "@Adam201028",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Father, wake me up when Derich bursts. Also, start a band with You, Wings, Phil and Cyraxx. Phil and Cyraxx can be the lead singers. That'll make :money_bag:",
+      "commands": [
+        "bag"
+      ]
+    },
+    {
+      "ts": 1691449284,
+      "username": "@LemStar0623",
+      "platform": "youtube",
+      "stream_id": "philip_paul_burnell_has_incredible_technical_knowledge",
+      "message": "Did you see Rockstars BANGER announcement today :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
