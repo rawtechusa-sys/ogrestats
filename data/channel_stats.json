@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101501,
+  "updated_ts": 1782101509,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -494,7 +494,8 @@
     "nightly_hang_out",
     "nintendo_direct_event_292022",
     "nintendo_direct_recap_reaction",
-    "no_bird_suit_but_a_new_bird"
+    "no_bird_suit_but_a_new_bird",
+    "non_stop_vegan_tickling"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8384,6 +8385,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.15,
       "avg_active_chatters": 36.07
+    },
+    "non_stop_vegan_tickling": {
+      "stream_id": "non_stop_vegan_tickling",
+      "title": "Non-Stop Vegan Tickling",
+      "start_ts": 1656466793,
+      "end_ts": 1656478317,
+      "duration_sec": 11524,
+      "youtube_archive_id": "Sk_Fxf4n1b4",
+      "source_platform": "youtube",
+      "total_donations_usd": 248.76,
+      "donation_count": 45,
+      "donations_per_min": 1.2952,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.98,
+      "avg_active_chatters": 32.65
     }
   }
 }
