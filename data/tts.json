@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092683,
+  "updated_ts": 1782092713,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -22,7 +22,8 @@
     "3_men_live_camelot331_and_boogie2988",
     "42_year_old_man_plays_video_games_terribly",
     "a_baked_middle_aged_man_plays_video_games",
-    "a_baked_middle_aged_man_plays_video_games_again"
+    "a_baked_middle_aged_man_plays_video_games_again",
+    "a_beautiful_man_becomes_more_beautiful_live"
   ],
   "commands": {
     "stan": 27,
@@ -55,10 +56,10 @@
     "turkey": 3,
     "eyes": 6,
     "africa": 1,
-    "face": 14,
+    "face": 15,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 8,
+    "joy": 9,
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
@@ -93,10 +94,11 @@
     "hole": 1,
     "rooster": 3,
     "peach": 1,
-    "fire": 1,
+    "fire": 2,
     "kendal": 1,
     "up": 1,
-    "note": 1
+    "note": 1,
+    "eyebrow": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -203,6 +205,11 @@
       "title": "A Baked, Middle-Aged Man Plays Video Games (Again)",
       "start_ts": 1638754554,
       "youtube_archive_id": "M61SI72fxmA"
+    },
+    "a_beautiful_man_becomes_more_beautiful_live": {
+      "title": "A Beautiful Man Becomes More Beautiful LIVE",
+      "start_ts": 1633394352,
+      "youtube_archive_id": "SPm7D8bta-M"
     }
   },
   "messages": [
@@ -2860,6 +2867,46 @@
       "message": "Steve has those pumpkin :jack_o_lantern: :jack_o_lantern: bottom jeans on",
       "commands": [
         "lantern"
+      ]
+    },
+    {
+      "ts": 1633402432,
+      "username": "@blakehendrix7791",
+      "platform": "youtube",
+      "stream_id": "a_beautiful_man_becomes_more_beautiful_live",
+      "message": "They\u2019re gonna eat the bird like that guy in BioDome. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1633401812,
+      "username": "@blakehendrix7791",
+      "platform": "youtube",
+      "stream_id": "a_beautiful_man_becomes_more_beautiful_live",
+      "message": "Michael Bay got death threats for putting flames on Optimus Prime. This guy is butt hurt over mean words?? :face_with_raised_eyebrow:",
+      "commands": [
+        "eyebrow"
+      ]
+    },
+    {
+      "ts": 1633399794,
+      "username": "@1SoloSama",
+      "platform": "youtube",
+      "stream_id": "a_beautiful_man_becomes_more_beautiful_live",
+      "message": "RTUSA You are Weirdo no disrespect. And don't take your shirt off. And kiss the chicken:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::face_with_tears_of_joy::hugging_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1633395002,
+      "username": "@IsaacHaze85",
+      "platform": "youtube",
+      "stream_id": "a_beautiful_man_becomes_more_beautiful_live",
+      "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
+      "commands": [
+        "fire"
       ]
     }
   ]
