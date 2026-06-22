@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100311,
+  "updated_ts": 1782100319,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -337,7 +337,8 @@
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
     "im_wired_and_streaming_cause_why_not",
     "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
-    "intellivision_amico_family_fun_and_the_quartering_swatted"
+    "intellivision_amico_family_fun_and_the_quartering_swatted",
+    "intellivision_amico_family_fun_night_plus_newegg_drama"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5715,6 +5716,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.03,
       "avg_active_chatters": 39.93
+    },
+    "intellivision_amico_family_fun_night_plus_newegg_drama": {
+      "stream_id": "intellivision_amico_family_fun_night_plus_newegg_drama",
+      "title": "Intellivision Amico Family Fun Night! (Plus Newegg Drama)",
+      "start_ts": 1645053517,
+      "end_ts": 1645065445,
+      "duration_sec": 11928,
+      "youtube_archive_id": "62Rw-UivWeA",
+      "source_platform": "youtube",
+      "total_donations_usd": 282.05,
+      "donation_count": 69,
+      "donations_per_min": 1.4188,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.19,
+      "avg_active_chatters": 30.19
     }
   }
 }
