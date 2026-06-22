@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099447,
+  "updated_ts": 1782099456,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -237,7 +237,8 @@
     "come_talk_to_a_man_feat_birds",
     "come_talk_with_liana_k_and_i_about_video_games",
     "cringing_at_the_avgn_movie",
-    "dad_had_some_ipas_come_ask_questions"
+    "dad_had_some_ipas_come_ask_questions",
+    "dad_is_back"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4015,6 +4016,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.45,
       "avg_active_chatters": 41.88
+    },
+    "dad_is_back": {
+      "stream_id": "dad_is_back",
+      "title": "Dad Is Back",
+      "start_ts": 1678411700,
+      "end_ts": 1678419850,
+      "duration_sec": 8150,
+      "youtube_archive_id": "nnW58o6Gwyg",
+      "source_platform": "youtube",
+      "total_donations_usd": 573.29,
+      "donation_count": 100,
+      "donations_per_min": 4.2205,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.49,
+      "avg_active_chatters": 32.27
     }
   }
 }
