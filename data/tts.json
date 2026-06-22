@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099100,
+  "updated_ts": 1782099108,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -194,7 +194,8 @@
     "come_ask_a_man_questions_poultry_edition",
     "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
     "come_ask_me_almost_anything",
-    "come_ask_me_literally_anything_this_is_a_mistake"
+    "come_ask_me_literally_anything_this_is_a_mistake",
+    "come_ask_me_things"
   ],
   "commands": {
     "stan": 27,
@@ -225,7 +226,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 52,
+    "eyes": 53,
     "africa": 1,
     "face": 160,
     "petersonxhhanson": 1,
@@ -245,7 +246,7 @@
     "shorts": 1,
     "laughing": 55,
     "news": 12,
-    "chicken": 27,
+    "chicken": 28,
     "cake": 7,
     "d": 1,
     "halo": 2,
@@ -272,7 +273,7 @@
     "eyebrow": 2,
     "facepalming": 5,
     "shrugging": 3,
-    "donation": 1,
+    "donation": 2,
     "naruto": 1,
     "hands": 15,
     "horns": 5,
@@ -1443,6 +1444,11 @@
       "title": "Come Ask Me Literally Anything (This is A Mistake)",
       "start_ts": 1662428201,
       "youtube_archive_id": "rXR3PJFRDpQ"
+    },
+    "come_ask_me_things": {
+      "title": "Come Ask Me Things",
+      "start_ts": 1642294063,
+      "youtube_archive_id": "GONfEUbp3mA"
     }
   },
   "messages": [
@@ -10373,6 +10379,36 @@
       "message": "I do Facebook posts like u title ur streams. Example: \u201ca bearded hippie man and his dog walked yoo the lake today\u201d",
       "commands": [
         "example"
+      ]
+    },
+    {
+      "ts": 1642297429,
+      "username": "@86-panda",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_things",
+      "message": "7 months! Appreciate the family friendly streams, and chicken gate! :chicken: Do you plan on reviewing the Analogue Pocket? if you can get one that is.",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1642296784,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_things",
+      "message": "3 months already?Time flies! Love ya Rich! Clucks all around! :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1642294490,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_things",
+      "message": "Wings troll donation: when are you gonna show us the ipad your bought granny with the surgery cash",
+      "commands": [
+        "donation"
       ]
     },
     {
