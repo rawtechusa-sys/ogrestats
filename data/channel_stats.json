@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102403,
+  "updated_ts": 1782102408,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -635,7 +635,8 @@
     "the_chris_chanithon",
     "the_christmas_man",
     "the_clowns_make_it_too_easy",
-    "the_completionist_and_philip_burnell_are_men"
+    "the_completionist_and_philip_burnell_are_men",
+    "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10781,6 +10782,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.27,
       "avg_active_chatters": 47.72
+    },
+    "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video": {
+      "stream_id": "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video",
+      "title": "The Continual Fall of WingsOfRedemption Reaction (Joon The King Video)",
+      "start_ts": 1650928670,
+      "end_ts": 1650940724,
+      "duration_sec": 12054,
+      "youtube_archive_id": "OTL8Wcu8WaU",
+      "source_platform": "youtube",
+      "total_donations_usd": 225.8,
+      "donation_count": 68,
+      "donations_per_min": 1.1239,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.35,
+      "avg_active_chatters": 38.27
     }
   }
 }
