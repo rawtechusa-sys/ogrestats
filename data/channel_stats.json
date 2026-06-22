@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101992,
+  "updated_ts": 1782102002,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -570,7 +570,8 @@
     "reviewbirdsusa",
     "revieweldenringusa_eldenring",
     "reviewthorusa_i_got_soulja_boys_console",
-    "rip_onlyfans"
+    "rip_onlyfans",
+    "russia_ukraine_war_discussion"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9676,6 +9677,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.35,
       "avg_active_chatters": 43.99
+    },
+    "russia_ukraine_war_discussion": {
+      "stream_id": "russia_ukraine_war_discussion",
+      "title": "Russia-Ukraine War Discussion",
+      "start_ts": 1646618325,
+      "end_ts": 1646627758,
+      "duration_sec": 9433,
+      "youtube_archive_id": "A_o5D7_3ARk",
+      "source_platform": "youtube",
+      "total_donations_usd": 246.87,
+      "donation_count": 44,
+      "donations_per_min": 1.5703,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.73,
+      "avg_active_chatters": 28.3
     }
   }
 }
