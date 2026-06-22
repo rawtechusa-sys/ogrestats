@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098704,
+  "updated_ts": 1782098713,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -146,7 +146,8 @@
     "ask_a_man_random_things_while_you_stare_at_birds",
     "ask_me_anything",
     "ask_me_anything_992019",
-    "asmongolds_the_act_man_interview_reaction"
+    "asmongolds_the_act_man_interview_reaction",
+    "back_to_watching_phil_fail_looking_into_derich"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2468,6 +2469,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.55,
       "avg_active_chatters": 46.89
+    },
+    "back_to_watching_phil_fail_looking_into_derich": {
+      "stream_id": "back_to_watching_phil_fail_looking_into_derich",
+      "title": "Back To Watching Phil Fail (Looking Into Derich)",
+      "start_ts": 1704493736,
+      "end_ts": 1704517177,
+      "duration_sec": 23441,
+      "youtube_archive_id": "p4Hy3Lny_Og",
+      "source_platform": "youtube",
+      "total_donations_usd": 799.42,
+      "donation_count": 174,
+      "donations_per_min": 2.0462,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.48,
+      "avg_active_chatters": 42.32
     }
   }
 }
