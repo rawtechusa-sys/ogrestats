@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098840,
+  "updated_ts": 1782098849,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -163,7 +163,8 @@
     "birds_a_man_and_seltzer",
     "birds_and_a_man_feat_birds",
     "birds_and_men_live",
-    "birds_are_satisfying_feat_a_man"
+    "birds_are_satisfying_feat_a_man",
+    "birds_are_satisfying_kinda_livestream_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2757,6 +2758,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 28.92,
       "avg_active_chatters": 61.49
+    },
+    "birds_are_satisfying_kinda_livestream_feat_birds": {
+      "stream_id": "birds_are_satisfying_kinda_livestream_feat_birds",
+      "title": "Birds Are Satisfying Kinda Livestream (Feat. Birds)",
+      "start_ts": 1663463312,
+      "end_ts": 1663473096,
+      "duration_sec": 9784,
+      "youtube_archive_id": "jHxN2UI2lRk",
+      "source_platform": "youtube",
+      "total_donations_usd": 234.72,
+      "donation_count": 56,
+      "donations_per_min": 1.4394,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.09,
+      "avg_active_chatters": 29.96
     }
   }
 }
