@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099397,
+  "updated_ts": 1782099406,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -231,7 +231,8 @@
     "come_speak_to_a_man",
     "come_stare_at_a_man",
     "come_stare_at_a_man_and_ask_his_birds_questions",
-    "come_stare_at_a_middle_aged_man_livestream"
+    "come_stare_at_a_middle_aged_man_livestream",
+    "come_stare_at_me_talk_into_a_microphone_and_say_words"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3913,6 +3914,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.18,
       "avg_active_chatters": 33.63
+    },
+    "come_stare_at_me_talk_into_a_microphone_and_say_words": {
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "title": "Come Stare At Me Talk Into A Microphone And Say Words",
+      "start_ts": 1634517044,
+      "end_ts": 1634530593,
+      "duration_sec": 13549,
+      "youtube_archive_id": "0AY-rvUu6Mo",
+      "source_platform": "youtube",
+      "total_donations_usd": 500.72,
+      "donation_count": 109,
+      "donations_per_min": 2.2174,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.05,
+      "avg_active_chatters": 32.64
     }
   }
 }
