@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099075,
+  "updated_ts": 1782099084,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -191,7 +191,8 @@
     "come_ask_a_man_and_bird_questions",
     "come_ask_a_man_anything_8_3_2021",
     "come_ask_a_man_questions",
-    "come_ask_a_man_questions_poultry_edition"
+    "come_ask_a_man_questions_poultry_edition",
+    "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience"
   ],
   "commands": {
     "stan": 27,
@@ -227,7 +228,7 @@
     "face": 158,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 118,
+    "joy": 119,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -471,7 +472,8 @@
     "ask": 1,
     "wrong": 1,
     "distance": 1,
-    "cheat": 1
+    "cheat": 1,
+    "here": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1423,6 +1425,11 @@
       "title": "Come Ask A Man Questions (Poultry Edition)",
       "start_ts": 1641600531,
       "youtube_archive_id": "WGSA5Eaw1Vw"
+    },
+    "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience": {
+      "title": "Come Ask An Irrelevant YouTuber Questions (The Scott Baio Experience)",
+      "start_ts": 1637802754,
+      "youtube_archive_id": "1P-MY_X8c2w"
     }
   },
   "messages": [
@@ -11025,6 +11032,26 @@
       "message": "Feed the birds, hit the like :thumbs_up:. They're hungry.:chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1637807355,
+      "username": "@pablomiranda5163",
+      "platform": "youtube",
+      "stream_id": "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
+      "message": "Irrelevant but super relevant question here: when\u2019s the shirt coming off?",
+      "commands": [
+        "here"
+      ]
+    },
+    {
+      "ts": 1637803287,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
+      "message": "I may or may not have disliked this stream. only the content creator and YouTube knows:man_shrugging::face_with_tears_of_joy: Also, hope everyone has a very happy Thanksgiving",
+      "commands": [
+        "joy"
       ]
     },
     {
