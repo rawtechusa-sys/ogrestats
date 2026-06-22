@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100958,
+  "updated_ts": 1782100965,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -420,7 +420,8 @@
     "logan_paul_is_a_man",
     "lolcow_and_boogie2988",
     "maidenless_birds_play_eldenring_plus_man",
-    "man_and_birds_baked_and_live"
+    "man_and_birds_baked_and_live",
+    "man_and_birds_vs_karens"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7126,6 +7127,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.21,
       "avg_active_chatters": 24.51
+    },
+    "man_and_birds_vs_karens": {
+      "stream_id": "man_and_birds_vs_karens",
+      "title": "Man And Birds Vs. Karens",
+      "start_ts": 1642814069,
+      "end_ts": 1642828623,
+      "duration_sec": 14554,
+      "youtube_archive_id": "jcLJL4X1Wmk",
+      "source_platform": "youtube",
+      "total_donations_usd": 377.71,
+      "donation_count": 80,
+      "donations_per_min": 1.5571,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.13,
+      "avg_active_chatters": 35.43
     }
   }
 }
