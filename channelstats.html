@@ -243,6 +243,42 @@ const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${
 
 let currentChart = null;
 
+// ── Liberal tooltip snapping ───────────────────────────────────────────────────
+// Stream points (donations, viewers, chat) are sparse and almost never share an x
+// with the dense subscriber snapshots, so Chart.js's stock 'nearest' mode reports
+// only the single closest series — in practice just "Subscribers", since a
+// subscriber point is nearly always nearest. This custom mode instead snaps to the
+// nearest *non-null* point of EVERY visible dataset that falls within a generous
+// horizontal window, so one hover surfaces every series near that date even across
+// the big stream-data gaps.
+const SNAP_TOLERANCE_PX = 70;
+if (window.Chart) {
+  Chart.Interaction.modes.nearestPerDataset = function (chart, e, options, useFinalPosition) {
+    const pos = Chart.helpers.getRelativePosition(e, chart);
+    const items = [];
+    for (let di = 0; di < chart.data.datasets.length; di++) {
+      if (!chart.isDatasetVisible(di)) continue;
+      const meta = chart.getDatasetMeta(di);
+      if (!meta || meta.hidden) continue;
+      let best = null, bestDist = Infinity;
+      for (let i = 0; i < meta.data.length; i++) {
+        const el = meta.data[i];
+        if (!el || el.skip) continue;                 // skip gaps / null points
+        const c = el.getCenterPoint(useFinalPosition);
+        if (!c || Number.isNaN(c.x)) continue;
+        const dx = Math.abs(c.x - pos.x);
+        if (dx < bestDist) { bestDist = dx; best = { element: el, datasetIndex: di, index: i }; }
+      }
+      if (best && bestDist <= SNAP_TOLERANCE_PX) items.push(best);
+    }
+    // Closest series first — it drives the tooltip's title date.
+    items.sort((a, b) =>
+      Math.abs(a.element.getCenterPoint(useFinalPosition).x - pos.x) -
+      Math.abs(b.element.getCenterPoint(useFinalPosition).x - pos.x));
+    return items;
+  };
+}
+
 // ── Theme ─────────────────────────────────────────────────────────────────────
 const THEMES = {
   green: { file: 'themes/bog-moss.css',    chartGrid: 'rgba(100,180,60,0.08)',  chartTick: '#4a7038', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', tooltipBorder: 'rgba(100,180,60,0.4)' },
@@ -649,7 +685,7 @@ function buildChart(streams, subs) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
+      interaction: { mode: 'nearestPerDataset', intersect: false, axis: 'x' },
       animation: { duration: 400 },
       plugins: {
         legend: { display: false },
