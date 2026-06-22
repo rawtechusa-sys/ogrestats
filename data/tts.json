@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099674,
+  "updated_ts": 1782099682,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -263,7 +263,8 @@
     "dspgaming_is_a_tad_salty_plus_drphil",
     "dspgaming_is_back_feat_jaysus",
     "dspgaming_live_in_20_mins",
-    "dspgaming_ragequit_extravaganza_road_to_1000_members"
+    "dspgaming_ragequit_extravaganza_road_to_1000_members",
+    "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues"
   ],
   "commands": {
     "stan": 27,
@@ -296,9 +297,9 @@
     "turkey": 6,
     "eyes": 66,
     "africa": 1,
-    "face": 228,
+    "face": 229,
     "petersonxhhanson": 1,
-    "poo": 14,
+    "poo": 15,
     "joy": 169,
     "gameboy": 1,
     "chick": 1,
@@ -313,8 +314,8 @@
     "heart": 76,
     "shorts": 1,
     "laughing": 76,
-    "news": 13,
-    "chicken": 33,
+    "news": 14,
+    "chicken": 34,
     "cake": 7,
     "d": 2,
     "halo": 3,
@@ -336,7 +337,7 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 22,
+    "up": 23,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -435,7 +436,7 @@
     "rocket": 1,
     "droplets": 7,
     "tomato": 3,
-    "hearts": 6,
+    "hearts": 7,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -610,7 +611,8 @@
     "sc": 1,
     "sun": 1,
     "part": 1,
-    "milk": 1
+    "milk": 1,
+    "check": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1922,6 +1924,11 @@
       "title": "DSPGaming Ragequit Extravaganza (Road To 1000 Members)",
       "start_ts": 1686010411,
       "youtube_archive_id": "MtifwURlUgQ"
+    },
+    "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues": {
+      "title": "DSPGaming's Announcement And Quantum TV's Steam Deck Meltdown Continues",
+      "start_ts": 1666575153,
+      "youtube_archive_id": "8fXb5YbVUKI"
     }
   },
   "messages": [
@@ -9989,6 +9996,67 @@
       "message": "Birds, breasts, and :hand_with_fingers_splayed: jobs all around!",
       "commands": [
         "splayed"
+      ]
+    },
+    {
+      "ts": 1666584935,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "Breaking News: BarnFinders is verified on The Deck",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1666583176,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "Let\u2019s check: narcissistic Qaren, bigaht, a woman pays for his bills, likes to brag, downright evil sometimes\u2026 This mfer is basically Cartman from South Park minus the charisma.",
+      "commands": [
+        "check"
+      ]
+    },
+    {
+      "ts": 1666578885,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "just wanted to say nibbles. don't judge :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1666577635,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "Hi, I'm a longtime fan. Glad to see you back streaming Rich! :thumbs_up: I love the new camera, what's the brand/name please? *Try to relax ...breasts* :rooster::chicken:",
+      "commands": [
+        "up",
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1666577486,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "Good for Phil for trying to be more self aware? maybe I\u2019m too positive lol. By the way, my breasts are beautiful today :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1666577074,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "dspgamings_announcement_and_quantum_tvs_steam_deck_meltdown_continues",
+      "message": "Just wanted to say, I feel the pain y\u2019all felt with saints row. GOTHAM KNIGHTS is :pile_of_poo:",
+      "commands": [
+        "poo"
       ]
     },
     {
