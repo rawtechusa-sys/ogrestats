@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101701,
+  "updated_ts": 1782101709,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -521,7 +521,8 @@
     "philip_burnells_new_sweater",
     "philip_paul_burnell_has_incredible_technical_knowledge",
     "philip_paul_burnell_is_a_220_man",
-    "phillip_burnell_is_a_man"
+    "phillip_burnell_is_a_man",
+    "phils_miraculous_man_cheeks"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8843,6 +8844,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.64,
       "avg_active_chatters": 36.28
+    },
+    "phils_miraculous_man_cheeks": {
+      "stream_id": "phils_miraculous_man_cheeks",
+      "title": "Phil's Miraculous Man Cheeks",
+      "start_ts": 1683764580,
+      "end_ts": 1683781736,
+      "duration_sec": 17156,
+      "youtube_archive_id": "09jfqm2C5uc",
+      "source_platform": "youtube",
+      "total_donations_usd": 620.15,
+      "donation_count": 80,
+      "donations_per_min": 2.1689,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.67,
+      "avg_active_chatters": 26.86
     }
   }
 }
