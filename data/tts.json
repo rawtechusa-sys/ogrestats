@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100230,
+  "updated_ts": 1782100239,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -327,7 +327,8 @@
     "im_just_a_little_stoned_right_now",
     "im_just_a_man_on_the_damn_internet",
     "im_just_a_man_thats_all",
-    "im_kind_of_back_what_happened"
+    "im_kind_of_back_what_happened",
+    "im_not_dead"
   ],
   "commands": {
     "stan": 27,
@@ -363,7 +364,7 @@
     "face": 311,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 222,
+    "joy": 223,
     "gameboy": 1,
     "chick": 2,
     "carlos": 28,
@@ -371,7 +372,7 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 38,
+    "cucumber": 39,
     "biceps": 3,
     "tongue": 6,
     "heart": 102,
@@ -2371,6 +2372,11 @@
       "title": "I'm (Kind Of) Back, What Happened?",
       "start_ts": 1677804453,
       "youtube_archive_id": "oI2xnmA1HW8"
+    },
+    "im_not_dead": {
+      "title": "I'm Not Dead",
+      "start_ts": 1673723793,
+      "youtube_archive_id": "DEIyZyG3LHQ"
     }
   },
   "messages": [
@@ -11670,6 +11676,26 @@
       "message": "Surprising absolutely no one: Jeremy nuked it.",
       "commands": [
         "one"
+      ]
+    },
+    {
+      "ts": 1673727311,
+      "username": "@sdcorreia123",
+      "platform": "youtube",
+      "stream_id": "im_not_dead",
+      "message": ":_Cucumber::_Cucumber::_Cucumber::_Cucumber::_Cucumber::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1673726976,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "im_not_dead",
+      "message": "Phil will only listen to Our Lord and Savior Moistcr1tikal! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
