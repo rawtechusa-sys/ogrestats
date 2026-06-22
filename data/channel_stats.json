@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101442,
+  "updated_ts": 1782101449,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -486,7 +486,8 @@
     "more_tickled_television_excitement",
     "more_wii_u_man_fun_yes_it_works",
     "moving_on_to_philip_burnell_a_man",
-    "muta_just_absolutely_bodied_boogie2988"
+    "muta_just_absolutely_bodied_boogie2988",
+    "my_final_thoughts_pat_and_ian"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8248,6 +8249,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 28.27,
       "avg_active_chatters": 62.92
+    },
+    "my_final_thoughts_pat_and_ian": {
+      "stream_id": "my_final_thoughts_pat_and_ian",
+      "title": "My Final Thoughts (Pat And Ian)",
+      "start_ts": 1674796461,
+      "end_ts": 1674799688,
+      "duration_sec": 3227,
+      "youtube_archive_id": "GW3tpPKn5hc",
+      "source_platform": "youtube",
+      "total_donations_usd": 70.91,
+      "donation_count": 19,
+      "donations_per_min": 1.3184,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.87,
+      "avg_active_chatters": 27.35
     }
   }
 }
