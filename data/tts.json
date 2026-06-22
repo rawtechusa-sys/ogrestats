@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098782,
+  "updated_ts": 1782098790,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -155,7 +155,8 @@
     "being_terrible_at_halo_infinite_live",
     "between_two_birds_feat_men",
     "big_problems_over_at_youtube",
-    "bill_gates_is_a_man"
+    "bill_gates_is_a_man",
+    "bird_and_man_mayhem"
   ],
   "commands": {
     "stan": 27,
@@ -188,10 +189,10 @@
     "turkey": 5,
     "eyes": 34,
     "africa": 1,
-    "face": 123,
+    "face": 125,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 97,
+    "joy": 99,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -204,13 +205,13 @@
     "tongue": 4,
     "heart": 46,
     "shorts": 1,
-    "laughing": 49,
+    "laughing": 50,
     "news": 10,
     "chicken": 21,
     "cake": 1,
     "d": 1,
     "halo": 2,
-    "hand": 7,
+    "hand": 8,
     "popper": 1,
     "straw": 1,
     "glasses": 2,
@@ -231,7 +232,7 @@
     "up": 12,
     "note": 5,
     "eyebrow": 2,
-    "facepalming": 4,
+    "facepalming": 5,
     "shrugging": 2,
     "donation": 1,
     "naruto": 1,
@@ -333,7 +334,7 @@
     "point": 2,
     "superchat": 1,
     "reviewquentintartinousa": 1,
-    "fact": 1,
+    "fact": 2,
     "both": 1,
     "syne": 1,
     "father": 1,
@@ -405,7 +406,9 @@
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
-    "laugh": 1
+    "laugh": 1,
+    "shirt": 1,
+    "vhs": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1177,6 +1180,11 @@
       "title": "Bill Gates Is A Man",
       "start_ts": 1674005681,
       "youtube_archive_id": "rm5d2e-t_AI"
+    },
+    "bird_and_man_mayhem": {
+      "title": "Bird And Man Mayhem",
+      "start_ts": 1636424385,
+      "youtube_archive_id": "UlxBqgVrXKA"
     }
   },
   "messages": [
@@ -9699,6 +9707,106 @@
       "message": "Breaking news: EDP445 retruns to youtube as a rapper under a new name but what gave him away aws the name of his new single, i love kids",
       "commands": [
         "news"
+      ]
+    },
+    {
+      "ts": 1636434489,
+      "username": "@sgtjasonbond",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "Fun fact: if you search up Finnigan Fox you also get video results with a YouTube channel called SaveAFox.",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1636434180,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "What is Ian doing? What's going on under there :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1636432014,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "Camelot could make an onlyfans :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636430659,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "When your antivax mom installs antivirus on your tablet, but not on you. It's so sad ok? So sad.:ok_hand: believe me, believe me:ok_hand:.",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1636429874,
+      "username": "@johnny112115",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "Rich despite my name I\u2019m a med grad, taking a online cram course for US med license exam, we are all docs in this class,& some guy went full conspiracy theory. Prof had to stop & get us on track :man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1636429185,
+      "username": "@sgtjasonbond",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "My grandma said about the VHS: \"They look pretty in their cases.\" But yeah I definitely may want to do that with some of the VHS tapes.",
+      "commands": [
+        "vhs"
+      ]
+    },
+    {
+      "ts": 1636427318,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "with the way things are, i feel like that's more for the adults than the kids, just saying:grinning_face_with_sweat::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1636426525,
+      "username": "@misterotterman4978",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "Kiss Carlos for me:hot_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636425610,
+      "username": "@jimchackan560",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "RTU does (kisses :rooster:), you can\u2019t see this on DSP RTU does( takes :t_shirt: off) you can\u2019t see this on DSP, RTU DOES! RTU DOES! RTU DOES! RTU DOES! What DSP dont",
+      "commands": [
+        "shirt"
+      ]
+    },
+    {
+      "ts": 1636424923,
+      "username": "@kole5826",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem",
+      "message": "Rich , Love the thumbnail!!!!!! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
