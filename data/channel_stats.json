@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099996,
+  "updated_ts": 1782100004,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -301,7 +301,8 @@
     "i_am_beyond_furious",
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
     "i_am_him_i_will_continue_to_be_him",
-    "i_am_not_well_endowed_and_im_streaming_about_phil"
+    "i_am_not_well_endowed_and_im_streaming_about_phil",
+    "i_dunno_wtf_im_doing"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5103,6 +5104,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.3,
       "avg_active_chatters": 29.96
+    },
+    "i_dunno_wtf_im_doing": {
+      "stream_id": "i_dunno_wtf_im_doing",
+      "title": "I Dunno WTF I'm Doing",
+      "start_ts": 1683332146,
+      "end_ts": 1683349469,
+      "duration_sec": 17323,
+      "youtube_archive_id": "B3I51to6nss",
+      "source_platform": "youtube",
+      "total_donations_usd": 278.62,
+      "donation_count": 78,
+      "donations_per_min": 0.965,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.02,
+      "avg_active_chatters": 27.37
     }
   }
 }
