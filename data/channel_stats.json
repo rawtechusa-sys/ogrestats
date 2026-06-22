@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101939,
+  "updated_ts": 1782101944,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -561,7 +561,8 @@
     "random_afternoon_stream",
     "random_hump_day_man_logan_paul_apology",
     "random_man_stream",
-    "random_man_streams_games_with_birds"
+    "random_man_streams_games_with_birds",
+    "random_mid_afrternoon_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9523,6 +9524,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.37,
       "avg_active_chatters": 24.07
+    },
+    "random_mid_afrternoon_man_stream": {
+      "stream_id": "random_mid_afrternoon_man_stream",
+      "title": "Random Mid Afrternoon Man Stream",
+      "start_ts": 1692475334,
+      "end_ts": 1692492899,
+      "duration_sec": 17565,
+      "youtube_archive_id": "IKov2CrL0D0",
+      "source_platform": "youtube",
+      "total_donations_usd": 786.58,
+      "donation_count": 109,
+      "donations_per_min": 2.6869,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.78,
+      "avg_active_chatters": 40.51
     }
   }
 }
