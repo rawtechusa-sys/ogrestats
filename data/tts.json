@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099421,
+  "updated_ts": 1782099429,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -233,7 +233,8 @@
     "come_stare_at_a_middle_aged_man_livestream",
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
     "come_stream_with_a_man",
-    "come_talk_to_a_man_feat_birds"
+    "come_talk_to_a_man_feat_birds",
+    "come_talk_with_liana_k_and_i_about_video_games"
   ],
   "commands": {
     "stan": 27,
@@ -266,10 +267,10 @@
     "turkey": 6,
     "eyes": 61,
     "africa": 1,
-    "face": 208,
+    "face": 209,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 140,
+    "joy": 143,
     "gameboy": 1,
     "chick": 1,
     "carlos": 21,
@@ -544,7 +545,8 @@
     "pros": 1,
     "cons": 1,
     "crossbones": 1,
-    "sound": 1
+    "sound": 1,
+    "talk": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1706,6 +1708,11 @@
       "title": "Come Talk To A Man (Feat Birds)",
       "start_ts": 1643771155,
       "youtube_archive_id": "C7nI7UIGzYg"
+    },
+    "come_talk_with_liana_k_and_i_about_video_games": {
+      "title": "Come Talk With Liana K And I About Video Games",
+      "start_ts": 1637026697,
+      "youtube_archive_id": "_dcnEWzfKDI"
     }
   },
   "messages": [
@@ -12172,6 +12179,47 @@
       "message": "Rich tomorrow: so DSP is now broke homeless and is living with me, lets get into it",
       "commands": [
         "tomorrow"
+      ]
+    },
+    {
+      "ts": 1637033696,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "come_talk_with_liana_k_and_i_about_video_games",
+      "message": "Finally :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy: love the Biden talk",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637031282,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "come_talk_with_liana_k_and_i_about_video_games",
+      "message": "Biden talk: Donald Care :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "talk",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637030023,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "come_talk_with_liana_k_and_i_about_video_games",
+      "message": "Maybe a cloud version of Bossfight for switch :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637029687,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "come_talk_with_liana_k_and_i_about_video_games",
+      "message": "Rich in the just HAS to be shirtless riding a horse with Carlos on his shoulder. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
