@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100633,
+  "updated_ts": 1782100639,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -374,7 +374,8 @@
     "king_cobra_and_phil",
     "large_freshly_showered_man_streams",
     "large_man_alert",
-    "large_man_in_front_of_mic_live"
+    "large_man_in_front_of_mic_live",
+    "large_man_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6344,6 +6345,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.84,
       "avg_active_chatters": 31.28
+    },
+    "large_man_live": {
+      "stream_id": "large_man_live",
+      "title": "Large Man LIVE",
+      "start_ts": 1703984505,
+      "end_ts": 1703992181,
+      "duration_sec": 7676,
+      "youtube_archive_id": "s30jOJiGqp8",
+      "source_platform": "youtube",
+      "total_donations_usd": 472.53,
+      "donation_count": 115,
+      "donations_per_min": 3.6936,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.63,
+      "avg_active_chatters": 48.45
     }
   }
 }
