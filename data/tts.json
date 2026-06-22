@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098766,
+  "updated_ts": 1782098774,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -153,7 +153,8 @@
     "ban_anybody_who_discusses_wingsofredemption",
     "ban_dark_souls_remastered_members_only",
     "being_terrible_at_halo_infinite_live",
-    "between_two_birds_feat_men"
+    "between_two_birds_feat_men",
+    "big_problems_over_at_youtube"
   ],
   "commands": {
     "stan": 27,
@@ -186,10 +187,10 @@
     "turkey": 5,
     "eyes": 34,
     "africa": 1,
-    "face": 118,
+    "face": 122,
     "petersonxhhanson": 1,
-    "poo": 8,
-    "joy": 93,
+    "poo": 9,
+    "joy": 94,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -202,8 +203,8 @@
     "tongue": 4,
     "heart": 46,
     "shorts": 1,
-    "laughing": 48,
-    "news": 9,
+    "laughing": 49,
+    "news": 10,
     "chicken": 21,
     "cake": 1,
     "d": 1,
@@ -228,7 +229,7 @@
     "kendal": 1,
     "up": 12,
     "note": 5,
-    "eyebrow": 1,
+    "eyebrow": 2,
     "facepalming": 4,
     "shrugging": 2,
     "donation": 1,
@@ -1165,6 +1166,11 @@
       "title": "Between Two Birds (Feat. Men)",
       "start_ts": 1679872997,
       "youtube_archive_id": "1Hmtd_Wbw8A"
+    },
+    "big_problems_over_at_youtube": {
+      "title": "Big Problems Over At YouTube",
+      "start_ts": 1661644768,
+      "youtube_archive_id": "uO7l7AUk2lY"
     }
   },
   "messages": [
@@ -7043,6 +7049,96 @@
       "message": "To be far capitalism is bad but when corporations talk about in media it\u2019s always cringe Cluck and we can play games pls :rooster::rooster:",
       "commands": [
         "rooster"
+      ]
+    },
+    {
+      "ts": 1661652320,
+      "username": "@DigitalDemonicDavros",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Biology or chemistry or about to ruin physics? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661652167,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "I NEED A CLUCK, PLEEEEASE!!! :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1661649809,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Yeah I started that unmod meme, just to end it :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661649687,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Rich last time, unmod me then remod me :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661649457,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "This day and age it\u2019s like you leave one :pile_of_poo: job for another, that\u2019s why I\u2019ve kinda stayed where I\u2019m at despite hating management",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1661648757,
+      "username": "@youtubeaholic272",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "it's jacksepticeye not markiplier :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661648299,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Breaking news: youtube announces new overseer to oversee age restriction and copyright claims, it's been announced it's a youtuber named quantum tv",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1661647990,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Friend of mine made a vid on Rumble Roses, it wouldn't upload due to his thumbnail. MEANWHILE, he showed me the\"dark side\" of YT, NOT family friendly:face_with_raised_eyebrow:",
+      "commands": [
+        "eyebrow"
+      ]
+    },
+    {
+      "ts": 1661646872,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "big_problems_over_at_youtube",
+      "message": "Alex Jones 2024:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
