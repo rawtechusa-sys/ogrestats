@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100010,
+  "updated_ts": 1782100019,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -302,7 +302,8 @@
     "i_am_him_i_will_continue_to_be_him",
     "i_am_not_well_endowed_and_im_streaming_about_phil",
     "i_dunno_wtf_im_doing",
-    "i_failed_no_phil_november"
+    "i_failed_no_phil_november",
+    "i_formally_invited_quantum_tv_on_for_an_interview"
   ],
   "commands": {
     "stan": 27,
@@ -335,10 +336,10 @@
     "turkey": 7,
     "eyes": 75,
     "africa": 1,
-    "face": 277,
+    "face": 283,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 210,
+    "joy": 211,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -346,12 +347,12 @@
     "idea": 3,
     "fear": 3,
     "voice": 4,
-    "cucumber": 34,
+    "cucumber": 35,
     "biceps": 3,
     "tongue": 6,
-    "heart": 93,
+    "heart": 94,
     "shorts": 1,
-    "laughing": 105,
+    "laughing": 109,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -375,7 +376,7 @@
     "peach": 7,
     "fire": 17,
     "kendal": 1,
-    "up": 27,
+    "up": 28,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -492,10 +493,10 @@
     "peanuts": 1,
     "glass": 1,
     "example": 1,
-    "theory": 1,
+    "theory": 2,
     "says": 1,
     "wave": 1,
-    "mugs": 1,
+    "mugs": 2,
     "ties": 1,
     "this": 1,
     "notes": 13,
@@ -548,7 +549,7 @@
     "dpsn": 1,
     "correction": 1,
     "sunset": 2,
-    "fist": 2,
+    "fist": 3,
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
@@ -559,7 +560,7 @@
     "circle": 3,
     "bar": 1,
     "cells": 1,
-    "tv": 1,
+    "tv": 2,
     "apple": 2,
     "channel": 1,
     "specs": 1,
@@ -629,7 +630,7 @@
     "robot": 1,
     "splayed": 1,
     "crown": 2,
-    "game": 1,
+    "game": 2,
     "dialogue": 1,
     "perspective": 1,
     "honeybee": 2,
@@ -689,7 +690,11 @@
     "wrestling": 1,
     "tcap": 1,
     "salad": 1,
-    "of": 1
+    "of": 1,
+    "thoughts": 1,
+    "rainbow": 1,
+    "sekiro": 1,
+    "banana": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2196,6 +2201,11 @@
       "title": "I Failed No-Phil November",
       "start_ts": 1668731308,
       "youtube_archive_id": "iw0vBb4yVWI"
+    },
+    "i_formally_invited_quantum_tv_on_for_an_interview": {
+      "title": "I Formally Invited Quantum TV On For An Interview",
+      "start_ts": 1655420787,
+      "youtube_archive_id": "5xB1OWT8nnI"
     }
   },
   "messages": [
@@ -13345,6 +13355,208 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1655432637,
+      "username": "@jacoba6642",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "There\u2019s no way this guy is a real person. Working theory: He\u2019s the google AI that escaped and is now running rampant on the internet. Taybot 2.0",
+      "commands": [
+        "theory"
+      ]
+    },
+    {
+      "ts": 1655431198,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "You should react to Jerry Springer videos :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655430658,
+      "username": "@StadiaMania",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Hey Rich,could you review the map of Uranus please? Keep up the Great content :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1655429785,
+      "username": "@therealroblowe4206",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "The Quantum TV Drinking Game: \"Take a shot every time QTVC says \"literally\"\".",
+      "commands": [
+        "game"
+      ]
+    },
+    {
+      "ts": 1655429242,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Quartering shaved his beard. His wife is HOT :hot_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655428854,
+      "username": "@Sorukun",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Can you spam the applause button for the birds? :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655428769,
+      "username": "@TwistedSMF",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Quantum TV: The #1 brand in victimization!",
+      "commands": [
+        "tv"
+      ]
+    },
+    {
+      "ts": 1655428636,
+      "username": "@GatheringHall",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Can't wait to listen to this stream tomorrow at work. Spotify would be an excellent idea bro! I listen with screen off anyways :zany_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655428191,
+      "username": "@lupeayala3125",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Dont be afraid to use your nailz Boyz!Salud Rich!:clinking_beer_mugs:",
+      "commands": [
+        "mugs"
+      ]
+    },
+    {
+      "ts": 1655426357,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Sending all the :red_heart: from the Hucks :cucumber::cucumber::cucumber:",
+      "commands": [
+        "heart",
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1655426257,
+      "username": "@Cinamin_",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Good evening Rich, how tickled are we today? Can I get a 2 or 3 soundboard combo of your choice? :astonished_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655424460,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "by quantamtv's logic eating a banana in public is indecent exposure :banana:",
+      "commands": [
+        "banana"
+      ]
+    },
+    {
+      "ts": 1655424342,
+      "username": "@CheddarCheys",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "He got that from some stupid tweets and reddit posts where veganism is speculated to be queer and therefore means vegans can't be homophobes :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655422939,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Are you going to play Sekiro: Shadows Die Twice in the future? It's made by the same makers of Dark Souls",
+      "commands": [
+        "sekiro"
+      ]
+    },
+    {
+      "ts": 1655422424,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "he deleted his pinned comment when I called him out on his last video :rolling_on_the_floor_laughing: I did the same with this one and I bet he gonna do it again :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655422014,
+      "username": "@theflashofvictoria3425",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "You have the same amount of viewers as Destiny. You made it as a streamer rich :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655422009,
+      "username": "@Fanto_Sir",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Can I be a vegan mod? protector of cucumbers :rainbow:",
+      "commands": [
+        "rainbow"
+      ]
+    },
+    {
+      "ts": 1655421926,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "It\u2019s BS how you\u2019re being treated Rich. I support you 110%. I\u2019m canceling my YT Premium. :raised_fist:",
+      "commands": [
+        "fist"
+      ]
+    },
+    {
+      "ts": 1655421594,
+      "username": "@onedarkside4830",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "Random Thoughts: What if QTV was dressed up a cucumber and had him eating himself :face_with_tears_of_joy:",
+      "commands": [
+        "thoughts",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1655421304,
+      "username": "@DafyddBrooks",
+      "platform": "youtube",
+      "stream_id": "i_formally_invited_quantum_tv_on_for_an_interview",
+      "message": "We're behind you all the way rich :slightly_smiling_face:",
+      "commands": [
+        "face"
       ]
     },
     {
