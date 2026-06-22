@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099208,
+  "updated_ts": 1782099216,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -208,7 +208,8 @@
     "come_ask_questions_812021",
     "come_ask_questions_822021",
     "come_ask_questions_about_the_pixel_6_pro",
-    "come_ask_questions_and_stare_at_me"
+    "come_ask_questions_and_stare_at_me",
+    "come_ask_questions_day_time_edition"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3522,6 +3523,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.8,
       "avg_active_chatters": 36.71
+    },
+    "come_ask_questions_day_time_edition": {
+      "stream_id": "come_ask_questions_day_time_edition",
+      "title": "Come Ask Questions (Day Time Edition)",
+      "start_ts": 1628013620,
+      "end_ts": 1628017719,
+      "duration_sec": 4099,
+      "youtube_archive_id": "6vpgXnV-Mtc",
+      "source_platform": "youtube",
+      "total_donations_usd": 146.82,
+      "donation_count": 43,
+      "donations_per_min": 2.1491,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.55,
+      "avg_active_chatters": 34.0
     }
   }
 }
