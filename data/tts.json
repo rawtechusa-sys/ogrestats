@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100151,
+  "updated_ts": 1782100160,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -318,7 +318,8 @@
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "im_a_bully_plus_i_react_to_large_muscular_men",
     "im_a_man",
-    "im_at_a_crossroads"
+    "im_at_a_crossroads",
+    "im_back"
   ],
   "commands": {
     "stan": 27,
@@ -414,7 +415,7 @@
     "gift": 3,
     "bird": 10,
     "richsmile": 5,
-    "dsp": 19,
+    "dsp": 20,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -550,7 +551,7 @@
     "x": 1,
     "now": 1,
     "breaking": 4,
-    "eye": 1,
+    "eye": 2,
     "dove": 2,
     "time": 1,
     "marry": 1,
@@ -2312,6 +2313,11 @@
       "title": "I'm At A Crossroads",
       "start_ts": 1687474422,
       "youtube_archive_id": "MtspSv3N63Q"
+    },
+    "im_back": {
+      "title": "I'm Back",
+      "start_ts": 1712018550,
+      "youtube_archive_id": "DEENvsW8ORc"
     }
   },
   "messages": [
@@ -4526,6 +4532,26 @@
       "message": "Listen, I agree with Keemstar about your show. Kiss my ring Rich. :snake::snake:",
       "commands": [
         "snake"
+      ]
+    },
+    {
+      "ts": 1712025221,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "im_back",
+      "message": "DSP: you pay me money and I will wear a tie",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1712019247,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "im_back",
+      "message": "Spiderman 2023 and Uncharted coming out to Xbox:eye:",
+      "commands": [
+        "eye"
       ]
     },
     {
