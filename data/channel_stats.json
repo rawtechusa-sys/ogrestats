@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098720,
+  "updated_ts": 1782098728,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -148,7 +148,8 @@
     "ask_me_anything_992019",
     "asmongolds_the_act_man_interview_reaction",
     "back_to_watching_phil_fail_looking_into_derich",
-    "bad_chefs_are_bad"
+    "bad_chefs_are_bad",
+    "bad_commercials_and_trump"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2502,6 +2503,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.72,
       "avg_active_chatters": 41.83
+    },
+    "bad_commercials_and_trump": {
+      "stream_id": "bad_commercials_and_trump",
+      "title": "Bad Commercials And Trump",
+      "start_ts": 1668559683,
+      "end_ts": 1668567315,
+      "duration_sec": 7632,
+      "youtube_archive_id": "OF7xmM1eWk0",
+      "source_platform": "youtube",
+      "total_donations_usd": 371.67,
+      "donation_count": 100,
+      "donations_per_min": 2.9219,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.84,
+      "avg_active_chatters": 42.02
     }
   }
 }
