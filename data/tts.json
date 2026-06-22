@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099835,
+  "updated_ts": 1782099843,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -282,7 +282,8 @@
     "father_is_sick_jaysus_saves",
     "final_chicken_suit_stream_featuring_birds",
     "friday_night_internet_man",
-    "friday_night_man_fun_feat_birds"
+    "friday_night_man_fun_feat_birds",
+    "friday_night_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -313,12 +314,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 69,
+    "eyes": 70,
     "africa": 1,
-    "face": 258,
+    "face": 260,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 187,
+    "joy": 188,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -331,13 +332,13 @@
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 85,
+    "laughing": 86,
     "news": 17,
     "chicken": 37,
     "cake": 7,
     "d": 2,
     "halo": 3,
-    "hand": 19,
+    "hand": 20,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -355,7 +356,7 @@
     "peach": 6,
     "fire": 17,
     "kendal": 1,
-    "up": 25,
+    "up": 26,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -371,7 +372,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 14,
-    "kiss": 16,
+    "kiss": 17,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -643,7 +644,8 @@
     "chuds": 1,
     "ps": 1,
     "jay": 1,
-    "jar": 1
+    "jar": 1,
+    "translation": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2050,6 +2052,11 @@
       "title": "Friday Night Man Fun (Feat. Birds)",
       "start_ts": 1663373809,
       "youtube_archive_id": "gO32ZN2umsQ"
+    },
+    "friday_night_man_stream": {
+      "title": "Friday Night Man Stream",
+      "start_ts": 1636167497,
+      "youtube_archive_id": "oCbXX1jwzXk"
     }
   },
   "messages": [
@@ -15197,6 +15204,87 @@
       "message": "Rich , Love the thumbnail!!!!!! :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1636177701,
+      "username": "@Undecided0",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "Translation: Drop that Coke Zero & get with a hero",
+      "commands": [
+        "translation"
+      ]
+    },
+    {
+      "ts": 1636176570,
+      "username": "@diamonddisc89",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "crystal Pepsi made with crystal meth :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1636174865,
+      "username": "@diamonddisc89",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "Lol palm webOS is now just LG smart TV system :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636173000,
+      "username": "@sdmurphy20",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "make sure you rewind the tape before you return it :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1636170485,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "DR.PHIL I GOT DIVX!!!!! :knocked_out_face::knocked_out_face::knocked_out_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636170244,
+      "username": "@AllenE1968",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "Another late night stream. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1636169334,
+      "username": "@ceciltheprophet",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "love your body daddy :smiling_face_with_heart_eyes: :face_blowing_a_kiss:",
+      "commands": [
+        "eyes",
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1636169006,
+      "username": "@Twizty360",
+      "platform": "youtube",
+      "stream_id": "friday_night_man_stream",
+      "message": "Rich, you gotta try Forza Horizon 5,it's Amazing!:ok_hand:",
+      "commands": [
+        "hand"
       ]
     },
     {
