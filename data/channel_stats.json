@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098564,
+  "updated_ts": 1782098572,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -128,7 +128,8 @@
     "an_elden_man_playes_elden_ring",
     "an_exciting_sunday_night_man_experience",
     "an_explanation",
-    "an_important_announcements"
+    "an_important_announcements",
+    "an_important_update"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2162,6 +2163,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.58,
       "avg_active_chatters": 41.65
+    },
+    "an_important_update": {
+      "stream_id": "an_important_update",
+      "title": "An Important Update",
+      "start_ts": 1678930970,
+      "end_ts": 1678934804,
+      "duration_sec": 3834,
+      "youtube_archive_id": "1A153jQ_0VY",
+      "source_platform": "youtube",
+      "total_donations_usd": 561.86,
+      "donation_count": 72,
+      "donations_per_min": 8.7928,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.08,
+      "avg_active_chatters": 47.55
     }
   }
 }
