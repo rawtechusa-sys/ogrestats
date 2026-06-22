@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100160,
+  "updated_ts": 1782100168,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -319,7 +319,8 @@
     "im_a_bully_plus_i_react_to_large_muscular_men",
     "im_a_man",
     "im_at_a_crossroads",
-    "im_back"
+    "im_back",
+    "im_back_and_on_a_warpath"
   ],
   "commands": {
     "stan": 27,
@@ -352,7 +353,7 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 294,
+    "face": 298,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 219,
@@ -368,13 +369,13 @@
     "tongue": 6,
     "heart": 99,
     "shorts": 1,
-    "laughing": 121,
+    "laughing": 122,
     "news": 18,
     "chicken": 37,
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 24,
+    "hand": 25,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -392,7 +393,7 @@
     "peach": 8,
     "fire": 18,
     "kendal": 1,
-    "up": 30,
+    "up": 32,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -497,7 +498,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 3,
+    "fact": 4,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -2318,6 +2319,11 @@
       "title": "I'm Back",
       "start_ts": 1712018550,
       "youtube_archive_id": "DEENvsW8ORc"
+    },
+    "im_back_and_on_a_warpath": {
+      "title": "I'm Back And On A Warpath",
+      "start_ts": 1641168322,
+      "youtube_archive_id": "7rPn8JoNSbY"
     }
   },
   "messages": [
@@ -16137,6 +16143,96 @@
       "platform": "youtube",
       "stream_id": "come_ask_a_man_questions_poultry_edition",
       "message": "You think that's bad, here we have Ted Cruz and John Cornyn :upside_down_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641179652,
+      "username": "@Dad_Brad",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "Rich, no worries bro. Don\u2019t discredit yourself. One dad to another it only matters to be a hero to our kids and I\u2019m sure you are :thumbs_up: Much support.",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1641178938,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "I want a RTU con pls :loudly_crying_face: so many fans would come",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641174931,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "u should do what blade does :grinning_face: 15$ a shot",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641174425,
+      "username": "@LoganBWood",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "Fun fact: 10/13 colonies wanted to include introduction of slavery to the new world as part of the indictment against the king.",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1641174350,
+      "username": "@BahhBahhBrownSheep",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "Dickers! I've been watching since I was 11 and I'm now twice as old at 22. I still love your content and watch more than ever. Keep it up :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641174019,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "Hey Rich I never use to believe in supporting YouTubers Thanks for opening my eyes to see the other side of the coin as they entertain us as much as movies and such Keep up the great content :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1641173833,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "How would you feel if Hillary ran in 2024 :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641170138,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "That's what happens when you order \"Mexican\" food in the east coast smh All jokes aside, if you're ever in Cali we got you. San Diego specifically :ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1641169823,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "im_back_and_on_a_warpath",
+      "message": "Rich, if you ever come to the west, i can show ya stellar mexican food, even across the border in tijuana. :slightly_smiling_face:",
       "commands": [
         "face"
       ]
