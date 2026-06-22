@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094416,
+  "updated_ts": 1782094467,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -63,7 +63,8 @@
     "a_man_from_canada_until_6am",
     "a_man_in_poughkeepsie_irl_streaming",
     "a_man_is_back_for_a_bit",
-    "a_man_is_back_sexecoco_style"
+    "a_man_is_back_sexecoco_style",
+    "a_man_is_staying_on_till_1_am"
   ],
   "commands": {
     "stan": 27,
@@ -96,10 +97,10 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 44,
+    "face": 46,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 38,
+    "joy": 39,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -110,11 +111,11 @@
     "cucumber": 5,
     "biceps": 2,
     "tongue": 2,
-    "heart": 22,
+    "heart": 24,
     "shorts": 1,
-    "laughing": 21,
+    "laughing": 22,
     "news": 5,
-    "chicken": 9,
+    "chicken": 10,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -149,7 +150,7 @@
     "superhero": 6,
     "legends": 1,
     "dog": 2,
-    "is": 2,
+    "is": 3,
     "spose": 1,
     "sunglasses": 2,
     "kiss": 6,
@@ -180,7 +181,7 @@
     "horse": 1,
     "bug": 1,
     "violin": 1,
-    "update": 1,
+    "update": 2,
     "wings": 1,
     "advice": 1,
     "ghostwire": 1,
@@ -211,7 +212,10 @@
     "one": 1,
     "cow": 1,
     "cap": 1,
-    "adventures": 1
+    "adventures": 1,
+    "head": 1,
+    "like": 1,
+    "memory": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -523,6 +527,11 @@
       "title": "A Man Is Back (sexecoco style)",
       "start_ts": 1698012438,
       "youtube_archive_id": "eqH3NNiieBY"
+    },
+    "a_man_is_staying_on_till_1_am": {
+      "title": "A Man Is Staying On Till 1 Am",
+      "start_ts": 1698102152,
+      "youtube_archive_id": "KA5timea4xg"
     }
   },
   "messages": [
@@ -2847,6 +2856,126 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1698121689,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "Yo Rich, put Phil on that track you're working on :rolling_on_the_floor_laughing: Track could use some banana action",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1698119810,
+      "username": "@KhalidTheSequel",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "The good news is: niches will always exist. People would still want games made \u201cthe authentic\u201d method with some \u201czero A.I. inside\u201d certification.",
+      "commands": [
+        "is"
+      ]
+    },
+    {
+      "ts": 1698118051,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": ":chicken::turkey::chicken::turkey::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1698117548,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "You know what annoys me? Spiderman 2 costs almost twice as much as Mario Wonder in Australia (120 AUD vs 69 AUD) I'm not paying that I'll wait :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1698116936,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "That's sad I still like getting physical games :neutral_face: I know it's the future but it's actually cheaper here in Australia to buy physical than digital.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698114310,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "I\u2019ll refresh your memory: I think you said the best advice was to not take advice. You said I shouldn\u2019t let other people control where I go in life.",
+      "commands": [
+        "memory"
+      ]
+    },
+    {
+      "ts": 1698113688,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "I'm playing Aria of Sorrow. Give my ass sorrow :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698113259,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "I just wanna thank Jay for giving me advice before I turned 25 a few weeks back. Your advice means more to me than you know. Love you all! :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1698112092,
+      "username": "@JoshJonesDrums",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "Update: WP is def flying out here to do an in person follow up interview. Dnt want to get ahead of myself but I hav a good feelin, fingers crossed.",
+      "commands": [
+        "update"
+      ]
+    },
+    {
+      "ts": 1698111004,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "Jay's like: \"No way Jose am I spittin this stuff out, it tastes like fruit!\"",
+      "commands": [
+        "like"
+      ]
+    },
+    {
+      "ts": 1698105581,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "hi, I love you all, day 6 of being in hospital with pancreatitis, rip :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1698103104,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "a_man_is_staying_on_till_1_am",
+      "message": "bro is saying a whole lotta NOTHING :speaking_head::speaking_head:",
+      "commands": [
+        "head"
       ]
     },
     {
