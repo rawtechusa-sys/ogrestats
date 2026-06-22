@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095277,
+  "updated_ts": 1782095333,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -79,7 +79,8 @@
     "a_middle_aged_man_plays_more_wii_u_launch_games",
     "a_middle_aged_man_plays_video_games_with_birds",
     "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
-    "a_middle_aged_man_reacks"
+    "a_middle_aged_man_reacks",
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii"
   ],
   "commands": {
     "stan": 27,
@@ -112,7 +113,7 @@
     "turkey": 3,
     "eyes": 20,
     "africa": 1,
-    "face": 64,
+    "face": 65,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 49,
@@ -247,7 +248,9 @@
     "trilogy": 1,
     "spider": 1,
     "ear": 1,
-    "reviewlexlutherusa": 1
+    "reviewlexlutherusa": 1,
+    "rocket": 1,
+    "droplets": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -639,6 +642,11 @@
       "title": "A Middle Aged Man \"Reacks\"",
       "start_ts": 1704662304,
       "youtube_archive_id": "yPO8lMZlWGs"
+    },
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii": {
+      "title": "A Middle-Aged Man Suffers Through Kingdom Hearts III",
+      "start_ts": 1644358668,
+      "youtube_archive_id": "xVkadD1v_ic"
     }
   },
   "messages": [
@@ -5070,6 +5078,36 @@
       "platform": "youtube",
       "stream_id": "a_dspgaming_and_wingsofredemption_man_stream",
       "message": "Hey Richie! Wanna go grab some coffee :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1644370042,
+      "username": "@kylekaminski26",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+      "message": "How much $ to play Ring Fit Adventure on stream?:sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1644369425,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+      "message": "At least get to the Toy Story world dad:cowboy_hat_face::rocket:",
+      "commands": [
+        "rocket"
+      ]
+    },
+    {
+      "ts": 1644362416,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+      "message": "Square Enix games usually contain incredibly well done graphics, character, and voice acting. :slightly_smiling_face:",
       "commands": [
         "face"
       ]
