@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100908,
+  "updated_ts": 1782100915,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -413,7 +413,8 @@
     "lets_watch_jims_sterlings_elden_ring_video",
     "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
     "listen",
-    "live_from_canada"
+    "live_from_canada",
+    "live_from_canada_is_pissed_off"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7007,6 +7008,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.79,
       "avg_active_chatters": 50.19
+    },
+    "live_from_canada_is_pissed_off": {
+      "stream_id": "live_from_canada_is_pissed_off",
+      "title": "LIVE FROM CANADA IS PISSED OFF",
+      "start_ts": 1692665109,
+      "end_ts": 1692673483,
+      "duration_sec": 8374,
+      "youtube_archive_id": "-9O1jw0426g",
+      "source_platform": "youtube",
+      "total_donations_usd": 171.35,
+      "donation_count": 46,
+      "donations_per_min": 1.2277,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.29,
+      "avg_active_chatters": 37.46
     }
   }
 }
