@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099067,
+  "updated_ts": 1782099075,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -190,14 +190,15 @@
     "come_ask_a_man_and_a_bird_questions",
     "come_ask_a_man_and_bird_questions",
     "come_ask_a_man_anything_8_3_2021",
-    "come_ask_a_man_questions"
+    "come_ask_a_man_questions",
+    "come_ask_a_man_questions_poultry_edition"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
     "phil": 59,
-    "trump": 31,
+    "trump": 32,
     "doom": 4,
     "harman": 12,
     "eric": 30,
@@ -216,14 +217,14 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 14,
+    "rich": 15,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 49,
+    "eyes": 51,
     "africa": 1,
-    "face": 157,
+    "face": 158,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 118,
@@ -271,7 +272,7 @@
     "donation": 1,
     "naruto": 1,
     "hands": 15,
-    "horns": 4,
+    "horns": 5,
     "crab": 2,
     "superhero": 12,
     "legends": 1,
@@ -1417,6 +1418,11 @@
       "title": "Come Ask A Man Questions",
       "start_ts": 1669340472,
       "youtube_archive_id": "gnueUK9I50A"
+    },
+    "come_ask_a_man_questions_poultry_edition": {
+      "title": "Come Ask A Man Questions (Poultry Edition)",
+      "start_ts": 1641600531,
+      "youtube_archive_id": "WGSA5Eaw1Vw"
     }
   },
   "messages": [
@@ -10347,6 +10353,66 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1641611263,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "\u201cWhy is he obsessed with cheese?\u201d Meanwhile fatter Rich: *eating butter at midnight*",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1641608258,
+      "username": "@joshiecon722",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "Yo Rich today is my one year of sobriety :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1641607603,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "Donating via superchat so you CAN\u2019T get groceries:smiling_face_with_horns:",
+      "commands": [
+        "horns"
+      ]
+    },
+    {
+      "ts": 1641607337,
+      "username": "@DeutschesLiedSehr",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "Just joined, what\u2019s the topic tonight lol :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1641604549,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "Trump: The most TREMENDOUS NFT I've ever seen. Great NFT, terrific NFT. The Democrats and mainstream media are trying to censor your JPEG's.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1641602385,
+      "username": "@geneshifter",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "message": "You think that's bad, here we have Ted Cruz and John Cornyn :upside_down_face:",
+      "commands": [
+        "face"
       ]
     },
     {
