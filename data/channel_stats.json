@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095166,
+  "updated_ts": 1782095222,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -77,7 +77,8 @@
     "a_man_with_birds_streams_on_halloween",
     "a_middle_aged_man_plays_halo_infinite",
     "a_middle_aged_man_plays_more_wii_u_launch_games",
-    "a_middle_aged_man_plays_video_games_with_birds"
+    "a_middle_aged_man_plays_video_games_with_birds",
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1295,6 +1296,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.47,
       "avg_active_chatters": 36.53
+    },
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds": {
+      "stream_id": "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
+      "title": "A Middle-Aged Man (Probably) beats Elden Ring (Feat. Birds)",
+      "start_ts": 1652731792,
+      "end_ts": 1652736196,
+      "duration_sec": 4404,
+      "youtube_archive_id": "XjFOowSK0eU",
+      "source_platform": "youtube",
+      "total_donations_usd": 157.94,
+      "donation_count": 18,
+      "donations_per_min": 2.1518,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.12,
+      "avg_active_chatters": 26.35
     }
   }
 }
