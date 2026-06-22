@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093821,
+  "updated_ts": 1782093868,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -51,7 +51,8 @@
     "a_large_man_returns_feat_birds",
     "a_large_man_with_seltzer_livestreams",
     "a_late_night_middle_aged_youtuber_is_livestreaming",
-    "a_late_stream"
+    "a_late_stream",
+    "a_long_day_of_elden_ring_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -87,7 +88,7 @@
     "face": 39,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 28,
+    "joy": 29,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -95,7 +96,7 @@
     "idea": 1,
     "fear": 1,
     "voice": 1,
-    "cucumber": 4,
+    "cucumber": 5,
     "biceps": 1,
     "tongue": 2,
     "heart": 18,
@@ -120,7 +121,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 2,
-    "rooster": 5,
+    "rooster": 6,
     "peach": 1,
     "fire": 3,
     "kendal": 1,
@@ -179,7 +180,7 @@
     "vomiting": 3,
     "moment": 1,
     "suit": 1,
-    "mouth": 2,
+    "mouth": 3,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -441,6 +442,11 @@
       "title": "A Late Stream...",
       "start_ts": 1629080154,
       "youtube_archive_id": "dn-HcAIzhuU"
+    },
+    "a_long_day_of_elden_ring_feat_birds": {
+      "title": "A Long Day Of Elden Ring (Feat. Birds)",
+      "start_ts": 1649957417,
+      "youtube_archive_id": "E2odTAZ6KSg"
     }
   },
   "messages": [
@@ -3653,6 +3659,46 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1649963291,
+      "username": "@404NotJosh",
+      "platform": "youtube",
+      "stream_id": "a_long_day_of_elden_ring_feat_birds",
+      "message": "I beat my first two bosses last night. I finally had that oh yea moment when it all started clicking. Now I totally get it. Hated souls games before:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1649961578,
+      "username": "@DamesClarion",
+      "platform": "youtube",
+      "stream_id": "a_long_day_of_elden_ring_feat_birds",
+      "message": "Foil Grim Timmy said he was a scientist doing cancer research :face_with_open_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1649958118,
+      "username": "@mcquackery",
+      "platform": "youtube",
+      "stream_id": "a_long_day_of_elden_ring_feat_birds",
+      "message": "in the army. just got off a 27 hour shift, went to dental and got poked and prodded. time to finally try elden ring bc im off the next 5 days :turkey::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1649958102,
+      "username": "@blue_ex3852",
+      "platform": "youtube",
+      "stream_id": "a_long_day_of_elden_ring_feat_birds",
+      "message": "we love cucumbers :cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
