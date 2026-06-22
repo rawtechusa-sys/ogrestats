@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100115,
+  "updated_ts": 1782100124,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -314,7 +314,8 @@
     "i_think_i_fixed_it",
     "i_wasnt_gonna_stream_but_here_i_am",
     "i_won_but_my_pc_is_dying",
-    "idubbz_video_going_shopping_to_become_a_vtuber"
+    "idubbz_video_going_shopping_to_become_a_vtuber",
+    "im_a_baked_man_come_discuss_tech_with_your_dad"
   ],
   "commands": {
     "stan": 27,
@@ -345,9 +346,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 76,
+    "eyes": 77,
     "africa": 1,
-    "face": 292,
+    "face": 293,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 216,
@@ -403,7 +404,7 @@
     "is": 6,
     "spose": 1,
     "sunglasses": 16,
-    "kiss": 20,
+    "kiss": 21,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -427,7 +428,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 2,
-    "tomorrow": 12,
+    "tomorrow": 13,
     "horse": 5,
     "bug": 1,
     "violin": 1,
@@ -2286,6 +2287,11 @@
       "title": "iDubbz Video. Going Shopping To Become A Vtuber",
       "start_ts": 1684451316,
       "youtube_archive_id": "gyJZ7NNPpXQ"
+    },
+    "im_a_baked_man_come_discuss_tech_with_your_dad": {
+      "title": "I'm A Baked Man. Come DIscuss Tech With Your Dad...",
+      "start_ts": 1626739570,
+      "youtube_archive_id": "-hnNodmuNp4"
     }
   },
   "messages": [
@@ -20550,6 +20556,46 @@
       "message": "Dad is beautiful:_RichSmile:",
       "commands": [
         "richsmile"
+      ]
+    },
+    {
+      "ts": 1626748900,
+      "username": "@DaAngelOhh",
+      "platform": "youtube",
+      "stream_id": "im_a_baked_man_come_discuss_tech_with_your_dad",
+      "message": "Am I really watching a baked boomer on YT right now :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1626746680,
+      "username": "@L3XIE",
+      "platform": "youtube",
+      "stream_id": "im_a_baked_man_come_discuss_tech_with_your_dad",
+      "message": "Rich tomorrow: Top 10 GameStop floors to crap on",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1626745784,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "im_a_baked_man_come_discuss_tech_with_your_dad",
+      "message": "gimme my chikin pls :face_blowing_a_kiss::face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1626740026,
+      "username": "@DmanDaGr8",
+      "platform": "youtube",
+      "stream_id": "im_a_baked_man_come_discuss_tech_with_your_dad",
+      "message": "first time catching your stream live. you've helped me pass so much time on the road as a truck driver. wish you'd stream longer :unamused_face:",
+      "commands": [
+        "face"
       ]
     },
     {
