@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098992,
+  "updated_ts": 1782099000,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -181,7 +181,8 @@
     "chatting_and_streaming",
     "chatting_watching_chris_chan_documentary_gamerfrommars",
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
-    "chatting_with_intro_guy"
+    "chatting_with_intro_guy",
+    "chicken_suit_ep_9_discussing_elden_ring"
   ],
   "commands": {
     "stan": 27,
@@ -228,7 +229,7 @@
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 54,
+    "heart": 55,
     "shorts": 1,
     "laughing": 53,
     "news": 12,
@@ -1358,6 +1359,11 @@
       "title": "CHatting With Intro Guy",
       "start_ts": 1706137720,
       "youtube_archive_id": "eoxdTD0C22A"
+    },
+    "chicken_suit_ep_9_discussing_elden_ring": {
+      "title": "Chicken Suit Ep. 9 (Discussing Elden Ring)",
+      "start_ts": 1652915326,
+      "youtube_archive_id": "CiI5nQsff-g"
     }
   },
   "messages": [
@@ -9269,6 +9275,16 @@
       "message": "When is the Quantum public shaming :tomato: happening",
       "commands": [
         "tomato"
+      ]
+    },
+    {
+      "ts": 1652916878,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "chicken_suit_ep_9_discussing_elden_ring",
+      "message": "4 beautiful birds battling this demon to save us all :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
