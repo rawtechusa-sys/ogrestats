@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101672,
+  "updated_ts": 1782101679,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -517,7 +517,8 @@
     "philip_burnell_is_excited",
     "philip_burnell_is_under_attack_now_playing_bloodborne",
     "philip_burnells_brilliant_pc_advice",
-    "philip_burnells_chickengate_anniversary_celebration"
+    "philip_burnells_chickengate_anniversary_celebration",
+    "philip_burnells_new_sweater"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8775,6 +8776,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.71,
       "avg_active_chatters": 30.08
+    },
+    "philip_burnells_new_sweater": {
+      "stream_id": "philip_burnells_new_sweater",
+      "title": "Philip Burnell's New Sweater",
+      "start_ts": 1703645030,
+      "end_ts": 1703660390,
+      "duration_sec": 15360,
+      "youtube_archive_id": "DQl9Gp1a928",
+      "source_platform": "youtube",
+      "total_donations_usd": 465.7,
+      "donation_count": 107,
+      "donations_per_min": 1.8191,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.36,
+      "avg_active_chatters": 44.78
     }
   }
 }
