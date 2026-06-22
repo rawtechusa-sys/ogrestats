@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101307,
+  "updated_ts": 1782101314,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -468,7 +468,8 @@
     "more_elden_ring_fail_compilations_feat_birds",
     "more_family_man_fun_dad_is_back",
     "more_games_and_a_man",
-    "more_gta_iii_remastered_with_birds"
+    "more_gta_iii_remastered_with_birds",
+    "more_intellivision_amico_family_bird_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7942,6 +7943,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.35,
       "avg_active_chatters": 34.69
+    },
+    "more_intellivision_amico_family_bird_fun": {
+      "stream_id": "more_intellivision_amico_family_bird_fun",
+      "title": "More Intellivision Amico Family Bird Fun",
+      "start_ts": 1642036930,
+      "end_ts": 1642052077,
+      "duration_sec": 15147,
+      "youtube_archive_id": "aZMNUOVsvAA",
+      "source_platform": "youtube",
+      "total_donations_usd": 381.61,
+      "donation_count": 101,
+      "donations_per_min": 1.5116,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.06,
+      "avg_active_chatters": 31.93
     }
   }
 }
