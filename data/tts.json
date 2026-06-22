@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099231,
+  "updated_ts": 1782099239,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -210,7 +210,8 @@
     "come_ask_questions_and_stare_at_me",
     "come_ask_questions_day_time_edition",
     "come_ask_questions_no_vids_tonight",
-    "come_ask_questions_watching_my_old_keemstar_debate"
+    "come_ask_questions_watching_my_old_keemstar_debate",
+    "come_ask_shirtless_men_questions"
   ],
   "commands": {
     "stan": 27,
@@ -243,10 +244,10 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 184,
+    "face": 188,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 124,
+    "joy": 125,
     "gameboy": 1,
     "chick": 1,
     "carlos": 19,
@@ -256,12 +257,12 @@
     "voice": 3,
     "cucumber": 21,
     "biceps": 3,
-    "tongue": 4,
-    "heart": 62,
+    "tongue": 5,
+    "heart": 63,
     "shorts": 1,
     "laughing": 59,
     "news": 12,
-    "chicken": 30,
+    "chicken": 31,
     "cake": 7,
     "d": 1,
     "halo": 2,
@@ -274,7 +275,7 @@
     "leg": 1,
     "severance": 2,
     "gta": 3,
-    "me": 3,
+    "me": 4,
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
@@ -298,7 +299,7 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 8,
+    "sunglasses": 9,
     "kiss": 14,
     "earlier": 1,
     "ghost": 1,
@@ -502,7 +503,8 @@
     "topic": 1,
     "doody": 1,
     "ex": 1,
-    "curious": 1
+    "curious": 1,
+    "extinguisher": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1549,6 +1551,11 @@
       "title": "Come Ask Questions (Watching My Old Keemstar Debate)",
       "start_ts": 1635470549,
       "youtube_archive_id": "eKd5nwNk-XE"
+    },
+    "come_ask_shirtless_men_questions": {
+      "title": "Come Ask Shirtless Men Questions",
+      "start_ts": 1628556486,
+      "youtube_archive_id": "rtSbsbXEbUM"
     }
   },
   "messages": [
@@ -13337,6 +13344,106 @@
       "commands": [
         "follows",
         "hand"
+      ]
+    },
+    {
+      "ts": 1628567684,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "you'll probably read this in 20min, but you guys are awesome. a bit strange and kinda naked, but awesome :smiling_face_with_sunglasses: lol, nice rack btw boogie lmfao",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1628565887,
+      "username": "@robertmoores3460",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "How much dose this stream weigh :kissing_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628563891,
+      "username": "@Ronin7477",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "Cody... FIGHT MILK!!!!!!!! All three of you :face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1628563486,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "Be me: 24 yo M\ud83c\uddfa\ud83c\uddf8, married and claps 46 yo \ud83c\uddef\ud83c\uddf5 milf",
+      "commands": [
+        "me"
+      ]
+    },
+    {
+      "ts": 1628562688,
+      "username": "@samman190",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "Do you guys like historic ocean liners like Titanic? If so check out Historic Travels! :winking_face: Hi Camelott, you know who I am :grinning_squinting_face: like the channel?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628561555,
+      "username": "@CrazyCracka831",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "I view the vaccine like a fire extinguisher: I'd rather have it and not need it then to need it and not have it.",
+      "commands": [
+        "extinguisher"
+      ]
+    },
+    {
+      "ts": 1628561066,
+      "username": "@lordskaahh6361",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "Love you Dad :black_heart::black_heart::black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1628559657,
+      "username": "@Olivia10103",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "just wanted to say hi. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628558950,
+      "username": "@fideliogaming8049",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "Cam with no shirt on... now I\u2019ve seen everything :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628557802,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "come_ask_shirtless_men_questions",
+      "message": "slather my :chicken: in blue cheese",
+      "commands": [
+        "chicken"
       ]
     },
     {
