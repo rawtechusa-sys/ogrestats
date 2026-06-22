@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102501,
+  "updated_ts": 1782102506,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -653,7 +653,8 @@
     "the_humble_bean_merchant_and_chris_chan",
     "the_intellivision_amico_family_fun_continues",
     "the_jordan_peterson_man_experience_feat_birds",
-    "the_karening_strikes_again"
+    "the_karening_strikes_again",
+    "the_karening_strikes_again_part_deux"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11087,6 +11088,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 35.14,
       "avg_active_chatters": 100.61
+    },
+    "the_karening_strikes_again_part_deux": {
+      "stream_id": "the_karening_strikes_again_part_deux",
+      "title": "The Karening Strikes Again (Part Deux)",
+      "start_ts": 1657064743,
+      "end_ts": 1657079323,
+      "duration_sec": 14580,
+      "youtube_archive_id": "fs1He0c8UjI",
+      "source_platform": "youtube",
+      "total_donations_usd": 290.68,
+      "donation_count": 84,
+      "donations_per_min": 1.1962,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.7,
+      "avg_active_chatters": 34.97
     }
   }
 }
