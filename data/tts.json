@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094891,
+  "updated_ts": 1782094945,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -72,7 +72,8 @@
     "a_man_stream_then_some_metroid_dread",
     "a_man_streams_like_a_man",
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
-    "a_man_vs_the_playstation_showcase_2023_playstationshowcase"
+    "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
+    "a_man_with_birds"
   ],
   "commands": {
     "stan": 27,
@@ -103,9 +104,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 18,
+    "eyes": 19,
     "africa": 1,
-    "face": 51,
+    "face": 52,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 47,
@@ -119,7 +120,7 @@
     "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 27,
+    "heart": 28,
     "shorts": 1,
     "laughing": 25,
     "news": 5,
@@ -145,7 +146,7 @@
     "peach": 2,
     "fire": 4,
     "kendal": 1,
-    "up": 6,
+    "up": 8,
     "note": 1,
     "eyebrow": 1,
     "facepalming": 2,
@@ -155,7 +156,7 @@
     "hands": 6,
     "horns": 1,
     "crab": 2,
-    "superhero": 7,
+    "superhero": 8,
     "legends": 1,
     "dog": 2,
     "is": 3,
@@ -166,7 +167,7 @@
     "ghost": 1,
     "bk": 1,
     "gift": 1,
-    "bird": 1,
+    "bird": 4,
     "richsmile": 1,
     "dsp": 2,
     "story": 1,
@@ -231,7 +232,10 @@
     "meeting": 1,
     "giants": 1,
     "trinity": 1,
-    "day": 1
+    "day": 1,
+    "struck": 1,
+    "joker": 1,
+    "racehorse": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -588,6 +592,11 @@
       "title": "A Man Vs. The PlayStation Showcase 2023 #PlayStationShowcase",
       "start_ts": 1684955591,
       "youtube_archive_id": "3nHYUnNJ1z4"
+    },
+    "a_man_with_birds": {
+      "title": "A Man With Birds",
+      "start_ts": 1695340004,
+      "youtube_archive_id": "2cfuf9Ozokg"
     }
   },
   "messages": [
@@ -3225,6 +3234,98 @@
       "message": "Disclaimer: the Switch port of MK1 was NOT handled by Netherrealm. WB outsourced the Switch port efforts to a developer called Shiver Entertainment.",
       "commands": [
         "disclaimer"
+      ]
+    },
+    {
+      "ts": 1695358068,
+      "username": "@sebastianmondragon9620",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "play Monster Hunter also birds :bird: :bird: :bird:",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1695350046,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "I don\u2019t think having an extreme alcohol addiction is enough grounds to have one\u2019s whole life ruined. I just hope she gets the help she needs. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1695348414,
+      "username": "@hulkhogansgianttaint",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "1:30 makes me the hardest and raw :racehorse:",
+      "commands": [
+        "racehorse"
+      ]
+    },
+    {
+      "ts": 1695346272,
+      "username": "@hulkhogansgianttaint",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "I'm harder :racehorse:",
+      "commands": [
+        "racehorse"
+      ]
+    },
+    {
+      "ts": 1695346054,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "Can I Mushroom stamp you for $2? :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1695344955,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "wise man said ass is more important then water :index_pointing_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1695343576,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "Just know :index_pointing_up: Hero In :man_superhero: .... The Shower :drooling_face:",
+      "commands": [
+        "up",
+        "superhero",
+        "face"
+      ]
+    },
+    {
+      "ts": 1695342408,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "Are you stoked for Joker: Folie a Deux next year?",
+      "commands": [
+        "joker"
+      ]
+    },
+    {
+      "ts": 1695341791,
+      "username": "@SventheArcticFox",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds",
+      "message": "Hey dad, I accepted a job at the company that I interned at. I start a month after I graduate. I\u2019m so excited :star_struck:",
+      "commands": [
+        "struck"
       ]
     },
     {
