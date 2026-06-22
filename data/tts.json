@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094161,
+  "updated_ts": 1782094212,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -58,7 +58,8 @@
     "a_man_and_bird_lushes_stream",
     "a_man_and_his_birds",
     "a_man_experience_feat_birds",
-    "a_man_feat_birds"
+    "a_man_feat_birds",
+    "a_man_from_canada_is_here"
   ],
   "commands": {
     "stan": 27,
@@ -89,7 +90,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 13,
+    "eyes": 15,
     "africa": 1,
     "face": 42,
     "petersonxhhanson": 1,
@@ -105,9 +106,9 @@
     "cucumber": 5,
     "biceps": 1,
     "tongue": 2,
-    "heart": 19,
+    "heart": 20,
     "shorts": 1,
-    "laughing": 20,
+    "laughing": 21,
     "news": 5,
     "chicken": 9,
     "cake": 1,
@@ -138,7 +139,7 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 4,
+    "hands": 6,
     "horns": 1,
     "crab": 2,
     "superhero": 4,
@@ -491,6 +492,11 @@
       "title": "A Man Feat. Birds",
       "start_ts": 1683417020,
       "youtube_archive_id": "7GHrE8-szZo"
+    },
+    "a_man_from_canada_is_here": {
+      "title": "A MAN FROM CANADA IS HERE!",
+      "start_ts": 1677632460,
+      "youtube_archive_id": "5IX24g3qopo"
     }
   },
   "messages": [
@@ -3430,6 +3436,66 @@
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1677639283,
+      "username": "@catonthemoon5481",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "Just tuned in. I hope Rich and his daughter are doing well. Prayers! :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1677634564,
+      "username": "@CronusSaturn",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "GIVE ME MY TRY TO RELAX YOUR ANUS WITH SHOULDERS AND CAN YOU TASTE MY NUTS SOUND CLIPS!! :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1677634349,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "Look at all that man! :kissing_face_with_closed_eyes::kissing_face_with_closed_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1677633603,
+      "username": "@novaacraane",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "Sorry to hear about what's going on with Rich. Keeping you and your family in my thoughts, homie. We love you. :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1677633562,
+      "username": "@Kowkarot",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "Wishing Rich's daughter a speedy recovery :folded_hands: Thank you Jay for rising next to us in the meantime.",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1677633522,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_is_here",
+      "message": "You are a man! But for seriously you are so awesome for doing this for Rich, I will always come down for you. :kissing_face_with_closed_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
