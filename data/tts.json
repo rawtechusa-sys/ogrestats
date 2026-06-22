@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095333,
+  "updated_ts": 1782095390,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -80,7 +80,8 @@
     "a_middle_aged_man_plays_video_games_with_birds",
     "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
     "a_middle_aged_man_reacks",
-    "a_middle_aged_man_suffers_through_kingdom_hearts_iii"
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+    "a_middle_aged_man_surrounded_by_poultry"
   ],
   "commands": {
     "stan": 27,
@@ -113,10 +114,10 @@
     "turkey": 3,
     "eyes": 20,
     "africa": 1,
-    "face": 65,
+    "face": 68,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 49,
+    "joy": 50,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -148,8 +149,8 @@
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
-    "hole": 2,
-    "rooster": 9,
+    "hole": 3,
+    "rooster": 10,
     "peach": 2,
     "fire": 4,
     "kendal": 1,
@@ -201,7 +202,7 @@
     "wings": 1,
     "advice": 2,
     "ghostwire": 1,
-    "guy": 1,
+    "guy": 2,
     "message": 1,
     "lied": 1,
     "wilkins": 1,
@@ -250,7 +251,8 @@
     "ear": 1,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 1
+    "droplets": 1,
+    "tomato": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -647,6 +649,11 @@
       "title": "A Middle-Aged Man Suffers Through Kingdom Hearts III",
       "start_ts": 1644358668,
       "youtube_archive_id": "xVkadD1v_ic"
+    },
+    "a_middle_aged_man_surrounded_by_poultry": {
+      "title": "A Middle-Aged Man Surrounded By Poultry",
+      "start_ts": 1653438647,
+      "youtube_archive_id": "DP3W0_c8uuA"
     }
   },
   "messages": [
@@ -4625,6 +4632,86 @@
       "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1653448348,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "he gives me dr breen vibes for some reason :neutral_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1653445451,
+      "username": "@toyotacorolla9416",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "Rock hard socks? More like rock hard :rooster: !",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1653441244,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "Before she got fired, she said at a event or something to a young black guy: don\u2019t be against the wall (it was black) now, we can barely see you.",
+      "commands": [
+        "guy"
+      ]
+    },
+    {
+      "ts": 1653441066,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "dude my girlfriend can use this! if you know what I mean :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1653440589,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "I found a chicken up my pecking :hole:",
+      "commands": [
+        "hole"
+      ]
+    },
+    {
+      "ts": 1653440432,
+      "username": "@irwinruiz3962",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "rich can I be a mod please :pleading_face::pleading_face::smiling_face::smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1653440178,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "hey, I got a msg about a giveaway, I won a computer. it's been 2 months, where's it at? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1653440113,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_surrounded_by_poultry",
+      "message": "When is the Quantum public shaming :tomato: happening",
+      "commands": [
+        "tomato"
       ]
     },
     {
