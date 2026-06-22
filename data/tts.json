@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099614,
+  "updated_ts": 1782099623,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -256,7 +256,8 @@
     "drunk_women_phil_and_a_man",
     "dsp_dkoldies_and_a_man",
     "dsp_intellivision_family_fun_and_prank_calls",
-    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update"
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+    "dsp_loves_derich"
   ],
   "commands": {
     "stan": 27,
@@ -292,7 +293,7 @@
     "face": 225,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 160,
+    "joy": 162,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -305,7 +306,7 @@
     "tongue": 5,
     "heart": 75,
     "shorts": 1,
-    "laughing": 74,
+    "laughing": 75,
     "news": 13,
     "chicken": 33,
     "cake": 7,
@@ -352,7 +353,7 @@
     "gift": 3,
     "bird": 7,
     "richsmile": 5,
-    "dsp": 10,
+    "dsp": 11,
     "story": 1,
     "tree": 3,
     "skull": 6,
@@ -593,7 +594,9 @@
     "popcorn": 1,
     "lemon": 1,
     "devs": 1,
-    "unity": 2
+    "unity": 2,
+    "conspiracy": 1,
+    "camera": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1870,6 +1873,11 @@
       "title": "DSP Is Actually Right About Something, EDP445 Victim Speaks Out, Chris Chan Update",
       "start_ts": 1694825482,
       "youtube_archive_id": "DMitvMzDgGo"
+    },
+    "dsp_loves_derich": {
+      "title": "DSP Loves Derich",
+      "start_ts": 1701132303,
+      "youtube_archive_id": "Xnn-XX8e_hQ"
     }
   },
   "messages": [
@@ -5623,6 +5631,66 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1701147719,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "Say what you willl about that guy but he still looks more into video games than Slithering Craig or Blands ! :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1701144601,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "Listen, you\u2019re gonna love my 3DS camera. :movie_camera:",
+      "commands": [
+        "camera"
+      ]
+    },
+    {
+      "ts": 1701141611,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "Bill Cosby superchat DSP. DSP: What a nice guy",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1701141489,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "its just my conspiracy: what if Derich jerked phil off and didnt realize the camera was on and he slowly crawled away???",
+      "commands": [
+        "conspiracy"
+      ]
+    },
+    {
+      "ts": 1701141478,
+      "username": "@esaun999",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "DSP is live streamingg COD rn and he complains and makes an excuse each time he dies :face_with_tears_of_joy: check it out",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1701139261,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "dsp_loves_derich",
+      "message": "Rich - QVC has a $700 \"PS5 Bundle\" :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
