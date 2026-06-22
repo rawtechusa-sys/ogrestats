@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101574,
+  "updated_ts": 1782101582,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -500,7 +500,8 @@
     "peter_popoff_is_a_man",
     "phil_boogie_men",
     "phil_discusses_the_documentary_and_complains_about_me",
-    "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty"
+    "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
+    "phil_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -530,7 +531,7 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 10,
+    "turkey": 11,
     "eyes": 117,
     "africa": 1,
     "face": 476,
@@ -596,7 +597,7 @@
     "gift": 3,
     "bird": 14,
     "richsmile": 6,
-    "dsp": 23,
+    "dsp": 24,
     "story": 2,
     "tree": 3,
     "skull": 15,
@@ -3533,6 +3534,11 @@
       "title": "Phil (DSP 'May 1st' Gaming), SSSniperwolf, Airsoftfatty",
       "start_ts": 1698710367,
       "youtube_archive_id": "w_nReWkvan8"
+    },
+    "phil_is_a_man": {
+      "title": "Phil Is A Man",
+      "start_ts": 1711150648,
+      "youtube_archive_id": "ysXNQlymuYI"
     }
   },
   "messages": [
@@ -6192,6 +6198,26 @@
       "message": "Did you play Stroke the Horse yet :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1711153276,
+      "username": "@BRS_v",
+      "platform": "youtube",
+      "stream_id": "phil_is_a_man",
+      "message": "RICH <3 :turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1711151562,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "phil_is_a_man",
+      "message": "DSP: I\u2019m not gonna play stellar blade because I\u2019m above that sexualized nonsense, it wont save the business and not because of my girlfriend kat",
+      "commands": [
+        "dsp"
       ]
     },
     {
