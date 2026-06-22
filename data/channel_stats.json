@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102353,
+  "updated_ts": 1782102359,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -626,7 +626,8 @@
     "tell_your_dad_about_this_stream",
     "testing_out_simulcasting_feat_men",
     "the_amico_family_fun_continues_part_3284",
-    "the_andrew_tate_documentary_is_bizarre"
+    "the_andrew_tate_documentary_is_bizarre",
+    "the_asmongold_ban_saga_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10628,6 +10629,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.5,
       "avg_active_chatters": 32.65
+    },
+    "the_asmongold_ban_saga_feat_birds": {
+      "stream_id": "the_asmongold_ban_saga_feat_birds",
+      "title": "The Asmongold Ban Saga (Feat. Birds)",
+      "start_ts": 1654971914,
+      "end_ts": 1654981569,
+      "duration_sec": 9655,
+      "youtube_archive_id": "BUVEJWs9ANU",
+      "source_platform": "youtube",
+      "total_donations_usd": 501.14,
+      "donation_count": 125,
+      "donations_per_min": 3.1143,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.22,
+      "avg_active_chatters": 45.09
     }
   }
 }
