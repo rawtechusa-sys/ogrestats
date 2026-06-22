@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100681,
+  "updated_ts": 1782100689,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -381,7 +381,8 @@
     "last_hour_lets_go_road_to_1000_members",
     "late_hairy_man_action",
     "late_night_man_gaming",
-    "late_night_stream_feat_a_horse"
+    "late_night_stream_feat_a_horse",
+    "late_night_stream_for_no_reason"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6463,6 +6464,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.26,
       "avg_active_chatters": 33.27
+    },
+    "late_night_stream_for_no_reason": {
+      "stream_id": "late_night_stream_for_no_reason",
+      "title": "Late Night Stream For No Reason...",
+      "start_ts": 1702442921,
+      "end_ts": 1702450756,
+      "duration_sec": 7835,
+      "youtube_archive_id": "cihMP0jkO30",
+      "source_platform": "youtube",
+      "total_donations_usd": 166.65,
+      "donation_count": 50,
+      "donations_per_min": 1.2762,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 23.32,
+      "avg_active_chatters": 50.04
     }
   }
 }
