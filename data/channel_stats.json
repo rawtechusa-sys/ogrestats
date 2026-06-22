@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101768,
+  "updated_ts": 1782101772,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -531,7 +531,8 @@
     "playing_fear_till_1am_ish",
     "playing_half_life_2_feat_birds",
     "playing_hogwarts_legacy",
-    "playing_last_of_us_part_i_remake"
+    "playing_last_of_us_part_i_remake",
+    "playing_modern_warfare_2_on_a_handheld"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9013,6 +9014,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.65,
       "avg_active_chatters": 26.19
+    },
+    "playing_modern_warfare_2_on_a_handheld": {
+      "stream_id": "playing_modern_warfare_2_on_a_handheld",
+      "title": "Playing Modern Warfare 2 On A Handheld",
+      "start_ts": 1664167873,
+      "end_ts": 1664169128,
+      "duration_sec": 1255,
+      "youtube_archive_id": "F7XeMOAXkiw",
+      "source_platform": "youtube",
+      "total_donations_usd": 3.99,
+      "donation_count": 2,
+      "donations_per_min": 0.1908,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.14,
+      "avg_active_chatters": 18.38
     }
   }
 }
