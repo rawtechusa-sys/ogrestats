@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100398,
+  "updated_ts": 1782100406,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -346,7 +346,8 @@
     "is_the_ps5_revision_that_bad_feat_joker_productions",
     "its_a_question",
     "its_all_about_casey",
-    "its_all_about_keemstar_and_birds"
+    "its_all_about_keemstar_and_birds",
+    "its_all_about_the_tipples"
   ],
   "commands": {
     "stan": 27,
@@ -372,7 +373,7 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 21,
+    "rich": 22,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -382,10 +383,10 @@
     "face": 324,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 236,
+    "joy": 237,
     "gameboy": 1,
     "chick": 2,
-    "carlos": 29,
+    "carlos": 31,
     "away": 6,
     "idea": 4,
     "fear": 3,
@@ -422,7 +423,7 @@
     "up": 35,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 9,
+    "facepalming": 10,
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
@@ -458,7 +459,7 @@
     "reviewtrumpusa": 2,
     "reviewseinfeldusa": 2,
     "things": 2,
-    "down": 2,
+    "down": 3,
     "tomorrow": 16,
     "horse": 8,
     "bug": 1,
@@ -481,7 +482,7 @@
     "lindell": 1,
     "movie": 2,
     "hour": 1,
-    "nose": 2,
+    "nose": 3,
     "kelly": 1,
     "follows": 1,
     "goblin": 1,
@@ -516,7 +517,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 11,
+    "droplets": 12,
     "tomato": 3,
     "hearts": 8,
     "million": 1,
@@ -644,7 +645,7 @@
     "arrow": 2,
     "owl": 1,
     "hell": 1,
-    "pig": 1,
+    "pig": 2,
     "tip": 2,
     "dies": 1,
     "stone": 1,
@@ -737,7 +738,7 @@
     "thoughts": 1,
     "rainbow": 1,
     "sekiro": 1,
-    "banana": 1,
+    "banana": 3,
     "pitt": 1,
     "beel": 1,
     "love": 1,
@@ -773,7 +774,11 @@
     "way": 1,
     "judge": 1,
     "system": 1,
-    "mark": 1
+    "mark": 1,
+    "lie": 1,
+    "ferengi": 1,
+    "bath": 1,
+    "fart": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2500,6 +2505,11 @@
       "title": "It's All About Keemstar (And Birds)",
       "start_ts": 1641346931,
       "youtube_archive_id": "4b80dTR7law"
+    },
+    "its_all_about_the_tipples": {
+      "title": "It's All About The Tipples",
+      "start_ts": 1739155615,
+      "youtube_archive_id": "HalUqrF-Mlg"
     }
   },
   "messages": [
@@ -4464,6 +4474,120 @@
       "message": ":pile_of_poo::mushroom::mountain::sunset:",
       "commands": [
         "sunset"
+      ]
+    },
+    {
+      "ts": 1739165642,
+      "username": "@leebee816",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "This is why Becky is a:pig::pig::pig::pig::pig::pig::pig::pig::pig::pig:",
+      "commands": [
+        "pig"
+      ]
+    },
+    {
+      "ts": 1739165442,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "listen, we all keeps jobs. lets go :Intro Fart:",
+      "commands": [
+        "fart"
+      ]
+    },
+    {
+      "ts": 1739161963,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "I upped my rate to $150. He was \u201cloaded\u201d :sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1739161868,
+      "username": "@trollmctrollington3693",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "So i got a :_Carlos: gave it a :banana: and a :pig2: and ended up with :_Cucumber::breast_feeding::chicken::pile_of_poo::clapping_hands::right_facing_fist::person_taking_bath:",
+      "commands": [
+        "carlos",
+        "banana",
+        "bath"
+      ]
+    },
+    {
+      "ts": 1739160920,
+      "username": "@trollmctrollington3693",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": ":pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig::pig2::pig2::pig2::pig2::pig2::pig2::pig2::pig2::pig2::pig2::pig_nose:",
+      "commands": [
+        "nose"
+      ]
+    },
+    {
+      "ts": 1739160623,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "It\u2019s amazing how much time off she gets :man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1739159060,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "It's a good day for men and birds. Birds and men. Natsu just came and they poured his jizz all over Nick Serrani. Cocks out for cocks :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1739158399,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "Rich: Speaking of Mini PCs, Zac Builds on YouTube uploaded a video building an impressive mini Home NAS Server \u2014 definitely worth watching on Stream.",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1739158075,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "Girlfriend just said something and I fail to see the lie: For Star Trek fans out there \u2014 DSP is basically a Ferengi: always grifting and begging. :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "lie",
+        "ferengi",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1739157446,
+      "username": "@ShanesWorld25",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "Hey Rich. UM790 Pro Mini PC.Your option? :thumbs_up::thumbs_down:",
+      "commands": [
+        "down"
+      ]
+    },
+    {
+      "ts": 1739156853,
+      "username": "@horseween666",
+      "platform": "youtube",
+      "stream_id": "its_all_about_the_tipples",
+      "message": "Bounce on my Horse Banana :banana:",
+      "commands": [
+        "banana"
       ]
     },
     {
