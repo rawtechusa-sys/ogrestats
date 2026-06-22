@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101746,
+  "updated_ts": 1782101751,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -527,7 +527,8 @@
     "playing_castlevania_with_a_fat_old_man",
     "playing_doom_eternal_on_the_rog_ally",
     "playing_elden_ring_with_my_new_magical_nipple_shield",
-    "playing_fall_guys_in_a_few_minutes"
+    "playing_fall_guys_in_a_few_minutes",
+    "playing_fear_till_1am_ish"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8945,6 +8946,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.39,
       "avg_active_chatters": 26.45
+    },
+    "playing_fear_till_1am_ish": {
+      "stream_id": "playing_fear_till_1am_ish",
+      "title": "Playing F.E.A.R. Till 1AM (ish)",
+      "start_ts": 1688609218,
+      "end_ts": 1688619553,
+      "duration_sec": 10335,
+      "youtube_archive_id": "JR4PUpgJ9EM",
+      "source_platform": "youtube",
+      "total_donations_usd": 19.96,
+      "donation_count": 9,
+      "donations_per_min": 0.1159,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 5.56,
+      "avg_active_chatters": 12.08
     }
   }
 }
