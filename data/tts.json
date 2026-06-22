@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096770,
+  "updated_ts": 1782096834,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -104,7 +104,8 @@
     "a_streaming_man",
     "a_surprise_stream",
     "a_technical_test_man_stream",
-    "a_thanksgiving_manbird_stream"
+    "a_thanksgiving_manbird_stream",
+    "a_thanksgving_2_man_stream_feat_birds_and_men"
   ],
   "commands": {
     "stan": 27,
@@ -135,12 +136,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 4,
-    "eyes": 26,
+    "eyes": 27,
     "africa": 1,
-    "face": 87,
+    "face": 90,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 65,
+    "joy": 67,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -148,13 +149,13 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 9,
+    "cucumber": 10,
     "biceps": 3,
     "tongue": 3,
     "heart": 36,
     "shorts": 1,
     "laughing": 38,
-    "news": 6,
+    "news": 7,
     "chicken": 13,
     "cake": 1,
     "d": 1,
@@ -198,7 +199,7 @@
     "ghost": 1,
     "bk": 1,
     "gift": 1,
-    "bird": 5,
+    "bird": 6,
     "richsmile": 1,
     "dsp": 3,
     "story": 1,
@@ -298,7 +299,8 @@
     "says": 1,
     "wave": 1,
     "mugs": 1,
-    "ties": 1
+    "ties": 1,
+    "this": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -815,6 +817,11 @@
       "title": "A Thanksgiving Man/Bird Stream",
       "start_ts": 1637893195,
       "youtube_archive_id": "A5LGvIbOWqU"
+    },
+    "a_thanksgving_2_man_stream_feat_birds_and_men": {
+      "title": "A Thanksgving 2-Man Stream (Feat. Birds And Men)",
+      "start_ts": 1700702454,
+      "youtube_archive_id": "z9VVnrFp3ao"
     }
   },
   "messages": [
@@ -3562,6 +3569,106 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1700722221,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "As a huge MJ fan that\u2019s crazy he did that :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700710690,
+      "username": "@PutoPlatano",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "Heard a conspiracy that Des is actually Pearl\u2019s cousin sent to Boogie to practice performing wifely duties for a peak alpha male :woozy_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1700709753,
+      "username": "@GravityTheGhost",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "have you heard about that cbat song reddit story :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1700706497,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "I bet people wonder how I\u2019ve been watching these streams for about two or more years without a single drink or drug. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700705349,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "Have Phil as a go-go dancer for this guy! :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1700704811,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "Grammy nomination for this good Canadian kid? :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1700704191,
+      "username": "@SpaceDandy-rz8rq",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "I'll give you even worse than this: look up D4nny \"Goodbye\"",
+      "commands": [
+        "this"
+      ]
+    },
+    {
+      "ts": 1700703675,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "ReviewMixalotUSA\u2019s cucumber: Use me, Use me cause you ain\u2019t that average birdie.",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1700703315,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "Breaking News: I\u2019m divorced",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1700702927,
+      "username": "@jasper_the_cat_dood",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "message": "I need Phil's hot man gravy for my Bird :bird:",
+      "commands": [
+        "bird"
       ]
     },
     {
