@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099009,
+  "updated_ts": 1782099017,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -183,7 +183,8 @@
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
     "chatting_with_intro_guy",
     "chicken_suit_ep_9_discussing_elden_ring",
-    "chris_watts_in_4k"
+    "chris_watts_in_4k",
+    "christmas_night_shoulders"
   ],
   "commands": {
     "stan": 27,
@@ -256,7 +257,7 @@
     "peach": 3,
     "fire": 11,
     "kendal": 1,
-    "up": 13,
+    "up": 14,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -278,7 +279,7 @@
     "bk": 1,
     "gift": 2,
     "bird": 7,
-    "richsmile": 2,
+    "richsmile": 3,
     "dsp": 9,
     "story": 1,
     "tree": 3,
@@ -458,7 +459,9 @@
     "gonjiam": 1,
     "spaghetti": 1,
     "pizza": 1,
-    "out": 1
+    "out": 1,
+    "music": 1,
+    "ask": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1370,6 +1373,11 @@
       "title": "Chris Watts In 4K",
       "start_ts": 1639796551,
       "youtube_archive_id": "fSNpaaK9FMk"
+    },
+    "christmas_night_shoulders": {
+      "title": "Christmas Night Shoulders",
+      "start_ts": 1672019652,
+      "youtube_archive_id": "tM8bwtlYmH0"
     }
   },
   "messages": [
@@ -7883,6 +7891,46 @@
       "message": "Rumor is amico promised a certain yter a full time job if things panned out and they obviously shilled. Everyone on the subreddit thinking its DJC. :thinking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1672029190,
+      "username": "@knightwolf2911",
+      "platform": "youtube",
+      "stream_id": "christmas_night_shoulders",
+      "message": ":_RichSmile::_RichSmile:",
+      "commands": [
+        "richsmile"
+      ]
+    },
+    {
+      "ts": 1672025136,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "christmas_night_shoulders",
+      "message": "My Christmas dinner.. Tacos, Guac, red and green:thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1672021273,
+      "username": "@SonicOmega5000",
+      "platform": "youtube",
+      "stream_id": "christmas_night_shoulders",
+      "message": "Happy Holidays, Rich. Wanted to ask: Assuming another new Smash were to do be made, but without Sakurai - he needs to stay retired from Smash, what changes would you hypothetically like to see?",
+      "commands": [
+        "ask"
+      ]
+    },
+    {
+      "ts": 1672020672,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "christmas_night_shoulders",
+      "message": "Oblivion Music: Is Philip Burnell a man with an ass or an ass with a man? Is Quantum TV a feeder of breast or a breastfeeder? We\u2018ll never know.Alalala",
+      "commands": [
+        "music"
       ]
     },
     {
