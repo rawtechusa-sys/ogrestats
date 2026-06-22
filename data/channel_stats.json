@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100267,
+  "updated_ts": 1782100276,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -332,7 +332,8 @@
     "im_not_dead",
     "im_not_well_endowed",
     "im_now_a_home_owner",
-    "im_so_sorry"
+    "im_so_sorry",
+    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5630,6 +5631,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.2,
       "avg_active_chatters": 58.24
+    },
+    "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged": {
+      "stream_id": "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
+      "title": "I'm Tired, But G4TV and Intellivision Family Friendly News Has Emerged",
+      "start_ts": 1663209270,
+      "end_ts": 1663215672,
+      "duration_sec": 6402,
+      "youtube_archive_id": "aacfAwtfLig",
+      "source_platform": "youtube",
+      "total_donations_usd": 146.86,
+      "donation_count": 48,
+      "donations_per_min": 1.3764,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.09,
+      "avg_active_chatters": 38.79
     }
   }
 }
