@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099623,
+  "updated_ts": 1782099631,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -257,7 +257,8 @@
     "dsp_dkoldies_and_a_man",
     "dsp_intellivision_family_fun_and_prank_calls",
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
-    "dsp_loves_derich"
+    "dsp_loves_derich",
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted"
   ],
   "commands": {
     "stan": 27,
@@ -353,7 +354,7 @@
     "gift": 3,
     "bird": 7,
     "richsmile": 5,
-    "dsp": 11,
+    "dsp": 12,
     "story": 1,
     "tree": 3,
     "skull": 6,
@@ -596,7 +597,8 @@
     "devs": 1,
     "unity": 2,
     "conspiracy": 1,
-    "camera": 1
+    "camera": 1,
+    "demonica": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1878,6 +1880,11 @@
       "title": "DSP Loves Derich",
       "start_ts": 1701132303,
       "youtube_archive_id": "Xnn-XX8e_hQ"
+    },
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted": {
+      "title": "DSP Treats Everyone Terrible (KingCobraJFS Evicted)",
+      "start_ts": 1713574924,
+      "youtube_archive_id": "G5Br1qlBmrk"
     }
   },
   "messages": [
@@ -3892,6 +3899,26 @@
       "message": "Picked up a Stream Deck MK.2. I put some sounds on it and now feel like RTU. I just play the sounds to myself though. :grinning_face_with_sweat:",
       "commands": [
         "sweat"
+      ]
+    },
+    {
+      "ts": 1713580457,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
+      "message": "DSP: my business is failing because of\u2026 the vtuber community",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1713579199,
+      "username": "@JackOfFlames",
+      "platform": "youtube",
+      "stream_id": "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
+      "message": "Sending a message for Seymour Demonica: Your Tipster image is bleeding into Jordan Peterson. Big Birds!",
+      "commands": [
+        "demonica"
       ]
     },
     {
