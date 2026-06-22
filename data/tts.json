@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099732,
+  "updated_ts": 1782099740,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -270,7 +270,8 @@
     "dspgamings_may_1st_burst_anniversary_show",
     "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
     "dude_wtf_is_even_going_on",
-    "early_sunday_man_a_thon"
+    "early_sunday_man_a_thon",
+    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness"
   ],
   "commands": {
     "stan": 27,
@@ -303,10 +304,10 @@
     "turkey": 6,
     "eyes": 68,
     "africa": 1,
-    "face": 245,
+    "face": 247,
     "petersonxhhanson": 1,
     "poo": 15,
-    "joy": 180,
+    "joy": 181,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -343,7 +344,7 @@
     "peach": 5,
     "fire": 17,
     "kendal": 1,
-    "up": 23,
+    "up": 24,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
@@ -353,7 +354,7 @@
     "hands": 18,
     "horns": 6,
     "crab": 2,
-    "superhero": 16,
+    "superhero": 17,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -366,7 +367,7 @@
     "gift": 3,
     "bird": 7,
     "richsmile": 5,
-    "dsp": 14,
+    "dsp": 15,
     "story": 1,
     "tree": 3,
     "skull": 6,
@@ -1970,6 +1971,11 @@
       "title": "Early Sunday Man-A-Thon",
       "start_ts": 1678037500,
       "youtube_archive_id": "-xKrKwfu2S0"
+    },
+    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness": {
+      "title": "Eating Crab As A  FInal Meal And Reacting To Low Tier God's Crispiness",
+      "start_ts": 1690850749,
+      "youtube_archive_id": "YKnvETRemAc"
     }
   },
   "messages": [
@@ -7159,6 +7165,57 @@
       "message": "Coco: I\u2019m gonna bingbong your enus motherlover.",
       "commands": [
         "coco"
+      ]
+    },
+    {
+      "ts": 1690859395,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+      "message": "Just know :index_pointing_up: Hero in :superhero: also Tekken 8 is LIT",
+      "commands": [
+        "up",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1690857311,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+      "message": "Elon Musk wasn\u2019t lying when he said he was autistic. He clearly doesn\u2019t see the problem with naming a brand X. Also really? \u201cBlaze the glory\u201d? :persevering_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1690855132,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+      "message": "I think you\u2019ll regret playing Scarlet or Violet. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1690852880,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+      "message": "Imagine Phil trying to decypher a riddle! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1690852284,
+      "username": "@brahman_noodles",
+      "platform": "youtube",
+      "stream_id": "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+      "message": "DSP: \u201cListen to music? When would I have time to listen to music? I stream 6 days a week and then on my day off I run errands. Fair enough?",
+      "commands": [
+        "dsp"
       ]
     },
     {
