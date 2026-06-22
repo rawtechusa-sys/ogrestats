@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094734,
+  "updated_ts": 1782094787,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -69,7 +69,8 @@
     "a_man_is_streaming_with_birds_till_130_am",
     "a_man_marathon",
     "a_man_marathon_feat_birds",
-    "a_man_stream_then_some_metroid_dread"
+    "a_man_stream_then_some_metroid_dread",
+    "a_man_streams_like_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1159,6 +1160,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.6,
       "avg_active_chatters": 40.77
+    },
+    "a_man_streams_like_a_man": {
+      "stream_id": "a_man_streams_like_a_man",
+      "title": "A Man Streams Like A MAN",
+      "start_ts": 1630716547,
+      "end_ts": 1630719222,
+      "duration_sec": 2675,
+      "youtube_archive_id": "0u68DYBHt98",
+      "source_platform": "youtube",
+      "total_donations_usd": 190.93,
+      "donation_count": 36,
+      "donations_per_min": 4.2825,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.64,
+      "avg_active_chatters": 29.67
     }
   }
 }
