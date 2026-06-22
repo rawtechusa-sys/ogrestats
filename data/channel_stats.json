@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102676,
+  "updated_ts": 1782102682,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -684,7 +684,8 @@
     "the_thirst_of_may_1st_slopes_tommy_tallarico_video",
     "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2",
     "the_tickling_continues",
-    "the_tommy_tallarico_intellivision_amico_files"
+    "the_tommy_tallarico_intellivision_amico_files",
+    "thekarening_might_be_joining_me"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11614,6 +11615,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.11,
       "avg_active_chatters": 28.19
+    },
+    "thekarening_might_be_joining_me": {
+      "stream_id": "thekarening_might_be_joining_me",
+      "title": "TheKarening (MIGHT) Be Joining Me",
+      "start_ts": 1657412453,
+      "end_ts": 1657417519,
+      "duration_sec": 5066,
+      "youtube_archive_id": "gPUdHlFvrFQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 196.56,
+      "donation_count": 63,
+      "donations_per_min": 2.328,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.84,
+      "avg_active_chatters": 64.35
     }
   }
 }
