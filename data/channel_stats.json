@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099531,
+  "updated_ts": 1782099540,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -247,7 +247,8 @@
     "darrell_brooks_is_a_psychopath_feat_angry_birds",
     "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
     "discussing_dspgamings_derich",
-    "dkoldies_is_at_it_again_part_347"
+    "dkoldies_is_at_it_again_part_347",
+    "dkoldies_strikes_again"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4185,6 +4186,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.93,
       "avg_active_chatters": 28.88
+    },
+    "dkoldies_strikes_again": {
+      "stream_id": "dkoldies_strikes_again",
+      "title": "DKOldies Strikes Again",
+      "start_ts": 1681256300,
+      "end_ts": 1681272090,
+      "duration_sec": 15790,
+      "youtube_archive_id": "hWS7kgvWPWo",
+      "source_platform": "youtube",
+      "total_donations_usd": 816.67,
+      "donation_count": 83,
+      "donations_per_min": 3.1032,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.47,
+      "avg_active_chatters": 24.13
     }
   }
 }
