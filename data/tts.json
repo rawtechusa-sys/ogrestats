@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094679,
+  "updated_ts": 1782094733,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -68,7 +68,8 @@
     "a_man_is_streaming_feat_birds",
     "a_man_is_streaming_with_birds_till_130_am",
     "a_man_marathon",
-    "a_man_marathon_feat_birds"
+    "a_man_marathon_feat_birds",
+    "a_man_stream_then_some_metroid_dread"
   ],
   "commands": {
     "stan": 27,
@@ -99,12 +100,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 15,
+    "eyes": 16,
     "africa": 1,
-    "face": 49,
+    "face": 50,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 43,
+    "joy": 44,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -112,12 +113,12 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 5,
+    "cucumber": 6,
     "biceps": 3,
     "tongue": 2,
-    "heart": 24,
+    "heart": 25,
     "shorts": 1,
-    "laughing": 22,
+    "laughing": 23,
     "news": 5,
     "chicken": 10,
     "cake": 1,
@@ -220,7 +221,11 @@
     "head": 1,
     "like": 1,
     "memory": 1,
-    "fight": 1
+    "fight": 1,
+    "leaf": 1,
+    "random": 1,
+    "moai": 1,
+    "meeting": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -557,6 +562,11 @@
       "title": "A Man Marathon (Feat. Birds)",
       "start_ts": 1678482095,
       "youtube_archive_id": "GuqzBLN_HLY"
+    },
+    "a_man_stream_then_some_metroid_dread": {
+      "title": "A Man Stream Then Some Metroid Dread",
+      "start_ts": 1634000255,
+      "youtube_archive_id": "9QaeEngrJpM"
     }
   },
   "messages": [
@@ -5446,6 +5456,106 @@
       "message": "Steve has those pumpkin :jack_o_lantern: :jack_o_lantern: bottom jeans on",
       "commands": [
         "lantern"
+      ]
+    },
+    {
+      "ts": 1634008873,
+      "username": "@stetso9240",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Hey rich, I\u2019m in the middle of a really stressful move but thank you for doing what you do and bringing some comedy and joy during this time :black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1634008688,
+      "username": "@blakehendrix7791",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Can I get a Grandpa\u2019s excited first? Please? :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1634008502,
+      "username": "@blakehendrix7791",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Imagine someone in a foreign country watching this and thinking all Americans are like this. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1634008077,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "At a Pedo Anonymous Meeting: Can we hire this guy?",
+      "commands": [
+        "meeting"
+      ]
+    },
+    {
+      "ts": 1634007631,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Wish Gordon Ramsey Reacted to this Rich. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1634006357,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "I bet you watch a lot of P\u00d6RN with that BEN Q sponsored monitor! :cucumber::cucumber::cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1634006280,
+      "username": "@ivanbraginski54",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": ":moai:",
+      "commands": [
+        "moai"
+      ]
+    },
+    {
+      "ts": 1634005169,
+      "username": "@giannifiore7231",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Random: What kind of phone case do you use Rich?",
+      "commands": [
+        "random"
+      ]
+    },
+    {
+      "ts": 1634004775,
+      "username": "@kjab_guitar",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Happy Thanksgiving :maple_leaf:",
+      "commands": [
+        "leaf"
+      ]
+    },
+    {
+      "ts": 1634001135,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_man_stream_then_some_metroid_dread",
+      "message": "Earthworm Jim 4 is a thing & Its Amico Exclusive :angry_face:",
+      "commands": [
+        "face"
       ]
     },
     {
