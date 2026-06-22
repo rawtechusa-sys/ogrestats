@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101356,
+  "updated_ts": 1782101363,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -472,7 +472,8 @@
     "more_man_more_birds",
     "more_man_more_karens",
     "more_of_the_quantum_tv_interview",
-    "more_of_the_quantum_tv_interview_chris_the_narc"
+    "more_of_the_quantum_tv_interview_chris_the_narc",
+    "more_phil_more_alpha_males_more_birds"
   ],
   "commands": {
     "stan": 27,
@@ -505,7 +506,7 @@
     "turkey": 9,
     "eyes": 110,
     "africa": 1,
-    "face": 440,
+    "face": 441,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 287,
@@ -528,7 +529,7 @@
     "d": 4,
     "halo": 4,
     "hand": 31,
-    "popper": 8,
+    "popper": 9,
     "straw": 1,
     "glasses": 2,
     "ball": 2,
@@ -986,7 +987,8 @@
     "battle": 1,
     "yoga": 1,
     "aka": 1,
-    "westside": 1
+    "westside": 1,
+    "finisher": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3343,6 +3345,11 @@
       "title": "More Of The Quantum TV Interview (Chris The Narc)",
       "start_ts": 1656642996,
       "youtube_archive_id": "XpnhB5F54Lo"
+    },
+    "more_phil_more_alpha_males_more_birds": {
+      "title": "More Phil, More Alpha Males, More Birds",
+      "start_ts": 1665628125,
+      "youtube_archive_id": "PxzxV11-yvM"
     }
   },
   "messages": [
@@ -16266,6 +16273,36 @@
       "message": "Just wanted to say, I feel the pain y\u2019all felt with saints row. GOTHAM KNIGHTS is :pile_of_poo:",
       "commands": [
         "poo"
+      ]
+    },
+    {
+      "ts": 1665633561,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "more_phil_more_alpha_males_more_birds",
+      "message": "Phil's finisher: gets 100 likes, blows bubbles, 100 likes go away, phil shoves the bubbles in the opponent's ass lmao",
+      "commands": [
+        "finisher"
+      ]
+    },
+    {
+      "ts": 1665631734,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "more_phil_more_alpha_males_more_birds",
+      "message": "This is Ralph from $talkertechusa. So Richie doesn't wanna meet for coffee? This IS GONNA HAPPEN!,..let's get into it! :winking_face: *Try to relax your @nus\"",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1665628616,
+      "username": "@toyotacorolla9416",
+      "platform": "youtube",
+      "stream_id": "more_phil_more_alpha_males_more_birds",
+      "message": "Let\u2019s celebrate Alex Jones being over 1 billion in debt. Can\u2019t wait to see him do infowars on a flip phone in a box under the bridge :party_popper:",
+      "commands": [
+        "popper"
       ]
     },
     {
