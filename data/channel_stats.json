@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099820,
+  "updated_ts": 1782099828,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -281,7 +281,8 @@
     "everyone_on_the_internet_loves_me",
     "exposing_the_anti_woke_frauds",
     "father_is_sick_jaysus_saves",
-    "final_chicken_suit_stream_featuring_birds"
+    "final_chicken_suit_stream_featuring_birds",
+    "friday_night_internet_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4763,6 +4764,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.34,
       "avg_active_chatters": 33.26
+    },
+    "friday_night_internet_man": {
+      "stream_id": "friday_night_internet_man",
+      "title": "Friday Night internet Man",
+      "start_ts": 1631923859,
+      "end_ts": 1631931125,
+      "duration_sec": 7266,
+      "youtube_archive_id": "58ia75XRkR8",
+      "source_platform": "youtube",
+      "total_donations_usd": 535.79,
+      "donation_count": 89,
+      "donations_per_min": 4.4244,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.96,
+      "avg_active_chatters": 30.8
     }
   }
 }
