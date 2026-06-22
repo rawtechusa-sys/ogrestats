@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098593,
+  "updated_ts": 1782098600,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -131,7 +131,8 @@
     "an_important_update",
     "an_unofficial_man_return_feat_large_men",
     "and_the_nintendo_switch_oled_winners_are",
-    "andrew_taint_is_a_man"
+    "andrew_taint_is_a_man",
+    "andrew_tate_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -166,7 +167,7 @@
     "africa": 1,
     "face": 110,
     "petersonxhhanson": 1,
-    "poo": 5,
+    "poo": 6,
     "joy": 86,
     "gameboy": 1,
     "chick": 1,
@@ -195,7 +196,7 @@
     "leg": 1,
     "severance": 1,
     "gta": 3,
-    "me": 2,
+    "me": 3,
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
@@ -204,7 +205,7 @@
     "peach": 3,
     "fire": 8,
     "kendal": 1,
-    "up": 11,
+    "up": 12,
     "note": 5,
     "eyebrow": 1,
     "facepalming": 4,
@@ -356,7 +357,8 @@
     "cartoon": 1,
     "msg": 1,
     "yesterday": 1,
-    "wonka": 1
+    "wonka": 1,
+    "simulator": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1008,6 +1010,11 @@
       "title": "Andrew Taint Is A Man",
       "start_ts": 1671844925,
       "youtube_archive_id": "zcFIdKI4Gms"
+    },
+    "andrew_tate_is_a_man": {
+      "title": "Andrew Tate Is A Man",
+      "start_ts": 1672610066,
+      "youtube_archive_id": "_glPcoNgqn0"
     }
   },
   "messages": [
@@ -6061,6 +6068,46 @@
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1672622965,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_is_a_man",
+      "message": "Hey Rich, pretty surprising that \"Gamefly\" is outliving \"Gamestop\" . Hope you're new year is going well! :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1672621604,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_is_a_man",
+      "message": "That reminds me: I got a Simon Belmont amiibo recently for Smash Ultimate and named it Burnell. I trained it today to Level 50.",
+      "commands": [
+        "me"
+      ]
+    },
+    {
+      "ts": 1672620023,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_is_a_man",
+      "message": "Actual steam review for shower with your dad simulator: \u201cdo not keep your daddy waiting\u201d. Wow! Ban amber beards turd",
+      "commands": [
+        "simulator"
+      ]
+    },
+    {
+      "ts": 1672619788,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "andrew_tate_is_a_man",
+      "message": "Just wanted you too know that I\u2019m taking my first crap :pile_of_poo: of the year.",
+      "commands": [
+        "poo"
       ]
     },
     {
