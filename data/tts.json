@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093545,
+  "updated_ts": 1782093589,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -45,7 +45,8 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
     "a_jcs_and_dsp_stream",
     "a_jcs_stream",
-    "a_jodi_arias_holiday_special"
+    "a_jodi_arias_holiday_special",
+    "a_large_man_ama"
   ],
   "commands": {
     "stan": 27,
@@ -78,10 +79,10 @@
     "turkey": 3,
     "eyes": 12,
     "africa": 1,
-    "face": 35,
+    "face": 36,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 25,
+    "joy": 27,
     "gameboy": 1,
     "chick": 1,
     "carlos": 9,
@@ -94,7 +95,7 @@
     "tongue": 2,
     "heart": 18,
     "shorts": 1,
-    "laughing": 14,
+    "laughing": 16,
     "news": 4,
     "chicken": 8,
     "cake": 1,
@@ -134,7 +135,7 @@
     "is": 1,
     "spose": 1,
     "sunglasses": 1,
-    "kiss": 4,
+    "kiss": 5,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -170,15 +171,18 @@
     "message": 1,
     "lied": 1,
     "wilkins": 1,
-    "vomiting": 2,
+    "vomiting": 3,
     "moment": 1,
     "suit": 1,
-    "mouth": 1,
+    "mouth": 2,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
     "lindell": 1,
-    "movie": 1
+    "movie": 1,
+    "hour": 1,
+    "nose": 1,
+    "kelly": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -400,6 +404,11 @@
       "title": "A Jodi Arias Holiday Special",
       "start_ts": 1640135169,
       "youtube_archive_id": "QzGxuST3mhA"
+    },
+    "a_large_man_ama": {
+      "title": "A Large Man AMA",
+      "start_ts": 1632958420,
+      "youtube_archive_id": "YStZIEozr3s"
     }
   },
   "messages": [
@@ -4476,6 +4485,116 @@
       "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1632970628,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "Rich did you see the vid where 3 girls went into store and were asked to put on masks. so they took of their underwear and put them on their facers.:face_vomiting:",
+      "commands": [
+        "vomiting"
+      ]
+    },
+    {
+      "ts": 1632968078,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "R Kelly: IM FIGHTIN FOR MY FUCKIN LIFE",
+      "commands": [
+        "kelly"
+      ]
+    },
+    {
+      "ts": 1632966888,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "Was that Joan from Filenes in the previous video? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632965678,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "I can't shit on their floor? Literally 1984 :face_with_steam_from_nose::face_with_steam_from_nose::face_with_steam_from_nose:",
+      "commands": [
+        "nose"
+      ]
+    },
+    {
+      "ts": 1632964499,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "Im black and that was just too ratchet for me :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632964369,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "And employers are crying they can\u2019t find workers :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632963244,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "They got masks where it looks like a mask is pulled under their chin. All to tell someone who makes 10 an hour: \u201cthis is a mask dipshit. See?\u201d",
+      "commands": [
+        "hour"
+      ]
+    },
+    {
+      "ts": 1632963063,
+      "username": "@Avenue221",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "Pearls clutched so bravely :face_without_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1632962905,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "if a karen walks in with her camera on then she's plaining for a fight. Just rediculouse:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing: two chickens and a fart",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1632959765,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "then show them already! :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1632959225,
+      "username": "@Various_Melons",
+      "platform": "youtube",
+      "stream_id": "a_large_man_ama",
+      "message": "That DSP chicken may really have been that bad. Look what a terrible Burger King burger did to Robert Downy Jr. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
