@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092908,
+  "updated_ts": 1782092944,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -29,7 +29,8 @@
     "a_catfish_is_streaming",
     "a_christian_heterosexual_and_tickled_livestream",
     "a_christian_straight_man_stream",
-    "a_colorful_man"
+    "a_colorful_man",
+    "a_crispy_peanut_butter_complexion_livestream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -479,6 +480,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.73,
       "avg_active_chatters": 41.77
+    },
+    "a_crispy_peanut_butter_complexion_livestream": {
+      "stream_id": "a_crispy_peanut_butter_complexion_livestream",
+      "title": "A Crispy, Peanut Butter Complexion Livestream",
+      "start_ts": 1703450926,
+      "end_ts": 1703487637,
+      "duration_sec": 36711,
+      "youtube_archive_id": "hj7u-JqegQM",
+      "source_platform": "youtube",
+      "total_donations_usd": 1055.5,
+      "donation_count": 255,
+      "donations_per_min": 1.7251,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.28,
+      "avg_active_chatters": 38.5
     }
   }
 }
