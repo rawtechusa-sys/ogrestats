@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101149,
+  "updated_ts": 1782101157,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -444,7 +444,8 @@
     "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
     "melonie_mac_goes_full_mask_off_road_to_1000_members",
     "melonie_mac_responded",
-    "men"
+    "men",
+    "men_and_food_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -505,7 +506,7 @@
     "glasses": 2,
     "ball": 2,
     "lantern": 2,
-    "leg": 1,
+    "leg": 2,
     "severance": 2,
     "gta": 5,
     "me": 6,
@@ -616,7 +617,7 @@
     "rocket": 1,
     "droplets": 15,
     "tomato": 3,
-    "hearts": 10,
+    "hearts": 11,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -645,7 +646,7 @@
     "points": 9,
     "wastebasket": 1,
     "left": 3,
-    "flag": 1,
+    "flag": 2,
     "restaraunt": 1,
     "highter": 1,
     "glove": 3,
@@ -938,7 +939,8 @@
     "racing": 1,
     "burning": 1,
     "jeans": 1,
-    "engine": 1
+    "engine": 1,
+    "pineapple": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3155,6 +3157,11 @@
       "title": "Men",
       "start_ts": 1704830454,
       "youtube_archive_id": "xvtRrSNQ3FQ"
+    },
+    "men_and_food_road_to_1000_members": {
+      "title": "Men And Food (Road To 1000 Members)",
+      "start_ts": 1685661099,
+      "youtube_archive_id": "E-ZVBLJd8OM"
     }
   },
   "messages": [
@@ -11872,6 +11879,46 @@
       "message": ":hot_dog::hot_dog::hot_dog::hot_dog::hot_dog: Weiner me 5 times big boi",
       "commands": [
         "dog"
+      ]
+    },
+    {
+      "ts": 1685669044,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "men_and_food_road_to_1000_members",
+      "message": "Play May 1st the Attack of the Itchy Leg :leg:",
+      "commands": [
+        "leg"
+      ]
+    },
+    {
+      "ts": 1685666904,
+      "username": "@Soms",
+      "platform": "youtube",
+      "stream_id": "men_and_food_road_to_1000_members",
+      "message": "Happy Pride, Rich and Jay :rainbow_flag::rainbow_flag::rainbow_flag::rainbow_flag:",
+      "commands": [
+        "flag"
+      ]
+    },
+    {
+      "ts": 1685665319,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "men_and_food_road_to_1000_members",
+      "message": "Jay stick this up your ass so you do not die :pineapple::pineapple:",
+      "commands": [
+        "pineapple"
+      ]
+    },
+    {
+      "ts": 1685662091,
+      "username": "@rabbott98",
+      "platform": "youtube",
+      "stream_id": "men_and_food_road_to_1000_members",
+      "message": "I love you too Jay :revolving_hearts:",
+      "commands": [
+        "hearts"
       ]
     },
     {
