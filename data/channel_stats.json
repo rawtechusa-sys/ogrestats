@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102490,
+  "updated_ts": 1782102496,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -651,7 +651,8 @@
     "the_gamerfrommars_chris_chan_documentary",
     "the_giga_chad_of_youtube_is_streaming",
     "the_humble_bean_merchant_and_chris_chan",
-    "the_intellivision_amico_family_fun_continues"
+    "the_intellivision_amico_family_fun_continues",
+    "the_jordan_peterson_man_experience_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11053,6 +11054,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.39,
       "avg_active_chatters": 33.52
+    },
+    "the_jordan_peterson_man_experience_feat_birds": {
+      "stream_id": "the_jordan_peterson_man_experience_feat_birds",
+      "title": "The Jordan Peterson Man Experience (Feat. Birds)",
+      "start_ts": 1657154559,
+      "end_ts": 1657169019,
+      "duration_sec": 14460,
+      "youtube_archive_id": "rPVKGsY3OTg",
+      "source_platform": "youtube",
+      "total_donations_usd": 471.17,
+      "donation_count": 103,
+      "donations_per_min": 1.9551,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.13,
+      "avg_active_chatters": 39.05
     }
   }
 }
