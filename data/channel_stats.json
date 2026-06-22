@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102023,
+  "updated_ts": 1782102029,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -574,7 +574,8 @@
     "russia_ukraine_war_discussion",
     "saturday_night_man_and_bird_love",
     "saturday_night_man_stream",
-    "saturday_night_with_dad_mike_lindelldave_pakman_reaction"
+    "saturday_night_with_dad_mike_lindelldave_pakman_reaction",
+    "screw_anxiety_im_streaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9744,6 +9745,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.91,
       "avg_active_chatters": 28.25
+    },
+    "screw_anxiety_im_streaming": {
+      "stream_id": "screw_anxiety_im_streaming",
+      "title": "Screw Anxiety, I'm Streaming",
+      "start_ts": 1658193293,
+      "end_ts": 1658200590,
+      "duration_sec": 7297,
+      "youtube_archive_id": "lh2nF-Ljsug",
+      "source_platform": "youtube",
+      "total_donations_usd": 296.75,
+      "donation_count": 88,
+      "donations_per_min": 2.44,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.01,
+      "avg_active_chatters": 47.75
     }
   }
 }
