@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098492,
+  "updated_ts": 1782098500,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -119,7 +119,8 @@
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
     "a_xmas_eve_bird_stream",
     "a_xmas_eve_bird_stream_pt2",
-    "after_immense_pressure_thecowarding_finally_responded"
+    "after_immense_pressure_thecowarding_finally_responded",
+    "alpha_males_only"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2009,6 +2010,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.14,
       "avg_active_chatters": 24.8
+    },
+    "alpha_males_only": {
+      "stream_id": "alpha_males_only",
+      "title": "Alpha Males Only",
+      "start_ts": 1672451027,
+      "end_ts": 1672459215,
+      "duration_sec": 8188,
+      "youtube_archive_id": "JExFg58Ga3I",
+      "source_platform": "youtube",
+      "total_donations_usd": 278.74,
+      "donation_count": 80,
+      "donations_per_min": 2.0426,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.83,
+      "avg_active_chatters": 35.64
     }
   }
 }
