@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099431,
+  "updated_ts": 1782099439,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -235,7 +235,8 @@
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
     "come_stream_with_a_man",
     "come_talk_to_a_man_feat_birds",
-    "come_talk_with_liana_k_and_i_about_video_games"
+    "come_talk_with_liana_k_and_i_about_video_games",
+    "cringing_at_the_avgn_movie"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3981,6 +3982,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.79,
       "avg_active_chatters": 31.26
+    },
+    "cringing_at_the_avgn_movie": {
+      "stream_id": "cringing_at_the_avgn_movie",
+      "title": "Cringing At The AVGN Movie",
+      "start_ts": 1702253015,
+      "end_ts": 1702281987,
+      "duration_sec": 28972,
+      "youtube_archive_id": "G8q7Y12ewSs",
+      "source_platform": "youtube",
+      "total_donations_usd": 751.08,
+      "donation_count": 146,
+      "donations_per_min": 1.5555,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.12,
+      "avg_active_chatters": 43.35
     }
   }
 }
