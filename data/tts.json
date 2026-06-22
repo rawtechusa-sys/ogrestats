@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101567,
+  "updated_ts": 1782101574,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -499,7 +499,8 @@
     "one_woman_with_two_men_live",
     "peter_popoff_is_a_man",
     "phil_boogie_men",
-    "phil_discusses_the_documentary_and_complains_about_me"
+    "phil_discusses_the_documentary_and_complains_about_me",
+    "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty"
   ],
   "commands": {
     "stan": 27,
@@ -532,7 +533,7 @@
     "turkey": 10,
     "eyes": 117,
     "africa": 1,
-    "face": 475,
+    "face": 476,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 309,
@@ -549,7 +550,7 @@
     "heart": 145,
     "shorts": 2,
     "laughing": 187,
-    "news": 21,
+    "news": 22,
     "chicken": 58,
     "cake": 7,
     "d": 4,
@@ -708,7 +709,7 @@
     "spoiler": 2,
     "mug": 4,
     "pachter": 3,
-    "eagle": 6,
+    "eagle": 7,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
     "say": 4,
@@ -3527,6 +3528,11 @@
       "title": "Phil Discusses The Documentary, And Complains About Me",
       "start_ts": 1704322812,
       "youtube_archive_id": "wNHyAvQ72EI"
+    },
+    "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty": {
+      "title": "Phil (DSP 'May 1st' Gaming), SSSniperwolf, Airsoftfatty",
+      "start_ts": 1698710367,
+      "youtube_archive_id": "w_nReWkvan8"
     }
   },
   "messages": [
@@ -9789,6 +9795,36 @@
       "message": "I had a Halloween ectoplasm over you Rich. mmmm :face_savoring_food:",
       "commands": [
         "food"
+      ]
+    },
+    {
+      "ts": 1698722680,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
+      "message": "He calls tom 21 yr old a baby but his gf is 20 :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698717914,
+      "username": "@chanpost4",
+      "platform": "youtube",
+      "stream_id": "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
+      "message": "NO SHIRT. Xanderhal did a video on how the Quartring is getting desparate. Jeremy's video title changed and thumbnail removed on YouTube, but Rumble still has them. News: Wisconsin Man has meltdown over BUTTGATE with a shocked face!",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1698711812,
+      "username": "@WhoTFisHook",
+      "platform": "youtube",
+      "stream_id": "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
+      "message": "DSP drank all of my creamy Protein BROTHER! :eagle: \ud83c\uddfa\ud83c\uddf8",
+      "commands": [
+        "eagle"
       ]
     },
     {
