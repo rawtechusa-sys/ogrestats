@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099462,
+  "updated_ts": 1782099471,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -238,7 +238,8 @@
     "cringing_at_the_avgn_movie",
     "dad_had_some_ipas_come_ask_questions",
     "dad_is_back",
-    "dad_streams_the_playstation_showcase_2021"
+    "dad_streams_the_playstation_showcase_2021",
+    "dads_40th_birthday_stream"
   ],
   "commands": {
     "stan": 27,
@@ -271,10 +272,10 @@
     "turkey": 6,
     "eyes": 62,
     "africa": 1,
-    "face": 213,
+    "face": 215,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 145,
+    "joy": 146,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -285,15 +286,15 @@
     "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
-    "heart": 68,
+    "heart": 70,
     "shorts": 1,
-    "laughing": 67,
+    "laughing": 68,
     "news": 13,
     "chicken": 32,
     "cake": 7,
     "d": 2,
     "halo": 3,
-    "hand": 18,
+    "hand": 19,
     "popper": 5,
     "straw": 1,
     "glasses": 2,
@@ -331,16 +332,16 @@
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
-    "gift": 2,
+    "gift": 3,
     "bird": 7,
     "richsmile": 5,
     "dsp": 10,
     "story": 1,
     "tree": 3,
     "skull": 5,
-    "eggplant": 2,
+    "eggplant": 3,
     "bite": 1,
-    "take": 3,
+    "take": 4,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -401,7 +402,7 @@
     "struck": 2,
     "joker": 1,
     "racehorse": 4,
-    "question": 6,
+    "question": 7,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 2,
@@ -556,7 +557,8 @@
     "victim": 1,
     "reminder": 1,
     "sbmm": 1,
-    "currently": 1
+    "currently": 1,
+    "article": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1743,6 +1745,11 @@
       "title": "Dad Streams The PlayStation Showcase 2021",
       "start_ts": 1631213310,
       "youtube_archive_id": "-5lUFwmcWyA"
+    },
+    "dads_40th_birthday_stream": {
+      "title": "Dad's 40th Birthday Stream",
+      "start_ts": 1626396637,
+      "youtube_archive_id": "JGjqnuh7SrQ"
     }
   },
   "messages": [
@@ -15424,6 +15431,126 @@
       "message": "Greetings, Horse Father:_Cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1626402097,
+      "username": "@ComicBookChat395",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "a woman got cash back at the self check at Walmart and someone stole it from her because she forgot it at the register and now she said she is going to sue Walmart LMAO she wishes :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1626401688,
+      "username": "@KadinNation",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Happy Horseday Rich :red_heart: thank you for being my favorite Youtuber ^-^",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1626401619,
+      "username": "@CollinBB",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Rich I have asked Mark Cerny to use his singular mega nip to laser target good vibes directly to your nips for your birthday. I hope you felt the vibes. Happy Birthday you s3x muffin. :red_heart: br-east",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1626400297,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Article: Facebook and advertising partners panicking because majority of iPhone users are opting out of data tracking.",
+      "commands": [
+        "article"
+      ]
+    },
+    {
+      "ts": 1626398891,
+      "username": "@jabbaricyrus",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Happy 4 Decades of living, Rich!!! :birthday_cake::bottle_with_popping_cork::eggplant:",
+      "commands": [
+        "eggplant"
+      ]
+    },
+    {
+      "ts": 1626398628,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Phil acts like you wished death upon him :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1626397552,
+      "username": "@mattmurphy2755",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Happy birthday Rich!:victory_hand::wrapped_gift:",
+      "commands": [
+        "gift"
+      ]
+    },
+    {
+      "ts": 1626397415,
+      "username": "@CAsh-of9sk",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Whats up from your boys Jake, Connor, and Sam. Jake has a question: Should he hit up his ex tonight?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1626397276,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Happy Birthday Rich. Here's to a long life. :victory_hand::victory_hand::victory_hand::victory_hand::victory_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1626397195,
+      "username": "@blendernoob64",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "Hot take: the Steam Deck button placement looks really, really uncomfortable. Who puts the face buttons directly next to the thumb sticks?",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1626397194,
+      "username": "@pcdtinfo2500",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": ":partying_face:Happy Birthday best wishes to you :partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626396773,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "dads_40th_birthday_stream",
+      "message": "happy birthday you beautiful cucumber!:party_popper::partying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
