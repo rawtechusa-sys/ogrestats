@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101172,
+  "updated_ts": 1782101180,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -447,7 +447,8 @@
     "men",
     "men_and_food_road_to_1000_members",
     "men_birds_and_samurai_cop",
-    "men_birds_and_samurai_cop_part_deux"
+    "men_birds_and_samurai_cop_part_deux",
+    "men_chatting"
   ],
   "commands": {
     "stan": 27,
@@ -619,7 +620,7 @@
     "rocket": 1,
     "droplets": 15,
     "tomato": 3,
-    "hearts": 11,
+    "hearts": 12,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -875,7 +876,7 @@
     "judge": 2,
     "system": 1,
     "mark": 1,
-    "lie": 1,
+    "lie": 2,
     "ferengi": 1,
     "bath": 1,
     "fart": 1,
@@ -943,7 +944,8 @@
     "jeans": 1,
     "engine": 1,
     "pineapple": 1,
-    "arms": 1
+    "arms": 1,
+    "source": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3175,6 +3177,11 @@
       "title": "Men, Birds And Samurai Cop (Part Deux)",
       "start_ts": 1642467206,
       "youtube_archive_id": "3zMC3jN4eR0"
+    },
+    "men_chatting": {
+      "title": "Men Chatting",
+      "start_ts": 1702340700,
+      "youtube_archive_id": "W1C-PaXDPPk"
     }
   },
   "messages": [
@@ -7887,6 +7894,36 @@
       "message": "Sry I havnt suprcht in a while, life got hard. Update tho, WashPost article should be out early next year and they want to do video now :melting_face: be well",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1702353092,
+      "username": "@chanpost4",
+      "platform": "youtube",
+      "stream_id": "men_chatting",
+      "message": "Epic Games won the lawsuit. Source: The Verge",
+      "commands": [
+        "source"
+      ]
+    },
+    {
+      "ts": 1702348813,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "men_chatting",
+      "message": "Not gonna lie: Sega shadow-dropping the announcement of remakes of Crazy Taxi, Revenge of Shinobi, Streets of Rage, Golden Axe etc is exciting too!",
+      "commands": [
+        "lie"
+      ]
+    },
+    {
+      "ts": 1702347234,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "men_chatting",
+      "message": "sent Jay the link on x see you there cutie :face_blowing_a_kiss::smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
       ]
     },
     {
