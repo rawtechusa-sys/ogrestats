@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100741,
+  "updated_ts": 1782100749,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -388,7 +388,8 @@
     "lets_chat",
     "lets_chat_plus_birds",
     "lets_discover_def_noodles_together",
-    "lets_discuss_e3_and_next_gen_consoles"
+    "lets_discuss_e3_and_next_gen_consoles",
+    "lets_discuss_my_budget_pc_build"
   ],
   "commands": {
     "stan": 27,
@@ -2789,6 +2790,11 @@
       "title": "Let's Discuss E3 and Next Gen Consoles",
       "start_ts": 1529108149,
       "youtube_archive_id": "OIJofrObuD8"
+    },
+    "lets_discuss_my_budget_pc_build": {
+      "title": "Let's Discuss My Budget PC Build...",
+      "start_ts": 1568072272,
+      "youtube_archive_id": "_XNGe0Htg5g"
     }
   },
   "messages": [
