@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782060911,
+  "updated_ts": 1782092378,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -8,7 +8,8 @@
     "so_moist_so_man_so_meaningfulso_robust",
     "we_did_it_bois_100k",
     "random_late_man_stream_for_men",
-    "so_i_was_just_fired_from_tech_talk"
+    "so_i_was_just_fired_from_tech_talk",
+    "100_certified_man_stream_feat_beautiful_birds"
   ],
   "commands": {
     "stan": 27,
@@ -34,7 +35,14 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 1
+    "rich": 1,
+    "pill": 1,
+    "device": 1,
+    "idevice": 1,
+    "turkey": 1,
+    "eyes": 1,
+    "africa": 1,
+    "face": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -71,6 +79,11 @@
       "title": "So, I Was Just Fired From Tech Talk",
       "start_ts": 1739943987,
       "youtube_archive_id": "mJluoTFfhWo"
+    },
+    "100_certified_man_stream_feat_beautiful_birds": {
+      "title": "100% Certified Man Stream (Feat. Beautiful Birds)",
+      "start_ts": 1651880087,
+      "youtube_archive_id": "DXBZhByCv4I"
     }
   },
   "messages": [
@@ -1853,6 +1866,77 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1651886975,
+      "username": "@o.c.4677",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "That's it, I'm sold on a plasma. I'm going to pick one up from Micro Center or Circuit City this weekend :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1651886853,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "congrats on mill, wa the snes tune called BIRDS :chicken::hot_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1651886314,
+      "username": "@whothehelliscarlos420",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "plswatchBob/Brad twomostfamousphysicaltherapiston:globe_showing_europe_africa:",
+      "commands": [
+        "africa"
+      ]
+    },
+    {
+      "ts": 1651886222,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": ":beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes::beaming_face_with_smiling_eyes: thank you",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1651883443,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "A little funding in case QTV kidnaps the birds. :crying_face::rooster::turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1651882490,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "QVC selling an android device: It does everything the iphone does, don't overpay. QVC selling an idevice: it's \"the apple\", buy it! Also rose gold",
+      "commands": [
+        "device",
+        "idevice"
+      ]
+    },
+    {
+      "ts": 1651881815,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "100_certified_man_stream_feat_beautiful_birds",
+      "message": "Cold is kicking my ass :pill: made my dreams crazy bird",
+      "commands": [
+        "pill"
       ]
     }
   ]
