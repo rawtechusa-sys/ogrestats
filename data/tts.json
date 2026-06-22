@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099895,
+  "updated_ts": 1782099904,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -289,7 +289,8 @@
     "furry_cringe_feat_keemstar",
     "g4tv_family_fun",
     "getting_high_on_a_saturday_a_brewing_brony_war",
-    "girlfriend_kicked_me_out_of_bed_so_im_back"
+    "girlfriend_kicked_me_out_of_bed_so_im_back",
+    "grandpa_is_playing_call_of_duty_loud_farts"
   ],
   "commands": {
     "stan": 27,
@@ -325,7 +326,7 @@
     "face": 263,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 194,
+    "joy": 197,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -344,7 +345,7 @@
     "cake": 7,
     "d": 2,
     "halo": 3,
-    "hand": 20,
+    "hand": 21,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -370,9 +371,9 @@
     "donation": 3,
     "naruto": 1,
     "hands": 19,
-    "horns": 6,
+    "horns": 7,
     "crab": 2,
-    "superhero": 18,
+    "superhero": 19,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -385,7 +386,7 @@
     "gift": 3,
     "bird": 8,
     "richsmile": 5,
-    "dsp": 16,
+    "dsp": 17,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -451,7 +452,7 @@
     "day": 1,
     "struck": 2,
     "joker": 1,
-    "racehorse": 5,
+    "racehorse": 6,
     "question": 8,
     "mushroom": 2,
     "trilogy": 1,
@@ -659,7 +660,9 @@
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
-    "said": 1
+    "said": 1,
+    "reviewimprovusa": 1,
+    "smo": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2101,6 +2104,11 @@
       "title": "Girlfriend Kicked Me Out Of Bed. So I'm Back.",
       "start_ts": 1670814696,
       "youtube_archive_id": "B0lTNeO-8k4"
+    },
+    "grandpa_is_playing_call_of_duty_loud_farts": {
+      "title": "Grandpa Is Playing Call of Duty (Loud Farts)",
+      "start_ts": 1706478949,
+      "youtube_archive_id": "je4Gm215Dx4"
     }
   },
   "messages": [
@@ -4415,6 +4423,97 @@
       "message": "What up rich, just Came here to say hi and for an introguys fart, dont judge me:face_with_peeking_eye:",
       "commands": [
         "eye"
+      ]
+    },
+    {
+      "ts": 1706495052,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "Is this Craig\u2019s next guest on Sidescrollers ? :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1706494897,
+      "username": "@hansolo989",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "Rich what do you think of country rap? Watch SMO: Kuntry Til I Die. It is funny to laugh at but then it gets stuck in your head. SMO is real good",
+      "commands": [
+        "smo"
+      ]
+    },
+    {
+      "ts": 1706485049,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "Think I\u2019m gonna take a knee (National anthemem.):face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1706484909,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "ReviewImprovUSA: If DSP had a dollar every time he told someone to shove something up their enus he would\u2026",
+      "commands": [
+        "reviewimprovusa"
+      ]
+    },
+    {
+      "ts": 1706484578,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "keem give rich a shot on the podcast:call_me_hand: could b dope",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1706483290,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "Show me your horses :racehorse::racehorse::racehorse::racehorse: I",
+      "commands": [
+        "racehorse"
+      ]
+    },
+    {
+      "ts": 1706483188,
+      "username": "@Adam201028",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "DSP: A normal chill stream for chill normal men",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1706483072,
+      "username": "@This_Drummer",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "Hear me out, make Boogie\u2019s \u201cI never did\u201d the new membird tone. :_Rich::_Carlos::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1706480325,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "grandpa_is_playing_call_of_duty_loud_farts",
+      "message": "just know hero in :man_superhero: & I'm sick af let's go :sign_of_the_horns:",
+      "commands": [
+        "superhero",
+        "horns"
       ]
     },
     {
