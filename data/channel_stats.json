@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102408,
+  "updated_ts": 1782102414,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -636,7 +636,8 @@
     "the_christmas_man",
     "the_clowns_make_it_too_easy",
     "the_completionist_and_philip_burnell_are_men",
-    "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video"
+    "the_continual_fall_of_wingsofredemption_reaction_joon_the_king_video",
+    "the_dsp_and_ltg_situation_plus_unhinged_fan_livestreams"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10798,6 +10799,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.35,
       "avg_active_chatters": 38.27
+    },
+    "the_dsp_and_ltg_situation_plus_unhinged_fan_livestreams": {
+      "stream_id": "the_dsp_and_ltg_situation_plus_unhinged_fan_livestreams",
+      "title": "The DSP And LTG Situation (Plus Unhinged Fan Livestreams)",
+      "start_ts": 1690416515,
+      "end_ts": 1690430212,
+      "duration_sec": 13697,
+      "youtube_archive_id": "_B1unaqNFv8",
+      "source_platform": "youtube",
+      "total_donations_usd": 496.38,
+      "donation_count": 110,
+      "donations_per_min": 2.1744,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.32,
+      "avg_active_chatters": 47.54
     }
   }
 }
