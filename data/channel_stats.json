@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099069,
+  "updated_ts": 1782099077,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -191,7 +191,8 @@
     "come_ask_a_man_and_a_bird_questions",
     "come_ask_a_man_and_bird_questions",
     "come_ask_a_man_anything_8_3_2021",
-    "come_ask_a_man_questions"
+    "come_ask_a_man_questions",
+    "come_ask_a_man_questions_poultry_edition"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3233,6 +3234,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.44,
       "avg_active_chatters": 31.78
+    },
+    "come_ask_a_man_questions_poultry_edition": {
+      "stream_id": "come_ask_a_man_questions_poultry_edition",
+      "title": "Come Ask A Man Questions (Poultry Edition)",
+      "start_ts": 1641600531,
+      "end_ts": 1641614405,
+      "duration_sec": 13874,
+      "youtube_archive_id": "WGSA5Eaw1Vw",
+      "source_platform": "youtube",
+      "total_donations_usd": 408.15,
+      "donation_count": 95,
+      "donations_per_min": 1.7651,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.95,
+      "avg_active_chatters": 25.21
     }
   }
 }
