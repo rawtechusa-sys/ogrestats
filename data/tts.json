@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093169,
+  "updated_ts": 1782093208,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -36,7 +36,8 @@
     "a_dspgaming_family_fun_stream",
     "a_family_friendly_christian_straight_man_stream",
     "a_family_friendly_heterosexual_stream",
-    "a_floor_thrusting_man_stream"
+    "a_floor_thrusting_man_stream",
+    "a_fun_dspgaming_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -69,7 +70,7 @@
     "turkey": 3,
     "eyes": 8,
     "africa": 1,
-    "face": 26,
+    "face": 27,
     "petersonxhhanson": 1,
     "poo": 3,
     "joy": 20,
@@ -87,7 +88,7 @@
     "shorts": 1,
     "laughing": 8,
     "news": 3,
-    "chicken": 5,
+    "chicken": 6,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -99,7 +100,7 @@
     "lantern": 2,
     "leg": 1,
     "severance": 1,
-    "gta": 1,
+    "gta": 2,
     "me": 1,
     "kill": 1,
     "enough": 1,
@@ -125,7 +126,7 @@
     "is": 1,
     "spose": 1,
     "sunglasses": 1,
-    "kiss": 1,
+    "kiss": 2,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -146,7 +147,13 @@
     "coco": 1,
     "board": 1,
     "reviewtrumpusa": 1,
-    "reviewseinfeldusa": 1
+    "reviewseinfeldusa": 1,
+    "things": 1,
+    "down": 1,
+    "tomorrow": 1,
+    "horse": 1,
+    "bug": 1,
+    "violin": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -323,6 +330,11 @@
       "title": "A Floor Thrusting Man Stream",
       "start_ts": 1691708299,
       "youtube_archive_id": "-AQcgzlkPqs"
+    },
+    "a_fun_dspgaming_man_stream": {
+      "title": "A Fun DSPGAMING Man Stream",
+      "start_ts": 1636944744,
+      "youtube_archive_id": "0DT5OOoIKgw"
     }
   },
   "messages": [
@@ -3566,6 +3578,106 @@
       "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1636952266,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Rich, we must play the worlds most smallest violin for DSP. :loudly_crying_face::violin:",
+      "commands": [
+        "violin"
+      ]
+    },
+    {
+      "ts": 1636950796,
+      "username": "@theheelygodEX",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Donating through superchat not Streamlabs just to make jokes abt Downward Spiral Phil. Again, thank you rich for being grateful and not this POS . :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1636949962,
+      "username": "@theheelygodEX",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Can I get a bunch of clucks and a Carlos kiss :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1636948604,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "This is the problem with voting for politicians without them earning your vote. Fake promises, keeping the status quo.Trump was just as embarrassing but he was funny. Let\u2019s go Brandon! Eat the bugs :bug:",
+      "commands": [
+        "bug"
+      ]
+    },
+    {
+      "ts": 1636948256,
+      "username": "@emporks526",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Rich, people trying to destroy society.. so sad :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636947731,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "games like vangarbage, battlebug 2077 and GTA: rockstar milking GTAV Edition made me appreciate indie games a lot more. Thats saying something",
+      "commands": [
+        "gta"
+      ]
+    },
+    {
+      "ts": 1636947555,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "I\u2019m the only child and i never became like deep stroke phil, i was actually disciplined :horse:",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1636946783,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Rich tomorrow: so EDP445 has started his own website and is now a multi millionaire, lets get into it",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1636946154,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "YouTube MIGHT go down with censorship + :thumbs_down: removal",
+      "commands": [
+        "down"
+      ]
+    },
+    {
+      "ts": 1636945583,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "message": "Few good things: Almost have my Car Loan paid off, my Birthday is next month and I got a date this weekend! Booyah!!",
+      "commands": [
+        "things"
       ]
     },
     {
