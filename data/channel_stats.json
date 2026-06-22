@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099323,
+  "updated_ts": 1782099331,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -222,7 +222,8 @@
     "come_discuss_the_playstation_showcase_with_your_dad",
     "come_hang_out",
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
-    "come_hang_out_for_a_bit"
+    "come_hang_out_for_a_bit",
+    "come_hang_out_with_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3760,6 +3761,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.84,
       "avg_active_chatters": 22.66
+    },
+    "come_hang_out_with_a_man": {
+      "stream_id": "come_hang_out_with_a_man",
+      "title": "Come Hang Out With A Man",
+      "start_ts": 1633912109,
+      "end_ts": 1633924734,
+      "duration_sec": 12625,
+      "youtube_archive_id": "KnRAsT2wENo",
+      "source_platform": "youtube",
+      "total_donations_usd": 321.4,
+      "donation_count": 78,
+      "donations_per_min": 1.5274,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.75,
+      "avg_active_chatters": 33.25
     }
   }
 }
