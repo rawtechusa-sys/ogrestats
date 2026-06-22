@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098888,
+  "updated_ts": 1782098897,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -169,7 +169,8 @@
     "birthday_bird_and_man_stream",
     "birthday_marathon_man_stream",
     "boogie2988_is_a_thief_and_a_liar",
-    "boy_do_we_need_to_talk"
+    "boy_do_we_need_to_talk",
+    "brand_new_set_same_old_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2859,6 +2860,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.46,
       "avg_active_chatters": 33.32
+    },
+    "brand_new_set_same_old_man": {
+      "stream_id": "brand_new_set_same_old_man",
+      "title": "Brand New Set, Same Old Man",
+      "start_ts": 1713226232,
+      "end_ts": 1713245452,
+      "duration_sec": 19220,
+      "youtube_archive_id": "nFlQbl-TzI8",
+      "source_platform": "youtube",
+      "total_donations_usd": 325.69,
+      "donation_count": 72,
+      "donations_per_min": 1.0167,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.7,
+      "avg_active_chatters": 29.82
     }
   }
 }
