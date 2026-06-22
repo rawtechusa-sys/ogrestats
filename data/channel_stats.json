@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102274,
+  "updated_ts": 1782102280,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -613,7 +613,8 @@
     "streaming_till_2_am",
     "streaming_till_2_am_featuring_birds",
     "streaming_until_2_am_road_to_1000_members",
-    "streaming_until_3_am_chris_hansen_edp_445"
+    "streaming_until_3_am_chris_hansen_edp_445",
+    "stuttering_craig_is_a_man_monetizethehate"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10407,6 +10408,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.36,
       "avg_active_chatters": 28.02
+    },
+    "stuttering_craig_is_a_man_monetizethehate": {
+      "stream_id": "stuttering_craig_is_a_man_monetizethehate",
+      "title": "Stuttering Craig Is A Man #MonetizeTheHate",
+      "start_ts": 1688256809,
+      "end_ts": 1688275828,
+      "duration_sec": 19019,
+      "youtube_archive_id": "dTKuoRFYjKU",
+      "source_platform": "youtube",
+      "total_donations_usd": 292.09,
+      "donation_count": 56,
+      "donations_per_min": 0.9215,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.66,
+      "avg_active_chatters": 18.58
     }
   }
 }
