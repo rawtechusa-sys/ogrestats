@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099116,
+  "updated_ts": 1782099125,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -196,7 +196,8 @@
     "come_ask_me_almost_anything",
     "come_ask_me_literally_anything_this_is_a_mistake",
     "come_ask_me_things",
-    "come_ask_me_whatever_the_hell_you_want"
+    "come_ask_me_whatever_the_hell_you_want",
+    "come_ask_questions"
   ],
   "commands": {
     "stan": 27,
@@ -227,12 +228,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 53,
+    "eyes": 54,
     "africa": 1,
-    "face": 161,
+    "face": 162,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 120,
+    "joy": 121,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -245,7 +246,7 @@
     "tongue": 4,
     "heart": 56,
     "shorts": 1,
-    "laughing": 55,
+    "laughing": 56,
     "news": 12,
     "chicken": 28,
     "cake": 7,
@@ -408,7 +409,7 @@
     "eagle": 5,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
-    "say": 1,
+    "say": 2,
     "officer": 1,
     "bread": 1,
     "bomb": 1,
@@ -478,7 +479,9 @@
     "distance": 1,
     "cheat": 1,
     "here": 1,
-    "hamburger": 1
+    "hamburger": 1,
+    "chipmunk": 1,
+    "cupcaketv": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1455,6 +1458,11 @@
       "title": "Come Ask Me Whatever The Hell You Want",
       "start_ts": 1640220728,
       "youtube_archive_id": "zfq0v5iEXz4"
+    },
+    "come_ask_questions": {
+      "title": "Come Ask Questions",
+      "start_ts": 1669776082,
+      "youtube_archive_id": "jLng_LB1qyc"
     }
   },
   "messages": [
@@ -8088,6 +8096,76 @@
       "message": "Christianity is now a minority religion in England and Wales. :thinking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1669785271,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": ":grinning_squinting_face: I just beat Returnal. ohhh Phil. I'm sorry",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1669784210,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "I gotta say: DSP is comedy gold sometimes. xD",
+      "commands": [
+        "say"
+      ]
+    },
+    {
+      "ts": 1669781137,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "I\u2019ve been watching ASMR videos since 2019, when I was introduced to the world of Funky Kong ASMR. Yes, the video game character. Look it up one day. :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1669780647,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "Typical CupcakeTV: says he doesn\u2019t care procedes to make a 10 minute video berating people who disagree with him. Please bre@stfeed me father! Cheers!",
+      "commands": [
+        "cupcaketv"
+      ]
+    },
+    {
+      "ts": 1669779348,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "That was so fucking random:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1669777560,
+      "username": "@ToyJesusLovesTequilla",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "When oh when can we watch Mark Rober & squirrels:chipmunk:",
+      "commands": [
+        "chipmunk"
+      ]
+    },
+    {
+      "ts": 1669777273,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions",
+      "message": "Did you and Cody talk about the video I used you cameo for? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
