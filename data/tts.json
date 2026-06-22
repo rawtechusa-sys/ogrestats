@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095857,
+  "updated_ts": 1782095917,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -89,7 +89,8 @@
     "a_plain_old_normal_man_stream_feat_men",
     "a_pre_stream_man_stream",
     "a_pulsating_new_years_eve",
-    "a_pure_man_experience"
+    "a_pure_man_experience",
+    "a_quality_qvc_bird_roast"
   ],
   "commands": {
     "stan": 27,
@@ -122,10 +123,10 @@
     "turkey": 4,
     "eyes": 21,
     "africa": 1,
-    "face": 78,
+    "face": 79,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 53,
+    "joy": 54,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -259,7 +260,7 @@
     "ear": 1,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 2,
+    "droplets": 3,
     "tomato": 1,
     "hearts": 1,
     "million": 1,
@@ -712,6 +713,11 @@
       "title": "A Pure Man Experience",
       "start_ts": 1657840337,
       "youtube_archive_id": "MHE7E9gdNH4"
+    },
+    "a_quality_qvc_bird_roast": {
+      "title": "A Quality QVC Bird Roast",
+      "start_ts": 1637979963,
+      "youtube_archive_id": "8EZBmUEhi1Y"
     }
   },
   "messages": [
@@ -6128,6 +6134,36 @@
       "platform": "youtube",
       "stream_id": "a_baked_middle_aged_man_plays_video_games",
       "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1637983475,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "a_quality_qvc_bird_roast",
+      "message": "We laugh but the CIA probably uses these. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637983249,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_quality_qvc_bird_roast",
+      "message": "Rich the tech expert :weary_face::sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1637982573,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_quality_qvc_bird_roast",
+      "message": "the way they're marketing it, it's targeting people like my grandparents who can't find a power button on their laptop:loudly_crying_face:",
       "commands": [
         "face"
       ]
