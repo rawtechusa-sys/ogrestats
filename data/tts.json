@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101312,
+  "updated_ts": 1782101319,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -466,7 +466,8 @@
     "more_family_man_fun_dad_is_back",
     "more_games_and_a_man",
     "more_gta_iii_remastered_with_birds",
-    "more_intellivision_amico_family_bird_fun"
+    "more_intellivision_amico_family_bird_fun",
+    "more_intellivision_amico_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -499,13 +500,13 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 436,
+    "face": 437,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 285,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 36,
+    "carlos": 38,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -515,7 +516,7 @@
     "tongue": 9,
     "heart": 141,
     "shorts": 2,
-    "laughing": 171,
+    "laughing": 172,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -547,7 +548,7 @@
     "donation": 3,
     "naruto": 1,
     "hands": 29,
-    "horns": 7,
+    "horns": 8,
     "crab": 2,
     "superhero": 28,
     "legends": 2,
@@ -598,7 +599,7 @@
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
-    "lindell": 1,
+    "lindell": 2,
     "movie": 2,
     "hour": 1,
     "nose": 3,
@@ -649,7 +650,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 20,
+    "sweat": 21,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -3302,6 +3303,11 @@
       "title": "More Intellivision Amico Family Bird Fun",
       "start_ts": 1642036930,
       "youtube_archive_id": "aZMNUOVsvAA"
+    },
+    "more_intellivision_amico_family_fun": {
+      "title": "More Intellivision Amico Family Fun",
+      "start_ts": 1644282033,
+      "youtube_archive_id": "nDU-LTdfzus"
     }
   },
   "messages": [
@@ -21984,6 +21990,76 @@
       "message": "Square Enix games usually contain incredibly well done graphics, character, and voice acting. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1644290658,
+      "username": "@ScottyPimpin69",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "This is just sad. Put the birds back on... :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1644289114,
+      "username": "@Ragingfalcon72",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "Ban anybody in the chat that says DSP:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1644288555,
+      "username": "@nbanicks2671",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "Women of my dreams needs to like Carlos & Steve :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1644288436,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "Hey Rich, merch idea. Make your own version of the POLO hoodie, but with the word POLLO instead along with a pic of Carlos. You're welcome:_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1644286794,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "I can imagine Cr1tical as president :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1644286730,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "Mike lindell: tommy is not stepping down as CEO i have the data captures, i also used to smoke crack BUY A FUCKING PILLOW",
+      "commands": [
+        "lindell"
+      ]
+    },
+    {
+      "ts": 1644286067,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "more_intellivision_amico_family_fun",
+      "message": "Mmm...I can FEAL your anger Rich! Good! Good! Come and Join the dark side of the force! :smiling_face_with_horns:",
+      "commands": [
+        "horns"
       ]
     },
     {
