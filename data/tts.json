@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100700,
+  "updated_ts": 1782100707,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -382,7 +382,8 @@
     "late_night_man_gaming",
     "late_night_stream_for_no_reason",
     "learning_how_to_be_a_man_feat_birds",
-    "legal_eagles_xqc_video"
+    "legal_eagles_xqc_video",
+    "lets_argue_about_nintendo"
   ],
   "commands": {
     "stan": 27,
@@ -413,12 +414,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 85,
+    "eyes": 86,
     "africa": 1,
-    "face": 353,
+    "face": 359,
     "petersonxhhanson": 1,
     "poo": 20,
-    "joy": 255,
+    "joy": 256,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -844,7 +845,8 @@
     "corner": 1,
     "hustle": 1,
     "women": 1,
-    "bag": 1
+    "bag": 1,
+    "honest": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2751,6 +2753,11 @@
       "title": "Legal Eagle's xQc Video",
       "start_ts": 1695515878,
       "youtube_archive_id": "UG47AoNHyoY"
+    },
+    "lets_argue_about_nintendo": {
+      "title": "Let's Argue About Nintendo",
+      "start_ts": 1636249041,
+      "youtube_archive_id": "NUpPKZZAacQ"
     }
   },
   "messages": [
@@ -21036,6 +21043,76 @@
       "platform": "youtube",
       "stream_id": "bird_and_man_mayhem",
       "message": "Rich , Love the thumbnail!!!!!! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1636257979,
+      "username": "@jordanrichards9235",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "Get shirtless dad :smiling_face_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1636256949,
+      "username": "@nintencomposer20xx57",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "Fire in the Hole :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636255320,
+      "username": "@nintencomposer20xx57",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "Let's be honest: The world is Everyman for himself",
+      "commands": [
+        "honest"
+      ]
+    },
+    {
+      "ts": 1636254650,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "Are you gonna play more dying light or Dusk tonight? I'd like to see that. Karen videos are also fun too. Let's lighten the mood and have fun. :grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636251558,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "where you about to call me peeper in that last chat, Richard? :grinning_squinting_face: :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636251475,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "had this video open in one tab while i went to facebook in another. i swear his clapping didn't sound right :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1636250661,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "lets_argue_about_nintendo",
+      "message": "Just came in whats Nick have to do with Nintendo :face_with_tears_of_joy:",
       "commands": [
         "joy"
       ]
