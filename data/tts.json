@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100434,
+  "updated_ts": 1782100442,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -350,7 +350,8 @@
     "its_all_about_the_tipples",
     "its_dspgamings_birthday",
     "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
-    "its_time_to_party"
+    "its_time_to_party",
+    "its_time_to_take_games_back_gamers_who_game"
   ],
   "commands": {
     "stan": 27,
@@ -394,7 +395,7 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 41,
+    "cucumber": 42,
     "biceps": 3,
     "tongue": 6,
     "heart": 108,
@@ -464,7 +465,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 16,
-    "horse": 8,
+    "horse": 9,
     "bug": 1,
     "violin": 1,
     "update": 5,
@@ -513,7 +514,7 @@
     "struck": 3,
     "joker": 1,
     "racehorse": 8,
-    "question": 8,
+    "question": 9,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 2,
@@ -2531,6 +2532,11 @@
       "title": "It's Time To Party",
       "start_ts": 1701400511,
       "youtube_archive_id": "ZXUxP8lXQps"
+    },
+    "its_time_to_take_games_back_gamers_who_game": {
+      "title": "IT'S TIME TO TAKE GAMES BACK GAMERS WHO GAME!",
+      "start_ts": 1710978135,
+      "youtube_archive_id": "2Yz3RempTh4"
     }
   },
   "messages": [
@@ -4999,6 +5005,27 @@
       "message": "Did you play Stroke the Horse yet :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1710986085,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "its_time_to_take_games_back_gamers_who_game",
+      "message": "An easy way to shut these religious bigots/zealots down is to ask one question: \"Why?\" as a response to EVERYTHING they say. They can't handle logic.",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1710980302,
+      "username": "@alphadaddy3046",
+      "platform": "youtube",
+      "stream_id": "its_time_to_take_games_back_gamers_who_game",
+      "message": "Not to bring up a horse but I gotta nay and say screw Jay :horse: also, how do I send you a voice message like in Australian accents and stuff? Lmao :cucumber::cucumber::cucumber:",
+      "commands": [
+        "horse",
+        "cucumber"
       ]
     },
     {
