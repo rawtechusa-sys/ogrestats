@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098800,
+  "updated_ts": 1782098808,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -158,7 +158,8 @@
     "big_problems_over_at_youtube",
     "bill_gates_is_a_man",
     "bird_and_man_mayhem",
-    "bird_and_man_mayhem_live_chris_chan"
+    "bird_and_man_mayhem_live_chris_chan",
+    "bird_love_live_dating_nightmares"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2672,6 +2673,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.64,
       "avg_active_chatters": 34.82
+    },
+    "bird_love_live_dating_nightmares": {
+      "stream_id": "bird_love_live_dating_nightmares",
+      "title": "BIRD LOVE LIVE (DATING NIGHTMARES)",
+      "start_ts": 1631150879,
+      "end_ts": 1631158528,
+      "duration_sec": 7649,
+      "youtube_archive_id": "a43ViON8810",
+      "source_platform": "youtube",
+      "total_donations_usd": 244.44,
+      "donation_count": 53,
+      "donations_per_min": 1.9174,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.69,
+      "avg_active_chatters": 32.76
     }
   }
 }
