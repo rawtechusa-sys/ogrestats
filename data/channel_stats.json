@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100153,
+  "updated_ts": 1782100161,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -319,7 +319,8 @@
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "im_a_bully_plus_i_react_to_large_muscular_men",
     "im_a_man",
-    "im_at_a_crossroads"
+    "im_at_a_crossroads",
+    "im_back"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5409,6 +5410,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.92,
       "avg_active_chatters": 26.27
+    },
+    "im_back": {
+      "stream_id": "im_back",
+      "title": "I'm Back",
+      "start_ts": 1712018550,
+      "end_ts": 1712025567,
+      "duration_sec": 7017,
+      "youtube_archive_id": "DEENvsW8ORc",
+      "source_platform": "youtube",
+      "total_donations_usd": 73.88,
+      "donation_count": 25,
+      "donations_per_min": 0.6317,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.26,
+      "avg_active_chatters": 31.83
     }
   }
 }
