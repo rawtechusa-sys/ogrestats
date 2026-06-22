@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095506,
+  "updated_ts": 1782095564,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -83,7 +83,8 @@
     "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
     "a_middle_aged_man_surrounded_by_poultry",
     "a_middle_aged_man_surrounded_by_poultry_feat_birds",
-    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5"
+    "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
+    "a_new_bird_approaches"
   ],
   "commands": {
     "stan": 27,
@@ -113,7 +114,7 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 3,
+    "turkey": 4,
     "eyes": 20,
     "africa": 1,
     "face": 69,
@@ -255,7 +256,10 @@
     "rocket": 1,
     "droplets": 1,
     "tomato": 1,
-    "hearts": 1
+    "hearts": 1,
+    "million": 1,
+    "people": 1,
+    "point": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -667,6 +671,11 @@
       "title": "A Middle-Aged Stoned Man Plays GTA V On The PS5",
       "start_ts": 1664394538,
       "youtube_archive_id": "Xv639RPUxHQ"
+    },
+    "a_new_bird_approaches": {
+      "title": "A New Bird Approaches...",
+      "start_ts": 1635640634,
+      "youtube_archive_id": "TQ1k1faDphc"
     }
   },
   "messages": [
@@ -6105,6 +6114,37 @@
       "message": "Man Rich I think Im on the other side with this OLED. I can not get this game cart outa the stupid consloe.:face_with_symbols_on_mouth:",
       "commands": [
         "mouth"
+      ]
+    },
+    {
+      "ts": 1635644701,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "a_new_bird_approaches",
+      "message": "You need turkey SFX on the soundboard now:turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1635644039,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_new_bird_approaches",
+      "message": "Covid is still alive. Case in point: a neighbor in my apartment complex came with Covid-19 and management let us know. It's still out there.",
+      "commands": [
+        "point"
+      ]
+    },
+    {
+      "ts": 1635643789,
+      "username": "@TrayXCooper",
+      "platform": "youtube",
+      "stream_id": "a_new_bird_approaches",
+      "message": "this is their logic Covid kills 5 million: I'll take my chances Vaccine kills a few people: OMG I AM NOT TAKING MY CHANNCES!!!",
+      "commands": [
+        "million",
+        "people"
       ]
     },
     {
