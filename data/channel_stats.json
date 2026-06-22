@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101629,
+  "updated_ts": 1782101636,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -511,7 +511,8 @@
     "philip_burnell_chicken_sandwich_madness",
     "philip_burnell_feat_tickled_television_incorporated",
     "philip_burnell_is_a_lover_of_horses",
-    "philip_burnell_is_a_man"
+    "philip_burnell_is_a_man",
+    "philip_burnell_is_a_man_partwhatever"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8673,6 +8674,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.1,
       "avg_active_chatters": 43.43
+    },
+    "philip_burnell_is_a_man_partwhatever": {
+      "stream_id": "philip_burnell_is_a_man_partwhatever",
+      "title": "Philip Burnell Is A Man (Part...Whatever)",
+      "start_ts": 1645922385,
+      "end_ts": 1645929111,
+      "duration_sec": 6726,
+      "youtube_archive_id": "93fcsePUne0",
+      "source_platform": "youtube",
+      "total_donations_usd": 202.24,
+      "donation_count": 68,
+      "donations_per_min": 1.8041,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.96,
+      "avg_active_chatters": 29.1
     }
   }
 }
