@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100716,
+  "updated_ts": 1782100722,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -386,7 +386,8 @@
     "learning_how_to_be_a_man_feat_birds",
     "legal_eagles_xqc_video",
     "lets_argue_about_nintendo",
-    "lets_be_disappointed_by_the_nintendo_direct_together"
+    "lets_be_disappointed_by_the_nintendo_direct_together",
+    "lets_chat"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6548,6 +6549,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 24.74,
       "avg_active_chatters": 56.22
+    },
+    "lets_chat": {
+      "stream_id": "lets_chat",
+      "title": "Let's Chat",
+      "start_ts": 1698352164,
+      "end_ts": 1698352273,
+      "duration_sec": 109,
+      "youtube_archive_id": "M4uXNL7bE-c",
+      "source_platform": "youtube",
+      "total_donations_usd": 0.0,
+      "donation_count": 0,
+      "donations_per_min": 0.0,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.5,
+      "avg_active_chatters": 27.0
     }
   }
 }
