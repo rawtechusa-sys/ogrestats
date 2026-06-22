@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099970,
+  "updated_ts": 1782099978,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -298,7 +298,8 @@
     "hes_back_and_thoroughly_tickledpart_deux",
     "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
     "i_am_alive",
-    "i_am_beyond_furious"
+    "i_am_beyond_furious",
+    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5052,6 +5053,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 33.62,
       "avg_active_chatters": 114.79
+    },
+    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii": {
+      "stream_id": "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
+      "title": "I Am Financially Obligated To Play More Kingdom Hearts III",
+      "start_ts": 1644451579,
+      "end_ts": 1644457152,
+      "duration_sec": 5573,
+      "youtube_archive_id": "o3KUMSV6P3E",
+      "source_platform": "youtube",
+      "total_donations_usd": 112.87,
+      "donation_count": 33,
+      "donations_per_min": 1.2152,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.98,
+      "avg_active_chatters": 26.32
     }
   }
 }
