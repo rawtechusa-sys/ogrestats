@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100525,
+  "updated_ts": 1782100533,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -360,7 +360,8 @@
     "just_being_a_man",
     "just_chatting_and_watching_the_completionist_discord_call",
     "just_chatting_feat_a_man",
-    "just_chatting_like_a_man"
+    "just_chatting_like_a_man",
+    "just_chatting_with_vaush"
   ],
   "commands": {
     "stan": 27,
@@ -2599,6 +2600,11 @@
       "title": "Just Chatting Like A Man",
       "start_ts": 1688693424,
       "youtube_archive_id": "vP3OX-p-Fmw"
+    },
+    "just_chatting_with_vaush": {
+      "title": "Just Chatting With Vaush",
+      "start_ts": 1631203838,
+      "youtube_archive_id": "OUFfOcXN29I"
     }
   },
   "messages": [
