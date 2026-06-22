@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099665,
+  "updated_ts": 1782099674,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -262,7 +262,8 @@
     "dspgaming_gets_schooled_by_beardstar_keemstar",
     "dspgaming_is_a_tad_salty_plus_drphil",
     "dspgaming_is_back_feat_jaysus",
-    "dspgaming_live_in_20_mins"
+    "dspgaming_live_in_20_mins",
+    "dspgaming_ragequit_extravaganza_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -298,7 +299,7 @@
     "face": 228,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 166,
+    "joy": 169,
     "gameboy": 1,
     "chick": 1,
     "carlos": 23,
@@ -306,7 +307,7 @@
     "idea": 2,
     "fear": 3,
     "voice": 4,
-    "cucumber": 26,
+    "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
     "heart": 76,
@@ -346,7 +347,7 @@
     "horns": 6,
     "crab": 2,
     "superhero": 15,
-    "legends": 1,
+    "legends": 2,
     "dog": 4,
     "is": 6,
     "spose": 1,
@@ -434,7 +435,7 @@
     "rocket": 1,
     "droplets": 7,
     "tomato": 3,
-    "hearts": 5,
+    "hearts": 6,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -1916,6 +1917,11 @@
       "title": "DSPGaming Live In 20 Mins",
       "start_ts": 1658361038,
       "youtube_archive_id": "DXL-Pb3mL04"
+    },
+    "dspgaming_ragequit_extravaganza_road_to_1000_members": {
+      "title": "DSPGaming Ragequit Extravaganza (Road To 1000 Members)",
+      "start_ts": 1686010411,
+      "youtube_archive_id": "MtifwURlUgQ"
     }
   },
   "messages": [
@@ -7599,6 +7605,66 @@
       "message": "does elf like femboys:backhand_index_pointing_right::backhand_index_pointing_left:",
       "commands": [
         "left"
+      ]
+    },
+    {
+      "ts": 1686026398,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": "okay whilst we wait can we watch the Shrek is love, Shrek is life, you promised us a few times :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1686023718,
+      "username": "@guyshook8239",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": ":cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1686022727,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": "imagine Phil on the game 'getting over it':face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1686020108,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": "As a lifelong Pokemon fan, I didn't buy Scarlet or Violet because I don't think the series is going in the right direction after Legends: Arceus.",
+      "commands": [
+        "legends"
+      ]
+    },
+    {
+      "ts": 1686015298,
+      "username": "@doommama",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": "I love Jessie Rhianne :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1686012265,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "dspgaming_ragequit_extravaganza_road_to_1000_members",
+      "message": "One the girls from the previous stream, xia, she was on Cody's show and yes they are fake melons but good ones :cat_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
