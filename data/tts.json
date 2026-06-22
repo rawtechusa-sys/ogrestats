@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095798,
+  "updated_ts": 1782095857,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -88,7 +88,8 @@
     "a_philtacular_man_sunday",
     "a_plain_old_normal_man_stream_feat_men",
     "a_pre_stream_man_stream",
-    "a_pulsating_new_years_eve"
+    "a_pulsating_new_years_eve",
+    "a_pure_man_experience"
   ],
   "commands": {
     "stan": 27,
@@ -132,12 +133,12 @@
     "idea": 1,
     "fear": 2,
     "voice": 1,
-    "cucumber": 7,
+    "cucumber": 8,
     "biceps": 3,
     "tongue": 3,
     "heart": 32,
     "shorts": 1,
-    "laughing": 27,
+    "laughing": 28,
     "news": 5,
     "chicken": 11,
     "cake": 1,
@@ -169,7 +170,7 @@
     "donation": 1,
     "naruto": 1,
     "hands": 8,
-    "horns": 2,
+    "horns": 3,
     "crab": 2,
     "superhero": 10,
     "legends": 1,
@@ -251,14 +252,14 @@
     "struck": 1,
     "joker": 1,
     "racehorse": 2,
-    "question": 1,
+    "question": 2,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
     "ear": 1,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 1,
+    "droplets": 2,
     "tomato": 1,
     "hearts": 1,
     "million": 1,
@@ -706,6 +707,11 @@
       "title": "A Pulsating New Years Eve",
       "start_ts": 1704061642,
       "youtube_archive_id": "FNfQMcAT_i4"
+    },
+    "a_pure_man_experience": {
+      "title": "A Pure Man Experience",
+      "start_ts": 1657840337,
+      "youtube_archive_id": "MHE7E9gdNH4"
     }
   },
   "messages": [
@@ -4816,6 +4822,56 @@
       "commands": [
         "rooster",
         "joy"
+      ]
+    },
+    {
+      "ts": 1657845577,
+      "username": "@justsumbum",
+      "platform": "youtube",
+      "stream_id": "a_pure_man_experience",
+      "message": "Huge fan been watch since I was 20 now I\u2019m 30 :beaming_face_with_smiling_eyes::sign_of_the_horns:",
+      "commands": [
+        "horns"
+      ]
+    },
+    {
+      "ts": 1657844683,
+      "username": "@CobraCommander2003",
+      "platform": "youtube",
+      "stream_id": "a_pure_man_experience",
+      "message": "Can I get a \"Peed in my Basement\" - I need to record that and use it for greeting cards. LOL - Happy BDay if I can't make it tomorrow, bro. :_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1657843727,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "a_pure_man_experience",
+      "message": "Rich, serious question: you don\u2019t think it\u2019s hypocritical to criticize Phil for begging when you actively support him monetarily?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1657843211,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "a_pure_man_experience",
+      "message": "Maybe we should gift QTV some Peter pop off :sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1657841220,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "a_pure_man_experience",
+      "message": "quantum at it again on controversial truth :rolling_on_the_floor_laughing: watch",
+      "commands": [
+        "laughing"
       ]
     },
     {
