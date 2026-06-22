@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099565,
+  "updated_ts": 1782099573,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -251,7 +251,8 @@
     "dkoldies_strikes_again",
     "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
     "donald_trump_magical_ball_requests",
-    "donald_trump_vs_joe_biden_ai_debate"
+    "donald_trump_vs_joe_biden_ai_debate",
+    "dr_cocos_house_of_healing"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4253,6 +4254,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.91,
       "avg_active_chatters": 17.73
+    },
+    "dr_cocos_house_of_healing": {
+      "stream_id": "dr_cocos_house_of_healing",
+      "title": "Dr. Cocos house of healing",
+      "start_ts": 1686872753,
+      "end_ts": 1686881392,
+      "duration_sec": 8639,
+      "youtube_archive_id": "hi-0ZTV6kjA",
+      "source_platform": "youtube",
+      "total_donations_usd": 168.38,
+      "donation_count": 38,
+      "donations_per_min": 1.1694,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.71,
+      "avg_active_chatters": 21.08
     }
   }
 }
