@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093868,
+  "updated_ts": 1782093915,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -52,7 +52,8 @@
     "a_large_man_with_seltzer_livestreams",
     "a_late_night_middle_aged_youtuber_is_livestreaming",
     "a_late_stream",
-    "a_long_day_of_elden_ring_feat_birds"
+    "a_long_day_of_elden_ring_feat_birds",
+    "a_major_philip_burnell_man_emrgency_has_occured"
   ],
   "commands": {
     "stan": 27,
@@ -85,7 +86,7 @@
     "turkey": 3,
     "eyes": 13,
     "africa": 1,
-    "face": 39,
+    "face": 40,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 29,
@@ -102,7 +103,7 @@
     "heart": 18,
     "shorts": 1,
     "laughing": 16,
-    "news": 4,
+    "news": 5,
     "chicken": 8,
     "cake": 1,
     "d": 1,
@@ -137,8 +138,8 @@
     "crab": 2,
     "superhero": 4,
     "legends": 1,
-    "dog": 1,
-    "is": 1,
+    "dog": 2,
+    "is": 2,
     "spose": 1,
     "sunglasses": 1,
     "kiss": 5,
@@ -151,7 +152,7 @@
     "dsp": 2,
     "story": 1,
     "tree": 1,
-    "skull": 3,
+    "skull": 4,
     "eggplant": 1,
     "bite": 1,
     "take": 1,
@@ -190,7 +191,10 @@
     "nose": 2,
     "kelly": 1,
     "follows": 1,
-    "goblin": 1
+    "goblin": 1,
+    "live": 1,
+    "saying": 1,
+    "it": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -447,6 +451,11 @@
       "title": "A Long Day Of Elden Ring (Feat. Birds)",
       "start_ts": 1649957417,
       "youtube_archive_id": "E2odTAZ6KSg"
+    },
+    "a_major_philip_burnell_man_emrgency_has_occured": {
+      "title": "A MAJOR PHILIP BURNELL MAN EMRGENCY HAS OCCURED!",
+      "start_ts": 1701217716,
+      "youtube_archive_id": "jkh3Qh4GqbQ"
     }
   },
   "messages": [
@@ -2691,6 +2700,86 @@
       "message": "Hola rich saludos :chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1701228826,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "Breaking news: I am sad and divorced",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1701227265,
+      "username": "@Enraged-Gecko",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "DSP tries it: Alabama Hot Pocket",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1701226304,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "Hero sandwich reminds me of the scene in casino :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1701223792,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": ":hot_dog:",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1701223262,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "I still remember my very first computer as a kid. I had a Windows 2000 with no Internet connection that I used all the time. I miss that computer. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1701219808,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "you should get a sound bite of Phil saying: \u201cOpen your wallet and gimmie all of your moneys!\u201d look it up he said that a while back",
+      "commands": [
+        "saying"
+      ]
+    },
+    {
+      "ts": 1701218303,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "Yes there is personal information about Phil in the proof, so just check it out for yourself, DO NOT SHOW IT ON STREAM. Fact is: Phil was right!",
+      "commands": [
+        "is"
+      ]
+    },
+    {
+      "ts": 1701217903,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "a_major_philip_burnell_man_emrgency_has_occured",
+      "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
+      "commands": [
+        "live"
       ]
     },
     {
