@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101738,
+  "updated_ts": 1782101746,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -526,7 +526,8 @@
     "playing_bloodborne_i_think",
     "playing_castlevania_with_a_fat_old_man",
     "playing_doom_eternal_on_the_rog_ally",
-    "playing_elden_ring_with_my_new_magical_nipple_shield"
+    "playing_elden_ring_with_my_new_magical_nipple_shield",
+    "playing_fall_guys_in_a_few_minutes"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8928,6 +8929,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.43,
       "avg_active_chatters": 26.5
+    },
+    "playing_fall_guys_in_a_few_minutes": {
+      "stream_id": "playing_fall_guys_in_a_few_minutes",
+      "title": "Playing Fall Guys (In A Few Minutes)",
+      "start_ts": 1662773862,
+      "end_ts": 1662785711,
+      "duration_sec": 11849,
+      "youtube_archive_id": "32jfLQFr6PA",
+      "source_platform": "youtube",
+      "total_donations_usd": 695.68,
+      "donation_count": 132,
+      "donations_per_min": 3.5227,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.39,
+      "avg_active_chatters": 26.45
     }
   }
 }
