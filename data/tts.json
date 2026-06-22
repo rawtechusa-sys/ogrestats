@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101514,
+  "updated_ts": 1782101522,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -492,7 +492,8 @@
     "nintendo_direct_recap_reaction",
     "no_bird_suit_but_a_new_bird",
     "non_stop_vegan_tickling",
-    "normal_man_stream_almost_burnt_down_my_house"
+    "normal_man_stream_almost_burnt_down_my_house",
+    "nye_with_a_man_and_birds"
   ],
   "commands": {
     "stan": 27,
@@ -525,7 +526,7 @@
     "turkey": 10,
     "eyes": 116,
     "africa": 1,
-    "face": 466,
+    "face": 470,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 301,
@@ -539,18 +540,18 @@
     "cucumber": 54,
     "biceps": 5,
     "tongue": 10,
-    "heart": 143,
+    "heart": 144,
     "shorts": 2,
-    "laughing": 185,
+    "laughing": 186,
     "news": 20,
-    "chicken": 56,
+    "chicken": 57,
     "cake": 7,
     "d": 4,
     "halo": 4,
     "hand": 31,
     "popper": 9,
     "straw": 1,
-    "glasses": 2,
+    "glasses": 3,
     "ball": 2,
     "lantern": 2,
     "leg": 2,
@@ -561,7 +562,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 51,
+    "rooster": 52,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
@@ -580,7 +581,7 @@
     "dog": 11,
     "is": 8,
     "spose": 1,
-    "sunglasses": 22,
+    "sunglasses": 23,
     "kiss": 24,
     "earlier": 1,
     "ghost": 2,
@@ -699,7 +700,7 @@
     "glove": 3,
     "collision": 3,
     "spoiler": 1,
-    "mug": 3,
+    "mug": 4,
     "pachter": 3,
     "eagle": 6,
     "reviewkaynewestusa": 1,
@@ -1019,7 +1020,8 @@
     "carrot": 1,
     "reviewbidenusa": 1,
     "critique": 1,
-    "characters": 1
+    "characters": 1,
+    "bros": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3476,6 +3478,11 @@
       "title": "NORMAL MAN STREAM (Almost Burnt Down My House)",
       "start_ts": 1675384058,
       "youtube_archive_id": "AEcoPS0NaEQ"
+    },
+    "nye_with_a_man_and_birds": {
+      "title": "NYE With A Man And Birds",
+      "start_ts": 1641000448,
+      "youtube_archive_id": "ZoX5otQCh54"
     }
   },
   "messages": [
@@ -24376,6 +24383,126 @@
       "platform": "youtube",
       "stream_id": "im_back_and_on_a_warpath",
       "message": "Rich, if you ever come to the west, i can show ya stellar mexican food, even across the border in tijuana. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641012953,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Time to end 2021 and start off 2022 with a bang! That being with your shirt off Richard! I want every minutes worth too you big sexy bird man you :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641009784,
+      "username": "@Celtiverse7",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Soooooooo this is how we\u2019re going into the new year eh? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641009067,
+      "username": "@queendd1643",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "been watching your vids since 2013. was 11 and now i'm 19! glad i've been able to grow up through my teens with your channel, happy new year :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641007178,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "ReviewSouljuhBoyCrankingItInTheLeft4Dead2TankUSA :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1641006726,
+      "username": "@TurboPikachu",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Great to see you streaming on NYE! Cheers! :clinking_glasses:",
+      "commands": [
+        "glasses"
+      ]
+    },
+    {
+      "ts": 1641005430,
+      "username": "@Pocket_Reality",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Here\u2019s to ball washing & pulsating Chicken Sandwhiches! Happy New Years Eve Rich! :beer_mug:",
+      "commands": [
+        "mug"
+      ]
+    },
+    {
+      "ts": 1641004999,
+      "username": "@zach7165",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": ":rooster::rooster::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1641004449,
+      "username": "@Mason009009",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Is Carlos on Uber? I need a sexy bird driver :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641004381,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Don't worry bros: Carlos is driving. Go nuts!",
+      "commands": [
+        "bros"
+      ]
+    },
+    {
+      "ts": 1641004231,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "HAPPY NEW YEAR!!!! from God's favorite idiot, me!:smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1641002707,
+      "username": "@xcasder7885",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "Hey rich, happy new year, lots of love from Saudi Arabia been a fan for years. :sparkling_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1641000898,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "nye_with_a_man_and_birds",
+      "message": "R.I.P Betty White :pensive_face:",
       "commands": [
         "face"
       ]
