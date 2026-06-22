@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099051,
+  "updated_ts": 1782099059,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -188,7 +188,8 @@
     "clearing_the_air_and_watching_jordan_peterson",
     "colleen_ballinger_is_an_absolute_weirdo",
     "come_ask_a_man_and_a_bird_questions",
-    "come_ask_a_man_and_bird_questions"
+    "come_ask_a_man_and_bird_questions",
+    "come_ask_a_man_anything_8_3_2021"
   ],
   "commands": {
     "stan": 27,
@@ -221,7 +222,7 @@
     "turkey": 5,
     "eyes": 48,
     "africa": 1,
-    "face": 155,
+    "face": 156,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 117,
@@ -232,12 +233,12 @@
     "idea": 1,
     "fear": 2,
     "voice": 3,
-    "cucumber": 16,
+    "cucumber": 17,
     "biceps": 3,
     "tongue": 4,
     "heart": 55,
     "shorts": 1,
-    "laughing": 54,
+    "laughing": 55,
     "news": 12,
     "chicken": 27,
     "cake": 7,
@@ -268,7 +269,7 @@
     "shrugging": 3,
     "donation": 1,
     "naruto": 1,
-    "hands": 14,
+    "hands": 15,
     "horns": 4,
     "crab": 2,
     "superhero": 12,
@@ -467,7 +468,8 @@
     "music": 1,
     "ask": 1,
     "wrong": 1,
-    "distance": 1
+    "distance": 1,
+    "cheat": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1404,6 +1406,11 @@
       "title": "Come Ask A Man And Bird Questions",
       "start_ts": 1635811880,
       "youtube_archive_id": "4GbrXoRdgqo"
+    },
+    "come_ask_a_man_anything_8_3_2021": {
+      "title": "Come Ask A Man Anything 8-3-2021",
+      "start_ts": 1628034947,
+      "youtube_archive_id": "B1Eipt-zak0"
     }
   },
   "messages": [
@@ -12730,6 +12737,56 @@
       "message": "Rich, I am curious to know your opinion on each of the three streaming giants: Netflix, Disney+, and HBO Max.",
       "commands": [
         "giants"
+      ]
+    },
+    {
+      "ts": 1628041987,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "message": "Sup Gamers. My grandma's in the hospital. :folded_hands::folded_hands::folded_hands::folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1628041558,
+      "username": "@caretakergamer",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "message": "I had a client over and started up my pc and have the startup sound of Win95 and their face looked like they've been in Nam when they heard it :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1628041488,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "message": "Please release an RTU Soundboard on mobile :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628037016,
+      "username": "@alolanjojo8153",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "message": "it's cucumber Rich! :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1628036059,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "message": "Guys who cheat: thats a nice warzone you got there, it'll be a shame if i did something to it",
+      "commands": [
+        "cheat"
       ]
     },
     {
