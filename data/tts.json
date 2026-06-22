@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101378,
+  "updated_ts": 1782101386,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -475,7 +475,8 @@
     "more_of_the_quantum_tv_interview_chris_the_narc",
     "more_phil_more_alpha_males_more_birds",
     "more_predator_roasting",
-    "more_quantum_tv_tickling"
+    "more_quantum_tv_tickling",
+    "more_russia_ukraine_discussion"
   ],
   "commands": {
     "stan": 27,
@@ -508,7 +509,7 @@
     "turkey": 10,
     "eyes": 112,
     "africa": 1,
-    "face": 441,
+    "face": 442,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 287,
@@ -3363,6 +3364,11 @@
       "title": "More Quantum TV Tickling",
       "start_ts": 1660870099,
       "youtube_archive_id": "HNXHbNVMh_w"
+    },
+    "more_russia_ukraine_discussion": {
+      "title": "More Russia-Ukraine Discussion",
+      "start_ts": 1646612118,
+      "youtube_archive_id": "QrLBp54TDkY"
     }
   },
   "messages": [
@@ -21954,6 +21960,16 @@
       "message": "Glad you're better(Phil flop) We interrupt your regularly scheduled broadcast for a PSA: I Dream of a World Where everybody knows thatthebirdistheword",
       "commands": [
         "psa"
+      ]
+    },
+    {
+      "ts": 1646614368,
+      "username": "@Kanti12311",
+      "platform": "youtube",
+      "stream_id": "more_russia_ukraine_discussion",
+      "message": "Saw a video of father and son went back to get their dogs. Needless to say, the dad got shot by Russian forces and the whole thing was on video. :crying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
