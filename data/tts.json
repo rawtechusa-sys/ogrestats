@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099142,
+  "updated_ts": 1782099150,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -199,7 +199,8 @@
     "come_ask_me_whatever_the_hell_you_want",
     "come_ask_questions",
     "come_ask_questions_10_9_2021",
-    "come_ask_questions_712021"
+    "come_ask_questions_712021",
+    "come_ask_questions_7142021"
   ],
   "commands": {
     "stan": 27,
@@ -232,21 +233,21 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 167,
+    "face": 170,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 122,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 15,
+    "carlos": 16,
     "away": 5,
     "idea": 1,
-    "fear": 2,
+    "fear": 3,
     "voice": 3,
     "cucumber": 19,
     "biceps": 3,
     "tongue": 4,
-    "heart": 59,
+    "heart": 60,
     "shorts": 1,
     "laughing": 57,
     "news": 12,
@@ -254,7 +255,7 @@
     "cake": 7,
     "d": 1,
     "halo": 2,
-    "hand": 8,
+    "hand": 9,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -287,7 +288,7 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 6,
+    "sunglasses": 7,
     "kiss": 13,
     "earlier": 1,
     "ghost": 1,
@@ -340,7 +341,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 4,
+    "it": 5,
     "food": 1,
     "play": 1,
     "video": 1,
@@ -485,7 +486,9 @@
     "chipmunk": 1,
     "cupcaketv": 1,
     "stuff": 1,
-    "vampire": 1
+    "vampire": 1,
+    "basketball": 1,
+    "intelivsion": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1477,6 +1480,11 @@
       "title": "Come Ask Questions 7/1/2021",
       "start_ts": 1625355916,
       "youtube_archive_id": "H9T9tBWXzt0"
+    },
+    "come_ask_questions_7142021": {
+      "title": "Come Ask Questions! 7/14/2021",
+      "start_ts": 1626310242,
+      "youtube_archive_id": "4H2jpyM6Jhg"
     }
   },
   "messages": [
@@ -13334,6 +13342,116 @@
       "message": "BREAKING: Filene's under fire after allegations emerge of an employee hopped up on angel dust slapped asses whilst screaming \"DICKERS! DICK! DICK!\"",
       "commands": [
         "breaking"
+      ]
+    },
+    {
+      "ts": 1626318053,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Hey Rich, it\u2019s now past midnight in Brazil so happy birthday man! Can you please explain the origin of the \u201cspread your cheeks\u201d audio? Hope you have a great year! :_Cucumber::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1626317256,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Someone on twitter attached their Switch Joycons to a 5\" Sony Trinitron CRT and called it Sony Nintendo CRT Edition :grinning_squinting_face: PPL Unironically wanted one.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626316526,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "RTU Tries it: Grilled Octopus with lemon &oregano",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1626316071,
+      "username": "@yemiyoshimite",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "I recently bought a S*x toy and I :red_heart: it \u2713",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1626314979,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "I have a PS5, yet I'm playin with my gba rn :flushed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626314093,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Evening gamers. Hope you're having a poggers time. Daily reminder to watch out for all sussy bakas in ur life. Amogus Chungus out. :smiling_face_with_sunglasses::smiling_face_with_sunglasses::victory_hand::victory_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1626313436,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Shit on the floor to establish dominance. :smiling_face_with_sunglasses::smiling_face_with_sunglasses::smiling_face_with_sunglasses::smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1626311701,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Don't dye your beard :loudly_crying_face::loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1626311657,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Intelivsion: everyone please welcome the new face of the amico EDP445",
+      "commands": [
+        "intelivsion"
+      ]
+    },
+    {
+      "ts": 1626311298,
+      "username": "@Kris_reeve",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Do you have any good african american:basketball: stories from your retail days?",
+      "commands": [
+        "basketball"
+      ]
+    },
+    {
+      "ts": 1626311011,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_7142021",
+      "message": "Rich agreeing with Pat :face_screaming_in_fear:",
+      "commands": [
+        "fear"
       ]
     },
     {
