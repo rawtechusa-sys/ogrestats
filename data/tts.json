@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096458,
+  "updated_ts": 1782096520,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -99,13 +99,14 @@
     "a_satisfying_incel_stream",
     "a_short_stream",
     "a_short_stream_with_a_man",
-    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes"
+    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+    "a_stream_for_men"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 56,
+    "phil": 57,
     "trump": 30,
     "doom": 4,
     "harman": 12,
@@ -125,17 +126,17 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 7,
+    "rich": 8,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 4,
-    "eyes": 24,
+    "eyes": 25,
     "africa": 1,
     "face": 84,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 63,
+    "joy": 64,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -146,11 +147,11 @@
     "cucumber": 8,
     "biceps": 3,
     "tongue": 3,
-    "heart": 35,
+    "heart": 36,
     "shorts": 1,
-    "laughing": 33,
+    "laughing": 34,
     "news": 6,
-    "chicken": 11,
+    "chicken": 12,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -179,7 +180,7 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 8,
+    "hands": 9,
     "horns": 3,
     "crab": 2,
     "superhero": 10,
@@ -208,7 +209,7 @@
     "reviewtoddhowardusa": 1,
     "coco": 1,
     "board": 1,
-    "reviewtrumpusa": 1,
+    "reviewtrumpusa": 2,
     "reviewseinfeldusa": 1,
     "things": 1,
     "down": 1,
@@ -288,7 +289,9 @@
     "beverage": 1,
     "peanuts": 1,
     "glass": 1,
-    "example": 1
+    "example": 1,
+    "theory": 1,
+    "says": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -780,6 +783,11 @@
       "title": "A Stoned, Irrelevant YouTuber Plays Sim City On The SNES",
       "start_ts": 1643404631,
       "youtube_archive_id": "YnGOIjZAncg"
+    },
+    "a_stream_for_men": {
+      "title": "A Stream For Men",
+      "start_ts": 1704236144,
+      "youtube_archive_id": "pkOMlLRW8JM"
     }
   },
   "messages": [
@@ -2895,6 +2903,116 @@
       "message": "Can't believe it's been this long.:slightly_smiling_face: Glad to finally catch a stream live. Breasts.",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1704257165,
+      "username": "@xabosen",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": ":chicken::chicken::chicken::chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1704252835,
+      "username": "@platinummanchannel",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Can we watch Suprcrzy DSP Fact or Fiction? U will:smiling_face_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1704246832,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Phil reminds me of Mr Rogers :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1704242788,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "ReviewTrumpUSA: Grab DSP by the Quickscope",
+      "commands": [
+        "reviewtrumpusa"
+      ]
+    },
+    {
+      "ts": 1704241695,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "It's 2024. That was the old phil raging about Elden Ring. He's a new Phil. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1704241164,
+      "username": "@TheWastelander.-rx1mx",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Phil: Eat a snickers.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1704240997,
+      "username": "@JQR0666",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Natsu Eli says: \"Birds\"",
+      "commands": [
+        "says"
+      ]
+    },
+    {
+      "ts": 1704239859,
+      "username": "@Reikozunaken",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Rich: \"The foam on the tip came off.\" Quotes to live by.",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1704237211,
+      "username": "@Tomenheimer",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "Here's my theory: Valve got OLED Deck screens sourced by the same company as Nintendo does because Switch 2 will use the same as OLED Deck.",
+      "commands": [
+        "theory"
+      ]
+    },
+    {
+      "ts": 1704237206,
+      "username": "@iswordlogici7760",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "spent all day yesterday cleaning and re arranging my bedroom. now all I gotta do is focus on my sexy :folded_hands: starting 2024 out right",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1704236751,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_men",
+      "message": "love for men with birds :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
