@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099404,
+  "updated_ts": 1782099413,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -231,7 +231,8 @@
     "come_stare_at_a_man",
     "come_stare_at_a_man_and_ask_his_birds_questions",
     "come_stare_at_a_middle_aged_man_livestream",
-    "come_stare_at_me_talk_into_a_microphone_and_say_words"
+    "come_stare_at_me_talk_into_a_microphone_and_say_words",
+    "come_stream_with_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -264,7 +265,7 @@
     "turkey": 6,
     "eyes": 61,
     "africa": 1,
-    "face": 204,
+    "face": 206,
     "petersonxhhanson": 1,
     "poo": 11,
     "joy": 140,
@@ -312,7 +313,7 @@
     "donation": 3,
     "naruto": 1,
     "hands": 15,
-    "horns": 5,
+    "horns": 6,
     "crab": 2,
     "superhero": 12,
     "legends": 1,
@@ -1693,6 +1694,11 @@
       "title": "Come Stare At Me Talk Into A Microphone And Say Words",
       "start_ts": 1634517044,
       "youtube_archive_id": "0AY-rvUu6Mo"
+    },
+    "come_stream_with_a_man": {
+      "title": "Come Stream With A Man",
+      "start_ts": 1647135645,
+      "youtube_archive_id": "CLbBLdU6msU"
     }
   },
   "messages": [
@@ -10611,6 +10617,36 @@
       "message": "His Spider-Man and LOU2 reviews are just as bigoted as the posts. Were those by hackers and mods also?:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1647138991,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "come_stream_with_a_man",
+      "message": "Not to upset you Rich but i just dont agree with your take on GT7 yesterday on Twitter. Im sure the chat will think im a Sony shill now saying this :confused_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647136537,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "come_stream_with_a_man",
+      "message": "india apparently launched a missile at pakistan :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1647136390,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "come_stream_with_a_man",
+      "message": "With Nintendo pulling out :smiling_face_with_horns: of Russia, looks like that terrible Nintendo of Russia president is probably out of a job indefinitely",
+      "commands": [
+        "horns"
       ]
     },
     {
