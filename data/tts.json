@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093414,
+  "updated_ts": 1782093457,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -42,7 +42,8 @@
     "a_grand_theft_auto_trilogy_bird_stream",
     "a_heartwarming_man_and_bird_stream",
     "a_heterosexual_christian_man_stream_watching_cyraxx",
-    "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac"
+    "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+    "a_jcs_and_dsp_stream"
   ],
   "commands": {
     "stan": 27,
@@ -75,13 +76,13 @@
     "turkey": 3,
     "eyes": 11,
     "africa": 1,
-    "face": 31,
+    "face": 32,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 22,
+    "joy": 23,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 7,
+    "carlos": 9,
     "away": 2,
     "idea": 1,
     "fear": 1,
@@ -91,7 +92,7 @@
     "tongue": 2,
     "heart": 18,
     "shorts": 1,
-    "laughing": 11,
+    "laughing": 14,
     "news": 3,
     "chicken": 6,
     "cake": 1,
@@ -131,7 +132,7 @@
     "is": 1,
     "spose": 1,
     "sunglasses": 1,
-    "kiss": 3,
+    "kiss": 4,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -169,7 +170,8 @@
     "wilkins": 1,
     "vomiting": 2,
     "moment": 1,
-    "suit": 1
+    "suit": 1,
+    "mouth": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -376,6 +378,11 @@
       "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx And Melonie Mac)",
       "start_ts": 1705101039,
       "youtube_archive_id": "sWYc6-K7Waw"
+    },
+    "a_jcs_and_dsp_stream": {
+      "title": "A JCS And DSP Stream",
+      "start_ts": 1639532640,
+      "youtube_archive_id": "6vcApeVc3Fg"
     }
   },
   "messages": [
@@ -3809,6 +3816,86 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1639542711,
+      "username": "@TheMidwestConnect1",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "One of the best stories I\u2019ve ever heard :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1639541620,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "LMFAO HIS BALLS WERE DROPPED :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1639541394,
+      "username": "@TheMidwestConnect1",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "Anyone else love how Overly Dramatic DSP is? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1639537643,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": ":_Carlos: Masucci, Scullin 2024 :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1639536008,
+      "username": "@BeelX092",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "\u200bMy aunt in a HOA neighborhood already got flamed at cause she had 3 cars in her driveway :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1639535699,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "I have two friends visiting from spain we were at the store today and a pos in a maga hat started screaming at them to go back to mexico because they were talking in spanish. I was fuming! :face_with_steam_from_nose::pouting_face::face_with_symbols_on_mouth::pouting_face::face_with_symbols_on_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1639533518,
+      "username": "@glitch8083",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "missed my first super chat :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1639533279,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "a_jcs_and_dsp_stream",
+      "message": "i think you should buy a Makka Pakka doll :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
       ]
     },
     {
