@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102002,
+  "updated_ts": 1782102012,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -571,7 +571,8 @@
     "revieweldenringusa_eldenring",
     "reviewthorusa_i_got_soulja_boys_console",
     "rip_onlyfans",
-    "russia_ukraine_war_discussion"
+    "russia_ukraine_war_discussion",
+    "saturday_night_man_and_bird_love"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9693,6 +9694,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.73,
       "avg_active_chatters": 28.3
+    },
+    "saturday_night_man_and_bird_love": {
+      "stream_id": "saturday_night_man_and_bird_love",
+      "title": "Saturday Night Man And Bird Love",
+      "start_ts": 1644714796,
+      "end_ts": 1644724531,
+      "duration_sec": 9735,
+      "youtube_archive_id": "UnqhRp_OFV0",
+      "source_platform": "youtube",
+      "total_donations_usd": 462.22,
+      "donation_count": 105,
+      "donations_per_min": 2.8488,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.13,
+      "avg_active_chatters": 29.89
     }
   }
 }
