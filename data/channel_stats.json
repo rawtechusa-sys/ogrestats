@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100944,
+  "updated_ts": 1782100951,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -418,7 +418,8 @@
     "live_ghost_hunt_from_canada",
     "logan_paul_is_a_human_turd",
     "logan_paul_is_a_man",
-    "lolcow_and_boogie2988"
+    "lolcow_and_boogie2988",
+    "maidenless_birds_play_eldenring_plus_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7092,6 +7093,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.93,
       "avg_active_chatters": 46.98
+    },
+    "maidenless_birds_play_eldenring_plus_man": {
+      "stream_id": "maidenless_birds_play_eldenring_plus_man",
+      "title": "Maidenless Birds Play #EldenRing (Plus Man)",
+      "start_ts": 1650052403,
+      "end_ts": 1650061488,
+      "duration_sec": 9085,
+      "youtube_archive_id": "SXSqRdBx_Uc",
+      "source_platform": "youtube",
+      "total_donations_usd": 86.3,
+      "donation_count": 22,
+      "donations_per_min": 0.57,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.64,
+      "avg_active_chatters": 24.09
     }
   }
 }
