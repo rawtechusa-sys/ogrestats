@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100161,
+  "updated_ts": 1782100170,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -320,7 +320,8 @@
     "im_a_bully_plus_i_react_to_large_muscular_men",
     "im_a_man",
     "im_at_a_crossroads",
-    "im_back"
+    "im_back",
+    "im_back_and_on_a_warpath"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5426,6 +5427,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.26,
       "avg_active_chatters": 31.83
+    },
+    "im_back_and_on_a_warpath": {
+      "stream_id": "im_back_and_on_a_warpath",
+      "title": "I'm Back And On A Warpath",
+      "start_ts": 1641168322,
+      "end_ts": 1641180842,
+      "duration_sec": 12520,
+      "youtube_archive_id": "7rPn8JoNSbY",
+      "source_platform": "youtube",
+      "total_donations_usd": 748.97,
+      "donation_count": 150,
+      "donations_per_min": 3.5893,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.61,
+      "avg_active_chatters": 45.59
     }
   }
 }
