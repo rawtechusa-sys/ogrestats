@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100998,
+  "updated_ts": 1782101012,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -424,7 +424,8 @@
     "man_friendly_family_fun",
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
     "man_in_birdsuit_livestreams_feat_birds",
-    "man_in_chicken_suit_ep2_feat_beautiful_birds"
+    "man_in_chicken_suit_ep2_feat_beautiful_birds",
+    "man_in_chicken_suit_ep5_intellivision_amico_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -457,7 +458,7 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 402,
+    "face": 404,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 273,
@@ -612,7 +613,7 @@
     "quote": 1,
     "beverage": 4,
     "peanuts": 1,
-    "glass": 1,
+    "glass": 2,
     "example": 1,
     "theory": 3,
     "says": 1,
@@ -908,7 +909,9 @@
     "answer": 1,
     "claus": 1,
     "servers": 1,
-    "pikachu": 1
+    "pikachu": 1,
+    "sparkles": 1,
+    "cod": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3025,6 +3028,11 @@
       "title": "Man In Chicken Suit Ep.2 (Feat. Beautiful Birds)",
       "start_ts": 1652227081,
       "youtube_archive_id": "ydSQZ3lmlyk"
+    },
+    "man_in_chicken_suit_ep5_intellivision_amico_family_fun": {
+      "title": "Man In Chicken Suit Ep.5 (Intellivision Amico Family Fun)",
+      "start_ts": 1652490630,
+      "youtube_archive_id": "QHjdPO-5rEs"
     }
   },
   "messages": [
@@ -19040,6 +19048,56 @@
       "message": "Unless QuantumTV does something as crazy or more :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1652497463,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "message": "Rich, you should have the monkey song from Mario Paint on your soundboard. Thought, come to think of it. It is kinda long. :grinning_squinting_face: How about oblivion?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652496922,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "message": "Watching shiny top while drinking Shinerbock. :cocktail_glass:",
+      "commands": [
+        "glass"
+      ]
+    },
+    {
+      "ts": 1652492747,
+      "username": "@YoPeeps85",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "message": "Do bird breast have nipples?:thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652492168,
+      "username": "@Dulansi",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "message": "Elden Ring outsold CoD: Vanguard! in less time",
+      "commands": [
+        "cod"
+      ]
+    },
+    {
+      "ts": 1652491877,
+      "username": "@Tom_Fuckery",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "message": "May the golden order shine upon the chicken man :sparkles:",
+      "commands": [
+        "sparkles"
       ]
     },
     {
