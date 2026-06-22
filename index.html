@@ -196,6 +196,11 @@
       <input type="checkbox" id="bgToggle" checked>
       <span>Critters</span>
     </label>
+    <select class="theme-select" id="tzSelect" aria-label="Time zone" title="Time zone">
+      <option value="ogre">Ogre Time</option>
+      <option value="local">Local Time</option>
+      <option value="utc">UTC</option>
+    </select>
     <select class="theme-select" id="themeSelect" aria-label="Color theme">
       <option value="green">Bog Moss</option>
       <option value="amber">Firepit</option>
@@ -277,6 +282,19 @@ document.getElementById('themeSelect').value = savedTheme;
 applyTheme(savedTheme);
 
 document.getElementById('themeSelect').addEventListener('change', e => applyTheme(e.target.value));
+
+// ── Timezone ──────────────────────────────────────────────────────────────────
+// Persist the choice and push it to the iframe for live switching. Child pages
+// read getTimeZone() (config.js) at render time, so a freshly-loaded page already
+// paints in the saved zone -- no reapply on iframe 'load' needed.
+function applyTimezone(mode) {
+  localStorage.setItem('swamp-tz', mode);
+  const f = document.getElementById('pageFrame');
+  try { f.contentWindow.postMessage({ type: 'timezone', mode }, '*'); } catch (e) {}
+}
+const tzSelect = document.getElementById('tzSelect');
+tzSelect.value = getTZMode();
+tzSelect.addEventListener('change', e => applyTimezone(e.target.value));
 
 // Re-apply after iframe navigates to a new page
 document.getElementById('pageFrame').addEventListener('load', () => {

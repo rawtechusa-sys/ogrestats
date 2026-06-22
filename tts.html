@@ -426,7 +426,10 @@ function applyTheme(key) {
   document.documentElement.setAttribute('data-theme', key);
 }
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
-window.addEventListener('message', e => { if (e.data?.type === 'theme') applyTheme(e.data.key); });
+window.addEventListener('message', e => {
+  if (e.data?.type === 'theme') applyTheme(e.data.key);
+  else if (e.data?.type === 'timezone') renderMessages();   // live timezone switch
+});
 
 // Mouse forwarding so the parent's roach/eye animations still react.
 document.addEventListener('mousemove', e => {
@@ -709,7 +712,7 @@ function vodLink(m) {
 
 function fmtDate(ts) {
   if (ts == null) return '';
-  try { return new Date(ts * 1000).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }); }
+  try { return new Date(ts * 1000).toLocaleDateString('en-US', withTZ({ year: 'numeric', month: 'short', day: 'numeric' })); }
   catch { return ''; }
 }
 

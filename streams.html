@@ -510,6 +510,8 @@ function applyTheme(key) {
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => {
   if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
+  // Live timezone switch: rebuild the sidebar dates and reload the selected stream.
+  else if (e.data && e.data.type === 'timezone') loadStreamList();
 });
 
 // Forward mouse position to parent for roach/eye animations
@@ -540,11 +542,11 @@ function parseJSONL(text) {
 }
 
 function fmtDate(ts) {
-  return new Date(ts * 1000).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
+  return new Date(ts * 1000).toLocaleDateString('en-US', withTZ({ month:'short', day:'numeric', year:'numeric' }));
 }
 
 function fmtTime(ts) {
-  return new Date(ts * 1000).toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
+  return new Date(ts * 1000).toLocaleTimeString('en-US', withTZ({ hour:'2-digit', minute:'2-digit' }));
 }
 
 function fmtDuration(secs) {
@@ -614,16 +616,14 @@ async function loadStreamList() {
 
       if (meta?.start_ts) {
         const utcDate = new Date(meta.start_ts * 1000);
-        // MM/DD/YY (month/day/year), in ET.
-        datePart = utcDate.toLocaleDateString('en-US', {
-          timeZone: 'America/New_York',
+        // MM/DD/YY (month/day/year), in the active timezone (see config.js withTZ).
+        datePart = utcDate.toLocaleDateString('en-US', withTZ({
           month: '2-digit', day: '2-digit', year: '2-digit'
-        });
+        }));
         // Time only, no timezone label.
-        timePart = utcDate.toLocaleTimeString('en-US', {
-          timeZone: 'America/New_York',
+        timePart = utcDate.toLocaleTimeString('en-US', withTZ({
           hour: 'numeric', minute: '2-digit'
-        });
+        }));
       }
 
       const lengthPart = (meta?.end_ts && meta?.start_ts)
@@ -1115,10 +1115,12 @@ function buildChart(snapshots, donations, startTs, hasYT, hasTW, hasChatRate, ha
   }
   const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
+  // Time label for the chart x-axis ticks and tooltip, in the active timezone
+  // (Ogre/Local/UTC -- see config.js withTZ).
   function fmtET(ms) {
-    return new Date(ms).toLocaleTimeString('en-US', {
-      timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit',
-    });
+    return new Date(ms).toLocaleTimeString('en-US', withTZ({
+      hour: 'numeric', minute: '2-digit',
+    }));
   }
 
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;

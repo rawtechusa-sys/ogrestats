@@ -9,6 +9,27 @@ const GITHUB_OWNER = 'rawtechusa-sys';
 const GITHUB_REPO  = 'ogrestats';
 const BRANCH       = 'main';
 
+// ── Timezone ─────────────────────────────────────────────────────────────────────
+// Shared by every page. The header dropdown (index.html) writes localStorage
+// 'swamp-tz'; date helpers call getTimeZone()/withTZ() at render time, so any
+// re-render reflects the current mode. 'local' omits timeZone so toLocale* uses the
+// visitor's browser zone. Default is Ogre Time (the streamer's clock, America/New_York).
+const TZ_MODES = {
+  ogre:  { label: 'Ogre Time',  zone: 'America/New_York' },
+  local: { label: 'Local Time', zone: undefined },
+  utc:   { label: 'UTC',        zone: 'UTC' },
+};
+function getTZMode() {
+  try { const m = localStorage.getItem('swamp-tz'); if (TZ_MODES[m]) return m; } catch (e) {}
+  return 'ogre';
+}
+function getTimeZone() { return TZ_MODES[getTZMode()].zone; }
+// Merge the active zone into a toLocale* options object ('local' -> no timeZone key).
+function withTZ(opts) {
+  const z = getTimeZone();
+  return z ? Object.assign({}, opts, { timeZone: z }) : opts;
+}
+
 // ── Roaches ────────────────────────────────────────────────────────────────────
 const ROACH_CONFIG = {
   count:        11,     // number of roaches on screen

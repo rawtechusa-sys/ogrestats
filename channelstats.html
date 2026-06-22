@@ -309,6 +309,8 @@ function applyTheme(key) {
 applyTheme(localStorage.getItem('swamp-theme') || 'green');
 window.addEventListener('message', e => {
   if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
+  // Live timezone switch: re-render axis labels (tooltips refresh on next hover).
+  else if (e.data && e.data.type === 'timezone' && currentChart) currentChart.update();
 });
 
 // Forward mouse position to parent for roach/eye animations
@@ -342,14 +344,16 @@ async function fetchJSON(url) {
 
 // Axis ticks: month + 2-digit year (e.g. "Jun '26"). The chart can span years of
 // subscriber history, so a year-less label would be ambiguous; the apostrophe
-// keeps it from reading as a day-of-month. UTC matches the data's date stamps.
+// keeps it from reading as a day-of-month. Rendered in the active timezone (see
+// config.js withTZ) so a stream's date here agrees with streams.html's stream list.
 function fmtAxisDate(ms) {
   const d = new Date(ms);
-  const mon = d.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-  return `${mon} '${String(d.getUTCFullYear()).slice(-2)}`;
+  const mon = d.toLocaleDateString('en-US', withTZ({ month: 'short' }));
+  const yr  = d.toLocaleDateString('en-US', withTZ({ year: '2-digit' }));
+  return `${mon} '${yr}`;
 }
 function fmtFullDate(ms) {
-  return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  return new Date(ms).toLocaleDateString('en-US', withTZ({ month: 'short', day: 'numeric', year: 'numeric' }));
 }
 
 // ── Dataset label constants ──────────────────────────────────────────────────
