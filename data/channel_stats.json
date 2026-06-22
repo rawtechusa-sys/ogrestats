@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092432,
+  "updated_ts": 1782092450,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -12,7 +12,8 @@
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
     "12_hour_man_stream_feat_men_part_2",
-    "1_man_1_bird"
+    "1_man_1_bird",
+    "1_man_1_bird_all_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -190,6 +191,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.81,
       "avg_active_chatters": 25.67
+    },
+    "1_man_1_bird_all_live": {
+      "stream_id": "1_man_1_bird_all_live",
+      "title": "1 Man, 1 Bird, All LIVE",
+      "start_ts": 1695859783,
+      "end_ts": 1695866755,
+      "duration_sec": 6972,
+      "youtube_archive_id": "DloiY5b0PFc",
+      "source_platform": "youtube",
+      "total_donations_usd": 189.88,
+      "donation_count": 55,
+      "donations_per_min": 1.6341,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.63,
+      "avg_active_chatters": 39.94
     }
   }
 }
