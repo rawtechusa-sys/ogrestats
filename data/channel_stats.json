@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092944,
+  "updated_ts": 1782092981,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -30,7 +30,8 @@
     "a_christian_heterosexual_and_tickled_livestream",
     "a_christian_straight_man_stream",
     "a_colorful_man",
-    "a_crispy_peanut_butter_complexion_livestream"
+    "a_crispy_peanut_butter_complexion_livestream",
+    "a_detrahktor_discusses_her_grievances_with_me"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -496,6 +497,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.28,
       "avg_active_chatters": 38.5
+    },
+    "a_detrahktor_discusses_her_grievances_with_me": {
+      "stream_id": "a_detrahktor_discusses_her_grievances_with_me",
+      "title": "A \"Detrahktor\" Discusses Her Grievances WIth Me",
+      "start_ts": 1682824529,
+      "end_ts": 1682826464,
+      "duration_sec": 1935,
+      "youtube_archive_id": "QaLSp3SkyVw",
+      "source_platform": "youtube",
+      "total_donations_usd": 29.96,
+      "donation_count": 7,
+      "donations_per_min": 0.929,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.42,
+      "avg_active_chatters": 39.33
     }
   }
 }
