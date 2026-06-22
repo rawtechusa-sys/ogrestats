@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100935,
+  "updated_ts": 1782100942,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -415,7 +415,8 @@
     "live_from_canada_is_pissed_off",
     "live_ghost_hunt_from_canada",
     "logan_paul_is_a_human_turd",
-    "logan_paul_is_a_man"
+    "logan_paul_is_a_man",
+    "lolcow_and_boogie2988"
   ],
   "commands": {
     "stan": 27,
@@ -441,7 +442,7 @@
     "something": 2,
     "hobo": 2,
     "gnome": 1,
-    "rich": 25,
+    "rich": 26,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -451,7 +452,7 @@
     "face": 398,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 268,
+    "joy": 269,
     "gameboy": 1,
     "chick": 2,
     "carlos": 33,
@@ -892,7 +893,9 @@
     "penguin": 1,
     "experiment": 1,
     "beaver": 1,
-    "sal": 1
+    "sal": 1,
+    "pregnant": 1,
+    "zelda": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2964,6 +2967,11 @@
       "title": "Logan Paul Is A Man",
       "start_ts": 1672879370,
       "youtube_archive_id": "oPCB1qrCe4c"
+    },
+    "lolcow_and_boogie2988": {
+      "title": "Lolcow and Boogie2988",
+      "start_ts": 1705530892,
+      "youtube_archive_id": "r_nMYw0P--w"
     }
   },
   "messages": [
@@ -6319,6 +6327,37 @@
       "message": "DSP tries it: shoving Melonie Mac up his enus",
       "commands": [
         "it"
+      ]
+    },
+    {
+      "ts": 1705542396,
+      "username": "@Pocket_Reality",
+      "platform": "youtube",
+      "stream_id": "lolcow_and_boogie2988",
+      "message": "These guys should just start a swingers club for large men. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1705542189,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "lolcow_and_boogie2988",
+      "message": "Rich: You should check out \"Zelda: Triforce %\" by GDQ. A hack/speedrun of Ocarina of Time using a VERY elaborate TASbot with real-time code editing.",
+      "commands": [
+        "rich",
+        "zelda"
+      ]
+    },
+    {
+      "ts": 1705541800,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "lolcow_and_boogie2988",
+      "message": "He is pregnant: With Arby's Beef & Cheese",
+      "commands": [
+        "pregnant"
       ]
     },
     {
