@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099784,
+  "updated_ts": 1782099792,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -276,7 +276,8 @@
     "edp445_looked_for_another_cupcake",
     "edp445_strikes_again_dsp_is_salty_more_anker_drama",
     "elden_ring_fails_compilation_marathon_eldenring",
-    "elon_musk_bought_me_a_bird"
+    "elon_musk_bought_me_a_bird",
+    "everyone_on_the_internet_loves_me"
   ],
   "commands": {
     "stan": 27,
@@ -309,9 +310,9 @@
     "turkey": 6,
     "eyes": 69,
     "africa": 1,
-    "face": 250,
+    "face": 251,
     "petersonxhhanson": 1,
-    "poo": 15,
+    "poo": 16,
     "joy": 184,
     "gameboy": 1,
     "chick": 1,
@@ -346,17 +347,17 @@
     "disclaimer": 1,
     "hole": 5,
     "rooster": 23,
-    "peach": 5,
+    "peach": 6,
     "fire": 17,
     "kendal": 1,
-    "up": 24,
+    "up": 25,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
-    "hands": 18,
+    "hands": 19,
     "horns": 6,
     "crab": 2,
     "superhero": 18,
@@ -417,7 +418,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 6,
+    "it": 7,
     "food": 2,
     "play": 1,
     "video": 1,
@@ -2008,6 +2009,11 @@
       "title": "Elon Musk Bought Me A Bird",
       "start_ts": 1653097347,
       "youtube_archive_id": "JaVO6UKwBuk"
+    },
+    "everyone_on_the_internet_loves_me": {
+      "title": "Everyone On The Internet Loves Me",
+      "start_ts": 1695077972,
+      "youtube_archive_id": "dXAunKeIMrA"
     }
   },
   "messages": [
@@ -6759,6 +6765,66 @@
       "message": "Just know hero in :man_superhero: , missed a couple my b",
       "commands": [
         "superhero"
+      ]
+    },
+    {
+      "ts": 1695089711,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": "are you streaming Lies of P(oop) :pile_of_poo: tonight?",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1695088664,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": "Rich get it up for me and then get it into me :cucumber::peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1695088107,
+      "username": "@twinkie415",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": "you gave the cucumber the Glizzy Gluck Gluck lmao! :grinning_squinting_face::grinning_squinting_face::grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1695088039,
+      "username": "@i_need_da_tunes",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": "this is what we came here to see :hot_face::clapping_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1695084418,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": "Rtu tries it: triggered by the word gamer",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1695079048,
+      "username": "@Bigpapahaze",
+      "platform": "youtube",
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "message": ":thumbs_up: keep it up big guy been watching for 6+ years",
+      "commands": [
+        "up"
       ]
     },
     {
