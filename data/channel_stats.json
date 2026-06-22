@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100611,
+  "updated_ts": 1782100618,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -371,7 +371,8 @@
     "just_watching_some_butt_slapping_competitions",
     "karens_and_birds",
     "keem_vs_boogie2988_vs_wings_lolcow_live",
-    "king_cobra_and_phil"
+    "king_cobra_and_phil",
+    "large_freshly_showered_man_streams"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6293,6 +6294,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.08,
       "avg_active_chatters": 31.96
+    },
+    "large_freshly_showered_man_streams": {
+      "stream_id": "large_freshly_showered_man_streams",
+      "title": "Large, Freshly Showered Man Streams",
+      "start_ts": 1527214324,
+      "end_ts": 1527219300,
+      "duration_sec": 4976,
+      "youtube_archive_id": "By_Eqf0-Bl4",
+      "source_platform": "youtube",
+      "total_donations_usd": 36.98,
+      "donation_count": 11,
+      "donations_per_min": 0.4459,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 6.81,
+      "avg_active_chatters": 21.24
     }
   }
 }
