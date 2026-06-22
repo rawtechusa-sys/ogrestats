@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100065,
+  "updated_ts": 1782100074,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -309,7 +309,8 @@
     "i_got_trolled_hard_by_ethan_ralph",
     "i_have_no_water_so_i_may_as_well_keep_streaming",
     "i_have_no_words_and_im_frustrated",
-    "i_have_some_very_important_things_to_discuss"
+    "i_have_some_very_important_things_to_discuss",
+    "i_just_went_through_youtube_hell_let_me_explain"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5239,6 +5240,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 29.12,
       "avg_active_chatters": 64.75
+    },
+    "i_just_went_through_youtube_hell_let_me_explain": {
+      "stream_id": "i_just_went_through_youtube_hell_let_me_explain",
+      "title": "I Just Went Through YouTube Hell (Let Me Explain)",
+      "start_ts": 1665368620,
+      "end_ts": 1665373753,
+      "duration_sec": 5133,
+      "youtube_archive_id": "LVvfFB9QTL4",
+      "source_platform": "youtube",
+      "total_donations_usd": 218.38,
+      "donation_count": 38,
+      "donations_per_min": 2.5527,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.53,
+      "avg_active_chatters": 36.05
     }
   }
 }
