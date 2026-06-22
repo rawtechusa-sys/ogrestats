@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102142,
+  "updated_ts": 1782102147,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -591,7 +591,8 @@
     "so_much_man_feat_birds",
     "so_much_man_so_many_birds",
     "so_much_st_to_talk_about",
-    "so_relaxed_watching_preacher_fails"
+    "so_relaxed_watching_preacher_fails",
+    "so_today_was_a_day"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10033,6 +10034,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.48,
       "avg_active_chatters": 30.87
+    },
+    "so_today_was_a_day": {
+      "stream_id": "so_today_was_a_day",
+      "title": "So Today Was A Day",
+      "start_ts": 1656118088,
+      "end_ts": 1656123087,
+      "duration_sec": 4999,
+      "youtube_archive_id": "7lGqzRN9PpI",
+      "source_platform": "youtube",
+      "total_donations_usd": 439.18,
+      "donation_count": 106,
+      "donations_per_min": 5.2712,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.32,
+      "avg_active_chatters": 61.8
     }
   }
 }
