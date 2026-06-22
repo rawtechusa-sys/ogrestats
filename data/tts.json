@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099546,
+  "updated_ts": 1782099555,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -248,14 +248,15 @@
     "discussing_dspgamings_derich",
     "dkoldies_is_at_it_again_part_347",
     "dkoldies_strikes_again",
-    "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal"
+    "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
+    "donald_trump_magical_ball_requests"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
     "phil": 60,
-    "trump": 32,
+    "trump": 33,
     "doom": 4,
     "harman": 12,
     "eric": 30,
@@ -281,10 +282,10 @@
     "turkey": 6,
     "eyes": 64,
     "africa": 1,
-    "face": 219,
+    "face": 221,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 152,
+    "joy": 153,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -297,9 +298,9 @@
     "tongue": 5,
     "heart": 72,
     "shorts": 1,
-    "laughing": 69,
+    "laughing": 70,
     "news": 13,
-    "chicken": 32,
+    "chicken": 33,
     "cake": 7,
     "d": 2,
     "halo": 3,
@@ -334,7 +335,7 @@
     "superhero": 15,
     "legends": 1,
     "dog": 4,
-    "is": 5,
+    "is": 6,
     "spose": 1,
     "sunglasses": 11,
     "kiss": 15,
@@ -1815,6 +1816,11 @@
       "title": "Donald Trump, Elon Musk, And Bill Gates Caught Up In Human Trafficking Scandal",
       "start_ts": 1764875265,
       "youtube_archive_id": "SjBpzNRuAUs"
+    },
+    "donald_trump_magical_ball_requests": {
+      "title": "Donald Trump Magical Ball Requests",
+      "start_ts": 1684973346,
+      "youtube_archive_id": "EBdR03MF548"
     }
   },
   "messages": [
@@ -7397,6 +7403,76 @@
       "message": "Dad check your dms, i sent something for you and Jay :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1684991913,
+      "username": "@sebastianmondragon9620",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "Listen Rich listen. Have Jay steal one of Phil's tires, have him mail it to you, then use it as a new home, for Carlos to crap in. Listen let's go. :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1684985940,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "My people don't claim this weird looking dude :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1684984944,
+      "username": "@Soms",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "What are your pronouns? I want to make fun of you respectfully :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684983159,
+      "username": "@ericmoore95em",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "Not gonna lie, it just felt like more of a yelling and narcissism match than any actual debate between the two groups earlier. What was the point :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1684981848,
+      "username": "@TheRealLurtz",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "red pills, blue pills, what ever happened to Eminem's purple pills :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1684978587,
+      "username": "@evildetrution5426",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "for trump: will we get a bloodborne remaster",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1684974970,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "donald_trump_magical_ball_requests",
+      "message": "What I don\u2019t get is: CGI trailers either probably cost a lot if done by 3rd party or take up resources from already overworked devs\u2026 Focus on the game",
+      "commands": [
+        "is"
       ]
     },
     {
