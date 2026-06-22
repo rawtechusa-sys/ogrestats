@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100185,
+  "updated_ts": 1782100194,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -322,7 +322,8 @@
     "im_back",
     "im_back_and_on_a_warpath",
     "im_back_and_only_half_dead_come_hang_out",
-    "im_buzzed_off_caffeine_come_chat_with_me"
+    "im_buzzed_off_caffeine_come_chat_with_me",
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3"
   ],
   "commands": {
     "stan": 27,
@@ -341,7 +342,7 @@
     "kratos": 4,
     "dagoth": 2,
     "they": 1,
-    "today": 3,
+    "today": 4,
     "phile": 1,
     "emoguy": 1,
     "phill": 2,
@@ -355,7 +356,7 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 304,
+    "face": 305,
     "petersonxhhanson": 1,
     "poo": 18,
     "joy": 220,
@@ -424,7 +425,7 @@
     "skull": 7,
     "eggplant": 3,
     "bite": 1,
-    "take": 4,
+    "take": 5,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -435,7 +436,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 2,
-    "tomorrow": 13,
+    "tomorrow": 14,
     "horse": 5,
     "bug": 1,
     "violin": 1,
@@ -2337,6 +2338,11 @@
       "title": "I'm Buzzed Off Caffeine. Come Chat With Me.",
       "start_ts": 1628910955,
       "youtube_archive_id": "c_99tFCn5L8"
+    },
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3": {
+      "title": "I'm Done With Weed (Slopes Tommy Tallarico Video Pt.3)",
+      "start_ts": 1676490244,
+      "youtube_archive_id": "Ww-80jeRPBc"
     }
   },
   "messages": [
@@ -11095,6 +11101,37 @@
       "message": "Hey Rich. I\u2019m a man of my word. I released that DSP Squeeze Banana GMV yesterday as I mentioned last stream. I loved making it. :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1676501603,
+      "username": "@punkinjack8925",
+      "platform": "youtube",
+      "stream_id": "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+      "message": "Hot take: DSP is more successful than Pat and Ian. DSP never gave up and at least cuts his hair lmao",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1676499404,
+      "username": "@HaunchoJackHD",
+      "platform": "youtube",
+      "stream_id": "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+      "message": "Tommy sounds like Jason Bateman from arrested development :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1676494761,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+      "message": "rich today: I'm done with weed rich tomorrow: YO MY NAME IS SEX E COCO AND I JUST BOUGHT 2 POUNDS OF THC EDIBLES MOTHER FUCKA. THE WOMENIZATION LOVE TOUCHING MY BALLS MOTHER FUCKA",
+      "commands": [
+        "today",
+        "tomorrow"
       ]
     },
     {
