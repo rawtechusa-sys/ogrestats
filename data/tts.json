@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095220,
+  "updated_ts": 1782095277,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -78,13 +78,14 @@
     "a_middle_aged_man_plays_halo_infinite",
     "a_middle_aged_man_plays_more_wii_u_launch_games",
     "a_middle_aged_man_plays_video_games_with_birds",
-    "a_middle_aged_man_probably_beats_elden_ring_feat_birds"
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
+    "a_middle_aged_man_reacks"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 53,
+    "phil": 54,
     "trump": 30,
     "doom": 4,
     "harman": 12,
@@ -109,9 +110,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 19,
+    "eyes": 20,
     "africa": 1,
-    "face": 60,
+    "face": 64,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 49,
@@ -151,7 +152,7 @@
     "peach": 2,
     "fire": 4,
     "kendal": 1,
-    "up": 8,
+    "up": 9,
     "note": 1,
     "eyebrow": 1,
     "facepalming": 2,
@@ -159,9 +160,9 @@
     "donation": 1,
     "naruto": 1,
     "hands": 7,
-    "horns": 1,
+    "horns": 2,
     "crab": 2,
-    "superhero": 8,
+    "superhero": 9,
     "legends": 1,
     "dog": 2,
     "is": 3,
@@ -197,7 +198,7 @@
     "violin": 1,
     "update": 3,
     "wings": 1,
-    "advice": 1,
+    "advice": 2,
     "ghostwire": 1,
     "guy": 1,
     "message": 1,
@@ -245,7 +246,8 @@
     "mushroom": 2,
     "trilogy": 1,
     "spider": 1,
-    "ear": 1
+    "ear": 1,
+    "reviewlexlutherusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -632,6 +634,11 @@
       "title": "A Middle-Aged Man (Probably) beats Elden Ring (Feat. Birds)",
       "start_ts": 1652731792,
       "youtube_archive_id": "XjFOowSK0eU"
+    },
+    "a_middle_aged_man_reacks": {
+      "title": "A Middle Aged Man \"Reacks\"",
+      "start_ts": 1704662304,
+      "youtube_archive_id": "yPO8lMZlWGs"
     }
   },
   "messages": [
@@ -2624,6 +2631,89 @@
       "message": "psychos are hard work but worth it n the bedroom :winking_face_with_tongue:",
       "commands": [
         "tongue"
+      ]
+    },
+    {
+      "ts": 1704670985,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "I need your advice: I have a PC with an i7 7600k processor and it says it\u2018s not supported for Win 11. Should I upgrade anyways? Anyissueswith updates?",
+      "commands": [
+        "advice"
+      ]
+    },
+    {
+      "ts": 1704670696,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "imagine dsp not talking and just doing :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1704670633,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "Phil: the watermark will electrocute my PC",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1704670262,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "when I hear rich screaming I think of my girls :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704670130,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "ReviewLexLutherUSA: WRONG!!!!",
+      "commands": [
+        "reviewlexlutherusa"
+      ]
+    },
+    {
+      "ts": 1704668568,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "imagine Mike needing therapy post documentary :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1704668400,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "just know :index_pointing_up: Hero in :man_superhero: dsp looks like a talking roach .... :thinking_face: with a mustache also sup Chat sup Rich :sign_of_the_horns:",
+      "commands": [
+        "up",
+        "superhero",
+        "face",
+        "horns"
+      ]
+    },
+    {
+      "ts": 1704664363,
+      "username": "@chrischansfantabottlecolle4368",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_reacks",
+      "message": "Can't believe it's been this long.:slightly_smiling_face: Glad to finally catch a stream live. Breasts.",
+      "commands": [
+        "face"
       ]
     },
     {
