@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100722,
+  "updated_ts": 1782100729,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -387,7 +387,8 @@
     "legal_eagles_xqc_video",
     "lets_argue_about_nintendo",
     "lets_be_disappointed_by_the_nintendo_direct_together",
-    "lets_chat"
+    "lets_chat",
+    "lets_chat_plus_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6565,6 +6566,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 21.5,
       "avg_active_chatters": 27.0
+    },
+    "lets_chat_plus_birds": {
+      "stream_id": "lets_chat_plus_birds",
+      "title": "Let's Chat (Plus Birds)",
+      "start_ts": 1641432207,
+      "end_ts": 1641441505,
+      "duration_sec": 9298,
+      "youtube_archive_id": "oAJsMyHmsio",
+      "source_platform": "youtube",
+      "total_donations_usd": 467.57,
+      "donation_count": 94,
+      "donations_per_min": 3.0172,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.94,
+      "avg_active_chatters": 48.72
     }
   }
 }
