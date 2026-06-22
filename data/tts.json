@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100645,
+  "updated_ts": 1782100652,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -375,7 +375,8 @@
     "large_man_alert",
     "large_man_in_front_of_mic_live",
     "large_man_live",
-    "large_man_with_large_birds_talks_into_microphone_feat_birds"
+    "large_man_with_large_birds_talks_into_microphone_feat_birds",
+    "large_men"
   ],
   "commands": {
     "stan": 27,
@@ -398,7 +399,7 @@
     "phile": 1,
     "emoguy": 1,
     "phill": 2,
-    "something": 1,
+    "something": 2,
     "hobo": 2,
     "gnome": 1,
     "rich": 24,
@@ -406,12 +407,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 83,
+    "eyes": 84,
     "africa": 1,
     "face": 349,
     "petersonxhhanson": 1,
     "poo": 20,
-    "joy": 251,
+    "joy": 253,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -420,11 +421,11 @@
     "fear": 3,
     "voice": 4,
     "cucumber": 45,
-    "biceps": 3,
+    "biceps": 4,
     "tongue": 7,
     "heart": 117,
     "shorts": 1,
-    "laughing": 143,
+    "laughing": 144,
     "news": 18,
     "chicken": 42,
     "cake": 7,
@@ -561,7 +562,7 @@
     "sweat": 15,
     "twist": 2,
     "quote": 1,
-    "beverage": 3,
+    "beverage": 4,
     "peanuts": 1,
     "glass": 1,
     "example": 1,
@@ -579,7 +580,7 @@
     "flag": 1,
     "restaraunt": 1,
     "highter": 1,
-    "glove": 2,
+    "glove": 3,
     "collision": 2,
     "spoiler": 1,
     "mug": 2,
@@ -639,7 +640,7 @@
     "balloon": 1,
     "bear": 1,
     "philitizer": 1,
-    "cat": 2,
+    "cat": 3,
     "reviewmusicusa": 1,
     "snake": 1,
     "fap": 1,
@@ -722,7 +723,7 @@
     "sc": 1,
     "sun": 1,
     "part": 1,
-    "milk": 4,
+    "milk": 5,
     "check": 1,
     "king": 1,
     "unrelated": 1,
@@ -819,7 +820,7 @@
     "reviewphilosphyusa": 1,
     "rtusa": 1,
     "kid": 1,
-    "tear": 1,
+    "tear": 2,
     "are": 1,
     "keemstar": 1,
     "tbf": 1,
@@ -2707,6 +2708,11 @@
       "title": "Large Man With Large Birds Talks Into Microphone (Feat. Birds)",
       "start_ts": 1665013469,
       "youtube_archive_id": "o_a9xVKTBoc"
+    },
+    "large_men": {
+      "title": "Large Men",
+      "start_ts": 1682120829,
+      "youtube_archive_id": "QjshYZtF5yc"
     }
   },
   "messages": [
@@ -11694,6 +11700,116 @@
       "message": "That crowder footage reminds me of what the \"MRA\" crowd think marriage is: Paternalistic control of your significant other. it's gross.",
       "commands": [
         "is"
+      ]
+    },
+    {
+      "ts": 1682131424,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "My two bucks here says you\u2019ll watch it. :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1682129846,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "He\u2019s being a :cat:",
+      "commands": [
+        "cat"
+      ]
+    },
+    {
+      "ts": 1682129457,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Months ago had a male manager ask my size, whether I was cut, and asked me to spin around for him. Again, I'm a dude :smiling_face_with_tear:",
+      "commands": [
+        "tear"
+      ]
+    },
+    {
+      "ts": 1682128112,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "hello richie just got here let\u2019s go for coffee :hot_beverage:",
+      "commands": [
+        "beverage"
+      ]
+    },
+    {
+      "ts": 1682125700,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "May 1st Burst Stream Gonna be Poppin' :flexed_biceps: can't wait",
+      "commands": [
+        "biceps"
+      ]
+    },
+    {
+      "ts": 1682125161,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Thanks for keeping me sane while I nearly died with Covid in 2020 dad. Lot of late nights listening to your streams. Thanks for it all daddy :cow::glass_of_milk:",
+      "commands": [
+        "milk"
+      ]
+    },
+    {
+      "ts": 1682124505,
+      "username": "@raymarkable96",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "To train for the fight, please spar with Jay covered in maple syrup:rooster::boxing_glove:",
+      "commands": [
+        "glove"
+      ]
+    },
+    {
+      "ts": 1682122915,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Hey Birdfather. My dream is to become a professional writer, but I want to ask you something: do you think it would be a good idea to invest a little on YouTube to build my career? Any advice?",
+      "commands": [
+        "something"
+      ]
+    },
+    {
+      "ts": 1682122675,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Technically Cody pays me as friends or family :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1682122465,
+      "username": "@raymarkable96",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Sam Hyde made fishtank to avoid training Jeremy :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1682121378,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "large_men",
+      "message": "Rich u think u have issues, i'm counting down the days until May 1st unironically :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
