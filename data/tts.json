@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100379,
+  "updated_ts": 1782100388,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -344,7 +344,8 @@
     "irl_streaming_on_a_hot_day",
     "irrelevant_youtuber_plays_saints_row_2022",
     "is_the_ps5_revision_that_bad_feat_joker_productions",
-    "its_a_question"
+    "its_a_question",
+    "its_all_about_casey"
   ],
   "commands": {
     "stan": 27,
@@ -377,7 +378,7 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 322,
+    "face": 323,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 234,
@@ -395,7 +396,7 @@
     "shorts": 1,
     "laughing": 133,
     "news": 18,
-    "chicken": 39,
+    "chicken": 40,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -415,7 +416,7 @@
     "hole": 6,
     "rooster": 35,
     "peach": 9,
-    "fire": 19,
+    "fire": 20,
     "kendal": 1,
     "up": 35,
     "note": 6,
@@ -424,7 +425,7 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 22,
+    "hands": 23,
     "horns": 7,
     "crab": 2,
     "superhero": 25,
@@ -485,7 +486,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 11,
+    "it": 12,
     "food": 4,
     "play": 1,
     "video": 1,
@@ -540,7 +541,7 @@
     "mugs": 2,
     "ties": 1,
     "this": 1,
-    "notes": 13,
+    "notes": 14,
     "wars": 1,
     "points": 6,
     "wastebasket": 1,
@@ -765,7 +766,12 @@
     "a": 1,
     "b": 1,
     "c": 1,
-    "bottle": 1
+    "bottle": 1,
+    "attorney": 1,
+    "case": 1,
+    "way": 1,
+    "judge": 1,
+    "system": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2482,6 +2488,11 @@
       "title": "It's A Question",
       "start_ts": 1654385279,
       "youtube_archive_id": "INqxF8-c2oA"
+    },
+    "its_all_about_casey": {
+      "title": "It's All About Casey...",
+      "start_ts": 1639702646,
+      "youtube_archive_id": "dQwevWaSfho"
     }
   },
   "messages": [
@@ -17649,6 +17660,71 @@
       "message": "Rapid DSP laugh please:rooster:",
       "commands": [
         "rooster"
+      ]
+    },
+    {
+      "ts": 1639711851,
+      "username": "@johndemetro8184",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "I think she's super hot big for head but crazy :fire: tell me I'm worng?",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1639711640,
+      "username": "@shrek3ondvd913",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "Open & Shut case: exists Lawyer blinks the wrong way: exists Judge: Mistrial!!!!!! Our judicial system: well I guess they are innocent after all :clapping_hands::clapping_hands::clapping_hands::clapping_hands::clapping_hands:",
+      "commands": [
+        "case",
+        "way",
+        "judge",
+        "system",
+        "hands"
+      ]
+    },
+    {
+      "ts": 1639711110,
+      "username": "@jjcavazos5420",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "*Casey's Attorney: You have the right to spread your cheeks and just go to town",
+      "commands": [
+        "attorney"
+      ]
+    },
+    {
+      "ts": 1639711017,
+      "username": "@liquyd83",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "Complete side note from the pickle juice, any thoughts on the TCL R646 TV for Series X. Long time watcher, :slightly_smiling_face: thanks for the entertainment Rich",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1639706565,
+      "username": "@nightruler666",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "DSP tries it: Being self aware multiple dsp laughs",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1639705141,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "its_all_about_casey",
+      "message": "Stacys mom\u2019s has got it goin on :musical_notes::musical_notes: :horse::rooster::chicken:",
+      "commands": [
+        "notes",
+        "chicken"
       ]
     },
     {
