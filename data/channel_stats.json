@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102386,
+  "updated_ts": 1782102392,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -632,7 +632,8 @@
     "the_bill_gates_experience",
     "the_boxing_man_champion_is_streaming_feat_birds",
     "the_chris_chan_and_activision_disasters",
-    "the_chris_chanithon"
+    "the_chris_chanithon",
+    "the_christmas_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10730,6 +10731,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.38,
       "avg_active_chatters": 34.21
+    },
+    "the_christmas_man": {
+      "stream_id": "the_christmas_man",
+      "title": "The Christmas Man",
+      "start_ts": 1640490245,
+      "end_ts": 1640502525,
+      "duration_sec": 12280,
+      "youtube_archive_id": "U70eygpIP9c",
+      "source_platform": "youtube",
+      "total_donations_usd": 313.19,
+      "donation_count": 76,
+      "donations_per_min": 1.5302,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.82,
+      "avg_active_chatters": 29.54
     }
   }
 }
