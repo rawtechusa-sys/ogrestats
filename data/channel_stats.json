@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102474,
+  "updated_ts": 1782102479,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -648,7 +648,8 @@
     "the_fragrance_of_my_farts",
     "the_game_awards_2022_feat_jay_and_birds",
     "the_game_awards_and_a_man_with_birds",
-    "the_gamerfrommars_chris_chan_documentary"
+    "the_gamerfrommars_chris_chan_documentary",
+    "the_giga_chad_of_youtube_is_streaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11002,6 +11003,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.39,
       "avg_active_chatters": 42.14
+    },
+    "the_giga_chad_of_youtube_is_streaming": {
+      "stream_id": "the_giga_chad_of_youtube_is_streaming",
+      "title": "The Giga Chad Of YouTube Is Streaming",
+      "start_ts": 1638933032,
+      "end_ts": 1638941999,
+      "duration_sec": 8967,
+      "youtube_archive_id": "F2szeStWCy8",
+      "source_platform": "youtube",
+      "total_donations_usd": 251.53,
+      "donation_count": 67,
+      "donations_per_min": 1.683,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.07,
+      "avg_active_chatters": 35.37
     }
   }
 }
