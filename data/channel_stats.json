@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100661,
+  "updated_ts": 1782100668,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -378,7 +378,8 @@
     "large_man_live",
     "large_man_with_large_birds_talks_into_microphone_feat_birds",
     "large_men",
-    "last_hour_lets_go_road_to_1000_members"
+    "last_hour_lets_go_road_to_1000_members",
+    "late_hairy_man_action"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6412,6 +6413,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.17,
       "avg_active_chatters": 17.73
+    },
+    "late_hairy_man_action": {
+      "stream_id": "late_hairy_man_action",
+      "title": "Late Hairy Man Action",
+      "start_ts": 1663898172,
+      "end_ts": 1663908121,
+      "duration_sec": 9949,
+      "youtube_archive_id": "sdz37kqI_GQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 189.12,
+      "donation_count": 47,
+      "donations_per_min": 1.1405,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.87,
+      "avg_active_chatters": 31.75
     }
   }
 }
