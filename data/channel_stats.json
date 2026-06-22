@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099785,
+  "updated_ts": 1782099794,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -277,7 +277,8 @@
     "edp445_looked_for_another_cupcake",
     "edp445_strikes_again_dsp_is_salty_more_anker_drama",
     "elden_ring_fails_compilation_marathon_eldenring",
-    "elon_musk_bought_me_a_bird"
+    "elon_musk_bought_me_a_bird",
+    "everyone_on_the_internet_loves_me"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4695,6 +4696,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.65,
       "avg_active_chatters": 29.93
+    },
+    "everyone_on_the_internet_loves_me": {
+      "stream_id": "everyone_on_the_internet_loves_me",
+      "title": "Everyone On The Internet Loves Me",
+      "start_ts": 1695077972,
+      "end_ts": 1695099655,
+      "duration_sec": 21683,
+      "youtube_archive_id": "dXAunKeIMrA",
+      "source_platform": "youtube",
+      "total_donations_usd": 339.6,
+      "donation_count": 100,
+      "donations_per_min": 0.9397,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.7,
+      "avg_active_chatters": 38.12
     }
   }
 }
