@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100370,
+  "updated_ts": 1782100379,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -343,7 +343,8 @@
     "irl_streaming_from_poughkeepsie_ny",
     "irl_streaming_on_a_hot_day",
     "irrelevant_youtuber_plays_saints_row_2022",
-    "is_the_ps5_revision_that_bad_feat_joker_productions"
+    "is_the_ps5_revision_that_bad_feat_joker_productions",
+    "its_a_question"
   ],
   "commands": {
     "stan": 27,
@@ -376,10 +377,10 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 320,
+    "face": 322,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 232,
+    "joy": 234,
     "gameboy": 1,
     "chick": 2,
     "carlos": 29,
@@ -392,14 +393,14 @@
     "tongue": 6,
     "heart": 106,
     "shorts": 1,
-    "laughing": 131,
+    "laughing": 133,
     "news": 18,
     "chicken": 39,
     "cake": 7,
     "d": 4,
     "halo": 4,
     "hand": 28,
-    "popper": 7,
+    "popper": 8,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -412,8 +413,8 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 34,
-    "peach": 8,
+    "rooster": 35,
+    "peach": 9,
     "fire": 19,
     "kendal": 1,
     "up": 35,
@@ -2476,6 +2477,11 @@
       "title": "Is The PS5 Revision THAT BAD? feat. Joker Productions",
       "start_ts": 1630628376,
       "youtube_archive_id": "JgCFKT4tJ3E"
+    },
+    "its_a_question": {
+      "title": "It's A Question",
+      "start_ts": 1654385279,
+      "youtube_archive_id": "INqxF8-c2oA"
     }
   },
   "messages": [
@@ -15438,6 +15444,96 @@
       "message": ":chicken::chicken::chicken::chicken::chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1654399247,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "Are you still my dad :pleading_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1654397756,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "Just sent the HDTVTEST video to your Twitter Vincent did a video response to show how bad Quantum settings are and why not to use them Play it next :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1654396204,
+      "username": "@black2785",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "QTV wants a Golden Shower from Mr. Carlos :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1654393761,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "Should get a TV calibrater to calibrate the CRT. :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1654391043,
+      "username": "@LeesReviews69",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "Take it off! :party_popper:",
+      "commands": [
+        "popper"
+      ]
+    },
+    {
+      "ts": 1654389565,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "Chris Hansen would say to qtv \"did you say I'm thoroughly ticked to this 13 year old boy?\" LMAO :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1654388276,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "\"I just came to get something to eat\" in Mickey Mouse's voice please! :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1654387934,
+      "username": "@TurboPikachu",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "I\u2019m getting heath ledger joker vibes from Chris Hansen\u2019s voice in this one :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1654387214,
+      "username": "@toyotacorolla9416",
+      "platform": "youtube",
+      "stream_id": "its_a_question",
+      "message": "I need guidance mr. Bird man, I\u2019ve been trying to save money on gas by relaxing my :peach: and farting into the gas tank, but my gauge isn\u2019t going up, ideas",
+      "commands": [
+        "peach"
       ]
     },
     {
