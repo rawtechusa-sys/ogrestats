@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101487,
+  "updated_ts": 1782101494,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -492,7 +492,8 @@
     "my_subscribers_give_me_criticism",
     "new_years_eve_man_live_feat_birds",
     "nightly_hang_out",
-    "nintendo_direct_event_292022"
+    "nintendo_direct_event_292022",
+    "nintendo_direct_recap_reaction"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8350,6 +8351,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 25.64,
       "avg_active_chatters": 62.84
+    },
+    "nintendo_direct_recap_reaction": {
+      "stream_id": "nintendo_direct_recap_reaction",
+      "title": "Nintendo Direct Recap Reaction",
+      "start_ts": 1632449833,
+      "end_ts": 1632456701,
+      "duration_sec": 6868,
+      "youtube_archive_id": "W_jOd2cPB7k",
+      "source_platform": "youtube",
+      "total_donations_usd": 357.53,
+      "donation_count": 102,
+      "donations_per_min": 3.1234,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.7,
+      "avg_active_chatters": 49.42
     }
   }
 }
