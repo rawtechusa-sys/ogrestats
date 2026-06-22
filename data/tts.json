@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099108,
+  "updated_ts": 1782099116,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -195,7 +195,8 @@
     "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
     "come_ask_me_almost_anything",
     "come_ask_me_literally_anything_this_is_a_mistake",
-    "come_ask_me_things"
+    "come_ask_me_things",
+    "come_ask_me_whatever_the_hell_you_want"
   ],
   "commands": {
     "stan": 27,
@@ -228,7 +229,7 @@
     "turkey": 5,
     "eyes": 53,
     "africa": 1,
-    "face": 160,
+    "face": 161,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 120,
@@ -242,7 +243,7 @@
     "cucumber": 18,
     "biceps": 3,
     "tongue": 4,
-    "heart": 55,
+    "heart": 56,
     "shorts": 1,
     "laughing": 55,
     "news": 12,
@@ -365,7 +366,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 5,
+    "droplets": 6,
     "tomato": 3,
     "hearts": 2,
     "million": 1,
@@ -1449,6 +1450,11 @@
       "title": "Come Ask Me Things",
       "start_ts": 1642294063,
       "youtube_archive_id": "GONfEUbp3mA"
+    },
+    "come_ask_me_whatever_the_hell_you_want": {
+      "title": "Come Ask Me Whatever The Hell You Want",
+      "start_ts": 1640220728,
+      "youtube_archive_id": "zfq0v5iEXz4"
     }
   },
   "messages": [
@@ -10669,6 +10675,36 @@
       "message": "Yeah but you are okay with watching dsp and wings videos that are critical of them. But watching videos against you is off limit :unamused_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1640224956,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_whatever_the_hell_you_want",
+      "message": "ReviewPissingUSA :flushed_face::sweat_droplets::sweat_droplets::sweat_droplets::sweat_droplets::sweat_droplets::weary_face::weary_face::weary_face::sweat_droplets::sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1640224259,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_whatever_the_hell_you_want",
+      "message": "Wassup gamers. Rich, very personal question, have you ever had your booty touched by a homie? Don't be shy, it ain't homo to get ur booty touched. :flushed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1640221745,
+      "username": "@autumndistrict",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_whatever_the_hell_you_want",
+      "message": "ass waxing live? also sending love to ur editor :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
