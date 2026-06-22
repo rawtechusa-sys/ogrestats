@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101507,
+  "updated_ts": 1782101514,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -491,7 +491,8 @@
     "nintendo_direct_event_292022",
     "nintendo_direct_recap_reaction",
     "no_bird_suit_but_a_new_bird",
-    "non_stop_vegan_tickling"
+    "non_stop_vegan_tickling",
+    "normal_man_stream_almost_burnt_down_my_house"
   ],
   "commands": {
     "stan": 27,
@@ -517,17 +518,17 @@
     "something": 2,
     "hobo": 2,
     "gnome": 1,
-    "rich": 27,
+    "rich": 28,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 115,
+    "eyes": 116,
     "africa": 1,
     "face": 466,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 299,
+    "joy": 301,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -540,7 +541,7 @@
     "tongue": 10,
     "heart": 143,
     "shorts": 2,
-    "laughing": 184,
+    "laughing": 185,
     "news": 20,
     "chicken": 56,
     "cake": 7,
@@ -605,7 +606,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 22,
-    "horse": 14,
+    "horse": 15,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -3470,6 +3471,11 @@
       "title": "Non-Stop Vegan Tickling",
       "start_ts": 1656466793,
       "youtube_archive_id": "Sk_Fxf4n1b4"
+    },
+    "normal_man_stream_almost_burnt_down_my_house": {
+      "title": "NORMAL MAN STREAM (Almost Burnt Down My House)",
+      "start_ts": 1675384058,
+      "youtube_archive_id": "AEcoPS0NaEQ"
     }
   },
   "messages": [
@@ -15138,6 +15144,66 @@
       "message": "Heard a rumour you\u2019re a man of birds. Hoot hoot :owl:",
       "commands": [
         "owl"
+      ]
+    },
+    {
+      "ts": 1675391910,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "The whole organic experience make no sense Phil. If you think this was good Phil u should go to the hospital :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675390964,
+      "username": "@TheDreamSama",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "My super chat dad :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1675390535,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "JK Rowling is hot AF, but not a game programmer etc. Those are the ones who suffer from peeps not buying a game, she got tons of money! :face_with_tears_of_joy::rolling_on_the_floor_laughing: *breasts*",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1675387305,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "I yearn for the blake stare of intro man :horse: PLAYSTATION QUINTUPLISE MY A$$ CHEEKS MUTHA FUKA, for real. ( thank you for all the meaningful content :chicken:)",
+      "commands": [
+        "horse"
+      ]
+    },
+    {
+      "ts": 1675385745,
+      "username": "@CypressJDX",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "The pic not the actual bird. :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675384809,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "normal_man_stream_almost_burnt_down_my_house",
+      "message": "Today on Cooking With Rich: Extra Toasted Bagels",
+      "commands": [
+        "rich"
       ]
     },
     {
