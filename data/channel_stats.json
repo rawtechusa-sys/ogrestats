@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100871,
+  "updated_ts": 1782100879,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -408,7 +408,8 @@
     "lets_shop_and_then_go_to_war",
     "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
-    "lets_talk_for_a_bit_boogie2988_and_quantum_tv"
+    "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
+    "lets_watch_becky_screw_me_over"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6922,6 +6923,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.5,
       "avg_active_chatters": 43.25
+    },
+    "lets_watch_becky_screw_me_over": {
+      "stream_id": "lets_watch_becky_screw_me_over",
+      "title": "Let's Watch Becky Screw Me Over",
+      "start_ts": 1739494883,
+      "end_ts": 1739504747,
+      "duration_sec": 9864,
+      "youtube_archive_id": "gRl_P_BI040",
+      "source_platform": "youtube",
+      "total_donations_usd": 315.12,
+      "donation_count": 72,
+      "donations_per_min": 1.9168,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.12,
+      "avg_active_chatters": 30.26
     }
   }
 }
