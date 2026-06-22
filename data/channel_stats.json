@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102397,
+  "updated_ts": 1782102403,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -634,7 +634,8 @@
     "the_chris_chan_and_activision_disasters",
     "the_chris_chanithon",
     "the_christmas_man",
-    "the_clowns_make_it_too_easy"
+    "the_clowns_make_it_too_easy",
+    "the_completionist_and_philip_burnell_are_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10764,6 +10765,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.13,
       "avg_active_chatters": 23.89
+    },
+    "the_completionist_and_philip_burnell_are_men": {
+      "stream_id": "the_completionist_and_philip_burnell_are_men",
+      "title": "THe Completionist And Philip Burnell Are Men",
+      "start_ts": 1702179678,
+      "end_ts": 1702186874,
+      "duration_sec": 7196,
+      "youtube_archive_id": "LAO-ACnBLyI",
+      "source_platform": "youtube",
+      "total_donations_usd": 211.8,
+      "donation_count": 56,
+      "donations_per_min": 1.766,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.27,
+      "avg_active_chatters": 47.72
     }
   }
 }
