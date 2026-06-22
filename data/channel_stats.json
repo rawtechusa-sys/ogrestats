@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098905,
+  "updated_ts": 1782098913,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -171,7 +171,8 @@
     "boogie2988_is_a_thief_and_a_liar",
     "boy_do_we_need_to_talk",
     "brand_new_set_same_old_man",
-    "breaking_news_im_an_idiot"
+    "breaking_news_im_an_idiot",
+    "breaking_steven_crowder_is_human_garbage_shocking"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2893,6 +2894,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.03,
       "avg_active_chatters": 35.3
+    },
+    "breaking_steven_crowder_is_human_garbage_shocking": {
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "title": "BREAKING: Steven Crowder Is Human Garbage (SHOCKING)",
+      "start_ts": 1682726594,
+      "end_ts": 1682751690,
+      "duration_sec": 25096,
+      "youtube_archive_id": "GK5cKQ5yCc4",
+      "source_platform": "youtube",
+      "total_donations_usd": 520.52,
+      "donation_count": 128,
+      "donations_per_min": 1.2445,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.1,
+      "avg_active_chatters": 24.09
     }
   }
 }
