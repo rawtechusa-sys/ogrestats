@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099052,
+  "updated_ts": 1782099060,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -189,7 +189,8 @@
     "clearing_the_air_and_watching_jordan_peterson",
     "colleen_ballinger_is_an_absolute_weirdo",
     "come_ask_a_man_and_a_bird_questions",
-    "come_ask_a_man_and_bird_questions"
+    "come_ask_a_man_and_bird_questions",
+    "come_ask_a_man_anything_8_3_2021"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3199,6 +3200,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.88,
       "avg_active_chatters": 29.81
+    },
+    "come_ask_a_man_anything_8_3_2021": {
+      "stream_id": "come_ask_a_man_anything_8_3_2021",
+      "title": "Come Ask A Man Anything 8-3-2021",
+      "start_ts": 1628034947,
+      "end_ts": 1628042210,
+      "duration_sec": 7263,
+      "youtube_archive_id": "B1Eipt-zak0",
+      "source_platform": "youtube",
+      "total_donations_usd": 256.84,
+      "donation_count": 63,
+      "donations_per_min": 2.1218,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.69,
+      "avg_active_chatters": 33.59
     }
   }
 }
