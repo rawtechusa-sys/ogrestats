@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098798,
+  "updated_ts": 1782098806,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -157,7 +157,8 @@
     "big_problems_over_at_youtube",
     "bill_gates_is_a_man",
     "bird_and_man_mayhem",
-    "bird_and_man_mayhem_live_chris_chan"
+    "bird_and_man_mayhem_live_chris_chan",
+    "bird_love_live_dating_nightmares"
   ],
   "commands": {
     "stan": 27,
@@ -190,10 +191,10 @@
     "turkey": 5,
     "eyes": 34,
     "africa": 1,
-    "face": 125,
+    "face": 126,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 100,
+    "joy": 101,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -204,11 +205,11 @@
     "cucumber": 15,
     "biceps": 3,
     "tongue": 4,
-    "heart": 46,
+    "heart": 47,
     "shorts": 1,
     "laughing": 50,
     "news": 11,
-    "chicken": 21,
+    "chicken": 23,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -328,7 +329,7 @@
     "reviewlexlutherusa": 1,
     "rocket": 1,
     "droplets": 5,
-    "tomato": 1,
+    "tomato": 3,
     "hearts": 2,
     "million": 1,
     "people": 1,
@@ -410,7 +411,8 @@
     "laugh": 1,
     "shirt": 1,
     "vhs": 1,
-    "pov": 1
+    "pov": 1,
+    "circle": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1192,6 +1194,11 @@
       "title": "Bird And Man Mayhem Live (Chris Chan)",
       "start_ts": 1662340935,
       "youtube_archive_id": "L5JsMSdcOCs"
+    },
+    "bird_love_live_dating_nightmares": {
+      "title": "BIRD LOVE LIVE (DATING NIGHTMARES)",
+      "start_ts": 1631150879,
+      "youtube_archive_id": "a43ViON8810"
     }
   },
   "messages": [
@@ -10617,6 +10624,69 @@
       "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
       "commands": [
         "spose"
+      ]
+    },
+    {
+      "ts": 1631158124,
+      "username": "@hidemeunderyourbed",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "Feels good to be able to afford a superchat again. love to support on of my fav shows! Can I be a mod again ove here daddy Rich?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1631157783,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "what gpu cpu would you say to game and stream ok :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1631155141,
+      "username": "@AJ.MP3",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "How Dare You Want More :tomato: Stop Making This Hurt :red_circle: See you in Chinatown honeypie :face_blowing_a_kiss::red_heart:",
+      "commands": [
+        "tomato",
+        "circle",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1631154947,
+      "username": "@AJ.MP3",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "Rich listen to \u201cTake The Sadness Out Of Saturday Night\u201d, AOTY :tomato: Jack Antonoff & his band are making the rock music we\u2019ve always heard in our dreams :red_circle:",
+      "commands": [
+        "tomato",
+        "circle"
+      ]
+    },
+    {
+      "ts": 1631154277,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "80s Workout tapes look like 90s P*rnoz lol :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631153649,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "bird_love_live_dating_nightmares",
+      "message": "Can I get new laptop least 16ram gd specs 4 600US:chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
