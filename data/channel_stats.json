@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093502,
+  "updated_ts": 1782093546,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -44,7 +44,8 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx",
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
     "a_jcs_and_dsp_stream",
-    "a_jcs_stream"
+    "a_jcs_stream",
+    "a_jodi_arias_holiday_special"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -734,6 +735,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.36,
       "avg_active_chatters": 37.13
+    },
+    "a_jodi_arias_holiday_special": {
+      "stream_id": "a_jodi_arias_holiday_special",
+      "title": "A Jodi Arias Holiday Special",
+      "start_ts": 1640135169,
+      "end_ts": 1640149095,
+      "duration_sec": 13926,
+      "youtube_archive_id": "QzGxuST3mhA",
+      "source_platform": "youtube",
+      "total_donations_usd": 304.17,
+      "donation_count": 87,
+      "donations_per_min": 1.3105,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.68,
+      "avg_active_chatters": 39.21
     }
   }
 }
