@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100473,
+  "updated_ts": 1782100482,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -355,7 +355,8 @@
     "its_time_to_take_games_back_gamers_who_game",
     "itsagundams_dspgaming_video_is_a_masterpiece",
     "jaysus_gaming_test_stream",
-    "just_a_man_and_birds"
+    "just_a_man_and_birds",
+    "just_a_man_streaming_and_answering_questions_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6021,6 +6022,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.49,
       "avg_active_chatters": 37.38
+    },
+    "just_a_man_streaming_and_answering_questions_feat_birds": {
+      "stream_id": "just_a_man_streaming_and_answering_questions_feat_birds",
+      "title": "Just A Man Streaming And Answering Questions (Feat. Birds)",
+      "start_ts": 1649811206,
+      "end_ts": 1649818744,
+      "duration_sec": 7538,
+      "youtube_archive_id": "blb-KUto6Is",
+      "source_platform": "youtube",
+      "total_donations_usd": 249.79,
+      "donation_count": 69,
+      "donations_per_min": 1.9882,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.2,
+      "avg_active_chatters": 36.2
     }
   }
 }
