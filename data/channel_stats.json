@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100972,
+  "updated_ts": 1782100979,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -422,7 +422,8 @@
     "maidenless_birds_play_eldenring_plus_man",
     "man_and_birds_baked_and_live",
     "man_and_birds_vs_karens",
-    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update"
+    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
+    "man_friendly_family_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7160,6 +7161,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.06,
       "avg_active_chatters": 46.81
+    },
+    "man_friendly_family_fun": {
+      "stream_id": "man_friendly_family_fun",
+      "title": "Man-Friendly Family Fun",
+      "start_ts": 1670807080,
+      "end_ts": 1670813998,
+      "duration_sec": 6918,
+      "youtube_archive_id": "Bp2dt0tVrb8",
+      "source_platform": "youtube",
+      "total_donations_usd": 226.31,
+      "donation_count": 75,
+      "donations_per_min": 1.9628,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.17,
+      "avg_active_chatters": 34.44
     }
   }
 }
