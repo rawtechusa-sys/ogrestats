@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098871,
+  "updated_ts": 1782098879,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -166,7 +166,8 @@
     "birds_are_satisfying_kinda_livestream_feat_birds",
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
     "birthday_bird_and_man_stream",
-    "birthday_marathon_man_stream"
+    "birthday_marathon_man_stream",
+    "boogie2988_is_a_thief_and_a_liar"
   ],
   "commands": {
     "stan": 27,
@@ -213,7 +214,7 @@
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 50,
+    "heart": 51,
     "shorts": 1,
     "laughing": 51,
     "news": 11,
@@ -243,7 +244,7 @@
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
-    "shrugging": 2,
+    "shrugging": 3,
     "donation": 1,
     "naruto": 1,
     "hands": 14,
@@ -429,7 +430,9 @@
     "specs": 1,
     "balloon": 1,
     "bear": 1,
-    "philitizer": 1
+    "philitizer": 1,
+    "cat": 1,
+    "reviewmusicusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1256,6 +1259,11 @@
       "title": "Birthday Marathon Man Stream",
       "start_ts": 1689529358,
       "youtube_archive_id": "06dKATh0JEs"
+    },
+    "boogie2988_is_a_thief_and_a_liar": {
+      "title": "Boogie2988 Is A Thief And A Liar",
+      "start_ts": 1720656668,
+      "youtube_archive_id": "l1HVpTGsUk0"
     }
   },
   "messages": [
@@ -3190,6 +3198,46 @@
       "message": ":pile_of_poo::mushroom::mountain::sunset:",
       "commands": [
         "sunset"
+      ]
+    },
+    {
+      "ts": 1720675353,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "boogie2988_is_a_thief_and_a_liar",
+      "message": "Everywhere my eyes look I see color :man_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1720668078,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "boogie2988_is_a_thief_and_a_liar",
+      "message": "ReviewMusicUSA: Living in a pignosis paradise",
+      "commands": [
+        "reviewmusicusa"
+      ]
+    },
+    {
+      "ts": 1720666771,
+      "username": "@75.",
+      "platform": "youtube",
+      "stream_id": "boogie2988_is_a_thief_and_a_liar",
+      "message": "He blamed his cat on himself losing in sf6 :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::black_cat:",
+      "commands": [
+        "cat"
+      ]
+    },
+    {
+      "ts": 1720657035,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "boogie2988_is_a_thief_and_a_liar",
+      "message": "I LOVE YOU :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
