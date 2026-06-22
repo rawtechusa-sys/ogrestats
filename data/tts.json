@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100028,
+  "updated_ts": 1782100037,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -304,7 +304,8 @@
     "i_dunno_wtf_im_doing",
     "i_failed_no_phil_november",
     "i_formally_invited_quantum_tv_on_for_an_interview",
-    "i_got_screwed"
+    "i_got_screwed",
+    "i_got_trolled_hard_by_ethan_ralph"
   ],
   "commands": {
     "stan": 27,
@@ -337,7 +338,7 @@
     "turkey": 7,
     "eyes": 75,
     "africa": 1,
-    "face": 283,
+    "face": 286,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 213,
@@ -351,9 +352,9 @@
     "cucumber": 35,
     "biceps": 3,
     "tongue": 6,
-    "heart": 94,
+    "heart": 95,
     "shorts": 1,
-    "laughing": 109,
+    "laughing": 110,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -375,7 +376,7 @@
     "hole": 5,
     "rooster": 28,
     "peach": 7,
-    "fire": 17,
+    "fire": 18,
     "kendal": 1,
     "up": 28,
     "note": 6,
@@ -387,7 +388,7 @@
     "hands": 20,
     "horns": 7,
     "crab": 2,
-    "superhero": 22,
+    "superhero": 25,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -453,7 +454,7 @@
     "cow": 2,
     "cap": 1,
     "adventures": 1,
-    "head": 2,
+    "head": 3,
     "like": 6,
     "memory": 1,
     "fight": 1,
@@ -697,7 +698,9 @@
     "sekiro": 1,
     "banana": 1,
     "pitt": 1,
-    "beel": 1
+    "beel": 1,
+    "love": 1,
+    "importantquestion": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2214,6 +2217,11 @@
       "title": "I Got Screwed",
       "start_ts": 1642902538,
       "youtube_archive_id": "lRoNYW1h-ig"
+    },
+    "i_got_trolled_hard_by_ethan_ralph": {
+      "title": "I GOT TROLLED HARD BY ETHAN RALPH",
+      "start_ts": 1705964783,
+      "youtube_archive_id": "2kNeio4-NDU"
     }
   },
   "messages": [
@@ -4941,6 +4949,117 @@
       "message": "DSP tries it: Being gay",
       "commands": [
         "it"
+      ]
+    },
+    {
+      "ts": 1705979417,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "Games would be good practice talking to chat :superhero:",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705978533,
+      "username": "@Enraged-Gecko",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "I sent that freakshow nose licking image:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1705977600,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": ":relieved_face: Live & Learn GG :superhero:",
+      "commands": [
+        "face",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705974577,
+      "username": "@BruceDub1247",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "My gosh, dude. THIS is what you're quitting videos for? We don't care about call-ins :grinning_face: We just want to hear you riff with your editors. Respectfully",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705974026,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "importantquestion: lords of the fallen is on sale",
+      "commands": [
+        "importantquestion"
+      ]
+    },
+    {
+      "ts": 1705971963,
+      "username": "@doommama",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "Thanks to Rich, Jay and the chat for the laughs. My mental health has been trash these past few months and these streams keep me laughing. :black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1705970946,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "that describes R Kelly to a tee. What's even more egregious is that some of those girls' parents were complicit with it, even though they knew! :exploding_head:",
+      "commands": [
+        "head"
+      ]
+    },
+    {
+      "ts": 1705969192,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "I watched Django Unchained. Awesome movie, but I couldn\u2019t stomach so many racial apethets in it. :neutral_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705968288,
+      "username": "@TwoLastNames",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "With love: drama is a blast when is Is just you two joking about white gumby, but the guests + weed is asking for trouble",
+      "commands": [
+        "love"
+      ]
+    },
+    {
+      "ts": 1705967652,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "Just know Demented In :man_superhero: + Birds & Butts lets go",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705967458,
+      "username": "@Mopboy4K",
+      "platform": "youtube",
+      "stream_id": "i_got_trolled_hard_by_ethan_ralph",
+      "message": "Just got my S24 Ultra early through my wireless job. Smoothest data transfer ever, Galxay AI is the best thing I've ever used :fire::fire::fire:",
+      "commands": [
+        "fire"
       ]
     },
     {
