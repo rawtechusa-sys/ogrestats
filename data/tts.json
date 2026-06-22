@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099818,
+  "updated_ts": 1782099826,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -280,7 +280,8 @@
     "everyone_on_the_internet_loves_me",
     "exposing_the_anti_woke_frauds",
     "father_is_sick_jaysus_saves",
-    "final_chicken_suit_stream_featuring_birds"
+    "final_chicken_suit_stream_featuring_birds",
+    "friday_night_internet_man"
   ],
   "commands": {
     "stan": 27,
@@ -313,10 +314,10 @@
     "turkey": 6,
     "eyes": 69,
     "africa": 1,
-    "face": 255,
+    "face": 256,
     "petersonxhhanson": 1,
     "poo": 16,
-    "joy": 185,
+    "joy": 186,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -329,7 +330,7 @@
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 83,
+    "laughing": 84,
     "news": 16,
     "chicken": 37,
     "cake": 7,
@@ -357,7 +358,7 @@
     "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
-    "shrugging": 3,
+    "shrugging": 4,
     "donation": 3,
     "naruto": 1,
     "hands": 19,
@@ -368,7 +369,7 @@
     "dog": 4,
     "is": 6,
     "spose": 1,
-    "sunglasses": 13,
+    "sunglasses": 14,
     "kiss": 16,
     "earlier": 1,
     "ghost": 1,
@@ -376,7 +377,7 @@
     "gift": 3,
     "bird": 8,
     "richsmile": 5,
-    "dsp": 15,
+    "dsp": 16,
     "story": 1,
     "tree": 3,
     "skull": 6,
@@ -2038,6 +2039,11 @@
       "title": "Final Chicken Suit Stream (Featuring Birds)",
       "start_ts": 1653957099,
       "youtube_archive_id": "8fo5MJMRIZQ"
+    },
+    "friday_night_internet_man": {
+      "title": "Friday Night internet Man",
+      "start_ts": 1631923859,
+      "youtube_archive_id": "58ia75XRkR8"
     }
   },
   "messages": [
@@ -16559,6 +16565,66 @@
       "message": "you ever watch that episode of south park with the yelpers where they J.O. on their food cuz they're yelpers? that's what that looks like. you're welcome :grinning_squinting_face: :grinning_squinting_face: :grinning_squinting_face: lol",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1631929805,
+      "username": "@beagleboygaming1701",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "dsp: whos Karl? Chat:Karl! no I'm Karl, I'm Karl!",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1631928966,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "You missed my previous Superchat. Again, I think ReviewTech______ has gone out of control like the scene in Anchorman with the newscaster fights. :face_with_tongue::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1631927378,
+      "username": "@TOALEWA466",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "Idk I\u2019m still on an iPhone XR and I\u2019m plenty happy with it still :man_shrugging:",
+      "commands": [
+        "shrugging"
+      ]
+    },
+    {
+      "ts": 1631927087,
+      "username": "@OverRazeGamer",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "Am going from 8 plus to 13 pro max! Keep it up! :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1631924806,
+      "username": "@druboy6260",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "no bait im a genuine fan sorry :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631924508,
+      "username": "@Legalgodzilla",
+      "platform": "youtube",
+      "stream_id": "friday_night_internet_man",
+      "message": "How much for a drunk Just Dance stream? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
