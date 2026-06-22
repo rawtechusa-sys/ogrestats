@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099002,
+  "updated_ts": 1782099011,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -183,7 +183,8 @@
     "chatting_watching_chris_chan_documentary_gamerfrommars",
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
     "chatting_with_intro_guy",
-    "chicken_suit_ep_9_discussing_elden_ring"
+    "chicken_suit_ep_9_discussing_elden_ring",
+    "chris_watts_in_4k"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3097,6 +3098,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.7,
       "avg_active_chatters": 26.26
+    },
+    "chris_watts_in_4k": {
+      "stream_id": "chris_watts_in_4k",
+      "title": "Chris Watts In 4K",
+      "start_ts": 1639796551,
+      "end_ts": 1639805333,
+      "duration_sec": 8782,
+      "youtube_archive_id": "fSNpaaK9FMk",
+      "source_platform": "youtube",
+      "total_donations_usd": 313.84,
+      "donation_count": 60,
+      "donations_per_min": 2.1442,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.05,
+      "avg_active_chatters": 27.26
     }
   }
 }
