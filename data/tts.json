@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101025,
+  "updated_ts": 1782101033,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -427,7 +427,8 @@
     "man_in_chicken_suit_ep2_feat_beautiful_birds",
     "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
     "man_in_chicken_suit_ep6_more_quantum_karen_tv",
-    "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds"
+    "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
+    "man_news_live"
   ],
   "commands": {
     "stan": 27,
@@ -460,7 +461,7 @@
     "turkey": 7,
     "eyes": 98,
     "africa": 1,
-    "face": 407,
+    "face": 408,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 273,
@@ -496,7 +497,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 43,
+    "rooster": 44,
     "peach": 14,
     "fire": 23,
     "kendal": 1,
@@ -3045,6 +3046,11 @@
       "title": "Man In Chicken Suit Watches Predator Vids Ep.3 (Feat. Beautiful Birds)",
       "start_ts": 1652312781,
       "youtube_archive_id": "EI61zpZqumk"
+    },
+    "man_news_live": {
+      "title": "Man News LIVE",
+      "start_ts": 1713397637,
+      "youtube_archive_id": "LoagX0s_c1U"
     }
   },
   "messages": [
@@ -5433,6 +5439,26 @@
       "message": "Sending a message for Seymour Demonica: Your Tipster image is bleeding into Jordan Peterson. Big Birds!",
       "commands": [
         "demonica"
+      ]
+    },
+    {
+      "ts": 1713403201,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "man_news_live",
+      "message": "Dadu! Why do you do the Doo Doo? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1713399250,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "man_news_live",
+      "message": "work at a grocery store I be slinging MEAT SON haven\u2019t been able to find anything since graduating college last may honestly fells like purgatory :rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
