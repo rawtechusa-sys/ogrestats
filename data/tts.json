@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100489,
+  "updated_ts": 1782100498,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -356,7 +356,8 @@
     "jaysus_gaming_test_stream",
     "just_a_man_and_birds",
     "just_a_man_streaming_and_answering_questions_feat_birds",
-    "just_a_man_streaming_for_a_bit"
+    "just_a_man_streaming_for_a_bit",
+    "just_being_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -452,7 +453,7 @@
     "gift": 3,
     "bird": 10,
     "richsmile": 5,
-    "dsp": 21,
+    "dsp": 22,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -554,7 +555,7 @@
     "this": 1,
     "notes": 14,
     "wars": 1,
-    "points": 7,
+    "points": 8,
     "wastebasket": 1,
     "left": 3,
     "flag": 1,
@@ -2574,6 +2575,11 @@
       "title": "Just A Man Streaming For A Bit",
       "start_ts": 1694484965,
       "youtube_archive_id": "AfwzquzfFBU"
+    },
+    "just_being_a_man": {
+      "title": "Just Being A Man",
+      "start_ts": 1709944038,
+      "youtube_archive_id": "PO6YcLDZ6LM"
     }
   },
   "messages": [
@@ -5083,6 +5089,26 @@
       "message": "What up rich, just Came here to say hi and for an introguys fart, dont judge me:face_with_peeking_eye:",
       "commands": [
         "eye"
+      ]
+    },
+    {
+      "ts": 1709951790,
+      "username": "@ReviewCanada",
+      "platform": "youtube",
+      "stream_id": "just_being_a_man",
+      "message": "you do know coco works for Jay? he's against you:hundred_points:",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1709950654,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "just_being_a_man",
+      "message": "DSP: who cares if the creator a legendary anime just passed away? People should be giving me money that\u2019s what\u2019s important",
+      "commands": [
+        "dsp"
       ]
     },
     {
