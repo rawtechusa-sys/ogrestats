@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099134,
+  "updated_ts": 1782099142,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -198,7 +198,8 @@
     "come_ask_me_things",
     "come_ask_me_whatever_the_hell_you_want",
     "come_ask_questions",
-    "come_ask_questions_10_9_2021"
+    "come_ask_questions_10_9_2021",
+    "come_ask_questions_712021"
   ],
   "commands": {
     "stan": 27,
@@ -229,7 +230,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 54,
+    "eyes": 55,
     "africa": 1,
     "face": 167,
     "petersonxhhanson": 1,
@@ -242,10 +243,10 @@
     "idea": 1,
     "fear": 2,
     "voice": 3,
-    "cucumber": 18,
+    "cucumber": 19,
     "biceps": 3,
     "tongue": 4,
-    "heart": 58,
+    "heart": 59,
     "shorts": 1,
     "laughing": 57,
     "news": 12,
@@ -286,7 +287,7 @@
     "dog": 4,
     "is": 5,
     "spose": 1,
-    "sunglasses": 5,
+    "sunglasses": 6,
     "kiss": 13,
     "earlier": 1,
     "ghost": 1,
@@ -483,7 +484,8 @@
     "hamburger": 1,
     "chipmunk": 1,
     "cupcaketv": 1,
-    "stuff": 1
+    "stuff": 1,
+    "vampire": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1470,6 +1472,11 @@
       "title": "Come Ask Questions 10-9-2021",
       "start_ts": 1633824297,
       "youtube_archive_id": "USJkNH9samE"
+    },
+    "come_ask_questions_712021": {
+      "title": "Come Ask Questions 7/1/2021",
+      "start_ts": 1625355916,
+      "youtube_archive_id": "H9T9tBWXzt0"
     }
   },
   "messages": [
@@ -13327,6 +13334,56 @@
       "message": "BREAKING: Filene's under fire after allegations emerge of an employee hopped up on angel dust slapped asses whilst screaming \"DICKERS! DICK! DICK!\"",
       "commands": [
         "breaking"
+      ]
+    },
+    {
+      "ts": 1625362149,
+      "username": "@RO-in9qe",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_712021",
+      "message": "I finally got the Xbox series x and the ps5 :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1625361443,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_712021",
+      "message": "What is a man? :wine_glass::man_vampire:",
+      "commands": [
+        "vampire"
+      ]
+    },
+    {
+      "ts": 1625356727,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_712021",
+      "message": "Hi Rich! :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1625356420,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_712021",
+      "message": "make me mod :cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1625356335,
+      "username": "@doylestatus",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_712021",
+      "message": "Can I get a Snort , 3 Farts And The Laugh please :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::black_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
