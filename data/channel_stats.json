@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093170,
+  "updated_ts": 1782093209,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -36,7 +36,8 @@
     "a_dspgaming_family_fun_stream",
     "a_family_friendly_christian_straight_man_stream",
     "a_family_friendly_heterosexual_stream",
-    "a_floor_thrusting_man_stream"
+    "a_floor_thrusting_man_stream",
+    "a_fun_dspgaming_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -598,6 +599,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.5,
       "avg_active_chatters": 37.41
+    },
+    "a_fun_dspgaming_man_stream": {
+      "stream_id": "a_fun_dspgaming_man_stream",
+      "title": "A Fun DSPGAMING Man Stream",
+      "start_ts": 1636944744,
+      "end_ts": 1636953993,
+      "duration_sec": 9249,
+      "youtube_archive_id": "0DT5OOoIKgw",
+      "source_platform": "youtube",
+      "total_donations_usd": 435.49,
+      "donation_count": 117,
+      "donations_per_min": 2.8251,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.07,
+      "avg_active_chatters": 37.32
     }
   }
 }
