@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092979,
+  "updated_ts": 1782093017,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -31,7 +31,8 @@
     "a_christian_straight_man_stream",
     "a_colorful_man",
     "a_crispy_peanut_butter_complexion_livestream",
-    "a_detrahktor_discusses_her_grievances_with_me"
+    "a_detrahktor_discusses_her_grievances_with_me",
+    "a_dspgaming_and_wingsofredemption_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -62,12 +63,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 7,
+    "eyes": 8,
     "africa": 1,
-    "face": 21,
+    "face": 22,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 17,
+    "joy": 18,
     "gameboy": 1,
     "chick": 1,
     "carlos": 7,
@@ -282,6 +283,11 @@
       "title": "A \"Detrahktor\" Discusses Her Grievances WIth Me",
       "start_ts": 1682824529,
       "youtube_archive_id": "QaLSp3SkyVw"
+    },
+    "a_dspgaming_and_wingsofredemption_man_stream": {
+      "title": "A DSPGaming And WingsofRedemption Man Stream",
+      "start_ts": 1645145546,
+      "youtube_archive_id": "-nEv__Duf_E"
     }
   },
   "messages": [
@@ -3084,6 +3090,36 @@
       "message": "i wanna see you play DMC5 mission 19 please :folded_hands:",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1645147851,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_and_wingsofredemption_man_stream",
+      "message": "So RIch, when are you and DSP finally moving in together and starting a YouTube channel together? You can call it 2 MEN with birds :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1645146568,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_and_wingsofredemption_man_stream",
+      "message": "I'm putting my $ where my mouth is, so please use this $20 to go get a porcelain Duck and complete the bird trio. Also, yes Ducks are birds. Love ya buddy! Tx for always keeping me entertained :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1645146113,
+      "username": "@NeoGotYa1111",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_and_wingsofredemption_man_stream",
+      "message": "Hey Richie! Wanna go grab some coffee :smirking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
