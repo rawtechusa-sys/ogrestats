@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102659,
+  "updated_ts": 1782102665,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -681,7 +681,8 @@
     "the_sexiest_live_streamer_of_all_time",
     "the_swatting_needs_to_stop",
     "the_thirst_of_may_1st_countdown_secret_unlimited_video",
-    "the_thirst_of_may_1st_slopes_tommy_tallarico_video"
+    "the_thirst_of_may_1st_slopes_tommy_tallarico_video",
+    "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11563,6 +11564,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.08,
       "avg_active_chatters": 23.84
+    },
+    "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2": {
+      "stream_id": "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2",
+      "title": "The Thirst of May 1st (Slopes Tommy Tallarico Video Pt.2)",
+      "start_ts": 1676420185,
+      "end_ts": 1676430917,
+      "duration_sec": 10732,
+      "youtube_archive_id": "8RXHTEyUPxU",
+      "source_platform": "youtube",
+      "total_donations_usd": 288.21,
+      "donation_count": 81,
+      "donations_per_min": 1.6113,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.01,
+      "avg_active_chatters": 25.89
     }
   }
 }
