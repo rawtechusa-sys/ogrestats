@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098985,
+  "updated_ts": 1782098994,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -181,7 +181,8 @@
     "chatting_and_karens",
     "chatting_and_streaming",
     "chatting_watching_chris_chan_documentary_gamerfrommars",
-    "chatting_with_gamerfrommars_about_their_chris_chan_documentary"
+    "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
+    "chatting_with_intro_guy"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3063,6 +3064,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 5.59,
       "avg_active_chatters": 17.3
+    },
+    "chatting_with_intro_guy": {
+      "stream_id": "chatting_with_intro_guy",
+      "title": "CHatting With Intro Guy",
+      "start_ts": 1706137720,
+      "end_ts": 1706158819,
+      "duration_sec": 21099,
+      "youtube_archive_id": "eoxdTD0C22A",
+      "source_platform": "youtube",
+      "total_donations_usd": 503.69,
+      "donation_count": 129,
+      "donations_per_min": 1.4324,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.11,
+      "avg_active_chatters": 41.14
     }
   }
 }
