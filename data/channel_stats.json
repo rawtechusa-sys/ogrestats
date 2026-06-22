@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101166,
+  "updated_ts": 1782101174,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -449,7 +449,8 @@
     "melonie_mac_responded",
     "men",
     "men_and_food_road_to_1000_members",
-    "men_birds_and_samurai_cop"
+    "men_birds_and_samurai_cop",
+    "men_birds_and_samurai_cop_part_deux"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7619,6 +7620,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.95,
       "avg_active_chatters": 30.09
+    },
+    "men_birds_and_samurai_cop_part_deux": {
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "title": "Men, Birds And Samurai Cop (Part Deux)",
+      "start_ts": 1642467206,
+      "end_ts": 1642475782,
+      "duration_sec": 8576,
+      "youtube_archive_id": "3zMC3jN4eR0",
+      "source_platform": "youtube",
+      "total_donations_usd": 190.89,
+      "donation_count": 54,
+      "donations_per_min": 1.3355,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.65,
+      "avg_active_chatters": 31.34
     }
   }
 }
