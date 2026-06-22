@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101982,
+  "updated_ts": 1782101992,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -569,7 +569,8 @@
     "remastering_intro_guys_incredible_fart",
     "reviewbirdsusa",
     "revieweldenringusa_eldenring",
-    "reviewthorusa_i_got_soulja_boys_console"
+    "reviewthorusa_i_got_soulja_boys_console",
+    "rip_onlyfans"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9659,6 +9660,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.59,
       "avg_active_chatters": 48.19
+    },
+    "rip_onlyfans": {
+      "stream_id": "rip_onlyfans",
+      "title": "RIP OnlyFans",
+      "start_ts": 1629420285,
+      "end_ts": 1629427646,
+      "duration_sec": 7361,
+      "youtube_archive_id": "qjamMkScEOw",
+      "source_platform": "youtube",
+      "total_donations_usd": 468.32,
+      "donation_count": 108,
+      "donations_per_min": 3.8173,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.35,
+      "avg_active_chatters": 43.99
     }
   }
 }
