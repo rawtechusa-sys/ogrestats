@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099777,
+  "updated_ts": 1782099785,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -276,7 +276,8 @@
     "eating_extremely_spicy_food_and_watching_weird_crap",
     "edp445_looked_for_another_cupcake",
     "edp445_strikes_again_dsp_is_salty_more_anker_drama",
-    "elden_ring_fails_compilation_marathon_eldenring"
+    "elden_ring_fails_compilation_marathon_eldenring",
+    "elon_musk_bought_me_a_bird"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4678,6 +4679,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.04,
       "avg_active_chatters": 22.61
+    },
+    "elon_musk_bought_me_a_bird": {
+      "stream_id": "elon_musk_bought_me_a_bird",
+      "title": "Elon Musk Bought Me A Bird",
+      "start_ts": 1653097347,
+      "end_ts": 1653105277,
+      "duration_sec": 7930,
+      "youtube_archive_id": "JaVO6UKwBuk",
+      "source_platform": "youtube",
+      "total_donations_usd": 211.66,
+      "donation_count": 63,
+      "donations_per_min": 1.6015,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.65,
+      "avg_active_chatters": 29.93
     }
   }
 }
