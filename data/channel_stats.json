@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102692,
+  "updated_ts": 1782102698,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -686,7 +686,8 @@
     "the_tickling_continues",
     "the_tommy_tallarico_intellivision_amico_files",
     "thekarening_might_be_joining_me",
-    "thequartering_is_coming_on_in_20_minutes"
+    "thequartering_is_coming_on_in_20_minutes",
+    "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11648,6 +11649,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.63,
       "avg_active_chatters": 42.15
+    },
+    "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv": {
+      "stream_id": "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv",
+      "title": "TheQuartering Is Coming On In 20 Minutes! (Plus More Quantum TV)",
+      "start_ts": 1657581992,
+      "end_ts": 1657592540,
+      "duration_sec": 10548,
+      "youtube_archive_id": "_M25HBRWiiw",
+      "source_platform": "youtube",
+      "total_donations_usd": 408.04,
+      "donation_count": 115,
+      "donations_per_min": 2.321,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.04,
+      "avg_active_chatters": 57.17
     }
   }
 }
