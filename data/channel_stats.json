@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101182,
+  "updated_ts": 1782101189,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -451,7 +451,8 @@
     "men_and_food_road_to_1000_members",
     "men_birds_and_samurai_cop",
     "men_birds_and_samurai_cop_part_deux",
-    "men_chatting"
+    "men_chatting",
+    "men_discuss_def_noodles_feat_christhenarc"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7653,6 +7654,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.91,
       "avg_active_chatters": 43.73
+    },
+    "men_discuss_def_noodles_feat_christhenarc": {
+      "stream_id": "men_discuss_def_noodles_feat_christhenarc",
+      "title": "Men Discuss Def Noodles (Feat. ChrisTheNarc)",
+      "start_ts": 1661130639,
+      "end_ts": 1661140270,
+      "duration_sec": 9631,
+      "youtube_archive_id": "Kcw1pbDJKq8",
+      "source_platform": "youtube",
+      "total_donations_usd": 358.44,
+      "donation_count": 100,
+      "donations_per_min": 2.233,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 21.44,
+      "avg_active_chatters": 45.86
     }
   }
 }
