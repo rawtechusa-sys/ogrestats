@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098767,
+  "updated_ts": 1782098776,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -154,7 +154,8 @@
     "ban_anybody_who_discusses_wingsofredemption",
     "ban_dark_souls_remastered_members_only",
     "being_terrible_at_halo_infinite_live",
-    "between_two_birds_feat_men"
+    "between_two_birds_feat_men",
+    "big_problems_over_at_youtube"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2604,6 +2605,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.94,
       "avg_active_chatters": 25.35
+    },
+    "big_problems_over_at_youtube": {
+      "stream_id": "big_problems_over_at_youtube",
+      "title": "Big Problems Over At YouTube",
+      "start_ts": 1661644768,
+      "end_ts": 1661652514,
+      "duration_sec": 7746,
+      "youtube_archive_id": "uO7l7AUk2lY",
+      "source_platform": "youtube",
+      "total_donations_usd": 350.77,
+      "donation_count": 71,
+      "donations_per_min": 2.717,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.6,
+      "avg_active_chatters": 37.18
     }
   }
 }
