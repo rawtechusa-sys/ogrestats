@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100544,
+  "updated_ts": 1782100553,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -363,7 +363,8 @@
     "just_chatting_feat_a_man",
     "just_chatting_like_a_man",
     "just_chatting_with_vaush",
-    "just_discussing_future_plans_road_to_1000_members"
+    "just_discussing_future_plans_road_to_1000_members",
+    "just_doing_man_things"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6157,6 +6158,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.38,
       "avg_active_chatters": 25.21
+    },
+    "just_doing_man_things": {
+      "stream_id": "just_doing_man_things",
+      "title": "Just Doing Man Things",
+      "start_ts": 1705706069,
+      "end_ts": 1705726927,
+      "duration_sec": 20858,
+      "youtube_archive_id": "g6Xf5B52Znk",
+      "source_platform": "youtube",
+      "total_donations_usd": 589.57,
+      "donation_count": 131,
+      "donations_per_min": 1.696,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.64,
+      "avg_active_chatters": 39.92
     }
   }
 }
