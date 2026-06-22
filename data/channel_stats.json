@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101772,
+  "updated_ts": 1782101777,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -532,7 +532,8 @@
     "playing_half_life_2_feat_birds",
     "playing_hogwarts_legacy",
     "playing_last_of_us_part_i_remake",
-    "playing_modern_warfare_2_on_a_handheld"
+    "playing_modern_warfare_2_on_a_handheld",
+    "playing_some_gta_iv_cause_why_not"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9030,6 +9031,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.14,
       "avg_active_chatters": 18.38
+    },
+    "playing_some_gta_iv_cause_why_not": {
+      "stream_id": "playing_some_gta_iv_cause_why_not",
+      "title": "Playing Some GTA IV (Cause Why Not)",
+      "start_ts": 1664311012,
+      "end_ts": 1664317006,
+      "duration_sec": 5994,
+      "youtube_archive_id": "mpUBIpozIzk",
+      "source_platform": "youtube",
+      "total_donations_usd": 129.94,
+      "donation_count": 28,
+      "donations_per_min": 1.3007,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.8,
+      "avg_active_chatters": 29.82
     }
   }
 }
