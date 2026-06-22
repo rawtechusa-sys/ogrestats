@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092449,
+  "updated_ts": 1782092472,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -13,7 +13,8 @@
     "12_hour_man_stream_feat_men",
     "12_hour_man_stream_feat_men_part_2",
     "1_man_1_bird",
-    "1_man_1_bird_all_live"
+    "1_man_1_bird_all_live",
+    "1_million_sub_special_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -43,16 +44,16 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 1,
-    "eyes": 2,
+    "turkey": 2,
+    "eyes": 3,
     "africa": 1,
-    "face": 5,
+    "face": 6,
     "petersonxhhanson": 1,
     "poo": 1,
-    "joy": 3,
+    "joy": 5,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 1,
+    "carlos": 2,
     "away": 1,
     "idea": 1,
     "fear": 1,
@@ -60,10 +61,19 @@
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 2,
+    "heart": 3,
     "shorts": 1,
     "laughing": 1,
-    "news": 1
+    "news": 1,
+    "chicken": 1,
+    "cake": 1,
+    "d": 1,
+    "halo": 1,
+    "hand": 1,
+    "popper": 1,
+    "straw": 1,
+    "glasses": 1,
+    "ball": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -125,6 +135,11 @@
       "title": "1 Man, 1 Bird, All LIVE",
       "start_ts": 1695859783,
       "youtube_archive_id": "DloiY5b0PFc"
+    },
+    "1_million_sub_special_feat_birds": {
+      "title": "1 Million Sub Special (Feat. Birds)",
+      "start_ts": 1651621929,
+      "youtube_archive_id": "kcKEfJG_ENI"
     }
   },
   "messages": [
@@ -2209,6 +2224,157 @@
       "message": "Cold is kicking my ass :pill: made my dreams crazy bird",
       "commands": [
         "pill"
+      ]
+    },
+    {
+      "ts": 1651631425,
+      "username": "@TheNewGamePluss",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "You are skipping cutscenes lol also congrats :confetti_ball:",
+      "commands": [
+        "ball"
+      ]
+    },
+    {
+      "ts": 1651628726,
+      "username": "@novaacraane",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Congrats on 1 mil, Rich! Been watching you since about 2016, and it makes me happy that you\u2019ve come this far. Bravo!! :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1651626802,
+      "username": "@GriffinGaming",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Congrats on 1 Million Rich. Been watching your videos since I was a Freshman in highschool back in 2013 and though we may not agree on everything I have always enjoyed the content. Here's to 2 Million :clinking_glasses:",
+      "commands": [
+        "glasses"
+      ]
+    },
+    {
+      "ts": 1651625973,
+      "username": "@mcquackery",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "YOU HAVE BEEN STUCK IN THE .9M CLUB FOR SO LONG! CONGRATULATIONS RICH! been around for a few years now. wife and i look forward to your content! :rooster::turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1651625159,
+      "username": "@UnCommonVision",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Congrats on 1mill. Been watching your content for 8yrs. I'm happy for you Rich! To celebrate I'm going to KFC to eat some of Carl's family. :face_with_tears_of_joy::face_savoring_food::chicken::french_fries::cup_with_straw:",
+      "commands": [
+        "straw"
+      ]
+    },
+    {
+      "ts": 1651624758,
+      "username": "@C00lBeanz95",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Big Ups Liquid Richard. Here to another million more:_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1651624667,
+      "username": "@Bingocat",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Congrats on the million subs Rich!!! :party_popper: Been watching your channel for almost a decade now",
+      "commands": [
+        "popper"
+      ]
+    },
+    {
+      "ts": 1651624233,
+      "username": "@Ambientcloud",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "I'm 34 and trying to make it as a synth musician:grinning_face_with_sweat::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1651623713,
+      "username": "@theheelygodEX",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Could we watch some of your old videos? Or some more retail training videos.Congrats! Been here since the s7 videos! Can u sing to the Carlos song? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1651623392,
+      "username": "@ledbizkits6885",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Dude I've been watching you for almost 10 years congratulations! relax your anus :beaming_face_with_smiling_eyes: do you actually like Salvatore Ganacci? and how are the kids? :smiling_face_with_halo:",
+      "commands": [
+        "eyes",
+        "halo"
+      ]
+    },
+    {
+      "ts": 1651623053,
+      "username": "@theBio.",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "You missed my last super chat! D:",
+      "commands": [
+        "d"
+      ]
+    },
+    {
+      "ts": 1651622476,
+      "username": "@johnny112115",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "If Joseph R Biden Jr. 46th President of the United States, Crowns Q-TV the king of America power with no limits, are still going to live in the US. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1651622422,
+      "username": "@imthatguy7453",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "CONGRATS, LOVE YOUR CHANNEL, LOVE THE QVC SEGMENTS, HOPE YOUR CHANNEL PROSPERS FURTHER, AND TOMORROW IS MY :birthday_cake:",
+      "commands": [
+        "cake"
+      ]
+    },
+    {
+      "ts": 1651622277,
+      "username": "@AdrianCardoza",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "I will suck a million :chicken: in your honor!",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1651622253,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "1_million_sub_special_feat_birds",
+      "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
+      "commands": [
+        "face"
       ]
     }
   ]
