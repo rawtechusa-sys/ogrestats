@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100283,
+  "updated_ts": 1782100292,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -333,7 +333,8 @@
     "im_now_a_home_owner",
     "im_so_sorry",
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
-    "im_too_stoned_for_dkoldies_drama_but_here_it_is"
+    "im_too_stoned_for_dkoldies_drama_but_here_it_is",
+    "im_wired_and_streaming_cause_why_not"
   ],
   "commands": {
     "stan": 27,
@@ -369,7 +370,7 @@
     "face": 314,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 227,
+    "joy": 228,
     "gameboy": 1,
     "chick": 2,
     "carlos": 28,
@@ -750,7 +751,10 @@
     "quantum": 2,
     "corn": 1,
     "cwc": 1,
-    "repair": 1
+    "repair": 1,
+    "a": 1,
+    "b": 1,
+    "c": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2412,6 +2416,11 @@
       "title": "I'm Too Stoned For DKOldies Drama (But Here It Is)",
       "start_ts": 1680654817,
       "youtube_archive_id": "S7MM7RNw7nM"
+    },
+    "im_wired_and_streaming_cause_why_not": {
+      "title": "I'm Wired And Streaming, Cause Why Not?",
+      "start_ts": 1701061635,
+      "youtube_archive_id": "7z0CkeZR2YY"
     }
   },
   "messages": [
@@ -6980,6 +6989,28 @@
       "message": "Rich - QVC has a $700 \"PS5 Bundle\" :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1701069034,
+      "username": "@DigitalDemonicDavros",
+      "platform": "youtube",
+      "stream_id": "im_wired_and_streaming_cause_why_not",
+      "message": "Questions, I have questions, did Phil get his intelligent brain after A: brain swelling? B: Chicken sandwich? or C: The may first burst?",
+      "commands": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "ts": 1701062126,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "im_wired_and_streaming_cause_why_not",
+      "message": "lolcow certified :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
