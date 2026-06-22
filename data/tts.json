@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101240,
+  "updated_ts": 1782101247,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -456,7 +456,8 @@
     "middle_aged_men_complain_about_video_games",
     "monday_night_man",
     "more_amico_family_fun",
-    "more_chris_chan_insanity"
+    "more_chris_chan_insanity",
+    "more_chris_chan_insanity_pt2_then_maybe_elden_ring"
   ],
   "commands": {
     "stan": 27,
@@ -489,7 +490,7 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 430,
+    "face": 431,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 283,
@@ -503,9 +504,9 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 9,
-    "heart": 140,
+    "heart": 141,
     "shorts": 2,
-    "laughing": 169,
+    "laughing": 170,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -649,7 +650,7 @@
     "theory": 3,
     "says": 1,
     "wave": 1,
-    "mugs": 2,
+    "mugs": 3,
     "ties": 1,
     "this": 1,
     "notes": 14,
@@ -826,7 +827,7 @@
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
-    "said": 3,
+    "said": 4,
     "reviewimprovusa": 1,
     "smo": 1,
     "blood": 1,
@@ -961,7 +962,9 @@
     "by": 1,
     "tupac": 1,
     "arbys": 1,
-    "soon": 1
+    "soon": 1,
+    "called": 1,
+    "moon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3238,6 +3241,11 @@
       "title": "More Chris Chan Insanity",
       "start_ts": 1634084622,
       "youtube_archive_id": "IeWnGYM-d34"
+    },
+    "more_chris_chan_insanity_pt2_then_maybe_elden_ring": {
+      "title": "More Chris Chan Insanity Pt.2 (Then Maybe Elden Ring)",
+      "start_ts": 1649634248,
+      "youtube_archive_id": "cuGq70F_qKc"
     }
   },
   "messages": [
@@ -20659,6 +20667,76 @@
       "message": "hey rich I started losing weight and in about 2 months I lost 30 pounds :thumbs_up: also which bird is better at elden ring? I'm thinking carlos",
       "commands": [
         "up"
+      ]
+    },
+    {
+      "ts": 1649640617,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "your welcome thought you might need some help for quests or stuff sorry was just being nice same I'm on series x :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1649639079,
+      "username": "@lupeayala3125",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "Hey Rich? Dont be afraid to use you nails boys!\":thumbs_up::clinking_beer_mugs:",
+      "commands": [
+        "mugs"
+      ]
+    },
+    {
+      "ts": 1649637768,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "As Shaxx from destiny once said: \u201cI\u2019ve seen enough, i\u2019m calling it!!!\u201d (Just by watching the Chris Chan video)",
+      "commands": [
+        "said"
+      ]
+    },
+    {
+      "ts": 1649637734,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "chris chan more like Chris Tran :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1649634867,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "thank you for providing us the entertainment this :crescent_moon: much love fron uk",
+      "commands": [
+        "moon"
+      ]
+    },
+    {
+      "ts": 1649634744,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "yes rich nice to see you back.. me and my gorgeous black T-girl love watching you :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1649634648,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "message": "You should watch this video called: Elden Ring hot takes, by this youtuber (The Act Man) its pretty funny",
+      "commands": [
+        "called"
       ]
     },
     {
