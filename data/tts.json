@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099480,
+  "updated_ts": 1782099488,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -240,13 +240,14 @@
     "dad_is_back",
     "dad_streams_the_playstation_showcase_2021",
     "dads_40th_birthday_stream",
-    "dads_back_for_a_bit"
+    "dads_back_for_a_bit",
+    "daniel_keem_is_a_man"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 59,
+    "phil": 60,
     "trump": 32,
     "doom": 4,
     "harman": 12,
@@ -273,10 +274,10 @@
     "turkey": 6,
     "eyes": 62,
     "africa": 1,
-    "face": 215,
+    "face": 216,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 146,
+    "joy": 148,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -289,7 +290,7 @@
     "tongue": 5,
     "heart": 71,
     "shorts": 1,
-    "laughing": 68,
+    "laughing": 69,
     "news": 13,
     "chicken": 32,
     "cake": 7,
@@ -320,7 +321,7 @@
     "shrugging": 3,
     "donation": 3,
     "naruto": 1,
-    "hands": 15,
+    "hands": 16,
     "horns": 6,
     "crab": 2,
     "superhero": 15,
@@ -561,7 +562,8 @@
     "currently": 1,
     "article": 1,
     "life": 1,
-    "monocle": 1
+    "monocle": 1,
+    "store": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1758,6 +1760,11 @@
       "title": "Dad's Back. For A Bit...",
       "start_ts": 1692931187,
       "youtube_archive_id": "gdOKs26S2-c"
+    },
+    "daniel_keem_is_a_man": {
+      "title": "Daniel Keem Is A Man",
+      "start_ts": 1672703951,
+      "youtube_archive_id": "Rj2TPwcmpoU"
     }
   },
   "messages": [
@@ -8441,6 +8448,76 @@
       "platform": "youtube",
       "stream_id": "a_dspgaming_family_fun_stream",
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1672719918,
+      "username": "@punkinjack8925",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "Ever forget the camera was on the whole time?:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1672713225,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "Where is Rabbi Bill Clinton. We need him here :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1672709755,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "I wanna unload on Phil :weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1672705977,
+      "username": "@mr.stormtroopee8693",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "phil lost in a grocery store: \"must ask..for tips\"",
+      "commands": [
+        "store"
+      ]
+    },
+    {
+      "ts": 1672705130,
+      "username": "@Plynthophone",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "Phil: \"I'll turn on LED's for 100 likes on stream\"",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1672704935,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "Haha that guy at the Chicago gas station\u2026 I ain\u2019t gay\u2026 I\u2019ll prove it to you by effing you in the a$$ :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1672704833,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "daniel_keem_is_a_man",
+      "message": "The video I sent you DSP tries to fix his Stream Deck. I sent it to you yesterday, but you forgot to watch it on Stream :face_with_tears_of_joy: I sent you a YouTube Link",
       "commands": [
         "joy"
       ]
