@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101724,
+  "updated_ts": 1782101731,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -524,7 +524,8 @@
     "phillip_burnell_is_a_man",
     "phils_miraculous_man_cheeks",
     "playing_bloodborne_i_think",
-    "playing_castlevania_with_a_fat_old_man"
+    "playing_castlevania_with_a_fat_old_man",
+    "playing_doom_eternal_on_the_rog_ally"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8894,6 +8895,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.54,
       "avg_active_chatters": 30.3
+    },
+    "playing_doom_eternal_on_the_rog_ally": {
+      "stream_id": "playing_doom_eternal_on_the_rog_ally",
+      "title": "Playing Doom Eternal On The ROG Ally",
+      "start_ts": 1688086081,
+      "end_ts": 1688104830,
+      "duration_sec": 18749,
+      "youtube_archive_id": "byqZbeV1VeQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 218.79,
+      "donation_count": 53,
+      "donations_per_min": 0.7002,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 7.39,
+      "avg_active_chatters": 18.3
     }
   }
 }
