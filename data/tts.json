@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101425,
+  "updated_ts": 1782101432,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -481,7 +481,8 @@
     "more_tcap_and_bird_fun",
     "more_thorough_tickling_live",
     "more_tickled_television_excitement",
-    "more_wii_u_man_fun_yes_it_works"
+    "more_wii_u_man_fun_yes_it_works",
+    "moving_on_to_philip_burnell_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -514,7 +515,7 @@
     "turkey": 10,
     "eyes": 114,
     "africa": 1,
-    "face": 445,
+    "face": 446,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 290,
@@ -525,14 +526,14 @@
     "idea": 4,
     "fear": 4,
     "voice": 5,
-    "cucumber": 51,
+    "cucumber": 52,
     "biceps": 5,
     "tongue": 10,
     "heart": 141,
     "shorts": 2,
     "laughing": 181,
     "news": 20,
-    "chicken": 55,
+    "chicken": 56,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -550,7 +551,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 49,
+    "rooster": 50,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
@@ -625,7 +626,7 @@
     "it": 18,
     "food": 4,
     "play": 1,
-    "video": 2,
+    "video": 4,
     "one": 3,
     "cow": 2,
     "cap": 1,
@@ -651,7 +652,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 15,
+    "droplets": 16,
     "tomato": 3,
     "hearts": 12,
     "million": 1,
@@ -664,7 +665,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 22,
+    "sweat": 23,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -908,7 +909,7 @@
     "way": 1,
     "judge": 2,
     "system": 1,
-    "mark": 1,
+    "mark": 2,
     "lie": 2,
     "ferengi": 1,
     "bath": 1,
@@ -998,7 +999,8 @@
     "westside": 1,
     "finisher": 1,
     "hansen": 1,
-    "exclusive": 1
+    "exclusive": 1,
+    "gpu": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3400,6 +3402,11 @@
       "title": "More Wii U Man Fun (Yes, It Works)",
       "start_ts": 1645897254,
       "youtube_archive_id": "8sWvNofuas8"
+    },
+    "moving_on_to_philip_burnell_a_man": {
+      "title": "Moving On To Philip Burnell (A Man)",
+      "start_ts": 1698974154,
+      "youtube_archive_id": "RW9iR1fumLg"
     }
   },
   "messages": [
@@ -9108,6 +9115,96 @@
       "message": "I need Phil's hot man gravy for my Bird :bird:",
       "commands": [
         "bird"
+      ]
+    },
+    {
+      "ts": 1698989235,
+      "username": "@alphadaddy3046",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "You should stream yourself playing World War:trade_mark: Z sometime. It\u2019s a lot like left for dead and playing on PC at 120fps is beyond epic Rich. Horse nutt.",
+      "commands": [
+        "mark"
+      ]
+    },
+    {
+      "ts": 1698986381,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "Phil sounds like grandpa Simpson when he's explaining to the cashier about how he makes toast :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1698985270,
+      "username": "@Night_Breaker",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "Hi Rich, how are you? sorry for the depressing news, but I just lost my father to colon cancer yesterday. This doesn't feel real. I can't believe my dad is really gone! He was such a good man. :crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698984161,
+      "username": "@SpaceDandy-rz8rq",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "A regular update video: about 10 minutes. A DSP update video: Sorry guys, I'm sick so I'm not streaming, idk why I\"m sick, I might have covid but I dont wanna get tested because if I have COVID that means... yada-yada-yada",
+      "commands": [
+        "video"
+      ]
+    },
+    {
+      "ts": 1698984155,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "Digital foundry needs to in depth analysis on dsp:sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1698980125,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "How much to tell us how much? :_Carlos::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1698980064,
+      "username": "@OhChristopher",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "birds and hearts in the chat for Rambo Tweety :red_heart::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1698975524,
+      "username": "@MaxtorFireball",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "My GPU: died and I hooked up a 1050ti/7300HQ laptop to my old setup. For general use and even gaming it still holds up ridiculously well. Can I get intro guy fart?",
+      "commands": [
+        "gpu"
+      ]
+    },
+    {
+      "ts": 1698974399,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "moving_on_to_philip_burnell_a_man",
+      "message": "Nothing like hearing :rooster: as I\u2019m eating some Zaxby\u2019s",
+      "commands": [
+        "rooster"
       ]
     },
     {
