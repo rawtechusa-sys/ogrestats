@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100372,
+  "updated_ts": 1782100381,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -344,7 +344,8 @@
     "irl_streaming_from_poughkeepsie_ny",
     "irl_streaming_on_a_hot_day",
     "irrelevant_youtuber_plays_saints_row_2022",
-    "is_the_ps5_revision_that_bad_feat_joker_productions"
+    "is_the_ps5_revision_that_bad_feat_joker_productions",
+    "its_a_question"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5834,6 +5835,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 6.42,
       "avg_active_chatters": 23.1
+    },
+    "its_a_question": {
+      "stream_id": "its_a_question",
+      "title": "It's A Question",
+      "start_ts": 1654385279,
+      "end_ts": 1654400201,
+      "duration_sec": 14922,
+      "youtube_archive_id": "INqxF8-c2oA",
+      "source_platform": "youtube",
+      "total_donations_usd": 480.05,
+      "donation_count": 118,
+      "donations_per_min": 1.9302,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.65,
+      "avg_active_chatters": 31.8
     }
   }
 }
