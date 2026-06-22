@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100542,
+  "updated_ts": 1782100550,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -362,7 +362,8 @@
     "just_chatting_feat_a_man",
     "just_chatting_like_a_man",
     "just_chatting_with_vaush",
-    "just_discussing_future_plans_road_to_1000_members"
+    "just_discussing_future_plans_road_to_1000_members",
+    "just_doing_man_things"
   ],
   "commands": {
     "stan": 27,
@@ -388,17 +389,17 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 22,
+    "rich": 23,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 81,
+    "eyes": 82,
     "africa": 1,
-    "face": 336,
+    "face": 338,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 241,
+    "joy": 242,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -411,7 +412,7 @@
     "tongue": 6,
     "heart": 112,
     "shorts": 1,
-    "laughing": 138,
+    "laughing": 139,
     "news": 18,
     "chicken": 41,
     "cake": 7,
@@ -435,7 +436,7 @@
     "peach": 10,
     "fire": 21,
     "kendal": 1,
-    "up": 35,
+    "up": 36,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -445,7 +446,7 @@
     "hands": 23,
     "horns": 7,
     "crab": 2,
-    "superhero": 25,
+    "superhero": 26,
     "legends": 2,
     "dog": 6,
     "is": 6,
@@ -456,7 +457,7 @@
     "ghost": 1,
     "bk": 1,
     "gift": 3,
-    "bird": 10,
+    "bird": 12,
     "richsmile": 5,
     "dsp": 23,
     "story": 1,
@@ -560,7 +561,7 @@
     "this": 1,
     "notes": 14,
     "wars": 1,
-    "points": 8,
+    "points": 9,
     "wastebasket": 1,
     "left": 3,
     "flag": 1,
@@ -806,7 +807,10 @@
     "reviewphilosphyusa": 1,
     "rtusa": 1,
     "kid": 1,
-    "tear": 1
+    "tear": 1,
+    "are": 1,
+    "keemstar": 1,
+    "tbf": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2613,6 +2617,11 @@
       "title": "Just Discussing Future Plans (Road To 1000 Members)",
       "start_ts": 1685572573,
       "youtube_archive_id": "qPfpilN8_zM"
+    },
+    "just_doing_man_things": {
+      "title": "Just Doing Man Things",
+      "start_ts": 1705706069,
+      "youtube_archive_id": "g6Xf5B52Znk"
     }
   },
   "messages": [
@@ -5646,6 +5655,127 @@
       "message": "Just got my S24 Ultra early through my wireless job. Smoothest data transfer ever, Galxay AI is the best thing I've ever used :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1705726805,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "imma keep it :hundred_points: you give more chances then i would",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1705726013,
+      "username": "@Hladio92",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "Looks he hosts Ridiculousness on MTV :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1705717457,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "Just kno :index_pointing_up: Im a Warrior :superhero:",
+      "commands": [
+        "up",
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705714936,
+      "username": "@brodysexy1177",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "Rich look I'm sad that you're not doing News videos any more but can you at least fix all your videos to a proper playlist on the main channel because it's kind of a Mess thanks for videos mate :pensive_face: I've been watching for years",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705714170,
+      "username": "@TheWastelander.-rx1mx",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "TBF: People Have offed themselves over the amount of hate Kats getting. So far the trolls have tried contacting her family & attacked her job.",
+      "commands": [
+        "tbf"
+      ]
+    },
+    {
+      "ts": 1705712195,
+      "username": "@karasub2836",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "hello bird father...:bird: :black_bird:",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1705711510,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "I was gonna stream tomorrow night, I\u2019m sorry that I have to miss the Pok\u00e9mon stream tomorrow. :loudly_crying_face: I was really looking forward to it. Breasts!",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705709556,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "Keemstar: Let\u2019s get right into laughing at QVC",
+      "commands": [
+        "keemstar"
+      ]
+    },
+    {
+      "ts": 1705709345,
+      "username": "@rtusburritoeattingbrother",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "I love to watch your old videos like reruns, but I can't for the life of me find the review you did that birthed the \"wonderful touch feeling\" :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1705709089,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "Rich: Are you gonna buy a MIG Switch for the Nintendo Switch and effectively \u201creview it\u201d live on Stream?",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1705708171,
+      "username": "@ikelewis3399",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "you made me feel feelings. whatever.... nipples guess I'll like the stream :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1705706811,
+      "username": "@DoomDeer",
+      "platform": "youtube",
+      "stream_id": "just_doing_man_things",
+      "message": "my fave vids from you are: The Ouya, The AtariVCS rant videos, the SNES/Sega retrospective, Atgames sega review, Wii U, Gameboy etc. More of those plz",
+      "commands": [
+        "are"
       ]
     },
     {
