@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092473,
+  "updated_ts": 1782092497,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -14,7 +14,8 @@
     "12_hour_man_stream_feat_men_part_2",
     "1_man_1_bird",
     "1_man_1_bird_all_live",
-    "1_million_sub_special_feat_birds"
+    "1_million_sub_special_feat_birds",
+    "2_birds_and_a_man_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -224,6 +225,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.57,
       "avg_active_chatters": 40.79
+    },
+    "2_birds_and_a_man_live": {
+      "stream_id": "2_birds_and_a_man_live",
+      "title": "2 Birds And A Man LIVE",
+      "start_ts": 1635900094,
+      "end_ts": 1635909067,
+      "duration_sec": 8973,
+      "youtube_archive_id": "aASk6Yr1O-I",
+      "source_platform": "youtube",
+      "total_donations_usd": 543.28,
+      "donation_count": 131,
+      "donations_per_min": 3.6328,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.15,
+      "avg_active_chatters": 34.48
     }
   }
 }
