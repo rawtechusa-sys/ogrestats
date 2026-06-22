@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099809,
+  "updated_ts": 1782099818,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -279,7 +279,8 @@
     "elon_musk_bought_me_a_bird",
     "everyone_on_the_internet_loves_me",
     "exposing_the_anti_woke_frauds",
-    "father_is_sick_jaysus_saves"
+    "father_is_sick_jaysus_saves",
+    "final_chicken_suit_stream_featuring_birds"
   ],
   "commands": {
     "stan": 27,
@@ -312,7 +313,7 @@
     "turkey": 6,
     "eyes": 69,
     "africa": 1,
-    "face": 253,
+    "face": 255,
     "petersonxhhanson": 1,
     "poo": 16,
     "joy": 185,
@@ -330,7 +331,7 @@
     "shorts": 1,
     "laughing": 83,
     "news": 16,
-    "chicken": 36,
+    "chicken": 37,
     "cake": 7,
     "d": 2,
     "halo": 3,
@@ -348,7 +349,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 23,
+    "rooster": 25,
     "peach": 6,
     "fire": 17,
     "kendal": 1,
@@ -2032,6 +2033,11 @@
       "title": "Father Is Sick, Jaysus Saves",
       "start_ts": 1705618828,
       "youtube_archive_id": "ZVUGtPzRvRY"
+    },
+    "final_chicken_suit_stream_featuring_birds": {
+      "title": "Final Chicken Suit Stream (Featuring Birds)",
+      "start_ts": 1653957099,
+      "youtube_archive_id": "8fo5MJMRIZQ"
     }
   },
   "messages": [
@@ -12330,6 +12336,56 @@
       "platform": "youtube",
       "stream_id": "asmongolds_the_act_man_interview_reaction",
       "message": ":chicken::chicken::chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1653961979,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "message": "even metokur's gonna be talking about quantum tv, along with acerthorn, this week. what does that tell you about quarterpounder :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1653961867,
+      "username": "@RealGhostbuster",
+      "platform": "youtube",
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "message": "Rich, your rant made it move sir :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1653959103,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "message": "Cut nipple holes in that chicken suit :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1653958766,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "message": "You should make nipple holes in the suit :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1653958605,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "message": "just wanted to say I respect you alot for your video and the birds respect you for it :chicken:",
       "commands": [
         "chicken"
       ]
