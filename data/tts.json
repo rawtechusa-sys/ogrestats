@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100063,
+  "updated_ts": 1782100072,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -308,7 +308,8 @@
     "i_got_trolled_hard_by_ethan_ralph",
     "i_have_no_water_so_i_may_as_well_keep_streaming",
     "i_have_no_words_and_im_frustrated",
-    "i_have_some_very_important_things_to_discuss"
+    "i_have_some_very_important_things_to_discuss",
+    "i_just_went_through_youtube_hell_let_me_explain"
   ],
   "commands": {
     "stan": 27,
@@ -355,7 +356,7 @@
     "cucumber": 35,
     "biceps": 3,
     "tongue": 6,
-    "heart": 95,
+    "heart": 97,
     "shorts": 1,
     "laughing": 111,
     "news": 18,
@@ -2243,6 +2244,11 @@
       "title": "I Have Some Very Important Things To Discuss",
       "start_ts": 1719510663,
       "youtube_archive_id": "hgMxPFsbfC0"
+    },
+    "i_just_went_through_youtube_hell_let_me_explain": {
+      "title": "I Just Went Through YouTube Hell (Let Me Explain)",
+      "start_ts": 1665368620,
+      "youtube_archive_id": "LVvfFB9QTL4"
     }
   },
   "messages": [
@@ -12032,6 +12038,16 @@
       "message": "Just wanted to say, I feel the pain y\u2019all felt with saints row. GOTHAM KNIGHTS is :pile_of_poo:",
       "commands": [
         "poo"
+      ]
+    },
+    {
+      "ts": 1665368710,
+      "username": "@quinnmelle",
+      "platform": "youtube",
+      "stream_id": "i_just_went_through_youtube_hell_let_me_explain",
+      "message": ":red_heart: Good Evening Rich! Hope you are doing awesome tonight! :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
