@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094945,
+  "updated_ts": 1782094998,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -73,7 +73,8 @@
     "a_man_streams_like_a_man",
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
     "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
-    "a_man_with_birds"
+    "a_man_with_birds",
+    "a_man_with_birds_streams_on_halloween"
   ],
   "commands": {
     "stan": 27,
@@ -106,7 +107,7 @@
     "turkey": 3,
     "eyes": 19,
     "africa": 1,
-    "face": 52,
+    "face": 53,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 47,
@@ -186,7 +187,7 @@
     "reviewseinfeldusa": 1,
     "things": 1,
     "down": 1,
-    "tomorrow": 3,
+    "tomorrow": 4,
     "horse": 1,
     "bug": 1,
     "violin": 1,
@@ -201,7 +202,7 @@
     "vomiting": 3,
     "moment": 1,
     "suit": 1,
-    "mouth": 3,
+    "mouth": 4,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -235,7 +236,9 @@
     "day": 1,
     "struck": 1,
     "joker": 1,
-    "racehorse": 2
+    "racehorse": 2,
+    "question": 1,
+    "mushroom": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -597,6 +600,11 @@
       "title": "A Man With Birds",
       "start_ts": 1695340004,
       "youtube_archive_id": "2cfuf9Ozokg"
+    },
+    "a_man_with_birds_streams_on_halloween": {
+      "title": "A MAN WITH BIRDS STREAMS ON HALLOWEEN",
+      "start_ts": 1635730809,
+      "youtube_archive_id": "WcJZuaL6yBs"
     }
   },
   "messages": [
@@ -5598,6 +5606,66 @@
       "message": "Steve has those pumpkin :jack_o_lantern: :jack_o_lantern: bottom jeans on",
       "commands": [
         "lantern"
+      ]
+    },
+    {
+      "ts": 1635736920,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "Rich you're nearly on the shroom guys level :mushroom::mushroom::mushroom::mushroom::mushroom::mushroom:",
+      "commands": [
+        "mushroom"
+      ]
+    },
+    {
+      "ts": 1635733035,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "The guy on shrooms should watch makka pakka vids :mushroom:",
+      "commands": [
+        "mushroom"
+      ]
+    },
+    {
+      "ts": 1635732291,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "hey Rich. I sent you a video on twitter dm. :grinning_face: i think you might like it.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1635731796,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "Rich tomorrow: So carlos and steve now own the channel, lets get into it skididi bop do cucumber",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1635731419,
+      "username": "@SonicOmega5000",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "Happy Halloween, Rich. Question: Do you take sound clip suggestions?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1635731334,
+      "username": "@kole5826",
+      "platform": "youtube",
+      "stream_id": "a_man_with_birds_streams_on_halloween",
+      "message": "Man Rich I think Im on the other side with this OLED. I can not get this game cart outa the stupid consloe.:face_with_symbols_on_mouth:",
+      "commands": [
+        "mouth"
       ]
     },
     {
