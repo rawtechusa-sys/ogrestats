@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100232,
+  "updated_ts": 1782100241,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -328,7 +328,8 @@
     "im_just_a_little_stoned_right_now",
     "im_just_a_man_on_the_damn_internet",
     "im_just_a_man_thats_all",
-    "im_kind_of_back_what_happened"
+    "im_kind_of_back_what_happened",
+    "im_not_dead"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5562,6 +5563,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.43,
       "avg_active_chatters": 40.02
+    },
+    "im_not_dead": {
+      "stream_id": "im_not_dead",
+      "title": "I'm Not Dead",
+      "start_ts": 1673723793,
+      "end_ts": 1673731258,
+      "duration_sec": 7465,
+      "youtube_archive_id": "DEIyZyG3LHQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 320.34,
+      "donation_count": 77,
+      "donations_per_min": 2.5747,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.5,
+      "avg_active_chatters": 31.83
     }
   }
 }
