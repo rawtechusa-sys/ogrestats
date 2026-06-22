@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098509,
+  "updated_ts": 1782098516,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -121,7 +121,8 @@
     "a_xmas_eve_bird_stream_pt2",
     "after_immense_pressure_thecowarding_finally_responded",
     "alpha_males_only",
-    "alright_im_back"
+    "alright_im_back",
+    "am_i_attracted_to_my_cousin"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2043,6 +2044,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.24,
       "avg_active_chatters": 24.74
+    },
+    "am_i_attracted_to_my_cousin": {
+      "stream_id": "am_i_attracted_to_my_cousin",
+      "title": "Am I Attracted To My Cousin?",
+      "start_ts": 1685147491,
+      "end_ts": 1685157266,
+      "duration_sec": 9775,
+      "youtube_archive_id": "nZJ8KA-Hhjs",
+      "source_platform": "youtube",
+      "total_donations_usd": 257.98,
+      "donation_count": 53,
+      "donations_per_min": 1.5835,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.35,
+      "avg_active_chatters": 31.04
     }
   }
 }
