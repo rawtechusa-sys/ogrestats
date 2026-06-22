@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100749,
+  "updated_ts": 1782100755,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -389,7 +389,8 @@
     "lets_chat_plus_birds",
     "lets_discover_def_noodles_together",
     "lets_discuss_e3_and_next_gen_consoles",
-    "lets_discuss_my_budget_pc_build"
+    "lets_discuss_my_budget_pc_build",
+    "lets_discuss_nick_mercs_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -422,7 +423,7 @@
     "turkey": 7,
     "eyes": 87,
     "africa": 1,
-    "face": 366,
+    "face": 368,
     "petersonxhhanson": 1,
     "poo": 21,
     "joy": 257,
@@ -433,10 +434,10 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 45,
+    "cucumber": 46,
     "biceps": 4,
     "tongue": 7,
-    "heart": 119,
+    "heart": 120,
     "shorts": 1,
     "laughing": 147,
     "news": 18,
@@ -516,7 +517,7 @@
     "wilkins": 1,
     "vomiting": 4,
     "moment": 1,
-    "suit": 3,
+    "suit": 4,
     "mouth": 15,
     "papo": 1,
     "monkey": 1,
@@ -2795,6 +2796,11 @@
       "title": "Let's Discuss My Budget PC Build...",
       "start_ts": 1568072272,
       "youtube_archive_id": "_XNGe0Htg5g"
+    },
+    "lets_discuss_nick_mercs_road_to_1000_members": {
+      "title": "Let's Discuss Nick Mercs (Road To 1000 Members)",
+      "start_ts": 1686439743,
+      "youtube_archive_id": "oiuuRimAFAI"
     }
   },
   "messages": [
@@ -10699,6 +10705,56 @@
       "message": "does elf like femboys:backhand_index_pointing_right::backhand_index_pointing_left:",
       "commands": [
         "left"
+      ]
+    },
+    {
+      "ts": 1686451000,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_nick_mercs_road_to_1000_members",
+      "message": "Can\u2019t stay but just wanted to show my love! :heart_suit::heart_suit:",
+      "commands": [
+        "suit"
+      ]
+    },
+    {
+      "ts": 1686443425,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_nick_mercs_road_to_1000_members",
+      "message": "everyone does things they regret back in school but you are a good person and i'm sure your entire audience has your back on that. :rooster::cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1686441339,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_nick_mercs_road_to_1000_members",
+      "message": "Dad you missed my superchat :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1686440866,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_nick_mercs_road_to_1000_members",
+      "message": "hey dad, did you see the AI bird merch wow video i sent? if not can we watch it on stream? :grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1686440409,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_nick_mercs_road_to_1000_members",
+      "message": "I got my shirt today, tagged you on twitter :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
