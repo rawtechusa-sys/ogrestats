@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102210,
+  "updated_ts": 1782102216,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -602,7 +602,8 @@
     "spooky_stories_from_the_haunted_church",
     "sssniperwolf_has_a",
     "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled",
-    "steven_crowder_fallout_and_colleen_ballinger_is_racist"
+    "steven_crowder_fallout_and_colleen_ballinger_is_racist",
+    "stoned_and_streaming_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10220,6 +10221,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.73,
       "avg_active_chatters": 37.52
+    },
+    "stoned_and_streaming_feat_birds": {
+      "stream_id": "stoned_and_streaming_feat_birds",
+      "title": "Stoned And Streaming (Feat. Birds)",
+      "start_ts": 1658791397,
+      "end_ts": 1658798356,
+      "duration_sec": 6959,
+      "youtube_archive_id": "GockR6h1g8o",
+      "source_platform": "youtube",
+      "total_donations_usd": 223.63,
+      "donation_count": 64,
+      "donations_per_min": 1.9281,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.72,
+      "avg_active_chatters": 29.21
     }
   }
 }
