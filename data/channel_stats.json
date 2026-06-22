@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098880,
+  "updated_ts": 1782098888,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -168,7 +168,8 @@
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
     "birthday_bird_and_man_stream",
     "birthday_marathon_man_stream",
-    "boogie2988_is_a_thief_and_a_liar"
+    "boogie2988_is_a_thief_and_a_liar",
+    "boy_do_we_need_to_talk"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2842,6 +2843,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.8,
       "avg_active_chatters": 23.79
+    },
+    "boy_do_we_need_to_talk": {
+      "stream_id": "boy_do_we_need_to_talk",
+      "title": "Boy Do We Need TO Talk",
+      "start_ts": 1714270940,
+      "end_ts": 1714276522,
+      "duration_sec": 5582,
+      "youtube_archive_id": "VB6aGMXrZW4",
+      "source_platform": "youtube",
+      "total_donations_usd": 104.78,
+      "donation_count": 31,
+      "donations_per_min": 1.1263,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.46,
+      "avg_active_chatters": 33.32
     }
   }
 }
