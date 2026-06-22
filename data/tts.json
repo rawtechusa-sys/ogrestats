@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093500,
+  "updated_ts": 1782093545,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -44,13 +44,14 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx",
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
     "a_jcs_and_dsp_stream",
-    "a_jcs_stream"
+    "a_jcs_stream",
+    "a_jodi_arias_holiday_special"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 52,
+    "phil": 53,
     "trump": 30,
     "doom": 4,
     "harman": 12,
@@ -77,10 +78,10 @@
     "turkey": 3,
     "eyes": 12,
     "africa": 1,
-    "face": 32,
+    "face": 35,
     "petersonxhhanson": 1,
-    "poo": 3,
-    "joy": 24,
+    "poo": 4,
+    "joy": 25,
     "gameboy": 1,
     "chick": 1,
     "carlos": 9,
@@ -95,7 +96,7 @@
     "shorts": 1,
     "laughing": 14,
     "news": 4,
-    "chicken": 7,
+    "chicken": 8,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -112,12 +113,12 @@
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
-    "hole": 1,
+    "hole": 2,
     "rooster": 5,
     "peach": 1,
     "fire": 3,
     "kendal": 1,
-    "up": 4,
+    "up": 5,
     "note": 1,
     "eyebrow": 1,
     "facepalming": 1,
@@ -175,7 +176,9 @@
     "mouth": 1,
     "papo": 1,
     "monkey": 1,
-    "psychology": 1
+    "psychology": 1,
+    "lindell": 1,
+    "movie": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -392,6 +395,11 @@
       "title": "A JCS Stream",
       "start_ts": 1639443333,
       "youtube_archive_id": "lAq0o_rx49g"
+    },
+    "a_jodi_arias_holiday_special": {
+      "title": "A Jodi Arias Holiday Special",
+      "start_ts": 1640135169,
+      "youtube_archive_id": "QzGxuST3mhA"
     }
   },
   "messages": [
@@ -3825,6 +3833,107 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1640146549,
+      "username": "@KeifersIsAwesome",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "You have no idea how proud I am of having inadvertently made you say that. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1640142972,
+      "username": "@CrazyCracka831",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "Dr Phil: Rich your birds need to stay away from :hole:s",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1640142685,
+      "username": "@BeautifulAngelBlossom",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "Hi Daddy Merry Christmas :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1640141054,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "The :pile_of_poo: that escaped my bowels just now keeps screaming \u201cWASH YOUR :basketball:\u2019s\u201d BE GONE!",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1640140381,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "Russ Williams done by this guy would be good 2 c :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1640138854,
+      "username": "@AliceGeus",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "hallmark made for tv movie: not without my chicken",
+      "commands": [
+        "movie"
+      ]
+    },
+    {
+      "ts": 1640138724,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "She wanted her bird :hole: rammed, driving her 2 murder",
+      "commands": [
+        "hole"
+      ]
+    },
+    {
+      "ts": 1640137563,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "Mike lindell: licking taint cures covid i lick my own and have never gotten sick buy a fuckin pillow",
+      "commands": [
+        "lindell"
+      ]
+    },
+    {
+      "ts": 1640137334,
+      "username": "@PieEater900",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "that DSP joke alone deserves a super chat :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1640136333,
+      "username": "@tomhoulihan5865",
+      "platform": "youtube",
+      "stream_id": "a_jodi_arias_holiday_special",
+      "message": "I dont want your main channel to slow down. how about just videos without editing :thinking_face: might be great :thumbs_up:",
+      "commands": [
+        "face",
+        "up"
       ]
     },
     {
