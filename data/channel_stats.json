@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101270,
+  "updated_ts": 1782101278,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -463,7 +463,8 @@
     "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
     "more_chris_chan_insanity_then_maybe_elden_ring",
     "more_cringe_feat_a_man",
-    "more_e3_talk"
+    "more_e3_talk",
+    "more_edp445_more_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7857,6 +7858,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.34,
       "avg_active_chatters": 35.18
+    },
+    "more_edp445_more_man": {
+      "stream_id": "more_edp445_more_man",
+      "title": "More EDP445, More Man",
+      "start_ts": 1670459982,
+      "end_ts": 1670470042,
+      "duration_sec": 10060,
+      "youtube_archive_id": "vjVvevVOfcM",
+      "source_platform": "youtube",
+      "total_donations_usd": 244.79,
+      "donation_count": 65,
+      "donations_per_min": 1.46,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.54,
+      "avg_active_chatters": 30.42
     }
   }
 }
