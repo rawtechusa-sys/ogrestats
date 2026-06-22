@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099968,
+  "updated_ts": 1782099977,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -297,7 +297,8 @@
     "hes_back_and_thoroughly_tickledpart_deux",
     "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
     "i_am_alive",
-    "i_am_beyond_furious"
+    "i_am_beyond_furious",
+    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii"
   ],
   "commands": {
     "stan": 27,
@@ -393,7 +394,7 @@
     "gift": 3,
     "bird": 8,
     "richsmile": 5,
-    "dsp": 18,
+    "dsp": 19,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -504,7 +505,7 @@
     "glove": 2,
     "collision": 2,
     "spoiler": 1,
-    "mug": 1,
+    "mug": 2,
     "pachter": 2,
     "eagle": 5,
     "reviewkaynewestusa": 1,
@@ -680,7 +681,10 @@
     "muta": 2,
     "o": 1,
     "fingers": 1,
-    "word": 1
+    "word": 1,
+    "wrestling": 1,
+    "tcap": 1,
+    "salad": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2162,6 +2166,11 @@
       "title": "I Am Beyond Furious",
       "start_ts": 1655253971,
       "youtube_archive_id": "9ra8GJzeL8E"
+    },
+    "i_am_financially_obligated_to_play_more_kingdom_hearts_iii": {
+      "title": "I Am Financially Obligated To Play More Kingdom Hearts III",
+      "start_ts": 1644451579,
+      "youtube_archive_id": "o3KUMSV6P3E"
     }
   },
   "messages": [
@@ -14619,6 +14628,38 @@
       "message": "Hey Richie! Wanna go grab some coffee :smirking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1644456794,
+      "username": "@AdrianCardoza",
+      "platform": "youtube",
+      "stream_id": "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
+      "message": "Let\u2019s watch TCAP: The Best Arrests. Here\u2019s :beer_mug: to 8 months of Daddy Rich entertaining me. Tossing :green_salad: is not a crime!",
+      "commands": [
+        "tcap",
+        "mug",
+        "salad"
+      ]
+    },
+    {
+      "ts": 1644455671,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
+      "message": "Who would win in mud wrestling: Donald or Carlos?",
+      "commands": [
+        "wrestling"
+      ]
+    },
+    {
+      "ts": 1644452135,
+      "username": "@CloakedOnyx",
+      "platform": "youtube",
+      "stream_id": "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
+      "message": "DSP: I don't like/play puzzle games! (plays Resident Evil games)",
+      "commands": [
+        "dsp"
       ]
     },
     {
