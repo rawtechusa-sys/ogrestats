@@ -21,14 +21,14 @@
 {"ts": 1646619285, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 35, "active_twitch_chatters": null, "youtube_messages_per_minute": 15.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619345, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 39, "active_twitch_chatters": null, "youtube_messages_per_minute": 11.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619405, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 42, "active_twitch_chatters": null, "youtube_messages_per_minute": 11.0, "twitch_messages_per_minute": 0}
-{"ts": 1646619411, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@fruityjeezus", "amount_raw": "ARS 20.00", "amount_usd": 20.0, "message": "kiss the birds"}
+{"ts": 1646619411, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@fruityjeezus", "amount_raw": "ARS 20.00", "amount_usd": 0.02, "message": "kiss the birds"}
 {"ts": 1646619465, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 38, "active_twitch_chatters": null, "youtube_messages_per_minute": 8.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619508, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@marihdimitri7219", "amount_raw": "$2.00", "amount_usd": 2.0, "message": "The TMNT 80s games were so much fun back then."}
 {"ts": 1646619525, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 30, "active_twitch_chatters": null, "youtube_messages_per_minute": 4.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619585, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 28, "active_twitch_chatters": null, "youtube_messages_per_minute": 9.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619645, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 29, "active_twitch_chatters": null, "youtube_messages_per_minute": 9.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619705, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 28, "active_twitch_chatters": null, "youtube_messages_per_minute": 12.0, "twitch_messages_per_minute": 0}
-{"ts": 1646619709, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@fruityjeezus", "amount_raw": "ARS 20.00", "amount_usd": 20.0, "message": "Super Sticker"}
+{"ts": 1646619709, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@fruityjeezus", "amount_raw": "ARS 20.00", "amount_usd": 0.02, "message": "Super Sticker"}
 {"ts": 1646619719, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@waycoolscootaloo", "amount_raw": "$2.00", "amount_usd": 2.0, "message": "Glad I lm 10 minutes from work & have a 4cyl car."}
 {"ts": 1646619765, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 29, "active_twitch_chatters": null, "youtube_messages_per_minute": 18.0, "twitch_messages_per_minute": 0}
 {"ts": 1646619825, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 31, "active_twitch_chatters": null, "youtube_messages_per_minute": 8.0, "twitch_messages_per_minute": 0}
@@ -158,7 +158,7 @@
 {"ts": 1646625465, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 12, "active_twitch_chatters": null, "youtube_messages_per_minute": 5.0, "twitch_messages_per_minute": 0}
 {"ts": 1646625525, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 11, "active_twitch_chatters": null, "youtube_messages_per_minute": 0.0, "twitch_messages_per_minute": 0}
 {"ts": 1646625585, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 17, "active_twitch_chatters": null, "youtube_messages_per_minute": 11.0, "twitch_messages_per_minute": 0}
-{"ts": 1646625643, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@bradsmith130", "amount_raw": "CA$5.00", "amount_usd": 5.0, "message": "COD vanguard or dying light 2 what would you pick"}
+{"ts": 1646625643, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@bradsmith130", "amount_raw": "CA$5.00", "amount_usd": 3.65, "message": "COD vanguard or dying light 2 what would you pick"}
 {"ts": 1646625645, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 16, "active_twitch_chatters": null, "youtube_messages_per_minute": 5.0, "twitch_messages_per_minute": 0}
 {"ts": 1646625705, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 15, "active_twitch_chatters": null, "youtube_messages_per_minute": 5.0, "twitch_messages_per_minute": 0}
 {"ts": 1646625765, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 14, "active_twitch_chatters": null, "youtube_messages_per_minute": 11.0, "twitch_messages_per_minute": 0}
