@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101837,
+  "updated_ts": 1782101843,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -544,7 +544,8 @@
     "pranks_predators_phil_birds",
     "pulsating_feat_birds",
     "putting_disgusting_bugs_on_delicious_food",
-    "putting_together_a_new_monitor"
+    "putting_together_a_new_monitor",
+    "quantum_is_more_unhinged_than_ever"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9234,6 +9235,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.24,
       "avg_active_chatters": 30.48
+    },
+    "quantum_is_more_unhinged_than_ever": {
+      "stream_id": "quantum_is_more_unhinged_than_ever",
+      "title": "QUANTUM IS MORE UNHINGED THAN EVER!",
+      "start_ts": 1699233674,
+      "end_ts": 1699242549,
+      "duration_sec": 8875,
+      "youtube_archive_id": "F8Ufet30dDk",
+      "source_platform": "youtube",
+      "total_donations_usd": 266.16,
+      "donation_count": 80,
+      "donations_per_min": 1.7994,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.31,
+      "avg_active_chatters": 43.11
     }
   }
 }
