@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093330,
+  "updated_ts": 1782093372,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -40,7 +40,8 @@
     "a_fun_dspgaming_man_stream",
     "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
     "a_grand_theft_auto_trilogy_bird_stream",
-    "a_heartwarming_man_and_bird_stream"
+    "a_heartwarming_man_and_bird_stream",
+    "a_heterosexual_christian_man_stream_watching_cyraxx"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -666,6 +667,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.46,
       "avg_active_chatters": 31.82
+    },
+    "a_heterosexual_christian_man_stream_watching_cyraxx": {
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx)",
+      "start_ts": 1705013907,
+      "end_ts": 1705035621,
+      "duration_sec": 21714,
+      "youtube_archive_id": "e5Dphi0J0gw",
+      "source_platform": "youtube",
+      "total_donations_usd": 813.86,
+      "donation_count": 208,
+      "donations_per_min": 2.2489,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.52,
+      "avg_active_chatters": 44.93
     }
   }
 }
