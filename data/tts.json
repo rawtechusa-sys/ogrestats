@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101582,
+  "updated_ts": 1782101590,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -501,7 +501,8 @@
     "phil_boogie_men",
     "phil_discusses_the_documentary_and_complains_about_me",
     "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
-    "phil_is_a_man"
+    "phil_is_a_man",
+    "phil_is_an_angry_man_and_more_thecompletionist_drama"
   ],
   "commands": {
     "stan": 27,
@@ -531,16 +532,16 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 11,
+    "turkey": 12,
     "eyes": 117,
     "africa": 1,
-    "face": 476,
+    "face": 477,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 309,
+    "joy": 310,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 39,
+    "carlos": 40,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -689,7 +690,7 @@
     "quote": 1,
     "beverage": 4,
     "peanuts": 1,
-    "glass": 2,
+    "glass": 3,
     "example": 1,
     "theory": 3,
     "says": 1,
@@ -3539,6 +3540,11 @@
       "title": "Phil Is A Man",
       "start_ts": 1711150648,
       "youtube_archive_id": "ysXNQlymuYI"
+    },
+    "phil_is_an_angry_man_and_more_thecompletionist_drama": {
+      "title": "PHIL IS AN ANGRY MAN, AND MORE THECOMPLETIONIST DRAMA",
+      "start_ts": 1700615378,
+      "youtube_archive_id": "A0L2cs-4Low"
     }
   },
   "messages": [
@@ -9558,6 +9564,56 @@
       "message": "I need Phil's hot man gravy for my Bird :bird:",
       "commands": [
         "bird"
+      ]
+    },
+    {
+      "ts": 1700618348,
+      "username": "@pixelshark6809",
+      "platform": "youtube",
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "message": "Missed my super chat. Happy Thanksgiving!! :turkey:",
+      "commands": [
+        "turkey"
+      ]
+    },
+    {
+      "ts": 1700617766,
+      "username": "@ScroffToffee1309",
+      "platform": "youtube",
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "message": "Yeah you take things off\u2026 but I have yet to see the pants go along with the shirt :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700617485,
+      "username": "@OnePumpMaan",
+      "platform": "youtube",
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "message": "Cock :_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1700616606,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "message": "Rich \u2014 check out Snoop Dogg x Solo Stove :winking_face::winking_face::winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1700616022,
+      "username": "@Bigpapahaze",
+      "platform": "youtube",
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "message": "Sofia verga could get it She's aged like a fine wine :wine_glass:",
+      "commands": [
+        "glass"
       ]
     },
     {
