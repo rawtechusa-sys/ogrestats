@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096459,
+  "updated_ts": 1782096521,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -99,7 +99,8 @@
     "a_satisfying_incel_stream",
     "a_short_stream",
     "a_short_stream_with_a_man",
-    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes"
+    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+    "a_stream_for_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1669,6 +1670,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.44,
       "avg_active_chatters": 26.43
+    },
+    "a_stream_for_men": {
+      "stream_id": "a_stream_for_men",
+      "title": "A Stream For Men",
+      "start_ts": 1704236144,
+      "end_ts": 1704257974,
+      "duration_sec": 21830,
+      "youtube_archive_id": "pkOMlLRW8JM",
+      "source_platform": "youtube",
+      "total_donations_usd": 650.87,
+      "donation_count": 158,
+      "donations_per_min": 1.7889,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.46,
+      "avg_active_chatters": 46.95
     }
   }
 }
