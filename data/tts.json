@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099521,
+  "updated_ts": 1782099529,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -245,7 +245,8 @@
     "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
     "darrell_brooks_is_a_psychopath_feat_angry_birds",
     "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
-    "discussing_dspgamings_derich"
+    "discussing_dspgamings_derich",
+    "dkoldies_is_at_it_again_part_347"
   ],
   "commands": {
     "stan": 27,
@@ -281,7 +282,7 @@
     "face": 218,
     "petersonxhhanson": 1,
     "poo": 14,
-    "joy": 148,
+    "joy": 149,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -344,7 +345,7 @@
     "dsp": 10,
     "story": 1,
     "tree": 3,
-    "skull": 5,
+    "skull": 6,
     "eggplant": 3,
     "bite": 1,
     "take": 4,
@@ -566,13 +567,15 @@
     "currently": 1,
     "article": 1,
     "life": 1,
-    "monocle": 1,
+    "monocle": 2,
     "store": 1,
     "pump": 1,
     "robot": 1,
     "splayed": 1,
     "crown": 1,
-    "game": 1
+    "game": 1,
+    "dialogue": 1,
+    "perspective": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1794,6 +1797,11 @@
       "title": "Discussing DSPGaming's Derich",
       "start_ts": 1688585848,
       "youtube_archive_id": "bqJBJjx7zQ4"
+    },
+    "dkoldies_is_at_it_again_part_347": {
+      "title": "DKOldies Is At It Again (Part 347)",
+      "start_ts": 1676681904,
+      "youtube_archive_id": "6blqRcw_8Jw"
     }
   },
   "messages": [
@@ -8239,6 +8247,56 @@
       "message": ":grinning_squinting_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1676690021,
+      "username": "@Blicky_Bandit",
+      "platform": "youtube",
+      "stream_id": "dkoldies_is_at_it_again_part_347",
+      "message": "Y\u2019all should watch the video pigstar did of Mike Tyson and DSP it had me rolling :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1676685964,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "dkoldies_is_at_it_again_part_347",
+      "message": "To put things in perspective: the other day one of Phil\u2019s viewers said his parents died in an accident. Phil barely bats an eye says he\u2019s sorry (cont)",
+      "commands": [
+        "perspective"
+      ]
+    },
+    {
+      "ts": 1676684102,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "dkoldies_is_at_it_again_part_347",
+      "message": "Just watched the new Ant-Man, some real lines of dialogue: \"Veb, stop asking the man about his holes\" and \"I have holes...? I. HAVE. HOLES!\"",
+      "commands": [
+        "dialogue"
+      ]
+    },
+    {
+      "ts": 1676682402,
+      "username": "@ThePunkStix",
+      "platform": "youtube",
+      "stream_id": "dkoldies_is_at_it_again_part_347",
+      "message": "All hail the nipp King! (In sweater) :thumbs_up::thumbs_up::face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1676682351,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "dkoldies_is_at_it_again_part_347",
+      "message": "Hey Rich. I\u2019m a man of my word. I released that DSP Squeeze Banana GMV yesterday as I mentioned last stream. I loved making it. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
