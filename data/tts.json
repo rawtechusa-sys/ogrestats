@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098757,
+  "updated_ts": 1782098766,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -152,7 +152,8 @@
     "ban_anybody_watching_the_wingsofredemption_documentary",
     "ban_anybody_who_discusses_wingsofredemption",
     "ban_dark_souls_remastered_members_only",
-    "being_terrible_at_halo_infinite_live"
+    "being_terrible_at_halo_infinite_live",
+    "between_two_birds_feat_men"
   ],
   "commands": {
     "stan": 27,
@@ -400,7 +401,9 @@
     "sunset": 2,
     "fist": 1,
     "frog": 1,
-    "gwyn": 1
+    "gwyn": 1,
+    "livestreams": 1,
+    "laugh": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1157,6 +1160,11 @@
       "title": "Being Terrible At Halo Infinite LIVE",
       "start_ts": 1639515915,
       "youtube_archive_id": "q3zjyvQPkFs"
+    },
+    "between_two_birds_feat_men": {
+      "title": "Between Two Birds (Feat. Men)",
+      "start_ts": 1679872997,
+      "youtube_archive_id": "1Hmtd_Wbw8A"
     }
   },
   "messages": [
@@ -6232,6 +6240,26 @@
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1679881133,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "between_two_birds_feat_men",
+      "message": "Someone probably said it already but I wasn\u2019t here to laugh: Phil\u2019s react \u201cevent\u201d on Wings is almost 6h and made less than $100 so far. Wings restreamed and got over $300 in 3h, Phil ratioed again lol",
+      "commands": [
+        "laugh"
+      ]
+    },
+    {
+      "ts": 1679873694,
+      "username": "@madonnasplasticsurgery",
+      "platform": "youtube",
+      "stream_id": "between_two_birds_feat_men",
+      "message": "Nicknames you\u2019ve given Phil on past livestreams: Darksydekaren, Philip I can outmaneuver Mike Tyson Burnell, Phillip way too little way too late Burnell, Philita sarkeesian... (1/2)",
+      "commands": [
+        "livestreams"
       ]
     },
     {
