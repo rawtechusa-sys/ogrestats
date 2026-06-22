@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100687,
+  "updated_ts": 1782100694,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -380,7 +380,8 @@
     "last_hour_lets_go_road_to_1000_members",
     "late_hairy_man_action",
     "late_night_man_gaming",
-    "late_night_stream_for_no_reason"
+    "late_night_stream_for_no_reason",
+    "learning_how_to_be_a_man_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -431,7 +432,7 @@
     "shorts": 1,
     "laughing": 145,
     "news": 18,
-    "chicken": 42,
+    "chicken": 43,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -626,7 +627,7 @@
     "dpsn": 1,
     "correction": 1,
     "sunset": 2,
-    "fist": 3,
+    "fist": 4,
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
@@ -650,7 +651,7 @@
     "fap": 1,
     "piece": 1,
     "staple": 1,
-    "bubbles": 2,
+    "bubbles": 3,
     "web": 1,
     "gonjiam": 1,
     "spaghetti": 1,
@@ -840,7 +841,9 @@
     "dumps": 1,
     "condemned": 1,
     "corner": 1,
-    "hustle": 1
+    "hustle": 1,
+    "women": 1,
+    "bag": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2737,6 +2740,11 @@
       "title": "Late Night Stream For No Reason...",
       "start_ts": 1702442921,
       "youtube_archive_id": "cihMP0jkO30"
+    },
+    "learning_how_to_be_a_man_feat_birds": {
+      "title": "Learning How To Be A Man (Feat. Birds)",
+      "start_ts": 1665534019,
+      "youtube_archive_id": "Ux-kXVyPsC0"
     }
   },
   "messages": [
@@ -14284,6 +14292,56 @@
       "message": "Just wanted to say, I feel the pain y\u2019all felt with saints row. GOTHAM KNIGHTS is :pile_of_poo:",
       "commands": [
         "poo"
+      ]
+    },
+    {
+      "ts": 1665542445,
+      "username": "@GFettJake",
+      "platform": "youtube",
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "message": "Can you say Team Deathmatch, Bravo Team, and UAV Overhead in your COD Voice. Rapid DSP Bubbles:bubbles: And am I allowed to be a permanent member or mod?",
+      "commands": [
+        "bubbles"
+      ]
+    },
+    {
+      "ts": 1665540576,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "message": "Quick catch-up plz, Who's the \"Jenius\",+1 cluck :beaming_face_with_smiling_eyes::oncoming_fist:",
+      "commands": [
+        "fist"
+      ]
+    },
+    {
+      "ts": 1665540099,
+      "username": "@kazenyc",
+      "platform": "youtube",
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "message": "He says the men are gonna need them, yet charges $297 to these men who probably lost their jobs due to pandemic! \ud83e\udd37\ud83c\udffe\u200d\u2642:rolling_on_the_floor_laughing::face_with_tears_of_joy::money_bag:",
+      "commands": [
+        "bag"
+      ]
+    },
+    {
+      "ts": 1665539807,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "message": "Good to have you back bird dad :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1665538419,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "message": "I'll give advice for free to attract Women: Don't Be a Creep, Don't give us Dick Pics and Don't harrass us. Just be yourself and you may get attention",
+      "commands": [
+        "women"
       ]
     },
     {
