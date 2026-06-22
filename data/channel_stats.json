@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098872,
+  "updated_ts": 1782098880,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -167,7 +167,8 @@
     "birds_are_satisfying_kinda_livestream_feat_birds",
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
     "birthday_bird_and_man_stream",
-    "birthday_marathon_man_stream"
+    "birthday_marathon_man_stream",
+    "boogie2988_is_a_thief_and_a_liar"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2825,6 +2826,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.43,
       "avg_active_chatters": 44.49
+    },
+    "boogie2988_is_a_thief_and_a_liar": {
+      "stream_id": "boogie2988_is_a_thief_and_a_liar",
+      "title": "Boogie2988 Is A Thief And A Liar",
+      "start_ts": 1720656668,
+      "end_ts": 1720677634,
+      "duration_sec": 20966,
+      "youtube_archive_id": "l1HVpTGsUk0",
+      "source_platform": "youtube",
+      "total_donations_usd": 300.43,
+      "donation_count": 79,
+      "donations_per_min": 0.8598,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.8,
+      "avg_active_chatters": 23.79
     }
   }
 }
