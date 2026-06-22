@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100526,
+  "updated_ts": 1782100535,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -361,7 +361,8 @@
     "just_being_a_man",
     "just_chatting_and_watching_the_completionist_discord_call",
     "just_chatting_feat_a_man",
-    "just_chatting_like_a_man"
+    "just_chatting_like_a_man",
+    "just_chatting_with_vaush"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6123,6 +6124,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.07,
       "avg_active_chatters": 22.74
+    },
+    "just_chatting_with_vaush": {
+      "stream_id": "just_chatting_with_vaush",
+      "title": "Just Chatting With Vaush",
+      "start_ts": 1631203838,
+      "end_ts": 1631207893,
+      "duration_sec": 4055,
+      "youtube_archive_id": "OUFfOcXN29I",
+      "source_platform": "youtube",
+      "total_donations_usd": 69.75,
+      "donation_count": 14,
+      "donations_per_min": 1.0321,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.76,
+      "avg_active_chatters": 52.87
     }
   }
 }
