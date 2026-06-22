@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100491,
+  "updated_ts": 1782100500,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -357,7 +357,8 @@
     "jaysus_gaming_test_stream",
     "just_a_man_and_birds",
     "just_a_man_streaming_and_answering_questions_feat_birds",
-    "just_a_man_streaming_for_a_bit"
+    "just_a_man_streaming_for_a_bit",
+    "just_being_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6055,6 +6056,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.75,
       "avg_active_chatters": 32.03
+    },
+    "just_being_a_man": {
+      "stream_id": "just_being_a_man",
+      "title": "Just Being A Man",
+      "start_ts": 1709944038,
+      "end_ts": 1709962540,
+      "duration_sec": 18502,
+      "youtube_archive_id": "PO6YcLDZ6LM",
+      "source_platform": "youtube",
+      "total_donations_usd": 1551.37,
+      "donation_count": 81,
+      "donations_per_min": 5.0309,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.07,
+      "avg_active_chatters": 35.67
     }
   }
 }
