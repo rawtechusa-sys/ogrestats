@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102086,
+  "updated_ts": 1782102092,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -584,7 +584,8 @@
     "slow_news_day_and_reviewing_things",
     "slushii_and_someordinarygamers_join_dad",
     "so_apparently_im_a_playstation_fanboy",
-    "so_hows_quantum_tv_been"
+    "so_hows_quantum_tv_been",
+    "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9914,6 +9915,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.96,
       "avg_active_chatters": 40.87
+    },
+    "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game": {
+      "stream_id": "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game",
+      "title": "So I Beat Elden Ring And Recorded It (Let's Watch The Fight And Discuss The Game)",
+      "start_ts": 1652922895,
+      "end_ts": 1652930253,
+      "duration_sec": 7358,
+      "youtube_archive_id": "9vtwXVbDG8c",
+      "source_platform": "youtube",
+      "total_donations_usd": 201.66,
+      "donation_count": 43,
+      "donations_per_min": 1.6444,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.51,
+      "avg_active_chatters": 34.93
     }
   }
 }
