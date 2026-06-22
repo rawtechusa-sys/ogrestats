@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100616,
+  "updated_ts": 1782100624,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -371,7 +371,8 @@
     "karens_and_birds",
     "keem_vs_boogie2988_vs_wings_lolcow_live",
     "king_cobra_and_phil",
-    "large_freshly_showered_man_streams"
+    "large_freshly_showered_man_streams",
+    "large_man_alert"
   ],
   "commands": {
     "stan": 27,
@@ -825,7 +826,8 @@
     "off": 1,
     "hoarders": 1,
     "either": 1,
-    "reviewojsimpsonusa": 1
+    "reviewojsimpsonusa": 1,
+    "suggestions": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2677,6 +2679,11 @@
       "title": "Large, Freshly Showered Man Streams",
       "start_ts": 1527214324,
       "youtube_archive_id": "By_Eqf0-Bl4"
+    },
+    "large_man_alert": {
+      "title": "LARGE MAN ALERT",
+      "start_ts": 1713654709,
+      "youtube_archive_id": "W0SXIVSyIrU"
     }
   },
   "messages": [
@@ -4965,6 +4972,16 @@
       "message": "Picked up a Stream Deck MK.2. I put some sounds on it and now feel like RTU. I just play the sounds to myself though. :grinning_face_with_sweat:",
       "commands": [
         "sweat"
+      ]
+    },
+    {
+      "ts": 1713658119,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "large_man_alert",
+      "message": "Cut-Out men suggestions: Jared Fogle, EDP, OJ",
+      "commands": [
+        "suggestions"
       ]
     },
     {
