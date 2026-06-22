@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100804,
+  "updated_ts": 1782100812,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -397,7 +397,8 @@
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
     "lets_discuss_the_steam_deck",
     "lets_discuss_xbox_and_activision",
-    "lets_have_some_fun"
+    "lets_have_some_fun",
+    "lets_laugh_at_alex_jones"
   ],
   "commands": {
     "stan": 27,
@@ -432,7 +433,7 @@
     "africa": 1,
     "face": 375,
     "petersonxhhanson": 1,
-    "poo": 21,
+    "poo": 23,
     "joy": 260,
     "gameboy": 1,
     "chick": 2,
@@ -444,7 +445,7 @@
     "cucumber": 47,
     "biceps": 4,
     "tongue": 7,
-    "heart": 120,
+    "heart": 121,
     "shorts": 1,
     "laughing": 151,
     "news": 19,
@@ -560,7 +561,7 @@
     "struck": 3,
     "joker": 1,
     "racehorse": 8,
-    "question": 9,
+    "question": 10,
     "mushroom": 2,
     "trilogy": 1,
     "spider": 2,
@@ -587,7 +588,7 @@
     "peanuts": 1,
     "glass": 1,
     "example": 1,
-    "theory": 2,
+    "theory": 3,
     "says": 1,
     "wave": 1,
     "mugs": 2,
@@ -780,7 +781,7 @@
     "muta": 2,
     "o": 1,
     "fingers": 2,
-    "word": 1,
+    "word": 2,
     "wrestling": 1,
     "tcap": 1,
     "salad": 1,
@@ -822,7 +823,7 @@
     "attorney": 1,
     "case": 1,
     "way": 1,
-    "judge": 1,
+    "judge": 2,
     "system": 1,
     "mark": 1,
     "lie": 1,
@@ -2848,6 +2849,11 @@
       "title": "Let's Have Some Fun",
       "start_ts": 1657305411,
       "youtube_archive_id": "yV3k9GZW1Zk"
+    },
+    "lets_laugh_at_alex_jones": {
+      "title": "Let's Laugh At Alex Jones",
+      "start_ts": 1659746871,
+      "youtube_archive_id": "xeDkJ2zB3KE"
     }
   },
   "messages": [
@@ -15865,6 +15871,76 @@
       "message": "Coldfeet Crowder called for a civil war :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1659757384,
+      "username": "@zholl005",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "love ya bud promise to defend you 3x as hard as Jones I have actually watched your steams gnight dude :sparkling_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1659756834,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "Judge: \"This is not your show, its MY show!",
+      "commands": [
+        "judge"
+      ]
+    },
+    {
+      "ts": 1659750182,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "one word: money.",
+      "commands": [
+        "word"
+      ]
+    },
+    {
+      "ts": 1659748460,
+      "username": "@vincehowell1018",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "Random question: What do you think of Alex's beard game?",
+      "commands": [
+        "question"
+      ]
+    },
+    {
+      "ts": 1659748363,
+      "username": "@MagicTaint",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "Alex Jones next conspiracy theory: Philip Burnells chicken sandwich",
+      "commands": [
+        "theory"
+      ]
+    },
+    {
+      "ts": 1659748130,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "Hi Rich, did you ever watch the 4 1/2 minute DSP begging video I sent you the link for last week? Just curious. And F*CK Alex Jones!! What a POS :pile_of_poo::pile_of_poo:",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1659747805,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_alex_jones",
+      "message": "Ah :pile_of_poo: im sorry didnt see ya there!",
+      "commands": [
+        "poo"
       ]
     },
     {
