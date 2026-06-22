@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100689,
+  "updated_ts": 1782100695,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -382,7 +382,8 @@
     "late_hairy_man_action",
     "late_night_man_gaming",
     "late_night_stream_feat_a_horse",
-    "late_night_stream_for_no_reason"
+    "late_night_stream_for_no_reason",
+    "learning_how_to_be_a_man_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6480,6 +6481,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 23.32,
       "avg_active_chatters": 50.04
+    },
+    "learning_how_to_be_a_man_feat_birds": {
+      "stream_id": "learning_how_to_be_a_man_feat_birds",
+      "title": "Learning How To Be A Man (Feat. Birds)",
+      "start_ts": 1665534019,
+      "end_ts": 1665544511,
+      "duration_sec": 10492,
+      "youtube_archive_id": "Ux-kXVyPsC0",
+      "source_platform": "youtube",
+      "total_donations_usd": 281.11,
+      "donation_count": 87,
+      "donations_per_min": 1.6076,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.41,
+      "avg_active_chatters": 34.46
     }
   }
 }
