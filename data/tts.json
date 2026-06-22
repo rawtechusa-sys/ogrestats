@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100631,
+  "updated_ts": 1782100637,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -373,7 +373,8 @@
     "king_cobra_and_phil",
     "large_freshly_showered_man_streams",
     "large_man_alert",
-    "large_man_in_front_of_mic_live"
+    "large_man_in_front_of_mic_live",
+    "large_man_live"
   ],
   "commands": {
     "stan": 27,
@@ -406,10 +407,10 @@
     "turkey": 7,
     "eyes": 83,
     "africa": 1,
-    "face": 344,
+    "face": 346,
     "petersonxhhanson": 1,
     "poo": 20,
-    "joy": 248,
+    "joy": 250,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -420,7 +421,7 @@
     "cucumber": 45,
     "biceps": 3,
     "tongue": 7,
-    "heart": 116,
+    "heart": 117,
     "shorts": 1,
     "laughing": 143,
     "news": 18,
@@ -443,7 +444,7 @@
     "disclaimer": 1,
     "hole": 6,
     "rooster": 39,
-    "peach": 10,
+    "peach": 12,
     "fire": 22,
     "kendal": 1,
     "up": 36,
@@ -453,7 +454,7 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 24,
+    "hands": 25,
     "horns": 7,
     "crab": 2,
     "superhero": 27,
@@ -514,7 +515,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 15,
+    "it": 18,
     "food": 4,
     "play": 1,
     "video": 1,
@@ -526,7 +527,7 @@
     "like": 6,
     "memory": 2,
     "fight": 1,
-    "leaf": 2,
+    "leaf": 3,
     "random": 1,
     "moai": 1,
     "meeting": 1,
@@ -781,7 +782,7 @@
     "centrist": 1,
     "club": 1,
     "turtle": 1,
-    "psa": 1,
+    "psa": 2,
     "tipster": 1,
     "review": 1,
     "doctor": 1,
@@ -828,7 +829,9 @@
     "hoarders": 1,
     "either": 1,
     "reviewojsimpsonusa": 1,
-    "suggestions": 1
+    "suggestions": 1,
+    "man": 1,
+    "dumps": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2690,6 +2693,11 @@
       "title": "Large Man In Front Of Mic LIVE",
       "start_ts": 1664671913,
       "youtube_archive_id": "92u2IVXE4kc"
+    },
+    "large_man_live": {
+      "title": "Large Man LIVE",
+      "start_ts": 1703984505,
+      "youtube_archive_id": "s30jOJiGqp8"
     }
   },
   "messages": [
@@ -6679,6 +6687,156 @@
       "message": "Phil Lang Syne: Should sandwiches be pulsating And tips donated by a fan? When the camera's on, we all know that Philip Burnell is a man. Happy New Year all & Rich thank you for entertaining us!",
       "commands": [
         "syne"
+      ]
+    },
+    {
+      "ts": 1703991887,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "One extra side note about my Dad is that my Mom\u2019s death made his narcissism a lot worse, and his relationship with me is particularly special. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1703991092,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "The father who adopted me is a good person and I love him, but he\u2019s a literal narcissist. It wasn\u2019t until I moved out to live with my grandparents that I realized he was hurting me mentally. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1703991064,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "DSP tries it: bugged chill positivity mechanics",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1703989599,
+      "username": "@GuyverTTV",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "Nice Freeze frame, we are all enjoying Cammy's:peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1703989036,
+      "username": "@astrozombies751",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "No he doesn't watch us :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1703988209,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "speaking of dumps: I just dropped a log so big that I could feel my insides shrink as it left my hole. the turd also looped around the bowl. glorious.",
+      "commands": [
+        "dumps"
+      ]
+    },
+    {
+      "ts": 1703987871,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "PSA: GOTY 2022 Saints Row is Free till tomorrow",
+      "commands": [
+        "psa"
+      ]
+    },
+    {
+      "ts": 1703987655,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "I have phills detractors following me now on X :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1703987349,
+      "username": "@timculhane625",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "Philip Burnell is a man :man:",
+      "commands": [
+        "man"
+      ]
+    },
+    {
+      "ts": 1703987344,
+      "username": "@matt-wii-sports-l9r",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "Jay going to pay for overpriced 4090 in :maple_leaf:",
+      "commands": [
+        "leaf"
+      ]
+    },
+    {
+      "ts": 1703987034,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "Please can we watch \"Poopy Pigeon Flight\" :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1703986217,
+      "username": "@RelaxedPeggedAnus",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "can u enable nightbot commands again please:eggplant::sweat_droplets::peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1703986147,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "DSP tries it: Bugged bronzio staring mechanics",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1703986045,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "DSP tries it: being gay for LowTierGod\u2019s sexy",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1703985386,
+      "username": "@mr.0lvera922",
+      "platform": "youtube",
+      "stream_id": "large_man_live",
+      "message": "Why do horses run on courses song later? please :folded_hands:",
+      "commands": [
+        "hands"
       ]
     },
     {
