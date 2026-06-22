@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101225,
+  "updated_ts": 1782101232,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -454,7 +454,8 @@
     "men_vs_chris_chan",
     "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
     "middle_aged_men_complain_about_video_games",
-    "monday_night_man"
+    "monday_night_man",
+    "more_amico_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -490,7 +491,7 @@
     "face": 428,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 281,
+    "joy": 282,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -3225,6 +3226,11 @@
       "title": "Monday Night Man",
       "start_ts": 1630975832,
       "youtube_archive_id": "UeNxSDD4ZEs"
+    },
+    "more_amico_family_fun": {
+      "title": "More Amico Family Fun",
+      "start_ts": 1645909897,
+      "youtube_archive_id": "MWqbjOI-SDk"
     }
   },
   "messages": [
@@ -21442,6 +21448,16 @@
       "message": "He looks like Ben Shapiro:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1645913081,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "more_amico_family_fun",
+      "message": "So Angry Joe livestreamed his review of Balan Wonderworld with O.J. & Alex. After he was done he said he felt dizzy, nauseous,& a headache. So, when will you be doing a livestream of it Rich? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
