@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092600,
+  "updated_ts": 1782092627,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -19,7 +19,8 @@
     "2_man_mini_marathon_stream_feat_birds",
     "2_men_live_featmen",
     "2_middle_aged_men_are_livestreaming",
-    "3_men_live_camelot331_and_boogie2988"
+    "3_men_live_camelot331_and_boogie2988",
+    "42_year_old_man_plays_video_games_terribly"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -309,6 +310,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.1,
       "avg_active_chatters": 55.99
+    },
+    "42_year_old_man_plays_video_games_terribly": {
+      "stream_id": "42_year_old_man_plays_video_games_terribly",
+      "title": "42 Year Old Man Plays Video Games Terribly",
+      "start_ts": 1701468293,
+      "end_ts": 1701475991,
+      "duration_sec": 7698,
+      "youtube_archive_id": "_yH3YHuTFAg",
+      "source_platform": "youtube",
+      "total_donations_usd": 198.85,
+      "donation_count": 39,
+      "donations_per_min": 1.5499,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.36,
+      "avg_active_chatters": 33.5
     }
   }
 }
