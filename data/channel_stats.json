@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101606,
+  "updated_ts": 1782101613,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -508,7 +508,8 @@
     "phil_is_a_man",
     "phil_is_an_angry_man_and_more_thecompletionist_drama",
     "philip_burnell_and_tommy_tallarico_live",
-    "philip_burnell_chicken_sandwich_madness"
+    "philip_burnell_chicken_sandwich_madness",
+    "philip_burnell_feat_tickled_television_incorporated"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8622,6 +8623,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.29,
       "avg_active_chatters": 27.05
+    },
+    "philip_burnell_feat_tickled_television_incorporated": {
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "title": "Philip Burnell Feat. Tickled Television Incorporated",
+      "start_ts": 1666392169,
+      "end_ts": 1666403130,
+      "duration_sec": 10961,
+      "youtube_archive_id": "cllU626B654",
+      "source_platform": "youtube",
+      "total_donations_usd": 383.23,
+      "donation_count": 86,
+      "donations_per_min": 2.0978,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.32,
+      "avg_active_chatters": 31.07
     }
   }
 }
