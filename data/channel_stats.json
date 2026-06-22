@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102195,
+  "updated_ts": 1782102205,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -600,7 +600,8 @@
     "soulja_boy_just_released_a_horrible_video_game_so_i_play_it",
     "spooky_from_canada",
     "spooky_stories_from_the_haunted_church",
-    "sssniperwolf_has_a"
+    "sssniperwolf_has_a",
+    "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10186,6 +10187,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.16,
       "avg_active_chatters": 40.62
+    },
+    "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled": {
+      "stream_id": "steven_crowder_and_quantum_christian_television_are_thoroughly_tickled",
+      "title": "Steven Crowder And Quantum Christian Television Are Thoroughly Tickled.",
+      "start_ts": 1683158159,
+      "end_ts": 1683167756,
+      "duration_sec": 9597,
+      "youtube_archive_id": "QGfD-xfylfQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 245.77,
+      "donation_count": 64,
+      "donations_per_min": 1.5365,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.17,
+      "avg_active_chatters": 30.65
     }
   }
 }
