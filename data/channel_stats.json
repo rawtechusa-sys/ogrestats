@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102290,
+  "updated_ts": 1782102295,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -616,7 +616,8 @@
     "streaming_until_3_am_chris_hansen_edp_445",
     "stuttering_craig_is_a_man_monetizethehate",
     "suffering_through_kingdom_hearts_cutscenes",
-    "sunday_night_ama"
+    "sunday_night_ama",
+    "sunday_night_birds_more_quantum_tv_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10458,6 +10459,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.54,
       "avg_active_chatters": 27.76
+    },
+    "sunday_night_birds_more_quantum_tv_fun": {
+      "stream_id": "sunday_night_birds_more_quantum_tv_fun",
+      "title": "Sunday Night Birds (More Quantum Tv Fun)",
+      "start_ts": 1650847592,
+      "end_ts": 1650858458,
+      "duration_sec": 10866,
+      "youtube_archive_id": "_uOOV_5MBGc",
+      "source_platform": "youtube",
+      "total_donations_usd": 525.15,
+      "donation_count": 124,
+      "donations_per_min": 2.8998,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.7,
+      "avg_active_chatters": 57.05
     }
   }
 }
