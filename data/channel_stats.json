@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096038,
+  "updated_ts": 1782096098,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -92,7 +92,8 @@
     "a_pure_man_experience",
     "a_quality_qvc_bird_roast",
     "a_quick_ask_me_anything_stream_power_wash_simulator",
-    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update"
+    "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
+    "a_quick_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1550,6 +1551,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.67,
       "avg_active_chatters": 47.9
+    },
+    "a_quick_stream": {
+      "stream_id": "a_quick_stream",
+      "title": "A Quick Stream",
+      "start_ts": 1650678936,
+      "end_ts": 1650685022,
+      "duration_sec": 6086,
+      "youtube_archive_id": "xj_WkzK9MDc",
+      "source_platform": "youtube",
+      "total_donations_usd": 118.51,
+      "donation_count": 33,
+      "donations_per_min": 1.1684,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.78,
+      "avg_active_chatters": 25.69
     }
   }
 }
