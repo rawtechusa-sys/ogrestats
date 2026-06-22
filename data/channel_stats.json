@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100004,
+  "updated_ts": 1782100012,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -302,7 +302,8 @@
     "i_am_financially_obligated_to_play_more_kingdom_hearts_iii",
     "i_am_him_i_will_continue_to_be_him",
     "i_am_not_well_endowed_and_im_streaming_about_phil",
-    "i_dunno_wtf_im_doing"
+    "i_dunno_wtf_im_doing",
+    "i_failed_no_phil_november"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5120,6 +5121,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.02,
       "avg_active_chatters": 27.37
+    },
+    "i_failed_no_phil_november": {
+      "stream_id": "i_failed_no_phil_november",
+      "title": "I Failed No-Phil November",
+      "start_ts": 1668731308,
+      "end_ts": 1668741499,
+      "duration_sec": 10191,
+      "youtube_archive_id": "iw0vBb4yVWI",
+      "source_platform": "youtube",
+      "total_donations_usd": 312.53,
+      "donation_count": 93,
+      "donations_per_min": 1.84,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.19,
+      "avg_active_chatters": 27.78
     }
   }
 }
