@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098483,
+  "updated_ts": 1782098491,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -117,7 +117,8 @@
     "a_wonderful_qvc_roast",
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
     "a_xmas_eve_bird_stream",
-    "a_xmas_eve_bird_stream_pt2"
+    "a_xmas_eve_bird_stream_pt2",
+    "after_immense_pressure_thecowarding_finally_responded"
   ],
   "commands": {
     "stan": 27,
@@ -157,7 +158,7 @@
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
-    "away": 4,
+    "away": 5,
     "idea": 1,
     "fear": 2,
     "voice": 1,
@@ -166,7 +167,7 @@
     "tongue": 4,
     "heart": 39,
     "shorts": 1,
-    "laughing": 38,
+    "laughing": 40,
     "news": 7,
     "chicken": 16,
     "cake": 1,
@@ -289,7 +290,7 @@
     "rocket": 1,
     "droplets": 3,
     "tomato": 1,
-    "hearts": 1,
+    "hearts": 2,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -300,7 +301,7 @@
     "syne": 1,
     "father": 1,
     "request": 1,
-    "sweat": 2,
+    "sweat": 3,
     "twist": 2,
     "quote": 1,
     "beverage": 1,
@@ -320,7 +321,9 @@
     "left": 1,
     "flag": 1,
     "restaraunt": 1,
-    "highter": 1
+    "highter": 1,
+    "glove": 1,
+    "collision": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -902,6 +905,11 @@
       "title": "A Xmas Eve Bird Stream Pt.2",
       "start_ts": 1640395923,
       "youtube_archive_id": "L-p3yUl6Buo"
+    },
+    "after_immense_pressure_thecowarding_finally_responded": {
+      "title": "After Immense Pressure, TheCowarding Finally Responded",
+      "start_ts": 1681866742,
+      "youtube_archive_id": "1oP0A6gHPrY"
     }
   },
   "messages": [
@@ -5172,6 +5180,76 @@
       "message": ":grinning_squinting_face: I learned playing bass 2005 Epiphone 4 string",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1681884487,
+      "username": "@ayylmaoitsbrando4912",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "I GOT MARRIED LAST WEEK BREASTS AND PHILL NOISES :two_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1681882232,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "Refund refund refund refund refund :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1681881877,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "Good morning Rich! Late stream tonight:grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1681880261,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "Wtf, this is Canadian. 905 is my area code :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1681872620,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "Rich what can I do to convince you to watch the movie Everything Everywhere all at Once? It\u2019s impossibly good. Also :rooster::dashing_away:",
+      "commands": [
+        "away"
+      ]
+    },
+    {
+      "ts": 1681869005,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": "Rich vs. Jeremy for Death Battle please! :collision:",
+      "commands": [
+        "collision"
+      ]
+    },
+    {
+      "ts": 1681868082,
+      "username": "@BlackPopeye44",
+      "platform": "youtube",
+      "stream_id": "after_immense_pressure_thecowarding_finally_responded",
+      "message": ":boxing_glove::_RichSmile:VS \ud83e\uddd4\ud83c\udffc:boxing_glove: THIS IS YOUR LIFE NOW",
+      "commands": [
+        "glove"
       ]
     },
     {
