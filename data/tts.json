@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095052,
+  "updated_ts": 1782095108,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -75,7 +75,8 @@
     "a_man_vs_the_playstation_showcase_2023_playstationshowcase",
     "a_man_with_birds",
     "a_man_with_birds_streams_on_halloween",
-    "a_middle_aged_man_plays_halo_infinite"
+    "a_middle_aged_man_plays_halo_infinite",
+    "a_middle_aged_man_plays_more_wii_u_launch_games"
   ],
   "commands": {
     "stan": 27,
@@ -101,21 +102,21 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 4,
+    "rich": 5,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 3,
     "eyes": 19,
     "africa": 1,
-    "face": 55,
+    "face": 60,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 47,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
-    "away": 3,
+    "away": 4,
     "idea": 1,
     "fear": 2,
     "voice": 1,
@@ -139,7 +140,7 @@
     "leg": 1,
     "severance": 1,
     "gta": 2,
-    "me": 1,
+    "me": 2,
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
@@ -611,6 +612,11 @@
       "title": "A Middle-Aged Man Plays Halo Infinite",
       "start_ts": 1637256625,
       "youtube_archive_id": "44xyHdIKpIE"
+    },
+    "a_middle_aged_man_plays_more_wii_u_launch_games": {
+      "title": "A Middle-Aged Man Plays More Wii U Launch Games",
+      "start_ts": 1645386660,
+      "youtube_archive_id": "HQ6PfMlvD7M"
     }
   },
   "messages": [
@@ -4899,6 +4905,38 @@
       "message": "His Spider-Man and LOU2 reviews are just as bigoted as the posts. Were those by hackers and mods also?:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1645395065,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_more_wii_u_launch_games",
+      "message": "i meant flipping the bird you perve :grinning_squinting_face: :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1645395016,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_more_wii_u_launch_games",
+      "message": "ME: gimme the birds! gimme the birds! Rich: if it wasn't for youtubes de-monetization rules, i'd give you the birds alright :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "me",
+        "rich",
+        "face"
+      ]
+    },
+    {
+      "ts": 1645390431,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_more_wii_u_launch_games",
+      "message": ":rooster::dashing_away:",
+      "commands": [
+        "away"
       ]
     },
     {
