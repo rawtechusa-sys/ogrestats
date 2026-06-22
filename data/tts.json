@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100659,
+  "updated_ts": 1782100666,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -377,7 +377,8 @@
     "large_man_live",
     "large_man_with_large_birds_talks_into_microphone_feat_birds",
     "large_men",
-    "last_hour_lets_go_road_to_1000_members"
+    "last_hour_lets_go_road_to_1000_members",
+    "late_hairy_man_action"
   ],
   "commands": {
     "stan": 27,
@@ -410,10 +411,10 @@
     "turkey": 7,
     "eyes": 84,
     "africa": 1,
-    "face": 349,
+    "face": 350,
     "petersonxhhanson": 1,
     "poo": 20,
-    "joy": 253,
+    "joy": 255,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -426,7 +427,7 @@
     "tongue": 7,
     "heart": 117,
     "shorts": 1,
-    "laughing": 144,
+    "laughing": 145,
     "news": 18,
     "chicken": 42,
     "cake": 7,
@@ -2719,6 +2720,11 @@
       "title": "LAST HOUR. LET'S GO (Road To 1000 Members)",
       "start_ts": 1686547210,
       "youtube_archive_id": "tRPewiwLzcY"
+    },
+    "late_hairy_man_action": {
+      "title": "Late Hairy Man Action",
+      "start_ts": 1663898172,
+      "youtube_archive_id": "sdz37kqI_GQ"
     }
   },
   "messages": [
@@ -14459,6 +14465,37 @@
       "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
       "commands": [
         "hearts"
+      ]
+    },
+    {
+      "ts": 1663905241,
+      "username": "@EzraBones420",
+      "platform": "youtube",
+      "stream_id": "late_hairy_man_action",
+      "message": "GTA 5 represents everything Nintendo would never want on their consoles. Mature Rated game with beating and robbing hookers. G Rated GTA games? :rolling_on_the_floor_laughing: :face_with_tears_of_joy:",
+      "commands": [
+        "laughing",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1663901502,
+      "username": "@sweeterthanpoison",
+      "platform": "youtube",
+      "stream_id": "late_hairy_man_action",
+      "message": "His camera is getting worse. Must be cataracts:zany_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1663900595,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "late_hairy_man_action",
+      "message": "When Phil says my mortgage, I wanna ask which one:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
