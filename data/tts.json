@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100194,
+  "updated_ts": 1782100203,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -323,7 +323,8 @@
     "im_back_and_on_a_warpath",
     "im_back_and_only_half_dead_come_hang_out",
     "im_buzzed_off_caffeine_come_chat_with_me",
-    "im_done_with_weed_slopes_tommy_tallarico_video_pt3"
+    "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
+    "im_just_a_little_stoned_right_now"
   ],
   "commands": {
     "stan": 27,
@@ -367,14 +368,14 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 37,
+    "cucumber": 38,
     "biceps": 3,
     "tongue": 6,
     "heart": 99,
     "shorts": 1,
     "laughing": 122,
     "news": 18,
-    "chicken": 37,
+    "chicken": 38,
     "cake": 7,
     "d": 3,
     "halo": 3,
@@ -392,14 +393,14 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 30,
+    "rooster": 32,
     "peach": 8,
     "fire": 18,
     "kendal": 1,
-    "up": 32,
+    "up": 33,
     "note": 6,
     "eyebrow": 2,
-    "facepalming": 7,
+    "facepalming": 8,
     "shrugging": 4,
     "donation": 3,
     "naruto": 1,
@@ -2343,6 +2344,11 @@
       "title": "I'm Done With Weed (Slopes Tommy Tallarico Video Pt.3)",
       "start_ts": 1676490244,
       "youtube_archive_id": "Ww-80jeRPBc"
+    },
+    "im_just_a_little_stoned_right_now": {
+      "title": "I'm Just A Little Stoned Right Now...",
+      "start_ts": 1647473922,
+      "youtube_archive_id": "yYnNfBVnqTE"
     }
   },
   "messages": [
@@ -15590,6 +15596,66 @@
       "message": "His Spider-Man and LOU2 reviews are just as bigoted as the posts. Were those by hackers and mods also?:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1647480327,
+      "username": "@kooliad101dead",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "what is your view of bitcoin mining also spam :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1647480132,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "Recently made a video about Frank Hassle and my comments are full of his fans saying weird crap :person_facepalming::person_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1647479732,
+      "username": "@kooliad101dead",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "if you could go back in time like 2010 and you knew that how much will be worth would mine bitcoin to oblivion also sp@m that c**k for me:rooster: keep it up",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1647479025,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "3 months of support! What is wrong with me? lol! Loved the way your editor used Carlos to beep out all the curse words in you video today :face_with_tears_of_joy::chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1647476585,
+      "username": "@deltadcrouse",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "Really enjoyed your content on the recent things going on in Europe my heart is bleeding for the Ukrainians I don\u2019t agree with you on everything political, but i love how you call out peoples hypocrisy especially the g4 mess:thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1647475706,
+      "username": "@Mik0rzz",
+      "platform": "youtube",
+      "stream_id": "im_just_a_little_stoned_right_now",
+      "message": "Just do it for the support, the birds and the cucumber :cucumber: gl to everyone",
+      "commands": [
+        "cucumber"
       ]
     },
     {
