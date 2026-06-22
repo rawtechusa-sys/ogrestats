@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099658,
+  "updated_ts": 1782099667,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -262,7 +262,8 @@
     "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
     "dspgaming_gets_schooled_by_beardstar_keemstar",
     "dspgaming_is_a_tad_salty_plus_drphil",
-    "dspgaming_is_back_feat_jaysus"
+    "dspgaming_is_back_feat_jaysus",
+    "dspgaming_live_in_20_mins"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4440,6 +4441,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.44,
       "avg_active_chatters": 31.4
+    },
+    "dspgaming_live_in_20_mins": {
+      "stream_id": "dspgaming_live_in_20_mins",
+      "title": "DSPGaming Live In 20 Mins",
+      "start_ts": 1658361038,
+      "end_ts": 1658369522,
+      "duration_sec": 8484,
+      "youtube_archive_id": "DXL-Pb3mL04",
+      "source_platform": "youtube",
+      "total_donations_usd": 298.06,
+      "donation_count": 78,
+      "donations_per_min": 2.1079,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.41,
+      "avg_active_chatters": 39.31
     }
   }
 }
