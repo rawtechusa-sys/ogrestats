@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099198,
+  "updated_ts": 1782099206,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -206,7 +206,8 @@
     "come_ask_questions_752021",
     "come_ask_questions_812021",
     "come_ask_questions_822021",
-    "come_ask_questions_about_the_pixel_6_pro"
+    "come_ask_questions_about_the_pixel_6_pro",
+    "come_ask_questions_and_stare_at_me"
   ],
   "commands": {
     "stan": 27,
@@ -239,7 +240,7 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 182,
+    "face": 183,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 123,
@@ -253,7 +254,7 @@
     "cucumber": 20,
     "biceps": 3,
     "tongue": 4,
-    "heart": 60,
+    "heart": 62,
     "shorts": 1,
     "laughing": 58,
     "news": 12,
@@ -261,7 +262,7 @@
     "cake": 7,
     "d": 1,
     "halo": 2,
-    "hand": 15,
+    "hand": 16,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -277,9 +278,9 @@
     "hole": 5,
     "rooster": 22,
     "peach": 3,
-    "fire": 13,
+    "fire": 14,
     "kendal": 1,
-    "up": 16,
+    "up": 17,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -352,7 +353,7 @@
     "play": 1,
     "video": 1,
     "one": 3,
-    "cow": 1,
+    "cow": 2,
     "cap": 1,
     "adventures": 1,
     "head": 2,
@@ -497,7 +498,8 @@
     "intelivsion": 1,
     "topic": 1,
     "doody": 1,
-    "ex": 1
+    "ex": 1,
+    "curious": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1524,6 +1526,11 @@
       "title": "Come Ask Questions About The Pixel 6 Pro",
       "start_ts": 1635295942,
       "youtube_archive_id": "1TBd2yzjw5w"
+    },
+    "come_ask_questions_and_stare_at_me": {
+      "title": "Come Ask Questions And Stare At Me",
+      "start_ts": 1627345503,
+      "youtube_archive_id": "dlj75VzwXLU"
     }
   },
   "messages": [
@@ -13623,6 +13630,86 @@
       "message": "Superhorses running on all courses!:_Carlos:",
       "commands": [
         "carlos"
+      ]
+    },
+    {
+      "ts": 1627351842,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "Im in the showaaaaaaaahhhhh :weary_face::weary_face::weary_face::weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1627349391,
+      "username": "@LeesReviews69",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "You must check out freestyler Harry Mack on YouTube he blew my mind. His Omegle series is :fire::fire::fire::fire::fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1627349196,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "Sounds like Late 90s early 2000s East Hip Hop :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1627348304,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "Hi bby, show bobs and vegana pls :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627348022,
+      "username": "@williamjackson8782",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "I had Gateway, the cow computer :cow:",
+      "commands": [
+        "cow"
+      ]
+    },
+    {
+      "ts": 1627347285,
+      "username": "@DarkspinePony15",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "Always been curious: how do you decide whether or not to accept a video sponsorship? What factors do you look at, how long does it take to decide, etc",
+      "commands": [
+        "curious"
+      ]
+    },
+    {
+      "ts": 1627347191,
+      "username": "@fideliogaming8049",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": ":thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1627347090,
+      "username": "@itsjustrobby",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_and_stare_at_me",
+      "message": "I emailed you like a straight up Stan trying to talk about content creation to your rich@reviewtechusa.com email brother. :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
