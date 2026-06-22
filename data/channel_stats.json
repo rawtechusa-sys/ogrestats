@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101821,
+  "updated_ts": 1782101826,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -541,7 +541,8 @@
     "playing_wii_u_launch_games_like_a_man",
     "playing_wii_u_launch_games_like_a_man_pt_2_with_facecam",
     "prank_calls_and_other_weirdness",
-    "pranks_predators_phil_birds"
+    "pranks_predators_phil_birds",
+    "pulsating_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9183,6 +9184,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.26,
       "avg_active_chatters": 35.23
+    },
+    "pulsating_feat_birds": {
+      "stream_id": "pulsating_feat_birds",
+      "title": "Pulsating (Feat. Birds)",
+      "start_ts": 1681088269,
+      "end_ts": 1681102894,
+      "duration_sec": 14625,
+      "youtube_archive_id": "G_b_v5XBdCg",
+      "source_platform": "youtube",
+      "total_donations_usd": 298.15,
+      "donation_count": 88,
+      "donations_per_min": 1.2232,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.7,
+      "avg_active_chatters": 22.3
     }
   }
 }
