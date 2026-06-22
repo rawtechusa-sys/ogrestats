@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095623,
+  "updated_ts": 1782095681,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -85,7 +85,8 @@
     "a_middle_aged_man_surrounded_by_poultry_feat_birds",
     "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
     "a_new_bird_approaches",
-    "a_philtacular_man_sunday"
+    "a_philtacular_man_sunday",
+    "a_plain_old_normal_man_stream_feat_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1431,6 +1432,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.89,
       "avg_active_chatters": 29.51
+    },
+    "a_plain_old_normal_man_stream_feat_men": {
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "title": "A Plain Old Normal Man Stream (Feat. Men)",
+      "start_ts": 1698367645,
+      "end_ts": 1698382819,
+      "duration_sec": 15174,
+      "youtube_archive_id": "LWufjuVjt7A",
+      "source_platform": "youtube",
+      "total_donations_usd": 355.38,
+      "donation_count": 94,
+      "donations_per_min": 1.4052,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.47,
+      "avg_active_chatters": 37.24
     }
   }
 }
