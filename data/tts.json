@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099496,
+  "updated_ts": 1782099504,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -242,7 +242,8 @@
     "dads_40th_birthday_stream",
     "dads_back_for_a_bit",
     "daniel_keem_is_a_man",
-    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric"
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+    "darrell_brooks_is_a_psychopath_feat_angry_birds"
   ],
   "commands": {
     "stan": 27,
@@ -289,7 +290,7 @@
     "cucumber": 25,
     "biceps": 3,
     "tongue": 5,
-    "heart": 71,
+    "heart": 72,
     "shorts": 1,
     "laughing": 69,
     "news": 13,
@@ -414,7 +415,7 @@
     "rocket": 1,
     "droplets": 7,
     "tomato": 3,
-    "hearts": 2,
+    "hearts": 3,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -565,7 +566,8 @@
     "life": 1,
     "monocle": 1,
     "store": 1,
-    "pump": 1
+    "pump": 1,
+    "robot": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1772,6 +1774,11 @@
       "title": "DARK SOULS WOULDN'T RUN. SO LET'S REACT TO PHIL AND ERIC",
       "start_ts": 1739832090,
       "youtube_archive_id": "yWWUb5EFTBQ"
+    },
+    "darrell_brooks_is_a_psychopath_feat_angry_birds": {
+      "title": "Darrell Brooks Is A Psychopath (Feat. Angry Birds)",
+      "start_ts": 1667693396,
+      "youtube_archive_id": "Cq1mfr2DzC0"
     }
   },
   "messages": [
@@ -8997,6 +9004,36 @@
       "message": "they just dont make games like heterosexual rebirth anymore. can't beat the classics :folded_hands: also really liked the fake ps5 vid",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1667698885,
+      "username": "@Sixfootdig",
+      "platform": "youtube",
+      "stream_id": "darrell_brooks_is_a_psychopath_feat_angry_birds",
+      "message": "Love YouTube streams over Twitch big daddy Much :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1667696291,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "darrell_brooks_is_a_psychopath_feat_angry_birds",
+      "message": "How ya doing Rich? Love for the chat :smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1667695897,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "darrell_brooks_is_a_psychopath_feat_angry_birds",
+      "message": "I hear it's amazing when the famous purple stuffed worm in flap-jaw space with the tuning fork does a raw blink on Hara-Kiri Rock. I need scissors! 61! :robot:",
+      "commands": [
+        "robot"
       ]
     },
     {
