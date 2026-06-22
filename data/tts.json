@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101202,
+  "updated_ts": 1782101209,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -451,7 +451,8 @@
     "men_chatting",
     "men_discuss_def_noodles_feat_christhenarc",
     "men_feat_men",
-    "men_vs_chris_chan"
+    "men_vs_chris_chan",
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -484,7 +485,7 @@
     "turkey": 8,
     "eyes": 106,
     "africa": 1,
-    "face": 425,
+    "face": 426,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 281,
@@ -546,7 +547,7 @@
     "bk": 1,
     "gift": 3,
     "bird": 14,
-    "richsmile": 5,
+    "richsmile": 6,
     "dsp": 23,
     "story": 1,
     "tree": 3,
@@ -3202,6 +3203,11 @@
       "title": "Men Vs. Chris Chan",
       "start_ts": 1691798587,
       "youtube_archive_id": "0SCnAWt2v_c"
+    },
+    "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds": {
+      "title": "Middle Aged Man Plays Elden Ring Terribly MARATHON (Feat. Birds)",
+      "start_ts": 1651682368,
+      "youtube_archive_id": "zWMuMpjN1pE"
     }
   },
   "messages": [
@@ -20079,6 +20085,26 @@
       "message": "Cold is kicking my ass :pill: made my dreams crazy bird",
       "commands": [
         "pill"
+      ]
+    },
+    {
+      "ts": 1651689087,
+      "username": "@axiominfinity",
+      "platform": "youtube",
+      "stream_id": "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
+      "message": "Congrats on 1 Million Rich! It's been fun watching all these years (Been subbed since around 2013). It's crazy how times flies.:_RichSmile::_RichSmile:",
+      "commands": [
+        "richsmile"
+      ]
+    },
+    {
+      "ts": 1651684450,
+      "username": "@neonmunky",
+      "platform": "youtube",
+      "stream_id": "middle_aged_man_plays_elden_ring_terribly_marathon_feat_birds",
+      "message": "Working on a vid about acerthorn, oh boy! also, will try and find a clip of Hassan, without the bass intro :winking_face:",
+      "commands": [
+        "face"
       ]
     },
     {
