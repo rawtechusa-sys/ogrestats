@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101164,
+  "updated_ts": 1782101172,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -446,7 +446,8 @@
     "melonie_mac_responded",
     "men",
     "men_and_food_road_to_1000_members",
-    "men_birds_and_samurai_cop"
+    "men_birds_and_samurai_cop",
+    "men_birds_and_samurai_cop_part_deux"
   ],
   "commands": {
     "stan": 27,
@@ -476,13 +477,13 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 7,
+    "turkey": 8,
     "eyes": 105,
     "africa": 1,
-    "face": 418,
+    "face": 419,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 279,
+    "joy": 280,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -901,7 +902,7 @@
     "hoarders": 1,
     "either": 1,
     "reviewojsimpsonusa": 1,
-    "suggestions": 1,
+    "suggestions": 2,
     "man": 1,
     "dumps": 1,
     "condemned": 1,
@@ -941,7 +942,8 @@
     "burning": 1,
     "jeans": 1,
     "engine": 1,
-    "pineapple": 1
+    "pineapple": 1,
+    "arms": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3168,6 +3170,11 @@
       "title": "Men, Birds And Samurai Cop",
       "start_ts": 1642455022,
       "youtube_archive_id": "kmrKt2riDlQ"
+    },
+    "men_birds_and_samurai_cop_part_deux": {
+      "title": "Men, Birds And Samurai Cop (Part Deux)",
+      "start_ts": 1642467206,
+      "youtube_archive_id": "3zMC3jN4eR0"
     }
   },
   "messages": [
@@ -21903,6 +21910,56 @@
       "message": "Saw the news today and immediately knew that the Ponies need to be put on suicide watch :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1642473246,
+      "username": "@lightspeedmurphy7546",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "message": "I have some good movie watch suggestions: The animated Titanic movie was the rapping dog and the Video Brinquedo mockbusters like Ratatoing",
+      "commands": [
+        "suggestions"
+      ]
+    },
+    {
+      "ts": 1642471080,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "message": "This movie makes me want to cut off my long hair :grimacing_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1642469828,
+      "username": "@czhousehold",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "message": "This is so bad it's good. Let's nominate it for an Oscar. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1642469593,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "message": "ever heard of brothers in arms: road to hill 30? it's the first m game I ever played",
+      "commands": [
+        "arms"
+      ]
+    },
+    {
+      "ts": 1642467862,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "men_birds_and_samurai_cop_part_deux",
+      "message": "How was dinner? Was there any succulent poultry?:rooster::turkey:",
+      "commands": [
+        "turkey"
       ]
     },
     {
