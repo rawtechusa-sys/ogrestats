@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098639,
+  "updated_ts": 1782098647,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -137,7 +137,8 @@
     "angrily_chatting_and_playing_elden_ring",
     "another_interesting_pat_the_nes_punk_twist",
     "another_surprise_stream_feat_a_man_and_birds",
-    "another_swatting_disaster_and_activisionubisoft_allegations"
+    "another_swatting_disaster_and_activisionubisoft_allegations",
+    "answering_questions"
   ],
   "commands": {
     "stan": 27,
@@ -368,7 +369,9 @@
     "salt": 1,
     "x": 1,
     "now": 1,
-    "breaking": 1
+    "breaking": 1,
+    "eye": 1,
+    "dove": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1050,6 +1053,11 @@
       "title": "Another Swatting Disaster, And Activision/Ubisoft Allegations",
       "start_ts": 1627000326,
       "youtube_archive_id": "d6t9RpLmBaw"
+    },
+    "answering_questions": {
+      "title": "Answering Questions",
+      "start_ts": 1710280299,
+      "youtube_archive_id": "zn78ahzHcgg"
     }
   },
   "messages": [
@@ -2952,6 +2960,26 @@
       "message": "Did you play Stroke the Horse yet :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1710288783,
+      "username": "@buffgarfield3231",
+      "platform": "youtube",
+      "stream_id": "answering_questions",
+      "message": ":rooster::duck::swan::eagle::dove:",
+      "commands": [
+        "dove"
+      ]
+    },
+    {
+      "ts": 1710283137,
+      "username": "@neda_88",
+      "platform": "youtube",
+      "stream_id": "answering_questions",
+      "message": "What up rich, just Came here to say hi and for an introguys fart, dont judge me:face_with_peeking_eye:",
+      "commands": [
+        "eye"
       ]
     },
     {
