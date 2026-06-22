@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102301,
+  "updated_ts": 1782102311,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -618,7 +618,8 @@
     "suffering_through_kingdom_hearts_cutscenes",
     "sunday_night_ama",
     "sunday_night_birds_more_quantum_tv_fun",
-    "sunday_night_hangout"
+    "sunday_night_hangout",
+    "sweaty_men_feat_a_man_summer_game_fest"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10492,6 +10493,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.16,
       "avg_active_chatters": 31.03
+    },
+    "sweaty_men_feat_a_man_summer_game_fest": {
+      "stream_id": "sweaty_men_feat_a_man_summer_game_fest",
+      "title": "Sweaty Men Feat. A Man (Summer Game Fest)",
+      "start_ts": 1654800102,
+      "end_ts": 1654807831,
+      "duration_sec": 7729,
+      "youtube_archive_id": "W-oLMF6XQ98",
+      "source_platform": "youtube",
+      "total_donations_usd": 212.57,
+      "donation_count": 50,
+      "donations_per_min": 1.6502,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.1,
+      "avg_active_chatters": 37.53
     }
   }
 }
