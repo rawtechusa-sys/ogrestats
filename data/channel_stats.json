@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099290,
+  "updated_ts": 1782099298,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -218,7 +218,8 @@
     "come_chat_with_dad_plus_amouranth_disaster",
     "come_chat_with_me",
     "come_chat_with_men_live_edp445_apology",
-    "come_critcize_the_hell_out_of_me_yes_im_serious"
+    "come_critcize_the_hell_out_of_me_yes_im_serious",
+    "come_discuss_the_playstation_showcase_with_your_dad"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3692,6 +3693,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.34,
       "avg_active_chatters": 21.32
+    },
+    "come_discuss_the_playstation_showcase_with_your_dad": {
+      "stream_id": "come_discuss_the_playstation_showcase_with_your_dad",
+      "title": "Come Discuss The PlayStation Showcase With Your Dad",
+      "start_ts": 1631235607,
+      "end_ts": 1631242874,
+      "duration_sec": 7267,
+      "youtube_archive_id": "ie5IWKCvn3s",
+      "source_platform": "youtube",
+      "total_donations_usd": 218.84,
+      "donation_count": 74,
+      "donations_per_min": 1.8069,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.49,
+      "avg_active_chatters": 44.75
     }
   }
 }
