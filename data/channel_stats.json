@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100757,
+  "updated_ts": 1782100764,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -392,7 +392,8 @@
     "lets_discover_def_noodles_together",
     "lets_discuss_e3_and_next_gen_consoles",
     "lets_discuss_my_budget_pc_build",
-    "lets_discuss_nick_mercs_road_to_1000_members"
+    "lets_discuss_nick_mercs_road_to_1000_members",
+    "lets_discuss_sam_hyde_and_the_quartering"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6650,6 +6651,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.92,
       "avg_active_chatters": 24.18
+    },
+    "lets_discuss_sam_hyde_and_the_quartering": {
+      "stream_id": "lets_discuss_sam_hyde_and_the_quartering",
+      "title": "Let's Discuss Sam Hyde And The Quartering",
+      "start_ts": 1686702187,
+      "end_ts": 1686718964,
+      "duration_sec": 16777,
+      "youtube_archive_id": "zRoRgmmuEks",
+      "source_platform": "youtube",
+      "total_donations_usd": 459.97,
+      "donation_count": 53,
+      "donations_per_min": 1.645,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.85,
+      "avg_active_chatters": 21.29
     }
   }
 }
