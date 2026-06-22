@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102147,
+  "updated_ts": 1782102152,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -592,7 +592,8 @@
     "so_much_man_so_many_birds",
     "so_much_st_to_talk_about",
     "so_relaxed_watching_preacher_fails",
-    "so_today_was_a_day"
+    "so_today_was_a_day",
+    "some_hot_e_begging_action"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10050,6 +10051,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.32,
       "avg_active_chatters": 61.8
+    },
+    "some_hot_e_begging_action": {
+      "stream_id": "some_hot_e_begging_action",
+      "title": "Some Hot E-Begging Action",
+      "start_ts": 1631489323,
+      "end_ts": 1631500842,
+      "duration_sec": 11519,
+      "youtube_archive_id": "gdTKgb2ArTc",
+      "source_platform": "youtube",
+      "total_donations_usd": 447.77,
+      "donation_count": 106,
+      "donations_per_min": 2.3323,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.17,
+      "avg_active_chatters": 28.67
     }
   }
 }
