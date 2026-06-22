@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101966,
+  "updated_ts": 1782101971,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -566,7 +566,8 @@
     "rated_m_for_man",
     "reacting_to_xqc_reacting_and_roasting_a_malicious_hater",
     "reddit_cringe_feat_birds",
-    "remastering_intro_guys_incredible_fart"
+    "remastering_intro_guys_incredible_fart",
+    "reviewbirdsusa"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9608,6 +9609,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.72,
       "avg_active_chatters": 36.97
+    },
+    "reviewbirdsusa": {
+      "stream_id": "reviewbirdsusa",
+      "title": "ReviewBirdsUSA",
+      "start_ts": 1671074454,
+      "end_ts": 1671083110,
+      "duration_sec": 8656,
+      "youtube_archive_id": "nfx1jkyl_7g",
+      "source_platform": "youtube",
+      "total_donations_usd": 221.76,
+      "donation_count": 61,
+      "donations_per_min": 1.5372,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.08,
+      "avg_active_chatters": 29.59
     }
   }
 }
