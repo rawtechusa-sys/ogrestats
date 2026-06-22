@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099223,
+  "updated_ts": 1782099231,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -209,7 +209,8 @@
     "come_ask_questions_about_the_pixel_6_pro",
     "come_ask_questions_and_stare_at_me",
     "come_ask_questions_day_time_edition",
-    "come_ask_questions_no_vids_tonight"
+    "come_ask_questions_no_vids_tonight",
+    "come_ask_questions_watching_my_old_keemstar_debate"
   ],
   "commands": {
     "stan": 27,
@@ -248,17 +249,17 @@
     "joy": 124,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 18,
+    "carlos": 19,
     "away": 5,
     "idea": 1,
     "fear": 3,
     "voice": 3,
-    "cucumber": 20,
+    "cucumber": 21,
     "biceps": 3,
     "tongue": 4,
     "heart": 62,
     "shorts": 1,
-    "laughing": 58,
+    "laughing": 59,
     "news": 12,
     "chicken": 30,
     "cake": 7,
@@ -298,7 +299,7 @@
     "is": 5,
     "spose": 1,
     "sunglasses": 8,
-    "kiss": 13,
+    "kiss": 14,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -311,7 +312,7 @@
     "skull": 5,
     "eggplant": 1,
     "bite": 1,
-    "take": 2,
+    "take": 3,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -371,7 +372,7 @@
     "day": 1,
     "struck": 2,
     "joker": 1,
-    "racehorse": 3,
+    "racehorse": 4,
     "question": 6,
     "mushroom": 2,
     "trilogy": 1,
@@ -1543,6 +1544,11 @@
       "title": "Come Ask Questions (No Vids Tonight)",
       "start_ts": 1641954586,
       "youtube_archive_id": "tay5PO9aFWE"
+    },
+    "come_ask_questions_watching_my_old_keemstar_debate": {
+      "title": "Come Ask Questions (Watching My Old Keemstar Debate)",
+      "start_ts": 1635470549,
+      "youtube_archive_id": "eKd5nwNk-XE"
     }
   },
   "messages": [
@@ -12081,6 +12087,57 @@
       "commands": [
         "million",
         "people"
+      ]
+    },
+    {
+      "ts": 1635476788,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "message": "thanks for turning me on to Seltzer water. I cant get enough now and drink 3 cases a week....:_Cucumber::_Cucumber::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1635475295,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "message": "hot take: why are people offended over Dave Chappelle? Also as a bisexual person myself (yes I'm coming out and I don't care anymore) the LGBTQ community needs to fix itself after what they did to his friend!watch the special",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1635474870,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "message": "Makka Pakka is cute and cuddly like you :face_blowing_a_kiss: thanx",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1635472891,
+      "username": "@Chunggy",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "message": ":racehorse: Playstation QUINTUPLIZATION :cucumber:",
+      "commands": [
+        "racehorse",
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1635472685,
+      "username": "@grantgeisler2839",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_watching_my_old_keemstar_debate",
+      "message": "you should do another exposed podcast with Keemstar exposing him for the clown he is :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
