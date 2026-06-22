@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101699,
+  "updated_ts": 1782101707,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -517,7 +517,8 @@
     "philip_burnells_new_sweater",
     "philip_paul_burnell_has_incredible_technical_knowledge",
     "philip_paul_burnell_is_a_220_man",
-    "phillip_burnell_is_a_man"
+    "phillip_burnell_is_a_man",
+    "phils_miraculous_man_cheeks"
   ],
   "commands": {
     "stan": 27,
@@ -561,10 +562,10 @@
     "idea": 6,
     "fear": 4,
     "voice": 5,
-    "cucumber": 55,
+    "cucumber": 56,
     "biceps": 5,
     "tongue": 12,
-    "heart": 152,
+    "heart": 153,
     "shorts": 2,
     "laughing": 193,
     "news": 22,
@@ -700,8 +701,8 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 26,
-    "twist": 2,
+    "sweat": 27,
+    "twist": 3,
     "quote": 1,
     "beverage": 4,
     "peanuts": 1,
@@ -3648,6 +3649,11 @@
       "title": "Phillip Burnell Is A Man...",
       "start_ts": 1656377618,
       "youtube_archive_id": "OjScHzb-jv0"
+    },
+    "phils_miraculous_man_cheeks": {
+      "title": "Phil's Miraculous Man Cheeks",
+      "start_ts": 1683764580,
+      "youtube_archive_id": "09jfqm2C5uc"
     }
   },
   "messages": [
@@ -14204,6 +14210,46 @@
       "message": "Cody won't even bring me on and I'm the editor, slightly salty :cat_with_tears_of_joy::cat_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1683769995,
+      "username": "@TurboExpress007",
+      "platform": "youtube",
+      "stream_id": "phils_miraculous_man_cheeks",
+      "message": "You don\u2019t gotta to worry about Phil training for a boxing match. He knows the combo list. :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1683766721,
+      "username": "@OttomanTurk209",
+      "platform": "youtube",
+      "stream_id": "phils_miraculous_man_cheeks",
+      "message": "Plot twist: Instead of Phil bursting that day, what if he did coke and reacted like Marcellus' wife in Pulp Fiction...",
+      "commands": [
+        "twist"
+      ]
+    },
+    {
+      "ts": 1683766498,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "phils_miraculous_man_cheeks",
+      "message": "Rich you have two jobs, a father and a streamer, this little troll has nothing better to do than grovel crap all day and troll people online, it's sad, he's clearly lonely and needs the attention! relax your an*s :red_heart: 1am",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1683765987,
+      "username": "@BurningQs",
+      "platform": "youtube",
+      "stream_id": "phils_miraculous_man_cheeks",
+      "message": "can I get a cucumber :cucumber: from the soundboard",
+      "commands": [
+        "cucumber"
       ]
     },
     {
