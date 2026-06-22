@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098944,
+  "updated_ts": 1782098952,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -175,7 +175,8 @@
     "canada_returns",
     "celebreating_15_years_of_philip_paul_burnell_a_man",
     "certified_alpha_male_stream_for_men",
-    "certified_man_stream"
+    "certified_man_stream",
+    "chat_game_night"
   ],
   "commands": {
     "stan": 27,
@@ -222,7 +223,7 @@
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 53,
+    "heart": 54,
     "shorts": 1,
     "laughing": 53,
     "news": 11,
@@ -246,9 +247,9 @@
     "hole": 5,
     "rooster": 18,
     "peach": 3,
-    "fire": 10,
+    "fire": 11,
     "kendal": 1,
-    "up": 12,
+    "up": 13,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -446,7 +447,8 @@
     "piece": 1,
     "staple": 1,
     "bubbles": 2,
-    "web": 1
+    "web": 1,
+    "gonjiam": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1318,6 +1320,11 @@
       "title": "Certified Man Stream",
       "start_ts": 1662940952,
       "youtube_archive_id": "Qu0PTdGLWwA"
+    },
+    "chat_game_night": {
+      "title": "CHAT & GAME NIGHT",
+      "start_ts": 1706309990,
+      "youtube_archive_id": "PAbnFt_rgng"
     }
   },
   "messages": [
@@ -3462,6 +3469,46 @@
       "message": "What up rich, just Came here to say hi and for an introguys fart, dont judge me:face_with_peeking_eye:",
       "commands": [
         "eye"
+      ]
+    },
+    {
+      "ts": 1706327643,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "chat_game_night",
+      "message": "Not to shit on Rich but yeah ngl that was :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1706316725,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "chat_game_night",
+      "message": "I know why this happened. Apple recently updated something in the payment process yesterday and it fucked with the system a bit. Big ups to Jaysus! :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1706316670,
+      "username": "@bengordon8773",
+      "platform": "youtube",
+      "stream_id": "chat_game_night",
+      "message": "Jay if you haven\u2019t seen it already check out Gonjiam: Haunted Asylum. Incredible Korean found footage horror movie",
+      "commands": [
+        "gonjiam"
+      ]
+    },
+    {
+      "ts": 1706310969,
+      "username": "@mr.canadian1455",
+      "platform": "youtube",
+      "stream_id": "chat_game_night",
+      "message": "Much love Jay From Vancouver BC Bud :thumbs_up:",
+      "commands": [
+        "up"
       ]
     },
     {
