@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101783,
+  "updated_ts": 1782101788,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -534,7 +534,8 @@
     "playing_last_of_us_part_i_remake",
     "playing_modern_warfare_2_on_a_handheld",
     "playing_some_gta_iv_cause_why_not",
-    "playing_some_more_wii_u_feat_birds"
+    "playing_some_more_wii_u_feat_birds",
+    "playing_super_nintendo_games_like_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9064,6 +9065,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 6.22,
       "avg_active_chatters": 18.67
+    },
+    "playing_super_nintendo_games_like_a_man": {
+      "stream_id": "playing_super_nintendo_games_like_a_man",
+      "title": "Playing Super Nintendo Games Like A Man",
+      "start_ts": 1643575563,
+      "end_ts": 1643579798,
+      "duration_sec": 4235,
+      "youtube_archive_id": "6JCh6db9l5Q",
+      "source_platform": "youtube",
+      "total_donations_usd": 70.44,
+      "donation_count": 19,
+      "donations_per_min": 0.998,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.04,
+      "avg_active_chatters": 25.9
     }
   }
 }
