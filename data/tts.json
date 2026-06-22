@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092520,
+  "updated_ts": 1782092545,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -16,7 +16,8 @@
     "1_man_1_bird_all_live",
     "1_million_sub_special_feat_birds",
     "2_birds_and_a_man_live",
-    "2_man_mini_marathon_stream_feat_birds"
+    "2_man_mini_marathon_stream_feat_birds",
+    "2_men_live_featmen"
   ],
   "commands": {
     "stan": 27,
@@ -49,7 +50,7 @@
     "turkey": 3,
     "eyes": 3,
     "africa": 1,
-    "face": 7,
+    "face": 9,
     "petersonxhhanson": 1,
     "poo": 1,
     "joy": 7,
@@ -79,7 +80,10 @@
     "lantern": 2,
     "leg": 1,
     "severance": 1,
-    "gta": 1
+    "gta": 1,
+    "me": 1,
+    "kill": 1,
+    "enough": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -156,6 +160,11 @@
       "title": "2 Man Mini Marathon Stream Feat. Birds",
       "start_ts": 1703450428,
       "youtube_archive_id": "ZCaqd1uATps"
+    },
+    "2_men_live_featmen": {
+      "title": "2 Men Live (Feat.Men)",
+      "start_ts": 1683590227,
+      "youtube_archive_id": "2BdcGbTtMFQ"
     }
   },
   "messages": [
@@ -2039,6 +2048,56 @@
       "message": "Wings voice: Ban anyone named ReviewChinaUSA",
       "commands": [
         "voice"
+      ]
+    },
+    {
+      "ts": 1683593894,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "2_men_live_featmen",
+      "message": "I can not stress this enough: animation is a medium not a genre.",
+      "commands": [
+        "enough"
+      ]
+    },
+    {
+      "ts": 1683591863,
+      "username": "@glassbell8677",
+      "platform": "youtube",
+      "stream_id": "2_men_live_featmen",
+      "message": "Rich marry, frick, kill: DSP, (2016) DSP, or Jay",
+      "commands": [
+        "kill"
+      ]
+    },
+    {
+      "ts": 1683591520,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "2_men_live_featmen",
+      "message": "I saw my ex today for the first time in two months today, and my fight-or-flight response immediately kicked in. :flushed_face: Is that normal?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1683591450,
+      "username": "@aurubaru",
+      "platform": "youtube",
+      "stream_id": "2_men_live_featmen",
+      "message": "Feeling infatuated. H E L P :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1683591140,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "2_men_live_featmen",
+      "message": "me: 2 men online, wonder what this is about *joins live* \"oh yeah touch me\"",
+      "commands": [
+        "me"
       ]
     },
     {
