@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093772,
+  "updated_ts": 1782093821,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -50,7 +50,8 @@
     "a_large_man_is_streaming",
     "a_large_man_returns_feat_birds",
     "a_large_man_with_seltzer_livestreams",
-    "a_late_night_middle_aged_youtuber_is_livestreaming"
+    "a_late_night_middle_aged_youtuber_is_livestreaming",
+    "a_late_stream"
   ],
   "commands": {
     "stan": 27,
@@ -83,7 +84,7 @@
     "turkey": 3,
     "eyes": 13,
     "africa": 1,
-    "face": 37,
+    "face": 39,
     "petersonxhhanson": 1,
     "poo": 4,
     "joy": 28,
@@ -105,7 +106,7 @@
     "cake": 1,
     "d": 1,
     "halo": 1,
-    "hand": 2,
+    "hand": 3,
     "popper": 1,
     "straw": 1,
     "glasses": 1,
@@ -185,8 +186,10 @@
     "lindell": 1,
     "movie": 1,
     "hour": 1,
-    "nose": 1,
-    "kelly": 1
+    "nose": 2,
+    "kelly": 1,
+    "follows": 1,
+    "goblin": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -433,6 +436,11 @@
       "title": "A Late Night Middle-Aged YouTuber Is Livestreaming",
       "start_ts": 1636081151,
       "youtube_archive_id": "Q0fzvMN2_6Y"
+    },
+    "a_late_stream": {
+      "title": "A Late Stream...",
+      "start_ts": 1629080154,
+      "youtube_archive_id": "dn-HcAIzhuU"
     }
   },
   "messages": [
@@ -4850,6 +4858,57 @@
       "message": "I was just busting your balls about raycons. :rolling_on_the_floor_laughing: What\u2019s the biggest piece of advice you can give to content creators?",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1629083034,
+      "username": "@NathansMusicpit",
+      "platform": "youtube",
+      "stream_id": "a_late_stream",
+      "message": "Wear your shirt like Beavis doing Cornholio for the rest of the stream or else I will hit the dislike button:face_with_steam_from_nose:",
+      "commands": [
+        "nose"
+      ]
+    },
+    {
+      "ts": 1629083015,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "a_late_stream",
+      "message": "So you're famous you were on Bowblax today and I didnt know that drama would get big enough to have him cover it. he called it Boomer Drama :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1629081769,
+      "username": "@krispytoast8804",
+      "platform": "youtube",
+      "stream_id": "a_late_stream",
+      "message": "Wings has a bigger gack than you, and you can not be trusted :goblin:",
+      "commands": [
+        "goblin"
+      ]
+    },
+    {
+      "ts": 1629080964,
+      "username": "@J-WOT",
+      "platform": "youtube",
+      "stream_id": "a_late_stream",
+      "message": "Live in Oregon. Weed blocks away No Card Needed :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1629080533,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "a_late_stream",
+      "message": "Sup Gamers. Tonight, due to late stream, we'll be calling Rich as follows: Richie Ricardo The Sleepy Daddy. Amogus Chungus Out. :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "follows",
+        "hand"
       ]
     },
     {
