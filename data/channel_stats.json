@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098792,
+  "updated_ts": 1782098800,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -157,7 +157,8 @@
     "between_two_birds_feat_men",
     "big_problems_over_at_youtube",
     "bill_gates_is_a_man",
-    "bird_and_man_mayhem"
+    "bird_and_man_mayhem",
+    "bird_and_man_mayhem_live_chris_chan"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2655,6 +2656,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.02,
       "avg_active_chatters": 37.79
+    },
+    "bird_and_man_mayhem_live_chris_chan": {
+      "stream_id": "bird_and_man_mayhem_live_chris_chan",
+      "title": "Bird And Man Mayhem Live (Chris Chan)",
+      "start_ts": 1662340935,
+      "end_ts": 1662347701,
+      "duration_sec": 6766,
+      "youtube_archive_id": "L5JsMSdcOCs",
+      "source_platform": "youtube",
+      "total_donations_usd": 198.74,
+      "donation_count": 67,
+      "donations_per_min": 1.7624,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.64,
+      "avg_active_chatters": 34.82
     }
   }
 }
