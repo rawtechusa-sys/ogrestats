@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101282,
+  "updated_ts": 1782101290,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -462,7 +462,8 @@
     "more_cringe_feat_a_man",
     "more_e3_talk",
     "more_edp445_more_man",
-    "more_elden_ring_fail_compilations_feat_birds"
+    "more_elden_ring_fail_compilations_feat_birds",
+    "more_family_man_fun_dad_is_back"
   ],
   "commands": {
     "stan": 27,
@@ -542,7 +543,7 @@
     "shrugging": 6,
     "donation": 3,
     "naruto": 1,
-    "hands": 28,
+    "hands": 29,
     "horns": 7,
     "crab": 2,
     "superhero": 28,
@@ -3278,6 +3279,11 @@
       "title": "More Elden Ring Fail Compilations (Feat. Birds)",
       "start_ts": 1651102623,
       "youtube_archive_id": "EWOOYpnKTiY"
+    },
+    "more_family_man_fun_dad_is_back": {
+      "title": "More Family Man Fun (Dad Is Back)",
+      "start_ts": 1680481284,
+      "youtube_archive_id": "_6R0DW1c6Vk"
     }
   },
   "messages": [
@@ -13860,6 +13866,16 @@
       "message": ":rooster::dashing_away:",
       "commands": [
         "away"
+      ]
+    },
+    {
+      "ts": 1680484939,
+      "username": "@monktribal951",
+      "platform": "youtube",
+      "stream_id": "more_family_man_fun_dad_is_back",
+      "message": "round of applause for phil :clapping_hands:",
+      "commands": [
+        "hands"
       ]
     },
     {
