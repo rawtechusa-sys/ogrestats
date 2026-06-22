@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098960,
+  "updated_ts": 1782098968,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -177,7 +177,8 @@
     "certified_alpha_male_stream_for_men",
     "certified_man_stream",
     "chat_game_night",
-    "chatting_and_karens"
+    "chatting_and_karens",
+    "chatting_and_streaming"
   ],
   "commands": {
     "stan": 27,
@@ -1332,6 +1333,11 @@
       "title": "Chatting And Karens",
       "start_ts": 1669861158,
       "youtube_archive_id": "CMDj4-SPyF0"
+    },
+    "chatting_and_streaming": {
+      "title": "Chatting And Streaming",
+      "start_ts": 1556062644,
+      "youtube_archive_id": "STU968Q47zw"
     }
   },
   "messages": [
