@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093329,
+  "updated_ts": 1782093371,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -40,7 +40,8 @@
     "a_fun_dspgaming_man_stream",
     "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
     "a_grand_theft_auto_trilogy_bird_stream",
-    "a_heartwarming_man_and_bird_stream"
+    "a_heartwarming_man_and_bird_stream",
+    "a_heterosexual_christian_man_stream_watching_cyraxx"
   ],
   "commands": {
     "stan": 27,
@@ -48,7 +49,7 @@
     "grandpa": 12,
     "phil": 52,
     "trump": 30,
-    "doom": 3,
+    "doom": 4,
     "harman": 12,
     "eric": 30,
     "witch": 2,
@@ -71,7 +72,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 8,
+    "eyes": 10,
     "africa": 1,
     "face": 29,
     "petersonxhhanson": 1,
@@ -86,8 +87,8 @@
     "voice": 1,
     "cucumber": 4,
     "biceps": 1,
-    "tongue": 1,
-    "heart": 15,
+    "tongue": 2,
+    "heart": 16,
     "shorts": 1,
     "laughing": 11,
     "news": 3,
@@ -109,7 +110,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 1,
-    "rooster": 4,
+    "rooster": 5,
     "peach": 1,
     "fire": 2,
     "kendal": 1,
@@ -123,7 +124,7 @@
     "hands": 2,
     "horns": 1,
     "crab": 2,
-    "superhero": 2,
+    "superhero": 3,
     "legends": 1,
     "dog": 1,
     "is": 1,
@@ -163,7 +164,10 @@
     "ghostwire": 1,
     "guy": 1,
     "message": 1,
-    "lied": 1
+    "lied": 1,
+    "wilkins": 1,
+    "vomiting": 2,
+    "moment": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -360,6 +364,11 @@
       "title": "A Heartwarming Man And Bird Stream",
       "start_ts": 1630027707,
       "youtube_archive_id": "etThUGIG6o4"
+    },
+    "a_heterosexual_christian_man_stream_watching_cyraxx": {
+      "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx)",
+      "start_ts": 1705013907,
+      "youtube_archive_id": "e5Dphi0J0gw"
     }
   },
   "messages": [
@@ -2142,6 +2151,116 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1705032876,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "I\u2019m clipping this tomorrow, count on it. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1705032370,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "Just know Hero in :superhero: Stroke what now???",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705030545,
+      "username": "@GlamerousFrog",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "Natsu takeover stream lets go birds :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1705030047,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "As disturbing as it is, imagine for a moment: Melonie Mac in her late 50s. She would be the ultimate Karen or all Karens.",
+      "commands": [
+        "moment"
+      ]
+    },
+    {
+      "ts": 1705027862,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "By her own logic she should be married to the first asshole who asked her, stuck at home pumping out babies and not allowed to have an opinion on anything, especially politics ! :face_with_rolling_eyes::face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1705027235,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "She\u2019s just another hateful religious zealot that picks and chooses what to follow in the Bible but everyone else is held to a higher standard. Do as I say, not as I do kind of bullshit ! :face_vomiting:",
+      "commands": [
+        "vomiting"
+      ]
+    },
+    {
+      "ts": 1705026788,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "There\u2019s no hate like Christian\u2019s love ! :face_vomiting:",
+      "commands": [
+        "vomiting"
+      ]
+    },
+    {
+      "ts": 1705023798,
+      "username": "@Enraged-Gecko",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "Mike Clum\u2019s next documentary, The Sad, Dark Life of Chance Wilkins: the Pedo Grimlin",
+      "commands": [
+        "wilkins"
+      ]
+    },
+    {
+      "ts": 1705015749,
+      "username": "@mr.0lvera922",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "horse on courses song today? :folded_hands::beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1705015473,
+      "username": "@The_Oxidizer",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "Speaking of Doom 2016 and Doom Eternal, how much for you to beat Doom: The Plutonia Experiment on Ultra Violence difficulty?",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1705015360,
+      "username": "@unclescottish81",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx",
+      "message": "psychos are hard work but worth it n the bedroom :winking_face_with_tongue:",
+      "commands": [
+        "tongue"
       ]
     },
     {
