@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100319,
+  "updated_ts": 1782100328,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -338,7 +338,8 @@
     "im_wired_and_streaming_cause_why_not",
     "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
     "intellivision_amico_family_fun_and_the_quartering_swatted",
-    "intellivision_amico_family_fun_night_plus_newegg_drama"
+    "intellivision_amico_family_fun_night_plus_newegg_drama",
+    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5732,6 +5733,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.19,
       "avg_active_chatters": 30.19
+    },
+    "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live": {
+      "stream_id": "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
+      "title": "Intellivision Family Fun, AYA NEO AIR UNBOXING, WATCHING MEN LIVE",
+      "start_ts": 1659654243,
+      "end_ts": 1659666952,
+      "duration_sec": 12709,
+      "youtube_archive_id": "1hzARw3MSt0",
+      "source_platform": "youtube",
+      "total_donations_usd": 243.26,
+      "donation_count": 75,
+      "donations_per_min": 1.1484,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.02,
+      "avg_active_chatters": 30.81
     }
   }
 }
