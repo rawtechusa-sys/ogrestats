@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092744,
+  "updated_ts": 1782092776,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -24,7 +24,8 @@
     "a_baked_middle_aged_man_plays_video_games",
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_beautiful_man_becomes_more_beautiful_live",
-    "a_birdman_family_friendly_love_stream"
+    "a_birdman_family_friendly_love_stream",
+    "a_boomer_plays_elden_ring_plus_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -394,6 +395,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.83,
       "avg_active_chatters": 27.43
+    },
+    "a_boomer_plays_elden_ring_plus_birds": {
+      "stream_id": "a_boomer_plays_elden_ring_plus_birds",
+      "title": "A Boomer Plays Elden Ring (Plus Birds)",
+      "start_ts": 1648248623,
+      "end_ts": 1648256374,
+      "duration_sec": 7751,
+      "youtube_archive_id": "GRbSMySvuow",
+      "source_platform": "youtube",
+      "total_donations_usd": 216.8,
+      "donation_count": 66,
+      "donations_per_min": 1.6782,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.96,
+      "avg_active_chatters": 42.16
     }
   }
 }
