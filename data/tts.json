@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094573,
+  "updated_ts": 1782094624,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -66,7 +66,8 @@
     "a_man_is_back_sexecoco_style",
     "a_man_is_staying_on_till_1_am",
     "a_man_is_streaming_feat_birds",
-    "a_man_is_streaming_with_birds_till_130_am"
+    "a_man_is_streaming_with_birds_till_130_am",
+    "a_man_marathon"
   ],
   "commands": {
     "stan": 27,
@@ -99,10 +100,10 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 48,
+    "face": 49,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 40,
+    "joy": 42,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -111,7 +112,7 @@
     "fear": 2,
     "voice": 1,
     "cucumber": 5,
-    "biceps": 2,
+    "biceps": 3,
     "tongue": 2,
     "heart": 24,
     "shorts": 1,
@@ -545,6 +546,11 @@
       "title": "A MAN IS STREAMING WITH BIRDS TILL 130 AM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
       "start_ts": 1688947584,
       "youtube_archive_id": "FQIT-_I_gKk"
+    },
+    "a_man_marathon": {
+      "title": "A Man Marathon",
+      "start_ts": 1657745135,
+      "youtube_archive_id": "LNLvS0LFGbY"
     }
   },
   "messages": [
@@ -4087,6 +4093,46 @@
       "commands": [
         "rooster",
         "joy"
+      ]
+    },
+    {
+      "ts": 1657750117,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "a_man_marathon",
+      "message": "I thought this was the 90s apologies :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1657750052,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "a_man_marathon",
+      "message": "I\u2019m glad I wasn\u2019t alive during most of this :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1657749171,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "a_man_marathon",
+      "message": "I want my steam deck dad :loudly_crying_face: July-September so soon?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1657746922,
+      "username": "@Esta-Beed",
+      "platform": "youtube",
+      "stream_id": "a_man_marathon",
+      "message": "Act Man is back making paper :flexed_biceps:",
+      "commands": [
+        "biceps"
       ]
     },
     {
