@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100506,
+  "updated_ts": 1782100515,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -358,7 +358,8 @@
     "just_a_man_streaming_and_answering_questions_feat_birds",
     "just_a_man_streaming_for_a_bit",
     "just_being_a_man",
-    "just_chatting_and_watching_the_completionist_discord_call"
+    "just_chatting_and_watching_the_completionist_discord_call",
+    "just_chatting_feat_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -391,7 +392,7 @@
     "turkey": 7,
     "eyes": 81,
     "africa": 1,
-    "face": 334,
+    "face": 335,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 241,
@@ -405,7 +406,7 @@
     "cucumber": 44,
     "biceps": 3,
     "tongue": 6,
-    "heart": 110,
+    "heart": 112,
     "shorts": 1,
     "laughing": 138,
     "news": 18,
@@ -454,7 +455,7 @@
     "gift": 3,
     "bird": 10,
     "richsmile": 5,
-    "dsp": 22,
+    "dsp": 23,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -471,7 +472,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
-    "tomorrow": 16,
+    "tomorrow": 17,
     "horse": 10,
     "bug": 1,
     "violin": 1,
@@ -486,7 +487,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 3,
-    "mouth": 13,
+    "mouth": 14,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -799,7 +800,8 @@
     "television": 1,
     "ring": 2,
     "games": 1,
-    "reviewphilosphyusa": 1
+    "reviewphilosphyusa": 1,
+    "rtusa": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2586,6 +2588,11 @@
       "title": "Just Chatting And Watching The Completionist Discord Call",
       "start_ts": 1703040486,
       "youtube_archive_id": "GmnyPiqkkVo"
+    },
+    "just_chatting_feat_a_man": {
+      "title": "Just Chatting (Feat. A Man)",
+      "start_ts": 1643852362,
+      "youtube_archive_id": "i_ewW9QL-1E"
     }
   },
   "messages": [
@@ -17719,6 +17726,67 @@
       "message": "BIRD KOMBAT!!! :musical_notes:Que music:musical_notes: FINISH HIM! STEVE WINS! FLAWLESS VICTORY! FRIED CHICKEN-ALITY!!!!!!",
       "commands": [
         "notes"
+      ]
+    },
+    {
+      "ts": 1643856772,
+      "username": "@LyricalThesisDJ",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "Is Souljah Boy an investor on this? :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1643855562,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "Gundam just posted part 2 to his G4TV video :face_without_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1643854249,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "DSP: pay me to verbally abuse you. RTUSA: yo lemme edit this QVC audio just because",
+      "commands": [
+        "dsp",
+        "rtusa"
+      ]
+    },
+    {
+      "ts": 1643854035,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "QVC tomorrow: today we are gonna show you the new ps5 contoler with our new ps5 contoler expert jordi jordan",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1643854018,
+      "username": "@itsjustrobby",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "I'm ordering dominos. We need to get this sparkling watered man a sponsorship. :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1643853257,
+      "username": "@itsjustrobby",
+      "platform": "youtube",
+      "stream_id": "just_chatting_feat_a_man",
+      "message": "I'm gay, and this poll is rigged. ayooooo :red_heart: love you birdman gimme birdsong plz",
+      "commands": [
+        "heart"
       ]
     },
     {
