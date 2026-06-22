@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099036,
+  "updated_ts": 1782099044,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -187,7 +187,8 @@
     "chris_watts_in_4k",
     "christmas_night_shoulders",
     "clearing_the_air_and_watching_jordan_peterson",
-    "colleen_ballinger_is_an_absolute_weirdo"
+    "colleen_ballinger_is_an_absolute_weirdo",
+    "come_ask_a_man_and_a_bird_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3165,6 +3166,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.38,
       "avg_active_chatters": 37.01
+    },
+    "come_ask_a_man_and_a_bird_questions": {
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "title": "Come Ask A Man And A Bird Questions",
+      "start_ts": 1628208922,
+      "end_ts": 1628222590,
+      "duration_sec": 13668,
+      "youtube_archive_id": "1fkURq0nZFQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 516.66,
+      "donation_count": 136,
+      "donations_per_min": 2.268,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.66,
+      "avg_active_chatters": 35.31
     }
   }
 }
