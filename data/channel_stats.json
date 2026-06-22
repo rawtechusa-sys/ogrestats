@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101912,
+  "updated_ts": 1782101918,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -557,7 +557,8 @@
     "quick_test",
     "qvc_is_amazing",
     "qvc_vs_man",
-    "racism_is_so_disgusting"
+    "racism_is_so_disgusting",
+    "random_afternoon_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9455,6 +9456,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.77,
       "avg_active_chatters": 38.41
+    },
+    "random_afternoon_stream": {
+      "stream_id": "random_afternoon_stream",
+      "title": "Random Afternoon Stream",
+      "start_ts": 1639082967,
+      "end_ts": 1639087924,
+      "duration_sec": 4957,
+      "youtube_archive_id": "pA17XOM6qTI",
+      "source_platform": "youtube",
+      "total_donations_usd": 143.93,
+      "donation_count": 27,
+      "donations_per_min": 1.7421,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.81,
+      "avg_active_chatters": 40.1
     }
   }
 }
