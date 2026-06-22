@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100294,
+  "updated_ts": 1782100302,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -335,7 +335,8 @@
     "im_so_sorry",
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
-    "im_wired_and_streaming_cause_why_not"
+    "im_wired_and_streaming_cause_why_not",
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5681,6 +5682,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.9,
       "avg_active_chatters": 41.66
+    },
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds": {
+      "stream_id": "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
+      "title": "In Search Of 100K Runes In Elden Ring (Feat. Beautiful Birds)",
+      "start_ts": 1649719856,
+      "end_ts": 1649731406,
+      "duration_sec": 11550,
+      "youtube_archive_id": "udNjQplYcbQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 220.15,
+      "donation_count": 55,
+      "donations_per_min": 1.1436,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.92,
+      "avg_active_chatters": 33.7
     }
   }
 }
