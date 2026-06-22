@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101062,
+  "updated_ts": 1782101070,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -432,7 +432,8 @@
     "man_on_man_livestream_featuring_masculine_birds",
     "man_stares_at_artificial_birds_live",
     "man_versus_bird_live",
-    "man_versus_carolina_reaper_jerky"
+    "man_versus_carolina_reaper_jerky",
+    "man_vs_birdemic_the_film_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -3077,6 +3078,11 @@
       "title": "Man Versus Carolina Reaper Jerky",
       "start_ts": 1642727617,
       "youtube_archive_id": "vd0P-fyhqVs"
+    },
+    "man_vs_birdemic_the_film_feat_birds": {
+      "title": "Man Vs. Birdemic (The Film) ((FEAT. BIRDS))",
+      "start_ts": 1643326732,
+      "youtube_archive_id": "2ucdlymVzJA"
     }
   },
   "messages": [
