@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100848,
+  "updated_ts": 1782100855,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -403,7 +403,8 @@
     "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
     "lets_laugh_at_crap_crowdfunding_campaigns",
     "lets_laugh_at_qvc",
-    "lets_shop_and_then_go_to_war"
+    "lets_shop_and_then_go_to_war",
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound"
   ],
   "commands": {
     "stan": 27,
@@ -436,7 +437,7 @@
     "turkey": 7,
     "eyes": 94,
     "africa": 1,
-    "face": 387,
+    "face": 388,
     "petersonxhhanson": 1,
     "poo": 23,
     "joy": 262,
@@ -476,7 +477,7 @@
     "peach": 13,
     "fire": 22,
     "kendal": 1,
-    "up": 38,
+    "up": 39,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 10,
@@ -780,7 +781,7 @@
     "idiots": 2,
     "recommendation": 1,
     "shot": 1,
-    "creed": 1,
+    "creed": 2,
     "protip": 1,
     "auto": 1,
     "muta": 2,
@@ -2889,6 +2890,11 @@
       "title": "Let's Shop And Then Go To \"War\"",
       "start_ts": 1684882867,
       "youtube_archive_id": "Um7ZK9j2sRk"
+    },
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound": {
+      "title": "Let's Shop For Bugs For Me To Eat (And Maybe Earthbound)",
+      "start_ts": 1663029438,
+      "youtube_archive_id": "6eyfPBivxsA"
     }
   },
   "messages": [
@@ -15233,6 +15239,36 @@
       "message": "I will become a dad next year! with birds! :chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1663038346,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+      "message": "Nah as a wrestling fan, you need to try WWE 2k18 bc 2k makes the nba games work but with that WWE game :grimacing_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1663035624,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+      "message": "A little reward for playing the best game evah. :beaming_face_with_smiling_eyes::thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1663030373,
+      "username": "@deadeye616",
+      "platform": "youtube",
+      "stream_id": "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+      "message": "I have a long reaching theory, Assassin\u2019s Creed: Mirage got an Adults Only rating for \u201cReal Gambling\u201d. Could this lead to other games getting the same rating for loot boxes?",
+      "commands": [
+        "creed"
       ]
     },
     {
