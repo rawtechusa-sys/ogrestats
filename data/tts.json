@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099454,
+  "updated_ts": 1782099462,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -237,7 +237,8 @@
     "come_talk_with_liana_k_and_i_about_video_games",
     "cringing_at_the_avgn_movie",
     "dad_had_some_ipas_come_ask_questions",
-    "dad_is_back"
+    "dad_is_back",
+    "dad_streams_the_playstation_showcase_2021"
   ],
   "commands": {
     "stan": 27,
@@ -270,10 +271,10 @@
     "turkey": 6,
     "eyes": 62,
     "africa": 1,
-    "face": 212,
+    "face": 213,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 144,
+    "joy": 145,
     "gameboy": 1,
     "chick": 1,
     "carlos": 22,
@@ -286,7 +287,7 @@
     "tongue": 5,
     "heart": 68,
     "shorts": 1,
-    "laughing": 66,
+    "laughing": 67,
     "news": 13,
     "chicken": 32,
     "cake": 7,
@@ -301,7 +302,7 @@
     "leg": 1,
     "severance": 2,
     "gta": 4,
-    "me": 4,
+    "me": 5,
     "kill": 1,
     "enough": 1,
     "disclaimer": 1,
@@ -311,7 +312,7 @@
     "fire": 14,
     "kendal": 1,
     "up": 21,
-    "note": 5,
+    "note": 6,
     "eyebrow": 2,
     "facepalming": 7,
     "shrugging": 3,
@@ -1737,6 +1738,11 @@
       "title": "Dad Is Back",
       "start_ts": 1678411700,
       "youtube_archive_id": "nnW58o6Gwyg"
+    },
+    "dad_streams_the_playstation_showcase_2021": {
+      "title": "Dad Streams The PlayStation Showcase 2021",
+      "start_ts": 1631213310,
+      "youtube_archive_id": "-5lUFwmcWyA"
     }
   },
   "messages": [
@@ -14056,6 +14062,56 @@
       "message": "Stop messing with cucumber and move on to eggplant :eggplant: please",
       "commands": [
         "eggplant"
+      ]
+    },
+    {
+      "ts": 1631219779,
+      "username": "@J-WOT",
+      "platform": "youtube",
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "message": "\"Games you're not going to find anywhere\" Me: I Can't find your PS5... so yeah... You're right... lol",
+      "commands": [
+        "me"
+      ]
+    },
+    {
+      "ts": 1631219455,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "message": "Is it that why your a Creep:musical_note:",
+      "commands": [
+        "note"
+      ]
+    },
+    {
+      "ts": 1631216367,
+      "username": "@404NotJosh",
+      "platform": "youtube",
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "message": "I think a DSP gaming simulator could work. :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1631215164,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "message": "I have severe depression and low functioning and it's a challenge to do things because i have no motivation and no energy at times. It sucks. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631213881,
+      "username": "@Randomdick5",
+      "platform": "youtube",
+      "stream_id": "dad_streams_the_playstation_showcase_2021",
+      "message": "How many subs for a music video of this song this god tier :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
