@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099573,
+  "updated_ts": 1782099582,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -252,7 +252,8 @@
     "donald_trump_elon_musk_and_bill_gates_caught_up_in_human_trafficking_scandal",
     "donald_trump_magical_ball_requests",
     "donald_trump_vs_joe_biden_ai_debate",
-    "dr_cocos_house_of_healing"
+    "dr_cocos_house_of_healing",
+    "drinking_stories_with_intro_guy"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4270,6 +4271,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.71,
       "avg_active_chatters": 21.08
+    },
+    "drinking_stories_with_intro_guy": {
+      "stream_id": "drinking_stories_with_intro_guy",
+      "title": "Drinking Stories With Intro Guy",
+      "start_ts": 1556062673,
+      "end_ts": 1556072888,
+      "duration_sec": 10215,
+      "youtube_archive_id": "NH643bmMdEs",
+      "source_platform": "youtube",
+      "total_donations_usd": 246.88,
+      "donation_count": 66,
+      "donations_per_min": 1.4501,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.98,
+      "avg_active_chatters": 30.82
     }
   }
 }
