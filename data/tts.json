@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100406,
+  "updated_ts": 1782100415,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -347,7 +347,8 @@
     "its_a_question",
     "its_all_about_casey",
     "its_all_about_keemstar_and_birds",
-    "its_all_about_the_tipples"
+    "its_all_about_the_tipples",
+    "its_dspgamings_birthday"
   ],
   "commands": {
     "stan": 27,
@@ -380,7 +381,7 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 324,
+    "face": 326,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 237,
@@ -418,7 +419,7 @@
     "hole": 6,
     "rooster": 36,
     "peach": 9,
-    "fire": 20,
+    "fire": 21,
     "kendal": 1,
     "up": 35,
     "note": 6,
@@ -443,7 +444,7 @@
     "gift": 3,
     "bird": 10,
     "richsmile": 5,
-    "dsp": 20,
+    "dsp": 21,
     "story": 1,
     "tree": 3,
     "skull": 7,
@@ -694,7 +695,7 @@
     "sc": 1,
     "sun": 1,
     "part": 1,
-    "milk": 2,
+    "milk": 4,
     "check": 1,
     "king": 1,
     "unrelated": 1,
@@ -778,7 +779,9 @@
     "lie": 1,
     "ferengi": 1,
     "bath": 1,
-    "fart": 1
+    "fart": 1,
+    "result": 1,
+    "later": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2510,6 +2513,11 @@
       "title": "It's All About The Tipples",
       "start_ts": 1739155615,
       "youtube_archive_id": "HalUqrF-Mlg"
+    },
+    "its_dspgamings_birthday": {
+      "title": "IT'S DSPGAMING'S BIRTHDAY",
+      "start_ts": 1680910415,
+      "youtube_archive_id": "tuiQB2kLK7E"
     }
   },
   "messages": [
@@ -10952,6 +10960,86 @@
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1680930025,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "Fuck birds, all my homies hate birds :speaking_head::speaking_head::fire::fire::fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1680929614,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "25 years later: \"Hey remember that YTer ReviewTechUSA?\" \"review... Tech... You mean the guy who would never shut up about some other streamer guy, Phil or something?\"",
+      "commands": [
+        "later"
+      ]
+    },
+    {
+      "ts": 1680927968,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "bro my thirst of may 1st anthem....my snorts..:cow2::glass_of_milk:",
+      "commands": [
+        "milk"
+      ]
+    },
+    {
+      "ts": 1680927239,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "I love you dad! one big fat lushes fart! :cow2::glass_of_milk:",
+      "commands": [
+        "milk"
+      ]
+    },
+    {
+      "ts": 1680921976,
+      "username": "@yrysroda8592",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "I lost 15lbs since November I am no longer fat :slightly_smiling_face: x",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680921793,
+      "username": "@Iveega",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "Hub result: Man devours thick meat pizza on stream",
+      "commands": [
+        "result"
+      ]
+    },
+    {
+      "ts": 1680917671,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "Master DSP you might want to tell me what you're doing on May 1st!?!? DSP: Sir, finishing my Fap",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1680912482,
+      "username": "@iswordlogici7760",
+      "platform": "youtube",
+      "stream_id": "its_dspgamings_birthday",
+      "message": "wait.. yall pay taxes :confused_face:",
+      "commands": [
+        "face"
       ]
     },
     {
