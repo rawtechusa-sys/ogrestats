@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098759,
+  "updated_ts": 1782098767,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -153,7 +153,8 @@
     "ban_anybody_watching_the_wingsofredemption_documentary",
     "ban_anybody_who_discusses_wingsofredemption",
     "ban_dark_souls_remastered_members_only",
-    "being_terrible_at_halo_infinite_live"
+    "being_terrible_at_halo_infinite_live",
+    "between_two_birds_feat_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2587,6 +2588,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.62,
       "avg_active_chatters": 22.22
+    },
+    "between_two_birds_feat_men": {
+      "stream_id": "between_two_birds_feat_men",
+      "title": "Between Two Birds (Feat. Men)",
+      "start_ts": 1679872997,
+      "end_ts": 1679882843,
+      "duration_sec": 9846,
+      "youtube_archive_id": "1Hmtd_Wbw8A",
+      "source_platform": "youtube",
+      "total_donations_usd": 204.16,
+      "donation_count": 61,
+      "donations_per_min": 1.2441,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.94,
+      "avg_active_chatters": 25.35
     }
   }
 }
