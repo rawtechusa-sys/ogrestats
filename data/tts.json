@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099749,
+  "updated_ts": 1782099757,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -272,7 +272,8 @@
     "dude_wtf_is_even_going_on",
     "early_sunday_man_a_thon",
     "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
-    "eating_extremely_spicy_food_and_watching_weird_crap"
+    "eating_extremely_spicy_food_and_watching_weird_crap",
+    "edp445_looked_for_another_cupcake"
   ],
   "commands": {
     "stan": 27,
@@ -305,7 +306,7 @@
     "turkey": 6,
     "eyes": 68,
     "africa": 1,
-    "face": 248,
+    "face": 249,
     "petersonxhhanson": 1,
     "poo": 15,
     "joy": 182,
@@ -319,10 +320,10 @@
     "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
-    "heart": 81,
+    "heart": 83,
     "shorts": 1,
     "laughing": 82,
-    "news": 15,
+    "news": 16,
     "chicken": 36,
     "cake": 7,
     "d": 2,
@@ -355,7 +356,7 @@
     "hands": 18,
     "horns": 6,
     "crab": 2,
-    "superhero": 17,
+    "superhero": 18,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -625,7 +626,9 @@
     "unrelated": 1,
     "duck": 1,
     "reads": 1,
-    "unlocked": 1
+    "unlocked": 1,
+    "cupcake": 1,
+    "futurama": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1982,6 +1985,11 @@
       "title": "Eating Extremely Spicy Food And Watching Weird Crap",
       "start_ts": 1688420273,
       "youtube_archive_id": "f90J_Ei6D8o"
+    },
+    "edp445_looked_for_another_cupcake": {
+      "title": "EDP445 Looked For Another Cupcake",
+      "start_ts": 1693964751,
+      "youtube_archive_id": "l5n4_1SAIok"
     }
   },
   "messages": [
@@ -6864,6 +6872,76 @@
       "message": ":cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1693972129,
+      "username": "@GamerToday",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "my first video was hyperkin retron 3 2nd was sxy coco psn video. love :red_heart: you rich accept deal with it. Who are ur fav rasp vocalists?",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1693970848,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "too bad it doesn't run well on the steam deck :frowning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1693969361,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "Futurama: Beast with a Billion Backs",
+      "commands": [
+        "futurama"
+      ]
+    },
+    {
+      "ts": 1693965647,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "Breaking News: My local Best Buy Rep agreed to let me sleep behind the display TVs so I can finally leave my motel! I'll still be posting sad Tiktoks",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1693965584,
+      "username": "@aajmc",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "Was just coming to get cupcake :cupcake:",
+      "commands": [
+        "cupcake"
+      ]
+    },
+    {
+      "ts": 1693965548,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "Just know :superhero: In, starfield watch too small for my wrist, i caught your oopsie stream, Birds lets go",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1693965470,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "edp445_looked_for_another_cupcake",
+      "message": "MUCH LOVE :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
