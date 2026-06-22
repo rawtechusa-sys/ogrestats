@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102132,
+  "updated_ts": 1782102142,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -590,7 +590,8 @@
     "so_i_got_the_google_pixel_6_pro",
     "so_much_man_feat_birds",
     "so_much_man_so_many_birds",
-    "so_much_st_to_talk_about"
+    "so_much_st_to_talk_about",
+    "so_relaxed_watching_preacher_fails"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10016,6 +10017,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.72,
       "avg_active_chatters": 25.79
+    },
+    "so_relaxed_watching_preacher_fails": {
+      "stream_id": "so_relaxed_watching_preacher_fails",
+      "title": "So Relaxed (Watching Preacher Fails)",
+      "start_ts": 1653865970,
+      "end_ts": 1653877525,
+      "duration_sec": 11555,
+      "youtube_archive_id": "up5HvEXFvrM",
+      "source_platform": "youtube",
+      "total_donations_usd": 310.21,
+      "donation_count": 73,
+      "donations_per_min": 1.6108,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.48,
+      "avg_active_chatters": 30.87
     }
   }
 }
