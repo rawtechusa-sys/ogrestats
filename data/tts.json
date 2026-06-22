@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099631,
+  "updated_ts": 1782099639,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -258,7 +258,8 @@
     "dsp_intellivision_family_fun_and_prank_calls",
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
     "dsp_loves_derich",
-    "dsp_treats_everyone_terrible_kingcobrajfs_evicted"
+    "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
+    "dspgaming_gets_schooled_by_beardstar_keemstar"
   ],
   "commands": {
     "stan": 27,
@@ -291,7 +292,7 @@
     "turkey": 6,
     "eyes": 66,
     "africa": 1,
-    "face": 225,
+    "face": 227,
     "petersonxhhanson": 1,
     "poo": 14,
     "joy": 162,
@@ -307,7 +308,7 @@
     "tongue": 5,
     "heart": 75,
     "shorts": 1,
-    "laughing": 75,
+    "laughing": 76,
     "news": 13,
     "chicken": 33,
     "cake": 7,
@@ -434,7 +435,7 @@
     "million": 1,
     "people": 1,
     "point": 2,
-    "superchat": 1,
+    "superchat": 2,
     "reviewquentintartinousa": 1,
     "fact": 3,
     "both": 1,
@@ -598,7 +599,8 @@
     "unity": 2,
     "conspiracy": 1,
     "camera": 1,
-    "demonica": 1
+    "demonica": 1,
+    "tries": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1885,6 +1887,11 @@
       "title": "DSP Treats Everyone Terrible (KingCobraJFS Evicted)",
       "start_ts": 1713574924,
       "youtube_archive_id": "G5Br1qlBmrk"
+    },
+    "dspgaming_gets_schooled_by_beardstar_keemstar": {
+      "title": "DSPGaming Get's Schooled By Beardstar (Keemstar)",
+      "start_ts": 1680134811,
+      "youtube_archive_id": "xFM_Cney7NU"
     }
   },
   "messages": [
@@ -8329,6 +8336,56 @@
       "message": "I mean who\u2019s complaining about a hot women pegging ass lol :face_with_tears_of_joy: oh it hurts",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1680143779,
+      "username": "@vanguarddnice",
+      "platform": "youtube",
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "message": "I love you big bro u miss my SC get some rest :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680136347,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "message": "I thought his fanbase was just a fan with a base bought at a Walmart on rollback for $10 :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1680135908,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "message": "Wings superchat: hope you have a good stream , i saw the news last night and say you lurking and a kindergarden",
+      "commands": [
+        "superchat"
+      ]
+    },
+    {
+      "ts": 1680135867,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "message": "Remember Jack Thompson? Ahh good times :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1680135570,
+      "username": "@raymarkable96",
+      "platform": "youtube",
+      "stream_id": "dspgaming_gets_schooled_by_beardstar_keemstar",
+      "message": "DSP tries: delete system32",
+      "commands": [
+        "tries"
       ]
     },
     {
