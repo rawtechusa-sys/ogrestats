@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100570,
+  "updated_ts": 1782100580,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -366,7 +366,8 @@
     "just_discussing_future_plans_road_to_1000_members",
     "just_doing_man_things",
     "just_manstreaming_quantum_tv_and_melonie_mac",
-    "just_the_tip_tipster_late_night_man_stream"
+    "just_the_tip_tipster_late_night_man_stream",
+    "just_two_men_feat_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6208,6 +6209,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.05,
       "avg_active_chatters": 29.18
+    },
+    "just_two_men_feat_men": {
+      "stream_id": "just_two_men_feat_men",
+      "title": "Just Two Men (Feat. Men)",
+      "start_ts": 1692403737,
+      "end_ts": 1692421298,
+      "duration_sec": 17561,
+      "youtube_archive_id": "33nT2YQqERo",
+      "source_platform": "youtube",
+      "total_donations_usd": 508.34,
+      "donation_count": 125,
+      "donations_per_min": 1.7368,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.97,
+      "avg_active_chatters": 43.72
     }
   }
 }
