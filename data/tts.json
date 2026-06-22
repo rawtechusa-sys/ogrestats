@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100587,
+  "updated_ts": 1782100596,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -367,7 +367,8 @@
     "just_manstreaming_quantum_tv_and_melonie_mac",
     "just_the_tip_tipster_late_night_man_stream",
     "just_two_men_feat_men",
-    "just_watching_some_butt_slapping_competitions"
+    "just_watching_some_butt_slapping_competitions",
+    "karens_and_birds"
   ],
   "commands": {
     "stan": 27,
@@ -398,7 +399,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 82,
+    "eyes": 83,
     "africa": 1,
     "face": 341,
     "petersonxhhanson": 1,
@@ -414,9 +415,9 @@
     "cucumber": 45,
     "biceps": 3,
     "tongue": 7,
-    "heart": 114,
+    "heart": 115,
     "shorts": 1,
-    "laughing": 142,
+    "laughing": 143,
     "news": 18,
     "chicken": 42,
     "cake": 7,
@@ -508,7 +509,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 13,
+    "it": 15,
     "food": 4,
     "play": 1,
     "video": 1,
@@ -818,7 +819,9 @@
     "prohibited": 1,
     "gates": 1,
     "rain": 1,
-    "off": 1
+    "off": 1,
+    "hoarders": 1,
+    "either": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2650,6 +2653,11 @@
       "title": "Just Watching Some Butt Slapping Competitions",
       "start_ts": 1645415893,
       "youtube_archive_id": "uRajRPWAV04"
+    },
+    "karens_and_birds": {
+      "title": "Karens And Birds",
+      "start_ts": 1660347376,
+      "youtube_archive_id": "mQL9VdejTZ8"
     }
   },
   "messages": [
@@ -14780,6 +14788,76 @@
       "commands": [
         "face",
         "sweat"
+      ]
+    },
+    {
+      "ts": 1660350951,
+      "username": "@tonymendez4801",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "Bird Breasts !! can i get a DSP fell into a het / hole. :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1660349710,
+      "username": "@GaryBusey-sLaserdiscCollection",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "DSP tries it: Eating cup noodle with a fucking spoon because of course he uses a spoon. Sorry but the fact he tried to use a spoon just... like jesus.",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1660349589,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "DSP tries it: self awareness",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1660349494,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "One Minute Man is either: a pay pig that got doxxed and his using a sock, or Phil priming the tip jar",
+      "commands": [
+        "either"
+      ]
+    },
+    {
+      "ts": 1660349262,
+      "username": "@cartmann94",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "On the next episode of Hoarders: the DSP mansion",
+      "commands": [
+        "hoarders"
+      ]
+    },
+    {
+      "ts": 1660348972,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "Did you get to clip DSPs \"Tickled pickle\" line? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660347907,
+      "username": "@ayylmaoitsbrando4912",
+      "platform": "youtube",
+      "stream_id": "karens_and_birds",
+      "message": "I'm at Chrysler building cars rn I love you Rick pee in my basement and handjobs all around. been subbed for YEARS B :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
