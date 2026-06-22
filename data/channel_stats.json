@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098713,
+  "updated_ts": 1782098720,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -147,7 +147,8 @@
     "ask_me_anything",
     "ask_me_anything_992019",
     "asmongolds_the_act_man_interview_reaction",
-    "back_to_watching_phil_fail_looking_into_derich"
+    "back_to_watching_phil_fail_looking_into_derich",
+    "bad_chefs_are_bad"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2485,6 +2486,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.48,
       "avg_active_chatters": 42.32
+    },
+    "bad_chefs_are_bad": {
+      "stream_id": "bad_chefs_are_bad",
+      "title": "Bad Chefs Are Bad...",
+      "start_ts": 1634174686,
+      "end_ts": 1634182447,
+      "duration_sec": 7761,
+      "youtube_archive_id": "LgIw6U9zqaQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 430.23,
+      "donation_count": 106,
+      "donations_per_min": 3.3261,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.72,
+      "avg_active_chatters": 41.83
     }
   }
 }
