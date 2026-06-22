@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101400,
+  "updated_ts": 1782101408,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -478,7 +478,8 @@
     "more_quantum_tv_tickling",
     "more_russia_ukraine_discussion",
     "more_spicy_intellivision_amico_family_fun",
-    "more_tcap_and_bird_fun"
+    "more_tcap_and_bird_fun",
+    "more_thorough_tickling_live"
   ],
   "commands": {
     "stan": 27,
@@ -509,12 +510,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 112,
+    "eyes": 113,
     "africa": 1,
-    "face": 442,
+    "face": 444,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 288,
+    "joy": 289,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -527,7 +528,7 @@
     "tongue": 10,
     "heart": 141,
     "shorts": 2,
-    "laughing": 179,
+    "laughing": 181,
     "news": 20,
     "chicken": 55,
     "cake": 7,
@@ -547,7 +548,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 48,
+    "rooster": 49,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
@@ -3381,6 +3382,11 @@
       "title": "More TCAP And Bird Fun",
       "start_ts": 1662512501,
       "youtube_archive_id": "623ctqAJFmI"
+    },
+    "more_thorough_tickling_live": {
+      "title": "More Thorough Tickling LIVE",
+      "start_ts": 1656292334,
+      "youtube_archive_id": "cjDqabRKQTk"
     }
   },
   "messages": [
@@ -18925,6 +18931,67 @@
       "commands": [
         "fact",
         "aka"
+      ]
+    },
+    {
+      "ts": 1656302737,
+      "username": "@theabyss18",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "imagine sending money to make yourself look stupid. like uhh... can I have some??:nerd_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656302069,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "Shooting a rope\u2026 :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing: love you Rich!",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1656301026,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "Q must be a Black Project Gov.t' agent, getting hacked like he does? JK :thinking_face::thinking_face: Or am I? LOL JK:grinning_face_with_big_eyes::grinning_face_with_big_eyes:",
+      "commands": [
+        "face",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1656295978,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "quantum is the black version of Mr. clean, gotta clean all this evidence up lmao :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1656295365,
+      "username": "@Addictedtohorrornights",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "I said that his take was bad and got banned :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656292778,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "more_thorough_tickling_live",
+      "message": "had fun with the quarterings fans todays on :rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
