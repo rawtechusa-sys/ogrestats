@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092572,
+  "updated_ts": 1782092600,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -18,7 +18,8 @@
     "2_birds_and_a_man_live",
     "2_man_mini_marathon_stream_feat_birds",
     "2_men_live_featmen",
-    "2_middle_aged_men_are_livestreaming"
+    "2_middle_aged_men_are_livestreaming",
+    "3_men_live_camelot331_and_boogie2988"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -292,6 +293,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.86,
       "avg_active_chatters": 38.54
+    },
+    "3_men_live_camelot331_and_boogie2988": {
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "title": "3 Men Live (Camelot331 And Boogie2988)",
+      "start_ts": 1655684771,
+      "end_ts": 1655695956,
+      "duration_sec": 11185,
+      "youtube_archive_id": "91X7ZuLMNX4",
+      "source_platform": "youtube",
+      "total_donations_usd": 438.23,
+      "donation_count": 90,
+      "donations_per_min": 2.3508,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.1,
+      "avg_active_chatters": 55.99
     }
   }
 }
