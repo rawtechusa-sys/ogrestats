@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098711,
+  "updated_ts": 1782098719,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -146,7 +146,8 @@
     "ask_me_anything",
     "ask_me_anything_992019",
     "asmongolds_the_act_man_interview_reaction",
-    "back_to_watching_phil_fail_looking_into_derich"
+    "back_to_watching_phil_fail_looking_into_derich",
+    "bad_chefs_are_bad"
   ],
   "commands": {
     "stan": 27,
@@ -182,7 +183,7 @@
     "face": 115,
     "petersonxhhanson": 1,
     "poo": 8,
-    "joy": 89,
+    "joy": 90,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -195,7 +196,7 @@
     "tongue": 4,
     "heart": 45,
     "shorts": 1,
-    "laughing": 46,
+    "laughing": 47,
     "news": 9,
     "chicken": 21,
     "cake": 1,
@@ -1111,6 +1112,11 @@
       "title": "Back To Watching Phil Fail (Looking Into Derich)",
       "start_ts": 1704493736,
       "youtube_archive_id": "p4Hy3Lny_Og"
+    },
+    "bad_chefs_are_bad": {
+      "title": "Bad Chefs Are Bad...",
+      "start_ts": 1634174686,
+      "youtube_archive_id": "LgIw6U9zqaQ"
     }
   },
   "messages": [
@@ -9332,6 +9338,26 @@
       "commands": [
         "million",
         "people"
+      ]
+    },
+    {
+      "ts": 1634181217,
+      "username": "@abdullanaser3859",
+      "platform": "youtube",
+      "stream_id": "bad_chefs_are_bad",
+      "message": "Dude, why do you always moan when my wife is next to me when I watch your streams :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1634178090,
+      "username": "@Spare_Eyebrows",
+      "platform": "youtube",
+      "stream_id": "bad_chefs_are_bad",
+      "message": "imagine Jim Ryan walked \u00edn and lost his temper :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
