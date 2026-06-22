@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093963,
+  "updated_ts": 1782094013,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -54,7 +54,8 @@
     "a_late_stream",
     "a_long_day_of_elden_ring_feat_birds",
     "a_major_philip_burnell_man_emrgency_has_occured",
-    "a_man"
+    "a_man",
+    "a_man_and_bird_lushes_stream"
   ],
   "commands": {
     "stan": 27,
@@ -96,7 +97,7 @@
     "carlos": 10,
     "away": 2,
     "idea": 1,
-    "fear": 1,
+    "fear": 2,
     "voice": 1,
     "cucumber": 5,
     "biceps": 1,
@@ -462,6 +463,11 @@
       "title": "A Man",
       "start_ts": 1656719035,
       "youtube_archive_id": "zca1A65iKog"
+    },
+    "a_man_and_bird_lushes_stream": {
+      "title": "A Man And Bird Lushes Stream",
+      "start_ts": 1630285652,
+      "youtube_archive_id": "01ee41S46SE"
     }
   },
   "messages": [
@@ -4978,6 +4984,16 @@
       "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
       "commands": [
         "spose"
+      ]
+    },
+    {
+      "ts": 1630286600,
+      "username": "@DylanMania2K24",
+      "platform": "youtube",
+      "stream_id": "a_man_and_bird_lushes_stream",
+      "message": "That\u2019s a good looking bird\u2026\u2026RICH PUT THAT GOOD LOOKING BIRD BACK ON THE TABLE:face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear:",
+      "commands": [
+        "fear"
       ]
     },
     {
