@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101151,
+  "updated_ts": 1782101159,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -447,7 +447,8 @@
     "melonie_mac_goes_full_mask_off_pt2_road_to_1000_members",
     "melonie_mac_goes_full_mask_off_road_to_1000_members",
     "melonie_mac_responded",
-    "men"
+    "men",
+    "men_and_food_road_to_1000_members"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7585,6 +7586,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.85,
       "avg_active_chatters": 44.72
+    },
+    "men_and_food_road_to_1000_members": {
+      "stream_id": "men_and_food_road_to_1000_members",
+      "title": "Men And Food (Road To 1000 Members)",
+      "start_ts": 1685661099,
+      "end_ts": 1685672028,
+      "duration_sec": 10929,
+      "youtube_archive_id": "E-ZVBLJd8OM",
+      "source_platform": "youtube",
+      "total_donations_usd": 356.66,
+      "donation_count": 67,
+      "donations_per_min": 1.9581,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.32,
+      "avg_active_chatters": 26.79
     }
   }
 }
