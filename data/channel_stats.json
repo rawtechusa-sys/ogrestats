@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096158,
+  "updated_ts": 1782096218,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -94,7 +94,8 @@
     "a_quick_ask_me_anything_stream_power_wash_simulator",
     "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
     "a_quick_stream",
-    "a_quick_thank_you_and_boxing_update"
+    "a_quick_thank_you_and_boxing_update",
+    "a_random_short_man_stream_with_special_guest_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1584,6 +1585,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.85,
       "avg_active_chatters": 38.08
+    },
+    "a_random_short_man_stream_with_special_guest_birds": {
+      "stream_id": "a_random_short_man_stream_with_special_guest_birds",
+      "title": "A Random, Short Man-Stream (With Special Guest: Birds)",
+      "start_ts": 1653788907,
+      "end_ts": 1653795865,
+      "duration_sec": 6958,
+      "youtube_archive_id": "oapMYYTc2_E",
+      "source_platform": "youtube",
+      "total_donations_usd": 290.78,
+      "donation_count": 60,
+      "donations_per_min": 2.5074,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.56,
+      "avg_active_chatters": 30.36
     }
   }
 }
