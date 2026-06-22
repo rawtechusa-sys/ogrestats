@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100729,
+  "updated_ts": 1782100737,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -388,7 +388,8 @@
     "lets_argue_about_nintendo",
     "lets_be_disappointed_by_the_nintendo_direct_together",
     "lets_chat",
-    "lets_chat_plus_birds"
+    "lets_chat_plus_birds",
+    "lets_discover_def_noodles_together"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6582,6 +6583,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.94,
       "avg_active_chatters": 48.72
+    },
+    "lets_discover_def_noodles_together": {
+      "stream_id": "lets_discover_def_noodles_together",
+      "title": "Let's Discover Def Noodles Together",
+      "start_ts": 1660517163,
+      "end_ts": 1660523413,
+      "duration_sec": 6250,
+      "youtube_archive_id": "dvRoRuZhIvc",
+      "source_platform": "youtube",
+      "total_donations_usd": 890.45,
+      "donation_count": 48,
+      "donations_per_min": 8.5483,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.71,
+      "avg_active_chatters": 32.35
     }
   }
 }
