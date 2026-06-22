@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092545,
+  "updated_ts": 1782092571,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -17,7 +17,8 @@
     "1_million_sub_special_feat_birds",
     "2_birds_and_a_man_live",
     "2_man_mini_marathon_stream_feat_birds",
-    "2_men_live_featmen"
+    "2_men_live_featmen",
+    "2_middle_aged_men_are_livestreaming"
   ],
   "commands": {
     "stan": 27,
@@ -48,15 +49,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 3,
+    "eyes": 4,
     "africa": 1,
-    "face": 9,
+    "face": 10,
     "petersonxhhanson": 1,
     "poo": 1,
     "joy": 7,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 3,
+    "carlos": 4,
     "away": 1,
     "idea": 1,
     "fear": 1,
@@ -83,7 +84,8 @@
     "gta": 1,
     "me": 1,
     "kill": 1,
-    "enough": 1
+    "enough": 1,
+    "disclaimer": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -165,6 +167,11 @@
       "title": "2 Men Live (Feat.Men)",
       "start_ts": 1683590227,
       "youtube_archive_id": "2BdcGbTtMFQ"
+    },
+    "2_middle_aged_men_are_livestreaming": {
+      "title": "2 Middle-Aged Men Are Livestreaming",
+      "start_ts": 1695767435,
+      "youtube_archive_id": "fvA1fmDPvPE"
     }
   },
   "messages": [
@@ -1988,6 +1995,46 @@
       "message": "Local tragedy today, a blind seal in our local aquarium died aged 34. Many of us who grew up around here remember her fondly. Bubbles for Lucy?:seal::red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1695776636,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "2_middle_aged_men_are_livestreaming",
+      "message": "Is Jay coming to the Pok\u00e9mon stream? :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1695773950,
+      "username": "@brian_27",
+      "platform": "youtube",
+      "stream_id": "2_middle_aged_men_are_livestreaming",
+      "message": "What's up Rich and Jay, I'm playing lies of p and I'm 11 hours in and it's awesome. I just wish I had more time to play.:_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1695769072,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "2_middle_aged_men_are_livestreaming",
+      "message": "I need a DSP compilation while spamming intro guy farts :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1695767862,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "2_middle_aged_men_are_livestreaming",
+      "message": "Disclaimer: the Switch port of MK1 was NOT handled by Netherrealm. WB outsourced the Switch port efforts to a developer called Shiver Entertainment.",
+      "commands": [
+        "disclaimer"
       ]
     },
     {
