@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100792,
+  "updated_ts": 1782100799,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -397,7 +397,8 @@
     "lets_discuss_some_important_things_road_to_1000_members",
     "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
-    "lets_discuss_the_steam_deck"
+    "lets_discuss_the_steam_deck",
+    "lets_discuss_xbox_and_activision"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6735,6 +6736,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.06,
       "avg_active_chatters": 42.2
+    },
+    "lets_discuss_xbox_and_activision": {
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "title": "Let's Discuss Xbox And Activision",
+      "start_ts": 1642555954,
+      "end_ts": 1642563314,
+      "duration_sec": 7360,
+      "youtube_archive_id": "xwiMObajnyA",
+      "source_platform": "youtube",
+      "total_donations_usd": 480.24,
+      "donation_count": 128,
+      "donations_per_min": 3.915,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.99,
+      "avg_active_chatters": 56.89
     }
   }
 }
