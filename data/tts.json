@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098687,
+  "updated_ts": 1782098695,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -143,7 +143,8 @@
     "answering_questions_while_i_stare_at_birds",
     "antelope_hill_publishing_and_the_quartering",
     "ask_a_man_random_things_while_you_stare_at_birds",
-    "ask_me_anything"
+    "ask_me_anything",
+    "ask_me_anything_992019"
   ],
   "commands": {
     "stan": 27,
@@ -176,7 +177,7 @@
     "turkey": 5,
     "eyes": 31,
     "africa": 1,
-    "face": 113,
+    "face": 115,
     "petersonxhhanson": 1,
     "poo": 6,
     "joy": 88,
@@ -1091,6 +1092,11 @@
       "title": "Ask Me Anything!",
       "start_ts": 1527119093,
       "youtube_archive_id": "EA05yEUZZ2w"
+    },
+    "ask_me_anything_992019": {
+      "title": "Ask Me Anything 9/9/2019",
+      "start_ts": 1568309077,
+      "youtube_archive_id": "UE275lqmB_k"
     }
   },
   "messages": [
@@ -10106,6 +10112,26 @@
       "message": "Just wanted to say congrats on the weight loss! Looking a lot better these days dude! Very inspiring and amazing! :grinning_face_with_big_eyes:",
       "commands": [
         "eyes"
+      ]
+    },
+    {
+      "ts": 1568310904,
+      "username": "@Joe--",
+      "platform": "youtube",
+      "stream_id": "ask_me_anything_992019",
+      "message": "game \"Control\" is like ATT building You'll like :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1568310175,
+      "username": "@Joe--",
+      "platform": "youtube",
+      "stream_id": "ask_me_anything_992019",
+      "message": "i don't think you support spying.It happens a lot by many actors just means we should try to stop/limit it. Also I didn't know about that building :astonished_face:",
+      "commands": [
+        "face"
       ]
     }
   ]
