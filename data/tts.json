@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099438,
+  "updated_ts": 1782099446,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -235,7 +235,8 @@
     "come_stream_with_a_man",
     "come_talk_to_a_man_feat_birds",
     "come_talk_with_liana_k_and_i_about_video_games",
-    "cringing_at_the_avgn_movie"
+    "cringing_at_the_avgn_movie",
+    "dad_had_some_ipas_come_ask_questions"
   ],
   "commands": {
     "stan": 27,
@@ -290,7 +291,7 @@
     "cake": 7,
     "d": 2,
     "halo": 3,
-    "hand": 17,
+    "hand": 18,
     "popper": 5,
     "straw": 1,
     "glasses": 2,
@@ -550,7 +551,10 @@
     "talk": 1,
     "wokeism": 1,
     "burnell": 1,
-    "victim": 1
+    "victim": 1,
+    "reminder": 1,
+    "sbmm": 1,
+    "currently": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1722,6 +1726,11 @@
       "title": "Cringing At The AVGN Movie",
       "start_ts": 1702253015,
       "youtube_archive_id": "G8q7Y12ewSs"
+    },
+    "dad_had_some_ipas_come_ask_questions": {
+      "title": "Dad Had Some IPAs. Come Ask Questions!",
+      "start_ts": 1626913217,
+      "youtube_archive_id": "0CFQO6lzWY0"
     }
   },
   "messages": [
@@ -15172,6 +15181,37 @@
       "message": "BREAKING: Filene's under fire after allegations emerge of an employee hopped up on angel dust slapped asses whilst screaming \"DICKERS! DICK! DICK!\"",
       "commands": [
         "breaking"
+      ]
+    },
+    {
+      "ts": 1626917587,
+      "username": "@Legalgodzilla",
+      "platform": "youtube",
+      "stream_id": "dad_had_some_ipas_come_ask_questions",
+      "message": "Which company is going down the worst path currently: EA, Ubisoft, Nintendo, or Sony? (I\u2019m leaving Microsoft out since they\u2019ve been on it lately)",
+      "commands": [
+        "currently"
+      ]
+    },
+    {
+      "ts": 1626917497,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "dad_had_some_ipas_come_ask_questions",
+      "message": "SBMM: Skilled based matchmaking",
+      "commands": [
+        "sbmm"
+      ]
+    },
+    {
+      "ts": 1626916150,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "dad_had_some_ipas_come_ask_questions",
+      "message": "Hello fellow gamers. I'm a bit late tonight, but here's your daily reminder: Amogus Keanu Reeves Chungus Wholesome 100. Amogus Chungus out :victory_hand::smiling_face_with_sunglasses::ok_hand:",
+      "commands": [
+        "reminder",
+        "hand"
       ]
     },
     {
