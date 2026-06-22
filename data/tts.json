@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098822,
+  "updated_ts": 1782098830,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -160,7 +160,8 @@
     "bird_and_man_mayhem_live_chris_chan",
     "bird_love_live_dating_nightmares",
     "birds_a_man_and_seltzer",
-    "birds_and_a_man_feat_birds"
+    "birds_and_a_man_feat_birds",
+    "birds_and_men_live"
   ],
   "commands": {
     "stan": 27,
@@ -191,9 +192,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 34,
+    "eyes": 35,
     "africa": 1,
-    "face": 128,
+    "face": 129,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 104,
@@ -356,7 +357,7 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 7,
+    "notes": 8,
     "wars": 1,
     "points": 3,
     "wastebasket": 1,
@@ -416,7 +417,8 @@
     "pov": 1,
     "circle": 2,
     "bar": 1,
-    "cells": 1
+    "cells": 1,
+    "tv": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1213,6 +1215,11 @@
       "title": "Birds and A Man (Feat. Birds)",
       "start_ts": 1678239544,
       "youtube_archive_id": "vIGprPDkOrk"
+    },
+    "birds_and_men_live": {
+      "title": "Birds And Men LIVE",
+      "start_ts": 1648258584,
+      "youtube_archive_id": "KDa9ucEVz_c"
     }
   },
   "messages": [
@@ -8558,6 +8565,37 @@
       "commands": [
         "hole",
         "chicken"
+      ]
+    },
+    {
+      "ts": 1648262793,
+      "username": "@Narucho433",
+      "platform": "youtube",
+      "stream_id": "birds_and_men_live",
+      "message": ":musical_notes:\"Genesis does! You can't do this on Nintendo! Genesis Does!\":musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1648260058,
+      "username": "@kelnaress",
+      "platform": "youtube",
+      "stream_id": "birds_and_men_live",
+      "message": ":grinning_face: hey funny man, do something funny :grinning_face_with_big_eyes:",
+      "commands": [
+        "face",
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1648259801,
+      "username": "@tonyhamilton7785",
+      "platform": "youtube",
+      "stream_id": "birds_and_men_live",
+      "message": "Quantum TV: That's not me, it's a deep fake..",
+      "commands": [
+        "tv"
       ]
     },
     {
