@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095564,
+  "updated_ts": 1782095621,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -84,7 +84,8 @@
     "a_middle_aged_man_surrounded_by_poultry",
     "a_middle_aged_man_surrounded_by_poultry_feat_birds",
     "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
-    "a_new_bird_approaches"
+    "a_new_bird_approaches",
+    "a_philtacular_man_sunday"
   ],
   "commands": {
     "stan": 27,
@@ -133,7 +134,7 @@
     "tongue": 2,
     "heart": 30,
     "shorts": 1,
-    "laughing": 25,
+    "laughing": 26,
     "news": 5,
     "chicken": 11,
     "cake": 1,
@@ -158,7 +159,7 @@
     "fire": 4,
     "kendal": 1,
     "up": 9,
-    "note": 1,
+    "note": 2,
     "eyebrow": 1,
     "facepalming": 2,
     "shrugging": 1,
@@ -189,7 +190,7 @@
     "take": 1,
     "states": 1,
     "tiger": 1,
-    "reviewrodneykingusa": 1,
+    "reviewrodneykingusa": 2,
     "reviewtoddhowardusa": 1,
     "coco": 1,
     "board": 1,
@@ -259,7 +260,8 @@
     "hearts": 1,
     "million": 1,
     "people": 1,
-    "point": 1
+    "point": 1,
+    "superchat": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -676,6 +678,11 @@
       "title": "A New Bird Approaches...",
       "start_ts": 1635640634,
       "youtube_archive_id": "TQ1k1faDphc"
+    },
+    "a_philtacular_man_sunday": {
+      "title": "A Philtacular Man Sunday",
+      "start_ts": 1711318844,
+      "youtube_archive_id": "FHpvySec5-U"
     }
   },
   "messages": [
@@ -2458,6 +2465,46 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1711337233,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_philtacular_man_sunday",
+      "message": "ReviewRodneyKingUSA: Can\u2019t we all just get along?",
+      "commands": [
+        "reviewrodneykingusa"
+      ]
+    },
+    {
+      "ts": 1711326470,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_philtacular_man_sunday",
+      "message": ":musical_note:Petite feet. Feminine step.:musical_note:",
+      "commands": [
+        "note"
+      ]
+    },
+    {
+      "ts": 1711324353,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_philtacular_man_sunday",
+      "message": "Wings superchat: turn on the lights i wanna see the dust on the exercise machine",
+      "commands": [
+        "superchat"
+      ]
+    },
+    {
+      "ts": 1711319338,
+      "username": "@requiem7x132",
+      "platform": "youtube",
+      "stream_id": "a_philtacular_man_sunday",
+      "message": "Did you play Stroke the Horse yet :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
