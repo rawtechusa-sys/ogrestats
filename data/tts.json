@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100072,
+  "updated_ts": 1782100081,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -309,7 +309,8 @@
     "i_have_no_water_so_i_may_as_well_keep_streaming",
     "i_have_no_words_and_im_frustrated",
     "i_have_some_very_important_things_to_discuss",
-    "i_just_went_through_youtube_hell_let_me_explain"
+    "i_just_went_through_youtube_hell_let_me_explain",
+    "i_listened_and_made_changes_wings_of_redemption_doc"
   ],
   "commands": {
     "stan": 27,
@@ -345,7 +346,7 @@
     "face": 289,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 213,
+    "joy": 214,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -378,8 +379,8 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 28,
-    "peach": 7,
+    "rooster": 29,
+    "peach": 8,
     "fire": 18,
     "kendal": 1,
     "up": 28,
@@ -397,7 +398,7 @@
     "dog": 4,
     "is": 6,
     "spose": 1,
-    "sunglasses": 15,
+    "sunglasses": 16,
     "kiss": 20,
     "earlier": 1,
     "ghost": 1,
@@ -707,7 +708,8 @@
     "importantquestion": 1,
     "hulk": 1,
     "qvc": 1,
-    "grandma": 1
+    "grandma": 1,
+    "rule": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2249,6 +2251,11 @@
       "title": "I Just Went Through YouTube Hell (Let Me Explain)",
       "start_ts": 1665368620,
       "youtube_archive_id": "LVvfFB9QTL4"
+    },
+    "i_listened_and_made_changes_wings_of_redemption_doc": {
+      "title": "I Listened, And Made Changes (Wings of Redemption Doc)",
+      "start_ts": 1694908726,
+      "youtube_archive_id": "mUrtrGlJLQg"
     }
   },
   "messages": [
@@ -7736,6 +7743,47 @@
       "message": ":thumbs_up: keep it up big guy been watching for 6+ years",
       "commands": [
         "up"
+      ]
+    },
+    {
+      "ts": 1694922100,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "i_listened_and_made_changes_wings_of_redemption_doc",
+      "message": "It was also the same CEO that claimed that Multiplayer games are the future and that Single-player games are no longer profitable or enjoyable\u2026:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1694917078,
+      "username": "@sammysstopmotionoas1996",
+      "platform": "youtube",
+      "stream_id": "i_listened_and_made_changes_wings_of_redemption_doc",
+      "message": "New Rule: right wingers need to stop calling people who disagree with them \"EDP445's\" if you know what I mean.",
+      "commands": [
+        "rule"
+      ]
+    },
+    {
+      "ts": 1694910905,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "i_listened_and_made_changes_wings_of_redemption_doc",
+      "message": "Here\u2019s $2 for being awesome. :smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1694909566,
+      "username": "@RealGhostbuster",
+      "platform": "youtube",
+      "stream_id": "i_listened_and_made_changes_wings_of_redemption_doc",
+      "message": "Rich I love your amazing man :peach: and big :rooster:",
+      "commands": [
+        "peach",
+        "rooster"
       ]
     },
     {
