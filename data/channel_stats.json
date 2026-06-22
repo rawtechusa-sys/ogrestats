@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102280,
+  "updated_ts": 1782102285,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -614,7 +614,8 @@
     "streaming_till_2_am_featuring_birds",
     "streaming_until_2_am_road_to_1000_members",
     "streaming_until_3_am_chris_hansen_edp_445",
-    "stuttering_craig_is_a_man_monetizethehate"
+    "stuttering_craig_is_a_man_monetizethehate",
+    "suffering_through_kingdom_hearts_cutscenes"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10424,6 +10425,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.66,
       "avg_active_chatters": 18.58
+    },
+    "suffering_through_kingdom_hearts_cutscenes": {
+      "stream_id": "suffering_through_kingdom_hearts_cutscenes",
+      "title": "Suffering Through Kingdom Hearts Cutscenes",
+      "start_ts": 1659138842,
+      "end_ts": 1659147361,
+      "duration_sec": 8519,
+      "youtube_archive_id": "C147f9eyCSw",
+      "source_platform": "youtube",
+      "total_donations_usd": 309.3,
+      "donation_count": 82,
+      "donations_per_min": 2.1784,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.97,
+      "avg_active_chatters": 30.62
     }
   }
 }
