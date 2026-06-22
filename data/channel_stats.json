@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095222,
+  "updated_ts": 1782095278,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -78,7 +78,8 @@
     "a_middle_aged_man_plays_halo_infinite",
     "a_middle_aged_man_plays_more_wii_u_launch_games",
     "a_middle_aged_man_plays_video_games_with_birds",
-    "a_middle_aged_man_probably_beats_elden_ring_feat_birds"
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
+    "a_middle_aged_man_reacks"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1312,6 +1313,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.12,
       "avg_active_chatters": 26.35
+    },
+    "a_middle_aged_man_reacks": {
+      "stream_id": "a_middle_aged_man_reacks",
+      "title": "A Middle Aged Man \"Reacks\"",
+      "start_ts": 1704662304,
+      "end_ts": 1704671399,
+      "duration_sec": 9095,
+      "youtube_archive_id": "yPO8lMZlWGs",
+      "source_platform": "youtube",
+      "total_donations_usd": 178.86,
+      "donation_count": 52,
+      "donations_per_min": 1.1799,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.22,
+      "avg_active_chatters": 42.54
     }
   }
 }
