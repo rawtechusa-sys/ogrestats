@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102682,
+  "updated_ts": 1782102692,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -685,7 +685,8 @@
     "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2",
     "the_tickling_continues",
     "the_tommy_tallarico_intellivision_amico_files",
-    "thekarening_might_be_joining_me"
+    "thekarening_might_be_joining_me",
+    "thequartering_is_coming_on_in_20_minutes"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11631,6 +11632,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 21.84,
       "avg_active_chatters": 64.35
+    },
+    "thequartering_is_coming_on_in_20_minutes": {
+      "stream_id": "thequartering_is_coming_on_in_20_minutes",
+      "title": "TheQuartering Is Coming On In 20 Minutes!",
+      "start_ts": 1657500741,
+      "end_ts": 1657514205,
+      "duration_sec": 13464,
+      "youtube_archive_id": "_zXTfgSazh4",
+      "source_platform": "youtube",
+      "total_donations_usd": 367.67,
+      "donation_count": 102,
+      "donations_per_min": 1.6385,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.63,
+      "avg_active_chatters": 42.15
     }
   }
 }
