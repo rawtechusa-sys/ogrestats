@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100894,
+  "updated_ts": 1782100902,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -411,7 +411,8 @@
     "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
     "lets_watch_becky_screw_me_over",
     "lets_watch_jims_sterlings_elden_ring_video",
-    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind"
+    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
+    "listen"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6973,6 +6974,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.5,
       "avg_active_chatters": 40.72
+    },
+    "listen": {
+      "stream_id": "listen",
+      "title": "Listen...",
+      "start_ts": 1690928875,
+      "end_ts": 1690941749,
+      "duration_sec": 12874,
+      "youtube_archive_id": "kFoa5G9QUN0",
+      "source_platform": "youtube",
+      "total_donations_usd": 302.11,
+      "donation_count": 72,
+      "donations_per_min": 1.408,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.92,
+      "avg_active_chatters": 40.83
     }
   }
 }
