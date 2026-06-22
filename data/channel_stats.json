@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101731,
+  "updated_ts": 1782101738,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -525,7 +525,8 @@
     "phils_miraculous_man_cheeks",
     "playing_bloodborne_i_think",
     "playing_castlevania_with_a_fat_old_man",
-    "playing_doom_eternal_on_the_rog_ally"
+    "playing_doom_eternal_on_the_rog_ally",
+    "playing_elden_ring_with_my_new_magical_nipple_shield"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8911,6 +8912,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 7.39,
       "avg_active_chatters": 18.3
+    },
+    "playing_elden_ring_with_my_new_magical_nipple_shield": {
+      "stream_id": "playing_elden_ring_with_my_new_magical_nipple_shield",
+      "title": "Playing Elden Ring With My New Magical Nipple Shield",
+      "start_ts": 1649372541,
+      "end_ts": 1649381792,
+      "duration_sec": 9251,
+      "youtube_archive_id": "6TeTGfj9Tl4",
+      "source_platform": "youtube",
+      "total_donations_usd": 232.85,
+      "donation_count": 55,
+      "donations_per_min": 1.5102,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.43,
+      "avg_active_chatters": 26.5
     }
   }
 }
