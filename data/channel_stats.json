@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100213,
+  "updated_ts": 1782100223,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -326,7 +326,8 @@
     "im_buzzed_off_caffeine_come_chat_with_me",
     "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
     "im_just_a_little_stoned_right_now",
-    "im_just_a_man_on_the_damn_internet"
+    "im_just_a_man_on_the_damn_internet",
+    "im_just_a_man_thats_all"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5528,6 +5529,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.31,
       "avg_active_chatters": 36.21
+    },
+    "im_just_a_man_thats_all": {
+      "stream_id": "im_just_a_man_thats_all",
+      "title": "I'm Just A Man. That's All",
+      "start_ts": 1681342258,
+      "end_ts": 1681348064,
+      "duration_sec": 5806,
+      "youtube_archive_id": "YeRN-j-vnL4",
+      "source_platform": "youtube",
+      "total_donations_usd": 171.16,
+      "donation_count": 42,
+      "donations_per_min": 1.7688,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.4,
+      "avg_active_chatters": 29.27
     }
   }
 }
