@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098968,
+  "updated_ts": 1782098976,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -178,7 +178,8 @@
     "certified_man_stream",
     "chat_game_night",
     "chatting_and_karens",
-    "chatting_and_streaming"
+    "chatting_and_streaming",
+    "chatting_watching_chris_chan_documentary_gamerfrommars"
   ],
   "commands": {
     "stan": 27,
@@ -211,7 +212,7 @@
     "turkey": 5,
     "eyes": 43,
     "africa": 1,
-    "face": 145,
+    "face": 147,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 113,
@@ -247,7 +248,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 18,
+    "rooster": 19,
     "peach": 3,
     "fire": 11,
     "kendal": 1,
@@ -328,7 +329,7 @@
     "cap": 1,
     "adventures": 1,
     "head": 2,
-    "like": 2,
+    "like": 3,
     "memory": 1,
     "fight": 1,
     "leaf": 1,
@@ -1338,6 +1339,11 @@
       "title": "Chatting And Streaming",
       "start_ts": 1556062644,
       "youtube_archive_id": "STU968Q47zw"
+    },
+    "chatting_watching_chris_chan_documentary_gamerfrommars": {
+      "title": "Chatting, Watching Chris Chan Documentary (GamerFromMars)",
+      "start_ts": 1648421539,
+      "youtube_archive_id": "LKXcGAJ0_Z0"
     }
   },
   "messages": [
@@ -9534,6 +9540,46 @@
       "commands": [
         "hole",
         "chicken"
+      ]
+    },
+    {
+      "ts": 1648431996,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "chatting_watching_chris_chan_documentary_gamerfrommars",
+      "message": "It\u2019s been a minute since I have watched by favorite, hairy chested; coned nipped bald man & the two throbbing, thick birds :rooster::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1648431422,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "chatting_watching_chris_chan_documentary_gamerfrommars",
+      "message": "Limewire mishaps be like: I did not of sexual relations with that woman but I however went to ifreeclub.com. -Clinton Impersonator (actual ad)",
+      "commands": [
+        "like"
+      ]
+    },
+    {
+      "ts": 1648427581,
+      "username": "@phillipangolemmo3556",
+      "platform": "youtube",
+      "stream_id": "chatting_watching_chris_chan_documentary_gamerfrommars",
+      "message": "Rich, am working 3 days a row in the ER, starting tomorrow, 12 hour shifts, pls giv me strength :tired_face::tired_face::tired_face::tired_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1648422127,
+      "username": "@MoeMoon",
+      "platform": "youtube",
+      "stream_id": "chatting_watching_chris_chan_documentary_gamerfrommars",
+      "message": "Berate me for liking TheQuarterings opinions. :face_with_spiral_eyes::nerd_face:",
+      "commands": [
+        "face"
       ]
     },
     {
