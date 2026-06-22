@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100124,
+  "updated_ts": 1782100133,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -315,7 +315,8 @@
     "i_wasnt_gonna_stream_but_here_i_am",
     "i_won_but_my_pc_is_dying",
     "idubbz_video_going_shopping_to_become_a_vtuber",
-    "im_a_baked_man_come_discuss_tech_with_your_dad"
+    "im_a_baked_man_come_discuss_tech_with_your_dad",
+    "im_a_bully_plus_i_react_to_large_muscular_men"
   ],
   "commands": {
     "stan": 27,
@@ -348,15 +349,15 @@
     "turkey": 7,
     "eyes": 77,
     "africa": 1,
-    "face": 293,
+    "face": 294,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 216,
+    "joy": 219,
     "gameboy": 1,
     "chick": 1,
     "carlos": 26,
     "away": 5,
-    "idea": 3,
+    "idea": 4,
     "fear": 3,
     "voice": 4,
     "cucumber": 36,
@@ -364,7 +365,7 @@
     "tongue": 6,
     "heart": 97,
     "shorts": 1,
-    "laughing": 116,
+    "laughing": 117,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -491,7 +492,7 @@
     "million": 1,
     "people": 1,
     "point": 2,
-    "superchat": 2,
+    "superchat": 3,
     "reviewquentintartinousa": 1,
     "fact": 3,
     "both": 1,
@@ -527,7 +528,7 @@
     "eagle": 5,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
-    "say": 2,
+    "say": 3,
     "officer": 1,
     "bread": 1,
     "bomb": 1,
@@ -720,7 +721,8 @@
     "sign": 1,
     "dems": 1,
     "right": 1,
-    "centrist": 1
+    "centrist": 1,
+    "club": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2292,6 +2294,11 @@
       "title": "I'm A Baked Man. Come DIscuss Tech With Your Dad...",
       "start_ts": 1626739570,
       "youtube_archive_id": "-hnNodmuNp4"
+    },
+    "im_a_bully_plus_i_react_to_large_muscular_men": {
+      "title": "I'm A \"Bully\" Plus I React To Large, Muscular Men",
+      "start_ts": 1668472739,
+      "youtube_archive_id": "jsZ9e3ZQaTk"
     }
   },
   "messages": [
@@ -12072,6 +12079,78 @@
       "message": "they just dont make games like heterosexual rebirth anymore. can't beat the classics :folded_hands: also really liked the fake ps5 vid",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1668480518,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "dude why are all these from where I live :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1668476751,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "Rumor has it GOP congressmen fantasize about AOC:winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1668475475,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "Google Bjornsson with wife really quick :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1668475406,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "Milestone Idea: Rich taking an ice bath",
+      "commands": [
+        "idea"
+      ]
+    },
+    {
+      "ts": 1668474596,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "a wings superchat: fat boys club: hey wings i noticed you're gaining weight again for 5 more pounds ill let you have a membership again",
+      "commands": [
+        "superchat",
+        "club"
+      ]
+    },
+    {
+      "ts": 1668474129,
+      "username": "@Kaneda2K31",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "You going to watch the Channel 5 strongman video? Pa O'dwyer is going to have you rolling:rolling_on_the_floor_laughing: Also their heteronormative (closeted?) male groupies \ud83e\udd26\ud83c\udffe\u200d\u2642",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1668473536,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "im_a_bully_plus_i_react_to_large_muscular_men",
+      "message": "Turned 30 today! Now I can say: \u201cwell back in my 20s\u201d :face_with_tears_of_joy: give me a fart and then relax ur anus",
+      "commands": [
+        "say",
+        "joy"
       ]
     },
     {
