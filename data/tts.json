@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096834,
+  "updated_ts": 1782096898,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -105,7 +105,8 @@
     "a_surprise_stream",
     "a_technical_test_man_stream",
     "a_thanksgiving_manbird_stream",
-    "a_thanksgving_2_man_stream_feat_birds_and_men"
+    "a_thanksgving_2_man_stream_feat_birds_and_men",
+    "a_thanksgving_2_man_stream_pt2_feat_birds_and_men"
   ],
   "commands": {
     "stan": 27,
@@ -131,17 +132,17 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 8,
+    "rich": 9,
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 4,
+    "turkey": 5,
     "eyes": 27,
     "africa": 1,
     "face": 90,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 67,
+    "joy": 72,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -152,7 +153,7 @@
     "cucumber": 10,
     "biceps": 3,
     "tongue": 3,
-    "heart": 36,
+    "heart": 37,
     "shorts": 1,
     "laughing": 38,
     "news": 7,
@@ -207,7 +208,7 @@
     "skull": 4,
     "eggplant": 1,
     "bite": 1,
-    "take": 1,
+    "take": 2,
     "states": 1,
     "tiger": 1,
     "reviewrodneykingusa": 2,
@@ -300,7 +301,8 @@
     "wave": 1,
     "mugs": 1,
     "ties": 1,
-    "this": 1
+    "this": 1,
+    "notes": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -822,6 +824,11 @@
       "title": "A Thanksgving 2-Man Stream (Feat. Birds And Men)",
       "start_ts": 1700702454,
       "youtube_archive_id": "z9VVnrFp3ao"
+    },
+    "a_thanksgving_2_man_stream_pt2_feat_birds_and_men": {
+      "title": "A Thanksgving 2-Man Stream Pt.2  (Feat. Birds And Men)",
+      "start_ts": 1700789980,
+      "youtube_archive_id": "pu1LEhkdK0o"
     }
   },
   "messages": [
@@ -3569,6 +3576,106 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1700806392,
+      "username": "@connor1187",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "I\u2019m too high fore this :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700806385,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "Video idea, order from all those grifters with coffee companies (like Crigler coffee) and review it. I\u2019m sure you can taste their bitterness in it ! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700803024,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "Loop the clip And make a song about boogie thrusting for your intro. There\u2019s your next project ! :grinning_face_with_sweat::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700802327,
+      "username": "@ToddProvolone",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": ":musical_notes: i wanna be where everyone knows I came :musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1700801965,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "controversial take: Boogie Just made DSP look good. even tho Phil has no self awareness, he wouldnt spend money on hookers and go hard on crypto",
+      "commands": [
+        "take"
+      ]
+    },
+    {
+      "ts": 1700794748,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "Rich: Did your hear that JerryRigEverything is suing Casetify for blatantly ripping off the Teardown Case Designs that he and DBrand collaborated on?",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1700794666,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "This guy is another level of dorkiness. And some people IRL call ME dorky. Also big ups to Jessie! I\u2019ll shut up about her now. :face_with_tears_of_joy: Hoot Wireless 5 times",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700793929,
+      "username": "@astrodome1994",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "Rich, did you ever watch the Turkey Drop scene from that 70's sitcom \"WKRP\"? It's such a funny scene that's perfect for this time of year! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1700791106,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "I'm alive, I love you all, procedure tomorrow to drain fluid from my pancreas and lungs, woo! also possible tube fed also. FML. love you guys:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1700790556,
+      "username": "@brian_27",
+      "platform": "youtube",
+      "stream_id": "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
+      "message": "Happy bird day and we need a looking for steve stream :turkey:",
+      "commands": [
+        "turkey"
       ]
     },
     {
