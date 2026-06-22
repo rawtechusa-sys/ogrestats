@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098879,
+  "updated_ts": 1782098887,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -167,7 +167,8 @@
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
     "birthday_bird_and_man_stream",
     "birthday_marathon_man_stream",
-    "boogie2988_is_a_thief_and_a_liar"
+    "boogie2988_is_a_thief_and_a_liar",
+    "boy_do_we_need_to_talk"
   ],
   "commands": {
     "stan": 27,
@@ -350,7 +351,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 4,
+    "sweat": 5,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -1264,6 +1265,11 @@
       "title": "Boogie2988 Is A Thief And A Liar",
       "start_ts": 1720656668,
       "youtube_archive_id": "l1HVpTGsUk0"
+    },
+    "boy_do_we_need_to_talk": {
+      "title": "Boy Do We Need TO Talk",
+      "start_ts": 1714270940,
+      "youtube_archive_id": "VB6aGMXrZW4"
     }
   },
   "messages": [
@@ -3238,6 +3244,16 @@
       "message": "I LOVE YOU :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1714274861,
+      "username": "@TimboSlice083",
+      "platform": "youtube",
+      "stream_id": "boy_do_we_need_to_talk",
+      "message": "Picked up a Stream Deck MK.2. I put some sounds on it and now feel like RTU. I just play the sounds to myself though. :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
       ]
     },
     {
