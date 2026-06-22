@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095621,
+  "updated_ts": 1782095680,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -85,7 +85,8 @@
     "a_middle_aged_man_surrounded_by_poultry_feat_birds",
     "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
     "a_new_bird_approaches",
-    "a_philtacular_man_sunday"
+    "a_philtacular_man_sunday",
+    "a_plain_old_normal_man_stream_feat_men"
   ],
   "commands": {
     "stan": 27,
@@ -111,17 +112,17 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 5,
+    "rich": 6,
     "pill": 1,
     "device": 1,
     "idevice": 1,
     "turkey": 4,
     "eyes": 20,
     "africa": 1,
-    "face": 69,
+    "face": 73,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 51,
+    "joy": 52,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -161,7 +162,7 @@
     "up": 9,
     "note": 2,
     "eyebrow": 1,
-    "facepalming": 2,
+    "facepalming": 3,
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
@@ -261,7 +262,10 @@
     "million": 1,
     "people": 1,
     "point": 1,
-    "superchat": 1
+    "superchat": 1,
+    "reviewquentintartinousa": 1,
+    "fact": 1,
+    "both": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -683,6 +687,11 @@
       "title": "A Philtacular Man Sunday",
       "start_ts": 1711318844,
       "youtube_archive_id": "FHpvySec5-U"
+    },
+    "a_plain_old_normal_man_stream_feat_men": {
+      "title": "A Plain Old Normal Man Stream (Feat. Men)",
+      "start_ts": 1698367645,
+      "youtube_archive_id": "LWufjuVjt7A"
     }
   },
   "messages": [
@@ -3130,6 +3139,88 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1698380221,
+      "username": "@sauerballz",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Wassup Rich. Found out the due of my kid and its May 1st :man_facepalming:",
+      "commands": [
+        "facepalming"
+      ]
+    },
+    {
+      "ts": 1698377687,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Speaking of Sniper, I posed a Superchat on the John Campea show about the latest controversy, and it\u2019s now an independent video! :anguished_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698375044,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Jay, Rich: Here's a throwback for you both: Do you remember the gaming fail that was the Nokia Gage? Pepperidge Farm remembers. :face_with_tears_of_joy:",
+      "commands": [
+        "rich",
+        "both",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1698374332,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Fun fact: Dave Mirra actually sued Acclaim for $20 million for BMX XXX because they initially refused to remove his name from the branding. #Fail",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1698371677,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Talk about bread and butter :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698371028,
+      "username": "@monsterman121",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "rich just sell your farts you make money. ps keep up the good work.:saluting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698368533,
+      "username": "@mastersh0tgun664",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "Rich and Jay you guys are on my home speakers right now can you spam intro guy farts so I can turn it up to shut my neighbors up :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1698368243,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_plain_old_normal_man_stream_feat_men",
+      "message": "ReviewQuentinTartinoUSA: What do they call a chicken in France? Sandwich au poulet",
+      "commands": [
+        "reviewquentintartinousa"
       ]
     },
     {
