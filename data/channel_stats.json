@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101636,
+  "updated_ts": 1782101643,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -512,7 +512,8 @@
     "philip_burnell_feat_tickled_television_incorporated",
     "philip_burnell_is_a_lover_of_horses",
     "philip_burnell_is_a_man",
-    "philip_burnell_is_a_man_partwhatever"
+    "philip_burnell_is_a_man_partwhatever",
+    "philip_burnell_is_a_man_plus_newegg_drama"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8690,6 +8691,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.96,
       "avg_active_chatters": 29.1
+    },
+    "philip_burnell_is_a_man_plus_newegg_drama": {
+      "stream_id": "philip_burnell_is_a_man_plus_newegg_drama",
+      "title": "Philip Burnell Is A Man (Plus Newegg Drama)",
+      "start_ts": 1644972994,
+      "end_ts": 1644980099,
+      "duration_sec": 7105,
+      "youtube_archive_id": "p7EQHmQHyhc",
+      "source_platform": "youtube",
+      "total_donations_usd": 193.79,
+      "donation_count": 48,
+      "donations_per_min": 1.6365,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.0,
+      "avg_active_chatters": 31.63
     }
   }
 }
