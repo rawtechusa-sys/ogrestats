@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102168,
+  "updated_ts": 1782102174,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -596,7 +596,8 @@
     "some_hot_e_begging_action",
     "some_old_school_phil",
     "someordinarygamers_dspgaming_the_completionist_its_insane",
-    "sony_state_of_man_marathon_stream_state_of_play_2022"
+    "sony_state_of_man_marathon_stream_state_of_play_2022",
+    "soulja_boy_just_released_a_horrible_video_game_so_i_play_it"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10118,6 +10119,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.94,
       "avg_active_chatters": 34.28
+    },
+    "soulja_boy_just_released_a_horrible_video_game_so_i_play_it": {
+      "stream_id": "soulja_boy_just_released_a_horrible_video_game_so_i_play_it",
+      "title": "Soulja Boy Just Released A HORRIBLE Video Game (So, I Play It)",
+      "start_ts": 1765396834,
+      "end_ts": 1765397406,
+      "duration_sec": 572,
+      "youtube_archive_id": "AeZMb13ACxM",
+      "source_platform": "youtube",
+      "total_donations_usd": 4.99,
+      "donation_count": 1,
+      "donations_per_min": 0.5234,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 7.1,
+      "avg_active_chatters": 13.1
     }
   }
 }
