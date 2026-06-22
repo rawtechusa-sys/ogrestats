@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099775,
+  "updated_ts": 1782099784,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -275,7 +275,8 @@
     "eating_extremely_spicy_food_and_watching_weird_crap",
     "edp445_looked_for_another_cupcake",
     "edp445_strikes_again_dsp_is_salty_more_anker_drama",
-    "elden_ring_fails_compilation_marathon_eldenring"
+    "elden_ring_fails_compilation_marathon_eldenring",
+    "elon_musk_bought_me_a_bird"
   ],
   "commands": {
     "stan": 27,
@@ -306,12 +307,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 68,
+    "eyes": 69,
     "africa": 1,
-    "face": 249,
+    "face": 250,
     "petersonxhhanson": 1,
     "poo": 15,
-    "joy": 183,
+    "joy": 184,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -458,7 +459,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 6,
+    "sweat": 7,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -2002,6 +2003,11 @@
       "title": "Elden Ring Fails Compilation Marathon #EldenRing",
       "start_ts": 1650911910,
       "youtube_archive_id": "omNOH1S998E"
+    },
+    "elon_musk_bought_me_a_bird": {
+      "title": "Elon Musk Bought Me A Bird",
+      "start_ts": 1653097347,
+      "youtube_archive_id": "JaVO6UKwBuk"
     }
   },
   "messages": [
@@ -12202,6 +12208,46 @@
       "message": "When is the Quantum public shaming :tomato: happening",
       "commands": [
         "tomato"
+      ]
+    },
+    {
+      "ts": 1653102025,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "elon_musk_bought_me_a_bird",
+      "message": "rich you need to clip the scene from me, myself and Irene where the cop has a chicken stick up his hole, it deserves to be on the soundboard :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1653098115,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "elon_musk_bought_me_a_bird",
+      "message": "D pics only work when she asks for one :smirking_face::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1653097884,
+      "username": "@romoto9579",
+      "platform": "youtube",
+      "stream_id": "elon_musk_bought_me_a_bird",
+      "message": "Straight from my hopefully waterproof S22+ :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1653097818,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "elon_musk_bought_me_a_bird",
+      "message": "vox published an article calling depp supporters bots/MRAs/far-right extremists/gamergaters for supporting male abuse victims & the writer locked their twitter acc, journos are vultures :disappointed_face:",
+      "commands": [
+        "face"
       ]
     },
     {
