@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101242,
+  "updated_ts": 1782101249,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -459,7 +459,8 @@
     "middle_aged_men_complain_about_video_games",
     "monday_night_man",
     "more_amico_family_fun",
-    "more_chris_chan_insanity"
+    "more_chris_chan_insanity",
+    "more_chris_chan_insanity_pt2_then_maybe_elden_ring"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7789,6 +7790,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.16,
       "avg_active_chatters": 46.31
+    },
+    "more_chris_chan_insanity_pt2_then_maybe_elden_ring": {
+      "stream_id": "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+      "title": "More Chris Chan Insanity Pt.2 (Then Maybe Elden Ring)",
+      "start_ts": 1649634248,
+      "end_ts": 1649646015,
+      "duration_sec": 11767,
+      "youtube_archive_id": "cuGq70F_qKc",
+      "source_platform": "youtube",
+      "total_donations_usd": 382.83,
+      "donation_count": 73,
+      "donations_per_min": 1.9521,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.23,
+      "avg_active_chatters": 32.6
     }
   }
 }
