@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101832,
+  "updated_ts": 1782101837,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -543,7 +543,8 @@
     "prank_calls_and_other_weirdness",
     "pranks_predators_phil_birds",
     "pulsating_feat_birds",
-    "putting_disgusting_bugs_on_delicious_food"
+    "putting_disgusting_bugs_on_delicious_food",
+    "putting_together_a_new_monitor"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9217,6 +9218,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.6,
       "avg_active_chatters": 26.82
+    },
+    "putting_together_a_new_monitor": {
+      "stream_id": "putting_together_a_new_monitor",
+      "title": "Putting Together A New Monitor",
+      "start_ts": 1738112053,
+      "end_ts": 1738119210,
+      "duration_sec": 7157,
+      "youtube_archive_id": "m1V5ahodevc",
+      "source_platform": "youtube",
+      "total_donations_usd": 329.31,
+      "donation_count": 42,
+      "donations_per_min": 2.7607,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.24,
+      "avg_active_chatters": 30.48
     }
   }
 }
