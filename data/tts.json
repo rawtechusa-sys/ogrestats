@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101544,
+  "updated_ts": 1782101552,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -496,7 +496,8 @@
     "nye_with_a_man_and_birds",
     "obese_man_eats_live_on_stream_come_ask_questions",
     "oh_ice_poseidon",
-    "one_woman_with_two_men_live"
+    "one_woman_with_two_men_live",
+    "peter_popoff_is_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -529,10 +530,10 @@
     "turkey": 10,
     "eyes": 116,
     "africa": 1,
-    "face": 473,
+    "face": 474,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 306,
+    "joy": 309,
     "gameboy": 1,
     "chick": 3,
     "carlos": 39,
@@ -542,7 +543,7 @@
     "voice": 5,
     "cucumber": 54,
     "biceps": 5,
-    "tongue": 10,
+    "tongue": 11,
     "heart": 145,
     "shorts": 2,
     "laughing": 187,
@@ -679,7 +680,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 23,
+    "sweat": 24,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -1026,7 +1027,8 @@
     "characters": 1,
     "bros": 1,
     "light": 1,
-    "jomtron": 1
+    "jomtron": 1,
+    "angel": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3503,6 +3505,11 @@
       "title": "One Woman With Two Men LIVE",
       "start_ts": 1687218891,
       "youtube_archive_id": "WCZHgL5qXc4"
+    },
+    "peter_popoff_is_a_man": {
+      "title": "Peter Popoff Is A Man",
+      "start_ts": 1656531769,
+      "youtube_archive_id": "-vtm1VEThtI"
     }
   },
   "messages": [
@@ -19640,6 +19647,76 @@
       "commands": [
         "fact",
         "aka"
+      ]
+    },
+    {
+      "ts": 1656534638,
+      "username": "@GhostSaucer42",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "Drink the Kool-Aid! Praise the Lord :baby_angel:",
+      "commands": [
+        "angel"
+      ]
+    },
+    {
+      "ts": 1656534389,
+      "username": "@doha5634",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "You should take a look at Pastor Thomas Kearney :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656534222,
+      "username": "@DoctorWasabi",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "Pete would have cured my bone cancer obviously :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656534165,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "I have the power of God flowing in my girlfriend everyday if you know what I mean :winking_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1656533985,
+      "username": "@Project_SLAPP",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "Is this the new Price Is Right? :face_with_tears_of_joy: much love Rich",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1656533195,
+      "username": "@burnin8orable",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "Leviticus forbids gay sex. It also forbids pork. :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1656532540,
+      "username": "@timothymartin1589",
+      "platform": "youtube",
+      "stream_id": "peter_popoff_is_a_man",
+      "message": "PSdirect it was funny I was trying to buy Last of Us Firefly Edition cause I like the steelbook and then it asked if I wanted to be in a queue :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
       ]
     },
     {
