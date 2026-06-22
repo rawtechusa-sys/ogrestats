@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101187,
+  "updated_ts": 1782101194,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -449,7 +449,8 @@
     "men_birds_and_samurai_cop",
     "men_birds_and_samurai_cop_part_deux",
     "men_chatting",
-    "men_discuss_def_noodles_feat_christhenarc"
+    "men_discuss_def_noodles_feat_christhenarc",
+    "men_feat_men"
   ],
   "commands": {
     "stan": 27,
@@ -480,12 +481,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 8,
-    "eyes": 105,
+    "eyes": 106,
     "africa": 1,
-    "face": 422,
+    "face": 424,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 280,
+    "joy": 281,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -3188,6 +3189,11 @@
       "title": "Men Discuss Def Noodles (Feat. ChrisTheNarc)",
       "start_ts": 1661130639,
       "youtube_archive_id": "Kcw1pbDJKq8"
+    },
+    "men_feat_men": {
+      "title": "Men (feat. Men)",
+      "start_ts": 1674699409,
+      "youtube_archive_id": "zDE7_HZlgLw"
     }
   },
   "messages": [
@@ -14594,6 +14600,46 @@
       "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
       "commands": [
         "petersonxhhanson"
+      ]
+    },
+    {
+      "ts": 1674702819,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "men_feat_men",
+      "message": "The Superchat you missed said that disrespecting the disabled makes my blood boil. I don\u2019t mind sending extra money. :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1674702330,
+      "username": "@bigshuu1919",
+      "platform": "youtube",
+      "stream_id": "men_feat_men",
+      "message": "He stared and I farted. HOW DID HE KNOW?! :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1674701832,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "men_feat_men",
+      "message": "Thank goodness you\u2019re streaming again. School keeps me busy at 4 PM. How is everyone? :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1674700664,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "men_feat_men",
+      "message": "When you two streamed you got me through the Pandemic. This brings back happy memories with you guys. Rich and Intro Guy are Legends. Thnx for this! :partying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
