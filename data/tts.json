@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100855,
+  "updated_ts": 1782100862,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -404,7 +404,8 @@
     "lets_laugh_at_crap_crowdfunding_campaigns",
     "lets_laugh_at_qvc",
     "lets_shop_and_then_go_to_war",
-    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound"
+    "lets_shop_for_bugs_for_me_to_eat_and_maybe_earthbound",
+    "lets_talk_about_blizzard_developers_bill_cosby_suite"
   ],
   "commands": {
     "stan": 27,
@@ -440,7 +441,7 @@
     "face": 388,
     "petersonxhhanson": 1,
     "poo": 23,
-    "joy": 262,
+    "joy": 263,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -448,7 +449,7 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 48,
+    "cucumber": 49,
     "biceps": 4,
     "tongue": 7,
     "heart": 124,
@@ -459,7 +460,7 @@
     "cake": 7,
     "d": 4,
     "halo": 4,
-    "hand": 29,
+    "hand": 30,
     "popper": 8,
     "straw": 1,
     "glasses": 2,
@@ -878,7 +879,8 @@
     "constantly": 1,
     "syringe": 1,
     "weapon": 1,
-    "penguin": 1
+    "penguin": 1,
+    "experiment": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2895,6 +2897,11 @@
       "title": "Let's Shop For Bugs For Me To Eat (And Maybe Earthbound)",
       "start_ts": 1663029438,
       "youtube_archive_id": "6eyfPBivxsA"
+    },
+    "lets_talk_about_blizzard_developers_bill_cosby_suite": {
+      "title": "Let's Talk About Blizzard Developers' Bill 'Cosby Suite'",
+      "start_ts": 1627519802,
+      "youtube_archive_id": "1OhL02hqwGE"
     }
   },
   "messages": [
@@ -25526,6 +25533,46 @@
       "message": "I was \"invited\" to play the Halo: Infinite flights",
       "commands": [
         "halo"
+      ]
+    },
+    {
+      "ts": 1627526420,
+      "username": "@DarkspinePony15",
+      "platform": "youtube",
+      "stream_id": "lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "message": "Random aside Rich but here's a thought experiment: do you think we should remove the ability for businesses to formally incorporate (limited to mom & pop shops and partnerships) and also cap their employment?",
+      "commands": [
+        "experiment"
+      ]
+    },
+    {
+      "ts": 1627523634,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "message": "Hi Richie :waving_hand: I got an Omen Laptop 1050 ti 12gb ram for 550 dollars......is that a good deal",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1627520224,
+      "username": "@GMillion2112",
+      "platform": "youtube",
+      "stream_id": "lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "message": "U f**ked that bird to much :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1627520091,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "message": "Greetings hot dad:_RichSmile::_Cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
