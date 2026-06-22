@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092807,
+  "updated_ts": 1782092840,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -26,13 +26,14 @@
     "a_beautiful_man_becomes_more_beautiful_live",
     "a_birdman_family_friendly_love_stream",
     "a_boomer_plays_elden_ring_plus_birds",
-    "a_catfish_is_streaming"
+    "a_catfish_is_streaming",
+    "a_christian_heterosexual_and_tickled_livestream"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
-    "phil": 50,
+    "phil": 52,
     "trump": 30,
     "doom": 3,
     "harman": 12,
@@ -57,12 +58,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 6,
+    "eyes": 7,
     "africa": 1,
-    "face": 15,
+    "face": 18,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 10,
+    "joy": 13,
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
@@ -108,7 +109,11 @@
     "naruto": 1,
     "hands": 1,
     "horns": 1,
-    "crab": 2
+    "crab": 2,
+    "superhero": 1,
+    "legends": 1,
+    "dog": 1,
+    "is": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -235,6 +240,11 @@
       "title": "A Catfish Is Streaming...",
       "start_ts": 1629160169,
       "youtube_archive_id": "oVHXKrN5VIE"
+    },
+    "a_christian_heterosexual_and_tickled_livestream": {
+      "title": "A Christian, Heterosexual And Tickled Livestream",
+      "start_ts": 1693266319,
+      "youtube_archive_id": "YSi6Gx0HjxQ"
     }
   },
   "messages": [
@@ -2118,6 +2128,99 @@
       "message": "Disclaimer: the Switch port of MK1 was NOT handled by Netherrealm. WB outsourced the Switch port efforts to a developer called Shiver Entertainment.",
       "commands": [
         "disclaimer"
+      ]
+    },
+    {
+      "ts": 1693281300,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "Pfft. Like a simple spect of random helixes like a virus would give a shit what you prefer in bed. BTW, my Bird Notebook is coming soon. :beaming_face_with_smiling_eyes: Thank you!",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1693280780,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "rich i think the real question is: are you hard?",
+      "commands": [
+        "is"
+      ]
+    },
+    {
+      "ts": 1693280472,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "Donald Trump mug shot funny AF :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1693280199,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "If you were gay, you\u2019d be the only one on the show so you\u2019d be the token gay by default !:face_with_tears_of_joy::face_with_tears_of_joy: all right, I\u2019ll stop being homophobic now :winking_face:",
+      "commands": [
+        "joy",
+        "face"
+      ]
+    },
+    {
+      "ts": 1693273303,
+      "username": "@Pickmans_Model",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "I would like to teach quantum a lesson with my :hot_dog: maybe then he will own up to his wrong doings and come out of the damn closet already",
+      "commands": [
+        "dog"
+      ]
+    },
+    {
+      "ts": 1693272616,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "That looks like good Canadian kid the Weekend. :hushed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1693269518,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "Pok\u00e9mon Legends: Arceus is not a bad first game. But it IS different from the others because it\u2019s an action RPG. After Elden Ring, you\u2019ll be fine. :slightly_smiling_face:",
+      "commands": [
+        "legends",
+        "face"
+      ]
+    },
+    {
+      "ts": 1693269248,
+      "username": "@brahman_noodles",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "Phil: Why do you I have to do what the audience wants? Also Phil: These developers need to do what the customers want! :face_with_tears_of_joy:",
+      "commands": [
+        "phil",
+        "joy"
+      ]
+    },
+    {
+      "ts": 1693266861,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_christian_heterosexual_and_tickled_livestream",
+      "message": "Just know hero in :superhero: my wife is white hot",
+      "commands": [
+        "superhero"
       ]
     },
     {
