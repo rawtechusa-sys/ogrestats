@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092873,
+  "updated_ts": 1782092907,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -28,7 +28,8 @@
     "a_boomer_plays_elden_ring_plus_birds",
     "a_catfish_is_streaming",
     "a_christian_heterosexual_and_tickled_livestream",
-    "a_christian_straight_man_stream"
+    "a_christian_straight_man_stream",
+    "a_colorful_man"
   ],
   "commands": {
     "stan": 27,
@@ -64,7 +65,7 @@
     "face": 19,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 13,
+    "joy": 14,
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
@@ -75,7 +76,7 @@
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 9,
+    "heart": 13,
     "shorts": 1,
     "laughing": 5,
     "news": 3,
@@ -114,7 +115,13 @@
     "superhero": 1,
     "legends": 1,
     "dog": 1,
-    "is": 1
+    "is": 1,
+    "spose": 1,
+    "sunglasses": 1,
+    "kiss": 1,
+    "earlier": 1,
+    "ghost": 1,
+    "bk": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -251,6 +258,11 @@
       "title": "A Christian, Straight-Man Stream",
       "start_ts": 1688168337,
       "youtube_archive_id": "KGXHa0crL7I"
+    },
+    "a_colorful_man": {
+      "title": "A Colorful Man...",
+      "start_ts": 1632181496,
+      "youtube_archive_id": "jbgvATPuzq0"
     }
   },
   "messages": [
@@ -3142,6 +3154,116 @@
       "message": "Rich your Polo drip lately is phenomenal :fire::fire::fire:",
       "commands": [
         "fire"
+      ]
+    },
+    {
+      "ts": 1632186900,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "BK: its no big deal DSP:*soundboard scream*",
+      "commands": [
+        "bk"
+      ]
+    },
+    {
+      "ts": 1632186117,
+      "username": "@KevinBelmontLuna",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "Would you watch and debunk :ghost: videos, on stream, for next month or the week of Halloween:jack_o_lantern:? just a suggestion if not can I get 5 farts?",
+      "commands": [
+        "ghost"
+      ]
+    },
+    {
+      "ts": 1632185054,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "This is why I'm a Custodian and not in Customer Service. I put my +10 years in Retaraunts. I had my fill. Also, you missed my Super from earlier: Girl I was about to date had Borderline Personality...",
+      "commands": [
+        "earlier"
+      ]
+    },
+    {
+      "ts": 1632184833,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "MClassic on PSTV, makes psp games look the best that they ever will. Killzone Mercenaries went from PS Vita game to Full PS3 game, in my experience.:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1632184665,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "You keep being you Rich. Nice sweatshirt btw. Can I get a Sexy Coco please? :face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1632184535,
+      "username": "@KadinNation",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "Was watching the new Drake music video Way2Sexy and there\u2019s lots of shirtless men and all I thought of was you :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632184084,
+      "username": "@theheelygodEX",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "Rich I am also stoned, 1/100 edible on me:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1632184059,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "Rich. You are an awesome man and always keep it real in the streams, always respected it. I want to send some good vibes, because f all the haters and f the bad days when they come. We\u2019re all human:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1632184030,
+      "username": "@Andy_187",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "We're here for nipples, farts, dsp and chris hansen jokes, and good vibes. :victory_hand::smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1632183795,
+      "username": "@ayylmaoitsbrando4912",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "cheer up rich ily lemme get a grandpa's excited :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1632183037,
+      "username": "@Various_Melons",
+      "platform": "youtube",
+      "stream_id": "a_colorful_man",
+      "message": "If you want to see an example of when a rapper really did something new in the gaming industry, YouTube \"Spose: King of Maine\" App Behind the Scenes.",
+      "commands": [
+        "spose"
       ]
     },
     {
