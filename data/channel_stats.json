@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100285,
+  "updated_ts": 1782100294,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -334,7 +334,8 @@
     "im_now_a_home_owner",
     "im_so_sorry",
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
-    "im_too_stoned_for_dkoldies_drama_but_here_it_is"
+    "im_too_stoned_for_dkoldies_drama_but_here_it_is",
+    "im_wired_and_streaming_cause_why_not"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5664,6 +5665,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.95,
       "avg_active_chatters": 30.4
+    },
+    "im_wired_and_streaming_cause_why_not": {
+      "stream_id": "im_wired_and_streaming_cause_why_not",
+      "title": "I'm Wired And Streaming, Cause Why Not?",
+      "start_ts": 1701061635,
+      "end_ts": 1701069459,
+      "duration_sec": 7824,
+      "youtube_archive_id": "7z0CkeZR2YY",
+      "source_platform": "youtube",
+      "total_donations_usd": 183.86,
+      "donation_count": 46,
+      "donations_per_min": 1.41,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.9,
+      "avg_active_chatters": 41.66
     }
   }
 }
