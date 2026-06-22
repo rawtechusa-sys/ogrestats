@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095565,
+  "updated_ts": 1782095623,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -84,7 +84,8 @@
     "a_middle_aged_man_surrounded_by_poultry",
     "a_middle_aged_man_surrounded_by_poultry_feat_birds",
     "a_middle_aged_stoned_man_plays_gta_v_on_the_ps5",
-    "a_new_bird_approaches"
+    "a_new_bird_approaches",
+    "a_philtacular_man_sunday"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1414,6 +1415,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.92,
       "avg_active_chatters": 33.42
+    },
+    "a_philtacular_man_sunday": {
+      "stream_id": "a_philtacular_man_sunday",
+      "title": "A Philtacular Man Sunday",
+      "start_ts": 1711318844,
+      "end_ts": 1711339749,
+      "duration_sec": 20905,
+      "youtube_archive_id": "FHpvySec5-U",
+      "source_platform": "youtube",
+      "total_donations_usd": 318.96,
+      "donation_count": 94,
+      "donations_per_min": 0.9155,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.89,
+      "avg_active_chatters": 29.51
     }
   }
 }
