@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099439,
+  "updated_ts": 1782099447,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -236,7 +236,8 @@
     "come_stream_with_a_man",
     "come_talk_to_a_man_feat_birds",
     "come_talk_with_liana_k_and_i_about_video_games",
-    "cringing_at_the_avgn_movie"
+    "cringing_at_the_avgn_movie",
+    "dad_had_some_ipas_come_ask_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3998,6 +3999,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.12,
       "avg_active_chatters": 43.35
+    },
+    "dad_had_some_ipas_come_ask_questions": {
+      "stream_id": "dad_had_some_ipas_come_ask_questions",
+      "title": "Dad Had Some IPAs. Come Ask Questions!",
+      "start_ts": 1626913217,
+      "end_ts": 1626919031,
+      "duration_sec": 5814,
+      "youtube_archive_id": "0CFQO6lzWY0",
+      "source_platform": "youtube",
+      "total_donations_usd": 476.73,
+      "donation_count": 90,
+      "donations_per_min": 4.9198,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.45,
+      "avg_active_chatters": 41.88
     }
   }
 }
