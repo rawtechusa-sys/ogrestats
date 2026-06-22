@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099315,
+  "updated_ts": 1782099323,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -221,7 +221,8 @@
     "come_critcize_the_hell_out_of_me_yes_im_serious",
     "come_discuss_the_playstation_showcase_with_your_dad",
     "come_hang_out",
-    "come_hang_out_10_18_2021_crowbcat_video_reaction"
+    "come_hang_out_10_18_2021_crowbcat_video_reaction",
+    "come_hang_out_for_a_bit"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3743,6 +3744,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.96,
       "avg_active_chatters": 34.02
+    },
+    "come_hang_out_for_a_bit": {
+      "stream_id": "come_hang_out_for_a_bit",
+      "title": "Come Hang Out (For A Bit)",
+      "start_ts": 1637457261,
+      "end_ts": 1637465693,
+      "duration_sec": 8432,
+      "youtube_archive_id": "gF84SRNlrWY",
+      "source_platform": "youtube",
+      "total_donations_usd": 222.9,
+      "donation_count": 51,
+      "donations_per_min": 1.5861,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.84,
+      "avg_active_chatters": 22.66
     }
   }
 }
