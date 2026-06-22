@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098903,
+  "updated_ts": 1782098912,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -170,7 +170,8 @@
     "boogie2988_is_a_thief_and_a_liar",
     "boy_do_we_need_to_talk",
     "brand_new_set_same_old_man",
-    "breaking_news_im_an_idiot"
+    "breaking_news_im_an_idiot",
+    "breaking_steven_crowder_is_human_garbage_shocking"
   ],
   "commands": {
     "stan": 27,
@@ -201,12 +202,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 40,
+    "eyes": 41,
     "africa": 1,
-    "face": 139,
+    "face": 141,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 108,
+    "joy": 109,
     "gameboy": 1,
     "chick": 1,
     "carlos": 14,
@@ -219,7 +220,7 @@
     "tongue": 4,
     "heart": 51,
     "shorts": 1,
-    "laughing": 51,
+    "laughing": 52,
     "news": 11,
     "chicken": 24,
     "cake": 6,
@@ -256,7 +257,7 @@
     "superhero": 12,
     "legends": 1,
     "dog": 4,
-    "is": 4,
+    "is": 5,
     "spose": 1,
     "sunglasses": 4,
     "kiss": 11,
@@ -283,7 +284,7 @@
     "reviewseinfeldusa": 1,
     "things": 2,
     "down": 2,
-    "tomorrow": 4,
+    "tomorrow": 5,
     "horse": 2,
     "bug": 1,
     "violin": 1,
@@ -437,7 +438,8 @@
     "cat": 1,
     "reviewmusicusa": 1,
     "snake": 1,
-    "fap": 1
+    "fap": 1,
+    "piece": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1284,6 +1286,11 @@
       "title": "Breaking News: I'm An Idiot",
       "start_ts": 1629765587,
       "youtube_archive_id": "4xORIzvzAkU"
+    },
+    "breaking_steven_crowder_is_human_garbage_shocking": {
+      "title": "BREAKING: Steven Crowder Is Human Garbage (SHOCKING)",
+      "start_ts": 1682726594,
+      "youtube_archive_id": "GK5cKQ5yCc4"
     }
   },
   "messages": [
@@ -6572,6 +6579,86 @@
       "message": ":grinning_squinting_face: I learned playing bass 2005 Epiphone 4 string",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1682745358,
+      "username": "@aurubaru",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "Rich tomorrow: NO DARKIES",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1682742201,
+      "username": "@monktribal951",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "He is playing on easy mode too! :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1682739882,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "It will make Kat cry Rich :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1682733310,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "Not once did I ever try to disrespect my ex as a woman. She actually liked that about me and said that was I was the most mature man she ever met. :face_with_rolling_eyes::face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1682732093,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "Candace is like uncle ruckus from the boondocks :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1682731158,
+      "username": "@iswordlogici7760",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "has 1 car cuz he is environmentally conscious :clown_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1682730846,
+      "username": "@MarineX",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "Rich, you gotta marry one, bury one, and one as a side piece: the 2000s versions of Angelina Jolie, Jennifer Aniston, and Sandra Bullock...go",
+      "commands": [
+        "piece"
+      ]
+    },
+    {
+      "ts": 1682727123,
+      "username": "@playstationninja",
+      "platform": "youtube",
+      "stream_id": "breaking_steven_crowder_is_human_garbage_shocking",
+      "message": "That crowder footage reminds me of what the \"MRA\" crowd think marriage is: Paternalistic control of your significant other. it's gross.",
+      "commands": [
+        "is"
       ]
     },
     {
