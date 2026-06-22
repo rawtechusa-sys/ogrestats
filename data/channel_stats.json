@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101804,
+  "updated_ts": 1782101810,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -538,7 +538,8 @@
     "playing_super_nintendo_games_like_a_man",
     "playing_teenage_mutant_ninja_turtles_shredders_revenge",
     "playing_wii_u_games_like_a_man_yes_its_working",
-    "playing_wii_u_launch_games_like_a_man"
+    "playing_wii_u_launch_games_like_a_man",
+    "playing_wii_u_launch_games_like_a_man_pt_2_with_facecam"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9132,6 +9133,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.98,
       "avg_active_chatters": 28.03
+    },
+    "playing_wii_u_launch_games_like_a_man_pt_2_with_facecam": {
+      "stream_id": "playing_wii_u_launch_games_like_a_man_pt_2_with_facecam",
+      "title": "Playing Wii U Launch Games Like A Man Pt. 2 (WITH FACECAM)",
+      "start_ts": 1644874454,
+      "end_ts": 1644878339,
+      "duration_sec": 3885,
+      "youtube_archive_id": "WIQf_9bmBVM",
+      "source_platform": "youtube",
+      "total_donations_usd": 28.97,
+      "donation_count": 10,
+      "donations_per_min": 0.4474,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.45,
+      "avg_active_chatters": 30.52
     }
   }
 }
