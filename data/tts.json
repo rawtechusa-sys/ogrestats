@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100211,
+  "updated_ts": 1782100221,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -325,7 +325,8 @@
     "im_buzzed_off_caffeine_come_chat_with_me",
     "im_done_with_weed_slopes_tommy_tallarico_video_pt3",
     "im_just_a_little_stoned_right_now",
-    "im_just_a_man_on_the_damn_internet"
+    "im_just_a_man_on_the_damn_internet",
+    "im_just_a_man_thats_all"
   ],
   "commands": {
     "stan": 27,
@@ -372,7 +373,7 @@
     "cucumber": 38,
     "biceps": 3,
     "tongue": 6,
-    "heart": 99,
+    "heart": 100,
     "shorts": 1,
     "laughing": 123,
     "news": 18,
@@ -503,7 +504,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 4,
+    "fact": 5,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -537,7 +538,7 @@
     "eagle": 5,
     "reviewkaynewestusa": 1,
     "reviewelonmuskusa": 1,
-    "say": 3,
+    "say": 4,
     "officer": 1,
     "bread": 1,
     "bomb": 1,
@@ -2357,6 +2358,11 @@
       "title": "I'M JUST A MAN ON THE DAMN INTERNET!",
       "start_ts": 1628992435,
       "youtube_archive_id": "_8E5jrETRCk"
+    },
+    "im_just_a_man_thats_all": {
+      "title": "I'm Just A Man. That's All",
+      "start_ts": 1681342258,
+      "youtube_archive_id": "YeRN-j-vnL4"
     }
   },
   "messages": [
@@ -10513,6 +10519,36 @@
       "message": ":boxing_glove::_RichSmile:VS \ud83e\uddd4\ud83c\udffc:boxing_glove: THIS IS YOUR LIFE NOW",
       "commands": [
         "glove"
+      ]
+    },
+    {
+      "ts": 1681345583,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "im_just_a_man_thats_all",
+      "message": "Fun Fact: Phillip is Greek for \"lover of horses\"",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1681344373,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "im_just_a_man_thats_all",
+      "message": "Phil :red_heart: a chicken sandwich in a derogatory manner",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1681342628,
+      "username": "@tess8941",
+      "platform": "youtube",
+      "stream_id": "im_just_a_man_thats_all",
+      "message": "As Phil would say: \"contributions are MANDATORY\"",
+      "commands": [
+        "say"
       ]
     },
     {
