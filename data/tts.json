@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101729,
+  "updated_ts": 1782101737,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -521,7 +521,8 @@
     "phils_miraculous_man_cheeks",
     "playing_bloodborne_i_think",
     "playing_castlevania_with_a_fat_old_man",
-    "playing_doom_eternal_on_the_rog_ally"
+    "playing_doom_eternal_on_the_rog_ally",
+    "playing_elden_ring_with_my_new_magical_nipple_shield"
   ],
   "commands": {
     "stan": 27,
@@ -570,9 +571,9 @@
     "tongue": 12,
     "heart": 153,
     "shorts": 2,
-    "laughing": 193,
+    "laughing": 194,
     "news": 22,
-    "chicken": 58,
+    "chicken": 59,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -635,7 +636,7 @@
     "things": 2,
     "down": 3,
     "tomorrow": 22,
-    "horse": 15,
+    "horse": 16,
     "bug": 1,
     "violin": 1,
     "update": 6,
@@ -3672,6 +3673,11 @@
       "title": "Playing Doom Eternal On The ROG Ally",
       "start_ts": 1688086081,
       "youtube_archive_id": "byqZbeV1VeQ"
+    },
+    "playing_elden_ring_with_my_new_magical_nipple_shield": {
+      "title": "Playing Elden Ring With My New Magical Nipple Shield",
+      "start_ts": 1649372541,
+      "youtube_archive_id": "6TeTGfj9Tl4"
     }
   },
   "messages": [
@@ -23645,6 +23651,27 @@
       "message": "Hey Rich, what do you think is likelier at this point with the state of the supply chain crisis: an earlier than expected PS6 sometime in 2025 (if not possibly earlier) or a PS5 Pro in 2023/2024?",
       "commands": [
         "crisis"
+      ]
+    },
+    {
+      "ts": 1649376696,
+      "username": "@AdrianCardoza",
+      "platform": "youtube",
+      "stream_id": "playing_elden_ring_with_my_new_magical_nipple_shield",
+      "message": "My fav streamer playing my fav game! Love it. :horse: :chicken:",
+      "commands": [
+        "horse",
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1649372690,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "playing_elden_ring_with_my_new_magical_nipple_shield",
+      "message": "what is this stream intro! lol :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
