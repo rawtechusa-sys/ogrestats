@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100814,
+  "updated_ts": 1782100821,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -400,7 +400,8 @@
     "lets_discuss_the_steam_deck",
     "lets_discuss_xbox_and_activision",
     "lets_have_some_fun",
-    "lets_laugh_at_alex_jones"
+    "lets_laugh_at_alex_jones",
+    "lets_laugh_at_alex_jones_again"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6786,6 +6787,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.4,
       "avg_active_chatters": 38.07
+    },
+    "lets_laugh_at_alex_jones_again": {
+      "stream_id": "lets_laugh_at_alex_jones_again",
+      "title": "Let's Laugh At Alex Jones Again",
+      "start_ts": 1659924091,
+      "end_ts": 1659932760,
+      "duration_sec": 8669,
+      "youtube_archive_id": "erykKZYNZpc",
+      "source_platform": "youtube",
+      "total_donations_usd": 222.83,
+      "donation_count": 64,
+      "donations_per_min": 1.5423,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.81,
+      "avg_active_chatters": 35.26
     }
   }
 }
