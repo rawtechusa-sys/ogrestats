@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101408,
+  "updated_ts": 1782101418,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -479,7 +479,8 @@
     "more_russia_ukraine_discussion",
     "more_spicy_intellivision_amico_family_fun",
     "more_tcap_and_bird_fun",
-    "more_thorough_tickling_live"
+    "more_thorough_tickling_live",
+    "more_tickled_television_excitement"
   ],
   "commands": {
     "stan": 27,
@@ -510,9 +511,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 10,
-    "eyes": 113,
+    "eyes": 114,
     "africa": 1,
-    "face": 444,
+    "face": 445,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 289,
@@ -559,7 +560,7 @@
     "shrugging": 6,
     "donation": 3,
     "naruto": 1,
-    "hands": 29,
+    "hands": 30,
     "horns": 8,
     "crab": 2,
     "superhero": 28,
@@ -578,7 +579,7 @@
     "dsp": 23,
     "story": 1,
     "tree": 3,
-    "skull": 12,
+    "skull": 13,
     "eggplant": 4,
     "bite": 1,
     "take": 7,
@@ -3387,6 +3388,11 @@
       "title": "More Thorough Tickling LIVE",
       "start_ts": 1656292334,
       "youtube_archive_id": "cjDqabRKQTk"
+    },
+    "more_tickled_television_excitement": {
+      "title": "More Tickled Television Excitement",
+      "start_ts": 1663546481,
+      "youtube_archive_id": "bxSNXQovVM4"
     }
   },
   "messages": [
@@ -16674,6 +16680,46 @@
       "message": "Hulk: Ultimate destruction is one of the goats man\u2026 but yeah they need to do a game for newer hardware",
       "commands": [
         "hulk"
+      ]
+    },
+    {
+      "ts": 1663551244,
+      "username": "@HeyItsTippyXO",
+      "platform": "youtube",
+      "stream_id": "more_tickled_television_excitement",
+      "message": "Get them nips out again, daddy. :smiling_face_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1663550953,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "more_tickled_television_excitement",
+      "message": "Cursing isn't very Christian straight-man of him :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1663548935,
+      "username": "@noodleman4555",
+      "platform": "youtube",
+      "stream_id": "more_tickled_television_excitement",
+      "message": "Quantum is still dwelling on this? :skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1663548548,
+      "username": "@Sea_Dragon-2401",
+      "platform": "youtube",
+      "stream_id": "more_tickled_television_excitement",
+      "message": "\"I don't care I'm minding by business\" -Proceeds to whine and still care because he's softer than tender b r e a s t s. #1 brand in dumbas*ery :clapping_hands:",
+      "commands": [
+        "hands"
       ]
     },
     {
