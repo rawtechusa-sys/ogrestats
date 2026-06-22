@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099331,
+  "updated_ts": 1782099339,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -223,7 +223,8 @@
     "come_hang_out",
     "come_hang_out_10_18_2021_crowbcat_video_reaction",
     "come_hang_out_for_a_bit",
-    "come_hang_out_with_a_man"
+    "come_hang_out_with_a_man",
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3777,6 +3778,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.75,
       "avg_active_chatters": 33.25
+    },
+    "come_hang_out_with_a_man_and_ask_questions_feat_birds": {
+      "stream_id": "come_hang_out_with_a_man_and_ask_questions_feat_birds",
+      "title": "Come Hang Out With A Man And Ask Questions (Feat. Birds)",
+      "start_ts": 1663291903,
+      "end_ts": 1663301106,
+      "duration_sec": 9203,
+      "youtube_archive_id": "cU-Et_njyLg",
+      "source_platform": "youtube",
+      "total_donations_usd": 340.75,
+      "donation_count": 75,
+      "donations_per_min": 2.2216,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.94,
+      "avg_active_chatters": 34.55
     }
   }
 }
