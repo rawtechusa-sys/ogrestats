@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101934,
+  "updated_ts": 1782101939,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -560,7 +560,8 @@
     "racism_is_so_disgusting",
     "random_afternoon_stream",
     "random_hump_day_man_logan_paul_apology",
-    "random_man_stream"
+    "random_man_stream",
+    "random_man_streams_games_with_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9506,6 +9507,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.17,
       "avg_active_chatters": 31.2
+    },
+    "random_man_streams_games_with_birds": {
+      "stream_id": "random_man_streams_games_with_birds",
+      "title": "Random Man Streams Games With Birds",
+      "start_ts": 1638306525,
+      "end_ts": 1638312818,
+      "duration_sec": 6293,
+      "youtube_archive_id": "nDJsNtVLnyM",
+      "source_platform": "youtube",
+      "total_donations_usd": 205.67,
+      "donation_count": 47,
+      "donations_per_min": 1.9609,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.37,
+      "avg_active_chatters": 24.07
     }
   }
 }
