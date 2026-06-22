@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098454,
+  "updated_ts": 1782098462,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -114,7 +114,8 @@
     "a_very_stoned_man_discusses_repzion_and_the_completionist",
     "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
     "a_wingsofredemption_marathon_stream",
-    "a_woman_is_with_us"
+    "a_woman_is_with_us",
+    "a_wonderful_qvc_roast"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1924,6 +1925,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.65,
       "avg_active_chatters": 26.38
+    },
+    "a_wonderful_qvc_roast": {
+      "stream_id": "a_wonderful_qvc_roast",
+      "title": "A Wonderful QVC Roast",
+      "start_ts": 1632878461,
+      "end_ts": 1632887421,
+      "duration_sec": 8960,
+      "youtube_archive_id": "8wVWLKW7oFE",
+      "source_platform": "youtube",
+      "total_donations_usd": 530.94,
+      "donation_count": 115,
+      "donations_per_min": 3.5554,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.3,
+      "avg_active_chatters": 38.06
     }
   }
 }
