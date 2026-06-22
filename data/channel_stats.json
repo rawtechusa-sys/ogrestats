@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100390,
+  "updated_ts": 1782100400,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -346,7 +346,8 @@
     "irrelevant_youtuber_plays_saints_row_2022",
     "is_the_ps5_revision_that_bad_feat_joker_productions",
     "its_a_question",
-    "its_all_about_casey"
+    "its_all_about_casey",
+    "its_all_about_keemstar_and_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5868,6 +5869,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.53,
       "avg_active_chatters": 31.23
+    },
+    "its_all_about_keemstar_and_birds": {
+      "stream_id": "its_all_about_keemstar_and_birds",
+      "title": "It's All About Keemstar (And Birds)",
+      "start_ts": 1641346931,
+      "end_ts": 1641361019,
+      "duration_sec": 14088,
+      "youtube_archive_id": "4b80dTR7law",
+      "source_platform": "youtube",
+      "total_donations_usd": 318.55,
+      "donation_count": 83,
+      "donations_per_min": 1.3567,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.91,
+      "avg_active_chatters": 34.68
     }
   }
 }
