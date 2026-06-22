@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095108,
+  "updated_ts": 1782095164,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -76,7 +76,8 @@
     "a_man_with_birds",
     "a_man_with_birds_streams_on_halloween",
     "a_middle_aged_man_plays_halo_infinite",
-    "a_middle_aged_man_plays_more_wii_u_launch_games"
+    "a_middle_aged_man_plays_more_wii_u_launch_games",
+    "a_middle_aged_man_plays_video_games_with_birds"
   ],
   "commands": {
     "stan": 27,
@@ -95,7 +96,7 @@
     "kratos": 4,
     "dagoth": 2,
     "they": 1,
-    "today": 1,
+    "today": 2,
     "phile": 1,
     "emoguy": 1,
     "phill": 1,
@@ -112,7 +113,7 @@
     "face": 60,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 47,
+    "joy": 49,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -139,7 +140,7 @@
     "lantern": 2,
     "leg": 1,
     "severance": 1,
-    "gta": 2,
+    "gta": 3,
     "me": 2,
     "kill": 1,
     "enough": 1,
@@ -240,7 +241,10 @@
     "joker": 1,
     "racehorse": 2,
     "question": 1,
-    "mushroom": 2
+    "mushroom": 2,
+    "trilogy": 1,
+    "spider": 1,
+    "ear": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -617,6 +621,11 @@
       "title": "A Middle-Aged Man Plays More Wii U Launch Games",
       "start_ts": 1645386660,
       "youtube_archive_id": "HQ6PfMlvD7M"
+    },
+    "a_middle_aged_man_plays_video_games_with_birds": {
+      "title": "A Middle-Aged Man Plays Video Games With Birds",
+      "start_ts": 1637430834,
+      "youtube_archive_id": "Pg89RGVlVV0"
     }
   },
   "messages": [
@@ -5429,6 +5438,58 @@
       "message": "\u201cRockstar Headquarters?\u201d Tourette\u2019s Guy: \u201cHello. I bought GTA Trilogy Remastered. AND IT MADE ME FEEL LIKE A PIECE OF $#!+\u201d",
       "commands": [
         "guy"
+      ]
+    },
+    {
+      "ts": 1637434578,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_video_games_with_birds",
+      "message": "Let\u2019s play Goat Simulator :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637433445,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_video_games_with_birds",
+      "message": "Highlight for today: being parked next to a car filled with anime hentai girls all over the car window. Lmao",
+      "commands": [
+        "today"
+      ]
+    },
+    {
+      "ts": 1637433108,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_video_games_with_birds",
+      "message": "Halo is so fun how\u2019s battlefield :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637432124,
+      "username": "@KC-bi9jw",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_video_games_with_birds",
+      "message": "huge spoiler in beta, but it\u2019s so well hidden! :ear:",
+      "commands": [
+        "ear"
+      ]
+    },
+    {
+      "ts": 1637431445,
+      "username": "@thomas_murray9962",
+      "platform": "youtube",
+      "stream_id": "a_middle_aged_man_plays_video_games_with_birds",
+      "message": "A YouTuber tweeted out the patch for GTA: The Trilogy: The Definitive Edition and states there are still issues. Enjoy $5, Stay Amazing :spider:",
+      "commands": [
+        "gta",
+        "trilogy",
+        "spider"
       ]
     },
     {
