@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102285,
+  "updated_ts": 1782102290,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -615,7 +615,8 @@
     "streaming_until_2_am_road_to_1000_members",
     "streaming_until_3_am_chris_hansen_edp_445",
     "stuttering_craig_is_a_man_monetizethehate",
-    "suffering_through_kingdom_hearts_cutscenes"
+    "suffering_through_kingdom_hearts_cutscenes",
+    "sunday_night_ama"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10441,6 +10442,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.97,
       "avg_active_chatters": 30.62
+    },
+    "sunday_night_ama": {
+      "stream_id": "sunday_night_ama",
+      "title": "Sunday Night AMA",
+      "start_ts": 1642991565,
+      "end_ts": 1643003053,
+      "duration_sec": 11488,
+      "youtube_archive_id": "z4rFPrIRA5c",
+      "source_platform": "youtube",
+      "total_donations_usd": 690.77,
+      "donation_count": 109,
+      "donations_per_min": 3.6078,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.54,
+      "avg_active_chatters": 27.76
     }
   }
 }
