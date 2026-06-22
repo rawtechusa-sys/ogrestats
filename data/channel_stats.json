@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098580,
+  "updated_ts": 1782098587,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -130,7 +130,8 @@
     "an_explanation",
     "an_important_announcements",
     "an_important_update",
-    "an_unofficial_man_return_feat_large_men"
+    "an_unofficial_man_return_feat_large_men",
+    "and_the_nintendo_switch_oled_winners_are"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2196,6 +2197,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.51,
       "avg_active_chatters": 30.42
+    },
+    "and_the_nintendo_switch_oled_winners_are": {
+      "stream_id": "and_the_nintendo_switch_oled_winners_are",
+      "title": "And The Nintendo Switch OLED Winners Are...",
+      "start_ts": 1649199377,
+      "end_ts": 1649207854,
+      "duration_sec": 8477,
+      "youtube_archive_id": "_5DZJV3U1EQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 249.36,
+      "donation_count": 69,
+      "donations_per_min": 1.765,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.96,
+      "avg_active_chatters": 41.06
     }
   }
 }
