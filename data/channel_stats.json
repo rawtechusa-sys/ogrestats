@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101694,
+  "updated_ts": 1782101701,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -520,7 +520,8 @@
     "philip_burnells_chickengate_anniversary_celebration",
     "philip_burnells_new_sweater",
     "philip_paul_burnell_has_incredible_technical_knowledge",
-    "philip_paul_burnell_is_a_220_man"
+    "philip_paul_burnell_is_a_220_man",
+    "phillip_burnell_is_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8826,6 +8827,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.12,
       "avg_active_chatters": 31.07
+    },
+    "phillip_burnell_is_a_man": {
+      "stream_id": "phillip_burnell_is_a_man",
+      "title": "Phillip Burnell Is A Man...",
+      "start_ts": 1656377618,
+      "end_ts": 1656386640,
+      "duration_sec": 9022,
+      "youtube_archive_id": "OjScHzb-jv0",
+      "source_platform": "youtube",
+      "total_donations_usd": 343.18,
+      "donation_count": 72,
+      "donations_per_min": 2.2823,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.64,
+      "avg_active_chatters": 36.28
     }
   }
 }
