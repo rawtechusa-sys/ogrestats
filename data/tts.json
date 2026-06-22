@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094314,
+  "updated_ts": 1782094365,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -61,7 +61,8 @@
     "a_man_feat_birds",
     "a_man_from_canada_is_here",
     "a_man_from_canada_until_6am",
-    "a_man_in_poughkeepsie_irl_streaming"
+    "a_man_in_poughkeepsie_irl_streaming",
+    "a_man_is_back_for_a_bit"
   ],
   "commands": {
     "stan": 27,
@@ -106,9 +107,9 @@
     "fear": 2,
     "voice": 1,
     "cucumber": 5,
-    "biceps": 1,
+    "biceps": 2,
     "tongue": 2,
-    "heart": 20,
+    "heart": 22,
     "shorts": 1,
     "laughing": 21,
     "news": 5,
@@ -144,7 +145,7 @@
     "hands": 6,
     "horns": 1,
     "crab": 2,
-    "superhero": 4,
+    "superhero": 5,
     "legends": 1,
     "dog": 2,
     "is": 2,
@@ -202,12 +203,13 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 1,
+    "it": 3,
     "food": 1,
     "play": 1,
     "video": 1,
     "one": 1,
-    "cow": 1
+    "cow": 1,
+    "cap": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -509,6 +511,11 @@
       "title": "A Man In Poughkeepsie IRL Streaming",
       "start_ts": 1659468621,
       "youtube_archive_id": "pUldXtUg0Gk"
+    },
+    "a_man_is_back_for_a_bit": {
+      "title": "A Man Is Back (For A Bit)",
+      "start_ts": 1696989207,
+      "youtube_archive_id": "3T3Y5DiFU_o"
     }
   },
   "messages": [
@@ -2833,6 +2840,67 @@
       "message": "DSPN REPORTING LIVE: A MAN EMERGENCY",
       "commands": [
         "live"
+      ]
+    },
+    {
+      "ts": 1697000317,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "Dad did u c google promise 7 years of support? :billed_cap::billed_cap:",
+      "commands": [
+        "cap"
+      ]
+    },
+    {
+      "ts": 1696996629,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "DSP tries it: Bugged apology mechanics",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1696992588,
+      "username": "@doommama",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "I missed you Rich & chat :black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1696990553,
+      "username": "@LumbyMcGumby",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "Good to see you doing well man. Heart goes out to you and the family :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1696990403,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "DSP tries it: buttchuging gin",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1696990371,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_man_is_back_for_a_bit",
+      "message": "Just know Hero:superhero: in, Welcome back, Hope you and your daughter are doing ok, Stay strong :flexed_biceps::flexed_biceps::flexed_biceps::flexed_biceps:",
+      "commands": [
+        "superhero",
+        "biceps"
       ]
     },
     {
