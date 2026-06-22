@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098887,
+  "updated_ts": 1782098895,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -168,7 +168,8 @@
     "birthday_bird_and_man_stream",
     "birthday_marathon_man_stream",
     "boogie2988_is_a_thief_and_a_liar",
-    "boy_do_we_need_to_talk"
+    "boy_do_we_need_to_talk",
+    "brand_new_set_same_old_man"
   ],
   "commands": {
     "stan": 27,
@@ -264,7 +265,7 @@
     "gift": 2,
     "bird": 7,
     "richsmile": 2,
-    "dsp": 7,
+    "dsp": 8,
     "story": 1,
     "tree": 2,
     "skull": 4,
@@ -433,7 +434,8 @@
     "bear": 1,
     "philitizer": 1,
     "cat": 1,
-    "reviewmusicusa": 1
+    "reviewmusicusa": 1,
+    "snake": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1270,6 +1272,11 @@
       "title": "Boy Do We Need TO Talk",
       "start_ts": 1714270940,
       "youtube_archive_id": "VB6aGMXrZW4"
+    },
+    "brand_new_set_same_old_man": {
+      "title": "Brand New Set, Same Old Man",
+      "start_ts": 1713226232,
+      "youtube_archive_id": "nFlQbl-TzI8"
     }
   },
   "messages": [
@@ -3254,6 +3261,26 @@
       "message": "Picked up a Stream Deck MK.2. I put some sounds on it and now feel like RTU. I just play the sounds to myself though. :grinning_face_with_sweat:",
       "commands": [
         "sweat"
+      ]
+    },
+    {
+      "ts": 1713232830,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "brand_new_set_same_old_man",
+      "message": "DSP: I\u2019m not playing stellar blade because it won\u2019t save the business and games like those are beneath me, I\u2019m better than that",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1713230327,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "brand_new_set_same_old_man",
+      "message": "Listen, I agree with Keemstar about your show. Kiss my ring Rich. :snake::snake:",
+      "commands": [
+        "snake"
       ]
     },
     {
