@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099853,
+  "updated_ts": 1782099862,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -285,7 +285,8 @@
     "friday_night_internet_man",
     "friday_night_man_fun_feat_birds",
     "friday_night_man_stream",
-    "friday_night_new_york_man_stream"
+    "friday_night_new_york_man_stream",
+    "friday_night_shoulders"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4831,6 +4832,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.17,
       "avg_active_chatters": 34.86
+    },
+    "friday_night_shoulders": {
+      "stream_id": "friday_night_shoulders",
+      "title": "Friday Night Shoulders",
+      "start_ts": 1669424858,
+      "end_ts": 1669435360,
+      "duration_sec": 10502,
+      "youtube_archive_id": "iWdQQAX1UHo",
+      "source_platform": "youtube",
+      "total_donations_usd": 334.76,
+      "donation_count": 97,
+      "donations_per_min": 1.9125,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.16,
+      "avg_active_chatters": 28.73
     }
   }
 }
