@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102633,
+  "updated_ts": 1782102638,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -676,7 +676,8 @@
     "the_power_of_a_man_feat_birds",
     "the_pre_stream_i_finished_setting_up_the_monitor_early",
     "the_quarteringintellivision_family_fun_continues",
-    "the_quest_for_a_cupcake"
+    "the_quest_for_a_cupcake",
+    "the_rtustreams_karenthon_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11478,6 +11479,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.77,
       "avg_active_chatters": 28.04
+    },
+    "the_rtustreams_karenthon_feat_birds": {
+      "stream_id": "the_rtustreams_karenthon_feat_birds",
+      "title": "The RTUStreams Karenthon (Feat. Birds)",
+      "start_ts": 1659062369,
+      "end_ts": 1659069343,
+      "duration_sec": 6974,
+      "youtube_archive_id": "ahctoBs42Aw",
+      "source_platform": "youtube",
+      "total_donations_usd": 251.79,
+      "donation_count": 51,
+      "donations_per_min": 2.1662,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.03,
+      "avg_active_chatters": 37.51
     }
   }
 }
