@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095917,
+  "updated_ts": 1782095977,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -90,7 +90,8 @@
     "a_pre_stream_man_stream",
     "a_pulsating_new_years_eve",
     "a_pure_man_experience",
-    "a_quality_qvc_bird_roast"
+    "a_quality_qvc_bird_roast",
+    "a_quick_ask_me_anything_stream_power_wash_simulator"
   ],
   "commands": {
     "stan": 27,
@@ -116,7 +117,7 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 6,
+    "rich": 7,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -126,7 +127,7 @@
     "face": 79,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 54,
+    "joy": 56,
     "gameboy": 1,
     "chick": 1,
     "carlos": 11,
@@ -137,10 +138,10 @@
     "cucumber": 8,
     "biceps": 3,
     "tongue": 3,
-    "heart": 32,
+    "heart": 34,
     "shorts": 1,
     "laughing": 28,
-    "news": 5,
+    "news": 6,
     "chicken": 11,
     "cake": 1,
     "d": 1,
@@ -159,7 +160,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 3,
-    "rooster": 10,
+    "rooster": 12,
     "peach": 2,
     "fire": 4,
     "kendal": 1,
@@ -179,7 +180,7 @@
     "is": 3,
     "spose": 1,
     "sunglasses": 2,
-    "kiss": 7,
+    "kiss": 8,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -271,7 +272,8 @@
     "fact": 1,
     "both": 1,
     "syne": 1,
-    "father": 1
+    "father": 1,
+    "request": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -718,6 +720,11 @@
       "title": "A Quality QVC Bird Roast",
       "start_ts": 1637979963,
       "youtube_archive_id": "8EZBmUEhi1Y"
+    },
+    "a_quick_ask_me_anything_stream_power_wash_simulator": {
+      "title": "A Quick Ask Me Anything Stream (Power Wash Simulator)",
+      "start_ts": 1662167620,
+      "youtube_archive_id": "Cf6AdaDZcYc"
     }
   },
   "messages": [
@@ -4787,6 +4794,97 @@
       "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
       "commands": [
         "hearts"
+      ]
+    },
+    {
+      "ts": 1662175595,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "For the chat and Rich: :face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss:",
+      "commands": [
+        "rich",
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1662173306,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "I can put my fat stomach a lot of places rich:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662172564,
+      "username": "@IIZeroStarII",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Ban anyone talking about Carlos. Robot Chicken :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1662171505,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Breaking News: Abbhi's Not Here. More At 11",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1662170672,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Think you\u2019ll do another interview with vaush ? :rooster::rooster::rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1662169671,
+      "username": "@brettlawrence_220",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Phil would burn his house down cooking and then blame the trolls:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662169449,
+      "username": "@BasedRightTrans",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "WRTU4.20 DJ RICH :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1662168501,
+      "username": "@nytmom",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Ooh look at me with a milestone chat. Hiya Rich :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1662168241,
+      "username": "@vincehowell1018",
+      "platform": "youtube",
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "message": "Random request: Hey Rich, you mind checking out MeatCanyon Secret Formula vid? Just 3 mins. Would be thoroughly tickled to see your reaction.",
+      "commands": [
+        "request"
       ]
     },
     {
