@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102458,
+  "updated_ts": 1782102463,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -645,7 +645,8 @@
     "the_fallout_3_marathon_man_stream",
     "the_first_stream",
     "the_four_hour_man_stream",
-    "the_fragrance_of_my_farts"
+    "the_fragrance_of_my_farts",
+    "the_game_awards_2022_feat_jay_and_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10951,6 +10952,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.22,
       "avg_active_chatters": 43.15
+    },
+    "the_game_awards_2022_feat_jay_and_birds": {
+      "stream_id": "the_game_awards_2022_feat_jay_and_birds",
+      "title": "The Game Awards 2022 (Feat. Jay And Birds)",
+      "start_ts": 1670538857,
+      "end_ts": 1670558488,
+      "duration_sec": 19631,
+      "youtube_archive_id": "H286rYErtMM",
+      "source_platform": "youtube",
+      "total_donations_usd": 751.5,
+      "donation_count": 147,
+      "donations_per_min": 2.2969,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 23.47,
+      "avg_active_chatters": 51.16
     }
   }
 }
