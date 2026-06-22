@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099811,
+  "updated_ts": 1782099820,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -280,7 +280,8 @@
     "elon_musk_bought_me_a_bird",
     "everyone_on_the_internet_loves_me",
     "exposing_the_anti_woke_frauds",
-    "father_is_sick_jaysus_saves"
+    "father_is_sick_jaysus_saves",
+    "final_chicken_suit_stream_featuring_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4746,6 +4747,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.9,
       "avg_active_chatters": 32.39
+    },
+    "final_chicken_suit_stream_featuring_birds": {
+      "stream_id": "final_chicken_suit_stream_featuring_birds",
+      "title": "Final Chicken Suit Stream (Featuring Birds)",
+      "start_ts": 1653957099,
+      "end_ts": 1653966879,
+      "duration_sec": 9780,
+      "youtube_archive_id": "8fo5MJMRIZQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 312.14,
+      "donation_count": 78,
+      "donations_per_min": 1.915,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.34,
+      "avg_active_chatters": 33.26
     }
   }
 }
