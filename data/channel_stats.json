@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093546,
+  "updated_ts": 1782093591,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -45,7 +45,8 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
     "a_jcs_and_dsp_stream",
     "a_jcs_stream",
-    "a_jodi_arias_holiday_special"
+    "a_jodi_arias_holiday_special",
+    "a_large_man_ama"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -751,6 +752,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.68,
       "avg_active_chatters": 39.21
+    },
+    "a_large_man_ama": {
+      "stream_id": "a_large_man_ama",
+      "title": "A Large Man AMA",
+      "start_ts": 1632958420,
+      "end_ts": 1632972413,
+      "duration_sec": 13993,
+      "youtube_archive_id": "YStZIEozr3s",
+      "source_platform": "youtube",
+      "total_donations_usd": 713.3,
+      "donation_count": 135,
+      "donations_per_min": 3.0585,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.63,
+      "avg_active_chatters": 38.41
     }
   }
 }
