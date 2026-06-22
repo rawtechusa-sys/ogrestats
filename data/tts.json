@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099861,
+  "updated_ts": 1782099869,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -285,7 +285,8 @@
     "friday_night_man_fun_feat_birds",
     "friday_night_man_stream",
     "friday_night_new_york_man_stream",
-    "friday_night_shoulders"
+    "friday_night_shoulders",
+    "furry_cringe_feat_keemstar"
   ],
   "commands": {
     "stan": 27,
@@ -318,7 +319,7 @@
     "turkey": 6,
     "eyes": 70,
     "africa": 1,
-    "face": 261,
+    "face": 262,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 193,
@@ -636,7 +637,7 @@
     "check": 1,
     "king": 1,
     "unrelated": 1,
-    "duck": 1,
+    "duck": 2,
     "reads": 1,
     "unlocked": 1,
     "cupcake": 2,
@@ -649,7 +650,9 @@
     "jar": 1,
     "translation": 1,
     "choice": 1,
-    "baseball": 1
+    "baseball": 1,
+    "jontron": 1,
+    "nintendo": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2071,6 +2074,11 @@
       "title": "Friday Night Shoulders",
       "start_ts": 1669424858,
       "youtube_archive_id": "iWdQQAX1UHo"
+    },
+    "furry_cringe_feat_keemstar": {
+      "title": "Furry Cringe (Feat. Keemstar)",
+      "start_ts": 1671240104,
+      "youtube_archive_id": "NGuHKJdIzWM"
     }
   },
   "messages": [
@@ -10650,6 +10658,46 @@
       "message": "Bugatti? More like a used Toyota Camry with 5k :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1671247928,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "furry_cringe_feat_keemstar",
+      "message": "Nintendo: Did we hear our music being played",
+      "commands": [
+        "nintendo"
+      ]
+    },
+    {
+      "ts": 1671244371,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "furry_cringe_feat_keemstar",
+      "message": "JonTron: Bad touch, bad touch.",
+      "commands": [
+        "jontron"
+      ]
+    },
+    {
+      "ts": 1671243723,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "furry_cringe_feat_keemstar",
+      "message": "people wouldn\u2019t complain about the series s as much if halo infinite wasn\u2019t bad :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1671241477,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "furry_cringe_feat_keemstar",
+      "message": "Hey Rich. From your stream last night, I just wanted to say thank you for being a great entertainer and showing empathy for me when I lost my mother. Here\u2019s ten bucks for being a man with birds. :duck:",
+      "commands": [
+        "duck"
       ]
     },
     {
