@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100309,
+  "updated_ts": 1782100317,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -336,7 +336,8 @@
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
     "im_wired_and_streaming_cause_why_not",
     "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
-    "intellivision_amico_family_fun_and_the_quartering_swatted"
+    "intellivision_amico_family_fun_and_the_quartering_swatted",
+    "intellivision_amico_family_fun_night_plus_newegg_drama"
   ],
   "commands": {
     "stan": 27,
@@ -367,12 +368,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 78,
+    "eyes": 79,
     "africa": 1,
     "face": 315,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 229,
+    "joy": 230,
     "gameboy": 1,
     "chick": 2,
     "carlos": 29,
@@ -2434,6 +2435,11 @@
       "title": "Intellivision Amico Family Fun And The Quartering Swatted",
       "start_ts": 1655337418,
       "youtube_archive_id": "W5l8iSHKqGk"
+    },
+    "intellivision_amico_family_fun_night_plus_newegg_drama": {
+      "title": "Intellivision Amico Family Fun Night! (Plus Newegg Drama)",
+      "start_ts": 1645053517,
+      "youtube_archive_id": "62Rw-UivWeA"
     }
   },
   "messages": [
@@ -16497,6 +16503,26 @@
       "message": "Hey Richie! Wanna go grab some coffee :smirking_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1645063567,
+      "username": "@crusherbad64",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_night_plus_newegg_drama",
+      "message": "Earthworm Jim 3D doesn't seem so bad now :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1645055099,
+      "username": "@BullCraftMaxx",
+      "platform": "youtube",
+      "stream_id": "intellivision_amico_family_fun_night_plus_newegg_drama",
+      "message": "Pat and Ian called you a \"Shirtless Shill\" today :face_with_rolling_eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
