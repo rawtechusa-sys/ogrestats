@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101604,
+  "updated_ts": 1782101611,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -504,7 +504,8 @@
     "phil_is_a_man",
     "phil_is_an_angry_man_and_more_thecompletionist_drama",
     "philip_burnell_and_tommy_tallarico_live",
-    "philip_burnell_chicken_sandwich_madness"
+    "philip_burnell_chicken_sandwich_madness",
+    "philip_burnell_feat_tickled_television_incorporated"
   ],
   "commands": {
     "stan": 27,
@@ -563,7 +564,7 @@
     "popper": 9,
     "straw": 1,
     "glasses": 3,
-    "ball": 2,
+    "ball": 5,
     "lantern": 2,
     "leg": 2,
     "severance": 2,
@@ -667,7 +668,7 @@
     "struck": 3,
     "joker": 1,
     "racehorse": 10,
-    "question": 11,
+    "question": 12,
     "mushroom": 3,
     "trilogy": 1,
     "spider": 2,
@@ -1042,7 +1043,9 @@
     "reviewtrumpqvc": 1,
     "seattle": 1,
     "bat": 1,
-    "knife": 1
+    "knife": 1,
+    "pebkac": 1,
+    "skills": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3559,6 +3562,11 @@
       "title": "Philip Burnell Chicken Sandwich Madness",
       "start_ts": 1677890308,
       "youtube_archive_id": "NsUwUhwSh5E"
+    },
+    "philip_burnell_feat_tickled_television_incorporated": {
+      "title": "Philip Burnell Feat. Tickled Television Incorporated",
+      "start_ts": 1666392169,
+      "youtube_archive_id": "cllU626B654"
     }
   },
   "messages": [
@@ -17276,6 +17284,66 @@
       "message": "Just wanted to say, I feel the pain y\u2019all felt with saints row. GOTHAM KNIGHTS is :pile_of_poo:",
       "commands": [
         "poo"
+      ]
+    },
+    {
+      "ts": 1666402201,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": "Acting skills: \u201cOh the camera\u2019s on!\u201d",
+      "commands": [
+        "skills"
+      ]
+    },
+    {
+      "ts": 1666398629,
+      "username": "@joshk9317",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": ":pool_8_ball:I'm going to dinner with Alexis in an hour. Will she agree to fix our relationship?:pool_8_ball: She loved your Cameo btw, brought laughter to a tense moment",
+      "commands": [
+        "ball"
+      ]
+    },
+    {
+      "ts": 1666397987,
+      "username": "@xXSoulessniperXx",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": "Question for 8Ball: Is Quantum here watching while being thoroughly tickled?",
+      "commands": [
+        "ball"
+      ]
+    },
+    {
+      "ts": 1666397618,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": ":pool_8_ball: will Gaben ever bless up with Half Life 3?",
+      "commands": [
+        "ball"
+      ]
+    },
+    {
+      "ts": 1666396935,
+      "username": "@da_ranger",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": "PEBKAC: Problem Exists between keyboard and chair",
+      "commands": [
+        "pebkac"
+      ]
+    },
+    {
+      "ts": 1666395337,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_feat_tickled_television_incorporated",
+      "message": "discord is saying you're playing brotato did you leave something on? also 8 ball question: will the quarter pounder shit in his basement?",
+      "commands": [
+        "question"
       ]
     },
     {
