@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098405,
+  "updated_ts": 1782098414,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -108,7 +108,8 @@
     "a_thanksgving_2_man_stream_feat_birds_and_men",
     "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
     "a_thequartering_man_experience",
-    "a_two_man_marathon_stream_watching_cyraxx"
+    "a_two_man_marathon_stream_watching_cyraxx",
+    "a_very_late_man"
   ],
   "commands": {
     "stan": 27,
@@ -292,7 +293,7 @@
     "father": 1,
     "request": 1,
     "sweat": 2,
-    "twist": 1,
+    "twist": 2,
     "quote": 1,
     "beverage": 1,
     "peanuts": 1,
@@ -844,6 +845,11 @@
       "title": "A TWO-MAN MARATHON STREAM (Watching Cyraxx)",
       "start_ts": 1689962365,
       "youtube_archive_id": "dxZQ71QMQFw"
+    },
+    "a_very_late_man": {
+      "title": "A Very Late Man",
+      "start_ts": 1638070133,
+      "youtube_archive_id": "8PdXsBbmwg8"
     }
   },
   "messages": [
@@ -7054,6 +7060,16 @@
       "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1638073414,
+      "username": "@DebitAdams",
+      "platform": "youtube",
+      "stream_id": "a_very_late_man",
+      "message": "Plot Twist: Rich is the tech expert",
+      "commands": [
+        "twist"
       ]
     },
     {
