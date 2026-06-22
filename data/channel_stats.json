@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100082,
+  "updated_ts": 1782100091,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -311,7 +311,8 @@
     "i_have_no_words_and_im_frustrated",
     "i_have_some_very_important_things_to_discuss",
     "i_just_went_through_youtube_hell_let_me_explain",
-    "i_listened_and_made_changes_wings_of_redemption_doc"
+    "i_listened_and_made_changes_wings_of_redemption_doc",
+    "i_think_i_fixed_it"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5273,6 +5274,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.75,
       "avg_active_chatters": 26.86
+    },
+    "i_think_i_fixed_it": {
+      "stream_id": "i_think_i_fixed_it",
+      "title": "I Think I Fixed It...",
+      "start_ts": 1689224080,
+      "end_ts": 1689225126,
+      "duration_sec": 1046,
+      "youtube_archive_id": "GCFv3dXQkto",
+      "source_platform": "youtube",
+      "total_donations_usd": 19.98,
+      "donation_count": 3,
+      "donations_per_min": 1.1461,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.11,
+      "avg_active_chatters": 36.17
     }
   }
 }
