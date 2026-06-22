@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101084,
+  "updated_ts": 1782101091,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -435,7 +435,8 @@
     "man_versus_carolina_reaper_jerky",
     "man_vs_birdemic_the_film_feat_birds",
     "man_vs_birds_vs_wii_u_its_fixed",
-    "man_vs_demon_souls_remake"
+    "man_vs_demon_souls_remake",
+    "man_vs_men_live"
   ],
   "commands": {
     "stan": 27,
@@ -468,13 +469,13 @@
     "turkey": 7,
     "eyes": 101,
     "africa": 1,
-    "face": 414,
+    "face": 415,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 276,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 34,
+    "carlos": 35,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -482,7 +483,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 133,
+    "heart": 134,
     "shorts": 1,
     "laughing": 167,
     "news": 20,
@@ -3096,6 +3097,11 @@
       "title": "Man Vs. Demon Souls (Remake)",
       "start_ts": 1688436996,
       "youtube_archive_id": "MwuDeim_-BE"
+    },
+    "man_vs_men_live": {
+      "title": "Man Vs. Men LIVE",
+      "start_ts": 1693612994,
+      "youtube_archive_id": "qoJw9idGSmg"
     }
   },
   "messages": [
@@ -9829,6 +9835,36 @@
       "message": "DSP be like: why are people so focused on all the celebrity death the past 2 weeks you people should be focused on giving me money that\u2019s important.",
       "commands": [
         "like"
+      ]
+    },
+    {
+      "ts": 1693615006,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "man_vs_men_live",
+      "message": "Sexy Rich :beating_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1693614345,
+      "username": "@therealvideogamejunkie",
+      "platform": "youtube",
+      "stream_id": "man_vs_men_live",
+      "message": "Do you think it's stupid that nintendo is releasing another Switch Oled :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1693614172,
+      "username": "@MetroGaming75",
+      "platform": "youtube",
+      "stream_id": "man_vs_men_live",
+      "message": "Hey Rich how are you doing today and also who's breasts is better Intro guys or Jays?:_Carlos::_Carlos::_Carlos::_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
       ]
     },
     {
