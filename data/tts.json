@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098452,
+  "updated_ts": 1782098460,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -113,7 +113,8 @@
     "a_very_stoned_man_discusses_repzion_and_the_completionist",
     "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
     "a_wingsofredemption_marathon_stream",
-    "a_woman_is_with_us"
+    "a_woman_is_with_us",
+    "a_wonderful_qvc_roast"
   ],
   "commands": {
     "stan": 27,
@@ -149,7 +150,7 @@
     "face": 94,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 77,
+    "joy": 79,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -164,7 +165,7 @@
     "shorts": 1,
     "laughing": 38,
     "news": 7,
-    "chicken": 14,
+    "chicken": 15,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -314,7 +315,8 @@
     "points": 1,
     "wastebasket": 1,
     "left": 1,
-    "flag": 1
+    "flag": 1,
+    "restaraunt": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -876,6 +878,11 @@
       "title": "A Woman Is With Us",
       "start_ts": 1686618020,
       "youtube_archive_id": "GU5pa5cnYeU"
+    },
+    "a_wonderful_qvc_roast": {
+      "title": "A Wonderful QVC Roast",
+      "start_ts": 1632878461,
+      "youtube_archive_id": "8wVWLKW7oFE"
     }
   },
   "messages": [
@@ -8060,6 +8067,46 @@
       "message": "That DSP chicken may really have been that bad. Look what a terrible Burger King burger did to Robert Downy Jr. :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1632885158,
+      "username": "@thatguyoverthere1440",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_qvc_roast",
+      "message": "Eminem's New Restaraunt: Mom's Spaghetti... no rly",
+      "commands": [
+        "restaraunt"
+      ]
+    },
+    {
+      "ts": 1632884892,
+      "username": "@ALIMAN-fr5kp",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_qvc_roast",
+      "message": "What does \"20% better graphics\" mean??:face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632878926,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_qvc_roast",
+      "message": "The amount of arguments I saw on Twitter that you could fit an iPad mini in a pocket is absurd and insane like WHY WOULD I DO THAT :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1632878561,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_qvc_roast",
+      "message": "Im calling Cps! Chicken protective services!! :chicken::chicken::chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
