@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101479,
+  "updated_ts": 1782101487,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -491,7 +491,8 @@
     "my_jaws_hitting_the_ground_with_this_intellivison_amico_take_plus_switch_dusk_ga",
     "my_subscribers_give_me_criticism",
     "new_years_eve_man_live_feat_birds",
-    "nightly_hang_out"
+    "nightly_hang_out",
+    "nintendo_direct_event_292022"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8333,6 +8334,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.8,
       "avg_active_chatters": 27.61
+    },
+    "nintendo_direct_event_292022": {
+      "stream_id": "nintendo_direct_event_292022",
+      "title": "Nintendo Direct Event 2/9/2022",
+      "start_ts": 1644441978,
+      "end_ts": 1644446488,
+      "duration_sec": 4510,
+      "youtube_archive_id": "I-lxEx4zRGU",
+      "source_platform": "youtube",
+      "total_donations_usd": 119.23,
+      "donation_count": 38,
+      "donations_per_min": 1.5862,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 25.64,
+      "avg_active_chatters": 62.84
     }
   }
 }
