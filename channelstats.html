@@ -319,6 +319,20 @@ document.addEventListener('mouseleave', () => {
   try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
 });
 
+// ── Jump to a stream ───────────────────────────────────────────────────────────
+// streams.html selects the stream named in sessionStorage['selected-stream'] on
+// load (same-origin, shared within this tab). Embedded in index.html we ask the
+// parent to switch to the Streams tab (which reloads the iframe); opened standalone
+// we navigate to index.html#streams ourselves.
+function jumpToStream(streamId) {
+  if (!streamId) return;
+  try { sessionStorage.setItem('selected-stream', streamId); } catch (e) {}
+  if (window.parent && window.parent !== window) {
+    try { window.parent.postMessage({ type: 'navigate', slug: 'streams' }, '*'); return; } catch (e) {}
+  }
+  window.location.href = 'index.html#streams';
+}
+
 // ── Utilities ──────────────────────────────────────────────────────────────────
 async function fetchJSON(url) {
   const r = await fetch(url);
@@ -578,7 +592,7 @@ function buildPage(channelStats, subsData) {
       <div class="chart-header">
         <div class="chart-title-wrap">
           <span class="chart-title">Long-Term Trends</span>
-          <span class="chart-hint">scroll to zoom &middot; drag to pan &middot; double-click to reset</span>
+          <span class="chart-hint">scroll to zoom &middot; drag to pan &middot; double-click to reset &middot; click a stream point to open it</span>
         </div>
         <div class="chart-legend" id="chartLegend"></div>
       </div>
@@ -602,14 +616,15 @@ function buildChart(streams, subs) {
   const ctx = document.getElementById('channelChart');
   if (!ctx) return;
 
-  // Per-stream points share an x = start_ts. Each carries its title for tooltips.
-  const pt = (s, y) => ({ x: s.start_ts * 1000, y: (y == null ? null : y), title: s.title || s.stream_id });
+  // Per-stream points share an x = start_ts. Each carries its title for tooltips
+  // and its stream_id so a click can jump to that stream on the Streams tab.
+  const pt = (s, y) => ({ x: s.start_ts * 1000, y: (y == null ? null : y), title: s.title || s.stream_id, stream_id: s.stream_id });
 
   // Cumulative donations: running lifetime total in chronological order.
   let running = 0;
   const cumData = streams.map(s => {
     running += (s.total_donations_usd || 0);
-    return { x: s.start_ts * 1000, y: Math.round(running * 100) / 100, title: s.title || s.stream_id };
+    return { x: s.start_ts * 1000, y: Math.round(running * 100) / 100, title: s.title || s.stream_id, stream_id: s.stream_id };
   });
 
   const subData = subs.map(p => ({ x: p.ts * 1000, y: p.count, source: p.source }));
@@ -687,6 +702,27 @@ function buildChart(streams, subs) {
       maintainAspectRatio: false,
       interaction: { mode: 'nearestPerDataset', intersect: false, axis: 'x' },
       animation: { duration: 400 },
+      // Click a stream point (donations/viewers/engagement -- anything with a
+      // stream_id) to jump to that stream on the Streams tab. Subscriber points
+      // carry no stream_id and are inert. Uses intersect:true so only a click
+      // actually on a marker triggers navigation, not a click anywhere near one.
+      onClick: (e) => {
+        if (!currentChart) return;
+        const hit = currentChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+        for (const el of hit) {
+          const raw = currentChart.data.datasets[el.datasetIndex].data[el.index];
+          if (raw && raw.stream_id) { jumpToStream(raw.stream_id); return; }
+        }
+      },
+      onHover: (e) => {
+        if (!currentChart || !e.native) return;
+        const hit = currentChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+        const overStream = hit.some(el => {
+          const raw = currentChart.data.datasets[el.datasetIndex].data[el.index];
+          return raw && raw.stream_id;
+        });
+        e.native.target.style.cursor = overStream ? 'pointer' : 'default';
+      },
       plugins: {
         legend: { display: false },
         tooltip: {

@@ -239,6 +239,11 @@ window.addEventListener('message', e => {
     window._mouse.x = -999; window._mouse.y = -999;
   } else if (e.data.type === 'theme') {
     applyTheme(e.data.key);
+  } else if (e.data.type === 'navigate' && e.data.slug) {
+    // An embedded page (e.g. channelstats.html) asked to switch tabs. Setting the
+    // hash fires 'hashchange' -> syncTabFromHash, which reloads the iframe.
+    if (location.hash.replace(/^#/, '') === e.data.slug) syncTabFromHash();
+    else location.hash = e.data.slug;
   }
 });
 </script>
