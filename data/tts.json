@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099951,
+  "updated_ts": 1782099959,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -295,7 +295,8 @@
     "he_admitted_itwtf",
     "hes_back_and_thoroughly_tickled",
     "hes_back_and_thoroughly_tickledpart_deux",
-    "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition"
+    "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+    "i_am_alive"
   ],
   "commands": {
     "stan": 27,
@@ -331,7 +332,7 @@
     "face": 269,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 202,
+    "joy": 203,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -342,7 +343,7 @@
     "cucumber": 28,
     "biceps": 3,
     "tongue": 5,
-    "heart": 87,
+    "heart": 88,
     "shorts": 1,
     "laughing": 100,
     "news": 18,
@@ -378,7 +379,7 @@
     "hands": 19,
     "horns": 7,
     "crab": 2,
-    "superhero": 20,
+    "superhero": 21,
     "legends": 2,
     "dog": 4,
     "is": 6,
@@ -2147,6 +2148,11 @@
       "title": "How Bad Is GTA: Vice City On The Nintendo Switch? #GTATrilogyDefinitiveEdition",
       "start_ts": 1637812345,
       "youtube_archive_id": "elIkU-dXjv8"
+    },
+    "i_am_alive": {
+      "title": "I Am Alive",
+      "start_ts": 1696037062,
+      "youtube_archive_id": "qFS9CKhM3PE"
     }
   },
   "messages": [
@@ -7118,6 +7124,36 @@
       "message": "Just watched Open Mic on the John Campea show from Friday\u2026I know what\u2019s like to have a missed super..Saw X chat was read, but chat about an old host making a silly noise was glossed over. :face_with_diagonal_mouth:",
       "commands": [
         "mouth"
+      ]
+    },
+    {
+      "ts": 1696043563,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "i_am_alive",
+      "message": "I wanna give special thanks to you and Jay in a horror story I\u2019m writing in October. Is that okay? :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1696038951,
+      "username": "@AndrewMorales928",
+      "platform": "youtube",
+      "stream_id": "i_am_alive",
+      "message": "Dad did you see the new iphone 15s running up to 48c? Thats insanely hot for a small device with little to no cooling. Looks like QA was half assed :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1696037434,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "i_am_alive",
+      "message": "Just know :man_superhero: Hero in",
+      "commands": [
+        "superhero"
       ]
     },
     {
