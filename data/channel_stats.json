@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095918,
+  "updated_ts": 1782095978,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -90,7 +90,8 @@
     "a_pre_stream_man_stream",
     "a_pulsating_new_years_eve",
     "a_pure_man_experience",
-    "a_quality_qvc_bird_roast"
+    "a_quality_qvc_bird_roast",
+    "a_quick_ask_me_anything_stream_power_wash_simulator"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1516,6 +1517,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.9,
       "avg_active_chatters": 31.14
+    },
+    "a_quick_ask_me_anything_stream_power_wash_simulator": {
+      "stream_id": "a_quick_ask_me_anything_stream_power_wash_simulator",
+      "title": "A Quick Ask Me Anything Stream (Power Wash Simulator)",
+      "start_ts": 1662167620,
+      "end_ts": 1662176296,
+      "duration_sec": 8676,
+      "youtube_archive_id": "Cf6AdaDZcYc",
+      "source_platform": "youtube",
+      "total_donations_usd": 411.48,
+      "donation_count": 118,
+      "donations_per_min": 2.8456,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.23,
+      "avg_active_chatters": 33.59
     }
   }
 }
