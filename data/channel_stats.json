@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094063,
+  "updated_ts": 1782094113,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -56,7 +56,8 @@
     "a_major_philip_burnell_man_emrgency_has_occured",
     "a_man",
     "a_man_and_bird_lushes_stream",
-    "a_man_and_his_birds"
+    "a_man_and_his_birds",
+    "a_man_experience_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -938,6 +939,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.24,
       "avg_active_chatters": 23.27
+    },
+    "a_man_experience_feat_birds": {
+      "stream_id": "a_man_experience_feat_birds",
+      "title": "A Man Experience (Feat. Birds)",
+      "start_ts": 1658880465,
+      "end_ts": 1658889087,
+      "duration_sec": 8622,
+      "youtube_archive_id": "suWt_vzHLWg",
+      "source_platform": "youtube",
+      "total_donations_usd": 260.29,
+      "donation_count": 76,
+      "donations_per_min": 1.8113,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.93,
+      "avg_active_chatters": 38.83
     }
   }
 }
