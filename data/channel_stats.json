@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102295,
+  "updated_ts": 1782102301,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -617,7 +617,8 @@
     "stuttering_craig_is_a_man_monetizethehate",
     "suffering_through_kingdom_hearts_cutscenes",
     "sunday_night_ama",
-    "sunday_night_birds_more_quantum_tv_fun"
+    "sunday_night_birds_more_quantum_tv_fun",
+    "sunday_night_hangout"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10475,6 +10476,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.7,
       "avg_active_chatters": 57.05
+    },
+    "sunday_night_hangout": {
+      "stream_id": "sunday_night_hangout",
+      "title": "Sunday Night Hangout",
+      "start_ts": 1637545762,
+      "end_ts": 1637555193,
+      "duration_sec": 9431,
+      "youtube_archive_id": "z2urOa6zF7w",
+      "source_platform": "youtube",
+      "total_donations_usd": 344.54,
+      "donation_count": 80,
+      "donations_per_min": 2.192,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.16,
+      "avg_active_chatters": 31.03
     }
   }
 }
