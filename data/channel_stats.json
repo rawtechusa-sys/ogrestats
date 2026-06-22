@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101658,
+  "updated_ts": 1782101665,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -515,7 +515,8 @@
     "philip_burnell_is_a_man_partwhatever",
     "philip_burnell_is_a_man_plus_newegg_drama",
     "philip_burnell_is_excited",
-    "philip_burnell_is_under_attack_now_playing_bloodborne"
+    "philip_burnell_is_under_attack_now_playing_bloodborne",
+    "philip_burnells_brilliant_pc_advice"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8741,6 +8742,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.16,
       "avg_active_chatters": 30.3
+    },
+    "philip_burnells_brilliant_pc_advice": {
+      "stream_id": "philip_burnells_brilliant_pc_advice",
+      "title": "Philip Burnell's Brilliant PC Advice",
+      "start_ts": 1680051229,
+      "end_ts": 1680058888,
+      "duration_sec": 7659,
+      "youtube_archive_id": "7erXZBsykVU",
+      "source_platform": "youtube",
+      "total_donations_usd": 323.88,
+      "donation_count": 56,
+      "donations_per_min": 2.5373,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.02,
+      "avg_active_chatters": 31.03
     }
   }
 }
