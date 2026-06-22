@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102258,
+  "updated_ts": 1782102263,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -610,7 +610,8 @@
     "straight_white_men_discuss_sidescrollers",
     "stream_vs_man",
     "streaming_fear_2_for_a_bit_then_being_a_reacting_man",
-    "streaming_till_2_am"
+    "streaming_till_2_am",
+    "streaming_till_2_am_featuring_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10356,6 +10357,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.98,
       "avg_active_chatters": 22.3
+    },
+    "streaming_till_2_am_featuring_birds": {
+      "stream_id": "streaming_till_2_am_featuring_birds",
+      "title": "Streaming Till 2 AM Featuring Birds",
+      "start_ts": 1682034636,
+      "end_ts": 1682056826,
+      "duration_sec": 22190,
+      "youtube_archive_id": "cIfNDeDGYfA",
+      "source_platform": "youtube",
+      "total_donations_usd": 683.93,
+      "donation_count": 106,
+      "donations_per_min": 1.8493,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.22,
+      "avg_active_chatters": 23.11
     }
   }
 }
