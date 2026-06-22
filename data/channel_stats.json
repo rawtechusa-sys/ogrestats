@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101686,
+  "updated_ts": 1782101694,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -519,7 +519,8 @@
     "philip_burnells_brilliant_pc_advice",
     "philip_burnells_chickengate_anniversary_celebration",
     "philip_burnells_new_sweater",
-    "philip_paul_burnell_has_incredible_technical_knowledge"
+    "philip_paul_burnell_has_incredible_technical_knowledge",
+    "philip_paul_burnell_is_a_220_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8809,6 +8810,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.94,
       "avg_active_chatters": 42.02
+    },
+    "philip_paul_burnell_is_a_220_man": {
+      "stream_id": "philip_paul_burnell_is_a_220_man",
+      "title": "Philip Paul Burnell Is A 220 Man",
+      "start_ts": 1739856828,
+      "end_ts": 1739864161,
+      "duration_sec": 7333,
+      "youtube_archive_id": "VLitqa0y638",
+      "source_platform": "youtube",
+      "total_donations_usd": 264.97,
+      "donation_count": 29,
+      "donations_per_min": 2.168,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.12,
+      "avg_active_chatters": 31.07
     }
   }
 }
