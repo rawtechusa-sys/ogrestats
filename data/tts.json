@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092378,
+  "updated_ts": 1782092393,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -9,7 +9,8 @@
     "we_did_it_bois_100k",
     "random_late_man_stream_for_men",
     "so_i_was_just_fired_from_tech_talk",
-    "100_certified_man_stream_feat_beautiful_birds"
+    "100_certified_man_stream_feat_beautiful_birds",
+    "12_hour_man_stream_feat_men"
   ],
   "commands": {
     "stan": 27,
@@ -42,7 +43,12 @@
     "turkey": 1,
     "eyes": 1,
     "africa": 1,
-    "face": 2
+    "face": 2,
+    "petersonxhhanson": 1,
+    "poo": 1,
+    "joy": 2,
+    "gameboy": 1,
+    "chick": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -84,6 +90,11 @@
       "title": "100% Certified Man Stream (Feat. Beautiful Birds)",
       "start_ts": 1651880087,
       "youtube_archive_id": "DXBZhByCv4I"
+    },
+    "12_hour_man_stream_feat_men": {
+      "title": "12-Hour Man Stream (Feat. Men)",
+      "start_ts": 1675102488,
+      "youtube_archive_id": "bcEqd4yyRgw"
     }
   },
   "messages": [
@@ -1866,6 +1877,66 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1675118133,
+      "username": "@JDTV22",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "Since you are watching Peter Popoff can you watch the video I sent you on Twitter now about Peter Popoff? It is only 30 seconds long! :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675114194,
+      "username": "@marvellousmilkman",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "Hello Dad been watching since late 2019.:rooster::chicken::turkey::eagle::duck::swan::penguin::bird::front_facing_baby_chick::baby_chick:",
+      "commands": [
+        "chick"
+      ]
+    },
+    {
+      "ts": 1675111378,
+      "username": "@shirazb9393",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "Here's them breaking the gameboy: https://www.youtube.com/watch?v=xQ8tM8Rss3s they broke an iQue GBASP which long story short is worth a decent chunk",
+      "commands": [
+        "gameboy"
+      ]
+    },
+    {
+      "ts": 1675108628,
+      "username": "@arcticgfx733",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "Burnell Jung Un! :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675105032,
+      "username": "@mr.stormtroopee8693",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "My daschund just :pile_of_poo: & kame at the same time. I usually bag the :pile_of_poo:, wth do I do with the rest? help daddy",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1675103287,
+      "username": "@googlefish80",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men",
+      "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
+      "commands": [
+        "petersonxhhanson"
       ]
     },
     {
