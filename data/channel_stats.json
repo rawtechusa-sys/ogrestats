@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099144,
+  "updated_ts": 1782099151,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -200,7 +200,8 @@
     "come_ask_me_whatever_the_hell_you_want",
     "come_ask_questions",
     "come_ask_questions_10_9_2021",
-    "come_ask_questions_712021"
+    "come_ask_questions_712021",
+    "come_ask_questions_7142021"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3386,6 +3387,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.88,
       "avg_active_chatters": 51.4
+    },
+    "come_ask_questions_7142021": {
+      "stream_id": "come_ask_questions_7142021",
+      "title": "Come Ask Questions! 7/14/2021",
+      "start_ts": 1626310242,
+      "end_ts": 1626318448,
+      "duration_sec": 8206,
+      "youtube_archive_id": "4H2jpyM6Jhg",
+      "source_platform": "youtube",
+      "total_donations_usd": 418.71,
+      "donation_count": 108,
+      "donations_per_min": 3.0615,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.28,
+      "avg_active_chatters": 37.45
     }
   }
 }
