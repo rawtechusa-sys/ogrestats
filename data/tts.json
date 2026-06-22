@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098531,
+  "updated_ts": 1782098539,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -123,7 +123,8 @@
     "alright_im_back",
     "am_i_attracted_to_my_cousin",
     "an_easter_eve_man",
-    "an_edp445_exposed_sunnyv2_new_years_eve_livestream"
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+    "an_elden_man_playes_elden_ring"
   ],
   "commands": {
     "stan": 27,
@@ -156,7 +157,7 @@
     "turkey": 5,
     "eyes": 28,
     "africa": 1,
-    "face": 99,
+    "face": 103,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 82,
@@ -170,7 +171,7 @@
     "cucumber": 10,
     "biceps": 3,
     "tongue": 4,
-    "heart": 40,
+    "heart": 42,
     "shorts": 1,
     "laughing": 40,
     "news": 7,
@@ -321,7 +322,7 @@
     "this": 1,
     "notes": 7,
     "wars": 1,
-    "points": 2,
+    "points": 3,
     "wastebasket": 1,
     "left": 1,
     "flag": 1,
@@ -330,7 +331,12 @@
     "glove": 1,
     "collision": 1,
     "spoiler": 1,
-    "mug": 1
+    "mug": 1,
+    "pachter": 1,
+    "eagle": 1,
+    "reviewkaynewestusa": 1,
+    "reviewelonmuskusa": 1,
+    "say": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -942,6 +948,11 @@
       "title": "An EDP445 Exposed (SunnyV2) New Years Eve Livestream",
       "start_ts": 1640980324,
       "youtube_archive_id": "8AuBhUkpkbQ"
+    },
+    "an_elden_man_playes_elden_ring": {
+      "title": "An Elden Man Playes Elden Ring",
+      "start_ts": 1701991258,
+      "youtube_archive_id": "1McQu33J2Gs"
     }
   },
   "messages": [
@@ -3589,6 +3600,117 @@
       "message": "Merry Birdmas! :rooster::christmas_tree::wrapped_gift:",
       "commands": [
         "gift"
+      ]
+    },
+    {
+      "ts": 1702012693,
+      "username": "@Enraged-Gecko",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "I heard \u201cWhat\u2019s up, Danger\u201d by Black Caviar and one of the lines was \u201cI have a slumber party with all my foes. Now I wear the like a badge of honor on my clothes\u2026\u201d sounds kinda sus:thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1702010257,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "I have something mildly interesting to say: I just now discovered that I\u2019m growing a wisdom tooth on the bottom of the left side of my mouth.",
+      "commands": [
+        "say"
+      ]
+    },
+    {
+      "ts": 1702000360,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "ReviewElonMuskUSA: Hey Disney how are things going for your movies like \u201cThe Marvels\u201d and \u201cWish\u201d? I\u2019ve seen less empty seats at a WNBA game.",
+      "commands": [
+        "reviewelonmuskusa"
+      ]
+    },
+    {
+      "ts": 1701998251,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "Dad, you can add Lance and DIP to the hate list :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1701998234,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "ReviewKayneWestUSA: yo Geoff keighly, I\u2019m let you finish but, Bill Clinton is the greatest rabbi of all time.",
+      "commands": [
+        "reviewkaynewestusa"
+      ]
+    },
+    {
+      "ts": 1701994171,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "After the Burnell Flu Incident, I\u2019m not allowed to join the CDC. Rules are rules. Lmao! Beavis Boobs and Hoot Wireless. :eagle::eagle::eagle: Love all of you here. :blue_heart:",
+      "commands": [
+        "eagle",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1701993908,
+      "username": "@alk4pon3",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "You\u2019lll make a better lolcow moderator rich :hundred_points:",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1701993720,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "I had a firehouse sub or dinner. it was 20usd :loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1701992200,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "forget MILFS Im A TILF babe :face_blowing_a_kiss::pink_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1701992069,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "MILFS take Miami - Part 3 ops wrong tab sorry :cold_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1701992041,
+      "username": "@kjab_guitar",
+      "platform": "youtube",
+      "stream_id": "an_elden_man_playes_elden_ring",
+      "message": "Pachter: Cornhole 2 is an Amico Pro exclusive",
+      "commands": [
+        "pachter"
       ]
     },
     {
