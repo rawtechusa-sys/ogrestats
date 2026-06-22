@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098976,
+  "updated_ts": 1782098984,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -179,7 +179,8 @@
     "chat_game_night",
     "chatting_and_karens",
     "chatting_and_streaming",
-    "chatting_watching_chris_chan_documentary_gamerfrommars"
+    "chatting_watching_chris_chan_documentary_gamerfrommars",
+    "chatting_with_gamerfrommars_about_their_chris_chan_documentary"
   ],
   "commands": {
     "stan": 27,
@@ -1344,6 +1345,11 @@
       "title": "Chatting, Watching Chris Chan Documentary (GamerFromMars)",
       "start_ts": 1648421539,
       "youtube_archive_id": "LKXcGAJ0_Z0"
+    },
+    "chatting_with_gamerfrommars_about_their_chris_chan_documentary": {
+      "title": "Chatting With GamerFromMars About Their Chris Chan Documentary",
+      "start_ts": 1650499146,
+      "youtube_archive_id": "M7v2HcZSLp0"
     }
   },
   "messages": [
