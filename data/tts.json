@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098912,
+  "updated_ts": 1782098920,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -171,7 +171,8 @@
     "boy_do_we_need_to_talk",
     "brand_new_set_same_old_man",
     "breaking_news_im_an_idiot",
-    "breaking_steven_crowder_is_human_garbage_shocking"
+    "breaking_steven_crowder_is_human_garbage_shocking",
+    "canada_returns"
   ],
   "commands": {
     "stan": 27,
@@ -218,7 +219,7 @@
     "cucumber": 16,
     "biceps": 3,
     "tongue": 4,
-    "heart": 51,
+    "heart": 53,
     "shorts": 1,
     "laughing": 52,
     "news": 11,
@@ -240,7 +241,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 17,
+    "rooster": 18,
     "peach": 3,
     "fire": 9,
     "kendal": 1,
@@ -1291,6 +1292,11 @@
       "title": "BREAKING: Steven Crowder Is Human Garbage (SHOCKING)",
       "start_ts": 1682726594,
       "youtube_archive_id": "GK5cKQ5yCc4"
+    },
+    "canada_returns": {
+      "title": "CANADA RETURNS",
+      "start_ts": 1678319571,
+      "youtube_archive_id": "WB3vivH6y1M"
     }
   },
   "messages": [
@@ -6931,6 +6937,36 @@
       "message": "The best part is that the lieutenant gov didn\u2019t even try to deny it by saying he was hacked or it was an intern or it was the ambien :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1678326456,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "canada_returns",
+      "message": "Rich is Lorge at Lyfe.More to love, more to give:red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1678325625,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "canada_returns",
+      "message": "Hearts too all the beautiful women on earth :purple_heart::yellow_heart::purple_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1678323233,
+      "username": "@ScottyPimpin69",
+      "platform": "youtube",
+      "stream_id": "canada_returns",
+      "message": "Jay I have an extra Carlos that I can send to you if you\u2019re interested :rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
