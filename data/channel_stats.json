@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099641,
+  "updated_ts": 1782099650,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -260,7 +260,8 @@
     "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
     "dsp_loves_derich",
     "dsp_treats_everyone_terrible_kingcobrajfs_evicted",
-    "dspgaming_gets_schooled_by_beardstar_keemstar"
+    "dspgaming_gets_schooled_by_beardstar_keemstar",
+    "dspgaming_is_a_tad_salty_plus_drphil"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4406,6 +4407,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.61,
       "avg_active_chatters": 31.37
+    },
+    "dspgaming_is_a_tad_salty_plus_drphil": {
+      "stream_id": "dspgaming_is_a_tad_salty_plus_drphil",
+      "title": "DSPGaming Is A Tad Salty (Plus Dr.Phil)",
+      "start_ts": 1668208698,
+      "end_ts": 1668220714,
+      "duration_sec": 12016,
+      "youtube_archive_id": "ON-KGaiiJrw",
+      "source_platform": "youtube",
+      "total_donations_usd": 1152.88,
+      "donation_count": 104,
+      "donations_per_min": 5.7567,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.38,
+      "avg_active_chatters": 27.93
     }
   }
 }
