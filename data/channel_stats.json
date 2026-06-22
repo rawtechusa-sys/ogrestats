@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100250,
+  "updated_ts": 1782100258,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -330,7 +330,8 @@
     "im_just_a_man_thats_all",
     "im_kind_of_back_what_happened",
     "im_not_dead",
-    "im_not_well_endowed"
+    "im_not_well_endowed",
+    "im_now_a_home_owner"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5596,6 +5597,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 21.38,
       "avg_active_chatters": 65.65
+    },
+    "im_now_a_home_owner": {
+      "stream_id": "im_now_a_home_owner",
+      "title": "I'm Now A Home Owner...",
+      "start_ts": 1632274481,
+      "end_ts": 1632281524,
+      "duration_sec": 7043,
+      "youtube_archive_id": "rqfdyfXe33Q",
+      "source_platform": "youtube",
+      "total_donations_usd": 369.84,
+      "donation_count": 79,
+      "donations_per_min": 3.1507,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.14,
+      "avg_active_chatters": 47.34
     }
   }
 }
