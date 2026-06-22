@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098970,
+  "updated_ts": 1782098977,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -179,7 +179,8 @@
     "certified_man_stream",
     "chat_game_night",
     "chatting_and_karens",
-    "chatting_and_streaming"
+    "chatting_and_streaming",
+    "chatting_watching_chris_chan_documentary_gamerfrommars"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3029,6 +3030,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 3.0,
       "avg_active_chatters": 3.0
+    },
+    "chatting_watching_chris_chan_documentary_gamerfrommars": {
+      "stream_id": "chatting_watching_chris_chan_documentary_gamerfrommars",
+      "title": "Chatting, Watching Chris Chan Documentary (GamerFromMars)",
+      "start_ts": 1648421539,
+      "end_ts": 1648432493,
+      "duration_sec": 10954,
+      "youtube_archive_id": "LKXcGAJ0_Z0",
+      "source_platform": "youtube",
+      "total_donations_usd": 217.83,
+      "donation_count": 55,
+      "donations_per_min": 1.1932,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.61,
+      "avg_active_chatters": 35.26
     }
   }
 }
