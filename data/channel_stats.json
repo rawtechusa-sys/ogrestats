@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092776,
+  "updated_ts": 1782092808,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -25,7 +25,8 @@
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_beautiful_man_becomes_more_beautiful_live",
     "a_birdman_family_friendly_love_stream",
-    "a_boomer_plays_elden_ring_plus_birds"
+    "a_boomer_plays_elden_ring_plus_birds",
+    "a_catfish_is_streaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -411,6 +412,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.96,
       "avg_active_chatters": 42.16
+    },
+    "a_catfish_is_streaming": {
+      "stream_id": "a_catfish_is_streaming",
+      "title": "A Catfish Is Streaming...",
+      "start_ts": 1629160169,
+      "end_ts": 1629169888,
+      "duration_sec": 9719,
+      "youtube_archive_id": "oVHXKrN5VIE",
+      "source_platform": "youtube",
+      "total_donations_usd": 280.73,
+      "donation_count": 82,
+      "donations_per_min": 1.7331,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.8,
+      "avg_active_chatters": 31.1
     }
   }
 }
