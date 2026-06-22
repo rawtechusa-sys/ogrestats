@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095278,
+  "updated_ts": 1782095335,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -79,7 +79,8 @@
     "a_middle_aged_man_plays_more_wii_u_launch_games",
     "a_middle_aged_man_plays_video_games_with_birds",
     "a_middle_aged_man_probably_beats_elden_ring_feat_birds",
-    "a_middle_aged_man_reacks"
+    "a_middle_aged_man_reacks",
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1329,6 +1330,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 18.22,
       "avg_active_chatters": 42.54
+    },
+    "a_middle_aged_man_suffers_through_kingdom_hearts_iii": {
+      "stream_id": "a_middle_aged_man_suffers_through_kingdom_hearts_iii",
+      "title": "A Middle-Aged Man Suffers Through Kingdom Hearts III",
+      "start_ts": 1644358668,
+      "end_ts": 1644370758,
+      "duration_sec": 12090,
+      "youtube_archive_id": "xVkadD1v_ic",
+      "source_platform": "youtube",
+      "total_donations_usd": 467.13,
+      "donation_count": 77,
+      "donations_per_min": 2.3183,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.2,
+      "avg_active_chatters": 27.51
     }
   }
 }
