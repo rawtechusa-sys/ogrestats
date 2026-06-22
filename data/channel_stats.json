@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098784,
+  "updated_ts": 1782098792,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -156,7 +156,8 @@
     "being_terrible_at_halo_infinite_live",
     "between_two_birds_feat_men",
     "big_problems_over_at_youtube",
-    "bill_gates_is_a_man"
+    "bill_gates_is_a_man",
+    "bird_and_man_mayhem"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2638,6 +2639,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.46,
       "avg_active_chatters": 27.82
+    },
+    "bird_and_man_mayhem": {
+      "stream_id": "bird_and_man_mayhem",
+      "title": "Bird And Man Mayhem",
+      "start_ts": 1636424385,
+      "end_ts": 1636436559,
+      "duration_sec": 12174,
+      "youtube_archive_id": "UlxBqgVrXKA",
+      "source_platform": "youtube",
+      "total_donations_usd": 468.49,
+      "donation_count": 114,
+      "donations_per_min": 2.309,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.02,
+      "avg_active_chatters": 37.79
     }
   }
 }
