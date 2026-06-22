@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100834,
+  "updated_ts": 1782100841,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -401,7 +401,8 @@
     "lets_laugh_at_alex_jones",
     "lets_laugh_at_alex_jones_again",
     "lets_laugh_at_alex_jones_and_philip_burnell_is_a_man",
-    "lets_laugh_at_crap_crowdfunding_campaigns"
+    "lets_laugh_at_crap_crowdfunding_campaigns",
+    "lets_laugh_at_qvc"
   ],
   "commands": {
     "stan": 27,
@@ -434,7 +435,7 @@
     "turkey": 7,
     "eyes": 94,
     "africa": 1,
-    "face": 378,
+    "face": 380,
     "petersonxhhanson": 1,
     "poo": 23,
     "joy": 260,
@@ -445,12 +446,12 @@
     "idea": 4,
     "fear": 3,
     "voice": 4,
-    "cucumber": 47,
+    "cucumber": 48,
     "biceps": 4,
     "tongue": 7,
     "heart": 121,
     "shorts": 1,
-    "laughing": 156,
+    "laughing": 157,
     "news": 19,
     "chicken": 43,
     "cake": 7,
@@ -722,7 +723,7 @@
     "currently": 1,
     "article": 1,
     "life": 2,
-    "monocle": 5,
+    "monocle": 7,
     "store": 1,
     "pump": 1,
     "robot": 1,
@@ -783,7 +784,7 @@
     "auto": 1,
     "muta": 2,
     "o": 1,
-    "fingers": 2,
+    "fingers": 3,
     "word": 2,
     "wrestling": 1,
     "tcap": 1,
@@ -872,7 +873,9 @@
     "classic": 1,
     "quartering": 2,
     "jones": 1,
-    "constantly": 1
+    "constantly": 1,
+    "syringe": 1,
+    "weapon": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2874,6 +2877,11 @@
       "title": "Let's Laugh At Crap Crowdfunding Campaigns",
       "start_ts": 1646013590,
       "youtube_archive_id": "fe8DOqT0v-g"
+    },
+    "lets_laugh_at_qvc": {
+      "title": "Let's Laugh At QVC",
+      "start_ts": 1641256836,
+      "youtube_archive_id": "iwTmvZwUSno"
     }
   },
   "messages": [
@@ -20212,6 +20220,96 @@
       "message": "Both of my trump supporting neighbors got covid and passed away today :disappointed_face: i hate their political beliefs but they were good people, i'll miss them",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1641264472,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "That headset is top tier Dollar Tree quality! :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1641264396,
+      "username": "@Death_MTL_Dude",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "DSPs signet weapon: Breathe Right Strips",
+      "commands": [
+        "weapon"
+      ]
+    },
+    {
+      "ts": 1641264282,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "My \"gummies\" kicked in :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1641262557,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "Donald care supports vaccine :syringe:",
+      "commands": [
+        "syringe"
+      ]
+    },
+    {
+      "ts": 1641262520,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "Alright Rich. Emailed Satisfye about your grip. Told them to email you rich@reviewtechusa.com Here's hoping :crossed_fingers: Kiss Steve for me please",
+      "commands": [
+        "fingers"
+      ]
+    },
+    {
+      "ts": 1641262140,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "When you first saw Halo, were you blinded by its majesty? -Prophet of regret I miss old halo :pleading_face: how you doing papa rich?",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641260527,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "Samsung is now making an 89\" inch Micro LED TV for 2022. The 110 Inch model however is $150,000 currently. But the new 89\" inch will be cheaper. :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1641257917,
+      "username": "@ThePunkStix",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "You will always be the \u201cNippleKing\u201d to me! :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1641257870,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "lets_laugh_at_qvc",
+      "message": "7 months of birds, men and horses. What a time to be alive !:_RichSmile::_Carlos::_Rich::_Cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
