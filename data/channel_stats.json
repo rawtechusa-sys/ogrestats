@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099506,
+  "updated_ts": 1782099514,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -244,7 +244,8 @@
     "dads_back_for_a_bit",
     "daniel_keem_is_a_man",
     "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
-    "darrell_brooks_is_a_psychopath_feat_angry_birds"
+    "darrell_brooks_is_a_psychopath_feat_angry_birds",
+    "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4134,6 +4135,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.38,
       "avg_active_chatters": 29.66
+    },
+    "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian": {
+      "stream_id": "discussing_boogie2988s_video_and_an_open_invitation_to_pat_ian",
+      "title": "Discussing Boogie2988's Video, And An Open Invitation To Pat Ian",
+      "start_ts": 1666823286,
+      "end_ts": 1666835237,
+      "duration_sec": 11951,
+      "youtube_archive_id": "Owb2U1UPp0Y",
+      "source_platform": "youtube",
+      "total_donations_usd": 318.27,
+      "donation_count": 92,
+      "donations_per_min": 1.5979,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.79,
+      "avg_active_chatters": 31.14
     }
   }
 }
