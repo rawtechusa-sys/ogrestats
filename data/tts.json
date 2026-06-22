@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099740,
+  "updated_ts": 1782099749,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -271,14 +271,15 @@
     "dspgamings_may_1st_burst_anniversary_show_back_to_phil",
     "dude_wtf_is_even_going_on",
     "early_sunday_man_a_thon",
-    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness"
+    "eating_crab_as_a_final_meal_and_reacting_to_low_tier_gods_crispiness",
+    "eating_extremely_spicy_food_and_watching_weird_crap"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
     "phil": 60,
-    "trump": 33,
+    "trump": 34,
     "doom": 4,
     "harman": 12,
     "eric": 30,
@@ -304,10 +305,10 @@
     "turkey": 6,
     "eyes": 68,
     "africa": 1,
-    "face": 247,
+    "face": 248,
     "petersonxhhanson": 1,
     "poo": 15,
-    "joy": 181,
+    "joy": 182,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -318,7 +319,7 @@
     "cucumber": 27,
     "biceps": 3,
     "tongue": 5,
-    "heart": 80,
+    "heart": 81,
     "shorts": 1,
     "laughing": 82,
     "news": 15,
@@ -340,7 +341,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 22,
+    "rooster": 23,
     "peach": 5,
     "fire": 17,
     "kendal": 1,
@@ -365,7 +366,7 @@
     "ghost": 1,
     "bk": 1,
     "gift": 3,
-    "bird": 7,
+    "bird": 8,
     "richsmile": 5,
     "dsp": 15,
     "story": 1,
@@ -1976,6 +1977,11 @@
       "title": "Eating Crab As A  FInal Meal And Reacting To Low Tier God's Crispiness",
       "start_ts": 1690850749,
       "youtube_archive_id": "YKnvETRemAc"
+    },
+    "eating_extremely_spicy_food_and_watching_weird_crap": {
+      "title": "Eating Extremely Spicy Food And Watching Weird Crap",
+      "start_ts": 1688420273,
+      "youtube_archive_id": "f90J_Ei6D8o"
     }
   },
   "messages": [
@@ -7770,6 +7776,66 @@
       "message": "Timezones prevent me from watching live most of the time so I always watch VODs while I work or game.Thank u for the entertainment Rich :crown::crown:",
       "commands": [
         "crown"
+      ]
+    },
+    {
+      "ts": 1688433404,
+      "username": "@eRox1661",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "rich have life size cut out of DSP back and having him looking at the wall while you do your videos might as well have him there with the :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1688428023,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "Elf your bed was behind you.. Where'd it go?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1688424724,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "Donald Trump: \"I LOVE Mexicans!\" [thumbs up burrito bowl]",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1688421868,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "my ass is good BECAUSE YOU HAVEN'T POUNDED IT YET:loudly_crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1688421579,
+      "username": "@Badog473",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "Philip is the birds :bird:",
+      "commands": [
+        "bird"
+      ]
+    },
+    {
+      "ts": 1688421278,
+      "username": "@jessierhianne655",
+      "platform": "youtube",
+      "stream_id": "eating_extremely_spicy_food_and_watching_weird_crap",
+      "message": "I LOVE ALL OF YOU BEAUTIFUL PEOPLE :red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
