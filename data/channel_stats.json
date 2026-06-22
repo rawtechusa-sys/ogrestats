@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098897,
+  "updated_ts": 1782098905,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -170,7 +170,8 @@
     "birthday_marathon_man_stream",
     "boogie2988_is_a_thief_and_a_liar",
     "boy_do_we_need_to_talk",
-    "brand_new_set_same_old_man"
+    "brand_new_set_same_old_man",
+    "breaking_news_im_an_idiot"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2876,6 +2877,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.7,
       "avg_active_chatters": 29.82
+    },
+    "breaking_news_im_an_idiot": {
+      "stream_id": "breaking_news_im_an_idiot",
+      "title": "Breaking News: I'm An Idiot",
+      "start_ts": 1629765587,
+      "end_ts": 1629774836,
+      "duration_sec": 9249,
+      "youtube_archive_id": "4xORIzvzAkU",
+      "source_platform": "youtube",
+      "total_donations_usd": 366.83,
+      "donation_count": 100,
+      "donations_per_min": 2.3797,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.03,
+      "avg_active_chatters": 35.3
     }
   }
 }
