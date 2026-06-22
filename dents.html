@@ -64,14 +64,19 @@
     font-size: 14px;
   }
 
-  thead {
+  /* Scope the sticky header to the OUTER table only — the nested per-donor
+     donations sub-table has its own <thead> that must scroll with its panel,
+     not stick at the top. */
+  .table-wrap > table > thead {
     position: sticky;
     top: 0;
-    z-index: 1;
-    background: var(--bg-surface);
+    z-index: 3;
+    /* Composite the (translucent) theme surface over the opaque base so rows
+       scrolling underneath can't bleed through the header. */
+    background: linear-gradient(var(--bg-surface), var(--bg-surface)), var(--bg-base);
   }
 
-  thead::after {
+  .table-wrap > table > thead::after {
     content: '';
     position: absolute;
     bottom: 0; left: 0; right: 0;
@@ -110,9 +115,26 @@
     vertical-align: middle;
   }
 
-  tr:last-child td { border-bottom: none; }
+  /* Donors are now each their own <tbody>; only drop the border on the very
+     last row of the table, not the last row of every section. */
+  tbody:last-child tr:last-child td { border-bottom: none; }
 
   tr:hover td { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.04); }
+
+  /* An expanded donor's row pins just below the sticky header so it stays
+     visible and clickable (to collapse) while scrolling its donation log.
+     Constrained to its own <tbody>, so it releases as the next donor arrives. */
+  tr.dent-row.sticky-dent > td {
+    position: sticky;
+    top: var(--thead-h, 38px);
+    z-index: 2;
+    /* Opaque so the scrolling donation list can't show through the pinned row. */
+    background: linear-gradient(var(--bg-panel), var(--bg-panel)), var(--bg-base);
+  }
+  /* `.zero` cells normally dim via opacity, which would also make the pinned
+     row's background translucent and let donations bleed through — keep them
+     fully opaque while pinned. */
+  tr.dent-row.sticky-dent > td.zero { opacity: 1; }
 
   .rank {
     font-family: 'Share Tech Mono', monospace;
@@ -591,7 +613,7 @@ function renderTable() {
     const isOpen = expanded.has(row.username);
     const caret  = `<span class="caret">${isOpen ? '▾' : '▸'}</span>`;
 
-    const mainRow = `<tr class="dent-row" data-user="${escHtml(row.username)}">
+    const mainRow = `<tr class="dent-row${isOpen ? ' sticky-dent' : ''}" data-user="${escHtml(row.username)}">
       <td class="rank">${i + 1}</td>
       <td class="username">${caret}${escHtml(row.username)}</td>
       <td class="amount-total">${fmtUSD(row.total)}</td>
@@ -605,7 +627,10 @@ function renderTable() {
       ? `<tr class="donations-row"><td colspan="${COLS}"><div class="donor-panel">${donorPanelHTML(row.username)}</div></td></tr>`
       : '';
 
-    return mainRow + detailRow;
+    // Each donor (main row + its detail panel) gets its own <tbody> so the
+    // pinned/sticky main row is constrained to this section: it stays under the
+    // header while its panel scrolls, then releases as the next donor scrolls up.
+    return `<tbody class="dent-group">${mainRow}${detailRow}</tbody>`;
   }).join('');
 
   wrap.innerHTML = `<table>
@@ -620,8 +645,13 @@ function renderTable() {
         <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${arrow('dsp_dent')}</th>
       </tr>
     </thead>
-    <tbody>${rows}</tbody>
+    ${rows}
   </table>`;
+
+  // The sticky donor row pins just below the (sticky) header; measure the
+  // header's rendered height so the pin sits flush under it across themes.
+  const thd = wrap.querySelector('thead');
+  if (thd) document.documentElement.style.setProperty('--thead-h', thd.offsetHeight + 'px');
 
   // Sort on header click
   wrap.querySelectorAll('th[data-key]').forEach(th => {
