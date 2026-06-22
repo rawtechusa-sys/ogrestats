@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102231,
+  "updated_ts": 1782102237,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -606,7 +606,8 @@
     "stoned_and_streaming_feat_birds",
     "stoned_and_streaming_feat_birds_pt2",
     "stoned_as_hell_discussing_the_game_awards",
-    "story_time_from_canada"
+    "story_time_from_canada",
+    "straight_white_men_discuss_sidescrollers"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10288,6 +10289,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.87,
       "avg_active_chatters": 29.77
+    },
+    "straight_white_men_discuss_sidescrollers": {
+      "stream_id": "straight_white_men_discuss_sidescrollers",
+      "title": "Straight, White Men Discuss SideScrollers.",
+      "start_ts": 1692230607,
+      "end_ts": 1692246027,
+      "duration_sec": 15420,
+      "youtube_archive_id": "ksoON9INwBU",
+      "source_platform": "youtube",
+      "total_donations_usd": 868.2,
+      "donation_count": 97,
+      "donations_per_min": 3.3782,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 27.05,
+      "avg_active_chatters": 62.22
     }
   }
 }
