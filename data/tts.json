@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782095164,
+  "updated_ts": 1782095220,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -77,7 +77,8 @@
     "a_man_with_birds_streams_on_halloween",
     "a_middle_aged_man_plays_halo_infinite",
     "a_middle_aged_man_plays_more_wii_u_launch_games",
-    "a_middle_aged_man_plays_video_games_with_birds"
+    "a_middle_aged_man_plays_video_games_with_birds",
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -626,6 +627,11 @@
       "title": "A Middle-Aged Man Plays Video Games With Birds",
       "start_ts": 1637430834,
       "youtube_archive_id": "Pg89RGVlVV0"
+    },
+    "a_middle_aged_man_probably_beats_elden_ring_feat_birds": {
+      "title": "A Middle-Aged Man (Probably) beats Elden Ring (Feat. Birds)",
+      "start_ts": 1652731792,
+      "youtube_archive_id": "XjFOowSK0eU"
     }
   },
   "messages": [
