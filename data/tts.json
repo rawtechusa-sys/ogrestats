@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099346,
+  "updated_ts": 1782099355,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -224,7 +224,8 @@
     "come_hang_out_for_a_bit",
     "come_hang_out_with_a_man",
     "come_hang_out_with_a_man_and_ask_questions_feat_birds",
-    "come_hang_out_with_a_man_freedom_phone"
+    "come_hang_out_with_a_man_freedom_phone",
+    "come_listen_me_complain_and_answer_questions"
   ],
   "commands": {
     "stan": 27,
@@ -259,11 +260,11 @@
     "africa": 1,
     "face": 198,
     "petersonxhhanson": 1,
-    "poo": 10,
-    "joy": 134,
+    "poo": 11,
+    "joy": 135,
     "gameboy": 1,
     "chick": 1,
-    "carlos": 20,
+    "carlos": 21,
     "away": 5,
     "idea": 2,
     "fear": 3,
@@ -279,7 +280,7 @@
     "cake": 7,
     "d": 2,
     "halo": 2,
-    "hand": 16,
+    "hand": 17,
     "popper": 4,
     "straw": 1,
     "glasses": 2,
@@ -524,7 +525,8 @@
     "hell": 1,
     "pig": 1,
     "tip": 1,
-    "dies": 1
+    "dies": 1,
+    "stone": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1641,6 +1643,11 @@
       "title": "Come Hang Out With A Man (Freedom Phone)",
       "start_ts": 1626573164,
       "youtube_archive_id": "2LXV3_6HqME"
+    },
+    "come_listen_me_complain_and_answer_questions": {
+      "title": "Come Listen Me Complain And Answer Questions",
+      "start_ts": 1630542581,
+      "youtube_archive_id": "uNkmJQGaknk"
     }
   },
   "messages": [
@@ -13547,6 +13554,47 @@
       "message": "you don't like my stream? *movies Carlos an inch to the side* what about now?:face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1630548885,
+      "username": "@Gamerzzworldsayshi",
+      "platform": "youtube",
+      "stream_id": "come_listen_me_complain_and_answer_questions",
+      "message": "there a channel call junk media talk :pile_of_poo::pile_of_poo::pile_of_poo: about a lot",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1630548520,
+      "username": "@Kanti12311",
+      "platform": "youtube",
+      "stream_id": "come_listen_me_complain_and_answer_questions",
+      "message": "ADA hit $3 baby!!! I hope you\u2019re :gem_stone: :raised_back_of_hand: that still",
+      "commands": [
+        "stone",
+        "hand"
+      ]
+    },
+    {
+      "ts": 1630547766,
+      "username": "@johnny112115",
+      "platform": "youtube",
+      "stream_id": "come_listen_me_complain_and_answer_questions",
+      "message": "\u201cMy jaw is hitting the floor\u201d is coming to mind watching this vid :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1630544727,
+      "username": "@natefrogg",
+      "platform": "youtube",
+      "stream_id": "come_listen_me_complain_and_answer_questions",
+      "message": "I was rebuilding a spare PC last night and wanted to put your stream on in the background.. I was disappointed :_Carlos:",
+      "commands": [
+        "carlos"
       ]
     },
     {
