@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100353,
+  "updated_ts": 1782100362,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -341,7 +341,8 @@
     "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
     "intellivision_family_fun_keffals_and_lady_decade",
     "irl_streaming_from_poughkeepsie_ny",
-    "irl_streaming_on_a_hot_day"
+    "irl_streaming_on_a_hot_day",
+    "irrelevant_youtuber_plays_saints_row_2022"
   ],
   "commands": {
     "stan": 27,
@@ -374,10 +375,10 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 319,
+    "face": 320,
     "petersonxhhanson": 1,
     "poo": 19,
-    "joy": 231,
+    "joy": 232,
     "gameboy": 1,
     "chick": 2,
     "carlos": 29,
@@ -390,7 +391,7 @@
     "tongue": 6,
     "heart": 106,
     "shorts": 1,
-    "laughing": 129,
+    "laughing": 131,
     "news": 18,
     "chicken": 39,
     "cake": 7,
@@ -700,7 +701,7 @@
     "pie": 1,
     "parrot": 1,
     "chuds": 1,
-    "ps": 1,
+    "ps": 2,
     "jay": 1,
     "jar": 1,
     "translation": 1,
@@ -711,7 +712,7 @@
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
-    "said": 1,
+    "said": 2,
     "reviewimprovusa": 1,
     "smo": 1,
     "blood": 1,
@@ -2464,6 +2465,11 @@
       "title": "IRL STREAMING ON A HOT DAY",
       "start_ts": 1659036885,
       "youtube_archive_id": "SvV1aVgUd0I"
+    },
+    "irrelevant_youtuber_plays_saints_row_2022": {
+      "title": "Irrelevant YouTuber Plays Saints Row (2022)",
+      "start_ts": 1661302240,
+      "youtube_archive_id": "ZbnRBE_2nbI"
     }
   },
   "messages": [
@@ -13512,6 +13518,66 @@
       "message": "Alex Jones 2024:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1661313935,
+      "username": "@jonathanjimenez5904",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "Dude's got the $20 Great Value Daft Punk helmet :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1661312807,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "Which yeah I work at a walmart store which at times can be :grimacing_face: but always gotta keep my uranus relaxed",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661312632,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "Oh yes, this game gonna be shelf warming at work :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1661311687,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "As Lord shaxx once said: \"I've seen enough, I'm calling it\"",
+      "commands": [
+        "said"
+      ]
+    },
+    {
+      "ts": 1661307281,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "For my birthday Sunday, I\u2019m gonna have Mcmimosas :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1661305769,
+      "username": "@drunkbottlemaniac",
+      "platform": "youtube",
+      "stream_id": "irrelevant_youtuber_plays_saints_row_2022",
+      "message": "Even DSP knew better and skipped this. Phil is snorting and laughing at you. PS: Someone keeps calling you by the way",
+      "commands": [
+        "ps"
       ]
     },
     {
