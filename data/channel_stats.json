@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098688,
+  "updated_ts": 1782098696,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -144,7 +144,8 @@
     "answering_questions_while_i_stare_at_birds",
     "antelope_hill_publishing_and_the_quartering",
     "ask_a_man_random_things_while_you_stare_at_birds",
-    "ask_me_anything"
+    "ask_me_anything",
+    "ask_me_anything_992019"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2434,6 +2435,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 4.25,
       "avg_active_chatters": 12.67
+    },
+    "ask_me_anything_992019": {
+      "stream_id": "ask_me_anything_992019",
+      "title": "Ask Me Anything 9/9/2019",
+      "start_ts": 1568309077,
+      "end_ts": 1568312699,
+      "duration_sec": 3622,
+      "youtube_archive_id": "UE275lqmB_k",
+      "source_platform": "youtube",
+      "total_donations_usd": 92.92,
+      "donation_count": 23,
+      "donations_per_min": 1.5393,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.49,
+      "avg_active_chatters": 49.34
     }
   }
 }
