@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092626,
+  "updated_ts": 1782092654,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -20,7 +20,8 @@
     "2_men_live_featmen",
     "2_middle_aged_men_are_livestreaming",
     "3_men_live_camelot331_and_boogie2988",
-    "42_year_old_man_plays_video_games_terribly"
+    "42_year_old_man_plays_video_games_terribly",
+    "a_baked_middle_aged_man_plays_video_games"
   ],
   "commands": {
     "stan": 27,
@@ -51,9 +52,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 5,
+    "eyes": 6,
     "africa": 1,
-    "face": 12,
+    "face": 13,
     "petersonxhhanson": 1,
     "poo": 1,
     "joy": 7,
@@ -187,6 +188,11 @@
       "title": "42 Year Old Man Plays Video Games Terribly",
       "start_ts": 1701468293,
       "youtube_archive_id": "_yH3YHuTFAg"
+    },
+    "a_baked_middle_aged_man_plays_video_games": {
+      "title": "A Baked, Middle-Aged Man Plays Video Games",
+      "start_ts": 1638739230,
+      "youtube_archive_id": "PG-1EH5dFv4"
     }
   },
   "messages": [
@@ -2621,6 +2627,26 @@
       "platform": "youtube",
       "stream_id": "1_million_sub_special_feat_birds",
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1638741622,
+      "username": "@alvinugochukwu2329",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games",
+      "message": "Thanks for letting me know. Rich! I can't wait to play some games on my Xbox Series X with my siblings. It's going to be awesome! :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1638741434,
+      "username": "@alvinugochukwu2329",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games",
+      "message": "Hi, Rich! Are the \"F.E.A.R.\" game available to download from the Microsoft Store? Also, I'd love to play some matches with you if that's okay. :slightly_smiling_face:",
       "commands": [
         "face"
       ]
