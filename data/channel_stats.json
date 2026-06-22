@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102097,
+  "updated_ts": 1782102103,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -586,7 +586,8 @@
     "so_apparently_im_a_playstation_fanboy",
     "so_hows_quantum_tv_been",
     "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game",
-    "so_i_beat_eldenrings_malenia_on_the_second_try"
+    "so_i_beat_eldenrings_malenia_on_the_second_try",
+    "so_i_got_the_google_pixel_6_pro"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9948,6 +9949,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.99,
       "avg_active_chatters": 30.56
+    },
+    "so_i_got_the_google_pixel_6_pro": {
+      "stream_id": "so_i_got_the_google_pixel_6_pro",
+      "title": "So, I Got The Google Pixel 6 Pro",
+      "start_ts": 1634783140,
+      "end_ts": 1634791708,
+      "duration_sec": 8568,
+      "youtube_archive_id": "hW3c_r8JPZ8",
+      "source_platform": "youtube",
+      "total_donations_usd": 235.36,
+      "donation_count": 60,
+      "donations_per_min": 1.6482,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.64,
+      "avg_active_chatters": 29.2
     }
   }
 }
