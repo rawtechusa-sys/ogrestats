@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099488,
+  "updated_ts": 1782099496,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -241,7 +241,8 @@
     "dad_streams_the_playstation_showcase_2021",
     "dads_40th_birthday_stream",
     "dads_back_for_a_bit",
-    "daniel_keem_is_a_man"
+    "daniel_keem_is_a_man",
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric"
   ],
   "commands": {
     "stan": 27,
@@ -276,7 +277,7 @@
     "africa": 1,
     "face": 216,
     "petersonxhhanson": 1,
-    "poo": 11,
+    "poo": 13,
     "joy": 148,
     "gameboy": 1,
     "chick": 1,
@@ -411,7 +412,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 6,
+    "droplets": 7,
     "tomato": 3,
     "hearts": 2,
     "million": 1,
@@ -563,7 +564,8 @@
     "article": 1,
     "life": 1,
     "monocle": 1,
-    "store": 1
+    "store": 1,
+    "pump": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1765,6 +1767,11 @@
       "title": "Daniel Keem Is A Man",
       "start_ts": 1672703951,
       "youtube_archive_id": "Rj2TPwcmpoU"
+    },
+    "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric": {
+      "title": "DARK SOULS WOULDN'T RUN. SO LET'S REACT TO PHIL AND ERIC",
+      "start_ts": 1739832090,
+      "youtube_archive_id": "yWWUb5EFTBQ"
     }
   },
   "messages": [
@@ -3547,6 +3554,36 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1739841746,
+      "username": "@XboxIsDead321",
+      "platform": "youtube",
+      "stream_id": "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+      "message": "Listen watch this stream on speakers for the :hot_face::sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1739835704,
+      "username": "@manny2themaxxx333",
+      "platform": "youtube",
+      "stream_id": "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+      "message": "LISTEN I TOOK A HUGE :pile_of_poo: SOME SAY IT WAS THE MOST IMPRESSIVE :pile_of_poo: ANYWAY WHATS YOUR FAVORITE FLAVOR OF CAKE OR ICE CREAM? REMEMBER EXCEPT NO MOTHA FN SUBS",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1739832739,
+      "username": "@DougSavona",
+      "platform": "youtube",
+      "stream_id": "dark_souls_wouldnt_run_so_lets_react_to_phil_and_eric",
+      "message": "this is for :fuel_pump:",
+      "commands": [
+        "pump"
       ]
     },
     {
