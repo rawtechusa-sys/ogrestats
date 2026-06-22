@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092430,
+  "updated_ts": 1782092449,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -12,7 +12,8 @@
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
     "12_hour_man_stream_feat_men_part_2",
-    "1_man_1_bird"
+    "1_man_1_bird",
+    "1_man_1_bird_all_live"
   ],
   "commands": {
     "stan": 27,
@@ -45,7 +46,7 @@
     "turkey": 1,
     "eyes": 2,
     "africa": 1,
-    "face": 4,
+    "face": 5,
     "petersonxhhanson": 1,
     "poo": 1,
     "joy": 3,
@@ -59,7 +60,10 @@
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 1
+    "heart": 2,
+    "shorts": 1,
+    "laughing": 1,
+    "news": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -116,6 +120,11 @@
       "title": "1 Man, 1 Bird",
       "start_ts": 1683936394,
       "youtube_archive_id": "UcdWkPZzBoo"
+    },
+    "1_man_1_bird_all_live": {
+      "title": "1 Man, 1 Bird, All LIVE",
+      "start_ts": 1695859783,
+      "youtube_archive_id": "DloiY5b0PFc"
     }
   },
   "messages": [
@@ -1898,6 +1907,47 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1695865728,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird_all_live",
+      "message": "BREAKING NEWS: I\u2019m having sex tomorrow morning.",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1695863838,
+      "username": "@autumndistrict",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird_all_live",
+      "message": "have u ever let jay titti fuq u? :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1695863411,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird_all_live",
+      "message": "DKOldies Shorts: Basically Damage Control :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "shorts",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1695862042,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "1_man_1_bird_all_live",
+      "message": "Local tragedy today, a blind seal in our local aquarium died aged 34. Many of us who grew up around here remember her fondly. Bubbles for Lucy?:seal::red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
