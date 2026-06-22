@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099862,
+  "updated_ts": 1782099871,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -286,7 +286,8 @@
     "friday_night_man_fun_feat_birds",
     "friday_night_man_stream",
     "friday_night_new_york_man_stream",
-    "friday_night_shoulders"
+    "friday_night_shoulders",
+    "furry_cringe_feat_keemstar"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4848,6 +4849,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.16,
       "avg_active_chatters": 28.73
+    },
+    "furry_cringe_feat_keemstar": {
+      "stream_id": "furry_cringe_feat_keemstar",
+      "title": "Furry Cringe (Feat. Keemstar)",
+      "start_ts": 1671240104,
+      "end_ts": 1671248283,
+      "duration_sec": 8179,
+      "youtube_archive_id": "NGuHKJdIzWM",
+      "source_platform": "youtube",
+      "total_donations_usd": 427.01,
+      "donation_count": 97,
+      "donations_per_min": 3.1325,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.85,
+      "avg_active_chatters": 38.77
     }
   }
 }
