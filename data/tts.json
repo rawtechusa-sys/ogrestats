@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101597,
+  "updated_ts": 1782101604,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -503,7 +503,8 @@
     "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
     "phil_is_a_man",
     "phil_is_an_angry_man_and_more_thecompletionist_drama",
-    "philip_burnell_and_tommy_tallarico_live"
+    "philip_burnell_and_tommy_tallarico_live",
+    "philip_burnell_chicken_sandwich_madness"
   ],
   "commands": {
     "stan": 27,
@@ -534,7 +535,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 12,
-    "eyes": 117,
+    "eyes": 118,
     "africa": 1,
     "face": 477,
     "petersonxhhanson": 1,
@@ -1039,7 +1040,9 @@
     "documentary": 1,
     "tazer": 1,
     "reviewtrumpqvc": 1,
-    "seattle": 1
+    "seattle": 1,
+    "bat": 1,
+    "knife": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3551,6 +3554,11 @@
       "title": "Philip Burnell And Tommy Tallarico LIVE",
       "start_ts": 1664409015,
       "youtube_archive_id": "Eg0uTdU50qY"
+    },
+    "philip_burnell_chicken_sandwich_madness": {
+      "title": "Philip Burnell Chicken Sandwich Madness",
+      "start_ts": 1677890308,
+      "youtube_archive_id": "NsUwUhwSh5E"
     }
   },
   "messages": [
@@ -15077,6 +15085,27 @@
       "message": "Kung Fu my freaking :peach:",
       "commands": [
         "peach"
+      ]
+    },
+    {
+      "ts": 1677896389,
+      "username": "@agesicki7404",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_chicken_sandwich_madness",
+      "message": "\"Jasper broke the capture card, give me a new PC!\" Unbelievable :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1677891704,
+      "username": "@a.f.watcher8888",
+      "platform": "youtube",
+      "stream_id": "philip_burnell_chicken_sandwich_madness",
+      "message": ":bat: :man_raising_hand::rainbow_flag::kitchen_knife: Hi-Fi Rush also wish best to your Fam!",
+      "commands": [
+        "bat",
+        "knife"
       ]
     },
     {
