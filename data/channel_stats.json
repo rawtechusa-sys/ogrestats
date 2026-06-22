@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096771,
+  "updated_ts": 1782096835,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -104,7 +104,8 @@
     "a_streaming_man",
     "a_surprise_stream",
     "a_technical_test_man_stream",
-    "a_thanksgiving_manbird_stream"
+    "a_thanksgiving_manbird_stream",
+    "a_thanksgving_2_man_stream_feat_birds_and_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1754,6 +1755,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.54,
       "avg_active_chatters": 35.63
+    },
+    "a_thanksgving_2_man_stream_feat_birds_and_men": {
+      "stream_id": "a_thanksgving_2_man_stream_feat_birds_and_men",
+      "title": "A Thanksgving 2-Man Stream (Feat. Birds And Men)",
+      "start_ts": 1700702454,
+      "end_ts": 1700722887,
+      "duration_sec": 20433,
+      "youtube_archive_id": "z9VVnrFp3ao",
+      "source_platform": "youtube",
+      "total_donations_usd": 669.59,
+      "donation_count": 128,
+      "donations_per_min": 1.9662,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.87,
+      "avg_active_chatters": 40.28
     }
   }
 }
