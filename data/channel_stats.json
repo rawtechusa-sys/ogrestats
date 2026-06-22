@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100337,
+  "updated_ts": 1782100346,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -340,7 +340,8 @@
     "intellivision_amico_family_fun_and_the_quartering_swatted",
     "intellivision_amico_family_fun_night_plus_newegg_drama",
     "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
-    "intellivision_family_fun_keffals_and_lady_decade"
+    "intellivision_family_fun_keffals_and_lady_decade",
+    "irl_streaming_from_poughkeepsie_ny"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5766,6 +5767,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.17,
       "avg_active_chatters": 36.3
+    },
+    "irl_streaming_from_poughkeepsie_ny": {
+      "stream_id": "irl_streaming_from_poughkeepsie_ny",
+      "title": "IRL STREAMING FROM POUGHKEEPSIE NY",
+      "start_ts": 1658864046,
+      "end_ts": 1658865686,
+      "duration_sec": 1640,
+      "youtube_archive_id": "s8_m4K2T6H8",
+      "source_platform": "youtube",
+      "total_donations_usd": 143.88,
+      "donation_count": 31,
+      "donations_per_min": 5.2639,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 31.89,
+      "avg_active_chatters": 76.39
     }
   }
 }
