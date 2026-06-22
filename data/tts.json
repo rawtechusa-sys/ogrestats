@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101393,
+  "updated_ts": 1782101400,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -477,7 +477,8 @@
     "more_predator_roasting",
     "more_quantum_tv_tickling",
     "more_russia_ukraine_discussion",
-    "more_spicy_intellivision_amico_family_fun"
+    "more_spicy_intellivision_amico_family_fun",
+    "more_tcap_and_bird_fun"
   ],
   "commands": {
     "stan": 27,
@@ -513,7 +514,7 @@
     "face": 442,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 287,
+    "joy": 288,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -528,7 +529,7 @@
     "shorts": 2,
     "laughing": 179,
     "news": 20,
-    "chicken": 53,
+    "chicken": 55,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -3375,6 +3376,11 @@
       "title": "More Spicy Intellivision Amico Family FUN",
       "start_ts": 1646698221,
       "youtube_archive_id": "MPhKcXXHts0"
+    },
+    "more_tcap_and_bird_fun": {
+      "title": "More TCAP And Bird Fun",
+      "start_ts": 1662512501,
+      "youtube_archive_id": "623ctqAJFmI"
     }
   },
   "messages": [
@@ -16892,6 +16898,36 @@
       "message": "I wanna see Tobey Maguire\u2019s holes:spider_web:",
       "commands": [
         "web"
+      ]
+    },
+    {
+      "ts": 1662517175,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "more_tcap_and_bird_fun",
+      "message": "I need this song as my ringtone :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1662514854,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "more_tcap_and_bird_fun",
+      "message": "could u play the oblivion npc theme on this man :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1662513522,
+      "username": "@mr.stormtroopee8693",
+      "platform": "youtube",
+      "stream_id": "more_tcap_and_bird_fun",
+      "message": "You should get a pug and name him Snort Hogan. Phil would live knowing a dog was named after his snorting habit. Also please rub your burb :chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
