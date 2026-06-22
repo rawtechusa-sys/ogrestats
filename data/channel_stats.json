@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102040,
+  "updated_ts": 1782102045,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -577,7 +577,8 @@
     "saturday_night_with_dad_mike_lindelldave_pakman_reaction",
     "screw_anxiety_im_streaming",
     "setting_the_record_straight",
-    "sex"
+    "sex",
+    "shave_my_legs_live_from_canada"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9795,6 +9796,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.0,
       "avg_active_chatters": 37.08
+    },
+    "shave_my_legs_live_from_canada": {
+      "stream_id": "shave_my_legs_live_from_canada",
+      "title": "SHAVE MY LEGS LIVE FROM CANADA",
+      "start_ts": 1680306596,
+      "end_ts": 1680314420,
+      "duration_sec": 7824,
+      "youtube_archive_id": "714u7diI3Qo",
+      "source_platform": "youtube",
+      "total_donations_usd": 90.93,
+      "donation_count": 32,
+      "donations_per_min": 0.6973,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 7.71,
+      "avg_active_chatters": 16.66
     }
   }
 }
