@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093017,
+  "updated_ts": 1782093054,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -32,7 +32,8 @@
     "a_colorful_man",
     "a_crispy_peanut_butter_complexion_livestream",
     "a_detrahktor_discusses_her_grievances_with_me",
-    "a_dspgaming_and_wingsofredemption_man_stream"
+    "a_dspgaming_and_wingsofredemption_man_stream",
+    "a_dspgaming_family_fun_stream"
   ],
   "commands": {
     "stan": 27,
@@ -68,7 +69,7 @@
     "face": 22,
     "petersonxhhanson": 1,
     "poo": 3,
-    "joy": 18,
+    "joy": 19,
     "gameboy": 1,
     "chick": 1,
     "carlos": 7,
@@ -76,12 +77,12 @@
     "idea": 1,
     "fear": 1,
     "voice": 1,
-    "cucumber": 1,
+    "cucumber": 2,
     "biceps": 1,
     "tongue": 1,
     "heart": 14,
     "shorts": 1,
-    "laughing": 7,
+    "laughing": 8,
     "news": 3,
     "chicken": 4,
     "cake": 1,
@@ -131,7 +132,9 @@
     "dsp": 2,
     "story": 1,
     "tree": 1,
-    "skull": 1
+    "skull": 1,
+    "eggplant": 1,
+    "bite": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -288,6 +291,11 @@
       "title": "A DSPGaming And WingsofRedemption Man Stream",
       "start_ts": 1645145546,
       "youtube_archive_id": "-nEv__Duf_E"
+    },
+    "a_dspgaming_family_fun_stream": {
+      "title": "A DSPGaming Family Fun Stream",
+      "start_ts": 1672790254,
+      "youtube_archive_id": "LTUOKpjuUtQ"
     }
   },
   "messages": [
@@ -2746,6 +2754,56 @@
       "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
       "commands": [
         "petersonxhhanson"
+      ]
+    },
+    {
+      "ts": 1672797702,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "message": "Good to know this thing has a ceiling huh lol :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1672797630,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "message": "Okay, I\u2019ll bite: how much for you to shoot ropes May 1st style all over your beautiful shiny horse?",
+      "commands": [
+        "bite"
+      ]
+    },
+    {
+      "ts": 1672792839,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "message": "dance bitch :eggplant:",
+      "commands": [
+        "eggplant"
+      ]
+    },
+    {
+      "ts": 1672792095,
+      "username": "@deadeye616",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "message": "Wash your balls:_Cucumber::_Cucumber::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1672791009,
+      "username": "@CronusSaturn",
+      "platform": "youtube",
+      "stream_id": "a_dspgaming_family_fun_stream",
+      "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
