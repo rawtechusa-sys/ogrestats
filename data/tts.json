@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100335,
+  "updated_ts": 1782100344,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -339,7 +339,8 @@
     "intellivision_amico_family_fun_and_the_quartering_swatted",
     "intellivision_amico_family_fun_night_plus_newegg_drama",
     "intellivision_family_fun_aya_neo_air_unboxing_watching_men_live",
-    "intellivision_family_fun_keffals_and_lady_decade"
+    "intellivision_family_fun_keffals_and_lady_decade",
+    "irl_streaming_from_poughkeepsie_ny"
   ],
   "commands": {
     "stan": 27,
@@ -388,7 +389,7 @@
     "tongue": 6,
     "heart": 106,
     "shorts": 1,
-    "laughing": 128,
+    "laughing": 129,
     "news": 18,
     "chicken": 39,
     "cake": 7,
@@ -408,7 +409,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 6,
-    "rooster": 33,
+    "rooster": 34,
     "peach": 8,
     "fire": 19,
     "kendal": 1,
@@ -419,7 +420,7 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 20,
+    "hands": 22,
     "horns": 7,
     "crab": 2,
     "superhero": 25,
@@ -2452,6 +2453,11 @@
       "title": "Intellivision Family Fun, Keffals And Lady Decade",
       "start_ts": 1660175140,
       "youtube_archive_id": "wFKIO1rxKRs"
+    },
+    "irl_streaming_from_poughkeepsie_ny": {
+      "title": "IRL STREAMING FROM POUGHKEEPSIE NY",
+      "start_ts": 1658864046,
+      "youtube_archive_id": "s8_m4K2T6H8"
     }
   },
   "messages": [
@@ -13834,6 +13840,46 @@
       "commands": [
         "rooster",
         "joy"
+      ]
+    },
+    {
+      "ts": 1658865441,
+      "username": "@NintegaDario",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_from_poughkeepsie_ny",
+      "message": "Yo Rich, touch grass. :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1658865315,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_from_poughkeepsie_ny",
+      "message": "Applause! :clapping_hands: Sorry Rich haha",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1658864969,
+      "username": "@Bladex2105",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_from_poughkeepsie_ny",
+      "message": "Applause :clapping_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1658864211,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "irl_streaming_from_poughkeepsie_ny",
+      "message": "Bail bonds for birds :rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
