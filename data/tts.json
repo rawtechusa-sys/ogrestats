@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100596,
+  "updated_ts": 1782100603,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -368,7 +368,8 @@
     "just_the_tip_tipster_late_night_man_stream",
     "just_two_men_feat_men",
     "just_watching_some_butt_slapping_competitions",
-    "karens_and_birds"
+    "karens_and_birds",
+    "keem_vs_boogie2988_vs_wings_lolcow_live"
   ],
   "commands": {
     "stan": 27,
@@ -394,7 +395,7 @@
     "something": 1,
     "hobo": 2,
     "gnome": 1,
-    "rich": 23,
+    "rich": 24,
     "pill": 1,
     "device": 1,
     "idevice": 1,
@@ -451,7 +452,7 @@
     "hands": 23,
     "horns": 7,
     "crab": 2,
-    "superhero": 26,
+    "superhero": 27,
     "legends": 2,
     "dog": 6,
     "is": 6,
@@ -2658,6 +2659,11 @@
       "title": "Karens And Birds",
       "start_ts": 1660347376,
       "youtube_archive_id": "mQL9VdejTZ8"
+    },
+    "keem_vs_boogie2988_vs_wings_lolcow_live": {
+      "title": "KEEM VS BOOGIE2988 VS WINGS (LOLCOW LIVE)",
+      "start_ts": 1702867192,
+      "youtube_archive_id": "h0BA3MA9BXU"
     }
   },
   "messages": [
@@ -6888,6 +6894,26 @@
       "message": "I\u2019m laughing at these dumbass scalpers trying to sell PS Portals for 350$. Let me know when you want to sell them for 80 lmao. :rolling_on_the_floor_laughing:",
       "commands": [
         "laughing"
+      ]
+    },
+    {
+      "ts": 1702873322,
+      "username": "@TheEmery223",
+      "platform": "youtube",
+      "stream_id": "keem_vs_boogie2988_vs_wings_lolcow_live",
+      "message": "Rich: I'm sure you've likely heard by now -- Sony literally just recently changed their TOS for PlayStation regarding physical media ownership. CRAZY.",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1702868456,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "keem_vs_boogie2988_vs_wings_lolcow_live",
+      "message": "whoa only use me blade is alive? also Hero in :man_superhero:",
+      "commands": [
+        "superhero"
       ]
     },
     {
