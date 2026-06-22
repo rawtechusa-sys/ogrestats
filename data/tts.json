@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099034,
+  "updated_ts": 1782099042,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -186,7 +186,8 @@
     "chris_watts_in_4k",
     "christmas_night_shoulders",
     "clearing_the_air_and_watching_jordan_peterson",
-    "colleen_ballinger_is_an_absolute_weirdo"
+    "colleen_ballinger_is_an_absolute_weirdo",
+    "come_ask_a_man_and_a_bird_questions"
   ],
   "commands": {
     "stan": 27,
@@ -217,12 +218,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 46,
+    "eyes": 47,
     "africa": 1,
-    "face": 152,
+    "face": 153,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 116,
+    "joy": 117,
     "gameboy": 1,
     "chick": 1,
     "carlos": 15,
@@ -299,7 +300,7 @@
     "reviewseinfeldusa": 1,
     "things": 2,
     "down": 2,
-    "tomorrow": 5,
+    "tomorrow": 6,
     "horse": 2,
     "bug": 1,
     "violin": 1,
@@ -417,7 +418,7 @@
     "salt": 1,
     "x": 1,
     "now": 1,
-    "breaking": 2,
+    "breaking": 3,
     "eye": 1,
     "dove": 1,
     "time": 1,
@@ -1390,6 +1391,11 @@
       "title": "Colleen Ballinger Is An Absolute Weirdo",
       "start_ts": 1689984162,
       "youtube_archive_id": "pFer07sLXug"
+    },
+    "come_ask_a_man_and_a_bird_questions": {
+      "title": "Come Ask A Man And A Bird Questions",
+      "start_ts": 1628208922,
+      "youtube_archive_id": "1fkURq0nZFQ"
     }
   },
   "messages": [
@@ -12513,6 +12519,56 @@
       "commands": [
         "follows",
         "hand"
+      ]
+    },
+    {
+      "ts": 1628216760,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "message": "Rich tomorrow: I GOT A REAL CHICKEN AND NAMED IT CARLOS!!!! LETS IT INTO IT",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1628216357,
+      "username": "@mclaine33",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "message": "Breaking: Apple plans to scan U.S. iPhones for child abuse imagery. system is called \"neuralMatch\u201d The plan could be publicized widely this week.",
+      "commands": [
+        "breaking"
+      ]
+    },
+    {
+      "ts": 1628215798,
+      "username": "@thurstonmorris7299",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "message": "how much to make you take your shirt off? :smiling_face_with_heart_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1628215620,
+      "username": "@ama3583",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "message": "but seriously does anyone know what's going to happen to Chris Chan's belongings? probably in a police auction :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628210955,
+      "username": "@lilrexxy2594",
+      "platform": "youtube",
+      "stream_id": "come_ask_a_man_and_a_bird_questions",
+      "message": "I now have to wear a mask at work again not happy:pouting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
