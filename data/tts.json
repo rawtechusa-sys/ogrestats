@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093371,
+  "updated_ts": 1782093414,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -41,7 +41,8 @@
     "a_g4tv_quantum_tv_intellivision_amico_disaster_stream",
     "a_grand_theft_auto_trilogy_bird_stream",
     "a_heartwarming_man_and_bird_stream",
-    "a_heterosexual_christian_man_stream_watching_cyraxx"
+    "a_heterosexual_christian_man_stream_watching_cyraxx",
+    "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac"
   ],
   "commands": {
     "stan": 27,
@@ -72,9 +73,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 10,
+    "eyes": 11,
     "africa": 1,
-    "face": 29,
+    "face": 31,
     "petersonxhhanson": 1,
     "poo": 3,
     "joy": 22,
@@ -88,7 +89,7 @@
     "cucumber": 4,
     "biceps": 1,
     "tongue": 2,
-    "heart": 16,
+    "heart": 18,
     "shorts": 1,
     "laughing": 11,
     "news": 3,
@@ -112,7 +113,7 @@
     "hole": 1,
     "rooster": 5,
     "peach": 1,
-    "fire": 2,
+    "fire": 3,
     "kendal": 1,
     "up": 4,
     "note": 1,
@@ -121,10 +122,10 @@
     "shrugging": 1,
     "donation": 1,
     "naruto": 1,
-    "hands": 2,
+    "hands": 3,
     "horns": 1,
     "crab": 2,
-    "superhero": 3,
+    "superhero": 4,
     "legends": 1,
     "dog": 1,
     "is": 1,
@@ -140,7 +141,7 @@
     "dsp": 2,
     "story": 1,
     "tree": 1,
-    "skull": 2,
+    "skull": 3,
     "eggplant": 1,
     "bite": 1,
     "take": 1,
@@ -167,7 +168,8 @@
     "lied": 1,
     "wilkins": 1,
     "vomiting": 2,
-    "moment": 1
+    "moment": 1,
+    "suit": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -369,6 +371,11 @@
       "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx)",
       "start_ts": 1705013907,
       "youtube_archive_id": "e5Dphi0J0gw"
+    },
+    "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac": {
+      "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx And Melonie Mac)",
+      "start_ts": 1705101039,
+      "youtube_archive_id": "sWYc6-K7Waw"
     }
   },
   "messages": [
@@ -2151,6 +2158,106 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1705118363,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "4090?!?! :eyes: my 4080 just went flacid also sup chat",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1705118197,
+      "username": "@DETERM1ND",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "Just know hero in :man_superhero: Fat Kat was live with dsp",
+      "commands": [
+        "superhero"
+      ]
+    },
+    {
+      "ts": 1705116133,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "Sex-E Coco is only 3 months younger than me. :blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1705112376,
+      "username": "@GlamerousFrog",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "There is a weirder game than that and it\u2019s called \u201cI\u2019m in :heart_suit: with your grandmother\u201d go search it up the guy makes a few games on ps store",
+      "commands": [
+        "suit"
+      ]
+    },
+    {
+      "ts": 1705111328,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "I would miss the birds greatly, but your call. :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1705108607,
+      "username": "@spaceburrito215",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "Rich, heres $10 US. I just noticed my cucumber is blue. pls clap:clapping_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1705105177,
+      "username": "@QuentleyKilkins",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "Pull up saturated content new vid absolutely :fire::fire::fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1705101901,
+      "username": "@DonicaJLewinski",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "I\u2019m stuck on a train just outside of Columbus, Wisconsin with engine problems and this Is the last train to Chicago for the next three days. \ud83e\udd26\ud83c\udffd\u200d\u2642:skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1705101444,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "Just like I promised, I posted a clip on my channel of you playing Stroke The Horse. :blue_heart: I also have a video premiere in less than an hour to attend.",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1705101394,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "message": "bama is expecting 3-4 inches of snow Monday. :nauseated_face::nauseated_face::loudly_crying_face::loudly_crying_face:",
+      "commands": [
+        "face"
       ]
     },
     {
