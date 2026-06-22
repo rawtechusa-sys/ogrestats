@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099396,
+  "updated_ts": 1782099404,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -230,7 +230,8 @@
     "come_speak_to_a_man",
     "come_stare_at_a_man",
     "come_stare_at_a_man_and_ask_his_birds_questions",
-    "come_stare_at_a_middle_aged_man_livestream"
+    "come_stare_at_a_middle_aged_man_livestream",
+    "come_stare_at_me_talk_into_a_microphone_and_say_words"
   ],
   "commands": {
     "stan": 27,
@@ -263,10 +264,10 @@
     "turkey": 6,
     "eyes": 61,
     "africa": 1,
-    "face": 202,
+    "face": 204,
     "petersonxhhanson": 1,
     "poo": 11,
-    "joy": 138,
+    "joy": 140,
     "gameboy": 1,
     "chick": 1,
     "carlos": 21,
@@ -279,7 +280,7 @@
     "tongue": 5,
     "heart": 66,
     "shorts": 1,
-    "laughing": 64,
+    "laughing": 65,
     "news": 13,
     "chicken": 32,
     "cake": 7,
@@ -372,7 +373,7 @@
     "live": 1,
     "saying": 1,
     "it": 5,
-    "food": 1,
+    "food": 2,
     "play": 1,
     "video": 1,
     "one": 3,
@@ -504,7 +505,7 @@
     "web": 1,
     "gonjiam": 1,
     "spaghetti": 1,
-    "pizza": 1,
+    "pizza": 2,
     "out": 1,
     "music": 1,
     "ask": 1,
@@ -536,7 +537,11 @@
     "thing": 1,
     "woman": 1,
     "stream": 1,
-    "cane": 1
+    "cane": 1,
+    "theme": 1,
+    "pros": 1,
+    "cons": 1,
+    "crossbones": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1683,6 +1688,11 @@
       "title": "Come Stare At A Middle-Aged Man Livestream",
       "start_ts": 1633221670,
       "youtube_archive_id": "LqB7N-3tSMM"
+    },
+    "come_stare_at_me_talk_into_a_microphone_and_say_words": {
+      "title": "Come Stare At Me Talk Into A Microphone And Say Words",
+      "start_ts": 1634517044,
+      "youtube_archive_id": "0AY-rvUu6Mo"
     }
   },
   "messages": [
@@ -12825,6 +12835,98 @@
       "message": "Hey I managed to get a bunch of boxed virtual boy games (some sealed) for $30 each so I took the plunge and got one. I like it but why they thought marketing it as portable was smart I'll ever know :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1634527750,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "A Limberger Cheese Pizza with chunky diarrhea sauce mixed in, with baby batter, pubic hair, crabs and water bug surprse! Yummy, Yummy In Ma Tunnmy! :face_savoring_food:",
+      "commands": [
+        "food"
+      ]
+    },
+    {
+      "ts": 1634527649,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "rich 2 girls and a pizza.... :zany_face::zany_face::zany_face: I'm dead :skull_and_crossbones:",
+      "commands": [
+        "face",
+        "crossbones"
+      ]
+    },
+    {
+      "ts": 1634526461,
+      "username": "@kole5826",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "Have you ever had a slice of pizza :pizza: so big you had to fold it in half to eat it. I'm from Oklahoma I only see pizza like that in the movies.",
+      "commands": [
+        "pizza"
+      ]
+    },
+    {
+      "ts": 1634521991,
+      "username": "@skymenlegacy1376",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "I'll slice your meat right up richy :smirking_face::smirking_face::smirking_face::smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1634519993,
+      "username": "@kole5826",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "I was in a sh!tter at work and someone wrote free trump dolls with an arrow pointing down at the hole :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1634519485,
+      "username": "@backnforth8401",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "Pros: Rich has luscious nipples / Cons: Too much seltzer 7.8 - IGN",
+      "commands": [
+        "pros",
+        "cons"
+      ]
+    },
+    {
+      "ts": 1634518953,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "I started to ask him \u201cwhere\u2019s my damn console?\u201d :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1634518926,
+      "username": "@dynamickirby",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "Hey Rich. I worked at the millennium tour concert they had the other day in North Carolina. Soulja Boy was there! :face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy: He did a meet and greet.",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1634518143,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "message": "To the tune of the AVGN theme: He'd rather eat, the rotten asshole, of a dead horse and drown it with seltzer",
+      "commands": [
+        "theme"
       ]
     },
     {
