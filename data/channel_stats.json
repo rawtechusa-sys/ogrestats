@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102665,
+  "updated_ts": 1782102670,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -682,7 +682,8 @@
     "the_swatting_needs_to_stop",
     "the_thirst_of_may_1st_countdown_secret_unlimited_video",
     "the_thirst_of_may_1st_slopes_tommy_tallarico_video",
-    "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2"
+    "the_thirst_of_may_1st_slopes_tommy_tallarico_video_pt2",
+    "the_tickling_continues"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11580,6 +11581,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.01,
       "avg_active_chatters": 25.89
+    },
+    "the_tickling_continues": {
+      "stream_id": "the_tickling_continues",
+      "title": "The Tickling Continues",
+      "start_ts": 1682465699,
+      "end_ts": 1682485258,
+      "duration_sec": 19559,
+      "youtube_archive_id": "hYCdjXBxwJA",
+      "source_platform": "youtube",
+      "total_donations_usd": 423.64,
+      "donation_count": 97,
+      "donations_per_min": 1.2996,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.06,
+      "avg_active_chatters": 30.83
     }
   }
 }
