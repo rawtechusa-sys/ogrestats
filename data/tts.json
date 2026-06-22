@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101440,
+  "updated_ts": 1782101447,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -483,7 +483,8 @@
     "more_tickled_television_excitement",
     "more_wii_u_man_fun_yes_it_works",
     "moving_on_to_philip_burnell_a_man",
-    "muta_just_absolutely_bodied_boogie2988"
+    "muta_just_absolutely_bodied_boogie2988",
+    "my_final_thoughts_pat_and_ian"
   ],
   "commands": {
     "stan": 27,
@@ -532,7 +533,7 @@
     "tongue": 10,
     "heart": 141,
     "shorts": 2,
-    "laughing": 181,
+    "laughing": 182,
     "news": 20,
     "chicken": 56,
     "cake": 7,
@@ -3414,6 +3415,11 @@
       "title": "Muta Just Absolutely Bodied Boogie2988",
       "start_ts": 1699577919,
       "youtube_archive_id": "X_JHZzsVnmc"
+    },
+    "my_final_thoughts_pat_and_ian": {
+      "title": "My Final Thoughts (Pat And Ian)",
+      "start_ts": 1674796461,
+      "youtube_archive_id": "GW3tpPKn5hc"
     }
   },
   "messages": [
@@ -15041,6 +15047,16 @@
       "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
       "commands": [
         "petersonxhhanson"
+      ]
+    },
+    {
+      "ts": 1674797737,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "my_final_thoughts_pat_and_ian",
+      "message": "Proud woman Membird! Sorry it\u2019s been a minute since I\u2019ve chatted but that cucumber statement has been burned into my brain :rolling_on_the_floor_laughing: love you!",
+      "commands": [
+        "laughing"
       ]
     },
     {
