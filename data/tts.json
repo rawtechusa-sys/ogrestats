@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098428,
+  "updated_ts": 1782098436,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -110,14 +110,15 @@
     "a_thequartering_man_experience",
     "a_two_man_marathon_stream_watching_cyraxx",
     "a_very_late_man",
-    "a_very_stoned_man_discusses_repzion_and_the_completionist"
+    "a_very_stoned_man_discusses_repzion_and_the_completionist",
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working"
   ],
   "commands": {
     "stan": 27,
     "masterchief": 23,
     "grandpa": 12,
     "phil": 57,
-    "trump": 30,
+    "trump": 31,
     "doom": 4,
     "harman": 12,
     "eric": 30,
@@ -157,7 +158,7 @@
     "cucumber": 10,
     "biceps": 3,
     "tongue": 3,
-    "heart": 37,
+    "heart": 38,
     "shorts": 1,
     "laughing": 38,
     "news": 7,
@@ -184,7 +185,7 @@
     "fire": 5,
     "kendal": 1,
     "up": 11,
-    "note": 3,
+    "note": 4,
     "eyebrow": 1,
     "facepalming": 4,
     "shrugging": 1,
@@ -856,6 +857,11 @@
       "title": "A Very Stoned Man Discusses Repzion And The Completionist",
       "start_ts": 1701573404,
       "youtube_archive_id": "njs8RpI2ICc"
+    },
+    "a_very_stoned_man_discusses_repzion_and_the_completionist_working": {
+      "title": "A Very Stoned Man Discusses Repzion And The Completionist (WORKING)",
+      "start_ts": 1701574136,
+      "youtube_archive_id": "0wRkY2FULQE"
     }
   },
   "messages": [
@@ -3503,6 +3509,36 @@
       "message": "Merry Birdmas! :rooster::christmas_tree::wrapped_gift:",
       "commands": [
         "gift"
+      ]
+    },
+    {
+      "ts": 1701587490,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+      "message": ":red_heart::red_heart: Birds",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1701583113,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+      "message": "DSP as trump: grab stuttering Craig\u2019s girls",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1701575002,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
+      "message": ":musical_note:\u201dYo ho! Yo ho! A pirate\u2019s life for me!\u201d:musical_note: I love that song. Can I get Beavis Boobs, Philip Burnell is a man, and Hoot Wireless?",
+      "commands": [
+        "note"
       ]
     },
     {
