@@ -542,7 +542,7 @@ function parseVoices(text) {
 // A command counts as a real voice only if it's whitelisted (or, as a safety
 // fallback, if the whitelist failed to load so we don't hide everything).
 function isVoice(c) {
-  return !WHITELIST_ON || Object.prototype.hasOwnProperty.call(VOICE_NAMES, String(c).toLowerCase());
+  return true;//!WHITELIST_ON || Object.prototype.hasOwnProperty.call(VOICE_NAMES, String(c).toLowerCase());
 }
 
 // Proper-case display name: whitelist first (covers every voice), then the
