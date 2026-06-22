@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101115,
+  "updated_ts": 1782101121,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -442,7 +442,8 @@
     "man_vs_men_live",
     "man_vs_qvc",
     "man_vs_steven_seagal",
-    "may_1st"
+    "may_1st",
+    "may_1st_part_2_has_occured"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7500,6 +7501,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.98,
       "avg_active_chatters": 35.06
+    },
+    "may_1st_part_2_has_occured": {
+      "stream_id": "may_1st_part_2_has_occured",
+      "title": "May 1st Part 2 Has Occured",
+      "start_ts": 1718671753,
+      "end_ts": 1718690300,
+      "duration_sec": 18547,
+      "youtube_archive_id": "AhvD137mEdg",
+      "source_platform": "youtube",
+      "total_donations_usd": 167.82,
+      "donation_count": 62,
+      "donations_per_min": 0.5429,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.7,
+      "avg_active_chatters": 25.45
     }
   }
 }
