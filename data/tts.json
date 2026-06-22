@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098806,
+  "updated_ts": 1782098814,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -158,7 +158,8 @@
     "bill_gates_is_a_man",
     "bird_and_man_mayhem",
     "bird_and_man_mayhem_live_chris_chan",
-    "bird_love_live_dating_nightmares"
+    "bird_love_live_dating_nightmares",
+    "birds_a_man_and_seltzer"
   ],
   "commands": {
     "stan": 27,
@@ -191,10 +192,10 @@
     "turkey": 5,
     "eyes": 34,
     "africa": 1,
-    "face": 126,
+    "face": 127,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 101,
+    "joy": 103,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -207,7 +208,7 @@
     "tongue": 4,
     "heart": 47,
     "shorts": 1,
-    "laughing": 50,
+    "laughing": 51,
     "news": 11,
     "chicken": 23,
     "cake": 1,
@@ -243,7 +244,7 @@
     "crab": 2,
     "superhero": 11,
     "legends": 1,
-    "dog": 3,
+    "dog": 4,
     "is": 4,
     "spose": 1,
     "sunglasses": 4,
@@ -412,7 +413,8 @@
     "shirt": 1,
     "vhs": 1,
     "pov": 1,
-    "circle": 2
+    "circle": 2,
+    "bar": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1199,6 +1201,11 @@
       "title": "BIRD LOVE LIVE (DATING NIGHTMARES)",
       "start_ts": 1631150879,
       "youtube_archive_id": "a43ViON8810"
+    },
+    "birds_a_man_and_seltzer": {
+      "title": "Birds, A Man, And Seltzer",
+      "start_ts": 1661995811,
+      "youtube_archive_id": "z1cTrKbFCfw"
     }
   },
   "messages": [
@@ -7157,6 +7164,66 @@
       "message": "Random request: Hey Rich, you mind checking out MeatCanyon Secret Formula vid? Just 3 mins. Would be thoroughly tickled to see your reaction.",
       "commands": [
         "request"
+      ]
+    },
+    {
+      "ts": 1662001639,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "That has to go on the soundboard please:chocolate_bar:",
+      "commands": [
+        "bar"
+      ]
+    },
+    {
+      "ts": 1661999290,
+      "username": "@InfiniteAmmo90",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "Your elden bird intro was epic :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1661998775,
+      "username": "@pieisgood2372",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "I want DSP to blow bubbles again :pleading_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1661996874,
+      "username": "@NaNa-B00",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "what\u2019s the name of the Mario thrust music? :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1661996250,
+      "username": "@trumpsteaks1401",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "Hey rich, i showed your birds at work and they agreed that you have the biggest cawk ever.:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1661996155,
+      "username": "@Thecoolistgamerever",
+      "platform": "youtube",
+      "stream_id": "birds_a_man_and_seltzer",
+      "message": "Seven hotdogs for seven months :hot_dog::hot_dog::hot_dog::hot_dog::hot_dog::hot_dog: Also can We Watch Sunny V2 vid on The vegan teacher and Gordon Ramsay",
+      "commands": [
+        "dog"
       ]
     },
     {
