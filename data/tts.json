@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099446,
+  "updated_ts": 1782099454,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -236,7 +236,8 @@
     "come_talk_to_a_man_feat_birds",
     "come_talk_with_liana_k_and_i_about_video_games",
     "cringing_at_the_avgn_movie",
-    "dad_had_some_ipas_come_ask_questions"
+    "dad_had_some_ipas_come_ask_questions",
+    "dad_is_back"
   ],
   "commands": {
     "stan": 27,
@@ -269,7 +270,7 @@
     "turkey": 6,
     "eyes": 62,
     "africa": 1,
-    "face": 210,
+    "face": 212,
     "petersonxhhanson": 1,
     "poo": 11,
     "joy": 144,
@@ -283,7 +284,7 @@
     "cucumber": 24,
     "biceps": 3,
     "tongue": 5,
-    "heart": 67,
+    "heart": 68,
     "shorts": 1,
     "laughing": 66,
     "news": 13,
@@ -309,7 +310,7 @@
     "peach": 3,
     "fire": 14,
     "kendal": 1,
-    "up": 20,
+    "up": 21,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 7,
@@ -386,7 +387,7 @@
     "cap": 1,
     "adventures": 1,
     "head": 2,
-    "like": 5,
+    "like": 6,
     "memory": 1,
     "fight": 1,
     "leaf": 1,
@@ -1731,6 +1732,11 @@
       "title": "Dad Had Some IPAs. Come Ask Questions!",
       "start_ts": 1626913217,
       "youtube_archive_id": "0CFQO6lzWY0"
+    },
+    "dad_is_back": {
+      "title": "Dad Is Back",
+      "start_ts": 1678411700,
+      "youtube_archive_id": "nnW58o6Gwyg"
     }
   },
   "messages": [
@@ -7835,6 +7841,56 @@
       "message": "The best part is that the lieutenant gov didn\u2019t even try to deny it by saying he was hacked or it was an intern or it was the ambien :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1678417130,
+      "username": "@saiyan689",
+      "platform": "youtube",
+      "stream_id": "dad_is_back",
+      "message": "So God is backwards for Dog... Does that mean God has been taking dookies on my lawn to spite me? :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1678416066,
+      "username": "@RealGhostbuster",
+      "platform": "youtube",
+      "stream_id": "dad_is_back",
+      "message": "Let\u2019s ask DK Oldies if they have one :smirking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1678413665,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "dad_is_back",
+      "message": "hard to think it's been this long. it's nice of Jay to let you stream on his channel :yellow_heart::squinting_face_with_tongue:can I get DKoldies theme and Phil up my ass? HOOT WIRELESS :yellow_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1678412927,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "dad_is_back",
+      "message": "2012 Speed edition. Silver w black interior. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1678412628,
+      "username": "@sigmasamiv",
+      "platform": "youtube",
+      "stream_id": "dad_is_back",
+      "message": "Sony be like: Noo, Call of Duty on XBOX has 2 more blades of grass on the ground. They're giving us an inferior version.",
+      "commands": [
+        "like"
       ]
     },
     {
