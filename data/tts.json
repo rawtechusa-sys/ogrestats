@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101012,
+  "updated_ts": 1782101019,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -425,7 +425,8 @@
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
     "man_in_birdsuit_livestreams_feat_birds",
     "man_in_chicken_suit_ep2_feat_beautiful_birds",
-    "man_in_chicken_suit_ep5_intellivision_amico_family_fun"
+    "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+    "man_in_chicken_suit_ep6_more_quantum_karen_tv"
   ],
   "commands": {
     "stan": 27,
@@ -458,7 +459,7 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 404,
+    "face": 406,
     "petersonxhhanson": 1,
     "poo": 24,
     "joy": 273,
@@ -472,7 +473,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 128,
+    "heart": 129,
     "shorts": 1,
     "laughing": 164,
     "news": 20,
@@ -494,7 +495,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 42,
+    "rooster": 43,
     "peach": 14,
     "fire": 23,
     "kendal": 1,
@@ -538,7 +539,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
-    "tomorrow": 20,
+    "tomorrow": 21,
     "horse": 11,
     "bug": 1,
     "violin": 1,
@@ -608,7 +609,7 @@
     "syne": 1,
     "father": 3,
     "request": 2,
-    "sweat": 16,
+    "sweat": 17,
     "twist": 2,
     "quote": 1,
     "beverage": 4,
@@ -3033,6 +3034,11 @@
       "title": "Man In Chicken Suit Ep.5 (Intellivision Amico Family Fun)",
       "start_ts": 1652490630,
       "youtube_archive_id": "QHjdPO-5rEs"
+    },
+    "man_in_chicken_suit_ep6_more_quantum_karen_tv": {
+      "title": "Man In Chicken Suit Ep.6 (More Quantum Karen TV)",
+      "start_ts": 1652660320,
+      "youtube_archive_id": "KrWhbx4mVaw"
     }
   },
   "messages": [
@@ -19048,6 +19054,66 @@
       "message": "Unless QuantumTV does something as crazy or more :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1652666897,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "Rich; my GF is standing next to me but I can\u2019t explain your stream to her with words. May I get some sound bites so she understands. :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1652666525,
+      "username": "@MaxwellMcQuade",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "rich I downloaded dark souls remasters on the OLED. this game is cheap. it feels like enemies spam u. will you ever live stream dark souls? :black_heart::black_heart::black_heart::black_heart::black_heart::black_heart::black_heart::black_heart::black_heart::black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1652664928,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "you know YouTube can ban you for stuff your audience say in chat. a VTuber recently got their channel suspended because of a bot spamming bad stuff:disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652661836,
+      "username": "@Sorukun",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "Ah sht, here we go again. More content for us. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652661714,
+      "username": "@clash4cityrocker",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "Rich, I really like your chicken suit. It thoroughly tickles me :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1652661499,
+      "username": "@SquallySnackBar",
+      "platform": "youtube",
+      "stream_id": "man_in_chicken_suit_ep6_more_quantum_karen_tv",
+      "message": "Rich Tomorrow: Quantum TV Sues Act Man's Mom",
+      "commands": [
+        "tomorrow"
       ]
     },
     {
