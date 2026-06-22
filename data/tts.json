@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101529,
+  "updated_ts": 1782101537,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -494,7 +494,8 @@
     "non_stop_vegan_tickling",
     "normal_man_stream_almost_burnt_down_my_house",
     "nye_with_a_man_and_birds",
-    "obese_man_eats_live_on_stream_come_ask_questions"
+    "obese_man_eats_live_on_stream_come_ask_questions",
+    "oh_ice_poseidon"
   ],
   "commands": {
     "stan": 27,
@@ -530,7 +531,7 @@
     "face": 473,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 305,
+    "joy": 306,
     "gameboy": 1,
     "chick": 3,
     "carlos": 39,
@@ -3491,6 +3492,11 @@
       "title": "Obese Man Eats Live On Stream (Come Ask Questions)",
       "start_ts": 1673910960,
       "youtube_archive_id": "LOqyXCoZckA"
+    },
+    "oh_ice_poseidon": {
+      "title": "Oh Ice Poseidon...",
+      "start_ts": 1643764913,
+      "youtube_archive_id": "24Tsv6QD0zo"
     }
   },
   "messages": [
@@ -23522,6 +23528,16 @@
       "message": "Sound: *spread cheeks go to town* *ooh yeah* *faaaarrrt* *getting grandpa excited* *hmm*",
       "commands": [
         "sound"
+      ]
+    },
+    {
+      "ts": 1643769502,
+      "username": "@rastablack5427",
+      "platform": "youtube",
+      "stream_id": "oh_ice_poseidon",
+      "message": ":face_with_tears_of_joy::musical_notes::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
