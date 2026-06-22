@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094212,
+  "updated_ts": 1782094263,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -59,7 +59,8 @@
     "a_man_and_his_birds",
     "a_man_experience_feat_birds",
     "a_man_feat_birds",
-    "a_man_from_canada_is_here"
+    "a_man_from_canada_is_here",
+    "a_man_from_canada_until_6am"
   ],
   "commands": {
     "stan": 27,
@@ -92,10 +93,10 @@
     "turkey": 3,
     "eyes": 15,
     "africa": 1,
-    "face": 42,
+    "face": 43,
     "petersonxhhanson": 1,
     "poo": 4,
-    "joy": 35,
+    "joy": 37,
     "gameboy": 1,
     "chick": 1,
     "carlos": 10,
@@ -497,6 +498,11 @@
       "title": "A MAN FROM CANADA IS HERE!",
       "start_ts": 1677632460,
       "youtube_archive_id": "5IX24g3qopo"
+    },
+    "a_man_from_canada_until_6am": {
+      "title": "A MAN FROM CANADA UNTIL 6AM",
+      "start_ts": 1683263448,
+      "youtube_archive_id": "ZCb9IZDJocM"
     }
   },
   "messages": [
@@ -3366,6 +3372,36 @@
       "message": "Oh I can answer that one: Phil despises all content creators more successful than him, so basically he only likes people who \u201cgive him a fair shake\u201d.",
       "commands": [
         "one"
+      ]
+    },
+    {
+      "ts": 1683280437,
+      "username": "@BigMoneySonny",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_until_6am",
+      "message": "Don\u2019t forget to sit in the bowl of honey. It\u2019s content brother ! :face_with_tears_of_joy: You seem to have a good vibe. I\u2019m from NYC but live in LA and celebrating my birthday this weekend in Maui. Salutes man !",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683279616,
+      "username": "@BigMoneySonny",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_until_6am",
+      "message": "Sit in a bowl of honey :face_with_tears_of_joy: let\u2019s get it !",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1683272878,
+      "username": "@SNKNostalgia",
+      "platform": "youtube",
+      "stream_id": "a_man_from_canada_until_6am",
+      "message": ":grinning_squinting_face: I learned playing bass 2005 Epiphone 4 string",
+      "commands": [
+        "face"
       ]
     },
     {
