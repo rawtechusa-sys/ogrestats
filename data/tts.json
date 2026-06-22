@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100769,
+  "updated_ts": 1782100776,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -392,7 +392,8 @@
     "lets_discuss_my_budget_pc_build",
     "lets_discuss_nick_mercs_road_to_1000_members",
     "lets_discuss_sam_hyde_and_the_quartering",
-    "lets_discuss_some_important_things_road_to_1000_members"
+    "lets_discuss_some_important_things_road_to_1000_members",
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement"
   ],
   "commands": {
     "stan": 27,
@@ -425,10 +426,10 @@
     "turkey": 7,
     "eyes": 88,
     "africa": 1,
-    "face": 368,
+    "face": 369,
     "petersonxhhanson": 1,
     "poo": 21,
-    "joy": 258,
+    "joy": 259,
     "gameboy": 1,
     "chick": 2,
     "carlos": 32,
@@ -441,8 +442,8 @@
     "tongue": 7,
     "heart": 120,
     "shorts": 1,
-    "laughing": 147,
-    "news": 18,
+    "laughing": 148,
+    "news": 19,
     "chicken": 43,
     "cake": 7,
     "d": 4,
@@ -505,7 +506,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 3,
-    "tomorrow": 17,
+    "tomorrow": 18,
     "horse": 11,
     "bug": 1,
     "violin": 1,
@@ -2815,6 +2816,11 @@
       "title": "Let's Discuss Some Important Things (Road To 1000 Members)",
       "start_ts": 1685746053,
       "youtube_archive_id": "wLcFj71BSDM"
+    },
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement": {
+      "title": "Let's Discuss Soulja Boy's Twitch TRDR Pocket Statement",
+      "start_ts": 1631752734,
+      "youtube_archive_id": "eINuzUrQFMg"
     }
   },
   "messages": [
@@ -23219,6 +23225,56 @@
       "message": "How much for a drunk Just Dance stream? :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1631758478,
+      "username": "@johnny112115",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "message": "Rich Tomorrow: Soulja Boy actually refunded me, let\u2019s get into it",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1631757498,
+      "username": "@NintegaDario",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "message": "Rich about to be rich for real! :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1631757023,
+      "username": "@growingup15",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "message": "Noticed he havent pulled the whole We trying to pull a black man down spile again once even black ppl like myself started calling him out publicly :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1631756828,
+      "username": "@MohamedAhmed-cu3rh",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "message": "Whats up dad its MO from colorado i just got my hand on PS5 and i love it. And so excited to play more but im watching your live :face_with_tears_of_joy: its hilarious",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1631754168,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "message": "Breaking news: soujia boy unveiling a new retro clone counsel made by Craig the tec expert and comes with one free game, meatloaf rotation",
+      "commands": [
+        "news"
       ]
     },
     {
