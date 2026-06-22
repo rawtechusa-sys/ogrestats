@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096647,
+  "updated_ts": 1782096709,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -102,7 +102,8 @@
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
     "a_stream_for_men",
     "a_streaming_man",
-    "a_surprise_stream"
+    "a_surprise_stream",
+    "a_technical_test_man_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1720,6 +1721,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.45,
       "avg_active_chatters": 25.39
+    },
+    "a_technical_test_man_stream": {
+      "stream_id": "a_technical_test_man_stream",
+      "title": "A Technical Test Man Stream",
+      "start_ts": 1689220746,
+      "end_ts": 1689223657,
+      "duration_sec": 2911,
+      "youtube_archive_id": "4Qm509KIDPI",
+      "source_platform": "youtube",
+      "total_donations_usd": 23.96,
+      "donation_count": 9,
+      "donations_per_min": 0.4939,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.71,
+      "avg_active_chatters": 40.49
     }
   }
 }
