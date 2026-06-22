@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099916,
+  "updated_ts": 1782099925,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -291,7 +291,8 @@
     "getting_high_on_a_saturday_a_brewing_brony_war",
     "girlfriend_kicked_me_out_of_bed_so_im_back",
     "grandpa_is_playing_call_of_duty_loud_farts",
-    "happy_fking_halloween"
+    "happy_fking_halloween",
+    "he_admitted_itwtf"
   ],
   "commands": {
     "stan": 27,
@@ -461,7 +462,7 @@
     "ear": 2,
     "reviewlexlutherusa": 1,
     "rocket": 1,
-    "droplets": 9,
+    "droplets": 10,
     "tomato": 3,
     "hearts": 7,
     "million": 1,
@@ -664,7 +665,8 @@
     "said": 1,
     "reviewimprovusa": 1,
     "smo": 1,
-    "blood": 1
+    "blood": 1,
+    "idiots": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2116,6 +2118,11 @@
       "title": "Happy F*$king Halloween",
       "start_ts": 1698795238,
       "youtube_archive_id": "j6d8g5WWWFw"
+    },
+    "he_admitted_itwtf": {
+      "title": "He Admitted It....Wtf....",
+      "start_ts": 1719367360,
+      "youtube_archive_id": "3Hkv-tCsavA"
     }
   },
   "messages": [
@@ -4240,6 +4247,26 @@
       "message": "I LOVE YOU :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1719370051,
+      "username": "@Juicyb00ch",
+      "platform": "youtube",
+      "stream_id": "he_admitted_itwtf",
+      "message": "\ud83e\udd77\ud83c\udffb:sweat_droplets:",
+      "commands": [
+        "droplets"
+      ]
+    },
+    {
+      "ts": 1719367992,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "he_admitted_itwtf",
+      "message": "Idiots: \u201cRich really needs to take a break from YouTube. He\u2019s clearly been unstable since everything happened with his daughter.\u201d Also idiots: \u201cRich only visited three times because he doesn\u2019t care.\u201d",
+      "commands": [
+        "idiots"
       ]
     },
     {
