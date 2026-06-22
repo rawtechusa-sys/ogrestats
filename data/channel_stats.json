@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102698,
+  "updated_ts": 1782102703,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -687,7 +687,8 @@
     "the_tommy_tallarico_intellivision_amico_files",
     "thekarening_might_be_joining_me",
     "thequartering_is_coming_on_in_20_minutes",
-    "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv"
+    "thequartering_is_coming_on_in_20_minutes_plus_more_quantum_tv",
+    "thequartering_is_scared_of_me_so_im_gonna_stream_and_laugh_at_him"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11665,6 +11666,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 20.04,
       "avg_active_chatters": 57.17
+    },
+    "thequartering_is_scared_of_me_so_im_gonna_stream_and_laugh_at_him": {
+      "stream_id": "thequartering_is_scared_of_me_so_im_gonna_stream_and_laugh_at_him",
+      "title": "TheQuartering Is Scared Of Me. So, I'm Gonna Stream And Laugh At Him",
+      "start_ts": 1681767192,
+      "end_ts": 1681779978,
+      "duration_sec": 12786,
+      "youtube_archive_id": "JH5tthBCPpg",
+      "source_platform": "youtube",
+      "total_donations_usd": 305.5,
+      "donation_count": 65,
+      "donations_per_min": 1.4336,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.84,
+      "avg_active_chatters": 28.37
     }
   }
 }
