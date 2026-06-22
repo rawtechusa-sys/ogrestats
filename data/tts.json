@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098460,
+  "updated_ts": 1782098468,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -114,7 +114,8 @@
     "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
     "a_wingsofredemption_marathon_stream",
     "a_woman_is_with_us",
-    "a_wonderful_qvc_roast"
+    "a_wonderful_qvc_roast",
+    "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing"
   ],
   "commands": {
     "stan": 27,
@@ -145,12 +146,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 27,
+    "eyes": 28,
     "africa": 1,
-    "face": 94,
+    "face": 95,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 79,
+    "joy": 80,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -160,7 +161,7 @@
     "voice": 1,
     "cucumber": 10,
     "biceps": 3,
-    "tongue": 3,
+    "tongue": 4,
     "heart": 38,
     "shorts": 1,
     "laughing": 38,
@@ -185,7 +186,7 @@
     "hole": 3,
     "rooster": 13,
     "peach": 2,
-    "fire": 5,
+    "fire": 6,
     "kendal": 1,
     "up": 11,
     "note": 5,
@@ -312,7 +313,7 @@
     "this": 1,
     "notes": 2,
     "wars": 1,
-    "points": 1,
+    "points": 2,
     "wastebasket": 1,
     "left": 1,
     "flag": 1,
@@ -883,6 +884,11 @@
       "title": "A Wonderful QVC Roast",
       "start_ts": 1632878461,
       "youtube_archive_id": "8wVWLKW7oFE"
+    },
+    "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing": {
+      "title": "A Wonderful Samsung Galaxy Z Fold3 5G Unboxing",
+      "start_ts": 1630633429,
+      "youtube_archive_id": "p_5dyfWstNQ"
     }
   },
   "messages": [
@@ -8318,6 +8324,66 @@
       "message": "I'm dancing in my bday suit watching Richie! :hugging_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1630636260,
+      "username": "@Abroadinkorea711",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "werid thought it was typically 3000. either way :hundred_points:",
+      "commands": [
+        "points"
+      ]
+    },
+    {
+      "ts": 1630635750,
+      "username": "@charleswolfenbarger6333",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "flip3 at 120 with Gamepass n the razer kishi is :fire:",
+      "commands": [
+        "fire"
+      ]
+    },
+    {
+      "ts": 1630634585,
+      "username": "@FlukasMcDoogle",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "6 PS1s > PS5 because math. Change my mind. :squinting_face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1630634160,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "am I exposed yet rich? or is that not how this works? :grinning_face_with_sweat::grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1630633995,
+      "username": "@ZAKtalksTECH",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "I saw you tweet about it a couple weeks. I checked into it. Threw some dollars at it, and wel... I'm happy! :beaming_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1630633858,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+      "message": "you don't like my stream? *movies Carlos an inch to the side* what about now?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
