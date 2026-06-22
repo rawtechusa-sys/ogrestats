@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100465,
+  "updated_ts": 1782100473,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -354,7 +354,8 @@
     "its_time_to_party",
     "its_time_to_take_games_back_gamers_who_game",
     "itsagundams_dspgaming_video_is_a_masterpiece",
-    "jaysus_gaming_test_stream"
+    "jaysus_gaming_test_stream",
+    "just_a_man_and_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6004,6 +6005,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.03,
       "avg_active_chatters": 35.93
+    },
+    "just_a_man_and_birds": {
+      "stream_id": "just_a_man_and_birds",
+      "title": "Just A Man And Birds",
+      "start_ts": 1651281884,
+      "end_ts": 1651288655,
+      "duration_sec": 6771,
+      "youtube_archive_id": "5b05_D4gEyQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 464.66,
+      "donation_count": 116,
+      "donations_per_min": 4.1175,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.49,
+      "avg_active_chatters": 37.38
     }
   }
 }
