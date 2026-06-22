@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098790,
+  "updated_ts": 1782098798,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -156,7 +156,8 @@
     "between_two_birds_feat_men",
     "big_problems_over_at_youtube",
     "bill_gates_is_a_man",
-    "bird_and_man_mayhem"
+    "bird_and_man_mayhem",
+    "bird_and_man_mayhem_live_chris_chan"
   ],
   "commands": {
     "stan": 27,
@@ -192,7 +193,7 @@
     "face": 125,
     "petersonxhhanson": 1,
     "poo": 9,
-    "joy": 99,
+    "joy": 100,
     "gameboy": 1,
     "chick": 1,
     "carlos": 13,
@@ -206,7 +207,7 @@
     "heart": 46,
     "shorts": 1,
     "laughing": 50,
-    "news": 10,
+    "news": 11,
     "chicken": 21,
     "cake": 1,
     "d": 1,
@@ -225,7 +226,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 15,
+    "rooster": 16,
     "peach": 3,
     "fire": 9,
     "kendal": 1,
@@ -408,7 +409,8 @@
     "livestreams": 1,
     "laugh": 1,
     "shirt": 1,
-    "vhs": 1
+    "vhs": 1,
+    "pov": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1185,6 +1187,11 @@
       "title": "Bird And Man Mayhem",
       "start_ts": 1636424385,
       "youtube_archive_id": "UlxBqgVrXKA"
+    },
+    "bird_and_man_mayhem_live_chris_chan": {
+      "title": "Bird And Man Mayhem Live (Chris Chan)",
+      "start_ts": 1662340935,
+      "youtube_archive_id": "L5JsMSdcOCs"
     }
   },
   "messages": [
@@ -7012,6 +7019,46 @@
       "message": "Rich ive been watching you since 2013, and i figured i made a character to look like you on FFXIV. Is it ok to send to you on twitter also tagged u :smiling_face_with_hearts:",
       "commands": [
         "hearts"
+      ]
+    },
+    {
+      "ts": 1662345001,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem_live_chris_chan",
+      "message": "POV: The Wife Left For Pizza Without You",
+      "commands": [
+        "pov"
+      ]
+    },
+    {
+      "ts": 1662342373,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem_live_chris_chan",
+      "message": "Ban anyone who says abbhi is in a Turkish prison :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1662342154,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem_live_chris_chan",
+      "message": "Breaking News: Abbhi's STILL Missing More at 11",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1662341480,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "bird_and_man_mayhem_live_chris_chan",
+      "message": "I don\u2019t think the builder of Carlos intended the bird to be kissed and picked up hundreds to thousands of times :face_with_tears_of_joy: he was great tho",
+      "commands": [
+        "joy"
       ]
     },
     {
