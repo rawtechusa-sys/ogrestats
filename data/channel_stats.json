@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098415,
+  "updated_ts": 1782098422,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -109,7 +109,8 @@
     "a_thanksgving_2_man_stream_pt2_feat_birds_and_men",
     "a_thequartering_man_experience",
     "a_two_man_marathon_stream_watching_cyraxx",
-    "a_very_late_man"
+    "a_very_late_man",
+    "a_very_late_man_part_deux_totally_baked"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1839,6 +1840,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.81,
       "avg_active_chatters": 37.09
+    },
+    "a_very_late_man_part_deux_totally_baked": {
+      "stream_id": "a_very_late_man_part_deux_totally_baked",
+      "title": "A Very Late Man Part Deux: Totally Baked",
+      "start_ts": 1638156124,
+      "end_ts": 1638168491,
+      "duration_sec": 12367,
+      "youtube_archive_id": "jLsA5eGVthg",
+      "source_platform": "youtube",
+      "total_donations_usd": 333.19,
+      "donation_count": 85,
+      "donations_per_min": 1.6165,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.86,
+      "avg_active_chatters": 32.54
     }
   }
 }
