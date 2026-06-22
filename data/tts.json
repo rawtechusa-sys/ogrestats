@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099942,
+  "updated_ts": 1782099951,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -294,7 +294,8 @@
     "happy_fking_halloween",
     "he_admitted_itwtf",
     "hes_back_and_thoroughly_tickled",
-    "hes_back_and_thoroughly_tickledpart_deux"
+    "hes_back_and_thoroughly_tickledpart_deux",
+    "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition"
   ],
   "commands": {
     "stan": 27,
@@ -325,12 +326,12 @@
     "device": 1,
     "idevice": 1,
     "turkey": 6,
-    "eyes": 71,
+    "eyes": 72,
     "africa": 1,
     "face": 269,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 201,
+    "joy": 202,
     "gameboy": 1,
     "chick": 1,
     "carlos": 25,
@@ -343,7 +344,7 @@
     "tongue": 5,
     "heart": 87,
     "shorts": 1,
-    "laughing": 96,
+    "laughing": 100,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -357,7 +358,7 @@
     "lantern": 2,
     "leg": 1,
     "severance": 2,
-    "gta": 4,
+    "gta": 5,
     "me": 6,
     "kill": 1,
     "enough": 1,
@@ -477,7 +478,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 10,
+    "sweat": 11,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -672,7 +673,9 @@
     "recommendation": 1,
     "shot": 1,
     "creed": 1,
-    "protip": 1
+    "protip": 1,
+    "auto": 1,
+    "muta": 2
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2139,6 +2142,11 @@
       "title": "He's Back, And Thoroughly Tickled...(Part Deux)",
       "start_ts": 1660692817,
       "youtube_archive_id": "p-lcmai_nh8"
+    },
+    "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition": {
+      "title": "How Bad Is GTA: Vice City On The Nintendo Switch? #GTATrilogyDefinitiveEdition",
+      "start_ts": 1637812345,
+      "youtube_archive_id": "elIkU-dXjv8"
     }
   },
   "messages": [
@@ -15258,6 +15266,107 @@
       "message": "Feed the birds, hit the like :thumbs_up:. They're hungry.:chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1637815900,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Say this like Muta: AMOGUS? SUS!",
+      "commands": [
+        "muta"
+      ]
+    },
+    {
+      "ts": 1637815620,
+      "username": "@ThatEnglishGent",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Grovestreet have managed to do stop-motion animations without actually trying :rolling_on_the_floor_laughing: is Switch only feature or curse? :grinning_face_with_sweat:",
+      "commands": [
+        "laughing",
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1637815354,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Say this like Muta: AMOGUS?! SUS!",
+      "commands": [
+        "muta"
+      ]
+    },
+    {
+      "ts": 1637815307,
+      "username": "@RUDAMENTRY",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "you can see the blimp and airplane from a farther distance than the vehicles. I'm enjoying your stream right now. love the complaints :grinning_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1637815200,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "This game is making fallout 76 look good :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1637814929,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "How will Grand Theft Auto: Honolulu run on the Switch?",
+      "commands": [
+        "auto"
+      ]
+    },
+    {
+      "ts": 1637814405,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Imagine GTA V on the switch :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing: thats a problem",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1637813943,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Isn't Witcher 3 on switch a big open world game :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1637813615,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "Will GTA: Honolulu be on the Switch?",
+      "commands": [
+        "gta"
+      ]
+    },
+    {
+      "ts": 1637812657,
+      "username": "@clays32",
+      "platform": "youtube",
+      "stream_id": "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
+      "message": "on this episode of how sh>t GTA looks on the switch :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
