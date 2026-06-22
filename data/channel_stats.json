@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102348,
+  "updated_ts": 1782102353,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -625,7 +625,8 @@
     "talking_with_keffals",
     "tell_your_dad_about_this_stream",
     "testing_out_simulcasting_feat_men",
-    "the_amico_family_fun_continues_part_3284"
+    "the_amico_family_fun_continues_part_3284",
+    "the_andrew_tate_documentary_is_bizarre"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10611,6 +10612,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.54,
       "avg_active_chatters": 37.72
+    },
+    "the_andrew_tate_documentary_is_bizarre": {
+      "stream_id": "the_andrew_tate_documentary_is_bizarre",
+      "title": "The Andrew Tate Documentary Is BIZARRE",
+      "start_ts": 1673833902,
+      "end_ts": 1673840628,
+      "duration_sec": 6726,
+      "youtube_archive_id": "vHZv_0wQYCQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 231.81,
+      "donation_count": 60,
+      "donations_per_min": 2.0679,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.5,
+      "avg_active_chatters": 32.65
     }
   }
 }
