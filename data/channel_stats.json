@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101788,
+  "updated_ts": 1782101793,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -535,7 +535,8 @@
     "playing_modern_warfare_2_on_a_handheld",
     "playing_some_gta_iv_cause_why_not",
     "playing_some_more_wii_u_feat_birds",
-    "playing_super_nintendo_games_like_a_man"
+    "playing_super_nintendo_games_like_a_man",
+    "playing_teenage_mutant_ninja_turtles_shredders_revenge"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9081,6 +9082,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.04,
       "avg_active_chatters": 25.9
+    },
+    "playing_teenage_mutant_ninja_turtles_shredders_revenge": {
+      "stream_id": "playing_teenage_mutant_ninja_turtles_shredders_revenge",
+      "title": "Playing Teenage Mutant Ninja Turtles: Shredders Revenge",
+      "start_ts": 1655780832,
+      "end_ts": 1655784164,
+      "duration_sec": 3332,
+      "youtube_archive_id": "nSGKtScPeAw",
+      "source_platform": "youtube",
+      "total_donations_usd": 45.96,
+      "donation_count": 14,
+      "donations_per_min": 0.8276,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.14,
+      "avg_active_chatters": 36.88
     }
   }
 }
