@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100771,
+  "updated_ts": 1782100778,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -394,7 +394,8 @@
     "lets_discuss_my_budget_pc_build",
     "lets_discuss_nick_mercs_road_to_1000_members",
     "lets_discuss_sam_hyde_and_the_quartering",
-    "lets_discuss_some_important_things_road_to_1000_members"
+    "lets_discuss_some_important_things_road_to_1000_members",
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6684,6 +6685,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.76,
       "avg_active_chatters": 28.27
+    },
+    "lets_discuss_soulja_boys_twitch_trdr_pocket_statement": {
+      "stream_id": "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
+      "title": "Let's Discuss Soulja Boy's Twitch TRDR Pocket Statement",
+      "start_ts": 1631752734,
+      "end_ts": 1631759264,
+      "duration_sec": 6530,
+      "youtube_archive_id": "eINuzUrQFMg",
+      "source_platform": "youtube",
+      "total_donations_usd": 334.36,
+      "donation_count": 81,
+      "donations_per_min": 3.0722,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 25.96,
+      "avg_active_chatters": 70.1
     }
   }
 }
