@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782096098,
+  "updated_ts": 1782096158,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -93,7 +93,8 @@
     "a_quality_qvc_bird_roast",
     "a_quick_ask_me_anything_stream_power_wash_simulator",
     "a_quick_man_stream_plus_nintendo_switch_oled_giveaway_update",
-    "a_quick_stream"
+    "a_quick_stream",
+    "a_quick_thank_you_and_boxing_update"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1567,6 +1568,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.78,
       "avg_active_chatters": 25.69
+    },
+    "a_quick_thank_you_and_boxing_update": {
+      "stream_id": "a_quick_thank_you_and_boxing_update",
+      "title": "A Quick Thank You And Boxing Update",
+      "start_ts": 1684298862,
+      "end_ts": 1684299618,
+      "duration_sec": 756,
+      "youtube_archive_id": "9UO1E-Te31c",
+      "source_platform": "youtube",
+      "total_donations_usd": 78.18,
+      "donation_count": 6,
+      "donations_per_min": 6.2048,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.85,
+      "avg_active_chatters": 38.08
     }
   }
 }
