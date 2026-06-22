@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101584,
+  "updated_ts": 1782101592,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -505,7 +505,8 @@
     "phil_boogie_men",
     "phil_discusses_the_documentary_and_complains_about_me",
     "phil_dsp_may_1st_gaming_sssniperwolf_airsoftfatty",
-    "phil_is_a_man"
+    "phil_is_a_man",
+    "phil_is_an_angry_man_and_more_thecompletionist_drama"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8571,6 +8572,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.05,
       "avg_active_chatters": 24.32
+    },
+    "phil_is_an_angry_man_and_more_thecompletionist_drama": {
+      "stream_id": "phil_is_an_angry_man_and_more_thecompletionist_drama",
+      "title": "PHIL IS AN ANGRY MAN, AND MORE THECOMPLETIONIST DRAMA",
+      "start_ts": 1700615378,
+      "end_ts": 1700622513,
+      "duration_sec": 7135,
+      "youtube_archive_id": "A0L2cs-4Low",
+      "source_platform": "youtube",
+      "total_donations_usd": 574.0,
+      "donation_count": 67,
+      "donations_per_min": 4.8269,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 19.08,
+      "avg_active_chatters": 49.19
     }
   }
 }
