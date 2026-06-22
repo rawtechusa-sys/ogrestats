@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098640,
+  "updated_ts": 1782098649,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -138,7 +138,8 @@
     "angrily_chatting_and_playing_elden_ring",
     "another_interesting_pat_the_nes_punk_twist",
     "another_surprise_stream_feat_a_man_and_birds",
-    "another_swatting_disaster_and_activisionubisoft_allegations"
+    "another_swatting_disaster_and_activisionubisoft_allegations",
+    "answering_questions"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2332,6 +2333,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.72,
       "avg_active_chatters": 50.8
+    },
+    "answering_questions": {
+      "stream_id": "answering_questions",
+      "title": "Answering Questions",
+      "start_ts": 1710280299,
+      "end_ts": 1710302817,
+      "duration_sec": 22518,
+      "youtube_archive_id": "zn78ahzHcgg",
+      "source_platform": "youtube",
+      "total_donations_usd": 350.79,
+      "donation_count": 71,
+      "donations_per_min": 0.9347,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.5,
+      "avg_active_chatters": 24.98
     }
   }
 }
