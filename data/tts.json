@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101254,
+  "updated_ts": 1782101262,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -458,7 +458,8 @@
     "more_amico_family_fun",
     "more_chris_chan_insanity",
     "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
-    "more_chris_chan_insanity_then_maybe_elden_ring"
+    "more_chris_chan_insanity_then_maybe_elden_ring",
+    "more_cringe_feat_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -531,7 +532,7 @@
     "peach": 15,
     "fire": 24,
     "kendal": 1,
-    "up": 41,
+    "up": 42,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 13,
@@ -3253,6 +3254,11 @@
       "title": "More Chris Chan Insanity (Then Maybe Elden Ring)",
       "start_ts": 1649619212,
       "youtube_archive_id": "zsFNYVR-jRE"
+    },
+    "more_cringe_feat_a_man": {
+      "title": "More Cringe (Feat. A Man)",
+      "start_ts": 1671322102,
+      "youtube_archive_id": "2FHV4QJwQYA"
     }
   },
   "messages": [
@@ -15430,6 +15436,16 @@
       "message": "Bugatti? More like a used Toyota Camry with 5k :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1671324935,
+      "username": "@pacificproductionsofficial",
+      "platform": "youtube",
+      "stream_id": "more_cringe_feat_a_man",
+      "message": "Thanks Rich :thumbs_up:",
+      "commands": [
+        "up"
       ]
     },
     {
