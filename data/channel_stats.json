@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099011,
+  "updated_ts": 1782099019,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -184,7 +184,8 @@
     "chatting_with_gamerfrommars_about_their_chris_chan_documentary",
     "chatting_with_intro_guy",
     "chicken_suit_ep_9_discussing_elden_ring",
-    "chris_watts_in_4k"
+    "chris_watts_in_4k",
+    "christmas_night_shoulders"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3114,6 +3115,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.05,
       "avg_active_chatters": 27.26
+    },
+    "christmas_night_shoulders": {
+      "stream_id": "christmas_night_shoulders",
+      "title": "Christmas Night Shoulders",
+      "start_ts": 1672019652,
+      "end_ts": 1672031991,
+      "duration_sec": 12339,
+      "youtube_archive_id": "tM8bwtlYmH0",
+      "source_platform": "youtube",
+      "total_donations_usd": 433.2,
+      "donation_count": 94,
+      "donations_per_min": 2.1065,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.21,
+      "avg_active_chatters": 24.74
     }
   }
 }
