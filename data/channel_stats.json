@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098824,
+  "updated_ts": 1782098832,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -161,7 +161,8 @@
     "bird_and_man_mayhem_live_chris_chan",
     "bird_love_live_dating_nightmares",
     "birds_a_man_and_seltzer",
-    "birds_and_a_man_feat_birds"
+    "birds_and_a_man_feat_birds",
+    "birds_and_men_live"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -2723,6 +2724,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.31,
       "avg_active_chatters": 30.15
+    },
+    "birds_and_men_live": {
+      "stream_id": "birds_and_men_live",
+      "title": "Birds And Men LIVE",
+      "start_ts": 1648258584,
+      "end_ts": 1648263205,
+      "duration_sec": 4621,
+      "youtube_archive_id": "KDa9ucEVz_c",
+      "source_platform": "youtube",
+      "total_donations_usd": 152.9,
+      "donation_count": 32,
+      "donations_per_min": 1.9853,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.04,
+      "avg_active_chatters": 28.28
     }
   }
 }
