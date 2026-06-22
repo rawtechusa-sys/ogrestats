@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100453,
+  "updated_ts": 1782100465,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -353,7 +353,8 @@
     "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
     "its_time_to_party",
     "its_time_to_take_games_back_gamers_who_game",
-    "itsagundams_dspgaming_video_is_a_masterpiece"
+    "itsagundams_dspgaming_video_is_a_masterpiece",
+    "jaysus_gaming_test_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5987,6 +5988,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.81,
       "avg_active_chatters": 27.43
+    },
+    "jaysus_gaming_test_stream": {
+      "stream_id": "jaysus_gaming_test_stream",
+      "title": "Jaysus Gaming Test Stream",
+      "start_ts": 1705173044,
+      "end_ts": 1705180872,
+      "duration_sec": 7828,
+      "youtube_archive_id": "YDzoaz6B7Eg",
+      "source_platform": "youtube",
+      "total_donations_usd": 164.7,
+      "donation_count": 36,
+      "donations_per_min": 1.2624,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.03,
+      "avg_active_chatters": 35.93
     }
   }
 }
