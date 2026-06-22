@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099607,
+  "updated_ts": 1782099616,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -256,7 +256,8 @@
     "drinking_stories_with_intro_guy",
     "drunk_women_phil_and_a_man",
     "dsp_dkoldies_and_a_man",
-    "dsp_intellivision_family_fun_and_prank_calls"
+    "dsp_intellivision_family_fun_and_prank_calls",
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -4338,6 +4339,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 13.98,
       "avg_active_chatters": 35.91
+    },
+    "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update": {
+      "stream_id": "dsp_is_actually_right_about_something_edp445_victim_speaks_out_chris_chan_update",
+      "title": "DSP Is Actually Right About Something, EDP445 Victim Speaks Out, Chris Chan Update",
+      "start_ts": 1694825482,
+      "end_ts": 1694833237,
+      "duration_sec": 7755,
+      "youtube_archive_id": "DMitvMzDgGo",
+      "source_platform": "youtube",
+      "total_donations_usd": 172.78,
+      "donation_count": 46,
+      "donations_per_min": 1.3368,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.92,
+      "avg_active_chatters": 35.74
     }
   }
 }
