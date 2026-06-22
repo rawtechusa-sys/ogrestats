@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102116,
+  "updated_ts": 1782102122,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -588,7 +588,8 @@
     "so_i_beat_elden_ring_and_recorded_it_lets_watch_the_fight_and_discuss_the_game",
     "so_i_beat_eldenrings_malenia_on_the_second_try",
     "so_i_got_the_google_pixel_6_pro",
-    "so_much_man_feat_birds"
+    "so_much_man_feat_birds",
+    "so_much_man_so_many_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9982,6 +9983,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 22.18,
       "avg_active_chatters": 49.92
+    },
+    "so_much_man_so_many_birds": {
+      "stream_id": "so_much_man_so_many_birds",
+      "title": "So Much Man. So Many Birds...",
+      "start_ts": 1664928889,
+      "end_ts": 1664938059,
+      "duration_sec": 9170,
+      "youtube_archive_id": "pMiy54tRcIg",
+      "source_platform": "youtube",
+      "total_donations_usd": 468.61,
+      "donation_count": 114,
+      "donations_per_min": 3.0662,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.71,
+      "avg_active_chatters": 37.34
     }
   }
 }
