@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102333,
+  "updated_ts": 1782102338,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -623,7 +623,8 @@
     "talking_about_crap_with_liana_kerzner",
     "talking_to_an_angry_former_fan",
     "talking_with_keffals",
-    "tell_your_dad_about_this_stream"
+    "tell_your_dad_about_this_stream",
+    "testing_out_simulcasting_feat_men"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -10577,6 +10578,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.09,
       "avg_active_chatters": 41.35
+    },
+    "testing_out_simulcasting_feat_men": {
+      "stream_id": "testing_out_simulcasting_feat_men",
+      "title": "Testing Out Simulcasting (Feat. Men)",
+      "start_ts": 1698366342,
+      "end_ts": 1698367229,
+      "duration_sec": 887,
+      "youtube_archive_id": "oekoxpCCsvE",
+      "source_platform": "youtube",
+      "total_donations_usd": 18.46,
+      "donation_count": 8,
+      "donations_per_min": 1.2487,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 18.13,
+      "avg_active_chatters": 41.0
     }
   }
 }
