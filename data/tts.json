@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098647,
+  "updated_ts": 1782098655,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -138,7 +138,8 @@
     "another_interesting_pat_the_nes_punk_twist",
     "another_surprise_stream_feat_a_man_and_birds",
     "another_swatting_disaster_and_activisionubisoft_allegations",
-    "answering_questions"
+    "answering_questions",
+    "answering_questions_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -189,7 +190,7 @@
     "shorts": 1,
     "laughing": 43,
     "news": 7,
-    "chicken": 18,
+    "chicken": 19,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -207,7 +208,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 14,
+    "rooster": 15,
     "peach": 3,
     "fire": 8,
     "kendal": 1,
@@ -1058,6 +1059,11 @@
       "title": "Answering Questions",
       "start_ts": 1710280299,
       "youtube_archive_id": "zn78ahzHcgg"
+    },
+    "answering_questions_feat_birds": {
+      "title": "Answering Questions (Feat. Birds)",
+      "start_ts": 1661716662,
+      "youtube_archive_id": "yOZBozd5lbQ"
     }
   },
   "messages": [
@@ -6472,6 +6478,26 @@
       "message": "Random request: Hey Rich, you mind checking out MeatCanyon Secret Formula vid? Just 3 mins. Would be thoroughly tickled to see your reaction.",
       "commands": [
         "request"
+      ]
+    },
+    {
+      "ts": 1661719473,
+      "username": "@alexanderiakovidis2239",
+      "platform": "youtube",
+      "stream_id": "answering_questions_feat_birds",
+      "message": "Cheers from Greece! And Phillip Burnel is a MAN!:chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1661717509,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "answering_questions_feat_birds",
+      "message": "To be far capitalism is bad but when corporations talk about in media it\u2019s always cringe Cluck and we can play games pls :rooster::rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
