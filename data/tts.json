@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099413,
+  "updated_ts": 1782099421,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -232,7 +232,8 @@
     "come_stare_at_a_man_and_ask_his_birds_questions",
     "come_stare_at_a_middle_aged_man_livestream",
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
-    "come_stream_with_a_man"
+    "come_stream_with_a_man",
+    "come_talk_to_a_man_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -265,7 +266,7 @@
     "turkey": 6,
     "eyes": 61,
     "africa": 1,
-    "face": 206,
+    "face": 208,
     "petersonxhhanson": 1,
     "poo": 11,
     "joy": 140,
@@ -281,7 +282,7 @@
     "tongue": 5,
     "heart": 66,
     "shorts": 1,
-    "laughing": 65,
+    "laughing": 66,
     "news": 13,
     "chicken": 32,
     "cake": 7,
@@ -542,7 +543,8 @@
     "theme": 1,
     "pros": 1,
     "cons": 1,
-    "crossbones": 1
+    "crossbones": 1,
+    "sound": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1699,6 +1701,11 @@
       "title": "Come Stream With A Man",
       "start_ts": 1647135645,
       "youtube_archive_id": "CLbBLdU6msU"
+    },
+    "come_talk_to_a_man_feat_birds": {
+      "title": "Come Talk To A Man (Feat Birds)",
+      "start_ts": 1643771155,
+      "youtube_archive_id": "C7nI7UIGzYg"
     }
   },
   "messages": [
@@ -10839,6 +10846,46 @@
       "message": "Square Enix games usually contain incredibly well done graphics, character, and voice acting. :slightly_smiling_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1643775127,
+      "username": "@cryptnito",
+      "platform": "youtube",
+      "stream_id": "come_talk_to_a_man_feat_birds",
+      "message": "Crypt nito :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1643775036,
+      "username": "@cryptnito",
+      "platform": "youtube",
+      "stream_id": "come_talk_to_a_man_feat_birds",
+      "message": "Funniest shit ever! :grinning_face_with_sweat::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1643772170,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "come_talk_to_a_man_feat_birds",
+      "message": "Dying Light 2 looking incredible :weary_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1643772074,
+      "username": "@vincehowell1018",
+      "platform": "youtube",
+      "stream_id": "come_talk_to_a_man_feat_birds",
+      "message": "Sound: *spread cheeks go to town* *ooh yeah* *faaaarrrt* *getting grandpa excited* *hmm*",
+      "commands": [
+        "sound"
       ]
     },
     {
