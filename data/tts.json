@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099158,
+  "updated_ts": 1782099167,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -201,7 +201,8 @@
     "come_ask_questions_10_9_2021",
     "come_ask_questions_712021",
     "come_ask_questions_7142021",
-    "come_ask_questions_7202021"
+    "come_ask_questions_7202021",
+    "come_ask_questions_742021"
   ],
   "commands": {
     "stan": 27,
@@ -234,7 +235,7 @@
     "turkey": 5,
     "eyes": 55,
     "africa": 1,
-    "face": 171,
+    "face": 173,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 122,
@@ -252,7 +253,7 @@
     "shorts": 1,
     "laughing": 57,
     "news": 12,
-    "chicken": 28,
+    "chicken": 30,
     "cake": 7,
     "d": 1,
     "halo": 2,
@@ -274,7 +275,7 @@
     "peach": 3,
     "fire": 12,
     "kendal": 1,
-    "up": 15,
+    "up": 16,
     "note": 5,
     "eyebrow": 2,
     "facepalming": 5,
@@ -1491,6 +1492,11 @@
       "title": "Come Ask Questions 7/20/2021",
       "start_ts": 1626827779,
       "youtube_archive_id": "bm8aXr6NQIU"
+    },
+    "come_ask_questions_742021": {
+      "title": "Come Ask Questions 7/4/2021",
+      "start_ts": 1625453619,
+      "youtube_archive_id": "rYbzwuwfbtw"
     }
   },
   "messages": [
@@ -13498,6 +13504,46 @@
       "message": "Rich agreeing with Pat :face_screaming_in_fear:",
       "commands": [
         "fear"
+      ]
+    },
+    {
+      "ts": 1625458476,
+      "username": "@DeathByFrenchFry",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_742021",
+      "message": "I just wish the perks and length of service transferred over, been a member for 11 months :crying_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1625457560,
+      "username": "@twinsuon1108",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_742021",
+      "message": "im jealous AF you know Ashens - naybe try again with edibles :grinning_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1625457208,
+      "username": "@ZAKtalksTECH",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_742021",
+      "message": "Hey Rich. So you're going the separate channel route for streams, eh? Well I'm here for it. Hope you're doing well. Let's get you on my show again. :thumbs_up:",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1625456780,
+      "username": "@anonymouse8686",
+      "platform": "youtube",
+      "stream_id": "come_ask_questions_742021",
+      "message": "life is like :chicken: n ball torture without the :chicken: balls",
+      "commands": [
+        "chicken"
       ]
     },
     {
