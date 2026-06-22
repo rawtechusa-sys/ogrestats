@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092395,
+  "updated_ts": 1782092412,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -10,7 +10,8 @@
     "random_late_man_stream_for_men",
     "grifters_jeffrey_and_phillip",
     "100_certified_man_stream_feat_beautiful_birds",
-    "12_hour_man_stream_feat_men"
+    "12_hour_man_stream_feat_men",
+    "12_hour_man_stream_feat_men_part_2"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -156,6 +157,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 8.19,
       "avg_active_chatters": 24.11
+    },
+    "12_hour_man_stream_feat_men_part_2": {
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "title": "12-Hour Man Stream (Feat. Men) Part 2",
+      "start_ts": 1675123662,
+      "end_ts": 1675152143,
+      "duration_sec": 28481,
+      "youtube_archive_id": "yZMloDGg3dY",
+      "source_platform": "youtube",
+      "total_donations_usd": 800.78,
+      "donation_count": 175,
+      "donations_per_min": 1.687,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.31,
+      "avg_active_chatters": 27.09
     }
   }
 }
