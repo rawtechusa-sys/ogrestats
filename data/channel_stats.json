@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101107,
+  "updated_ts": 1782101115,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -441,7 +441,8 @@
     "man_vs_demon_souls_remake",
     "man_vs_men_live",
     "man_vs_qvc",
-    "man_vs_steven_seagal"
+    "man_vs_steven_seagal",
+    "may_1st"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7483,6 +7484,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.74,
       "avg_active_chatters": 27.61
+    },
+    "may_1st": {
+      "stream_id": "may_1st",
+      "title": "May 1st",
+      "start_ts": 1714606929,
+      "end_ts": 1714617237,
+      "duration_sec": 10308,
+      "youtube_archive_id": "KcVt_jdKIsY",
+      "source_platform": "youtube",
+      "total_donations_usd": 243.73,
+      "donation_count": 70,
+      "donations_per_min": 1.4187,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 15.98,
+      "avg_active_chatters": 35.06
     }
   }
 }
