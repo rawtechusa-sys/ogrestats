@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099961,
+  "updated_ts": 1782099970,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -297,7 +297,8 @@
     "hes_back_and_thoroughly_tickled",
     "hes_back_and_thoroughly_tickledpart_deux",
     "how_bad_is_gta_vice_city_on_the_nintendo_switch_gtatrilogydefinitiveedition",
-    "i_am_alive"
+    "i_am_alive",
+    "i_am_beyond_furious"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5035,6 +5036,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 15.78,
       "avg_active_chatters": 34.0
+    },
+    "i_am_beyond_furious": {
+      "stream_id": "i_am_beyond_furious",
+      "title": "I Am Beyond Furious",
+      "start_ts": 1655253971,
+      "end_ts": 1655263834,
+      "duration_sec": 9863,
+      "youtube_archive_id": "9ra8GJzeL8E",
+      "source_platform": "youtube",
+      "total_donations_usd": 1783.86,
+      "donation_count": 281,
+      "donations_per_min": 10.8518,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 33.62,
+      "avg_active_chatters": 114.79
     }
   }
 }
