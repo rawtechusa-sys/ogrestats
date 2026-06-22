@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100144,
+  "updated_ts": 1782100153,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -318,7 +318,8 @@
     "idubbz_video_going_shopping_to_become_a_vtuber",
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "im_a_bully_plus_i_react_to_large_muscular_men",
-    "im_a_man"
+    "im_a_man",
+    "im_at_a_crossroads"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -5392,6 +5393,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.7,
       "avg_active_chatters": 37.9
+    },
+    "im_at_a_crossroads": {
+      "stream_id": "im_at_a_crossroads",
+      "title": "I'm At A Crossroads",
+      "start_ts": 1687474422,
+      "end_ts": 1687480632,
+      "duration_sec": 6210,
+      "youtube_archive_id": "MtspSv3N63Q",
+      "source_platform": "youtube",
+      "total_donations_usd": 313.86,
+      "donation_count": 34,
+      "donations_per_min": 3.0325,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.92,
+      "avg_active_chatters": 26.27
     }
   }
 }
