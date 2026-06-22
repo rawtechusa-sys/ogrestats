@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092654,
+  "updated_ts": 1782092683,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -21,7 +21,8 @@
     "2_middle_aged_men_are_livestreaming",
     "3_men_live_camelot331_and_boogie2988",
     "42_year_old_man_plays_video_games_terribly",
-    "a_baked_middle_aged_man_plays_video_games"
+    "a_baked_middle_aged_man_plays_video_games",
+    "a_baked_middle_aged_man_plays_video_games_again"
   ],
   "commands": {
     "stan": 27,
@@ -54,10 +55,10 @@
     "turkey": 3,
     "eyes": 6,
     "africa": 1,
-    "face": 13,
+    "face": 14,
     "petersonxhhanson": 1,
-    "poo": 1,
-    "joy": 7,
+    "poo": 3,
+    "joy": 8,
     "gameboy": 1,
     "chick": 1,
     "carlos": 4,
@@ -70,8 +71,8 @@
     "tongue": 1,
     "heart": 7,
     "shorts": 1,
-    "laughing": 3,
-    "news": 1,
+    "laughing": 4,
+    "news": 2,
     "chicken": 3,
     "cake": 1,
     "d": 1,
@@ -91,7 +92,11 @@
     "disclaimer": 1,
     "hole": 1,
     "rooster": 3,
-    "peach": 1
+    "peach": 1,
+    "fire": 1,
+    "kendal": 1,
+    "up": 1,
+    "note": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -193,6 +198,11 @@
       "title": "A Baked, Middle-Aged Man Plays Video Games",
       "start_ts": 1638739230,
       "youtube_archive_id": "PG-1EH5dFv4"
+    },
+    "a_baked_middle_aged_man_plays_video_games_again": {
+      "title": "A Baked, Middle-Aged Man Plays Video Games (Again)",
+      "start_ts": 1638754554,
+      "youtube_archive_id": "M61SI72fxmA"
     }
   },
   "messages": [
@@ -2629,6 +2639,106 @@
       "message": "Congratulations Rich! So happy for you! 1 Mil! :partying_face:",
       "commands": [
         "face"
+      ]
+    },
+    {
+      "ts": 1638759486,
+      "username": "@creativeusername7951",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": ":musical_note:*blonk*:musical_note:",
+      "commands": [
+        "note"
+      ]
+    },
+    {
+      "ts": 1638757392,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": ":pile_of_poo: was successful toilet squad 4 life keep the same energy",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1638757197,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Not gunna lie I thought you was in spawncast :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1638756694,
+      "username": "@ScottWoodford76",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Me :pile_of_poo: right now toilet squad",
+      "commands": [
+        "poo"
+      ]
+    },
+    {
+      "ts": 1638756292,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Click left because she was offended/disgusted because RTG85 sold double dash :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1638755906,
+      "username": "@adema2313",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "The Philips Sonic care is great :thumbs_up: I enjoy mine!",
+      "commands": [
+        "up"
+      ]
+    },
+    {
+      "ts": 1638755906,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Breaking news: nikkado eats too much food DSP complains, and people still don't know who crap gamer is",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1638755850,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "If you want a good laugh go watch the latest Spawncast on Spawnwave's channel. Fwd to 58m38s. How can someone get so offended over selling a game?:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1638755495,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Stanely kendal: i swear i won't do this again also stanley kendal years later to someone prednteindn to be a minor spread your cheeks n just go 2 town",
+      "commands": [
+        "kendal"
+      ]
+    },
+    {
+      "ts": 1638754652,
+      "username": "@DigitalDemonicDavros",
+      "platform": "youtube",
+      "stream_id": "a_baked_middle_aged_man_plays_video_games_again",
+      "message": "Christmas exposed, it's birds and nips, the world burns :fire:",
+      "commands": [
+        "fire"
       ]
     },
     {
