@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782102719,
+  "updated_ts": 1782102725,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -691,7 +691,8 @@
     "thequartering_is_scared_of_me_so_im_gonna_stream_and_laugh_at_him",
     "thequartering_loves_elons_musk_feat_christhenarc",
     "thequartering_loves_elons_musk_part_2",
-    "thequartering_loves_elons_musk_part_3"
+    "thequartering_loves_elons_musk_part_3",
+    "thequartering_wants_to_box_me_and_pee_in_my_basement"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -11733,6 +11734,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.51,
       "avg_active_chatters": 28.67
+    },
+    "thequartering_wants_to_box_me_and_pee_in_my_basement": {
+      "stream_id": "thequartering_wants_to_box_me_and_pee_in_my_basement",
+      "title": "TheQuartering Wants To Box Me And Pee In My Basement",
+      "start_ts": 1681433287,
+      "end_ts": 1681439585,
+      "duration_sec": 6298,
+      "youtube_archive_id": "mDiFo6-BngY",
+      "source_platform": "youtube",
+      "total_donations_usd": 267.01,
+      "donation_count": 49,
+      "donations_per_min": 2.5438,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.83,
+      "avg_active_chatters": 33.97
     }
   }
 }
