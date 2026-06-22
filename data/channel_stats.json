@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093822,
+  "updated_ts": 1782093869,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -51,7 +51,8 @@
     "a_large_man_returns_feat_birds",
     "a_large_man_with_seltzer_livestreams",
     "a_late_night_middle_aged_youtuber_is_livestreaming",
-    "a_late_stream"
+    "a_late_stream",
+    "a_long_day_of_elden_ring_feat_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -853,6 +854,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.46,
       "avg_active_chatters": 34.36
+    },
+    "a_long_day_of_elden_ring_feat_birds": {
+      "stream_id": "a_long_day_of_elden_ring_feat_birds",
+      "title": "A Long Day Of Elden Ring (Feat. Birds)",
+      "start_ts": 1649957417,
+      "end_ts": 1649966999,
+      "duration_sec": 9582,
+      "youtube_archive_id": "E2odTAZ6KSg",
+      "source_platform": "youtube",
+      "total_donations_usd": 199.93,
+      "donation_count": 48,
+      "donations_per_min": 1.2519,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.52,
+      "avg_active_chatters": 25.98
     }
   }
 }
