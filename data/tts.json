@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092393,
+  "updated_ts": 1782092411,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -10,7 +10,8 @@
     "random_late_man_stream_for_men",
     "so_i_was_just_fired_from_tech_talk",
     "100_certified_man_stream_feat_beautiful_birds",
-    "12_hour_man_stream_feat_men"
+    "12_hour_man_stream_feat_men",
+    "12_hour_man_stream_feat_men_part_2"
   ],
   "commands": {
     "stan": 27,
@@ -43,12 +44,16 @@
     "turkey": 1,
     "eyes": 1,
     "africa": 1,
-    "face": 2,
+    "face": 4,
     "petersonxhhanson": 1,
     "poo": 1,
-    "joy": 2,
+    "joy": 3,
     "gameboy": 1,
-    "chick": 1
+    "chick": 1,
+    "carlos": 1,
+    "away": 1,
+    "idea": 1,
+    "fear": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -95,6 +100,11 @@
       "title": "12-Hour Man Stream (Feat. Men)",
       "start_ts": 1675102488,
       "youtube_archive_id": "bcEqd4yyRgw"
+    },
+    "12_hour_man_stream_feat_men_part_2": {
+      "title": "12-Hour Man Stream (Feat. Men) Part 2",
+      "start_ts": 1675123662,
+      "youtube_archive_id": "yZMloDGg3dY"
     }
   },
   "messages": [
@@ -1877,6 +1887,76 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1675138684,
+      "username": "@MaxwellMcQuade",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "I just didnt realize her reach extended that far. theres no innuendo I was just mind blown to recognize the image :face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear::face_screaming_in_fear:",
+      "commands": [
+        "fear"
+      ]
+    },
+    {
+      "ts": 1675136838,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "Rich, my superchat :loudly_crying_face: im pulling an obby today.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1675136439,
+      "username": "@aurubaru",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "Quick! Use your N-word passes! We DEMAND it! :flushed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1675135893,
+      "username": "@xXSoulessniperXx",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "Horror dsp movie idea: Anyone that watches his may 1st incident dies on the 1st of the month",
+      "commands": [
+        "idea"
+      ]
+    },
+    {
+      "ts": 1675134366,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "Cmon that deserves a applause or something :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1675132110,
+      "username": "@TheGamingPolitician",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": "Gamexplain has a video on how to modernize 007 controls on switch. Check it out, I use them and they\u2019re great. Also :rooster::dashing_away:",
+      "commands": [
+        "away"
+      ]
+    },
+    {
+      "ts": 1675127062,
+      "username": "@knightwolf2911",
+      "platform": "youtube",
+      "stream_id": "12_hour_man_stream_feat_men_part_2",
+      "message": ":_Carlos:",
+      "commands": [
+        "carlos"
       ]
     },
     {
