@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099925,
+  "updated_ts": 1782099934,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -292,7 +292,8 @@
     "girlfriend_kicked_me_out_of_bed_so_im_back",
     "grandpa_is_playing_call_of_duty_loud_farts",
     "happy_fking_halloween",
-    "he_admitted_itwtf"
+    "he_admitted_itwtf",
+    "hes_back_and_thoroughly_tickled"
   ],
   "commands": {
     "stan": 27,
@@ -325,7 +326,7 @@
     "turkey": 6,
     "eyes": 71,
     "africa": 1,
-    "face": 265,
+    "face": 266,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 199,
@@ -339,15 +340,15 @@
     "cucumber": 28,
     "biceps": 3,
     "tongue": 5,
-    "heart": 86,
+    "heart": 87,
     "shorts": 1,
-    "laughing": 90,
+    "laughing": 91,
     "news": 17,
     "chicken": 37,
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 21,
+    "hand": 22,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -362,7 +363,7 @@
     "disclaimer": 1,
     "hole": 5,
     "rooster": 26,
-    "peach": 6,
+    "peach": 7,
     "fire": 17,
     "kendal": 1,
     "up": 27,
@@ -475,7 +476,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 8,
+    "sweat": 9,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -666,7 +667,9 @@
     "reviewimprovusa": 1,
     "smo": 1,
     "blood": 1,
-    "idiots": 2
+    "idiots": 2,
+    "recommendation": 1,
+    "shot": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2123,6 +2126,11 @@
       "title": "He Admitted It....Wtf....",
       "start_ts": 1719367360,
       "youtube_archive_id": "3Hkv-tCsavA"
+    },
+    "hes_back_and_thoroughly_tickled": {
+      "title": "He's Back, And Thoroughly Tickled...",
+      "start_ts": 1660609009,
+      "youtube_archive_id": "JOBtedmZnNA"
     }
   },
   "messages": [
@@ -12170,6 +12178,68 @@
       "message": "Alex Jones 2024:face_with_tears_of_joy::face_with_tears_of_joy::face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1660617200,
+      "username": "@Sailman1",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "Quantum needs to relax his :peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1660615247,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "Shouldn\u2019t your shirt be off now dad? Also you missed my SC so I\u2019ll give it another shot: QTV and Anon clearly listen to the Mario Paint song together.",
+      "commands": [
+        "shot"
+      ]
+    },
+    {
+      "ts": 1660613546,
+      "username": "@Flamemaster78",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "Hey Rich, I know this might sound cringy to say, but I\u2019ve been watching you since middle school and I\u2019ve just always loved your humor as I relate to it 100%. Can I get a QTV impression? I wheezed! :loudly_crying_face::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1660613293,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "Hi Rich and Chris! :waving_hand: love you both! :red_heart:",
+      "commands": [
+        "hand",
+        "heart"
+      ]
+    },
+    {
+      "ts": 1660611444,
+      "username": "@CloakedOnyx",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "Gameing Laptop recommendation: Zephyrus G14. I have one and I love it.",
+      "commands": [
+        "recommendation"
+      ]
+    },
+    {
+      "ts": 1660611333,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "hes_back_and_thoroughly_tickled",
+      "message": "when I'm done with car payments, I'm thinking of investing in a gaming laptop. any recommendations? review \"TECH\" usa:grinning_squinting_face: not looking for a powerhouse:grinning_face_with_sweat:",
+      "commands": [
+        "face",
+        "sweat"
       ]
     },
     {
