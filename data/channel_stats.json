@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093094,
+  "updated_ts": 1782093132,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -34,7 +34,8 @@
     "a_detrahktor_discusses_her_grievances_with_me",
     "a_dspgaming_and_wingsofredemption_man_stream",
     "a_dspgaming_family_fun_stream",
-    "a_family_friendly_christian_straight_man_stream"
+    "a_family_friendly_christian_straight_man_stream",
+    "a_family_friendly_heterosexual_stream"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -564,6 +565,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 5.78,
       "avg_active_chatters": 13.14
+    },
+    "a_family_friendly_heterosexual_stream": {
+      "stream_id": "a_family_friendly_heterosexual_stream",
+      "title": "A Family Friendly Heterosexual Stream",
+      "start_ts": 1694044855,
+      "end_ts": 1694054685,
+      "duration_sec": 9830,
+      "youtube_archive_id": "vO5k3zSGQYk",
+      "source_platform": "youtube",
+      "total_donations_usd": 261.63,
+      "donation_count": 73,
+      "donations_per_min": 1.5969,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.65,
+      "avg_active_chatters": 44.37
     }
   }
 }
