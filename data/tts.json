@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101537,
+  "updated_ts": 1782101544,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -495,7 +495,8 @@
     "normal_man_stream_almost_burnt_down_my_house",
     "nye_with_a_man_and_birds",
     "obese_man_eats_live_on_stream_come_ask_questions",
-    "oh_ice_poseidon"
+    "oh_ice_poseidon",
+    "one_woman_with_two_men_live"
   ],
   "commands": {
     "stan": 27,
@@ -544,7 +545,7 @@
     "tongue": 10,
     "heart": 145,
     "shorts": 2,
-    "laughing": 186,
+    "laughing": 187,
     "news": 20,
     "chicken": 57,
     "cake": 7,
@@ -592,7 +593,7 @@
     "bird": 14,
     "richsmile": 6,
     "dsp": 23,
-    "story": 1,
+    "story": 2,
     "tree": 3,
     "skull": 13,
     "eggplant": 4,
@@ -673,7 +674,7 @@
     "point": 2,
     "superchat": 3,
     "reviewquentintartinousa": 1,
-    "fact": 9,
+    "fact": 10,
     "both": 1,
     "syne": 1,
     "father": 3,
@@ -701,7 +702,7 @@
     "highter": 1,
     "glove": 3,
     "collision": 3,
-    "spoiler": 1,
+    "spoiler": 2,
     "mug": 4,
     "pachter": 3,
     "eagle": 6,
@@ -889,7 +890,7 @@
     "banana": 3,
     "pitt": 1,
     "beel": 1,
-    "love": 1,
+    "love": 2,
     "importantquestion": 1,
     "hulk": 1,
     "qvc": 1,
@@ -3497,6 +3498,11 @@
       "title": "Oh Ice Poseidon...",
       "start_ts": 1643764913,
       "youtube_archive_id": "24Tsv6QD0zo"
+    },
+    "one_woman_with_two_men_live": {
+      "title": "One Woman With Two Men LIVE",
+      "start_ts": 1687218891,
+      "youtube_archive_id": "WCZHgL5qXc4"
     }
   },
   "messages": [
@@ -12305,6 +12311,56 @@
       "message": "Penetrate my belly button with your mushroom :mushroom:",
       "commands": [
         "mushroom"
+      ]
+    },
+    {
+      "ts": 1687229098,
+      "username": "@camman7006",
+      "platform": "youtube",
+      "stream_id": "one_woman_with_two_men_live",
+      "message": "this is the insanity I pay monthly for :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1687228561,
+      "username": "@8bittoaster",
+      "platform": "youtube",
+      "stream_id": "one_woman_with_two_men_live",
+      "message": "SPOILER: They all end up looking like DSP's chicken sandwhich",
+      "commands": [
+        "spoiler"
+      ]
+    },
+    {
+      "ts": 1687227784,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "one_woman_with_two_men_live",
+      "message": "Fun Fact: When DSP played Kingdom Hearts 1 years ago, he joked about Darth Vader, Doctor Doom, and Maleficient having a threesome.",
+      "commands": [
+        "fact"
+      ]
+    },
+    {
+      "ts": 1687226958,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "one_woman_with_two_men_live",
+      "message": "2nd thing I love: apparently he has 2 modems from the same ISP, so it\u2019s a waste of money\u2026 Come on Phil, get a Starlink dish as a backup ffs",
+      "commands": [
+        "love"
+      ]
+    },
+    {
+      "ts": 1687226870,
+      "username": "@yohagain",
+      "platform": "youtube",
+      "stream_id": "one_woman_with_two_men_live",
+      "message": "1st thing I love about the Phil/Comcast story: he went for a day out w/ wife and admitted he came back running the instant internet came back on lol",
+      "commands": [
+        "story"
       ]
     },
     {
