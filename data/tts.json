@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098895,
+  "updated_ts": 1782098903,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -169,7 +169,8 @@
     "birthday_marathon_man_stream",
     "boogie2988_is_a_thief_and_a_liar",
     "boy_do_we_need_to_talk",
-    "brand_new_set_same_old_man"
+    "brand_new_set_same_old_man",
+    "breaking_news_im_an_idiot"
   ],
   "commands": {
     "stan": 27,
@@ -202,7 +203,7 @@
     "turkey": 5,
     "eyes": 40,
     "africa": 1,
-    "face": 137,
+    "face": 139,
     "petersonxhhanson": 1,
     "poo": 9,
     "joy": 108,
@@ -400,7 +401,7 @@
     "salt": 1,
     "x": 1,
     "now": 1,
-    "breaking": 1,
+    "breaking": 2,
     "eye": 1,
     "dove": 1,
     "time": 1,
@@ -435,7 +436,8 @@
     "philitizer": 1,
     "cat": 1,
     "reviewmusicusa": 1,
-    "snake": 1
+    "snake": 1,
+    "fap": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -1277,6 +1279,11 @@
       "title": "Brand New Set, Same Old Man",
       "start_ts": 1713226232,
       "youtube_archive_id": "nFlQbl-TzI8"
+    },
+    "breaking_news_im_an_idiot": {
+      "title": "Breaking News: I'm An Idiot",
+      "start_ts": 1629765587,
+      "youtube_archive_id": "4xORIzvzAkU"
     }
   },
   "messages": [
@@ -11524,6 +11531,46 @@
       "message": "Not American but what the is deal with Ben Shapiro watched him for 1st time today he talks/looks like an alien pretending to be human :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1629774292,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "breaking_news_im_an_idiot",
+      "message": "My whole family looked at 3D Mark 2003 in awe! :astonished_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1629772283,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "breaking_news_im_an_idiot",
+      "message": "Breaking: Pres Carlos has impeached Barack America",
+      "commands": [
+        "breaking"
+      ]
+    },
+    {
+      "ts": 1629769774,
+      "username": "@CrazyCracka831",
+      "platform": "youtube",
+      "stream_id": "breaking_news_im_an_idiot",
+      "message": "To the CIA agents who've seen me fap: I hope it was as good for you as it was for me:beaming_face_with_smiling_eyes:. I'm trying to get an Oculus Quest 2 at the moment.",
+      "commands": [
+        "fap"
+      ]
+    },
+    {
+      "ts": 1629767572,
+      "username": "@azrael7922",
+      "platform": "youtube",
+      "stream_id": "breaking_news_im_an_idiot",
+      "message": "If you replace Carlos, please name the next one after me! :grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
