@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100133,
+  "updated_ts": 1782100142,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -316,7 +316,8 @@
     "i_won_but_my_pc_is_dying",
     "idubbz_video_going_shopping_to_become_a_vtuber",
     "im_a_baked_man_come_discuss_tech_with_your_dad",
-    "im_a_bully_plus_i_react_to_large_muscular_men"
+    "im_a_bully_plus_i_react_to_large_muscular_men",
+    "im_a_man"
   ],
   "commands": {
     "stan": 27,
@@ -363,9 +364,9 @@
     "cucumber": 36,
     "biceps": 3,
     "tongue": 6,
-    "heart": 97,
+    "heart": 98,
     "shorts": 1,
-    "laughing": 117,
+    "laughing": 120,
     "news": 18,
     "chicken": 37,
     "cake": 7,
@@ -385,7 +386,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 5,
-    "rooster": 29,
+    "rooster": 30,
     "peach": 8,
     "fire": 18,
     "kendal": 1,
@@ -722,7 +723,8 @@
     "dems": 1,
     "right": 1,
     "centrist": 1,
-    "club": 1
+    "club": 1,
+    "turtle": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2299,6 +2301,11 @@
       "title": "I'm A \"Bully\" Plus I React To Large, Muscular Men",
       "start_ts": 1668472739,
       "youtube_archive_id": "jsZ9e3ZQaTk"
+    },
+    "im_a_man": {
+      "title": "I'm A Man",
+      "start_ts": 1647996414,
+      "youtube_archive_id": "D-1_zdfcf6w"
     }
   },
   "messages": [
@@ -15314,6 +15321,57 @@
       "message": "i wanna see you play DMC5 mission 19 please :folded_hands:",
       "commands": [
         "hands"
+      ]
+    },
+    {
+      "ts": 1648003109,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "im_a_man",
+      "message": "CONGRATS ON THE GOAL RICH :rooster: Just got a HP pavilion gaming laptop super nice to upgrade to a I5 and 1650 from a early 2012 MacBook love your birds",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1648003087,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "im_a_man",
+      "message": "Will we do another Badlands Chugs stream? :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1648002686,
+      "username": "@DJLarue46",
+      "platform": "youtube",
+      "stream_id": "im_a_man",
+      "message": "hey my dude! I relaxed my a nus .... now I need a moist towelette. or 2. thanks for making this last year tolerable. :purple_heart: ya gringo. poor Tommy..:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "heart",
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1647999130,
+      "username": "@LemStar0623",
+      "platform": "youtube",
+      "stream_id": "im_a_man",
+      "message": "So basically a turd version of the Wii U?? :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1647997975,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "im_a_man",
+      "message": "You love birds and you're playing with turtles :turtle: ... I'm calling PETA.",
+      "commands": [
+        "turtle"
       ]
     },
     {
