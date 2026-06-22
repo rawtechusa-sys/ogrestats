@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100045,
+  "updated_ts": 1782100054,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -306,7 +306,8 @@
     "i_formally_invited_quantum_tv_on_for_an_interview",
     "i_got_screwed",
     "i_got_trolled_hard_by_ethan_ralph",
-    "i_have_no_water_so_i_may_as_well_keep_streaming"
+    "i_have_no_water_so_i_may_as_well_keep_streaming",
+    "i_have_no_words_and_im_frustrated"
   ],
   "commands": {
     "stan": 27,
@@ -339,7 +340,7 @@
     "turkey": 7,
     "eyes": 75,
     "africa": 1,
-    "face": 286,
+    "face": 289,
     "petersonxhhanson": 1,
     "poo": 17,
     "joy": 213,
@@ -355,13 +356,13 @@
     "tongue": 6,
     "heart": 95,
     "shorts": 1,
-    "laughing": 110,
+    "laughing": 111,
     "news": 18,
     "chicken": 37,
     "cake": 7,
     "d": 3,
     "halo": 3,
-    "hand": 22,
+    "hand": 23,
     "popper": 6,
     "straw": 1,
     "glasses": 2,
@@ -394,7 +395,7 @@
     "dog": 4,
     "is": 6,
     "spose": 1,
-    "sunglasses": 14,
+    "sunglasses": 15,
     "kiss": 20,
     "earlier": 1,
     "ghost": 1,
@@ -459,14 +460,14 @@
     "like": 6,
     "memory": 2,
     "fight": 1,
-    "leaf": 1,
+    "leaf": 2,
     "random": 1,
     "moai": 1,
     "meeting": 1,
     "giants": 1,
     "trinity": 1,
     "day": 1,
-    "struck": 2,
+    "struck": 3,
     "joker": 1,
     "racehorse": 7,
     "question": 8,
@@ -702,7 +703,9 @@
     "beel": 1,
     "love": 1,
     "importantquestion": 1,
-    "hulk": 1
+    "hulk": 1,
+    "qvc": 1,
+    "grandma": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2229,6 +2232,11 @@
       "title": "I Have No Water. So I May As Well Keep Streaming",
       "start_ts": 1663647481,
       "youtube_archive_id": "ss8T7Csj5qo"
+    },
+    "i_have_no_words_and_im_frustrated": {
+      "title": "I Have No Words And I'm Frustrated",
+      "start_ts": 1632527209,
+      "youtube_archive_id": "Y7X-C-nnK50"
     }
   },
   "messages": [
@@ -18343,6 +18351,97 @@
       "message": "Im calling Cps! Chicken protective services!! :chicken::chicken::chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1632534763,
+      "username": "@backnforth8401",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "QVC: The PS4 is flying out our shelves. Grandma: I've been waiting since November to get one",
+      "commands": [
+        "qvc",
+        "grandma"
+      ]
+    },
+    {
+      "ts": 1632534598,
+      "username": "@ElSenorPenguin",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "Yo Rich. :maple_leaf: We'd rules. Hope it sorts itself out",
+      "commands": [
+        "leaf"
+      ]
+    },
+    {
+      "ts": 1632532801,
+      "username": "@emporks526",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "DAD, chain yourself to the bird w/a chicken :sandwich:! :star_struck:",
+      "commands": [
+        "struck"
+      ]
+    },
+    {
+      "ts": 1632531990,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "I'd love more SNES games from 3rd parties like more RPGs and shit. I'd pay more for that, but fuck N64. Only game I'd play is Body Harvest :face_with_tears_of_joy::face_with_tears_of_joy::smiling_face_with_sunglasses::smiling_face_with_sunglasses:",
+      "commands": [
+        "sunglasses"
+      ]
+    },
+    {
+      "ts": 1632531540,
+      "username": "@NecroBanana",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "Sup Gamers! Fire Pro Wrestling World is on sale on PS4. Get it while it's hot. Also gamers, get Castlevania Advance Collection. Amogus Chungus Out.:smiling_face_with_sunglasses::victory_hand:",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1632530041,
+      "username": "@pandaman5OOO",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "could have sworn I was already a member.. :thinking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632529712,
+      "username": "@davefelde74",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "I love your Trump impression :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1632528431,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "Imagine what Wings has to deal with :grimacing_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632528154,
+      "username": "@AndrewRS19",
+      "platform": "youtube",
+      "stream_id": "i_have_no_words_and_im_frustrated",
+      "message": "I love ya buddy. I haven't been able to join the streams recently but I have been listening on my morning runs. The DSP chicken video was hilarious:grinning_squinting_face:",
+      "commands": [
+        "face"
       ]
     },
     {
