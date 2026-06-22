@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092598,
+  "updated_ts": 1782092626,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -19,7 +19,8 @@
     "2_man_mini_marathon_stream_feat_birds",
     "2_men_live_featmen",
     "2_middle_aged_men_are_livestreaming",
-    "3_men_live_camelot331_and_boogie2988"
+    "3_men_live_camelot331_and_boogie2988",
+    "42_year_old_man_plays_video_games_terribly"
   ],
   "commands": {
     "stan": 27,
@@ -70,7 +71,7 @@
     "shorts": 1,
     "laughing": 3,
     "news": 1,
-    "chicken": 2,
+    "chicken": 3,
     "cake": 1,
     "d": 1,
     "halo": 1,
@@ -88,7 +89,8 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 1,
-    "rooster": 3
+    "rooster": 3,
+    "peach": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -180,6 +182,11 @@
       "title": "3 Men Live (Camelot331 And Boogie2988)",
       "start_ts": 1655684771,
       "youtube_archive_id": "91X7ZuLMNX4"
+    },
+    "42_year_old_man_plays_video_games_terribly": {
+      "title": "42 Year Old Man Plays Video Games Terribly",
+      "start_ts": 1701468293,
+      "youtube_archive_id": "_yH3YHuTFAg"
     }
   },
   "messages": [
@@ -1962,6 +1969,26 @@
       "message": "Phil: Robust bisexually lit moobs.",
       "commands": [
         "phil"
+      ]
+    },
+    {
+      "ts": 1701474162,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "42_year_old_man_plays_video_games_terribly",
+      "message": "Since I'm a girl, can i have Girls soundbite? :peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1701469293,
+      "username": "@alk4pon3",
+      "platform": "youtube",
+      "stream_id": "42_year_old_man_plays_video_games_terribly",
+      "message": "Hola rich saludos :chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
