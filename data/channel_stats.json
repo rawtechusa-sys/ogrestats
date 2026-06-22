@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099364,
+  "updated_ts": 1782099372,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -227,7 +227,8 @@
     "come_hang_out_with_a_man_and_ask_questions_feat_birds",
     "come_hang_out_with_a_man_freedom_phone",
     "come_listen_me_complain_and_answer_questions",
-    "come_look_at_this_man_and_chat_with_him"
+    "come_look_at_this_man_and_chat_with_him",
+    "come_speak_to_a_man"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3845,6 +3846,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 12.36,
       "avg_active_chatters": 35.28
+    },
+    "come_speak_to_a_man": {
+      "stream_id": "come_speak_to_a_man",
+      "title": "COME SPEAK TO A MAN",
+      "start_ts": 1637202837,
+      "end_ts": 1637210465,
+      "duration_sec": 7628,
+      "youtube_archive_id": "Zcd5OBM7NZ4",
+      "source_platform": "youtube",
+      "total_donations_usd": 470.3,
+      "donation_count": 101,
+      "donations_per_min": 3.6993,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.12,
+      "avg_active_chatters": 44.66
     }
   }
 }
