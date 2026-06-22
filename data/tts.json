@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100424,
+  "updated_ts": 1782100434,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -349,7 +349,8 @@
     "its_all_about_keemstar_and_birds",
     "its_all_about_the_tipples",
     "its_dspgamings_birthday",
-    "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails"
+    "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
+    "its_time_to_party"
   ],
   "commands": {
     "stan": 27,
@@ -380,9 +381,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 79,
+    "eyes": 80,
     "africa": 1,
-    "face": 327,
+    "face": 329,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 237,
@@ -396,7 +397,7 @@
     "cucumber": 41,
     "biceps": 3,
     "tongue": 6,
-    "heart": 106,
+    "heart": 108,
     "shorts": 1,
     "laughing": 134,
     "news": 18,
@@ -490,7 +491,7 @@
     "goblin": 1,
     "live": 1,
     "saying": 1,
-    "it": 12,
+    "it": 13,
     "food": 4,
     "play": 1,
     "video": 1,
@@ -2525,6 +2526,11 @@
       "title": "It's Getting Scary As Hell In Ukraine (Now Laughing At DSPGaming FAILS)",
       "start_ts": 1646443067,
       "youtube_archive_id": "NmNs83u2UL8"
+    },
+    "its_time_to_party": {
+      "title": "It's Time To Party",
+      "start_ts": 1701400511,
+      "youtube_archive_id": "ZXUxP8lXQps"
     }
   },
   "messages": [
@@ -6896,6 +6902,66 @@
       "message": "Hola rich saludos :chicken:",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1701414515,
+      "username": "@RectWizard",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "Who Is your favorite retro gaming YouTuber? :smiling_face_with_smiling_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1701412424,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "Have a good night everyone, and here\u2019s $5 to Birdfather! Big ups to all you beautiful people! Cosmic out! :blue_heart::blue_heart::blue_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1701411681,
+      "username": "@Stephanie_Rose",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "no one like to be pandered to. its all for money :nauseated_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1701406115,
+      "username": "@twinkie415",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "DSP Tries It: My Patience",
+      "commands": [
+        "it"
+      ]
+    },
+    {
+      "ts": 1701404900,
+      "username": "@GatheringHall",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "That'd be like Nintendo releasing Metroid Prime 4 as a micro transaction filled mobile game. Last SC for me tonight. Come on bois. make Dad stay up super late. Let's get it done. :red_heart: u Rich",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1701401797,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "its_time_to_party",
+      "message": "My membership\u2019s expiring tomorrow, so I\u2019ll use this to say, I actually love it when you talk about women being hot. :upside_down_face: And Jennifer Walters is a male.",
+      "commands": [
+        "face"
       ]
     },
     {
