@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101247,
+  "updated_ts": 1782101254,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -457,7 +457,8 @@
     "monday_night_man",
     "more_amico_family_fun",
     "more_chris_chan_insanity",
-    "more_chris_chan_insanity_pt2_then_maybe_elden_ring"
+    "more_chris_chan_insanity_pt2_then_maybe_elden_ring",
+    "more_chris_chan_insanity_then_maybe_elden_ring"
   ],
   "commands": {
     "stan": 27,
@@ -493,7 +494,7 @@
     "face": 431,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 283,
+    "joy": 284,
     "gameboy": 1,
     "chick": 3,
     "carlos": 36,
@@ -556,7 +557,7 @@
     "dsp": 23,
     "story": 1,
     "tree": 3,
-    "skull": 11,
+    "skull": 12,
     "eggplant": 4,
     "bite": 1,
     "take": 7,
@@ -703,7 +704,7 @@
     "dpsn": 1,
     "correction": 1,
     "sunset": 2,
-    "fist": 4,
+    "fist": 5,
     "frog": 1,
     "gwyn": 1,
     "livestreams": 1,
@@ -964,7 +965,8 @@
     "arbys": 1,
     "soon": 1,
     "called": 1,
-    "moon": 1
+    "moon": 1,
+    "context": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3246,6 +3248,11 @@
       "title": "More Chris Chan Insanity Pt.2 (Then Maybe Elden Ring)",
       "start_ts": 1649634248,
       "youtube_archive_id": "cuGq70F_qKc"
+    },
+    "more_chris_chan_insanity_then_maybe_elden_ring": {
+      "title": "More Chris Chan Insanity (Then Maybe Elden Ring)",
+      "start_ts": 1649619212,
+      "youtube_archive_id": "zsFNYVR-jRE"
     }
   },
   "messages": [
@@ -20737,6 +20744,46 @@
       "message": "You should watch this video called: Elden Ring hot takes, by this youtuber (The Act Man) its pretty funny",
       "commands": [
         "called"
+      ]
+    },
+    {
+      "ts": 1649626615,
+      "username": "@timmarcoux",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_then_maybe_elden_ring",
+      "message": "I'm 21 now :face_with_tears_of_joy::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1649622699,
+      "username": "@TokyoDriftMoney",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_then_maybe_elden_ring",
+      "message": ":skull::skull::skull:",
+      "commands": [
+        "skull"
+      ]
+    },
+    {
+      "ts": 1649621038,
+      "username": "@SuperTrainStationH",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_then_maybe_elden_ring",
+      "message": "Want an audio clip of Alex Jones saying \"they're going to grab your gen a talls now\"? CONTEXT: he was ranting about the Hunger Games movies.",
+      "commands": [
+        "context"
+      ]
+    },
+    {
+      "ts": 1649620291,
+      "username": "@deckgame6519",
+      "platform": "youtube",
+      "stream_id": "more_chris_chan_insanity_then_maybe_elden_ring",
+      "message": "hey rich love your channel soo much i think you and mischief should collab and take doen quantom tv \ud83d\ude4e\ud83c\udffe\u200d\u2642:left_facing_fist:",
+      "commands": [
+        "fist"
       ]
     },
     {
