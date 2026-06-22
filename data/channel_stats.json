@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782094522,
+  "updated_ts": 1782094574,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -65,7 +65,8 @@
     "a_man_is_back_for_a_bit",
     "a_man_is_back_sexecoco_style",
     "a_man_is_staying_on_till_1_am",
-    "a_man_is_streaming_feat_birds"
+    "a_man_is_streaming_feat_birds",
+    "a_man_is_streaming_with_birds_till_130_am"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1091,6 +1092,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 9.38,
       "avg_active_chatters": 30.7
+    },
+    "a_man_is_streaming_with_birds_till_130_am": {
+      "stream_id": "a_man_is_streaming_with_birds_till_130_am",
+      "title": "A MAN IS STREAMING WITH BIRDS TILL 130 AM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "start_ts": 1688947584,
+      "end_ts": 1688967113,
+      "duration_sec": 19529,
+      "youtube_archive_id": "FQIT-_I_gKk",
+      "source_platform": "youtube",
+      "total_donations_usd": 328.15,
+      "donation_count": 96,
+      "donations_per_min": 1.0082,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 14.03,
+      "avg_active_chatters": 35.25
     }
   }
 }
