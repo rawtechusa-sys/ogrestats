@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099306,
+  "updated_ts": 1782099315,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -220,7 +220,8 @@
     "come_chat_with_men_live_edp445_apology",
     "come_critcize_the_hell_out_of_me_yes_im_serious",
     "come_discuss_the_playstation_showcase_with_your_dad",
-    "come_hang_out"
+    "come_hang_out",
+    "come_hang_out_10_18_2021_crowbcat_video_reaction"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3726,6 +3727,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.8,
       "avg_active_chatters": 26.18
+    },
+    "come_hang_out_10_18_2021_crowbcat_video_reaction": {
+      "stream_id": "come_hang_out_10_18_2021_crowbcat_video_reaction",
+      "title": "Come Hang Out! 10-18-2021 (Crowbcat Video Reaction)",
+      "start_ts": 1634602728,
+      "end_ts": 1634614481,
+      "duration_sec": 11753,
+      "youtube_archive_id": "LaxjMSZBhME",
+      "source_platform": "youtube",
+      "total_donations_usd": 431.22,
+      "donation_count": 120,
+      "donations_per_min": 2.2014,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.96,
+      "avg_active_chatters": 34.02
     }
   }
 }
