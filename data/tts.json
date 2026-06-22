@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098468,
+  "updated_ts": 1782098476,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -115,7 +115,8 @@
     "a_wingsofredemption_marathon_stream",
     "a_woman_is_with_us",
     "a_wonderful_qvc_roast",
-    "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing"
+    "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
+    "a_xmas_eve_bird_stream"
   ],
   "commands": {
     "stan": 27,
@@ -148,7 +149,7 @@
     "turkey": 5,
     "eyes": 28,
     "africa": 1,
-    "face": 95,
+    "face": 96,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 80,
@@ -162,7 +163,7 @@
     "cucumber": 10,
     "biceps": 3,
     "tongue": 4,
-    "heart": 38,
+    "heart": 39,
     "shorts": 1,
     "laughing": 38,
     "news": 7,
@@ -213,7 +214,7 @@
     "richsmile": 2,
     "dsp": 3,
     "story": 1,
-    "tree": 1,
+    "tree": 2,
     "skull": 4,
     "eggplant": 1,
     "bite": 1,
@@ -311,7 +312,7 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 2,
+    "notes": 4,
     "wars": 1,
     "points": 2,
     "wastebasket": 1,
@@ -889,6 +890,11 @@
       "title": "A Wonderful Samsung Galaxy Z Fold3 5G Unboxing",
       "start_ts": 1630633429,
       "youtube_archive_id": "p_5dyfWstNQ"
+    },
+    "a_xmas_eve_bird_stream": {
+      "title": "A Xmas Eve Bird Stream",
+      "start_ts": 1640379739,
+      "youtube_archive_id": "bcpmvqBLjJI"
     }
   },
   "messages": [
@@ -6827,6 +6833,46 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1640382578,
+      "username": "@alanf7264",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream",
+      "message": "Hey Rich Merry Christmas hope you have a great day:christmas_tree:",
+      "commands": [
+        "tree"
+      ]
+    },
+    {
+      "ts": 1640381992,
+      "username": "@Dragulaaa",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream",
+      "message": "Merry Xmas Rich! I hope you enjoy your holidays! :black_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1640381538,
+      "username": "@agentjosh0007",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream",
+      "message": ":musical_note::musical_notes: All I want for Christmas is\u2026sloppy toppy :musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1640381015,
+      "username": "@johnmajor2488",
+      "platform": "youtube",
+      "stream_id": "a_xmas_eve_bird_stream",
+      "message": "Yeah but you are okay with watching dsp and wings videos that are critical of them. But watching videos against you is off limit :unamused_face:",
+      "commands": [
+        "face"
       ]
     },
     {
