@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100790,
+  "updated_ts": 1782100797,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -395,7 +395,8 @@
     "lets_discuss_some_important_things_road_to_1000_members",
     "lets_discuss_soulja_boys_twitch_trdr_pocket_statement",
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
-    "lets_discuss_the_steam_deck"
+    "lets_discuss_the_steam_deck",
+    "lets_discuss_xbox_and_activision"
   ],
   "commands": {
     "stan": 27,
@@ -428,7 +429,7 @@
     "turkey": 7,
     "eyes": 89,
     "africa": 1,
-    "face": 370,
+    "face": 372,
     "petersonxhhanson": 1,
     "poo": 21,
     "joy": 259,
@@ -444,7 +445,7 @@
     "tongue": 7,
     "heart": 120,
     "shorts": 1,
-    "laughing": 149,
+    "laughing": 151,
     "news": 19,
     "chicken": 43,
     "cake": 7,
@@ -716,7 +717,7 @@
     "currently": 1,
     "article": 1,
     "life": 2,
-    "monocle": 4,
+    "monocle": 5,
     "store": 1,
     "pump": 1,
     "robot": 1,
@@ -857,12 +858,13 @@
     "corner": 1,
     "hustle": 1,
     "women": 1,
-    "bag": 1,
+    "bag": 2,
     "honest": 1,
     "verse": 1,
     "remember": 1,
     "as": 1,
-    "era": 1
+    "era": 1,
+    "classic": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2834,6 +2836,11 @@
       "title": "Let's Discuss The Steam Deck",
       "start_ts": 1626482998,
       "youtube_archive_id": "xXdFOk6IX9g"
+    },
+    "lets_discuss_xbox_and_activision": {
+      "title": "Let's Discuss Xbox And Activision",
+      "start_ts": 1642555954,
+      "youtube_archive_id": "xwiMObajnyA"
     }
   },
   "messages": [
@@ -19409,6 +19416,76 @@
       "message": "Why not watch some eBay scam videos later :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1642563177,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "Imagine sony buying Bungie? :face_with_monocle:",
+      "commands": [
+        "monocle"
+      ]
+    },
+    {
+      "ts": 1642559827,
+      "username": "@etherealturkey",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "Now Presenting, WOW Classic: Game Pass Edition!!!",
+      "commands": [
+        "classic"
+      ]
+    },
+    {
+      "ts": 1642559798,
+      "username": "@MrSonyToprano",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "I\u2019m pissed at YouTube. I didn\u2019t get notification :pouting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1642559550,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "There is a chance the buyout is blocked. Deals of this size are often blocked. Sony, Nintendo and many other companies can sue to stop the deal. :nerd_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1642557864,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "I hope pro-Hong Kong Chung Ng Wai gets his prize :money_bag:",
+      "commands": [
+        "bag"
+      ]
+    },
+    {
+      "ts": 1642557845,
+      "username": "@TheKingOfAllHorror",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "Ponies are going ape$hit, the copium is already so strong :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1642556935,
+      "username": "@TheKingOfAllHorror",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_xbox_and_activision",
+      "message": "Saw the news today and immediately knew that the Ponies need to be put on suicide watch :rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
       ]
     },
     {
