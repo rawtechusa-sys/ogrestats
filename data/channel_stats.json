@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098477,
+  "updated_ts": 1782098484,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -117,7 +117,8 @@
     "a_woman_is_with_us",
     "a_wonderful_qvc_roast",
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
-    "a_xmas_eve_bird_stream"
+    "a_xmas_eve_bird_stream",
+    "a_xmas_eve_bird_stream_pt2"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -1975,6 +1976,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.45,
       "avg_active_chatters": 30.36
+    },
+    "a_xmas_eve_bird_stream_pt2": {
+      "stream_id": "a_xmas_eve_bird_stream_pt2",
+      "title": "A Xmas Eve Bird Stream Pt.2",
+      "start_ts": 1640395923,
+      "end_ts": 1640402111,
+      "duration_sec": 6188,
+      "youtube_archive_id": "L-p3yUl6Buo",
+      "source_platform": "youtube",
+      "total_donations_usd": 243.2,
+      "donation_count": 36,
+      "donations_per_min": 2.3581,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.99,
+      "avg_active_chatters": 29.88
     }
   }
 }
