@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099084,
+  "updated_ts": 1782099092,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -192,7 +192,8 @@
     "come_ask_a_man_anything_8_3_2021",
     "come_ask_a_man_questions",
     "come_ask_a_man_questions_poultry_edition",
-    "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience"
+    "come_ask_an_irrelevant_youtuber_questions_the_scott_baio_experience",
+    "come_ask_me_almost_anything"
   ],
   "commands": {
     "stan": 27,
@@ -223,7 +224,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 5,
-    "eyes": 51,
+    "eyes": 52,
     "africa": 1,
     "face": 158,
     "petersonxhhanson": 1,
@@ -236,7 +237,7 @@
     "idea": 1,
     "fear": 2,
     "voice": 3,
-    "cucumber": 17,
+    "cucumber": 18,
     "biceps": 3,
     "tongue": 4,
     "heart": 55,
@@ -281,7 +282,7 @@
     "is": 5,
     "spose": 1,
     "sunglasses": 4,
-    "kiss": 11,
+    "kiss": 12,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -1430,6 +1431,11 @@
       "title": "Come Ask An Irrelevant YouTuber Questions (The Scott Baio Experience)",
       "start_ts": 1637802754,
       "youtube_archive_id": "1P-MY_X8c2w"
+    },
+    "come_ask_me_almost_anything": {
+      "title": "Come Ask Me (Almost) Anything",
+      "start_ts": 1635122822,
+      "youtube_archive_id": "juZTaRzGdwg"
     }
   },
   "messages": [
@@ -11758,6 +11764,36 @@
       "commands": [
         "million",
         "people"
+      ]
+    },
+    {
+      "ts": 1635125920,
+      "username": "@knightwolf2911",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_almost_anything",
+      "message": ":_Cucumber::_Cucumber::_Cucumber:",
+      "commands": [
+        "cucumber"
+      ]
+    },
+    {
+      "ts": 1635125527,
+      "username": "@ValtDewller",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_almost_anything",
+      "message": "Look up \u201cradio first termer\u201d it is an actual gem :kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1635123685,
+      "username": "@TheDreamSama",
+      "platform": "youtube",
+      "stream_id": "come_ask_me_almost_anything",
+      "message": "Still have day 1 Switch, gonna wait for that (possible) Botw2 Special OLED :eyes:",
+      "commands": [
+        "eyes"
       ]
     },
     {
