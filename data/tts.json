@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100984,
+  "updated_ts": 1782100992,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -422,7 +422,8 @@
     "man_and_birds_vs_karens",
     "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
     "man_friendly_family_fun",
-    "man_in_birdsuit_ep_7_chris_chan_family_fun"
+    "man_in_birdsuit_ep_7_chris_chan_family_fun",
+    "man_in_birdsuit_livestreams_feat_birds"
   ],
   "commands": {
     "stan": 27,
@@ -455,23 +456,23 @@
     "turkey": 7,
     "eyes": 97,
     "africa": 1,
-    "face": 399,
+    "face": 402,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 271,
+    "joy": 273,
     "gameboy": 1,
     "chick": 2,
     "carlos": 33,
     "away": 7,
     "idea": 4,
-    "fear": 3,
+    "fear": 4,
     "voice": 5,
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
     "heart": 128,
     "shorts": 1,
-    "laughing": 162,
+    "laughing": 163,
     "news": 20,
     "chicken": 47,
     "cake": 7,
@@ -904,7 +905,8 @@
     "zelda": 1,
     "crisis": 1,
     "answer": 1,
-    "claus": 1
+    "claus": 1,
+    "servers": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3011,6 +3013,11 @@
       "title": "Man In Birdsuit Ep. 7 (Chris Chan Family Fun)",
       "start_ts": 1652744783,
       "youtube_archive_id": "3xFhozvKzP0"
+    },
+    "man_in_birdsuit_livestreams_feat_birds": {
+      "title": "Man In Birdsuit Livestreams (Feat Birds)",
+      "start_ts": 1652140782,
+      "youtube_archive_id": "cSeIcM8x1LE"
     }
   },
   "messages": [
@@ -19026,6 +19033,86 @@
       "message": "Unless QuantumTV does something as crazy or more :face_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1652147400,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Almond Milk doesn't exist. It can't be called Almond Milk by Wisconsin state law. The dairy state has spoken! :relieved_face: Aka...because it's not real Milk.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652147134,
+      "username": "@diamonddisc89",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "I guess you're not a Rangers fan :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1652147087,
+      "username": "@diamonddisc89",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Igor... Igor... Igor... Igor... :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1652146131,
+      "username": "@Gothy_Senpai",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "For the next Quantum Tv video, you should argue with a tickle me Elmo for the intro :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1652143839,
+      "username": "@neda_88",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Hi rich, can i get my daily dose of introguy\u2019s awesome, delicious fart? Please? Build it up, don\u2019t ask, thanks:hugging_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652142934,
+      "username": "@waycoolscootaloo",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Don't look now Rich, but I can see your %ock! :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652142623,
+      "username": "@ToyJesusLovesTequilla",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Oh my relaxed shoulders! :face_screaming_in_fear: I didn\u2019t know I needed this until a few minutes ago when I saw the thumbnail! Now all I need is fan art and my year is made",
+      "commands": [
+        "fear"
+      ]
+    },
+    {
+      "ts": 1652141623,
+      "username": "@GamingNBooks",
+      "platform": "youtube",
+      "stream_id": "man_in_birdsuit_livestreams_feat_birds",
+      "message": "Microsoft servers: Putting the \"X\" in Xbox!",
+      "commands": [
+        "servers"
       ]
     },
     {
