@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098523,
+  "updated_ts": 1782098531,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -122,7 +122,8 @@
     "alpha_males_only",
     "alright_im_back",
     "am_i_attracted_to_my_cousin",
-    "an_easter_eve_man"
+    "an_easter_eve_man",
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream"
   ],
   "commands": {
     "stan": 27,
@@ -155,7 +156,7 @@
     "turkey": 5,
     "eyes": 28,
     "africa": 1,
-    "face": 98,
+    "face": 99,
     "petersonxhhanson": 1,
     "poo": 5,
     "joy": 82,
@@ -169,11 +170,11 @@
     "cucumber": 10,
     "biceps": 3,
     "tongue": 4,
-    "heart": 39,
+    "heart": 40,
     "shorts": 1,
     "laughing": 40,
     "news": 7,
-    "chicken": 16,
+    "chicken": 17,
     "cake": 1,
     "d": 1,
     "halo": 2,
@@ -211,7 +212,7 @@
     "is": 3,
     "spose": 1,
     "sunglasses": 4,
-    "kiss": 8,
+    "kiss": 9,
     "earlier": 1,
     "ghost": 1,
     "bk": 1,
@@ -318,7 +319,7 @@
     "mugs": 1,
     "ties": 1,
     "this": 1,
-    "notes": 4,
+    "notes": 7,
     "wars": 1,
     "points": 2,
     "wastebasket": 1,
@@ -328,7 +329,8 @@
     "highter": 1,
     "glove": 1,
     "collision": 1,
-    "spoiler": 1
+    "spoiler": 1,
+    "mug": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -935,6 +937,11 @@
       "title": "An Easter Eve Man",
       "start_ts": 1650155707,
       "youtube_archive_id": "qx3ZRl2AuAI"
+    },
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream": {
+      "title": "An EDP445 Exposed (SunnyV2) New Years Eve Livestream",
+      "start_ts": 1640980324,
+      "youtube_archive_id": "8AuBhUkpkbQ"
     }
   },
   "messages": [
@@ -7003,6 +7010,66 @@
       "message": "Naruto the last air bender :man_facepalming: it\u2019s Avatar",
       "commands": [
         "facepalming"
+      ]
+    },
+    {
+      "ts": 1640984602,
+      "username": "@Mike-Evs",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": "call the next bird Bill, no pressure though :chicken:",
+      "commands": [
+        "chicken"
+      ]
+    },
+    {
+      "ts": 1640981330,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": "I wish i was bald like you :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1640981170,
+      "username": "@GamingMariner",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": ":musical_notes: You know in 2021, us and Rich had so much fun:musical_notes: Now that it's almost 2022, you know what Rich and the birds are going to do! They are going to poo:pile_of_poo::musical_notes:",
+      "commands": [
+        "notes"
+      ]
+    },
+    {
+      "ts": 1640981154,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": "JUG JUG JUG JUG JUG JUG JUG JUG :beer_mug::beer_mug::beer_mug::beer_mug::beer_mug:",
+      "commands": [
+        "mug"
+      ]
+    },
+    {
+      "ts": 1640980941,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": "Feliz ano Rich and also to the Chat too. :face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss::face_blowing_a_kiss:",
+      "commands": [
+        "kiss"
+      ]
+    },
+    {
+      "ts": 1640980386,
+      "username": "@deadeye616",
+      "platform": "youtube",
+      "stream_id": "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "message": "RIP Betty White :pensive_face:",
+      "commands": [
+        "face"
       ]
     },
     {
