@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100415,
+  "updated_ts": 1782100424,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -348,7 +348,8 @@
     "its_all_about_casey",
     "its_all_about_keemstar_and_birds",
     "its_all_about_the_tipples",
-    "its_dspgamings_birthday"
+    "its_dspgamings_birthday",
+    "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails"
   ],
   "commands": {
     "stan": 27,
@@ -381,7 +382,7 @@
     "turkey": 7,
     "eyes": 79,
     "africa": 1,
-    "face": 326,
+    "face": 327,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 237,
@@ -629,7 +630,7 @@
     "wrong": 1,
     "distance": 1,
     "cheat": 1,
-    "here": 1,
+    "here": 2,
     "hamburger": 2,
     "chipmunk": 1,
     "cupcaketv": 1,
@@ -675,7 +676,7 @@
     "robot": 1,
     "splayed": 1,
     "crown": 2,
-    "game": 3,
+    "game": 4,
     "dialogue": 1,
     "perspective": 1,
     "honeybee": 2,
@@ -781,7 +782,8 @@
     "bath": 1,
     "fart": 1,
     "result": 1,
-    "later": 1
+    "later": 1,
+    "rere": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2518,6 +2520,11 @@
       "title": "IT'S DSPGAMING'S BIRTHDAY",
       "start_ts": 1680910415,
       "youtube_archive_id": "tuiQB2kLK7E"
+    },
+    "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails": {
+      "title": "It's Getting Scary As Hell In Ukraine (Now Laughing At DSPGaming FAILS)",
+      "start_ts": 1646443067,
+      "youtube_archive_id": "NmNs83u2UL8"
     }
   },
   "messages": [
@@ -16913,6 +16920,46 @@
       "message": "Glad you're better(Phil flop) We interrupt your regularly scheduled broadcast for a PSA: I Dream of a World Where everybody knows thatthebirdistheword",
       "commands": [
         "psa"
+      ]
+    },
+    {
+      "ts": 1646450729,
+      "username": "@patrickc1193",
+      "platform": "youtube",
+      "stream_id": "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
+      "message": "That Vegan Teacher hates Ukraine and :video_game:",
+      "commands": [
+        "game"
+      ]
+    },
+    {
+      "ts": 1646450559,
+      "username": "@sonofjohn2750",
+      "platform": "youtube",
+      "stream_id": "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
+      "message": "I'm late reaching you on this, but, walk with me on this Rich and everyone here: Do a Google search on Putin with Tiger, Putin with Bear, and Putin with Leopard, then, read Rev. 13:2.",
+      "commands": [
+        "here"
+      ]
+    },
+    {
+      "ts": 1646445414,
+      "username": "@Podpeopleteam",
+      "platform": "youtube",
+      "stream_id": "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
+      "message": "Had to unsubscribe from Jimmy Dore. R propaganda:pensive_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1646443596,
+      "username": "@christheturbo",
+      "platform": "youtube",
+      "stream_id": "its_getting_scary_as_hell_in_ukraine_now_laughing_at_dspgaming_fails",
+      "message": "ReRe: SUS roomate guy. We\u2019re actually two Marines about to deploy, got the fool a girlfriend(we\u2019re not going to Ukraine) will update when I get back",
+      "commands": [
+        "rere"
       ]
     },
     {
