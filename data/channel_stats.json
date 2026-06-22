@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101057,
+  "updated_ts": 1782101064,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -434,7 +434,8 @@
     "man_news_live",
     "man_on_man_livestream_featuring_masculine_birds",
     "man_stares_at_artificial_birds_live",
-    "man_versus_bird_live"
+    "man_versus_bird_live",
+    "man_versus_carolina_reaper_jerky"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7364,6 +7365,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.55,
       "avg_active_chatters": 37.25
+    },
+    "man_versus_carolina_reaper_jerky": {
+      "stream_id": "man_versus_carolina_reaper_jerky",
+      "title": "Man Versus Carolina Reaper Jerky",
+      "start_ts": 1642727617,
+      "end_ts": 1642741058,
+      "duration_sec": 13441,
+      "youtube_archive_id": "vd0P-fyhqVs",
+      "source_platform": "youtube",
+      "total_donations_usd": 481.45,
+      "donation_count": 99,
+      "donations_per_min": 2.1492,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.79,
+      "avg_active_chatters": 37.72
     }
   }
 }
