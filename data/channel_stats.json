@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101976,
+  "updated_ts": 1782101982,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -568,7 +568,8 @@
     "reddit_cringe_feat_birds",
     "remastering_intro_guys_incredible_fart",
     "reviewbirdsusa",
-    "revieweldenringusa_eldenring"
+    "revieweldenringusa_eldenring",
+    "reviewthorusa_i_got_soulja_boys_console"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -9642,6 +9643,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.5,
       "avg_active_chatters": 34.54
+    },
+    "reviewthorusa_i_got_soulja_boys_console": {
+      "stream_id": "reviewthorusa_i_got_soulja_boys_console",
+      "title": "ReviewThorUSA (I Got Soulja Boy's Console)",
+      "start_ts": 1631579772,
+      "end_ts": 1631587373,
+      "duration_sec": 7601,
+      "youtube_archive_id": "-PF8irjYRO8",
+      "source_platform": "youtube",
+      "total_donations_usd": 444.21,
+      "donation_count": 100,
+      "donations_per_min": 3.5065,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 16.59,
+      "avg_active_chatters": 48.19
     }
   }
 }
