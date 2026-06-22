@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101492,
+  "updated_ts": 1782101499,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -489,7 +489,8 @@
     "my_subscribers_give_me_criticism",
     "nightly_hang_out",
     "nintendo_direct_event_292022",
-    "nintendo_direct_recap_reaction"
+    "nintendo_direct_recap_reaction",
+    "no_bird_suit_but_a_new_bird"
   ],
   "commands": {
     "stan": 27,
@@ -522,10 +523,10 @@
     "turkey": 10,
     "eyes": 115,
     "africa": 1,
-    "face": 457,
+    "face": 466,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 298,
+    "joy": 299,
     "gameboy": 1,
     "chick": 3,
     "carlos": 38,
@@ -538,7 +539,7 @@
     "tongue": 10,
     "heart": 143,
     "shorts": 2,
-    "laughing": 183,
+    "laughing": 184,
     "news": 20,
     "chicken": 56,
     "cake": 7,
@@ -933,7 +934,7 @@
     "reviewphilosphyusa": 1,
     "rtusa": 1,
     "kid": 2,
-    "tear": 2,
+    "tear": 3,
     "are": 1,
     "keemstar": 1,
     "tbf": 1,
@@ -3458,6 +3459,11 @@
       "title": "Nintendo Direct Recap Reaction",
       "start_ts": 1632449833,
       "youtube_archive_id": "W_jOd2cPB7k"
+    },
+    "no_bird_suit_but_a_new_bird": {
+      "title": "No Bird Suit (But A New Bird)?",
+      "start_ts": 1652824595,
+      "youtube_archive_id": "G9ZyfrD4GgU"
     }
   },
   "messages": [
@@ -20810,6 +20816,86 @@
       "message": "4 beautiful birds battling this demon to save us all :red_heart:",
       "commands": [
         "heart"
+      ]
+    },
+    {
+      "ts": 1652834350,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "keeping this game in a background tab and hearing it outta context is hilarious :grinning_squinting_face: :grinning_squinting_face: :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652833058,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "tried catching the guy by asking him what i say on these streams. Bazinga btw :grinning_squinting_face: :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652832942,
+      "username": "@crusherbad64",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "I was at Chick-fil-A getting a milkshake and the lady at the drive thru was looking at me all weird and questioned what I was listening to :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1652828282,
+      "username": "@kirito_4kirigaya944",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "did you hear that calling someone bald is considered sexual harassment now? lmfao :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1652828178,
+      "username": "@marihdimitri7219",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "Im curvy and Latina Rich. :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652825761,
+      "username": "@big_rokkuro",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "even worse is now there's leftists doing the same thing neocons do in blaming subcultures and games. it's tiresome. what's in the water over there? :disappointed_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652825530,
+      "username": "@michealbarre",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "ur playing with ur coc.s on stream dude :grinning_squinting_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1652825517,
+      "username": "@daghaggmark1764",
+      "platform": "youtube",
+      "stream_id": "no_bird_suit_but_a_new_bird",
+      "message": "I've been watching you play a lot of elden ring. Can I be a bird ambassador? Missed my first SC :smiling_face_with_tear:",
+      "commands": [
+        "tear"
       ]
     },
     {
