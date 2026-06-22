@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099843,
+  "updated_ts": 1782099852,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -283,7 +283,8 @@
     "final_chicken_suit_stream_featuring_birds",
     "friday_night_internet_man",
     "friday_night_man_fun_feat_birds",
-    "friday_night_man_stream"
+    "friday_night_man_stream",
+    "friday_night_new_york_man_stream"
   ],
   "commands": {
     "stan": 27,
@@ -316,10 +317,10 @@
     "turkey": 6,
     "eyes": 70,
     "africa": 1,
-    "face": 260,
+    "face": 261,
     "petersonxhhanson": 1,
     "poo": 17,
-    "joy": 188,
+    "joy": 192,
     "gameboy": 1,
     "chick": 1,
     "carlos": 24,
@@ -327,12 +328,12 @@
     "idea": 2,
     "fear": 3,
     "voice": 4,
-    "cucumber": 27,
+    "cucumber": 28,
     "biceps": 3,
     "tongue": 5,
     "heart": 85,
     "shorts": 1,
-    "laughing": 86,
+    "laughing": 87,
     "news": 17,
     "chicken": 37,
     "cake": 7,
@@ -396,7 +397,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 2,
-    "tomorrow": 11,
+    "tomorrow": 12,
     "horse": 5,
     "bug": 1,
     "violin": 1,
@@ -466,7 +467,7 @@
     "syne": 1,
     "father": 1,
     "request": 2,
-    "sweat": 7,
+    "sweat": 8,
     "twist": 2,
     "quote": 1,
     "beverage": 2,
@@ -537,7 +538,7 @@
     "shirt": 1,
     "vhs": 1,
     "pov": 2,
-    "circle": 2,
+    "circle": 3,
     "bar": 1,
     "cells": 1,
     "tv": 1,
@@ -645,7 +646,8 @@
     "ps": 1,
     "jay": 1,
     "jar": 1,
-    "translation": 1
+    "translation": 1,
+    "choice": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2057,6 +2059,11 @@
       "title": "Friday Night Man Stream",
       "start_ts": 1636167497,
       "youtube_archive_id": "oCbXX1jwzXk"
+    },
+    "friday_night_new_york_man_stream": {
+      "title": "Friday Night New York Man Stream",
+      "start_ts": 1628300200,
+      "youtube_archive_id": "vdMEP0C2_UA"
     }
   },
   "messages": [
@@ -17537,6 +17544,116 @@
       "message": "slather my :chicken: in blue cheese",
       "commands": [
         "chicken"
+      ]
+    },
+    {
+      "ts": 1628309085,
+      "username": "@CaMMA30k",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "I think I pissed someone off! ? Lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628308685,
+      "username": "@CaMMA30k",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "@Patrick Flanagan you don\u2019t have a girl. Your sitting in your parents basement surrounded by Cheetos! That\u2019s the reality of the situation pal! :flexed_biceps::crown::rolling_on_the_floor_laughing::face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628306963,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Imagine Dr phil on the commercial :grinning_face_with_sweat:",
+      "commands": [
+        "sweat"
+      ]
+    },
+    {
+      "ts": 1628305774,
+      "username": "@Billy_H1231",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Jesus Christ I needed this tonight. I'm dying :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1628305580,
+      "username": "@Gamesphere71",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "I always thought South Park was exaggerating how these infomercial guys talk but no :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628305208,
+      "username": "@matthewdanahy9411",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Remember when you had magic jack and that one chick kept calling and thought you were ignoring her :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1628304531,
+      "username": "@MelodieOctavia",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Put my blue :blue_circle::blue_circle: in your reciprocal rotation orifice!",
+      "commands": [
+        "circle"
+      ]
+    },
+    {
+      "ts": 1628304217,
+      "username": "@Valerieblossom611",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Just asking but when are you going to react to some Billy Mays commercials? If you forgot it's alright not a problem :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1628302418,
+      "username": "@MrPete1985",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Rich tomorrow: You can finally put a SSD in your PS5 and also my @$S",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1628302040,
+      "username": "@backnforth8401",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "Here's a losing choice: Castlevania remastered on the new Switch or optimized FEAR 1 remastered that works on the Steam deck",
+      "commands": [
+        "choice"
+      ]
+    },
+    {
+      "ts": 1628301051,
+      "username": "@RTX3090Benchmarks",
+      "platform": "youtube",
+      "stream_id": "friday_night_new_york_man_stream",
+      "message": "5 clucks for Carlos:_Carlos::_Carlos::_Cucumber:",
+      "commands": [
+        "cucumber"
       ]
     },
     {
