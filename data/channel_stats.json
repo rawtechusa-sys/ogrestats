@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782099298,
+  "updated_ts": 1782099306,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -219,7 +219,8 @@
     "come_chat_with_me",
     "come_chat_with_men_live_edp445_apology",
     "come_critcize_the_hell_out_of_me_yes_im_serious",
-    "come_discuss_the_playstation_showcase_with_your_dad"
+    "come_discuss_the_playstation_showcase_with_your_dad",
+    "come_hang_out"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -3709,6 +3710,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 17.49,
       "avg_active_chatters": 44.75
+    },
+    "come_hang_out": {
+      "stream_id": "come_hang_out",
+      "title": "Come Hang Out",
+      "start_ts": 1675471225,
+      "end_ts": 1675485153,
+      "duration_sec": 13928,
+      "youtube_archive_id": "fcXhoHnX0-s",
+      "source_platform": "youtube",
+      "total_donations_usd": 372.88,
+      "donation_count": 106,
+      "donations_per_min": 1.6063,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.8,
+      "avg_active_chatters": 26.18
     }
   }
 }
