@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098491,
+  "updated_ts": 1782098499,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -118,7 +118,8 @@
     "a_wonderful_samsung_galaxy_z_fold3_5g_unboxing",
     "a_xmas_eve_bird_stream",
     "a_xmas_eve_bird_stream_pt2",
-    "after_immense_pressure_thecowarding_finally_responded"
+    "after_immense_pressure_thecowarding_finally_responded",
+    "alpha_males_only"
   ],
   "commands": {
     "stan": 27,
@@ -154,7 +155,7 @@
     "face": 98,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 80,
+    "joy": 82,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -188,7 +189,7 @@
     "disclaimer": 1,
     "hole": 3,
     "rooster": 13,
-    "peach": 2,
+    "peach": 3,
     "fire": 6,
     "kendal": 1,
     "up": 11,
@@ -246,7 +247,7 @@
     "vomiting": 4,
     "moment": 1,
     "suit": 2,
-    "mouth": 6,
+    "mouth": 7,
     "papo": 1,
     "monkey": 1,
     "psychology": 1,
@@ -910,6 +911,11 @@
       "title": "After Immense Pressure, TheCowarding Finally Responded",
       "start_ts": 1681866742,
       "youtube_archive_id": "1oP0A6gHPrY"
+    },
+    "alpha_males_only": {
+      "title": "Alpha Males Only",
+      "start_ts": 1672451027,
+      "youtube_archive_id": "JExFg58Ga3I"
     }
   },
   "messages": [
@@ -5568,6 +5574,46 @@
       "platform": "youtube",
       "stream_id": "a_dspgaming_family_fun_stream",
       "message": "Please get J on and let's all rise together! lol :face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1672455837,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "alpha_males_only",
+      "message": "heres your super chat now go pay your electric bills you dumb bitch.... oh wait sorry you're not DSP. :knocked_out_face::knocked_out_face::face_with_open_eyes_and_hand_over_mouth::face_with_open_eyes_and_hand_over_mouth:",
+      "commands": [
+        "mouth"
+      ]
+    },
+    {
+      "ts": 1672455270,
+      "username": "@gamingarachnid3367",
+      "platform": "youtube",
+      "stream_id": "alpha_males_only",
+      "message": "Gotta make \u2018\u2018em eat :peach:",
+      "commands": [
+        "peach"
+      ]
+    },
+    {
+      "ts": 1672454557,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "alpha_males_only",
+      "message": "It was funny when Jay pissed off MLD on twitch:face_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1672453142,
+      "username": "@modsbananyoneunder300pound9",
+      "platform": "youtube",
+      "stream_id": "alpha_males_only",
+      "message": "Tallarico can't even buy his own furniture :face_with_tears_of_joy:",
       "commands": [
         "joy"
       ]
