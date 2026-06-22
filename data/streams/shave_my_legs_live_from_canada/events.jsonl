@@ -9,7 +9,7 @@
 {"ts": 1680307016, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 30, "active_twitch_chatters": null, "youtube_messages_per_minute": 14.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307076, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 30, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307092, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@TARmedia", "amount_raw": "$5.00", "amount_usd": 5.0, "message": "If I donate another 10, will you play my Rich track on stream?"}
-{"ts": 1680307093, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@niallwilliamson3540", "amount_raw": "£2.00", "amount_usd": 2.0, "message": "Pat and Ian were happy last night"}
+{"ts": 1680307093, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@niallwilliamson3540", "amount_raw": "£2.00", "amount_usd": 2.54, "message": "Pat and Ian were happy last night"}
 {"ts": 1680307136, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 31, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307179, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@TARmedia", "amount_raw": "$5.00", "amount_usd": 5.0, "message": "C'mon play my Rich track"}
 {"ts": 1680307196, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 28, "active_twitch_chatters": null, "youtube_messages_per_minute": 8.0, "twitch_messages_per_minute": 0}
@@ -28,7 +28,7 @@
 {"ts": 1680307736, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 14, "active_twitch_chatters": null, "youtube_messages_per_minute": 8.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307796, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 16, "active_twitch_chatters": null, "youtube_messages_per_minute": 4.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307856, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 15, "active_twitch_chatters": null, "youtube_messages_per_minute": 9.0, "twitch_messages_per_minute": 0}
-{"ts": 1680307898, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Insomniac416", "amount_raw": "CA$2.79", "amount_usd": 2.79, "message": "JAYYYYYY WHARE BEARD JAY NOOO lmaoo"}
+{"ts": 1680307898, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Insomniac416", "amount_raw": "CA$2.79", "amount_usd": 2.04, "message": "JAYYYYYY WHARE BEARD JAY NOOO lmaoo"}
 {"ts": 1680307916, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 17, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307976, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 22, "active_twitch_chatters": null, "youtube_messages_per_minute": 14.0, "twitch_messages_per_minute": 0}
 {"ts": 1680307991, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@FoilGrimTimmy", "amount_raw": "$2.00", "amount_usd": 2.0, "message": "Yo Jay, got paid today...here is $2"}
@@ -43,7 +43,7 @@
 {"ts": 1680308396, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 12, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680308456, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 13, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1680308516, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 13, "active_twitch_chatters": null, "youtube_messages_per_minute": 10.0, "twitch_messages_per_minute": 0}
-{"ts": 1680308546, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Insomniac416", "amount_raw": "CA$2.79", "amount_usd": 2.79, "message": "hey siri set the mood to blood"}
+{"ts": 1680308546, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@Insomniac416", "amount_raw": "CA$2.79", "amount_usd": 2.04, "message": "hey siri set the mood to blood"}
 {"ts": 1680308576, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 16, "active_twitch_chatters": null, "youtube_messages_per_minute": 12.0, "twitch_messages_per_minute": 0}
 {"ts": 1680308636, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 18, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1680308696, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 17, "active_twitch_chatters": null, "youtube_messages_per_minute": 1.0, "twitch_messages_per_minute": 0}
@@ -89,8 +89,8 @@
 {"ts": 1680310856, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 14, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1680310916, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 14, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680310976, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 14, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
-{"ts": 1680311032, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@timmarcoux", "amount_raw": "CA$2.20", "amount_usd": 2.2, "message": "pitch your story as the plot for Bully 2"}
-{"ts": 1680311036, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$5.50", "amount_usd": 5.5, "message": "Wtf I get here and Jay’s beard is no more! You better have shaved it on stream like Rich’s nipples shaved by his GF or else you’re getting punished."}
+{"ts": 1680311032, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@timmarcoux", "amount_raw": "CA$2.20", "amount_usd": 1.61, "message": "pitch your story as the plot for Bully 2"}
+{"ts": 1680311036, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$5.50", "amount_usd": 0.99, "message": "Wtf I get here and Jay’s beard is no more! You better have shaved it on stream like Rich’s nipples shaved by his GF or else you’re getting punished."}
 {"ts": 1680311036, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 16, "active_twitch_chatters": null, "youtube_messages_per_minute": 10.0, "twitch_messages_per_minute": 0}
 {"ts": 1680311096, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 19, "active_twitch_chatters": null, "youtube_messages_per_minute": 15.0, "twitch_messages_per_minute": 0}
 {"ts": 1680311156, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 19, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
@@ -140,7 +140,7 @@
 {"ts": 1680313316, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 22, "active_twitch_chatters": null, "youtube_messages_per_minute": 15.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313376, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 19, "active_twitch_chatters": null, "youtube_messages_per_minute": 12.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313436, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 18, "active_twitch_chatters": null, "youtube_messages_per_minute": 12.0, "twitch_messages_per_minute": 0}
-{"ts": 1680313449, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$2.20", "amount_usd": 2.2, "message": "Tell us about Rich's package in sideways rain"}
+{"ts": 1680313449, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$2.20", "amount_usd": 0.4, "message": "Tell us about Rich's package in sideways rain"}
 {"ts": 1680313496, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 23, "active_twitch_chatters": null, "youtube_messages_per_minute": 16.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313556, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 24, "active_twitch_chatters": null, "youtube_messages_per_minute": 13.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313616, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 21, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
@@ -150,7 +150,7 @@
 {"ts": 1680313796, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 12, "active_twitch_chatters": null, "youtube_messages_per_minute": 7.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313856, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 11, "active_twitch_chatters": null, "youtube_messages_per_minute": 10.0, "twitch_messages_per_minute": 0}
 {"ts": 1680313916, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 12, "active_twitch_chatters": null, "youtube_messages_per_minute": 8.0, "twitch_messages_per_minute": 0}
-{"ts": 1680313953, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$5.50", "amount_usd": 5.5, "message": "Can't believe u don't know abt the package in sideways rain, when father is back I'll ask him to tell it. he told it so many times he hates it now lol"}
+{"ts": 1680313953, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@yohagain", "amount_raw": "R$5.50", "amount_usd": 0.99, "message": "Can't believe u don't know abt the package in sideways rain, when father is back I'll ask him to tell it. he told it so many times he hates it now lol"}
 {"ts": 1680313976, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 15, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680314036, "event": "viewer_snapshot", "youtube": null, "twitch": null, "active_youtube_chatters": 12, "active_twitch_chatters": null, "youtube_messages_per_minute": 6.0, "twitch_messages_per_minute": 0}
 {"ts": 1680314074, "event": "donation", "platform": "youtube", "type": "superchat", "username": "@FoilGrimTimmy", "amount_raw": "$2.00", "amount_usd": 2.0, "message": "Irreversible and Last House are bad ass"}
