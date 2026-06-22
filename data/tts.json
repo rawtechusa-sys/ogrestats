@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100763,
+  "updated_ts": 1782100769,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -391,7 +391,8 @@
     "lets_discuss_e3_and_next_gen_consoles",
     "lets_discuss_my_budget_pc_build",
     "lets_discuss_nick_mercs_road_to_1000_members",
-    "lets_discuss_sam_hyde_and_the_quartering"
+    "lets_discuss_sam_hyde_and_the_quartering",
+    "lets_discuss_some_important_things_road_to_1000_members"
   ],
   "commands": {
     "stan": 27,
@@ -422,7 +423,7 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 87,
+    "eyes": 88,
     "africa": 1,
     "face": 368,
     "petersonxhhanson": 1,
@@ -471,12 +472,12 @@
     "shrugging": 5,
     "donation": 3,
     "naruto": 1,
-    "hands": 25,
+    "hands": 26,
     "horns": 7,
     "crab": 2,
     "superhero": 27,
     "legends": 2,
-    "dog": 6,
+    "dog": 7,
     "is": 6,
     "spose": 1,
     "sunglasses": 17,
@@ -856,7 +857,8 @@
     "bag": 1,
     "honest": 1,
     "verse": 1,
-    "remember": 1
+    "remember": 1,
+    "as": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2808,6 +2810,11 @@
       "title": "Let's Discuss Sam Hyde And The Quartering",
       "start_ts": 1686702187,
       "youtube_archive_id": "zRoRgmmuEks"
+    },
+    "lets_discuss_some_important_things_road_to_1000_members": {
+      "title": "Let's Discuss Some Important Things (Road To 1000 Members)",
+      "start_ts": 1685746053,
+      "youtube_archive_id": "wLcFj71BSDM"
     }
   },
   "messages": [
@@ -10842,6 +10849,46 @@
       "message": "One the girls from the previous stream, xia, she was on Cody's show and yes they are fake melons but good ones :cat_with_tears_of_joy:",
       "commands": [
         "joy"
+      ]
+    },
+    {
+      "ts": 1685766172,
+      "username": "@illuminaughty_420",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_some_important_things_road_to_1000_members",
+      "message": "Rich please lookup Kermit chicken sandwich :folded_hands:",
+      "commands": [
+        "hands"
+      ]
+    },
+    {
+      "ts": 1685760219,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_some_important_things_road_to_1000_members",
+      "message": "You ever think someone at the dog food company may have to taste test their products :eyes::eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1685752904,
+      "username": "@PigeonSalad1996",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_some_important_things_road_to_1000_members",
+      "message": "There are about 12 straight streams this dude made about Minxy. Where he's said such things as: Saying Minxy of being Homophobic, downplaying her husband's accident and comparing her to Adolf from WW2",
+      "commands": [
+        "as"
+      ]
+    },
+    {
+      "ts": 1685750444,
+      "username": "@alexroberts3613",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_some_important_things_road_to_1000_members",
+      "message": ":hot_dog::hot_dog::hot_dog::hot_dog::hot_dog: Weiner me 5 times big boi",
+      "commands": [
+        "dog"
       ]
     },
     {
