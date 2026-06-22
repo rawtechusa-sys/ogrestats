@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101395,
+  "updated_ts": 1782101402,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -480,7 +480,8 @@
     "more_predator_roasting",
     "more_quantum_tv_tickling",
     "more_russia_ukraine_discussion",
-    "more_spicy_intellivision_amico_family_fun"
+    "more_spicy_intellivision_amico_family_fun",
+    "more_tcap_and_bird_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8146,6 +8147,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 11.84,
       "avg_active_chatters": 31.21
+    },
+    "more_tcap_and_bird_fun": {
+      "stream_id": "more_tcap_and_bird_fun",
+      "title": "More TCAP And Bird Fun",
+      "start_ts": 1662512501,
+      "end_ts": 1662519916,
+      "duration_sec": 7415,
+      "youtube_archive_id": "623ctqAJFmI",
+      "source_platform": "youtube",
+      "total_donations_usd": 302.6,
+      "donation_count": 68,
+      "donations_per_min": 2.4486,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.71,
+      "avg_active_chatters": 33.8
     }
   }
 }
