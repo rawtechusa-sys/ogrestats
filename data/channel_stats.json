@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100993,
+  "updated_ts": 1782101000,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -425,7 +425,8 @@
     "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
     "man_friendly_family_fun",
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
-    "man_in_birdsuit_livestreams_feat_birds"
+    "man_in_birdsuit_livestreams_feat_birds",
+    "man_in_chicken_suit_ep2_feat_beautiful_birds"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7211,6 +7212,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 19.48,
       "avg_active_chatters": 47.98
+    },
+    "man_in_chicken_suit_ep2_feat_beautiful_birds": {
+      "stream_id": "man_in_chicken_suit_ep2_feat_beautiful_birds",
+      "title": "Man In Chicken Suit Ep.2 (Feat. Beautiful Birds)",
+      "start_ts": 1652227081,
+      "end_ts": 1652235567,
+      "duration_sec": 8486,
+      "youtube_archive_id": "ydSQZ3lmlyk",
+      "source_platform": "youtube",
+      "total_donations_usd": 204.8,
+      "donation_count": 60,
+      "donations_per_min": 1.448,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 11.68,
+      "avg_active_chatters": 29.73
     }
   }
 }
