@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101386,
+  "updated_ts": 1782101393,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -476,7 +476,8 @@
     "more_phil_more_alpha_males_more_birds",
     "more_predator_roasting",
     "more_quantum_tv_tickling",
-    "more_russia_ukraine_discussion"
+    "more_russia_ukraine_discussion",
+    "more_spicy_intellivision_amico_family_fun"
   ],
   "commands": {
     "stan": 27,
@@ -527,7 +528,7 @@
     "shorts": 2,
     "laughing": 179,
     "news": 20,
-    "chicken": 52,
+    "chicken": 53,
     "cake": 7,
     "d": 4,
     "halo": 4,
@@ -3369,6 +3370,11 @@
       "title": "More Russia-Ukraine Discussion",
       "start_ts": 1646612118,
       "youtube_archive_id": "QrLBp54TDkY"
+    },
+    "more_spicy_intellivision_amico_family_fun": {
+      "title": "More Spicy Intellivision Amico Family FUN",
+      "start_ts": 1646698221,
+      "youtube_archive_id": "MPhKcXXHts0"
     }
   },
   "messages": [
@@ -21960,6 +21966,16 @@
       "message": "Glad you're better(Phil flop) We interrupt your regularly scheduled broadcast for a PSA: I Dream of a World Where everybody knows thatthebirdistheword",
       "commands": [
         "psa"
+      ]
+    },
+    {
+      "ts": 1646698711,
+      "username": "@knowledgeseeker4116",
+      "platform": "youtube",
+      "stream_id": "more_spicy_intellivision_amico_family_fun",
+      "message": "Carlos cluck noise please and thank you! :chicken:",
+      "commands": [
+        "chicken"
       ]
     },
     {
