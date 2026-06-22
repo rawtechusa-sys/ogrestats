@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101196,
+  "updated_ts": 1782101203,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -453,7 +453,8 @@
     "men_birds_and_samurai_cop_part_deux",
     "men_chatting",
     "men_discuss_def_noodles_feat_christhenarc",
-    "men_feat_men"
+    "men_feat_men",
+    "men_vs_chris_chan"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7687,6 +7688,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.38,
       "avg_active_chatters": 37.06
+    },
+    "men_vs_chris_chan": {
+      "stream_id": "men_vs_chris_chan",
+      "title": "Men Vs. Chris Chan",
+      "start_ts": 1691798587,
+      "end_ts": 1691807586,
+      "duration_sec": 8999,
+      "youtube_archive_id": "0SCnAWt2v_c",
+      "source_platform": "youtube",
+      "total_donations_usd": 264.2,
+      "donation_count": 80,
+      "donations_per_min": 1.7615,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 20.71,
+      "avg_active_chatters": 46.49
     }
   }
 }
