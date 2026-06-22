@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100248,
+  "updated_ts": 1782100256,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -329,7 +329,8 @@
     "im_just_a_man_thats_all",
     "im_kind_of_back_what_happened",
     "im_not_dead",
-    "im_not_well_endowed"
+    "im_not_well_endowed",
+    "im_now_a_home_owner"
   ],
   "commands": {
     "stan": 27,
@@ -362,7 +363,7 @@
     "turkey": 7,
     "eyes": 78,
     "africa": 1,
-    "face": 312,
+    "face": 314,
     "petersonxhhanson": 1,
     "poo": 19,
     "joy": 225,
@@ -376,7 +377,7 @@
     "cucumber": 39,
     "biceps": 3,
     "tongue": 6,
-    "heart": 102,
+    "heart": 103,
     "shorts": 1,
     "laughing": 125,
     "news": 18,
@@ -385,7 +386,7 @@
     "d": 4,
     "halo": 3,
     "hand": 28,
-    "popper": 6,
+    "popper": 7,
     "straw": 1,
     "glasses": 2,
     "ball": 1,
@@ -442,7 +443,7 @@
     "reviewseinfeldusa": 2,
     "things": 2,
     "down": 2,
-    "tomorrow": 14,
+    "tomorrow": 15,
     "horse": 6,
     "bug": 1,
     "violin": 1,
@@ -501,7 +502,7 @@
     "rocket": 1,
     "droplets": 10,
     "tomato": 3,
-    "hearts": 7,
+    "hearts": 8,
     "million": 1,
     "people": 1,
     "point": 2,
@@ -618,7 +619,7 @@
     "vampire": 1,
     "basketball": 1,
     "intelivsion": 1,
-    "topic": 1,
+    "topic": 2,
     "doody": 1,
     "ex": 1,
     "curious": 1,
@@ -711,7 +712,7 @@
     "auto": 1,
     "muta": 2,
     "o": 1,
-    "fingers": 1,
+    "fingers": 2,
     "word": 1,
     "wrestling": 1,
     "tcap": 1,
@@ -743,7 +744,9 @@
     "doctor": 1,
     "joke": 1,
     "the": 1,
-    "quantum": 2
+    "quantum": 2,
+    "corn": 1,
+    "cwc": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -2385,6 +2388,11 @@
       "title": "I'm Not Well Endowed :-(",
       "start_ts": 1655596419,
       "youtube_archive_id": "yCQFGuWRbhg"
+    },
+    "im_now_a_home_owner": {
+      "title": "I'm Now A Home Owner...",
+      "start_ts": 1632274481,
+      "youtube_archive_id": "rqfdyfXe33Q"
     }
   },
   "messages": [
@@ -19639,6 +19647,106 @@
       "message": "I Heart Cannabis!!!:star_struck::water_wave: Finally oceanfront!!",
       "commands": [
         "wave"
+      ]
+    },
+    {
+      "ts": 1632278490,
+      "username": "@giannifiore7231",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "Rich congrats on the house! When\u2019s move in day? Also off topic: how is that iPad Pro holding up? 2018 model? I cant wait for my mini 6 to arrive!",
+      "commands": [
+        "topic"
+      ]
+    },
+    {
+      "ts": 1632278472,
+      "username": "@CollinBB",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "Gotta go hop online with the bois Rich. Goodnight Nip father. Congrats on the house. I'll tickle you later :pinched_fingers::pinched_fingers:",
+      "commands": [
+        "fingers"
+      ]
+    },
+    {
+      "ts": 1632277878,
+      "username": "@DBZking119",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "Rich tomorrow: so Phil Burnell is now the ceo of burger king, lets get into it",
+      "commands": [
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1632277209,
+      "username": "@bobbyewing311",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "I just turn the stream on and rich is shirtless talking about horrible smelling farts. Looks like I'm at the usual stream :slightly_smiling_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632276038,
+      "username": "@M0rshu64",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "update on CWC: expected 2 appear in court Nov 18",
+      "commands": [
+        "cwc"
+      ]
+    },
+    {
+      "ts": 1632275421,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "A dono for your payment and for Carlos\u2019 corn fund:ear_of_corn:",
+      "commands": [
+        "corn"
+      ]
+    },
+    {
+      "ts": 1632275333,
+      "username": "@DontBeAWhoreAnymoreJesusIsHere",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "Luv U! AZ Audit Results Come out Friday in Live Senate Public Hearing! Must Watch! :winking_face:",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1632275193,
+      "username": "@donaldcare5366",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "How much was your down payment? I\u2019m also looking :party_popper:",
+      "commands": [
+        "popper"
+      ]
+    },
+    {
+      "ts": 1632275075,
+      "username": "@Cassiebee42",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "Every time I hear or see the word Exposed in the news or in movies I start singing your intro song. Thank for that LOL get it started with 3 fart.:smiling_face_with_hearts:",
+      "commands": [
+        "hearts"
+      ]
+    },
+    {
+      "ts": 1632274694,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "im_now_a_home_owner",
+      "message": "My mental state is saved today dad is here :red_heart: you!",
+      "commands": [
+        "heart"
       ]
     },
     {
