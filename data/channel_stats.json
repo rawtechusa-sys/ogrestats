@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101006,
+  "updated_ts": 1782101014,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -427,7 +427,8 @@
     "man_in_birdsuit_ep_7_chris_chan_family_fun",
     "man_in_birdsuit_livestreams_feat_birds",
     "man_in_chicken_suit_ep2_feat_beautiful_birds",
-    "man_in_chicken_suit_ep4"
+    "man_in_chicken_suit_ep4",
+    "man_in_chicken_suit_ep5_intellivision_amico_family_fun"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -7245,6 +7246,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.2,
       "avg_active_chatters": 34.66
+    },
+    "man_in_chicken_suit_ep5_intellivision_amico_family_fun": {
+      "stream_id": "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
+      "title": "Man In Chicken Suit Ep.5 (Intellivision Amico Family Fun)",
+      "start_ts": 1652490630,
+      "end_ts": 1652497952,
+      "duration_sec": 7322,
+      "youtube_archive_id": "QHjdPO-5rEs",
+      "source_platform": "youtube",
+      "total_donations_usd": 372.26,
+      "donation_count": 65,
+      "donations_per_min": 3.0505,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 12.8,
+      "avg_active_chatters": 30.67
     }
   }
 }
