@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100709,
+  "updated_ts": 1782100716,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -385,7 +385,8 @@
     "late_night_stream_for_no_reason",
     "learning_how_to_be_a_man_feat_birds",
     "legal_eagles_xqc_video",
-    "lets_argue_about_nintendo"
+    "lets_argue_about_nintendo",
+    "lets_be_disappointed_by_the_nintendo_direct_together"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6531,6 +6532,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 16.78,
       "avg_active_chatters": 43.02
+    },
+    "lets_be_disappointed_by_the_nintendo_direct_together": {
+      "stream_id": "lets_be_disappointed_by_the_nintendo_direct_together",
+      "title": "Let's Be Disappointed By The Nintendo Direct Together",
+      "start_ts": 1675892537,
+      "end_ts": 1675896587,
+      "duration_sec": 4050,
+      "youtube_archive_id": "NMD50Ql9FVI",
+      "source_platform": "youtube",
+      "total_donations_usd": 106.86,
+      "donation_count": 33,
+      "donations_per_min": 1.5831,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 24.74,
+      "avg_active_chatters": 56.22
     }
   }
 }
