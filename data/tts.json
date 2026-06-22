@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101327,
+  "updated_ts": 1782101334,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -468,7 +468,8 @@
     "more_gta_iii_remastered_with_birds",
     "more_intellivision_amico_family_bird_fun",
     "more_intellivision_amico_family_fun",
-    "more_intellivision_amico_manbird_fun"
+    "more_intellivision_amico_manbird_fun",
+    "more_man_more_birds"
   ],
   "commands": {
     "stan": 27,
@@ -514,10 +515,10 @@
     "voice": 5,
     "cucumber": 50,
     "biceps": 5,
-    "tongue": 9,
+    "tongue": 10,
     "heart": 141,
     "shorts": 2,
-    "laughing": 172,
+    "laughing": 173,
     "news": 20,
     "chicken": 52,
     "cake": 7,
@@ -537,7 +538,7 @@
     "enough": 1,
     "disclaimer": 1,
     "hole": 9,
-    "rooster": 46,
+    "rooster": 48,
     "peach": 15,
     "fire": 24,
     "kendal": 1,
@@ -978,7 +979,8 @@
     "moon": 1,
     "context": 1,
     "tonight": 1,
-    "bia": 1
+    "bia": 1,
+    "battle": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3315,6 +3317,11 @@
       "title": "More Intellivision Amico Man/Bird Fun",
       "start_ts": 1638237774,
       "youtube_archive_id": "9VDBRxoM4uI"
+    },
+    "more_man_more_birds": {
+      "title": "More Man, More Birds",
+      "start_ts": 1657420251,
+      "youtube_archive_id": "24ZdBwO8nHM"
     }
   },
   "messages": [
@@ -18264,6 +18271,56 @@
       "message": "Act Man is back making paper :flexed_biceps:",
       "commands": [
         "biceps"
+      ]
+    },
+    {
+      "ts": 1657429010,
+      "username": "@flashbackturtle6959",
+      "platform": "youtube",
+      "stream_id": "more_man_more_birds",
+      "message": "Nipple Battle: GabeN, Bill Gates, Or Steve Ballmer",
+      "commands": [
+        "battle"
+      ]
+    },
+    {
+      "ts": 1657428556,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "more_man_more_birds",
+      "message": "If you don't play Dave Atelle I'll unmod you :face_with_tongue:",
+      "commands": [
+        "tongue"
+      ]
+    },
+    {
+      "ts": 1657427363,
+      "username": "@HerAddiction444",
+      "platform": "youtube",
+      "stream_id": "more_man_more_birds",
+      "message": "Gynecologists are scrambling RN lookin for Jeremy:rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1657422103,
+      "username": "@Pan-Of-Jello",
+      "platform": "youtube",
+      "stream_id": "more_man_more_birds",
+      "message": "You don\u2019t \u201csettle differences\u201d with fascists :rooster:",
+      "commands": [
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1657421693,
+      "username": "@joshcrow777",
+      "platform": "youtube",
+      "stream_id": "more_man_more_birds",
+      "message": "Relaxing Ayyynooose Shout Out From Dallas, TX! Stay Hard Rich! :rooster:",
+      "commands": [
+        "rooster"
       ]
     },
     {
