@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782098444,
+  "updated_ts": 1782098452,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -112,7 +112,8 @@
     "a_very_late_man",
     "a_very_stoned_man_discusses_repzion_and_the_completionist",
     "a_very_stoned_man_discusses_repzion_and_the_completionist_working",
-    "a_wingsofredemption_marathon_stream"
+    "a_wingsofredemption_marathon_stream",
+    "a_woman_is_with_us"
   ],
   "commands": {
     "stan": 27,
@@ -148,7 +149,7 @@
     "face": 94,
     "petersonxhhanson": 1,
     "poo": 5,
-    "joy": 76,
+    "joy": 77,
     "gameboy": 1,
     "chick": 1,
     "carlos": 12,
@@ -311,7 +312,9 @@
     "notes": 2,
     "wars": 1,
     "points": 1,
-    "wastebasket": 1
+    "wastebasket": 1,
+    "left": 1,
+    "flag": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -868,6 +871,11 @@
       "title": "A WingsOfRedemption Marathon Stream",
       "start_ts": 1656806041,
       "youtube_archive_id": "YSP4GkKzkmk"
+    },
+    "a_woman_is_with_us": {
+      "title": "A Woman Is With Us",
+      "start_ts": 1686618020,
+      "youtube_archive_id": "GU5pa5cnYeU"
     }
   },
   "messages": [
@@ -4777,6 +4785,36 @@
       "message": "Hello father, just got here. Hot take: Khet has nothing to do with his weird reactions to anything remotely sexual, he\u2019s always been weird but before he\u2019d hide discomfort behind crappy jokes. Cheers!",
       "commands": [
         "take"
+      ]
+    },
+    {
+      "ts": 1686629831,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "a_woman_is_with_us",
+      "message": "Tonight was insane, huge Tipster drama erupted :cat_with_tears_of_joy:",
+      "commands": [
+        "joy"
+      ]
+    },
+    {
+      "ts": 1686625191,
+      "username": "@punkinjack8925",
+      "platform": "youtube",
+      "stream_id": "a_woman_is_with_us",
+      "message": "Gyaarrr I BE A DOCTOR :pirate_flag::pirate_flag::pirate_flag:",
+      "commands": [
+        "flag"
+      ]
+    },
+    {
+      "ts": 1686622566,
+      "username": "@Quinneth-Jade",
+      "platform": "youtube",
+      "stream_id": "a_woman_is_with_us",
+      "message": "does elf like femboys:backhand_index_pointing_right::backhand_index_pointing_left:",
+      "commands": [
+        "left"
       ]
     },
     {
