@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100292,
+  "updated_ts": 1782100300,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -334,7 +334,8 @@
     "im_so_sorry",
     "im_tired_but_g4tv_and_intellivision_family_friendly_news_has_emerged",
     "im_too_stoned_for_dkoldies_drama_but_here_it_is",
-    "im_wired_and_streaming_cause_why_not"
+    "im_wired_and_streaming_cause_why_not",
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds"
   ],
   "commands": {
     "stan": 27,
@@ -407,7 +408,7 @@
     "peach": 8,
     "fire": 19,
     "kendal": 1,
-    "up": 34,
+    "up": 35,
     "note": 6,
     "eyebrow": 2,
     "facepalming": 9,
@@ -2421,6 +2422,11 @@
       "title": "I'm Wired And Streaming, Cause Why Not?",
       "start_ts": 1701061635,
       "youtube_archive_id": "7z0CkeZR2YY"
+    },
+    "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds": {
+      "title": "In Search Of 100K Runes In Elden Ring (Feat. Beautiful Birds)",
+      "start_ts": 1649719856,
+      "youtube_archive_id": "udNjQplYcbQ"
     }
   },
   "messages": [
@@ -15665,6 +15671,16 @@
       "message": "we love cucumbers :cucumber:",
       "commands": [
         "cucumber"
+      ]
+    },
+    {
+      "ts": 1649723466,
+      "username": "@onisalvo",
+      "platform": "youtube",
+      "stream_id": "in_search_of_100k_runes_in_elden_ring_feat_beautiful_birds",
+      "message": "hey rich I started losing weight and in about 2 months I lost 30 pounds :thumbs_up: also which bird is better at elden ring? I'm thinking carlos",
+      "commands": [
+        "up"
       ]
     },
     {
