@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101363,
+  "updated_ts": 1782101371,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -473,7 +473,8 @@
     "more_man_more_karens",
     "more_of_the_quantum_tv_interview",
     "more_of_the_quantum_tv_interview_chris_the_narc",
-    "more_phil_more_alpha_males_more_birds"
+    "more_phil_more_alpha_males_more_birds",
+    "more_predator_roasting"
   ],
   "commands": {
     "stan": 27,
@@ -503,7 +504,7 @@
     "pill": 1,
     "device": 1,
     "idevice": 1,
-    "turkey": 9,
+    "turkey": 10,
     "eyes": 110,
     "africa": 1,
     "face": 441,
@@ -988,7 +989,8 @@
     "yoga": 1,
     "aka": 1,
     "westside": 1,
-    "finisher": 1
+    "finisher": 1,
+    "hansen": 1
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -3350,6 +3352,11 @@
       "title": "More Phil, More Alpha Males, More Birds",
       "start_ts": 1665628125,
       "youtube_archive_id": "PxzxV11-yvM"
+    },
+    "more_predator_roasting": {
+      "title": "More Predator Roasting",
+      "start_ts": 1643332202,
+      "youtube_archive_id": "ixspitz-awo"
     }
   },
   "messages": [
@@ -22537,6 +22544,26 @@
       "message": "I do Facebook posts like u title ur streams. Example: \u201ca bearded hippie man and his dog walked yoo the lake today\u201d",
       "commands": [
         "example"
+      ]
+    },
+    {
+      "ts": 1643337308,
+      "username": "@KyzerMusicOfficial",
+      "platform": "youtube",
+      "stream_id": "more_predator_roasting",
+      "message": "Chris Hansen: \u201cHe said he is tweaking his nip ples and yodeling to the tune of strangers in paradise.\u201d",
+      "commands": [
+        "hansen"
+      ]
+    },
+    {
+      "ts": 1643334563,
+      "username": "@IAmError0706",
+      "platform": "youtube",
+      "stream_id": "more_predator_roasting",
+      "message": "Rich you beautiful bird, keep that same energy:rooster::turkey:",
+      "commands": [
+        "turkey"
       ]
     },
     {
