@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101033,
+  "updated_ts": 1782101041,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -428,7 +428,8 @@
     "man_in_chicken_suit_ep5_intellivision_amico_family_fun",
     "man_in_chicken_suit_ep6_more_quantum_karen_tv",
     "man_in_chicken_suit_watches_predator_vids_ep3_feat_beautiful_birds",
-    "man_news_live"
+    "man_news_live",
+    "man_on_man_livestream_featuring_masculine_birds"
   ],
   "commands": {
     "stan": 27,
@@ -459,15 +460,15 @@
     "device": 1,
     "idevice": 1,
     "turkey": 7,
-    "eyes": 98,
+    "eyes": 99,
     "africa": 1,
     "face": 408,
     "petersonxhhanson": 1,
     "poo": 24,
-    "joy": 273,
+    "joy": 274,
     "gameboy": 1,
     "chick": 3,
-    "carlos": 33,
+    "carlos": 34,
     "away": 7,
     "idea": 4,
     "fear": 4,
@@ -475,7 +476,7 @@
     "cucumber": 50,
     "biceps": 5,
     "tongue": 7,
-    "heart": 129,
+    "heart": 130,
     "shorts": 1,
     "laughing": 166,
     "news": 20,
@@ -568,7 +569,7 @@
     "follows": 1,
     "goblin": 1,
     "live": 1,
-    "saying": 1,
+    "saying": 2,
     "it": 18,
     "food": 4,
     "play": 1,
@@ -3051,6 +3052,11 @@
       "title": "Man News LIVE",
       "start_ts": 1713397637,
       "youtube_archive_id": "LoagX0s_c1U"
+    },
+    "man_on_man_livestream_featuring_masculine_birds": {
+      "title": "Man On Man Livestream Featuring Masculine Birds",
+      "start_ts": 1683849635,
+      "youtube_archive_id": "yUg-a8tlZV0"
     }
   },
   "messages": [
@@ -12122,6 +12128,56 @@
       "message": "Wings voice: Ban anyone named ReviewChinaUSA",
       "commands": [
         "voice"
+      ]
+    },
+    {
+      "ts": 1683861518,
+      "username": "@Vopilu",
+      "platform": "youtube",
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "message": "Hey Rich, you wanna play a zombie game? :grinning_face_with_big_eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1683859005,
+      "username": "@themorenacoder",
+      "platform": "youtube",
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "message": "We need a big titty goth vampire too :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1683858747,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "message": "meanwhile due to this conference between wings and boogie, DSP in the stream is more likely saying: \"Idk, im not getting any much support you guuuuys :seat:\"",
+      "commands": [
+        "saying"
+      ]
+    },
+    {
+      "ts": 1683857471,
+      "username": "@alexanderkueffler2440",
+      "platform": "youtube",
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "message": "Okay but seriously. How much for a Rich shirtless/ lude calendar? You better believe we all want that :_Carlos::_Carlos:",
+      "commands": [
+        "carlos"
+      ]
+    },
+    {
+      "ts": 1683855483,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "man_on_man_livestream_featuring_masculine_birds",
+      "message": "Cody won't even bring me on and I'm the editor, slightly salty :cat_with_tears_of_joy::cat_with_tears_of_joy:",
+      "commands": [
+        "joy"
       ]
     },
     {
