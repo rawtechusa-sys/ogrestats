@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782100886,
+  "updated_ts": 1782100894,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -410,7 +410,8 @@
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
     "lets_talk_for_a_bit_boogie2988_and_quantum_tv",
     "lets_watch_becky_screw_me_over",
-    "lets_watch_jims_sterlings_elden_ring_video"
+    "lets_watch_jims_sterlings_elden_ring_video",
+    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -6956,6 +6957,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 10.3,
       "avg_active_chatters": 28.05
+    },
+    "linus_responds_phil_is_a_man_fouseytube_lost_his_mind": {
+      "stream_id": "linus_responds_phil_is_a_man_fouseytube_lost_his_mind",
+      "title": "Linus Responds, Phil Is A Man, FouseyTube Lost His Mind",
+      "start_ts": 1692145110,
+      "end_ts": 1692163033,
+      "duration_sec": 17923,
+      "youtube_archive_id": "E0AiEuPy4x4",
+      "source_platform": "youtube",
+      "total_donations_usd": 327.79,
+      "donation_count": 94,
+      "donations_per_min": 1.0973,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 17.5,
+      "avg_active_chatters": 40.72
     }
   }
 }
