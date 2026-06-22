@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782092571,
+  "updated_ts": 1782092598,
   "counted_streams": [
     "grifters_jeffrey_and_phillip",
     "short_stream_with_updates",
@@ -18,7 +18,8 @@
     "2_birds_and_a_man_live",
     "2_man_mini_marathon_stream_feat_birds",
     "2_men_live_featmen",
-    "2_middle_aged_men_are_livestreaming"
+    "2_middle_aged_men_are_livestreaming",
+    "3_men_live_camelot331_and_boogie2988"
   ],
   "commands": {
     "stan": 27,
@@ -49,9 +50,9 @@
     "device": 1,
     "idevice": 1,
     "turkey": 3,
-    "eyes": 4,
+    "eyes": 5,
     "africa": 1,
-    "face": 10,
+    "face": 12,
     "petersonxhhanson": 1,
     "poo": 1,
     "joy": 7,
@@ -65,9 +66,9 @@
     "cucumber": 1,
     "biceps": 1,
     "tongue": 1,
-    "heart": 3,
+    "heart": 7,
     "shorts": 1,
-    "laughing": 2,
+    "laughing": 3,
     "news": 1,
     "chicken": 2,
     "cake": 1,
@@ -85,7 +86,9 @@
     "me": 1,
     "kill": 1,
     "enough": 1,
-    "disclaimer": 1
+    "disclaimer": 1,
+    "hole": 1,
+    "rooster": 3
   },
   "streams": {
     "grifters_jeffrey_and_phillip": {
@@ -172,6 +175,11 @@
       "title": "2 Middle-Aged Men Are Livestreaming",
       "start_ts": 1695767435,
       "youtube_archive_id": "fvA1fmDPvPE"
+    },
+    "3_men_live_camelot331_and_boogie2988": {
+      "title": "3 Men Live (Camelot331 And Boogie2988)",
+      "start_ts": 1655684771,
+      "youtube_archive_id": "91X7ZuLMNX4"
     }
   },
   "messages": [
@@ -2275,6 +2283,97 @@
       "message": "PetersonXHHanson: BREAST...BREAST..BREAST BREAST BREAST. How much to hypnotize intro guy with your tities?",
       "commands": [
         "petersonxhhanson"
+      ]
+    },
+    {
+      "ts": 1655695655,
+      "username": "@Ambientcloud",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "thinking of learning coding in my 30s.is it hard :eyes:",
+      "commands": [
+        "eyes"
+      ]
+    },
+    {
+      "ts": 1655693975,
+      "username": "@maxmetal6612",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "I need to know if Boogie would shove bird up his :hole: along with Rich :rooster: :rooster: :rooster:",
+      "commands": [
+        "hole",
+        "rooster"
+      ]
+    },
+    {
+      "ts": 1655693485,
+      "username": "@Star77th",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "SNAAAAAKE EAAATEEER @Cody :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1655692649,
+      "username": "@DannyMinick",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "Hey Rich! I got a warning on my channel last year after YouTube ripped my video down for \u201cpromoting terr0rism.\u201d It was a Grand Theft Auto V gameplay video from my PS4. :woozy_face: The warning is still there.",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655692514,
+      "username": "@ClassyTechCalibrations",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "I can only imagine the video QTV will do tomorrow about that conversation :rolling_on_the_floor_laughing:",
+      "commands": [
+        "laughing"
+      ]
+    },
+    {
+      "ts": 1655690612,
+      "username": "@TheGinger96-w7e",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "It was awesome meeting you at Retropalooza boogie! :red_heart::red_heart: I hope I can get a pic with Cody at Anime Matsuri",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1655689262,
+      "username": "@4megapete",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "bazinga!!! you guys can poke an eye out with those nips :grinning_squinting_face::grinning_squinting_face: cold enough for you rich? lol",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1655687888,
+      "username": "@PizzaReviewTime",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "This is the Avengers I want!!! We support you all!!!! :red_heart:",
+      "commands": [
+        "heart"
+      ]
+    },
+    {
+      "ts": 1655685654,
+      "username": "@KHuckcast",
+      "platform": "youtube",
+      "stream_id": "3_men_live_camelot331_and_boogie2988",
+      "message": "The 3 musketeers! Love you guys! :red_heart::red_heart:",
+      "commands": [
+        "heart"
       ]
     },
     {
