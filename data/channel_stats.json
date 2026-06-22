@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782093728,
+  "updated_ts": 1782093774,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -49,7 +49,8 @@
     "a_large_man_ama",
     "a_large_man_is_streaming",
     "a_large_man_returns_feat_birds",
-    "a_large_man_with_seltzer_livestreams"
+    "a_large_man_with_seltzer_livestreams",
+    "a_late_night_middle_aged_youtuber_is_livestreaming"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -819,6 +820,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 6.67,
       "avg_active_chatters": 21.22
+    },
+    "a_late_night_middle_aged_youtuber_is_livestreaming": {
+      "stream_id": "a_late_night_middle_aged_youtuber_is_livestreaming",
+      "title": "A Late Night Middle-Aged YouTuber Is Livestreaming",
+      "start_ts": 1636081151,
+      "end_ts": 1636095617,
+      "duration_sec": 14466,
+      "youtube_archive_id": "Q0fzvMN2_6Y",
+      "source_platform": "youtube",
+      "total_donations_usd": 563.84,
+      "donation_count": 110,
+      "donations_per_min": 2.3386,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 9.93,
+      "avg_active_chatters": 28.76
     }
   }
 }
