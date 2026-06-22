@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782101343,
+  "updated_ts": 1782101351,
   "counted_streams": [
     "we_did_it_bois_100k",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -473,7 +473,8 @@
     "more_intellivision_amico_family_fun",
     "more_intellivision_amico_manbird_fun",
     "more_man_more_birds",
-    "more_man_more_karens"
+    "more_man_more_karens",
+    "more_of_the_quantum_tv_interview"
   ],
   "streams": {
     "we_did_it_bois_100k": {
@@ -8027,6 +8028,22 @@
       "avg_viewers": 0.0,
       "avg_chat_mpm": 14.9,
       "avg_active_chatters": 38.08
+    },
+    "more_of_the_quantum_tv_interview": {
+      "stream_id": "more_of_the_quantum_tv_interview",
+      "title": "More Of The Quantum TV Interview",
+      "start_ts": 1656637399,
+      "end_ts": 1656642939,
+      "duration_sec": 5540,
+      "youtube_archive_id": "S7YPJt7xtuw",
+      "source_platform": "youtube",
+      "total_donations_usd": 185.85,
+      "donation_count": 39,
+      "donations_per_min": 2.0128,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 10.09,
+      "avg_active_chatters": 32.4
     }
   }
 }
