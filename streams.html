@@ -1193,6 +1193,21 @@ async function loadStream(streamId) {
         return null;
       }
 
+      // Fallback when no archive exists: deep-link into the source streamer's own
+      // VOD at the stream's elapsed offset. YouTube honors ?t=<seconds>; Twitch
+      // wants ?t=<h>h<m>m<s>s. tSec is d.ts - startTs, so it can drift from the
+      // source VOD's true t=0 by the rebroadcast spin-up delay (a few seconds),
+      // which is acceptable.
+      function buildSourceLink(tSec) {
+        const id = meta.source_vod_id;
+        if (!id) return null;
+        if (meta.source_platform === 'twitch') {
+          const h = Math.floor(tSec / 3600), m = Math.floor((tSec % 3600) / 60), s = tSec % 60;
+          return `https://www.twitch.tv/videos/${encodeURIComponent(id)}?t=${h}h${m}m${s}s`;
+        }
+        return `https://youtu.be/${encodeURIComponent(id)}?t=${tSec}`;
+      }
+
       // The last segment that had started by ts, clamped to the first segment for
       // any donation predating all of them.
       function segmentFor(ts) {
@@ -1210,15 +1225,20 @@ async function loadStream(streamId) {
         // The displayed time stays on the overall stream timeline; only the link
         // target is per-segment, so a post-split donation reads as its true stream
         // time but jumps to the correct video at its offset within that video.
+        // Prefer our archive (per-segment offset); fall back to the source
+        // streamer's own VOD (stream-wide elapsed) when no archive exists; plain
+        // text only when neither is available.
         const seg = segmentFor(d.ts);
-        let tsCell = elapsedText;
+        let href = null;
         if (seg && seg.start_ts != null) {
-          const tSec = Math.max(0, Math.floor(d.ts - seg.start_ts));
-          const href = buildVodLink(seg, tSec);
-          if (href) {
-            tsCell = `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`;
-          }
+          href = buildVodLink(seg, Math.max(0, Math.floor(d.ts - seg.start_ts)));
         }
+        if (!href && startTs != null) {
+          href = buildSourceLink(Math.max(0, Math.floor(d.ts - startTs)));
+        }
+        const tsCell = href
+          ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`
+          : elapsedText;
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr>
