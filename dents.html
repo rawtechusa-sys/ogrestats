@@ -594,13 +594,29 @@ function timestampCell(smeta, ts) {
   return label;
 }
 
+// Navigate the shell to the Streams tab focused on a given stream, in the SAME
+// page (links that stay within ogre.watch never open a new tab). Mirrors
+// channelstats.html's jumpToStream: stash the selection, then ask the parent
+// shell to switch tabs (it forwards 'selected-stream' to the streams iframe).
+function jumpToStream(streamId) {
+  if (!streamId) return;
+  try { sessionStorage.setItem('selected-stream', streamId); } catch (e) {}
+  if (window.parent && window.parent !== window) {
+    try { window.parent.postMessage({ type: 'navigate', slug: 'streams' }, '*'); return; } catch (e) {}
+  }
+  window.location.href = 'index.html#streams';
+}
+
 // One donation's <tr> for the itemized sub-table.
 function donationRowHTML(d, streams) {
   const sid   = d.stream_id;
   const smeta = sid && streams[sid];
   const label = (smeta && smeta.title) ? smeta.title : (sid || '—');
+  // Real href (deep-links to the stream when opened standalone / via new tab),
+  // but a plain left-click is intercepted in setupDelegation to navigate the
+  // shell in the same page rather than opening a new tab.
   const streamCell = sid
-    ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" target="_blank" rel="noopener" title="${escHtml(label)}">${escHtml(label)}</a>`
+    ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" data-sid="${escHtml(sid)}" title="${escHtml(label)}">${escHtml(label)}</a>`
     : '—';
   const tsCell = smeta ? timestampCell(smeta, d.ts) : '—';
   const type = d.type || '';
@@ -865,6 +881,15 @@ function setupDelegation() {
         sortAsc = key === 'username';
       }
       renderTable();
+      return;
+    }
+    // A stream title link: navigate the shell to the Streams tab in the same
+    // page (no new tab), honoring modified clicks for open-in-new-tab.
+    const sl = e.target.closest('a.stream-link');
+    if (sl) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      jumpToStream(sl.dataset.sid);
       return;
     }
     // Ignore clicks on links inside a row (e.g. the renton.report DSP-dent
