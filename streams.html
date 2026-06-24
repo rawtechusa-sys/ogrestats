@@ -1091,9 +1091,21 @@ async function loadStream(streamId) {
           vodRow(`vodArchiveRow${i}`, `Archive Pt${i + 1}`, segArchiveHref(seg),
                  `Archive Pt${i + 1} Not Available`)).join('')
       : vodRow('vodArchiveRow', 'Archive VOD', archiveHref, 'Archive Not Available');
+    // When the source streamer's own VOD is gone, swap the dry "not available"
+    // for a random swamp-flavored excuse.
+    const ORIGINAL_MISSING_QUIPS = [
+      "Original Eaten by the Ogre", "Original Lost to the Swamp",
+      "Original Repurposed in a Mini PC", "Went Blind - Can't See Original",
+      "Original Lost to Septic Explosion", "Original Muted by Keemstar",
+      "Original Hung Up On By DSP", "Original Shunned by Sony CEO",
+      "Original Didn't Get It's $200", "Original Unlocked Dropbox Accidentally",
+      "Original Contracted TDS", "Original Tomorrow", "Original Busy Doomscrolling 8BE",
+    ];
+    const originalMissing = ORIGINAL_MISSING_QUIPS[
+      Math.floor(Math.random() * ORIGINAL_MISSING_QUIPS.length)];
     cards += `<div class="stat-card">
       <span class="stat-label">VOD</span>
-      ${vodRow('vodOriginalRow', 'Original VOD', originalHref, 'Original Not Available')}
+      ${vodRow('vodOriginalRow', 'Original VOD', originalHref, originalMissing)}
       ${archiveRows}
     </div>`;
 
