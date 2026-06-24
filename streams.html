@@ -1075,10 +1075,26 @@ async function loadStream(streamId) {
       `<span class="vod-row" id="${id}">${href
          ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
          : `<span class="vod-missing">${missing}</span>`}</span>`;
+    // A stream whose output broadcast split into multiple videos carries a
+    // `segments` array of {archive_id, start_ts}; show each part as its own
+    // "Archive Pt1", "Archive Pt2", … row. A normal single-video stream keeps
+    // one "Archive VOD" row built from archiveHref above.
+    const segArchiveHref = (seg) =>
+      seg.archive_id
+        ? `https://youtu.be/${encodeURIComponent(seg.archive_id)}`
+        : (seg.archive_org_id ? `https://archive.org/details/${encodeURIComponent(seg.archive_org_id)}` : null);
+    const archiveParts = (Array.isArray(meta.segments) && meta.segments.length > 1)
+      ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
+      : null;
+    const archiveRows = archiveParts
+      ? archiveParts.map((seg, i) =>
+          vodRow(`vodArchiveRow${i}`, `Archive Pt${i + 1}`, segArchiveHref(seg),
+                 `Archive Pt${i + 1} Not Available`)).join('')
+      : vodRow('vodArchiveRow', 'Archive VOD', archiveHref, 'Archive Not Available');
     cards += `<div class="stat-card">
       <span class="stat-label">VOD</span>
       ${vodRow('vodOriginalRow', 'Original VOD', originalHref, 'Original Not Available')}
-      ${vodRow('vodArchiveRow',  'Archive VOD',  archiveHref,  'Archive Not Available')}
+      ${archiveRows}
     </div>`;
 
     grid.innerHTML = cards;
