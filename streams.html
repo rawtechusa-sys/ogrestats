@@ -936,11 +936,18 @@ function applyFilter(raw) {
   }
 
   const datePreds = parsed.dateParts.map(buildDatePredicate);
+  // Month names ("may", "march") are ambiguous: a date filter OR a literal title
+  // word. So besides the date-aware interpretation, also try matching the WHOLE
+  // raw query as title text -- a stream matches if EITHER holds. This is why a
+  // stream titled "may 1st part 2..." is found by "may 1st" even though it wasn't
+  // streamed in May.
+  const literalTokens = raw.trim().toLowerCase().split(/\s+/).filter(Boolean);
   let shown = 0;
   for (const e of searchIndex) {
-    const dateOk  = datePreds.every(fn => fn(e.startTs));
-    const titleOk = parsed.titleTokens.length === 0 || fuzzyTitleMatch(parsed.titleTokens, e.title);
-    const ok = dateOk && titleOk;
+    const dateOk    = datePreds.every(fn => fn(e.startTs));
+    const titleOk   = parsed.titleTokens.length === 0 || fuzzyTitleMatch(parsed.titleTokens, e.title);
+    const literalOk = fuzzyTitleMatch(literalTokens, e.title);
+    const ok = literalOk || (dateOk && titleOk);
     e.el.style.display = ok ? '' : 'none';
     if (ok) shown++;
   }
