@@ -664,8 +664,12 @@ function buildChart(streams, subs) {
       fill: opts.fill || false,
       spanGaps: true,
       yAxisID: opts.yAxisID,
-      // Bars on a linear (time) x-axis: cap width so sparse points stay readable.
-      maxBarThickness: isBar ? 14 : undefined,
+      // Bars on a linear (time) x-axis: Chart.js derives bar width from the
+      // SMALLEST gap between any two points, and streams can sit seconds apart on
+      // a months-long axis -> the computed width collapses to sub-pixel and the
+      // bars vanish (maxBarThickness only caps the max, so it can't rescue this).
+      // Pin a fixed thickness so width is independent of point spacing.
+      barThickness: isBar ? 6 : undefined,
     }, {}));
   }
 
