@@ -706,17 +706,94 @@ function wireDonorDropdown() {
 }
 
 // ── Message list ─────────────────────────────────────────────────────────────
-function streamLabel(streamId) {
+// The stream name links across to its per-stream view on streams.html
+// (deep-linked by slug, mirroring dents.html).
+function streamLink(streamId) {
   const s = (DATA.streams || {})[streamId] || {};
-  return s.title || streamId;
+  const label = s.title || streamId;
+  if (!streamId) return `<span>${escHtml(label)}</span>`;
+  return `<a href="streams.html#${encodeURIComponent(streamId)}" target="_blank" rel="noopener noreferrer" title="${escHtml(label)}">${escHtml(label)}</a>`;
 }
 
-function vodLink(m) {
+// ── VOD timestamp deep links (ported from dents.html / streams.html) ──────────
+// Each message links to the moment its TTS command fired in the rebroadcast VOD,
+// using ts - start_ts as the offset. A normal stream has one youtube_archive_id;
+// a split broadcast carries a `segments` array; a durable archive also has an
+// archive.org mirror anchored at archive_start_ts. When no archive exists we fall
+// back to the source streamer's own VOD.
+function fmtElapsed(startTs, ts) {
+  const s = Math.max(0, Math.floor(ts - startTs));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  return h > 0
+    ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`
+    : `${m}:${String(sec).padStart(2,'0')}`;
+}
+
+function buildVodLink(seg, tSec) {
+  if (seg.archive_id)
+    return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+  if (seg.archive_org_id)
+    return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}?start=${tSec}`;
+  return null;
+}
+
+// Fallback when no archive exists: deep-link into the source streamer's own VOD
+// at the stream's elapsed offset. YouTube honors ?t=<seconds>; Twitch wants
+// ?t=<h>h<m>m<s>s.
+function buildSourceLink(smeta, tSec) {
+  const id = smeta && smeta.source_vod_id;
+  if (!id) return null;
+  if (smeta.source_platform === 'twitch') {
+    const h = Math.floor(tSec / 3600), m = Math.floor((tSec % 3600) / 60), s = tSec % 60;
+    return `https://www.twitch.tv/videos/${encodeURIComponent(id)}?t=${h}h${m}m${s}s`;
+  }
+  return `https://youtu.be/${encodeURIComponent(id)}?t=${tSec}`;
+}
+
+// Prefer an explicit `segments` array, else synthesize a single segment from the
+// archive ids anchored at archive_start_ts ?? start_ts.
+function streamSegments(smeta) {
+  if (!smeta) return [];
+  if (Array.isArray(smeta.segments) && smeta.segments.length)
+    return [...smeta.segments].sort((a, b) => a.start_ts - b.start_ts);
+  if (smeta.youtube_archive_id || smeta.archive_org_id)
+    return [{ archive_id: smeta.youtube_archive_id || null,
+              archive_org_id: smeta.archive_org_id || null,
+              start_ts: smeta.archive_start_ts != null ? smeta.archive_start_ts : smeta.start_ts }];
+  return [];
+}
+
+// The last segment that had started by ts, clamped to the first.
+function segmentFor(segments, ts) {
+  let chosen = segments[0] || null;
+  for (const seg of segments) {
+    if (seg.start_ts <= ts) chosen = seg;
+    else break;
+  }
+  return chosen;
+}
+
+// Timestamp span: elapsed H:MM:SS into the stream, linking into the VOD when
+// possible -- prefer our archive (per-segment offset), else the source streamer's
+// own VOD; plain text only when neither exists.
+function tsLink(m) {
   const s = (DATA.streams || {})[m.stream_id] || {};
-  if (!s.youtube_archive_id || s.start_ts == null || m.ts == null) return '';
-  const offset = Math.max(0, m.ts - s.start_ts);
-  const href = `https://www.youtube.com/watch?v=${encodeURIComponent(s.youtube_archive_id)}&t=${offset}s`;
-  return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer">VOD</a>`;
+  const startTs = s.start_ts;
+  if (startTs == null || m.ts == null) return '';
+  const label = fmtElapsed(startTs, m.ts);
+  let href = null;
+  const seg = segmentFor(streamSegments(s), m.ts);
+  if (seg && seg.start_ts != null) {
+    href = buildVodLink(seg, Math.max(0, Math.floor(m.ts - seg.start_ts)));
+  }
+  if (!href) {
+    href = buildSourceLink(s, Math.max(0, Math.floor(m.ts - startTs)));
+  }
+  return href
+    ? `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
+    : `<span>${label}</span>`;
 }
 
 function fmtDate(ts) {
@@ -740,11 +817,10 @@ function renderMessages() {
     const badges = m.commands.filter(isVoice).map(c =>
       `<span class="cmd-badge${enabled.has(c) ? '' : ' off'}">${escHtml(displayName(c))}</span>`
     ).join('');
-    const vod = vodLink(m);
     const meta = [
-      `<span>${escHtml(streamLabel(m.stream_id))}</span>`,
+      streamLink(m.stream_id),
       fmtDate(m.ts) ? `<span>${fmtDate(m.ts)}</span>` : '',
-      vod,
+      tsLink(m),
     ].filter(Boolean).join('<span style="opacity:0.4;">·</span>');
 
     return `<div class="msg">
