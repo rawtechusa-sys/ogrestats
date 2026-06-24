@@ -46,6 +46,27 @@
     flex-shrink: 0;
   }
 
+  .dent-search {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 9px 14px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .dent-search::placeholder { color: var(--text-muted); }
+  .dent-search:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.3);
+  }
+  /* Tidy the native clear (×) button so it picks up the accent on hover. */
+  .dent-search::-webkit-search-cancel-button { cursor: pointer; }
+
   .table-wrap {
     flex: 1;
     overflow-y: auto;
@@ -324,6 +345,8 @@
 
 <div class="page">
   <div class="page-title">Dents</div>
+  <input id="dentSearch" class="dent-search" type="search"
+         placeholder="search dents…" autocomplete="off" spellcheck="false">
   <div class="table-wrap" id="tableWrap">
     <div class="loading-state">
       <span class="loading-glyph">~</span>
@@ -421,6 +444,9 @@ function dspDentCell(row) {
 let sortKey   = 'total';
 let sortAsc   = false;
 let tableData = [];
+
+// Search state: case-insensitive substring filter on the donor username.
+let searchQuery = '';
 
 // Total column count of the outer table, used for the expanded detail row's
 // colspan. Static (TYPES is fixed) so it lives at module scope — toggleDonor
@@ -742,7 +768,18 @@ function renderTable() {
     return;
   }
 
-  sortedRows = [...tableData].sort((a, b) => {
+  const base = searchQuery
+    ? tableData.filter(u => u.username.toLowerCase().includes(searchQuery))
+    : tableData;
+
+  if (!base.length) {
+    wrap.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no dents match “${escHtml(searchQuery)}”</span></div>`;
+    sortedRows = [];
+    renderedCount = 0;
+    return;
+  }
+
+  sortedRows = [...base].sort((a, b) => {
     if (sortKey === 'username') {
       const cmp = a.username.localeCompare(b.username, undefined, { sensitivity: 'base' });
       return sortAsc ? cmp : -cmp;
@@ -819,6 +856,18 @@ function setupDelegation() {
     const tr = e.target.closest('tr.dent-row');
     if (tr) toggleDonor(tr.dataset.user);
   });
+
+  // Live search: filter the donor list by username as the user types. Re-render
+  // is cheap (renderTable only lays out the first chunk synchronously, then
+  // windows the rest) so no debounce is needed; it also resets scrollTop, which
+  // is the desired behavior on a new query.
+  const search = document.getElementById('dentSearch');
+  if (search) {
+    search.addEventListener('input', e => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      renderTable();
+    });
+  }
 
   // Windowed rendering: append the next chunk of donor rows as the user nears
   // the bottom of the scroll container, so the DOM grows on demand instead of
