@@ -535,6 +535,20 @@ function buildVodLink(seg, tSec) {
   return null;
 }
 
+// Fallback when no archive exists: deep-link into the source streamer's own VOD
+// at the stream's elapsed offset. YouTube honors ?t=<seconds>; Twitch wants
+// ?t=<h>h<m>m<s>s. tSec is ts - start_ts, so it can drift from the source VOD's
+// true t=0 by the rebroadcast spin-up delay (a few seconds), which is acceptable.
+function buildSourceLink(smeta, tSec) {
+  const id = smeta && smeta.source_vod_id;
+  if (!id) return null;
+  if (smeta.source_platform === 'twitch') {
+    const h = Math.floor(tSec / 3600), m = Math.floor((tSec % 3600) / 60), s = tSec % 60;
+    return `https://www.twitch.tv/videos/${encodeURIComponent(id)}?t=${h}h${m}m${s}s`;
+  }
+  return `https://youtu.be/${encodeURIComponent(id)}?t=${tSec}`;
+}
+
 // Resolve the segment list for a stream's meta (mirrors streams.html: prefer an
 // explicit `segments` array, else synthesize a single segment from the archive
 // ids anchored at archive_start_ts ?? start_ts).
@@ -561,17 +575,21 @@ function segmentFor(segments, ts) {
 }
 
 // The Timestamp cell: elapsed H:MM:SS into the stream, linking into the VOD when
-// an archive id is available, otherwise plain text.
+// possible -- prefer our archive (per-segment offset), else fall back to the
+// source streamer's own VOD; plain text only when neither exists.
 function timestampCell(smeta, ts) {
   const startTs = smeta && smeta.start_ts;
   const label = startTs ? fmtElapsed(startTs, ts) : '—';
+  let href = null;
   const seg = segmentFor(streamSegments(smeta), ts);
   if (seg && seg.start_ts != null) {
-    const tSec = Math.max(0, Math.floor(ts - seg.start_ts));
-    const href = buildVodLink(seg, tSec);
-    if (href) {
-      return `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-    }
+    href = buildVodLink(seg, Math.max(0, Math.floor(ts - seg.start_ts)));
+  }
+  if (!href && startTs != null) {
+    href = buildSourceLink(smeta, Math.max(0, Math.floor(ts - startTs)));
+  }
+  if (href) {
+    return `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
   }
   return label;
 }
