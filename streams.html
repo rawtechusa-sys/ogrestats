@@ -285,6 +285,9 @@
     font-style: italic;
   }
 
+  .vod-row { display: block; margin-top: 6px; font-size: 15px; }
+  .vod-missing { color: var(--text-muted); font-style: italic; opacity: 0.7; }
+
   /* ── Chart panel ── */
   .chart-panel {
     background: var(--bg-panel);
@@ -970,7 +973,11 @@ function selectStreamById(id) {
 }
 
 // ── Stream detail ──────────────────────────────────────────────────────────────
+// Tracks the stream currently being viewed, so async work (e.g. the Original VOD
+// liveness probe) can bail if the user has since switched streams.
+let activeStreamId = null;
 async function loadStream(streamId) {
+  activeStreamId = streamId;
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
   document.getElementById('streamTitle').textContent = '';
@@ -1051,8 +1058,48 @@ async function loadStream(streamId) {
       cards += card('Peak Active Chatters', activeValue, activeSub);
     }
 
+    // ── VOD card ──
+    // Original = the source streamer's own VOD (link per source platform).
+    // Archive = OUR durable copy: prefer our YouTube rebroadcast (unless it's merely
+    // a pointer to the source VOD), else the Internet Archive mirror.
+    const originalHref = meta.source_vod_id
+      ? (meta.source_platform === 'twitch'
+          ? `https://www.twitch.tv/videos/${encodeURIComponent(meta.source_vod_id)}`
+          : `https://youtu.be/${encodeURIComponent(meta.source_vod_id)}`)
+      : null;
+    const archiveHref =
+      (meta.youtube_archive_id && meta.archive_is_source_vod !== true)
+        ? `https://youtu.be/${encodeURIComponent(meta.youtube_archive_id)}`
+        : (meta.archive_org_id ? `https://archive.org/details/${encodeURIComponent(meta.archive_org_id)}` : null);
+    const vodRow = (id, label, href, missing) =>
+      `<span class="vod-row" id="${id}">${href
+         ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
+         : `<span class="vod-missing">${missing}</span>`}</span>`;
+    cards += `<div class="stat-card">
+      <span class="stat-label">VOD</span>
+      ${vodRow('vodOriginalRow', 'Original VOD', originalHref, 'Original Not Available')}
+      ${vodRow('vodArchiveRow',  'Archive VOD',  archiveHref,  'Archive Not Available')}
+    </div>`;
+
     grid.innerHTML = cards;
     main.appendChild(grid);
+
+    // Liveness check on the Original VOD: if a YouTube source VOD has been taken
+    // down, swap its link for "Taken by the Ogre". A static page can't read
+    // YouTube's 404 status, but a deleted/private video serves a 120x90 placeholder
+    // thumbnail (a live one is 480x360), so naturalWidth <= 120 means it's gone.
+    // Only act on this positive signal -- onerror (transient) leaves the link intact.
+    if (originalHref && meta.source_platform !== 'twitch' && meta.source_vod_id) {
+      const checkedId = streamId;
+      const probe = new Image();
+      probe.onload = () => {
+        if (streamId !== activeStreamId || checkedId !== activeStreamId) return; // stream switched
+        if (probe.naturalWidth > 120) return;                                    // still live
+        const row = document.getElementById('vodOriginalRow');
+        if (row) row.innerHTML = '<span class="vod-missing">Taken by the Ogre</span>';
+      };
+      probe.src = `https://i.ytimg.com/vi/${encodeURIComponent(meta.source_vod_id)}/hqdefault.jpg`;
+    }
 
     // ── Combined chart ──
     if (snapshots.length > 0 || donations.length > 0) {
@@ -1597,22 +1644,26 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     }
 
     // Combined -- computed on the fly. Null only when BOTH platforms are
-    // missing a sample; otherwise treat a missing side as 0.
-    datasets.push({
-      label: DS.TOTAL_CHAT,
-      hidden: hiddenDatasets.has(DS.TOTAL_CHAT),
-      data: snapshotData.map(s => ({
-        x: s.x,
-        y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
-      })),
-      type: 'line',
-      borderColor: '#4caf50',
-      backgroundColor: 'transparent',
-      borderWidth: 2, borderDash: [12, 3],
-      pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: false, spanGaps: true,
-      yAxisID: 'yChatRate',
-    });
+    // missing a sample; otherwise treat a missing side as 0. Only meaningful when
+    // both platforms are present; for a single-platform stream the total would
+    // duplicate that platform's line, so it's skipped (mirrors Total Active Chatters).
+    if (hasYTPlat && hasTWPlat) {
+      datasets.push({
+        label: DS.TOTAL_CHAT,
+        hidden: hiddenDatasets.has(DS.TOTAL_CHAT),
+        data: snapshotData.map(s => ({
+          x: s.x,
+          y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
+        })),
+        type: 'line',
+        borderColor: '#4caf50',
+        backgroundColor: 'transparent',
+        borderWidth: 2, borderDash: [12, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
   }
 
   // For a series with gaps (null y at some indices), return the value at idx,
@@ -2016,7 +2067,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasA
 
   const gChat = [];
   if (hasChatRate) {
-    gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
+    if (hasYTPlat && hasTWPlat) gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
     if (hasYTPlat) gChat.push({ label: 'YT Msg/Min', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
     if (hasTWPlat) gChat.push({ label: 'TW Msg/Min', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
   }
