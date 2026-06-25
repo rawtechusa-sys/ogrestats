@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400029,
+  "updated_ts": 1782400044,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -774,7 +774,8 @@
     "watching_the_xbox_documentary_pt1",
     "watching_thequarterings_i_was_swatted_video_and_more",
     "watching_xbox_360_reveal_2005_then_probably_playing_some_bloodborne",
-    "we_are_back"
+    "we_are_back",
+    "we_gotta_talk_about_philbecause_phil"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13144,6 +13145,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 11.8,
       "avg_active_chatters": 25.1
+    },
+    "we_gotta_talk_about_philbecause_phil": {
+      "stream_id": "we_gotta_talk_about_philbecause_phil",
+      "title": "We Gotta Talk About Phil...Because Phil....",
+      "start_ts": 1699492069,
+      "end_ts": 1699499553,
+      "duration_sec": 7484,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 226.04,
+      "donation_count": 58,
+      "donations_per_min": 1.8122,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 20.1,
+      "avg_active_chatters": 47.62
     }
   }
 }
