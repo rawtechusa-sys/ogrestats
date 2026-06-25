@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400123,
+  "updated_ts": 1782400133,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -783,7 +783,8 @@
     "welp_its_time_for_a_man",
     "were_simpin_on_twitch_road_to_1000_members",
     "what_in_gods_name_am_i_playing_members_only",
-    "what_the_hell_happened"
+    "what_the_hell_happened",
+    "what_the_hell_happened_plus_phil_is_bitching"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13297,6 +13298,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 8.22,
       "avg_active_chatters": 19.89
+    },
+    "what_the_hell_happened_plus_phil_is_bitching": {
+      "stream_id": "what_the_hell_happened_plus_phil_is_bitching",
+      "title": "What The Hell Happened?!?! (Plus Phil Is Bitching)",
+      "start_ts": 1718842816,
+      "end_ts": 1718853631,
+      "duration_sec": 10815,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 110.44,
+      "donation_count": 34,
+      "donations_per_min": 0.6127,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 10.69,
+      "avg_active_chatters": 25.07
     }
   }
 }
