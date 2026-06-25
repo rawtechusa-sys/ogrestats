@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400300,
+  "updated_ts": 1782400310,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -801,7 +801,8 @@
     "wrestling_quantum_tv_in_wwe_2k23",
     "wtf_are_they_leaking_about_me",
     "you_wanted_me_to_watch_this_video_from_thequartering_so_here_we_are",
-    "your_dad_is_showered_and_streaming"
+    "your_dad_is_showered_and_streaming",
+    "your_dad_is_streaming"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13603,6 +13604,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 17.39,
       "avg_active_chatters": 45.39
+    },
+    "your_dad_is_streaming": {
+      "stream_id": "your_dad_is_streaming",
+      "title": "Your Dad Is Streaming",
+      "start_ts": 1644630033,
+      "end_ts": 1644639537,
+      "duration_sec": 9504,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 178.32,
+      "donation_count": 53,
+      "donations_per_min": 1.1258,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 11.62,
+      "avg_active_chatters": 30.31
     }
   }
 }
