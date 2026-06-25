@@ -65,6 +65,29 @@
     margin-top: -10px;
   }
 
+  /* ── Controls (legacy-data toggle) ── */
+  .controls-row { display: flex; align-items: center; gap: 14px; margin-top: -6px; }
+  .legacy-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+  .legacy-toggle:hover { color: var(--accent); }
+  .legacy-toggle input {
+    accent-color: var(--accent);
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+  .legacy-hint { font-style: italic; opacity: 0.7; font-size: 12px; }
+
   /* ── Stat cards ── */
   .stat-grid {
     display: grid;
@@ -252,6 +275,18 @@
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
 let currentChart = null;
+
+// ── Legacy-data filter ─────────────────────────────────────────────────────────
+// The restream pipeline began on 2026-05-28. Anything earlier (e.g. backfilled
+// VOD stats) is "legacy" data; by default it's hidden so the chart reflects only
+// the live era. A checkbox toggles it on, persisted for the browser session.
+const LEGACY_CUTOFF_MS = Date.parse('2026-05-28T00:00:00Z');
+const LEGACY_CUTOFF_SEC = LEGACY_CUTOFF_MS / 1000;
+function legacyEnabled() {
+  try { return sessionStorage.getItem('channel-legacy-data') === '1'; } catch (e) { return false; }
+}
+// Raw payloads stashed so toggling the checkbox can re-run buildPage without refetch.
+let _rawChannelStats = null, _rawSubsData = null;
 
 // ── Liberal tooltip snapping ───────────────────────────────────────────────────
 // Stream points (donations, viewers, chat) are sparse and almost never share an x
@@ -564,19 +599,54 @@ function fmtMoney(n) {
   return '$' + Number(n).toLocaleString('en-US', { maximumFractionDigits: 0 });
 }
 
+// Header + legacy-data toggle, rendered on every path (including the empty state)
+// so the checkbox stays reachable even when the filter hides all data.
+const HEADER_HTML = `
+    <div>
+      <div class="page-title">Channel Stats — @ReviewTechUSARTU</div>
+    </div>
+    <div class="page-sub">Long-term trends across every published restream.</div>
+    <div class="controls-row">
+      <label class="legacy-toggle">
+        <input type="checkbox" id="legacyToggle">
+        <span>Enable Legacy Data</span>
+        <span class="legacy-hint">include streams before May 28, 2026</span>
+      </label>
+    </div>`;
+
+function wireLegacyToggle() {
+  const el = document.getElementById('legacyToggle');
+  if (!el) return;
+  el.checked = legacyEnabled();
+  el.onchange = () => {
+    try { sessionStorage.setItem('channel-legacy-data', el.checked ? '1' : '0'); } catch (e) {}
+    buildPage(_rawChannelStats, _rawSubsData);
+  };
+}
+
 function buildPage(channelStats, subsData) {
+  _rawChannelStats = channelStats;
+  _rawSubsData = subsData;
   const main = document.getElementById('main');
 
-  const streams = Object.values(channelStats.streams || {})
+  let streams = Object.values(channelStats.streams || {})
     .filter(s => s.start_ts)
     .sort((a, b) => a.start_ts - b.start_ts);
 
-  const subs = (subsData && Array.isArray(subsData.snapshots) ? subsData.snapshots : [])
+  let subs = (subsData && Array.isArray(subsData.snapshots) ? subsData.snapshots : [])
     .filter(s => s.ts != null && s.count != null)
     .sort((a, b) => a.ts - b.ts);
 
+  // Hide pre-restream ("legacy") data unless the toggle is on.
+  if (!legacyEnabled()) {
+    streams = streams.filter(s => s.start_ts >= LEGACY_CUTOFF_SEC);
+    subs = subs.filter(s => s.ts >= LEGACY_CUTOFF_SEC);
+  }
+
   if (streams.length === 0 && subs.length === 0) {
-    main.innerHTML = `<div class="empty-state"><span class="loading-glyph">☽</span><span>no channel data yet — check back after the next broadcast</span></div>`;
+    main.innerHTML = HEADER_HTML +
+      `<div class="empty-state"><span class="loading-glyph">☽</span><span>no channel data in this range — try enabling legacy data, or check back after the next broadcast</span></div>`;
+    wireLegacyToggle();
     return;
   }
 
@@ -602,11 +672,7 @@ function buildPage(channelStats, subsData) {
   cards += card('Avg $/min', avgRate != null ? '$' + avgRate.toFixed(2) : '—', 'per-stream average');
   cards += card('Peak Reach', peakReach ? peakReach.toLocaleString() : '—', 'best concurrent viewers');
 
-  main.innerHTML = `
-    <div>
-      <div class="page-title">Channel Stats — @ReviewTechUSARTU</div>
-    </div>
-    <div class="page-sub">Long-term trends across every published restream.</div>
+  main.innerHTML = HEADER_HTML + `
     <div class="stat-grid">${cards}</div>
     <div class="chart-panel">
       <div class="chart-header">
@@ -627,6 +693,7 @@ function buildPage(channelStats, subsData) {
       </div>
     </div>`;
 
+  wireLegacyToggle();
   buildChart(streams, subs);
   buildLegend();
 }
