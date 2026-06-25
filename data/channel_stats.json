@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400272,
+  "updated_ts": 1782400281,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -798,7 +798,8 @@
     "wingsofredemption_live_at_830_pm_edt",
     "winnie_the_pooh_plays_baldurs_gate_3",
     "working_with_the_devil",
-    "wrestling_quantum_tv_in_wwe_2k23"
+    "wrestling_quantum_tv_in_wwe_2k23",
+    "wtf_are_they_leaking_about_me"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13552,6 +13553,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 18.52,
       "avg_active_chatters": 41.06
+    },
+    "wtf_are_they_leaking_about_me": {
+      "stream_id": "wtf_are_they_leaking_about_me",
+      "title": "WTF Are They Leaking About Me?",
+      "start_ts": 1738379585,
+      "end_ts": 1738382481,
+      "duration_sec": 2896,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 78.01,
+      "donation_count": 21,
+      "donations_per_min": 1.6162,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 13.06,
+      "avg_active_chatters": 32.71
     }
   }
 }
