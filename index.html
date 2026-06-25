@@ -229,6 +229,10 @@ window._mouse = { x: -999, y: -999, px: -999, py: -999 };
 // in-iframe selection doesn't bounce back into a redundant reload).
 var pendingStreamSlug = null;
 var suppressHashSync = false;
+// Page currently loaded in the iframe (matches the static <iframe src>). We swap
+// the iframe via location.replace() (no history entry), which doesn't update the
+// src attribute, so track the loaded page here rather than reading getAttribute.
+var currentPage = 'streams.html';
 
 window.addEventListener('mousemove', e => {
   window._mouse.px = window._mouse.x;
@@ -336,7 +340,14 @@ function activateTab(tab) {
   const frame = document.getElementById('pageFrame');
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
-  if (frame.getAttribute('src') !== tab.dataset.page) frame.src = tab.dataset.page;
+  // Swap the iframe via location.replace() so the tab switch does NOT add a
+  // browser history entry. The hash is the only history record per navigation,
+  // so back/forward fire a single hashchange -> syncTabFromHash and stay in sync.
+  if (currentPage !== tab.dataset.page) {
+    currentPage = tab.dataset.page;
+    try { frame.contentWindow.location.replace(tab.dataset.page); }
+    catch (e) { frame.src = tab.dataset.page; } // fallback (same-origin: shouldn't happen)
+  }
   localStorage.setItem('swamp-tab', tab.dataset.slug);
 }
 
