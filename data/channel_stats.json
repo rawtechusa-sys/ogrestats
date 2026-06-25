@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399902,
+  "updated_ts": 1782399911,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -761,7 +761,8 @@
     "watching_police_videos_with_birds",
     "watching_project_7_dspgaming",
     "watching_qvc_fails",
-    "watching_scam_preachers"
+    "watching_scam_preachers",
+    "watching_stuttering_craig_rip_dspgaming_to_shreds_monetizethehaters"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -12923,6 +12924,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 15.33,
       "avg_active_chatters": 45.76
+    },
+    "watching_stuttering_craig_rip_dspgaming_to_shreds_monetizethehaters": {
+      "stream_id": "watching_stuttering_craig_rip_dspgaming_to_shreds_monetizethehaters",
+      "title": "Watching Stuttering Craig Rip DSPGaming To Shreds #monetizethehaters",
+      "start_ts": 1684190602,
+      "end_ts": 1684205587,
+      "duration_sec": 14985,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 308.11,
+      "donation_count": 89,
+      "donations_per_min": 1.2337,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 12.2,
+      "avg_active_chatters": 30.9
     }
   }
 }
