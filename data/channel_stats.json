@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399842,
+  "updated_ts": 1782399853,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -755,7 +755,8 @@
     "watching_lorne_armstrong_tcap",
     "watching_more_dspgaming_feat_a_large_bird",
     "watching_my_ralph_the_stalker_video",
-    "watching_old_tcap"
+    "watching_old_tcap",
+    "watching_people_get_catfished"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -12821,6 +12822,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 21.29,
       "avg_active_chatters": 44.73
+    },
+    "watching_people_get_catfished": {
+      "stream_id": "watching_people_get_catfished",
+      "title": "Watching People Get Catfished",
+      "start_ts": 1685489604,
+      "end_ts": 1685509236,
+      "duration_sec": 19632,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 317.61,
+      "donation_count": 77,
+      "donations_per_min": 0.9707,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 9.31,
+      "avg_active_chatters": 23.21
     }
   }
 }
