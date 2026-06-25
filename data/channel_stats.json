@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399999,
+  "updated_ts": 1782400009,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -771,7 +771,8 @@
     "watching_the_nintendo_direct_then_playing_games_until_state_of_play",
     "watching_the_rest_of_lolcow_live",
     "watching_the_worst_presidential_debate_in_history",
-    "watching_the_xbox_documentary_pt1"
+    "watching_the_xbox_documentary_pt1",
+    "watching_thequarterings_i_was_swatted_video_and_more"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13093,6 +13094,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 13.82,
       "avg_active_chatters": 37.22
+    },
+    "watching_thequarterings_i_was_swatted_video_and_more": {
+      "stream_id": "watching_thequarterings_i_was_swatted_video_and_more",
+      "title": "Watching TheQuartering's \"I Was Swatted Video\" And More",
+      "start_ts": 1655317148,
+      "end_ts": 1655322778,
+      "duration_sec": 5630,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 494.9,
+      "donation_count": 87,
+      "donations_per_min": 5.2742,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 17.14,
+      "avg_active_chatters": 56.36
     }
   }
 }
