@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399454,
+  "updated_ts": 1782399464,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -718,7 +718,8 @@
     "tim_pool_vs_steven_crowder",
     "time_for_some_drama",
     "time_to_clout_chase_and_hate_on_the_intellivision_amico",
-    "time_to_get_pissed_off_and_political_watching_hurricane_ian"
+    "time_to_get_pissed_off_and_political_watching_hurricane_ian",
+    "time_to_relax_your_birds_with_dad"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -12192,6 +12193,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 18.78,
       "avg_active_chatters": 46.58
+    },
+    "time_to_relax_your_birds_with_dad": {
+      "stream_id": "time_to_relax_your_birds_with_dad",
+      "title": "Time To Relax Your Birds With Dad",
+      "start_ts": 1651537093,
+      "end_ts": 1651550018,
+      "duration_sec": 12925,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 393.07,
+      "donation_count": 133,
+      "donations_per_min": 1.8247,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 10.81,
+      "avg_active_chatters": 31.31
     }
   }
 }
