@@ -1494,7 +1494,26 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     twMpm:    s.twitch_messages_per_minute  ?? null,
     ytActive: s.active_youtube_chatters     ?? null,
     twActive: s.active_twitch_chatters      ?? null,
+    inFrame:  s.in_frame_view ?? null,
+    paused:   s.source_paused ?? null,
   }));
+
+  // Pausing band: contiguous time runs where the source was in frame view
+  // (in_frame_view >= 0.5), coloured green (playing) / yellow (paused, when
+  // source_paused >= 0.5). Each minute spans [x, nextX] (last extends +60s).
+  // Adjacent same-state minutes merge into one run. Empty for pre-detector
+  // streams (fields null). Read by the `pausingBand` plugin.
+  const pausingSegments = [];
+  for (let i = 0; i < snapshotData.length; i++) {
+    const s = snapshotData[i];
+    if (s.inFrame == null || s.inFrame < 0.5) continue;
+    const state = (s.paused != null && s.paused >= 0.5) ? 'paused' : 'playing';
+    const x0 = s.x;
+    const x1 = (i + 1 < snapshotData.length) ? snapshotData[i + 1].x : s.x + 60000;
+    const last = pausingSegments[pausingSegments.length - 1];
+    if (last && last.state === state && last.x1 === x0) last.x1 = x1;
+    else pausingSegments.push({ x0, x1, state });
+  }
 
   // Bucket donations onto the snapshot index grid so the bar dataset shares the
   // same index space as the line series. This keeps mode:'index' tooltips
@@ -1734,6 +1753,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     return labels.some(l => datasets.some(d => d.label === l) && !hiddenDatasets.has(l));
   }
 
+  // Pausing band visibility (persisted; default on). Closed over by the
+  // pausingBand plugin below and toggled from the legend.
+  let showPausingBand = localStorage.getItem('stream-chart-pausing') !== '0';
+
   currentChart = new Chart(ctx, {
     type: 'bar',
     data: { datasets },
@@ -1921,8 +1944,50 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         scale.min = ext.min;
         scale.max = ext.max;
       },
+    }, {
+      // Pausing band: drawn BEHIND the data lines (beforeDatasetsDraw) as a
+      // vertical alpha-gradient fill (0.7 top -> 0.1 bottom) over each in-frame-
+      // view run -- green=playing, yellow=paused. chartArea height is constant
+      // under this chart's x-only zoom, so the band is always full height;
+      // getPixelForValue maps x under zoom/pan, so runs clip to the visible window.
+      id: 'pausingBand',
+      beforeDatasetsDraw(chart) {
+        if (!showPausingBand || !pausingSegments.length) return;
+        const xs = chart.scales.x;
+        const { left, right, top, bottom } = chart.chartArea;
+        const ctx = chart.ctx;
+        const RGB = { playing: '76,175,80', paused: '255,213,79' };
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(left, top, right - left, bottom - top);
+        ctx.clip();
+        for (const seg of pausingSegments) {
+          let x1 = xs.getPixelForValue(seg.x0);
+          let x2 = xs.getPixelForValue(seg.x1);
+          if (x2 < left || x1 > right) continue;
+          x1 = Math.max(x1, left);
+          x2 = Math.min(x2, right);
+          if (x2 <= x1) continue;
+          const g = ctx.createLinearGradient(0, top, 0, bottom);
+          g.addColorStop(0, `rgba(${RGB[seg.state]},0.7)`);
+          g.addColorStop(1, `rgba(${RGB[seg.state]},0.1)`);
+          ctx.fillStyle = g;
+          ctx.fillRect(x1, top, x2 - x1, bottom - top);
+        }
+        ctx.restore();
+      },
     }],
   });
+
+  // Legend hooks for the (non-dataset) Pausing band.
+  currentChart.$hasPausingData = pausingSegments.length > 0;
+  currentChart.$pausingBandVisible = () => showPausingBand;
+  currentChart.$togglePausingBand = () => {
+    showPausingBand = !showPausingBand;
+    localStorage.setItem('stream-chart-pausing', showPausingBand ? '1' : '0');
+    currentChart.draw();
+    return showPausingBand;
+  };
 
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
   ctx.ondblclick = () => {
@@ -2121,6 +2186,11 @@ function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasA
   }
   groups.push(gChat);
 
+  // Pausing band (non-dataset overlay) -- only when this stream has frame data.
+  const gPausing = [];
+  if (currentChart.$hasPausingData) gPausing.push({ label: 'Pausing', special: 'pausing' });
+  groups.push(gPausing);
+
   const items = [];
   for (const g of groups.filter(g => g.length > 0)) {
     if (items.length > 0) items.push({ label: null }); // divider between groups
@@ -2135,6 +2205,20 @@ function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasA
       const div = document.createElement('span');
       div.className = 'legend-divider';
       container.appendChild(div);
+      continue;
+    }
+
+    if (item.special === 'pausing') {
+      // Non-dataset overlay: green play / yellow pause glyphs; toggles the band.
+      const span = document.createElement('span');
+      span.className = 'legend-item';
+      span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">&#8741;</span>`;
+      if (!currentChart.$pausingBandVisible()) span.classList.add('hidden');
+      span.addEventListener('click', () => {
+        const visible = currentChart.$togglePausingBand();
+        span.classList.toggle('hidden', !visible);
+      });
+      container.appendChild(span);
       continue;
     }
 

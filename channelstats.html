@@ -376,6 +376,7 @@ const DS = {
   AVG_VIEWERS:     'Avg Viewers',
   CHAT_MPM:        'Avg Chat Rate',
   ACTIVE_CHATTERS: 'Avg Active Chatters',
+  PCT_PAUSED:      '% Paused',
 };
 
 // Which datasets sit on which y-axis (used to show/hide axes with their series).
@@ -386,6 +387,7 @@ const AXIS_MAP = {
   yRate:       [DS.DON_PER_MIN],
   yViewers:    [DS.PEAK_VIEWERS, DS.AVG_VIEWERS],
   yEngagement: [DS.CHAT_MPM, DS.ACTIVE_CHATTERS],
+  yPaused:     [DS.PCT_PAUSED],
 };
 
 // Legend rows in display order; `null` marks a divider between groups.
@@ -401,12 +403,15 @@ const LEGEND_SPECS = [
   null,
   { label: 'Chat Rate',        color: '#4caf50', type: 'dashed', ds: DS.CHAT_MPM },
   { label: 'Active Chatters',  color: '#909090', type: 'dotted', ds: DS.ACTIVE_CHATTERS },
+  null,
+  { label: '% Paused',         color: '#ffd54f', type: 'line',   ds: DS.PCT_PAUSED },
 ];
 
 // Default-visible: subscribers + the two donation-dollar series. The rest start
 // hidden so the chart opens uncluttered; the legend toggles them on.
 const DEFAULT_HIDDEN = [
   DS.DON_PER_MIN, DS.PEAK_VIEWERS, DS.AVG_VIEWERS, DS.CHAT_MPM, DS.ACTIVE_CHATTERS,
+  DS.PCT_PAUSED,
 ];
 const _storedHidden = localStorage.getItem('channel-chart-hidden');
 const hiddenDatasets = new Set(_storedHidden ? JSON.parse(_storedHidden) : DEFAULT_HIDDEN);
@@ -698,6 +703,10 @@ function buildChart(streams, subs) {
   add(DS.ACTIVE_CHATTERS, streams.map(s => pt(s, s.avg_active_chatters)), '#909090',
       { yAxisID: 'yEngagement', dash: [2, 2], borderWidth: 1.5 });
 
+  // Pausing -- % of in-frame-view time the source video was paused (right).
+  add(DS.PCT_PAUSED, streams.map(s => pt(s, s.percent_paused)), '#ffd54f',
+      { yAxisID: 'yPaused' });
+
   function axisHasVisibleDs(labels) {
     return labels.some(l => datasets.some(d => d.label === l) && !hiddenDatasets.has(l));
   }
@@ -781,6 +790,7 @@ function buildChart(streams, subs) {
                 case DS.AVG_VIEWERS:     return ` avg ${Math.round(y).toLocaleString()} viewers`;
                 case DS.CHAT_MPM:        return ` ${y.toFixed(1)} msg/min`;
                 case DS.ACTIVE_CHATTERS: return ` ${Math.round(y).toLocaleString()} active chatters`;
+                case DS.PCT_PAUSED:      return ` ${y.toFixed(1)}% paused`;
                 default:                 return ` ${y}`;
               }
             }
@@ -840,6 +850,11 @@ function buildChart(streams, subs) {
         yEngagement: Object.assign(yCommon('#4caf50', 'chat', v => v.toLocaleString()), {
           position: 'right',
           display: axisHasVisibleDs(AXIS_MAP.yEngagement),
+          grid: { drawOnChartArea: false },
+        }),
+        yPaused: Object.assign(yCommon('#ffd54f', '% paused', v => v + '%'), {
+          position: 'right',
+          display: axisHasVisibleDs(AXIS_MAP.yPaused),
           grid: { drawOnChartArea: false },
         }),
       }
