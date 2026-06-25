@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399543,
+  "updated_ts": 1782399553,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -727,7 +727,8 @@
     "tommy_tallarico_s_mom_is_so_proud",
     "tremendously_big_and_tremendously_wet_believe_me_birdsuit_ep14",
     "trump_vs_biden_ai_debate_is_amazing",
-    "try_to_relax_your"
+    "try_to_relax_your",
+    "try_to_relax_your_shoulders"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -12345,6 +12346,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 11.36,
       "avg_active_chatters": 31.71
+    },
+    "try_to_relax_your_shoulders": {
+      "stream_id": "try_to_relax_your_shoulders",
+      "title": "Try To Relax Your Shoulders",
+      "start_ts": 1650413676,
+      "end_ts": 1650421855,
+      "duration_sec": 8179,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 352.62,
+      "donation_count": 94,
+      "donations_per_min": 2.5868,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 13.14,
+      "avg_active_chatters": 34.28
     }
   }
 }
