@@ -453,6 +453,12 @@ bgToggle.addEventListener('change', e => applyBg(e.target.checked));
       size:  rand(ROACH_CONFIG.sizeMin, ROACH_CONFIG.sizeMax),
       wanderTimer: rand(0, 60),
       fleeing: false,
+      // Squish state: set when an eyeball touches the roach. While squished the
+      // body is hidden and a stain is drawn; after squishUntil it respawns.
+      squished: false,
+      squishUntil: 0,
+      stainX: 0, stainY: 0, stainAngle: 0,
+      stainPoints: null,  // precomputed blob radii so the puddle shape is stable
     };
   }
 
@@ -490,6 +496,66 @@ bgToggle.addEventListener('change', e => applyBg(e.target.checked));
     ctx.restore();
   }
 
+  // A squashed brown-tan puddle drawn where a roach was squished. Shape comes
+  // from the roach's precomputed stainPoints so it doesn't shimmer frame-to-frame.
+  function drawStain(r) {
+    const alpha = ROACH_CONFIG.alpha;
+    const s = r.size;
+    const pts = r.stainPoints;
+    if (!pts) return;
+
+    ctx.save();
+    ctx.translate(r.stainX, r.stainY);
+    ctx.rotate(r.stainAngle);
+
+    // Outer puddle -- wide and vertically flattened (squashed look).
+    ctx.beginPath();
+    for (let i = 0; i <= pts.length; i++) {
+      const k = i % pts.length;
+      const a = (k / pts.length) * Math.PI * 2;
+      const px = Math.cos(a) * pts[k] * s * 2.2;
+      const py = Math.sin(a) * pts[k] * s * 1.0;
+      if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    }
+    ctx.closePath();
+    ctx.fillStyle = `rgba(120,85,45,${alpha * 0.8})`;
+    ctx.fill();
+
+    // Inner darker smear, slightly offset.
+    ctx.beginPath();
+    for (let i = 0; i <= pts.length; i++) {
+      const k = i % pts.length;
+      const a = (k / pts.length) * Math.PI * 2;
+      const px = s * 0.25 + Math.cos(a) * pts[k] * s * 1.3;
+      const py = Math.sin(a) * pts[k] * s * 0.6;
+      if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    }
+    ctx.closePath();
+    ctx.fillStyle = `rgba(80,48,18,${alpha})`;
+    ctx.fill();
+
+    // A couple of dark "gut" specks for texture.
+    ctx.fillStyle = `rgba(60,35,12,${alpha})`;
+    ctx.beginPath(); ctx.ellipse(-s * 0.8, s * 0.2, s * 0.18, s * 0.12, 0, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.ellipse( s * 1.1, -s * 0.1, s * 0.14, s * 0.1, 0, 0, Math.PI * 2); ctx.fill();
+
+    ctx.restore();
+  }
+
+  // Teleport a squished roach to just outside the visible area and revive it.
+  function respawnOutside(r) {
+    const edge = Math.floor(rand(0, 4));
+    if (edge === 0)      { r.x = rand(0, W);   r.y = -20;   }
+    else if (edge === 1) { r.x = rand(0, W);   r.y = H + 20; }
+    else if (edge === 2) { r.x = -20;          r.y = rand(0, H); }
+    else                 { r.x = W + 20;       r.y = rand(0, H); }
+    r.angle = rand(0, Math.PI * 2);
+    r.speed = rand(ROACH_CONFIG.idleSpeedMin, ROACH_CONFIG.idleSpeedMax);
+    r.fleeing = false;
+    r.squished = false;
+    r.stainPoints = null;
+  }
+
   let _lastT = null;
   function tick(t) {
     requestAnimationFrame(tick);
@@ -506,6 +572,17 @@ bgToggle.addEventListener('change', e => applyBg(e.target.checked));
 
     ctx.clearRect(0, 0, W, H);
     for (const r of roaches) {
+      // Squished: hold for 2s showing only the stain, then teleport off-screen
+      // and revive. Timing uses the rAF timestamp `t` (real ms), not `scale`.
+      if (r.squished) {
+        if (t >= r.squishUntil) {
+          respawnOutside(r);   // fall through to move + draw so it walks back in
+        } else {
+          drawStain(r);
+          continue;            // body invisible while squished
+        }
+      }
+
       const dx = r.x - window._mouse.x;
       const dy = r.y - window._mouse.y;
       const dist = Math.sqrt(dx*dx + dy*dy);
@@ -535,7 +612,23 @@ bgToggle.addEventListener('change', e => applyBg(e.target.checked));
       if (r.y < -20)  r.y = H + 20;
       if (r.y > H+20) r.y = -20;
 
-      drawRoach(r, t);
+      // Eyeball contact -> squish.
+      if (window._eyes) {
+        for (const e of window._eyes) {
+          const ex = r.x - e.x, ey = r.y - e.y;
+          const hit = e.r + r.size * 0.4;   // contact when roach center enters the sclera
+          if (ex*ex + ey*ey < hit*hit) {
+            r.squished = true;
+            r.squishUntil = t + 2000;        // 2 s
+            r.stainX = r.x; r.stainY = r.y;
+            r.stainAngle = rand(0, Math.PI * 2);
+            r.stainPoints = Array.from({ length: 9 }, () => rand(0.7, 1.15));
+            break;
+          }
+        }
+      }
+
+      if (r.squished) drawStain(r); else drawRoach(r, t);
     }
   }
   requestAnimationFrame(tick);
@@ -564,6 +657,7 @@ bgToggle.addEventListener('change', e => applyBg(e.target.checked));
   function rand(a, b) { return a + Math.random() * (b - a); }
 
   const eyes = [];
+  window._eyes = eyes;  // shared so the roach loop can detect eyeball contact
 
   function makeEye() {
     const r = rand(EYE_CONFIG.sizeMin, EYE_CONFIG.sizeMax);
