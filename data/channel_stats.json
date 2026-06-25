@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400162,
+  "updated_ts": 1782400171,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -787,7 +787,8 @@
     "what_the_hell_happened_plus_phil_is_bitching",
     "what_the_hell_is_going_on_in_the_ukraine_now",
     "whats_going_on_with_the_intellivision_amico_now",
-    "when_youtubers_with_large_followings_have_small_brains_onlyfans_backtracks"
+    "when_youtubers_with_large_followings_have_small_brains_onlyfans_backtracks",
+    "why_i_deleted_reviewtechusa_the_full_story"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13365,6 +13366,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 16.67,
       "avg_active_chatters": 51.04
+    },
+    "why_i_deleted_reviewtechusa_the_full_story": {
+      "stream_id": "why_i_deleted_reviewtechusa_the_full_story",
+      "title": "Why I Deleted #ReviewTechUSA (The Full Story)",
+      "start_ts": 1743561456,
+      "end_ts": 1743562334,
+      "duration_sec": 878,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 6.98,
+      "donation_count": 2,
+      "donations_per_min": 0.477,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 15.33,
+      "avg_active_chatters": 36.2
     }
   }
 }
