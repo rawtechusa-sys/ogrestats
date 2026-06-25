@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400191,
+  "updated_ts": 1782400201,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -790,7 +790,8 @@
     "when_youtubers_with_large_followings_have_small_brains_onlyfans_backtracks",
     "why_i_deleted_reviewtechusa_the_full_story",
     "why_i_nuked_my_twitter",
-    "why_ninjas_career_died_sunnyv2_reaction"
+    "why_ninjas_career_died_sunnyv2_reaction",
+    "why_the_hell_am_i_streaming_so_late"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13416,6 +13417,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 14.05,
       "avg_active_chatters": 39.73
+    },
+    "why_the_hell_am_i_streaming_so_late": {
+      "stream_id": "why_the_hell_am_i_streaming_so_late",
+      "title": "Why The Hell Am I Streaming So Late?",
+      "start_ts": 1660966470,
+      "end_ts": 1660972089,
+      "duration_sec": 5619,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 246.66,
+      "donation_count": 65,
+      "donations_per_min": 2.6338,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 13.93,
+      "avg_active_chatters": 35.61
     }
   }
 }
