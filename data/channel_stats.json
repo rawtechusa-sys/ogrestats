@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399392,
+  "updated_ts": 1782399402,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -712,7 +712,8 @@
     "the_e3_discussion_and_channel_update_stream",
     "this_isnt_clickbait_we_need_to_have_a_talk_2026-06-23_013029",
     "this_man_doesnt_like_the_valve_steam_deck_lets_find_out_why",
-    "this_man_is_excited"
+    "this_man_is_excited",
+    "this_woman_is_insufferable"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -12090,6 +12091,22 @@
       "avg_viewers": null,
       "avg_chat_mpm": 13.73,
       "avg_active_chatters": 38.14
+    },
+    "this_woman_is_insufferable": {
+      "stream_id": "this_woman_is_insufferable",
+      "title": "This \"Woman\" Is Insufferable",
+      "start_ts": 1739407887,
+      "end_ts": 1739418348,
+      "duration_sec": 10461,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 468.84,
+      "donation_count": 113,
+      "donations_per_min": 2.6891,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 17.57,
+      "avg_active_chatters": 35.93
     }
   }
 }
