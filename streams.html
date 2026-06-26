@@ -664,15 +664,20 @@ function escHtml(str) {
 async function loadStreamList() {
   const listEl = document.getElementById('streamList');
   try {
-    // index.json carries no titles; channel_stats.json has them for every stream in
-    // one fetch. Fetch both in parallel and build an id->title map. A failed/blocked
-    // channel_stats must not break the list -- titles just degrade to de-slugified ids.
+    // index.json carries no titles; channel_stats.json (a dict keyed by stream_id)
+    // has them for every stream in one fetch. Fetch both in parallel and build an
+    // id->title map. A failed/blocked channel_stats must not break the list -- titles
+    // just degrade to de-slugified ids.
     const [index, titleMap] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/index.json`),
       fetchJSON(`${RAW}/data/channel_stats.json`)
-        .then(rows => {
+        .then(data => {
+          // channel_stats.json is { ..., streams: { <stream_id>: {title, ...} } } --
+          // a dict keyed by stream_id, not a bare array (see channelstats.html).
           const m = new Map();
-          for (const r of rows) if (r && r.stream_id && r.title) m.set(r.stream_id, String(r.title));
+          for (const r of Object.values(data?.streams || {})) {
+            if (r && r.stream_id && r.title) m.set(r.stream_id, String(r.title));
+          }
           return m;
         })
         .catch(() => new Map()),
