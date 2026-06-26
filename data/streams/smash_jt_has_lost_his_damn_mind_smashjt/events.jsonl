@@ -273,3 +273,5 @@
 {"ts": 1781145153, "event": "viewer_snapshot", "youtube": 339, "twitch": 44, "total": 383}
 {"ts": 1781145213, "event": "viewer_snapshot", "youtube": 204, "twitch": null, "total": 204}
 {"ts": 1781145273, "event": "viewer_snapshot", "youtube": null, "twitch": null, "total": 0}
+{"ts": 1781134780, "event": "donation", "platform": "twitch", "type": "sub", "username": "hobbymanmike_ogshowtime", "amount_raw": "prime", "amount_usd": 5.99, "message": "hobbymanmike_ogshowtime subscribed with Prime. They've subscribed for 3 months, currently on a 1 month streak!"}
+{"ts": 1781134892, "event": "donation", "platform": "twitch", "type": "sub", "username": "richsapplausecounter", "amount_raw": "prime", "amount_usd": 5.99, "message": "RichsApplauseCounter subscribed with Prime. They've subscribed for 3 months, currently on a 2 month streak!"}
