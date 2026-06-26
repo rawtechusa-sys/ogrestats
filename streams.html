@@ -745,7 +745,7 @@ async function loadStreamList() {
           <span class="stream-item-time">${timePart}</span>
           ${lengthPart ? `<span class="stream-item-sep">|</span><span class="stream-item-length">${lengthPart}</span>` : ''}
         </div>
-        <div class="stream-item-title">${escHtml(title)}</div>
+        <div class="stream-item-title" title="${escHtml(title)}">${escHtml(title)}</div>
       `;
 
       div.addEventListener('click', () => {
