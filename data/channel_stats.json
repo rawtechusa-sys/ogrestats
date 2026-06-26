@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782400329,
+  "updated_ts": 1782453888,
   "counted_streams": [
     "random_late_man_stream_for_men",
     "so_moist_so_man_so_meaningfulso_robust",
@@ -804,7 +804,8 @@
     "your_dad_is_showered_and_streaming",
     "your_dad_is_streaming",
     "your_dad_is_streaming_pt2",
-    "youtube_your_platform_is_very_broken_and_needs_to_be_fixed"
+    "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
+    "a_short_but_robust_stream_2026-06-26_013347"
   ],
   "streams": {
     "random_late_man_stream_for_men": {
@@ -13654,6 +13655,23 @@
       "avg_viewers": null,
       "avg_chat_mpm": 13.45,
       "avg_active_chatters": 41.4
+    },
+    "a_short_but_robust_stream_2026-06-26_013347": {
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "title": "A Short, But Robust Stream",
+      "start_ts": 1782437124,
+      "end_ts": 1782453723,
+      "duration_sec": 16599,
+      "youtube_archive_id": "FY1ua2xydU8",
+      "source_platform": "youtube",
+      "total_donations_usd": 637.81,
+      "donation_count": 124,
+      "donations_per_min": 2.3055,
+      "peak_viewers": 386,
+      "avg_viewers": 336.96,
+      "avg_chat_mpm": 11.78,
+      "avg_active_chatters": 27.09,
+      "percent_paused": 15.2
     }
   }
 }
