@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782399361,
+  "updated_ts": 1782453883,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -805,7 +805,8 @@
     "your_dad_is_streaming_pt2",
     "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
     "a_massive_mini_stream_2026-06-25_015919",
-    "this_isnt_clickbait_we_need_to_have_a_talk_2026-06-23_013029"
+    "this_isnt_clickbait_we_need_to_have_a_talk_2026-06-23_013029",
+    "a_short_but_robust_stream_2026-06-26_013347"
   ],
   "commands": {
     "device": 1,
@@ -815,7 +816,7 @@
     "idea": 8,
     "voice": 8,
     "shorts": 1,
-    "news": 38,
+    "news": 39,
     "d": 5,
     "severance": 2,
     "gta": 5,
@@ -826,7 +827,7 @@
     "kendal": 1,
     "donation": 3,
     "naruto": 1,
-    "phil": 86,
+    "phil": 98,
     "legends": 2,
     "is": 8,
     "spose": 1,
@@ -850,7 +851,7 @@
     "wings": 1,
     "advice": 4,
     "ghostwire": 1,
-    "guy": 3,
+    "guy": 4,
     "message": 1,
     "lied": 1,
     "doom": 4,
@@ -903,7 +904,7 @@
     "cucumber": 1,
     "this": 4,
     "wars": 2,
-    "trump": 39,
+    "trump": 44,
     "restaraunt": 1,
     "highter": 1,
     "spoiler": 2,
@@ -1019,14 +1020,14 @@
     "spoilers": 1,
     "dmx": 1,
     "anyway": 1,
-    "said": 12,
+    "said": 13,
     "reviewimprovusa": 1,
     "smo": 1,
-    "stan": 38,
-    "masterchief": 31,
-    "grandpa": 13,
-    "harman": 14,
-    "eric": 36,
+    "stan": 55,
+    "masterchief": 34,
+    "grandpa": 14,
+    "harman": 21,
+    "eric": 40,
     "idiots": 2,
     "recommendation": 1,
     "shot": 1,
@@ -1190,10 +1191,10 @@
     "karen": 1,
     "retailer": 1,
     "was": 1,
-    "hobo": 3,
+    "hobo": 4,
     "gnome": 1,
     "witch": 2,
-    "kratos": 5,
+    "kratos": 6,
     "coffee": 1,
     "know": 1,
     "up": 2,
@@ -1203,7 +1204,7 @@
     "reviewactingshamingusa": 1,
     "serious": 1,
     "glorious": 1,
-    "linus": 2,
+    "linus": 4,
     "girlfriend": 1,
     "hence": 1,
     "dagoth": 2,
@@ -1337,7 +1338,12 @@
     "quarter": 1,
     "faction": 1,
     "hasan": 1,
-    "tate": 1
+    "tate": 1,
+    "krato": 1,
+    "moist": 1,
+    "masucci": 1,
+    "watchmojo": 1,
+    "deadpool": 1
   },
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -9379,9 +9385,521 @@
       "segments": null,
       "source_vod_id": "Z5Mt_5-g5g0",
       "source_platform": "youtube"
+    },
+    "a_short_but_robust_stream_2026-06-26_013347": {
+      "title": "A Short, But Robust Stream",
+      "start_ts": 1782437124,
+      "youtube_archive_id": "FY1ua2xydU8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1782453370,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: Unrestricted streams get grandpa all excited",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782453145,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: Richard. Richard. It\u2019s your 2024 self. It\u2019s time for Taco Bell. (Bong). (Fart)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782452587,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: mmmm (yoda) mmmm (yoda) mmmmm (yoda) yes",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782451957,
+      "username": "@Quinneth-Jade",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "dreamcast guy: 34 months! thats pretty big!",
+      "commands": [
+        "guy"
+      ]
+    },
+    {
+      "ts": 1782451556,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Eric: I'm Bi but not easy. Stan: Easy as pie! Mmmm",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782451116,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: Keith Edwards just needs a hug (troll_laugh)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782450572,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Trump: Give me Clutterbuns or give me death (fart)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782450204,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "(phone_vibrate) Stan: Oh wow, fresh batteries! Heh",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782450082,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "(door_knock) Phil: Honey, ok if I keep streaming?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782449905,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: I'm my own Steam Machine! (disgusting)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782449285,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Breaking News: I have to fart. Wait. I just farted.",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1782448645,
+      "username": "@MabelPinesForReal",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Deadpool: So is E-Day being sent out to die?",
+      "commands": [
+        "deadpool"
+      ]
+    },
+    {
+      "ts": 1782448540,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Linus: Isn\u2019t that pretty much what I do ?",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1782448118,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Eric: It\u2019s a stream of consciousness ! (badumtiss)",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1782448036,
+      "username": "@qb3540",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: If they wanna phek us over let's phek em right back. Pirate everything",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782447621,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: Games are digital, bodies are physical! Heh!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782446826,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: A wise man once said: if you don\u2019t have good internet,just buy an Xbox 360 you peasant !",
+      "commands": [
+        "phil",
+        "said"
+      ]
+    },
+    {
+      "ts": 1782443824,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Eric: Stan, wannas bread those cheaks and just go to town? Stan: Yeeeeeesh Eric, its like a jungle in there! Keep powertoppin you thirsty lil werewolf",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782443186,
+      "username": "@Joshloungin",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: Heres our newest product Xbox Two zeewuubrrr",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782443040,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: How they went from the success of the 360 to now is wild. It should be studied as how not to run a gaming company ! Nintendo wins again !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782442975,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Trump: Project Helix is like me your lord & savior",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782442942,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Watchmojo: Random high question did you ever have a Wii?",
+      "commands": [
+        "watchmojo"
+      ]
+    },
+    {
+      "ts": 1782442840,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: R u a supporter? Stan: An Athletic Supporter",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782442819,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: wash your Bawls arrrrrghghgh!!!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782442670,
+      "username": "@Joshloungin",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "stan: Fart in my as and throw that bubble weewuzz",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782442590,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Masterchief: listen use a gas pressure washer at full power to clean your ass. be a man",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1782442325,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Rich Masucci: a day in the life of a man. Coming soon to National Geographic !",
+      "commands": [
+        "masucci"
+      ]
+    },
+    {
+      "ts": 1782442030,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Moist: listen everything is high even me. (uwu)",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1782441903,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: Katherine you beach!!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782441669,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Eric: you can go balls deep in me instead.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1782440893,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Trump: Was constipated but that video opened me up",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782440793,
+      "username": "@ZG49389",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: Hey Becky. Let\u2019s get after it with pikachu",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782440663,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: I'm humpin Starfox. Stan: Do a barrel roll",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782440607,
+      "username": "@Throbbingat37PakistaniAmerican",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: corporate greed thats all. Rich call up Digital foundry & ask compare PS5 Pro versus Steam Machine. their's your answer. onwards its all A.I.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782440463,
+      "username": "@qb3540",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: Did u say docking, count me in Harman: OOOO, can me and Pikachu watch?",
+      "commands": [
+        "stan",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782440095,
+      "username": "@Throbbingat37PakistaniAmerican",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Trump: Listen I demanded Embracer Group buy Bungie after they fired 55% because Satanyahu whispered in my ear 3000 Years ago. buy for $100 and then make it completely poof gone just like US democracy.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782439865,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Linus: Cucumbers.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1782439861,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: I'm at the gym now Rich. Where you at? Stan: I hope you're gettin' awful sweaty, sweety. Bend over so I can see your chocolate Star Fox, YEAH!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782439854,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Masterchief: men, I have made a mistake. I already consumed a can of baked beans. I also had real man chili, with more beans. I need help. my anus is already going nuclear. what have I done?",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1782438947,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: May we please have a Phil petizer? Stan: Mmm",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782438798,
+      "username": "@qb3540",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Harman: I cant believe Rock :glowing_star: out scumbag Nintendo",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782438786,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Kratos: menkind is an unstoppable force. when hard, and phil, why dont you kiss my ass and lick my balls! Stan: oh hell yea! mmmm manmeat and sacks!",
+      "commands": [
+        "kratos",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782438691,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: Shut the fah cup, and Eat it! I'm not taking yorsh hit! Give me your mailing address, I wanna mail you spoon! Stan: Thanks Phil, Free spoooon!!",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782438639,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Krato: never underestimate the power of menkind",
+      "commands": [
+        "krato"
+      ]
+    },
+    {
+      "ts": 1782438543,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Stan: mhmm I see grippable handles on Ranch",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782438406,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Grandpa: jesus christ, its rainin sideways! uuhhh!",
+      "commands": [
+        "grandpa"
+      ]
+    },
+    {
+      "ts": 1782438287,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Masterchief: men, the baked beans are kicking in. embrace the true power of the farts! all of them! no matter the cost! Trump: I will sacrifice my pants to embrace the farts. I cant control my anus anyway! ohh yea daddy!",
+      "commands": [
+        "masterchief",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782438273,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Hobo: Rich, this is your hobo that hangs out behind Lauren's dumpster, it sucks there's no updates on getting the collectors edition of GTA 6, shat",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1782438212,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "a_short_but_robust_stream_2026-06-26_013347",
+      "message": "Phil: found out weed seltzers actually do exist and theyre really good. Stan: ohh richie lets shove ddr5 ram sticks up our ashes ugghghggh",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
     {
       "ts": 1782364084,
       "username": "@BloodyGB175",
