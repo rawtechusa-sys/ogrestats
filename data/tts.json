@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782492725,
+  "updated_ts": 1782596526,
   "counted_streams": [
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
@@ -806,21 +806,22 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "a_friday_of_bi_lighting_2026-06-27_023038"
   ],
   "commands": {
-    "phil": 98,
-    "stan": 55,
+    "phil": 103,
+    "stan": 63,
     "hobo": 4,
-    "masterchief": 34,
-    "trump": 44,
+    "masterchief": 35,
+    "trump": 45,
     "grandpa": 14,
     "krato": 1,
     "kratos": 6,
-    "harman": 21,
-    "linus": 4,
-    "eric": 40,
-    "moist": 1,
+    "harman": 26,
+    "linus": 5,
+    "eric": 41,
+    "moist": 2,
     "masucci": 1,
     "watchmojo": 1,
     "said": 13,
@@ -833,7 +834,7 @@
     "quarter": 1,
     "faction": 1,
     "hasan": 1,
-    "tate": 1,
+    "tate": 3,
     "gnome": 1,
     "witch": 2,
     "rich": 29,
@@ -844,7 +845,7 @@
     "doom": 4,
     "something": 2,
     "glorious": 1,
-    "girlfriend": 1,
+    "girlfriend": 2,
     "hence": 1,
     "they": 1,
     "today": 4,
@@ -1343,7 +1344,8 @@
     "akward": 1,
     "darkshadowtechusa": 1,
     "w": 2,
-    "dog": 1
+    "dog": 1,
+    "s": 1
   },
   "streams": {
     "a_short_but_robust_stream_2026-06-26_013347": {
@@ -9395,9 +9397,243 @@
       "segments": null,
       "source_vod_id": "0mzrx-YQSYc",
       "source_platform": "youtube"
+    },
+    "a_friday_of_bi_lighting_2026-06-27_023038": {
+      "title": "A Friday of \"Bi-Lighting\"",
+      "start_ts": 1782527438,
+      "youtube_archive_id": "63FUNMrIjJY",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1782536462,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Phil: Hooter's: robust & urban brest meet to eat!",
+      "commands": [
+        "phil",
+        "s"
+      ]
+    },
+    {
+      "ts": 1782535642,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Stan: I have been trying to incert myself all day!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782534220,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Moist: When you want a good laugh, look up \"keemstar shut up\" a old video.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1782533124,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Eric: I'm into bear wrestling too but I'm lonely and all oiled up with nowhere to go. How about it Richie poo ? He he, I said poo.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1782532413,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Harman: Rich, you over use the applause as much as I over use Pikachu!! Stan: Hmmmmmm come over use me Harman!! Phil: CONTRIBUTIONS NOW or no Pok\u00e9mon!",
+      "commands": [
+        "harman",
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782532206,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Stan: Don't forget the Golden Stream Oh yeah honey",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782532088,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Tate: Just the Tip. (spiderman)",
+      "commands": [
+        "tate"
+      ]
+    },
+    {
+      "ts": 1782532015,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Stan: Oh Phil, you want me to toggle your hairy jungle? Phil: Oh please Stan, that'll prove the detractors wrong!! Stan: OH DSP I'm gonna detractor your jungle behind!",
+      "commands": [
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782531792,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Phil: Rich! Show some support and rear end me!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1782530548,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Tate: Maybe have some andypants? In the twitch stream? (goofy_yell)",
+      "commands": [
+        "tate"
+      ]
+    },
+    {
+      "ts": 1782529547,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "(fart) Stan: ahhhh my anus is relaxed",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782529490,
+      "username": "@jorethor",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Trump: Just came, am now gay cause of the lighting, birds",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782529317,
+      "username": "@superSONIC_star",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Harman: Listen! Mod me & then we tag-team Pikachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782529099,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Stan: A tisket a tasket show me your basket (yoda)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782529090,
+      "username": "@Phils_Lost_DoorDash_Shrimp",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Harman: it\u2019s wang day rich where you at (ripping)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782528604,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Girlfriend: I remember when I first found your channel is when you were complaining about people camping in call of duty mw3.",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1782528543,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Harman: I want that hole daddy! im gona get you!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782528469,
+      "username": "@superSONIC_star",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Harman: Rich, now I wanna Netflix n chill with u!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1782528427,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Masterchief: my god! birdfather has embraced the dark side of purple! this gay heresy must be of the corrupted birds doing! we must send in the naked cowboys. they may be able to purge the corruption... from his anus.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1782528181,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Linus: you not knowing you had the pc is something I imagine phil would pull too.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1782528147,
+      "username": "@zachbischoff1853",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Stan: a man is dark.. is that intentional",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782528101,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "message": "Phil: yum yum n my tum tum mmmmm MMMMM(yoda) yummm",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1782453370,
       "username": "@EvistoSF",
