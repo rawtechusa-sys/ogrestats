@@ -1,7 +1,8 @@
 {
   "version": 1,
-  "updated_ts": 1782596526,
+  "updated_ts": 1782597131,
   "counted_streams": [
+    "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
     "this_isnt_clickbait_we_need_to_have_a_talk_2026-06-23_013029",
@@ -806,22 +807,24 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return",
-    "a_friday_of_bi_lighting_2026-06-27_023038"
+    "the_livestreams_return"
   ],
   "commands": {
     "phil": 103,
     "stan": 63,
-    "hobo": 4,
+    "linus": 5,
     "masterchief": 35,
+    "harman": 26,
+    "girlfriend": 2,
     "trump": 45,
+    "tate": 3,
+    "eric": 41,
+    "moist": 2,
+    "s": 1,
+    "hobo": 4,
     "grandpa": 14,
     "krato": 1,
     "kratos": 6,
-    "harman": 26,
-    "linus": 5,
-    "eric": 41,
-    "moist": 2,
     "masucci": 1,
     "watchmojo": 1,
     "said": 13,
@@ -834,7 +837,6 @@
     "quarter": 1,
     "faction": 1,
     "hasan": 1,
-    "tate": 3,
     "gnome": 1,
     "witch": 2,
     "rich": 29,
@@ -845,7 +847,6 @@
     "doom": 4,
     "something": 2,
     "glorious": 1,
-    "girlfriend": 2,
     "hence": 1,
     "they": 1,
     "today": 4,
@@ -1344,10 +1345,19 @@
     "akward": 1,
     "darkshadowtechusa": 1,
     "w": 2,
-    "dog": 1,
-    "s": 1
+    "dog": 1
   },
   "streams": {
+    "a_friday_of_bi_lighting_2026-06-27_023038": {
+      "title": "A Friday of \"Bi-Lighting\"",
+      "start_ts": 1782527438,
+      "youtube_archive_id": "63FUNMrIjJY",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "youtube"
+    },
     "a_short_but_robust_stream_2026-06-26_013347": {
       "title": "A Short, But Robust Stream",
       "start_ts": 1782437124,
@@ -1982,8 +1992,8 @@
       "title": "CHatting With Intro Guy",
       "start_ts": 1706137720,
       "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "archive_org_id": "ogrewatch-chatting_with_intro_guy",
+      "archive_start_ts": 1706137720,
       "segments": null,
       "source_vod_id": "eoxdTD0C22A",
       "source_platform": "youtube"
@@ -1991,9 +2001,9 @@
     "i_am_him_i_will_continue_to_be_him": {
       "title": "I AM HIM! I WILL CONTINUE TO BE HIM!",
       "start_ts": 1706051264,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "-pyG__kvXec",
+      "archive_org_id": "ogrewatch-i_am_him_i_will_continue_to_be_him",
+      "archive_start_ts": 1706051264,
       "segments": null,
       "source_vod_id": "Fy7TbT0ihX8",
       "source_platform": "youtube"
@@ -2001,9 +2011,9 @@
     "i_got_trolled_hard_by_ethan_ralph": {
       "title": "I GOT TROLLED HARD BY ETHAN RALPH",
       "start_ts": 1705964783,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "_63uQyn_9gg",
+      "archive_org_id": "ogrewatch-i_got_trolled_hard_by_ethan_ralph",
+      "archive_start_ts": 1705964783,
       "segments": null,
       "source_vod_id": "2kNeio4-NDU",
       "source_platform": "youtube"
@@ -2011,9 +2021,9 @@
     "my_subscribers_give_me_criticism": {
       "title": "My Subscribers Give Me Criticism",
       "start_ts": 1705875315,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "RBGUP0bK074",
+      "archive_org_id": "ogrewatch-my_subscribers_give_me_criticism",
+      "archive_start_ts": 1705875315,
       "segments": null,
       "source_vod_id": "6szpJJVB6VA",
       "source_platform": "youtube"
@@ -2031,9 +2041,9 @@
     "just_doing_man_things": {
       "title": "Just Doing Man Things",
       "start_ts": 1705706069,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "gJp4wwCkw6A",
+      "archive_org_id": "ogrewatch-just_doing_man_things",
+      "archive_start_ts": 1705706069,
       "segments": null,
       "source_vod_id": "g6Xf5B52Znk",
       "source_platform": "youtube"
@@ -2041,9 +2051,9 @@
     "father_is_sick_jaysus_saves": {
       "title": "Father Is Sick, Jaysus Saves",
       "start_ts": 1705618828,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "YrW6oUXxj38",
+      "archive_org_id": "ogrewatch-father_is_sick_jaysus_saves",
+      "archive_start_ts": 1705618828,
       "segments": null,
       "source_vod_id": "ZVUGtPzRvRY",
       "source_platform": "youtube"
@@ -2061,9 +2071,9 @@
     "sex": {
       "title": "SEX",
       "start_ts": 1705359488,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "nR7J5US02aw",
+      "archive_org_id": "ogrewatch-sex",
+      "archive_start_ts": 1705359488,
       "segments": null,
       "source_vod_id": "7oO3B7mIAC4",
       "source_platform": "youtube"
@@ -2071,9 +2081,9 @@
     "jaysus_gaming_test_stream": {
       "title": "Jaysus Gaming Test Stream",
       "start_ts": 1705173044,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "-a3bJqVxecg",
+      "archive_org_id": "ogrewatch-jaysus_gaming_test_stream",
+      "archive_start_ts": 1705173044,
       "segments": null,
       "source_vod_id": "YDzoaz6B7Eg",
       "source_platform": "youtube"
@@ -2081,9 +2091,9 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac": {
       "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx And Melonie Mac)",
       "start_ts": 1705101039,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "v_tretyx3YA",
+      "archive_org_id": "ogrewatch-a_heterosexual_christian_man_stream_watching_cyraxx_and_melonie_mac",
+      "archive_start_ts": 1705101039,
       "segments": null,
       "source_vod_id": "sWYc6-K7Waw",
       "source_platform": "youtube"
@@ -2091,9 +2101,9 @@
     "a_heterosexual_christian_man_stream_watching_cyraxx": {
       "title": "A Heterosexual, Christian Man Stream (Watching Cyraxx)",
       "start_ts": 1705013907,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "Zi3gxfNoZPw",
+      "archive_org_id": "ogrewatch-a_heterosexual_christian_man_stream_watching_cyraxx",
+      "archive_start_ts": 1705013907,
       "segments": null,
       "source_vod_id": "e5Dphi0J0gw",
       "source_platform": "youtube"
@@ -2121,9 +2131,9 @@
     "a_middle_aged_man_reacks": {
       "title": "A Middle Aged Man \"Reacks\"",
       "start_ts": 1704662304,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "9vf5mVaQhgw",
+      "archive_org_id": "ogrewatch-a_middle_aged_man_reacks",
+      "archive_start_ts": 1704662304,
       "segments": null,
       "source_vod_id": "yPO8lMZlWGs",
       "source_platform": "youtube"
@@ -2131,9 +2141,9 @@
     "back_to_watching_phil_fail_looking_into_derich": {
       "title": "Back To Watching Phil Fail (Looking Into Derich)",
       "start_ts": 1704493736,
-      "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "youtube_archive_id": "iQNqcZF7q5I",
+      "archive_org_id": "ogrewatch-back_to_watching_phil_fail_looking_into_derich",
+      "archive_start_ts": 1704493736,
       "segments": null,
       "source_vod_id": "p4Hy3Lny_Og",
       "source_platform": "youtube"
@@ -2142,8 +2152,8 @@
       "title": "A Large Man Returns (Feat. Birds)",
       "start_ts": 1704492283,
       "youtube_archive_id": null,
-      "archive_org_id": null,
-      "archive_start_ts": null,
+      "archive_org_id": "ogrewatch-a_large_man_returns_feat_birds",
+      "archive_start_ts": 1704492283,
       "segments": null,
       "source_vod_id": "gY0XUQlQlsU",
       "source_platform": "youtube"
@@ -9396,16 +9406,6 @@
       "archive_start_ts": null,
       "segments": null,
       "source_vod_id": "0mzrx-YQSYc",
-      "source_platform": "youtube"
-    },
-    "a_friday_of_bi_lighting_2026-06-27_023038": {
-      "title": "A Friday of \"Bi-Lighting\"",
-      "start_ts": 1782527438,
-      "youtube_archive_id": "63FUNMrIjJY",
-      "archive_org_id": null,
-      "archive_start_ts": null,
-      "segments": null,
-      "source_vod_id": null,
       "source_platform": "youtube"
     }
   },
