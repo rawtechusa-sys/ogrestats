@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782487343,
+  "updated_ts": 1782596536,
   "counted_streams": [
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
@@ -806,7 +806,8 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "a_friday_of_bi_lighting_2026-06-27_023038"
   ],
   "streams": {
     "a_short_but_robust_stream_2026-06-26_013347": {
@@ -14492,6 +14493,23 @@
       "avg_viewers": null,
       "avg_chat_mpm": 2.89,
       "avg_active_chatters": 9.76,
+      "percent_paused": null
+    },
+    "a_friday_of_bi_lighting_2026-06-27_023038": {
+      "stream_id": "a_friday_of_bi_lighting_2026-06-27_023038",
+      "title": "A Friday of \"Bi-Lighting\"",
+      "start_ts": 1782527438,
+      "end_ts": 1782541900,
+      "duration_sec": 14462,
+      "youtube_archive_id": "63FUNMrIjJY",
+      "source_platform": "youtube",
+      "total_donations_usd": 327.36,
+      "donation_count": 71,
+      "donations_per_min": 1.3582,
+      "peak_viewers": 374,
+      "avg_viewers": 322.58,
+      "avg_chat_mpm": 8.39,
+      "avg_active_chatters": 21.89,
       "percent_paused": null
     }
   }
