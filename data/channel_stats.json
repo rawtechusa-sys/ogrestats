@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782596536,
+  "updated_ts": 1782612721,
   "counted_streams": [
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
@@ -807,7 +807,8 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "a_friday_of_bi_lighting_2026-06-27_023038"
+    "a_friday_of_bi_lighting_2026-06-27_023038",
+    "a_stream_for_robust_men_2026-06-28_012450"
   ],
   "streams": {
     "a_short_but_robust_stream_2026-06-26_013347": {
@@ -14510,6 +14511,23 @@
       "avg_viewers": 322.58,
       "avg_chat_mpm": 8.39,
       "avg_active_chatters": 21.89,
+      "percent_paused": null
+    },
+    "a_stream_for_robust_men_2026-06-28_012450": {
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "title": "A Stream For Robust Men",
+      "start_ts": 1782609898,
+      "end_ts": 1782612710,
+      "duration_sec": 2812,
+      "youtube_archive_id": "LviHf6DAzOw",
+      "source_platform": "youtube",
+      "total_donations_usd": 218.81,
+      "donation_count": 41,
+      "donations_per_min": 4.6688,
+      "peak_viewers": 360,
+      "avg_viewers": 255.85,
+      "avg_chat_mpm": 16.57,
+      "avg_active_chatters": 36.81,
       "percent_paused": null
     }
   }
