@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782597131,
+  "updated_ts": 1782612717,
   "counted_streams": [
     "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_short_but_robust_stream_2026-06-26_013347",
@@ -807,19 +807,20 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "a_stream_for_robust_men_2026-06-28_012450"
   ],
   "commands": {
-    "phil": 103,
-    "stan": 63,
+    "phil": 104,
+    "stan": 67,
     "linus": 5,
-    "masterchief": 35,
-    "harman": 26,
+    "masterchief": 36,
+    "harman": 27,
     "girlfriend": 2,
-    "trump": 45,
+    "trump": 48,
     "tate": 3,
-    "eric": 41,
-    "moist": 2,
+    "eric": 43,
+    "moist": 3,
     "s": 1,
     "hobo": 4,
     "grandpa": 14,
@@ -844,7 +845,7 @@
     "dagoth": 2,
     "emoguy": 1,
     "phill": 3,
-    "doom": 4,
+    "doom": 5,
     "something": 2,
     "glorious": 1,
     "hence": 1,
@@ -936,7 +937,7 @@
     "story": 3,
     "suggestion": 2,
     "pachter": 3,
-    "source": 3,
+    "source": 4,
     "wokeism": 1,
     "burnell": 1,
     "victim": 1,
@@ -1345,7 +1346,8 @@
     "akward": 1,
     "darkshadowtechusa": 1,
     "w": 2,
-    "dog": 1
+    "dog": 1,
+    "homer": 1
   },
   "streams": {
     "a_friday_of_bi_lighting_2026-06-27_023038": {
@@ -9407,9 +9409,143 @@
       "segments": null,
       "source_vod_id": "0mzrx-YQSYc",
       "source_platform": "youtube"
+    },
+    "a_stream_for_robust_men_2026-06-28_012450": {
+      "title": "A Stream For Robust Men",
+      "start_ts": 1782609898,
+      "youtube_archive_id": "LviHf6DAzOw",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1782612616,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Phil: I prefer my Wendy's to be moist, not dry! Harman: I prefer moist Pikachu! Stan: Do either of you prefer moist Stanleys? Uh oh yeah baby! (yoda)",
+      "commands": [
+        "phil",
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782612551,
+      "username": "@MabelPinesForReal",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Homer: Is 4K Blu-ray worth investing in?",
+      "commands": [
+        "homer"
+      ]
+    },
+    {
+      "ts": 1782612433,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Trump: men i have a tremendous tale to tell. I enjoyed a spicy chicken sandwich, then the chicken had spicy revenge coming out my ass. true story.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782612207,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Trump: listen fuckwad, your dream is fake news bull shit! whip out the cellophane while I climb a tree, and drop big beautiful turds on you. embrace my spray tanned asshole, its a beautiful thing!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782611906,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Trump: Rich I legit had a dream last night that you called me on my phone, screamed at me telling me \"we already watched that on stream!!\" then farted over the phone and told me to shit on a bird",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1782611798,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "A MAGA guy with a \"Man I Love Felons\" Trump shirt got caught on TCAP. Stan: Even I wouldn't wear that! Eric: I would! hehehehehe",
+      "commands": [
+        "stan",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1782611625,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Moist: I loved doom 2016. doom eternal I consider to be one of my favorite fps games of all time. I like dark ages as a nice spin.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1782611270,
+      "username": "@MabelPinesForReal",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "That Griffin Gaming clip of him saying he's okay with this administration being a band of offenders is crazy! (Source: Fritangaplays video)",
+      "commands": [
+        "source"
+      ]
+    },
+    {
+      "ts": 1782611110,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Doom: Did you hear that Mike Johnson told a bunch of evangelicals that he's basically the only thing keeping a lot of people out of prison?",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1782610922,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Eric: Take a load off Fanny. Take a load, for free. Take a load off Fanny. &, &, Aannd? You shoot the load right on me!!! Stan: Oh Eric, it's our song",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1782610756,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "Masterchief: good timing for a man stream for men, only for men among men. I am already 3 teas in. I am already seeing the future. I am all knowing. the world is imploding, everything is going to shit. I gota shit. large logs",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1782609990,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
+      "message": "I'm watching Spawnwave in another tab and all of a sudden there was a fart. Stan: What I'd give to smell a fart from his hole. Oh yeah! WoooooOWWWWW!!",
+      "commands": [
+        "stan"
+      ]
+    },
     {
       "ts": 1782536462,
       "username": "@EvistoSF",
