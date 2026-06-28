@@ -326,8 +326,26 @@
 
   .chart-legend {
     display: flex;
-    gap: 14px;
+    gap: 22px;
     flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  /* Each metric category is a vertical column; columns sit side-by-side. */
+  .legend-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .legend-group-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    opacity: 0.8;
+    margin-bottom: 1px;
   }
 
   .legend-item {
@@ -356,14 +374,6 @@
 
   .legend-item:hover { color: var(--accent); }
   .legend-item.hidden { opacity: 0.35; }
-
-  .legend-divider {
-    width: 1px;
-    height: 14px;
-    background: var(--border-default);
-    flex-shrink: 0;
-    margin: 0 2px;
-  }
 
   .chart-wrap { position: relative; width: 100%; height: 400px; }
 
@@ -480,6 +490,8 @@
   .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35);  background: rgba(90,50,140,0.2); }
   .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
   .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
+  /* Kick tip currency ("kicks") -- Kick brand green. */
+  .type-kicks      { color: #6be84a; border-color: rgba(83,252,24,0.35);   background: rgba(40,120,20,0.2); }
 
   /* White (Onion Layers) theme: darker text on lighter fills for legibility. */
   html[data-theme="white"] .type-superchat,
@@ -488,6 +500,7 @@
   html[data-theme="white"] .type-bits,
   html[data-theme="white"] .type-giftsub,
   html[data-theme="white"] .type-sub { color: #54338a; border-color: rgba(90,58,140,0.45); background: rgba(90,58,140,0.13); }
+  html[data-theme="white"] .type-kicks { color: #2f7a14; border-color: rgba(47,122,20,0.45); background: rgba(47,122,20,0.13); }
 
   .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
   .username   { color: var(--text-primary); }
@@ -1006,20 +1019,25 @@ async function loadStream(streamId) {
     const duration  = (endTs && startTs) ? endTs - startTs : null;
     const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
     const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
-    const peakTotal = snapshots.reduce((m, s) => Math.max(m, (s.youtube || 0) + (s.twitch || 0)), 0);
+    const peakKick  = snapshots.reduce((m, s) => Math.max(m, s.kick    || 0), 0);
+    const peakTotal = snapshots.reduce((m, s) => Math.max(m, (s.youtube || 0) + (s.twitch || 0) + (s.kick || 0)), 0);
     const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
     const donCount  = donations.length;
 
     const platforms = meta.platforms || [];
     const hasYT = platforms.includes('youtube');
     const hasTW = platforms.includes('twitch');
+    const hasKick = platforms.includes('kick');
 
     // Viewer-data availability is separate from platform membership: streams
     // that predate YouTube viewer collection store youtube as null for every
     // snapshot. Treat those as "no data" (N/A, no viewer line) rather than 0.
+    // Kick currently has no viewer field at all, so hasKickViewers stays false
+    // (mirrors the Twitch path; lights up automatically if the backend adds one).
     const hasYTViewers = snapshots.some(s => s.youtube != null);
     const hasTWViewers = snapshots.some(s => s.twitch  != null);
-    const hasViewers   = hasYTViewers || hasTWViewers;
+    const hasKickViewers = snapshots.some(s => s.kick  != null);
+    const hasViewers   = hasYTViewers || hasTWViewers || hasKickViewers;
 
     main.innerHTML = '';
 
@@ -1035,32 +1053,53 @@ async function loadStream(streamId) {
       </div>`;
     }
 
-    const bothViewers = hasYTViewers && hasTWViewers;
+    // Build a "YT a · TW b · Kick c" breakdown from whichever platforms have
+    // data. Empty when fewer than two are present, since a lone platform's
+    // breakdown just echoes the headline value.
+    function platformSub(parts) {
+      const present = parts.filter(p => p.has);
+      if (present.length < 2) return '';
+      return present.map(p => `${p.tag} ${p.value.toLocaleString()}`).join(' · ');
+    }
+
     let cards = '';
     cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
     cards += card('Peak Viewers',
       hasViewers ? peakTotal.toLocaleString() : 'N/A',
-      bothViewers ? `YT ${peakYT} · TW ${peakTW}` : '');
+      platformSub([
+        { tag: 'YT',   value: peakYT,   has: hasYTViewers },
+        { tag: 'TW',   value: peakTW,   has: hasTWViewers },
+        { tag: 'Kick', value: peakKick, has: hasKickViewers },
+      ]));
     cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
 
-    const avgYT = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
-    const avgTW = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
+    const avgYT   = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
+    const avgTW   = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
+    const avgKick = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.kick   ||0), 0) / snapshots.length) : 0;
     cards += card('Avg Viewers',
-      hasViewers ? (avgYT + avgTW).toLocaleString() : 'N/A',
-      bothViewers ? `YT ${avgYT} · TW ${avgTW}` : '');
+      hasViewers ? (avgYT + avgTW + avgKick).toLocaleString() : 'N/A',
+      platformSub([
+        { tag: 'YT',   value: avgYT,   has: hasYTViewers },
+        { tag: 'TW',   value: avgTW,   has: hasTWViewers },
+        { tag: 'Kick', value: avgKick, has: hasKickViewers },
+      ]));
 
-    const peakActiveYT = snapshots.reduce((m, s) => Math.max(m, s.active_youtube_chatters || 0), 0);
-    const peakActiveTW = snapshots.reduce((m, s) => Math.max(m, s.active_twitch_chatters  || 0), 0);
-    const hasActiveYTData = snapshots.some(s => s.active_youtube_chatters != null);
-    const hasActiveTWData = snapshots.some(s => s.active_twitch_chatters  != null);
+    const peakActiveYT   = snapshots.reduce((m, s) => Math.max(m, s.active_youtube_chatters || 0), 0);
+    const peakActiveTW   = snapshots.reduce((m, s) => Math.max(m, s.active_twitch_chatters  || 0), 0);
+    const peakActiveKick = snapshots.reduce((m, s) => Math.max(m, s.active_kick_chatters    || 0), 0);
+    const hasActiveYTData   = snapshots.some(s => s.active_youtube_chatters != null);
+    const hasActiveTWData   = snapshots.some(s => s.active_twitch_chatters  != null);
+    const hasActiveKickData = snapshots.some(s => s.active_kick_chatters    != null);
 
-    if (hasActiveYTData || hasActiveTWData) {
-      const bothActive = hasActiveYTData && hasActiveTWData;
-      const activeValue = bothActive
-        ? (peakActiveYT + peakActiveTW).toLocaleString()
-        : hasActiveYTData ? peakActiveYT.toLocaleString() : peakActiveTW.toLocaleString();
-      const activeSub = bothActive ? `YT ${peakActiveYT} · TW ${peakActiveTW}` : '';
-      cards += card('Peak Active Chatters', activeValue, activeSub);
+    if (hasActiveYTData || hasActiveTWData || hasActiveKickData) {
+      const activeParts = [
+        { tag: 'YT',   value: peakActiveYT,   has: hasActiveYTData },
+        { tag: 'TW',   value: peakActiveTW,   has: hasActiveTWData },
+        { tag: 'Kick', value: peakActiveKick, has: hasActiveKickData },
+      ];
+      const activeValue = activeParts.filter(p => p.has)
+        .reduce((s, p) => s + p.value, 0).toLocaleString();
+      cards += card('Peak Active Chatters', activeValue, platformSub(activeParts));
     }
 
     // ── VOD card ──
@@ -1141,9 +1180,18 @@ async function loadStream(streamId) {
 
       const hasChatRate = snapshots.some(s =>
         s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
+        || s.kick_messages_per_minute != null
       );
-      const hasActiveYT = hasYT && snapshots.some(s => s.active_youtube_chatters != null);
-      const hasActiveTW = hasTW && snapshots.some(s => s.active_twitch_chatters != null);
+      const hasActiveYT   = hasYT   && snapshots.some(s => s.active_youtube_chatters != null);
+      const hasActiveTW   = hasTW   && snapshots.some(s => s.active_twitch_chatters  != null);
+      const hasActiveKick = hasKick && snapshots.some(s => s.active_kick_chatters    != null);
+      // Gate each Msg/Min line on actual data, not just platform membership: the
+      // backend now lists "kick" in platforms even for streams with no Kick chat,
+      // which would otherwise show a dead toggle over an empty line. (Mirrors how
+      // the Active Chatters group above gates per platform's data presence.)
+      const hasYTChat   = hasYT   && snapshots.some(s => s.youtube_messages_per_minute != null);
+      const hasTWChat   = hasTW   && snapshots.some(s => s.twitch_messages_per_minute  != null);
+      const hasKickChat = hasKick && snapshots.some(s => s.kick_messages_per_minute    != null);
 
       panel.innerHTML = `
         <div class="chart-header">
@@ -1164,8 +1212,8 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasChatRate, hasActiveYT, hasActiveTW, hasYT, hasTW);
-      buildLegend(hasYTViewers, hasTWViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasYT, hasTW);
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
+      buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
     }
 
     // ── Donation log ──
@@ -1277,13 +1325,16 @@ async function loadStream(streamId) {
 const DS = {
   YT_VIEWERS:       'YouTube Viewers',
   TW_VIEWERS:       'Twitch Viewers',
+  KICK_VIEWERS:     'Kick Viewers',
   TOTAL_VIEWERS:    'Total Viewers',
   DONATIONS:        'Donations',
   YT_CHAT:          'YouTube Chat',
   TW_CHAT:          'Twitch Chat',
+  KICK_CHAT:        'Kick Chat',
   TOTAL_CHAT:       'Total Chat',
   YT_ACTIVE_CHATTERS: 'YT Active Chatters',
   TW_ACTIVE_CHATTERS: 'TW Active Chatters',
+  KICK_ACTIVE_CHATTERS: 'Kick Active Chatters',
   TOTAL_ACTIVE_CHATTERS: 'Total Active Chatters',
 };
 
@@ -1291,9 +1342,9 @@ const DS = {
 // buildLegend (Donations | Viewers | Active Chatters | Msg/Min, Total first).
 const LEGEND_ORDER = [
   DS.DONATIONS,
-  DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS,
-  DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS,
-  DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT,
+  DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS,
+  DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS,
+  DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT,
 ];
 
 // Tooltip keys: Chart.js can't dash its built-in line glyph, but pointStyle
@@ -1329,10 +1380,10 @@ const hiddenDatasets = new Set(
 function syncAxisDisplay() {
   if (!currentChart) return;
   const axisMap = {
-    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS],
-    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
+    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS],
+    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
     yDonations:      [DS.DONATIONS],
-    yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT],
+    yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT],
   };
   for (const [axisId, labels] of Object.entries(axisMap)) {
     const anyVisible = labels.some(label => {
@@ -1485,22 +1536,25 @@ function intTick(fmt) {
   };
 }
 
-function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasChatRate, hasActiveYT, hasActiveTW, hasYTPlat, hasTWPlat) {
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
   if (!ctx) return;
 
   const snapshotData = snapshots.map(s => ({
-    x:        s.ts * 1000,
-    yt:       s.youtube || 0,
-    tw:       s.twitch  || 0,
-    ytMpm:    s.youtube_messages_per_minute ?? null,
-    twMpm:    s.twitch_messages_per_minute  ?? null,
-    ytActive: s.active_youtube_chatters     ?? null,
-    twActive: s.active_twitch_chatters      ?? null,
-    inFrame:  s.in_frame_view ?? null,
-    paused:   s.source_paused ?? null,
+    x:          s.ts * 1000,
+    yt:         s.youtube || 0,
+    tw:         s.twitch  || 0,
+    kick:       s.kick    || 0,
+    ytMpm:      s.youtube_messages_per_minute ?? null,
+    twMpm:      s.twitch_messages_per_minute  ?? null,
+    kickMpm:    s.kick_messages_per_minute    ?? null,
+    ytActive:   s.active_youtube_chatters     ?? null,
+    twActive:   s.active_twitch_chatters      ?? null,
+    kickActive: s.active_kick_chatters        ?? null,
+    inFrame:    s.in_frame_view ?? null,
+    paused:     s.source_paused ?? null,
   }));
 
   // Pausing band: contiguous time runs where the source was in frame view
@@ -1591,11 +1645,30 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     });
   }
 
-  if (hasYTViewers && hasTWViewers && snapshotData.length > 0) {
+  // Kick viewers -- mirrors the YT/TW path, but the backend currently emits no
+  // Kick viewer field so hasKickViewers is false and this never renders today.
+  if (hasKickViewers && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.KICK_VIEWERS,
+      hidden: hiddenDatasets.has(DS.KICK_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.kick })),
+      type: 'line',
+      borderColor: '#53fc18',
+      backgroundColor: 'rgba(83,252,24,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // Total viewers -- shown when 2+ platforms have viewer data; sums every present
+  // platform (a missing platform contributes 0). A single-platform total would
+  // just duplicate that platform's line, so it's skipped.
+  if ([hasYTViewers, hasTWViewers, hasKickViewers].filter(Boolean).length >= 2 && snapshotData.length > 0) {
     datasets.push({
       label: DS.TOTAL_VIEWERS,
       hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
-      data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw })),
+      data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw + s.kick })),
       type: 'line',
       borderColor: '#40c4ff',
       backgroundColor: 'transparent',
@@ -1638,17 +1711,33 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     });
   }
 
-  // Combined active chatters -- YT + TW. Only shown when both platforms are
-  // live, since for a single-platform stream the total duplicates that line.
-  // Null only when BOTH platforms are missing a sample; otherwise a missing
-  // side counts as 0.
-  if (hasActiveYT && hasActiveTW) {
+  if (hasActiveKick) {
+    datasets.push({
+      label: DS.KICK_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.KICK_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.kickActive })),
+      type: 'line',
+      borderColor: '#53fc18',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
+  // Combined active chatters -- sum of every platform with data. Only shown when
+  // 2+ platforms are live (a single-platform total duplicates that line). Null at
+  // a point only when all present platforms are missing that sample; otherwise a
+  // missing side counts as 0.
+  if ([hasActiveYT, hasActiveTW, hasActiveKick].filter(Boolean).length >= 2) {
     datasets.push({
       label: DS.TOTAL_ACTIVE_CHATTERS,
       hidden: hiddenDatasets.has(DS.TOTAL_ACTIVE_CHATTERS),
       data: snapshotData.map(s => ({
         x: s.x,
-        y: (s.ytActive == null && s.twActive == null) ? null : (s.ytActive ?? 0) + (s.twActive ?? 0),
+        y: (s.ytActive == null && s.twActive == null && s.kickActive == null)
+          ? null : (s.ytActive ?? 0) + (s.twActive ?? 0) + (s.kickActive ?? 0),
       })),
       type: 'line',
       borderColor: '#909090',
@@ -1685,7 +1774,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   // (mode:'index' tooltips match by index, not by x). Missing samples map to
   // null and are bridged with spanGaps; the tooltip filter drops null entries.
   if (hasChatRate && snapshotData.length > 0) {
-    if (hasYTPlat) {
+    if (hasYTChat) {
       datasets.push({
         label: DS.YT_CHAT,
         hidden: hiddenDatasets.has(DS.YT_CHAT),
@@ -1700,7 +1789,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       });
     }
 
-    if (hasTWPlat) {
+    if (hasTWChat) {
       datasets.push({
         label: DS.TW_CHAT,
         hidden: hiddenDatasets.has(DS.TW_CHAT),
@@ -1715,20 +1804,36 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       });
     }
 
-    // Combined -- computed on the fly. Null only when BOTH platforms are
-    // missing a sample; otherwise treat a missing side as 0. Only meaningful when
-    // both platforms are present; for a single-platform stream the total would
-    // duplicate that platform's line, so it's skipped (mirrors Total Active Chatters).
-    if (hasYTPlat && hasTWPlat) {
+    if (hasKickChat) {
+      datasets.push({
+        label: DS.KICK_CHAT,
+        hidden: hiddenDatasets.has(DS.KICK_CHAT),
+        data: snapshotData.map(s => ({ x: s.x, y: s.kickMpm })),
+        type: 'line',
+        borderColor: '#53fc18',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    // Combined -- sum of every platform with data. Null at a point only when all
+    // present platforms are missing that sample; otherwise treat a missing side as
+    // 0. Only shown when 2+ platforms are present (a single-platform total would
+    // duplicate that platform's line, mirroring Total Active Chatters).
+    if ([hasYTChat, hasTWChat, hasKickChat].filter(Boolean).length >= 2) {
       datasets.push({
         label: DS.TOTAL_CHAT,
         hidden: hiddenDatasets.has(DS.TOTAL_CHAT),
         data: snapshotData.map(s => ({
           x: s.x,
-          y: (s.ytMpm == null && s.twMpm == null) ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0),
+          y: (s.ytMpm == null && s.twMpm == null && s.kickMpm == null)
+            ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0) + (s.kickMpm ?? 0),
         })),
         type: 'line',
-        borderColor: '#4caf50',
+        borderColor: '#82b1ff',
         backgroundColor: 'transparent',
         borderWidth: 2, borderDash: [12, 3],
         pointRadius: 0, pointHoverRadius: 4,
@@ -1815,9 +1920,11 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
                 case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
+                case DS.KICK_CHAT:          return ` Kick chat: ${y.toFixed(1)} mpm`;
                 case DS.TOTAL_CHAT:         return ` Total chat: ${y.toFixed(1)} mpm`;
                 case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(y).toLocaleString()}`;
                 case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.KICK_ACTIVE_CHATTERS: return ` Kick active chatters: ${Math.round(y).toLocaleString()}`;
                 case DS.TOTAL_ACTIVE_CHATTERS: return ` Total active chatters: ${Math.round(y).toLocaleString()}`;
                 default:                    return ` ${item.dataset.label}: ${Math.round(y).toLocaleString()} viewers`;
               }
@@ -1860,7 +1967,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         yViewers: {
           type: 'linear',
           position: 'left',
-          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.TOTAL_VIEWERS]),
+          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS]),
           bounds: 'data', // keep smoothYFit's exact min/max; 'ticks' (default) would round them to tick steps and re-snap the scale
           grid: { color: t.chartGrid },
           ticks: {
@@ -1880,7 +1987,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         yActiveChatters: {
           type: 'linear',
           position: 'left',
-          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS]),
+          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS]),
           bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
@@ -1915,11 +2022,11 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         yChatRate: {
           type: 'linear',
           position: 'right',
-          display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.TOTAL_CHAT]),
+          display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT]),
           bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#4caf50',
+            color: '#82b1ff',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: intTick(v => v.toLocaleString()),
             precision: 0,
@@ -1928,7 +2035,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           title: {
             display: true,
             text: 'msg / min',
-            color: '#4caf50',
+            color: '#82b1ff',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
         },
@@ -2157,76 +2264,56 @@ function setupScrollbar() {
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
-function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasYTPlat, hasTWPlat) {
+function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {
   const container = document.getElementById('chartLegend');
   if (!container || !currentChart) return;
 
-  // Each entry: { label, type ('line'|'dashed'|'bar'), color, dsLabel }
-  // Grouped by category; dividers are inserted only between non-empty groups
-  // so a stream missing a whole category never gets a stray separator.
-  // Order: Donations | Total/YT/TW Viewers | Active Chatters | Total/YT/TW Chat
+  // Each category is a column: { title, items }. title=null renders header-less
+  // (single-item Donations / Pausing columns); empty columns are dropped. A
+  // "Total" entry appears only when 2+ platforms in that category have data,
+  // matching the dataset gating in buildChart.
+  // Item: { label, type ('line'|'dashed'|'dotted'|'bar'), color, ds } or { special:'pausing' }.
   const groups = [];
 
   const gDonations = [];
   if (hasDonations) gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
-  groups.push(gDonations);
+  groups.push({ title: null, items: gDonations });
 
   const gViewers = [];
-  if (hasYTViewers && hasTWViewers) gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
-  if (hasYTViewers)          gViewers.push({ label: 'YT Viewers',    type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
-  if (hasTWViewers)          gViewers.push({ label: 'TW Viewers',    type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
-  groups.push(gViewers);
+  if ([hasYTViewers, hasTWViewers, hasKickViewers].filter(Boolean).length >= 2)
+    gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasYTViewers)   gViewers.push({ label: 'YT Viewers',   type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
+  if (hasTWViewers)   gViewers.push({ label: 'TW Viewers',   type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasKickViewers) gViewers.push({ label: 'Kick Viewers', type: 'line', color: '#53fc18', ds: DS.KICK_VIEWERS });
+  groups.push({ title: 'Viewers', items: gViewers });
 
   const gActive = [];
-  if (hasActiveYT && hasActiveTW) gActive.push({ label: 'Total Active Chatters', type: 'dotted', color: '#909090', ds: DS.TOTAL_ACTIVE_CHATTERS });
-  if (hasActiveYT) gActive.push({ label: 'YT Active Chatters', type: 'dotted', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
-  if (hasActiveTW) gActive.push({ label: 'TW Active Chatters', type: 'dotted', color: '#6650d8', ds: DS.TW_ACTIVE_CHATTERS });
-  groups.push(gActive);
+  if ([hasActiveYT, hasActiveTW, hasActiveKick].filter(Boolean).length >= 2)
+    gActive.push({ label: 'Total Active Chatters', type: 'dotted', color: '#909090', ds: DS.TOTAL_ACTIVE_CHATTERS });
+  if (hasActiveYT)   gActive.push({ label: 'YT Active Chatters',   type: 'dotted', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW)   gActive.push({ label: 'TW Active Chatters',   type: 'dotted', color: '#6650d8', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasActiveKick) gActive.push({ label: 'Kick Active Chatters', type: 'dotted', color: '#53fc18', ds: DS.KICK_ACTIVE_CHATTERS });
+  groups.push({ title: 'Active Chatters', items: gActive });
 
   const gChat = [];
   if (hasChatRate) {
-    if (hasYTPlat && hasTWPlat) gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#4caf50', ds: DS.TOTAL_CHAT });
-    if (hasYTPlat) gChat.push({ label: 'YT Msg/Min', type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
-    if (hasTWPlat) gChat.push({ label: 'TW Msg/Min', type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
+    if ([hasYTChat, hasTWChat, hasKickChat].filter(Boolean).length >= 2)
+      gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#82b1ff', ds: DS.TOTAL_CHAT });
+    if (hasYTChat)   gChat.push({ label: 'YT Msg/Min',   type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
+    if (hasTWChat)   gChat.push({ label: 'TW Msg/Min',   type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
+    if (hasKickChat) gChat.push({ label: 'Kick Msg/Min', type: 'dashed', color: '#53fc18', ds: DS.KICK_CHAT });
   }
-  groups.push(gChat);
+  groups.push({ title: 'Msg/Min', items: gChat });
 
   // Pausing band (non-dataset overlay) -- only when this stream has frame data.
   const gPausing = [];
-  if (currentChart.$hasPausingData) gPausing.push({ label: 'Pausing', special: 'pausing' });
-  groups.push(gPausing);
-
-  const items = [];
-  for (const g of groups.filter(g => g.length > 0)) {
-    if (items.length > 0) items.push({ label: null }); // divider between groups
-    items.push(...g);
-  }
+  if (currentChart.$hasPausingData) gPausing.push({ special: 'pausing' });
+  groups.push({ title: null, items: gPausing });
 
   container.innerHTML = '';
 
-  for (const item of items) {
-    if (item.label === null) {
-      // Divider
-      const div = document.createElement('span');
-      div.className = 'legend-divider';
-      container.appendChild(div);
-      continue;
-    }
-
-    if (item.special === 'pausing') {
-      // Non-dataset overlay: green play / yellow pause glyphs; toggles the band.
-      const span = document.createElement('span');
-      span.className = 'legend-item';
-      span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">&#8741;</span>`;
-      if (!currentChart.$pausingBandVisible()) span.classList.add('hidden');
-      span.addEventListener('click', () => {
-        const visible = currentChart.$togglePausingBand();
-        span.classList.toggle('hidden', !visible);
-      });
-      container.appendChild(span);
-      continue;
-    }
-
+  // One dataset toggle element (indicator + label + click-to-hide/persist).
+  function makeItem(item) {
     const span = document.createElement('span');
     span.className = 'legend-item';
     span.dataset.ds = item.ds;
@@ -2259,7 +2346,37 @@ function buildLegend(hasYTViewers, hasTWViewers, hasChatRate, hasDonations, hasA
       syncAxisDisplay();
     });
 
-    container.appendChild(span);
+    return span;
+  }
+
+  // Non-dataset Pausing overlay toggle: green play / yellow pause glyphs.
+  function makePausing() {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">&#8741;</span>`;
+    if (!currentChart.$pausingBandVisible()) span.classList.add('hidden');
+    span.addEventListener('click', () => {
+      const visible = currentChart.$togglePausingBand();
+      span.classList.toggle('hidden', !visible);
+    });
+    return span;
+  }
+
+  // Render each non-empty category as a vertical column; columns sit side-by-side.
+  for (const group of groups) {
+    if (group.items.length === 0) continue;
+    const col = document.createElement('div');
+    col.className = 'legend-group';
+    if (group.title) {
+      const h = document.createElement('span');
+      h.className = 'legend-group-title';
+      h.textContent = group.title;
+      col.appendChild(h);
+    }
+    for (const item of group.items) {
+      col.appendChild(item.special === 'pausing' ? makePausing() : makeItem(item));
+    }
+    container.appendChild(col);
   }
 }
 
