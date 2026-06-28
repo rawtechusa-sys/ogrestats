@@ -2,8 +2,8 @@
   "stream_id": "a_stream_for_robust_men_2026-06-28_012450",
   "slug": "a_stream_for_robust_men",
   "title": "A Stream For Robust Men",
-  "start_ts": 1782618913,
-  "end_ts": 1782620940,
+  "start_ts": 1782609898,
+  "end_ts": 1782618604,
   "platforms": [
     "twitch",
     "youtube",
@@ -11,6 +11,12 @@
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
+  "source_vod_id": "FS52s398SA0",
   "youtube_archive_id": "Epxf8mV5QVI",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "segments": [
+    { "archive_id": "LviHf6DAzOw", "start_ts": 1782609898 },
+    { "archive_id": "UOkCh10Xkvw", "start_ts": 1782612738 },
+    { "archive_id": "pgiE0__Zg2M", "start_ts": 1782614062 }
+  ]
 }
