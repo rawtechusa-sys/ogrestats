@@ -1107,6 +1107,22 @@ async function loadStream(streamId) {
       cards += card('Peak Active Chatters', activeValue, platformSub(activeParts));
     }
 
+    // ── Paused card ──
+    // Per-minute snapshots carry source_paused (fraction of in-view samples that
+    // minute the source video was paused) and in_frame_view (fraction of the
+    // minute the source was actually on screen). Weight each minute's paused
+    // fraction by its on-screen time so the headline % = paused video time ÷
+    // total video-on-screen time, both shown beneath. Only minutes with a
+    // determinable pause state (source_paused != null) count toward either.
+    const pausedSnaps = snapshots.filter(s => s.source_paused != null && s.in_frame_view != null);
+    const videoSecs  = pausedSnaps.reduce((a, s) => a + s.in_frame_view * 60, 0);
+    const pausedSecs = pausedSnaps.reduce((a, s) => a + s.in_frame_view * s.source_paused * 60, 0);
+    if (videoSecs > 0) {
+      const pausedPct = (pausedSecs / videoSecs) * 100;
+      cards += card('Paused', pausedPct.toFixed(1) + '%',
+        `Video ${fmtDuration(videoSecs)} · Paused ${fmtDuration(pausedSecs)}`);
+    }
+
     // ── VOD card ──
     // Original = the source streamer's own VOD (link per source platform).
     // Archive = OUR durable copy: prefer our YouTube rebroadcast (unless it's merely
