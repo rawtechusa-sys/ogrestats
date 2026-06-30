@@ -1432,34 +1432,28 @@ function syncXWindow(chart) {
   chart.$xWindow = { min: x.min, max: x.max };
 }
 
-// Distance-weighted [min,max] for one y-axis over its currently-visible datasets.
-// Returns null when the axis has no usable data (caller then leaves Chart's default).
-function smoothYExtent(chart, axisId) {
-  // Resolve the intended x-window. $xWindow is stashed wherever the window is driven
-  // (pan/zoom/reset); fall back to the live x-scale, then to the full data extent so
-  // the very first render (before the scrollbar is wired) matches today's full fit.
-  let xmin, xmax;
-  if (chart.$xWindow) { xmin = chart.$xWindow.min; xmax = chart.$xWindow.max; }
-  else if (chart.scales.x && isFinite(chart.scales.x.min)) { xmin = chart.scales.x.min; xmax = chart.scales.x.max; }
+// Set true (or `currentChart.$smoothYDebug = true` from devtools) to cross-check
+// the bounded fast path against the linear reference on every call and warn on any
+// divergence. Off in production -- the bounded path is proven equivalent below.
+const SMOOTH_Y_DEBUG = false;
 
-  const sets = [];
-  chart.data.datasets.forEach((ds, i) => {
-    if (ds.yAxisID === axisId && chart.isDatasetVisible(i)) sets.push(ds.data);
-  });
-  if (sets.length === 0) return null;
+// First index i with xs[i] >= target (in [0, xs.length]). xs is sorted ascending.
+function lowerBound(xs, target) {
+  let lo = 0, hi = xs.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (xs[mid] < target) lo = mid + 1; else hi = mid; }
+  return lo;
+}
+// First index i with xs[i] > target (in [0, xs.length]).
+function upperBound(xs, target) {
+  let lo = 0, hi = xs.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (xs[mid] <= target) lo = mid + 1; else hi = mid; }
+  return lo;
+}
 
-  // If we still have no x-window, fit the full extent of the visible data.
-  if (xmin == null || !isFinite(xmin) || !isFinite(xmax)) {
-    let lo = Infinity, hi = -Infinity;
-    for (const data of sets) for (const p of data) {
-      if (p.y == null || Number.isNaN(p.y)) continue;
-      if (p.y < lo) lo = p.y;
-      if (p.y > hi) hi = p.y;
-    }
-    if (lo > hi) return null;
-    return padExtent(lo, hi);
-  }
-
+// Reference implementation: a full linear scan of every point of every visible set.
+// O(N x datasets). Used as the fallback when sets don't share the chart's x-grid,
+// and as the oracle for SMOOTH_Y_DEBUG. The bounded path returns identical results.
+function windowExtentLinear(sets, xmin, xmax) {
   const R = xmax - xmin;
   const M = MARGIN_FRAC * R;
 
@@ -1516,6 +1510,130 @@ function smoothYExtent(chart, axisId) {
   }
 
   return padExtent(yMin, yMax);
+}
+
+// Bounded fast path: identical result to windowExtentLinear, but binary-searches the
+// shared x-grid `xs` (data[i].x === xs[i] for every set) so it only touches the visible
+// window plus the off-screen margin band [edge-M, edge]. Points beyond M have falloff
+// weight 0 (skipped today too), so excluding them changes nothing; min/max are
+// order-independent, so scanning point-major instead of dataset-major is equivalent.
+function windowExtentBounded(sets, xs, xmin, xmax) {
+  const n = xs.length;
+  const R = xmax - xmin;
+  const M = MARGIN_FRAC * R;
+
+  const iLo   = lowerBound(xs, xmin);   // first index inside the window (x >= xmin)
+  const iHiEx = upperBound(xs, xmax);   // one past the window (first x > xmax)
+
+  // Pass 1: interior extent, scanning only [iLo, iHiEx). haveInterior tracks a real
+  // non-null sample (an all-null interior must still fall through to the bracket seed).
+  let visMin = Infinity, visMax = -Infinity, haveInterior = false;
+  for (const data of sets) {
+    for (let i = iLo; i < iHiEx; i++) {
+      const y = data[i].y;
+      if (y == null || Number.isNaN(y)) continue;
+      haveInterior = true;
+      if (y < visMin) visMin = y;
+      if (y > visMax) visMax = y;
+    }
+  }
+
+  if (!haveInterior) {
+    // Nearest non-null sample just left, then just right, of the window. Walking
+    // outward from the boundary and taking the first set with a value at that index
+    // reproduces the linear scan's nearest-by-distance, iteration-order tiebreak.
+    let leftY = null, rightY = null;
+    for (let i = iLo - 1; i >= 0 && leftY === null; i--) {
+      for (const data of sets) {
+        const y = data[i].y;
+        if (y != null && !Number.isNaN(y)) { leftY = y; break; }
+      }
+    }
+    for (let i = iHiEx; i < n && rightY === null; i++) {
+      for (const data of sets) {
+        const y = data[i].y;
+        if (y != null && !Number.isNaN(y)) { rightY = y; break; }
+      }
+    }
+    const seeds = [];
+    if (leftY !== null)  seeds.push(leftY);
+    if (rightY !== null) seeds.push(rightY);
+    if (seeds.length === 0) return null;
+    visMin = Math.min(...seeds);
+    visMax = Math.max(...seeds);
+  }
+
+  // Pass 2: off-screen falloff, restricted to the margin bands. leftStart/rightEnd
+  // bound the scan to x within M of the edge; the w === 0 guard still drops the exact
+  // boundary, so the band may be a harmless superset of the contributing points.
+  let yMin = visMin, yMax = visMax;
+  const apply = (i, d) => {
+    const w = M > 0 ? falloff(d / M) : 0;
+    if (w === 0) return;
+    for (const data of sets) {
+      const y = data[i].y;
+      if (y == null || Number.isNaN(y)) continue;
+      if (y > visMax) {
+        const cand = visMax + w * (y - visMax);
+        if (cand > yMax) yMax = cand;
+      } else if (y < visMin) {
+        const cand = visMin + w * (y - visMin);
+        if (cand < yMin) yMin = cand;
+      }
+    }
+  };
+  const leftStart = lowerBound(xs, xmin - M);
+  for (let i = leftStart; i < iLo; i++) apply(i, xmin - xs[i]);
+  const rightEnd = upperBound(xs, xmax + M);
+  for (let i = iHiEx; i < rightEnd; i++) apply(i, xs[i] - xmax);
+
+  return padExtent(yMin, yMax);
+}
+
+// Distance-weighted [min,max] for one y-axis over its currently-visible datasets.
+// Returns null when the axis has no usable data (caller then leaves Chart's default).
+function smoothYExtent(chart, axisId) {
+  // Resolve the intended x-window. $xWindow is stashed wherever the window is driven
+  // (pan/zoom/reset); fall back to the live x-scale, then to the full data extent so
+  // the very first render (before the scrollbar is wired) matches today's full fit.
+  let xmin, xmax;
+  if (chart.$xWindow) { xmin = chart.$xWindow.min; xmax = chart.$xWindow.max; }
+  else if (chart.scales.x && isFinite(chart.scales.x.min)) { xmin = chart.scales.x.min; xmax = chart.scales.x.max; }
+
+  const sets = [];
+  chart.data.datasets.forEach((ds, i) => {
+    if (ds.yAxisID === axisId && chart.isDatasetVisible(i)) sets.push(ds.data);
+  });
+  if (sets.length === 0) return null;
+
+  // If we still have no x-window, fit the full extent of the visible data.
+  if (xmin == null || !isFinite(xmin) || !isFinite(xmax)) {
+    let lo = Infinity, hi = -Infinity;
+    for (const data of sets) for (const p of data) {
+      if (p.y == null || Number.isNaN(p.y)) continue;
+      if (p.y < lo) lo = p.y;
+      if (p.y > hi) hi = p.y;
+    }
+    if (lo > hi) return null;
+    return padExtent(lo, hi);
+  }
+
+  // Fast path requires the shared x-grid with every visible set aligned to it.
+  const xs = chart.$xs;
+  let aligned = Array.isArray(xs) && xs.length > 0;
+  if (aligned) for (const data of sets) { if (data.length !== xs.length) { aligned = false; break; } }
+  if (!aligned) return windowExtentLinear(sets, xmin, xmax);
+
+  const result = windowExtentBounded(sets, xs, xmin, xmax);
+
+  if (SMOOTH_Y_DEBUG || chart.$smoothYDebug) {
+    const ref = windowExtentLinear(sets, xmin, xmax);
+    const close = (a, b) => (a == null && b == null) ||
+      (a != null && b != null && Math.abs(a.min - b.min) < 1e-9 && Math.abs(a.max - b.max) < 1e-9);
+    if (!close(result, ref)) console.warn('[smoothYExtent] bounded != linear', { axisId, xmin, xmax, result, ref });
+  }
+
+  return result;
 }
 
 // Add headroom and guarantee min < max for a finite [lo,hi] pair.
@@ -1878,6 +1996,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      // Data is already pre-sorted, unique-by-x {x,y} (the shared snapshot grid),
+      // so skip Chart.js's per-update parse/sort pass entirely.
+      parsing: false,
+      normalized: true,
       interaction: { mode: 'index', intersect: false },
       animation: { duration: 400 },
       plugins: {
@@ -2095,6 +2217,12 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       },
     }],
   });
+
+  // Shared sorted x-grid for the whole chart: every dataset is built from
+  // snapshotData.map(s => ({x: s.x, ...})), so all data arrays share these x
+  // values index-for-index. smoothYExtent binary-searches this once per frame to
+  // bound its scan to the visible window instead of walking every series in full.
+  currentChart.$xs = snapshotData.map(s => s.x);
 
   // Legend hooks for the (non-dataset) Pausing band.
   currentChart.$hasPausingData = pausingSegments.length > 0;
