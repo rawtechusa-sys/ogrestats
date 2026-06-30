@@ -2311,7 +2311,7 @@ function setupScrollbar() {
   // Smoothed apply -- used for scrolling/panning. Drags are damped (less
   // sensitive) and the view eases toward the target instead of snapping.
   const PAN_SENSITIVITY = 0.6; // < 1 => view moves less than the cursor
-  const PAN_SMOOTH = 0.3;      // fraction eased toward target per frame
+  const PAN_SMOOTH = 0.5;      // fraction eased toward target per frame (higher => snappier, fewer full updates per gesture)
   const ZOOM_STEP = 0.0007;    // wheel-zoom sensitivity (smaller => less sensitive)
   let targetMin = null, targetMax = null, rafId = null;
 
