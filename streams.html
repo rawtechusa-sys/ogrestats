@@ -1729,12 +1729,32 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
   // Time label for the chart x-axis ticks and tooltip, in the active timezone
-  // (Ogre/Local/UTC -- see config.js withTZ).
+  // (Ogre/Local/UTC -- see config.js withTZ). Chart.js reformats every tick on every
+  // pan/zoom frame, so cache the Intl formatter (rebuilt only when the TZ changes) and
+  // memoize per millisecond rather than constructing a formatter on each call.
+  let _dtfTz = false, _dtf = null;
+  const _dtMemo = new Map();
   function fmtET(ms) {
-    return new Date(ms).toLocaleTimeString('en-US', withTZ({
-      hour: 'numeric', minute: '2-digit',
-    }));
+    const tz = getTimeZone();
+    if (tz !== _dtfTz) {
+      _dtfTz = tz;
+      _dtf = new Intl.DateTimeFormat('en-US', withTZ({ hour: 'numeric', minute: '2-digit' }));
+      _dtMemo.clear();
+    }
+    let s = _dtMemo.get(ms);
+    if (s === undefined) { s = _dtf.format(new Date(ms)); _dtMemo.set(ms, s); }
+    return s;
   }
+
+  // Cached + memoized integer tick formatters for the y-axes. Same reason as fmtET:
+  // ticks are reformatted every frame, and a fresh Intl.NumberFormat per call (which is
+  // what Number.toLocaleString() does) dominated the pan profile. One shared formatter
+  // (default locale, matching the old toLocaleString) plus a per-value memo.
+  const _tickNumFmt = new Intl.NumberFormat();
+  const _numMemo = new Map();
+  const fmtTickInt = v => { let s = _numMemo.get(v); if (s === undefined) { s = _tickNumFmt.format(v); _numMemo.set(v, s); } return s; };
+  const _dollarMemo = new Map();
+  const fmtTickDollar = v => { let s = _dollarMemo.get(v); if (s === undefined) { s = '$' + _tickNumFmt.format(v); _dollarMemo.set(v, s); } return s; };
 
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
   const datasets = [];
@@ -2100,7 +2120,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           ticks: {
             color: '#40c4ff',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: intTick(v => v.toLocaleString()),
+            callback: intTick(fmtTickInt),
             precision: 0,
             maxTicksLimit: 6,
           },
@@ -2120,7 +2140,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           ticks: {
             color: '#909090',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: intTick(v => v.toLocaleString()),
+            callback: intTick(fmtTickInt),
             precision: 0,
             maxTicksLimit: 5,
           },
@@ -2140,7 +2160,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           ticks: {
             color: '#e8c020',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: intTick(v => '$' + v.toLocaleString()),
+            callback: intTick(fmtTickDollar),
             precision: 0,
             maxTicksLimit: 5,
           },
@@ -2155,7 +2175,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           ticks: {
             color: '#82b1ff',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
-            callback: intTick(v => v.toLocaleString()),
+            callback: intTick(fmtTickInt),
             precision: 0,
             maxTicksLimit: 5,
           },
