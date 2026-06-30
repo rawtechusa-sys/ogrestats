@@ -329,6 +329,7 @@
     gap: 22px;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
   }
 
   /* Each metric category is a vertical column; columns sit side-by-side. */
@@ -2367,12 +2368,6 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
     if (group.items.length === 0) continue;
     const col = document.createElement('div');
     col.className = 'legend-group';
-    if (group.title) {
-      const h = document.createElement('span');
-      h.className = 'legend-group-title';
-      h.textContent = group.title;
-      col.appendChild(h);
-    }
     for (const item of group.items) {
       col.appendChild(item.special === 'pausing' ? makePausing() : makeItem(item));
     }
