@@ -11,5 +11,9 @@
   "source_channel": "rtustreams",
   "source_platform": "youtube",
   "youtube_archive_id": "32GgEniDpXI",
+  "segments": [
+    { "archive_id": "32GgEniDpXI", "start_ts": 1782748213 },
+    { "archive_id": "ySYzzPO5Rxg", "start_ts": 1782791084 }
+  ],
   "archive_is_source_vod": false
 }
