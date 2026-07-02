@@ -2,13 +2,15 @@
   "stream_id": "lets_discuss_sensitive_men_2026-07-02_003053",
   "slug": "lets_discuss_sensitive_men",
   "title": "Let's Discuss Sensitive Men",
-  "start_ts": 1782952253,
-  "end_ts": 1782952380,
+  "start_ts": 1782952412,
+  "end_ts": 1782971080,
   "platforms": [
-    "youtube",
     "twitch",
+    "youtube",
     "kick"
   ],
   "source_channel": "rtustreams",
-  "source_platform": "twitch"
+  "source_platform": "twitch",
+  "youtube_archive_id": "IEYUMqYUJSE",
+  "archive_is_source_vod": false
 }
