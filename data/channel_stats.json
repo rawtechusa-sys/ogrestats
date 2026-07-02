@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782612721,
+  "updated_ts": 1782952396,
   "counted_streams": [
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
@@ -808,7 +808,8 @@
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
     "a_friday_of_bi_lighting_2026-06-27_023038",
-    "a_stream_for_robust_men_2026-06-28_012450"
+    "a_stream_for_robust_men_2026-06-28_012450",
+    "lets_discuss_sensitive_men_2026-07-02_003053"
   ],
   "streams": {
     "a_short_but_robust_stream_2026-06-26_013347": {
@@ -14528,6 +14529,23 @@
       "avg_viewers": 255.85,
       "avg_chat_mpm": 16.57,
       "avg_active_chatters": 36.81,
+      "percent_paused": null
+    },
+    "lets_discuss_sensitive_men_2026-07-02_003053": {
+      "stream_id": "lets_discuss_sensitive_men_2026-07-02_003053",
+      "title": "Let's Discuss Sensitive Men",
+      "start_ts": 1782952253,
+      "end_ts": 1782952380,
+      "duration_sec": 127,
+      "youtube_archive_id": null,
+      "source_platform": "twitch",
+      "total_donations_usd": 5.99,
+      "donation_count": 1,
+      "donations_per_min": 2.8299,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 13.5,
+      "avg_active_chatters": 13.5,
       "percent_paused": null
     }
   }
