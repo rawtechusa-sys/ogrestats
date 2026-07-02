@@ -1205,16 +1205,19 @@ async function loadStream(streamId) {
         s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
         || s.kick_messages_per_minute != null
       );
-      const hasActiveYT   = hasYT   && snapshots.some(s => s.active_youtube_chatters != null);
-      const hasActiveTW   = hasTW   && snapshots.some(s => s.active_twitch_chatters  != null);
-      const hasActiveKick = hasKick && snapshots.some(s => s.active_kick_chatters    != null);
+      // Gate on a truthy value, not != null: a platform that is 0 (or null)
+      // across every snapshot has no real activity, so its line is never drawn
+      // and its legend toggle never appears.
+      const hasActiveYT   = hasYT   && snapshots.some(s => s.active_youtube_chatters);
+      const hasActiveTW   = hasTW   && snapshots.some(s => s.active_twitch_chatters);
+      const hasActiveKick = hasKick && snapshots.some(s => s.active_kick_chatters);
       // Gate each Msg/Min line on actual data, not just platform membership: the
       // backend now lists "kick" in platforms even for streams with no Kick chat,
       // which would otherwise show a dead toggle over an empty line. (Mirrors how
       // the Active Chatters group above gates per platform's data presence.)
-      const hasYTChat   = hasYT   && snapshots.some(s => s.youtube_messages_per_minute != null);
-      const hasTWChat   = hasTW   && snapshots.some(s => s.twitch_messages_per_minute  != null);
-      const hasKickChat = hasKick && snapshots.some(s => s.kick_messages_per_minute    != null);
+      const hasYTChat   = hasYT   && snapshots.some(s => s.youtube_messages_per_minute);
+      const hasTWChat   = hasTW   && snapshots.some(s => s.twitch_messages_per_minute);
+      const hasKickChat = hasKick && snapshots.some(s => s.kick_messages_per_minute);
 
       panel.innerHTML = `
         <div class="chart-header">
