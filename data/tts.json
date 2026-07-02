@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782612717,
+  "updated_ts": 1782952387,
   "counted_streams": [
     "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_short_but_robust_stream_2026-06-26_013347",
@@ -808,7 +808,8 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "a_stream_for_robust_men_2026-06-28_012450"
+    "a_stream_for_robust_men_2026-06-28_012450",
+    "lets_discuss_sensitive_men_2026-07-02_003053"
   ],
   "commands": {
     "phil": 104,
@@ -9419,6 +9420,16 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "youtube"
+    },
+    "lets_discuss_sensitive_men_2026-07-02_003053": {
+      "title": "Let's Discuss Sensitive Men",
+      "start_ts": 1782952253,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
