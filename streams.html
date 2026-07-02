@@ -1039,9 +1039,11 @@ async function loadStream(streamId) {
     // snapshot. Treat those as "no data" (N/A, no viewer line) rather than 0.
     // Kick currently has no viewer field at all, so hasKickViewers stays false
     // (mirrors the Twitch path; lights up automatically if the backend adds one).
-    const hasYTViewers = snapshots.some(s => s.youtube != null);
-    const hasTWViewers = snapshots.some(s => s.twitch  != null);
-    const hasKickViewers = snapshots.some(s => s.kick  != null);
+    // A platform that is null or 0 across every snapshot counts as no data too,
+    // so its line is never drawn and its legend toggle never appears.
+    const hasYTViewers = snapshots.some(s => s.youtube);
+    const hasTWViewers = snapshots.some(s => s.twitch);
+    const hasKickViewers = snapshots.some(s => s.kick);
     const hasViewers   = hasYTViewers || hasTWViewers || hasKickViewers;
 
     main.innerHTML = '';
