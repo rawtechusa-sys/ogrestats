@@ -2527,7 +2527,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   function makePausing() {
     const span = document.createElement('span');
     span.className = 'legend-item';
-    span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">&#9720;</span>`;
+    span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">||</span>`;
     if (!currentChart.$pausingBandVisible()) span.classList.add('hidden');
     span.addEventListener('click', () => {
       const visible = currentChart.$togglePausingBand();
