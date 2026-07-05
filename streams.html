@@ -1080,9 +1080,15 @@ async function loadStream(streamId) {
       ]));
     cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
 
-    const avgYT   = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.youtube||0), 0) / snapshots.length) : 0;
-    const avgTW   = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.twitch ||0), 0) / snapshots.length) : 0;
-    const avgKick = snapshots.length ? Math.round(snapshots.reduce((s,x) => s + (x.kick   ||0), 0) / snapshots.length) : 0;
+    // Average over the samples that exist -- a null snapshot is a collector
+    // gap, not zero viewers, and counting it would drag the average down.
+    const avgOf = key => {
+      const vals = snapshots.map(s => s[key]).filter(v => v != null);
+      return vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0;
+    };
+    const avgYT   = avgOf('youtube');
+    const avgTW   = avgOf('twitch');
+    const avgKick = avgOf('kick');
     cards += card('Avg Viewers',
       hasViewers ? (avgYT + avgTW + avgKick).toLocaleString() : 'N/A',
       platformSub([
@@ -1688,9 +1694,9 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
 
   const snapshotData = snapshots.map(s => ({
     x:          s.ts * 1000,
-    yt:         s.youtube || 0,
-    tw:         s.twitch  || 0,
-    kick:       s.kick    || 0,
+    yt:         s.youtube ?? null,
+    tw:         s.twitch  ?? null,
+    kick:       s.kick    ?? null,
     ytMpm:      s.youtube_messages_per_minute ?? null,
     twMpm:      s.twitch_messages_per_minute  ?? null,
     kickMpm:    s.kick_messages_per_minute    ?? null,
@@ -1781,6 +1787,11 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   const datasets = [];
 
   // ── Viewer series ──
+  // A null viewer sample means the collector had no data for that minute, not
+  // zero viewers. Nulls stay null and spanGaps bridges them; the bridged
+  // segment is drawn dashed (gapDash) so interpolation is visible as such.
+  const gapDash = { borderDash: c => (c.p0.skip || c.p1.skip) ? [5, 5] : undefined };
+
   if (hasYTViewers && snapshotData.length > 0) {
     datasets.push({
       label: DS.YT_VIEWERS,
@@ -1790,7 +1801,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       borderColor: '#e84040',
       backgroundColor: 'rgba(232,64,64,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: true,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
       yAxisID: 'yViewers',
     });
   }
@@ -1804,7 +1815,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       borderColor: '#6650d8',
       backgroundColor: 'rgba(102,80,216,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: true,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
       yAxisID: 'yViewers',
     });
   }
@@ -1820,24 +1831,31 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       borderColor: '#53fc18',
       backgroundColor: 'rgba(83,252,24,0.08)',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: true,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
       yAxisID: 'yViewers',
     });
   }
 
-  // Total viewers -- shown when 2+ platforms have viewer data; sums every present
-  // platform (a missing platform contributes 0). A single-platform total would
-  // just duplicate that platform's line, so it's skipped.
-  if ([hasYTViewers, hasTWViewers, hasKickViewers].filter(Boolean).length >= 2 && snapshotData.length > 0) {
+  // Total viewers -- shown when 2+ platforms have viewer data; sums the platforms
+  // that have data this stream. An index where any of them is null becomes a gap
+  // (bridged by spanGaps like the per-platform lines) -- summing the survivors
+  // would understate the total exactly where a collector dropped out.
+  const totalViewerKeys = [hasYTViewers && 'yt', hasTWViewers && 'tw', hasKickViewers && 'kick'].filter(Boolean);
+  if (totalViewerKeys.length >= 2 && snapshotData.length > 0) {
     datasets.push({
       label: DS.TOTAL_VIEWERS,
       hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
-      data: snapshotData.map(s => ({ x: s.x, y: s.yt + s.tw + s.kick })),
+      data: snapshotData.map(s => ({
+        x: s.x,
+        y: totalViewerKeys.some(k => s[k] == null)
+          ? null
+          : totalViewerKeys.reduce((sum, k) => sum + s[k], 0),
+      })),
       type: 'line',
       borderColor: '#40c4ff',
       backgroundColor: 'transparent',
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
-      tension: 0.3, fill: false,
+      tension: 0.3, fill: false, spanGaps: true, segment: gapDash,
       yAxisID: 'yViewers',
     });
   }
