@@ -12,5 +12,8 @@
   "source_platform": "youtube",
   "source_vod_id": "1a-8ytJJZk4",
   "youtube_archive_id": "Ydoy0lIhWo4",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "segments": [
+    { "archive_id": "Ydoy0lIhWo4", "start_ts": 1783187424 }
+  ]
 }
