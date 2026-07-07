@@ -682,10 +682,11 @@ function escHtml(str) {
 async function loadStreamList() {
   const listEl = document.getElementById('streamList');
   try {
-    // index.json carries no titles; channel_stats.json (a dict keyed by stream_id)
-    // has them for every stream in one fetch. Fetch both in parallel and build an
-    // id->title map. A failed/blocked channel_stats must not break the list -- titles
-    // just degrade to de-slugified ids.
+    // Fat index entries carry title, but legacy/pre-backfill entries may not;
+    // channel_stats.json (a dict keyed by stream_id) has them for every stream in
+    // one fetch, so fetch both in parallel and build an id->title fallback map. A
+    // failed/blocked channel_stats must not break the list -- titles just degrade
+    // to de-slugified ids.
     const [index, titleMap] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/index.json`),
       fetchJSON(`${RAW}/data/channel_stats.json`)
@@ -752,9 +753,9 @@ async function loadStreamList() {
       const lengthPart = (meta?.end_ts && meta?.start_ts)
         ? fmtDuration(meta.end_ts - meta.start_ts) : '';
 
-      // index.json has no title; prefer channel_stats.json, fall back to a
-      // de-slugified id (the id is a lossy slug, but better than nothing).
-      const title = titleMap.get(id) || id.replace(/_/g, ' ');
+      // Fat index entries carry title; fall back to channel_stats.json (legacy
+      // entries / pre-backfill), then a de-slugified id (lossy, but better than nothing).
+      const title = (meta && meta.title) || titleMap.get(id) || id.replace(/_/g, ' ');
 
       div.innerHTML = `
         <div class="stream-item-meta">
