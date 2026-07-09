@@ -2,15 +2,23 @@
   "stream_id": "the_members_only_bloodborne_redux_stream_part_1_2026-07-09_002851",
   "slug": "the_members_only_bloodborne_redux_stream_part_1",
   "title": "The Members-Only Bloodborne Redux Stream (Part 1)",
-  "start_ts": 1783556931,
-  "end_ts": 1783560432,
+  "start_ts": 1783556428,
+  "end_ts": 1783566157,
   "platforms": [
-    "youtube",
-    "twitch"
+    "kick",
+    "twitch",
+    "youtube"
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
   "source_vod_id": "14xpiKeA8CM",
   "youtube_archive_id": "o4vR0uY9kfY",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "o4vR0uY9kfY",
+      "start_ts": 1783556428
+    }
+  ]
 }
