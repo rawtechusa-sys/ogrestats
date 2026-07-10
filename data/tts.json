@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1782952387,
+  "updated_ts": 1783652150,
   "counted_streams": [
     "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_short_but_robust_stream_2026-06-26_013347",
@@ -809,7 +809,8 @@
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
     "a_stream_for_robust_men_2026-06-28_012450",
-    "lets_discuss_sensitive_men_2026-07-02_003053"
+    "lets_discuss_sensitive_men_2026-07-02_003053",
+    "rtustreams_2026-07-10_025409"
   ],
   "commands": {
     "phil": 104,
@@ -9425,6 +9426,16 @@
       "title": "Let's Discuss Sensitive Men",
       "start_ts": 1782952253,
       "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "rtustreams_2026-07-10_025409": {
+      "title": "rtustreams",
+      "start_ts": 1783652049,
+      "youtube_archive_id": "FT2Also368o",
       "archive_org_id": null,
       "archive_start_ts": null,
       "segments": null,
