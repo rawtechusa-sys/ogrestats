@@ -3,10 +3,10 @@
   "slug": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters",
   "title": "Let's Discuss Shameless, Lying, Earthworm Jim Resembling Grifters",
   "start_ts": 1783645211,
-  "end_ts": 1783659769,
+  "end_ts": 1783662483,
   "platforms": [
-    "twitch",
     "kick",
+    "twitch",
     "youtube"
   ],
   "source_channel": "rtustreams",
@@ -24,8 +24,12 @@
     {
       "archive_id": "_xKfLK-6rVQ",
       "start_ts": 1783659467
+    },
+    {
+      "archive_id": "0CacZ8kCMhI",
+      "start_ts": 1783659786
     }
   ],
-  "youtube_archive_id": "_xKfLK-6rVQ",
+  "youtube_archive_id": "0CacZ8kCMhI",
   "archive_is_source_vod": false
 }
