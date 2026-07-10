@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1783652161,
+  "updated_ts": 1783662502,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -1730,6 +1730,12 @@
       "count": 101000,
       "source": "snapshot",
       "stream_id": "rtustreams_2026-07-10_025409"
+    },
+    {
+      "ts": 1783662483,
+      "count": 101000,
+      "source": "snapshot",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000"
     }
   ]
 }
