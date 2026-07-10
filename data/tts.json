@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1783652150,
+  "updated_ts": 1783662491,
   "counted_streams": [
     "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_short_but_robust_stream_2026-06-26_013347",
@@ -810,18 +810,19 @@
     "the_livestreams_return",
     "a_stream_for_robust_men_2026-06-28_012450",
     "lets_discuss_sensitive_men_2026-07-02_003053",
-    "rtustreams_2026-07-10_025409"
+    "rtustreams_2026-07-10_025409",
+    "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000"
   ],
   "commands": {
-    "phil": 104,
-    "stan": 67,
+    "phil": 118,
+    "stan": 73,
     "linus": 5,
-    "masterchief": 36,
-    "harman": 27,
+    "masterchief": 39,
+    "harman": 31,
     "girlfriend": 2,
-    "trump": 48,
+    "trump": 52,
     "tate": 3,
-    "eric": 43,
+    "eric": 46,
     "moist": 3,
     "s": 1,
     "hobo": 4,
@@ -845,9 +846,9 @@
     "rich": 29,
     "phile": 1,
     "dagoth": 2,
-    "emoguy": 1,
+    "emoguy": 2,
     "phill": 3,
-    "doom": 5,
+    "doom": 6,
     "something": 2,
     "glorious": 1,
     "hence": 1,
@@ -1349,7 +1350,8 @@
     "darkshadowtechusa": 1,
     "w": 2,
     "dog": 1,
-    "homer": 1
+    "homer": 1,
+    "tired": 1
   },
   "streams": {
     "a_friday_of_bi_lighting_2026-06-27_023038": {
@@ -9441,9 +9443,352 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000": {
+      "title": "Let's Discuss Shameless, Lying, Earthworm Jim Resembling Grifters",
+      "start_ts": 1783645211,
+      "youtube_archive_id": "0CacZ8kCMhI",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "FT2Also368o",
+          "start_ts": 1783645211
+        },
+        {
+          "archive_id": "R2VNgN8k6PY",
+          "start_ts": 1783652175
+        },
+        {
+          "archive_id": "_xKfLK-6rVQ",
+          "start_ts": 1783659467
+        },
+        {
+          "archive_id": "0CacZ8kCMhI",
+          "start_ts": 1783659786
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1783655461,
+      "username": "supersonicstarrr",
+      "platform": "twitch",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Cheer100 Trump: Listen. Come guzzle my delicious Freedom Fuel and picture yourself drinking from my Cheeto-sized penis. Birds.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1783578583,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Just look at it as I stretch it !!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783578380,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Kat says I'm special so this food is for me!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783578376,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: you'll never understand because you don't have a sense of showmanship like I do !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783578209,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: I'll show em, they can't re-stream my crap!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783577658,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Free Cheesy Gordita Crunch! Free Cheesy Gordita Crunch! Stan: I'll free your cheesy gordita crunch Phil! Oh yeah baby! Oh wait here's sour cream",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1783577252,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: I am not playing on easy difficulty. Your banned for saying I am. So disrespectful",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783576904,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: I banned Raw Phil and ate raw Taco Bell meat",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783575425,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: The first time I saw Goodfellas,a friend lent me his dvd and didn\u2019t know I had to flip it so I thought the movie was over after spider gets shot",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783575281,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Eric: Stop reviewing tech and wrestle me Papa RTU!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1783574333,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "(door_knock) stan: rich RIIICH. baby let me in! aa",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1783574200,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: I banned Raw Phil! Stan: I filled Phil Raw!",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1783573441,
+      "username": "@Colin1994-v1v",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Trump: I am the CEO of of WiiiiiiiiiIIIIIIiiiiiiiii and Sonyyyyyyyyyyy my as HAHA",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1783572715,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Harman: Real women? I prefer Plush Pikachu! Chooo!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1783569603,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Stan: This game claps ass harder than I do! Ouch!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1783564750,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Harman: An Elden man who skips leg day is playing bloodborne for a bloody man's entertainment !The game would be better on Switch.Enjoy your FromSlop!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1783564359,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Tired: Wash your holl! A message from Bob Lavari. Stan: fah cough, Bob. you're not the boss of me!! I like to stay succulent, for Burnell The Bull!!",
+      "commands": [
+        "tired",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1783563003,
+      "username": "@ShadowFox10587O",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: we're born from the gout made men from the gout undone by the gout fear the old gout",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783561251,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Eric: \u30da\u30a4\u30a4\u30da\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4\u30a4!!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1783560781,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Masterchief: well men, I hit the big 25 today. crazy how time flys. these past 5 years since the rona have been insane. for all the wrong reasons. really wish this timeline would infuck Itself. boobs!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1783560270,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Don't feel bad dying I lose in Street Fighter all the time & I'm 1 of the best! Does your fast food burger ever lack robust urban garlic flavor?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783559525,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Find my optional DSP DLC where I fight a boss with you by shooting ropes all over it, then taking a dump on a bird",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783558955,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Trump: birds have bress they have very nice bress",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1783558480,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Harman: Bloodborne is not on Nintendo so it stinks",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1783558362,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: \u30aa\u3046\u30aa \u3046\u3092\u3092,\u30aa\u3092\u3092\u3092. \u3046\u30aa \u3092\u30aa\u30aa,\u3092\u3046\u30aa \u3046\u30aa\u30aa\u30aa. \u30f3\u30f3\u30f3\u3046\u30f3\u3046\u30f3\u3046\u30f3\u30f3!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783558357,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Harman: Sony's DRM is not as tough as Nintendos!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1783558323,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Emoguy: Ocean water.",
+      "commands": [
+        "emoguy"
+      ]
+    },
+    {
+      "ts": 1783558320,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Masterchief: modern gaming, is ass. Stan: oh yea daddy spread those cheeks. I want that hole! Trump: no daddy no again, why must I be shafted!",
+      "commands": [
+        "masterchief",
+        "stan",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1783558277,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Phil: Buy a PSN card & use a code to buy the game!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1783558122,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Masterchief: good evening fellow men of the councils. embrace the true power of the farts. no matter how warm they are or perish by them. Doom: dew it",
+      "commands": [
+        "masterchief",
+        "doom"
+      ]
+    },
+    {
+      "ts": 1783557844,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "message": "Eric: Listen, SmashGPT is definitely not racist.",
+      "commands": [
+        "eric"
+      ]
+    },
     {
       "ts": 1782612616,
       "username": "@EvistoSF",
