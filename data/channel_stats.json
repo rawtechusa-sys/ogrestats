@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1783652159,
+  "updated_ts": 1783662500,
   "counted_streams": [
     "a_short_but_robust_stream_2026-06-26_013347",
     "a_massive_mini_stream_2026-06-25_015919",
@@ -810,7 +810,8 @@
     "a_friday_of_bi_lighting_2026-06-27_023038",
     "a_stream_for_robust_men_2026-06-28_012450",
     "lets_discuss_sensitive_men_2026-07-02_003053",
-    "rtustreams_2026-07-10_025409"
+    "rtustreams_2026-07-10_025409",
+    "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000"
   ],
   "streams": {
     "a_short_but_robust_stream_2026-06-26_013347": {
@@ -14565,6 +14566,23 @@
       "avg_chat_mpm": 30.0,
       "avg_active_chatters": 20.0,
       "percent_paused": 47.3
+    },
+    "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000": {
+      "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
+      "title": "Let's Discuss Shameless, Lying, Earthworm Jim Resembling Grifters",
+      "start_ts": 1783645211,
+      "end_ts": 1783662483,
+      "duration_sec": 17272,
+      "youtube_archive_id": "0CacZ8kCMhI",
+      "source_platform": "twitch",
+      "total_donations_usd": 1090.67,
+      "donation_count": 162,
+      "donations_per_min": 3.7888,
+      "peak_viewers": 298,
+      "avg_viewers": 186.82,
+      "avg_chat_mpm": 5.92,
+      "avg_active_chatters": 14.1,
+      "percent_paused": 34.0
     }
   }
 }
