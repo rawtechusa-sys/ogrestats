@@ -1080,6 +1080,8 @@ async function loadStream(streamId) {
         { tag: 'Kick', value: peakKick, has: hasKickViewers },
       ]));
     cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
+    cards += card('Hourly Wage',
+      duration ? '$' + (totalUSD / (duration / 3600)).toFixed(2) : '—', 'per hour');
 
     // Average over the samples that exist -- a null snapshot is a collector
     // gap, not zero viewers, and counting it would drag the average down.

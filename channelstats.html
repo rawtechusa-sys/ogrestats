@@ -406,7 +406,7 @@ const DS = {
   SUBSCRIBERS:     'Subscribers',
   DON_PER_STREAM:  'Donations / Stream',
   DON_CUMULATIVE:  'Cumulative Donations',
-  DON_PER_MIN:     'Donations / Min',
+  DON_PER_HR:      'Donations / Hr',
   PEAK_VIEWERS:    'Peak Viewers',
   AVG_VIEWERS:     'Avg Viewers',
   CHAT_MPM:        'Avg Chat Rate',
@@ -419,7 +419,7 @@ const AXIS_MAP = {
   ySubs:       [DS.SUBSCRIBERS],
   yDollars:    [DS.DON_CUMULATIVE],
   yPerStream:  [DS.DON_PER_STREAM],
-  yRate:       [DS.DON_PER_MIN],
+  yRate:       [DS.DON_PER_HR],
   yViewers:    [DS.PEAK_VIEWERS, DS.AVG_VIEWERS],
   yEngagement: [DS.CHAT_MPM, DS.ACTIVE_CHATTERS],
   yPaused:     [DS.PCT_PAUSED],
@@ -431,7 +431,7 @@ const LEGEND_SPECS = [
   null,
   { label: 'Donations/Stream', color: '#e8c020', type: 'bar',    ds: DS.DON_PER_STREAM },
   { label: 'Cumulative $',     color: '#96d45a', type: 'line',   ds: DS.DON_CUMULATIVE },
-  { label: 'Donations/Min',    color: '#e8952a', type: 'bar',    ds: DS.DON_PER_MIN },
+  { label: 'Donations/Hr',     color: '#e8952a', type: 'bar',    ds: DS.DON_PER_HR },
   null,
   { label: 'Peak Viewers',     color: '#e84040', type: 'line',   ds: DS.PEAK_VIEWERS },
   { label: 'Avg Viewers',      color: '#6650d8', type: 'line',   ds: DS.AVG_VIEWERS },
@@ -445,7 +445,7 @@ const LEGEND_SPECS = [
 // Default-visible: subscribers + the two donation-dollar series. The rest start
 // hidden so the chart opens uncluttered; the legend toggles them on.
 const DEFAULT_HIDDEN = [
-  DS.DON_PER_MIN, DS.PEAK_VIEWERS, DS.AVG_VIEWERS, DS.CHAT_MPM, DS.ACTIVE_CHATTERS,
+  DS.DON_PER_HR, DS.PEAK_VIEWERS, DS.AVG_VIEWERS, DS.CHAT_MPM, DS.ACTIVE_CHATTERS,
   DS.PCT_PAUSED,
 ];
 const _storedHidden = localStorage.getItem('channel-chart-hidden');
@@ -669,7 +669,7 @@ function buildPage(channelStats, subsData) {
   cards += card('Subscribers', latestSubs != null ? latestSubs.toLocaleString() : '—',
                 latestSubs != null ? 'latest tracked' : 'no data yet');
   cards += card('Lifetime Raised', '$' + lifetimeUSD.toFixed(2), `${streams.length} stream${streams.length !== 1 ? 's' : ''}`);
-  cards += card('Avg $/min', avgRate != null ? '$' + avgRate.toFixed(2) : '—', 'per-stream average');
+  cards += card('Avg $/hr', avgRate != null ? '$' + (avgRate * 60).toFixed(2) : '—', 'per-stream average');
   cards += card('Peak Reach', peakReach ? peakReach.toLocaleString() : '—', 'best concurrent viewers');
 
   main.innerHTML = HEADER_HTML + `
@@ -754,8 +754,8 @@ function buildChart(streams, subs) {
   add(DS.DON_PER_STREAM, streams.map(s => pt(s, s.total_donations_usd)), '#e8c020',
       { yAxisID: 'yPerStream', type: 'bar' });
 
-  // Donations per minute (right).
-  add(DS.DON_PER_MIN, streams.map(s => pt(s, s.donations_per_min)), '#e8952a',
+  // Donations per hour (right).
+  add(DS.DON_PER_HR, streams.map(s => pt(s, s.donations_per_min != null ? s.donations_per_min * 60 : null)), '#e8952a',
       { yAxisID: 'yRate', type: 'bar' });
 
   // Viewers (left).
@@ -852,7 +852,7 @@ function buildChart(streams, subs) {
                 case DS.SUBSCRIBERS:     return ` ${Math.round(y).toLocaleString()} subscribers`;
                 case DS.DON_PER_STREAM:  return ` $${y.toFixed(2)} raised`;
                 case DS.DON_CUMULATIVE:  return ` ${fmtMoney(y)} all-time`;
-                case DS.DON_PER_MIN:     return ` $${y.toFixed(2)} / min`;
+                case DS.DON_PER_HR:      return ` $${y.toFixed(2)} / hr`;
                 case DS.PEAK_VIEWERS:    return ` peak ${Math.round(y).toLocaleString()} viewers`;
                 case DS.AVG_VIEWERS:     return ` avg ${Math.round(y).toLocaleString()} viewers`;
                 case DS.CHAT_MPM:        return ` ${y.toFixed(1)} msg/min`;
@@ -909,7 +909,7 @@ function buildChart(streams, subs) {
           display: axisHasVisibleDs(AXIS_MAP.yPerStream),
           grid: { drawOnChartArea: false },
         }),
-        yRate: Object.assign(yCommon('#e8952a', '$ / min', v => '$' + v.toLocaleString()), {
+        yRate: Object.assign(yCommon('#e8952a', '$ / hr', v => '$' + v.toLocaleString()), {
           position: 'right',
           display: axisHasVisibleDs(AXIS_MAP.yRate),
           grid: { drawOnChartArea: false },
