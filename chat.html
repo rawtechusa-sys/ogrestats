@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages live inside the index.html shell. If loaded
+     top-level, bounce into the shell at this page's tab, carrying any sub-slug. -->
+<script>(function(){
+  if (window.self !== window.top) return;
+  var slug = 'chat';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
+<title>Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 16px;
+  }
+
+  .title-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+  }
+  .page-title {
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    color: var(--accent-bright);
+    letter-spacing: 0.06em;
+  }
+  .index-status {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Filter bar ─────────────────────────────────────────────── */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .filters .field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .filters label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .filters input[type="text"],
+  .filters input[type="search"],
+  .filters input[type="date"] {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    background: var(--bg-panel);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 4px;
+    padding: 6px 9px;
+    outline: none;
+  }
+  .filters input:focus { border-color: var(--accent); }
+  .filters input[type="date"] { color-scheme: dark; }
+  html[data-theme="white"] .filters input[type="date"] { color-scheme: light; }
+  #q { min-width: 260px; flex: 1; }
+
+  .platform-checks {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .platform-checks label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    text-transform: none;
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+  .platform-checks input { accent-color: var(--accent); cursor: pointer; }
+  .phrase-check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: var(--text-primary);
+    cursor: pointer;
+    text-transform: none;
+  }
+  .phrase-check input { accent-color: var(--accent); cursor: pointer; }
+
+  .btn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    background: var(--bg-panel);
+    color: var(--accent-bright);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    align-self: flex-end;
+  }
+  .btn:hover { border-color: var(--accent); background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.08); }
+  .btn:disabled { opacity: 0.4; cursor: default; }
+
+  /* ── Results ────────────────────────────────────────────────── */
+  .scroll-area {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 4px;
+  }
+  .scroll-area::-webkit-scrollbar { width: 4px; }
+  .scroll-area::-webkit-scrollbar-track { background: transparent; }
+  .scroll-area::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .result-count {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+
+  .stream-group {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .stream-group-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.06);
+    border-bottom: 1px solid var(--border-default);
+    flex-wrap: wrap;
+  }
+  .stream-group-title {
+    font-family: 'Rye', serif;
+    font-size: 15px;
+    color: var(--accent-bright);
+  }
+  .stream-group-title a { color: inherit; text-decoration: none; }
+  .stream-group-title a:hover { text-decoration: underline; }
+  .stream-group-meta {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .hit-count { margin-left: auto; }
+
+  .msg {
+    padding: 9px 16px;
+    border-bottom: 1px solid rgba(100,180,60,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .msg:last-child { border-bottom: none; }
+  .msg:hover { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.04); }
+  .msg-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .msg-user {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+  }
+  .plat-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    padding: 0 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid var(--border-default-strong);
+    color: var(--text-muted);
+  }
+  .plat-badge.youtube { color: var(--platform-youtube); border-color: var(--platform-youtube); }
+  .plat-badge.twitch  { color: var(--platform-twitch); border-color: var(--platform-twitch); }
+  .msg-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    word-break: break-word;
+  }
+  .msg-text mark {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+    color: var(--accent-bright);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+  .msg-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    flex-wrap: wrap;
+  }
+  .msg-meta a { color: var(--text-muted); text-decoration: none; }
+  .msg-meta a:hover { color: var(--accent-bright); }
+  .vod-link::before { content: '▶ '; }
+
+  .loading-state, .empty-state, .error-state, .hint-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.6; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="title-row">
+    <div class="page-title">Chat Search</div>
+    <div class="index-status" id="indexStatus">loading index…</div>
+  </div>
+
+  <div class="filters" id="filters" style="display:none;">
+    <div class="field" style="flex:1;">
+      <label for="q">Search text</label>
+      <input type="search" id="q" placeholder="words to find in chat…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label for="user">Username</label>
+      <input type="text" id="user" placeholder="@name" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label for="stream">Stream</label>
+      <input type="text" id="stream" list="streamList" placeholder="any stream" autocomplete="off">
+      <datalist id="streamList"></datalist>
+    </div>
+    <div class="field">
+      <label for="dateFrom">From</label>
+      <input type="date" id="dateFrom">
+    </div>
+    <div class="field">
+      <label for="dateTo">To</label>
+      <input type="date" id="dateTo">
+    </div>
+    <div class="field">
+      <label>Platform</label>
+      <div class="platform-checks">
+        <label><input type="checkbox" value="youtube" checked>YT</label>
+        <label><input type="checkbox" value="twitch" checked>Twitch</label>
+        <label><input type="checkbox" value="kick" checked>Kick</label>
+      </div>
+    </div>
+    <div class="field">
+      <label>&nbsp;</label>
+      <label class="phrase-check"><input type="checkbox" id="phrase">Exact phrase</label>
+    </div>
+    <button class="btn" id="searchBtn">Search</button>
+  </div>
+
+  <div class="scroll-area" id="results">
+    <div class="loading-state">
+      <span class="loading-glyph">~</span>
+      <span>loading the chat index…</span>
+    </div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+
+<script>
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+
+// Cap on how many streams we'll hydrate (fetch full chat for) in one search.
+// Postings are stream-grain, so a bare common word matches almost every stream;
+// without this guard that would trigger a ~465 MiB fetch storm. avg chat file is
+// ~0.67 MiB, so 30 ≈ 20 MiB worst case.
+const MAX_HYDRATE = 30;
+
+// ── Theme (mirrors tts.html / dents.html) ────────────────────────────────────
+function applyTheme(key) {
+  const themes = {
+    green: 'themes/bog-moss.css',
+    amber: 'themes/firepit.css',
+    grey:  'themes/dead-stone.css',
+    void:  'themes/the-void.css',
+    white: 'themes/onion-layers.css',
+  };
+  document.getElementById('theme-css').href = themes[key] || themes.green;
+  document.documentElement.setAttribute('data-theme', key);
+}
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+window.addEventListener('message', e => {
+  if (e.data?.type === 'theme') applyTheme(e.data.key);
+});
+
+// Mouse forwarding so the parent's roach/eye animations still react.
+document.addEventListener('mousemove', e => {
+  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
+});
+
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.json();
+}
+function escHtml(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Same tokenizer as chat_search_index.py: lowercase, [a-z0-9]+, length 2..40.
+function tokenize(text) {
+  const out = new Set();
+  for (const t of String(text ?? '').toLowerCase().match(/[a-z0-9]+/g) || []) {
+    if (t.length >= 2 && t.length <= 40) out.add(t);
+  }
+  return [...out];
+}
+// Same normalization as chat_search_index._norm_username / donor_donations.
+function normUser(raw) {
+  return (String(raw ?? '').replace(/^@/, '').trim().toLowerCase()) || 'unknown';
+}
+
+// ── State ────────────────────────────────────────────────────────────────────
+let INDEX   = null;   // chat_search.json  { streams:[], tokens:{} }
+let AUTHORS = null;   // chat_authors.json { authors:{} }  (lazy)
+let searching = false;
+
+// ── Cross-tab navigation to a stream (mirrors dents.html/channelstats jumpToStream) ──
+function jumpToStream(streamId, ev) {
+  if (!streamId) return;
+  // Let modified clicks open a new tab normally.
+  if (ev && (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button === 1)) return;
+  if (ev) ev.preventDefault();
+  try { sessionStorage.setItem('selected-stream', streamId); } catch (e) {}
+  if (window.parent && window.parent !== window) {
+    try { window.parent.postMessage({ type: 'navigate', slug: 'streams' }, '*'); return; } catch (e) {}
+  }
+  window.location.href = 'index.html#streams';
+}
+
+// ── Sorted-array intersection (two-pointer) ──────────────────────────────────
+function intersectSorted(a, b) {
+  const out = [];
+  let i = 0, j = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { out.push(a[i]); i++; j++; }
+    else if (a[i] < b[j]) i++;
+    else j++;
+  }
+  return out;
+}
+
+// ── Date helpers ─────────────────────────────────────────────────────────────
+function fmtDate(ts) {
+  if (ts == null) return '';
+  try { return new Date(ts * 1000).toLocaleDateString('en-US', withTZ({ year: 'numeric', month: 'short', day: 'numeric' })); }
+  catch { return ''; }
+}
+// A YYYY-MM-DD <input type=date> value -> unix seconds at local midnight.
+function dateToTs(v, endOfDay) {
+  if (!v) return null;
+  const [y, m, d] = v.split('-').map(Number);
+  if (!y) return null;
+  const dt = new Date(y, m - 1, d, endOfDay ? 23 : 0, endOfDay ? 59 : 0, endOfDay ? 59 : 0);
+  return Math.floor(dt.getTime() / 1000);
+}
+
+// ── VOD deep link ────────────────────────────────────────────────────────────
+// Chat messages carry `offset` = seconds since the payload's start_anchor. For the
+// YouTube chat-replay corpus, start_anchor is the source VOD's t=0, so offset maps
+// straight into source_vod_id. (Live chat.json offsets are anchored to the restream
+// broadcast, not the source VOD; those links land on the source VOD's timeline and
+// are only approximate — chat.json isn't in the published corpus yet.)
+function vodLink(smeta, offset, label) {
+  const t = Math.max(0, Math.floor(offset ?? 0));
+  if (smeta && smeta.source_vod_id && smeta.source_platform !== 'twitch') {
+    const href = `https://youtu.be/${encodeURIComponent(smeta.source_vod_id)}?t=${t}`;
+    return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer">${escHtml(label)}</a>`;
+  }
+  return `<span class="vod-link">${escHtml(label)}</span>`;
+}
+function fmtElapsed(sec) {
+  const s = Math.max(0, Math.floor(sec || 0));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = s % 60;
+  return h > 0
+    ? `${h}:${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`
+    : `${m}:${String(ss).padStart(2,'0')}`;
+}
+
+// ── Highlight query tokens in a message ──────────────────────────────────────
+function highlight(text, tokens) {
+  const esc = escHtml(text);
+  if (!tokens.length) return esc;
+  // Match whole tokens case-insensitively; tokens are [a-z0-9]+ so no regex escaping needed.
+  const re = new RegExp(`(${tokens.join('|')})`, 'gi');
+  return esc.replace(re, '<mark>$1</mark>');
+}
+
+// ── Candidate resolution (index-only, no hydration) ──────────────────────────
+function resolveCandidates(q) {
+  const N = INDEX.streams.length;
+  let cand = null;   // null = "all so far"
+
+  // Text tokens -> intersect posting lists.
+  for (const tok of q.tokens) {
+    const postings = INDEX.tokens[tok];
+    if (!postings) return [];               // unknown token -> nothing matches
+    cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
+    if (!cand.length) return [];
+  }
+
+  // Username -> intersect author postings (needs the lazy author index).
+  if (q.user && AUTHORS) {
+    const postings = AUTHORS.authors[q.user] || [];
+    cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
+    if (!cand.length) return [];
+  }
+
+  if (cand === null) cand = Array.from({ length: N }, (_, i) => i);
+
+  // Metadata filters (date range, single-stream pick). Platform is message-level.
+  return cand.filter(i => {
+    const s = INDEX.streams[i];
+    if (q.streamId && s.id !== q.streamId) return false;
+    if (q.from != null && (s.start_ts == null || s.start_ts < q.from)) return false;
+    if (q.to   != null && (s.start_ts == null || s.start_ts > q.to)) return false;
+    return true;
+  });
+}
+
+// ── Hydrate one stream's chat (replay + live), merged + deduped ──────────────
+async function hydrate(smeta) {
+  const urls = ['chat_replay.json', 'chat.json'].map(
+    n => `${RAW}/data/streams/${encodeURIComponent(smeta.id)}/${n}`);
+  const settled = await Promise.allSettled(urls.map(fetchJSON));
+  const seen = new Set();
+  const msgs = [];
+  for (const r of settled) {
+    if (r.status !== 'fulfilled' || !r.value || !Array.isArray(r.value.messages)) continue;
+    const plat = r.value.source_platform || 'youtube';
+    for (const m of r.value.messages) {
+      const key = `${m.author} ${m.text} ${Math.round(m.ts || 0)}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      msgs.push({ ...m, platform: m.platform || plat });
+    }
+  }
+  return msgs;
+}
+
+// ── Search ───────────────────────────────────────────────────────────────────
+async function runSearch() {
+  if (searching || !INDEX) return;
+  const results = document.getElementById('results');
+
+  const rawQ = document.getElementById('q').value.trim();
+  const q = {
+    tokens: tokenize(rawQ),
+    phrase: document.getElementById('phrase').checked ? rawQ.toLowerCase() : null,
+    user: document.getElementById('user').value.trim() ? normUser(document.getElementById('user').value) : null,
+    streamId: streamIdFromInput(),
+    from: dateToTs(document.getElementById('dateFrom').value, false),
+    to:   dateToTs(document.getElementById('dateTo').value, true),
+    platforms: new Set([...document.querySelectorAll('.platform-checks input:checked')].map(c => c.value)),
+  };
+
+  if (!q.tokens.length && !q.user && !q.streamId && q.from == null && q.to == null) {
+    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
+      <span>Enter a word to search, or narrow by user, stream, or date.</span></div>`;
+    return;
+  }
+
+  // Username needs the lazy author index.
+  if (q.user && !AUTHORS) {
+    try { AUTHORS = await fetchJSON(`${RAW}/data/chat_authors.json`); }
+    catch (e) {
+      results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the username index<br><small>${escHtml(e.message)}</small></span></div>`;
+      return;
+    }
+  }
+
+  const cand = resolveCandidates(q);
+  if (!cand.length) {
+    results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no streams match those filters</span></div>`;
+    return;
+  }
+  if (cand.length > MAX_HYDRATE) {
+    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">⚠</span>
+      <span><strong>${cand.length}</strong> streams match — too many to load at once.<br>
+      Narrow with a date range, a specific stream, a username, or more search terms.</span></div>`;
+    return;
+  }
+
+  searching = true;
+  const btn = document.getElementById('searchBtn');
+  btn.disabled = true;
+  results.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>reading chat from ${cand.length} stream${cand.length === 1 ? '' : 's'}…</span></div>`;
+
+  try {
+    const groups = [];
+    let totalHits = 0;
+    // Hydrate + filter each candidate. Preserve index order (newest-first-ish by id order).
+    for (const i of cand) {
+      const smeta = INDEX.streams[i];
+      const all = await hydrate(smeta);
+      const hits = all.filter(m => {
+        const plat = m.platform || 'youtube';
+        if (!q.platforms.has(plat)) return false;
+        if (q.user && normUser(m.author) !== q.user) return false;
+        const lc = String(m.text ?? '').toLowerCase();
+        if (q.phrase) { if (!lc.includes(q.phrase)) return false; }
+        else { for (const tok of q.tokens) if (!lc.includes(tok)) return false; }
+        return true;
+      });
+      if (hits.length) { groups.push({ smeta, hits }); totalHits += hits.length; }
+    }
+
+    if (!totalHits) {
+      results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no messages match — the term appears in those streams' index but not in a message passing your filters</span></div>`;
+      return;
+    }
+
+    // Sort groups newest-first by stream start.
+    groups.sort((a, b) => (b.smeta.start_ts || 0) - (a.smeta.start_ts || 0));
+    renderResults(groups, totalHits, q.tokens);
+  } catch (e) {
+    results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>search failed<br><small>${escHtml(e.message)}</small></span></div>`;
+  } finally {
+    searching = false;
+    btn.disabled = false;
+  }
+}
+
+function renderResults(groups, totalHits, tokens) {
+  const results = document.getElementById('results');
+  const head = `<div class="result-count">${totalHits} message${totalHits === 1 ? '' : 's'} across ${groups.length} stream${groups.length === 1 ? '' : 's'}</div>`;
+
+  const html = groups.map(({ smeta, hits }) => {
+    const title = smeta.title || smeta.id;
+    const anchor = `<a href="streams.html#${encodeURIComponent(smeta.id)}" onclick="jumpToStream('${encodeURIComponent(smeta.id).replace(/'/g, "\\'")}', event)">${escHtml(title)}</a>`;
+    const rows = hits.map(m => {
+      const plat = m.platform || 'youtube';
+      const platBadge = `<span class="plat-badge ${escHtml(plat)}">${escHtml(plat)}</span>`;
+      const link = vodLink(smeta, m.offset, fmtElapsed(m.offset));
+      return `<div class="msg">
+        <div class="msg-head">
+          <span class="msg-user">${escHtml(m.author)}</span>
+          ${platBadge}
+        </div>
+        <div class="msg-text">${highlight(m.text, tokens)}</div>
+        <div class="msg-meta">${link}</div>
+      </div>`;
+    }).join('');
+    return `<div class="stream-group">
+      <div class="stream-group-head">
+        <span class="stream-group-title">${anchor}</span>
+        <span class="stream-group-meta">${escHtml(fmtDate(smeta.start_ts))}</span>
+        <span class="stream-group-meta hit-count">${hits.length} hit${hits.length === 1 ? '' : 's'}</span>
+      </div>
+      ${rows}
+    </div>`;
+  }).join('');
+
+  results.innerHTML = head + html;
+}
+
+// Resolve the stream <input> value (a title, or an id) to a stream id.
+function streamIdFromInput() {
+  const v = document.getElementById('stream').value.trim();
+  if (!v) return null;
+  const byId = INDEX.streams.find(s => s.id === v);
+  if (byId) return byId.id;
+  const byTitle = INDEX.streams.find(s => (s.title || '') === v);
+  return byTitle ? byTitle.id : v;   // fall through to raw value (matches nothing -> empty)
+}
+
+// ── Load the index ───────────────────────────────────────────────────────────
+async function load() {
+  const results = document.getElementById('results');
+  try {
+    INDEX = await fetchJSON(`${RAW}/data/chat_search.json`);
+
+    // Populate the stream picker datalist + status line.
+    const dl = document.getElementById('streamList');
+    const opts = INDEX.streams
+      .filter(s => s.title)
+      .sort((a, b) => (b.start_ts || 0) - (a.start_ts || 0))
+      .map(s => `<option value="${escHtml(s.title)}">`).join('');
+    dl.innerHTML = opts;
+
+    document.getElementById('indexStatus').textContent =
+      `${INDEX.streams.length.toLocaleString()} streams · ${Object.keys(INDEX.tokens).length.toLocaleString()} terms`;
+    document.getElementById('filters').style.display = '';
+    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
+      <span>Search chat across every archived stream.<br>Type a word, or filter by user, stream, or date.</span></div>`;
+
+    document.getElementById('searchBtn').addEventListener('click', runSearch);
+    ['q', 'user', 'stream', 'dateFrom', 'dateTo'].forEach(id => {
+      document.getElementById(id).addEventListener('keydown', e => {
+        if (e.key === 'Enter') runSearch();
+      });
+    });
+  } catch (e) {
+    results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the chat index<br><small>${escHtml(e.message)}</small></span></div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
