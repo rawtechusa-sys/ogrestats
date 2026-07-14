@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1783853568,
+  "updated_ts": 1783992439,
   "counted_streams": [
     "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
     "the_members_only_bloodborne_redux_stream_part_1_2026-07-09_002851",
@@ -815,7 +815,8 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525"
   ],
   "streams": {
     "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000": {
@@ -14654,6 +14655,23 @@
       "avg_viewers": null,
       "avg_chat_mpm": 2.89,
       "avg_active_chatters": 9.76,
+      "percent_paused": null
+    },
+    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525": {
+      "stream_id": "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
+      "title": "A Robust Stream Exclusively For Men (And Women)",
+      "start_ts": 1783992325,
+      "end_ts": 1783992423,
+      "duration_sec": 98,
+      "youtube_archive_id": null,
+      "source_platform": "twitch",
+      "total_donations_usd": 0.0,
+      "donation_count": 0,
+      "donations_per_min": 0.0,
+      "peak_viewers": 0,
+      "avg_viewers": 0.0,
+      "avg_chat_mpm": 8.0,
+      "avg_active_chatters": 6.0,
       "percent_paused": null
     }
   }
