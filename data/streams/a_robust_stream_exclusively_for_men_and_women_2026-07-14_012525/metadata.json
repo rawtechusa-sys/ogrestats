@@ -2,13 +2,22 @@
   "stream_id": "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
   "slug": "a_robust_stream_exclusively_for_men_and_women",
   "title": "A Robust Stream Exclusively For Men (And Women)",
-  "start_ts": 1783992325,
-  "end_ts": 1783993383,
+  "start_ts": 1783993481,
+  "end_ts": 1784003481,
   "platforms": [
     "youtube",
-    "kick",
-    "twitch"
+    "twitch",
+    "kick"
   ],
   "source_channel": "rtustreams",
-  "source_platform": "twitch"
+  "source_platform": "twitch",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "UHKPVB6FFls",
+      "start_ts": 1783993481
+    }
+  ],
+  "youtube_archive_id": "UHKPVB6FFls",
+  "archive_is_source_vod": false
 }
