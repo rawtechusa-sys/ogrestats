@@ -328,11 +328,15 @@
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
-// Cap on how many streams we'll hydrate (fetch full chat for) in one search.
-// Postings are stream-grain, so a bare common word matches almost every stream;
-// without this guard that would trigger a ~465 MiB fetch storm. avg chat file is
-// ~0.67 MiB, so 30 ≈ 20 MiB worst case.
-const MAX_HYDRATE = 30;
+// Streams hydrated (full chat fetched) per scroll page. avg chat file ~0.67 MiB,
+// so BATCH=8 ≈ 5 MiB/page. Results stream in as the user scrolls, so a broad query
+// never fetches more than the user actually scrolls through.
+const BATCH = 8;
+// When a query matches many streams but few messages pass the message-level filter,
+// batches can render nothing, so auto-fill would keep fetching to fill the viewport.
+// Cap that continuous auto-scan; past it, offer a "Keep scanning" button so a
+// restrictive filter on a common token can't silently pull hundreds of MB.
+const MAX_AUTOSCAN = 60;
 
 // ── Theme (mirrors tts.html / dents.html) ────────────────────────────────────
 function applyTheme(key) {
@@ -384,7 +388,12 @@ function normUser(raw) {
 // ── State ────────────────────────────────────────────────────────────────────
 let INDEX   = null;   // chat_search.json  { streams:[], tokens:{} }
 let AUTHORS = null;   // chat_authors.json { authors:{} }  (lazy)
-let searching = false;
+
+// Paged-search state (rebuilt on each new search).
+let SEARCH = null;    // see startSearch(): { q, candidates, cursor, gen, loading, ... }
+let GEN = 0;          // bumped per search so a stale in-flight batch can detect it lost
+let OBSERVER = null;  // IntersectionObserver watching the sentinel
+const hydrateCache = new Map();   // stream id -> messages[]; kept across searches
 
 // ── Cross-tab navigation to a stream (mirrors dents.html/channelstats jumpToStream) ──
 function jumpToStream(streamId, ev) {
@@ -491,6 +500,8 @@ function resolveCandidates(q) {
 
 // ── Hydrate one stream's chat (replay + live), merged + deduped ──────────────
 async function hydrate(smeta) {
+  const cached = hydrateCache.get(smeta.id);
+  if (cached) return cached;
   const urls = ['chat_replay.json', 'chat.json'].map(
     n => `${RAW}/data/streams/${encodeURIComponent(smeta.id)}/${n}`);
   const settled = await Promise.allSettled(urls.map(fetchJSON));
@@ -506,12 +517,13 @@ async function hydrate(smeta) {
       msgs.push({ ...m, platform: m.platform || plat });
     }
   }
+  hydrateCache.set(smeta.id, msgs);
   return msgs;
 }
 
 // ── Search ───────────────────────────────────────────────────────────────────
 async function runSearch() {
-  if (searching || !INDEX) return;
+  if (!INDEX) return;
   const results = document.getElementById('results');
 
   const rawQ = document.getElementById('q').value.trim();
@@ -545,84 +557,176 @@ async function runSearch() {
     results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no streams match those filters</span></div>`;
     return;
   }
-  if (cand.length > MAX_HYDRATE) {
-    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">⚠</span>
-      <span><strong>${cand.length}</strong> streams match — too many to load at once.<br>
-      Narrow with a date range, a specific stream, a username, or more search terms.</span></div>`;
-    return;
-  }
 
-  searching = true;
-  const btn = document.getElementById('searchBtn');
-  btn.disabled = true;
-  results.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>reading chat from ${cand.length} stream${cand.length === 1 ? '' : 's'}…</span></div>`;
+  // Newest-first by stream start so paging is deterministic + matches the dashboard.
+  cand.sort((a, b) => (INDEX.streams[b].start_ts || 0) - (INDEX.streams[a].start_ts || 0));
 
+  const gen = ++GEN;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  SEARCH = {
+    q, gen, candidates: cand, cursor: 0,
+    loading: false, done: false, paused: false,
+    shownMsgs: 0, shownStreams: 0, scanned: 0, autoScan: 0,
+  };
+
+  // Lay out the results container: a live status line, an append target, a sentinel.
+  results.innerHTML =
+    `<div class="result-count" id="resultStatus"></div><div id="groups"></div><div id="sentinel"></div>`;
+  updateStatus();
+
+  OBSERVER = new IntersectionObserver(entries => {
+    if (entries.some(e => e.isIntersecting)) loadNextBatch();
+  }, { root: results, rootMargin: '600px' });
+  OBSERVER.observe(document.getElementById('sentinel'));
+
+  loadNextBatch();
+}
+
+// Apply the message-level filter (platform/username/phrase/all-tokens) to a stream's
+// hydrated chat. Same rule as the old inline filter.
+function matchMessages(all, q) {
+  return all.filter(m => {
+    const plat = m.platform || 'youtube';
+    if (!q.platforms.has(plat)) return false;
+    if (q.user && normUser(m.author) !== q.user) return false;
+    const lc = String(m.text ?? '').toLowerCase();
+    if (q.phrase) return lc.includes(q.phrase);
+    for (const tok of q.tokens) if (!lc.includes(tok)) return false;
+    return true;
+  });
+}
+
+// Hydrate + render the next BATCH of candidate streams. Re-entrant-safe via S.loading;
+// a stale search (GEN changed) drops on return so it never renders into a new query.
+async function loadNextBatch() {
+  const S = SEARCH;
+  if (!S || S.loading || S.done || S.paused || S.gen !== GEN) return;
+  if (S.cursor >= S.candidates.length) { finishSearch(); return; }
+
+  S.loading = true;
+  const slice = S.candidates.slice(S.cursor, S.cursor + BATCH);
+  S.cursor += slice.length;
+
+  let batch;
   try {
-    const groups = [];
-    let totalHits = 0;
-    // Hydrate + filter each candidate. Preserve index order (newest-first-ish by id order).
-    for (const i of cand) {
-      const smeta = INDEX.streams[i];
-      const all = await hydrate(smeta);
-      const hits = all.filter(m => {
-        const plat = m.platform || 'youtube';
-        if (!q.platforms.has(plat)) return false;
-        if (q.user && normUser(m.author) !== q.user) return false;
-        const lc = String(m.text ?? '').toLowerCase();
-        if (q.phrase) { if (!lc.includes(q.phrase)) return false; }
-        else { for (const tok of q.tokens) if (!lc.includes(tok)) return false; }
-        return true;
-      });
-      if (hits.length) { groups.push({ smeta, hits }); totalHits += hits.length; }
-    }
-
-    if (!totalHits) {
-      results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no messages match — the term appears in those streams' index but not in a message passing your filters</span></div>`;
-      return;
-    }
-
-    // Sort groups newest-first by stream start.
-    groups.sort((a, b) => (b.smeta.start_ts || 0) - (a.smeta.start_ts || 0));
-    renderResults(groups, totalHits, q.tokens);
+    batch = await Promise.allSettled(slice.map(i => hydrate(INDEX.streams[i])));
   } catch (e) {
-    results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>search failed<br><small>${escHtml(e.message)}</small></span></div>`;
-  } finally {
-    searching = false;
-    btn.disabled = false;
+    batch = [];
+  }
+  if (S.gen !== GEN) return;   // a newer search superseded us; drop this result
+
+  const groupsEl = document.getElementById('groups');
+  let batchHits = 0;
+  slice.forEach((idx, k) => {
+    S.scanned++;
+    const res = batch[k];
+    if (!res || res.status !== 'fulfilled') return;
+    const smeta = INDEX.streams[idx];
+    const hits = matchMessages(res.value, S.q);
+    if (!hits.length) return;
+    batchHits += hits.length;
+    S.shownStreams++;
+    S.shownMsgs += hits.length;
+    groupsEl.insertAdjacentHTML('beforeend', renderGroup(smeta, hits, S.q.tokens));
+  });
+
+  S.loading = false;
+
+  if (S.cursor >= S.candidates.length) { finishSearch(); return; }
+
+  // Auto-fill: while the sentinel is still on screen (viewport not full, or a run of
+  // all-empty batches), keep loading -- but cap the continuous empty-run scan so a
+  // restrictive filter on a common token can't silently fetch hundreds of MB.
+  S.autoScan = batchHits ? 0 : S.autoScan + slice.length;
+  if (S.autoScan >= MAX_AUTOSCAN) { pauseAutoScan(); return; }
+  updateStatus();
+  if (sentinelVisible()) loadNextBatch();
+}
+
+function sentinelVisible() {
+  const results = document.getElementById('results');
+  const sentinel = document.getElementById('sentinel');
+  if (!results || !sentinel) return false;
+  const r = results.getBoundingClientRect();
+  const s = sentinel.getBoundingClientRect();
+  return s.top <= r.bottom + 600;   // matches the observer rootMargin
+}
+
+function renderGroup(smeta, hits, tokens) {
+  const title = smeta.title || smeta.id;
+  const anchor = `<a href="streams.html#${encodeURIComponent(smeta.id)}" onclick="jumpToStream('${encodeURIComponent(smeta.id).replace(/'/g, "\\'")}', event)">${escHtml(title)}</a>`;
+  const rows = hits.map(m => {
+    const plat = m.platform || 'youtube';
+    const platBadge = `<span class="plat-badge ${escHtml(plat)}">${escHtml(plat)}</span>`;
+    const link = vodLink(smeta, m.offset, fmtElapsed(m.offset));
+    return `<div class="msg">
+      <div class="msg-head">
+        <span class="msg-user">${escHtml(m.author)}</span>
+        ${platBadge}
+      </div>
+      <div class="msg-text">${highlight(m.text, tokens)}</div>
+      <div class="msg-meta">${link}</div>
+    </div>`;
+  }).join('');
+  return `<div class="stream-group">
+    <div class="stream-group-head">
+      <span class="stream-group-title">${anchor}</span>
+      <span class="stream-group-meta">${escHtml(fmtDate(smeta.start_ts))}</span>
+      <span class="stream-group-meta hit-count">${hits.length} hit${hits.length === 1 ? '' : 's'}</span>
+    </div>
+    ${rows}
+  </div>`;
+}
+
+// Live status above the results — running totals + how far into the candidate set.
+function updateStatus() {
+  const S = SEARCH;
+  const el = document.getElementById('resultStatus');
+  if (!S || !el) return;
+  const total = S.candidates.length;
+  const msgs = `${S.shownMsgs} message${S.shownMsgs === 1 ? '' : 's'}`;
+  const strms = `${S.shownStreams} stream${S.shownStreams === 1 ? '' : 's'}`;
+  if (S.cursor >= total) {
+    el.innerHTML = S.shownMsgs
+      ? `${msgs} across ${strms} <span style="opacity:0.5;">· ${total} scanned</span>`
+      : '';
+  } else {
+    el.innerHTML = `${msgs} across ${strms} <span style="opacity:0.5;">· scanning ${S.scanned}/${total} streams…</span>`;
   }
 }
 
-function renderResults(groups, totalHits, tokens) {
-  const results = document.getElementById('results');
-  const head = `<div class="result-count">${totalHits} message${totalHits === 1 ? '' : 's'} across ${groups.length} stream${groups.length === 1 ? '' : 's'}</div>`;
+function finishSearch() {
+  const S = SEARCH;
+  if (!S) return;
+  S.done = true;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  const sentinel = document.getElementById('sentinel');
+  if (sentinel) sentinel.remove();
+  updateStatus();
+  if (!S.shownMsgs) {
+    const results = document.getElementById('results');
+    results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no messages match — the term is indexed in ${S.candidates.length} stream${S.candidates.length === 1 ? '' : 's'} but no message passed your filters</span></div>`;
+  }
+}
 
-  const html = groups.map(({ smeta, hits }) => {
-    const title = smeta.title || smeta.id;
-    const anchor = `<a href="streams.html#${encodeURIComponent(smeta.id)}" onclick="jumpToStream('${encodeURIComponent(smeta.id).replace(/'/g, "\\'")}', event)">${escHtml(title)}</a>`;
-    const rows = hits.map(m => {
-      const plat = m.platform || 'youtube';
-      const platBadge = `<span class="plat-badge ${escHtml(plat)}">${escHtml(plat)}</span>`;
-      const link = vodLink(smeta, m.offset, fmtElapsed(m.offset));
-      return `<div class="msg">
-        <div class="msg-head">
-          <span class="msg-user">${escHtml(m.author)}</span>
-          ${platBadge}
-        </div>
-        <div class="msg-text">${highlight(m.text, tokens)}</div>
-        <div class="msg-meta">${link}</div>
-      </div>`;
-    }).join('');
-    return `<div class="stream-group">
-      <div class="stream-group-head">
-        <span class="stream-group-title">${anchor}</span>
-        <span class="stream-group-meta">${escHtml(fmtDate(smeta.start_ts))}</span>
-        <span class="stream-group-meta hit-count">${hits.length} hit${hits.length === 1 ? '' : 's'}</span>
-      </div>
-      ${rows}
-    </div>`;
-  }).join('');
-
-  results.innerHTML = head + html;
+// Stop auto-fetching after a long empty run; let the user opt to keep going.
+function pauseAutoScan() {
+  const S = SEARCH;
+  if (!S) return;
+  S.paused = true;
+  S.autoScan = 0;
+  const sentinel = document.getElementById('sentinel');
+  if (!sentinel) return;
+  const remain = S.candidates.length - S.cursor;
+  sentinel.innerHTML =
+    `<button class="btn" id="keepScanning" style="display:block;margin:14px auto;">Keep scanning (${remain} more)</button>`;
+  const btn = document.getElementById('keepScanning');
+  if (btn) btn.addEventListener('click', () => {
+    sentinel.innerHTML = '';
+    S.paused = false;
+    loadNextBatch();
+  });
+  updateStatus();
 }
 
 // Resolve the stream <input> value (a title, or an id) to a stream id.
