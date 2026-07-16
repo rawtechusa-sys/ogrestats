@@ -1,7 +1,9 @@
 {
   "version": 1,
-  "updated_ts": 1784184822,
+  "updated_ts": 1784236064,
   "counted_streams": [
+    "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
     "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
     "the_members_only_bloodborne_redux_stream_part_1_2026-07-09_002851",
     "we_gotta_talk_about_the_graham_platner_situation_2026-07-07_011941",
@@ -815,11 +817,43 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return",
-    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
-    "its_my_birthday_lets_roast_grifters_2026-07-15_210718"
+    "the_livestreams_return"
   ],
   "streams": {
+    "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "title": "It's My Birthday. Let's Roast Grifters.",
+      "start_ts": 1784148619,
+      "end_ts": 1784179787,
+      "duration_sec": 31168,
+      "youtube_archive_id": "EpfQsHjYvSM",
+      "source_platform": "youtube",
+      "total_donations_usd": 1137.06,
+      "donation_count": 216,
+      "donations_per_min": 2.1889,
+      "peak_viewers": 400,
+      "avg_viewers": 319.89,
+      "avg_chat_mpm": 9.03,
+      "avg_active_chatters": 22.56,
+      "percent_paused": 63.3
+    },
+    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525": {
+      "stream_id": "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
+      "title": "A Robust Stream Exclusively For Men (And Women)",
+      "start_ts": 1783993481,
+      "end_ts": 1784003481,
+      "duration_sec": 10000,
+      "youtube_archive_id": "UHKPVB6FFls",
+      "source_platform": "twitch",
+      "total_donations_usd": 152.79,
+      "donation_count": 36,
+      "donations_per_min": 0.9167,
+      "peak_viewers": 209,
+      "avg_viewers": 175.74,
+      "avg_chat_mpm": 6.83,
+      "avg_active_chatters": 15.98,
+      "percent_paused": 61.7
+    },
     "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000": {
       "stream_id": "lets_discuss_shameless_lying_earthworm_jim_resembling_grifters_2026-07-10_010000",
       "title": "Let's Discuss Shameless, Lying, Earthworm Jim Resembling Grifters",
@@ -14657,40 +14691,6 @@
       "avg_chat_mpm": 2.89,
       "avg_active_chatters": 9.76,
       "percent_paused": null
-    },
-    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525": {
-      "stream_id": "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
-      "title": "A Robust Stream Exclusively For Men (And Women)",
-      "start_ts": 1783992325,
-      "end_ts": 1783992423,
-      "duration_sec": 98,
-      "youtube_archive_id": null,
-      "source_platform": "twitch",
-      "total_donations_usd": 0.0,
-      "donation_count": 0,
-      "donations_per_min": 0.0,
-      "peak_viewers": 0,
-      "avg_viewers": 0.0,
-      "avg_chat_mpm": 8.0,
-      "avg_active_chatters": 6.0,
-      "percent_paused": null
-    },
-    "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
-      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
-      "title": "It's My Birthday. Let's Roast Grifters.",
-      "start_ts": 1784183882,
-      "end_ts": 1784183918,
-      "duration_sec": 36,
-      "youtube_archive_id": "sHnVD5FuOJ8",
-      "source_platform": "youtube",
-      "total_donations_usd": 1137.06,
-      "donation_count": 216,
-      "donations_per_min": 1895.1,
-      "peak_viewers": 400,
-      "avg_viewers": 319.89,
-      "avg_chat_mpm": 9.03,
-      "avg_active_chatters": 22.56,
-      "percent_paused": 63.3
     }
   }
 }
