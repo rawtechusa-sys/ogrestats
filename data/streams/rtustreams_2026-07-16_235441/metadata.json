@@ -1,0 +1,21 @@
+{
+  "stream_id": "rtustreams_2026-07-16_235441",
+  "slug": "rtustreams",
+  "title": "rtustreams",
+  "start_ts": 1784246089,
+  "end_ts": null,
+  "platforms": [
+    "youtube",
+    "twitch",
+    "kick"
+  ],
+  "source_channel": "rtustreams",
+  "source_platform": "twitch",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "1UqXX2mvp0w",
+      "start_ts": 1784246089
+    }
+  ]
+}
