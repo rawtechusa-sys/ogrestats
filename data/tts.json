@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1783992430,
+  "updated_ts": 1784184813,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -817,7 +817,8 @@
     "your_dad_is_streaming",
     "your_dad_is_streaming_pt2",
     "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
-    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525"
+    "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
+    "its_my_birthday_lets_roast_grifters_2026-07-15_210718"
   ],
   "commands": {
     "device": 1,
@@ -838,7 +839,7 @@
     "kendal": 1,
     "donation": 3,
     "naruto": 1,
-    "phil": 151,
+    "phil": 160,
     "legends": 2,
     "is": 8,
     "spose": 1,
@@ -856,15 +857,15 @@
     "coco": 1,
     "reviewtrumpusa": 4,
     "reviewseinfeldusa": 2,
-    "stan": 101,
-    "linus": 6,
-    "masterchief": 48,
-    "harman": 37,
+    "stan": 116,
+    "linus": 10,
+    "masterchief": 56,
+    "harman": 42,
     "girlfriend": 2,
-    "trump": 61,
-    "tate": 3,
-    "eric": 58,
-    "moist": 4,
+    "trump": 68,
+    "tate": 5,
+    "eric": 71,
+    "moist": 9,
     "s": 1,
     "things": 2,
     "tomorrow": 33,
@@ -902,8 +903,8 @@
     "day": 1,
     "joker": 1,
     "question": 14,
-    "grandpa": 17,
-    "hobo": 5,
+    "grandpa": 18,
+    "hobo": 6,
     "kratos": 8,
     "thing": 2,
     "platform": 1,
@@ -1362,7 +1363,9 @@
     "reviewjimrossusa": 1,
     "hanson": 1,
     "reviewvictimblamingcultureusa": 1,
-    "robocop": 1
+    "robocop": 1,
+    "bill": 1,
+    "kanye": 1
   },
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -9546,9 +9549,699 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
+      "title": "It's My Birthday. Let's Roast Grifters.",
+      "start_ts": 1784183882,
+      "youtube_archive_id": "sHnVD5FuOJ8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "sHnVD5FuOJ8",
+          "start_ts": 1784183882
+        }
+      ],
+      "source_vod_id": "KmO6LL7HlsY",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1784179773,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: to all a good night! and to me a good WHOLE",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784179635,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: I just love a full bundle of buds! Oh yeah!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784179232,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: That host is absolutely adorable but 2 old!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784179075,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Harman: Stick to Clutterbuns Rich! Stan: Yum buns!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784178816,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Harman: I moved to Twitch because it's what I do!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784178640,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: Never put my AI in a robot body I'm unhinged",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784178480,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: Smash & I enjoy milking content! Stan: Mooo!",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784178257,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Moist: Corn hub.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1784178053,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I'm not gay for Smash! I'm gay for you Rich!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784177660,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Harman: I'm Bowser & your my Princess! Happy Bday!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784177024,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Kanye: SmashJT is the most pathetic of these losers. That's saying something!",
+      "commands": [
+        "kanye"
+      ]
+    },
+    {
+      "ts": 1784176995,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I've a HUGE caulk! Stan: Any Caulk Will Do!",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784176905,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Linus: I am thoroughly tickled.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1784176780,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: Hey baby! YOU LIKE MY SNAKE? MM Stan: Stinky",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784176760,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: 9 months is the amount of time it takes to make a baby. But why create new life? I have Jasper and Kat and 2 parents somewhere on the east coast",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784176524,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I'd have kids 2 if I can meet a Human Female",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784176391,
+      "username": "@Pocketdocket1",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: My wife is like a decadent robust sloppy Joe",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784176245,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I am hate watching you and it feels so good!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784176195,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: aaa!! AHHH! NO RICH! NOT MY HOLES! AHH! KUM",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784175996,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: No sax before, during, or after a stream!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784175963,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "(door_knock) Stan: ooh! ahhh! eee! ooo! RICH BABY!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784174601,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: boohoo, my steak is too tender, my lobster is too buttery. I'd be happy to see your breasts at this point. I'm so lonely !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784172617,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: well men, it appears that his woman is like the kool aid man smashing through a wall saying ohhh yeaaa!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784172314,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: describe the food to us like I would. with emphasis on the bag it came in.like i said, you have no sense of showmanship like i do !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784172302,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: Attention all men, batton down the hatches! secure all cargo and munitions! strap in, and brace for the inevitable rapid taco bell anal evacuation. embrace the true power of the farts.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784172124,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I finally figured out how we can squash this feud. Oil up and hit the mat with me ! The winner gets to wax the loser's chest ! Come on, don't you want to see my breasts glistening and hairless ?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784172081,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Tate: oh the cameras on.",
+      "commands": [
+        "tate"
+      ]
+    },
+    {
+      "ts": 1784171178,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Linus: when I hear shake it off I think of my girls.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1784171042,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Bill: FriendsWithMatt, I'm harrrd.",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1784170886,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: wanna know the best part of me getting that gifted sub to you on twitch ? Now I can hate watch you without ads ! Less selling, more seething !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784169675,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: Sweater puppies",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784169661,
+      "username": "@Carl.Wilson.82",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: oh the mic was on the whole time, huh Rich",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784168597,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Moist: You ever heard of the faithful sheriff? The guy is a Christian V tuber streamer or whatever and likes to talk to kids on Fortnite. He is also a conservative noticing a pattern.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1784167841,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Moist: ban Amber Heards turds please.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1784166651,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Tate: He has ocean water in his head.",
+      "commands": [
+        "tate"
+      ]
+    },
+    {
+      "ts": 1784162971,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Moist: I had a history teacher back in high school during trumps first presidential run in 2016 who was already comparing trump to hitler back then. She was ahead of the curve.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1784162971,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: holy fuck, is this dude high, drunk, got brain damage? serous screws loose. what the hell. did someone order a industrial wood chipper?",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784162081,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Linus: Alright I need a double shot. Anyone want to join?",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1784162015,
+      "username": "@vrakkul9534",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: Rich, I have a new drinking game. Take a shot every time he says violence doesn\u2019t solve our problems. Eric: did someone say drinking? (bombastic_side_eye) All jokes aside, this guys is absolute bonkers.",
+      "commands": [
+        "phil",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784161615,
+      "username": "@SirReginaldFannybottom",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: I just realize at the rate were going. this will likely be our coolest summer on record.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784161502,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Hobo: There he goes boys, Happy Birthday Rich of a man. Best wishes and constant hardness out here for how bad things are going in the gaming scene. Let's celebrate with many sounds off board.",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1784159903,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: change of plans. not normal twisted teas. make it tall boy extreme twisted teas",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784159753,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Linus: I need to be drunk for this. MY god. Anyone want jack and coke?",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1784159714,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: Jesus fuck im not ready for this. I need some twisted teas. and some crown blackberry lemonade. watching this sober hurts my brain",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784159033,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: men, ive finally finished the fight. I beat halo 3 on legendary. now i need to finish this nut, no matter the cost. also, I farted.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784158281,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: I can't believe I missed the roast of myself",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784158225,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: Happy birthday... to a man. I hope Intro Guy's ass jumps out of a cake and farts on you, so I can lick you clean of cake and farts.",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784156881,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: the galactic empire of men has a gift for you! the council of manwomen have successfully surrounded your home base.... with breasts! ALL OF THEM! breasts as far as the eye can see! thousands of them! bewbs r life",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784153022,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "trump: to prove to you how interchangeable smashjt and 8bit eric are. I literally thought we were talking about smash jt for a bit.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784152941,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Eric: Look, this is clearly NOT me, it's me! Uh oh",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784152905,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Masterchief: Attention all councils of the galactic empire of men! we must celebrate a mans birthday. embrace the true power of the farts boobs r life",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784152176,
+      "username": "@hulkhogansgianttaint",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: Horses! Birds! Happy birthday! ahhughhahh ha",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784152108,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Grandpa: im you from the future, happy birthday, now get Donald Trumps hair and make 3 wishes, lets go",
+      "commands": [
+        "grandpa"
+      ]
+    },
+    {
+      "ts": 1784152002,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: I volunteer for military servicing! Oh yeah!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784151901,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: We are going to check soldiers' testosterone in the military now. It was Pete Hegseth's idea and I have been told it is NO way gay! Not a joke!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784151798,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: AH! AAAH! ah ah! ah? Aaah! AH! ah! aaah! kum",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784151327,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Stan: Birthdays come once a year. Me? once an hour",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784151182,
+      "username": "@DarthOmegas",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: the world will burn with me and lindsey",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784150977,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Cheer1000 Phil: Rich your streams are doing well but my streams are larger and feature more men (and women too but don't tell Kat she gets jealous) Sorry Honey!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784150883,
+      "username": "@bammersvabamm822",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Phil: Listen , Happy Birthday bird father. Hope all is well and remember to compare your girlfriend to a subway sandwich",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784150853,
+      "username": "@aajmc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Happy birthday Rich Harman: Pikachu",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784150667,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Moist: Happy birthday you beautiful man. I remember you made a video of a bird hitting your window in your studio.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1784150645,
+      "username": "@superSONIC_star",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Harman: Happy Birthday 2 a man. Plz pik migh chu.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784150607,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: My gold stream is more forceful than yours!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784150508,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "(door_knock) Stan: Happy birthday my baby boy! ahh",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784150251,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: With the new stomach virus my butt is going to explode now than ever before. (ripping) (augh)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784150081,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+      "message": "Trump: Happy birthday Rich from the greatest president that ever lived. Hope you enjoy your Trump flavoured condom.",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1783655461,
       "username": "supersonicstarrr",
