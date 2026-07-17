@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784184813,
+  "updated_ts": 1784246618,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -818,7 +818,8 @@
     "your_dad_is_streaming_pt2",
     "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
-    "its_my_birthday_lets_roast_grifters_2026-07-15_210718"
+    "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
+    "rtustreams_2026-07-16_235441"
   ],
   "commands": {
     "device": 1,
@@ -9564,6 +9565,25 @@
       ],
       "source_vod_id": "KmO6LL7HlsY",
       "source_platform": "youtube"
+    },
+    "rtustreams_2026-07-16_235441": {
+      "title": "rtustreams",
+      "start_ts": 1784246089,
+      "youtube_archive_id": "8hdq8AczS4c",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "1UqXX2mvp0w",
+          "start_ts": 1784246089
+        },
+        {
+          "archive_id": "8hdq8AczS4c",
+          "start_ts": 1784246466
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
