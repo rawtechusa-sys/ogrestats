@@ -3,7 +3,7 @@
   "slug": "rtustreams",
   "title": "rtustreams",
   "start_ts": 1784246089,
-  "end_ts": null,
+  "end_ts": 1784246441,
   "platforms": [
     "youtube",
     "twitch",
@@ -17,5 +17,7 @@
       "archive_id": "1UqXX2mvp0w",
       "start_ts": 1784246089
     }
-  ]
+  ],
+  "youtube_archive_id": "1UqXX2mvp0w",
+  "archive_is_source_vod": false
 }
