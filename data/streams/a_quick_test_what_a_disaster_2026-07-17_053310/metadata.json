@@ -1,0 +1,22 @@
+{
+  "stream_id": "a_quick_test_what_a_disaster_2026-07-17_053310",
+  "slug": "a_quick_test_what_a_disaster",
+  "title": "A Quick Test (What A DIsaster)",
+  "start_ts": 1784266397,
+  "end_ts": null,
+  "platforms": [
+    "youtube",
+    "twitch",
+    "kick"
+  ],
+  "source_channel": "rtustreams",
+  "source_platform": "youtube",
+  "source_vod_id": "3erxznfWvDM",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "jA5BhMWm5js",
+      "start_ts": 1784266397
+    }
+  ]
+}
