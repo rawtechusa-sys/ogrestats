@@ -3,7 +3,7 @@
   "slug": "a_quick_test_what_a_disaster",
   "title": "A Quick Test (What A DIsaster)",
   "start_ts": 1784266397,
-  "end_ts": null,
+  "end_ts": 1784277091,
   "platforms": [
     "youtube",
     "twitch",
@@ -18,5 +18,7 @@
       "archive_id": "jA5BhMWm5js",
       "start_ts": 1784266397
     }
-  ]
+  ],
+  "youtube_archive_id": "jA5BhMWm5js",
+  "archive_is_source_vod": false
 }
