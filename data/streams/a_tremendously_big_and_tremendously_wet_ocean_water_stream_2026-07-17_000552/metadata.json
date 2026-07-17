@@ -2,8 +2,8 @@
   "stream_id": "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552",
   "slug": "a_tremendously_big_and_tremendously_wet_ocean_water_stream",
   "title": "A Tremendously Big And Tremendously Wet Ocean Water Stream",
-  "start_ts": 1784246752,
-  "end_ts": 1784246966,
+  "start_ts": 1784247026,
+  "end_ts": null,
   "platforms": [
     "youtube",
     "twitch",
@@ -12,5 +12,12 @@
   "source_channel": "rtustreams",
   "source_platform": "twitch",
   "youtube_archive_id": "8hdq8AczS4c",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "k93hWe0oHrU",
+      "start_ts": 1784247026
+    }
+  ]
 }
