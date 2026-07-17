@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784247150,
+  "updated_ts": 1784277299,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -819,7 +819,8 @@
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
     "rtustreams_2026-07-16_235441",
-    "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552"
+    "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552",
+    "a_quick_test_what_a_disaster_2026-07-17_053310"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -14727,6 +14728,23 @@
       "avg_chat_mpm": 10.33,
       "avg_active_chatters": 12.67,
       "percent_paused": null
+    },
+    "a_quick_test_what_a_disaster_2026-07-17_053310": {
+      "stream_id": "a_quick_test_what_a_disaster_2026-07-17_053310",
+      "title": "A Quick Test (What A DIsaster)",
+      "start_ts": 1784266397,
+      "end_ts": 1784277091,
+      "duration_sec": 10694,
+      "youtube_archive_id": "jA5BhMWm5js",
+      "source_platform": "youtube",
+      "total_donations_usd": 316.65,
+      "donation_count": 64,
+      "donations_per_min": 1.7766,
+      "peak_viewers": 205,
+      "avg_viewers": 188.28,
+      "avg_chat_mpm": 6.69,
+      "avg_active_chatters": 16.02,
+      "percent_paused": 71.8
     }
   }
 }
