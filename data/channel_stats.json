@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784246627,
+  "updated_ts": 1784247150,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -818,7 +818,8 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "rtustreams_2026-07-16_235441"
+    "rtustreams_2026-07-16_235441",
+    "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -14708,6 +14709,23 @@
       "avg_viewers": 31.5,
       "avg_chat_mpm": 11.25,
       "avg_active_chatters": 15.5,
+      "percent_paused": null
+    },
+    "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552": {
+      "stream_id": "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552",
+      "title": "A Tremendously Big And Tremendously Wet Ocean Water Stream",
+      "start_ts": 1784247026,
+      "end_ts": null,
+      "duration_sec": null,
+      "youtube_archive_id": "8hdq8AczS4c",
+      "source_platform": "twitch",
+      "total_donations_usd": 0.0,
+      "donation_count": 0,
+      "donations_per_min": null,
+      "peak_viewers": 63,
+      "avg_viewers": 42.0,
+      "avg_chat_mpm": 10.33,
+      "avg_active_chatters": 12.67,
       "percent_paused": null
     }
   }
