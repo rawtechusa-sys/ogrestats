@@ -1,0 +1,24 @@
+{
+  "stream_id": "your_favorite_demon_is_streaming_2026-07-20_215933",
+  "slug": "your_favorite_demon_is_streaming",
+  "title": "Your Favorite Demon Is Streaming",
+  "start_ts": 1784585102,
+  "end_ts": 1784608655,
+  "platforms": [
+    "kick",
+    "twitch",
+    "youtube"
+  ],
+  "source_channel": "rtustreams",
+  "source_platform": "youtube",
+  "source_vod_id": "QhQ2ge30WdU",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "NBTbSWUsloY",
+      "start_ts": 1784585102
+    }
+  ],
+  "youtube_archive_id": "NBTbSWUsloY",
+  "archive_is_source_vod": false
+}
