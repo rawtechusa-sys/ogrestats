@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784277299,
+  "updated_ts": 1784644496,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -820,7 +820,8 @@
     "the_livestreams_return",
     "rtustreams_2026-07-16_235441",
     "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552",
-    "a_quick_test_what_a_disaster_2026-07-17_053310"
+    "a_quick_test_what_a_disaster_2026-07-17_053310",
+    "your_favorite_demon_is_streaming_2026-07-20_215933"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -14745,6 +14746,23 @@
       "avg_chat_mpm": 6.69,
       "avg_active_chatters": 16.02,
       "percent_paused": 71.8
+    },
+    "your_favorite_demon_is_streaming_2026-07-20_215933": {
+      "stream_id": "your_favorite_demon_is_streaming_2026-07-20_215933",
+      "title": "Your Favorite Demon Is Streaming",
+      "start_ts": 1784585102,
+      "end_ts": 1784608655,
+      "duration_sec": 23553,
+      "youtube_archive_id": "NBTbSWUsloY",
+      "source_platform": "youtube",
+      "total_donations_usd": 429.73,
+      "donation_count": 114,
+      "donations_per_min": 1.0947,
+      "peak_viewers": 385,
+      "avg_viewers": 340.81,
+      "avg_chat_mpm": 8.32,
+      "avg_active_chatters": 20.29,
+      "percent_paused": 49.4
     }
   }
 }
