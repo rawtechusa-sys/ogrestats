@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784644484,
+  "updated_ts": 1784733339,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -822,7 +822,8 @@
     "rtustreams_2026-07-16_235441",
     "a_tremendously_big_and_tremendously_wet_ocean_water_stream_2026-07-17_000552",
     "a_quick_test_what_a_disaster_2026-07-17_053310",
-    "your_favorite_demon_is_streaming_2026-07-20_215933"
+    "your_favorite_demon_is_streaming_2026-07-20_215933",
+    "bill_gates_and_a_man_live_2026-07-21_213121"
   ],
   "commands": {
     "device": 1,
@@ -843,7 +844,7 @@
     "kendal": 1,
     "donation": 3,
     "naruto": 1,
-    "phil": 175,
+    "phil": 186,
     "legends": 2,
     "is": 8,
     "spose": 1,
@@ -861,14 +862,14 @@
     "coco": 1,
     "reviewtrumpusa": 4,
     "reviewseinfeldusa": 2,
-    "stan": 127,
-    "linus": 10,
-    "masterchief": 64,
-    "harman": 46,
-    "girlfriend": 2,
-    "trump": 73,
+    "stan": 139,
+    "linus": 11,
+    "masterchief": 69,
+    "harman": 54,
+    "girlfriend": 3,
+    "trump": 80,
     "tate": 6,
-    "eric": 81,
+    "eric": 98,
     "moist": 9,
     "s": 1,
     "things": 2,
@@ -878,7 +879,7 @@
     "advice": 4,
     "ghostwire": 1,
     "guy": 4,
-    "message": 2,
+    "message": 3,
     "lied": 1,
     "doom": 6,
     "wilkins": 1,
@@ -1370,8 +1371,11 @@
     "robocop": 1,
     "bill": 2,
     "kanye": 1,
-    "zesty": 6,
-    "rage": 1
+    "zesty": 12,
+    "rage": 1,
+    "ones": 1,
+    "harmon": 1,
+    "men": 1
   },
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -9634,9 +9638,699 @@
       ],
       "source_vod_id": "QhQ2ge30WdU",
       "source_platform": "youtube"
+    },
+    "bill_gates_and_a_man_live_2026-07-21_213121": {
+      "title": "Bill Gates And A Man LIVE",
+      "start_ts": 1784669490,
+      "youtube_archive_id": "BLmgHAaApng",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "BLmgHAaApng",
+          "start_ts": 1784669490
+        }
+      ],
+      "source_vod_id": "9zF1_MqwPx8",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1784701477,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: Regurgitate that pill and support the stream",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784700814,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I have FAT caulk rich! MMMM feed me! SLURP!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784700579,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Masterchief: do you sense it? do you feel the pressure? do your feel the true power of the farts? Trump: god dammit I can feel the power! I cant control it anymore! (fart) its getting everywhere!",
+      "commands": [
+        "masterchief",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784700527,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: Rich play Elden Ring on Nintendo 2 B a Man",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784700428,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: give it to us raw and wriggling ! You keep nasty chips ! Harman : you're hopeless !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784700238,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I'll eat anything with enough McRib sauce on it, and I do mean ANYTHING! Stan: In that case, You Deserve a Break Today! Golden Arches open wide!",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784699997,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: My air E olas Stan: Your getting me X sited!",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784699540,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: If you date Blade re-evaluate your choices!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784699393,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: Eeww Blade is so gross he turned me Strate!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784696874,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "(door_knock) Stan: Ive got caulk for you rich! YA!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784696544,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Linus: I want a picture of you no shirt, holding a cucumber like a excalibur sword, a bird on your head like hair, riding a horse and Bob riding with you. The different eras of RTU together.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1784696455,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: wanna milk me Rich ?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784696260,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Council of men: Carlos\u2019s twin needs a name. I\u2019m stuck between Alejandro or Eduardo. Rich, any thoughts?",
+      "commands": [
+        "men"
+      ]
+    },
+    {
+      "ts": 1784696139,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: as I sit here, surrounded by nature and musing about Nintendo and Minecraft relativity, I miss and am yearning for the touch of a man. Rich ?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784696093,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: And people say that I am the one with a Tism",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784695246,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: the only thing i have a share in is pikachu's crusty fur ! wanna share it with me ?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784695180,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: The argument doesn't work and neither do I",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784694830,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harmon: Skibidibapoohwhattap!",
+      "commands": [
+        "harmon"
+      ]
+    },
+    {
+      "ts": 1784694708,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: Rich and Jay wrestling on the top bunk with me as the referee ! let's go !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784692940,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Masterchief: wait, where is carlos? god dammit everytime we loose track of him another uprising starts. men, take arms. the inevitable war is near",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784692565,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: OMG just get a plush Pikachu to pork! Pika",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784692428,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I believe we're ruled by a secret class of bird people and you're one of them ! We're through the looking glass here people ! No dad, I'm not drunk ! Just a little tipsy since you hid my beer !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784692378,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: BIRD! BIRD! BIRD! BIRD! BIRD! BIRD! BIRD! mm",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784692257,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: AH HELP! BIRD RICH IS ATTACKING ME! HELP! AA",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784692060,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I did Boogies zipples but Wesleys are better",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784691214,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: He needs a pair of Citrus shorts to win big",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784690995,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: Aw not the kind of Home Boy I am looking for",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784690897,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: Hubba hubba! Who's the youth with the mike?!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784690821,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: I hate weed seltzers. But I love gin (kiss)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784689859,
+      "username": "@RandyRen6",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: Nothing beats a Jet2 holiday besides dad",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784689668,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: What happens in Florida includes 2 felonies!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784689553,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I wanna wrestle Wesley and his dad together!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784689533,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: bring back AI Bill Gates ! be a man !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784689376,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: You ain't wrong Rich! Wesley is my jam baby!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784689350,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: He has massive nipples. Yummy! ooooooh BABY!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784689226,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: I went on vacation & got MORE than probation",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784688957,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: I'll use tariffs to get free FloMax for all",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784688861,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: You tinkle so fast! My bladder is plugged!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784688548,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: Listen. My hand is falling off. But I luv U",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784688442,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: What's the big deal? I do this all the time",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784688262,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I don't know who confused Matthew is, but I bet I'm more confused than him cause I'm drunk. Also Matthew Scullins has nicer nipples than him !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784688152,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: I'd never show my member to GIRLS maybe BOYS",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784688063,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: Richard, will you join me and Pikachu in the hot tub? Eric: Can I join? I have $7 vodka and an un-circumcized piss boner. Stan: Ohhhh BABY!?!!",
+      "commands": [
+        "harman",
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784688050,
+      "username": "@ReviewTechAzerbaijan",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: Gotta let the meat float! Robust aquatic flavor!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784687688,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: If Mr. Citrus Jeans is not here I'll scream",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784684453,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Masterchief: the galactic empire of men has deemed that the woodchipper is to easy of a fate for pedos. all councils agree that pedos becoming mutilated servitors is a far more acceptable fate.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784681603,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Masterchief: well men, discovery requires experimentation. open Pandoras box. release the banished, for science. be a man, a man among men",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784680572,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: When I sock myself it's called Phil-A-She-Oh",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784679455,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: Honey have u seen my bag of nots! I need it!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784678309,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: My mods make $0.00. Don\u2019t twist my words Rich",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784677984,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: Hot dog up the rear for clicks? No I'm a top",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784677269,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Girlfriend: That guys gay thank you.",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1784677254,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "(door_knock) (ben_yes) Stan: Someone need a Fluff?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784677083,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Masterchief: what heretical bullshit is this, a long day of swamp ass and no notification! this is unacceptable! attention all councils, war is inevitable! all traces of corruption must be eradicated!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1784676464,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Harman: Yo Rich it's Leg Day & I'm back on YouTube",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1784675441,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: Oh my god, that rainbow headband! Bi-Sekual!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784675204,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: These ex-LCL guys suffer from poor hygiene!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784675045,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: Only reason the LCU makes any money is that Keem stole my playbook of E-begging and did it better than me. The audacity of that gnome.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1784674667,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Ones: Stay away",
+      "commands": [
+        "ones"
+      ]
+    },
+    {
+      "ts": 1784674521,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Council of men, Ricardo wanted me to pass on a message: \u201cCarlos is a bird. I am a bird. We need a council of birds\u201d",
+      "commands": [
+        "message"
+      ]
+    },
+    {
+      "ts": 1784674448,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Stan: Hey Richie, would consider a co-host who's currently roasting in hell? I can bring in the younger demographic... but not TOO young! Mmm Oh Yeah!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1784673193,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Zesty: Rich I think you've found your new co-host!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1784672442,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: The buckshot has hit the bowl.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784672378,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Trump: China! Tariffs! Elections! My Anus! Yeowch!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1784671550,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Eric: I wish to receive Bird Father Rich's Harvest",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784671369,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "(door_knock) Eric: ahhhh aaa ahh RICH! BIG CAULK!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1784670615,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "bill_gates_and_a_man_live_2026-07-21_213121",
+      "message": "Phil: As president, can we get some support NOW?!",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1784604918,
       "username": "@Austin_Norris",
