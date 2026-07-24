@@ -5,9 +5,9 @@
   "start_ts": 1784849230,
   "end_ts": null,
   "platforms": [
-    "kick",
     "youtube",
-    "twitch"
+    "twitch",
+    "kick"
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
