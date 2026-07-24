@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1784912212,
+  "updated_ts": 1784913853,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -1112,6 +1112,12 @@
       "count": 65900,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1719288577,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "working_with_the_devil"
     },
     {
       "ts": 1720483200,
