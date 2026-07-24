@@ -3,10 +3,10 @@
   "slug": "a_robust_and_meaningful_benny_johnson_experience",
   "title": "A Robust And Meaningful Benny Johnson Experience",
   "start_ts": 1784849230,
-  "end_ts": 1784869457,
+  "end_ts": null,
   "platforms": [
-    "twitch",
     "youtube",
+    "twitch",
     "kick"
   ],
   "source_channel": "rtustreams",
@@ -37,6 +37,10 @@
     {
       "archive_id": "LhDlXxOfP60",
       "start_ts": 1784860149
+    },
+    {
+      "archive_id": "9EvR6QRSwDE",
+      "start_ts": 1784869473
     }
   ],
   "youtube_archive_id": "LhDlXxOfP60",
