@@ -3,7 +3,7 @@
   "slug": "a_short_and_tangy_stream",
   "title": "A Short And Tangy Stream",
   "start_ts": 1784946918,
-  "end_ts": null,
+  "end_ts": 1784964735,
   "platforms": [
     "youtube",
     "twitch",
@@ -18,5 +18,7 @@
       "archive_id": "24pmian0EBw",
       "start_ts": 1784946918
     }
-  ]
+  ],
+  "youtube_archive_id": "24pmian0EBw",
+  "archive_is_source_vod": false
 }
