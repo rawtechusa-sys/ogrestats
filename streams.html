@@ -382,10 +382,11 @@
 
   .chart-wrap { position: relative; width: 100%; height: 400px; }
 
-  .pie-row { display: flex; gap: 24px; flex-wrap: wrap; }
-  .pie-cell { flex: 1 1 240px; min-width: 220px; }
+  .pie-row { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+  .pie-cell { flex: 0 0 auto; }
   .pie-title { display: block; margin-bottom: 10px; text-align: center; }
-  .pie-wrap { position: relative; width: 100%; height: 300px; }
+  /* .pie-wrap width/height are set per-pie in JS (buildPie) to hug the chart. */
+  .pie-wrap { position: relative; }
 
   /* ── Scrub-and-zoom scrollbar ── */
   .chart-scrollbar {
@@ -586,9 +587,9 @@ let typePie = null;
 // Distinct hue per donation type for the "By Type" pie (the log badges reuse the
 // same green for several YouTube types, which would merge into one slice here).
 const TYPE_COLORS = {
-  superchat:      '#40c4a0',
+  superchat:      '#e8c020',
   membership:     '#6bd48a',
-  giftmembership: '#2e8b57',
+  giftmembership: '#1d6b3a',
   sub:            '#8a6fd8',
   giftsub:        '#b090d0',
   bits:           '#6650d8',
@@ -596,7 +597,8 @@ const TYPE_COLORS = {
   _other:         '#909090',
 };
 // Cycled categorical palette for the contributor pie ("Other" slice is grey).
-const CONTRIB_PALETTE = ['#e84040', '#40c4ff', '#e8c020', '#8a6fd8', '#53fc18', '#e88030', '#c060d0', '#20c0a0', '#d04060', '#80a0e0'];
+// Muted / desaturated tones so the many slices read calmly.
+const CONTRIB_PALETTE = ['#c96a6a', '#6a9bc0', '#c9b06a', '#9080c0', '#7bbf7b', '#c98f5e', '#b07fb0', '#5ea89a', '#b06a80', '#8a9bc0'];
 
 // Parallel array to the rendered sidebar rows, used by the search filter:
 // [{ el, id, startTs, title /* lowercased */ }]. Rebuilt by loadStreamList.
@@ -1769,7 +1771,18 @@ function intTick(fmt) {
   };
 }
 
-// Draws each slice's label around the pie with a connector line to the slice,
+// Pie label geometry. Labels hug their slice (stub-length leader) and the canvas
+// is sized (buildPie) to fit the widest label, so nothing is truncated or clipped.
+const PIE_LABEL_FONT = "12px 'Share Tech Mono', monospace";
+const PIE_STUB = 8, PIE_GAP = 4, PIE_DIAM = 190, PIE_TB_PAD = 34;
+let _pieMeasureCtx = null;
+function measurePieLabel(text) {
+  if (!_pieMeasureCtx) _pieMeasureCtx = document.createElement('canvas').getContext('2d');
+  _pieMeasureCtx.font = PIE_LABEL_FONT;
+  return _pieMeasureCtx.measureText(text).width;
+}
+
+// Draws each slice's label just outside the slice with a short leader line,
 // replacing the side legend. Reads the live theme each draw so label text color
 // follows a theme switch on the next update('none').
 const pieOutLabels = {
@@ -1781,52 +1794,47 @@ const pieOutLabels = {
     const { ctx } = chart;
     const theme = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
 
-    // Collect an anchor per non-zero slice, split by which side it faces.
+    // Anchor each label just outside its slice (shortest leader), grouped by side.
     const left = [], right = [];
     meta.data.forEach((arc, i) => {
       if (!ds.data[i]) return;
       const p = arc.getProps(['x', 'y', 'outerRadius', 'startAngle', 'endAngle'], true);
       const mid = (p.startAngle + p.endAngle) / 2;
       const cos = Math.cos(mid), sin = Math.sin(mid);
-      const dir = cos >= 0 ? 1 : -1;
-      let label = String(chart.data.labels[i] ?? '');
-      if (label.length > 10) label = label.slice(0, 9) + '…';
-      (dir > 0 ? right : left).push({
+      const align = cos > 0.2 ? 'left' : (cos < -0.2 ? 'right' : 'center');
+      (cos >= 0 ? right : left).push({
         edgeX: p.x + cos * p.outerRadius, edgeY: p.y + sin * p.outerRadius,
-        elbowX: p.x + cos * (p.outerRadius + 10), y: p.y + sin * (p.outerRadius + 10),
-        dir, label, color: Array.isArray(ds.backgroundColor) ? ds.backgroundColor[i] : ds.backgroundColor,
+        ax: p.x + cos * (p.outerRadius + PIE_STUB), y: p.y + sin * (p.outerRadius + PIE_STUB),
+        align, label: String(chart.data.labels[i] ?? ''),
+        color: Array.isArray(ds.backgroundColor) ? ds.backgroundColor[i] : ds.backgroundColor,
       });
     });
 
     ctx.save();
-    ctx.font = "11px 'Share Tech Mono', monospace";
+    ctx.font = PIE_LABEL_FONT;
     ctx.textBaseline = 'middle';
     ctx.fillStyle = theme.chartTick;
-    const top = chart.chartArea.top + 6, bottom = chart.chartArea.bottom - 6;
-    const pad = 4;
+    // Clamp to the whole canvas (not the pie box) so top/bottom labels can spread
+    // up/down into the padding instead of piling onto the pie.
+    const top = 8, bottom = chart.height - 8;
     for (const side of [left, right]) {
       // ponytail: single push-down pass; good enough for <=11 slices, revisit if labels still collide.
       side.sort((a, b) => a.y - b.y);
       for (let k = 0; k < side.length; k++) {
-        const minY = k === 0 ? top : side[k - 1].y + 14;
+        const minY = k === 0 ? top : side[k - 1].y + 15;
         if (side[k].y < minY) side[k].y = minY;
         if (side[k].y > bottom) side[k].y = bottom;
       }
       for (const o of side) {
-        // Anchor labels to the canvas edge (measured), so text never clips; the
-        // horizontal connector runs from the radial elbow to the label's edge.
-        const textX = o.dir > 0 ? chart.width - pad : pad;
-        const tw = ctx.measureText(o.label).width;
-        const hx = o.dir > 0 ? textX - tw - 4 : textX + tw + 4;
         ctx.strokeStyle = o.color;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(o.edgeX, o.edgeY);
-        ctx.lineTo(o.elbowX, o.y);
-        ctx.lineTo(hx, o.y);
+        ctx.lineTo(o.ax, o.y);
         ctx.stroke();
-        ctx.textAlign = o.dir > 0 ? 'right' : 'left';
-        ctx.fillText(o.label, textX, o.y);
+        ctx.textAlign = o.align;
+        const tx = o.align === 'left' ? o.ax + PIE_GAP : o.align === 'right' ? o.ax - PIE_GAP : o.ax;
+        ctx.fillText(o.label, tx, o.y);
       }
     }
     ctx.restore();
@@ -1840,6 +1848,18 @@ function buildPie(canvasId, labels, dataArr, colors) {
   if (!el) return null;
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
   const total = dataArr.reduce((s, v) => s + v, 0);
+
+  // Size the canvas to its content: pad each side for the widest (untruncated)
+  // label so the fit-content card hugs the chart and leaders stay short.
+  let maxLabel = 0;
+  labels.forEach((l, i) => { if (dataArr[i]) maxLabel = Math.max(maxLabel, measurePieLabel(String(l))); });
+  const sidePad = Math.ceil(maxLabel + PIE_STUB + PIE_GAP + 2);
+  const wrap = el.parentElement;
+  if (wrap) {
+    wrap.style.width = (PIE_DIAM + 2 * sidePad) + 'px';
+    wrap.style.height = (PIE_DIAM + 2 * PIE_TB_PAD) + 'px';
+  }
+
   return new Chart(el, {
     type: 'doughnut',
     data: { labels, datasets: [{ data: dataArr, backgroundColor: colors, borderWidth: 0 }] },
@@ -1847,7 +1867,7 @@ function buildPie(canvasId, labels, dataArr, colors) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      layout: { padding: { left: 72, right: 72, top: 12, bottom: 12 } },
+      layout: { padding: { left: sidePad, right: sidePad, top: PIE_TB_PAD, bottom: PIE_TB_PAD } },
       plugins: {
         legend: { display: false },
         tooltip: {
