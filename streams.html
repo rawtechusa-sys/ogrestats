@@ -1771,10 +1771,11 @@ function intTick(fmt) {
   };
 }
 
-// Pie label geometry. Labels hug their slice (stub-length leader) and the canvas
-// is sized (buildPie) to fit the widest label, so nothing is truncated or clipped.
+// Pie label geometry. Labels are laid out in a vertical column on each side and
+// joined to their slice by an elbowed leader line; the canvas is sized (buildPie)
+// to fit the widest label so nothing is truncated or clipped.
 const PIE_LABEL_FONT = "12px 'Share Tech Mono', monospace";
-const PIE_STUB = 16, PIE_GAP = 4, PIE_GAP_Y = 16, PIE_DIAM = 190, PIE_TB_PAD = 50;
+const PIE_LEADER = 26, PIE_STUB = 8, PIE_GAP = 6, PIE_LINE_H = 16, PIE_DIAM = 190, PIE_TB_PAD = 24;
 let _pieMeasureCtx = null;
 function measurePieLabel(text) {
   if (!_pieMeasureCtx) _pieMeasureCtx = document.createElement('canvas').getContext('2d');
@@ -1782,9 +1783,27 @@ function measurePieLabel(text) {
   return _pieMeasureCtx.measureText(text).width;
 }
 
-// Draws each slice's label just outside the slice with a short leader line,
-// replacing the side legend. Reads the live theme each draw so label text color
-// follows a theme switch on the next update('none').
+// Relax label slot y's into non-overlapping positions within [top, bottom],
+// keeping >= PIE_LINE_H between neighbours. items must be sorted by idealY.
+function layoutPieColumn(items, top, bottom) {
+  const n = items.length;
+  if (!n) return;
+  for (const it of items) it.y = it.idealY;
+  for (let i = 1; i < n; i++) if (items[i].y < items[i - 1].y + PIE_LINE_H) items[i].y = items[i - 1].y + PIE_LINE_H;
+  if (items[n - 1].y > bottom) {
+    items[n - 1].y = bottom;
+    for (let i = n - 2; i >= 0; i--) if (items[i].y > items[i + 1].y - PIE_LINE_H) items[i].y = items[i + 1].y - PIE_LINE_H;
+  }
+  if (items[0].y < top) {
+    items[0].y = top;
+    for (let i = 1; i < n; i++) if (items[i].y < items[i - 1].y + PIE_LINE_H) items[i].y = items[i - 1].y + PIE_LINE_H;
+  }
+}
+
+// Lays out each slice's label in a vertical column on its side with an elbowed
+// leader line to the slice — no overlap even when small slices cluster at one
+// angle. Reads the live theme each draw so label color follows a theme switch
+// on the next update('none').
 const pieOutLabels = {
   id: 'pieOutLabels',
   afterDraw(chart) {
@@ -1794,67 +1813,43 @@ const pieOutLabels = {
     const { ctx } = chart;
     const theme = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
 
-    // Anchor each label just outside its slice (shortest leader), grouped by side.
+    // Group slices into a left / right column by which way they face.
     const left = [], right = [];
     meta.data.forEach((arc, i) => {
       if (!ds.data[i]) return;
       const p = arc.getProps(['x', 'y', 'outerRadius', 'startAngle', 'endAngle'], true);
       const mid = (p.startAngle + p.endAngle) / 2;
       const cos = Math.cos(mid), sin = Math.sin(mid);
-      const align = cos > 0.2 ? 'left' : (cos < -0.2 ? 'right' : 'center');
-      (cos >= 0 ? right : left).push({
+      const rightSide = cos >= 0;
+      (rightSide ? right : left).push({
         edgeX: p.x + cos * p.outerRadius, edgeY: p.y + sin * p.outerRadius,
-        ax: p.x + cos * (p.outerRadius + PIE_STUB), y: p.y + sin * (p.outerRadius + PIE_STUB),
-        align, label: String(chart.data.labels[i] ?? ''),
+        elbowX: p.x + cos * (p.outerRadius + PIE_STUB), elbowY: p.y + sin * (p.outerRadius + PIE_STUB),
+        idealY: p.y + sin * p.outerRadius, rightSide,
+        labelX: rightSide ? p.x + p.outerRadius + PIE_LEADER : p.x - p.outerRadius - PIE_LEADER,
+        label: String(chart.data.labels[i] ?? ''),
       });
     });
+
+    const top = 8, bottom = chart.height - 8;
+    left.sort((a, b) => a.idealY - b.idealY);
+    right.sort((a, b) => a.idealY - b.idealY);
+    layoutPieColumn(left, top, bottom);
+    layoutPieColumn(right, top, bottom);
 
     ctx.save();
     ctx.font = PIE_LABEL_FONT;
     ctx.textBaseline = 'middle';
     ctx.fillStyle = theme.chartTick;
-    const top = 8, bottom = chart.height - 8, cy = chart.height / 2;
-
-    // Precompute each label's text x-extent and draw position.
-    const all = left.concat(right);
-    for (const o of all) {
-      const w = ctx.measureText(o.label).width;
-      o.tx = o.align === 'left' ? o.ax + PIE_GAP : o.align === 'right' ? o.ax - PIE_GAP : o.ax;
-      o.xL = (o.align === 'left' ? o.tx : o.align === 'right' ? o.tx - w : o.tx - w / 2) - 3;
-      o.xR = (o.align === 'left' ? o.tx + w : o.align === 'right' ? o.tx : o.tx + w / 2) + 3;
-    }
-    const xOverlap = (a, b) => a.xL < b.xR && b.xL < a.xR;
-
-    // De-clutter by fanning labels AWAY from the pie — those above the vertical
-    // center push up, those below push down — but only against labels whose text
-    // actually overlaps horizontally. Testing real x-extent (not left/right side)
-    // spaces top/bottom clusters that straddle the center, which per-side passes
-    // miss. Process nearest-the-pie first so those stay put and the stack fans out.
-    const upper = all.filter(o => o.y < cy).sort((a, b) => b.y - a.y);
-    const lower = all.filter(o => o.y >= cy).sort((a, b) => a.y - b.y);
-    const placedU = [];
-    for (const o of upper) {
-      for (const p of placedU) if (xOverlap(o, p)) o.y = Math.min(o.y, p.y - PIE_GAP_Y);
-      o.y = Math.max(top, o.y);
-      placedU.push(o);
-    }
-    const placedL = [];
-    for (const o of lower) {
-      for (const p of placedL) if (xOverlap(o, p)) o.y = Math.max(o.y, p.y + PIE_GAP_Y);
-      o.y = Math.min(bottom, o.y);
-      placedL.push(o);
-    }
-
-    // One theme color for every leader line (not the slice color).
-    ctx.strokeStyle = theme.chartTick;
+    ctx.strokeStyle = theme.chartTick;   // one theme color for every leader line
     ctx.lineWidth = 1;
-    for (const o of all) {
+    for (const o of left.concat(right)) {
       ctx.beginPath();
       ctx.moveTo(o.edgeX, o.edgeY);
-      ctx.lineTo(o.ax, o.y);
+      ctx.lineTo(o.elbowX, o.elbowY);
+      ctx.lineTo(o.labelX + (o.rightSide ? -PIE_GAP : PIE_GAP), o.y);
       ctx.stroke();
-      ctx.textAlign = o.align;
-      ctx.fillText(o.label, o.tx, o.y);
+      ctx.textAlign = o.rightSide ? 'left' : 'right';
+      ctx.fillText(o.label, o.labelX, o.y);
     }
     ctx.restore();
   },
@@ -1868,11 +1863,11 @@ function buildPie(canvasId, labels, dataArr, colors) {
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
   const total = dataArr.reduce((s, v) => s + v, 0);
 
-  // Size the canvas to its content: pad each side for the widest (untruncated)
-  // label so the fit-content card hugs the chart and leaders stay short.
+  // Size the canvas to its content: pad each side for the leader plus the widest
+  // (untruncated) label so the fit-content card hugs the chart and nothing clips.
   let maxLabel = 0;
   labels.forEach((l, i) => { if (dataArr[i]) maxLabel = Math.max(maxLabel, measurePieLabel(String(l))); });
-  const sidePad = Math.ceil(maxLabel + PIE_STUB + PIE_GAP + 2);
+  const sidePad = Math.ceil(PIE_LEADER + maxLabel + PIE_GAP + 2);
   const wrap = el.parentElement;
   if (wrap) {
     wrap.style.width = (PIE_DIAM + 2 * sidePad) + 'px';
