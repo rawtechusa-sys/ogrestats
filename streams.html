@@ -1778,7 +1778,7 @@ function intTick(fmt) {
 // joined to their slice by an elbowed leader line; the canvas is sized (buildPie)
 // to fit the widest label so nothing is truncated or clipped.
 const PIE_LABEL_FONT = "12px 'Share Tech Mono', monospace";
-const PIE_LEADER = 26, PIE_STUB = 8, PIE_GAP = 6, PIE_LINE_H = 16, PIE_DIAM = 190, PIE_TB_PAD = 24;
+const PIE_LEADER = 26, PIE_STUB = 8, PIE_GAP = 6, PIE_LINE_H = 24, PIE_DIAM = 190, PIE_TOP_PAD = 64, PIE_BOT_PAD = 32;
 let _pieMeasureCtx = null;
 function measurePieLabel(text) {
   if (!_pieMeasureCtx) _pieMeasureCtx = document.createElement('canvas').getContext('2d');
@@ -1788,18 +1788,22 @@ function measurePieLabel(text) {
 
 // Relax label slot y's into non-overlapping positions within [top, bottom],
 // keeping >= PIE_LINE_H between neighbours. items must be sorted by idealY.
+// After packing, the block is re-centered on the labels' ideal centroid so a
+// cluster of slices spreads both above and below (using the headroom) instead
+// of piling downward from the topmost slice.
 function layoutPieColumn(items, top, bottom) {
   const n = items.length;
   if (!n) return;
   for (const it of items) it.y = it.idealY;
   for (let i = 1; i < n; i++) if (items[i].y < items[i - 1].y + PIE_LINE_H) items[i].y = items[i - 1].y + PIE_LINE_H;
+  let idealSum = 0, curSum = 0;
+  for (const it of items) { idealSum += it.idealY; curSum += it.y; }
+  const shift = (idealSum - curSum) / n;   // <= 0 (packing only pushed down)
+  for (const it of items) it.y += shift;
+  if (items[0].y < top) { const d = top - items[0].y; for (const it of items) it.y += d; }
   if (items[n - 1].y > bottom) {
     items[n - 1].y = bottom;
     for (let i = n - 2; i >= 0; i--) if (items[i].y > items[i + 1].y - PIE_LINE_H) items[i].y = items[i + 1].y - PIE_LINE_H;
-  }
-  if (items[0].y < top) {
-    items[0].y = top;
-    for (let i = 1; i < n; i++) if (items[i].y < items[i - 1].y + PIE_LINE_H) items[i].y = items[i - 1].y + PIE_LINE_H;
   }
 }
 
@@ -1904,7 +1908,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
   const wrap = el.parentElement;
   if (wrap) {
     wrap.style.width = (PIE_DIAM + 2 * sidePad) + 'px';
-    wrap.style.height = (PIE_DIAM + 2 * PIE_TB_PAD) + 'px';
+    wrap.style.height = (PIE_DIAM + PIE_TOP_PAD + PIE_BOT_PAD) + 'px';
   }
 
   const chart = new Chart(el, {
@@ -1914,7 +1918,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      layout: { padding: { left: sidePad, right: sidePad, top: PIE_TB_PAD, bottom: PIE_TB_PAD } },
+      layout: { padding: { left: sidePad, right: sidePad, top: PIE_TOP_PAD, bottom: PIE_BOT_PAD } },
       plugins: {
         legend: { display: false },
         tooltip: {
