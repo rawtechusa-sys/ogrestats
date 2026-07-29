@@ -1814,29 +1814,47 @@ const pieOutLabels = {
     ctx.font = PIE_LABEL_FONT;
     ctx.textBaseline = 'middle';
     ctx.fillStyle = theme.chartTick;
-    // De-clutter by fanning labels AWAY from the pie: those above the vertical
-    // center push up, those below push down, so a cluster of small slices near
-    // the top/bottom spreads into the padding instead of piling onto the pie.
     const top = 8, bottom = chart.height - 8, cy = chart.height / 2;
-    for (const side of [left, right]) {
-      const upper = side.filter(o => o.y < cy).sort((a, b) => b.y - a.y); // nearest center first
-      const lower = side.filter(o => o.y >= cy).sort((a, b) => a.y - b.y);
-      for (let k = 1; k < upper.length; k++)
-        if (upper[k].y > upper[k - 1].y - PIE_GAP_Y) upper[k].y = upper[k - 1].y - PIE_GAP_Y;
-      for (let k = 1; k < lower.length; k++)
-        if (lower[k].y < lower[k - 1].y + PIE_GAP_Y) lower[k].y = lower[k - 1].y + PIE_GAP_Y;
-      for (const o of upper.concat(lower)) {
-        o.y = Math.max(top, Math.min(bottom, o.y));
-        ctx.strokeStyle = o.color;
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(o.edgeX, o.edgeY);
-        ctx.lineTo(o.ax, o.y);
-        ctx.stroke();
-        ctx.textAlign = o.align;
-        const tx = o.align === 'left' ? o.ax + PIE_GAP : o.align === 'right' ? o.ax - PIE_GAP : o.ax;
-        ctx.fillText(o.label, tx, o.y);
-      }
+
+    // Precompute each label's text x-extent and draw position.
+    const all = left.concat(right);
+    for (const o of all) {
+      const w = ctx.measureText(o.label).width;
+      o.tx = o.align === 'left' ? o.ax + PIE_GAP : o.align === 'right' ? o.ax - PIE_GAP : o.ax;
+      o.xL = (o.align === 'left' ? o.tx : o.align === 'right' ? o.tx - w : o.tx - w / 2) - 3;
+      o.xR = (o.align === 'left' ? o.tx + w : o.align === 'right' ? o.tx : o.tx + w / 2) + 3;
+    }
+    const xOverlap = (a, b) => a.xL < b.xR && b.xL < a.xR;
+
+    // De-clutter by fanning labels AWAY from the pie — those above the vertical
+    // center push up, those below push down — but only against labels whose text
+    // actually overlaps horizontally. Testing real x-extent (not left/right side)
+    // spaces top/bottom clusters that straddle the center, which per-side passes
+    // miss. Process nearest-the-pie first so those stay put and the stack fans out.
+    const upper = all.filter(o => o.y < cy).sort((a, b) => b.y - a.y);
+    const lower = all.filter(o => o.y >= cy).sort((a, b) => a.y - b.y);
+    const placedU = [];
+    for (const o of upper) {
+      for (const p of placedU) if (xOverlap(o, p)) o.y = Math.min(o.y, p.y - PIE_GAP_Y);
+      o.y = Math.max(top, o.y);
+      placedU.push(o);
+    }
+    const placedL = [];
+    for (const o of lower) {
+      for (const p of placedL) if (xOverlap(o, p)) o.y = Math.max(o.y, p.y + PIE_GAP_Y);
+      o.y = Math.min(bottom, o.y);
+      placedL.push(o);
+    }
+
+    for (const o of all) {
+      ctx.strokeStyle = o.color;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(o.edgeX, o.edgeY);
+      ctx.lineTo(o.ax, o.y);
+      ctx.stroke();
+      ctx.textAlign = o.align;
+      ctx.fillText(o.label, o.tx, o.y);
     }
     ctx.restore();
   },
