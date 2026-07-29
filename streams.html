@@ -1329,7 +1329,10 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      contributorPie = buildPie('contributorPie', contribLabels, contribData, contribColors);
+      contributorPie = buildPie('contributorPie', contribLabels, contribData, contribColors, {
+        linkable: new Set(contribLabels.filter(l => l !== 'Other' && l !== '(anonymous)')),
+        onLabelClick: jumpToDent,
+      });
       typePie = buildPie('typePie', typeLabels, typeData, typeColors);
     }
 
@@ -1842,6 +1845,8 @@ const pieOutLabels = {
     ctx.fillStyle = theme.chartTick;
     ctx.strokeStyle = theme.chartTick;   // one theme color for every leader line
     ctx.lineWidth = 1;
+    // Rebuilt each draw; the canvas click/hover handlers (buildPie) hit-test it.
+    chart._labelBoxes = [];
     for (const o of left.concat(right)) {
       ctx.beginPath();
       ctx.moveTo(o.edgeX, o.edgeY);
@@ -1850,14 +1855,42 @@ const pieOutLabels = {
       ctx.stroke();
       ctx.textAlign = o.rightSide ? 'left' : 'right';
       ctx.fillText(o.label, o.labelX, o.y);
+      const w = ctx.measureText(o.label).width;
+      const x0 = o.rightSide ? o.labelX : o.labelX - w;
+      const linkable = !!(chart.$linkable && chart.$linkable.has(o.label));
+      if (linkable) { ctx.beginPath(); ctx.moveTo(x0, o.y + 8); ctx.lineTo(x0 + w, o.y + 8); ctx.stroke(); }
+      chart._labelBoxes.push({ label: o.label, x0, y0: o.y - 8, x1: x0 + w, y1: o.y + 8, linkable });
     }
     ctx.restore();
   },
 };
 
+// Which label box (if any) a pointer event falls on, in canvas CSS pixels.
+function hitPieLabel(chart, ev) {
+  const boxes = chart._labelBoxes;
+  if (!boxes) return null;
+  const x = ev.offsetX, y = ev.offsetY;
+  for (const b of boxes) if (x >= b.x0 && x <= b.x1 && y >= b.y0 && y <= b.y1) return b;
+  return null;
+}
+
+// Navigate the shell to the Dents tab focused on a given donor, in the SAME page
+// (mirrors dents.html's jumpToStream): stash the user, ask the shell to switch
+// tabs; the dents iframe reloads and reads 'selected-dent' on load.
+function jumpToDent(user) {
+  if (!user) return;
+  try { sessionStorage.setItem('selected-dent', user); } catch (e) {}
+  if (window.parent && window.parent !== window) {
+    try { window.parent.postMessage({ type: 'navigate', slug: 'dents' }, '*'); return; } catch (e) {}
+  }
+  window.location.href = 'index.html#dents';
+}
+
 // A themed doughnut for the contributor / type breakdowns. dataArr values are USD;
 // the tooltip shows "<label>: $<amount> (<pct>%)". Returns the Chart (or null).
-function buildPie(canvasId, labels, dataArr, colors) {
+// opts (optional): { linkable: Set<label>, onLabelClick: fn(label) } makes the
+// listed labels clickable (used to link contributor usernames to their dents page).
+function buildPie(canvasId, labels, dataArr, colors, opts) {
   const el = document.getElementById(canvasId);
   if (!el) return null;
   const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
@@ -1874,7 +1907,7 @@ function buildPie(canvasId, labels, dataArr, colors) {
     wrap.style.height = (PIE_DIAM + 2 * PIE_TB_PAD) + 'px';
   }
 
-  return new Chart(el, {
+  const chart = new Chart(el, {
     type: 'doughnut',
     data: { labels, datasets: [{ data: dataArr, backgroundColor: colors, borderWidth: 0 }] },
     plugins: [pieOutLabels],
@@ -1898,6 +1931,21 @@ function buildPie(canvasId, labels, dataArr, colors) {
       },
     },
   });
+
+  // Clickable labels: the plugin underlines linkable ones and records hitboxes.
+  if (opts && opts.onLabelClick) {
+    chart.$linkable = opts.linkable || null;
+    el.addEventListener('mousemove', (ev) => {
+      const b = hitPieLabel(chart, ev);
+      el.style.cursor = (b && b.linkable) ? 'pointer' : 'default';
+    });
+    el.addEventListener('mouseleave', () => { el.style.cursor = 'default'; });
+    el.addEventListener('click', (ev) => {
+      const b = hitPieLabel(chart, ev);
+      if (b && b.linkable) opts.onLabelClick(b.label);
+    });
+  }
+  return chart;
 }
 
 function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {

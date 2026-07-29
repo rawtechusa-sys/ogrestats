@@ -927,6 +927,25 @@ function loadFromLeaderboard(board) {
   tableData = Object.values(users).filter(u => u.total > 0);
 }
 
+// Focus a specific donor (e.g. arrived from a streams.html pie-legend link).
+// Reuses the search filter so the row renders immediately regardless of the
+// windowed chunk rendering, then expands it and scrolls it into view.
+function selectDent(user) {
+  const u = String(user).replace(/^@+/, '');
+  if (!u) return;
+  const box = document.getElementById('dentSearch');
+  if (box) box.value = u;
+  searchQuery = u.toLowerCase();
+  renderTable();
+  const match = tableData.find(r => (r.username || '').toLowerCase() === u.toLowerCase());
+  if (match && !expanded.has(match.username)) toggleDonor(match.username);
+  requestAnimationFrame(() => {
+    const wrap = document.getElementById('tableWrap');
+    const tb = match && wrap && wrap.querySelector(`tbody.dent-group[data-user="${cssEscape(match.username)}"]`);
+    if (tb) tb.scrollIntoView({ block: 'start' });
+  });
+}
+
 async function load() {
   const wrap = document.getElementById('tableWrap');
   try {
@@ -939,6 +958,11 @@ async function load() {
     loadFromLeaderboard(board);
     setupDelegation();
     renderTable();
+    // A pie-legend username link (streams.html) stashes the donor here; consume
+    // it once so a later manual visit doesn't re-trigger the filter.
+    let sel = null;
+    try { sel = sessionStorage.getItem('selected-dent'); sessionStorage.removeItem('selected-dent'); } catch (e) {}
+    if (sel) selectDent(sel);
   } catch (e) {
     wrap.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load dents<br><small>${e.message}</small></span></div>`;
   }
