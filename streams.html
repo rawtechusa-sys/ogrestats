@@ -385,7 +385,7 @@
   .pie-row { display: flex; gap: 24px; flex-wrap: wrap; }
   .pie-cell { flex: 1 1 240px; min-width: 220px; }
   .pie-title { display: block; margin-bottom: 10px; text-align: center; }
-  .pie-wrap { position: relative; width: 100%; height: 260px; }
+  .pie-wrap { position: relative; width: 100%; height: 300px; }
 
   /* ── Scrub-and-zoom scrollbar ── */
   .chart-scrollbar {
@@ -625,10 +625,10 @@ function applyTheme(key) {
     currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
     currentChart.update('none');
   }
-  // Pie slice colors are fixed by design; only re-theme legend text + tooltip.
+  // Pie slice colors are fixed; re-theme the tooltip. update('none') re-runs the
+  // around-pie label plugin, which re-reads the theme for its text color.
   for (const pie of [contributorPie, typePie]) {
     if (!pie) continue;
-    pie.options.plugins.legend.labels.color = t.chartTick;
     pie.options.plugins.tooltip.backgroundColor = t.tooltipBg;
     pie.options.plugins.tooltip.titleColor = t.tooltipTitle;
     pie.options.plugins.tooltip.bodyColor = t.tooltipBody;
@@ -1315,17 +1315,15 @@ async function loadStream(streamId) {
       const typeColors  = typeLabels.map(name => TYPE_COLORS[name] || TYPE_COLORS._other);
 
       const panel = document.createElement('div');
-      panel.className = 'chart-panel';
+      panel.className = 'pie-row';
       panel.innerHTML = `
-        <div class="pie-row">
-          <div class="pie-cell">
-            <span class="chart-title pie-title">Top Contributors</span>
-            <div class="pie-wrap"><canvas id="contributorPie" role="img" aria-label="Top contributors by total donation amount"></canvas></div>
-          </div>
-          <div class="pie-cell">
-            <span class="chart-title pie-title">By Type</span>
-            <div class="pie-wrap"><canvas id="typePie" role="img" aria-label="Donation totals by type"></canvas></div>
-          </div>
+        <div class="chart-panel pie-cell">
+          <span class="chart-title pie-title">Top Contributors</span>
+          <div class="pie-wrap"><canvas id="contributorPie" role="img" aria-label="Top contributors by total donation amount"></canvas></div>
+        </div>
+        <div class="chart-panel pie-cell">
+          <span class="chart-title pie-title">By Type</span>
+          <div class="pie-wrap"><canvas id="typePie" role="img" aria-label="Donation totals by type"></canvas></div>
         </div>`;
       main.appendChild(panel);
 
@@ -1771,6 +1769,70 @@ function intTick(fmt) {
   };
 }
 
+// Draws each slice's label around the pie with a connector line to the slice,
+// replacing the side legend. Reads the live theme each draw so label text color
+// follows a theme switch on the next update('none').
+const pieOutLabels = {
+  id: 'pieOutLabels',
+  afterDraw(chart) {
+    const meta = chart.getDatasetMeta(0);
+    if (!meta || !meta.data.length) return;
+    const ds = chart.data.datasets[0];
+    const { ctx } = chart;
+    const theme = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
+
+    // Collect an anchor per non-zero slice, split by which side it faces.
+    const left = [], right = [];
+    meta.data.forEach((arc, i) => {
+      if (!ds.data[i]) return;
+      const p = arc.getProps(['x', 'y', 'outerRadius', 'startAngle', 'endAngle'], true);
+      const mid = (p.startAngle + p.endAngle) / 2;
+      const cos = Math.cos(mid), sin = Math.sin(mid);
+      const dir = cos >= 0 ? 1 : -1;
+      let label = String(chart.data.labels[i] ?? '');
+      if (label.length > 10) label = label.slice(0, 9) + '…';
+      (dir > 0 ? right : left).push({
+        edgeX: p.x + cos * p.outerRadius, edgeY: p.y + sin * p.outerRadius,
+        elbowX: p.x + cos * (p.outerRadius + 10), y: p.y + sin * (p.outerRadius + 10),
+        dir, label, color: Array.isArray(ds.backgroundColor) ? ds.backgroundColor[i] : ds.backgroundColor,
+      });
+    });
+
+    ctx.save();
+    ctx.font = "11px 'Share Tech Mono', monospace";
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = theme.chartTick;
+    const top = chart.chartArea.top + 6, bottom = chart.chartArea.bottom - 6;
+    const pad = 4;
+    for (const side of [left, right]) {
+      // ponytail: single push-down pass; good enough for <=11 slices, revisit if labels still collide.
+      side.sort((a, b) => a.y - b.y);
+      for (let k = 0; k < side.length; k++) {
+        const minY = k === 0 ? top : side[k - 1].y + 14;
+        if (side[k].y < minY) side[k].y = minY;
+        if (side[k].y > bottom) side[k].y = bottom;
+      }
+      for (const o of side) {
+        // Anchor labels to the canvas edge (measured), so text never clips; the
+        // horizontal connector runs from the radial elbow to the label's edge.
+        const textX = o.dir > 0 ? chart.width - pad : pad;
+        const tw = ctx.measureText(o.label).width;
+        const hx = o.dir > 0 ? textX - tw - 4 : textX + tw + 4;
+        ctx.strokeStyle = o.color;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(o.edgeX, o.edgeY);
+        ctx.lineTo(o.elbowX, o.y);
+        ctx.lineTo(hx, o.y);
+        ctx.stroke();
+        ctx.textAlign = o.dir > 0 ? 'right' : 'left';
+        ctx.fillText(o.label, textX, o.y);
+      }
+    }
+    ctx.restore();
+  },
+};
+
 // A themed doughnut for the contributor / type breakdowns. dataArr values are USD;
 // the tooltip shows "<label>: $<amount> (<pct>%)". Returns the Chart (or null).
 function buildPie(canvasId, labels, dataArr, colors) {
@@ -1781,11 +1843,13 @@ function buildPie(canvasId, labels, dataArr, colors) {
   return new Chart(el, {
     type: 'doughnut',
     data: { labels, datasets: [{ data: dataArr, backgroundColor: colors, borderWidth: 0 }] },
+    plugins: [pieOutLabels],
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      layout: { padding: { left: 72, right: 72, top: 12, bottom: 12 } },
       plugins: {
-        legend: { position: 'right', labels: { color: t.chartTick, font: { size: 11 }, boxWidth: 12, padding: 8 } },
+        legend: { display: false },
         tooltip: {
           backgroundColor: t.tooltipBg, titleColor: t.tooltipTitle, bodyColor: t.tooltipBody,
           borderColor: t.tooltipBorder, borderWidth: 1,
