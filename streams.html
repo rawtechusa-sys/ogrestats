@@ -382,6 +382,11 @@
 
   .chart-wrap { position: relative; width: 100%; height: 400px; }
 
+  .pie-row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .pie-cell { flex: 1 1 240px; min-width: 220px; }
+  .pie-title { display: block; margin-bottom: 10px; text-align: center; }
+  .pie-wrap { position: relative; width: 100%; height: 260px; }
+
   /* ── Scrub-and-zoom scrollbar ── */
   .chart-scrollbar {
     position: relative;
@@ -575,6 +580,23 @@
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
 let currentChart = null;
+let contributorPie = null;
+let typePie = null;
+
+// Distinct hue per donation type for the "By Type" pie (the log badges reuse the
+// same green for several YouTube types, which would merge into one slice here).
+const TYPE_COLORS = {
+  superchat:      '#40c4a0',
+  membership:     '#6bd48a',
+  giftmembership: '#2e8b57',
+  sub:            '#8a6fd8',
+  giftsub:        '#b090d0',
+  bits:           '#6650d8',
+  kicks:          '#53fc18',
+  _other:         '#909090',
+};
+// Cycled categorical palette for the contributor pie ("Other" slice is grey).
+const CONTRIB_PALETTE = ['#e84040', '#40c4ff', '#e8c020', '#8a6fd8', '#53fc18', '#e88030', '#c060d0', '#20c0a0', '#d04060', '#80a0e0'];
 
 // Parallel array to the rendered sidebar rows, used by the search filter:
 // [{ el, id, startTs, title /* lowercased */ }]. Rebuilt by loadStreamList.
@@ -602,6 +624,16 @@ function applyTheme(key) {
     currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
     currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
     currentChart.update('none');
+  }
+  // Pie slice colors are fixed by design; only re-theme legend text + tooltip.
+  for (const pie of [contributorPie, typePie]) {
+    if (!pie) continue;
+    pie.options.plugins.legend.labels.color = t.chartTick;
+    pie.options.plugins.tooltip.backgroundColor = t.tooltipBg;
+    pie.options.plugins.tooltip.titleColor = t.tooltipTitle;
+    pie.options.plugins.tooltip.bodyColor = t.tooltipBody;
+    pie.options.plugins.tooltip.borderColor = t.tooltipBorder;
+    pie.update('none');
   }
 }
 
@@ -1005,6 +1037,9 @@ async function loadStream(streamId) {
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
   document.getElementById('streamTitle').textContent = '';
+  // main.innerHTML above removed the pie canvases; drop their orphaned Chart instances.
+  if (contributorPie) { contributorPie.destroy(); contributorPie = null; }
+  if (typePie) { typePie.destroy(); typePie = null; }
 
   try {
     const [meta, eventsText] = await Promise.all([
@@ -1249,6 +1284,53 @@ async function loadStream(streamId) {
 
       buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
       buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
+    }
+
+    // ── Contributor & type breakdown pies ──
+    if (donations.length > 0 && totalUSD > 0) {
+      // Top contributors by total USD: top 10 named slices + one "Other" bucket.
+      const byUser = new Map();
+      for (const d of donations) {
+        if (d.amount_usd == null) continue;
+        const u = (d.username || '').replace(/^@+/, '') || '(anonymous)';
+        byUser.set(u, (byUser.get(u) || 0) + d.amount_usd);
+      }
+      const userRanked = [...byUser.entries()].sort((a, b) => b[1] - a[1]);
+      const topUsers = userRanked.slice(0, 10);
+      const otherSum = userRanked.slice(10).reduce((s, e) => s + e[1], 0);
+      const contribLabels = topUsers.map(e => e[0]);
+      const contribData   = topUsers.map(e => e[1]);
+      const contribColors = topUsers.map((_, i) => CONTRIB_PALETTE[i % CONTRIB_PALETTE.length]);
+      if (otherSum > 0) { contribLabels.push('Other'); contribData.push(otherSum); contribColors.push('#808080'); }
+
+      // Donation dollars grouped by type.
+      const byType = new Map();
+      for (const d of donations) {
+        if (d.amount_usd == null) continue;
+        byType.set(d.type, (byType.get(d.type) || 0) + d.amount_usd);
+      }
+      const typeRanked = [...byType.entries()].sort((a, b) => b[1] - a[1]);
+      const typeLabels = typeRanked.map(e => e[0]);
+      const typeData   = typeRanked.map(e => e[1]);
+      const typeColors  = typeLabels.map(name => TYPE_COLORS[name] || TYPE_COLORS._other);
+
+      const panel = document.createElement('div');
+      panel.className = 'chart-panel';
+      panel.innerHTML = `
+        <div class="pie-row">
+          <div class="pie-cell">
+            <span class="chart-title pie-title">Top Contributors</span>
+            <div class="pie-wrap"><canvas id="contributorPie" role="img" aria-label="Top contributors by total donation amount"></canvas></div>
+          </div>
+          <div class="pie-cell">
+            <span class="chart-title pie-title">By Type</span>
+            <div class="pie-wrap"><canvas id="typePie" role="img" aria-label="Donation totals by type"></canvas></div>
+          </div>
+        </div>`;
+      main.appendChild(panel);
+
+      contributorPie = buildPie('contributorPie', contribLabels, contribData, contribColors);
+      typePie = buildPie('typePie', typeLabels, typeData, typeColors);
     }
 
     // ── Donation log ──
@@ -1687,6 +1769,37 @@ function intTick(fmt) {
     if (i > 0 && Math.round(ticks[i - 1].value) === r) return null;
     return fmt(r);
   };
+}
+
+// A themed doughnut for the contributor / type breakdowns. dataArr values are USD;
+// the tooltip shows "<label>: $<amount> (<pct>%)". Returns the Chart (or null).
+function buildPie(canvasId, labels, dataArr, colors) {
+  const el = document.getElementById(canvasId);
+  if (!el) return null;
+  const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
+  const total = dataArr.reduce((s, v) => s + v, 0);
+  return new Chart(el, {
+    type: 'doughnut',
+    data: { labels, datasets: [{ data: dataArr, backgroundColor: colors, borderWidth: 0 }] },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { color: t.chartTick, font: { size: 11 }, boxWidth: 12, padding: 8 } },
+        tooltip: {
+          backgroundColor: t.tooltipBg, titleColor: t.tooltipTitle, bodyColor: t.tooltipBody,
+          borderColor: t.tooltipBorder, borderWidth: 1,
+          callbacks: {
+            label: (ctx) => {
+              const v = ctx.parsed || 0;
+              const pct = total ? (v / total * 100).toFixed(1) : '0.0';
+              return `${ctx.label}: $${v.toFixed(2)} (${pct}%)`;
+            },
+          },
+        },
+      },
+    },
+  });
 }
 
 function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {
