@@ -2,7 +2,7 @@
   "stream_id": "grifters_clowns_and_horrorcows_2026-07-28_223505",
   "slug": "grifters_clowns_and_horrorcows",
   "title": "Grifters, Clowns, and Horrorcows",
-  "start_ts": 1785278105,
+  "start_ts": 1785277211,
   "end_ts": null,
   "platforms": [
     "youtube",
@@ -10,5 +10,12 @@
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
-  "source_vod_id": "MEPdAOwmkkg"
+  "source_vod_id": "MEPdAOwmkkg",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "L0u_y7iB4M0",
+      "start_ts": 1785277211
+    }
+  ]
 }
