@@ -1774,7 +1774,7 @@ function intTick(fmt) {
 // Pie label geometry. Labels hug their slice (stub-length leader) and the canvas
 // is sized (buildPie) to fit the widest label, so nothing is truncated or clipped.
 const PIE_LABEL_FONT = "12px 'Share Tech Mono', monospace";
-const PIE_STUB = 10, PIE_GAP = 4, PIE_GAP_Y = 16, PIE_DIAM = 190, PIE_TB_PAD = 50;
+const PIE_STUB = 16, PIE_GAP = 4, PIE_GAP_Y = 16, PIE_DIAM = 190, PIE_TB_PAD = 50;
 let _pieMeasureCtx = null;
 function measurePieLabel(text) {
   if (!_pieMeasureCtx) _pieMeasureCtx = document.createElement('canvas').getContext('2d');
@@ -1806,7 +1806,6 @@ const pieOutLabels = {
         edgeX: p.x + cos * p.outerRadius, edgeY: p.y + sin * p.outerRadius,
         ax: p.x + cos * (p.outerRadius + PIE_STUB), y: p.y + sin * (p.outerRadius + PIE_STUB),
         align, label: String(chart.data.labels[i] ?? ''),
-        color: Array.isArray(ds.backgroundColor) ? ds.backgroundColor[i] : ds.backgroundColor,
       });
     });
 
@@ -1846,9 +1845,10 @@ const pieOutLabels = {
       placedL.push(o);
     }
 
+    // One theme color for every leader line (not the slice color).
+    ctx.strokeStyle = theme.chartTick;
+    ctx.lineWidth = 1;
     for (const o of all) {
-      ctx.strokeStyle = o.color;
-      ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.moveTo(o.edgeX, o.edgeY);
       ctx.lineTo(o.ax, o.y);
