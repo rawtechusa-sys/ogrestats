@@ -635,6 +635,20 @@ function buildDonors() {
   selected = new Set(donors.map(d => d.name));   // default: all selected
 }
 
+// Focus a single donor (e.g. arrived from a dents.html "TTS Messages" link).
+// Donor keys keep a leading '@'; the incoming username may not, so match on the
+// '@'-stripped lowercased form. No match -> leave the default (all selected).
+function selectTtsDonor(user) {
+  const u = String(user || '').replace(/^@+/, '').toLowerCase();
+  if (!u) return;
+  const d = donors.find(x => x.name.replace(/^@+/, '').toLowerCase() === u);
+  if (!d) return;
+  selected = new Set([d.name]);
+  renderDonorPanel();
+  updateDonorLabel();
+  renderMessages();
+}
+
 function updateDonorLabel() {
   const label = document.getElementById('donorLabel');
   if (selected.size === donors.length) label.textContent = 'All donors';
@@ -868,6 +882,12 @@ async function load() {
     wireCardControls();
     wireDonorDropdown();
     renderMessages();
+
+    // A dents.html "TTS Messages" link stashes the donor here; consume it once
+    // so a later manual visit doesn't stay filtered to that donor.
+    let sel = null;
+    try { sel = sessionStorage.getItem('selected-tts-user'); sessionStorage.removeItem('selected-tts-user'); } catch (e) {}
+    if (sel) selectTtsDonor(sel);
 
   } catch (e) {
     wrap.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load TTS data<br><small>${escHtml(e.message)}</small></span></div>`;

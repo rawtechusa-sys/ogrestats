@@ -339,6 +339,15 @@
     transition: color 0.15s ease, border-color 0.15s ease;
   }
   .ts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
+
+  .tts-link {
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4);
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .tts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); }
 </style>
 </head>
 <body>
@@ -405,6 +414,22 @@ async function fetchJSON(url) {
   if (!r.ok) throw new Error(`${r.status} — ${url}`);
   return r.json();
 }
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
+// Parse tts-voices.txt (one voice name per line) into { lowercased: canonical }.
+// Mirrors tts.html's parseVoices so the TTS Messages count matches that page.
+function parseVoices(text) {
+  const map = {};
+  for (const raw of (text || '').split(/\r?\n/)) {
+    const name = raw.trim();
+    if (!name || name.startsWith('#')) continue;
+    map[name.toLowerCase()] = name;
+  }
+  return map;
+}
 function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
@@ -451,7 +476,7 @@ let searchQuery = '';
 // Total column count of the outer table, used for the expanded detail row's
 // colspan. Static (TYPES is fixed) so it lives at module scope — toggleDonor
 // needs it to build a detail row without a full re-render.
-const COLS = 5 + TYPES.length + 1;
+const COLS = 6 + TYPES.length + 1;   // +1 leading col vs before: the TTS Messages column
 
 // ── Windowed rendering ───────────────────────────────────────────────────────
 // There are 4000+ donors. Putting every row in the DOM at once costs ~4s of
@@ -607,6 +632,18 @@ function jumpToStream(streamId) {
   window.location.href = 'index.html#streams';
 }
 
+// Navigate the shell to the TTS tab with this donor pre-selected in the donor
+// dropdown (same page). Mirrors jumpToStream; tts.html reads 'selected-tts-user'
+// on load.
+function jumpToTts(user) {
+  if (!user) return;
+  try { sessionStorage.setItem('selected-tts-user', user); } catch (e) {}
+  if (window.parent && window.parent !== window) {
+    try { window.parent.postMessage({ type: 'navigate', slug: 'tts' }, '*'); return; } catch (e) {}
+  }
+  window.location.href = 'index.html#tts';
+}
+
 // One donation's <tr> for the itemized sub-table.
 function donationRowHTML(d, streams) {
   const sid   = d.stream_id;
@@ -740,12 +777,18 @@ function rowGroupHTML(row, i) {
   const isOpen = expanded.has(row.username);
   const caret  = `<span class="caret">${isOpen ? '▾' : '▸'}</span>`;
 
+  // TTS message count -> links to the TTS tab filtered to this donor (0 = plain).
+  const ttsCell = row.tts > 0
+    ? `<td class="amount-type"><a class="tts-link" data-user="${escHtml(row.username)}" title="TTS messages by ${escHtml(row.username)}">${row.tts}</a></td>`
+    : `<td class="amount-type zero">0</td>`;
+
   const mainRow = `<tr class="dent-row${isOpen ? ' sticky-dent' : ''}" data-user="${escHtml(row.username)}">
       <td class="rank">${i + 1}</td>
       <td class="username">${caret}${escHtml(row.username)}</td>
       <td class="amount-total">${fmtUSD(row.total)}</td>
       <td class="amount-type">${row.streams}</td>
       <td class="amount-type">${row.donations || 0}</td>
+      ${ttsCell}
       ${typeCells}
       <td class="dsp-dent">${dspDentCell(row)}</td>
     </tr>`;
@@ -845,6 +888,7 @@ function renderTable() {
         <th class="${thClass('total')}" data-key="total">Total${sortArrow('total')}</th>
         <th class="${thClass('streams')}" data-key="streams">Streams${sortArrow('streams')}</th>
         <th class="${thClass('donations')}" data-key="donations">Donations${sortArrow('donations')}</th>
+        <th class="${thClass('tts')}" data-key="tts" title="TTS messages sent (click a number to view them on the TTS tab)">TTS Messages${sortArrow('tts')}</th>
         ${typeHeaders}
         <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${sortArrow('dsp_dent')}</th>
       </tr>
@@ -890,6 +934,14 @@ function setupDelegation() {
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
       e.preventDefault();
       jumpToStream(sl.dataset.sid);
+      return;
+    }
+    // A TTS-count link: jump to the TTS tab filtered to this donor, same page.
+    const tl = e.target.closest('a.tts-link');
+    if (tl) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      jumpToTts(tl.dataset.user);
       return;
     }
     // Ignore clicks on links inside a row (e.g. the renton.report DSP-dent
@@ -946,6 +998,28 @@ function selectDent(user) {
   });
 }
 
+// Derive a per-donor "TTS Messages" count from tts.json (same computation as
+// tts.html's buildDonors: messages with >=1 whitelisted voice), and stamp it
+// onto each tableData row as row.tts. Best-effort: any fetch failure leaves the
+// counts at 0 so the column still renders. tts.json usernames carry a leading
+// '@' and leaderboard usernames don't, so the join strips '@' + lowercases.
+async function foldTtsCounts() {
+  const counts = {};
+  try {
+    const tts = await fetchJSON(`${RAW}/data/tts.json`);
+    let voices = {};
+    try { voices = parseVoices(await fetchText(`${RAW}/tts-voices.txt`)); } catch (e) { voices = {}; }
+    const whitelistOn = Object.keys(voices).length > 0;
+    const isVoice = c => !whitelistOn || Object.prototype.hasOwnProperty.call(voices, String(c).toLowerCase());
+    for (const m of tts.messages || []) {
+      if (!Array.isArray(m.commands) || !m.commands.some(isVoice)) continue;
+      const key = String(m.username || '').replace(/^@+/, '').toLowerCase();
+      if (key) counts[key] = (counts[key] || 0) + 1;
+    }
+  } catch (e) { /* leave counts empty -> all zeros */ }
+  for (const u of tableData) u.tts = counts[(u.username || '').toLowerCase()] || 0;
+}
+
 async function load() {
   const wrap = document.getElementById('tableWrap');
   try {
@@ -956,6 +1030,7 @@ async function load() {
     // of fetches (~tens of MB) and hang the browser.
     const board = await fetchJSON(`${RAW}/data/leaderboard.json`);
     loadFromLeaderboard(board);
+    await foldTtsCounts();   // adds row.tts (per-donor TTS message count)
     setupDelegation();
     renderTable();
     // A pie-legend username link (streams.html) stashes the donor here; consume
