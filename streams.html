@@ -1774,7 +1774,7 @@ function intTick(fmt) {
 // Pie label geometry. Labels hug their slice (stub-length leader) and the canvas
 // is sized (buildPie) to fit the widest label, so nothing is truncated or clipped.
 const PIE_LABEL_FONT = "12px 'Share Tech Mono', monospace";
-const PIE_STUB = 8, PIE_GAP = 4, PIE_DIAM = 190, PIE_TB_PAD = 34;
+const PIE_STUB = 10, PIE_GAP = 4, PIE_GAP_Y = 16, PIE_DIAM = 190, PIE_TB_PAD = 50;
 let _pieMeasureCtx = null;
 function measurePieLabel(text) {
   if (!_pieMeasureCtx) _pieMeasureCtx = document.createElement('canvas').getContext('2d');
@@ -1814,18 +1814,19 @@ const pieOutLabels = {
     ctx.font = PIE_LABEL_FONT;
     ctx.textBaseline = 'middle';
     ctx.fillStyle = theme.chartTick;
-    // Clamp to the whole canvas (not the pie box) so top/bottom labels can spread
-    // up/down into the padding instead of piling onto the pie.
-    const top = 8, bottom = chart.height - 8;
+    // De-clutter by fanning labels AWAY from the pie: those above the vertical
+    // center push up, those below push down, so a cluster of small slices near
+    // the top/bottom spreads into the padding instead of piling onto the pie.
+    const top = 8, bottom = chart.height - 8, cy = chart.height / 2;
     for (const side of [left, right]) {
-      // ponytail: single push-down pass; good enough for <=11 slices, revisit if labels still collide.
-      side.sort((a, b) => a.y - b.y);
-      for (let k = 0; k < side.length; k++) {
-        const minY = k === 0 ? top : side[k - 1].y + 15;
-        if (side[k].y < minY) side[k].y = minY;
-        if (side[k].y > bottom) side[k].y = bottom;
-      }
-      for (const o of side) {
+      const upper = side.filter(o => o.y < cy).sort((a, b) => b.y - a.y); // nearest center first
+      const lower = side.filter(o => o.y >= cy).sort((a, b) => a.y - b.y);
+      for (let k = 1; k < upper.length; k++)
+        if (upper[k].y > upper[k - 1].y - PIE_GAP_Y) upper[k].y = upper[k - 1].y - PIE_GAP_Y;
+      for (let k = 1; k < lower.length; k++)
+        if (lower[k].y < lower[k - 1].y + PIE_GAP_Y) lower[k].y = lower[k - 1].y + PIE_GAP_Y;
+      for (const o of upper.concat(lower)) {
+        o.y = Math.max(top, Math.min(bottom, o.y));
         ctx.strokeStyle = o.color;
         ctx.lineWidth = 1;
         ctx.beginPath();
