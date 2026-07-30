@@ -174,7 +174,20 @@
     background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.06);
     border-bottom: 1px solid var(--border-default);
     flex-wrap: wrap;
+    cursor: pointer;
+    list-style: none;
   }
+  .stream-group-head::-webkit-details-marker { display: none; }
+  .stream-group:not([open]) .stream-group-head { border-bottom: none; }
+  /* Caret mirrors the expandable donor rows in dents.html. */
+  .caret {
+    display: inline-block;
+    width: 1em;
+    color: var(--text-muted);
+    transition: transform 0.15s ease, color 0.15s ease;
+  }
+  .stream-group[open] .caret { transform: rotate(90deg); }
+  .stream-group-head:hover .caret { color: var(--accent-bright); }
   .stream-group-title {
     font-family: 'Rye', serif;
     font-size: 15px;
@@ -668,14 +681,15 @@ function renderGroup(smeta, hits, tokens) {
       <div class="msg-meta">${link}</div>
     </div>`;
   }).join('');
-  return `<div class="stream-group">
-    <div class="stream-group-head">
+  return `<details class="stream-group" open>
+    <summary class="stream-group-head">
+      <span class="caret">▸</span>
       <span class="stream-group-title">${anchor}</span>
       <span class="stream-group-meta">${escHtml(fmtDate(smeta.start_ts))}</span>
       <span class="stream-group-meta hit-count">${hits.length} hit${hits.length === 1 ? '' : 's'}</span>
-    </div>
+    </summary>
     ${rows}
-  </div>`;
+  </details>`;
 }
 
 // Live status above the results — running totals + how far into the candidate set.
