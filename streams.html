@@ -493,9 +493,13 @@
     padding: 2px 7px;
     border-radius: 3px;
     border: 1px solid;
+    white-space: nowrap;
   }
 
   .type-superchat  { color: #80c8a0; border-color: rgba(80,180,120,0.35);  background: rgba(40,120,70,0.2); }
+  /* Superchat carrying a TTS voice command -- amber, so it reads apart from the
+     green YouTube family at a glance. */
+  .type-superchat-tts { color: #e8b060; border-color: rgba(200,140,50,0.35); background: rgba(140,90,25,0.2); }
   .type-membership { color: #80c8a0; border-color: rgba(80,180,120,0.25);  background: rgba(30,100,60,0.15); }
   .type-giftmembership { color: #80c8a0; border-color: rgba(80,180,120,0.25);  background: rgba(30,100,60,0.15); }
   .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35);  background: rgba(90,50,140,0.2); }
@@ -508,6 +512,7 @@
   html[data-theme="white"] .type-superchat,
   html[data-theme="white"] .type-membership,
   html[data-theme="white"] .type-giftmembership { color: #237046; border-color: rgba(35,112,70,0.45); background: rgba(35,112,70,0.13); }
+  html[data-theme="white"] .type-superchat-tts { color: #8a5a12; border-color: rgba(138,90,18,0.45); background: rgba(138,90,18,0.13); }
   html[data-theme="white"] .type-bits,
   html[data-theme="white"] .type-giftsub,
   html[data-theme="white"] .type-sub { color: #54338a; border-color: rgba(90,58,140,0.45); background: rgba(90,58,140,0.13); }
@@ -587,15 +592,69 @@ let typePie = null;
 // Distinct hue per donation type for the "By Type" pie (the log badges reuse the
 // same green for several YouTube types, which would merge into one slice here).
 const TYPE_COLORS = {
-  superchat:      '#e8c020',
-  membership:     '#6bd48a',
-  giftmembership: '#1d6b3a',
-  sub:            '#8a6fd8',
-  giftsub:        '#b090d0',
-  bits:           '#6650d8',
-  kicks:          '#53fc18',
-  _other:         '#909090',
+  superchat:        '#e8c020',
+  'superchat-tts':  '#e88a20',
+  membership:       '#6bd48a',
+  giftmembership:   '#1d6b3a',
+  sub:              '#8a6fd8',
+  giftsub:          '#b090d0',
+  bits:             '#6650d8',
+  kicks:            '#53fc18',
+  _other:           '#909090',
 };
+// Display name for a type key, where the key itself isn't presentable.
+const TYPE_LABELS = { 'superchat-tts': 'superchat (TTS)' };
+
+// ── TTS superchat classification ────────────────────────────────────────────
+// Superchats split into plain and TTS-command ones. Kept in parity with
+// tts.html / dents.html: the regexes mirror tts_stats.py and a command only
+// counts if it names a voice in tts-voices.txt.
+const EMOTE_RE = /:[A-Za-z0-9_-]+:/g;   // YouTube emote shortcodes (":pig:")
+const TTS_RE   = /([A-Za-z]+):(?=\s|$)/g;
+
+let VOICE_NAMES    = {};      // { lowercasedVoice: canonicalName }
+let VOICES_PROMISE = null;    // fetched once, reused across stream selections
+
+// Parse tts-voices.txt (one voice name per line) into { lowercased: canonical }.
+function parseVoices(text) {
+  const map = {};
+  for (const raw of (text || '').split(/\r?\n/)) {
+    const name = raw.trim();
+    if (!name || name.startsWith('#')) continue;
+    map[name.toLowerCase()] = name;
+  }
+  return map;
+}
+
+// Load the voice whitelist once. A failed fetch leaves it empty, which makes
+// isVoice permissive rather than hiding the category entirely.
+function ensureVoices() {
+  if (!VOICES_PROMISE) {
+    VOICES_PROMISE = fetchText(`${RAW}/tts-voices.txt`)
+      .then(t => { VOICE_NAMES = parseVoices(t); })
+      .catch(() => { VOICE_NAMES = {}; });
+  }
+  return VOICES_PROMISE;
+}
+
+function isVoice(c) {
+  return !Object.keys(VOICE_NAMES).length
+      || Object.prototype.hasOwnProperty.call(VOICE_NAMES, String(c).toLowerCase());
+}
+
+// Replace emotes with a space (not "") so adjacent ones like ":pig::pig:" can't
+// fuse neighbouring text into a spurious match.
+function isTtsMessage(msg) {
+  if (!msg) return false;
+  const cleaned = String(msg).replace(EMOTE_RE, ' ');
+  return [...cleaned.matchAll(TTS_RE)].some(m => isVoice(m[1]));
+}
+
+// The display bucket for a donation. Only superchats split; the stored event
+// type is untouched. Single source of truth for both the pie and the log badge.
+function typeKeyFor(d) {
+  return (d.type === 'superchat' && isTtsMessage(d.message)) ? 'superchat-tts' : (d.type || '');
+}
 // Cycled categorical palette for the contributor pie ("Other" slice is grey).
 // Muted / desaturated tones so the many slices read calmly.
 const CONTRIB_PALETTE = ['#c96a6a', '#6a9bc0', '#c9b06a', '#9080c0', '#7bbf7b', '#c98f5e', '#b07fb0', '#5ea89a', '#b06a80', '#8a9bc0'];
@@ -1047,6 +1106,7 @@ async function loadStream(streamId) {
     const [meta, eventsText] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
       fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
+      ensureVoices(),   // needed before any donation is bucketed; cached after the first stream
     ]);
 
     if (meta.title) {
@@ -1309,12 +1369,13 @@ async function loadStream(streamId) {
       const byType = new Map();
       for (const d of donations) {
         if (d.amount_usd == null) continue;
-        byType.set(d.type, (byType.get(d.type) || 0) + d.amount_usd);
+        const key = typeKeyFor(d);
+        byType.set(key, (byType.get(key) || 0) + d.amount_usd);
       }
       const typeRanked = [...byType.entries()].sort((a, b) => b[1] - a[1]);
-      const typeLabels = typeRanked.map(e => e[0]);
+      const typeLabels = typeRanked.map(e => TYPE_LABELS[e[0]] || e[0]);
       const typeData   = typeRanked.map(e => e[1]);
-      const typeColors  = typeLabels.map(name => TYPE_COLORS[name] || TYPE_COLORS._other);
+      const typeColors = typeRanked.map(e => TYPE_COLORS[e[0]] || TYPE_COLORS._other);
 
       const panel = document.createElement('div');
       panel.className = 'pie-row';
@@ -1412,12 +1473,13 @@ async function loadStream(streamId) {
         const tsCell = href
           ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`
           : elapsedText;
+        const typeKey = typeKeyFor(d);
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr>
           <td class="ts-cell">${tsCell}</td>
           <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
-          <td><span class="type-badge type-${d.type}">${d.type}</span></td>
+          <td><span class="type-badge type-${escHtml(typeKey)}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
           <td>${usd}</td>
           <td>${msg}</td>
         </tr>`;
