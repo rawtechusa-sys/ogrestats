@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785376956,
+  "updated_ts": 1785377027,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -998,6 +998,12 @@
       "count": 68600,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1706662280,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "wingsofredemption_is_a_man_plus_phil"
     },
     {
       "ts": 1706836561,
