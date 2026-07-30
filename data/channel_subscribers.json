@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785422640,
+  "updated_ts": 1785422648,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -998,6 +998,12 @@
       "count": 68500,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1705813404,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "winnie_the_pooh_plays_baldurs_gate_3"
     },
     {
       "ts": 1706245337,
