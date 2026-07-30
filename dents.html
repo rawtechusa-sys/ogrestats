@@ -260,6 +260,72 @@
     font-size: 14px;
   }
 
+  /* Section headers inside a donor panel (timing histogram, then donation log). */
+  .panel-section + .panel-section { margin-top: 18px; }
+  .panel-subtitle {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 10px 0 8px;
+  }
+  .panel-hint {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    opacity: 0.7;
+  }
+
+  .hist-toggle { margin-left: auto; display: flex; gap: 4px; }
+  .hist-mode {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+    border: 1px solid var(--border-default-strong);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .hist-mode:hover { color: var(--accent-bright); }
+  .hist-mode.is-on { color: var(--accent); border-color: var(--accent); }
+
+  /* Donation-timing histogram: one .hist-bar per 10-minute bucket, heights as a
+     percentage of the busiest bucket. The axis is a sibling row with matching
+     flex/gap so its labels line up under their bars. */
+  .donor-hist {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 110px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .hist-bar { flex: 1; min-width: 3px; height: 100%; display: flex; align-items: flex-end; }
+  .hist-fill {
+    width: 100%;
+    background: var(--accent);
+    opacity: 0.75;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+  }
+  .hist-bar:hover .hist-fill { background: var(--accent-bright); opacity: 1; }
+
+  .hist-axis {
+    display: flex;
+    gap: 2px;
+    padding-top: 5px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+  }
+  .hist-axis span { flex: 1; min-width: 3px; white-space: nowrap; }
+
   /* Itemized donations sub-table (ported from streams.html). */
   .donations-table {
     width: 100%;
@@ -671,6 +737,74 @@ function donationRowHTML(d, streams) {
     </tr>`;
 }
 
+// ── Donation-timing histogram ────────────────────────────────────────────────
+// A donor's donations pooled into 10-minute windows of stream-elapsed time,
+// across every stream at once: a tip 43 minutes into one stream shares a bucket
+// with one 47 minutes into another. Uses the stream's start_ts, never
+// segments[].start_ts — segments only ever serve the VOD link offset, the same
+// split timestampCell makes above.
+const HIST_BUCKET_SEC  = 600;         // 10 minutes
+const HIST_MAX_ELAPSED = 24 * 3600;   // keeps one bad start_ts from stretching the axis
+const HIST_LABEL_EVERY = 6;           // axis label every 6th bucket, i.e. hourly
+
+let histMode = 'count';   // 'count' | 'usd' — one shared preference, not per panel
+
+// Bucket a donor's donations by elapsed time. Donations on a stream with no
+// usable start_ts can't be placed and are left out. Array length is the last
+// occupied bucket, so the axis fits the data rather than a fixed range.
+function histBuckets(recs, streams) {
+  const buckets = [];
+  let placed = 0;
+  for (const d of recs) {
+    const smeta = d.stream_id && streams[d.stream_id];
+    const start = smeta && smeta.start_ts;
+    if (!start || d.ts == null) continue;
+    const elapsed = d.ts - start;
+    if (elapsed < 0 || elapsed > HIST_MAX_ELAPSED) continue;
+    const i = Math.floor(elapsed / HIST_BUCKET_SEC);
+    while (buckets.length <= i) buckets.push({ count: 0, usd: 0 });
+    buckets[i].count++;
+    if (d.amount_usd > 0) buckets[i].usd += d.amount_usd;
+    placed++;
+  }
+  return { buckets, placed };
+}
+
+function histClock(mins) {
+  return `${Math.floor(mins / 60)}:${String(mins % 60).padStart(2, '0')}`;
+}
+
+// The histogram section, or '' when nothing could be placed (the donation log
+// then renders on its own).
+function histHTML(recs, streams) {
+  const { buckets, placed } = histBuckets(recs, streams);
+  if (!placed) return '';
+  const value = b => (histMode === 'usd' ? b.usd : b.count);
+  const max = buckets.reduce((m, b) => Math.max(m, value(b)), 0);
+  const bars = buckets.map((b, i) => {
+    const v = value(b);
+    // A nonzero bucket floors at 2% so a lone donation still draws something.
+    const pct = (max > 0 && v > 0) ? Math.max(2, (v / max) * 100) : 0;
+    const tip = `${histClock(i * 10)}–${histClock((i + 1) * 10)} · `
+      + `${b.count} donation${b.count === 1 ? '' : 's'} · ${fmtUSD(b.usd)}`;
+    return `<div class="hist-bar" title="${escHtml(tip)}"><div class="hist-fill" style="height:${pct.toFixed(1)}%"></div></div>`;
+  }).join('');
+  const axis = buckets.map((b, i) =>
+    `<span>${i % HIST_LABEL_EVERY === 0 ? histClock(i * 10) : ''}</span>`).join('');
+  const unit = histMode === 'usd' ? 'donation totals in USD' : 'donation counts';
+  return `<div class="panel-section">
+    <div class="panel-subtitle">Donation Timing
+      <span class="panel-hint">10-minute buckets · time into stream</span>
+      <span class="hist-toggle">
+        <button class="hist-mode${histMode === 'count' ? ' is-on' : ''}" data-mode="count">count</button>
+        <button class="hist-mode${histMode === 'usd'   ? ' is-on' : ''}" data-mode="usd">$</button>
+      </span>
+    </div>
+    <div class="donor-hist" role="img" aria-label="Histogram of ${unit} by 10-minute window of stream-elapsed time">${bars}</div>
+    <div class="hist-axis">${axis}</div>
+  </div>`;
+}
+
 // A heavy donor can have 1800+ donations; rendering them all in one synchronous
 // pass is the lag you see on expand. So a panel renders only its first batch up
 // front (instant), tags the sub-table with the full count, and the rest are
@@ -691,10 +825,30 @@ function donorPanelInner(username) {
 
   const streams = donorData.streams || {};
   const first = recs.slice(0, SUB_FIRST).map(d => donationRowHTML(d, streams)).join('');
-  return `<table class="donations-table" data-total="${recs.length}">
-    <thead><tr><th>Date</th><th>Stream</th><th>Timestamp</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
-    <tbody>${first}</tbody>
-  </table>`;
+  return `${histHTML(recs, streams)}
+  <div class="panel-section">
+    <div class="panel-subtitle">Donation Log</div>
+    <table class="donations-table" data-total="${recs.length}">
+      <thead><tr><th>Date</th><th>Stream</th><th>Timestamp</th><th>Type</th><th>Amount</th><th>Message</th></tr></thead>
+      <tbody>${first}</tbody>
+    </table>
+  </div>`;
+}
+
+// Rebuild just the histogram of every open panel after a count/$ toggle. It must
+// not replace the donations <tbody> — that would cancel an in-flight
+// fillDonorPanel rAF chain and drop the rows it had left to append.
+function redrawHistograms() {
+  if (!donorData) return;
+  const streams = donorData.streams || {};
+  document.getElementById('tableWrap')
+    .querySelectorAll('tbody.dent-group > tr.donations-row .donor-panel').forEach(panel => {
+      const tb = panel.closest('tbody.dent-group');
+      const user = tb && tb.dataset.user;
+      const sec = panel.querySelector('.panel-section');
+      if (!user || !sec || !sec.querySelector('.donor-hist')) return;   // log-only panel
+      sec.outerHTML = histHTML((donorData.donors && donorData.donors[user]) || [], streams);
+    });
 }
 
 // Progressively append the remaining donation rows of an open panel, a frame at
@@ -925,6 +1079,12 @@ function setupDelegation() {
         sortAsc = key === 'username';
       }
       renderTable();
+      return;
+    }
+    // Histogram count/$ toggle — a shared preference, so every open panel redraws.
+    const hb = e.target.closest('button.hist-mode');
+    if (hb) {
+      if (histMode !== hb.dataset.mode) { histMode = hb.dataset.mode; redrawHistograms(); }
       return;
     }
     // A stream title link: navigate the shell to the Streams tab in the same
