@@ -486,6 +486,9 @@
     background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.07);
   }
 
+  /* Badge hue comes from --type-color, set inline per row from the same
+     TYPE_COLORS map the "By Type" pie uses, so a badge and its slice match.
+     Border and fill are derived from it rather than listed per type. */
   .type-badge {
     display: inline-block;
     font-family: 'Share Tech Mono', monospace;
@@ -494,29 +497,18 @@
     border-radius: 3px;
     border: 1px solid;
     white-space: nowrap;
+    color: var(--type-color);
+    border-color: color-mix(in srgb, var(--type-color) 40%, transparent);
+    background: color-mix(in srgb, var(--type-color) 18%, transparent);
   }
 
-  .type-superchat  { color: #80c8a0; border-color: rgba(80,180,120,0.35);  background: rgba(40,120,70,0.2); }
-  /* Superchat carrying a TTS voice command -- amber, so it reads apart from the
-     green YouTube family at a glance. */
-  .type-superchat-tts { color: #e8b060; border-color: rgba(200,140,50,0.35); background: rgba(140,90,25,0.2); }
-  .type-membership { color: #80c8a0; border-color: rgba(80,180,120,0.25);  background: rgba(30,100,60,0.15); }
-  .type-giftmembership { color: #80c8a0; border-color: rgba(80,180,120,0.25);  background: rgba(30,100,60,0.15); }
-  .type-bits       { color: #b090d0; border-color: rgba(130,80,180,0.35);  background: rgba(90,50,140,0.2); }
-  .type-giftsub    { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
-  .type-sub        { color: #b090d0; border-color: rgba(130,80,180,0.25);  background: rgba(70,40,110,0.15); }
-  /* Kick tip currency ("kicks") -- Kick brand green. */
-  .type-kicks      { color: #6be84a; border-color: rgba(83,252,24,0.35);   background: rgba(40,120,20,0.2); }
-
-  /* White (Onion Layers) theme: darker text on lighter fills for legibility. */
-  html[data-theme="white"] .type-superchat,
-  html[data-theme="white"] .type-membership,
-  html[data-theme="white"] .type-giftmembership { color: #237046; border-color: rgba(35,112,70,0.45); background: rgba(35,112,70,0.13); }
-  html[data-theme="white"] .type-superchat-tts { color: #8a5a12; border-color: rgba(138,90,18,0.45); background: rgba(138,90,18,0.13); }
-  html[data-theme="white"] .type-bits,
-  html[data-theme="white"] .type-giftsub,
-  html[data-theme="white"] .type-sub { color: #54338a; border-color: rgba(90,58,140,0.45); background: rgba(90,58,140,0.13); }
-  html[data-theme="white"] .type-kicks { color: #2f7a14; border-color: rgba(47,122,20,0.45); background: rgba(47,122,20,0.13); }
+  /* White (Onion Layers) theme: the pie's hue, darkened to stay legible on a
+     light background. */
+  html[data-theme="white"] .type-badge {
+    color: color-mix(in srgb, var(--type-color) 72%, #000);
+    border-color: color-mix(in srgb, var(--type-color) 50%, transparent);
+    background: color-mix(in srgb, var(--type-color) 14%, transparent);
+  }
 
   .amount-usd { font-family: 'Share Tech Mono', monospace; color: var(--accent); font-size: 14px; }
   .username   { color: var(--text-primary); }
@@ -1479,7 +1471,7 @@ async function loadStream(streamId) {
         return `<tr>
           <td class="ts-cell">${tsCell}</td>
           <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
-          <td><span class="type-badge type-${escHtml(typeKey)}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
+          <td><span class="type-badge" style="--type-color:${TYPE_COLORS[typeKey] || TYPE_COLORS._other}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
           <td>${usd}</td>
           <td>${msg}</td>
         </tr>`;
