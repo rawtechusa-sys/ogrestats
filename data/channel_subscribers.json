@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785378759,
+  "updated_ts": 1785422640,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -980,6 +980,12 @@
       "count": 68200,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1704776482,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "watching_lorne_armstrong_tcap"
     },
     {
       "ts": 1705190400,
