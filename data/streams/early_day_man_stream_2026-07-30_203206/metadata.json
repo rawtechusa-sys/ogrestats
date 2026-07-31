@@ -3,7 +3,7 @@
   "slug": "early_day_man_stream",
   "title": "Early Day Man Stream",
   "start_ts": 1785442818,
-  "end_ts": null,
+  "end_ts": 1785475868,
   "platforms": [
     "kick",
     "twitch",
@@ -18,5 +18,7 @@
       "archive_id": "uKp2DGYePrs",
       "start_ts": 1785442818
     }
-  ]
+  ],
+  "youtube_archive_id": "uKp2DGYePrs",
+  "archive_is_source_vod": false
 }
