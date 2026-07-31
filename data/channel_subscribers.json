@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785527349,
+  "updated_ts": 1785531897,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -944,6 +944,12 @@
       "count": 67800,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1701500744,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "ban_anybody_watching_the_wingsofredemption_documentary"
     },
     {
       "ts": 1701561600,
