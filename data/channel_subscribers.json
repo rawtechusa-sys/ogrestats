@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785544758,
+  "updated_ts": 1785554200,
   "_note": "source:'manual' points seeded from Social Blade history. source:'snapshot' points are appended automatically at stream-end by channel_subscribers.py. Keep snapshots sorted oldest-first by ts.",
   "snapshots": [
     {
@@ -944,6 +944,12 @@
       "count": 67800,
       "source": "manual",
       "stream_id": null
+    },
+    {
+      "ts": 1701324008,
+      "count": 102000,
+      "source": "snapshot",
+      "stream_id": "dspgamings_direct_capture_saga"
     },
     {
       "ts": 1701417576,
