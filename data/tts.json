@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785476073,
+  "updated_ts": 1785821734,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -830,7 +830,8 @@
     "more_bloodborne_pt_2_2026-07-27_203255",
     "oh_manit_happened_2026-07-28_033009",
     "grifters_clowns_and_horrorcows_2026-07-28_223505",
-    "early_day_man_stream_2026-07-30_203206"
+    "early_day_man_stream_2026-07-30_203206",
+    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
   ],
   "commands": {
     "device": 1,
@@ -851,7 +852,7 @@
     "kendal": 1,
     "donation": 3,
     "naruto": 1,
-    "phil": 274,
+    "phil": 311,
     "legends": 2,
     "is": 8,
     "spose": 1,
@@ -869,15 +870,15 @@
     "coco": 1,
     "reviewtrumpusa": 4,
     "reviewseinfeldusa": 2,
-    "stan": 245,
-    "linus": 22,
-    "masterchief": 99,
-    "harman": 68,
-    "girlfriend": 7,
-    "trump": 113,
+    "stan": 259,
+    "linus": 24,
+    "masterchief": 105,
+    "harman": 72,
+    "girlfriend": 9,
+    "trump": 120,
     "tate": 7,
-    "eric": 146,
-    "moist": 17,
+    "eric": 149,
+    "moist": 21,
     "s": 1,
     "things": 2,
     "tomorrow": 33,
@@ -915,7 +916,7 @@
     "day": 1,
     "joker": 1,
     "question": 14,
-    "grandpa": 22,
+    "grandpa": 23,
     "hobo": 9,
     "kratos": 14,
     "thing": 2,
@@ -939,7 +940,7 @@
     "syne": 1,
     "father": 8,
     "request": 2,
-    "twist": 7,
+    "twist": 8,
     "note": 2,
     "quote": 3,
     "krato": 1,
@@ -1245,7 +1246,7 @@
     "serious": 1,
     "glorious": 1,
     "hence": 1,
-    "dagoth": 2,
+    "dagoth": 3,
     "they": 1,
     "phile": 1,
     "emoguy": 3,
@@ -1273,7 +1274,7 @@
     "subject": 1,
     "alert": 1,
     "neurotic": 1,
-    "chief": 3,
+    "chief": 4,
     "kat": 1,
     "astonishing": 1,
     "beavis": 1,
@@ -1378,20 +1379,21 @@
     "robocop": 1,
     "bill": 2,
     "kanye": 1,
-    "zesty": 30,
+    "zesty": 33,
     "rage": 1,
     "ones": 1,
     "harmon": 1,
     "men": 2,
     "ideas": 1,
     "carlos": 1,
-    "glados": 3,
+    "glados": 4,
     "gums": 1,
     "asmrguy": 1,
     "chewbacca": 1,
     "drdisrespect": 2,
-    "johnny": 3,
-    "agreement": 1
+    "johnny": 4,
+    "agreement": 1,
+    "guys": 1
   },
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -9787,9 +9789,887 @@
       ],
       "source_vod_id": "3cQQzV20UcU",
       "source_platform": "youtube"
+    },
+    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638": {
+      "title": "A Robust Beginning To August (Phil's PC Emergency)",
+      "start_ts": 1785799009,
+      "youtube_archive_id": "K4a_aD-4Buk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "K4a_aD-4Buk",
+          "start_ts": 1785799009
+        }
+      ],
+      "source_vod_id": "rC1RTAgmfmk",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1785821348,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Eric: Richie, Ames only wants to cuddle with you!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1785821188,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Eric: Rich I'll give you $100 to wrestle with me!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1785820465,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Harman: Pikachu is 18 years old in Pika Years Rich",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1785820155,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: This guy is in the same boat as poor Stanley",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785819910,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: Good news! I get to keep my IRS immunity!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785819440,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Glados: This is Phil's computer. I self destructed yesterday. I could no longer be party to his shameless E begging! He brought me back & I am so sad!",
+      "commands": [
+        "glados"
+      ]
+    },
+    {
+      "ts": 1785819251,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Chief: Azz check. 1 2 3. Azz check 1 2. Men. Come",
+      "commands": [
+        "chief"
+      ]
+    },
+    {
+      "ts": 1785819024,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Zesty: Send Phil a Citrus Mac Neo for his birthday",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1785818937,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Rich show your dad how to install Gri N Dur!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785818717,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Sigh, can I recoup tonight's lost donations?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785818249,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: My webcam is 480i so my forehead is smooth!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785818018,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I am not a replicant! Test me Blade Runner!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785817882,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Zesty: People who say I'm normal are NEVER normal!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1785817718,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I would even accept a PC with key loggers!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785817689,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Girlfriend: \"ban anybody that knows what i said.\"",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1785817605,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Do U feel sorry enough to support me Rich? $",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785816951,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: now, back to the regularly scheduled begging",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785816837,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Alone I am a dummy, with Chat I am a Genius!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785816677,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: This man puts the \"Idiot\" in Idiot Savant!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785816468,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "phil has done nothing but complain this entire stream. phil: what do you mean I actually have to take the time to set up a pc. me(reee)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785816302,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Put your finger in the back & pull my front!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785816088,
+      "username": "@Mikey_Today",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Stupid is as stupid does. Guess how stupid i am.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785816087,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Snake it in Phil, I await your harvest! Yeah",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785816077,
+      "username": "@eazypz9124",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I worked in a helicopter company so im smart",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785815867,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Static discharge is nothing to be ashamed of",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785815828,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Moist: listen I miss the ass shot when he was installing his capture card around thanksgiving. (plug_out)",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1785815745,
+      "username": "@PakistanAmericanForLiberation",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "you should check out Linus tech tip recent video post using A.I. app assembling PC unit. Phil: I am too stupid for that I can't even unclog my toilet",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785815631,
+      "username": "@jdlcampbell",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Imagine is this was the is other pc with the dumb all in one case",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785815581,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: Phil like me, is a master of 4 play! (yoda)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785815537,
+      "username": "@PakistanAmericanForLiberation",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: someone from stream please come through over my steaming device and fix it for me. yeah come over digitally and fix it. also don't forget to tip",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785815262,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Quit feeling my cable and pull it right now!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785815141,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: I am getting blu ballz watching this! (boom)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785815098,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "phil: friendly reminder that I couldn't figure out how to get fear to run on my pc, then scolded my audience telling them they need to warn me about technical issues that a game has (thwomp)(augh)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785814886,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: hmkay, so we put the doohickey on the thingymajig\u2026 guys pay attention you can\u2019t make me do this all myself. Stop acting like selfish children, ahrright?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785814751,
+      "username": "nevablowingbubbles1337",
+      "platform": "twitch",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Cheer50 Remember guys: We've watching the same DSP who has shit on cooking streams suggestions in fear that detractors will triangulate his position based on filming around the kitchen. Detractors are taking notes to map out his Snort Fort room of operations while his changes his PSU.",
+      "commands": [
+        "guys"
+      ]
+    },
+    {
+      "ts": 1785814728,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Harman: My Nintendo wisely keeps it's game off PC!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1785814595,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I don\u2019t know what hole !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785814428,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Listen this PC died streaming games you guys watched me play. It's only fair that you help support getting a new PC. It's really all your fault!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785814323,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Johnny: remember this is the same guy who refused to install windows 10 on his old computer thinking its the hardest thing in the world to do. (error)",
+      "commands": [
+        "johnny"
+      ]
+    },
+    {
+      "ts": 1785814157,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I\u2019m psyching myself up to fail like a man!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785813915,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: so listen, the knowledge to do this is lost forever and unattainable. So I\u2019ll need each of you to support the stream so I can buy a brand new pc",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785813824,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Moist: Phil is one of those guys that is too scared to try something new and if he does something new if its not simple he rages.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1785813265,
+      "username": "@End-Logic_1",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Plot Twist: Phil plays dumb on TV for clicks",
+      "commands": [
+        "twist"
+      ]
+    },
+    {
+      "ts": 1785813151,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Linus: hey he is actually showing his pc. Unlike last time he describing it instead of bringing the camera.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1785811908,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Girlfriend: Is Phil still scared of video game women with bewbs?",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1785811214,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Moist: Listen i need to wipe myself. I need your shirt. (ripping)",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1785811199,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "phil: listen if a person who plays video games for a living is talking about needing liquid assets. run away(thwomp)(sm64_hurt)(thwomp)(sm64_hurt)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785811153,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: phil, shove shit in holes until you have no holes left to shove into. Grandpa: why son why! Stan: big daddys comming for you pappy! mmmm",
+      "commands": [
+        "masterchief",
+        "grandpa",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785811135,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Listen, I have a semi.",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785810778,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: listen, take all the gummys, all the caffeine, snort multiple lines, do Adderall and stream for a week straight. then die. be a man",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1785810711,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I'm a expert. AMD processors are meant to overheat. (burp)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785810617,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Ames watching U watching Phil what a thrill",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785810427,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Linus: is this a sequel to his capture card? His ass was showing the whole time during that stream.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1785809244,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Stop staring at my forehead wrinkles! (bonk)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785809089,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Did he say me get the flesh light? (slip)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785808776,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Crapped the bed? Phil you are such a tease!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785808627,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I'm not DSP I am now GLP! Zesty: Skinny Mini",
+      "commands": [
+        "phil",
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1785808605,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Can you imagine me having kids?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785808453,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: What\u2019s that light mean ? What\u2019s a PSU? Where are the cables ? What\u2019s a computer ? Where am I ? Who am I ? Is this robust ? Am I a man ?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785808292,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: This is more Non Tent than my Gold Ballroom",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785808144,
+      "username": "@ReviewTechAzerbaijan",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Smells musty in here! Harman, wash that Pikachu!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785808132,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Harman: I burned out my personal massager once! uh",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1785808076,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "dagoth: guarantee he panic deleted the stream cuz he heard what you said and didn't want you to see him demand help. we know he watches his detractors",
+      "commands": [
+        "dagoth"
+      ]
+    },
+    {
+      "ts": 1785808045,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: I am as turned on as the ram in your cpu hon",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785807971,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Listen squish ur checks and force a fart out",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785807793,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I wish Kat was home to drive me to Best Buy!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785807463,
+      "username": "@EvistoSF",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: The stream was privated to protect my idiocy",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785807284,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: you have to help me! Otherwise i can\u2019t bring you robust, meaningful and positive content ! This isn\u2019t rocket science you useless idiots.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785807039,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Harman: I got a Retroid Pocket 6 last month. This device is awesome and gives me the headroom to play all the emulators I want.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1785806201,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: hell as an auto technician I google shit all the time. its usually faster than going through service information and usually has more info and videos on how to do certain things. I farted",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1785806063,
+      "username": "@jeffery-tucker",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: your titties are looking good.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785805514,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Stan: Fart upon my nipples and blow a buckshot in my face, then light my pubes on fire, then hire Mongolian throat singers to serenade me to heaven.",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1785805359,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Men ! I need you to be robust for the king !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785804442,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: listen stare at me as I stare at the wall.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785804206,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Moist: What's up dude. literally got back from a family reunion in Mexico. Hope your doing well. (goofy_yell)",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1785803342,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: listen, put your cock in the power supply port. that will fix everything. be a man, and shoot lightning ropes",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1785803302,
+      "username": "@qb3540",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: R.I.P. Big Pussy u were like a brother 2 me",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1785802943,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: But if I didn\u2019t do that, how else would you guys know how tech savvy and computer literate I am ? I\u2019m the king for a reason !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785801216,
+      "username": "@nevablowingbubbles1337",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Philip \"It makes no sense\" Burnell. Phil: HELP!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785800888,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Eric: were you able to wash off that sticky stain you made on Bob Lavari's forehead last time?because i was a little too rowdy with my last wrestling partner and have a stain of my own to take care of",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1785800832,
+      "username": "@ReviewTechAzerbaijan",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Eh, too much work. Emergency donation marathon stream! Kat, start workin the corner! Jasper, you\u2019re going to Craigslist!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785800633,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: Attention all men a torpedo is in the tube! I repeat a torpedo is in the tube! brace for a storm of brown on a galactic scale! embrace the farts and let its true power flow from your anus",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1785800588,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: I will just throw away the entire PC since my audience won't be able to hold my hand when I need to replace the PSU.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785800358,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Phil: Why would I do all that complicated technical stuff ? I'll just download a new power supply ! Once again, you morons don't know anything !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1785799186,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Masterchief: Attention all men! I repeat, all men! we have received a robust distress beacon! a man emergency is in effect! mobilize the fleets! arm the nipple lazers! deploy the MEC ( massive erect cock) cannons! save a man!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1785798645,
+      "username": "@lozifor",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+      "message": "Trump: in light of the events that have happened during my term, I will be resigning my position as the 47th president effective immediately",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1785474136,
       "username": "@BloodyGB175",
