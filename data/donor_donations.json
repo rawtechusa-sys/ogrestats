@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785476078,
+  "updated_ts": 1785821739,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -829,7 +829,8 @@
     "more_bloodborne_pt_2_2026-07-27_203255",
     "oh_manit_happened_2026-07-28_033009",
     "grifters_clowns_and_horrorcows_2026-07-28_223505",
-    "early_day_man_stream_2026-07-30_203206"
+    "early_day_man_stream_2026-07-30_203206",
+    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -9244,6 +9245,21 @@
       ],
       "source_vod_id": "3cQQzV20UcU",
       "source_platform": "youtube"
+    },
+    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638": {
+      "title": "A Robust Beginning To August (Phil's PC Emergency)",
+      "start_ts": 1785799009,
+      "youtube_archive_id": "K4a_aD-4Buk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "K4a_aD-4Buk",
+          "start_ts": 1785799009
+        }
+      ],
+      "source_vod_id": "rC1RTAgmfmk",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -11604,6 +11620,22 @@
       }
     ],
     "ShanesWorld25": [
+      {
+        "ts": 1785799013,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785798999,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784149981,
         "type": "giftmembership",
@@ -20127,6 +20159,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1785800588,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: I will just throw away the entire PC since my audience won't be able to hold my hand when I need to replace the PSU.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785459902,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -20919,6 +20959,14 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1785810649,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785446684,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -21368,6 +21416,102 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1785817689,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Girlfriend: \"ban anybody that knows what i said.\"",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815828,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: listen I miss the ass shot when he was installing his capture card around thanksgiving. (plug_out)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815452,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "(two_hours_later)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814323,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Johnny: remember this is the same guy who refused to install windows 10 on his old computer thinking its the hardest thing in the world to do. (error)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785813824,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: Phil is one of those guys that is too scared to try something new and if he does something new if its not simple he rages.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785813151,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: hey he is actually showing his pc. Unlike last time he describing it instead of bringing the camera.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811908,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Girlfriend: Is Phil still scared of video game women with bewbs?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811214,
+        "type": "superchat",
+        "amount_usd": 50.0,
+        "amount_raw": "$50.00",
+        "message": "Moist: Listen i need to wipe myself. I need your shirt. (ripping)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785810711,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: I'm a expert. AMD processors are meant to overheat. (burp)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785810427,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: is this a sequel to his capture card? His ass was showing the whole time during that stream.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785804442,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: listen stare at me as I stare at the wall.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785804206,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: What's up dude. literally got back from a family reunion in Mexico. Hope your doing well. (goofy_yell)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785472629,
         "type": "superchat",
@@ -22292,6 +22436,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1785805514,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: Fart upon my nipples and blow a buckshot in my face, then light my pubes on fire, then hire Mongolian throat singers to serenade me to heaven.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785458900,
         "type": "superchat",
@@ -26283,6 +26435,30 @@
     ],
     "trollmctrollington3693": [
       {
+        "ts": 1785802582,
+        "type": "superchat",
+        "amount_usd": 3.65,
+        "amount_raw": "CA$5.00",
+        "message": "Rich you put put cooling Jell on your head before and also you, didn't congratulate on my 54 months sub",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785801715,
+        "type": "superchat",
+        "amount_usd": 3.65,
+        "amount_raw": "CA$5.00",
+        "message": "When my power supply in 2007 took out my computer my pentium 4 HT cpu and motherboard and 9800 gtx was taken out with it.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785799955,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "Its not the unreal engine 5 its how the dvelopers utilize it but with the life service dvelopers will di it 54 months though",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785452964,
         "type": "superchat",
         "amount_usd": 3.65,
@@ -29020,6 +29196,286 @@
       }
     ],
     "EvistoSF": [
+      {
+        "ts": 1785821348,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Richie, Ames only wants to cuddle with you!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785821188,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich I'll give you $100 to wrestle with me!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785820465,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Pikachu is 18 years old in Pika Years Rich",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785820155,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: This guy is in the same boat as poor Stanley",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785819910,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: Good news! I get to keep my IRS immunity!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785819440,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Glados: This is Phil's computer. I self destructed yesterday. I could no longer be party to his shameless E begging! He brought me back & I am so sad!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785819024,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Zesty: Send Phil a Citrus Mac Neo for his birthday",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785818937,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Rich show your dad how to install Gri N Dur!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785818717,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Sigh, can I recoup tonight's lost donations?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785818391,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "2 things will always survive cockroaches and DSP!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785818249,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: My webcam is 480i so my forehead is smooth!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785818018,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I am not a replicant! Test me Blade Runner!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785817882,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Zesty: People who say I'm normal are NEVER normal!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785817718,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I would even accept a PC with key loggers!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785817605,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Do U feel sorry enough to support me Rich? $",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785816837,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Alone I am a dummy, with Chat I am a Genius!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785816677,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: This man puts the \"Idiot\" in Idiot Savant!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785816302,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Put your finger in the back & pull my front!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785816087,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Snake it in Phil, I await your harvest! Yeah",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815867,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Static discharge is nothing to be ashamed of",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815581,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: Phil like me, is a master of 4 play! (yoda)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815262,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Quit feeling my cable and pull it right now!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815141,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: I am getting blu ballz watching this! (boom)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814728,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: My Nintendo wisely keeps it's game off PC!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814428,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Listen this PC died streaming games you guys watched me play. It's only fair that you help support getting a new PC. It's really all your fault!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785810617,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Ames watching U watching Phil what a thrill",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809244,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Stop staring at my forehead wrinkles! (bonk)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809089,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Did he say me get the flesh light? (slip)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808776,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Crapped the bed? Phil you are such a tease!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808627,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I'm not DSP I am now GLP! Zesty: Skinny Mini",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808292,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: This is more Non Tent than my Gold Ballroom",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808132,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: I burned out my personal massager once! uh",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808045,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: I am as turned on as the ram in your cpu hon",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807793,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I wish Kat was home to drive me to Best Buy!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807463,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: The stream was privated to protect my idiocy",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785473608,
         "type": "superchat",
@@ -32714,6 +33170,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1785819486,
+        "type": "superchat",
+        "amount_usd": 2.04,
+        "amount_raw": "CA$2.79",
+        "message": "the burst of august 1st",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784150867,
         "type": "membership",
@@ -37191,6 +37655,30 @@
     ],
     "evistosf": [
       {
+        "ts": 1785813049,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 This is like crowd sourcing open heart surgery while the patient bleeds out! rtuBILL",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811706,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Phil thinks he controls the Chat but the Chat seems to control HIM! Poor Guy! rtuRobust",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811388,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 OMG Aames took the trouble to cover your tipples because he's afraid you might turn him gayer than he already is!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785450452,
         "type": "bits",
         "amount_usd": 1.0,
@@ -38164,6 +38652,14 @@
       }
     ],
     "DarthOmegas": [
+      {
+        "ts": 1785798891,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen buy a pre built, have the rgb be controlled by a button and its only 3 options, get annoyed rewire the fans like they should have to begin with",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785455535,
         "type": "superchat",
@@ -39425,6 +39921,22 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1785811135,
+        "type": "superchat",
+        "amount_usd": 2.54,
+        "amount_raw": "\u00a32.00",
+        "message": "Stan: Listen, I have a semi.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785806064,
+        "type": "superchat",
+        "amount_usd": 2.54,
+        "amount_raw": "\u00a32.00",
+        "message": "A 2700X & 2070S can still run Forza6 @ a locked 60",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785444325,
         "type": "superchat",
         "amount_usd": 2.54,
@@ -40398,6 +40910,38 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1785816719,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "combined with his haircut, Phil's head reminds me of gossamer from looney tunes",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785816468,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil has done nothing but complain this entire stream. phil: what do you mean I actually have to take the time to set up a pc. me(reee)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815098,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "phil: friendly reminder that I couldn't figure out how to get fear to run on my pc, then scolded my audience telling them they need to warn me about technical issues that a game has (thwomp)(augh)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811199,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: listen if a person who plays video games for a living is talking about needing liquid assets. run away(thwomp)(sm64_hurt)(thwomp)(sm64_hurt)",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785465130,
         "type": "superchat",
@@ -48521,6 +49065,14 @@
     ],
     "karasub2836": [
       {
+        "ts": 1785799864,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "lol i got the new halo on gamepass because i wont pay money for",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785186018,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -54085,6 +54637,14 @@
     ],
     "aXDroptimus": [
       {
+        "ts": 1785810012,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (2 months)!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1784585795,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -54150,6 +54710,62 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1785811153,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: phil, shove shit in holes until you have no holes left to shove into. Grandpa: why son why! Stan: big daddys comming for you pappy! mmmm",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785810778,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: listen, take all the gummys, all the caffeine, snort multiple lines, do Adderall and stream for a week straight. then die. be a man",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809996,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785806201,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: hell as an auto technician I google shit all the time. its usually faster than going through service information and usually has more info and videos on how to do certain things. I farted",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785803342,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: listen, put your cock in the power supply port. that will fix everything. be a man, and shoot lightning ropes",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800633,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: Attention all men a torpedo is in the tube! I repeat a torpedo is in the tube! brace for a storm of brown on a galactic scale! embrace the farts and let its true power flow from your anus",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785799186,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Masterchief: Attention all men! I repeat, all men! we have received a robust distress beacon! a man emergency is in effect! mobilize the fleets! arm the nipple lazers! deploy the MEC ( massive erect cock) cannons! save a man!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785468243,
         "type": "superchat",
@@ -57000,6 +57616,14 @@
       }
     ],
     "SeymourDemonica": [
+      {
+        "ts": 1785799633,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Since you love Dying Light and like Dead Island 2, have you played Dead Rising? I've been playing DR3 again and it's way more solid in hindsight.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784679700,
         "type": "superchat",
@@ -61699,6 +62323,30 @@
     ],
     "qb3540": [
       {
+        "ts": 1785804291,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Does the PC still come with granny corn?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785804020,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil couldve gotten a free PC from TipplesPC but he was too paranoid to accept it. Phil thought u installed spyware on it so u could watch him May 1st",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785803302,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: R.I.P. Big Pussy u were like a brother 2 me",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785280510,
         "type": "membership",
         "amount_usd": 1.99,
@@ -61916,6 +62564,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1785807111,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I've been fuckin w/ Batocera on my Raspberry Pi 4",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785465809,
         "type": "superchat",
@@ -67121,6 +67777,46 @@
     ],
     "nevablowingbubbles1337": [
       {
+        "ts": 1785815144,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 I have to share the same planet as this DSP guy who has not figured out to trace where the PSU leads are going to by starting from the PSU itself, then seeing where the leads are going.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814751,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Remember guys: We've watching the same DSP who has shit on cooking streams suggestions in fear that detractors will triangulate his position based on filming around the kitchen. Detractors are taking notes to map out his Snort Fort room of operations while his changes his PSU.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814144,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 This is both a fascinating yet infuriating DSP stream to watch. I will never relate to his predicament as someone who has never built a PC until 2023, when I when in and did my research before nailing my 1st attempt.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785802863,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Businesses love DSP. Stupidity, impulsivity, and impatience are some of the most profitable emotions, and DSP has them through lack of problem solving, gambling addictions, and doordashing food.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785801216,
+        "type": "superchat",
+        "amount_usd": 1.32,
+        "amount_raw": "A$2.00",
+        "message": "Philip \"It makes no sense\" Burnell. Phil: HELP!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785473184,
         "type": "bits",
         "amount_usd": 0.5,
@@ -68802,6 +69498,14 @@
       }
     ],
     "jeffery-tucker": [
+      {
+        "ts": 1785806063,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Trump: your titties are looking good.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785449419,
         "type": "superchat",
@@ -78208,6 +78912,102 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1785810531,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Don't respect my money, give us 5am",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785810106,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm so glad you're staying up to 5:30am go Dad!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809318,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Super Mario 2 Turnip",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807074,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen you gotta go to 3am, just for the boys",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785806284,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "See forehead lines, he uses a beauty filter.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805548,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Can you send me your 65' Hisense and install",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805255,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Tell us a story from the furniture store",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785804964,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm just going to say it, he's retarded honestly",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800507,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800198,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Just download this patch from this Chinese site",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785799948,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Are Warez still a thing? Used to get my games",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785798922,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Just want healthcare that isn't tied to your job",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785455276,
         "type": "superchat",
@@ -92435,6 +93235,46 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1785819251,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Chief: Azz check. 1 2 3. Azz check 1 2. Men. Come",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807971,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Stan: Listen squish ur checks and force a fart out",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805183,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "If phil were smart he\u2019d go the Andy Kauffman route",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785804952,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "What R metrics U seeing? Ppl fans of no politics?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785802510,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phill\u2019s day job isn\u2019t actually streaming. It\u2019s having to explain to his family every day that he\u2019ll get the money soon. That why he has no Google time",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1784689475,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -94672,6 +95512,94 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1785816951,
+        "type": "superchat",
+        "amount_usd": 2.04,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: now, back to the regularly scheduled begging",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814595,
+        "type": "superchat",
+        "amount_usd": 2.04,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: I don\u2019t know what hole !",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785814157,
+        "type": "superchat",
+        "amount_usd": 2.04,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: I\u2019m psyching myself up to fail like a man!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785813915,
+        "type": "superchat",
+        "amount_usd": 5.1,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: so listen, the knowledge to do this is lost forever and unattainable. So I\u2019ll need each of you to support the stream so I can buy a brand new pc",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785808453,
+        "type": "superchat",
+        "amount_usd": 5.1,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: What\u2019s that light mean ? What\u2019s a PSU? Where are the cables ? What\u2019s a computer ? Where am I ? Who am I ? Is this robust ? Am I a man ?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807284,
+        "type": "superchat",
+        "amount_usd": 5.1,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: you have to help me! Otherwise i can\u2019t bring you robust, meaningful and positive content ! This isn\u2019t rocket science you useless idiots.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805359,
+        "type": "superchat",
+        "amount_usd": 2.04,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: Men ! I need you to be robust for the king !",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785802943,
+        "type": "superchat",
+        "amount_usd": 5.1,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: But if I didn\u2019t do that, how else would you guys know how tech savvy and computer literate I am ? I\u2019m the king for a reason !",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800888,
+        "type": "superchat",
+        "amount_usd": 7.3,
+        "amount_raw": "CA$10.00",
+        "message": "Eric: were you able to wash off that sticky stain you made on Bob Lavari's forehead last time?because i was a little too rowdy with my last wrestling partner and have a stain of my own to take care of",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800358,
+        "type": "superchat",
+        "amount_usd": 3.65,
+        "amount_raw": "CA$5.00",
+        "message": "Phil: Why would I do all that complicated technical stuff ? I'll just download a new power supply ! Once again, you morons don't know anything !",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785799594,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785474136,
         "type": "superchat",
@@ -99913,6 +100841,46 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1785814886,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Phil: hmkay, so we put the doohickey on the thingymajig\u2026 guys pay attention you can\u2019t make me do this all myself. Stop acting like selfish children, ahrright?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785811037,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I\u2019m actually glad he was valedictorian... it adds to the fascination aesthetic that he\u2019s somehow a dented genius",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785807807,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phillip \u201cthe RAM is turned on\u201d Burnell :light_bulb:",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805574,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I thought khet got the old PC? It\u2019s gone now?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805158,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Not troubleshooting, just troubled :exploding_head:",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785459492,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -104114,6 +105082,30 @@
       }
     ],
     "silkyone12": [
+      {
+        "ts": 1785808169,
+        "type": "superchat",
+        "amount_usd": 3.35,
+        "amount_raw": "\u00a5500",
+        "message": "someone with autism, no, Phil is just old and stubborn. grandma is the same way, will learn nothing about tech and wants everyone to help her with it.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785802314,
+        "type": "superchat",
+        "amount_usd": 3.35,
+        "amount_raw": "\u00a5500",
+        "message": "rich holy shit you have GOT to watch the snort hogan video this man is delusional, saying the guy taking the picture \"was absolutely starstruck by me\"",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785801702,
+        "type": "superchat",
+        "amount_usd": 1.34,
+        "amount_raw": "\u00a5200",
+        "message": "sent link to the grocery store melty in discord",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785287521,
         "type": "superchat",
@@ -109633,6 +110625,14 @@
     ],
     "TheMysteriousDrifter": [
       {
+        "ts": 1785806123,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (2 months)!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1783568264,
         "type": "membership",
         "amount_usd": 1.99,
@@ -109808,6 +110808,14 @@
       }
     ],
     "OnePumpMaan": [
+      {
+        "ts": 1785810651,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich when the GTA6 Trailer 3? Hit up your connects",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785454895,
         "type": "superchat",
@@ -112819,6 +113827,14 @@
     ],
     "End-Logic_1": [
       {
+        "ts": 1785813265,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "Plot Twist: Phil plays dumb on TV for clicks",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785464910,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -113116,6 +114132,14 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1785808605,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 9 months",
+        "message": "Phil: Can you imagine me having kids?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785037912,
         "type": "superchat",
@@ -114235,6 +115259,14 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1785808076,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "dagoth: guarantee he panic deleted the stream cuz he heard what you said and didn't want you to see him demand help. we know he watches his detractors",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1784690821,
         "type": "membership",
         "amount_usd": 1.99,
@@ -115115,6 +116147,14 @@
     ],
     "Gaminglechuga": [
       {
+        "ts": 1785801274,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Hello, bird father. Give Carlos a kiss for me. Breasts.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1783041510,
         "type": "sub",
         "amount_usd": 5.99,
@@ -115643,6 +116683,14 @@
     ],
     "xcasder7885": [
       {
+        "ts": 1785807509,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Philozempic rich i love seeing u on utube :squinting_face_with_tongue:",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1782750789,
         "type": "membership",
         "amount_usd": 1.99,
@@ -115729,6 +116777,14 @@
     ],
     "eazypz9124": [
       {
+        "ts": 1785816077,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: I worked in a helicopter company so im smart",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1782792335,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -115814,6 +116870,22 @@
       }
     ],
     "lozifor": [
+      {
+        "ts": 1785807039,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: I got a Retroid Pocket 6 last month. This device is awesome and gives me the headroom to play all the emulators I want.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785798645,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: in light of the events that have happened during my term, I will be resigning my position as the 47th president effective immediately",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784585751,
         "type": "membership",
@@ -117026,6 +118098,14 @@
       }
     ],
     "PPPs_HRT": [
+      {
+        "ts": 1785804912,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "He looks older than my 61 year old father",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784585447,
         "type": "superchat",
@@ -119730,6 +120810,30 @@
       }
     ],
     "75.": [
+      {
+        "ts": 1785814165,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He's got over 2k live viewers. that's a new record",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785803064,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "The editied chris chan pic of him is my fav :heart_suit: ikyk",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800866,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "wait how did u deduce its the psu? it could be any",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785465879,
         "type": "superchat",
@@ -124237,6 +125341,14 @@
     ],
     "BlackPopeye44": [
       {
+        "ts": 1785804858,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "54 months",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1782780000,
         "type": "membership",
         "amount_usd": 1.99,
@@ -125779,6 +126891,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1785799368,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen, impressive library of games on screen, just missing two things, Killer is Dead and stroke the horse.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1784860620,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -125812,6 +126932,38 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1785815654,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Mr Rich! Do you think DSP is installing the PSU under the influence ?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805792,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich! Who is ReviewTechUSA 1 ?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785805406,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785801987,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich you are tech savvy, you can help DSP :folded_hands:",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1782791924,
         "type": "superchat",
@@ -125866,6 +127018,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1785809996,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784678309,
         "type": "membership",
@@ -132511,6 +133671,14 @@
     ],
     "SmokingSocks220": [
       {
+        "ts": 1785804820,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "DSP will be installing new PSU live tonight!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1782354154,
         "type": "membership",
         "amount_usd": 1.99,
@@ -133403,6 +134571,14 @@
     ],
     "dillydilly1306": [
       {
+        "ts": 1785804919,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "He\u2019s such an entitled child.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1782180756,
         "type": "membership",
         "amount_usd": 1.99,
@@ -133628,6 +134804,14 @@
       }
     ],
     "REDIVY78": [
+      {
+        "ts": 1785805595,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Didn\u2019t this dumbass claim he used to build pc\u2019s?",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1782187569,
         "type": "membership",
@@ -139702,6 +140886,22 @@
       }
     ],
     "jiggyjoeryan": [
+      {
+        "ts": 1785813188,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "replaying the 1st red dead- whata great game still",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809415,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784586758,
         "type": "superchat",
@@ -211800,6 +213000,22 @@
       }
     ],
     "Skyrim1212g": [
+      {
+        "ts": 1785810117,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809356,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He just wants his stream chat to hold his hand.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1784591210,
         "type": "membership",
@@ -332065,6 +333281,14 @@
     ],
     "Themachine26665": [
       {
+        "ts": 1785810475,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "Joined!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1703483751,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -417895,6 +419119,14 @@
     ],
     "modsbananyoneunder300pound9": [
       {
+        "ts": 1785813565,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "If youre against the pitbull breed Thats straight up dog racism cause of the buildimagine saying a ethic group is violent cause of color. Same concept",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1683250871,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -485585,6 +486817,14 @@
     ],
     "PSVetGaming": [
       {
+        "ts": 1785799021,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I dont like the Dems, i guess not the GOP either anymore. but yeah being completely unbiased, hes not winning. can we just normal people up there =(",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1652669978,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -521407,6 +522647,22 @@
     ],
     "PakistanAmericanForLiberation": [
       {
+        "ts": 1785815745,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "you should check out Linus tech tip recent video post using A.I. app assembling PC unit. Phil: I am too stupid for that I can't even unclog my toilet",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785815537,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: someone from stream please come through over my steaming device and fix it for me. yeah come over digitally and fix it. also don't forget to tip",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1785462494,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -521707,6 +522963,30 @@
     ],
     "brian-m9m": [
       {
+        "ts": 1785809363,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "DSP is got to be using filters with his webcam cuz he looks rough right here",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785809180,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "is dsp's eyes that bad every time he puts a camera in his face he's got to squint his eyes",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800620,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "DSP has two computers there he can stream everything he wants to on the other PC and play games also this guy's a moron",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
         "ts": 1784679109,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -521750,6 +523030,22 @@
       }
     ],
     "ReviewTechAzerbaijan": [
+      {
+        "ts": 1785808144,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil: Smells musty in here! Harman, wash that Pikachu!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
+      {
+        "ts": 1785800832,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil: Eh, too much work. Emergency donation marathon stream! Kat, start workin the corner! Jasper, you\u2019re going to Craigslist!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785449995,
         "type": "superchat",
@@ -521908,6 +523204,14 @@
       }
     ],
     "Webbz517": [
+      {
+        "ts": 1785805154,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "Phil is just experiencing an ID10T Error. Menn",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      },
       {
         "ts": 1785205793,
         "type": "giftmembership",
@@ -522275,6 +523579,66 @@
         "amount_raw": "Prime",
         "message": "resubscribed (3 months)!",
         "stream_id": "early_day_man_stream_2026-07-30_203206"
+      }
+    ],
+    "NJ5Fham": [
+      {
+        "ts": 1785804960,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "This troubleshooting hurts my brain",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      }
+    ],
+    "DSPsDailyOzempicShot": [
+      {
+        "ts": 1785805429,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Philip Burnell is a master at configuring robust PCs",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      }
+    ],
+    "shogunluffy": [
+      {
+        "ts": 1785809078,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      }
+    ],
+    "robertcosper": [
+      {
+        "ts": 1785815122,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      }
+    ],
+    "jdlcampbell": [
+      {
+        "ts": 1785815631,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Imagine is this was the is other pc with the dumb all in one case",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+      }
+    ],
+    "Mikey_Today": [
+      {
+        "ts": 1785816088,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Stupid is as stupid does. Guess how stupid i am.",
+        "stream_id": "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
       }
     ]
   }
