@@ -1127,8 +1127,8 @@ async function loadStream(streamId) {
     // Viewer-data availability is separate from platform membership: streams
     // that predate YouTube viewer collection store youtube as null for every
     // snapshot. Treat those as "no data" (N/A, no viewer line) rather than 0.
-    // Kick currently has no viewer field at all, so hasKickViewers stays false
-    // (mirrors the Twitch path; lights up automatically if the backend adds one).
+    // Kick snapshots predate the backend's kick viewer field (added 2026-07);
+    // older streams store no kick key, so hasKickViewers stays false for them.
     // A platform that is null or 0 across every snapshot counts as no data too,
     // so its line is never drawn and its legend toggle never appears.
     const hasYTViewers = snapshots.some(s => s.youtube);
@@ -2140,8 +2140,8 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     });
   }
 
-  // Kick viewers -- mirrors the YT/TW path, but the backend currently emits no
-  // Kick viewer field so hasKickViewers is false and this never renders today.
+  // Kick viewers -- mirrors the YT/TW path; renders for streams whose
+  // snapshots carry the backend's kick viewer field (added 2026-07).
   if (hasKickViewers && snapshotData.length > 0) {
     datasets.push({
       label: DS.KICK_VIEWERS,
