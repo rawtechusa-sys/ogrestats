@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785898313,
+  "updated_ts": 1785914070,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -831,7 +831,8 @@
     "grifters_clowns_and_horrorcows_2026-07-28_223505",
     "early_day_man_stream_2026-07-30_203206",
     "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
-    "rtustreams_2026-08-05_001339"
+    "rtustreams_2026-08-05_001339",
+    "a_old_man_makes_music_live_2026-08-05_001339"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -14930,6 +14931,23 @@
     "rtustreams_2026-08-05_001339": {
       "stream_id": "rtustreams_2026-08-05_001339",
       "title": "rtustreams",
+      "start_ts": 1785888828,
+      "end_ts": 1785898090,
+      "duration_sec": 9262,
+      "youtube_archive_id": "6Q8V0hgb5DA",
+      "source_platform": "twitch",
+      "total_donations_usd": 181.7,
+      "donation_count": 19,
+      "donations_per_min": 1.1771,
+      "peak_viewers": 172,
+      "avg_viewers": 132.59,
+      "avg_chat_mpm": 3.86,
+      "avg_active_chatters": 11.1,
+      "percent_paused": null
+    },
+    "a_old_man_makes_music_live_2026-08-05_001339": {
+      "stream_id": "a_old_man_makes_music_live_2026-08-05_001339",
+      "title": "A Old Man Makes Music Live",
       "start_ts": 1785888828,
       "end_ts": 1785898090,
       "duration_sec": 9262,
