@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages live inside the index.html shell. If loaded
+     top-level, bounce into the shell at this page's tab, carrying any sub-slug
+     (a channel slug here) so discord.html#<slug> -> index.html#discord/<slug>
+     stays shareable. #discord is a hidden route: no visible tab points here. -->
+<script>(function(){
+  if (window.self !== window.top) return;            // embedded in the shell -> normal
+  var slug = 'discord';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
+<title>Discord</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: 100vh;
+  }
+
+  /* ── Sidebar ─────────────────────────────────────────────────── */
+  .sidebar {
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border-default);
+    overflow-y: auto;
+    position: relative;
+  }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: var(--bg-surface); }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .server-head {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 14px 10px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .server-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-default-strong, var(--border-default));
+    flex-shrink: 0;
+  }
+  .server-name {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--accent-bright);
+    letter-spacing: 0.04em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Sticky filter (floats at the top of the list while it scrolls). */
+  .sidebar-search {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg-surface);
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .sidebar-search input {
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 7px 9px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .sidebar-search input::placeholder { color: var(--text-muted); opacity: 0.7; }
+  .sidebar-search input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+  }
+
+  .cat-label {
+    font-family: 'Rye', serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    padding: 12px 16px 4px;
+    text-transform: uppercase;
+  }
+
+  .chan-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    overflow: hidden;
+  }
+  .chan-row:hover {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.08);
+    border-left-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+  }
+  .chan-row.active {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.14);
+    border-left-color: var(--accent);
+  }
+  .chan-row.thread { padding-left: 28px; }
+  .chan-hash {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  .chan-row.active .chan-hash { color: var(--accent); }
+  .chan-name {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .chan-row.active .chan-name, .chan-row:hover .chan-name { color: var(--text-primary); }
+  .chan-count {
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    opacity: 0.65;
+    flex-shrink: 0;
+  }
+
+  .sidebar-empty, .search-noresults {
+    padding: 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ── Content area ────────────────────────────────────────────── */
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .chan-head {
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-default);
+    padding: 9px 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    min-height: 42px;
+  }
+  .chan-title {
+    font-family: 'Rye', serif;
+    font-size: 16px;
+    color: var(--accent-bright);
+  }
+  .chan-topic {
+    font-size: 13px;
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60%;
+  }
+  .chan-count-big {
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    border-bottom: 1px solid var(--border-default);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  .month-nav { display: flex; align-items: center; gap: 6px; }
+
+  .btn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    background: var(--bg-panel);
+    color: var(--accent-bright);
+    border: 1px solid var(--border-default-strong, var(--border-default));
+    border-radius: 4px;
+    padding: 5px 11px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10);
+  }
+  .btn:disabled { opacity: 0.35; cursor: default; }
+  .btn.on {
+    border-color: var(--accent);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+  .spacer { margin-left: auto; }
+
+  select, .filters input[type="text"], .filters input[type="search"], .filters input[type="date"] {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    background: var(--bg-panel);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default-strong, var(--border-default));
+    border-radius: 4px;
+    padding: 5px 8px;
+    outline: none;
+  }
+  select:focus, .filters input:focus { border-color: var(--accent); }
+  .filters input[type="date"] { color-scheme: dark; }
+  html[data-theme="white"] .filters input[type="date"] { color-scheme: light; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-default);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.04);
+    flex-shrink: 0;
+  }
+  .filters .field { display: flex; flex-direction: column; gap: 3px; }
+  .filters label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  #q { min-width: 220px; }
+
+  /* ── Scrolling message pane ──────────────────────────────────── */
+  .scroll-area {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 8px 20px 40px;
+  }
+  .scroll-area::-webkit-scrollbar { width: 5px; }
+  .scroll-area::-webkit-scrollbar-track { background: transparent; }
+  .scroll-area::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .day-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0 8px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
+  .day-divider::before, .day-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-default);
+  }
+
+  .msg {
+    padding: 5px 8px;
+    border-radius: 4px;
+    scroll-margin-top: 16px;
+  }
+  .msg:hover { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.05); }
+  .msg.flash { animation: flash 1.8s ease-out 1; }
+  @keyframes flash {
+    0%   { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35); }
+    100% { background: transparent; }
+  }
+
+  .msg-head {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .msg-user {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-bright);
+  }
+  .msg-time {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+  .msg-edited {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    opacity: 0.8;
+  }
+  .msg-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+  .msg-text mark {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+    color: var(--accent-bright);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+
+  .reply-line {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-muted);
+    opacity: 0.85;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .reply-line .reply-user { color: var(--accent); }
+  .reply-line a { color: inherit; text-decoration: none; cursor: pointer; }
+  .reply-line a:hover { text-decoration: underline; }
+
+  .atts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .att-img img {
+    max-height: 360px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--border-default);
+    display: block;
+  }
+  .att-media { max-width: 480px; width: 100%; }
+  video.att-media { max-height: 360px; border-radius: 4px; }
+  .att-file {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--accent-bright);
+    border: 1px solid var(--border-default-strong, var(--border-default));
+    border-radius: 4px;
+    padding: 4px 9px;
+    text-decoration: none;
+  }
+  .att-file:hover { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10); }
+
+  .reacts { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+  .react {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    padding: 1px 8px;
+  }
+
+  /* ── Search results ──────────────────────────────────────────── */
+  .result-count {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    padding: 6px 0 2px;
+  }
+  .hit-group {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .hit-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 8px 14px;
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.06);
+    border-bottom: 1px solid var(--border-default);
+    flex-wrap: wrap;
+  }
+  .hit-chan {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--accent-bright);
+  }
+  .hit-meta {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .hit-count { margin-left: auto; }
+  .hit {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .hit:last-child { border-bottom: none; }
+  .jump-link {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .jump-link:hover { color: var(--accent-bright); }
+
+  /* ── States ──────────────────────────────────────────────────── */
+  .loading-state, .empty-state, .error-state, .hint-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.6; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <div class="server-head" id="serverHead">
+      <span class="server-name" id="serverName">Discord</span>
+    </div>
+    <div class="sidebar-search">
+      <input id="chanSearch" type="search" placeholder="filter channels…"
+             autocomplete="off" spellcheck="false" aria-label="Filter channels">
+    </div>
+    <div id="chanList">
+      <div class="loading-state" style="height:160px;">
+        <span class="loading-glyph">~</span>
+        <span>wading in...</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-area">
+    <header class="chan-head" id="chanHead">
+      <span class="chan-title" id="chanTitle"></span>
+    </header>
+
+    <div class="toolbar" id="toolbar">
+      <div class="month-nav">
+        <button class="btn" id="olderBtn" title="Older month">←</button>
+        <select id="monthSel" aria-label="Month"></select>
+        <button class="btn" id="newerBtn" title="Newer month">→</button>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn" id="searchToggle">Search</button>
+    </div>
+
+    <div class="filters" id="filters" style="display:none;">
+      <div class="field">
+        <label for="q">Search text</label>
+        <input type="search" id="q" placeholder="words to find…" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="author">Author</label>
+        <input type="text" id="author" placeholder="username" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="scope">Channels</label>
+        <select id="scope">
+          <option value="all">All channels</option>
+          <option value="current">This channel</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="dateFrom">From</label>
+        <input type="date" id="dateFrom">
+      </div>
+      <div class="field">
+        <label for="dateTo">To</label>
+        <input type="date" id="dateTo">
+      </div>
+      <button class="btn" id="searchBtn">Go</button>
+      <button class="btn" id="closeSearch">Close</button>
+    </div>
+
+    <main class="scroll-area" id="main">
+      <div class="loading-state">
+        <span class="loading-glyph">~</span>
+        <span>loading the archive…</span>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="config.js"></script>
+
+<script>
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+const DISCORD_BASE = `${RAW}/data/discord`;
+
+// Chunks (one channel-month of messages) hydrated per scroll page during search.
+// Mirrors chat.html: results stream in as the user scrolls, so a broad query never
+// fetches more than the user actually scrolls through.
+const BATCH = 8;
+// A query can match many chunks but few messages once the message-level filter runs,
+// so auto-fill would keep fetching to fill the viewport. Cap that continuous scan and
+// offer a "Keep scanning" button past it.
+const MAX_AUTOSCAN = 60;
+
+// ── Theme (mirrors chat.html / streams.html) ────────────────────────────────
+function applyTheme(key) {
+  const themes = {
+    green: 'themes/bog-moss.css',
+    amber: 'themes/firepit.css',
+    grey:  'themes/dead-stone.css',
+    void:  'themes/the-void.css',
+    white: 'themes/onion-layers.css',
+  };
+  document.getElementById('theme-css').href = themes[key] || themes.green;
+  document.documentElement.setAttribute('data-theme', key);
+}
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+
+// Only 'theme' and 'timezone' are handled. Every other message type is a deliberate
+// no-op -- the shell broadcasts {type:'selectstream'} to whatever page is loaded
+// (sendPendingStream in index.html), and that must not disturb this page.
+window.addEventListener('message', e => {
+  const d = e.data;
+  if (!d || typeof d !== 'object') return;
+  if (d.type === 'theme') applyTheme(d.key);
+  else if (d.type === 'timezone') rerenderForTimezone();
+});
+
+// Mouse forwarding so the parent's roach/eye animations still react.
+document.addEventListener('mousemove', e => {
+  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
+});
+
+// ── Utilities ───────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.json();
+}
+function escHtml(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+// Attachment/icon URLs come from our own backend (archive.org downloads), but a
+// scripted scheme would still execute if one ever slipped in, so drop those.
+function safeUrl(u) {
+  const s = String(u ?? '').trim();
+  return /^(javascript|vbscript|data:text\/html|file):/i.test(s) ? '' : s;
+}
+
+// Same tokenizer as discord_site_build/chat_search_index: lowercase, [a-z0-9]+, 2..40.
+function tokenize(text) {
+  const out = new Set();
+  for (const t of String(text ?? '').toLowerCase().match(/[a-z0-9]+/g) || []) {
+    if (t.length >= 2 && t.length <= 40) out.add(t);
+  }
+  return [...out];
+}
+// Same normalization as chat_search_index._norm_username (the authors.json keys).
+function normUser(raw) {
+  return (String(raw ?? '').replace(/^@/, '').trim().toLowerCase()) || 'unknown';
+}
+
+// Sorted-array intersection (two-pointer) — postings are sorted + unique.
+function intersectSorted(a, b) {
+  const out = [];
+  let i = 0, j = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { out.push(a[i]); i++; j++; }
+    else if (a[i] < b[j]) i++;
+    else j++;
+  }
+  return out;
+}
+
+// Highlight query tokens. Tokens are [a-z0-9]+ so they need no regex escaping.
+function highlight(text, tokens) {
+  const esc = escHtml(text);
+  if (!tokens || !tokens.length) return esc;
+  const re = new RegExp(`(${tokens.join('|')})`, 'gi');
+  return esc.replace(re, '<mark>$1</mark>');
+}
+
+// ── Dates (all display goes through withTZ from config.js) ──────────────────
+function fmtDay(ts) {
+  try {
+    return new Date(ts * 1000).toLocaleDateString('en-US',
+      withTZ({ weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' }));
+  } catch (e) { return ''; }
+}
+function fmtClock(ts) {
+  try {
+    return new Date(ts * 1000).toLocaleTimeString('en-US',
+      withTZ({ hour: '2-digit', minute: '2-digit' }));
+  } catch (e) { return ''; }
+}
+function fmtStamp(ts) {
+  try {
+    return new Date(ts * 1000).toLocaleString('en-US',
+      withTZ({ year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }));
+  } catch (e) { return ''; }
+}
+// A YYYY-MM-DD <input type=date> value -> unix seconds, interpreted in UTC so the
+// message-level bound and the chunk-level month bound (chunks are bucketed by UTC
+// month, see discord_site_build invariant 3) can never disagree at a boundary.
+function dateToTs(v, endOfDay) {
+  if (!v) return null;
+  const [y, m, d] = v.split('-').map(Number);
+  if (!y || !m || !d) return null;
+  return Math.floor(Date.UTC(y, m - 1, d, endOfDay ? 23 : 0, endOfDay ? 59 : 0, endOfDay ? 59 : 0) / 1000);
+}
+// The YYYY-MM prefix of a date input value; '' when unset. Months are zero-padded
+// fixed-width strings, so plain string compare is a correct chronological compare.
+function monthOf(v) {
+  return (v && /^\d{4}-\d{2}/.test(v)) ? v.slice(0, 7) : '';
+}
+function monthLabel(m) {
+  const [y, mm] = String(m || '').split('-').map(Number);
+  if (!y || !mm) return String(m || '');
+  // Month names are calendar labels, not instants: format at UTC noon so no
+  // timezone offset can roll them into the neighbouring month.
+  try {
+    return new Date(Date.UTC(y, mm - 1, 15, 12)).toLocaleDateString('en-US',
+      { year: 'numeric', month: 'long', timeZone: 'UTC' });
+  } catch (e) { return String(m); }
+}
+
+// ── State ───────────────────────────────────────────────────────────────────
+let MANIFEST = null;
+let CHANNELS = [];                     // manifest.channels
+const CHAN_BY_ID   = new Map();
+const CHAN_BY_SLUG = new Map();
+let chanIndex = [];                    // [{el, wrap, name, slug, cat}] for the filter
+
+let INDEX   = null;   // search.json  (lazy: first search)
+let AUTHORS = null;   // authors.json (lazy: first search that names an author)
+
+const chunkCache = new Map();          // "<cid>/<month>" -> messages[]
+
+let MODE = 'browse';                   // 'browse' | 'search'
+let currentChannel = null;
+let currentMonth = null;
+let browseToken = 0;                   // bumped per month load; stale loads drop
+
+let SEARCH = null;    // { q, gen, candidates, cursor, rendered: [...], ... }
+let GEN = 0;          // bumped per search so a stale in-flight batch detects it lost
+let OBSERVER = null;
+
+// ── Data access ─────────────────────────────────────────────────────────────
+function chunkKey(cid, month) { return `${cid}/${month}`; }
+
+function chunkUrl(cid, month) {
+  return `${DISCORD_BASE}/messages/${encodeURIComponent(cid)}/${encodeURIComponent(month)}.json`;
+}
+
+// Load one channel-month, memoized. Messages arrive ascending by ts.
+async function loadChunk(cid, month) {
+  const key = chunkKey(cid, month);
+  const cached = chunkCache.get(key);
+  if (cached) return cached;
+  const data = await fetchJSON(chunkUrl(cid, month));
+  const msgs = Array.isArray(data?.messages) ? data.messages : [];
+  chunkCache.set(key, msgs);
+  return msgs;
+}
+
+// ── Sidebar ─────────────────────────────────────────────────────────────────
+function renderChannelList() {
+  const listEl = document.getElementById('chanList');
+  listEl.innerHTML = '';
+  chanIndex = [];
+
+  if (!CHANNELS.length) {
+    listEl.innerHTML = '<div class="sidebar-empty">no channels in the archive yet</div>';
+    return;
+  }
+
+  // Group by category, preserving the manifest's order within and between groups.
+  const cats = new Map();
+  for (const ch of CHANNELS) {
+    const cat = ch.category || 'Channels';
+    if (!cats.has(cat)) cats.set(cat, []);
+    cats.get(cat).push(ch);
+  }
+
+  for (const [cat, chans] of cats) {
+    const wrap = document.createElement('div');
+    wrap.className = 'chan-cat';
+    const head = document.createElement('div');
+    head.className = 'cat-label';
+    head.textContent = cat;                     // textContent: no escaping needed
+    wrap.appendChild(head);
+
+    for (const ch of chans) {
+      const row = document.createElement('div');
+      row.className = 'chan-row' + (ch.type === 'thread' ? ' thread' : '');
+      row.dataset.slug = ch.slug || '';
+      row.dataset.id = ch.id || '';
+      row.title = ch.topic ? `#${ch.name} — ${ch.topic}` : `#${ch.name}`;
+      const count = Number(ch.message_count) || 0;
+      row.innerHTML =
+        `<span class="chan-hash">${ch.type === 'thread' ? '↳' : '#'}</span>` +
+        `<span class="chan-name">${escHtml(ch.name)}</span>` +
+        `<span class="chan-count">${count.toLocaleString()}</span>`;
+      row.addEventListener('click', () => selectChannel(ch.slug));
+      wrap.appendChild(row);
+      chanIndex.push({
+        el: row, wrap,
+        name: String(ch.name || '').toLowerCase(),
+        slug: String(ch.slug || '').toLowerCase(),
+        cat: String(cat).toLowerCase(),
+      });
+    }
+    listEl.appendChild(wrap);
+  }
+}
+
+// Display-toggle filter (no re-render), so the input keeps focus + value.
+function applyChannelFilter(raw) {
+  const listEl = document.getElementById('chanList');
+  const q = String(raw || '').trim().toLowerCase();
+  let shown = 0;
+  for (const e of chanIndex) {
+    const ok = !q || e.name.includes(q) || e.slug.includes(q) || e.cat.includes(q);
+    e.el.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  }
+  // Hide a category header whose rows are all filtered out.
+  for (const wrap of new Set(chanIndex.map(e => e.wrap))) {
+    const any = chanIndex.some(e => e.wrap === wrap && e.el.style.display !== 'none');
+    wrap.style.display = any ? '' : 'none';
+  }
+  const old = listEl.querySelector('.search-noresults');
+  if (shown === 0 && !old) {
+    const div = document.createElement('div');
+    div.className = 'search-noresults';
+    div.textContent = 'no channels match…';
+    listEl.appendChild(div);
+  } else if (shown > 0 && old) {
+    old.remove();
+  }
+}
+
+// ── Channel selection + month browsing ──────────────────────────────────────
+function selectChannel(slug, month, scrollToId) {
+  const ch = CHAN_BY_SLUG.get(String(slug || ''));
+  if (!ch) return false;
+  currentChannel = ch;
+  try { sessionStorage.setItem('selected-discord-channel', ch.slug); } catch (e) {}
+
+  document.querySelectorAll('.chan-row').forEach(el => el.classList.remove('active'));
+  const row = document.querySelector(`.chan-row[data-slug="${CSS.escape(ch.slug || '')}"]`);
+  if (row) { row.classList.add('active'); row.scrollIntoView({ block: 'nearest' }); }
+
+  renderChannelHeader(ch);
+  setMode('browse');
+
+  const months = Array.isArray(ch.months) ? ch.months : [];
+  const target = (month && months.includes(month)) ? month : months[months.length - 1];
+  renderMonthNav(ch, target);
+  showMonth(target, scrollToId);
+  return true;
+}
+
+function renderChannelHeader(ch) {
+  const head = document.getElementById('chanHead');
+  const count = Number(ch.message_count) || 0;
+  head.innerHTML =
+    `<span class="chan-title">${ch.type === 'thread' ? '↳ ' : '#'}${escHtml(ch.name)}</span>` +
+    (ch.topic ? `<span class="chan-topic" title="${escHtml(ch.topic)}">${escHtml(ch.topic)}</span>` : '') +
+    `<span class="chan-count-big">${count.toLocaleString()} message${count === 1 ? '' : 's'}</span>`;
+}
+
+function renderMonthNav(ch, month) {
+  const sel = document.getElementById('monthSel');
+  const months = Array.isArray(ch.months) ? ch.months : [];
+  // Newest first in the picker; the underlying array stays ascending.
+  sel.innerHTML = months.slice().reverse()
+    .map(m => `<option value="${escHtml(m)}">${escHtml(monthLabel(m))}</option>`).join('');
+  if (month) sel.value = month;
+  sel.disabled = months.length <= 1;
+  syncMonthButtons(ch, month);
+}
+
+function syncMonthButtons(ch, month) {
+  const months = Array.isArray(ch?.months) ? ch.months : [];
+  const i = months.indexOf(month);
+  document.getElementById('olderBtn').disabled = !(i > 0);
+  document.getElementById('newerBtn').disabled = !(i >= 0 && i < months.length - 1);
+}
+
+// Render one month of the current channel. A stale load (the user switched channel
+// or month while the fetch was in flight) drops on return.
+async function showMonth(month, scrollToId) {
+  const main = document.getElementById('main');
+  const ch = currentChannel;
+  const token = ++browseToken;
+  currentMonth = month || null;
+  syncMonthButtons(ch, month);
+
+  if (!ch) return;
+  if (!month) {
+    main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+      <span>no archived messages in this channel</span></div>`;
+    return;
+  }
+
+  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+  let msgs;
+  try {
+    msgs = await loadChunk(ch.id, month);
+  } catch (e) {
+    if (token !== browseToken) return;
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span>
+      <span>couldn't load ${escHtml(monthLabel(month))}<br><small>${escHtml(e.message)}</small></span></div>`;
+    return;
+  }
+  if (token !== browseToken || MODE !== 'browse') return;
+
+  if (!msgs.length) {
+    main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+      <span>nothing archived for ${escHtml(monthLabel(month))}</span></div>`;
+    return;
+  }
+  main.innerHTML = renderConversation(msgs);
+  main.scrollTop = 0;
+  if (scrollToId) flashMessage(scrollToId);
+}
+
+// Day dividers + messages, ascending. Messages carry id="m<id>" so a search hit can
+// jump straight to one.
+function renderConversation(msgs, tokens) {
+  const byId = new Map();
+  for (const m of msgs) if (m && m.id != null) byId.set(String(m.id), m);
+  let html = '';
+  let lastDay = null;
+  for (const m of msgs) {
+    const day = fmtDay(m.ts);
+    if (day !== lastDay) {
+      html += `<div class="day-divider"><span>${escHtml(day)}</span></div>`;
+      lastDay = day;
+    }
+    html += renderMessage(m, byId, tokens);
+  }
+  return html;
+}
+
+function renderMessage(m, byId, tokens) {
+  const reply = m.reply_to != null ? renderReply(m.reply_to, byId) : '';
+  const text = m.text
+    ? `<div class="msg-text">${highlight(m.text, tokens)}</div>`
+    : '';
+  return `<div class="msg" id="m${escHtml(m.id)}">
+    ${reply}
+    <div class="msg-head">
+      <span class="msg-user">${escHtml(m.author ?? 'unknown')}</span>
+      <span class="msg-time">${escHtml(fmtClock(m.ts))}</span>
+      ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
+    </div>
+    ${text}
+    ${renderAttachments(m.attachments)}
+    ${renderReactions(m.reactions)}
+  </div>`;
+}
+
+// The reply target is only resolvable if it sits in the same loaded chunk (a reply
+// across a month boundary shows the raw id instead).
+function renderReply(rid, byId) {
+  const target = byId ? byId.get(String(rid)) : null;
+  if (!target) {
+    return `<div class="reply-line">↩ <span>replying to #${escHtml(rid)}</span></div>`;
+  }
+  const snippet = String(target.text ?? '').replace(/\s+/g, ' ').slice(0, 90);
+  return `<div class="reply-line">↩ <a data-jump-msg="${escHtml(rid)}">replying to
+    <span class="reply-user">${escHtml(target.author ?? 'unknown')}</span></a>
+    <span>${escHtml(snippet)}</span></div>`;
+}
+
+function renderAttachments(atts) {
+  if (!Array.isArray(atts) || !atts.length) return '';
+  const parts = atts.map(a => {
+    const url  = escHtml(safeUrl(a?.url));
+    const name = escHtml(a?.name ?? 'attachment');
+    if (!url) return `<span class="att-file">${name}</span>`;
+    switch (a?.kind) {
+      case 'image':
+        // archive.org is external, so target=_blank is right here.
+        return `<a class="att-img" href="${url}" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="${url}" alt="${name}" title="${name}"></a>`;
+      case 'video':
+        return `<video class="att-media" controls preload="none" src="${url}"></video>`;
+      case 'audio':
+        return `<audio class="att-media" controls preload="none" src="${url}"></audio>`;
+      default:
+        return `<a class="att-file" href="${url}" target="_blank" rel="noopener noreferrer">📎 ${name}</a>`;
+    }
+  });
+  return `<div class="atts">${parts.join('')}</div>`;
+}
+
+function renderReactions(reacts) {
+  if (!Array.isArray(reacts) || !reacts.length) return '';
+  const chips = reacts.map(r =>
+    `<span class="react">${escHtml(r?.e ?? '')} ${Number(r?.n) || 0}</span>`).join('');
+  return `<div class="reacts">${chips}</div>`;
+}
+
+// Scroll a rendered message into view and flash it. Ids come from the data, so use
+// getElementById rather than a selector (no escaping question at all).
+function flashMessage(msgId) {
+  const el = document.getElementById('m' + String(msgId));
+  if (!el) return;
+  el.scrollIntoView({ block: 'center' });
+  el.classList.remove('flash');
+  void el.offsetWidth;                 // restart the animation
+  el.classList.add('flash');
+}
+
+// ── Mode switching ──────────────────────────────────────────────────────────
+function setMode(mode) {
+  MODE = mode;
+  document.getElementById('searchToggle').classList.toggle('on', mode === 'search');
+  if (mode === 'browse') {
+    // Leaving search: stop any in-flight batch loop from rendering into the pane.
+    GEN++;
+    if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+    SEARCH = null;
+  }
+}
+
+// ── Search ──────────────────────────────────────────────────────────────────
+async function ensureIndex() {
+  if (!INDEX) INDEX = await fetchJSON(`${DISCORD_BASE}/search.json`);
+  return INDEX;
+}
+async function ensureAuthors() {
+  if (!AUTHORS) AUTHORS = await fetchJSON(`${DISCORD_BASE}/authors.json`);
+  return AUTHORS;
+}
+
+async function runSearch() {
+  const main = document.getElementById('main');
+  const rawQ = document.getElementById('q').value.trim();
+  const rawAuthor = document.getElementById('author').value.trim();
+  const fromV = document.getElementById('dateFrom').value;
+  const toV   = document.getElementById('dateTo').value;
+
+  const q = {
+    tokens: tokenize(rawQ),
+    author: rawAuthor ? normUser(rawAuthor) : null,
+    scope: document.getElementById('scope').value === 'current' && currentChannel
+      ? currentChannel.id : null,
+    fromMonth: monthOf(fromV),
+    toMonth:   monthOf(toV),
+    from: dateToTs(fromV, false),
+    to:   dateToTs(toV, true),
+  };
+
+  if (!q.tokens.length && !q.author && q.from == null && q.to == null) {
+    setMode('search');
+    main.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
+      <span>Search the Discord archive.<br>Type a word, or filter by author or date.</span></div>`;
+    return;
+  }
+
+  setMode('search');
+  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>reading the index…</span></div>`;
+
+  try {
+    await ensureIndex();
+    if (q.author) await ensureAuthors();
+  } catch (e) {
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span>
+      <span>couldn't load the search index<br><small>${escHtml(e.message)}</small></span></div>`;
+    return;
+  }
+  if (MODE !== 'search') return;       // the user left search while the index loaded
+
+  const cand = resolveCandidates(q);
+  if (!cand.length) {
+    main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+      <span>nothing in the index matches those filters</span></div>`;
+    return;
+  }
+
+  const gen = ++GEN;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  SEARCH = {
+    q, gen, candidates: cand, cursor: 0,
+    loading: false, done: false, paused: false,
+    shownMsgs: 0, shownChunks: 0, scanned: 0, autoScan: 0,
+    rendered: [],                      // [{cid, month, msgs}] -- kept for tz re-render
+  };
+
+  main.innerHTML =
+    `<div class="result-count" id="resultStatus"></div><div id="groups"></div><div id="sentinel"></div>`;
+  updateStatus();
+
+  OBSERVER = new IntersectionObserver(entries => {
+    if (entries.some(e => e.isIntersecting)) loadNextBatch();
+  }, { root: main, rootMargin: '600px' });
+  OBSERVER.observe(document.getElementById('sentinel'));
+
+  loadNextBatch();
+}
+
+// Index-only candidate resolution: which chunks CAN contain a hit.
+function resolveCandidates(q) {
+  const chunks = Array.isArray(INDEX?.chunks) ? INDEX.chunks : [];
+  let cand = null;                     // null = "all so far"
+
+  for (const tok of q.tokens) {
+    const postings = INDEX.tokens?.[tok];
+    if (!postings) return [];          // unknown token -> nothing matches
+    cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
+    if (!cand.length) return [];
+  }
+
+  if (q.author) {
+    const postings = AUTHORS?.authors?.[q.author] || [];
+    cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
+    if (!cand.length) return [];
+  }
+
+  if (cand === null) cand = chunks.map((_, i) => i);
+
+  // Chunk-level metadata filters. Months are fixed-width YYYY-MM, so a plain
+  // string compare is a chronological compare.
+  const out = cand.filter(i => {
+    const c = chunks[i];
+    if (!c) return false;
+    if (q.scope && String(c.c) !== String(q.scope)) return false;
+    if (q.fromMonth && String(c.m) < q.fromMonth) return false;
+    if (q.toMonth   && String(c.m) > q.toMonth) return false;
+    return true;
+  });
+
+  // Newest chunk first, so the first page is the most recent conversation.
+  out.sort((a, b) => {
+    const A = chunks[a], B = chunks[b];
+    if (A.m !== B.m) return A.m < B.m ? 1 : -1;
+    return String(A.c).localeCompare(String(B.c));
+  });
+  return out;
+}
+
+// Message-level second pass: the index is chunk-grain, so every candidate chunk
+// still has to be checked message by message.
+function matchMessages(all, q) {
+  return (all || []).filter(m => {
+    if (q.author && normUser(m.author) !== q.author) return false;
+    if (q.from != null && (m.ts == null || m.ts < q.from)) return false;
+    if (q.to   != null && (m.ts == null || m.ts > q.to)) return false;
+    const lc = String(m.text ?? '').toLowerCase();
+    for (const tok of q.tokens) if (!lc.includes(tok)) return false;
+    return true;
+  });
+}
+
+// Hydrate + render the next BATCH of candidate chunks. Re-entrant-safe via S.loading;
+// a stale search (GEN changed) drops on return so it never renders into a new query.
+async function loadNextBatch() {
+  const S = SEARCH;
+  if (!S || S.loading || S.done || S.paused || S.gen !== GEN) return;
+  if (S.cursor >= S.candidates.length) { finishSearch(); return; }
+
+  S.loading = true;
+  const chunks = INDEX.chunks;
+  const slice = S.candidates.slice(S.cursor, S.cursor + BATCH);
+  S.cursor += slice.length;
+
+  let batch;
+  try {
+    batch = await Promise.allSettled(slice.map(i => loadChunk(chunks[i].c, chunks[i].m)));
+  } catch (e) {
+    batch = [];
+  }
+  if (S.gen !== GEN) return;           // a newer search superseded us; drop this result
+
+  const groupsEl = document.getElementById('groups');
+  let batchHits = 0;
+  slice.forEach((idx, k) => {
+    S.scanned++;
+    const res = batch[k];
+    if (!res || res.status !== 'fulfilled') return;
+    const c = chunks[idx];
+    const hits = matchMessages(res.value, S.q);
+    if (!hits.length) return;
+    batchHits += hits.length;
+    S.shownChunks++;
+    S.shownMsgs += hits.length;
+    const group = { cid: String(c.c), month: String(c.m), msgs: hits };
+    S.rendered.push(group);
+    if (groupsEl) groupsEl.insertAdjacentHTML('beforeend', renderHitGroup(group, S.q.tokens));
+  });
+
+  S.loading = false;
+
+  if (S.cursor >= S.candidates.length) { finishSearch(); return; }
+
+  // Auto-fill while the sentinel is still on screen, but cap a continuous run of
+  // empty batches so a restrictive filter on a common token can't silently fetch
+  // hundreds of chunks.
+  S.autoScan = batchHits ? 0 : S.autoScan + slice.length;
+  if (S.autoScan >= MAX_AUTOSCAN) { pauseAutoScan(); return; }
+  updateStatus();
+  if (sentinelVisible()) loadNextBatch();
+}
+
+function sentinelVisible() {
+  const main = document.getElementById('main');
+  const sentinel = document.getElementById('sentinel');
+  if (!main || !sentinel) return false;
+  const r = main.getBoundingClientRect();
+  const s = sentinel.getBoundingClientRect();
+  return s.top <= r.bottom + 600;      // matches the observer rootMargin
+}
+
+function renderHitGroup(group, tokens) {
+  const ch = CHAN_BY_ID.get(group.cid);
+  const label = ch ? `${ch.type === 'thread' ? '↳ ' : '#'}${ch.name}` : `#${group.cid}`;
+  const rows = group.msgs.map(m => `<div class="hit">
+      <div class="hit-head" style="background:none;border:none;padding:0 0 2px;">
+        <span class="msg-user">${escHtml(m.author ?? 'unknown')}</span>
+        <span class="hit-meta">${escHtml(fmtStamp(m.ts))}</span>
+        <a class="jump-link hit-count" data-jump-c="${escHtml(group.cid)}"
+           data-jump-m="${escHtml(group.month)}" data-jump-id="${escHtml(m.id)}">jump to context →</a>
+      </div>
+      <div class="msg-text">${highlight(m.text, tokens)}</div>
+      ${renderAttachments(m.attachments)}
+    </div>`).join('');
+  return `<div class="hit-group">
+    <div class="hit-head">
+      <span class="hit-chan">${escHtml(label)}</span>
+      <span class="hit-meta">${escHtml(monthLabel(group.month))}</span>
+      <span class="hit-meta hit-count">${group.msgs.length} hit${group.msgs.length === 1 ? '' : 's'}</span>
+    </div>
+    ${rows}
+  </div>`;
+}
+
+function updateStatus() {
+  const S = SEARCH;
+  const el = document.getElementById('resultStatus');
+  if (!S || !el) return;
+  const total = S.candidates.length;
+  const msgs = `${S.shownMsgs} message${S.shownMsgs === 1 ? '' : 's'}`;
+  if (S.cursor >= total) {
+    el.innerHTML = S.shownMsgs
+      ? `${msgs} in ${S.shownChunks} channel-month${S.shownChunks === 1 ? '' : 's'} <span style="opacity:0.5;">· ${total} scanned</span>`
+      : '';
+  } else {
+    el.innerHTML = `${msgs} so far <span style="opacity:0.5;">· scanning ${S.scanned}/${total} channel-months…</span>`;
+  }
+}
+
+function finishSearch() {
+  const S = SEARCH;
+  if (!S) return;
+  S.done = true;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  const sentinel = document.getElementById('sentinel');
+  if (sentinel) sentinel.remove();
+  updateStatus();
+  if (!S.shownMsgs) {
+    document.getElementById('main').innerHTML =
+      `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+       <span>no messages match — the terms are indexed in ${S.candidates.length} channel-month${S.candidates.length === 1 ? '' : 's'} but no message passed your filters</span></div>`;
+  }
+}
+
+// Stop auto-fetching after a long empty run; let the user opt to keep going.
+function pauseAutoScan() {
+  const S = SEARCH;
+  if (!S) return;
+  S.paused = true;
+  S.autoScan = 0;
+  const sentinel = document.getElementById('sentinel');
+  if (!sentinel) return;
+  const remain = S.candidates.length - S.cursor;
+  sentinel.innerHTML =
+    `<button class="btn" id="keepScanning" style="display:block;margin:14px auto;">Keep scanning (${remain} more)</button>`;
+  const btn = document.getElementById('keepScanning');
+  if (btn) btn.addEventListener('click', () => {
+    sentinel.innerHTML = '';
+    S.paused = false;
+    loadNextBatch();
+  });
+  updateStatus();
+}
+
+// ── Timezone switch: repaint every visible timestamp ────────────────────────
+// config.js helpers read the zone at render time, so a plain re-render is enough.
+function rerenderForTimezone() {
+  if (MODE === 'search') {
+    const S = SEARCH;
+    const groupsEl = document.getElementById('groups');
+    if (!S || !groupsEl) return;
+    groupsEl.innerHTML = S.rendered.map(g => renderHitGroup(g, S.q.tokens)).join('');
+    return;
+  }
+  if (currentChannel && currentMonth) {
+    const msgs = chunkCache.get(chunkKey(currentChannel.id, currentMonth));
+    if (!msgs) return;
+    const main = document.getElementById('main');
+    const top = main.scrollTop;
+    main.innerHTML = renderConversation(msgs);
+    main.scrollTop = top;
+  }
+}
+
+// ── Wiring ──────────────────────────────────────────────────────────────────
+function stepMonth(delta) {
+  const ch = currentChannel;
+  if (!ch) return;
+  const months = Array.isArray(ch.months) ? ch.months : [];
+  const i = months.indexOf(currentMonth);
+  const next = months[i + delta];
+  if (i === -1 || !next) return;
+  setMode('browse');
+  document.getElementById('monthSel').value = next;
+  showMonth(next);
+}
+
+function wire() {
+  let filterDebounce = null;
+  const chanSearch = document.getElementById('chanSearch');
+  chanSearch.addEventListener('input', () => {
+    clearTimeout(filterDebounce);
+    filterDebounce = setTimeout(() => applyChannelFilter(chanSearch.value), 120);
+  });
+
+  document.getElementById('olderBtn').addEventListener('click', () => stepMonth(-1));
+  document.getElementById('newerBtn').addEventListener('click', () => stepMonth(1));
+  document.getElementById('monthSel').addEventListener('change', e => {
+    setMode('browse');
+    showMonth(e.target.value);
+  });
+
+  const filters = document.getElementById('filters');
+  document.getElementById('searchToggle').addEventListener('click', () => {
+    const opening = filters.style.display === 'none';
+    filters.style.display = opening ? '' : 'none';
+    if (opening) {
+      // Light the button as soon as the panel opens, not only once a search runs.
+      document.getElementById('searchToggle').classList.add('on');
+      document.getElementById('q').focus();
+    } else {
+      closeSearch();
+    }
+  });
+  document.getElementById('closeSearch').addEventListener('click', closeSearch);
+  document.getElementById('searchBtn').addEventListener('click', runSearch);
+  ['q', 'author', 'dateFrom', 'dateTo'].forEach(id => {
+    document.getElementById(id).addEventListener('keydown', e => {
+      if (e.key === 'Enter') runSearch();
+    });
+  });
+  document.getElementById('scope').addEventListener('change', () => {
+    if (MODE === 'search' && SEARCH) runSearch();
+  });
+
+  // Delegated: "jump to context" in search results, and in-chunk reply links.
+  document.getElementById('main').addEventListener('click', e => {
+    const jump = e.target.closest('[data-jump-c]');
+    if (jump) {
+      const ch = CHAN_BY_ID.get(jump.dataset.jumpC);
+      if (!ch) return;
+      document.getElementById('filters').style.display = 'none';
+      selectChannel(ch.slug, jump.dataset.jumpM, jump.dataset.jumpId);
+      return;
+    }
+    const reply = e.target.closest('[data-jump-msg]');
+    if (reply) flashMessage(reply.dataset.jumpMsg);
+  });
+}
+
+function closeSearch() {
+  document.getElementById('filters').style.display = 'none';
+  document.getElementById('searchToggle').classList.remove('on');
+  if (MODE !== 'search') return;
+  setMode('browse');
+  if (currentChannel) showMonth(currentMonth);
+}
+
+// ── Load ────────────────────────────────────────────────────────────────────
+async function load() {
+  const main = document.getElementById('main');
+  try {
+    MANIFEST = await fetchJSON(`${DISCORD_BASE}/manifest.json`);
+    CHANNELS = Array.isArray(MANIFEST?.channels) ? MANIFEST.channels : [];
+    CHAN_BY_ID.clear(); CHAN_BY_SLUG.clear();
+    for (const ch of CHANNELS) {
+      if (ch?.id) CHAN_BY_ID.set(String(ch.id), ch);
+      if (ch?.slug) CHAN_BY_SLUG.set(String(ch.slug), ch);
+    }
+
+    // Server header. The icon lives on archive.org and may 404 -- hide it then.
+    const head = document.getElementById('serverHead');
+    const name = MANIFEST?.server?.name || 'Discord';
+    const iconUrl = safeUrl(MANIFEST?.server?.icon_url);
+    head.innerHTML = (iconUrl
+        ? `<img class="server-icon" id="serverIcon" src="${escHtml(iconUrl)}" alt="">`
+        : '') +
+      `<span class="server-name" title="${escHtml(name)}">${escHtml(name)}</span>`;
+    const icon = document.getElementById('serverIcon');
+    if (icon) icon.addEventListener('error', () => { icon.style.display = 'none'; });
+
+    renderChannelList();
+    wire();
+
+    if (!CHANNELS.length) {
+      main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+        <span>the archive is empty</span></div>`;
+      return;
+    }
+
+    // Deep link / last visit first (the shell stashes #discord/<slug> here), else
+    // the first channel that actually has messages.
+    let want = null;
+    try { want = sessionStorage.getItem('selected-discord-channel'); } catch (e) {}
+    if (!want || !selectChannel(want)) {
+      const first = CHANNELS.find(c => Array.isArray(c.months) && c.months.length) || CHANNELS[0];
+      selectChannel(first.slug);
+    }
+  } catch (e) {
+    document.getElementById('chanList').innerHTML =
+      `<div class="sidebar-empty">couldn't reach the swamp<br><small>${escHtml(e.message)}</small></div>`;
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span>
+      <span>couldn't load the Discord archive<br><small>${escHtml(e.message)}</small></span></div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
