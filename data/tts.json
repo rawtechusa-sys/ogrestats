@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785821734,
+  "updated_ts": 1785898303,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -831,7 +831,8 @@
     "oh_manit_happened_2026-07-28_033009",
     "grifters_clowns_and_horrorcows_2026-07-28_223505",
     "early_day_man_stream_2026-07-30_203206",
-    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638"
+    "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
+    "rtustreams_2026-08-05_001339"
   ],
   "commands": {
     "device": 1,
@@ -9804,6 +9805,21 @@
       ],
       "source_vod_id": "rC1RTAgmfmk",
       "source_platform": "youtube"
+    },
+    "rtustreams_2026-08-05_001339": {
+      "title": "rtustreams",
+      "start_ts": 1785888828,
+      "youtube_archive_id": "6Q8V0hgb5DA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "6Q8V0hgb5DA",
+          "start_ts": 1785888828
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
