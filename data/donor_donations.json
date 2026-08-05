@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785898306,
+  "updated_ts": 1785914065,
   "counted_streams": [
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718",
     "a_robust_stream_exclusively_for_men_and_women_2026-07-14_012525",
@@ -831,7 +831,8 @@
     "grifters_clowns_and_horrorcows_2026-07-28_223505",
     "early_day_man_stream_2026-07-30_203206",
     "a_robust_beginning_to_august_phils_pc_emergency_2026-08-03_231638",
-    "rtustreams_2026-08-05_001339"
+    "rtustreams_2026-08-05_001339",
+    "a_old_man_makes_music_live_2026-08-05_001339"
   ],
   "streams": {
     "its_my_birthday_lets_roast_grifters_2026-07-15_210718": {
@@ -9264,6 +9265,21 @@
     },
     "rtustreams_2026-08-05_001339": {
       "title": "rtustreams",
+      "start_ts": 1785888828,
+      "youtube_archive_id": "6Q8V0hgb5DA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "6Q8V0hgb5DA",
+          "start_ts": 1785888828
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "a_old_man_makes_music_live_2026-08-05_001339": {
+      "title": "A Old Man Makes Music Live",
       "start_ts": 1785888828,
       "youtube_archive_id": "6Q8V0hgb5DA",
       "archive_org_id": null,
@@ -39943,6 +39959,14 @@
         "amount_raw": "Prime",
         "message": "Twitted tipples",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785889531,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Twitted tipples",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1785811135,
@@ -95311,12 +95335,28 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785889798,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1785888886,
         "type": "sub",
         "amount_usd": 5.99,
         "amount_raw": "1000",
         "message": "resubscribed (4 months)!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785888886,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1784166420,
@@ -103893,6 +103933,14 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785890039,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Rich try not to cry on stream. \"this is a beat that speaks to you and your dog.\"",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1783993566,
         "type": "bits",
         "amount_usd": 0.5,
@@ -104215,12 +104263,28 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785895651,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1785891598,
         "type": "sub",
         "amount_usd": 5.99,
         "amount_raw": "1000",
         "message": "let\u2019s cry together, let it all out ! hangtimeSmug hangtimePlease",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785891598,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "let\u2019s cry together, let it all out ! hangtimeSmug hangtimePlease",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1784000823,
@@ -104459,12 +104523,28 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785895793,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1785891779,
         "type": "giftsub",
         "amount_usd": 5.99,
         "amount_raw": "1 1000",
         "message": "gifted 1 subs to the community!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785891779,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1783645713,
@@ -111401,6 +111481,14 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785889848,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1785464531,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -116739,6 +116827,14 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785889771,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Its our 2 month anniversary \ud83d\udc95 \u2764\ufe0f \ud83d\ude18\ud83d\ude18",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1782961380,
         "type": "sub",
         "amount_usd": 5.99,
@@ -116755,6 +116851,14 @@
         "amount_raw": "Prime",
         "message": "Robust succulent delicious meaningful handheld treats.",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785889984,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Robust succulent delicious meaningful handheld treats.",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1782963771,
@@ -118417,6 +118521,14 @@
         "amount_raw": "1000",
         "message": "Will these beats be political?",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785889652,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Will these beats be political?",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1782753533,
@@ -130365,6 +130477,14 @@
         "stream_id": "rtustreams_2026-08-05_001339"
       },
       {
+        "ts": 1785893722,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "ok i forgot i got prime",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
+      },
+      {
         "ts": 1782610849,
         "type": "sub",
         "amount_usd": 5.99,
@@ -130505,6 +130625,14 @@
         "amount_raw": "1000",
         "message": "resubscribed (8 months)!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785890107,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (8 months)!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       },
       {
         "ts": 1782613158,
@@ -523777,6 +523905,14 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785891110,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       }
     ],
     "noobkiller956": [
@@ -523787,6 +523923,14 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785893895,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       }
     ],
     "Trollmctrolington": [
@@ -523797,6 +523941,14 @@
         "amount_raw": "10 1000",
         "message": "gifted 10 subs to the community!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785895562,
+        "type": "giftsub",
+        "amount_usd": 59.9,
+        "amount_raw": "10 1000",
+        "message": "gifted 10 subs to the community!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       }
     ],
     "webb416": [
@@ -523807,6 +523959,14 @@
         "amount_raw": "Prime",
         "message": "Music man",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785896318,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Music man",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       }
     ],
     "BradicalPrime": [
@@ -523817,6 +523977,14 @@
         "amount_raw": "5 1000",
         "message": "gifted 5 subs to the community!",
         "stream_id": "rtustreams_2026-08-05_001339"
+      },
+      {
+        "ts": 1785896865,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "a_old_man_makes_music_live_2026-08-05_001339"
       }
     ]
   }
