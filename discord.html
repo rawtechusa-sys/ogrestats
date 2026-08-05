@@ -994,6 +994,16 @@ async function ensureAuthors() {
 
 async function runSearch() {
   const main = document.getElementById('main');
+
+  // Retire the previous search FIRST, before any early return below. A hint/error/
+  // empty result must still invalidate an in-flight batch loop: if the old search
+  // kept its generation, its finishSearch() would land after this call and overwrite
+  // the pane with the old query's state (and the old OBSERVER would be left watching
+  // a detached sentinel). The real search re-bumps GEN once it has candidates.
+  GEN++;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  SEARCH = null;
+
   const rawQ = document.getElementById('q').value.trim();
   const rawAuthor = document.getElementById('author').value.trim();
   const fromV = document.getElementById('dateFrom').value;
