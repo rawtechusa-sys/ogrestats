@@ -3,10 +3,11 @@
   "slug": "a_meaningful_and_tangy_all_nighter",
   "title": "A Meaningful (And Tangy All Nighter)",
   "start_ts": 1785899119,
-  "end_ts": 1785899793,
+  "end_ts": null,
   "platforms": [
+    "twitch",
     "youtube",
-    "twitch"
+    "kick"
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
