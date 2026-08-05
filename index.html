@@ -194,6 +194,8 @@
       <button class="tab" data-page="dents.html" data-slug="dents">Dents</button>
       <button class="tab" data-page="tts.html" data-slug="tts">TTS</button>
       <button class="tab" data-page="chat.html" data-slug="chat">Search</button>
+      <!-- Hidden route: reachable via #discord only, deliberately not in the visible nav. -->
+      <button class="tab" data-page="discord.html" data-slug="discord" data-hidden="1" style="display:none" aria-hidden="true"></button>
     </nav>
     <label class="bg-toggle" title="Toggle background critters">
       <input type="checkbox" id="bgToggle" checked>
@@ -349,7 +351,10 @@ function activateTab(tab) {
     try { frame.contentWindow.location.replace(tab.dataset.page); }
     catch (e) { frame.src = tab.dataset.page; } // fallback (same-origin: shouldn't happen)
   }
-  localStorage.setItem('swamp-tab', tab.dataset.slug);
+  // Hidden tabs (#discord) are never remembered: after visiting one, a hashless
+  // visit must open the last VISIBLE tab, not silently reopen a hidden page with
+  // no tab highlighted.
+  if (!tab.dataset.hidden) localStorage.setItem('swamp-tab', tab.dataset.slug);
 }
 
 // The hash is #<tab> or #<tab>/<sub>. For the streams tab the sub-slug is a
@@ -374,12 +379,22 @@ function sendPendingStream() {
 // streams.html reads) and posted to the iframe.
 function syncTabFromHash() {
   const { slug, sub } = parseHash();
+  // Belt and braces: a stored 'swamp-tab' from before hidden tabs existed (or
+  // written by an older build) must never resolve the fallback to a hidden tab.
+  let storedTab = tabForSlug(localStorage.getItem('swamp-tab'));
+  if (storedTab && storedTab.dataset.hidden) storedTab = null;
+  // The hidden tab is appended last, so the final fallback is still Streams.
   const tab = tabForSlug(slug)
-    || tabForSlug(localStorage.getItem('swamp-tab'))
+    || storedTab
     || document.querySelector('.tab');
   if (slug === 'streams' && sub) {
     pendingStreamSlug = decodeURIComponent(sub);
     try { sessionStorage.setItem('selected-stream', pendingStreamSlug); } catch (e) {}
+  }
+  // #discord/<channel> deep link. discord.html reads this key once on load
+  // (no postMessage re-send machinery, unlike the streams sub-slug).
+  if (slug === 'discord' && sub) {
+    try { sessionStorage.setItem('selected-discord-channel', decodeURIComponent(sub)); } catch (e) {}
   }
   activateTab(tab);
   sendPendingStream();
