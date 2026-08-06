@@ -17,6 +17,7 @@ jobs:
   # deploy is never cancelled.
   debounce:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     concurrency:
       group: pages-debounce
       cancel-in-progress: true
@@ -27,10 +28,16 @@ jobs:
 
   deploy:
     needs: debounce
-    # Allow only one deployment at a time; a newer run queues, it never cancels.
+    timeout-minutes: 10
+    # cancel-in-progress on BOTH groups: a job must never wait in a concurrency
+    # queue -- a cancelled pending job can wedge the group and every later
+    # deploy sits "waiting" for hours (happened 2026-08-06). A newer deploy
+    # cancels an older in-flight one instead; the debounce sleep (120s) is far
+    # longer than a normal deploy (~40s), so in practice deploys finish
+    # untouched, and a cancelled Pages deploy just leaves the old version live.
     concurrency:
       group: pages
-      cancel-in-progress: false
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
