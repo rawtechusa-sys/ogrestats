@@ -275,6 +275,11 @@
     min-height: 0;
     overflow-y: auto;
     padding: 8px 20px 40px;
+    /* Browse mode compensates scrollTop by hand every time it prepends or evicts a
+       chunk. The browser's own scroll anchoring would apply a second correction on
+       top of ours and the reading position would drift, so switch it off. Search
+       mode never moves content above the viewport, so this costs it nothing. */
+    overflow-anchor: none;
   }
   .scroll-area::-webkit-scrollbar { width: 5px; }
   .scroll-area::-webkit-scrollbar-track { background: transparent; }
@@ -296,6 +301,31 @@
     height: 1px;
     background: var(--border-default);
   }
+  /* Two adjacent chunks can open and close on the same LOCAL day (chunks are
+     bucketed by UTC month), which would print the same date twice across a seam.
+     Hide the second one. The class is re-evaluated on every timezone switch. */
+  .day-divider.seam-dup { display: none; }
+
+  /* ── Continuous browse seams ─────────────────────────────────── */
+  /* One element per end of the mounted window, doing three jobs at once: it is the
+     IntersectionObserver target that triggers the next chunk, the "wading in…" row
+     while that chunk loads, and the error/retry row when it fails. An element with
+     no area is an unreliable observer target, hence the min-height. */
+  .b-seam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 2px;
+    padding: 8px 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+  .b-seam:empty { padding: 0; }
+  .b-seam .seam-err { color: var(--text-muted); font-style: italic; }
 
   .msg {
     padding: 5px 8px;
@@ -493,10 +523,10 @@
     </header>
 
     <div class="toolbar" id="toolbar">
+      <!-- Scrolling loads neighbouring months on its own; the picker is the
+           long-range jump, so there are no step buttons any more. -->
       <div class="month-nav">
-        <button class="btn" id="olderBtn" title="Older month">←</button>
-        <select id="monthSel" aria-label="Month"></select>
-        <button class="btn" id="newerBtn" title="Newer month">→</button>
+        <select id="monthSel" aria-label="Jump to month"></select>
       </div>
       <div class="spacer"></div>
       <button class="btn" id="searchToggle">Search</button>
@@ -690,15 +720,29 @@ let INDEX   = null;   // search.json  (lazy: first search)
 let AUTHORS = null;   // authors.json (lazy: first search that names an author)
 
 const chunkCache = new Map();          // "<cid>/<month>" -> messages[]
+const chunkInflight = new Map();       // "<cid>/<month>" -> Promise (request dedup)
 
 let MODE = 'browse';                   // 'browse' | 'search'
 let currentChannel = null;
+// The month currently under the top of the viewport -- browse mounts several at
+// once, so this is a read-out of where the reader is, not what is loaded.
 let currentMonth = null;
-let browseToken = 0;                   // bumped per month load; stale loads drop
 
 let SEARCH = null;    // { q, gen, candidates, cursor, rendered: [...], ... }
 let GEN = 0;          // bumped per search so a stale in-flight batch detects it lost
 let OBSERVER = null;
+
+// ── Continuous browse state ─────────────────────────────────────────────────
+// BROWSE.lo..hi are inclusive indices into the channel's ascending months array:
+// the contiguous window of chunks currently mounted in the DOM. "At the start of
+// history" is lo === 0 and "at the end" is hi === months.length - 1 -- derived, so
+// no flag can desync from what is on screen.
+let BROWSE = null;      // { ch, lo, hi, loadingUp, loadingDown, errUp, errDown }
+let BGEN = 0;           // browse generation; every await re-checks it before touching the DOM
+let BOBSERVER = null;   // browse seam observer (search keeps its own OBSERVER)
+let BROWSE_STASH = null;// { slug, lo, hi, anchor } saved on the browse->search edge
+const MAX_MOUNTED = 5;  // chunks kept in the DOM; the rest are evicted as you scroll
+const SEAM_MARGIN = 600;// px of look-ahead: observer rootMargin AND the manual re-check
 
 // ── Data access ─────────────────────────────────────────────────────────────
 function chunkKey(cid, month) { return `${cid}/${month}`; }
@@ -708,14 +752,28 @@ function chunkUrl(cid, month) {
 }
 
 // Load one channel-month, memoized. Messages arrive ascending by ts.
+// Two callers can want the same chunk at the same instant (a seam that fires while
+// a search batch is already fetching it), so in-flight requests are shared by key.
+// A rejection drops the in-flight entry, otherwise a Retry would re-await the same
+// dead promise instead of refetching.
 async function loadChunk(cid, month) {
   const key = chunkKey(cid, month);
   const cached = chunkCache.get(key);
   if (cached) return cached;
-  const data = await fetchJSON(chunkUrl(cid, month));
-  const msgs = Array.isArray(data?.messages) ? data.messages : [];
-  chunkCache.set(key, msgs);
-  return msgs;
+  let p = chunkInflight.get(key);
+  if (!p) {
+    p = fetchJSON(chunkUrl(cid, month)).then(data => {
+      const msgs = Array.isArray(data?.messages) ? data.messages : [];
+      chunkCache.set(key, msgs);
+      chunkInflight.delete(key);
+      return msgs;
+    }, err => {
+      chunkInflight.delete(key);
+      throw err;
+    });
+    chunkInflight.set(key, p);
+  }
+  return p;
 }
 
 // ── Sidebar ─────────────────────────────────────────────────────────────────
@@ -812,7 +870,12 @@ function selectChannel(slug, month, scrollToId) {
   const months = Array.isArray(ch.months) ? ch.months : [];
   const target = (month && months.includes(month)) ? month : months[months.length - 1];
   renderMonthNav(ch, target);
-  showMonth(target, scrollToId);
+  // A fresh channel invalidates any stashed browse window (it belongs to the old
+  // one), including the jump-to-context path out of search.
+  BROWSE_STASH = null;
+  // No month asked for -> newest, opened at the bottom like a chat client. A month
+  // asked for -> land on it: centred on the message when one was named, else its top.
+  openBrowse(target, scrollToId, month ? (scrollToId ? 'center' : 'top') : 'bottom');
   return true;
 }
 
@@ -833,52 +896,390 @@ function renderMonthNav(ch, month) {
     .map(m => `<option value="${escHtml(m)}">${escHtml(monthLabel(m))}</option>`).join('');
   if (month) sel.value = month;
   sel.disabled = months.length <= 1;
-  syncMonthButtons(ch, month);
 }
 
-function syncMonthButtons(ch, month) {
-  const months = Array.isArray(ch?.months) ? ch.months : [];
-  const i = months.indexOf(month);
-  document.getElementById('olderBtn').disabled = !(i > 0);
-  document.getElementById('newerBtn').disabled = !(i >= 0 && i < months.length - 1);
+// ── Continuous browse engine ────────────────────────────────────────────────
+// The pane holds one <section class="chunk"> per mounted channel-month, wrapped by
+// two seams. Scrolling towards a seam loads the next month into the same stream and
+// evicts the far end, so reading never breaks; the month picker is the long jump.
+
+function browseScaffold(sectionsHtml) {
+  return `<div class="b-seam" id="seamTop"></div>` +
+         `<div id="chunks">${sectionsHtml}</div>` +
+         `<div class="b-seam" id="seamBot"></div>`;
 }
 
-// Render one month of the current channel. A stale load (the user switched channel
-// or month while the fetch was in flight) drops on return.
-async function showMonth(month, scrollToId) {
+function renderChunkSection(month, msgs) {
+  return `<section class="chunk" data-month="${escHtml(month)}">${renderConversation(msgs)}</section>`;
+}
+
+// Open a channel at `month`. position: 'bottom' (newest message in view, chat-client
+// style), 'top' (the month's first message), or 'center' (on scrollToId).
+// Every await re-checks the generation: a channel switch mid-fetch must not paint.
+async function openBrowse(month, scrollToId, position) {
   const main = document.getElementById('main');
   const ch = currentChannel;
-  const token = ++browseToken;
+  const gen = ++BGEN;
+  if (BOBSERVER) { BOBSERVER.disconnect(); BOBSERVER = null; }
+  BROWSE = null;
   currentMonth = month || null;
-  syncMonthButtons(ch, month);
-
   if (!ch) return;
-  if (!month) {
+
+  const months = Array.isArray(ch.months) ? ch.months : [];
+  if (!months.length || !month) {
     main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
       <span>no archived messages in this channel</span></div>`;
     return;
   }
+  const idx = months.indexOf(month);
+  if (idx < 0) return openBrowse(months[months.length - 1], scrollToId, position);
 
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
   let msgs;
   try {
     msgs = await loadChunk(ch.id, month);
   } catch (e) {
-    if (token !== browseToken) return;
+    if (gen !== BGEN) return;
+    // The very first chunk failed, so there is nothing to read: own the whole pane.
+    // Incremental failures further up or down only take over their own seam.
     main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span>
-      <span>couldn't load ${escHtml(monthLabel(month))}<br><small>${escHtml(e.message)}</small></span></div>`;
+      <span>couldn't load ${escHtml(monthLabel(month))}<br><small>${escHtml(e.message)}</small></span>
+      <button class="btn" id="browseRetry">Retry</button></div>`;
+    const retry = document.getElementById('browseRetry');
+    if (retry) retry.addEventListener('click', () => openBrowse(month, scrollToId, position));
     return;
   }
-  if (token !== browseToken || MODE !== 'browse') return;
+  if (gen !== BGEN || MODE !== 'browse') return;
 
-  if (!msgs.length) {
-    main.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
-      <span>nothing archived for ${escHtml(monthLabel(month))}</span></div>`;
+  main.innerHTML = browseScaffold(renderChunkSection(month, msgs));
+  BROWSE = { ch, lo: idx, hi: idx, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  updateSeams();
+
+  if (position === 'center' && scrollToId) {
+    if (!flashMessage(scrollToId)) main.scrollTop = 0;
+  } else if (position === 'bottom') {
+    main.scrollTop = main.scrollHeight;
+    // Lazy images and web fonts settle a frame later and change the height under us,
+    // so re-pin once the first layout has happened. onMediaLoad covers the rest.
+    requestAnimationFrame(() => {
+      if (gen === BGEN && BROWSE && MODE === 'browse') main.scrollTop = main.scrollHeight;
+    });
+  } else {
+    main.scrollTop = 0;
+  }
+
+  // Fill first, observe second: a seam that is still on screen while the viewport is
+  // half empty would otherwise fire against a window that is still being built.
+  await fillViewport(gen);
+  if (gen !== BGEN || MODE !== 'browse' || !BROWSE) return;
+  attachSeamObserver();
+  updateCurrentMonth();
+}
+
+function attachSeamObserver() {
+  const main = document.getElementById('main');
+  const top = document.getElementById('seamTop');
+  const bot = document.getElementById('seamBot');
+  if (BOBSERVER) { BOBSERVER.disconnect(); BOBSERVER = null; }
+  if (!main || !top || !bot) return;
+  BOBSERVER = new IntersectionObserver(entries => {
+    if (MODE !== 'browse' || !BROWSE) return;
+    for (const en of entries) {
+      if (!en.isIntersecting) continue;
+      if (en.target.id === 'seamTop') loadOlder();
+      else loadNewer();
+    }
+  }, { root: main, rootMargin: `${SEAM_MARGIN}px` });
+  BOBSERVER.observe(top);
+  BOBSERVER.observe(bot);
+}
+
+// Mount the month before the window. The guards make the loader inert at the start
+// of history and while an error is showing, so a seam parked on screen can't spin.
+async function loadOlder() {
+  const B = BROWSE;
+  if (!B || B.loadingUp || B.errUp || B.lo <= 0) return;
+  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+  const month = months[B.lo - 1];
+  if (!month) return;
+
+  const main = document.getElementById('main');
+  const gen = BGEN;
+  B.loadingUp = true;
+  updateSeams();
+
+  let msgs;
+  try {
+    msgs = await loadChunk(B.ch.id, month);
+  } catch (e) {
+    // Object identity, not just the generation: a stale loader must not clear or set
+    // flags on the window that replaced it.
+    if (gen !== BGEN || BROWSE !== B) return;
+    B.loadingUp = false;
+    B.errUp = e;
+    updateSeams();
     return;
   }
-  main.innerHTML = renderConversation(msgs);
-  main.scrollTop = 0;
-  if (scrollToId) flashMessage(scrollToId);
+  if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
+
+  const chunks = document.getElementById('chunks');
+  if (!chunks) return;
+  // Everything already on screen moves down by exactly the height of what we insert
+  // above it, so give that height back to scrollTop or the reader gets shoved.
+  const prevH = main.scrollHeight;
+  chunks.insertAdjacentHTML('afterbegin', renderChunkSection(month, msgs));
+  main.scrollTop += main.scrollHeight - prevH;
+  B.lo--;
+  B.loadingUp = false;
+
+  dedupeSeams();
+  evict('bottom');
+  updateSeams();
+  updateCurrentMonth();
+  // The observer does not re-fire promptly after we mutate the DOM ourselves, so
+  // keep filling by hand while the seam is still inside the look-ahead band. This
+  // mirrors sentinelVisible() in search.
+  if (seamNear('seamTop')) return loadOlder();
+}
+
+// Mount the month after the window. Appending happens below the reading position,
+// so there is nothing to compensate.
+async function loadNewer() {
+  const B = BROWSE;
+  if (!B || B.loadingDown || B.errDown) return;
+  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+  if (B.hi >= months.length - 1) return;
+  const month = months[B.hi + 1];
+  if (!month) return;
+
+  const gen = BGEN;
+  B.loadingDown = true;
+  updateSeams();
+
+  let msgs;
+  try {
+    msgs = await loadChunk(B.ch.id, month);
+  } catch (e) {
+    if (gen !== BGEN || BROWSE !== B) return;
+    B.loadingDown = false;
+    B.errDown = e;
+    updateSeams();
+    return;
+  }
+  if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
+
+  const chunks = document.getElementById('chunks');
+  if (!chunks) return;
+  chunks.insertAdjacentHTML('beforeend', renderChunkSection(month, msgs));
+  B.hi++;
+  B.loadingDown = false;
+
+  dedupeSeams();
+  evict('top');
+  updateSeams();
+  updateCurrentMonth();
+  if (seamNear('seamBot')) return loadNewer();
+}
+
+// Drop chunks off the far end so the DOM stays small. No spacer stands in for what
+// left: the scrollbar represents the mounted window (Discord does the same) and the
+// month picker is the long-range navigator.
+function evict(end) {
+  const B = BROWSE;
+  const main = document.getElementById('main');
+  const chunks = document.getElementById('chunks');
+  if (!B || !main || !chunks) return;
+  while (chunks.children.length > MAX_MOUNTED) {
+    const victim = end === 'top' ? chunks.firstElementChild : chunks.lastElementChild;
+    if (!victim) return;
+    // Never evict down to a window that no longer overflows the pane by more than the
+    // look-ahead band on both sides: both seams would sit inside it, the two loaders
+    // would take turns adding and evicting, and the pane would fetch forever. On a
+    // sparse channel a few extra sections in the DOM is the cheaper trade.
+    if (main.scrollHeight - victim.offsetHeight < main.clientHeight + 2 * SEAM_MARGIN) return;
+    if (end === 'top') {
+      // Measure the removal with scrollHeight, NOT the section's offsetHeight: the
+      // day-divider margins collapse through the section edge, so offsetHeight
+      // under-reports how much height actually disappears and scrollTop drifts.
+      const prevH = main.scrollHeight;
+      victim.remove();
+      main.scrollTop -= prevH - main.scrollHeight;
+      B.lo++;
+    } else {
+      victim.remove();               // below the reading position: nothing to fix up
+      B.hi--;
+    }
+  }
+}
+
+// A channel whose newest month is a handful of messages leaves the pane unscrollable
+// and the seams unable to fire, so pull neighbours in until it scrolls. Termination
+// is by index movement, never by height: a chunk that adds no height still counts.
+async function fillViewport(gen) {
+  const main = document.getElementById('main');
+  for (let guard = 0; guard < 40; guard++) {
+    if (gen !== BGEN || MODE !== 'browse') return;
+    const B = BROWSE;
+    if (!B || !main) return;
+    if (main.scrollHeight > main.clientHeight + 1) return;
+    const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+    const lo = B.lo, hi = B.hi;
+    if (B.lo > 0) await loadOlder();
+    else if (B.hi < months.length - 1) await loadNewer();
+    else return;                       // whole channel is mounted; nothing left
+    if (gen !== BGEN || BROWSE !== B) return;
+    if (B.lo === lo && B.hi === hi) return;   // a guard or an error blocked it: stop
+  }
+}
+
+// Is a seam inside the look-ahead band? Same margin as the observer's rootMargin.
+function seamNear(id) {
+  const main = document.getElementById('main');
+  const seam = document.getElementById(id);
+  if (!main || !seam) return false;
+  const r = main.getBoundingClientRect();
+  const s = seam.getBoundingClientRect();
+  return id === 'seamTop' ? s.bottom >= r.top - SEAM_MARGIN : s.top <= r.bottom + SEAM_MARGIN;
+}
+
+// Repaint both seams from BROWSE. At the ends of history they become static markers
+// and their loaders are inert, so an observer hit there costs nothing.
+function updateSeams() {
+  const B = BROWSE;
+  const top = document.getElementById('seamTop');
+  const bot = document.getElementById('seamBot');
+  if (!B || !top || !bot) return;
+  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+  paintSeam(top, 'up',   B.errUp,   B.loadingUp,   B.lo <= 0,                 'the beginning of the archive');
+  paintSeam(bot, 'down', B.errDown, B.loadingDown, B.hi >= months.length - 1, 'the end of the archive');
+}
+
+function paintSeam(el, dir, err, loading, atEdge, edgeText) {
+  if (err) {
+    el.innerHTML = `<span class="seam-err">couldn't load — ${escHtml(err.message)}</span>` +
+      `<button class="btn" data-seam-retry="${dir}">Retry</button>`;
+    const btn = el.querySelector('[data-seam-retry]');
+    // Clearing the error is what un-blocks the loader; until then the observer keeps
+    // hitting an inert seam instead of retrying in a loop.
+    if (btn) btn.addEventListener('click', () => {
+      const B = BROWSE;
+      if (!B) return;
+      if (dir === 'up') B.errUp = null; else B.errDown = null;
+      updateSeams();
+      if (dir === 'up') loadOlder(); else loadNewer();
+    });
+    return;
+  }
+  if (loading) { el.innerHTML = `<span>wading in...</span>`; return; }
+  el.innerHTML = atEdge ? `<span>${escHtml(edgeText)}</span>` : '';
+}
+
+// Chunks are bucketed by UTC month but dividers are labelled in local time, so the
+// last day of one chunk and the first day of the next can be the same local day.
+// Hide the repeat; re-evaluate every time (a timezone switch regroups the days).
+function dedupeSeams() {
+  const chunks = document.getElementById('chunks');
+  if (!chunks) return;
+  const secs = [...chunks.children];
+  for (let i = 0; i < secs.length; i++) {
+    const first = secs[i].querySelector('.day-divider');
+    if (!first) continue;
+    const prevDivs = i > 0 ? secs[i - 1].querySelectorAll('.day-divider') : [];
+    const prevLast = prevDivs.length ? prevDivs[prevDivs.length - 1] : null;
+    first.classList.toggle('seam-dup', !!prevLast && prevLast.textContent === first.textContent);
+  }
+}
+
+// The month picker reads out where the reader is: the last mounted section whose top
+// has passed the top of the pane.
+function updateCurrentMonth() {
+  const chunks = document.getElementById('chunks');
+  const main = document.getElementById('main');
+  if (!BROWSE || !chunks || !main) return;
+  const limit = main.getBoundingClientRect().top + 10;
+  let month = null;
+  for (const sec of chunks.children) {
+    if (sec.getBoundingClientRect().top <= limit) month = sec.dataset.month;
+  }
+  if (!month) month = chunks.firstElementChild ? chunks.firstElementChild.dataset.month : null;
+  if (!month || month === currentMonth) return;
+  currentMonth = month;
+  const sel = document.getElementById('monthSel');
+  // Setting .value in script fires no change event, so this cannot feed back.
+  if (sel) sel.value = month;
+}
+
+// Reading position as "this message sat N px below the top of the pane". Survives a
+// re-render that changes heights (a timezone switch merges or splits day dividers),
+// which a raw scrollTop would not.
+function captureAnchor() {
+  const main = document.getElementById('main');
+  if (!main) return null;
+  const mainTop = main.getBoundingClientRect().top;
+  for (const el of main.querySelectorAll('.msg')) {
+    const r = el.getBoundingClientRect();
+    if (r.bottom > mainTop) return { id: el.id, delta: r.top - mainTop };
+  }
+  return null;
+}
+
+function restoreAnchor(a) {
+  const main = document.getElementById('main');
+  if (!a || !a.id || !main) return;
+  const el = document.getElementById(a.id);
+  if (!el) return;                     // the anchor is gone: leave scrollTop alone
+  main.scrollTop += (el.getBoundingClientRect().top - main.getBoundingClientRect().top) - a.delta;
+}
+
+// Opening search tears the browse window down; remember enough to put it back with
+// zero fetches. Guarded on BROWSE so a second setMode('search') (runSearch's early
+// hint/empty paths call it too) cannot overwrite the real stash with nothing.
+function stashBrowse() {
+  const B = BROWSE;
+  if (!B) return;
+  BROWSE_STASH = { slug: B.ch.slug, lo: B.lo, hi: B.hi, anchor: captureAnchor() };
+}
+
+// Rebuild the stashed window synchronously from chunkCache. Everything that was
+// mounted is cached by construction, so this never touches the network; a miss can
+// only mean the cache was cleared, and then a plain open is the honest answer.
+function restoreBrowse(stash) {
+  const main = document.getElementById('main');
+  const ch = stash ? CHAN_BY_SLUG.get(String(stash.slug || '')) : null;
+  const months = ch && Array.isArray(ch.months) ? ch.months : [];
+  if (!ch || !months.length) return;
+  BGEN++;                              // retire anything still in flight from before
+  if (BOBSERVER) { BOBSERVER.disconnect(); BOBSERVER = null; }
+  BROWSE = null;
+
+  const secs = [];
+  for (let i = stash.lo; i <= stash.hi; i++) {
+    const m = months[i];
+    const msgs = m ? chunkCache.get(chunkKey(ch.id, m)) : null;
+    if (!msgs) { openBrowse(months[months.length - 1], null, 'bottom'); return; }
+    secs.push(renderChunkSection(m, msgs));
+  }
+  main.innerHTML = browseScaffold(secs.join(''));
+  BROWSE = { ch, lo: stash.lo, hi: stash.hi, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  dedupeSeams();
+  updateSeams();
+  restoreAnchor(stash.anchor);
+  attachSeamObserver();
+  updateCurrentMonth();
+}
+
+// Attachment images carry no intrinsic size, so they lay out at zero height and grow
+// (up to 360px) when the bytes land. Growth ABOVE the reading position shoves the
+// page down, so hand that height back. 'load' does not bubble -- hence the
+// capture-phase listener on the pane, which catches mounts, prepends and appends
+// alike. Video/audio are preload=none and never grow on their own.
+function onMediaLoad(e) {
+  const img = e.target;
+  if (MODE !== 'browse' || !img || img.tagName !== 'IMG') return;
+  const main = document.getElementById('main');
+  if (!main) return;
+  const r = img.getBoundingClientRect();
+  if (r.top < main.getBoundingClientRect().top) main.scrollTop += r.height;
 }
 
 // Day dividers + messages, ascending. Messages carry id="m<id>" so a search hit can
@@ -960,14 +1361,16 @@ function renderReactions(reacts) {
 }
 
 // Scroll a rendered message into view and flash it. Ids come from the data, so use
-// getElementById rather than a selector (no escaping question at all).
+// getElementById rather than a selector (no escaping question at all). Returns
+// whether the message was actually on screen, so callers can fall back.
 function flashMessage(msgId) {
   const el = document.getElementById('m' + String(msgId));
-  if (!el) return;
+  if (!el) return false;
   el.scrollIntoView({ block: 'center' });
   el.classList.remove('flash');
   void el.offsetWidth;                 // restart the animation
   el.classList.add('flash');
+  return true;
 }
 
 // ── Mode switching ──────────────────────────────────────────────────────────
@@ -979,6 +1382,13 @@ function setMode(mode) {
     GEN++;
     if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
     SEARCH = null;
+  } else {
+    // Leaving browse: photograph the mounted window and the reading position BEFORE
+    // the teardown, because the teardown drops the state stashBrowse reads.
+    stashBrowse();
+    BGEN++;
+    if (BOBSERVER) { BOBSERVER.disconnect(); BOBSERVER = null; }
+    BROWSE = null;
   }
 }
 
@@ -1263,29 +1673,21 @@ function rerenderForTimezone() {
     groupsEl.innerHTML = S.rendered.map(g => renderHitGroup(g, S.q.tokens)).join('');
     return;
   }
-  if (currentChannel && currentMonth) {
-    const msgs = chunkCache.get(chunkKey(currentChannel.id, currentMonth));
-    if (!msgs) return;
-    const main = document.getElementById('main');
-    const top = main.scrollTop;
-    main.innerHTML = renderConversation(msgs);
-    main.scrollTop = top;
+  const B = BROWSE;
+  const chunks = document.getElementById('chunks');
+  if (!B || !chunks) return;
+  // A new zone can merge or split day dividers, so the pane's height changes and a
+  // plain scrollTop restore drifts. Hold a message instead.
+  const anchor = captureAnchor();
+  for (const sec of chunks.children) {
+    const msgs = chunkCache.get(chunkKey(B.ch.id, sec.dataset.month));
+    if (msgs) sec.innerHTML = renderConversation(msgs);
   }
+  dedupeSeams();
+  restoreAnchor(anchor);
 }
 
 // ── Wiring ──────────────────────────────────────────────────────────────────
-function stepMonth(delta) {
-  const ch = currentChannel;
-  if (!ch) return;
-  const months = Array.isArray(ch.months) ? ch.months : [];
-  const i = months.indexOf(currentMonth);
-  const next = months[i + delta];
-  if (i === -1 || !next) return;
-  setMode('browse');
-  document.getElementById('monthSel').value = next;
-  showMonth(next);
-}
-
 function wire() {
   let filterDebounce = null;
   const chanSearch = document.getElementById('chanSearch');
@@ -1294,12 +1696,23 @@ function wire() {
     filterDebounce = setTimeout(() => applyChannelFilter(chanSearch.value), 120);
   });
 
-  document.getElementById('olderBtn').addEventListener('click', () => stepMonth(-1));
-  document.getElementById('newerBtn').addEventListener('click', () => stepMonth(1));
   document.getElementById('monthSel').addEventListener('change', e => {
     setMode('browse');
-    showMonth(e.target.value);
+    openBrowse(e.target.value, null, 'top');
   });
+
+  const mainEl = document.getElementById('main');
+  // The picker follows the reader. Throttled to one read per frame: this runs on
+  // every scroll event and each call measures section rects.
+  let monthTick = false;
+  mainEl.addEventListener('scroll', () => {
+    if (MODE !== 'browse' || monthTick) return;
+    monthTick = true;
+    requestAnimationFrame(() => { monthTick = false; updateCurrentMonth(); });
+  }, { passive: true });
+  // 'load' does not bubble, so the pane can only hear its images finish in the
+  // capture phase. See onMediaLoad for why it matters.
+  mainEl.addEventListener('load', onMediaLoad, true);
 
   const filters = document.getElementById('filters');
   document.getElementById('searchToggle').addEventListener('click', () => {
@@ -1344,7 +1757,17 @@ function closeSearch() {
   document.getElementById('searchToggle').classList.remove('on');
   if (MODE !== 'search') return;
   setMode('browse');
-  if (currentChannel) showMonth(currentMonth);
+  if (!currentChannel) return;
+  // Put the reader back exactly where search interrupted them, from cache. The stash
+  // belongs to one channel; anything else (a jump to context changed channel) opens
+  // that channel fresh at its newest month.
+  const stash = BROWSE_STASH;
+  if (stash && stash.slug === currentChannel.slug) {
+    restoreBrowse(stash);
+  } else {
+    const months = Array.isArray(currentChannel.months) ? currentChannel.months : [];
+    openBrowse(months[months.length - 1], null, 'bottom');
+  }
 }
 
 // ── Load ────────────────────────────────────────────────────────────────────
