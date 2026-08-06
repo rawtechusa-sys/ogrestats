@@ -368,6 +368,13 @@
     word-break: break-word;
     white-space: pre-wrap;
   }
+  .msg-text a.msg-link {
+    color: var(--accent-bright);
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+    word-break: break-all;
+  }
+  .msg-text a.msg-link:hover { text-decoration: none; border-bottom-style: solid; }
   .msg-text mark {
     background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
     color: var(--accent-bright);
@@ -399,6 +406,10 @@
     border: 1px solid var(--border-default);
     display: block;
   }
+  /* URL embeds are a preview of a link that is already readable in the text, so they
+     stay smaller than a real attachment. */
+  .url-embeds { margin-top: 2px; }
+  .att-img.url-embed img { max-height: 240px; }
   .att-media { max-width: 480px; width: 100%; }
   video.att-media { max-height: 360px; border-radius: 4px; }
   .att-file {
@@ -663,6 +674,101 @@ function highlight(text, tokens) {
   if (!tokens || !tokens.length) return esc;
   const re = new RegExp(`(${tokens.join('|')})`, 'gi');
   return esc.replace(re, '<mark>$1</mark>');
+}
+
+// ── URLs in message text ────────────────────────────────────────────────────
+// Message text is RAW (unescaped) when it reaches renderText. Never run a URL regex
+// over already-escaped HTML: an entity like &amp; or &lt; would be re-parsed as URL
+// characters and the escaping could be undone. The split below runs on the raw string
+// and every segment is escaped exactly once on its way out.
+//
+// Conservative shape: a scheme we allow, then non-whitespace. < > " ' are excluded so
+// a URL can never eat into surrounding markup even before escaping.
+const URL_RE = /https?:\/\/[^\s<>"']+/g;
+const MAX_URL_EMBEDS = 4;                 // per message
+
+function countChar(s, c) { let n = 0; for (const ch of s) if (ch === c) n++; return n; }
+
+// Discord drops trailing sentence punctuation from an autolink, and drops a trailing
+// closer only when the URL carries no matching opener -- "(see https://x/a)." links
+// https://x/a, while https://x/a_(b) keeps its paren. Same rule here.
+function trimUrlTail(u) {
+  let s = String(u);
+  for (;;) {
+    const last = s.slice(-1);
+    if (last && '.,;:!?’*_~'.includes(last)) { s = s.slice(0, -1); continue; }
+    const open = { ')': '(', ']': '[', '}': '{' }[last];
+    if (open && countChar(s, open) < countChar(s, last)) { s = s.slice(0, -1); continue; }
+    break;
+  }
+  return s;
+}
+
+// A URL whose path ends in an image extension is the image (query string allowed --
+// Discord CDN signatures and ?size=96 emoji variants both live there).
+const IMG_EXT_RE = /\.(png|jpe?g|gif|webp|avif)$/i;
+
+// Page URLs whose media file is derivable from the URL text alone. Extensible: add
+// { name, test, media }. Deliberately absent: klipy.com and friends -- klipy's media
+// host sits behind Cloudflare and answers 403 to a hotlinked <img>, so an embed would
+// be permanently broken; a plain hyperlink is the honest result. The same goes for any
+// host that needs an oEmbed/API round trip, because this page is static and does no
+// server-side lookups.
+const EMBED_HOST_RULES = [
+  {
+    name: 'giphy',
+    // https://giphy.com/gifs/<slug-words>-<id>, and the bare-id form.
+    // The id is the last dash-separated segment; a tracking query is tolerated.
+    test: /^https?:\/\/(?:www\.)?giphy\.com\/gifs\/(?:[A-Za-z0-9._-]*-)?([A-Za-z0-9]+)\/?(?:[?#].*)?$/i,
+    media: m => `https://media.giphy.com/media/${m[1]}/giphy.gif`,
+  },
+];
+
+// The media URL to embed for `url`, or '' when nothing is safely derivable.
+function embedMediaUrl(url) {
+  let path = String(url);
+  const cut = path.search(/[?#]/);
+  if (cut >= 0) path = path.slice(0, cut);
+  if (IMG_EXT_RE.test(path)) return url;
+  for (const rule of EMBED_HOST_RULES) {
+    const m = rule.test.exec(url);
+    if (m) return rule.media(m);
+  }
+  return '';
+}
+
+// Split raw text into URL / non-URL segments.
+//   non-URL -> escHtml + highlight (exactly the pre-existing behavior)
+//   URL     -> an anchor whose href and label are each escaped once, never highlighted
+// Query tokens therefore can only ever mark text OUTSIDE a URL -- that falls out of
+// the segmentation itself, so no <mark> can ever land inside an href.
+// Returns { html, embeds }; embeds is deduped and capped, each { page, media }.
+function renderText(raw, tokens, opts) {
+  const text = String(raw ?? '');
+  const wantEmbeds = !opts || opts.embeds !== false;
+  const embeds = [];
+  const seen = new Set();
+  let html = '';
+  let last = 0;
+  URL_RE.lastIndex = 0;                    // module-level /g regex; not reentrant
+  let m;
+  while ((m = URL_RE.exec(text)) !== null) {
+    const url = trimUrlTail(m[0]);
+    // Tightened allowlist. The match already guarantees it, so this is belt-and-braces
+    // against a future loosening of URL_RE, not dead weight.
+    if (!url || !/^https?:\/\//i.test(url)) continue;
+    html += highlight(text.slice(last, m.index), tokens);
+    const esc = escHtml(url);
+    html += `<a class="msg-link" href="${esc}" target="_blank" rel="noopener noreferrer">${esc}</a>`;
+    last = m.index + url.length;
+    URL_RE.lastIndex = last;               // punctuation we trimmed is plain text again
+    if (wantEmbeds && embeds.length < MAX_URL_EMBEDS) {
+      const media = embedMediaUrl(url);
+      if (media && !seen.has(media)) { seen.add(media); embeds.push({ page: url, media }); }
+    }
+  }
+  html += highlight(text.slice(last), tokens);
+  return { html, embeds };
 }
 
 // ── Dates (all display goes through withTZ from config.js) ──────────────────
@@ -1361,6 +1467,23 @@ function onMediaLoad(e) {
   if (grew > 0 && r.top < main.getBoundingClientRect().top) main.scrollTop += grew;
 }
 
+// Signed Discord CDN URLs expire and giphy ids rot, so a URL embed is allowed to fail:
+// drop the picture and keep the hyperlink in the text above it, which is the real
+// content. Attachments are left alone -- their broken icon is information. 'error' does
+// not bubble any more than 'load' does, hence the same capture-phase listener.
+function onMediaError(e) {
+  const img = e.target;
+  if (!img || img.tagName !== 'IMG' || !img.closest) return;
+  const embed = img.closest('.url-embed');
+  if (!embed) return;
+  embed.style.display = 'none';
+  const box = embed.parentElement;
+  if (box && box.classList.contains('url-embeds') &&
+      !Array.prototype.some.call(box.children, c => c.style.display !== 'none')) {
+    box.style.display = 'none';
+  }
+}
+
 // Day dividers + messages, ascending. Messages carry id="m<id>" so a search hit can
 // jump straight to one.
 function renderConversation(msgs, tokens) {
@@ -1381,8 +1504,9 @@ function renderConversation(msgs, tokens) {
 
 function renderMessage(m, byId, tokens) {
   const reply = m.reply_to != null ? renderReply(m.reply_to, byId) : '';
+  const body = renderText(m.text, tokens);
   const text = m.text
-    ? `<div class="msg-text">${highlight(m.text, tokens)}</div>`
+    ? `<div class="msg-text">${body.html}</div>`
     : '';
   return `<div class="msg" id="m${escHtml(m.id)}">
     ${reply}
@@ -1392,6 +1516,7 @@ function renderMessage(m, byId, tokens) {
       ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
     </div>
     ${text}
+    ${renderUrlEmbeds(body.embeds)}
     ${renderAttachments(m.attachments)}
     ${renderReactions(m.reactions)}
   </div>`;
@@ -1408,6 +1533,22 @@ function renderReply(rid, byId) {
   return `<div class="reply-line">↩ <a data-jump-msg="${escHtml(rid)}">replying to
     <span class="reply-user">${escHtml(target.author ?? 'unknown')}</span></a>
     <span>${escHtml(snippet)}</span></div>`;
+}
+
+// Embeds for URLs found in the message text. Same wrapper/markup as an image
+// attachment (so stampImages + onMediaLoad, which walk every <img> under the pane,
+// cover them with no extra wiring) plus .url-embed, which marks them as droppable:
+// unlike an attachment, a dead embed can just disappear -- see onMediaError.
+function renderUrlEmbeds(embeds) {
+  if (!Array.isArray(embeds) || !embeds.length) return '';
+  const parts = embeds.map(e => {
+    const page  = escHtml(safeUrl(e?.page));
+    const media = escHtml(safeUrl(e?.media));
+    if (!page || !media) return '';
+    return `<a class="att-img url-embed" href="${page}" target="_blank" rel="noopener noreferrer">
+      <img loading="lazy" src="${media}" alt=""></a>`;
+  }).join('');
+  return parts ? `<div class="atts url-embeds">${parts}</div>` : '';
 }
 
 function renderAttachments(atts) {
@@ -1679,7 +1820,7 @@ function renderHitGroup(group, tokens) {
         <a class="jump-link hit-count" data-jump-c="${escHtml(group.cid)}"
            data-jump-m="${escHtml(group.month)}" data-jump-id="${escHtml(m.id)}">jump to context →</a>
       </div>
-      <div class="msg-text">${highlight(m.text, tokens)}</div>
+      <div class="msg-text">${renderText(m.text, tokens, { embeds: false }).html}</div>
       ${renderAttachments(m.attachments)}
     </div>`).join('');
   return `<div class="hit-group">
@@ -1794,6 +1935,7 @@ function wire() {
   // 'load' does not bubble, so the pane can only hear its images finish in the
   // capture phase. See onMediaLoad for why it matters.
   mainEl.addEventListener('load', onMediaLoad, true);
+  mainEl.addEventListener('error', onMediaError, true);
 
   const filters = document.getElementById('filters');
   document.getElementById('searchToggle').addEventListener('click', () => {
