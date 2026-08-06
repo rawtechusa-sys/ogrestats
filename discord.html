@@ -540,6 +540,7 @@
         <select id="monthSel" aria-label="Jump to month"></select>
       </div>
       <div class="spacer"></div>
+      <button class="btn" id="nameToggle" title="Toggle server display names vs discord usernames">Nicknames</button>
       <button class="btn" id="searchToggle">Search</button>
     </div>
 
@@ -620,7 +621,7 @@ window.addEventListener('message', e => {
   const d = e.data;
   if (!d || typeof d !== 'object') return;
   if (d.type === 'theme') applyTheme(d.key);
-  else if (d.type === 'timezone') rerenderForTimezone();
+  else if (d.type === 'timezone') rerenderMessages();
 });
 
 // Mouse forwarding so the parent's roach/eye animations still react.
@@ -658,6 +659,22 @@ function tokenize(text) {
 // Same normalization as chat_search_index._norm_username (the authors.json keys).
 function normUser(raw) {
   return (String(raw ?? '').replace(/^@/, '').trim().toLowerCase()) || 'unknown';
+}
+
+// Name-mode preference: 'user' shows the discord account username (the default),
+// 'display' the server display name. A durable display preference like the theme,
+// so localStorage rather than sessionStorage.
+function getNameMode() {
+  try { return localStorage.getItem('discord-name-mode') === 'display' ? 'display' : 'user'; }
+  catch (e) { return 'user'; }
+}
+
+// The rendered name for a message. A message carries `user` only when it differs
+// from `author` (see discord_site_build.map_message), so user mode must fall back
+// to `author` -- for those messages the username IS the display name.
+function authorLabel(m) {
+  if (getNameMode() === 'display') return m.author ?? 'unknown';
+  return m.user || m.author || 'unknown';
 }
 
 // Sorted-array intersection (two-pointer) — postings are sorted + unique.
@@ -1535,12 +1552,14 @@ function renderConversation(msgs, tokens) {
   return html;
 }
 
-// A message carries `user` (the account username) only when it differs from the
-// display name in `author` -- see discord_site_build.map_message. Surface it as a
-// hover tooltip so the name shown stays the one the server used. escHtml escapes
-// the quote character, so this is safe to interpolate into an attribute.
+// Hover tooltip carrying the name form the label does NOT show: the display name
+// in user mode, "@username" in display mode. Empty when the message has no `user`
+// (then the two forms are one string and there is nothing extra to show). escHtml
+// escapes the quote character, so this is safe to interpolate into an attribute.
 function userTitle(m) {
-  return m && m.user ? ` title="@${escHtml(m.user)}"` : '';
+  if (!m || !m.user) return '';
+  const other = getNameMode() === 'display' ? `@${m.user}` : (m.author ?? '');
+  return other ? ` title="${escHtml(other)}"` : '';
 }
 
 function renderMessage(m, byId, tokens) {
@@ -1552,7 +1571,7 @@ function renderMessage(m, byId, tokens) {
   return `<div class="msg" id="m${escHtml(m.id)}">
     ${reply}
     <div class="msg-head">
-      <span class="msg-user"${userTitle(m)}>${escHtml(m.author ?? 'unknown')}</span>
+      <span class="msg-user"${userTitle(m)}>${escHtml(authorLabel(m))}</span>
       <span class="msg-time">${escHtml(fmtClock(m.ts))}</span>
       ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
     </div>
@@ -1572,7 +1591,7 @@ function renderReply(rid, byId) {
   }
   const snippet = String(target.text ?? '').replace(/\s+/g, ' ').slice(0, 90);
   return `<div class="reply-line">↩ <a data-jump-msg="${escHtml(rid)}">replying to
-    <span class="reply-user">${escHtml(target.author ?? 'unknown')}</span></a>
+    <span class="reply-user">${escHtml(authorLabel(target))}</span></a>
     <span>${escHtml(snippet)}</span></div>`;
 }
 
@@ -1865,7 +1884,7 @@ function renderHitGroup(group, tokens) {
   const label = ch ? `${ch.type === 'thread' ? '↳ ' : '#'}${ch.name}` : `#${group.cid}`;
   const rows = group.msgs.map(m => `<div class="hit">
       <div class="hit-head" style="background:none;border:none;padding:0 0 2px;">
-        <span class="msg-user"${userTitle(m)}>${escHtml(m.author ?? 'unknown')}</span>
+        <span class="msg-user"${userTitle(m)}>${escHtml(authorLabel(m))}</span>
         <span class="hit-meta">${escHtml(fmtStamp(m.ts))}</span>
         <a class="jump-link hit-count" data-jump-c="${escHtml(group.cid)}"
            data-jump-m="${escHtml(group.month)}" data-jump-id="${escHtml(m.id)}">jump to context →</a>
@@ -1933,9 +1952,10 @@ function pauseAutoScan() {
   updateStatus();
 }
 
-// ── Timezone switch: repaint every visible timestamp ────────────────────────
-// config.js helpers read the zone at render time, so a plain re-render is enough.
-function rerenderForTimezone() {
+// ── Timezone / name-mode switch: repaint every visible message ──────────────
+// config.js helpers read the zone -- and authorLabel/userTitle the name mode --
+// at render time, so a plain re-render is enough.
+function rerenderMessages() {
   if (MODE === 'search') {
     const S = SEARCH;
     const groupsEl = document.getElementById('groups');
@@ -1986,6 +2006,15 @@ function wire() {
   // capture phase. See onMediaLoad for why it matters.
   mainEl.addEventListener('load', onMediaLoad, true);
   mainEl.addEventListener('error', onMediaError, true);
+
+  const nameToggle = document.getElementById('nameToggle');
+  nameToggle.classList.toggle('on', getNameMode() === 'display');
+  nameToggle.addEventListener('click', () => {
+    const next = getNameMode() === 'display' ? 'user' : 'display';
+    try { localStorage.setItem('discord-name-mode', next); } catch (e) {}
+    nameToggle.classList.toggle('on', next === 'display');
+    rerenderMessages();
+  });
 
   const filters = document.getElementById('filters');
   document.getElementById('searchToggle').addEventListener('click', () => {
