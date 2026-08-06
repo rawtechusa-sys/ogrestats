@@ -875,7 +875,7 @@ function selectChannel(slug, month, scrollToId) {
   BROWSE_STASH = null;
   // No month asked for -> newest, opened at the bottom like a chat client. A month
   // asked for -> land on it: centred on the message when one was named, else its top.
-  openBrowse(target, scrollToId, month ? (scrollToId ? 'center' : 'top') : 'bottom');
+  quietly(openBrowse(target, scrollToId, month ? (scrollToId ? 'center' : 'top') : 'bottom'));
   return true;
 }
 
@@ -913,6 +913,24 @@ function renderChunkSection(month, msgs) {
   return `<section class="chunk" data-month="${escHtml(month)}">${renderConversation(msgs)}</section>`;
 }
 
+// The loaders are fire-and-forget from observers, buttons and event handlers. They
+// own their own error UI (the seam rows), so a rejection escaping one is a bug, not
+// a user-facing state -- swallow it rather than raise an unhandled rejection.
+function quietly(p) {
+  if (p && typeof p.catch === 'function') p.catch(() => { /* the seam row said it */ });
+}
+
+// Record the height every image occupies RIGHT NOW. onMediaLoad then compensates for
+// the difference on load, which is what makes a browser-cached image -- already laid
+// out at full height, but it still fires load -- correctly cost nothing. Without the
+// stamp its height is counted a second time on every re-mount and every re-render.
+function stampImages(root) {
+  if (!root) return;
+  for (const img of root.querySelectorAll('img')) {
+    img.dataset.h0 = String(img.getBoundingClientRect().height);
+  }
+}
+
 // Open a channel at `month`. position: 'bottom' (newest message in view, chat-client
 // style), 'top' (the month's first message), or 'center' (on scrollToId).
 // Every await re-checks the generation: a channel switch mid-fetch must not paint.
@@ -946,14 +964,21 @@ async function openBrowse(month, scrollToId, position) {
       <span>couldn't load ${escHtml(monthLabel(month))}<br><small>${escHtml(e.message)}</small></span>
       <button class="btn" id="browseRetry">Retry</button></div>`;
     const retry = document.getElementById('browseRetry');
-    if (retry) retry.addEventListener('click', () => openBrowse(month, scrollToId, position));
+    if (retry) retry.addEventListener('click', () => quietly(openBrowse(month, scrollToId, position)));
     return;
   }
   if (gen !== BGEN || MODE !== 'browse') return;
 
   main.innerHTML = browseScaffold(renderChunkSection(month, msgs));
   BROWSE = { ch, lo: idx, hi: idx, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  stampImages(main);
   updateSeams();
+  // Point the picker at where we actually landed. updateCurrentMonth() can't do it
+  // for us: currentMonth was already set above, so its "nothing changed" early-out
+  // would leave the picker showing the month we came from on the paths that pick a
+  // month themselves (the closeSearch fallback, the unknown-month recovery).
+  const sel = document.getElementById('monthSel');
+  if (sel) sel.value = month;
 
   if (position === 'center' && scrollToId) {
     if (!flashMessage(scrollToId)) main.scrollTop = 0;
@@ -986,8 +1011,8 @@ function attachSeamObserver() {
     if (MODE !== 'browse' || !BROWSE) return;
     for (const en of entries) {
       if (!en.isIntersecting) continue;
-      if (en.target.id === 'seamTop') loadOlder();
-      else loadNewer();
+      if (en.target.id === 'seamTop') quietly(loadOlder());
+      else quietly(loadNewer());
     }
   }, { root: main, rootMargin: `${SEAM_MARGIN}px` });
   BOBSERVER.observe(top);
@@ -1022,17 +1047,33 @@ async function loadOlder() {
   }
   if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
 
+  // loadNewer runs on its own flag, concurrently, and its evict('top') moves B.lo.
+  // So the month picked before the await is not necessarily the one that belongs
+  // above the window any more -- mounting it blind would skip one month and
+  // duplicate another. Re-derive and bail if it moved. Same bail covers a missing
+  // #chunks, which must still clear the flag or the seam wedges on "wading in...".
   const chunks = document.getElementById('chunks');
-  if (!chunks) return;
-  // Everything already on screen moves down by exactly the height of what we insert
-  // above it, so give that height back to scrollTop or the reader gets shoved.
+  if (!chunks || months[B.lo - 1] !== month) {
+    B.loadingUp = false;
+    updateSeams();
+    return;
+  }
+
+  // Measure before the insert and fold the seam de-duplication into the SAME
+  // measurement. Hiding a repeated day divider takes ~40px away above the reader, so
+  // compensating first and de-duplicating after would jump on most seam crossings
+  // (UTC month boundaries land mid-local-day for anyone west of Greenwich).
+  const prevTop = main.scrollTop;
   const prevH = main.scrollHeight;
   chunks.insertAdjacentHTML('afterbegin', renderChunkSection(month, msgs));
-  main.scrollTop += main.scrollHeight - prevH;
   B.lo--;
+  dedupeSeams();
+  stampImages(chunks.firstElementChild);
+  // Everything already on screen moved down by exactly what landed above it. Assign
+  // rather than +=, so an intermediate clamp can't be baked into the result.
+  main.scrollTop = prevTop + (main.scrollHeight - prevH);
   B.loadingUp = false;
 
-  dedupeSeams();
   evict('bottom');
   updateSeams();
   updateCurrentMonth();
@@ -1068,14 +1109,24 @@ async function loadNewer() {
   }
   if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
 
+  // Mirror of loadOlder: loadOlder's evict('bottom') moves B.hi under us, so the
+  // month captured before the await has to be re-checked before it is mounted.
   const chunks = document.getElementById('chunks');
-  if (!chunks) return;
+  if (!chunks || months[B.hi + 1] !== month) {
+    B.loadingDown = false;
+    updateSeams();
+    return;
+  }
+
+  // Appending happens below the reading position, so there is nothing to compensate
+  // and the de-duplication down here is free.
   chunks.insertAdjacentHTML('beforeend', renderChunkSection(month, msgs));
   B.hi++;
+  dedupeSeams();
+  stampImages(chunks.lastElementChild);
   B.loadingDown = false;
 
-  dedupeSeams();
-  evict('top');
+  evict('top');                        // re-dedupes inside its own measurement window
   updateSeams();
   updateCurrentMonth();
   if (seamNear('seamBot')) return loadNewer();
@@ -1089,25 +1140,45 @@ function evict(end) {
   const main = document.getElementById('main');
   const chunks = document.getElementById('chunks');
   if (!B || !main || !chunks) return;
+  // Never move an index out from under the loader that is mid-flight on that side:
+  // it captured its month before its await and is about to mount it. Trimming the
+  // other end is always safe, and whatever we skip here the next evict picks up.
+  if (end === 'top' && B.loadingUp) return;
+  if (end === 'bottom' && B.loadingDown) return;
+
   while (chunks.children.length > MAX_MOUNTED) {
     const victim = end === 'top' ? chunks.firstElementChild : chunks.lastElementChild;
     if (!victim) return;
-    // Never evict down to a window that no longer overflows the pane by more than the
-    // look-ahead band on both sides: both seams would sit inside it, the two loaders
-    // would take turns adding and evicting, and the pane would fetch forever. On a
-    // sparse channel a few extra sections in the DOM is the cheaper trade.
+    // MAX_MOUNTED is a soft target, not a cap: never evict down to a window that no
+    // longer overflows the pane by more than the look-ahead band on BOTH sides, or
+    // both seams sit inside it, the two loaders take turns adding and evicting, and
+    // the pane fetches forever. A sparse channel therefore legitimately holds more
+    // than MAX_MOUNTED sections -- bounded by content height, not by section count,
+    // and a few extra sections in the DOM is the cheaper trade.
     if (main.scrollHeight - victim.offsetHeight < main.clientHeight + 2 * SEAM_MARGIN) return;
     if (end === 'top') {
-      // Measure the removal with scrollHeight, NOT the section's offsetHeight: the
-      // day-divider margins collapse through the section edge, so offsetHeight
-      // under-reports how much height actually disappears and scrollTop drifts.
+      const prevTop = main.scrollTop;
       const prevH = main.scrollHeight;
       victim.remove();
-      main.scrollTop -= prevH - main.scrollHeight;
       B.lo++;
+      // Losing the first section can strand a seam-dup on the new first section's
+      // opening divider. Re-dedupe INSIDE the measurement window: that height change
+      // is above the reader too and belongs in the same single correction.
+      dedupeSeams();
+      // Assign, never -=. The removal itself clamps scrollTop when the evicted
+      // section is taller than everything left below it, and a read-modify-write on
+      // an already-clamped value throws the reader to the top of the pane. Measure
+      // with scrollHeight, NOT the section's offsetHeight: day-divider margins
+      // collapse through the section edge, so offsetHeight under-reports what goes.
+      main.scrollTop = prevTop - (prevH - main.scrollHeight);
     } else {
-      victim.remove();               // below the reading position: nothing to fix up
+      // Below the reading position, so in principle nothing to fix up -- except that
+      // removing a bottom chunk that dwarfs the rest shortens the scroll range and
+      // clamps scrollTop anyway. Hold a message instead of trusting the number.
+      const anchor = captureAnchor();
+      victim.remove();
       B.hi--;
+      restoreAnchor(anchor);
     }
   }
 }
@@ -1166,7 +1237,7 @@ function paintSeam(el, dir, err, loading, atEdge, edgeText) {
       if (!B) return;
       if (dir === 'up') B.errUp = null; else B.errDown = null;
       updateSeams();
-      if (dir === 'up') loadOlder(); else loadNewer();
+      quietly(dir === 'up' ? loadOlder() : loadNewer());
     });
     return;
   }
@@ -1256,11 +1327,12 @@ function restoreBrowse(stash) {
   for (let i = stash.lo; i <= stash.hi; i++) {
     const m = months[i];
     const msgs = m ? chunkCache.get(chunkKey(ch.id, m)) : null;
-    if (!msgs) { openBrowse(months[months.length - 1], null, 'bottom'); return; }
+    if (!msgs) { quietly(openBrowse(months[months.length - 1], null, 'bottom')); return; }
     secs.push(renderChunkSection(m, msgs));
   }
   main.innerHTML = browseScaffold(secs.join(''));
   BROWSE = { ch, lo: stash.lo, hi: stash.hi, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  stampImages(main);
   dedupeSeams();
   updateSeams();
   restoreAnchor(stash.anchor);
@@ -1273,13 +1345,20 @@ function restoreBrowse(stash) {
 // page down, so hand that height back. 'load' does not bubble -- hence the
 // capture-phase listener on the pane, which catches mounts, prepends and appends
 // alike. Video/audio are preload=none and never grow on their own.
+//
+// Compensate for the DIFFERENCE against the stamp, not the raw height: a
+// browser-cached image lays out at full height immediately and STILL fires load, so
+// paying its full height again would drift the pane by the sum of every image above
+// the reader on every re-mount, re-render and restore.
 function onMediaLoad(e) {
   const img = e.target;
   if (MODE !== 'browse' || !img || img.tagName !== 'IMG') return;
   const main = document.getElementById('main');
   if (!main) return;
   const r = img.getBoundingClientRect();
-  if (r.top < main.getBoundingClientRect().top) main.scrollTop += r.height;
+  const grew = r.height - (Number(img.dataset.h0) || 0);
+  img.dataset.h0 = String(r.height);
+  if (grew > 0 && r.top < main.getBoundingClientRect().top) main.scrollTop += grew;
 }
 
 // Day dividers + messages, ascending. Messages carry id="m<id>" so a search hit can
@@ -1684,7 +1763,9 @@ function rerenderForTimezone() {
     if (msgs) sec.innerHTML = renderConversation(msgs);
   }
   dedupeSeams();
+  stampImages(chunks);                 // fresh <img> elements: re-stamp before they load
   restoreAnchor(anchor);
+  updateCurrentMonth();                // every height just changed
 }
 
 // ── Wiring ──────────────────────────────────────────────────────────────────
@@ -1698,7 +1779,7 @@ function wire() {
 
   document.getElementById('monthSel').addEventListener('change', e => {
     setMode('browse');
-    openBrowse(e.target.value, null, 'top');
+    quietly(openBrowse(e.target.value, null, 'top'));
   });
 
   const mainEl = document.getElementById('main');
@@ -1766,7 +1847,7 @@ function closeSearch() {
     restoreBrowse(stash);
   } else {
     const months = Array.isArray(currentChannel.months) ? currentChannel.months : [];
-    openBrowse(months[months.length - 1], null, 'bottom');
+    quietly(openBrowse(months[months.length - 1], null, 'bottom'));
   }
 }
 
