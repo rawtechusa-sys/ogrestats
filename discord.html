@@ -233,6 +233,55 @@
     border-color: var(--accent);
     background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
   }
+
+  /* A switch-styled toggle: same type treatment as .btn, but the state reads as
+     a slider knob on a track instead of a lit border. `.on` slides the knob. */
+  .switch {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: none;
+    color: var(--text-muted);
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .switch-track {
+    width: 30px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-default-strong, var(--border-default));
+    background: var(--bg-panel);
+    position: relative;
+    flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .switch-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    transition: left 0.15s, background 0.15s;
+  }
+  .switch:hover .switch-track { border-color: var(--accent); }
+  .switch.on { color: var(--accent-bright); }
+  .switch.on .switch-track {
+    border-color: var(--accent);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+  .switch.on .switch-knob {
+    left: 16px;
+    background: var(--accent-bright);
+  }
+
   .spacer { margin-left: auto; }
 
   select, .filters input[type="text"], .filters input[type="search"], .filters input[type="date"] {
@@ -584,7 +633,11 @@
         <select id="monthSel" aria-label="Jump to month"></select>
       </div>
       <div class="spacer"></div>
-      <button class="btn" id="nameToggle" title="Toggle server display names vs discord usernames">Nicknames</button>
+      <button class="switch" id="nameToggle" role="switch" aria-checked="false"
+              title="Toggle server display names vs discord usernames">
+        <span class="switch-track"><span class="switch-knob"></span></span>
+        <span>Nicknames</span>
+      </button>
       <button class="btn" id="searchToggle">Search</button>
     </div>
 
@@ -715,18 +768,22 @@ function getNameMode() {
 
 // The rendered name for a message. A message carries `user` only when it differs
 // from `author` (see discord_site_build.map_message), so user mode must fall back
-// to `author` -- for those messages the username IS the display name.
+// to `author` -- for those messages the username IS the display name. Usernames
+// wear a leading "@" (the discord convention); normUser strips it, so a label
+// pasted into the Author search field still matches.
 function authorLabel(m) {
   if (getNameMode() === 'display') return m.author ?? 'unknown';
-  return m.user || m.author || 'unknown';
+  const u = m.user || m.author;
+  return u ? '@' + u : 'unknown';
 }
 
 // A poll voter's rendered name. Voters carry the same dual-name convention as
 // message authors (`user` only when it differs), just under `name` instead of
-// `author` -- so the Nicknames toggle flips these too.
+// `author` -- so the Nicknames toggle flips these too, "@" included.
 function voterLabel(v) {
   if (getNameMode() === 'display') return v?.name ?? 'unknown';
-  return v?.user || v?.name || 'unknown';
+  const u = v?.user || v?.name;
+  return u ? '@' + u : 'unknown';
 }
 
 // Sorted-array intersection (two-pointer) — postings are sorted + unique.
@@ -2101,11 +2158,16 @@ function wire() {
   mainEl.addEventListener('error', onMediaError, true);
 
   const nameToggle = document.getElementById('nameToggle');
-  nameToggle.classList.toggle('on', getNameMode() === 'display');
+  const syncNameToggle = () => {
+    const on = getNameMode() === 'display';
+    nameToggle.classList.toggle('on', on);
+    nameToggle.setAttribute('aria-checked', String(on));
+  };
+  syncNameToggle();
   nameToggle.addEventListener('click', () => {
     const next = getNameMode() === 'display' ? 'user' : 'display';
     try { localStorage.setItem('discord-name-mode', next); } catch (e) {}
-    nameToggle.classList.toggle('on', next === 'display');
+    syncNameToggle();
     rerenderMessages();
   });
 
