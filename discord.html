@@ -684,10 +684,31 @@ function highlight(text, tokens) {
 //
 // Conservative shape: a scheme we allow, then non-whitespace. < > " ' are excluded so
 // a URL can never eat into surrounding markup even before escaping.
-const URL_RE = /https?:\/\/[^\s<>"']+/g;
+const URL_RE = /https?:\/\/[^\s<>"']+/gi;
 const MAX_URL_EMBEDS = 4;                 // per message
 
 function countChar(s, c) { let n = 0; for (const ch of s) if (ch === c) n++; return n; }
+
+// One match can hold two URLs. The character class has to allow , ; : ) inside a URL
+// (real ones contain them), so "https://a.com,https://b.com" with no space between is
+// a SINGLE match -- and trimUrlTail only trims the end, so without this the pair would
+// render as one garbled anchor and the second URL would lose both its link and its
+// embed. Split the match wherever a scheme follows a character that ends a URL.
+//
+// Only those joiner characters split, so a scheme nested in a path or query is left
+// alone: https://web.archive.org/web/2024/https://x/y and .../l.php?u=https://x/y stay
+// one URL, which is what they are.
+const URL_JOINERS = ',;:)]}|';
+function splitJoinedUrls(s) {
+  const starts = [];
+  const re = /https?:\/\//gi;
+  let m;
+  while ((m = re.exec(s)) !== null) {
+    if (m.index === 0 || URL_JOINERS.includes(s[m.index - 1])) starts.push(m.index);
+  }
+  if (starts.length < 2 || starts[0] !== 0) return [s];
+  return starts.map((a, i) => s.slice(a, i + 1 < starts.length ? starts[i + 1] : s.length));
+}
 
 // Discord drops trailing sentence punctuation from an autolink, and drops a trailing
 // closer only when the URL carries no matching opener -- "(see https://x/a)." links
@@ -750,22 +771,28 @@ function renderText(raw, tokens, opts) {
   const seen = new Set();
   let html = '';
   let last = 0;
-  URL_RE.lastIndex = 0;                    // module-level /g regex; not reentrant
+  URL_RE.lastIndex = 0;                    // module-level /gi regex; not reentrant
   let m;
   while ((m = URL_RE.exec(text)) !== null) {
-    const url = trimUrlTail(m[0]);
-    // Tightened allowlist. The match already guarantees it, so this is belt-and-braces
-    // against a future loosening of URL_RE, not dead weight.
-    if (!url || !/^https?:\/\//i.test(url)) continue;
     html += highlight(text.slice(last, m.index), tokens);
-    const esc = escHtml(url);
-    html += `<a class="msg-link" href="${esc}" target="_blank" rel="noopener noreferrer">${esc}</a>`;
-    last = m.index + url.length;
-    URL_RE.lastIndex = last;               // punctuation we trimmed is plain text again
-    if (wantEmbeds && embeds.length < MAX_URL_EMBEDS) {
-      const media = embedMediaUrl(url);
-      if (media && !seen.has(media)) { seen.add(media); embeds.push({ page: url, media }); }
+    // One match can be several joined URLs; each piece links and embeds on its own.
+    for (const piece of splitJoinedUrls(m[0])) {
+      const url = trimUrlTail(piece);
+      // Tightened allowlist. The match already guarantees it, so this is belt-and-braces
+      // against a future loosening of URL_RE, not dead weight.
+      if (!url || !/^https?:\/\//i.test(url)) { html += highlight(piece, tokens); continue; }
+      const esc = escHtml(url);
+      html += `<a class="msg-link" href="${esc}" target="_blank" rel="noopener noreferrer">${esc}</a>`;
+      // Whatever trimUrlTail shaved off is ordinary text again (a joining comma, a
+      // closing paren, the full stop that ended the sentence).
+      html += highlight(piece.slice(url.length), tokens);
+      if (wantEmbeds && embeds.length < MAX_URL_EMBEDS) {
+        const media = embedMediaUrl(url);
+        if (media && !seen.has(media)) { seen.add(media); embeds.push({ page: url, media }); }
+      }
     }
+    last = m.index + m[0].length;
+    URL_RE.lastIndex = last;
   }
   html += highlight(text.slice(last), tokens);
   return { html, embeds };
@@ -1476,6 +1503,8 @@ function onMediaError(e) {
   if (!img || img.tagName !== 'IMG' || !img.closest) return;
   const embed = img.closest('.url-embed');
   if (!embed) return;
+  // No shrink compensation on purpose: an embed that errored never painted, so it was
+  // holding ~0px (its stamped h0 is ~0 too) and hiding it moves the pane by nothing.
   embed.style.display = 'none';
   const box = embed.parentElement;
   if (box && box.classList.contains('url-embeds') &&
