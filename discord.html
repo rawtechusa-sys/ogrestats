@@ -550,7 +550,11 @@
       </div>
       <div class="field">
         <label for="author">Author</label>
-        <input type="text" id="author" placeholder="username" autocomplete="off" spellcheck="false">
+        <!-- The datalist is filled on first focus (see wire()), not at load: it needs
+             authors.json, which the search path already fetches lazily. -->
+        <input type="text" id="author" list="authorOptions" placeholder="username"
+               autocomplete="off" spellcheck="false">
+        <datalist id="authorOptions"></datalist>
       </div>
       <div class="field">
         <label for="scope">Channels</label>
@@ -1531,6 +1535,14 @@ function renderConversation(msgs, tokens) {
   return html;
 }
 
+// A message carries `user` (the account username) only when it differs from the
+// display name in `author` -- see discord_site_build.map_message. Surface it as a
+// hover tooltip so the name shown stays the one the server used. escHtml escapes
+// the quote character, so this is safe to interpolate into an attribute.
+function userTitle(m) {
+  return m && m.user ? ` title="@${escHtml(m.user)}"` : '';
+}
+
 function renderMessage(m, byId, tokens) {
   const reply = m.reply_to != null ? renderReply(m.reply_to, byId) : '';
   const body = renderText(m.text, tokens);
@@ -1540,7 +1552,7 @@ function renderMessage(m, byId, tokens) {
   return `<div class="msg" id="m${escHtml(m.id)}">
     ${reply}
     <div class="msg-head">
-      <span class="msg-user">${escHtml(m.author ?? 'unknown')}</span>
+      <span class="msg-user"${userTitle(m)}>${escHtml(m.author ?? 'unknown')}</span>
       <span class="msg-time">${escHtml(fmtClock(m.ts))}</span>
       ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
     </div>
@@ -1771,7 +1783,16 @@ function resolveCandidates(q) {
 // still has to be checked message by message.
 function matchMessages(all, q) {
   return (all || []).filter(m => {
-    if (q.author && normUser(m.author) !== q.author) return false;
+    // Either name matches: the display name, or the account username when the
+    // message carries one. authors.json indexes both, so the candidate chunks are
+    // already right; this is the exact check inside them.
+    //
+    // The `m.user &&` guard is required, not defensive: normUser('') returns
+    // 'unknown', which is a REAL key (blank-author messages), so testing
+    // normUser(m.user || '') would make a search for "unknown" match every
+    // message that simply has no `user`.
+    if (q.author && normUser(m.author) !== q.author &&
+        !(m.user && normUser(m.user) === q.author)) return false;
     if (q.from != null && (m.ts == null || m.ts < q.from)) return false;
     if (q.to   != null && (m.ts == null || m.ts > q.to)) return false;
     const lc = String(m.text ?? '').toLowerCase();
@@ -1844,7 +1865,7 @@ function renderHitGroup(group, tokens) {
   const label = ch ? `${ch.type === 'thread' ? '↳ ' : '#'}${ch.name}` : `#${group.cid}`;
   const rows = group.msgs.map(m => `<div class="hit">
       <div class="hit-head" style="background:none;border:none;padding:0 0 2px;">
-        <span class="msg-user">${escHtml(m.author ?? 'unknown')}</span>
+        <span class="msg-user"${userTitle(m)}>${escHtml(m.author ?? 'unknown')}</span>
         <span class="hit-meta">${escHtml(fmtStamp(m.ts))}</span>
         <a class="jump-link hit-count" data-jump-c="${escHtml(group.cid)}"
            data-jump-m="${escHtml(group.month)}" data-jump-id="${escHtml(m.id)}">jump to context →</a>
@@ -1980,6 +2001,29 @@ function wire() {
   });
   document.getElementById('closeSearch').addEventListener('click', closeSearch);
   document.getElementById('searchBtn').addEventListener('click', runSearch);
+
+  // Native suggestions for the Author field. One-shot, on first focus: authors.json
+  // is only otherwise fetched when a search actually filters by author, and this
+  // must not put it on the page-load path.
+  document.getElementById('author').addEventListener('focus', async () => {
+    const dl = document.getElementById('authorOptions');
+    if (!dl) return;
+    let index;
+    try {
+      index = await ensureAuthors();
+    } catch (e) {
+      return;                            // suggestions are a convenience; typing still works
+    }
+    // The keys are already normalized lowercase (chat_search_index._norm_username),
+    // which is exactly what normUser() produces from what the user types -- so a
+    // picked suggestion is an exact index key, never a near-miss. They cover both
+    // display names and account usernames.
+    //
+    // Uncapped: ~100-200 entries at current scale renders instantly. If the roster
+    // ever explodes, slice this list rather than dropping the datalist.
+    const names = Object.keys(index?.authors || {}).sort();
+    dl.innerHTML = names.map(n => `<option value="${escHtml(n)}"></option>`).join('');
+  }, { once: true });
   ['q', 'author', 'dateFrom', 'dateTo'].forEach(id => {
     document.getElementById(id).addEventListener('keydown', e => {
       if (e.key === 'Enter') runSearch();
