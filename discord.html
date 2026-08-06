@@ -434,6 +434,50 @@
     padding: 1px 8px;
   }
 
+  .poll {
+    margin-top: 6px;
+    max-width: 440px;
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    background: var(--bg-panel);
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .poll-q { font-weight: 600; margin-bottom: 6px; }
+  .poll-ans {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    padding: 3px 6px;
+    margin: 2px 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .poll-bar {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.18);
+    border-radius: 4px;
+  }
+  .poll-ans > span { position: relative; }
+  .poll-ans-n {
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+  .poll-voters { margin: 0 6px 4px; font-size: 11px; color: var(--text-muted); }
+  .poll-voters summary { cursor: pointer; }
+  .poll-voters div { padding: 2px 0 0 14px; }
+  .poll-foot {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
   /* ── Search results ──────────────────────────────────────────── */
   .result-count {
     font-family: 'Share Tech Mono', monospace;
@@ -675,6 +719,14 @@ function getNameMode() {
 function authorLabel(m) {
   if (getNameMode() === 'display') return m.author ?? 'unknown';
   return m.user || m.author || 'unknown';
+}
+
+// A poll voter's rendered name. Voters carry the same dual-name convention as
+// message authors (`user` only when it differs), just under `name` instead of
+// `author` -- so the Nicknames toggle flips these too.
+function voterLabel(v) {
+  if (getNameMode() === 'display') return v?.name ?? 'unknown';
+  return v?.user || v?.name || 'unknown';
 }
 
 // Sorted-array intersection (two-pointer) — postings are sorted + unique.
@@ -1576,6 +1628,7 @@ function renderMessage(m, byId, tokens) {
       ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
     </div>
     ${text}
+    ${renderPoll(m.poll)}
     ${renderUrlEmbeds(body.embeds)}
     ${renderAttachments(m.attachments)}
     ${renderReactions(m.reactions)}
@@ -1638,6 +1691,38 @@ function renderReactions(reacts) {
   const chips = reacts.map(r =>
     `<span class="react">${escHtml(r?.e ?? '')} ${Number(r?.n) || 0}</span>`).join('');
   return `<div class="reacts">${chips}</div>`;
+}
+
+// A poll patched in by the backend's API pass (DCE can't export poll bodies).
+// Counts render as fill bars scaled to the winning share of the total; voter
+// lists (non-anonymous on Discord) sit behind a native <details> so a long
+// roster costs no vertical space until opened.
+function renderPoll(p) {
+  if (!p || typeof p !== 'object') return '';
+  const answers = Array.isArray(p.answers) ? p.answers : [];
+  const total = answers.reduce((s, a) => s + (Number(a?.n) || 0), 0);
+  const rows = answers.map(a => {
+    const n = Number(a?.n) || 0;
+    const pct = total ? Math.round(n / total * 100) : 0;
+    const label = `${a?.emoji ? escHtml(a.emoji) + ' ' : ''}${escHtml(a?.text ?? '')}`;
+    const voters = Array.isArray(a?.voters) && a.voters.length
+      ? `<details class="poll-voters"><summary>${a.voters.length} voter${a.voters.length === 1 ? '' : 's'}</summary>
+          <div>${a.voters.map(v => escHtml(voterLabel(v))).join(', ')}</div></details>`
+      : '';
+    return `<div class="poll-ans">
+      <i class="poll-bar" style="width:${pct}%"></i>
+      <span class="poll-ans-text">${label}</span>
+      <span class="poll-ans-n">${n} · ${pct}%</span>
+    </div>${voters}`;
+  }).join('');
+  const bits = [`${total} vote${total === 1 ? '' : 's'}`];
+  if (p.multi) bits.push('multiple choice');
+  bits.push(p.final ? 'final results' : 'poll open');
+  return `<div class="poll">
+    <div class="poll-q">📊 ${escHtml(p.q ?? '')}</div>
+    ${rows}
+    <div class="poll-foot">${bits.join(' · ')}</div>
+  </div>`;
 }
 
 // Scroll a rendered message into view and flash it. Ids come from the data, so use
@@ -1814,7 +1899,14 @@ function matchMessages(all, q) {
         !(m.user && normUser(m.user) === q.author)) return false;
     if (q.from != null && (m.ts == null || m.ts < q.from)) return false;
     if (q.to   != null && (m.ts == null || m.ts > q.to)) return false;
-    const lc = String(m.text ?? '').toLowerCase();
+    // Poll question/answer text is searchable -- this mirrors build_search's
+    // token index exactly, so a candidate chunk always yields a visible hit.
+    let hay = String(m.text ?? '');
+    if (m.poll) {
+      hay += ' ' + (m.poll.q ?? '');
+      for (const a of m.poll.answers || []) hay += ' ' + (a?.text ?? '');
+    }
+    const lc = hay.toLowerCase();
     for (const tok of q.tokens) if (!lc.includes(tok)) return false;
     return true;
   });
@@ -1890,6 +1982,7 @@ function renderHitGroup(group, tokens) {
            data-jump-m="${escHtml(group.month)}" data-jump-id="${escHtml(m.id)}">jump to context →</a>
       </div>
       <div class="msg-text">${renderText(m.text, tokens, { embeds: false }).html}</div>
+      ${renderPoll(m.poll)}
       ${renderAttachments(m.attachments)}
     </div>`).join('');
   return `<div class="hit-group">
