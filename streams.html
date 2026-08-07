@@ -2265,7 +2265,11 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       backgroundColor: 'rgba(232,192,32,0.12)',
       borderWidth: 2,
       pointRadius: 0, pointHoverRadius: 4,
+      // Stepped, not interpolated: the total is flat between donations and jumps
+      // at the snapshot that first includes the money ('after' puts the riser at
+      // that snapshot's x, where the donation was bucketed).
       tension: 0,
+      stepped: 'after',
       fill: true,
       yAxisID: 'yDonations',
     });

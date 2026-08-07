@@ -733,6 +733,7 @@ function buildChart(streams, subs) {
       pointHoverRadius: 5,
       pointBackgroundColor: color,
       tension: opts.tension != null ? opts.tension : 0.25,
+      stepped: opts.stepped || false,
       fill: opts.fill || false,
       spanGaps: true,
       yAxisID: opts.yAxisID,
@@ -748,9 +749,11 @@ function buildChart(streams, subs) {
   // Subscribers (left, primary). Sparse but continuous trend line.
   add(DS.SUBSCRIBERS, subData, '#40c4ff', { yAxisID: 'ySubs', pointRadius: 2.5 });
 
-  // Donations -- dollars (right).
+  // Donations -- dollars (right). Stepped, not interpolated: the lifetime total
+  // is flat between streams and jumps at the stream whose donations it gains
+  // ('after' puts the riser at that stream's start_ts).
   add(DS.DON_CUMULATIVE, cumData, '#96d45a',
-      { yAxisID: 'yDollars', fill: true, bg: 'rgba(150,212,90,0.10)', pointRadius: 0, tension: 0 });
+      { yAxisID: 'yDollars', fill: true, bg: 'rgba(150,212,90,0.10)', pointRadius: 0, tension: 0, stepped: 'after' });
   add(DS.DON_PER_STREAM, streams.map(s => pt(s, s.total_donations_usd)), '#e8c020',
       { yAxisID: 'yPerStream', type: 'bar' });
 
