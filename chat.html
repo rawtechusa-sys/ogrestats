@@ -93,12 +93,12 @@
   html[data-theme="white"] .filters input[type="date"] { color-scheme: light; }
   #q { min-width: 260px; flex: 1; }
 
-  .platform-checks {
+  .platform-checks, .source-checks {
     display: flex;
     gap: 10px;
     align-items: center;
   }
-  .platform-checks label {
+  .platform-checks label, .source-checks label {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -107,7 +107,7 @@
     color: var(--text-primary);
     cursor: pointer;
   }
-  .platform-checks input { accent-color: var(--accent); cursor: pointer; }
+  .platform-checks input, .source-checks input { accent-color: var(--accent); cursor: pointer; }
   .phrase-check {
     display: flex;
     align-items: center;
@@ -235,6 +235,13 @@
   }
   .plat-badge.youtube { color: var(--platform-youtube); border-color: var(--platform-youtube); }
   .plat-badge.twitch  { color: var(--platform-twitch); border-color: var(--platform-twitch); }
+  /* Spoken-word rows (YouTube auto-captions) — same shape, accent-tinted so a
+     transcript line reads as a different corpus at a glance. */
+  .plat-badge.transcript {
+    color: var(--accent-bright);
+    border-color: var(--accent);
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10);
+  }
   .msg-text {
     font-size: 14px;
     color: var(--text-primary);
@@ -322,6 +329,13 @@
       </div>
     </div>
     <div class="field">
+      <label>Search in</label>
+      <div class="source-checks">
+        <label><input type="checkbox" value="chat" checked>Chat</label>
+        <label><input type="checkbox" value="transcripts" checked>Transcripts</label>
+      </div>
+    </div>
+    <div class="field">
       <label>&nbsp;</label>
       <label class="phrase-check"><input type="checkbox" id="phrase">Exact phrase</label>
     </div>
@@ -401,12 +415,34 @@ function normUser(raw) {
 // ── State ────────────────────────────────────────────────────────────────────
 let INDEX   = null;   // chat_search.json  { streams:[], tokens:{} }
 let AUTHORS = null;   // chat_authors.json { authors:{} }  (lazy)
+let TINDEX  = null;   // transcript_search.json { streams:[], tokens:{} }  (lazy)
 
 // Paged-search state (rebuilt on each new search).
 let SEARCH = null;    // see startSearch(): { q, candidates, cursor, gen, loading, ... }
 let GEN = 0;          // bumped per search so a stale in-flight batch can detect it lost
 let OBSERVER = null;  // IntersectionObserver watching the sentinel
-const hydrateCache = new Map();   // stream id -> messages[]; kept across searches
+// Keys are source-qualified ('chat:'+id / 'tr:'+id) because the two corpora are
+// fetched independently and a stream can be hydrated for one and not the other.
+const hydrateCache = new Map();   // 'chat:<id>' | 'tr:<id>' -> messages[]; kept across searches
+
+// ── Transcript index (lazy, 404-tolerant) ────────────────────────────────────
+// The transcript corpus ships before any transcript data exists, so EVERY failure
+// mode — missing file, unreadable file, malformed payload — degrades to an empty
+// index (zero transcript candidates), never to an error UI.
+async function ensureTranscriptIndex() {
+  if (TINDEX) return TINDEX;
+  try { TINDEX = await fetchJSON(`${RAW}/data/transcript_search.json`); }
+  catch (e) { TINDEX = null; }
+  if (!TINDEX || !Array.isArray(TINDEX.streams) || !TINDEX.tokens) {
+    TINDEX = { streams: [], tokens: {} };
+    return TINDEX;
+  }
+  const st = document.getElementById('indexStatus');
+  if (st && TINDEX.streams.length) {
+    st.textContent += ` · ${TINDEX.streams.length.toLocaleString()} transcripts`;
+  }
+  return TINDEX;
+}
 
 // ── Cross-tab navigation to a stream (mirrors dents.html/channelstats jumpToStream) ──
 function jumpToStream(streamId, ev) {
@@ -449,11 +485,14 @@ function dateToTs(v, endOfDay) {
 }
 
 // ── VOD deep link ────────────────────────────────────────────────────────────
-// Chat messages carry `offset` = seconds since the payload's start_anchor. For the
-// YouTube chat-replay corpus, start_anchor is the source VOD's t=0, so offset maps
-// straight into source_vod_id. (Live chat.json offsets are anchored to the restream
-// broadcast, not the source VOD; those links land on the source VOD's timeline and
-// are only approximate — chat.json isn't in the published corpus yet.)
+// Every row carries `offset` = seconds since its payload's start_anchor, and the
+// link resolves that offset against the SOURCE VOD (source_vod_id).
+//   · chat_replay.json — start_anchor is the source VOD's t=0, so offsets map exactly.
+//   · transcript.json  — captions come from the source VOD itself, so its offsets are
+//     native VOD time and map exactly too.
+//   · chat.json        — live chat, anchored to the RESTREAM broadcast rather than the
+//     source VOD, so those links land on the source timeline only approximately.
+// Both chat files are in the published corpus, so mixed-accuracy rows are expected.
 function vodLink(smeta, offset, label) {
   const t = Math.max(0, Math.floor(offset ?? 0));
   if (smeta && smeta.source_vod_id && smeta.source_platform !== 'twitch') {
@@ -480,40 +519,70 @@ function highlight(text, tokens) {
 }
 
 // ── Candidate resolution (index-only, no hydration) ──────────────────────────
-function resolveCandidates(q) {
-  const N = INDEX.streams.length;
+// One corpus's postings (chat_search.json / transcript_search.json) index only that
+// corpus's OWN streams[] array, so each side resolves on its own and the two result
+// sets merge by stream id afterwards.
+function resolveOne(index, tokens, extraPostings) {
+  if (!index || !Array.isArray(index.streams) || !index.streams.length) return [];
   let cand = null;   // null = "all so far"
 
   // Text tokens -> intersect posting lists.
-  for (const tok of q.tokens) {
-    const postings = INDEX.tokens[tok];
+  for (const tok of tokens) {
+    const postings = index.tokens ? index.tokens[tok] : null;
     if (!postings) return [];               // unknown token -> nothing matches
     cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
     if (!cand.length) return [];
   }
 
-  // Username -> intersect author postings (needs the lazy author index).
-  if (q.user && AUTHORS) {
-    const postings = AUTHORS.authors[q.user] || [];
-    cand = cand === null ? postings.slice() : intersectSorted(cand, postings);
+  // An extra posting list (the chat side's username postings) narrows the same way.
+  if (extraPostings) {
+    cand = cand === null ? extraPostings.slice() : intersectSorted(cand, extraPostings);
     if (!cand.length) return [];
   }
 
-  if (cand === null) cand = Array.from({ length: N }, (_, i) => i);
+  if (cand === null) cand = Array.from({ length: index.streams.length }, (_, i) => i);
+  return cand.map(i => index.streams[i]).filter(Boolean);
+}
 
-  // Metadata filters (date range, single-stream pick). Platform is message-level.
-  return cand.filter(i => {
-    const s = INDEX.streams[i];
-    if (q.streamId && s.id !== q.streamId) return false;
-    if (q.from != null && (s.start_ts == null || s.start_ts < q.from)) return false;
-    if (q.to   != null && (s.start_ts == null || s.start_ts > q.to)) return false;
-    return true;
-  });
+// Stream-level metadata filters (date range, single-stream pick). Platform is
+// message-level.
+function passesMeta(s, q) {
+  if (q.streamId && s.id !== q.streamId) return false;
+  if (q.from != null && (s.start_ts == null || s.start_ts < q.from)) return false;
+  if (q.to   != null && (s.start_ts == null || s.start_ts > q.to)) return false;
+  return true;
+}
+
+// -> [{smeta, chat, tr}], newest stream first. `chat`/`tr` say which corpora this
+// stream can hold a hit in, so loadNextBatch fetches only the files it must.
+function resolveCandidates(q) {
+  const byId = new Map();
+  const add = (s, key) => {
+    if (!s || !s.id || !passesMeta(s, q)) return;
+    let e = byId.get(s.id);
+    if (!e) { e = { smeta: s, chat: false, tr: false }; byId.set(s.id, e); }
+    e[key] = true;
+    if (key === 'chat') e.smeta = s;   // the chat index's metadata wins on a tie
+  };
+
+  if (q.sources.has('chat')) {
+    // Username -> intersect author postings (needs the lazy author index).
+    const authorPostings = q.user ? ((AUTHORS && AUTHORS.authors[q.user]) || []) : null;
+    for (const s of resolveOne(INDEX, q.tokens, authorPostings)) add(s, 'chat');
+  }
+
+  // A transcript has no authors, so a username filter excludes the corpus entirely.
+  if (q.sources.has('transcripts') && !q.user) {
+    for (const s of resolveOne(TINDEX, q.tokens, null)) add(s, 'tr');
+  }
+
+  // Newest-first by stream start so paging is deterministic + matches the dashboard.
+  return [...byId.values()].sort((a, b) => (b.smeta.start_ts || 0) - (a.smeta.start_ts || 0));
 }
 
 // ── Hydrate one stream's chat (replay + live), merged + deduped ──────────────
-async function hydrate(smeta) {
-  const cached = hydrateCache.get(smeta.id);
+async function hydrateChat(smeta) {
+  const cached = hydrateCache.get('chat:' + smeta.id);
   if (cached) return cached;
   const urls = ['chat_replay.json', 'chat.json'].map(
     n => `${RAW}/data/streams/${encodeURIComponent(smeta.id)}/${n}`);
@@ -530,7 +599,32 @@ async function hydrate(smeta) {
       msgs.push({ ...m, platform: m.platform || plat });
     }
   }
-  hydrateCache.set(smeta.id, msgs);
+  hydrateCache.set('chat:' + smeta.id, msgs);
+  return msgs;
+}
+
+// ── Hydrate one stream's transcript (YouTube auto-captions) ──────────────────
+// 404-tolerant by contract: a missing file, an unreadable one, or the
+// status:"unavailable" stub all cache as zero rows — never an error. Only
+// status:"ok" contributes lines.
+async function hydrateTranscript(smeta) {
+  const key = 'tr:' + smeta.id;
+  const cached = hydrateCache.get(key);
+  if (cached) return cached;
+  let msgs = [];
+  try {
+    const p = await fetchJSON(`${RAW}/data/streams/${encodeURIComponent(smeta.id)}/transcript.json`);
+    if (p && p.status === 'ok' && Array.isArray(p.segments)) {
+      // Caption offsets are native source-VOD time; the anchor only converts them
+      // to wall clock so transcript lines interleave with chat by ts.
+      const anchor = p.start_anchor ?? smeta.start_ts ?? 0;
+      msgs = p.segments.map(s => ({
+        kind: 'tr', author: null, text: s.t,
+        offset: s.o, ts: anchor + (s.o || 0), platform: null,
+      }));
+    }
+  } catch (e) { /* no transcript for this stream — zero rows, not an error */ }
+  hydrateCache.set(key, msgs);
   return msgs;
 }
 
@@ -538,6 +632,15 @@ async function hydrate(smeta) {
 async function runSearch() {
   if (!INDEX) return;
   const results = document.getElementById('results');
+
+  // Retire the previous search FIRST, before any early return below. A hint/error/
+  // empty result must still invalidate an in-flight batch loop: if the old search
+  // kept its generation, its finishSearch() would land after this call and overwrite
+  // the pane with the old query's state (and the old OBSERVER would be left watching
+  // a detached sentinel). The real search re-bumps GEN once it has candidates.
+  const myGen = ++GEN;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  SEARCH = null;
 
   const rawQ = document.getElementById('q').value.trim();
   const q = {
@@ -548,7 +651,14 @@ async function runSearch() {
     from: dateToTs(document.getElementById('dateFrom').value, false),
     to:   dateToTs(document.getElementById('dateTo').value, true),
     platforms: new Set([...document.querySelectorAll('.platform-checks input:checked')].map(c => c.value)),
+    sources: new Set([...document.querySelectorAll('.source-checks input:checked')].map(c => c.value)),
   };
+
+  if (!q.sources.size) {
+    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
+      <span>Nothing to search — select Chat and/or Transcripts.</span></div>`;
+    return;
+  }
 
   if (!q.tokens.length && !q.user && !q.streamId && q.from == null && q.to == null) {
     results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
@@ -556,8 +666,8 @@ async function runSearch() {
     return;
   }
 
-  // Username needs the lazy author index.
-  if (q.user && !AUTHORS) {
+  // Username needs the lazy author index — and only the chat corpus uses it.
+  if (q.user && q.sources.has('chat') && !AUTHORS) {
     try { AUTHORS = await fetchJSON(`${RAW}/data/chat_authors.json`); }
     catch (e) {
       results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the username index<br><small>${escHtml(e.message)}</small></span></div>`;
@@ -565,14 +675,24 @@ async function runSearch() {
     }
   }
 
-  const cand = resolveCandidates(q);
+  // Transcripts need their own index; it is 404-tolerant, so this never fails.
+  // Re-resolve the stream pick afterwards: a transcript-only stream is unknown to
+  // the chat index, so the first-ever search would otherwise miss it by title.
+  if (q.sources.has('transcripts')) {
+    await ensureTranscriptIndex();
+    q.streamId = streamIdFromInput();
+  }
+
+  // The two loads above are awaits, so a second search can start (and finish) while
+  // this one is suspended. The generation taken at the top is the only way to notice:
+  // without this, the older query would resume and render over the newer one's pane.
+  if (myGen !== GEN) return;
+
+  const cand = resolveCandidates(q);   // already newest-first
   if (!cand.length) {
     results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no streams match those filters</span></div>`;
     return;
   }
-
-  // Newest-first by stream start so paging is deterministic + matches the dashboard.
-  cand.sort((a, b) => (INDEX.streams[b].start_ts || 0) - (INDEX.streams[a].start_ts || 0));
 
   const gen = ++GEN;
   if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
@@ -596,12 +716,18 @@ async function runSearch() {
 }
 
 // Apply the message-level filter (platform/username/phrase/all-tokens) to a stream's
-// hydrated chat. Same rule as the old inline filter.
+// hydrated rows. Same rule as the old inline filter for chat. A transcript line has
+// no platform and no author, so the platform filter does not apply to it and a
+// username filter drops it outright.
 function matchMessages(all, q) {
   return all.filter(m => {
-    const plat = m.platform || 'youtube';
-    if (!q.platforms.has(plat)) return false;
-    if (q.user && normUser(m.author) !== q.user) return false;
+    if (m.kind === 'tr') {
+      if (q.user) return false;
+    } else {
+      const plat = m.platform || 'youtube';
+      if (!q.platforms.has(plat)) return false;
+      if (q.user && normUser(m.author) !== q.user) return false;
+    }
     const lc = String(m.text ?? '').toLowerCase();
     if (q.phrase) return lc.includes(q.phrase);
     for (const tok of q.tokens) if (!lc.includes(tok)) return false;
@@ -620,9 +746,14 @@ async function loadNextBatch() {
   const slice = S.candidates.slice(S.cursor, S.cursor + BATCH);
   S.cursor += slice.length;
 
+  // Fetch only the corpora this candidate can actually hit in: a chat-only
+  // candidate never touches transcript.json, and vice versa.
   let batch;
   try {
-    batch = await Promise.allSettled(slice.map(i => hydrate(INDEX.streams[i])));
+    batch = await Promise.allSettled(slice.map(c => Promise.all([
+      c.chat ? hydrateChat(c.smeta) : [],
+      c.tr   ? hydrateTranscript(c.smeta) : [],
+    ]).then(([chatMsgs, trMsgs]) => chatMsgs.concat(trMsgs))));
   } catch (e) {
     batch = [];
   }
@@ -630,13 +761,15 @@ async function loadNextBatch() {
 
   const groupsEl = document.getElementById('groups');
   let batchHits = 0;
-  slice.forEach((idx, k) => {
+  slice.forEach((c, k) => {
     S.scanned++;
     const res = batch[k];
     if (!res || res.status !== 'fulfilled') return;
-    const smeta = INDEX.streams[idx];
+    const smeta = c.smeta;
     const hits = matchMessages(res.value, S.q);
     if (!hits.length) return;
+    // Chronological so transcript lines interleave with the chat around them.
+    hits.sort((a, b) => (a.ts ?? a.offset ?? 0) - (b.ts ?? b.offset ?? 0));
     batchHits += hits.length;
     S.shownStreams++;
     S.shownMsgs += hits.length;
@@ -669,13 +802,15 @@ function renderGroup(smeta, hits, tokens) {
   const title = smeta.title || smeta.id;
   const anchor = `<a href="streams.html#${encodeURIComponent(smeta.id)}" onclick="jumpToStream('${encodeURIComponent(smeta.id).replace(/'/g, "\\'")}', event)">${escHtml(title)}</a>`;
   const rows = hits.map(m => {
-    const plat = m.platform || 'youtube';
-    const platBadge = `<span class="plat-badge ${escHtml(plat)}">${escHtml(plat)}</span>`;
     const link = vodLink(smeta, m.offset, fmtElapsed(m.offset));
+    // A transcript line has no author — just the badge, the text and the deep link.
+    const head = m.kind === 'tr'
+      ? `<span class="plat-badge transcript">transcript</span>`
+      : `<span class="msg-user">${escHtml(m.author)}</span>
+         <span class="plat-badge ${escHtml(m.platform || 'youtube')}">${escHtml(m.platform || 'youtube')}</span>`;
     return `<div class="msg">
       <div class="msg-head">
-        <span class="msg-user">${escHtml(m.author)}</span>
-        ${platBadge}
+        ${head}
       </div>
       <div class="msg-text">${highlight(m.text, tokens)}</div>
       <div class="msg-meta">${link}</div>
@@ -743,14 +878,21 @@ function pauseAutoScan() {
   updateStatus();
 }
 
-// Resolve the stream <input> value (a title, or an id) to a stream id.
+// Resolve the stream <input> value (a title, or an id) to a stream id. A stream can
+// have a transcript but no chat, so fall back to the transcript index when loaded.
 function streamIdFromInput() {
   const v = document.getElementById('stream').value.trim();
   if (!v) return null;
-  const byId = INDEX.streams.find(s => s.id === v);
-  if (byId) return byId.id;
-  const byTitle = INDEX.streams.find(s => (s.title || '') === v);
-  return byTitle ? byTitle.id : v;   // fall through to raw value (matches nothing -> empty)
+  const pools = [INDEX.streams, (TINDEX && TINDEX.streams) || []];
+  for (const pool of pools) {
+    const byId = pool.find(s => s.id === v);
+    if (byId) return byId.id;
+  }
+  for (const pool of pools) {
+    const byTitle = pool.find(s => (s.title || '') === v);
+    if (byTitle) return byTitle.id;
+  }
+  return v;   // fall through to raw value (matches nothing -> empty)
 }
 
 // ── Load the index ───────────────────────────────────────────────────────────
