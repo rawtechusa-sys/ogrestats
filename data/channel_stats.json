@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785914888,
+  "updated_ts": 1786228688,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -831,7 +831,8 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -14942,6 +14943,23 @@
       "avg_viewers": null,
       "avg_chat_mpm": 2.89,
       "avg_active_chatters": 9.76,
+      "percent_paused": null
+    },
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154": {
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "title": "I Was Read The Riot Act. Let's Discuss It. (Nothing Dramatic, Relax LOL)",
+      "start_ts": 1786224023,
+      "end_ts": 1786228457,
+      "duration_sec": 4434,
+      "youtube_archive_id": "5z_CMoOoKSk",
+      "source_platform": "youtube",
+      "total_donations_usd": 135.58,
+      "donation_count": 36,
+      "donations_per_min": 1.8346,
+      "peak_viewers": 370,
+      "avg_viewers": 298.9,
+      "avg_chat_mpm": 15.08,
+      "avg_active_chatters": 32.43,
       "percent_paused": null
     }
   }
