@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1785914860,
+  "updated_ts": 1786228680,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -831,16 +831,17 @@
     "large_freshly_showered_man_streams",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
   ],
   "commands": {
     "men": 3,
     "eric": 152,
-    "phil": 318,
-    "stan": 262,
+    "phil": 324,
+    "stan": 265,
     "masterchief": 111,
-    "harman": 73,
-    "trump": 120,
+    "harman": 74,
+    "trump": 121,
     "moist": 21,
     "dagoth": 3,
     "zesty": 33,
@@ -868,7 +869,7 @@
     "chewbacca": 1,
     "drdisrespect": 2,
     "rich": 30,
-    "hobo": 9,
+    "hobo": 10,
     "ideas": 1,
     "carlos": 1,
     "tate": 7,
@@ -886,7 +887,7 @@
     "phill": 5,
     "warmy": 1,
     "translation": 4,
-    "tomorrow": 33,
+    "tomorrow": 34,
     "show": 1,
     "speech": 1,
     "collection": 1,
@@ -1394,7 +1395,8 @@
     "akward": 1,
     "darkshadowtechusa": 1,
     "w": 2,
-    "dog": 1
+    "dog": 1,
+    "man": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9811,9 +9813,146 @@
       "segments": null,
       "source_vod_id": "0mzrx-YQSYc",
       "source_platform": "youtube"
+    },
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154": {
+      "title": "I Was Read The Riot Act. Let's Discuss It. (Nothing Dramatic, Relax LOL)",
+      "start_ts": 1786224023,
+      "youtube_archive_id": "5z_CMoOoKSk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "5z_CMoOoKSk",
+          "start_ts": 1786224023
+        }
+      ],
+      "source_vod_id": "v6BVuK7fylQ",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1786228227,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Stan: so what happened ? did you, Harman and Eric riot together on the top bunk ? how come you didn't invite me ? he he ! I said come. Oh yeah !",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786227400,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Harman: Your a robust man rich. love me. (kiss)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786227288,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Phil: Rich! How dare you were not watching my robust and meaningful content!! Stan: Don\u2019t worry Phil, I\u2019ll give you something robust and meaningful",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786227180,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Phil: I just finished reading that copy of Boswell's Guide on How to Live with an Enormous Cock I got from the library. What a page turner. I'd let you borrow it but... I'm going to go stare at a wall",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786226940,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Phil: 16 rum and cokes? Switch to gin! (drinking)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786226795,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Old man: Hey Me, i\u2019m you from the future and today from this very day you would be streaming until 1:59am, that extra minute u would fall to the floor",
+      "commands": [
+        "man"
+      ]
+    },
+    {
+      "ts": 1786226514,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Stan: I see Troll McTrollington met the goal baby!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786225859,
+      "username": "@Vito_Scaletta-h6d",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "phil: Listen let chat troubleshoot your PC like me",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786225735,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Hobo: Just woke up from a 16 hour shift and took the day off for today. Seen how Rockstar being stingy with having the 3rd trailer on Netflix and no news for getting a physical collectors edition.",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1786225635,
+      "username": "@ShadowTelevision0",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "phil: make a schedule you big oaf, it can be alot but learn time management, not to sound like an agent but the robust growth is coming back like a gaggle of burly men tearing down the berlin wall.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786224873,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Trump: Rich you can twist my nipples any time you want. I like it. Phil: Donald, in the worlds of Shania Twain, that don\u2019t impress me much.",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786224705,
+      "username": "@Loafin_OG",
+      "platform": "youtube",
+      "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+      "message": "Rich of Tomorrow: Old Habits. Lmao you're good man",
+      "commands": [
+        "tomorrow"
+      ]
+    },
     {
       "ts": 1785912243,
       "username": "@BloodyGB175",
