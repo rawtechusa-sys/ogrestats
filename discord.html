@@ -377,6 +377,9 @@
   .b-seam .seam-err { color: var(--text-muted); font-style: italic; }
 
   .msg {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
     padding: 5px 8px;
     border-radius: 4px;
     scroll-margin-top: 16px;
@@ -387,6 +390,43 @@
     0%   { background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35); }
     100% { background: transparent; }
   }
+
+  /* Author avatar gutter. The size is fixed in CSS on purpose: the box is already
+     its final height before the bytes land, so onMediaLoad measures zero growth and
+     no scroll compensation happens. --border-default-strong is missing from some
+     themes, hence the two-arg fallback (same as .server-icon). */
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-top: 2px;
+    border: 1px solid var(--border-default-strong, var(--border-default));
+  }
+  /* No avatar published for this author (or the image 404'd) -- their initial. */
+  .avatar-ph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10);
+    color: var(--text-muted);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  /* Search-hit variant. .hit-head aligns on the baseline, which an <img> and an
+     inline-flex placeholder answer differently -- center it instead so both sit alike. */
+  .avatar-sm {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 0;
+    align-self: center;
+  }
+  /* min-width: 0 is load-bearing: a flex item defaults to min-width:auto, so one long
+     unbroken word or a wide attachment grid would push the pane sideways. */
+  .msg-body { flex: 1 1 auto; min-width: 0; }
 
   .msg-head {
     display: flex;
@@ -777,6 +817,18 @@ function authorLabel(m) {
   return u ? '@' + u : 'unknown';
 }
 
+// The author's avatar, looked up at RENDER time (like authorLabel/userTitle) so the
+// name-mode toggle and rerenderMessages need no extra wiring. An author with no
+// published avatar -- and, via onMediaError, an image that 404s -- gets a themed
+// circle carrying their initial instead.
+function avatarHtml(m, extra) {
+  const cls = 'avatar' + (extra ? ' ' + extra : '');
+  const initial = ((authorLabel(m).replace(/^@/, '')[0]) || '?').toUpperCase();
+  const url = safeUrl(AVATARS[m.author_id]);
+  if (!url) return `<span class="${cls} avatar-ph">${escHtml(initial)}</span>`;
+  return `<img class="${cls}" src="${escHtml(url)}" alt="" loading="lazy" data-initial="${escHtml(initial)}">`;
+}
+
 // A poll voter's rendered name. Voters carry the same dual-name convention as
 // message authors (`user` only when it differs), just under `name` instead of
 // `author` -- so the Nicknames toggle flips these too, "@" included.
@@ -979,6 +1031,7 @@ const CHAN_BY_ID   = new Map();
 const CHAN_BY_SLUG = new Map();
 let chanIndex = [];                    // [{el, wrap, name, slug, cat}] for the filter
 
+let AVATARS = {};     // avatars.json: author_id -> archive.org URL
 let INDEX   = null;   // search.json  (lazy: first search)
 let AUTHORS = null;   // authors.json (lazy: first search that names an author)
 
@@ -1631,6 +1684,16 @@ function onMediaLoad(e) {
 function onMediaError(e) {
   const img = e.target;
   if (!img || img.tagName !== 'IMG' || !img.closest) return;
+  // A dead avatar URL falls back to the same initial circle an unpublished author gets.
+  // No compensation needed either: the placeholder is the same fixed box as the img, so
+  // the swap changes no height.
+  if (img.classList.contains('avatar')) {
+    const ph = document.createElement('span');
+    ph.className = img.className.replace(/\bavatar\b/, 'avatar avatar-ph');
+    ph.textContent = img.dataset.initial || '?';
+    img.replaceWith(ph);
+    return;
+  }
   const embed = img.closest('.url-embed');
   if (!embed) return;
   // No shrink compensation on purpose: an embed that errored never painted, so it was
@@ -1678,17 +1741,20 @@ function renderMessage(m, byId, tokens) {
     ? `<div class="msg-text">${body.html}</div>`
     : '';
   return `<div class="msg" id="m${escHtml(m.id)}">
-    ${reply}
-    <div class="msg-head">
-      <span class="msg-user"${userTitle(m)}>${escHtml(authorLabel(m))}</span>
-      <span class="msg-time">${escHtml(fmtClock(m.ts))}</span>
-      ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
+    ${avatarHtml(m)}
+    <div class="msg-body">
+      ${reply}
+      <div class="msg-head">
+        <span class="msg-user"${userTitle(m)}>${escHtml(authorLabel(m))}</span>
+        <span class="msg-time">${escHtml(fmtClock(m.ts))}</span>
+        ${m.edited ? '<span class="msg-edited">(edited)</span>' : ''}
+      </div>
+      ${text}
+      ${renderPoll(m.poll)}
+      ${renderUrlEmbeds(body.embeds)}
+      ${renderAttachments(m.attachments)}
+      ${renderReactions(m.reactions)}
     </div>
-    ${text}
-    ${renderPoll(m.poll)}
-    ${renderUrlEmbeds(body.embeds)}
-    ${renderAttachments(m.attachments)}
-    ${renderReactions(m.reactions)}
   </div>`;
 }
 
@@ -2033,6 +2099,7 @@ function renderHitGroup(group, tokens) {
   const label = ch ? `${ch.type === 'thread' ? '↳ ' : '#'}${ch.name}` : `#${group.cid}`;
   const rows = group.msgs.map(m => `<div class="hit">
       <div class="hit-head" style="background:none;border:none;padding:0 0 2px;">
+        ${avatarHtml(m, 'avatar-sm')}
         <span class="msg-user"${userTitle(m)}>${escHtml(authorLabel(m))}</span>
         <span class="hit-meta">${escHtml(fmtStamp(m.ts))}</span>
         <a class="jump-link hit-count" data-jump-c="${escHtml(group.cid)}"
@@ -2254,7 +2321,13 @@ function closeSearch() {
 async function load() {
   const main = document.getElementById('main');
   try {
+    // Avatars ride alongside the manifest, not behind it. The backend deploys on its
+    // own schedule, so a missing/broken avatars.json is a normal state: swallow it and
+    // leave AVATARS empty, which renders placeholder circles everywhere.
+    const avatarsReq = fetchJSON(`${DISCORD_BASE}/avatars.json`).catch(() => null);
     MANIFEST = await fetchJSON(`${DISCORD_BASE}/manifest.json`);
+    const av = await avatarsReq;
+    AVATARS = (av && typeof av.avatars === 'object' && av.avatars) || {};
     CHANNELS = Array.isArray(MANIFEST?.channels) ? MANIFEST.channels : [];
     CHAN_BY_ID.clear(); CHAN_BY_SLUG.clear();
     for (const ch of CHANNELS) {
