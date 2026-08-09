@@ -687,15 +687,17 @@ function timestampCell(smeta, ts) {
 
 // Navigate the shell to the Streams tab focused on a given stream, in the SAME
 // page (links that stay within ogre.watch never open a new tab). Mirrors
-// channelstats.html's jumpToStream: stash the selection, then ask the parent
-// shell to switch tabs (it forwards 'selected-stream' to the streams iframe).
+// channelstats.html's jumpToStream. The stream rides in the navigate slug as the
+// #streams/<slug> sub-hash so the shell updates its own pendingStreamSlug -- a
+// bare 'streams' slug would leave a stale one, and the shell re-posts that into
+// the iframe on load, overriding the sessionStorage stash below.
 function jumpToStream(streamId) {
   if (!streamId) return;
   try { sessionStorage.setItem('selected-stream', streamId); } catch (e) {}
   if (window.parent && window.parent !== window) {
-    try { window.parent.postMessage({ type: 'navigate', slug: 'streams' }, '*'); return; } catch (e) {}
+    try { window.parent.postMessage({ type: 'navigate', slug: 'streams/' + encodeURIComponent(streamId) }, '*'); return; } catch (e) {}
   }
-  window.location.href = 'index.html#streams';
+  window.location.href = 'index.html#streams/' + encodeURIComponent(streamId);
 }
 
 // Navigate the shell to the TTS tab with this donor pre-selected in the donor
@@ -719,7 +721,7 @@ function donationRowHTML(d, streams) {
   // but a plain left-click is intercepted in setupDelegation to navigate the
   // shell in the same page rather than opening a new tab.
   const streamCell = sid
-    ? `<a class="stream-link" href="streams.html#${encodeURIComponent(sid)}" data-sid="${escHtml(sid)}" title="${escHtml(label)}">${escHtml(label)}</a>`
+    ? `<a class="stream-link" href="index.html#streams/${encodeURIComponent(sid)}" data-sid="${escHtml(sid)}" title="${escHtml(label)}">${escHtml(label)}</a>`
     : '—';
   const tsCell = smeta ? timestampCell(smeta, d.ts) : '—';
   const type = d.type || '';

@@ -367,17 +367,19 @@ document.addEventListener('mouseleave', () => {
 });
 
 // ── Jump to a stream ───────────────────────────────────────────────────────────
-// streams.html selects the stream named in sessionStorage['selected-stream'] on
-// load (same-origin, shared within this tab). Embedded in index.html we ask the
-// parent to switch to the Streams tab (which reloads the iframe); opened standalone
-// we navigate to index.html#streams ourselves.
+// Embedded in index.html we ask the parent to switch to the Streams tab (which
+// reloads the iframe); opened standalone we navigate to index.html ourselves.
+// The stream rides in the navigate slug as the #streams/<slug> sub-hash so the
+// shell updates its own pendingStreamSlug -- a bare 'streams' slug would leave a
+// stale one, and the shell re-posts that into the iframe on load, overriding the
+// sessionStorage stash below (which covers the sidebar-not-rendered-yet window).
 function jumpToStream(streamId) {
   if (!streamId) return;
   try { sessionStorage.setItem('selected-stream', streamId); } catch (e) {}
   if (window.parent && window.parent !== window) {
-    try { window.parent.postMessage({ type: 'navigate', slug: 'streams' }, '*'); return; } catch (e) {}
+    try { window.parent.postMessage({ type: 'navigate', slug: 'streams/' + encodeURIComponent(streamId) }, '*'); return; } catch (e) {}
   }
-  window.location.href = 'index.html#streams';
+  window.location.href = 'index.html#streams/' + encodeURIComponent(streamId);
 }
 
 // ── Utilities ──────────────────────────────────────────────────────────────────
