@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786228680,
+  "updated_ts": 1786323885,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -832,16 +832,17 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+    "the_edp445_documentary_watch_party_2026-08-09_210311"
   ],
   "commands": {
     "men": 3,
-    "eric": 152,
-    "phil": 324,
-    "stan": 265,
-    "masterchief": 111,
-    "harman": 74,
-    "trump": 121,
+    "eric": 154,
+    "phil": 331,
+    "stan": 270,
+    "masterchief": 115,
+    "harman": 75,
+    "trump": 123,
     "moist": 21,
     "dagoth": 3,
     "zesty": 33,
@@ -853,8 +854,8 @@
     "guys": 1,
     "chief": 4,
     "glados": 4,
-    "kratos": 14,
-    "doom": 8,
+    "kratos": 16,
+    "doom": 9,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
@@ -880,7 +881,7 @@
     "rage": 1,
     "bill": 2,
     "gnome": 2,
-    "kanye": 1,
+    "kanye": 2,
     "post": 1,
     "tired": 1,
     "specs": 2,
@@ -1396,7 +1397,8 @@
     "darkshadowtechusa": 1,
     "w": 2,
     "dog": 1,
-    "man": 1
+    "man": 1,
+    "prime": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9828,9 +9830,248 @@
       ],
       "source_vod_id": "v6BVuK7fylQ",
       "source_platform": "youtube"
+    },
+    "the_edp445_documentary_watch_party_2026-08-09_210311": {
+      "title": "THE EDP445 DOCUMENTARY WATCH PARTY",
+      "start_ts": 1786308622,
+      "youtube_archive_id": "OnAm2XkDaEE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "OnAm2XkDaEE",
+          "start_ts": 1786308622
+        }
+      ],
+      "source_vod_id": "sONni-e9XTI",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1786322875,
+      "username": "throbbingat37pakamerican",
+      "platform": "twitch",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Cheer50 imagine post-presidency Trump gets caught by Chris Hansen with his adult daughter \u201cSir, have a seat\u2026 private jet + loyalty texts?\u201d Trump: \u201cTremendous family deals! nice tussy. U r Fake news!\"",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786320462,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "phil: here is a recession indicator. a cup of ramen noodles at 711 is $2 (slow_clap)(sm64_hurt)(slow_clap)(sm64_hurt)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786319960,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Eric: you can eat my cupcake anytime Dickers !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786319718,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Stan: where's my cupcake Richie ? Oh Yeah !",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786318767,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Masterchief: i need more alcohol, holy shit",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1786318161,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Phil: He should have asked Boogie for...... advice. One for me and one for my......",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786316667,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Masterchief: men, get your booze ready. strap in and brace yourselves. this is gona get rough. Stan: oh I like it rough and hard daddy! uhhhh yeaaa!",
+      "commands": [
+        "masterchief",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786316574,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Phil: I am formally inviting EDP445 to the level 1 Podcast. I\u2019m gonna make him sit there and wine about my detractors",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786316319,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Stan: Prepare for incoming logs. Ah! Take cover!!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786315381,
+      "username": "@bammersvabamm822",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Phil: Looks like Grace Thorp is in my Dm's . We talk quite a bit. The clip is in the discord. Oh the camera is on?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786315252,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Trump: my mother twited my fucking tipples as part the abuse. I jerked my dad\u2019s dick as well although I must say I kinda enjoyed it.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786314597,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Phil: What the heck? A pig with a party hat!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786314484,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Phil: it's time for men!With an ass! And tipples!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786313638,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Doom: Why do your breasts look depressed. Phil: Yea Richie, we're about to watch the EDP445 video. Stan: It goes down your throat.",
+      "commands": [
+        "doom",
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786313096,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Masterchief: men, the antifart heretics have taken this to far! my flagship has taken a few hits. multiple hull breaches. I am initiating emgency clean state protocol. All ships fire your MEC batteries and fire ALL irradiated into fart missles. Boobs",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1786312416,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Kanye: Like my boy RFK I don\u2019t have a gag reflex",
+      "commands": [
+        "kanye"
+      ]
+    },
+    {
+      "ts": 1786312388,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Stan: I'm a Size Queen. I, like beeg dhix. ,Wup!!!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786311415,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Optimus_prime: And now a word from Bob Lavari. Remember to always, wash your whole. Harman: Hands off that Pikachu! I worked hard poking that out",
+      "commands": [
+        "prime",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786311253,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Kratos: Rich you may disagree with me but PDFs who harm children deserve deletion or lifetime imprisonment and let the other prisoner's deal with them",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1786310538,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Masterchief: men, these are dark times. another civil war has erupted within the galactic empire of men. those that embrace the farts, and those who do not. casualties are high, but the true power of the farts will prevail!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1786310528,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "Eric: I'm the sek-seeist lot-lizard arounnnnnd.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786310477,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "message": "kratos: imagine pattinson doing his Chris hansen lines in his batman voice? what are you?! I'm cute, I'm built good. I AM THE HANSEN:bat:",
+      "commands": [
+        "kratos"
+      ]
+    },
     {
       "ts": 1786228227,
       "username": "@BloodyGB175",
