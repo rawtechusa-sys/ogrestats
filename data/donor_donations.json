@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786228684,
+  "updated_ts": 1786323889,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -832,7 +832,8 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+    "the_edp445_documentary_watch_party_2026-08-09_210311"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9264,6 +9265,21 @@
       ],
       "source_vod_id": "v6BVuK7fylQ",
       "source_platform": "youtube"
+    },
+    "the_edp445_documentary_watch_party_2026-08-09_210311": {
+      "title": "THE EDP445 DOCUMENTARY WATCH PARTY",
+      "start_ts": 1786308622,
+      "youtube_archive_id": "OnAm2XkDaEE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "OnAm2XkDaEE",
+          "start_ts": 1786308622
+        }
+      ],
+      "source_vod_id": "sONni-e9XTI",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -9494,6 +9510,30 @@
       }
     ],
     "mphickman": [
+      {
+        "ts": 1786316777,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Yes, hairy front and back GONE",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316664,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "For some reason my last super wasn\u2019t read",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316494,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Man, I joined at a great time! By the way, I got a Brazilian wax. Honestly, it wasn\u2019t anywhere near as bad as I thought it would be.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785900046,
         "type": "superchat",
@@ -9824,6 +9864,38 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1786319960,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Eric: you can eat my cupcake anytime Dickers !",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786319718,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Stan: where's my cupcake Richie ? Oh Yeah !",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786314647,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "did you see SirStrongman made a video on you ?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786314484,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Phil: it's time for men!With an ass! And tipples!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1786228227,
         "type": "superchat",
@@ -11558,6 +11630,14 @@
       }
     ],
     "ZG49389": [
+      {
+        "ts": 1786311297,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Where\u2019s the wife power bomber known as Wings?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785900644,
         "type": "superchat",
@@ -15167,6 +15247,14 @@
     ],
     "throbbingat37pakamerican": [
       {
+        "ts": 1786322875,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 imagine post-presidency Trump gets caught by Chris Hansen with his adult daughter \u201cSir, have a seat\u2026 private jet + loyalty texts?\u201d Trump: \u201cTremendous family deals! nice tussy. U r Fake news!\"",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786225599,
         "type": "bits",
         "amount_usd": 0.5,
@@ -18533,6 +18621,14 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1786319310,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785908963,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -19240,6 +19336,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1786318767,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: i need more alcohol, holy shit",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316667,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: men, get your booze ready. strap in and brace yourselves. this is gona get rough. Stan: oh I like it rough and hard daddy! uhhhh yeaaa!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786313096,
+        "type": "superchat",
+        "amount_usd": 50.0,
+        "amount_raw": "$50.00",
+        "message": "Masterchief: men, the antifart heretics have taken this to far! my flagship has taken a few hits. multiple hull breaches. I am initiating emgency clean state protocol. All ships fire your MEC batteries and fire ALL irradiated into fart missles. Boobs",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310538,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Masterchief: men, these are dark times. another civil war has erupted within the galactic empire of men. those that embrace the farts, and those who do not. casualties are high, but the true power of the farts will prevail!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785909093,
         "type": "superchat",
@@ -26370,6 +26498,30 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1786323338,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "on a completely diffrent note did you see the gorgeous asian woman Asmondgold had at his house?. man's in his mid 30's and he's making cringe faces",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786321928,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the fact he doesnt realize this doesn't exonerate him mean he's not in the milky way galaxy. he literally came to get something to eat",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786320462,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: here is a recession indicator. a cup of ramen noodles at 711 is $2 (slow_clap)(sm64_hurt)(slow_clap)(sm64_hurt)",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785903729,
         "type": "superchat",
@@ -34909,6 +35061,14 @@
     ],
     "iswordlogici7760": [
       {
+        "ts": 1786321437,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "in a proper society, EDP would be handled out in the street like an animal. in Minecraft, or course",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785914086,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -36925,6 +37085,14 @@
     ],
     "BloodyGB2": [
       {
+        "ts": 1786314804,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785895651,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -38068,6 +38236,14 @@
       }
     ],
     "ShanesWorld25": [
+      {
+        "ts": 1786310339,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "what's up Rich, how are you? You're looking good.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785799013,
         "type": "giftmembership",
@@ -39400,6 +39576,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1786318309,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bro this is boring, can we watch DSP crash out",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786318014,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "So be mad at woman and be fat? Let;s go",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786317801,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Fok EDP why are you a lot Lizard?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786317391,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Sorry but you're boring, you used to be cool",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786317255,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Can we watch DSP, he is more melting on GLP-1",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316940,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Face it you just hate DSP be honest",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316648,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen you are basically Donald Trump, lets go",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785810531,
         "type": "superchat",
@@ -58497,6 +58729,22 @@
     ],
     "karasub2836": [
       {
+        "ts": 1786323585,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "he didnt like it becuase it wasnt a kide",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786309941,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "hey big bird Im here....unleash the birds:hatching_chick::front_facing_baby_chick::bird::penguin::dove::eagle::duck::swan:",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785799864,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -58829,6 +59077,14 @@
     ],
     "ReviewTechAzerbaijan": [
       {
+        "ts": 1786318689,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "You\u2019re about to have a field day with what\u2019s like 5 minutes ahead",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785808144,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -58878,6 +59134,14 @@
       }
     ],
     "75.": [
+      {
+        "ts": 1786311831,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Wings is a personal fitness coach trainer now",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785814165,
         "type": "superchat",
@@ -59501,6 +59765,22 @@
     ],
     "respergu13": [
       {
+        "ts": 1786321460,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 42 months",
+        "message": "EDP is sus",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786312709,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Careful Mr Rich! Several YouTubers including Nick Deorio are making new documentaries about you! They paint you not in a good way! Who is that b b c ?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785815654,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -59542,6 +59822,54 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1786317996,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I assume this is a :red_heart: warming story of a comeback",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316879,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Is this a JKB quality documentary?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316395,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Buttfuckalo cauliflower is good for your shoulders",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786315976,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Semi P\u2026what is that your lot lizard code name?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786313546,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Now he can infiltrate Becky\u2019s house cause he\u2019s covered in fart juice. She\u2019ll never know he\u2019s there",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786312416,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Kanye: Like my boy RFK I don\u2019t have a gag reflex",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785819251,
         "type": "superchat",
@@ -69731,6 +70059,22 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1786318161,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: He should have asked Boogie for...... advice. One for me and one for my......",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786309869,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Going to watch Robert Pattinson play as Chris Hansen when it comes out in theaters?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785808605,
         "type": "membership",
         "amount_usd": 1.99,
@@ -73569,6 +73913,14 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1786309681,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786224464,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -74244,6 +74596,14 @@
       }
     ],
     "evistosf": [
+      {
+        "ts": 1786314763,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 The only thing you and Jay fight over is who gets to top whom when you take the bunk bed apart and push them together for hot loving! rtuRobust rtuBILL",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785813049,
         "type": "bits",
@@ -75018,6 +75378,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1786318103,
+        "type": "superchat",
+        "amount_usd": 1.98,
+        "amount_raw": "CA$2.79",
+        "message": "yo i\u2019m so hyped for that chris hansen movie",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785819486,
         "type": "superchat",
@@ -79143,6 +79511,14 @@
     ],
     "LostInGaming-": [
       {
+        "ts": 1786315192,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Check screenshot I sent you in discord dm",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785464804,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -79794,6 +80170,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1786315252,
+        "type": "superchat",
+        "amount_usd": 6.69,
+        "amount_raw": "\u00a34.99",
+        "message": "Trump: my mother twited my fucking tipples as part the abuse. I jerked my dad\u2019s dick as well although I must say I kinda enjoyed it.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786312617,
+        "type": "superchat",
+        "amount_usd": 6.69,
+        "amount_raw": "\u00a34.99",
+        "message": "You know that movie Cape Fear? Jay wants to do a Max Cady to you according to trolls.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1786224873,
         "type": "superchat",
@@ -86481,6 +86873,30 @@
     ],
     "BoodyChew1999": [
       {
+        "ts": 1786312196,
+        "type": "superchat",
+        "amount_usd": 2.68,
+        "amount_raw": "\u00a32.00",
+        "message": "Daniel Larson is a more pathetic cyrax",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786311253,
+        "type": "superchat",
+        "amount_usd": 6.7,
+        "amount_raw": "\u00a35.00",
+        "message": "Kratos: Rich you may disagree with me but PDFs who harm children deserve deletion or lifetime imprisonment and let the other prisoner's deal with them",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310477,
+        "type": "superchat",
+        "amount_usd": 6.7,
+        "amount_raw": "\u00a35.00",
+        "message": "kratos: imagine pattinson doing his Chris hansen lines in his batman voice? what are you?! I'm cute, I'm built good. I AM THE HANSEN:bat:",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1785444339,
         "type": "superchat",
         "amount_usd": 6.35,
@@ -86772,6 +87188,62 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1786319760,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Edp is a toe curler",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786318591,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Wait they had actual girls textin edp I thought they were jus textin him from alt accounts , btw mutahar likes lol eee",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786314105,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can we get dsp bustin :peanuts: emoji n explain ur tattoo",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786313175,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Do u have any wooden poster clips to put on tipple",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786311370,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I used to get doxxed by wings trolls for donating",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310127,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can we watch the sirstrongman doc,posted 6 hr ago",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786309905,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "U resemble Ian hawke , good to see ya brother",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1786227747,
         "type": "superchat",
@@ -87430,6 +87902,14 @@
       }
     ],
     "Keldoh3ad": [
+      {
+        "ts": 1786313638,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 38 months",
+        "message": "Doom: Why do your breasts look depressed. Phil: Yea Richie, we're about to watch the EDP445 video. Stan: It goes down your throat.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785456071,
         "type": "superchat",
@@ -88719,6 +89199,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1786318948,
+        "type": "superchat",
+        "amount_usd": 4.96,
+        "amount_raw": "CA$6.99",
+        "message": "It\u2019s funny how trump is so insecure about his hair just go bald at that point",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786227772,
         "type": "superchat",
         "amount_usd": 1.98,
@@ -89228,6 +89716,22 @@
       }
     ],
     "octropia": [
+      {
+        "ts": 1786319992,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Still remember the day that happend like it was yesterday and your livestream. You had over like 2k live viewers, that and the election stream were one of your most top viewed",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786318351,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 mfer wasnt even over 22 when he caught EDPedo back during the pandemic, dudes aged like milk. headass looking like hes been through 2 divorces and 5 different kids",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785459094,
         "type": "bits",
@@ -94388,6 +94892,14 @@
       }
     ],
     "alexroberts3613": [
+      {
+        "ts": 1786315278,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1785281343,
         "type": "superchat",
@@ -112823,6 +113335,14 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1786314761,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Just be bunk bed mates with Jay and stream it.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786227624,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -125849,6 +126369,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1786315517,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I beg your finest fucking pardon Boogie? You don't scam the fans? You FAKED having Cancer....",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1784954285,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -132489,6 +133017,22 @@
     ],
     "HaunchoJackHD": [
       {
+        "ts": 1786310283,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I9 32g DDR 4 3080ti",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310098,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Been modding cyberpunk with ultra realistic graphics and the actual gameplay looks like the pre rendered cutscene from 2020. It\u2019s insane",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1784856310,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -133509,6 +134053,14 @@
     ],
     "venomizedmarkus3236": [
       {
+        "ts": 1786316574,
+        "type": "superchat",
+        "amount_usd": 4.96,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: I am formally inviting EDP445 to the level 1 Podcast. I\u2019m gonna make him sit there and wine about my detractors",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786227288,
         "type": "superchat",
         "amount_usd": 4.96,
@@ -133604,6 +134156,14 @@
       }
     ],
     "ITSJFE": [
+      {
+        "ts": 1786309950,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I think its disrespectful to eat a bird in front of a bird...",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784681443,
         "type": "superchat",
@@ -134202,6 +134762,14 @@
       }
     ],
     "Volk_Pack": [
+      {
+        "ts": 1786312215,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Watched that new doc on you. Good call. Waste of time. It's almost like someone made a Chat GPT summary with no real context.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784686832,
         "type": "superchat",
@@ -134804,6 +135372,54 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1786316319,
+        "type": "superchat",
+        "amount_usd": 1.4,
+        "amount_raw": "A$2.00",
+        "message": "Stan: Prepare for incoming logs. Ah! Take cover!!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786314597,
+        "type": "superchat",
+        "amount_usd": 1.4,
+        "amount_raw": "A$2.00",
+        "message": "Phil: What the heck? A pig with a party hat!!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786312388,
+        "type": "superchat",
+        "amount_usd": 1.4,
+        "amount_raw": "A$2.00",
+        "message": "Stan: I'm a Size Queen. I, like beeg dhix. ,Wup!!!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786311415,
+        "type": "superchat",
+        "amount_usd": 3.5,
+        "amount_raw": "A$5.00",
+        "message": "Optimus_prime: And now a word from Bob Lavari. Remember to always, wash your whole. Harman: Hands off that Pikachu! I worked hard poking that out",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310528,
+        "type": "superchat",
+        "amount_usd": 1.4,
+        "amount_raw": "A$2.00",
+        "message": "Eric: I'm the sek-seeist lot-lizard arounnnnnd.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786309741,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Back after DSP-calibre PC problems. Down for weeks, was watching reruns of The Nanny on something called \"network television\". oh Mister Sheffield!!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784590933,
         "type": "superchat",
@@ -135743,6 +136359,14 @@
     ],
     "apks94": [
       {
+        "ts": 1786311747,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1784606560,
         "type": "membership",
         "amount_usd": 1.99,
@@ -135926,6 +136550,14 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1786317163,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "My rule 21 and OVER ONLY can't drink can't date me",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784149318,
         "type": "membership",
@@ -138065,6 +138697,14 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1786316468,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "how crazy you think the doc is going to get?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1784161615,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -138692,6 +139332,14 @@
       }
     ],
     "bammersvabamm822": [
+      {
+        "ts": 1786315381,
+        "type": "superchat",
+        "amount_usd": 3.55,
+        "amount_raw": "CA$5.00",
+        "message": "Phil: Looks like Grace Thorp is in my Dm's . We talk quite a bit. The clip is in the discord. Oh the camera is on?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784150883,
         "type": "membership",
@@ -144660,6 +145308,22 @@
       }
     ],
     "AmberHeardsDung": [
+      {
+        "ts": 1786319248,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "When is the Darriage documentary :popcorn:",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786318386,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I also hate how he makes the victims out to be future preds.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1784155688,
         "type": "superchat",
@@ -150933,6 +151597,14 @@
     ],
     "PodsPlaysGolf": [
       {
+        "ts": 1786310464,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Trump signed an executive order to restrict BRC",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1783570632,
         "type": "membership",
         "amount_usd": 1.99,
@@ -151252,6 +151924,14 @@
       }
     ],
     "HimejoshiNat": [
+      {
+        "ts": 1786314530,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "hiya Rich",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1783394645,
         "type": "sub",
@@ -156484,6 +157164,14 @@
       }
     ],
     "WebTechSimplified": [
+      {
+        "ts": 1786312959,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I am surprised EDP hasn't started a streamer house with himself, Nova and Daniel... maybe he could even get a guest appearance from Dr Disrespect",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1782611797,
         "type": "superchat",
@@ -189641,6 +190329,22 @@
     ],
     "sigmasamiv": [
       {
+        "ts": 1786319657,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He was caught on my 23rd birthday, literally",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786316757,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "This horror movie is going to be scary!",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1739156432,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -221764,6 +222468,14 @@
       }
     ],
     "ROBUST_URBAN_G_McFLY": [
+      {
+        "ts": 1786312676,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Where is my JVC Sir?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
       {
         "ts": 1719274477,
         "type": "superchat",
@@ -362847,6 +363559,14 @@
     ],
     "Mike-Clum": [
       {
+        "ts": 1786314546,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1698981388,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -486619,6 +487339,14 @@
     ],
     "Wally666-p6p": [
       {
+        "ts": 1786322632,
+        "type": "superchat",
+        "amount_usd": 3.5,
+        "amount_raw": "A$5.00",
+        "message": "just clicked on your stream just now and him doing that was the first thing i see",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1653273471,
         "type": "superchat",
         "amount_usd": 3.3,
@@ -524639,6 +525367,22 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1786311152,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Rich, here's the deal. I've been watching you since the split of Pangea (2012) and your biggest attribute is you don't deny when you mess up. You have several times, but you keep trying to be better.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310026,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen, take a seat. I need to get Robert Pattinson to do a cameo of him as Chris Hansen calling you your secret screen name, Dickers, now.",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
         "ts": 1786227180,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -524671,6 +525415,42 @@
         "amount_raw": "Member for 43 months",
         "message": "Yawn Count:20. You should take powerful desi chai",
         "stream_id": "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
+      }
+    ],
+    "colepast": [
+      {
+        "ts": 1786322605,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Lord of Jesus, spread my breath",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786310465,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hey Rich, do you got the popcorn bucket, cupcake? lol",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      },
+      {
+        "ts": 1786309982,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hey Rich, do you think , did the documentary paid?EDP445got paid for this documentary?",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
+      }
+    ],
+    "DamienGuyton": [
+      {
+        "ts": 1786312487,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I heard you lost all the weight for a boxing match with Jay :rolling_on_the_floor_laughing:",
+        "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311"
       }
     ]
   }
