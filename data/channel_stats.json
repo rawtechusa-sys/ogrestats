@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786228688,
+  "updated_ts": 1786323894,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -832,7 +832,8 @@
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
-    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154"
+    "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
+    "the_edp445_documentary_watch_party_2026-08-09_210311"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -14961,6 +14962,23 @@
       "avg_chat_mpm": 15.08,
       "avg_active_chatters": 32.43,
       "percent_paused": null
+    },
+    "the_edp445_documentary_watch_party_2026-08-09_210311": {
+      "stream_id": "the_edp445_documentary_watch_party_2026-08-09_210311",
+      "title": "THE EDP445 DOCUMENTARY WATCH PARTY",
+      "start_ts": 1786308622,
+      "end_ts": 1786323685,
+      "duration_sec": 15063,
+      "youtube_archive_id": "OnAm2XkDaEE",
+      "source_platform": "youtube",
+      "total_donations_usd": 406.12,
+      "donation_count": 95,
+      "donations_per_min": 1.6177,
+      "peak_viewers": 458,
+      "avg_viewers": 149.3,
+      "avg_chat_mpm": 15.34,
+      "avg_active_chatters": 36.27,
+      "percent_paused": 47.9
     }
   }
 }
