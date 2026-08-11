@@ -3,10 +3,11 @@
   "slug": "a_robust_beginning",
   "title": "A Robust Beginning",
   "start_ts": 1786479623,
-  "end_ts": null,
+  "end_ts": 1786486791,
   "platforms": [
-    "youtube",
-    "twitch"
+    "kick",
+    "twitch",
+    "youtube"
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
@@ -17,5 +18,7 @@
       "archive_id": "mBijljduaAc",
       "start_ts": 1786479623
     }
-  ]
+  ],
+  "youtube_archive_id": "mBijljduaAc",
+  "archive_is_source_vod": false
 }
