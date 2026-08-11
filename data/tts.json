@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786323885,
+  "updated_ts": 1786487153,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -833,7 +833,8 @@
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
     "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
-    "the_edp445_documentary_watch_party_2026-08-09_210311"
+    "the_edp445_documentary_watch_party_2026-08-09_210311",
+    "a_robust_beginning_2026-08-11_203204"
   ],
   "commands": {
     "men": 3,
@@ -841,8 +842,8 @@
     "phil": 331,
     "stan": 270,
     "masterchief": 115,
-    "harman": 75,
-    "trump": 123,
+    "harman": 76,
+    "trump": 124,
     "moist": 21,
     "dagoth": 3,
     "zesty": 33,
@@ -855,7 +856,7 @@
     "chief": 4,
     "glados": 4,
     "kratos": 16,
-    "doom": 9,
+    "doom": 10,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
@@ -1046,7 +1047,7 @@
     "rule": 2,
     "devs": 1,
     "unity": 2,
-    "announcement": 2,
+    "announcement": 3,
     "sets": 1,
     "reviewphilosphyusa": 1,
     "states": 2,
@@ -9845,9 +9846,64 @@
       ],
       "source_vod_id": "sONni-e9XTI",
       "source_platform": "youtube"
+    },
+    "a_robust_beginning_2026-08-11_203204": {
+      "title": "A Robust Beginning",
+      "start_ts": 1786479623,
+      "youtube_archive_id": "mBijljduaAc",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "mBijljduaAc",
+          "start_ts": 1786479623
+        }
+      ],
+      "source_vod_id": "tJhCj73pSnY",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1786483982,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_2026-08-11_203204",
+      "message": "doom: I just put goldbond on my taint. feels good",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1786482115,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_2026-08-11_203204",
+      "message": "Harman: It's leg-day, Rich. Ben dover n spred em!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786481162,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_2026-08-11_203204",
+      "message": "Trump: Melatonin baby. I need those pills. Might as well face it I\u2019m addicted to love. And pills.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786481097,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_2026-08-11_203204",
+      "message": "Council of men, I have an announcement: Dating apps are an absolute crap show. Can I get an applause?",
+      "commands": [
+        "announcement"
+      ]
+    },
     {
       "ts": 1786322875,
       "username": "throbbingat37pakamerican",
