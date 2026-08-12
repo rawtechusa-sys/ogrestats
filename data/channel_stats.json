@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786487163,
+  "updated_ts": 1786503953,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -834,7 +834,8 @@
     "the_livestreams_return",
     "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
     "the_edp445_documentary_watch_party_2026-08-09_210311",
-    "a_robust_beginning_2026-08-11_203204"
+    "a_robust_beginning_2026-08-11_203204",
+    "a_robust_beginning_pt2_2026-08-11_222108"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -14997,6 +14998,23 @@
       "avg_chat_mpm": 14.09,
       "avg_active_chatters": 33.5,
       "percent_paused": 57.9
+    },
+    "a_robust_beginning_pt2_2026-08-11_222108": {
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "title": "A Robust Beginning Pt.2",
+      "start_ts": 1786486978,
+      "end_ts": 1786503716,
+      "duration_sec": 16738,
+      "youtube_archive_id": "9JOQkf0QPy4",
+      "source_platform": "youtube",
+      "total_donations_usd": 393.05,
+      "donation_count": 86,
+      "donations_per_min": 1.4089,
+      "peak_viewers": 351,
+      "avg_viewers": 294.47,
+      "avg_chat_mpm": 8.4,
+      "avg_active_chatters": 21.26,
+      "percent_paused": 47.3
     }
   }
 }
