@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786503953,
+  "updated_ts": 1786569171,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -835,7 +835,8 @@
     "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
     "the_edp445_documentary_watch_party_2026-08-09_210311",
     "a_robust_beginning_2026-08-11_203204",
-    "a_robust_beginning_pt2_2026-08-11_222108"
+    "a_robust_beginning_pt2_2026-08-11_222108",
+    "rtustreams_2026-08-12_202156"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15015,6 +15016,23 @@
       "avg_chat_mpm": 8.4,
       "avg_active_chatters": 21.26,
       "percent_paused": 47.3
+    },
+    "rtustreams_2026-08-12_202156": {
+      "stream_id": "rtustreams_2026-08-12_202156",
+      "title": "rtustreams",
+      "start_ts": 1786566116,
+      "end_ts": 1786567190,
+      "duration_sec": 1074,
+      "youtube_archive_id": null,
+      "source_platform": "twitch",
+      "total_donations_usd": 0.0,
+      "donation_count": 0,
+      "donations_per_min": 0.0,
+      "peak_viewers": 32,
+      "avg_viewers": 15.18,
+      "avg_chat_mpm": 2.12,
+      "avg_active_chatters": 4.53,
+      "percent_paused": null
     }
   }
 }
