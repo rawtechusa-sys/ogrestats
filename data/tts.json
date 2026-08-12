@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786487153,
+  "updated_ts": 1786503942,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -834,28 +834,29 @@
     "the_livestreams_return",
     "i_was_read_the_riot_act_lets_discuss_it_nothing_dramatic_relax_lol_2026-08-08_212154",
     "the_edp445_documentary_watch_party_2026-08-09_210311",
-    "a_robust_beginning_2026-08-11_203204"
+    "a_robust_beginning_2026-08-11_203204",
+    "a_robust_beginning_pt2_2026-08-11_222108"
   ],
   "commands": {
     "men": 3,
-    "eric": 154,
-    "phil": 331,
-    "stan": 270,
-    "masterchief": 115,
-    "harman": 76,
-    "trump": 124,
+    "eric": 156,
+    "phil": 338,
+    "stan": 276,
+    "masterchief": 118,
+    "harman": 79,
+    "trump": 125,
     "moist": 21,
     "dagoth": 3,
     "zesty": 33,
-    "linus": 24,
+    "linus": 25,
     "grandpa": 23,
     "girlfriend": 9,
     "twist": 8,
-    "johnny": 4,
+    "johnny": 6,
     "guys": 1,
     "chief": 4,
     "glados": 4,
-    "kratos": 16,
+    "kratos": 18,
     "doom": 10,
     "emoguy": 3,
     "chat": 2,
@@ -1399,7 +1400,8 @@
     "w": 2,
     "dog": 1,
     "man": 1,
-    "prime": 1
+    "prime": 1,
+    "narrator": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9861,9 +9863,263 @@
       ],
       "source_vod_id": "tJhCj73pSnY",
       "source_platform": "youtube"
+    },
+    "a_robust_beginning_pt2_2026-08-11_222108": {
+      "title": "A Robust Beginning Pt.2",
+      "start_ts": 1786486978,
+      "youtube_archive_id": "9JOQkf0QPy4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yAoluWt6Xb0",
+          "start_ts": 1786486978
+        },
+        {
+          "archive_id": "9JOQkf0QPy4",
+          "start_ts": 1786488318
+        }
+      ],
+      "source_vod_id": "NypytH4nYhg",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1786502300,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Stan: there you goes boys. Ladybug ladybug ladybug",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786501854,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Masterchief: men, I farted. Stan: fart on me daddy",
+      "commands": [
+        "masterchief",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786501241,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Johnny: Honestly this entire decade 2020s has been a disaster.",
+      "commands": [
+        "johnny"
+      ]
+    },
+    {
+      "ts": 1786500838,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Linus: Mitch McConnell is a walking corpse.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1786500022,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Johnny: Listen do tai chi like those stupid Ai ads that were popping up last year for me on YouTube and get shredded lets go.",
+      "commands": [
+        "johnny"
+      ]
+    },
+    {
+      "ts": 1786498612,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Narrator: here we see a curious creature performing a mating ritual for a man and his birds. Notice the extravagant hair and colorful clothes to draw his gaze.",
+      "commands": [
+        "narrator"
+      ]
+    },
+    {
+      "ts": 1786496704,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Phil: I wouldn't mind being sent THAT spoon!! Yum!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786496276,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Eric: pfff I slurp and swallow too !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786495302,
+      "username": "@jiggyjoeryan",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Harman: Stroke the peek",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786495211,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Stan: Rich, i want you to stoke the meat, don't saw the meat, YOWIE!! Phil: it's been 10 years since I've seen meat stoking like that. Harman: yummy",
+      "commands": [
+        "stan",
+        "phil",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786495210,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Phil: Stroke the meat on may first. For a burst of flavor, the secret sauce is in the stroke ! Don't forget your hydration elements !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786495159,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Masterchief: first thing i hear when tuning in is stroke the meat what the hell did I walk into Stan: you walked in to stroking my thobbing meat daddy",
+      "commands": [
+        "masterchief",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786494854,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Masterchief: Attention all men! attention all men! a man among men has arrived. I repeat a man among men has arrived! stroke me daddy and fart proudly",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1786494697,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Eric: Can I wear a low top when you have me over for dinner ? I'll look naked above the centerpiece and it'll give you something to look forward to for dessert !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786493807,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Hey man, you been sleeping better? Stan: I'd like to know, when and where. Woooooo boy! Harman: You can borrow my Pikachu, but you may get pregnant.",
+      "commands": [
+        "stan",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786490282,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Phil: Poosay. Poosay. Quickscope poosay., Poosay!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786490094,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "phil: instead of hiring an editor, spend $2000 on wwe champions while going the bathroom for 15 minutes thats what a successful business owner does.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786489282,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Trump: So a lot of people think it was Iran forcing me into a catering truck no i asked the Secret Service to do that for me. I love bologna on my ass",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786489043,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Stan: I clamped my nipple to a door handle and am spamming amazon with dildo orders all day....i cant fuckin wait lets go! Yeahhh!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1786488705,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "name me a better combo the phil and complaining about environmental hazards in boss fight. phil: its bad game design. the (reee)velopers are stupid",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786488126,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Phil: I fell down af hucking hic-holl! Ack Ack!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786488043,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Kratos: I'd play these games but have no patience",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1786487790,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "a_robust_beginning_pt2_2026-08-11_222108",
+      "message": "Kratos: rich, you left your bird corn browser open",
+      "commands": [
+        "kratos"
+      ]
+    },
     {
       "ts": 1786483982,
       "username": "@Keldoh3ad",
