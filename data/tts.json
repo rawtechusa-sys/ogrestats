@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786569160,
+  "updated_ts": 1786590364,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -836,20 +836,21 @@
     "the_edp445_documentary_watch_party_2026-08-09_210311",
     "a_robust_beginning_2026-08-11_203204",
     "a_robust_beginning_pt2_2026-08-11_222108",
-    "rtustreams_2026-08-12_202156"
+    "rtustreams_2026-08-12_202156",
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
   ],
   "commands": {
     "men": 3,
-    "eric": 156,
-    "phil": 338,
+    "eric": 158,
+    "phil": 343,
     "stan": 276,
     "masterchief": 118,
-    "harman": 79,
-    "trump": 125,
-    "moist": 21,
+    "harman": 83,
+    "trump": 127,
+    "moist": 22,
     "dagoth": 3,
     "zesty": 33,
-    "linus": 25,
+    "linus": 29,
     "grandpa": 23,
     "girlfriend": 9,
     "twist": 8,
@@ -858,14 +859,14 @@
     "chief": 4,
     "glados": 4,
     "kratos": 18,
-    "doom": 10,
+    "doom": 11,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 37,
+    "dsp": 38,
     "something": 3,
     "witch": 3,
     "agreement": 1,
@@ -1402,7 +1403,8 @@
     "dog": 1,
     "man": 1,
     "prime": 1,
-    "narrator": 1
+    "narrator": 1,
+    "uploaded": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9893,9 +9895,216 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957": {
+      "title": "Understanding Men LIVE (Feat. Bob Lavari)",
+      "start_ts": 1786567207,
+      "youtube_archive_id": "i6IgKv7-AZQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "i6IgKv7-AZQ",
+          "start_ts": 1786567207
+        }
+      ],
+      "source_vod_id": "OrjnikNLzak",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1786587951,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Linus: I remember my teachers had mini cassette tapes to play music when I was a kid. I think I had a tape that had rock the dragon from DBZ on it.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1786587634,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Phil: Rich, stroke the Urban Garlic flavored meat!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786587230,
+      "username": "@Colin1994-v1v",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "How much to do a PS3 marathon stream and Trump: Nintendo wiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii stream hehe OH!!!!!!!!!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786583987,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Linus: God i remember when my brother had a Ipod when they were just little music players like mp3s.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1786583895,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Trump: Yes well....Men exist so, sorry i cant.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1786582910,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Harman: Phil, you\u2019re a man ! Phil: heck yeah I am ! Eric: I like men. Stan : Me too ! Mmmm ! Oh Yeah !",
+      "commands": [
+        "harman",
+        "phil",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786581982,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Linus: I'll never forget that this man stupidly didn't know how to crouch jump in the Black Mesa game and said he spent 20 minutes on it.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1786581906,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "DSP: Guys, I hate having to do this, it ruins the game. just support early on during the pahdcast so we can just enjoy the games\u2026 Guys, what happened? we got no contributions since the morning show.",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1786581357,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Moist: this is the same man that rage quitted Kirby.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1786580750,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Phil: listen I'm a man that won 4th place in street fighter at EVO in 2005 and will always brag about it till im 60. I deserve support. (daddy_chill)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786575414,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Phil: whatever you have, whatever your niche, i'll help you exercise it ! it's all about proper support ! So support this damn stream right now !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786575071,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Eric: these look like robust men.I'd love to meet them in the ring. wanna join us Rich?I'll provide the oil and later we can relax on the top bunk!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1786571232,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Harman: Pikachu came in my hair for a change",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786570767,
+      "username": "@75.",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Mike Clum Uploaded: The Downfall of ReviewTechUSA (A Tragic Tale). 3 hours and 35 minutes.",
+      "commands": [
+        "uploaded"
+      ]
+    },
+    {
+      "ts": 1786569172,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "doom: I was 296 lbs in Feb, today I'm 215.",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1786568672,
+      "username": "@itsseanmccarthy",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Phil: You know, Rich, Boswell's Guide on How to Live with an Enormous Cock changed my life. My Farmer's Only streams are doing great. Giddyup, cowboy.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1786568307,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Linus: Did you see willymacshows recent video on Andrew Tate? Andrew was with a 15 year old girl and trump is not doing anything to save him.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1786568221,
+      "username": "@itsseanmccarthy",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Harman: Want to see Pikachu dance? Look, no hands.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1786567979,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "message": "Harman: Men.",
+      "commands": [
+        "harman"
+      ]
+    },
     {
       "ts": 1786502300,
       "username": "@PhilsLostDoorDashShrimp",
