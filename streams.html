@@ -1119,6 +1119,19 @@ async function loadStream(streamId) {
     const totalUSD  = donations.reduce((s, d) => s + (d.amount_usd || 0), 0);
     const donCount  = donations.length;
 
+    // Donation events carry the source platform they were collected from. Sum
+    // per platform with the same null coercion as the total so the breakdown
+    // reconciles; anything outside the known set counts only toward the total.
+    const donPlatformKeys = ['youtube', 'twitch', 'kick'];
+    const donUSDBy   = { youtube: 0, twitch: 0, kick: 0 };
+    const donCountBy = { youtube: 0, twitch: 0, kick: 0 };
+    for (const d of donations) {
+      if (!donPlatformKeys.includes(d.platform)) continue;
+      donUSDBy[d.platform] += (d.amount_usd || 0);
+      donCountBy[d.platform] += 1;
+    }
+    const donPlatforms = donPlatformKeys.filter(p => donCountBy[p] > 0);
+
     const platforms = meta.platforms || [];
     const hasYT = platforms.includes('youtube');
     const hasTW = platforms.includes('twitch');
@@ -1142,11 +1155,12 @@ async function loadStream(streamId) {
     const grid = document.createElement('div');
     grid.className = 'stat-grid';
 
-    function card(label, value, sub) {
+    function card(label, value, sub, sub2) {
       return `<div class="stat-card">
         <span class="stat-label">${label}</span>
         <span class="stat-value">${value}</span>
         ${sub ? `<span class="stat-sub">${sub}</span>` : ''}
+        ${sub2 ? `<span class="stat-sub">${sub2}</span>` : ''}
       </div>`;
     }
 
@@ -1159,6 +1173,13 @@ async function loadStream(streamId) {
       return present.map(p => `${p.tag} ${p.value.toLocaleString()}`).join(' · ');
     }
 
+    // Currency variant of platformSub, same gating and separator.
+    function platformSubUSD(parts) {
+      const present = parts.filter(p => p.has);
+      if (present.length < 2) return '';
+      return present.map(p => `${p.tag} $${p.value.toFixed(2)}`).join(' · ');
+    }
+
     let cards = '';
     cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
     cards += card('Peak Viewers',
@@ -1168,7 +1189,12 @@ async function loadStream(streamId) {
         { tag: 'TW',   value: peakTW,   has: hasTWViewers },
         { tag: 'Kick', value: peakKick, has: hasKickViewers },
       ]));
-    cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`);
+    cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`,
+      platformSubUSD([
+        { tag: 'YT',   value: donUSDBy.youtube, has: donCountBy.youtube > 0 },
+        { tag: 'TW',   value: donUSDBy.twitch,  has: donCountBy.twitch  > 0 },
+        { tag: 'Kick', value: donUSDBy.kick,    has: donCountBy.kick    > 0 },
+      ]));
     cards += card('Hourly Wage',
       duration ? '$' + (totalUSD / (duration / 3600)).toFixed(2) : '—', 'per hour');
 
@@ -1336,8 +1362,8 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
-      buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat);
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms);
+      buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms);
     }
 
     // ── Contributor & type breakdown pies ──
@@ -1502,6 +1528,9 @@ const DS = {
   KICK_VIEWERS:     'Kick Viewers',
   TOTAL_VIEWERS:    'Total Viewers',
   DONATIONS:        'Donations',
+  DON_YT:           'Donations (YT)',
+  DON_TW:           'Donations (TW)',
+  DON_KICK:         'Donations (Kick)',
   YT_CHAT:          'YouTube Chat',
   TW_CHAT:          'Twitch Chat',
   KICK_CHAT:        'Kick Chat',
@@ -1515,11 +1544,19 @@ const DS = {
 // Canonical ordering for tooltip rows -- mirrors the legend grouping in
 // buildLegend (Donations | Viewers | Active Chatters | Msg/Min, Total first).
 const LEGEND_ORDER = [
-  DS.DONATIONS,
+  DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK,
   DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS,
   DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS,
   DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT,
 ];
+
+// Per-platform cumulative donation lines: dataset label, line colour and legend
+// text for each donation platform.
+const DON_PLATFORM_META = {
+  youtube: { ds: DS.DON_YT,   color: '#e84040', legend: 'YouTube' },
+  twitch:  { ds: DS.DON_TW,   color: '#6650d8', legend: 'Twitch'  },
+  kick:    { ds: DS.DON_KICK, color: '#53fc18', legend: 'Kick'    },
+};
 
 // Tooltip keys: Chart.js can't dash its built-in line glyph, but pointStyle
 // accepts a canvas (drawPoint renders it verbatim). So we draw a small line
@@ -1556,7 +1593,7 @@ function syncAxisDisplay() {
   const axisMap = {
     yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS],
     yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
-    yDonations:      [DS.DONATIONS],
+    yDonations:      [DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK],
     yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT],
   };
   for (const [axisId, labels] of Object.entries(axisMap)) {
@@ -2006,7 +2043,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
   return chart;
 }
 
-function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
@@ -2050,6 +2087,13 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   // sparse donation bar from hijacking the nearest-index lookup. Per-donation
   // detail is preserved in the donation log table below.
   const donationByIndex = new Array(snapshotData.length).fill(0);
+  // Per-platform buckets ride along on the same nearest-index search, and only
+  // when 2+ platforms have donations -- a lone platform's line duplicates the
+  // total, mirroring the Total Viewers / Total Msg-Min gating.
+  const splitPlatforms = donPlatforms.length >= 2 ? donPlatforms : [];
+  const donationByPlatformIndex = new Map(
+    splitPlatforms.map(p => [p, new Array(snapshotData.length).fill(0)])
+  );
   if (snapshotData.length > 0) {
     for (const d of donations) {
       const dx = d.ts * 1000;
@@ -2060,6 +2104,8 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         else if (dist > best) break;  // x is sorted ascending; distance is convex
       }
       donationByIndex[nearest] += (d.amount_usd || 0);
+      const platformBucket = donationByPlatformIndex.get(d.platform);
+      if (platformBucket) platformBucket[nearest] += (d.amount_usd || 0);
     }
   }
   // Running total across the snapshot grid: the donation line is the cumulative
@@ -2072,6 +2118,16 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       running += donationByIndex[i];
       donationCumByIndex[i] = running;
     }
+  }
+  const donationCumByPlatform = new Map();
+  for (const [p, bucket] of donationByPlatformIndex) {
+    const cum = new Array(snapshotData.length).fill(0);
+    let running = 0;
+    for (let i = 0; i < snapshotData.length; i++) {
+      running += bucket[i];
+      cum[i] = running;
+    }
+    donationCumByPlatform.set(p, cum);
   }
   const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
@@ -2273,6 +2329,28 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
       fill: true,
       yAxisID: 'yDonations',
     });
+
+    for (const p of splitPlatforms) {
+      const meta = DON_PLATFORM_META[p];
+      const cum = donationCumByPlatform.get(p);
+      datasets.push({
+        label: meta.ds,
+        hidden: hiddenDatasets.has(meta.ds),
+        data: snapshotData.map((s, i) => ({
+          x: s.x,
+          y: cum[i],
+        })),
+        type: 'line',
+        borderColor: meta.color,
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0,
+        stepped: 'after',
+        fill: false,
+        yAxisID: 'yDonations',
+      });
+    }
   }
 
   // ── Chat rate series ──
@@ -2428,6 +2506,9 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
               if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
                 case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
+                case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
+                case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
+                case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
                 case DS.KICK_CHAT:          return ` Kick chat: ${y.toFixed(1)} mpm`;
@@ -2517,7 +2598,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         yDonations: {
           type: 'linear',
           position: 'right',
-          display: axisHasVisibleDs([DS.DONATIONS]),
+          display: axisHasVisibleDs([DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK]),
           bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
@@ -2780,7 +2861,7 @@ function setupScrollbar() {
 }
 
 // ── Interactive legend ─────────────────────────────────────────────────────────
-function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat) {
+function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms) {
   const container = document.getElementById('chartLegend');
   if (!container || !currentChart) return;
 
@@ -2792,8 +2873,17 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   const groups = [];
 
   const gDonations = [];
-  if (hasDonations) gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
-  groups.push({ title: null, items: gDonations });
+  const splitDonations = hasDonations && donPlatforms.length >= 2;
+  if (splitDonations) {
+    gDonations.push({ label: 'Total', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
+    for (const p of donPlatforms) {
+      const meta = DON_PLATFORM_META[p];
+      gDonations.push({ label: meta.legend, type: 'dashed', color: meta.color, ds: meta.ds });
+    }
+  } else if (hasDonations) {
+    gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
+  }
+  groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
 
   const gViewers = [];
   if ([hasYTViewers, hasTWViewers, hasKickViewers].filter(Boolean).length >= 2)
