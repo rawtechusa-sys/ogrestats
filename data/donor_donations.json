@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786569164,
+  "updated_ts": 1786590368,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -836,7 +836,8 @@
     "the_edp445_documentary_watch_party_2026-08-09_210311",
     "a_robust_beginning_2026-08-11_203204",
     "a_robust_beginning_pt2_2026-08-11_222108",
-    "rtustreams_2026-08-12_202156"
+    "rtustreams_2026-08-12_202156",
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9327,6 +9328,21 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957": {
+      "title": "Understanding Men LIVE (Feat. Bob Lavari)",
+      "start_ts": 1786567207,
+      "youtube_archive_id": "i6IgKv7-AZQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "i6IgKv7-AZQ",
+          "start_ts": 1786567207
+        }
+      ],
+      "source_vod_id": "OrjnikNLzak",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -9935,6 +9951,38 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1786582910,
+        "type": "superchat",
+        "amount_usd": 4.96,
+        "amount_raw": "CA$6.99",
+        "message": "Harman: Phil, you\u2019re a man ! Phil: heck yeah I am ! Eric: I like men. Stan : Me too ! Mmmm ! Oh Yeah !",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786575414,
+        "type": "superchat",
+        "amount_usd": 3.55,
+        "amount_raw": "CA$5.00",
+        "message": "Phil: whatever you have, whatever your niche, i'll help you exercise it ! it's all about proper support ! So support this damn stream right now !",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786575071,
+        "type": "superchat",
+        "amount_usd": 3.55,
+        "amount_raw": "CA$5.00",
+        "message": "Eric: these look like robust men.I'd love to meet them in the ring. wanna join us Rich?I'll provide the oil and later we can relax on the top bunk!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786571232,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Harman: Pikachu came in my hair for a change",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786498612,
         "type": "superchat",
@@ -11595,6 +11643,22 @@
       }
     ],
     "djjailbreak": [
+      {
+        "ts": 1786577214,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "12gb of ram in the pixel 11 pro $100 more in price yeah we're cooked",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786576979,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the made by Google live stream is a joke right now tell me AI has crippled your phone's hardware without telling me",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1785900616,
         "type": "membership",
@@ -14939,6 +15003,14 @@
       }
     ],
     "kaynewoolley9104": [
+      {
+        "ts": 1786581349,
+        "type": "superchat",
+        "amount_usd": 5.3,
+        "amount_raw": "NZ$8.99",
+        "message": "He said that he cant play games forever, hes getting older, arthritis, would want to transition to commentary eventually. Seemed to go under the radar",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786228109,
         "type": "superchat",
@@ -18852,6 +18924,14 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1786579480,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786482435,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -21711,6 +21791,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1786581650,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dammit. I missed Harman's top 10 Castlevania games",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786493807,
         "type": "superchat",
@@ -26769,6 +26857,30 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1786583940,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "going grocery shopping while listening to either one of your streams or just good old music. I get to take my time and see what what the have in stock. it's genuinely relaxing and stress reducing.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786583067,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen, it may be that autistic dog in me, but if I had the money, I would totally spend 4 hours grocery shopping. its kind of relaxing in a weird way",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786582897,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 57 months",
+        "message": "robust (slow_clap) urban (slow_clap) garlic flavor",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786502807,
         "type": "superchat",
@@ -35452,6 +35564,14 @@
     ],
     "iswordlogici7760": [
       {
+        "ts": 1786584222,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 48 months",
+        "message": "sorry, Rich. had to drop a massive log. what did i miss? also, birds",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786482346,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -37083,6 +37203,14 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1786580212,
+        "type": "superchat",
+        "amount_usd": 2.68,
+        "amount_raw": "\u00a32.00",
+        "message": "Whats ur cell? I want to send pictures of my shit.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786481365,
         "type": "superchat",
@@ -54420,6 +54548,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1786581611,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "You should play RV There Yet with members onstream",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1785799368,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -59606,6 +59742,14 @@
     ],
     "75.": [
       {
+        "ts": 1786570767,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Mike Clum Uploaded: The Downfall of ReviewTechUSA (A Tragic Tale). 3 hours and 35 minutes.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786311831,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -59799,6 +59943,22 @@
       }
     ],
     "nevablowingbubbles1337": [
+      {
+        "ts": 1786582979,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Listen, you secretly have a tally sheet of all of your supporters. And you know you want to do the rollcall and statistical analysis on those who have not donated much to not donating at all. Spank me.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786581308,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Funny how DSP claims he never used \"autistic\" as an insult, yet PigPigGo directs to quotes like \"mouth drooling autistic\" to \"mentally autistic people\". Don't grow as a person, Philip Paul Burnell.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1785815144,
         "type": "bits",
@@ -60236,6 +60396,14 @@
     ],
     "respergu13": [
       {
+        "ts": 1786568841,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich! Let's embrace the drama content!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786321460,
         "type": "membership",
         "amount_usd": 1.99,
@@ -60293,6 +60461,46 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1786587880,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Im more glad T&E\u2019s Xmas Deevee is gone than DVDs",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786587355,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "MicroSOFT could only afford Hacksaw Jim Duggan for that Windows 98 reveal/event.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786583757,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Fake tips. Fake laughs. Phill\u2019s life is a series of gaffes. No shit. Just how. Phill is the ultimate Lolcow.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786579996,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I leave massive turds unflushed. Thats my security",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786578896,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Remember people bumping car speakers in Best Buy?:cat_with_tears_of_joy:",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786317996,
         "type": "superchat",
@@ -60793,6 +61001,62 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1786587951,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: I remember my teachers had mini cassette tapes to play music when I was a kid. I think I had a tape that had rock the dragon from DBZ on it.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786583987,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: God i remember when my brother had a Ipod when they were just little music players like mp3s.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786581982,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: I'll never forget that this man stupidly didn't know how to crouch jump in the Black Mesa game and said he spent 20 minutes on it.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786581357,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: this is the same man that rage quitted Kirby.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786580750,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: listen I'm a man that won 4th place in street fighter at EVO in 2005 and will always brag about it till im 60. I deserve support. (daddy_chill)",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568307,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: Did you see willymacshows recent video on Andrew Tate? Andrew was with a 15 year old girl and trump is not doing anything to save him.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786567979,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Men.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786501241,
         "type": "superchat",
@@ -62208,6 +62472,14 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1786581906,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "DSP: Guys, I hate having to do this, it ruins the game. just support early on during the pahdcast so we can just enjoy the games\u2026 Guys, what happened? we got no contributions since the morning show.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786500586,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -62699,6 +62971,46 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1786585112,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "This is the weirdest ASMR ever .....",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786583895,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: Yes well....Men exist so, sorry i cant.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786580031,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "1 800 54 giant",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786576695,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what's funny is that Ozzy song they're playing is not satanic in the slightest..... it's actually a guy crying for help. Rest in peace to the ozz man.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568836,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "spray tan the hair around your nipples. let's go",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786498141,
         "type": "superchat",
@@ -70983,6 +71295,14 @@
       }
     ],
     "jiggyjoeryan": [
+      {
+        "ts": 1786566737,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "just came from the ER-brutal kidney stone- not fun",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786495302,
         "type": "superchat",
@@ -79964,6 +80284,38 @@
     ],
     "Jayhooft": [
       {
+        "ts": 1786580852,
+        "type": "superchat",
+        "amount_usd": 1.98,
+        "amount_raw": "CA$2.79",
+        "message": "What time will you be at the lot tomorrow night?",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786567606,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "by the way, you're fired and rehired.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786567547,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Listen, make a video about us 3 years later.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786567483,
+        "type": "superchat",
+        "amount_usd": 1.42,
+        "amount_raw": "CA$2.00",
+        "message": "Listen, have the pug come into my ass",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1785444027,
         "type": "superchat",
         "amount_usd": 2.04,
@@ -87438,6 +87790,22 @@
     ],
     "Marzrep": [
       {
+        "ts": 1786583143,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "He's reached a level of success that us mortals can't understand.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786566869,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Apparently jidion put out a response about the doc",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786501251,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -87819,6 +88187,30 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1786570687,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mike is what idubbz wanted to be as a doc creater",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568723,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Kino casino beeen on a angry joes ass lately",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568234,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Tryin to get dsp tipples out stream isit possible?",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786484164,
         "type": "superchat",
@@ -88558,6 +88950,14 @@
     ],
     "Keldoh3ad": [
       {
+        "ts": 1786569172,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "doom: I was 296 lbs in Feb, today I'm 215.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786483982,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -88711,6 +89111,22 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1786575036,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786574055,
+        "type": "superchat",
+        "amount_usd": 1.4,
+        "amount_raw": "A$2.00",
+        "message": "Eat the whole burger then tell us you hated it.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786488866,
         "type": "membership",
@@ -89886,6 +90302,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1786578969,
+        "type": "superchat",
+        "amount_usd": 1.98,
+        "amount_raw": "CA$2.79",
+        "message": "In Canada we used to have Future Shop",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786491039,
         "type": "superchat",
         "amount_usd": 4.96,
@@ -90031,6 +90455,14 @@
       }
     ],
     "Colin1994-v1v": [
+      {
+        "ts": 1786587230,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "How much to do a PS3 marathon stream and Trump: Nintendo wiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii stream hehe OH!!!!!!!!!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786227591,
         "type": "superchat",
@@ -90419,6 +90851,14 @@
       }
     ],
     "octropia": [
+      {
+        "ts": 1786581246,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 We gonna check out jidions response video later? He responded to the EDP doc not putting him in a good light",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786496645,
         "type": "bits",
@@ -91211,6 +91651,14 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1786581984,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": ":sweat_droplets:",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786499240,
         "type": "superchat",
@@ -94561,6 +95009,14 @@
       }
     ],
     "TheTenoray": [
+      {
+        "ts": 1786572764,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "We should normalize smelling our tech especially used. We need to assess just how sweaty the previous owner was. Also Steam Deck fumes got me like :woozy_face:",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786495659,
         "type": "superchat",
@@ -97962,6 +98418,14 @@
     ],
     "SventheArcticFox": [
       {
+        "ts": 1786574766,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "This whole generation was poisoned by leaded gas.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1785285966,
         "type": "membership",
         "amount_usd": 1.99,
@@ -98253,6 +98717,14 @@
       }
     ],
     "DBZking119": [
+      {
+        "ts": 1786570382,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 49 months",
+        "message": "Listen, a customer flat out shat themselves at my teller window today, full on runny diarrhea, we had to close the branch and have it decontaminated",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1785290822,
         "type": "superchat",
@@ -113002,6 +113474,30 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1786583969,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "looked it up clean up.noise reduction sharp gradient processing that clean up jagged edges ai processors and up scaling does a better job with 720p and 1080p image to fit 4k TV better then older TVs",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786583232,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "wow! wow! god of war 2 on PS 3 is amazing HDMI 2.1 most check out chef kiss on my hisense tv gaming TV same one u have",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786578081,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "this reminds me of u can not do that on television TV show",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1785295214,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -116442,6 +116938,14 @@
     ],
     "Brenden.Sutton": [
       {
+        "ts": 1786569903,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Just joined, hi friends! College term starts Monday & I have to say thank you to the bird father for late night bangers. If you know you know!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786500684,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -118744,6 +119248,22 @@
     ],
     "itsseanmccarthy": [
       {
+        "ts": 1786568672,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: You know, Rich, Boswell's Guide on How to Live with an Enormous Cock changed my life. My Farmer's Only streams are doing great. Giddyup, cowboy.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568221,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "Harman: Want to see Pikachu dance? Look, no hands.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1785201088,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -120517,6 +121037,22 @@
       }
     ],
     "strangeplains2466": [
+      {
+        "ts": 1786579343,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I drive a Mitsubishi 3000gt and it\u2019s really sad what Mitsubishi has become in the US. They barely have any new models still selling here.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786578888,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "My aunt has that same model Toyota Solara. Thing has like over 500k miles and she\u2019s refuses to trade it in for a new car. 2000s Toyota was the best.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1785202697,
         "type": "superchat",
@@ -127184,6 +127720,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1786574538,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Needs more Yo-Yo dancing",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786498227,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -127241,6 +127785,14 @@
       }
     ],
     "Sphericalman01": [
+      {
+        "ts": 1786587634,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Rich, stroke the Urban Garlic flavored meat!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786496704,
         "type": "superchat",
@@ -128709,6 +129261,14 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1786576135,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I thought it said doggy",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786227379,
         "type": "superchat",
@@ -134584,6 +135144,14 @@
     ],
     "JeremysBlackWalMartBouncer": [
       {
+        "ts": 1786588682,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "8G PS2 memory cards was massive storage back then.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1784860151,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -134651,6 +135219,14 @@
       }
     ],
     "zachbischoff1853": [
+      {
+        "ts": 1786578096,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1784868074,
         "type": "membership",
@@ -140186,6 +140762,14 @@
     ],
     "PutoPlatano": [
       {
+        "ts": 1786584196,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 48 months",
+        "message": "It's wild to know that in 15-20 years Phill will still be doing the same beg and shame routine to a whole new generation. :chicken::rooster::hatching_chick::duck::swan::dove::dodo::flamingo::penguin::owl::turkey::eagle::bird:",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1784150878,
         "type": "membership",
         "amount_usd": 1.99,
@@ -141885,6 +142469,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1786585605,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I think he started to fall off after his \u201crecovery\u201d album",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786226795,
         "type": "superchat",
@@ -146227,6 +146819,22 @@
       }
     ],
     "AmberHeardsDung": [
+      {
+        "ts": 1786589124,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I don\u2019t care what your thoughts are on physical media, you\u2019ll never get the feeling of opening up a game like you did back then.",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786568197,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Rich what did you think about trumps can of soda remark about the vaccination\u2019s? There\u2019s zero scientific backing to this, we just have more awareness",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1786319248,
         "type": "superchat",
@@ -156328,6 +156936,14 @@
     ],
     "KweefHuffer": [
       {
+        "ts": 1786568444,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1782749575,
         "type": "sub",
         "amount_usd": 5.99,
@@ -163333,6 +163949,14 @@
       }
     ],
     "bonedragon7665": [
+      {
+        "ts": 1786585505,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "he doesn't know which whole",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1781752449,
         "type": "superchat",
@@ -182247,6 +182871,22 @@
       }
     ],
     "JacobstanfordOCD": [
+      {
+        "ts": 1786567429,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "hey rich. how hot is it there. it's currently 110 to 115 where I live and I do hvac for a living so my office stays at a cool crisp 120 to 140 degrees",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
+        "ts": 1786567216,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
       {
         "ts": 1739512846,
         "type": "superchat",
@@ -526566,12 +527206,50 @@
     ],
     "PakAmericanPiousKnight": [
       {
+        "ts": 1786582410,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what up Rich and chatters. just got off my birthday evening. just took a hard dump. and now am here for politics. Trump:Rich,did I mention fuk Israel?",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      },
+      {
         "ts": 1786501843,
         "type": "superchat",
         "amount_usd": 5.0,
         "amount_raw": "$5.00",
         "message": "Peggy Flanagan is 5% leading Minnesota Senate primary! Defeating pro-AIPAC Angie Craig. Proof progressives beat dark money.check out Primetime trailer",
         "stream_id": "a_robust_beginning_pt2_2026-08-11_222108"
+      }
+    ],
+    "TamAlavad": [
+      {
+        "ts": 1786566719,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "Positive news-- my wife is halfway through her cancer treatment. Hysterectomy surgery was a success and Ill be picking her up from the hospital soon",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      }
+    ],
+    "twhalley": [
+      {
+        "ts": 1786568557,
+        "type": "superchat",
+        "amount_usd": 2.68,
+        "amount_raw": "\u00a32.00",
+        "message": "Just come back from the casino, I love a RTU live!",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+      }
+    ],
+    "RalphPootawn-e8r": [
+      {
+        "ts": 1786582480,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "Strooke the meet",
+        "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
       }
     ]
   }
