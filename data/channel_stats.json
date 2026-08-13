@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786569171,
+  "updated_ts": 1786590374,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -836,7 +836,8 @@
     "the_edp445_documentary_watch_party_2026-08-09_210311",
     "a_robust_beginning_2026-08-11_203204",
     "a_robust_beginning_pt2_2026-08-11_222108",
-    "rtustreams_2026-08-12_202156"
+    "rtustreams_2026-08-12_202156",
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15032,6 +15033,23 @@
       "avg_viewers": 15.18,
       "avg_chat_mpm": 2.12,
       "avg_active_chatters": 4.53,
+      "percent_paused": null
+    },
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957": {
+      "stream_id": "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+      "title": "Understanding Men LIVE (Feat. Bob Lavari)",
+      "start_ts": 1786567207,
+      "end_ts": 1786590139,
+      "duration_sec": 22932,
+      "youtube_archive_id": "i6IgKv7-AZQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 379.45,
+      "donation_count": 82,
+      "donations_per_min": 0.9928,
+      "peak_viewers": 377,
+      "avg_viewers": 300.36,
+      "avg_chat_mpm": 9.75,
+      "avg_active_chatters": 23.46,
       "percent_paused": null
     }
   }
