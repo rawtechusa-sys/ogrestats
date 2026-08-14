@@ -746,6 +746,11 @@ async function runSearch() {
     platforms: new Set([...document.querySelectorAll('.platform-checks input:checked')].map(c => c.value)),
     sources: new Set([...document.querySelectorAll('.source-checks input:checked')].map(c => c.value)),
   };
+  // Snapshot the form HERE, alongside `q` — not after the awaits below. A text edit
+  // while an index downloads does not bump GEN, so a late serialize would record a
+  // query this run never executed: the pane would show the old results undimmed and
+  // the hash would publish a search that never happened.
+  const ranAs = serializeSearch();
 
   if (!q.sources.size) {
     results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
@@ -781,9 +786,10 @@ async function runSearch() {
   // without this, the older query would resume and render over the newer one's pane.
   if (myGen !== GEN) return;
 
-  // This search is committed now — record it, drop the stale flag, publish the
-  // hash. The early-return hint paths above deliberately leave LAST_RUN alone.
-  LAST_RUN = serializeSearch();
+  // This search is committed now — record the snapshot taken with `q`, drop the
+  // stale flag, publish the hash. The early-return hint paths above deliberately
+  // leave LAST_RUN alone.
+  LAST_RUN = ranAs;
   refreshStale();
   writeHashState();
 
