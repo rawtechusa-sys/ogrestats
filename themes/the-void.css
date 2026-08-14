@@ -13,6 +13,7 @@
   --platform-youtube:   #e05545;
   --platform-twitch:    #a07ad0;
   --border-default:     rgba(255,255,255,0.15);
+  --border-default-strong: rgba(255,255,255,0.4);
   --border-strong:      rgba(255,255,255,0.45);
   --accent-glow-r: 240; --accent-glow-g: 240; --accent-glow-b: 240;
 }
