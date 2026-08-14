@@ -855,7 +855,7 @@ async function runSearch() {
 
   const cand = resolveCandidates(q);   // already newest-first
   if (!cand.length) {
-    results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no messages or transcript lines match — no stream got past those filters</span></div>`;
+    results.innerHTML = emptyState('no messages or transcript lines match — no stream got past those filters', q.note);
     return;
   }
 
@@ -992,6 +992,18 @@ function renderGroup(smeta, hits, tokens) {
   </details>`;
 }
 
+// The "nothing found" pane. A note (set on the query when a filter combination
+// quietly narrowed the search) MUST ride along here rather than rely on the status
+// line: updateStatus blanks that line on a zero-hit search, and finishSearch then
+// replaces the whole pane, destroying #resultStatus with it. Without the note the
+// copy asserts something false — "no messages or transcript lines match" when one
+// of those two corpora was never searched. `message` is built from literals and
+// numbers in this file; `note` is escaped.
+function emptyState(message, note) {
+  return `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span>
+      <span>${message}</span>${note ? `<span style="opacity:0.6;">${escHtml(note)}</span>` : ''}</div>`;
+}
+
 // Live status above the results — running totals + how far into the candidate set.
 function updateStatus() {
   const S = SEARCH;
@@ -1022,7 +1034,9 @@ function finishSearch() {
   updateStatus();
   if (!S.shownMsgs) {
     const results = document.getElementById('results');
-    results.innerHTML = `<div class="empty-state"><span class="loading-glyph" style="font-size:40px;">☽</span><span>no messages or transcript lines match — the term is indexed in ${S.candidates.length} stream${S.candidates.length === 1 ? '' : 's'} but no row passed your filters</span></div>`;
+    results.innerHTML = emptyState(
+      `no messages or transcript lines match — the term is indexed in ${S.candidates.length} stream${S.candidates.length === 1 ? '' : 's'} but no row passed your filters`,
+      S.q.note);
   }
 }
 
