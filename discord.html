@@ -325,7 +325,7 @@
     overflow-y: auto;
     padding: 8px 20px 40px;
     /* Browse mode compensates scrollTop by hand every time it prepends or evicts a
-       chunk. The browser's own scroll anchoring would apply a second correction on
+       page. The browser's own scroll anchoring would apply a second correction on
        top of ours and the reading position would drift, so switch it off. Search
        mode never moves content above the viewport, so this costs it nothing. */
     overflow-anchor: none;
@@ -357,8 +357,9 @@
 
   /* ── Continuous browse seams ─────────────────────────────────── */
   /* One element per end of the mounted window, doing three jobs at once: it is the
-     IntersectionObserver target that triggers the next chunk, the "wading in…" row
-     while that chunk loads, and the error/retry row when it fails. An element with
+     IntersectionObserver target that triggers the next page, the "wading in…" row
+     while a new month loads (an in-month page mounts synchronously and never paints
+     that row), and the error/retry row when it fails. An element with
      no area is an unreliable observer target, hence the min-height. */
   .b-seam {
     display: flex;
@@ -1065,15 +1066,22 @@ let GEN = 0;          // bumped per search so a stale in-flight batch detects it
 let OBSERVER = null;
 
 // ── Continuous browse state ─────────────────────────────────────────────────
-// BROWSE.lo..hi are inclusive indices into the channel's ascending months array:
-// the contiguous window of chunks currently mounted in the DOM. "At the start of
-// history" is lo === 0 and "at the end" is hi === months.length - 1 -- derived, so
-// no flag can desync from what is on screen.
-let BROWSE = null;      // { ch, lo, hi, loadingUp, loadingDown, errUp, errDown }
+// The mounted unit is a PAGE, not a whole channel-month: a page is a slice of up
+// to PAGE_SIZE consecutive messages inside one month's chunk. #general's 2026-07
+// chunk alone is ~6k messages, and mounting that in one insert is what made a busy
+// channel slow to open.
+//
+// The window is the contiguous run of pages currently in #chunks, and its endpoints
+// are READ FROM THE DOM (the first/last <section class="chunk"> carry data-month +
+// data-page), never tracked in counters -- so no bookkeeping can desync from what is
+// on screen. "At the start of history" is page 0 of the oldest month; "at the end"
+// is the last page of the newest month. See atStartOfHistory()/atEndOfHistory().
+let BROWSE = null;      // { ch, loadingUp, loadingDown, errUp, errDown }
 let BGEN = 0;           // browse generation; every await re-checks it before touching the DOM
 let BOBSERVER = null;   // browse seam observer (search keeps its own OBSERVER)
-let BROWSE_STASH = null;// { slug, lo, hi, anchor } saved on the browse->search edge
-const MAX_MOUNTED = 5;  // chunks kept in the DOM; the rest are evicted as you scroll
+let BROWSE_STASH = null;// { slug, secs: [{month, page}], anchor } saved on the browse->search edge
+const PAGE_SIZE = 250;  // messages per mounted section -- the unit the engine moves in
+const MAX_MOUNTED = 5;  // pages kept in the DOM; the rest are evicted as you scroll
 const SEAM_MARGIN = 600;// px of look-ahead: observer rootMargin AND the manual re-check
 
 // ── Data access ─────────────────────────────────────────────────────────────
@@ -1231,9 +1239,11 @@ function renderMonthNav(ch, month) {
 }
 
 // ── Continuous browse engine ────────────────────────────────────────────────
-// The pane holds one <section class="chunk"> per mounted channel-month, wrapped by
-// two seams. Scrolling towards a seam loads the next month into the same stream and
-// evicts the far end, so reading never breaks; the month picker is the long jump.
+// The pane holds one <section class="chunk"> per mounted PAGE (see PAGE_SIZE),
+// wrapped by two seams. Scrolling towards a seam mounts the next page into the same
+// stream and evicts the far end, so reading never breaks; the month picker is the
+// long jump. A page inside the month already mounted comes straight out of
+// chunkCache and costs no request -- only crossing a month boundary fetches.
 
 function browseScaffold(sectionsHtml) {
   return `<div class="b-seam" id="seamTop"></div>` +
@@ -1241,8 +1251,96 @@ function browseScaffold(sectionsHtml) {
          `<div class="b-seam" id="seamBot"></div>`;
 }
 
-function renderChunkSection(month, msgs) {
-  return `<section class="chunk" data-month="${escHtml(month)}">${renderConversation(msgs)}</section>`;
+// ── Pages ───────────────────────────────────────────────────────────────────
+// A page is PAGE_SIZE consecutive messages within one month's chunk, numbered from
+// 0. An empty month still counts as ONE (empty) page, so "the last page of a month"
+// always exists and the seam logic never has to special-case it.
+function pageCount(msgs) {
+  return Math.max(1, Math.ceil((Array.isArray(msgs) ? msgs.length : 0) / PAGE_SIZE));
+}
+function pageSlice(msgs, p) {
+  if (!Array.isArray(msgs)) return [];
+  return msgs.slice(p * PAGE_SIZE, (p + 1) * PAGE_SIZE);
+}
+
+// id -> message across the WHOLE month, memoized on the messages array itself.
+// Replies have to resolve month-wide: pages are an artifact of mounting, not of the
+// data, so a reply whose target sits on the neighbouring page must still render its
+// preview. Rebuilding the map per page would be O(month) work on every mount, hence
+// the memo -- a WeakMap, so an entry dies with the chunk it describes.
+const BY_ID_MEMO = new WeakMap();
+function byIdFor(msgs) {
+  if (!Array.isArray(msgs)) return new Map();
+  let map = BY_ID_MEMO.get(msgs);
+  if (!map) {
+    map = new Map();
+    for (const m of msgs) if (m && m.id != null) map.set(String(m.id), m);
+    BY_ID_MEMO.set(msgs, map);
+  }
+  return map;
+}
+
+// The window's endpoints, straight from the DOM -- the single source of truth for
+// where the mounted run starts and ends.
+function firstSec() {
+  const chunks = document.getElementById('chunks');
+  return chunks ? chunks.firstElementChild : null;
+}
+function lastSec() {
+  const chunks = document.getElementById('chunks');
+  return chunks ? chunks.lastElementChild : null;
+}
+
+// A section -> { mi, p }: the index of its month in the channel's ascending months
+// array, and its page number. null when there is no window, no section, or the
+// section names a month this channel does not have.
+function secPos(sec) {
+  const B = BROWSE;
+  if (!B || !sec) return null;
+  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+  const mi = months.indexOf(sec.dataset.month);
+  if (mi < 0) return null;
+  return { mi, p: Number(sec.dataset.page) || 0 };
+}
+
+// Both endpoints of the mounted window as one comparable string. fillViewport uses
+// it to detect "the loader did nothing" without counters.
+function windowKey() {
+  const a = firstSec(), b = lastSec();
+  if (!a || !b) return '';
+  return `${a.dataset.month}/${a.dataset.page}..${b.dataset.month}/${b.dataset.page}`;
+}
+
+// The edges of history. The top edge is knowable from the DOM alone. The bottom
+// edge needs the month's length to know which page is its last, so a cache miss
+// answers `false` on purpose: the seam stays live rather than freezing into "the
+// end of the archive", and loadNewer (which has the chunk) settles it.
+function atStartOfHistory() {
+  const pos = secPos(firstSec());
+  return !!pos && pos.mi === 0 && pos.p === 0;
+}
+function atEndOfHistory() {
+  const B = BROWSE;
+  const pos = secPos(lastSec());
+  if (!B || !pos) return false;
+  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
+  if (pos.mi !== months.length - 1) return false;
+  const msgs = chunkCache.get(chunkKey(B.ch.id, months[pos.mi]));
+  if (!msgs) return false;
+  return pos.p >= pageCount(msgs) - 1;
+}
+
+// One mounted page. `msgs` is the whole month; the section renders only its slice.
+function renderPageSection(month, msgs, p) {
+  const page = Number(p) || 0;         // one normalization, so the attribute and the body agree
+  return `<section class="chunk" data-month="${escHtml(month)}" data-page="${page}">` +
+         `${renderPageBody(msgs, page)}</section>`;
+}
+
+// The inside of a page section, re-renderable on its own (see rerenderMessages).
+// The month-wide byId goes in explicitly so replies resolve beyond the page.
+function renderPageBody(msgs, p, tokens) {
+  return renderConversation(pageSlice(msgs, p), tokens, byIdFor(msgs));
 }
 
 // The loaders are fire-and-forget from observers, buttons and event handlers. They
@@ -1264,7 +1362,10 @@ function stampImages(root) {
 }
 
 // Open a channel at `month`. position: 'bottom' (newest message in view, chat-client
-// style), 'top' (the month's first message), or 'center' (on scrollToId).
+// style), 'top' (the month's first message), or 'center' (on scrollToId). Exactly
+// ONE page is mounted, chosen from the position, so opening a busy channel costs a
+// few hundred messages of layout rather than the whole month; fillViewport pulls in
+// neighbours afterwards if the pane still does not scroll.
 // Every await re-checks the generation: a channel switch mid-fetch must not paint.
 async function openBrowse(month, scrollToId, position) {
   const main = document.getElementById('main');
@@ -1301,8 +1402,20 @@ async function openBrowse(month, scrollToId, position) {
   }
   if (gen !== BGEN || MODE !== 'browse') return;
 
-  main.innerHTML = browseScaffold(renderChunkSection(month, msgs));
-  BROWSE = { ch, lo: idx, hi: idx, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  // Which page of the month to land on. 'center' resolves the id inside the whole
+  // month and mounts the page holding it; an id this month does not have falls back
+  // to page 0 + the scrollTop = 0 below, the same recovery as before.
+  const pages = pageCount(msgs);
+  let page = 0;
+  if (position === 'bottom') {
+    page = pages - 1;
+  } else if (position === 'center' && scrollToId) {
+    const i = msgs.findIndex(m => m && String(m.id) === String(scrollToId));
+    if (i >= 0) page = Math.floor(i / PAGE_SIZE);
+  }
+
+  main.innerHTML = browseScaffold(renderPageSection(month, msgs, page));
+  BROWSE = { ch, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
   stampImages(main);
   updateSeams();
   // Point the picker at where we actually landed. updateCurrentMonth() can't do it
@@ -1351,16 +1464,69 @@ function attachSeamObserver() {
   BOBSERVER.observe(bot);
 }
 
-// Mount the month before the window. The guards make the loader inert at the start
-// of history and while an error is showing, so a seam parked on screen can't spin.
+// Insert a page above the window and hold the reading position. Shared by both of
+// loadOlder's paths, because both land content above the reader.
+function mountAbove(month, msgs, p) {
+  const main = document.getElementById('main');
+  const chunks = document.getElementById('chunks');
+  if (!main || !chunks) return;
+  // Measure before the insert and fold the seam de-duplication into the SAME
+  // measurement. Hiding a repeated day divider takes ~40px away above the reader, so
+  // compensating first and de-duplicating after would jump on most seam crossings
+  // (UTC month boundaries land mid-local-day for anyone west of Greenwich, and a
+  // page boundary can fall mid-day at any longitude).
+  const prevTop = main.scrollTop;
+  const prevH = main.scrollHeight;
+  chunks.insertAdjacentHTML('afterbegin', renderPageSection(month, msgs, p));
+  dedupeSeams();
+  stampImages(chunks.firstElementChild);
+  // Everything already on screen moved down by exactly what landed above it. Assign
+  // rather than +=, so an intermediate clamp can't be baked into the result.
+  main.scrollTop = prevTop + (main.scrollHeight - prevH);
+}
+
+// Append a page below the window. Appending happens below the reading position, so
+// there is nothing to compensate and the de-duplication down here is free.
+function mountBelow(month, msgs, p) {
+  const chunks = document.getElementById('chunks');
+  if (!chunks) return;
+  chunks.insertAdjacentHTML('beforeend', renderPageSection(month, msgs, p));
+  dedupeSeams();
+  stampImages(chunks.lastElementChild);
+}
+
+// Mount the page before the window. Inside a month that is fully SYNCHRONOUS -- a
+// mounted page implies its month is in chunkCache -- so only crossing a month
+// boundary awaits the network and shows "wading in...". The guards make the loader
+// inert at the start of history and while an error is showing, so a seam parked on
+// screen can't spin.
 async function loadOlder() {
   const B = BROWSE;
-  if (!B || B.loadingUp || B.errUp || B.lo <= 0) return;
+  if (!B || B.loadingUp || B.errUp) return;
   const months = Array.isArray(B.ch.months) ? B.ch.months : [];
-  const month = months[B.lo - 1];
+  const pos = secPos(firstSec());
+  if (!pos) return;
+
+  // In-month: the previous page is already in hand. No await, so nothing can race
+  // it and no flag is needed.
+  if (pos.p > 0) {
+    const cur = chunkCache.get(chunkKey(B.ch.id, months[pos.mi]));
+    if (!cur) return;                  // unreachable by construction; do nothing rather than guess
+    mountAbove(months[pos.mi], cur, pos.p - 1);
+    evict('bottom');
+    updateSeams();
+    updateCurrentMonth();
+    // The observer does not re-fire promptly after we mutate the DOM ourselves, so
+    // keep filling by hand while the seam is still inside the look-ahead band. This
+    // mirrors sentinelVisible() in search.
+    if (seamNear('seamTop')) return loadOlder();
+    return;
+  }
+
+  if (pos.mi <= 0) return;             // page 0 of the oldest month: the start of history
+  const month = months[pos.mi - 1];
   if (!month) return;
 
-  const main = document.getElementById('main');
   const gen = BGEN;
   B.loadingUp = true;
   updateSeams();
@@ -1379,50 +1545,51 @@ async function loadOlder() {
   }
   if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
 
-  // loadNewer runs on its own flag, concurrently, and its evict('top') moves B.lo.
-  // So the month picked before the await is not necessarily the one that belongs
-  // above the window any more -- mounting it blind would skip one month and
-  // duplicate another. Re-derive and bail if it moved. Same bail covers a missing
-  // #chunks, which must still clear the flag or the seam wedges on "wading in...".
-  const chunks = document.getElementById('chunks');
-  if (!chunks || months[B.lo - 1] !== month) {
+  // loadNewer runs on its own flag, concurrently, and its evict('top') can move the
+  // top of the window. So the page fetched before the await is not necessarily the
+  // one that belongs above the window any more -- mounting it blind would skip a
+  // page and duplicate another. Re-read the top of the window and bail if it moved.
+  // The same bail covers a missing #chunks, which must still clear the flag or the
+  // seam wedges on "wading in...".
+  const now = secPos(firstSec());
+  if (!document.getElementById('chunks') || !now || now.mi !== pos.mi || now.p !== 0) {
     B.loadingUp = false;
     updateSeams();
     return;
   }
 
-  // Measure before the insert and fold the seam de-duplication into the SAME
-  // measurement. Hiding a repeated day divider takes ~40px away above the reader, so
-  // compensating first and de-duplicating after would jump on most seam crossings
-  // (UTC month boundaries land mid-local-day for anyone west of Greenwich).
-  const prevTop = main.scrollTop;
-  const prevH = main.scrollHeight;
-  chunks.insertAdjacentHTML('afterbegin', renderChunkSection(month, msgs));
-  B.lo--;
-  dedupeSeams();
-  stampImages(chunks.firstElementChild);
-  // Everything already on screen moved down by exactly what landed above it. Assign
-  // rather than +=, so an intermediate clamp can't be baked into the result.
-  main.scrollTop = prevTop + (main.scrollHeight - prevH);
+  // The previous month's LAST page is the one that abuts the window.
+  mountAbove(month, msgs, pageCount(msgs) - 1);
   B.loadingUp = false;
 
   evict('bottom');
   updateSeams();
   updateCurrentMonth();
-  // The observer does not re-fire promptly after we mutate the DOM ourselves, so
-  // keep filling by hand while the seam is still inside the look-ahead band. This
-  // mirrors sentinelVisible() in search.
   if (seamNear('seamTop')) return loadOlder();
 }
 
-// Mount the month after the window. Appending happens below the reading position,
-// so there is nothing to compensate.
+// Mount the page after the window. Mirror of loadOlder: synchronous inside a month,
+// a fetch only at a month boundary.
 async function loadNewer() {
   const B = BROWSE;
   if (!B || B.loadingDown || B.errDown) return;
   const months = Array.isArray(B.ch.months) ? B.ch.months : [];
-  if (B.hi >= months.length - 1) return;
-  const month = months[B.hi + 1];
+  const pos = secPos(lastSec());
+  if (!pos) return;
+
+  const cur = chunkCache.get(chunkKey(B.ch.id, months[pos.mi]));
+  if (!cur) return;                    // unreachable by construction (see loadOlder)
+  if (pos.p < pageCount(cur) - 1) {
+    mountBelow(months[pos.mi], cur, pos.p + 1);
+    evict('top');                      // re-dedupes inside its own measurement window
+    updateSeams();
+    updateCurrentMonth();
+    if (seamNear('seamBot')) return loadNewer();
+    return;
+  }
+
+  if (pos.mi >= months.length - 1) return;   // last page of the newest month: the end
+  const month = months[pos.mi + 1];
   if (!month) return;
 
   const gen = BGEN;
@@ -1441,21 +1608,17 @@ async function loadNewer() {
   }
   if (gen !== BGEN || BROWSE !== B || MODE !== 'browse') return;
 
-  // Mirror of loadOlder: loadOlder's evict('bottom') moves B.hi under us, so the
-  // month captured before the await has to be re-checked before it is mounted.
-  const chunks = document.getElementById('chunks');
-  if (!chunks || months[B.hi + 1] !== month) {
+  // Mirror of loadOlder's re-check: loadOlder's evict('bottom') can move the bottom
+  // of the window while we await, so re-read it before mounting.
+  const now = secPos(lastSec());
+  if (!document.getElementById('chunks') || !now || now.mi !== pos.mi || now.p !== pos.p) {
     B.loadingDown = false;
     updateSeams();
     return;
   }
 
-  // Appending happens below the reading position, so there is nothing to compensate
-  // and the de-duplication down here is free.
-  chunks.insertAdjacentHTML('beforeend', renderChunkSection(month, msgs));
-  B.hi++;
-  dedupeSeams();
-  stampImages(chunks.lastElementChild);
+  // The next month's FIRST page is the one that abuts the window.
+  mountBelow(month, msgs, 0);
   B.loadingDown = false;
 
   evict('top');                        // re-dedupes inside its own measurement window
@@ -1464,7 +1627,7 @@ async function loadNewer() {
   if (seamNear('seamBot')) return loadNewer();
 }
 
-// Drop chunks off the far end so the DOM stays small. No spacer stands in for what
+// Drop pages off the far end so the DOM stays small. No spacer stands in for what
 // left: the scrollbar represents the mounted window (Discord does the same) and the
 // month picker is the long-range navigator.
 function evict(end) {
@@ -1472,9 +1635,10 @@ function evict(end) {
   const main = document.getElementById('main');
   const chunks = document.getElementById('chunks');
   if (!B || !main || !chunks) return;
-  // Never move an index out from under the loader that is mid-flight on that side:
-  // it captured its month before its await and is about to mount it. Trimming the
-  // other end is always safe, and whatever we skip here the next evict picks up.
+  // Never move the window end out from under the loader that is mid-flight on that
+  // side: it read its position before its await and is about to mount against it.
+  // Trimming the other end is always safe, and whatever we skip here the next evict
+  // picks up.
   if (end === 'top' && B.loadingUp) return;
   if (end === 'bottom' && B.loadingDown) return;
 
@@ -1492,7 +1656,6 @@ function evict(end) {
       const prevTop = main.scrollTop;
       const prevH = main.scrollHeight;
       victim.remove();
-      B.lo++;
       // Losing the first section can strand a seam-dup on the new first section's
       // opening divider. Re-dedupe INSIDE the measurement window: that height change
       // is above the reader too and belongs in the same single correction.
@@ -1505,19 +1668,18 @@ function evict(end) {
       main.scrollTop = prevTop - (prevH - main.scrollHeight);
     } else {
       // Below the reading position, so in principle nothing to fix up -- except that
-      // removing a bottom chunk that dwarfs the rest shortens the scroll range and
+      // removing a bottom page that dwarfs the rest shortens the scroll range and
       // clamps scrollTop anyway. Hold a message instead of trusting the number.
       const anchor = captureAnchor();
       victim.remove();
-      B.hi--;
       restoreAnchor(anchor);
     }
   }
 }
 
-// A channel whose newest month is a handful of messages leaves the pane unscrollable
+// A channel whose newest page is a handful of messages leaves the pane unscrollable
 // and the seams unable to fire, so pull neighbours in until it scrolls. Termination
-// is by index movement, never by height: a chunk that adds no height still counts.
+// is by window movement, never by height: a page that adds no height still counts.
 async function fillViewport(gen) {
   const main = document.getElementById('main');
   for (let guard = 0; guard < 40; guard++) {
@@ -1525,13 +1687,12 @@ async function fillViewport(gen) {
     const B = BROWSE;
     if (!B || !main) return;
     if (main.scrollHeight > main.clientHeight + 1) return;
-    const months = Array.isArray(B.ch.months) ? B.ch.months : [];
-    const lo = B.lo, hi = B.hi;
-    if (B.lo > 0) await loadOlder();
-    else if (B.hi < months.length - 1) await loadNewer();
+    const before = windowKey();
+    if (!atStartOfHistory()) await loadOlder();
+    else if (!atEndOfHistory()) await loadNewer();
     else return;                       // whole channel is mounted; nothing left
     if (gen !== BGEN || BROWSE !== B) return;
-    if (B.lo === lo && B.hi === hi) return;   // a guard or an error blocked it: stop
+    if (windowKey() === before) return;   // a guard or an error blocked it: stop
   }
 }
 
@@ -1552,9 +1713,8 @@ function updateSeams() {
   const top = document.getElementById('seamTop');
   const bot = document.getElementById('seamBot');
   if (!B || !top || !bot) return;
-  const months = Array.isArray(B.ch.months) ? B.ch.months : [];
-  paintSeam(top, 'up',   B.errUp,   B.loadingUp,   B.lo <= 0,                 'the beginning of the archive');
-  paintSeam(bot, 'down', B.errDown, B.loadingDown, B.hi >= months.length - 1, 'the end of the archive');
+  paintSeam(top, 'up',   B.errUp,   B.loadingUp,   atStartOfHistory(), 'the beginning of the archive');
+  paintSeam(bot, 'down', B.errDown, B.loadingDown, atEndOfHistory(),   'the end of the archive');
 }
 
 function paintSeam(el, dir, err, loading, atEdge, edgeText) {
@@ -1577,9 +1737,11 @@ function paintSeam(el, dir, err, loading, atEdge, edgeText) {
   el.innerHTML = atEdge ? `<span>${escHtml(edgeText)}</span>` : '';
 }
 
-// Chunks are bucketed by UTC month but dividers are labelled in local time, so the
-// last day of one chunk and the first day of the next can be the same local day.
-// Hide the repeat; re-evaluate every time (a timezone switch regroups the days).
+// Two adjacent sections routinely open and close on the same day: a page boundary
+// falls wherever message 250 happens to land, and chunks are bucketed by UTC month
+// while dividers are labelled in local time. Either way the date would print twice
+// across the seam. Hide the repeat; re-evaluate every time (a timezone switch
+// regroups the days, and so does a re-render at a different page boundary).
 function dedupeSeams() {
   const chunks = document.getElementById('chunks');
   if (!chunks) return;
@@ -1594,7 +1756,9 @@ function dedupeSeams() {
 }
 
 // The month picker reads out where the reader is: the last mounted section whose top
-// has passed the top of the pane.
+// has passed the top of the pane. Several consecutive sections carry the same
+// data-month now (one per page), which changes nothing -- the answer is that month
+// either way.
 function updateCurrentMonth() {
   const chunks = document.getElementById('chunks');
   const main = document.getElementById('main');
@@ -1640,7 +1804,13 @@ function restoreAnchor(a) {
 function stashBrowse() {
   const B = BROWSE;
   if (!B) return;
-  BROWSE_STASH = { slug: B.ch.slug, lo: B.lo, hi: B.hi, anchor: captureAnchor() };
+  // The mounted run, read off the DOM -- which is why this must run BEFORE the
+  // teardown that empties #chunks (setMode('search') orders it that way).
+  const chunks = document.getElementById('chunks');
+  const secs = chunks
+    ? [...chunks.children].map(s => ({ month: s.dataset.month, page: Number(s.dataset.page) || 0 }))
+    : [];
+  BROWSE_STASH = { slug: B.ch.slug, secs, anchor: captureAnchor() };
 }
 
 // Rebuild the stashed window synchronously from chunkCache. Everything that was
@@ -1655,15 +1825,17 @@ function restoreBrowse(stash) {
   if (BOBSERVER) { BOBSERVER.disconnect(); BOBSERVER = null; }
   BROWSE = null;
 
+  const stashed = Array.isArray(stash.secs) ? stash.secs : [];
   const secs = [];
-  for (let i = stash.lo; i <= stash.hi; i++) {
-    const m = months[i];
-    const msgs = m ? chunkCache.get(chunkKey(ch.id, m)) : null;
+  for (const s of stashed) {
+    const msgs = s && s.month ? chunkCache.get(chunkKey(ch.id, s.month)) : null;
     if (!msgs) { quietly(openBrowse(months[months.length - 1], null, 'bottom')); return; }
-    secs.push(renderChunkSection(m, msgs));
+    secs.push(renderPageSection(s.month, msgs, s.page));
   }
+  // An empty stash is the same kind of miss: nothing to put back.
+  if (!secs.length) { quietly(openBrowse(months[months.length - 1], null, 'bottom')); return; }
   main.innerHTML = browseScaffold(secs.join(''));
-  BROWSE = { ch, lo: stash.lo, hi: stash.hi, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
+  BROWSE = { ch, loadingUp: false, loadingDown: false, errUp: null, errDown: null };
   stampImages(main);
   dedupeSeams();
   updateSeams();
@@ -1724,10 +1896,11 @@ function onMediaError(e) {
 }
 
 // Day dividers + messages, ascending. Messages carry id="m<id>" so a search hit can
-// jump straight to one.
-function renderConversation(msgs, tokens) {
-  const byId = new Map();
-  for (const m of msgs) if (m && m.id != null) byId.set(String(m.id), m);
+// jump straight to one. `byId` is the map replies resolve against and is passed in
+// by the browse path, where it covers the whole month rather than just the rendered
+// page; without one, `msgs` resolves against itself (the pre-page behaviour).
+function renderConversation(msgs, tokens, byId) {
+  const map = byId || byIdFor(msgs);
   let html = '';
   let lastDay = null;
   for (const m of msgs) {
@@ -1736,7 +1909,7 @@ function renderConversation(msgs, tokens) {
       html += `<div class="day-divider"><span>${escHtml(day)}</span></div>`;
       lastDay = day;
     }
-    html += renderMessage(m, byId, tokens);
+    html += renderMessage(m, map, tokens);
   }
   return html;
 }
@@ -1778,8 +1951,10 @@ function renderMessage(m, byId, tokens) {
   </div>`;
 }
 
-// The reply target is only resolvable if it sits in the same loaded chunk (a reply
-// across a month boundary shows the raw id instead).
+// The reply target is only resolvable if it sits in the same loaded month -- byId is
+// month-wide, not page-wide, so the target does NOT have to be mounted (the click
+// handler re-opens the month when it isn't). A reply across a month boundary shows
+// the raw id instead.
 function renderReply(rid, byId) {
   const target = byId ? byId.get(String(rid)) : null;
   if (!target) {
@@ -2208,9 +2383,9 @@ function rerenderMessages() {
   const anchor = captureAnchor();
   for (const sec of chunks.children) {
     const msgs = chunkCache.get(chunkKey(B.ch.id, sec.dataset.month));
-    if (msgs) sec.innerHTML = renderConversation(msgs);
+    if (msgs) sec.innerHTML = renderPageBody(msgs, Number(sec.dataset.page) || 0);
   }
-  dedupeSeams();
+  dedupeSeams();                       // a new zone can flip a page seam's dup status
   stampImages(chunks);                 // fresh <img> elements: re-stamp before they load
   restoreAnchor(anchor);
   updateCurrentMonth();                // every height just changed
@@ -2315,7 +2490,13 @@ function wire() {
       return;
     }
     const reply = e.target.closest('[data-jump-msg]');
-    if (reply) flashMessage(reply.dataset.jumpMsg);
+    if (reply && !flashMessage(reply.dataset.jumpMsg) && MODE === 'browse') {
+      // The target resolved at render time (renderReply only links a message it
+      // found in the month-wide byId), so it exists in THIS section's month -- it
+      // is simply on a page that is not mounted. Re-open that month centred on it.
+      const sec = reply.closest('.chunk');
+      if (sec) quietly(openBrowse(sec.dataset.month, reply.dataset.jumpMsg, 'center'));
+    }
   });
 }
 
