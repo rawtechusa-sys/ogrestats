@@ -903,10 +903,14 @@ async function runSearch() {
   if (q.user && q.sources.has('chat') && !AUTHORS) {
     try { AUTHORS = await fetchJSON(`${RAW}/data/chat_authors.json`); }
     catch (e) {
+      // This catch lands after an await, so a newer search may already own the
+      // pane and the button. Check the generation before touching either — the
+      // error belongs to a query nobody is looking at any more.
+      if (myGen !== GEN) return;
       results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the username index<br><small>${escHtml(e.message)}</small></span></div>`;
       clearStaleState();   // same rule as the guards above: the pane IS the state
       hideStatusBar();     // the previous search's counts describe nothing now
-      setSearchBusy(false);   // no scan is running behind this pane
+      setSearchBusy(false);   // this pane replaced the only scan that was running
       return;
     }
   }
