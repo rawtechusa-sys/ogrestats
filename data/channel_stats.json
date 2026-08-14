@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786590374,
+  "updated_ts": 1786682572,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -837,7 +837,8 @@
     "a_robust_beginning_2026-08-11_203204",
     "a_robust_beginning_pt2_2026-08-11_222108",
     "rtustreams_2026-08-12_202156",
-    "understanding_men_live_feat_bob_lavari_2026-08-12_203957"
+    "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
+    "lets_just_lose_our_minds_2026-08-13_223319"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15050,6 +15051,23 @@
       "avg_viewers": 300.36,
       "avg_chat_mpm": 9.75,
       "avg_active_chatters": 23.46,
+      "percent_paused": null
+    },
+    "lets_just_lose_our_minds_2026-08-13_223319": {
+      "stream_id": "lets_just_lose_our_minds_2026-08-13_223319",
+      "title": "Let's Just Lose Our Minds",
+      "start_ts": 1786660483,
+      "end_ts": 1786682363,
+      "duration_sec": 21880,
+      "youtube_archive_id": "fMsDKBz5gjo",
+      "source_platform": "youtube",
+      "total_donations_usd": 472.39,
+      "donation_count": 116,
+      "donations_per_min": 1.2954,
+      "peak_viewers": 400,
+      "avg_viewers": 324.7,
+      "avg_chat_mpm": 9.73,
+      "avg_active_chatters": 23.71,
       "percent_paused": null
     }
   }
