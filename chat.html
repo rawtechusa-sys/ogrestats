@@ -609,6 +609,7 @@ function normUser(raw) {
 let INDEX   = null;   // chat_search.json  { streams:[], tokens:{} }
 let AUTHORS = null;   // chat_authors.json { authors:{} }  (lazy)
 let TINDEX  = null;   // transcript_search.json { streams:[], tokens:{} }  (lazy)
+let INDEX_FAILED = false;   // load()'s fetch failed permanently — INDEX stays null forever
 
 // Paged-search state (rebuilt on each new search).
 let SEARCH = null;    // see startSearch(): { q, candidates, cursor, gen, loading, ... }
@@ -886,8 +887,10 @@ async function hydrateTranscript(smeta) {
 
 // ── Search ───────────────────────────────────────────────────────────────────
 async function runSearch() {
-  // No queuing: the button is disabled until the index lands, so this only fires
-  // via Enter/a live checkbox during the load. Say so and drop it.
+  // Pure defensive backstop: the form keydown handler already intercepts a
+  // pre-index Enter, and a checkbox only re-runs once LAST_RUN is non-null (which
+  // itself requires an index-backed search to have completed). Nothing should
+  // reach here with INDEX still null, but say so and drop it if it ever does.
   if (!INDEX) { flashHint('index still loading…', 2000); return; }
   const results = document.getElementById('results');
 
@@ -1458,10 +1461,15 @@ function prefillFromParams(sp) {
 function showStreamTitle(sp) {
   const raw = sp && sp.get('stream');
   if (!raw || !INDEX) return;
+  const field = document.getElementById('stream');
+  // Only swap in the title if the field still holds the restored raw id unchanged —
+  // this runs after the index load, and a user may have typed something else into
+  // the field in the meantime. Don't clobber it.
+  if (field.value !== raw) return;
   const pools = [INDEX.streams, (TINDEX && TINDEX.streams) || []];
   for (const pool of pools) {
     const hit = pool.find(s => s.id === raw);
-    if (hit && hit.title) { document.getElementById('stream').value = hit.title; return; }
+    if (hit && hit.title) { field.value = hit.title; return; }
   }
 }
 
@@ -1616,8 +1624,12 @@ function initUI() {
     // quick-find takes it to select its active row. Never search over the top of
     // one: the native submit is already cancelled, and so is this fallback.
     if (e.defaultPrevented) return;
-    // Index still loading: say so, don't search.
-    if (!INDEX) { e.preventDefault(); flashHint('index still loading…', 2000); return; }
+    // Index still loading (or failed outright): say so, don't search.
+    if (!INDEX) {
+      e.preventDefault();
+      flashHint(INDEX_FAILED ? 'index failed to load' : 'index still loading…', 2000);
+      return;
+    }
     // Mid-scan: the button is a status signal, not a lock — Enter must still
     // re-search, which the GEN machinery makes safe. Enter on a focused button is
     // that button's own key, so leave it alone.
@@ -1705,9 +1717,11 @@ function initUI() {
     if (e.key === 'Tab') hideSuggest();
   });
 
-  // mousedown, not click: it fires before the field's blur. preventDefault covers
-  // the whole box (not just a row) so focus stays put through a scrollbar drag too.
+  // mousedown, not click: it fires before the field's blur. Gated to a left-click
+  // on an actual row, so a scrollbar-track/thumb mousedown (or a right/middle
+  // click) passes through untouched instead of being swallowed.
   suggestBox.addEventListener('mousedown', e => {
+    if (e.button !== 0 || !e.target.closest('.suggest-row')) return;
     e.preventDefault();
     const row = e.target.closest('.suggest-row');
     if (row) selectSuggest(Number(row.dataset.i));
@@ -1763,7 +1777,9 @@ async function load() {
 
     if (restored) runSearch();
   } catch (e) {
+    INDEX_FAILED = true;
     btn.textContent = 'index failed';
+    status.textContent = 'index failed';
     results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the chat index<br><small>${escHtml(e.message)}</small></span></div>`;
   }
 }
