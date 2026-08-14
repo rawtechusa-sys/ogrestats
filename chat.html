@@ -50,26 +50,6 @@
     color: var(--accent-bright);
     letter-spacing: 0.06em;
   }
-  /* Platform / Search-in groups ride in the title row. Labels sit beside their
-     checkboxes (not above, as in the filter bar) so the band stays one line tall. */
-  .title-checks {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-  }
-  .title-checks .field {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .title-checks .field > label {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 10px;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
   .index-status {
     font-family: 'Share Tech Mono', monospace;
     font-size: 11px;
@@ -79,12 +59,27 @@
   }
 
   /* ── Filter bar ─────────────────────────────────────────────── */
+  /* One <form>, stacked rows: text/date fields on top, checkbox groups +
+     actions underneath. Enter anywhere in the form submits natively. */
   .filters {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     flex-shrink: 0;
+  }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .filter-spacer { flex: 1 1 auto; }
+  /* Checkbox groups keep their label beside the boxes (not above, as the text
+     fields do) so row 2 stays one line tall. */
+  .check-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   .filters .field {
     display: flex;
@@ -164,7 +159,35 @@
   .btn:hover { border-color: var(--accent); background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.08); }
   .btn:disabled { opacity: 0.4; cursor: default; }
 
+  /* A text-only secondary action (reset) — never competes with the Search button. */
+  .btn-link {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 8px 4px;
+    align-self: flex-end;
+  }
+  .btn-link:hover { color: var(--accent-bright); }
+
+  /* ── Stale hint ─────────────────────────────────────────────── */
+  /* Sits BETWEEN the form and #results as a sibling: runSearch rewrites
+     results.innerHTML, which would destroy anything living inside it. */
+  .stale-hint {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+
   /* ── Results ────────────────────────────────────────────────── */
+  #results.stale { opacity: 0.55; transition: opacity .2s; }
   .scroll-area {
     flex: 1;
     min-height: 0;
@@ -322,9 +345,41 @@
 <div class="page">
   <div class="title-row">
     <div class="page-title">Search Chat/Transcripts</div>
-    <!-- Hidden until the index loads, same as #filters, so nothing flashes. -->
-    <div class="title-checks" id="titleChecks" style="display:none;">
+    <div class="index-status" id="indexStatus">loading index…</div>
+  </div>
+
+  <!-- One form for the whole search. Visible from the first paint (the index
+       loads behind it); the submit button stays disabled until the index lands. -->
+  <form class="filters" id="searchForm">
+    <div class="filter-row">
+      <div class="field" style="flex:1;">
+        <label for="q">Search text</label>
+        <input type="search" id="q" placeholder="words to find in chat…" autocomplete="off" spellcheck="false">
+      </div>
       <div class="field">
+        <label for="user">Username</label>
+        <input type="text" id="user" placeholder="@name" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="stream">Stream</label>
+        <input type="text" id="stream" list="streamList" placeholder="any stream" autocomplete="off">
+        <datalist id="streamList"></datalist>
+      </div>
+      <div class="field">
+        <label for="dateFrom">From</label>
+        <input type="date" id="dateFrom">
+      </div>
+      <div class="field">
+        <label for="dateTo">To</label>
+        <input type="date" id="dateTo">
+      </div>
+      <div class="field">
+        <label>&nbsp;</label>
+        <label class="phrase-check"><input type="checkbox" id="phrase">Exact phrase</label>
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="check-field">
         <label>Platform</label>
         <div class="platform-checks">
           <label><input type="checkbox" value="youtube" checked>YT</label>
@@ -332,45 +387,20 @@
           <label><input type="checkbox" value="kick" checked>Kick</label>
         </div>
       </div>
-      <div class="field">
+      <div class="check-field">
         <label>Search in</label>
         <div class="source-checks">
           <label><input type="checkbox" value="chat" checked>Chat</label>
           <label><input type="checkbox" value="transcripts" checked>Transcripts</label>
         </div>
       </div>
+      <div class="filter-spacer"></div>
+      <button type="submit" class="btn" id="searchBtn">Search</button>
+      <button type="button" class="btn-link" id="resetBtn">reset</button>
     </div>
-    <div class="index-status" id="indexStatus">loading index…</div>
-  </div>
+  </form>
 
-  <div class="filters" id="filters" style="display:none;">
-    <div class="field" style="flex:1;">
-      <label for="q">Search text</label>
-      <input type="search" id="q" placeholder="words to find in chat…" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="field">
-      <label for="user">Username</label>
-      <input type="text" id="user" placeholder="@name" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="field">
-      <label for="stream">Stream</label>
-      <input type="text" id="stream" list="streamList" placeholder="any stream" autocomplete="off">
-      <datalist id="streamList"></datalist>
-    </div>
-    <div class="field">
-      <label for="dateFrom">From</label>
-      <input type="date" id="dateFrom">
-    </div>
-    <div class="field">
-      <label for="dateTo">To</label>
-      <input type="date" id="dateTo">
-    </div>
-    <div class="field">
-      <label>&nbsp;</label>
-      <label class="phrase-check"><input type="checkbox" id="phrase">Exact phrase</label>
-    </div>
-    <button class="btn" id="searchBtn">Search</button>
-  </div>
+  <div class="stale-hint" id="staleHint" hidden></div>
 
   <div class="scroll-area" id="results">
     <div class="loading-state">
@@ -425,6 +455,33 @@ async function fetchJSON(url) {
   if (!r.ok) throw new Error(`${r.status} — ${url}`);
   return r.json();
 }
+
+// Same contract as fetchJSON, but reports download progress as it streams.
+// Gotcha: raw.githubusercontent serves the index gzipped, so Content-Length is
+// the COMPRESSED size while the reader hands back decompressed bytes — the
+// percentage is only meaningful while received <= total. Past that, MB only.
+async function fetchJSONProgress(url, onBytes) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  if (!r.body || typeof r.body.getReader !== 'function') return r.json();
+  const hdr = Number(r.headers.get('content-length'));
+  const total = Number.isFinite(hdr) && hdr > 0 ? hdr : null;
+  const reader = r.body.getReader();
+  const chunks = [];
+  let received = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (!value) continue;
+    chunks.push(value);
+    received += value.length;
+    if (onBytes) onBytes(received, total);
+  }
+  const buf = new Uint8Array(received);
+  let off = 0;
+  for (const c of chunks) { buf.set(c, off); off += c.length; }
+  return JSON.parse(new TextDecoder('utf-8').decode(buf));
+}
 function escHtml(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
@@ -451,6 +508,10 @@ let TINDEX  = null;   // transcript_search.json { streams:[], tokens:{} }  (lazy
 let SEARCH = null;    // see startSearch(): { q, candidates, cursor, gen, loading, ... }
 let GEN = 0;          // bumped per search so a stale in-flight batch can detect it lost
 let OBSERVER = null;  // IntersectionObserver watching the sentinel
+// serializeSearch() of the last search that actually executed. null = nothing has
+// run yet, which is what the checkbox live-rerun and the stale hint both key off.
+let LAST_RUN = null;
+let HINT_TIMER = null;   // auto-clear for a transient #staleHint note
 // Keys are source-qualified ('chat:'+id / 'tr:'+id) because the two corpora are
 // fetched independently and a stream can be hydrated for one and not the other.
 const hydrateCache = new Map();   // 'chat:<id>' | 'tr:<id>' -> messages[]; kept across searches
@@ -660,7 +721,9 @@ async function hydrateTranscript(smeta) {
 
 // ── Search ───────────────────────────────────────────────────────────────────
 async function runSearch() {
-  if (!INDEX) return;
+  // No queuing: the button is disabled until the index lands, so this only fires
+  // via Enter/a live checkbox during the load. Say so and drop it.
+  if (!INDEX) { flashHint('index still loading…', 2000); return; }
   const results = document.getElementById('results');
 
   // Retire the previous search FIRST, before any early return below. A hint/error/
@@ -717,6 +780,12 @@ async function runSearch() {
   // this one is suspended. The generation taken at the top is the only way to notice:
   // without this, the older query would resume and render over the newer one's pane.
   if (myGen !== GEN) return;
+
+  // This search is committed now — record it, drop the stale flag, publish the
+  // hash. The early-return hint paths above deliberately leave LAST_RUN alone.
+  LAST_RUN = serializeSearch();
+  refreshStale();
+  writeHashState();
 
   const cand = resolveCandidates(q);   // already newest-first
   if (!cand.length) {
@@ -925,11 +994,205 @@ function streamIdFromInput() {
   return v;   // fall through to raw value (matches nothing -> empty)
 }
 
+// ── Form state: serialize / stale hint / hash ────────────────────────────────
+// The idle pane, shared by the first paint after the index lands and by reset().
+const IDLE_HINT = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
+      <span>Search chat across every archived stream.<br>Type a word, or filter by user, stream, or date.</span></div>`;
+
+// The single source of truth for "what is in the form". Drives staleness AND the
+// hash, so the two can never disagree. Only non-default values are written, so a
+// pristine form serializes to '' and the hash stays a bare #chat.
+function serializeSearch() {
+  const sp = new URLSearchParams();
+  const val = id => document.getElementById(id).value.trim();
+  const q = val('q');       if (q) sp.set('q', q);
+  const user = val('user'); if (user) sp.set('user', user);
+  // Store the resolved id when we can (a title is display-only); streamIdFromInput
+  // needs INDEX, so before the index lands the raw value goes in unchanged.
+  const stream = val('stream');
+  if (stream) sp.set('stream', INDEX ? (streamIdFromInput() || stream) : stream);
+  const from = document.getElementById('dateFrom').value; if (from) sp.set('from', from);
+  const to   = document.getElementById('dateTo').value;   if (to) sp.set('to', to);
+  if (document.getElementById('phrase').checked) sp.set('phrase', '1');
+  // Checkboxes default to checked, so only an UNCHECKED box is worth recording.
+  const off = (sel, key) => {
+    const el = document.querySelector(sel);
+    if (el && !el.checked) sp.set(key, '0');
+  };
+  off('.platform-checks input[value="youtube"]', 'yt');
+  off('.platform-checks input[value="twitch"]',  'tw');
+  off('.platform-checks input[value="kick"]',    'kick');
+  off('.source-checks input[value="chat"]',        'chat');
+  off('.source-checks input[value="transcripts"]', 'tr');
+  return sp.toString();
+}
+
+function setHint(text) {
+  const el = document.getElementById('staleHint');
+  if (!el) return;
+  el.textContent = text || '';
+  el.hidden = !text;
+}
+
+// Compare the live form against the last executed search; dim the results and
+// say so when they no longer describe what is on screen.
+function refreshStale() {
+  if (HINT_TIMER) { clearTimeout(HINT_TIMER); HINT_TIMER = null; }
+  const results = document.getElementById('results');
+  if (LAST_RUN === null) { results.classList.remove('stale'); setHint(''); return; }
+  const stale = serializeSearch() !== LAST_RUN;
+  results.classList.toggle('stale', stale);
+  setHint(stale ? 'filters changed — press Enter to re-search' : '');
+}
+
+// A one-off note in the same line, which then reverts to the stale state.
+function flashHint(text, ms) {
+  setHint(text);
+  if (HINT_TIMER) clearTimeout(HINT_TIMER);
+  HINT_TIMER = setTimeout(() => { HINT_TIMER = null; refreshStale(); }, ms);
+}
+
+// The shell owns the hash; it only routes #chat/<sub> for streams/discord, and a
+// tab click rewrites the hash to the bare slug. So mirror the sub into
+// sessionStorage too — that is what survives a tab round-trip.
+function writeHashState() {
+  const sub = LAST_RUN || '';
+  try {
+    if (sub) sessionStorage.setItem('chat-last-search', sub);
+    else sessionStorage.removeItem('chat-last-search');
+  } catch (e) {}
+  try {
+    const w = (window.parent && window.parent !== window) ? window.parent : window;
+    const base = w.location.href.split('#')[0];
+    // replaceState fires no hashchange and adds no history entry, so the shell's
+    // syncTabFromHash never re-runs and back/forward stay clean.
+    w.history.replaceState(null, '', base + '#chat' + (sub ? '/' + sub : ''));
+  } catch (e) {}
+}
+
+function readHashState() {
+  let sub = '';
+  try {
+    if (window.parent && window.parent !== window) {
+      const raw = window.parent.location.hash.replace(/^#/, '');
+      const i = raw.indexOf('/');
+      if (i !== -1 && raw.slice(0, i) === 'chat') sub = raw.slice(i + 1);
+    }
+  } catch (e) {}
+  if (!sub) { try { sub = sessionStorage.getItem('chat-last-search') || ''; } catch (e) {} }
+  return sub ? new URLSearchParams(sub) : null;
+}
+
+function prefillFromParams(sp) {
+  if (!sp) return;
+  const setVal = (id, key) => { document.getElementById(id).value = sp.get(key) || ''; };
+  setVal('q', 'q');
+  setVal('user', 'user');
+  setVal('stream', 'stream');
+  setVal('dateFrom', 'from');
+  setVal('dateTo', 'to');
+  document.getElementById('phrase').checked = sp.get('phrase') === '1';
+  const setChk = (sel, key) => {
+    const el = document.querySelector(sel);
+    if (el) el.checked = sp.get(key) !== '0';
+  };
+  setChk('.platform-checks input[value="youtube"]', 'yt');
+  setChk('.platform-checks input[value="twitch"]',  'tw');
+  setChk('.platform-checks input[value="kick"]',    'kick');
+  setChk('.source-checks input[value="chat"]',        'chat');
+  setChk('.source-checks input[value="transcripts"]', 'tr');
+}
+
+// Cosmetic: once the index is loaded, show a restored stream id as its title.
+// streamIdFromInput accepts either form, so the search is unaffected.
+function showStreamTitle(sp) {
+  const raw = sp && sp.get('stream');
+  if (!raw || !INDEX) return;
+  const pools = [INDEX.streams, (TINDEX && TINDEX.streams) || []];
+  for (const pool of pools) {
+    const hit = pool.find(s => s.id === raw);
+    if (hit && hit.title) { document.getElementById('stream').value = hit.title; return; }
+  }
+}
+
+// ── Reset ────────────────────────────────────────────────────────────────────
+// Native form.reset() restores every `checked` attribute in the markup, so the
+// defaults live in one place (the HTML) rather than being duplicated here.
+function resetSearch() {
+  document.getElementById('searchForm').reset();
+  GEN++;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  SEARCH = null;
+  LAST_RUN = null;
+  if (HINT_TIMER) { clearTimeout(HINT_TIMER); HINT_TIMER = null; }
+  const results = document.getElementById('results');
+  results.classList.remove('stale');
+  setHint('');
+  results.innerHTML = IDLE_HINT;
+  writeHashState();
+  document.getElementById('q').focus();
+}
+
+// ── Wiring ───────────────────────────────────────────────────────────────────
+// Runs before the index load so the form is live (if not yet submittable) from
+// the first paint.
+function initUI() {
+  const form = document.getElementById('searchForm');
+  // The one and only search trigger: the Search button and Enter in any field
+  // both come through here.
+  form.addEventListener('submit', e => { e.preventDefault(); runSearch(); });
+  document.getElementById('resetBtn').addEventListener('click', resetSearch);
+
+  // Checkboxes are cheap toggles of an already-resolved result set, so they
+  // re-search live — but only once a search has actually run.
+  document.querySelectorAll('.platform-checks input, .source-checks input, #phrase')
+    .forEach(c => c.addEventListener('change', () => { if (LAST_RUN !== null) runSearch(); }));
+
+  // Text/date edits are not live — they only mark the shown results stale.
+  ['q', 'user', 'stream', 'dateFrom', 'dateTo'].forEach(id => {
+    document.getElementById(id).addEventListener('input', refreshStale);
+  });
+
+  document.getElementById('q').addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    e.target.value = '';
+    refreshStale();
+  });
+
+  // '/' jumps to the search box. Only works while the iframe holds focus —
+  // accepted, the shell has no key forwarding.
+  document.addEventListener('keydown', e => {
+    if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+    const ae = document.activeElement;
+    if (ae && /^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName)) return;
+    e.preventDefault();
+    document.getElementById('q').focus();
+  });
+
+  const btn = document.getElementById('searchBtn');
+  btn.disabled = true;
+  btn.textContent = 'loading index…';
+  document.getElementById('q').focus();
+}
+
 // ── Load the index ───────────────────────────────────────────────────────────
 async function load() {
   const results = document.getElementById('results');
+  const btn = document.getElementById('searchBtn');
+  const status = document.getElementById('indexStatus');
+
+  // Restore before the fetch so a returning query is on screen while it loads.
+  const restored = readHashState();
+  prefillFromParams(restored);
+  initUI();
+
   try {
-    INDEX = await fetchJSON(`${RAW}/data/chat_search.json`);
+    INDEX = await fetchJSONProgress(`${RAW}/data/chat_search.json`, (received, total) => {
+      const mb = (received / 1048576).toFixed(1);
+      status.textContent = (total && received <= total)
+        ? `loading index… ${Math.round(received / total * 100)}%`
+        : `loading index… ${mb} MB`;
+    });
 
     // Populate the stream picker datalist + status line.
     const dl = document.getElementById('streamList');
@@ -939,20 +1202,16 @@ async function load() {
       .map(s => `<option value="${escHtml(s.title)}">`).join('');
     dl.innerHTML = opts;
 
-    document.getElementById('indexStatus').textContent =
+    status.textContent =
       `${INDEX.streams.length.toLocaleString()} streams · ${Object.keys(INDEX.tokens).length.toLocaleString()} terms`;
-    document.getElementById('filters').style.display = '';
-    document.getElementById('titleChecks').style.display = '';
-    results.innerHTML = `<div class="hint-state"><span class="loading-glyph" style="font-size:34px;">?</span>
-      <span>Search chat across every archived stream.<br>Type a word, or filter by user, stream, or date.</span></div>`;
+    showStreamTitle(restored);
+    btn.disabled = false;
+    btn.textContent = 'Search';
+    results.innerHTML = IDLE_HINT;
 
-    document.getElementById('searchBtn').addEventListener('click', runSearch);
-    ['q', 'user', 'stream', 'dateFrom', 'dateTo'].forEach(id => {
-      document.getElementById(id).addEventListener('keydown', e => {
-        if (e.key === 'Enter') runSearch();
-      });
-    });
+    if (restored) runSearch();
   } catch (e) {
+    btn.textContent = 'index failed';
     results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the chat index<br><small>${escHtml(e.message)}</small></span></div>`;
   }
 }
