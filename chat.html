@@ -110,6 +110,51 @@
   html[data-theme="white"] .filters input[type="date"] { color-scheme: light; }
   #q { min-width: 260px; flex: 1; }
 
+  /* ── Username quick-find ────────────────────────────────────── */
+  /* A hand-rolled dropdown, not a <datalist>: data/chat_authors.json carries
+     ~31k author keys, and 31k <option> nodes stall the page. The flow still
+     mirrors discord.html's author field — a row only fills the input. */
+  .filters .field.suggest-field { position: relative; }
+  .suggest {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    z-index: 20;
+    /* --bg-panel carries alpha in every theme, so it is layered over an opaque
+       --bg-base; otherwise the results underneath read straight through the list. */
+    background-color: var(--bg-base);
+    background-image: linear-gradient(var(--bg-panel), var(--bg-panel));
+    border: 1px solid var(--border-default-strong);
+    border-radius: 4px;
+    max-height: 260px;
+    overflow-y: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .suggest::-webkit-scrollbar { width: 4px; }
+  .suggest::-webkit-scrollbar-track { background: transparent; }
+  .suggest::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+  .suggest-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 5px 9px;
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+  .suggest-row .suggest-count { margin-left: auto; color: var(--text-muted); }
+  .suggest-row.active, .suggest-row:hover {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.08);
+  }
+  /* The one non-row state: the author index is still on the wire. */
+  .suggest-note {
+    padding: 5px 9px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
   .platform-checks, .source-checks {
     display: flex;
     gap: 10px;
@@ -320,7 +365,7 @@
     color: var(--text-primary);
     word-break: break-word;
   }
-  .msg-text mark {
+  .msg-text mark, .suggest mark {
     background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
     color: var(--accent-bright);
     border-radius: 2px;
@@ -398,9 +443,13 @@
         <label for="q">Search text</label>
         <input type="search" id="q" placeholder="words to find in chat or transcripts…" autocomplete="off" spellcheck="false">
       </div>
-      <div class="field">
+      <div class="field suggest-field">
         <label for="user">Username</label>
+        <!-- The quick-find list is filled from data/chat_authors.json, fetched on
+             first focus (see initUI) — the same one fetch runSearch's username
+             filter uses. Picking a row only fills the field; Enter still searches. -->
         <input type="text" id="user" placeholder="@name" autocomplete="off" spellcheck="false">
+        <div class="suggest" id="userSuggest" hidden></div>
       </div>
       <div class="field">
         <label for="stream">Stream</label>
@@ -575,6 +624,25 @@ const hydrateCache = new Map();   // 'chat:<id>' | 'tr:<id>' -> messages[]; kept
 // stream id -> { smeta, hits, tokens } for the groups on screen, so a "show N more"
 // click can render rows GROUP_CAP..end without re-hydrating. Cleared per search.
 const GROUP_HITS = new Map();
+
+// ── Author index (lazy) ──────────────────────────────────────────────────────
+// The ONE fetch of chat_authors.json, shared by runSearch's username filter and by
+// the quick-find dropdown. The in-flight promise is held, not just the result: the
+// dropdown starts the fetch on focus and a search can be submitted a keystroke
+// later, and both must join the same 1.7 MB download. It rejects rather than
+// swallowing the error, because the two callers want opposite things — runSearch
+// renders an error pane, the dropdown degrades silently to plain typing (mirrors
+// discord.html). A failure clears the handle, so the next caller tries again.
+let AUTHORS_FETCH = null;
+function ensureAuthors() {
+  if (AUTHORS) return Promise.resolve(AUTHORS);
+  if (!AUTHORS_FETCH) {
+    AUTHORS_FETCH = fetchJSON(`${RAW}/data/chat_authors.json`)
+      .then(j => { AUTHORS = j; return j; })
+      .finally(() => { AUTHORS_FETCH = null; });
+  }
+  return AUTHORS_FETCH;
+}
 
 // ── Transcript index (lazy, 404-tolerant) ────────────────────────────────────
 // The transcript corpus ships before any transcript data exists, so EVERY failure
@@ -901,7 +969,7 @@ async function runSearch() {
 
   // Username needs the lazy author index — and only the chat corpus uses it.
   if (q.user && q.sources.has('chat') && !AUTHORS) {
-    try { AUTHORS = await fetchJSON(`${RAW}/data/chat_authors.json`); }
+    try { await ensureAuthors(); }
     catch (e) {
       // This catch lands after an await, so a newer search may already own the
       // pane and the button. Check the generation before touching either — the
@@ -1397,11 +1465,124 @@ function showStreamTitle(sp) {
   }
 }
 
+// ── Username quick-find ──────────────────────────────────────────────────────
+// A dropdown under the Username field, filled from the same chat_authors.json the
+// username filter uses. It is a convenience only: picking a row fills the field and
+// marks the results stale, exactly like typing the name — the search still waits for
+// Enter. Nothing here can block, delay or fail a search.
+const SUGGEST_MAX = 15;      // rows rendered; the index holds ~31k authors
+let SUGGEST_ROWS   = [];     // the matches currently on screen
+let SUGGEST_ACTIVE = -1;     // index of the .active row, -1 = none
+let SUGGEST_TIMER  = null;   // input debounce (120 ms, discord.html's #chanSearch)
+
+// What the typed value matches against. normUser() turns an empty field into
+// 'unknown', so an empty/blank field short-circuits to '' before it is called.
+function suggestNeedle(raw) {
+  return String(raw ?? '').trim() ? normUser(raw) : '';
+}
+
+// Pure (authors, typed) -> ranked, capped matches. Author keys are already
+// normalized (lowercase, no '@'), which is exactly what normUser() produces, so a
+// picked row is an exact index key rather than a near-miss.
+//   · 'unknown' is excluded: it indexes blank-author messages, so offering it only
+//     invites a search nobody means.
+//   · Ranked by stream count desc (the only signal in the index), prefix matches
+//     first within a count band, then alphabetically.
+function filterAuthors(authors, raw) {
+  const needle = suggestNeedle(raw);
+  if (!needle || !authors) return [];
+  const out = [];
+  for (const name in authors) {
+    if (name === 'unknown') continue;
+    const at = name.indexOf(needle);
+    if (at === -1) continue;
+    out.push({ name, at, count: (authors[name] || []).length });
+  }
+  out.sort((a, b) =>
+    b.count - a.count ||
+    (a.at === 0 ? 0 : 1) - (b.at === 0 ? 0 : 1) ||
+    (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
+  return out.slice(0, SUGGEST_MAX);
+}
+
+// Also cancels a pending debounce: a timer that fired after a blur would re-open
+// the list under an unfocused field.
+function hideSuggest() {
+  if (SUGGEST_TIMER) { clearTimeout(SUGGEST_TIMER); SUGGEST_TIMER = null; }
+  SUGGEST_ROWS = [];
+  SUGGEST_ACTIVE = -1;
+  const box = document.getElementById('userSuggest');
+  if (!box) return;
+  box.hidden = true;
+  box.innerHTML = '';
+}
+
+// Draw the list for whatever is in the field right now. Never fetches — the one
+// fetch is kicked off on first focus and calls back here when it lands.
+function renderSuggest() {
+  const box = document.getElementById('userSuggest');
+  const input = document.getElementById('user');
+  if (!box || !input) return;
+  const needle = suggestNeedle(input.value);
+  if (!needle) { hideSuggest(); return; }   // empty field -> no list
+  if (!AUTHORS) {
+    // Still on the wire: one muted row so the empty list reads as "not yet" rather
+    // than "no such user". A failed fetch leaves AUTHORS null and AUTHORS_FETCH
+    // cleared, so this collapses to a hidden list and typing carries on.
+    if (!AUTHORS_FETCH) { hideSuggest(); return; }
+    SUGGEST_ROWS = [];
+    SUGGEST_ACTIVE = -1;
+    box.innerHTML = `<div class="suggest-note">loading authors…</div>`;
+    box.hidden = false;
+    return;
+  }
+  SUGGEST_ROWS = filterAuthors(AUTHORS.authors, input.value);
+  SUGGEST_ACTIVE = -1;
+  if (!SUGGEST_ROWS.length) { hideSuggest(); return; }
+  box.innerHTML = SUGGEST_ROWS.map((m, i) => {
+    const pre  = m.name.slice(0, m.at);
+    const hit  = m.name.slice(m.at, m.at + needle.length);
+    const post = m.name.slice(m.at + needle.length);
+    return `<div class="suggest-row" data-i="${i}">
+      <span>${escHtml(pre)}<mark>${escHtml(hit)}</mark>${escHtml(post)}</span>
+      <span class="suggest-count">${m.count} stream${m.count === 1 ? '' : 's'}</span>
+    </div>`;
+  }).join('');
+  box.hidden = false;
+}
+
+// ArrowDown/ArrowUp, wrapping at both ends.
+function moveSuggest(delta) {
+  const box = document.getElementById('userSuggest');
+  const n = SUGGEST_ROWS.length;
+  if (!box || !n) return;
+  SUGGEST_ACTIVE = SUGGEST_ACTIVE === -1
+    ? (delta > 0 ? 0 : n - 1)
+    : (SUGGEST_ACTIVE + delta + n) % n;
+  box.querySelectorAll('.suggest-row').forEach((el, i) => {
+    el.classList.toggle('active', i === SUGGEST_ACTIVE);
+    if (i === SUGGEST_ACTIVE) el.scrollIntoView({ block: 'nearest' });
+  });
+}
+
+// Picking a row IS a text edit: fill the field, mark the shown results stale, wait
+// for Enter. refreshStale() is called directly rather than by dispatching an 'input'
+// event — that event would restart the debounce and re-open the list on the name we
+// just picked.
+function selectSuggest(i) {
+  const m = SUGGEST_ROWS[i];
+  if (!m) return;
+  document.getElementById('user').value = m.name;
+  hideSuggest();
+  refreshStale();
+}
+
 // ── Reset ────────────────────────────────────────────────────────────────────
 // Native form.reset() restores every `checked` attribute in the markup, so the
 // defaults live in one place (the HTML) rather than being duplicated here.
 function resetSearch() {
   document.getElementById('searchForm').reset();
+  hideSuggest();   // form.reset() empties #user; the list must not outlive its text
   GEN++;
   if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
   SEARCH = null;
@@ -1431,6 +1612,10 @@ function initUI() {
   // the keypress in both.
   form.addEventListener('keydown', e => {
     if (e.key !== 'Enter') return;
+    // A field's own handler may already have consumed this Enter — the username
+    // quick-find takes it to select its active row. Never search over the top of
+    // one: the native submit is already cancelled, and so is this fallback.
+    if (e.defaultPrevented) return;
     // Index still loading: say so, don't search.
     if (!INDEX) { e.preventDefault(); flashHint('index still loading…', 2000); return; }
     // Mid-scan: the button is a status signal, not a lock — Enter must still
@@ -1465,6 +1650,70 @@ function initUI() {
     e.target.value = '';
     refreshStale();
   });
+
+  // ── Username quick-find ────────────────────────────────────────────────────
+  // Every listener below is registered once, here — repeated focus re-renders the
+  // list but never re-wires it, and never re-fetches.
+  const userEl = document.getElementById('user');
+  const suggestBox = document.getElementById('userSuggest');
+
+  userEl.addEventListener('focus', () => {
+    // First focus starts the one fetch — or joins the one a search already started;
+    // ensureAuthors dedupes both. Suggestions are a convenience, so a failure is
+    // silent (typing still works) and runSearch keeps its own error pane.
+    // Re-focusing during the download only adds another one-shot continuation, so
+    // whichever focus is current when it lands is the one that draws the list.
+    if (!AUTHORS) {
+      ensureAuthors().catch(() => {}).then(() => {
+        if (document.activeElement === userEl) renderSuggest();
+      });
+    }
+    renderSuggest();   // re-focusing with text present re-shows the matches
+  });
+
+  userEl.addEventListener('input', () => {
+    if (SUGGEST_TIMER) clearTimeout(SUGGEST_TIMER);
+    SUGGEST_TIMER = setTimeout(() => { SUGGEST_TIMER = null; renderSuggest(); }, 120);
+  });
+
+  userEl.addEventListener('keydown', e => {
+    const open = !suggestBox.hidden && SUGGEST_ROWS.length > 0;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      if (!open) return;
+      e.preventDefault();          // move the active row, not the caret
+      moveSuggest(e.key === 'ArrowDown' ? 1 : -1);
+      return;
+    }
+    if (e.key === 'Enter') {
+      // Only an ACTIVE row consumes Enter. With the list open but nothing picked,
+      // it just gets out of the way and the form submits as usual — the dropdown
+      // must never swallow a search.
+      if (!open || SUGGEST_ACTIVE === -1) { hideSuggest(); return; }
+      // Cancels the native submit; the form-level keydown fallback stands down on
+      // defaultPrevented, so this Enter cannot also fire a search.
+      e.preventDefault();
+      selectSuggest(SUGGEST_ACTIVE);
+      return;
+    }
+    if (e.key === 'Escape') {
+      // Hides the list and nothing else — the field keeps its text.
+      if (suggestBox.hidden) return;
+      e.preventDefault();
+      hideSuggest();
+      return;
+    }
+    if (e.key === 'Tab') hideSuggest();
+  });
+
+  // mousedown, not click: it fires before the field's blur. preventDefault covers
+  // the whole box (not just a row) so focus stays put through a scrollbar drag too.
+  suggestBox.addEventListener('mousedown', e => {
+    e.preventDefault();
+    const row = e.target.closest('.suggest-row');
+    if (row) selectSuggest(Number(row.dataset.i));
+  });
+
+  userEl.addEventListener('blur', hideSuggest);
 
   // '/' jumps to the search box. Only works while the iframe holds focus —
   // accepted, the shell has no key forwarding.
