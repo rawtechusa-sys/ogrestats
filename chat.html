@@ -197,6 +197,9 @@
     gap: 4px 12px;
     flex-shrink: 0;
   }
+  /* An author `display` outranks the UA's [hidden] rule, so the hidden attribute
+     needs saying again here or the bar never hides. */
+  .status-bar[hidden] { display: none; }
   .status-bar .btn-link { padding: 2px 4px; align-self: center; }
   #searchNote {
     font-family: 'Share Tech Mono', monospace;
@@ -903,6 +906,7 @@ async function runSearch() {
       results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the username index<br><small>${escHtml(e.message)}</small></span></div>`;
       clearStaleState();   // same rule as the guards above: the pane IS the state
       hideStatusBar();     // the previous search's counts describe nothing now
+      setSearchBusy(false);   // no scan is running behind this pane
       return;
     }
   }
@@ -932,6 +936,7 @@ async function runSearch() {
   if (!cand.length) {
     results.innerHTML = emptyState('no messages or transcript lines match — no stream got past those filters', q.note);
     hideStatusBar();   // no scan to report on; emptyState carries the note
+    setSearchBusy(false);
     return;
   }
 
@@ -1313,7 +1318,9 @@ function showGuard(message) {
       <span>${message}</span></div>`;
   }
   clearStaleState();
-  hideStatusBar();   // the counts on it describe a search that is no longer shown
+  hideStatusBar();     // the counts on it describe a search that is no longer shown
+  setSearchBusy(false);  // a guard can land mid-scan (a checkbox re-search), and the
+                         // scan it replaced is the one that disabled the button
 }
 
 // A one-off note in the same line, which then reverts to the stale state.
@@ -1415,12 +1422,21 @@ function initUI() {
   // The one and only search trigger: the Search button and Enter in any field
   // both come through here.
   form.addEventListener('submit', e => { e.preventDefault(); runSearch(); });
-  // Enter while the index still loads: the default button is disabled, so implicit
-  // submission is a no-op and nothing at all would happen. Answer the keypress.
+  // A disabled default button kills implicit form submission, so Enter would do
+  // nothing at all in the two states where the Search button is disabled. Answer
+  // the keypress in both.
   form.addEventListener('keydown', e => {
-    if (e.key !== 'Enter' || INDEX) return;
+    if (e.key !== 'Enter') return;
+    // Index still loading: say so, don't search.
+    if (!INDEX) { e.preventDefault(); flashHint('index still loading…', 2000); return; }
+    // Mid-scan: the button is a status signal, not a lock — Enter must still
+    // re-search, which the GEN machinery makes safe. Enter on a focused button is
+    // that button's own key, so leave it alone.
+    const btn = document.getElementById('searchBtn');
+    if (!btn || !btn.disabled) return;   // native submit already handles it
+    if (e.target && e.target.tagName === 'BUTTON') return;
     e.preventDefault();
-    flashHint('index still loading…', 2000);
+    runSearch();
   });
   document.getElementById('resetBtn').addEventListener('click', resetSearch);
 
