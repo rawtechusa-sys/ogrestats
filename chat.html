@@ -186,6 +186,26 @@
     flex-shrink: 0;
   }
 
+  /* ── Status bar ─────────────────────────────────────────────── */
+  /* Same reason as the stale hint: a sibling of #results, never inside it.
+     runSearch rewrites results.innerHTML, and the counts/cancel/expand controls
+     must stay put (and stay on screen) while the results scroll under them. */
+  .status-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    flex-shrink: 0;
+  }
+  .status-bar .btn-link { padding: 2px 4px; align-self: center; }
+  #searchNote {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+  }
+
   /* ── Results ────────────────────────────────────────────────── */
   #results.stale { opacity: 0.55; transition: opacity .2s; }
   .scroll-area {
@@ -314,7 +334,26 @@
   }
   .msg-meta a { color: var(--text-muted); text-decoration: none; }
   .msg-meta a:hover { color: var(--accent-bright); }
-  .vod-link::before { content: '▶ '; }
+  /* Scoped to the anchor: a row with no source VOD renders the elapsed time as
+     plain text, and a play glyph on unclickable text is a false affordance. */
+  a.vod-link::before { content: '▶ '; }
+  .elapsed-plain { color: var(--text-muted); opacity: 0.75; }
+  .msg-clock { color: var(--text-muted); opacity: 0.75; }
+
+  /* Per-group cap: the rest of a big group is one click away. */
+  .show-more {
+    display: block;
+    margin: 10px auto;
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+  /* Why the auto-scan stopped, under the "Keep scanning" button. */
+  .scan-note {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+  }
 
   .loading-state, .empty-state, .error-state, .hint-state {
     display: flex;
@@ -402,6 +441,18 @@
 
   <div class="stale-hint" id="staleHint" hidden></div>
 
+  <!-- Counts, note, cancel and the expand/collapse controls. A sibling of
+       #results (not a child) so it never scrolls away and survives every
+       results.innerHTML rewrite. -->
+  <div class="status-bar" id="statusBar" hidden>
+    <span class="result-count" id="resultStatus"></span>
+    <span id="searchNote"></span>
+    <button type="button" class="btn-link" id="cancelBtn" hidden>cancel</button>
+    <div class="filter-spacer"></div>
+    <button type="button" class="btn-link" id="collapseAllBtn">collapse all</button>
+    <button type="button" class="btn-link" id="expandAllBtn">expand all</button>
+  </div>
+
   <div class="scroll-area" id="results">
     <div class="loading-state">
       <span class="loading-glyph">~</span>
@@ -424,6 +475,9 @@ const BATCH = 8;
 // Cap that continuous auto-scan; past it, offer a "Keep scanning" button so a
 // restrictive filter on a common token can't silently pull hundreds of MB.
 const MAX_AUTOSCAN = 60;
+// A stream with thousands of hits would bury every other stream in the pane, so a
+// group renders its first GROUP_CAP rows and offers the rest behind one button.
+const GROUP_CAP = 50;
 
 // ── Theme (mirrors tts.html / dents.html) ────────────────────────────────────
 function applyTheme(key) {
@@ -515,6 +569,9 @@ let HINT_TIMER = null;   // auto-clear for a transient #staleHint note
 // Keys are source-qualified ('chat:'+id / 'tr:'+id) because the two corpora are
 // fetched independently and a stream can be hydrated for one and not the other.
 const hydrateCache = new Map();   // 'chat:<id>' | 'tr:<id>' -> messages[]; kept across searches
+// stream id -> { smeta, hits, tokens } for the groups on screen, so a "show N more"
+// click can render rows GROUP_CAP..end without re-hydrating. Cleared per search.
+const GROUP_HITS = new Map();
 
 // ── Transcript index (lazy, 404-tolerant) ────────────────────────────────────
 // The transcript corpus ships before any transcript data exists, so EVERY failure
@@ -601,13 +658,16 @@ function dateToTs(v, endOfDay) {
 //   · chat.json        — live chat, anchored to the RESTREAM broadcast rather than the
 //     source VOD, so those links land on the source timeline only approximately.
 // Both chat files are in the published corpus, so mixed-accuracy rows are expected.
-function vodLink(smeta, offset, label) {
+function vodLink(smeta, offset, label, title) {
   const t = Math.max(0, Math.floor(offset ?? 0));
+  const tt = title ? ` title="${escHtml(title)}"` : '';
   if (smeta && smeta.source_vod_id && smeta.source_platform !== 'twitch') {
     const href = `https://youtu.be/${encodeURIComponent(smeta.source_vod_id)}?t=${t}`;
-    return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer">${escHtml(label)}</a>`;
+    return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer"${tt}>${escHtml(label)}</a>`;
   }
-  return `<span class="vod-link">${escHtml(label)}</span>`;
+  // No source VOD (or a Twitch source): the elapsed time is still worth showing,
+  // but as plain text — no anchor, and no play glyph pretending it is clickable.
+  return `<span class="elapsed-plain"${tt}>${escHtml(label)}</span>`;
 }
 function fmtElapsed(sec) {
   const s = Math.max(0, Math.floor(sec || 0));
@@ -615,6 +675,12 @@ function fmtElapsed(sec) {
   return h > 0
     ? `${h}:${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`
     : `${m}:${String(ss).padStart(2,'0')}`;
+}
+// Wall-clock time of a row, in the viewer's configured zone (config.js withTZ).
+function fmtClock(ts) {
+  if (ts == null) return '';
+  try { return new Date(ts * 1000).toLocaleTimeString('en-US', withTZ({ hour: 'numeric', minute: '2-digit' })); }
+  catch { return ''; }
 }
 
 // ── Highlight query tokens in a message ──────────────────────────────────────
@@ -701,14 +767,21 @@ async function hydrateChat(smeta) {
   const settled = await Promise.allSettled(urls.map(fetchJSON));
   const seen = new Set();
   const msgs = [];
-  for (const r of settled) {
+  // Index order matches `urls`: 0 = chat_replay.json (offsets are source-VOD time,
+  // exact), 1 = chat.json (live chat, offsets anchored to the RESTREAM broadcast,
+  // so the VOD timestamp is approximate). Replay is read first, so a row that
+  // survives the dedup out of the live file is one the replay never had. The tag
+  // is set before hydrateCache.set, so cached rows stay consistent for the session.
+  for (let i = 0; i < settled.length; i++) {
+    const r = settled[i];
     if (r.status !== 'fulfilled' || !r.value || !Array.isArray(r.value.messages)) continue;
     const plat = r.value.source_platform || 'youtube';
+    const src = i === 0 ? 'replay' : 'live';
     for (const m of r.value.messages) {
       const key = `${m.author} ${m.text} ${Math.round(m.ts || 0)}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      msgs.push({ ...m, platform: m.platform || plat });
+      msgs.push({ ...m, platform: m.platform || plat, src });
     }
   }
   hydrateCache.set('chat:' + smeta.id, msgs);
@@ -755,6 +828,7 @@ async function runSearch() {
   const myGen = ++GEN;
   if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
   SEARCH = null;
+  GROUP_HITS.clear();   // the old groups are about to be replaced, hits and all
 
   const rawQ = document.getElementById('q').value.trim();
   const q = {
@@ -828,6 +902,7 @@ async function runSearch() {
     catch (e) {
       results.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load the username index<br><small>${escHtml(e.message)}</small></span></div>`;
       clearStaleState();   // same rule as the guards above: the pane IS the state
+      hideStatusBar();     // the previous search's counts describe nothing now
       return;
     }
   }
@@ -856,6 +931,7 @@ async function runSearch() {
   const cand = resolveCandidates(q);   // already newest-first
   if (!cand.length) {
     results.innerHTML = emptyState('no messages or transcript lines match — no stream got past those filters', q.note);
+    hideStatusBar();   // no scan to report on; emptyState carries the note
     return;
   }
 
@@ -867,9 +943,13 @@ async function runSearch() {
     shownMsgs: 0, shownStreams: 0, scanned: 0, autoScan: 0,
   };
 
-  // Lay out the results container: a live status line, an append target, a sentinel.
-  results.innerHTML =
-    `<div class="result-count" id="resultStatus"></div><div id="groups"></div><div id="sentinel"></div>`;
+  // Lay out the results container: an append target and a sentinel. The status
+  // line lives in #statusBar, outside this element, so it survives every rewrite.
+  results.innerHTML = `<div id="groups"></div><div id="sentinel"></div>`;
+  document.getElementById('statusBar').hidden = false;
+  // #groups is rebuilt per search, so this listener cannot stack across searches.
+  document.getElementById('groups').addEventListener('click', onGroupsClick);
+  setSearchBusy(true);
   updateStatus();
 
   OBSERVER = new IntersectionObserver(entries => {
@@ -963,33 +1043,66 @@ function sentinelVisible() {
   return s.top <= r.bottom + 600;   // matches the observer rootMargin
 }
 
+// One result row. Also used by the "show N more" handler, so it must stay a pure
+// (smeta, message, tokens) -> html function.
+function renderRow(smeta, m, tokens) {
+  // A live-chat row's offset is anchored to the restream broadcast, not the source
+  // VOD (see the comment above vodLink), so mark its elapsed time as approximate.
+  const approx = m.kind !== 'tr' && m.src === 'live';
+  const label = (approx ? '~' : '') + fmtElapsed(m.offset);
+  const link = vodLink(smeta, m.offset, label, approx
+    ? 'live-chat offset is anchored to the restream broadcast — the VOD timestamp is approximate'
+    : null);
+  const clock = fmtClock(m.ts);
+  // A transcript line has no author — just the badge, the text and the deep link.
+  const head = m.kind === 'tr'
+    ? `<span class="plat-badge transcript">transcript</span>`
+    : `<span class="msg-user">${escHtml(m.author)}</span>
+       <span class="plat-badge ${escHtml(m.platform || 'youtube')}">${escHtml(m.platform || 'youtube')}</span>`;
+  return `<div class="msg">
+    <div class="msg-head">
+      ${head}
+    </div>
+    <div class="msg-text">${highlight(m.text, tokens)}</div>
+    <div class="msg-meta">${clock ? `<span class="msg-clock">${escHtml(clock)}</span>` : ''}${link}</div>
+  </div>`;
+}
+
 function renderGroup(smeta, hits, tokens) {
   const title = smeta.title || smeta.id;
   const anchor = `<a href="streams.html#${encodeURIComponent(smeta.id)}" onclick="jumpToStream('${encodeURIComponent(smeta.id).replace(/'/g, "\\'")}', event)">${escHtml(title)}</a>`;
-  const rows = hits.map(m => {
-    const link = vodLink(smeta, m.offset, fmtElapsed(m.offset));
-    // A transcript line has no author — just the badge, the text and the deep link.
-    const head = m.kind === 'tr'
-      ? `<span class="plat-badge transcript">transcript</span>`
-      : `<span class="msg-user">${escHtml(m.author)}</span>
-         <span class="plat-badge ${escHtml(m.platform || 'youtube')}">${escHtml(m.platform || 'youtube')}</span>`;
-    return `<div class="msg">
-      <div class="msg-head">
-        ${head}
-      </div>
-      <div class="msg-text">${highlight(m.text, tokens)}</div>
-      <div class="msg-meta">${link}</div>
-    </div>`;
-  }).join('');
-  return `<details class="stream-group" open>
+  // Only the first GROUP_CAP rows go in; the full array is stashed so the
+  // "show N more" click can render the tail without re-hydrating the stream.
+  GROUP_HITS.set(smeta.id, { smeta, hits, tokens });
+  const rows = hits.slice(0, GROUP_CAP).map(m => renderRow(smeta, m, tokens)).join('');
+  const more = hits.length > GROUP_CAP
+    ? `<button type="button" class="btn show-more" data-sid="${escHtml(smeta.id)}">show ${hits.length - GROUP_CAP} more</button>`
+    : '';
+  return `<details class="stream-group" data-sid="${escHtml(smeta.id)}" open>
     <summary class="stream-group-head">
       <span class="caret">▸</span>
       <span class="stream-group-title">${anchor}</span>
       <span class="stream-group-meta">${escHtml(fmtDate(smeta.start_ts))}</span>
       <span class="stream-group-meta hit-count">${hits.length} hit${hits.length === 1 ? '' : 's'}</span>
     </summary>
-    ${rows}
+    ${rows}${more}
   </details>`;
+}
+
+// Delegated on #groups (rebuilt per search): expand one capped group in place.
+function onGroupsClick(e) {
+  const btn = e.target.closest('.show-more');
+  if (!btn) return;
+  const entry = GROUP_HITS.get(btn.dataset.sid);
+  if (!entry) { btn.remove(); return; }
+  const rest = entry.hits.slice(GROUP_CAP).map(m => renderRow(entry.smeta, m, entry.tokens)).join('');
+  btn.insertAdjacentHTML('beforebegin', rest);
+  btn.remove();
+}
+
+// Status-bar controls: open/close every group currently on screen.
+function setAllGroups(open) {
+  document.querySelectorAll('#groups details.stream-group').forEach(d => { d.open = open; });
 }
 
 // The "nothing found" pane. A note (set on the query when a filter combination
@@ -1004,7 +1117,8 @@ function emptyState(message, note) {
       <span>${message}</span>${note ? `<span style="opacity:0.6;">${escHtml(note)}</span>` : ''}</div>`;
 }
 
-// Live status above the results — running totals + how far into the candidate set.
+// Live status in #statusBar — running totals, how far into the candidate set, the
+// note, and whether the scan is still cancellable.
 function updateStatus() {
   const S = SEARCH;
   const el = document.getElementById('resultStatus');
@@ -1012,16 +1126,60 @@ function updateStatus() {
   const total = S.candidates.length;
   const msgs = `${S.shownMsgs} message${S.shownMsgs === 1 ? '' : 's'}`;
   const strms = `${S.shownStreams} stream${S.shownStreams === 1 ? '' : 's'}`;
-  // A note names a filter combination that quietly narrowed the search (set on the
-  // query in runSearch). Muted, appended — it never replaces the counts.
-  const note = S.q.note ? ` <span style="opacity:0.5;">· ${escHtml(S.q.note)}</span>` : '';
   if (S.cursor >= total) {
     el.innerHTML = S.shownMsgs
-      ? `${msgs} across ${strms} <span style="opacity:0.5;">· ${total} scanned</span>${note}`
+      ? `${msgs} across ${strms} <span style="opacity:0.5;">· ${total} scanned</span>`
       : '';
   } else {
-    el.innerHTML = `${msgs} across ${strms} <span style="opacity:0.5;">· scanning ${S.scanned}/${total} streams…</span>${note}`;
+    el.innerHTML = `${msgs} across ${strms} <span style="opacity:0.5;">· scanning ${S.scanned}/${total} streams…</span>`;
   }
+  // A note names a filter combination that quietly narrowed the search (set on the
+  // query in runSearch). Its own muted span — it never competes with the counts.
+  const noteEl = document.getElementById('searchNote');
+  if (noteEl) noteEl.textContent = S.q.note ? `· ${S.q.note}` : '';
+  // Cancellable only while a scan is actually in flight.
+  const cancel = document.getElementById('cancelBtn');
+  if (cancel) cancel.hidden = !(!S.done && !S.paused && S.cursor < total);
+}
+
+// Put the status bar away: no scan is described by it any more (a guard pane, an
+// error pane, a zero-candidate search, a reset).
+function hideStatusBar() {
+  const bar = document.getElementById('statusBar');
+  if (bar) bar.hidden = true;
+  const cancel = document.getElementById('cancelBtn');
+  if (cancel) cancel.hidden = true;
+  const el = document.getElementById('resultStatus');
+  if (el) el.innerHTML = '';
+  const noteEl = document.getElementById('searchNote');
+  if (noteEl) noteEl.textContent = '';
+}
+
+// The Search button doubles as a scan indicator. It must never re-enable while the
+// index is still loading — that disable belongs to load(), which owns the label too.
+function setSearchBusy(busy) {
+  const btn = document.getElementById('searchBtn');
+  if (!btn || !INDEX) return;
+  btn.disabled = busy;
+}
+
+// Stop the scan where it stands and keep everything already rendered. GEN first:
+// the in-flight batch must lose its generation check before any UI changes, or it
+// would append into the pane we just declared finished.
+function cancelScan() {
+  const S = SEARCH;
+  if (!S || S.done) return;
+  GEN++;
+  if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
+  S.done = true;
+  S.loading = false;
+  const sentinel = document.getElementById('sentinel');
+  if (sentinel) sentinel.remove();
+  const el = document.getElementById('resultStatus');
+  if (el) el.innerHTML = `${S.shownMsgs} message${S.shownMsgs === 1 ? '' : 's'} across ${S.shownStreams} stream${S.shownStreams === 1 ? '' : 's'} <span style="opacity:0.5;">· stopped at ${S.scanned}/${S.candidates.length} streams</span>`;
+  const cancel = document.getElementById('cancelBtn');
+  if (cancel) cancel.hidden = true;
+  setSearchBusy(false);
 }
 
 function finishSearch() {
@@ -1032,11 +1190,15 @@ function finishSearch() {
   const sentinel = document.getElementById('sentinel');
   if (sentinel) sentinel.remove();
   updateStatus();
+  setSearchBusy(false);
   if (!S.shownMsgs) {
     const results = document.getElementById('results');
     results.innerHTML = emptyState(
       `no messages or transcript lines match — the term is indexed in ${S.candidates.length} stream${S.candidates.length === 1 ? '' : 's'} but no row passed your filters`,
       S.q.note);
+    // Nothing left for the bar to say: the counts blanked, the note rides on the
+    // empty pane, and there are no groups to expand or collapse.
+    hideStatusBar();
   }
 }
 
@@ -1046,16 +1208,20 @@ function pauseAutoScan() {
   if (!S) return;
   S.paused = true;
   S.autoScan = 0;
+  setSearchBusy(false);
   const sentinel = document.getElementById('sentinel');
   if (!sentinel) return;
   const remain = S.candidates.length - S.cursor;
   sentinel.innerHTML =
-    `<button class="btn" id="keepScanning" style="display:block;margin:14px auto;">Keep scanning (${remain} more)</button>`;
+    `<button type="button" class="btn" id="keepScanning" style="display:block;margin:14px auto;">Keep scanning (${remain} more)</button>
+     <div class="scan-note">paused after ${MAX_AUTOSCAN} streams in a row with no hits — ${remain} unscanned</div>`;
   const btn = document.getElementById('keepScanning');
   if (btn) btn.addEventListener('click', () => {
     sentinel.innerHTML = '';
     S.paused = false;
+    setSearchBusy(true);
     loadNextBatch();
+    updateStatus();     // the scan is live again: bring the cancel button back
   });
   updateStatus();
 }
@@ -1147,6 +1313,7 @@ function showGuard(message) {
       <span>${message}</span></div>`;
   }
   clearStaleState();
+  hideStatusBar();   // the counts on it describe a search that is no longer shown
 }
 
 // A one-off note in the same line, which then reverts to the stale state.
@@ -1227,6 +1394,9 @@ function resetSearch() {
   GEN++;
   if (OBSERVER) { OBSERVER.disconnect(); OBSERVER = null; }
   SEARCH = null;
+  GROUP_HITS.clear();
+  hideStatusBar();
+  setSearchBusy(false);
   LAST_RUN = null;
   if (HINT_TIMER) { clearTimeout(HINT_TIMER); HINT_TIMER = null; }
   const results = document.getElementById('results');
@@ -1253,6 +1423,12 @@ function initUI() {
     flashHint('index still loading…', 2000);
   });
   document.getElementById('resetBtn').addEventListener('click', resetSearch);
+
+  // Status-bar controls. These elements are static, so they are wired once here —
+  // only #groups is rebuilt per search.
+  document.getElementById('cancelBtn').addEventListener('click', cancelScan);
+  document.getElementById('collapseAllBtn').addEventListener('click', () => setAllGroups(false));
+  document.getElementById('expandAllBtn').addEventListener('click', () => setAllGroups(true));
 
   // Checkboxes are cheap toggles of an already-resolved result set, so they
   // re-search live — but only once a search has actually run.
