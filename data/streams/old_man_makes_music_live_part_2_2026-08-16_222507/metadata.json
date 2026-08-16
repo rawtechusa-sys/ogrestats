@@ -3,14 +3,20 @@
   "slug": "old_man_makes_music_live_part_2",
   "title": "Old Man Makes Music Live Part 2.",
   "start_ts": 1786919107,
-  "end_ts": 1786920263,
+  "end_ts": null,
   "platforms": [
+    "kick",
     "youtube",
-    "twitch",
-    "kick"
+    "twitch"
   ],
   "source_channel": "rtustreams",
   "source_platform": "twitch",
   "youtube_archive_id": "fMsDKBz5gjo",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "segments": [
+    {
+      "archive_id": "Gtqjkq9vVnU",
+      "start_ts": 1786920277
+    }
+  ]
 }
