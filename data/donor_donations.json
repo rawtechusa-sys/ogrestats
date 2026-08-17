@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786682566,
+  "updated_ts": 1786926852,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -838,7 +838,8 @@
     "a_robust_beginning_pt2_2026-08-11_222108",
     "rtustreams_2026-08-12_202156",
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
-    "lets_just_lose_our_minds_2026-08-13_223319"
+    "lets_just_lose_our_minds_2026-08-13_223319",
+    "old_man_makes_music_live_part_2_2026-08-16_222507"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9359,6 +9360,21 @@
       ],
       "source_vod_id": "Afp5jX8H558",
       "source_platform": "youtube"
+    },
+    "old_man_makes_music_live_part_2_2026-08-16_222507": {
+      "title": "Old Man Makes Music Live Part 2.",
+      "start_ts": 1786919107,
+      "youtube_archive_id": "Gtqjkq9vVnU",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "Gtqjkq9vVnU",
+          "start_ts": 1786920277
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -37674,6 +37690,22 @@
     ],
     "Dublinpapi": [
       {
+        "ts": 1786926290,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
+      {
+        "ts": 1786923455,
+        "type": "giftsub",
+        "amount_usd": 59.9,
+        "amount_raw": "10 1000",
+        "message": "gifted 10 subs to the community!",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
+      {
         "ts": 1785889848,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -37741,6 +37773,14 @@
       }
     ],
     "nialldude3": [
+      {
+        "ts": 1786920791,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Rich making beats that will make you cry. Or at least make Rich cry.",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
       {
         "ts": 1785890039,
         "type": "bits",
@@ -150182,6 +150222,14 @@
     ],
     "RichsApplauseCounter": [
       {
+        "ts": 1786919650,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Birds and men. Applause counter is here",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
+      {
         "ts": 1783993058,
         "type": "sub",
         "amount_usd": 5.99,
@@ -157076,6 +157124,14 @@
     ],
     "chevydude454": [
       {
+        "ts": 1786925822,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Mmmmmmm, the council approves beating off while making beats",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
+      {
         "ts": 1783037767,
         "type": "sub",
         "amount_usd": 5.99,
@@ -157307,6 +157363,14 @@
       }
     ],
     "techno_tenore": [
+      {
+        "ts": 1786919898,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
       {
         "ts": 1782952934,
         "type": "sub",
@@ -162199,6 +162263,14 @@
       }
     ],
     "j0stler": [
+      {
+        "ts": 1786921582,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Sent it Cheer100",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
+      },
       {
         "ts": 1782181165,
         "type": "giftsub",
@@ -528208,6 +528280,16 @@
         "amount_raw": "Member",
         "message": "Welcome to Large Man Supporter!",
         "stream_id": "lets_just_lose_our_minds_2026-08-13_223319"
+      }
+    ],
+    "taker510_": [
+      {
+        "ts": 1786919510,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Birds",
+        "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507"
       }
     ]
   }
