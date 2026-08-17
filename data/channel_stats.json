@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786682572,
+  "updated_ts": 1786926857,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -838,7 +838,8 @@
     "a_robust_beginning_pt2_2026-08-11_222108",
     "rtustreams_2026-08-12_202156",
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
-    "lets_just_lose_our_minds_2026-08-13_223319"
+    "lets_just_lose_our_minds_2026-08-13_223319",
+    "old_man_makes_music_live_part_2_2026-08-16_222507"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15069,6 +15070,23 @@
       "avg_chat_mpm": 9.73,
       "avg_active_chatters": 23.71,
       "percent_paused": null
+    },
+    "old_man_makes_music_live_part_2_2026-08-16_222507": {
+      "stream_id": "old_man_makes_music_live_part_2_2026-08-16_222507",
+      "title": "Old Man Makes Music Live Part 2.",
+      "start_ts": 1786919107,
+      "end_ts": 1786926647,
+      "duration_sec": 7540,
+      "youtube_archive_id": "Gtqjkq9vVnU",
+      "source_platform": "twitch",
+      "total_donations_usd": 91.85,
+      "donation_count": 8,
+      "donations_per_min": 0.7309,
+      "peak_viewers": 81,
+      "avg_viewers": 68.17,
+      "avg_chat_mpm": 2.79,
+      "avg_active_chatters": 7.31,
+      "percent_paused": 0.0
     }
   }
 }
