@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786926857,
+  "updated_ts": 1787025981,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -839,7 +839,8 @@
     "rtustreams_2026-08-12_202156",
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
     "lets_just_lose_our_minds_2026-08-13_223319",
-    "old_man_makes_music_live_part_2_2026-08-16_222507"
+    "old_man_makes_music_live_part_2_2026-08-16_222507",
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15087,6 +15088,23 @@
       "avg_chat_mpm": 2.79,
       "avg_active_chatters": 7.31,
       "percent_paused": 0.0
+    },
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457": {
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "title": "The Robust Bob Lavari Twitch Sub-a-Thon",
+      "start_ts": 1787002443,
+      "end_ts": 1787025745,
+      "duration_sec": 23302,
+      "youtube_archive_id": "OLpqhnnS_4E",
+      "source_platform": "twitch",
+      "total_donations_usd": 266.7,
+      "donation_count": 64,
+      "donations_per_min": 0.6867,
+      "peak_viewers": 212,
+      "avg_viewers": 180.76,
+      "avg_chat_mpm": 5.82,
+      "avg_active_chatters": 14.58,
+      "percent_paused": 43.8
     }
   }
 }
