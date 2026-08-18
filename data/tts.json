@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1786926848,
+  "updated_ts": 1787025971,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -839,16 +839,17 @@
     "rtustreams_2026-08-12_202156",
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
     "lets_just_lose_our_minds_2026-08-13_223319",
-    "old_man_makes_music_live_part_2_2026-08-16_222507"
+    "old_man_makes_music_live_part_2_2026-08-16_222507",
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457"
   ],
   "commands": {
     "men": 3,
-    "eric": 166,
-    "phil": 348,
-    "stan": 281,
-    "masterchief": 126,
-    "harman": 88,
-    "trump": 128,
+    "eric": 168,
+    "phil": 353,
+    "stan": 284,
+    "masterchief": 128,
+    "harman": 91,
+    "trump": 129,
     "moist": 23,
     "dagoth": 3,
     "zesty": 33,
@@ -868,7 +869,7 @@
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 38,
+    "dsp": 41,
     "something": 3,
     "witch": 3,
     "agreement": 1,
@@ -885,7 +886,7 @@
     "ones": 1,
     "harmon": 1,
     "rage": 1,
-    "bill": 2,
+    "bill": 6,
     "gnome": 2,
     "kanye": 2,
     "post": 1,
@@ -9942,9 +9943,191 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457": {
+      "title": "The Robust Bob Lavari Twitch Sub-a-Thon",
+      "start_ts": 1787002443,
+      "youtube_archive_id": "OLpqhnnS_4E",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "OLpqhnnS_4E",
+          "start_ts": 1787002443
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1787017750,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Phil: Rich I wear open collar shirts to bring in the Rainbow Demographic! Stan: Well hi there Phillip! You're a little old for me but I don't get much action here in the Afterlife! (slap)",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787016688,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Eric: Hey Richie... it's me! I'm back! I've sucked Boogie's nipple and I'll suck anything on your body I can so King Keemstar will give me my own LOLCOW show! I just know he'll notice me if I touch you under that Bisexual Lighting!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787016568,
+      "username": "thechange1ing",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Trump: JiDion helping as many predators as Todd Blanche",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787015463,
+      "username": "chevydude454",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 bill: matt im hard, im never been this hard. It's pulsating!",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1787015243,
+      "username": "chevydude454",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Masterchief: embrace the true power of the farts. Is this going to work?",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787015151,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Stan: Hmmm... Cookies? Sweet Tea? That all sounds very familiar to me Rich. Do you want me to have a seat? Why not watch the episode that made me famous?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787014906,
+      "username": "chevydude454",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Masterchief: still figuring out this shit. This is your reminder from the council of farts to embrace the true power of the farts. All of them",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787012363,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Harman: Yo Rich! Where you at? It's leg day! Also, your Nintendo knowledge is weak sauce my friend! Pikachu makes me feel like a real man!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787011864,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Stan: This Mike Matei is strongly rumored to have a penis that is larger than Phillip Paul Burnell's KIng's Tax!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787008430,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 DSP: I am a man with an ass! And you can all kiss it while you eat shit out of it with a spoon! Also, your support is insufficient and disrespectful!  rtuRobust",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1787008386,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Phil: I am a man with an ass! And you can all kiss it while you eat shit out of it with a spoon! Also, your support is insufficient and disrespectful! rtuRobust",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787008117,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer1000 Bill: Testing! Phil: Testing! Harman: Testing! DSP: Testing!",
+      "commands": [
+        "bill",
+        "phil",
+        "harman",
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1787008066,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Bill: Testing! Phil: Testing! Harman: Testing! DSP: Testing!",
+      "commands": [
+        "bill",
+        "phil",
+        "harman",
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1787007751,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Bill: Listen Rich, one of my daughters is currently involved in a scandal involving Cookie Stuffing! The apple doesn't fall far from the tree! rtuBILL",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1787007595,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer100 Eric: Rich I wanna wrestle you in the dark while Keem watches and if I win then he says I get my own LOLCOW show! WinnieHuh",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787002830,
+      "username": "wattpaduser45",
+      "platform": "twitch",
+      "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+      "message": "Cheer50 Phil: I'm too cowardly to be a Green Lantern.",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1786680815,
       "username": "@tougeruzbay",
