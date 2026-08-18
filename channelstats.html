@@ -286,7 +286,7 @@ function legacyEnabled() {
   try { return sessionStorage.getItem('channel-legacy-data') === '1'; } catch (e) { return false; }
 }
 // Raw payloads stashed so toggling the checkbox can re-run buildPage without refetch.
-let _rawChannelStats = null, _rawSubsData = null;
+let _rawChannelStats = null, _rawSubsData = null, _rawTwitchStats = null;
 
 // ── Liberal tooltip snapping ───────────────────────────────────────────────────
 // Stream points (donations, viewers, chat) are sparse and almost never share an x
@@ -414,6 +414,8 @@ const DS = {
   CHAT_MPM:        'Avg Chat Rate',
   ACTIVE_CHATTERS: 'Avg Active Chatters',
   PCT_PAUSED:      '% Paused',
+  TW_FOLLOWERS:    'Twitch Followers',
+  TW_SUBS:         'Twitch Subs',
 };
 
 // Which datasets sit on which y-axis (used to show/hide axes with their series).
@@ -425,11 +427,17 @@ const AXIS_MAP = {
   yViewers:    [DS.PEAK_VIEWERS, DS.AVG_VIEWERS],
   yEngagement: [DS.CHAT_MPM, DS.ACTIVE_CHATTERS],
   yPaused:     [DS.PCT_PAUSED],
+  // Twitch followers (tens of thousands) and Twitch subs (a few hundred) sit on
+  // separate axes -- sharing one would flatten the subs line into the baseline.
+  yTwFollowers: [DS.TW_FOLLOWERS],
+  yTwSubs:      [DS.TW_SUBS],
 };
 
 // Legend rows in display order; `null` marks a divider between groups.
 const LEGEND_SPECS = [
   { label: 'Subscribers',      color: '#40c4ff', type: 'line',   ds: DS.SUBSCRIBERS },
+  { label: 'Twitch Followers', color: '#a970ff', type: 'line',   ds: DS.TW_FOLLOWERS },
+  { label: 'Twitch Subs',      color: '#ff5ce1', type: 'dashed', ds: DS.TW_SUBS },
   null,
   { label: 'Donations/Stream', color: '#e8c020', type: 'bar',    ds: DS.DON_PER_STREAM },
   { label: 'Cumulative $',     color: '#96d45a', type: 'line',   ds: DS.DON_CUMULATIVE },
@@ -448,7 +456,7 @@ const LEGEND_SPECS = [
 // hidden so the chart opens uncluttered; the legend toggles them on.
 const DEFAULT_HIDDEN = [
   DS.DON_PER_HR, DS.PEAK_VIEWERS, DS.AVG_VIEWERS, DS.CHAT_MPM, DS.ACTIVE_CHATTERS,
-  DS.PCT_PAUSED,
+  DS.PCT_PAUSED, DS.TW_FOLLOWERS, DS.TW_SUBS,
 ];
 const _storedHidden = localStorage.getItem('channel-chart-hidden');
 const hiddenDatasets = new Set(_storedHidden ? JSON.parse(_storedHidden) : DEFAULT_HIDDEN);
@@ -622,13 +630,14 @@ function wireLegacyToggle() {
   el.checked = legacyEnabled();
   el.onchange = () => {
     try { sessionStorage.setItem('channel-legacy-data', el.checked ? '1' : '0'); } catch (e) {}
-    buildPage(_rawChannelStats, _rawSubsData);
+    buildPage(_rawChannelStats, _rawSubsData, _rawTwitchStats);
   };
 }
 
-function buildPage(channelStats, subsData) {
+function buildPage(channelStats, subsData, twitchData) {
   _rawChannelStats = channelStats;
   _rawSubsData = subsData;
+  _rawTwitchStats = twitchData;
   const main = document.getElementById('main');
 
   let streams = Object.values(channelStats.streams || {})
@@ -639,13 +648,20 @@ function buildPage(channelStats, subsData) {
     .filter(s => s.ts != null && s.count != null)
     .sort((a, b) => a.ts - b.ts);
 
+  // Twitch daily snapshots. `subs` is null on days with no ACTIVE subs goal, so
+  // only followers is required for a point to count.
+  let tw = (twitchData && Array.isArray(twitchData.snapshots) ? twitchData.snapshots : [])
+    .filter(s => s.ts != null && s.followers != null)
+    .sort((a, b) => a.ts - b.ts);
+
   // Hide pre-restream ("legacy") data unless the toggle is on.
   if (!legacyEnabled()) {
     streams = streams.filter(s => s.start_ts >= LEGACY_CUTOFF_SEC);
     subs = subs.filter(s => s.ts >= LEGACY_CUTOFF_SEC);
+    tw = tw.filter(s => s.ts >= LEGACY_CUTOFF_SEC);
   }
 
-  if (streams.length === 0 && subs.length === 0) {
+  if (streams.length === 0 && subs.length === 0 && tw.length === 0) {
     main.innerHTML = HEADER_HTML +
       `<div class="empty-state"><span class="loading-glyph">☽</span><span>no channel data in this range — try enabling legacy data, or check back after the next broadcast</span></div>`;
     wireLegacyToggle();
@@ -658,6 +674,10 @@ function buildPage(channelStats, subsData) {
   const avgRate = rates.length ? rates.reduce((a, b) => a + b, 0) / rates.length : null;
   const latestSubs = subs.length ? subs[subs.length - 1].count : null;
   const peakReach = streams.reduce((m, s) => Math.max(m, s.peak_viewers || 0), 0);
+  const latestTwFollowers = tw.length ? tw[tw.length - 1].followers : null;
+  // Newest point that actually carries a sub count -- a lapsed subs goal leaves
+  // recent days null, and those must not blank the sub-line.
+  const latestTwSubsPoint = [...tw].reverse().find(p => p.subs != null);
 
   function card(label, value, sub) {
     return `<div class="stat-card">
@@ -670,6 +690,9 @@ function buildPage(channelStats, subsData) {
   let cards = '';
   cards += card('Subscribers', latestSubs != null ? latestSubs.toLocaleString() : '—',
                 latestSubs != null ? 'latest tracked' : 'no data yet');
+  cards += card('Twitch Followers', latestTwFollowers != null ? latestTwFollowers.toLocaleString() : '—',
+                latestTwSubsPoint ? `${latestTwSubsPoint.subs.toLocaleString()} subs`
+                                  : (latestTwFollowers != null ? 'latest tracked' : 'no data yet'));
   cards += card('Lifetime Raised', '$' + lifetimeUSD.toFixed(2), `${streams.length} stream${streams.length !== 1 ? 's' : ''}`);
   cards += card('Avg $/hr', avgRate != null ? '$' + (avgRate * 60).toFixed(2) : '—', 'per-stream average');
   cards += card('Peak Reach', peakReach ? peakReach.toLocaleString() : '—', 'best concurrent viewers');
@@ -696,11 +719,11 @@ function buildPage(channelStats, subsData) {
     </div>`;
 
   wireLegacyToggle();
-  buildChart(streams, subs);
+  buildChart(streams, subs, tw);
   buildLegend();
 }
 
-function buildChart(streams, subs) {
+function buildChart(streams, subs, tw) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
   const ctx = document.getElementById('channelChart');
   if (!ctx) return;
@@ -717,6 +740,13 @@ function buildChart(streams, subs) {
   });
 
   const subData = subs.map(p => ({ x: p.ts * 1000, y: p.count, source: p.source }));
+
+  // Twitch daily snapshots. No stream_id, so the click/hover handlers below
+  // treat these points as inert, exactly like the subscriber points.
+  const twFollowerData = tw.map(p => ({ x: p.ts * 1000, y: p.followers, source: p.source }));
+  // A day with no ACTIVE subs goal has no sub count at all -- keep it null so the
+  // line shows a gap rather than inventing a value.
+  const twSubData = tw.map(p => ({ x: p.ts * 1000, y: p.subs == null ? null : p.subs, source: p.source }));
 
   const datasets = [];
   function add(label, data, color, opts = {}) {
@@ -750,6 +780,11 @@ function buildChart(streams, subs) {
 
   // Subscribers (left, primary). Sparse but continuous trend line.
   add(DS.SUBSCRIBERS, subData, '#40c4ff', { yAxisID: 'ySubs', pointRadius: 2.5 });
+
+  // Twitch source channel (left) -- followers solid, subs dashed on its own axis.
+  add(DS.TW_FOLLOWERS, twFollowerData, '#a970ff', { yAxisID: 'yTwFollowers', pointRadius: 2.5 });
+  add(DS.TW_SUBS, twSubData, '#ff5ce1',
+      { yAxisID: 'yTwSubs', dash: [8, 3], borderWidth: 1.5, pointRadius: 2.5 });
 
   // Donations -- dollars (right). Stepped, not interpolated: the lifetime total
   // is flat between streams and jumps at the stream whose donations it gains
@@ -855,6 +890,8 @@ function buildChart(streams, subs) {
               if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
                 case DS.SUBSCRIBERS:     return ` ${Math.round(y).toLocaleString()} subscribers`;
+                case DS.TW_FOLLOWERS:    return ` ${Math.round(y).toLocaleString()} Twitch followers`;
+                case DS.TW_SUBS:         return ` ${Math.round(y).toLocaleString()} Twitch subs`;
                 case DS.DON_PER_STREAM:  return ` $${y.toFixed(2)} raised`;
                 case DS.DON_CUMULATIVE:  return ` ${fmtMoney(y)} all-time`;
                 case DS.DON_PER_HR:      return ` $${y.toFixed(2)} / hr`;
@@ -898,6 +935,16 @@ function buildChart(streams, subs) {
           position: 'left',
           display: axisHasVisibleDs(AXIS_MAP.ySubs),
           grid: { color: t.chartGrid },
+        }),
+        yTwFollowers: Object.assign(yCommon('#a970ff', 'twitch followers', v => v.toLocaleString()), {
+          position: 'left',
+          display: axisHasVisibleDs(AXIS_MAP.yTwFollowers),
+          grid: { drawOnChartArea: false },
+        }),
+        yTwSubs: Object.assign(yCommon('#ff5ce1', 'twitch subs', v => v.toLocaleString()), {
+          position: 'left',
+          display: axisHasVisibleDs(AXIS_MAP.yTwSubs),
+          grid: { drawOnChartArea: false },
         }),
         yViewers: Object.assign(yCommon('#e84040', 'viewers', v => v.toLocaleString()), {
           position: 'left',
@@ -1150,12 +1197,14 @@ function buildLegend() {
 async function load() {
   const main = document.getElementById('main');
   try {
-    // Subscribers are optional (the file may not exist yet); tolerate a 404.
-    const [channelStats, subsData] = await Promise.all([
+    // Subscribers and Twitch stats are optional (either file may not exist yet);
+    // tolerate a 404 on both.
+    const [channelStats, subsData, twitchData] = await Promise.all([
       fetchJSON(`${RAW}/data/channel_stats.json`),
       fetchJSON(`${RAW}/data/channel_subscribers.json`).catch(() => ({ snapshots: [] })),
+      fetchJSON(`${RAW}/data/twitch_channel_stats.json`).catch(() => ({ snapshots: [] })),
     ]);
-    buildPage(channelStats, subsData);
+    buildPage(channelStats, subsData, twitchData);
   } catch (e) {
     main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>couldn't load channel stats<br><small>${e.message}</small></span></div>`;
   }
