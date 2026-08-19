@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787025981,
+  "updated_ts": 1787114056,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -840,7 +840,8 @@
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
     "lets_just_lose_our_minds_2026-08-13_223319",
     "old_man_makes_music_live_part_2_2026-08-16_222507",
-    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457"
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15105,6 +15106,23 @@
       "avg_chat_mpm": 5.82,
       "avg_active_chatters": 14.58,
       "percent_paused": 43.8
+    },
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126": {
+      "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
+      "title": "An Exceptionally Robust And Meaningful Stream",
+      "start_ts": 1787091637,
+      "end_ts": 1787113847,
+      "duration_sec": 22210,
+      "youtube_archive_id": "Quq0MMbLauM",
+      "source_platform": "youtube",
+      "total_donations_usd": 644.3,
+      "donation_count": 104,
+      "donations_per_min": 1.7406,
+      "peak_viewers": 382,
+      "avg_viewers": 226.26,
+      "avg_chat_mpm": 9.87,
+      "avg_active_chatters": 23.14,
+      "percent_paused": 61.9
     }
   }
 }
