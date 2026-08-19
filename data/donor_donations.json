@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787025974,
+  "updated_ts": 1787114051,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -840,7 +840,8 @@
     "understanding_men_live_feat_bob_lavari_2026-08-12_203957",
     "lets_just_lose_our_minds_2026-08-13_223319",
     "old_man_makes_music_live_part_2_2026-08-16_222507",
-    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457"
+    "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9391,6 +9392,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126": {
+      "title": "An Exceptionally Robust And Meaningful Stream",
+      "start_ts": 1787091637,
+      "youtube_archive_id": "Quq0MMbLauM",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "Quq0MMbLauM",
+          "start_ts": 1787091637
+        }
+      ],
+      "source_vod_id": "csnIpZYXfk4",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -9999,6 +10015,14 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1787110519,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Eric: Mmmm! The erotic courtship of men !",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786670558,
         "type": "superchat",
@@ -11910,6 +11934,14 @@
     ],
     "ZG49389": [
       {
+        "ts": 1787098461,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "It\u2019s all Tevin\u2019s fault",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786666055,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -11999,6 +12031,30 @@
       }
     ],
     "885thBatmanFan": [
+      {
+        "ts": 1787107061,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Do you like the Rocky movies? Because Rocky 3 has 'Eye of The Tiger' by Survivor and that shit is catchy as fuck, Rich!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787105720,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Do you think Punch-Out Wii is a good remake or do you miss the Punch-Out endorsed by Mike Tyson? I like the Wii version.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093526,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Doom: Hell answers to me...For I am...Doom.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786489748,
         "type": "superchat",
@@ -12257,6 +12313,38 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1787093170,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093156,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787092971,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Rich where the camera at we cant see you",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787092868,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786669138,
         "type": "superchat",
@@ -15654,6 +15742,38 @@
     ],
     "throbbingat37pakamerican": [
       {
+        "ts": 1787108573,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 visualize Boogie showing up. \ud83d\ude06",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787107552,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 listen Rich and Sony. Being back 4K HDR video cassette video games back for PS6. Also missed my last cheer bits",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787107323,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 let's watch some politics Kyle kulimsji and how Mossad literally hacked into Florida electoral machine and gave most Dan Bilzerman to fat geu randy fine bigot. I hope final election November these Israel first bas-tards gets knocked out brutally literally, metaphorically, and politically. Ya all feel me",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787103084,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Hey Rich what's up? Sinking city 2 is out on cross platform. People are saying it's very scary and the sound effect is more creeppier than previous one. Game also plays differently than first one which has lot of detective investigation type thing. You should stream that on PS5 Pro. Also runs great on Pro than base ps5 apparently",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1787019521,
         "type": "bits",
         "amount_usd": 0.5,
@@ -18882,6 +19002,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1787105417,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786666318,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -19123,6 +19251,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1787103632,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786661844,
         "type": "giftmembership",
@@ -19863,6 +19999,54 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1787109726,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: how to attract cocks, step 1, boobs,. step 2 acquire pussy. what the hell is this shit.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787109533,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: im gona swear now. fuck you. eat my ass. piss off. lick my balls. lick my ass while im fartin. anyways, boobs are life. embrace nipples",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787103646,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: kino making good points. well, its over. this reality is doomed. in other news, men, a second log has hit the bowl. my anus is relaxed.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787101329,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: the galactic empire questions cosmetic body modifications. only cock enlargement and muscle enhancement is acceptable. or in the event of dismenmberment in war, cybernetic modification.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097234,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: oh ill show you my sunshine daddy! im gona rise and shine all over you! Trump: help me please! why must I suffer. oh shit! anal leakage!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787096736,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Doom: embrace darkness, embrace Darth carlos!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786678578,
         "type": "superchat",
@@ -22071,6 +22255,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1787103260,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Finally playing Nioh. Having a great time.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786673150,
         "type": "superchat",
@@ -27161,6 +27353,38 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1787097491,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "its based on schrodingers cat. until you open the box the cat is both dead and alive at the same time",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097355,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "and he's say with a straight face he's not a child's entertainer",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097296,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "its shrodingers a hole",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787095822,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: my favorite kind of phil is when he tries to be sarcastic and tells you when he's making a sarcastic joke.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786671079,
         "type": "superchat",
@@ -37572,6 +37796,30 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1787105057,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: He was stoned? He was stoned the whole time?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787104738,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Rich the kingsnake. Review4DChessUSA",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093033,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Be Shuhei Yoshida and call Rich an idiot.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786580212,
         "type": "superchat",
         "amount_usd": 2.68,
@@ -39294,6 +39542,14 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1787092895,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "may 1st Phil cosplays as Kumgar",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786485453,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -40551,6 +40807,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1787105818,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787105663,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Can watch Smelloney or not?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787104916,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You such an asshole, u know the shit it got you in",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787101565,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen. And understand. That terminator is out there. It can't be bargained with. It can't be reasoned with. It doesn't feel pity, or remorse, or fear",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787099873,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Sounds like my cousin when I was 11, complaining",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787098599,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "This is kinda like where Splatoon was born",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097619,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "$100 for a keychain fart noise from dollar store",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786668992,
         "type": "superchat",
@@ -60868,6 +61180,14 @@
     ],
     "respergu13": [
       {
+        "ts": 1787108509,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Top quality content !",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786671229,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -60941,6 +61261,30 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1787110182,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Look. Listen. Find me on the empty lot. With men.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787109910,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Bill: review my fart on tonights Rich. Wait. Noooo",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787108037,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich. The gay ghosts are watching you every night",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786666977,
         "type": "superchat",
@@ -61489,6 +61833,30 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1787104989,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: Listen have boogie and mutahar argue on stream while stoned again lets go. I NEVER DID I NEVER DID.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787104290,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: the misadventures of melonie big Mac and the quarter pounder.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787103018,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 5 months",
+        "message": "its time for some exposure.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786676102,
         "type": "superchat",
@@ -63000,6 +63368,14 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1787096130,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Just learned that LATeral PULL downs work your triceps :writing_hand:",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786581906,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -63499,6 +63875,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1787096850,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: Ohhhh bbbbooy yess! (augh)(augh)(augh) Harmon: Hey that's my Pikachu!!!! Stan: No it's my new shame cave...can't take my OHHH out of its face?!?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786669613,
         "type": "superchat",
@@ -71304,6 +71688,14 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1787095518,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "he eats thousands of calories worth of fast food on his fast food reviews yet somehow he still lost weight at a rapid pace. he's on a weight loss drug",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1785808076,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -75188,6 +75580,14 @@
     ],
     "aXDroptimus": [
       {
+        "ts": 1787093602,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "SUPPORT THIS GOD DAMN STREAM RIGHT NOW",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1785810012,
         "type": "sub",
         "amount_usd": 5.99,
@@ -76035,6 +76435,30 @@
       }
     ],
     "evistosf": [
+      {
+        "ts": 1787108607,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Stan: Awww Richie! I thought Hell was hot already but you're getting me all hot and bothered with these videos! Would you mind giving my phone number to them? It's 1-800-GOT-COCK?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787104709,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Eric: I can't believe you Rich! Taking edibles on stream makes you more amusing? In that case maybe if I drink LOTS of booze I will become entertaining too and then Keemstar will hire me onto Lol Cow Live! Dad? Where's the key to the liquor cabinet?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787096515,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Listen, I was attacked by a pussy and need help! I won't open any packages for you without support! Stan: I am afraid of pussy too Phil. Let me support your package sweetie. (pants_unzip) Oh yeah honey! (drinking)",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1787017750,
         "type": "bits",
@@ -76937,6 +77361,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1787093642,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Joerogan: there u goes boys. its entirely possible",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786485518,
         "type": "superchat",
@@ -81769,6 +82201,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1787093851,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Wasn\u2019t Doody friends with Brian Thompson?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093511,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Trump: I\u2019ve got ADHD, AIDS, arthritis and a massive throbbing hard cock.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786662239,
         "type": "superchat",
@@ -88470,6 +88918,14 @@
     ],
     "Marzrep": [
       {
+        "ts": 1787095478,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I think he hates you after the king snake stuff :face_with_tears_of_joy:",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786583143,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -88527,6 +88983,14 @@
       }
     ],
     "BoodyChew1999": [
+      {
+        "ts": 1787093934,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Stan: someone say gay....Ew yeah",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786488043,
         "type": "superchat",
@@ -88867,6 +89331,62 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1787098369,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I broke up w lcl today canceled my membership :smiling_face::smiling_face:",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097674,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can u suck a golf ball thru a water hose?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787096230,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Some golden crash outs yesterday morning show",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787095754,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "what\u2019s the ai video title called so I can tell him",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787095465,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Make me mod pimp for the badge bro bro",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093682,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Im in doodys video , his fans don\u2019t like me much",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093471,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Why take such a long break,I missed ya streams bro",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786672738,
         "type": "superchat",
@@ -89273,6 +89793,54 @@
       }
     ],
     "change1ing": [
+      {
+        "ts": 1787105349,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Went to see Puscifer in concert a few months back. Friend gave me a 50mg edible; thought it was a 5mg. Ended up throwing up on the row in front us.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787104650,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "ReviewTechTHC",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787099866,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Hot brown RAIN coming down on me! (fart)",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787099230,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Therapists will use this clip to treat anxiety",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787095727,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phils streams come with a syllabus",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787092999,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "Phil watching TrollMcTrollington right now with a deathstare",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786482484,
         "type": "superchat",
@@ -89693,6 +90261,14 @@
       }
     ],
     "Keldoh3ad": [
+      {
+        "ts": 1787093370,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "doom: there you goes boys. melatonin baby",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786664049,
         "type": "superchat",
@@ -91433,6 +92009,22 @@
       }
     ],
     "superSONIC_star": [
+      {
+        "ts": 1787110310,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Rich! How often do you stretch your groin?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787093857,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Keeeeeep cuummminnngg! On Pikachu that is.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786660610,
         "type": "giftmembership",
@@ -95793,6 +96385,14 @@
       }
     ],
     "TheTenoray": [
+      {
+        "ts": 1787106176,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Are you charging extra for the keyloggers? lol",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786572764,
         "type": "superchat",
@@ -114274,6 +114874,22 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1787110933,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 25 months",
+        "message": "joy junction most disturbing kid show about cp guy",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787110093,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "look up joy junction most disturbing kid show ever warning",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786678739,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -115374,6 +115990,14 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1787096070,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "lat pulls don't work out triceps AT ALL..they work out your lats...hence the name",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786672256,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -115763,6 +116387,14 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1787109571,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Review Birbs USA",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1785212624,
         "type": "superchat",
@@ -119566,6 +120198,14 @@
     ],
     "marvellousmilkman": [
       {
+        "ts": 1787096696,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Dad this is the energy from you I have needed!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786671513,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -122791,6 +123431,14 @@
       }
     ],
     "devinlyda": [
+      {
+        "ts": 1787109434,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Kermit: Hey, my cousin is on a video this guy\u2019s watching! Pop bottles of champagne everybody! Yay!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1785207608,
         "type": "superchat",
@@ -135328,6 +135976,14 @@
     ],
     "HaunchoJackHD": [
       {
+        "ts": 1787093352,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Currently buying my favorite on disk games for my ps5 pro and installing them with the patches then disconnecting it from the internet for good",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786310283,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -136574,6 +137230,14 @@
     ],
     "gunkiller77": [
       {
+        "ts": 1787096857,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "I just peed in my basement. Hoot wireless",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1784682630,
         "type": "membership",
         "amount_usd": 1.99,
@@ -137131,6 +137795,14 @@
       }
     ],
     "JTA_Creations": [
+      {
+        "ts": 1787109460,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "The puppet is Smash JT. He will not be gaslit",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1784688080,
         "type": "superchat",
@@ -137707,6 +138379,46 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1787106144,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Harman: Nintendo's old now, the future is Amico!! Ohh mm Tommy! My jaw's hittin the ground!! Awaiting your harvest, Mister Tallarico. No pressure tho",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787101196,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Eric: How ya Doin Stanley, doin Good? Stan: Ugh, you again!! Nobody wants a mouthful of fur, Eric. Eric: Ya hurts me, Stanley, ya breakin ma heart!!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787099246,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: :spoon:so u can eats shidtowda mife-hucking asth!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787096444,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Stan: FigureItOutDude(pipes) MelatoninBaby(drinking) ,(punch)Auhwhrwrhrrr!!(slap) Eihwrhrwhrwr!!(slap), yeeahhrr Pigsy; while I'm fartin!! Oo yehr!!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787092944,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: You got mine ippels up in a tizzy! Awhaw!!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786661096,
         "type": "superchat",
@@ -138933,6 +139645,46 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1787111993,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "God i miss Toys R Us. I still remember the Christmas Catalogs that came in the mail for the Holidays! I had the one with sticker. Man, RIP Toys R US!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787111506,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "that is the face of a ROBUST man with a hard bird",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787110341,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "how much do you wanna bet his wife pegs him?",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787108921,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "new mating ritual there he has all but 1 chick",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787108469,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 49 months",
+        "message": "Those are ROBUST URBAN GARLIC MEN right there! Listen get on the top bunk and.....breasts. Men and Birds are pecking the corn out of phills shrimp!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786666840,
         "type": "membership",
@@ -141705,6 +142457,14 @@
       }
     ],
     "PutoPlatano": [
+      {
+        "ts": 1787096053,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Why is it not shcocking that he makes it seem like he was mauled by a tiger while venturing through the wilderness :rooster:",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786584196,
         "type": "membership",
@@ -151416,6 +152176,14 @@
     ],
     "chrisvw352": [
       {
+        "ts": 1787105865,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Had a break in 07'. Recovering about 20 years.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1783536965,
         "type": "membership",
         "amount_usd": 1.99,
@@ -156318,6 +157086,14 @@
     ],
     "aessay": [
       {
+        "ts": 1787096494,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 He says that he doesn't have goals, but then he also says  hey guys let's reach the milestone of $100. He lack this much self awareness",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1783200975,
         "type": "bits",
         "amount_usd": 0.5,
@@ -157387,6 +158163,14 @@
       }
     ],
     "chevydude454": [
+      {
+        "ts": 1787094862,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Masterchief: Attention all men, a man among men has arrived. Embrace the farts and stroke the meat",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1787021415,
         "type": "bits",
@@ -159798,6 +160582,14 @@
     ],
     "Mr.Substantial": [
       {
+        "ts": 1787093228,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "thanks 4 streaming Rich! FARTAGE, PLEASE",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1782611161,
         "type": "membership",
         "amount_usd": 1.99,
@@ -160481,6 +161273,14 @@
       }
     ],
     "rafaelchicas7635": [
+      {
+        "ts": 1787105576,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1786481030,
         "type": "superchat",
@@ -317160,6 +317960,14 @@
     ],
     "mistaj24": [
       {
+        "ts": 1787100405,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "Imagine, fillers, sold by Burnell Pharmaceuticals",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1705177343,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -417613,6 +418421,14 @@
       }
     ],
     "jasonjenkins5067": [
+      {
+        "ts": 1787095557,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "JKB said you eat cold spaghetti oh's strait out the can. And at the park you drop the bread at your feet so you can watch the squirrels fucc up close.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
       {
         "ts": 1685151474,
         "type": "superchat",
@@ -528510,6 +529326,22 @@
     ],
     "PakAmericanPiousKnight": [
       {
+        "ts": 1787106790,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil:is that Democratic Randy Fine without minicap",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787106160,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Phil: If anyone talks to me I am gonna ban them right away. STOP talking to me NOW! Any superchats is appreciated because I am too lazy for pick up and save money on tipping delivery driver. Trump: AH",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
         "ts": 1786680682,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -528844,6 +529676,24 @@
         "amount_raw": "Prime",
         "message": "resubscribed (6 months)!",
         "stream_id": "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457"
+      }
+    ],
+    "iamseanmccarthy": [
+      {
+        "ts": 1787099370,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: OOOHHH the macho man's gonna eat your ass!",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      },
+      {
+        "ts": 1787097922,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Phil: Nintendo, the camera is on the whole time! Speaking of cameras, you're looking awfully mysterious over there. Harman: Yeah he does. Stan: Ooh, baby. Phil: Guys, calm down, this is very robust.",
+        "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
       }
     ]
   }
