@@ -1,4 +1,16 @@
 {
   "version": 1,
-  "events": []
+  "events": [
+    {
+      "id": "me_1787216126264_hgejd",
+      "tag": "Initial Goal",
+      "kind": "point",
+      "ts": 1787001927,
+      "end_ts": null,
+      "value": 200,
+      "note": "",
+      "created_ts": 1787216126,
+      "updated_ts": 1787216126
+    }
+  ]
 }
