@@ -3137,10 +3137,6 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   } else if (hasDonations) {
     gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
   }
-  // Members/subs rides in the Donations column: same origin (donation events),
-  // different unit. $hasMembers mirrors buildChart's dataset gate.
-  if (currentChart.$hasMembers)
-    gDonations.push({ label: 'Members+Subs', type: 'line', color: 'rgb(255,120,200)', ds: DS.MEMBERS });
   groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
 
   const gViewers = [];
@@ -3169,8 +3165,12 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   }
   groups.push({ title: 'Msg/Min', items: gChat });
 
-  // Pausing band (non-dataset overlay) -- only when this stream has frame data.
+  // Extras column: the members/subs line (a dataset, but it shares the manual-
+  // events pink so it sits beside that toggle; $hasMembers mirrors buildChart's
+  // dataset gate) plus the non-dataset Pausing/Events overlay toggles.
   const gPausing = [];
+  if (currentChart.$hasMembers)
+    gPausing.push({ label: 'Members+Subs', type: 'line', color: 'rgb(255,120,200)', ds: DS.MEMBERS });
   if (currentChart.$hasPausingData) gPausing.push({ special: 'pausing' });
   if (currentChart.$hasManualEvents) gPausing.push({ special: 'manualevents' });
   groups.push({ title: null, items: gPausing });
