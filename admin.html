@@ -609,13 +609,6 @@
     flex-direction: column;
     gap: 12px;
   }
-  .gate-title {
-    font-family: 'Rye', serif;
-    font-size: 17px;
-    color: var(--accent-bright);
-    letter-spacing: 0.04em;
-  }
-  .gate-help { font-size: 14px; color: var(--text-muted); font-style: italic; }
   .gate-error { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: #e86060; min-height: 16px; }
 
   /* ── Shared form controls ── */
@@ -818,10 +811,8 @@
 <!-- ── Auth gate (covers everything until a token is stored) ── -->
 <div class="gate-overlay" id="gateOverlay">
   <div class="gate-panel">
-    <span class="gate-title">Curator sign-in</span>
-    <span class="gate-help">Paste a fine-grained GitHub PAT with Contents read/write on rawtechusa-sys/ogrestats</span>
-    <input class="admin-input" id="gateInput" type="password" placeholder="github_pat_…"
-           autocomplete="off" spellcheck="false" aria-label="GitHub personal access token">
+    <input class="admin-input" id="gateInput" type="password"
+           autocomplete="off" spellcheck="false" aria-label="Access token">
     <span class="gate-error" id="gateError"></span>
     <button class="admin-btn primary" id="gateBtn" type="button">Unlock</button>
   </div>
