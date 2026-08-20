@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Manual skip button for the debounce timer: "Run workflow" in the Actions
+  # UI deploys immediately. The debounce sleep below only runs on push events,
+  # and the dispatched run's debounce job shares the pages-debounce
+  # cancel-in-progress group, so it cancels any run still waiting out the
+  # timer and deploys the current main right away.
   workflow_dispatch:
 
 permissions:
@@ -22,6 +27,8 @@ jobs:
       group: pages-debounce
       cancel-in-progress: true
     steps:
+      # A workflow_dispatch run skips this sleep entirely -- that is the
+      # manual skip path documented on the trigger above.
       - name: Wait for the commit burst to settle
         if: github.event_name == 'push'
         run: sleep 120
