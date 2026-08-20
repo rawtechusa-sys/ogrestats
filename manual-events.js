@@ -37,6 +37,9 @@
   const LABEL_FONT = '11px "Share Tech Mono", monospace';
   // Three stacked label rows (px below chartArea.top) before a label is dropped.
   const LABEL_ROW_OFFSETS = [4, 18, 32];
+  // The mirror set for RANGE labels, which live at the foot of the chart: px
+  // ABOVE chartArea.bottom, same 14px row pitch, same drop-on-collision rule.
+  const LABEL_BOTTOM_ROW_OFFSETS = [6, 20, 34];
   const LABEL_GAP = 4;      // px of clear space required between two labels in a row
   const MARKER_SIZE = 6;    // px, the point event's triangle head
 
@@ -322,37 +325,50 @@
 
         // Labels, left to right, greedily stacked into the first row that has
         // horizontal space; an event that collides in all rows loses its label
-        // (its line/band is already drawn). Goal-hit labels share the same rows.
+        // (its line/band is already drawn). POINT labels and goal-hit labels
+        // share the top rows; RANGE labels get their own rows at the bottom, so
+        // a wide band never eats the top space a point label needs.
         ctx.font = LABEL_FONT;
         ctx.textAlign = 'left';
-        ctx.textBaseline = 'top';
-        const rows = LABEL_ROW_OFFSETS.map(() => []);
-        function placeLabel(text, x, width, color) {
-          const rowIndex = rows.findIndex(
+        const topRows = LABEL_ROW_OFFSETS.map(() => []);
+        const bottomRows = LABEL_BOTTOM_ROW_OFFSETS.map(() => []);
+        // Index of the first row with clear horizontal space, or -1; claims it.
+        function claimRow(rowSet, x, width) {
+          const rowIndex = rowSet.findIndex(
             row => row.every(placed => x + width + LABEL_GAP <= placed.x || x >= placed.x + placed.width + LABEL_GAP)
           );
+          if (rowIndex !== -1) rowSet[rowIndex].push({ x, width });
+          return rowIndex;
+        }
+        function placeLabel(text, x, width, color) {
+          const rowIndex = claimRow(topRows, x, width);
           if (rowIndex === -1) return;
-          rows[rowIndex].push({ x, width });
           ctx.fillStyle = color;
+          ctx.textBaseline = 'top';
           ctx.fillText(text, x, top + LABEL_ROW_OFFSETS[rowIndex]);
+        }
+        function placeBottomLabel(text, x, width, color) {
+          const rowIndex = claimRow(bottomRows, x, width);
+          if (rowIndex === -1) return;
+          ctx.fillStyle = color;
+          ctx.textBaseline = 'bottom';
+          ctx.fillText(text, x, bottom - LABEL_BOTTOM_ROW_OFFSETS[rowIndex]);
         }
         for (const ev of state.events) {
           const text = labelText(ev);
           const width = ctx.measureText(text).width;
-          let x = null;
           if (ev.kind === 'point') {
             const at = xs.getPixelForValue(ev.ts * 1000);
             if (at < left || at > right) continue;
-            x = (at + 2 + width > right) ? at - 2 - width : at + 2;
+            const x = (at + 2 + width > right) ? at - 2 - width : at + 2;
+            placeLabel(text, x, width, `rgba(${ACCENT},0.95)`);
           } else if (ev.kind === 'range') {
             const x1 = Math.max(xs.getPixelForValue(ev.ts * 1000), left);
             const x2 = Math.min(xs.getPixelForValue(ev.end_ts * 1000), right);
             if (x2 - x1 < width) continue;
-            x = (x1 + x2) / 2 - width / 2;
-          } else {
-            continue;
+            const x = (x1 + x2) / 2 - width / 2;
+            placeBottomLabel(text, x, width, `rgba(${ACCENT},0.95)`);
           }
-          placeLabel(text, x, width, `rgba(${ACCENT},0.95)`);
         }
         for (const hit of state.goalHits) {
           const at = xs.getPixelForValue(hit.ts * 1000);
