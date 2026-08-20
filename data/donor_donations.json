@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787114051,
+  "updated_ts": 1787202587,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -841,7 +841,8 @@
     "lets_just_lose_our_minds_2026-08-13_223319",
     "old_man_makes_music_live_part_2_2026-08-16_222507",
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
-    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
+    "an_evening_of_men_2026-08-19_223648"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9407,6 +9408,25 @@
       ],
       "source_vod_id": "csnIpZYXfk4",
       "source_platform": "youtube"
+    },
+    "an_evening_of_men_2026-08-19_223648": {
+      "title": "An Evening Of Men",
+      "start_ts": 1787158728,
+      "youtube_archive_id": "hz4HAhbbC6w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "Ie4c3tAZqgk",
+          "start_ts": 1787158728
+        },
+        {
+          "archive_id": "hz4HAhbbC6w",
+          "start_ts": 1787179089
+        }
+      ],
+      "source_vod_id": "OBiGA20G3Xo",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10015,6 +10035,14 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1787198034,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: Have your chat troubleshoot it for you",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787110519,
         "type": "superchat",
@@ -12032,6 +12060,70 @@
     ],
     "885thBatmanFan": [
       {
+        "ts": 1787197382,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Beautiful dawn. Lights up the shore for me There is nothing else in the world I'd rather wake up and see with you. Beautiful dawn. - James Blunt *High",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787196466,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Now. we have all the time in the world.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787195488,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Imagine Jeremy Hambly being the victim of a T-Rex from Jurassic Park, Rich. It's funny as fuck, isn't it?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787187837,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Look here, look listen. Buy a bag of Dorito's and eat 2/3rds of it. Be a man. Let's go!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787187476,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787180218,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You think Pixar movies like Toy Story 1-5 are for both kids & adults? Because the trash incinerator scene from Toy Story 3 was pretty mature for kids.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179160,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "HBO's Lanterns is like DC Comics meets True Detective Season 1, dudes.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787178871,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I wish I knew how to quit you.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787107061,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -12313,6 +12405,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1787180344,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "In the last to story there was a masterbation toy and they asked what happened to him and he acted like a victim \"You just dont wonna know\"",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787093170,
         "type": "giftmembership",
@@ -18902,6 +19002,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1787182026,
+        "type": "superchat",
+        "amount_usd": 2.11,
+        "amount_raw": "A$2.99",
+        "message": "Phil: BANNED BANNED BANNED GONE FOREVER! (fail)",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786502300,
         "type": "superchat",
         "amount_usd": 2.09,
@@ -19001,6 +19109,22 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1787186964,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182162,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 53 months",
+        "message": "Phil: Nothing beats watching Rich travel to another planet while Boogie and Mutahar yell at each other. Where is your weed seltzer brand Rich?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787105417,
         "type": "giftmembership",
@@ -19251,6 +19375,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1787180950,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787103632,
         "type": "giftmembership",
@@ -19999,6 +20131,62 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1787191701,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787186896,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Grandpa: no you speak lies! there is no future! I am stuck on the last starship that survived the war. everything will be destroyed. nothing survives. Masterchief: lies! I survived. no victory with sacrifice. the empire lives",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787186421,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Grandpa: the holy oracle foretold the truth! all the grifters will destroy eachother! there are those that said this day would never come. what are they to say now. Masterchief: my ropes are imminent!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787183728,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Doom: Darth dickers returns",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182557,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: men, I farted. it was beautiful. mmm!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179870,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: son of a bitch! Who the fuck gave me the wrong lettuce! I wanted the good shit, not the stuff that gives you the shits! evacuate the area, my anus is about to blow brown like no ones seen",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179197,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: listen, fuck it. do all the drugs. do all the lines, all the devils lettuce, all the meth, drink multiple bottles, smoke whatever you got. be a man. then croak.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787109726,
         "type": "superchat",
@@ -22255,6 +22443,54 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1787193362,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, 5 minutes past. We didnt hit the goal",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787193306,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787191741,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787188824,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Tay Zonday doesn't breathe into the mic",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787188771,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "All I can think of when he breathes is Tay Zonday.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787187765,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil's face in the thumbnail reminds me of those images of Jesus found in the woodgrain of furniture. Phil: My face will appear on May 1st.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787103260,
         "type": "superchat",
@@ -35724,6 +35960,14 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1787179871,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Edibles have improved every aspect of my life. I Sleep better,I relax more, I exercise more oddly enough. I've used them since 2020 and wish I had B4.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786485498,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -37512,6 +37756,14 @@
     ],
     "silkyone12": [
       {
+        "ts": 1787180086,
+        "type": "superchat",
+        "amount_usd": 1.26,
+        "amount_raw": "\u00a5200",
+        "message": "shazam fucking sucks now. can't ever find music",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786662004,
         "type": "membership",
         "amount_usd": 1.99,
@@ -37796,6 +38048,14 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1787188654,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "My PS3 has HDMI 2.1 can ur 4090 do that? Doubt it.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787105057,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -37977,6 +38237,14 @@
       }
     ],
     "Dublinpapi": [
+      {
+        "ts": 1787192727,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786926290,
         "type": "giftsub",
@@ -39541,6 +39809,22 @@
       }
     ],
     "DarthOmegas": [
+      {
+        "ts": 1787187345,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179281,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "its a dam Edible how is people bitching about that with what we got going on in the world, to them Fuck off and get a grip on reality",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787092895,
         "type": "membership",
@@ -60460,6 +60744,22 @@
     ],
     "ReviewTechAzerbaijan": [
       {
+        "ts": 1787180298,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil: it\u2019s an advanced lesson from the Burnell School of Tax Fraud. Next week, we go over writing off Pok\u00e9mon cards as a business expense",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787178647,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Kiwi Farms found an eBay listing of a fake Pok\u00e9mon god pack that had the exact same cards as Phil\u2019s. Phil is outright stealing from his donors lmao",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786318689,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -61180,6 +61480,14 @@
     ],
     "respergu13": [
       {
+        "ts": 1787195435,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich is back!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787108509,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -61592,6 +61900,22 @@
     ],
     "qb3540": [
       {
+        "ts": 1787192507,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "The party of family meanwhile that one politicians wife have to babysit her husband cause he likes to sneak out and be ask fork",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787189161,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Why do u have the sehks lights on?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1785804291,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -61833,6 +62157,62 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1787201822,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: This reminds me that at GDC for god of war they used DSP's gameplay to show how games should be built. I'm not kidding.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787199731,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: don't forget your hydration elements.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787188950,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: you still got DSP's snort soundbite? i love and miss that sound.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787184670,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: listen put bisexual lighting and love me Rich. Pikachu can watch.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787183017,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: I'm so successful. Watch as I quit games because I get no money or engagement. (disappointed)",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787181963,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: listen do a asmr video about final fantasy 13 while talking about a fire alarm while its going off for 15 minutes lets go. Phil: I'm a man",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787181665,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: My cats name is Derich, I mean Jasper. I need 2000 dollars for you to see him though.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787104989,
         "type": "superchat",
@@ -63368,6 +63748,14 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1787191029,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "The \u201cWashed Up\u201d Podcast",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787096130,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -63875,6 +64263,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1787178687,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "legit no clue what happened but let's go MEN",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787096850,
         "type": "superchat",
@@ -75744,6 +76140,14 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1787193396,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786309681,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -82201,6 +82605,30 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1787186898,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "I hate when right wingers claim all of the left was celebrating Charlie Kirk's death. Plenty of left wingers denounced his murder.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182779,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Phil: men, I farted as well. Ooops I got those Hershey stains. Masterchief: I think I need a cigarette.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182479,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Phil: I am just completely fucking pissed, I was gonna write a script for this video. Why am I still getting hate.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787093851,
         "type": "superchat",
@@ -89332,6 +89760,30 @@
     ],
     "Spoderman75": [
       {
+        "ts": 1787181524,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Any vacations planned? tweaker in bottom left btw",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179908,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil lost 2 whales today he\u2019s hurting me and 220 , I mean if u consider like 10 or 15 dollars. A whale the rest being \u201canonymous\u201d donations",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787178727,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Yo yo waddup pimp, fuck philantor",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787098369,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -89793,6 +90245,14 @@
       }
     ],
     "change1ing": [
+      {
+        "ts": 1787182237,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, start a white label weed seltzer company.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787105349,
         "type": "superchat",
@@ -90440,6 +90900,14 @@
     ],
     "Carl.Wilson.82": [
       {
+        "ts": 1787185037,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Add 10min to the stream every time you hit applause.:grinning_face:",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786575036,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -90897,6 +91365,14 @@
       }
     ],
     "RushilPatel-oe7hn": [
+      {
+        "ts": 1787181701,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "You heard about trump and Natalie harp",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1785468424,
         "type": "superchat",
@@ -91629,6 +92105,14 @@
       }
     ],
     "PeterGriffinTAD": [
+      {
+        "ts": 1787179454,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Why and when were prisons privatized.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786661277,
         "type": "superchat",
@@ -92984,6 +93468,14 @@
     ],
     "RetroDrew-g6t": [
       {
+        "ts": 1787193276,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1785464496,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -93019,6 +93511,22 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1787193662,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "Cats :cat2:",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787191049,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "\ud83e\udd77\ud83c\udffb",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786673528,
         "type": "superchat",
@@ -96385,6 +96893,14 @@
       }
     ],
     "TheTenoray": [
+      {
+        "ts": 1787192694,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787106176,
         "type": "membership",
@@ -99809,6 +100325,14 @@
       }
     ],
     "SventheArcticFox": [
+      {
+        "ts": 1787192427,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Why couldn't Trump \"fix\" anything now? Republicans have the house and the senate! It's so ridiculous. These are un-serious people.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786574766,
         "type": "membership",
@@ -114824,6 +115348,14 @@
     ],
     "Toast935": [
       {
+        "ts": 1787194686,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: just look at it as I stroalk the meet",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1785288481,
         "type": "membership",
         "amount_usd": 1.99,
@@ -116387,6 +116919,22 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1787200408,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "we should discuss our credit card debt",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787183561,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Philip looks like Dennis the Menace Wilson",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787109571,
         "type": "superchat",
@@ -118425,6 +118973,30 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1787181359,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can I toss your salad? :green_salad:",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787180202,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I would gladly pay an obscene amount for a Taco Bell volcano :volcano: burrito :burrito: I am a hungry man and need food! Birds! Big beautiful birds",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179650,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Listen, Rich you know I live in Kansas and it\u2019s about the same level as Texas here but I have a solid 2 ounces of lettuce and I love it! My meds mess with my appetite and he was a hippie no doubt!!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786671350,
         "type": "superchat",
@@ -122565,6 +123137,14 @@
       }
     ],
     "strangeplains2466": [
+      {
+        "ts": 1787195165,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Listen Dad, I took 100mg edible and 2gs of shrooms before stream. I\u2019m shocked i can type this. Anyway, gonna go back to fighting the shadow people.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786579343,
         "type": "superchat",
@@ -129256,6 +129836,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1787201986,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "What about Hetrosexual Awakening?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786574538,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -130274,6 +130862,14 @@
     ],
     "tougeruzbay": [
       {
+        "ts": 1787191332,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: Listen, in the dark where we are now. we're looking real good with Rodrigo, the robustness black bird watching with pure anguish",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786681274,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -130813,6 +131409,14 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1787186032,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did you see the gov is reopening EDP445 case",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786576135,
         "type": "superchat",
@@ -138380,6 +138984,30 @@
     ],
     "violationentertainment": [
       {
+        "ts": 1787182475,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787181092,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Rumor has it you started doing succulent snowdogs",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179818,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric: Rich you'll never be a pantspisser this way",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1787106144,
         "type": "superchat",
         "amount_usd": 3.53,
@@ -139419,6 +140047,14 @@
       }
     ],
     "jonhardwick98": [
+      {
+        "ts": 1787179006,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "No Banner No Girl Only Hulk! Loved New Spidey film",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1784602266,
         "type": "membership",
@@ -142540,6 +143176,14 @@
     ],
     "bammersvabamm822": [
       {
+        "ts": 1787183123,
+        "type": "superchat",
+        "amount_usd": 7.18,
+        "amount_raw": "CA$10.00",
+        "message": "Phil: Rich , Look at how successful I am now. They go on vacation with detractors money , yet i buy more cards and eat Chili turkey dogs that are frozen in my freezer and I got a god pack from EBAY!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786671852,
         "type": "membership",
         "amount_usd": 1.99,
@@ -144181,6 +144825,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1787186578,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Grandpa: Rich, its me again, you from the future, It is confirmed, Phil will win his primary as president of the United States, we need to leave, fast",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1786585605,
         "type": "superchat",
@@ -147551,6 +148203,54 @@
       }
     ],
     "Badog473": [
+      {
+        "ts": 1787180427,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "serious question can you beat Mike",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787180279,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "you remember Phil said he can fight Mike Tuson",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787180135,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "you think Phil ban me if I say I horny for you",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179925,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "what happens with you and gaara",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179809,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "I give you zero money for jerking off on steam",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787179665,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 49 months",
+        "message": "can I be a moderator",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1784152191,
         "type": "membership",
@@ -184508,6 +185208,14 @@
     ],
     "StillSplinter": [
       {
+        "ts": 1787182360,
+        "type": "superchat",
+        "amount_usd": 2.3,
+        "amount_raw": "\u20ac2.00",
+        "message": "Snort Hogan has the narcissistic injury vid",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1739859153,
         "type": "superchat",
         "amount_usd": 2.16,
@@ -186951,6 +187659,14 @@
       }
     ],
     "compositefrylock2973": [
+      {
+        "ts": 1787182245,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "DSP: what Derich does outside of my livestream is none of my business. Also DSP: hey Iron chef Sakai you wanna tell us what you were doing In strangely lex\u2019s livestream?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1739496533,
         "type": "superchat",
@@ -394706,6 +395422,14 @@
     ],
     "psynema": [
       {
+        "ts": 1787188971,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Communists - started as Anti Semetic campaign literally started by US infiltration by Nazi's - watch PBS Nazi Town USA, sick.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1689975551,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -529110,6 +529834,22 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1787187587,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Quartering: Alex, after talking to tonight, I just wanted to compliment you on flashing me with both headlights. I'd put some sauce on those zingers.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787186946,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Phil: Tonight, I am announcing my candidacy for President of the United States. We will make America burst again! Harman: Nintendo Knights, stand back and stand by. Stan: Oh, Philly! OH! Burnell 2028",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
         "ts": 1786311152,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -529325,6 +530065,22 @@
       }
     ],
     "PakAmericanPiousKnight": [
+      {
+        "ts": 1787195807,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump:I won president 3 times. eh.I'm doin 3rdtime",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787194901,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: I'm pusi unapologetic for starting warcrime",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
       {
         "ts": 1787106790,
         "type": "superchat",
@@ -529694,6 +530450,88 @@
         "amount_raw": "$10.00",
         "message": "Phil: Nintendo, the camera is on the whole time! Speaking of cameras, you're looking awfully mysterious over there. Harman: Yeah he does. Stan: Ooh, baby. Phil: Guys, calm down, this is very robust.",
         "stream_id": "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+      }
+    ],
+    "JMM-6r": [
+      {
+        "ts": 1787180790,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Did you see there's very solid evidence of a Simpsons Hit & Run remaster being in development? An official one - not the awful fan-made ones.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      }
+    ],
+    "TimothyCulhane": [
+      {
+        "ts": 1787197900,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787189894,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich how is Bob Lavari doing??",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182410,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787182237,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich,is PHILIP PAUL BURNELL still a man??",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      }
+    ],
+    "Orange_Yoshi_64": [
+      {
+        "ts": 1787195044,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: Dickers has gone off the deep end. He's back to drinking his weed beer. he will make a whole stream about me if I wanna enjoy a beer on stream.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      },
+      {
+        "ts": 1787194286,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 32 months",
+        "message": "The cringe Bud Lite ads don't seem so bad when coffee has doubled in price, foods jump up to astronomical levels and I worry about repair costs.",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      }
+    ],
+    "SinfuIRhapsody": [
+      {
+        "ts": 1787200225,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": "Did you get a Duskbloods network test invite?",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
+      }
+    ],
+    "MasterSystemMarceau": [
+      {
+        "ts": 1787200981,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "an_evening_of_men_2026-08-19_223648"
       }
     ]
   }
