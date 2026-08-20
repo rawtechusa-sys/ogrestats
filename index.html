@@ -196,6 +196,7 @@
       <button class="tab" data-page="chat.html" data-slug="chat">Search</button>
       <!-- Hidden route: reachable via #discord only, deliberately not in the visible nav. -->
       <button class="tab" data-page="discord.html" data-slug="discord" data-hidden="1" style="display:none" aria-hidden="true"></button>
+      <button class="tab" data-page="admin.html" data-slug="admin" data-hidden="1" style="display:none" aria-hidden="true"></button>
     </nav>
     <label class="bg-toggle" title="Toggle background critters">
       <input type="checkbox" id="bgToggle" checked>
@@ -395,6 +396,11 @@ function syncTabFromHash() {
   // (no postMessage re-send machinery, unlike the streams sub-slug).
   if (slug === 'discord' && sub) {
     try { sessionStorage.setItem('selected-discord-channel', decodeURIComponent(sub)); } catch (e) {}
+  }
+  // #admin/<stream_id> deep link. admin.html reads this key once on load,
+  // same as streams.html (shared selection).
+  if (slug === 'admin' && sub) {
+    try { sessionStorage.setItem('selected-stream', decodeURIComponent(sub)); } catch (e) {}
   }
   activateTab(tab);
   sendPendingStream();

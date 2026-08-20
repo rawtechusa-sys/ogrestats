@@ -328,6 +328,26 @@
     letter-spacing: 0.02em;
   }
 
+  /* Whole-stream manual event tags. Fixed low-alpha accent (not a theme var):
+     one colour for every manual-event mark, chart overlay included. */
+  .manual-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .manual-chip {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 1px 7px;
+    border: 1px solid rgba(255, 120, 200, 0.55);
+    border-radius: 9px;
+    background: rgba(255, 120, 200, 0.12);
+    color: rgba(255, 120, 200, 0.95);
+    white-space: nowrap;
+  }
+
   .chart-legend {
     display: flex;
     gap: 22px;
@@ -574,6 +594,7 @@
 </div>
 
 <script src="config.js"></script>
+<script src="manual-events.js"></script>
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
@@ -1095,11 +1116,15 @@ async function loadStream(streamId) {
   if (typePie) { typePie.destroy(); typePie = null; }
 
   try {
-    const [meta, eventsText] = await Promise.all([
+    const [meta, eventsText, manualRaw] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
       fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
+      // 404-tolerant: most streams have no manual events. Public page reads the
+      // raw CDN (~5 min stale after an admin save -- accepted).
+      fetchJSON(`${RAW}/data/streams/${streamId}/events_manual.json`).catch(() => null),
       ensureVoices(),   // needed before any donation is bucketed; cached after the first stream
     ]);
+    const manualEvents = ManualEvents.normalize(manualRaw);
 
     if (meta.title) {
       document.getElementById('streamTitle').textContent = meta.title;
@@ -1348,6 +1373,7 @@ async function loadStream(streamId) {
           <div class="chart-title-wrap">
             <span class="chart-title">Viewers &amp; Donations</span>
             <span class="chart-hint">scroll to zoom &middot; drag to pan &middot; double-click to reset</span>
+            <span class="manual-chips" id="manualChips"></span>
           </div>
           <div class="chart-legend" id="chartLegend"></div>
         </div>
@@ -1362,7 +1388,15 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms);
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents);
+      const chipsEl = document.getElementById('manualChips');
+      if (chipsEl) {
+        chipsEl.innerHTML = manualEvents.wholeStream.map(ev => {
+          const note = typeof ev.note === 'string' ? ev.note.trim() : '';
+          const title = note ? ` title="${escHtml(note)}"` : '';
+          return `<span class="manual-chip"${title}>${escHtml(ev.tag)}</span>`;
+        }).join('');
+      }
       buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms);
     }
 
@@ -2043,7 +2077,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
   return chart;
 }
 
-function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms) {
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents = { timed: [], wholeStream: [] }) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
@@ -2451,6 +2485,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   // pausingBand plugin below and toggled from the legend.
   let showPausingBand = localStorage.getItem('stream-chart-pausing') !== '0';
 
+  // Manual event overlay visibility (persisted; default on), same shape as the
+  // pausing band. Closed over by the manualEvents plugin below.
+  let showManualEvents = localStorage.getItem('stream-chart-manualevents') !== '0';
+
   currentChart = new Chart(ctx, {
     type: 'bar',
     data: { datasets },
@@ -2679,7 +2717,11 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         }
         ctx.restore();
       },
-    }],
+    },
+    // Curator-authored point/range markers, drawn by the shared overlay plugin
+    // (manual-events.js). streams.html is read-only: no live drag selection.
+    ManualEvents.makePlugin(() => ({ events: manualEvents.timed, visible: showManualEvents, selection: null })),
+    ],
   });
 
   // Shared sorted x-grid for the whole chart: every dataset is built from
@@ -2696,6 +2738,16 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     localStorage.setItem('stream-chart-pausing', showPausingBand ? '1' : '0');
     currentChart.draw();
     return showPausingBand;
+  };
+
+  // Legend hooks for the (non-dataset) manual event overlay.
+  currentChart.$hasManualEvents = manualEvents.timed.length > 0;
+  currentChart.$manualEventsVisible = () => showManualEvents;
+  currentChart.$toggleManualEvents = () => {
+    showManualEvents = !showManualEvents;
+    try { localStorage.setItem('stream-chart-manualevents', showManualEvents ? '1' : '0'); } catch (e) {}
+    currentChart.draw();
+    return showManualEvents;
   };
 
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
@@ -2869,7 +2921,8 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   // (single-item Donations / Pausing columns); empty columns are dropped. A
   // "Total" entry appears only when 2+ platforms in that category have data,
   // matching the dataset gating in buildChart.
-  // Item: { label, type ('line'|'dashed'|'dotted'|'bar'), color, ds } or { special:'pausing' }.
+  // Item: { label, type ('line'|'dashed'|'dotted'|'bar'), color, ds } or
+  // { special:'pausing'|'manualevents' }.
   const groups = [];
 
   const gDonations = [];
@@ -2914,6 +2967,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   // Pausing band (non-dataset overlay) -- only when this stream has frame data.
   const gPausing = [];
   if (currentChart.$hasPausingData) gPausing.push({ special: 'pausing' });
+  if (currentChart.$hasManualEvents) gPausing.push({ special: 'manualevents' });
   groups.push({ title: null, items: gPausing });
 
   container.innerHTML = '';
@@ -2968,13 +3022,28 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
     return span;
   }
 
+  // Non-dataset manual event overlay toggle: the same accent as the marks.
+  function makeManualEventsToggle() {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.innerHTML = `Events <span style="color:rgba(255,120,200,0.95);font-weight:bold;">&#9662;</span>`;
+    if (!currentChart.$manualEventsVisible()) span.classList.add('hidden');
+    span.addEventListener('click', () => {
+      const visible = currentChart.$toggleManualEvents();
+      span.classList.toggle('hidden', !visible);
+    });
+    return span;
+  }
+
   // Render each non-empty category as a vertical column; columns sit side-by-side.
   for (const group of groups) {
     if (group.items.length === 0) continue;
     const col = document.createElement('div');
     col.className = 'legend-group';
     for (const item of group.items) {
-      col.appendChild(item.special === 'pausing' ? makePausing() : makeItem(item));
+      if (item.special === 'pausing')           col.appendChild(makePausing());
+      else if (item.special === 'manualevents') col.appendChild(makeManualEventsToggle());
+      else                                      col.appendChild(makeItem(item));
     }
     container.appendChild(col);
   }
