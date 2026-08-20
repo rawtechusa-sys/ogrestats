@@ -1,0 +1,3699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Standalone guard: these pages are meant to live inside the index.html shell
+     (which owns the tabs, theme and background). If loaded top-level, bounce into
+     the shell at this page's tab, carrying any deep-link sub-slug (a stream slug
+     here) so admin.html#<slug> -> index.html#admin/<slug> stays shareable. -->
+<script>(function(){
+  if (window.self !== window.top) return;            // embedded in the shell -> normal
+  var slug = 'admin';
+  var sub  = location.hash.replace(/^#/, '');
+  location.replace('index.html#' + slug + (sub ? '/' + sub : ''));
+})();</script>
+<title>Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"></script>
+<script>
+  // The UMD zoom plugin auto-registers, but register explicitly as a fallback
+  // (re-registering the same plugin is a no-op in Chart.js).
+  if (window.Chart && window.ChartZoom) { try { Chart.register(window.ChartZoom); } catch (e) {} }
+</script>
+<link id="theme-css" rel="stylesheet" href="themes/bog-moss.css">
+<style>
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+     Layout / sidebar / chart CSS below is lifted from streams.html (same
+     convention as channelstats.html): keep it recognizably identical so future
+     diffs against streams.html stay readable. The stat-card, pie and
+     donation-log rules are dropped; the admin-only rules live in their own
+     clearly-marked block at the end.
+     ═══════════════════════════════════════════════════════════════════════════ */
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+
+  /* Copy edit vs streams.html: body is a flex column so the admin header strip
+     can sit above the sidebar+content grid, which then takes the rest. */
+  body { display: flex; flex-direction: column; }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border-default);
+    overflow-y: auto;
+    padding: 0 0;
+    position: relative;
+  }
+
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: var(--bg-surface); }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  .sidebar-label {
+    font-family: 'Rye', serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    padding: 4px 16px 8px;
+    text-transform: uppercase;
+  }
+
+  /* ── Sidebar search (floats at top of the list while it scrolls) ── */
+  .sidebar-search {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg-surface);
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .sidebar-search input {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 7px 9px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .sidebar-search input::placeholder { color: var(--text-muted); opacity: 0.7; }
+
+  .sidebar-search input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+  }
+
+  .search-noresults {
+    padding: 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .stream-item {
+    padding: 7px 16px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  /* First line of an item: Date | Time | Length */
+  .stream-item-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* Second line: the stream title (ellipsised) */
+  .stream-item-title {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+  }
+  .stream-item.active .stream-item-title { color: var(--text-primary); }
+
+  .stream-item:hover {
+    background: rgba(100,180,60,0.07);
+    border-left-color: rgba(100,180,60,0.3);
+  }
+
+  .stream-item.active {
+    background: rgba(100,180,60,0.12);
+    border-left-color: var(--accent);
+  }
+
+  /* White (Onion Layers) theme: replace the hardcoded green highlight with the
+     theme's warm amber so the selection doesn't clash with the parchment. */
+  html[data-theme="white"] .stream-item:hover {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.10);
+    border-left-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.45);
+  }
+  html[data-theme="white"] .stream-item.active {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+
+  /* Single-line entry: Date | Time | Length */
+  .stream-item-date {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+  }
+
+  .stream-item-time {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .stream-item-length {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .stream-item-sep {
+    font-size: 12px;
+    color: var(--border-default);
+  }
+
+  .sidebar-empty {
+    padding: 16px;
+    font-size: 15px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ── Content area ── */
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Stream title bar -- sits between tab bar and stats */
+  .stream-title-bar {
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-default);
+    padding: 10px 24px;
+    flex-shrink: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .stream-title-text {
+    font-family: 'Rye', serif;
+    font-size: 16px;
+    color: var(--accent-bright);
+    letter-spacing: 0.03em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.9;
+  }
+
+  /* ── Main content ── */
+  .main {
+    overflow-y: auto;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+
+  .main::-webkit-scrollbar { width: 4px; }
+  .main::-webkit-scrollbar-track { background: transparent; }
+  .main::-webkit-scrollbar-thumb { background: var(--bg-raised); border-radius: 2px; }
+
+  /* ── Chart panel ── */
+  .chart-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .chart-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    min-height: 34px;
+  }
+
+  .chart-title-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .chart-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    letter-spacing: 0.04em;
+  }
+
+  .chart-hint {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+  }
+
+  /* Whole-stream manual event tags. Fixed low-alpha accent (not a theme var):
+     one colour for every manual-event mark, chart overlay included. */
+  .manual-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .manual-chip {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 1px 7px;
+    border: 1px solid rgba(255, 120, 200, 0.55);
+    border-radius: 9px;
+    background: rgba(255, 120, 200, 0.12);
+    color: rgba(255, 120, 200, 0.95);
+    white-space: nowrap;
+  }
+
+  .chart-legend {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* Each metric category is a vertical column; columns sit side-by-side. */
+  .legend-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .legend-group-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    opacity: 0.8;
+    margin-bottom: 1px;
+  }
+
+  .legend-swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .legend-line   { width: 16px; height: 2px;  border-radius: 1px; flex-shrink: 0; }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .legend-item:hover { color: var(--accent); }
+  .legend-item.hidden { opacity: 0.35; }
+
+  .chart-wrap { position: relative; width: 100%; height: 400px; }
+
+  /* ── Scrub-and-zoom scrollbar ── */
+  .chart-scrollbar {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    margin-top: 10px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+  }
+  .chart-scrollbar-thumb {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(var(--accent-glow-r), var(--accent-glow-g), var(--accent-glow-b), 0.22);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    cursor: grab;
+  }
+  .chart-scrollbar-thumb:active { cursor: grabbing; }
+  .chart-scrollbar-handle {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    width: 9px;
+    cursor: ew-resize;
+  }
+  .chart-scrollbar-handle.left  { left: -1px; }
+  .chart-scrollbar-handle.right { right: -1px; }
+  .chart-scrollbar-handle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; height: 9px;
+    background: var(--accent);
+    border-radius: 1px;
+    opacity: 0.85;
+  }
+
+  .ts-cell    { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+  .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; word-break: break-word; }
+
+  /* ── States ── */
+  .loading-state, .empty-state, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  .loading-glyph {
+    font-family: 'Rye', serif;
+    font-size: 32px;
+    color: var(--accent);
+    animation: flicker 2s ease-in-out infinite;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.6); }
+    50%       { opacity: 0.7; text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.2); }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+     ADMIN-ONLY CSS (nothing below here exists in streams.html)
+     ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* ── Header strip ── */
+  .admin-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 6px 16px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-default);
+  }
+  .admin-bar-label {
+    font-family: 'Rye', serif;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-bright);
+  }
+  .admin-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #6bd48a;
+    box-shadow: 0 0 6px rgba(107,212,138,0.8);
+  }
+  .admin-bar-spacer { flex: 1; }
+  .dryrun-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 1px 8px;
+    border-radius: 3px;
+    border: 1px solid #e8952a;
+    color: #e8952a;
+    background: rgba(232,149,42,0.12);
+  }
+
+  /* ── Buttons ── */
+  .admin-btn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+  }
+  .admin-btn:hover { border-color: var(--accent); color: var(--accent-bright); }
+  .admin-btn:disabled { opacity: 0.45; cursor: default; }
+  .admin-btn:disabled:hover { border-color: var(--border-default); color: var(--text-primary); }
+  /* Armed: the same fixed accent every manual-event mark uses. */
+  .admin-btn.active {
+    border-color: rgba(255,120,200,0.75);
+    color: rgba(255,120,200,0.95);
+    background: rgba(255,120,200,0.12);
+  }
+  .admin-btn.active:hover { border-color: rgba(255,120,200,0.95); color: rgba(255,120,200,1); }
+  .admin-btn.danger { border-color: rgba(232,96,96,0.55); color: #e86060; }
+  .admin-btn.danger:hover { border-color: #e86060; color: #e86060; }
+  .admin-btn.primary { border-color: var(--accent); color: var(--accent-bright); }
+
+  .chart-actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  /* Admin chips are edit handles, not decoration. */
+  .manual-chip { cursor: pointer; }
+  .manual-chip:hover {
+    border-color: rgba(255,120,200,0.95);
+    background: rgba(255,120,200,0.22);
+  }
+
+  /* ── Compact stream info row ── */
+  .stream-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .stream-info .sep { color: var(--border-default); }
+  .stream-info .k { color: var(--accent); }
+
+  .no-chart-note {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  /* ── Events table ── */
+  .events-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .events-title {
+    font-family: 'Rye', serif;
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+  .events-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  .events-table th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid var(--border-default);
+  }
+  .events-table td {
+    padding: 8px 8px;
+    border-bottom: 1px solid rgba(100,180,60,0.07);
+    vertical-align: top;
+  }
+  .events-table tr:last-child td { border-bottom: none; }
+  .events-table tr:hover td { background: rgba(100,180,60,0.05); }
+  html[data-theme="white"] .events-table td {
+    border-bottom-color: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.16);
+  }
+  html[data-theme="white"] .events-table tr:hover td {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.07);
+  }
+  .events-empty { font-size: 14px; color: var(--text-muted); font-style: italic; }
+  .kind-badge {
+    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,120,200,0.4);
+    background: rgba(255,120,200,0.10);
+    color: rgba(255,120,200,0.95);
+    white-space: nowrap;
+  }
+  html[data-theme="white"] .kind-badge { color: #a3336f; border-color: rgba(163,51,111,0.45); }
+  .tag-cell { font-family: 'Share Tech Mono', monospace; color: var(--text-primary); }
+  .echo { display: block; font-size: 11px; opacity: 0.7; }
+
+  /* ── Auth gate ── */
+  .gate-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: var(--bg-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .gate-overlay[hidden] { display: none; }
+  .gate-panel {
+    width: min(430px, 100%);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 6px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .gate-title {
+    font-family: 'Rye', serif;
+    font-size: 17px;
+    color: var(--accent-bright);
+    letter-spacing: 0.04em;
+  }
+  .gate-help { font-size: 14px; color: var(--text-muted); font-style: italic; }
+  .gate-error { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: #e86060; min-height: 16px; }
+
+  /* ── Shared form controls ── */
+  .admin-input {
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    padding: 7px 9px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .admin-input::placeholder { color: var(--text-muted); opacity: 0.7; }
+  .admin-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.35);
+  }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  /* An author `display` beats the UA's [hidden] rule, so restate it. */
+  .field[hidden] { display: none; }
+  .field-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .field-echo {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    opacity: 0.85;
+    min-height: 14px;
+  }
+
+  /* ── Event modal ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .modal-overlay[hidden] { display: none; }
+  .modal-panel {
+    width: min(470px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: var(--bg-base);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 6px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .modal-title {
+    font-family: 'Rye', serif;
+    font-size: 15px;
+    color: var(--accent-bright);
+    letter-spacing: 0.04em;
+  }
+  .modal-actions { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+  .modal-actions .spacer { flex: 1; }
+  .modal-warn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: #e8952a;
+    min-height: 16px;
+  }
+  .modal-error {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: #e86060;
+    min-height: 16px;
+  }
+
+  /* Three-segment kind switch */
+  .seg { display: flex; border: 1px solid var(--border-default); border-radius: 4px; overflow: hidden; }
+  .seg button {
+    flex: 1;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    padding: 6px 4px;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--border-default);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .seg button:last-child { border-right: none; }
+  .seg button:hover { color: var(--accent-bright); }
+  .seg button.active {
+    background: rgba(255,120,200,0.14);
+    color: rgba(255,120,200,0.95);
+  }
+  html[data-theme="white"] .seg button.active { color: #a3336f; }
+
+  /* Tag combobox */
+  .combo { position: relative; }
+  .combo-list {
+    position: absolute;
+    left: 0; right: 0; top: 100%;
+    z-index: 5;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 2px;
+    background: var(--bg-base);
+    border: 1px solid var(--border-default-strong);
+    border-radius: 4px;
+  }
+  .combo-list[hidden] { display: none; }
+  .combo-opt {
+    padding: 5px 9px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+  .combo-opt.active, .combo-opt:hover {
+    background: rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.18);
+    color: var(--accent-bright);
+  }
+  .combo-opt.create { font-style: italic; color: var(--text-muted); }
+
+  /* ── Toasts ── */
+  .toast-wrap {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+  .toast {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px 12px;
+    max-width: 380px;
+    border-radius: 4px;
+    border: 1px solid var(--border-default-strong);
+    background: var(--bg-base);
+    color: var(--text-primary);
+  }
+  .toast.ok   { border-color: #6bd48a; color: #6bd48a; }
+  .toast.warn { border-color: #e8952a; color: #e8952a; }
+  .toast.err  { border-color: #e86060; color: #e86060; }
+
+</style>
+</head>
+<body>
+
+<!-- ── Admin header strip ── -->
+<div class="admin-bar">
+  <span class="admin-dot" id="adminDot" title="signed in"></span>
+  <span class="admin-bar-label">admin</span>
+  <span class="dryrun-badge" id="dryrunBadge" hidden>DRY RUN</span>
+  <span class="admin-bar-spacer"></span>
+  <button class="admin-btn" id="signOutBtn" type="button">Sign out</button>
+</div>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-search">
+      <input id="streamSearch" type="search" placeholder="search streams…"
+             autocomplete="off" spellcheck="false" aria-label="Search streams">
+    </div>
+    <div id="streamList">
+      <div class="loading-state" style="height:200px;">
+        <span class="loading-glyph">~</span>
+        <span>wading in...</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-area">
+    <div class="stream-title-bar">
+      <span class="stream-title-text" id="streamTitle"></span>
+    </div>
+    <main class="main" id="main">
+      <div class="empty-state">
+        <span class="loading-glyph" style="font-size:40px;">☽</span>
+        <span>select a stream from the list</span>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ── Auth gate (covers everything until a token is stored) ── -->
+<div class="gate-overlay" id="gateOverlay">
+  <div class="gate-panel">
+    <span class="gate-title">Curator sign-in</span>
+    <span class="gate-help">Paste a fine-grained GitHub PAT with Contents read/write on rawtechusa-sys/ogrestats</span>
+    <input class="admin-input" id="gateInput" type="password" placeholder="github_pat_…"
+           autocomplete="off" spellcheck="false" aria-label="GitHub personal access token">
+    <span class="gate-error" id="gateError"></span>
+    <button class="admin-btn primary" id="gateBtn" type="button">Unlock</button>
+  </div>
+</div>
+
+<!-- ── Event modal ── -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <span class="modal-title" id="modalTitle">Add event</span>
+
+    <div class="field">
+      <span class="field-label">Tag</span>
+      <div class="combo">
+        <input class="admin-input" id="evTag" type="text" placeholder="tag…"
+               autocomplete="off" spellcheck="false" role="combobox"
+               aria-expanded="false" aria-autocomplete="list">
+        <div class="combo-list" id="evTagList" role="listbox" hidden></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <span class="field-label">Kind</span>
+      <div class="seg" id="evKind">
+        <button type="button" data-kind="point">Timestamp</button>
+        <button type="button" data-kind="range">Time Range</button>
+        <button type="button" data-kind="stream">Whole Stream</button>
+      </div>
+    </div>
+
+    <div class="field" id="evStartField">
+      <span class="field-label" id="evStartLabel">Timestamp</span>
+      <input class="admin-input" id="evStart" type="text" autocomplete="off" spellcheck="false">
+      <span class="field-echo" id="evStartEcho"></span>
+    </div>
+
+    <div class="field" id="evEndField">
+      <span class="field-label" id="evEndLabel">End</span>
+      <input class="admin-input" id="evEnd" type="text" autocomplete="off" spellcheck="false">
+      <span class="field-echo" id="evEndEcho"></span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">Note</span>
+      <input class="admin-input" id="evNote" type="text" placeholder="optional"
+             autocomplete="off" spellcheck="false">
+    </div>
+
+    <span class="modal-warn" id="evWarn"></span>
+    <span class="modal-error" id="evError"></span>
+
+    <div class="modal-actions">
+      <button class="admin-btn primary" id="evSave" type="button">Save</button>
+      <button class="admin-btn" id="evCancel" type="button">Cancel</button>
+      <span class="spacer"></span>
+      <button class="admin-btn danger" id="evDelete" type="button" hidden>Delete</button>
+      <span id="evDeleteConfirm" hidden>
+        <span class="ts-cell">sure?</span>
+        <button class="admin-btn danger" id="evDeleteYes" type="button">Delete</button>
+        <button class="admin-btn" id="evDeleteNo" type="button">No</button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="config.js"></script>
+<script src="manual-events.js"></script>
+<script>
+const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
+
+let currentChart = null;
+
+// Parallel array to the rendered sidebar rows, used by the search filter:
+// [{ el, id, startTs, title /* lowercased */ }]. Rebuilt by loadStreamList.
+let searchIndex = [];
+
+// ── Admin page state (new) ───────────────────────────────────────────────────
+// The stream currently open in the editor, its parsed data, and the manual-event
+// document as last read from / written to GitHub.
+let activeStreamId = null;
+let activeAnchorTs = null;   // elapsed-time origin: meta.start_ts ?? first snapshot ts
+let activeEndTs    = null;   // window end: meta.end_ts ?? last snapshot ts
+let manualState    = { doc: { version: 1, events: [] }, sha: null };
+let adminManual    = { timed: [], wholeStream: [] };   // ManualEvents.normalize(manualState.doc)
+let lastLegendArgs = null;   // re-applied when the manual-event legend entry must appear/disappear
+
+// Armed-mode state, read live by the shared overlay plugin's getState.
+let armed = false;
+let dragSelection = null;    // { x0px, x1px } in canvas pixels while dragging
+let dragging = false;
+let dragX0 = null;
+
+const HINT_DEFAULT = 'scroll to zoom · drag to pan · double-click to reset';
+const HINT_ARMED   = 'click = point · drag = range · Esc = done';
+
+// ── Theme ─────────────────────────────────────────────────────────────────────
+const THEMES = {
+  green: { file: 'themes/bog-moss.css',      chartGrid: 'rgba(100,180,60,0.08)',   chartTick: '#4a7038', donBar: 'rgba(100,180,60,0.75)',   donBorder: '#96d45a', tooltipBg: '#0e160e', tooltipTitle: '#7ab84a', tooltipBody: '#b8c9a0', donTick: '#4a7038',  tooltipBorder: 'rgba(100,180,60,0.4)' },
+  amber: { file: 'themes/firepit.css',        chartGrid: 'rgba(196,125,42,0.08)',   chartTick: '#7a6045', donBar: 'rgba(196,125,42,0.75)',   donBorder: '#e8952a', tooltipBg: '#1c150a', tooltipTitle: '#c47d2a', tooltipBody: '#c8a97a', donTick: '#8a6030',  tooltipBorder: 'rgba(196,125,42,0.4)' },
+  grey:  { file: 'themes/dead-stone.css',     chartGrid: 'rgba(160,160,148,0.08)',  chartTick: '#606058', donBar: 'rgba(140,140,130,0.75)',  donBorder: '#b0b0a8', tooltipBg: '#141414', tooltipTitle: '#909088', tooltipBody: '#c0c0b8', donTick: '#606058',  tooltipBorder: 'rgba(160,160,148,0.4)' },
+  void:  { file: 'themes/the-void.css',       chartGrid: 'rgba(255,255,255,0.08)',  chartTick: '#a0a0a0', donBar: 'rgba(200,200,200,0.75)',  donBorder: '#ffffff', tooltipBg: '#0a0a0a', tooltipTitle: '#ffffff', tooltipBody: '#f0f0f0', donTick: '#a0a0a0',  tooltipBorder: 'rgba(255,255,255,0.45)' },
+  white: { file: 'themes/onion-layers.css',   chartGrid: 'rgba(120,92,38,0.14)',    chartTick: '#6a5731', donBar: 'rgba(160,109,28,0.80)',  donBorder: '#8a4d08', tooltipBg: '#fbf7ee', tooltipTitle: '#8a4d08', tooltipBody: '#2a2316', donTick: '#6a5731',  tooltipBorder: 'rgba(120,92,38,0.5)' },
+};
+
+function applyTheme(key) {
+  const t = THEMES[key] || THEMES.green;
+  document.getElementById('theme-css').href = t.file;
+  document.documentElement.setAttribute('data-theme', key);
+  if (currentChart) {
+    currentChart.options.scales.yViewers.grid.color = t.chartGrid;
+    currentChart.options.scales.x.grid.color = t.chartGrid;
+    currentChart.options.scales.x.ticks.color = t.chartTick;
+    currentChart.options.plugins.tooltip.backgroundColor = t.tooltipBg;
+    currentChart.options.plugins.tooltip.titleColor = t.tooltipTitle;
+    currentChart.options.plugins.tooltip.bodyColor = t.tooltipBody;
+    currentChart.options.plugins.tooltip.borderColor = t.tooltipBorder;
+    currentChart.update('none');
+  }
+}
+
+// Apply theme from localStorage on load, then listen for live updates from parent.
+// NOTE (vs streams.html): there is deliberately no 'selectstream' branch here --
+// the shell only posts that for the streams tab. Admin reads the shared
+// sessionStorage['selected-stream'] key at list load instead.
+applyTheme(localStorage.getItem('swamp-theme') || 'green');
+window.addEventListener('message', e => {
+  if (e.data && e.data.type === 'theme') applyTheme(e.data.key);
+  // Live timezone switch: rebuild the sidebar dates and reload the selected stream.
+  else if (e.data && e.data.type === 'timezone') { if (!gateIsOpen()) loadStreamList(); }
+});
+
+// Forward mouse position to parent for roach/eye animations
+document.addEventListener('mousemove', e => {
+  try { window.parent.postMessage({ type: 'mousemove', x: e.clientX, y: e.clientY }, '*'); } catch(err) {}
+});
+document.addEventListener('mouseleave', () => {
+  try { window.parent.postMessage({ type: 'mouseleave' }, '*'); } catch(err) {}
+});
+
+// ── Utilities ──────────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
+  return r.json();
+}
+
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} — ${url}`);
+  return r.text();
+}
+
+function parseJSONL(text) {
+  return text.trim().split('\n').filter(Boolean).map(l => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+}
+
+function fmtDate(ts) {
+  return new Date(ts * 1000).toLocaleDateString('en-US', withTZ({ month:'short', day:'numeric', year:'numeric' }));
+}
+
+function fmtTime(ts) {
+  return new Date(ts * 1000).toLocaleTimeString('en-US', withTZ({ hour:'2-digit', minute:'2-digit' }));
+}
+
+function fmtDuration(secs) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+}
+
+function elapsedSeconds(startTs, ts) {
+  return Math.max(0, Math.floor(ts - startTs));
+}
+
+function fmtElapsed(startTs, ts) {
+  const s = elapsedSeconds(startTs, ts);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  return h > 0
+    ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`
+    : `${m}:${String(sec).padStart(2,'0')}`;
+}
+
+function escHtml(str) {
+  return String(str == null ? '' : str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Toasts
+// ═══════════════════════════════════════════════════════════════════════════════
+function toast(msg, kind) {
+  const wrap = document.getElementById('toastWrap');
+  if (!wrap) return;
+  const el = document.createElement('div');
+  el.className = 'toast' + (kind ? ' ' + kind : '');
+  el.textContent = msg;
+  wrap.appendChild(el);
+  setTimeout(() => { el.remove(); }, kind === 'err' ? 7000 : 4000);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — GitHub writer (Contents API, no git binary)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const TOKEN_KEY = 'admin-gh-token';
+// ?dryrun=1 turns every write into a console log. Reads still hit the API.
+// Also honoured on the shell's own URL (index.html?dryrun=1#admin): the shell
+// loads this page into its iframe as a bare "admin.html", so a query string put
+// on admin.html directly never survives the round trip.
+const DRYRUN = (() => {
+  const test = s => /(^|[?&])dryrun=1(&|$)/.test(s || '');
+  if (test(location.search)) return true;
+  try { return window.parent !== window && test(window.parent.location.search); }
+  catch (e) { return false; }   // cross-origin parent: not our shell
+})();
+
+function storedToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (e) { return ''; }
+}
+
+// Encode each path segment separately -- the slashes are structure, not data.
+function encodePath(path) {
+  return String(path).split('/').map(encodeURIComponent).join('/');
+}
+
+// btoa() is latin1-only, so UTF-8 encode first and feed btoa the bytes. The
+// apply() chunking keeps a long file from blowing the argument limit.
+function b64EncodeUtf8(str) {
+  const bytes = new TextEncoder().encode(str);
+  const CHUNK = 8192;
+  let binary = '';
+  for (let i = 0; i < bytes.length; i += CHUNK) {
+    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + CHUNK));
+  }
+  return btoa(binary);
+}
+
+// The Contents API wraps its base64 at 60 columns, and atob() rejects the
+// newlines -- strip all whitespace before decoding.
+function b64DecodeUtf8(b64) {
+  const clean = String(b64 || '').replace(/\s+/g, '');
+  const binary = atob(clean);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder('utf-8').decode(bytes);
+}
+
+// Fetch wrapper: adds the API headers, and treats a 401 as "the stored token is
+// dead" -- clear it and re-show the gate (the page DOM underneath is untouched).
+async function ghApi(path, opts) {
+  const options = Object.assign({}, opts || {});
+  const headers = Object.assign({
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28',
+  }, options.headers || {});
+  // Dry run drives the whole editor from a placeholder token, so a real
+  // Authorization header would 401 every read. ogrestats is public, so an
+  // unauthenticated GET returns exactly the same bytes.
+  if (!DRYRUN) headers['Authorization'] = 'Bearer ' + storedToken();
+  options.headers = headers;
+  const resp = await fetch('https://api.github.com' + path, options);
+  if (resp.status === 401) {
+    onTokenRejected();
+    const err = new Error('401 — token rejected');
+    err.status = 401;
+    throw err;
+  }
+  return resp;
+}
+
+// Build an Error carrying the HTTP status and GitHub's own `message` field, so
+// callers can both show it and test it (the 422-sha conflict check).
+async function ghError(resp, path) {
+  let message = '';
+  try { const j = await resp.json(); if (j && j.message) message = String(j.message); } catch (e) {}
+  const err = new Error(`${resp.status}${message ? ' — ' + message : ''} (${path})`);
+  err.status = resp.status;
+  err.ghMessage = message;
+  return err;
+}
+
+// GET a JSON file. 404 -> { json: null, sha: null }. Reads go through the API
+// (not the raw CDN) so the editor sees its own writes immediately.
+async function ghGetFile(path) {
+  const url = `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodePath(path)}?ref=${encodeURIComponent(BRANCH)}`;
+  const resp = await ghApi(url, { method: 'GET', cache: 'no-store' });
+  if (resp.status === 404) return { json: null, sha: null };
+  if (!resp.ok) throw await ghError(resp, path);
+  const body = await resp.json();
+  // Files >1MB come back with encoding:"none" and need the Blobs API. Every file
+  // this page touches is tiny, so surface it as a clear error instead.
+  if (body.encoding !== 'base64' || typeof body.content !== 'string') {
+    throw new Error(`${path}: unsupported encoding "${body.encoding}" — file too large for the Contents API`);
+  }
+  const text = b64DecodeUtf8(body.content);
+  return { json: text.trim() ? JSON.parse(text) : null, sha: body.sha };
+}
+
+// PUT a JSON file. Returns the new blob sha. sha=null creates the file.
+async function ghPutFile(path, obj, sha, message) {
+  if (DRYRUN) {
+    console.log('[dryrun] PUT', { path, message, doc: obj });
+    return 'dryrun';
+  }
+  const body = {
+    message,
+    content: b64EncodeUtf8(JSON.stringify(obj, null, 2) + '\n'),
+    branch: BRANCH,
+  };
+  if (sha) body.sha = sha;
+  const url = `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodePath(path)}`;
+  const resp = await ghApi(url, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  if (!resp.ok) throw await ghError(resp, path);
+  const out = await resp.json();
+  return out.content.sha;
+}
+
+// Read-modify-write with conflict replay. `seed` lets a caller skip the first
+// GET using state it already holds; a conflict always re-GETs and replays
+// mutateFn against the fresh document, so a concurrent curator isn't clobbered.
+async function ghSaveWithRetry(path, mutateFn, message, maxAttempts = 3, seed) {
+  let current = seed || null;
+  for (let attempt = 1; ; attempt++) {
+    if (!current) current = await ghGetFile(path);
+    const doc = mutateFn(current.json);
+    try {
+      const sha = await ghPutFile(path, doc, current.sha, message);
+      return { doc, sha };
+    } catch (err) {
+      const conflict = err.status === 409
+        || (err.status === 422 && /sha/i.test(err.ghMessage || ''));
+      if (!conflict || attempt >= maxAttempts) throw err;
+      current = null;   // re-GET fresh, replay the mutation
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Auth gate
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function gateIsOpen() {
+  const el = document.getElementById('gateOverlay');
+  return !el || !el.hidden;
+}
+
+function showGate(message) {
+  const el = document.getElementById('gateOverlay');
+  if (!el) return;
+  el.hidden = false;
+  document.getElementById('gateError').textContent = message || '';
+  const input = document.getElementById('gateInput');
+  input.value = '';
+  input.focus();
+  document.getElementById('adminDot').style.background = 'var(--text-muted)';
+  document.getElementById('adminDot').style.boxShadow = 'none';
+}
+
+function hideGate() {
+  const el = document.getElementById('gateOverlay');
+  if (el) el.hidden = true;
+  document.getElementById('adminDot').style.background = '#6bd48a';
+  document.getElementById('adminDot').style.boxShadow = '0 0 6px rgba(107,212,138,0.8)';
+}
+
+// A later call rejected the stored token: drop it and re-show the gate. The page
+// underneath (including an open modal) is left exactly as it was.
+function onTokenRejected() {
+  try { localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+  if (!gateIsOpen()) {
+    toast('GitHub token rejected — sign in again', 'err');
+    showGate('Token invalid or revoked.');
+  }
+}
+
+async function tokenHasWriteAccess(token) {
+  let resp;
+  try {
+    resp = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`, {
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+      },
+    });
+  } catch (e) {
+    return { ok: false, error: 'GitHub unreachable.' };
+  }
+  if (resp.status === 401) return { ok: false, error: 'Token invalid or revoked.' };
+  if (!resp.ok) return { ok: false, error: `GitHub error ${resp.status}.` };
+  let json = null;
+  try { json = await resp.json(); } catch (e) {}
+  if (!json || !json.permissions || json.permissions.push !== true) {
+    return { ok: false, error: 'Token lacks write access (needs Contents read/write).' };
+  }
+  return { ok: true };
+}
+
+async function unlock() {
+  const input = document.getElementById('gateInput');
+  const btn   = document.getElementById('gateBtn');
+  const err   = document.getElementById('gateError');
+  const token = input.value.trim();
+  if (!token) { err.textContent = 'Paste a token first.'; return; }
+
+  // Dry run never writes, and its whole point is UI testing without a real PAT
+  // -- validating a placeholder token here would 401 and lock the page out.
+  if (!DRYRUN) {
+    btn.disabled = true;
+    err.textContent = 'checking…';
+    const result = await tokenHasWriteAccess(token);
+    btn.disabled = false;
+    if (!result.ok) { err.textContent = result.error; return; }
+  }
+
+  try { localStorage.setItem(TOKEN_KEY, token); } catch (e) {}
+  err.textContent = '';
+  hideGate();
+  loadStreamList();
+}
+
+function signOut() {
+  try { localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+  showGate('');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// Stream list + sidebar search — lifted from streams.html (one copy edit, marked)
+// ═══════════════════════════════════════════════════════════════════════════════
+async function loadStreamList() {
+  const listEl = document.getElementById('streamList');
+  try {
+    // Fat index entries carry title, but legacy/pre-backfill entries may not;
+    // channel_stats.json (a dict keyed by stream_id) has them for every stream in
+    // one fetch, so fetch both in parallel and build an id->title fallback map. A
+    // failed/blocked channel_stats must not break the list -- titles just degrade
+    // to de-slugified ids.
+    const [index, titleMap] = await Promise.all([
+      fetchJSON(`${RAW}/data/streams/index.json`),
+      fetchJSON(`${RAW}/data/channel_stats.json`)
+        .then(data => {
+          // channel_stats.json is { ..., streams: { <stream_id>: {title, ...} } } --
+          // a dict keyed by stream_id, not a bare array (see channelstats.html).
+          const m = new Map();
+          for (const r of Object.values(data?.streams || {})) {
+            if (r && r.stream_id && r.title) m.set(r.stream_id, String(r.title));
+          }
+          return m;
+        })
+        .catch(() => new Map()),
+    ]);
+
+    if (index.length === 0) {
+      listEl.innerHTML = '<div class="sidebar-empty">no streams yet — check back after the next broadcast</div>';
+      return;
+    }
+
+    let streams;
+    if (typeof index[0] === 'object' && index[0] !== null) {
+      // Fat index: each entry is {id, start_ts, end_ts, platforms} — everything
+      // the sidebar renders is already here, so no per-stream metadata fetch.
+      // The full metadata.json + events.jsonl load lazily on click (loadStream).
+      streams = index.map(e => ({ id: e.id, meta: e }));
+    } else {
+      // Legacy string-array index: fall back to fetching each metadata.json.
+      const metaResults = await Promise.allSettled(
+        index.map(id => fetchJSON(`${RAW}/data/streams/${id}/metadata.json`))
+      );
+      streams = index.map((id, i) => ({
+        id,
+        meta: metaResults[i].status === 'fulfilled' ? metaResults[i].value : null,
+      }));
+    }
+
+    // Newest-first by start_ts.
+    streams.sort((a, b) => (b.meta?.start_ts ?? 0) - (a.meta?.start_ts ?? 0));
+
+    listEl.innerHTML = '<div class="sidebar-label">Streams</div>';
+    searchIndex = [];
+
+    for (const [idx, { id, meta }] of streams.entries()) {
+      const div = document.createElement('div');
+      div.className = 'stream-item' + (idx === 0 ? ' active' : '');
+      div.dataset.id = id;
+
+      let datePart = '—';
+      let timePart = '';
+
+      if (meta?.start_ts) {
+        const utcDate = new Date(meta.start_ts * 1000);
+        // MM/DD/YY (month/day/year), in the active timezone (see config.js withTZ).
+        datePart = utcDate.toLocaleDateString('en-US', withTZ({
+          month: '2-digit', day: '2-digit', year: '2-digit'
+        }));
+        // Time only, no timezone label.
+        timePart = utcDate.toLocaleTimeString('en-US', withTZ({
+          hour: 'numeric', minute: '2-digit'
+        }));
+      }
+
+      const lengthPart = (meta?.end_ts && meta?.start_ts)
+        ? fmtDuration(meta.end_ts - meta.start_ts) : '';
+
+      // Fat index entries carry title; fall back to channel_stats.json (legacy
+      // entries / pre-backfill), then a de-slugified id (lossy, but better than nothing).
+      const title = (meta && meta.title) || titleMap.get(id) || id.replace(/_/g, ' ');
+
+      div.innerHTML = `
+        <div class="stream-item-meta">
+          <span class="stream-item-date">${datePart}</span>
+          <span class="stream-item-sep">|</span>
+          <span class="stream-item-time">${timePart}</span>
+          ${lengthPart ? `<span class="stream-item-sep">|</span><span class="stream-item-length">${lengthPart}</span>` : ''}
+        </div>
+        <div class="stream-item-title" title="${escHtml(title)}">${escHtml(title)}</div>
+      `;
+
+      div.addEventListener('click', () => {
+        document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+        div.classList.add('active');
+        sessionStorage.setItem('selected-stream', id);
+        // COPY EDIT vs streams.html: no 'streamselected' postMessage here. That
+        // message makes the shell rewrite the hash to #streams/<id>, which would
+        // yank this iframe over to the Streams tab mid-edit.
+        loadStream(id);
+      });
+
+      listEl.appendChild(div);
+      searchIndex.push({
+        el: div,
+        id,
+        startTs: meta?.start_ts || null,
+        title: title.toLowerCase(),
+      });
+    }
+
+    // A timezone switch re-runs loadStreamList; re-apply any active filter so date
+    // matching reflects the newly-formatted dates and the list isn't reset.
+    const searchInput = document.getElementById('streamSearch');
+    if (searchInput && searchInput.value.trim()) applyFilter(searchInput.value);
+
+    if (streams.length > 0) {
+      // Selection priority: the stream stashed by the shell / last session, else
+      // the newest. Deep links (index.html#admin/<slug>) arrive via the shell,
+      // which stashes the slug into sessionStorage before the iframe loads.
+      const selected = sessionStorage.getItem('selected-stream');
+      if (!selectStreamById(selected)) {
+        loadStream(streams[0].id);
+      }
+    }
+
+  } catch (e) {
+    listEl.innerHTML = `<div class="sidebar-empty">couldn't reach the swamp<br><small>${e.message}</small></div>`;
+  }
+}
+
+// ── Sidebar search ───────────────────────────────────────────────────────────
+// Self-contained (no fuzzy-search library): a subsequence title matcher plus a
+// multi-format/partial date parser, combined so "smash jt march 2022" requires
+// both the title fuzzy-match and the date to hold.
+
+// Order-preserving subsequence: every char of `n` appears in `h` in order.
+function isSubseq(n, h) {
+  let i = 0;
+  for (let j = 0; j < h.length && i < n.length; j++) if (h[j] === n[i]) i++;
+  return i === n.length;
+}
+function fuzzyTitleMatch(tokens, title) {
+  return tokens.every(t => isSubseq(t, title));
+}
+
+// A stream's tz-local Y/M/D, via en-CA's stable YYYY-MM-DD, so date matching agrees
+// with the MM/DD/YY shown on each row (both go through withTZ).
+function tsParts(ts) {
+  const [y, m, d] = new Date(ts * 1000)
+    .toLocaleDateString('en-CA', withTZ({ year: 'numeric', month: '2-digit', day: '2-digit' }))
+    .split('-').map(Number);
+  return { y, m, d };
+}
+
+const MONTHS = ['january','february','march','april','may','june','july',
+                'august','september','october','november','december'];
+function monthNum(w) {
+  w = w.toLowerCase().replace(/,$/, '');
+  let i = MONTHS.indexOf(w);
+  if (i >= 0) return i + 1;
+  if (w.length >= 3) { i = MONTHS.findIndex(m => m.slice(0, 3) === w.slice(0, 3)); if (i >= 0) return i + 1; }
+  return null;
+}
+
+// Expand a 2-digit year to a 4-digit one (all real data is 2000s).
+function expandYear(yy) { return yy < 70 ? 2000 + yy : 1900 + yy; }
+
+// Choose {m,d} from a numeric pair. Default US MM/DD (matches the row display);
+// switch to DD/MM only when the first number can't be a month but the second can.
+// Both > 12 -> null (no valid date).
+function monthDay(a, b) {
+  if (a >= 1 && a <= 12 && b >= 1 && b <= 31) return { m: a, d: b };   // MM/DD
+  if (a > 12 && a <= 31 && b >= 1 && b <= 12) return { m: b, d: a };   // DD/MM
+  return null;
+}
+
+// Parse one date-ish token -> partial {y?,m?,d?} or null.
+function parseDateFragment(str) {
+  // ISO-ish: 2022 | 2022-03 | 2022-03-22
+  let m = /^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?$/.exec(str);
+  if (m) {
+    const out = { y: +m[1] };
+    if (m[2] != null) out.m = +m[2];
+    if (m[3] != null) out.d = +m[3];
+    if (out.m != null && (out.m < 1 || out.m > 12)) return null;
+    if (out.d != null && (out.d < 1 || out.d > 31)) return null;
+    return out;
+  }
+  // Slash/dot numeric: A/B/C, A.B.C, A/B, A.B (year may be 4-digit anywhere, or 2-digit last)
+  const parts = str.split(/[/.]/);
+  if (parts.length === 2 || parts.length === 3) {
+    if (!parts.every(p => /^\d{1,4}$/.test(p) && p.length > 0)) return null;
+    const nums = parts.map(Number);
+    let year = null, md = null;
+    if (parts.length === 3) {
+      const yi = parts.findIndex(p => p.length === 4);
+      if (yi === 0) { year = nums[0]; md = monthDay(nums[1], nums[2]); }       // YYYY/MM/DD-ish
+      else { year = parts[2].length === 4 ? nums[2] : expandYear(nums[2]); md = monthDay(nums[0], nums[1]); }
+    } else {
+      md = monthDay(nums[0], nums[1]);                                          // A/B, no year
+    }
+    if (!md) return null;
+    const out = { m: md.m, d: md.d };
+    if (year != null) out.y = year;
+    return out;
+  }
+  return null;
+}
+
+// Split a raw query into date fragment(s) + title tokens.
+// Lone 1-2 digit numbers stay as title tokens (so titles like "top 10" aren't hijacked).
+function parseQuery(raw) {
+  const q = raw.trim().toLowerCase();
+  if (!q) return { empty: true };
+  const tokens = q.split(/\s+/);
+  const dateParts = [], titleTokens = [];
+  let i = 0;
+  while (i < tokens.length) {
+    const tok = tokens[i];
+    if (/^\d{4}$/.test(tok)
+        || /^\d{4}-\d{1,2}(-\d{1,2})?$/.test(tok)
+        || /^\d{1,4}[/.]\d{1,4}([/.]\d{1,4})?$/.test(tok)) {
+      const p = parseDateFragment(tok);
+      if (p) { dateParts.push(p); i++; continue; }
+    }
+    const mn = monthNum(tok);
+    if (mn != null) {
+      // Month name, optionally followed by a day and/or a 4-digit year.
+      let j = i + 1, day = null, year = null;
+      while (j < tokens.length) {
+        const nxt = tokens[j].replace(/,$/, '');
+        if (/^\d{4}$/.test(nxt) && year == null) { year = +nxt; j++; continue; }
+        if (/^\d{1,2}$/.test(nxt) && +nxt >= 1 && +nxt <= 31 && day == null) { day = +nxt; j++; continue; }
+        break;
+      }
+      const p = { m: mn };
+      if (day != null) p.d = day;
+      if (year != null) p.y = year;
+      dateParts.push(p);
+      i = j;
+      continue;
+    }
+    titleTokens.push(tok);
+    i++;
+  }
+  return { empty: false, dateParts, titleTokens };
+}
+
+function buildDatePredicate(parts) {
+  return (ts) => {
+    if (!ts) return false;
+    const p = tsParts(ts);
+    if (parts.y != null && p.y !== parts.y) return false;
+    if (parts.m != null && p.m !== parts.m) return false;
+    if (parts.d != null && p.d !== parts.d) return false;
+    return true;
+  };
+}
+
+function showNoResults(listEl) {
+  if (listEl.querySelector('.search-noresults')) return;
+  const div = document.createElement('div');
+  div.className = 'search-noresults';
+  div.textContent = 'no streams match…';
+  listEl.appendChild(div);
+}
+function removeNoResults(listEl) {
+  const el = listEl.querySelector('.search-noresults');
+  if (el) el.remove();
+}
+
+function applyFilter(raw) {
+  const listEl = document.getElementById('streamList');
+  const labelEl = listEl.querySelector('.sidebar-label');
+  const parsed = parseQuery(raw);
+
+  if (parsed.empty) {
+    for (const e of searchIndex) e.el.style.display = '';
+    removeNoResults(listEl);
+    if (labelEl) labelEl.textContent = 'Streams';
+    return;
+  }
+
+  const datePreds = parsed.dateParts.map(buildDatePredicate);
+  // Month names ("may", "march") are ambiguous: a date filter OR a literal title
+  // word. So besides the date-aware interpretation, also try matching the WHOLE
+  // raw query as title text -- a stream matches if EITHER holds. This is why a
+  // stream titled "may 1st part 2..." is found by "may 1st" even though it wasn't
+  // streamed in May.
+  const literalTokens = raw.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  let shown = 0;
+  for (const e of searchIndex) {
+    const dateOk    = datePreds.every(fn => fn(e.startTs));
+    const titleOk   = parsed.titleTokens.length === 0 || fuzzyTitleMatch(parsed.titleTokens, e.title);
+    const literalOk = fuzzyTitleMatch(literalTokens, e.title);
+    const ok = literalOk || (dateOk && titleOk);
+    e.el.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  }
+  if (labelEl) labelEl.textContent = shown + (shown === 1 ? ' Stream' : ' Streams');
+  if (shown === 0) showNoResults(listEl); else removeNoResults(listEl);
+}
+
+// Select a stream in the sidebar by id (mark active, scroll into view, persist,
+// load). Returns true if the stream exists in the current list, false otherwise.
+function selectStreamById(id) {
+  if (!id) return false;
+  const item = document.querySelector(`.stream-item[data-id="${CSS.escape(id)}"]`);
+  if (!item) return false;
+  document.querySelectorAll('.stream-item').forEach(el => el.classList.remove('active'));
+  item.classList.add('active');
+  item.scrollIntoView({ block: 'nearest' });
+  sessionStorage.setItem('selected-stream', id);
+  loadStream(id);
+  return true;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Admin stream detail (simplified from streams.html's loadStream: no stat
+// cards, no pies, no donation log; adds the manual-event read + editor chrome)
+// ═══════════════════════════════════════════════════════════════════════════════
+async function loadStream(streamId) {
+  activeStreamId = streamId;
+  const main = document.getElementById('main');
+  main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
+  document.getElementById('streamTitle').textContent = '';
+  // main.innerHTML above removed the canvas; drop the orphaned Chart instance
+  // (and with it the gesture listeners) before resetting the armed state.
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
+  setArmed(false);
+  lastLegendArgs = null;
+
+  try {
+    const [meta, eventsText, manual] = await Promise.all([
+      fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
+      fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
+      // Manual events come from the Contents API, never the raw CDN: the editor
+      // must read its own writes (the CDN lags ~5 min) and needs the blob sha.
+      ghGetFile(`data/streams/${streamId}/events_manual.json`),
+    ]);
+    if (streamId !== activeStreamId) return;   // the curator switched streams mid-fetch
+
+    manualState = {
+      doc: manual.json || { version: 1, events: [] },
+      sha: manual.sha,
+    };
+    adminManual = ManualEvents.normalize(manualState.doc);
+
+    if (meta.title) {
+      document.getElementById('streamTitle').textContent = meta.title;
+    }
+
+    const events    = parseJSONL(eventsText);
+    const snapshots = events.filter(e => e.event === 'viewer_snapshot');
+    const donations = events.filter(e => e.event === 'donation');
+
+    const startTs   = meta.start_ts;
+    const endTs     = meta.end_ts;
+    const duration  = (endTs && startTs) ? endTs - startTs : null;
+
+    // Elapsed-time origin for every time field on this page, and the far edge of
+    // the "inside the stream window" check.
+    activeAnchorTs = (startTs != null) ? startTs
+      : (snapshots.length ? snapshots[0].ts : null);
+    activeEndTs = (endTs != null) ? endTs
+      : (snapshots.length ? snapshots[snapshots.length - 1].ts : null);
+
+    // Donation events carry the source platform they were collected from; the
+    // per-platform donation lines only appear when 2+ platforms contributed.
+    const donPlatformKeys = ['youtube', 'twitch', 'kick'];
+    const donCountBy = { youtube: 0, twitch: 0, kick: 0 };
+    for (const d of donations) {
+      if (!donPlatformKeys.includes(d.platform)) continue;
+      donCountBy[d.platform] += 1;
+    }
+    const donPlatforms = donPlatformKeys.filter(p => donCountBy[p] > 0);
+
+    const platforms = meta.platforms || [];
+    const hasYT = platforms.includes('youtube');
+    const hasTW = platforms.includes('twitch');
+    const hasKick = platforms.includes('kick');
+
+    // Viewer-data availability is separate from platform membership: a platform
+    // that is null or 0 across every snapshot counts as no data, so its line is
+    // never drawn and its legend toggle never appears.
+    const hasYTViewers = snapshots.some(s => s.youtube);
+    const hasTWViewers = snapshots.some(s => s.twitch);
+    const hasKickViewers = snapshots.some(s => s.kick);
+
+    main.innerHTML = '';
+
+    // ── Compact info row (replaces streams.html's stat-card grid) ──
+    const info = document.createElement('div');
+    info.className = 'stream-info';
+    const bits = [];
+    if (startTs) bits.push(`<span class="k">${escHtml(fmtDate(startTs))}</span>`);
+    if (startTs) bits.push(escHtml(fmtTime(startTs)));
+    bits.push(duration ? escHtml(fmtDuration(duration)) : '—');
+    if (platforms.length) bits.push(escHtml(platforms.join(' · ')));
+    bits.push(`<span class="ts-cell">${escHtml(streamId)}</span>`);
+    info.innerHTML = bits.join('<span class="sep">|</span>');
+    main.appendChild(info);
+
+    // ── Chart panel (always present -- it also hosts Add Event / Reload / chips) ──
+    const hasChartData = snapshots.length > 0;
+    const panel = document.createElement('div');
+    panel.className = 'chart-panel';
+
+    const hasChatRate = snapshots.some(s =>
+      s.youtube_messages_per_minute != null || s.twitch_messages_per_minute != null
+      || s.kick_messages_per_minute != null
+    );
+    const hasActiveYT   = hasYT   && snapshots.some(s => s.active_youtube_chatters);
+    const hasActiveTW   = hasTW   && snapshots.some(s => s.active_twitch_chatters);
+    const hasActiveKick = hasKick && snapshots.some(s => s.active_kick_chatters);
+    const hasYTChat   = hasYT   && snapshots.some(s => s.youtube_messages_per_minute);
+    const hasTWChat   = hasTW   && snapshots.some(s => s.twitch_messages_per_minute);
+    const hasKickChat = hasKick && snapshots.some(s => s.kick_messages_per_minute);
+
+    panel.innerHTML = `
+      <div class="chart-header">
+        <div class="chart-title-wrap">
+          <span class="chart-title">Viewers &amp; Donations</span>
+          <span class="chart-hint" id="chartHint">${escHtml(HINT_DEFAULT)}</span>
+          <span class="manual-chips" id="manualChips"></span>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+        <div class="chart-actions">
+          <button class="admin-btn" id="addEventBtn" type="button">Add Event</button>
+          <button class="admin-btn" id="reloadBtn" type="button">Reload</button>
+        </div>
+      </div>
+      ${hasChartData ? `
+      <div class="chart-wrap">
+        <canvas id="streamChart" role="img" aria-label="Viewer counts, donations and chat rate over stream duration"></canvas>
+      </div>
+      <div class="chart-scrollbar" id="chartScrollbar">
+        <div class="chart-scrollbar-thumb" id="chartScrollbarThumb">
+          <div class="chart-scrollbar-handle left"></div>
+          <div class="chart-scrollbar-handle right"></div>
+        </div>
+      </div>` : `
+      <div class="no-chart-note">no chart data for this stream — use Add Event for a whole-stream tag</div>`}`;
+    main.appendChild(panel);
+
+    document.getElementById('addEventBtn').addEventListener('click', onAddEventClick);
+    document.getElementById('reloadBtn').addEventListener('click', () => {
+      if (activeStreamId) loadStream(activeStreamId);
+    });
+
+    if (hasChartData) {
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, adminManual);
+      lastLegendArgs = [hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms];
+      buildLegend(...lastLegendArgs);
+      wireCanvasGestures();
+    } else {
+      document.getElementById('chartHint').textContent = 'whole-stream tags only';
+    }
+
+    // ── Events table ──
+    const tablePanel = document.createElement('div');
+    tablePanel.className = 'events-panel';
+    tablePanel.innerHTML = `
+      <div class="events-title">Manual Events</div>
+      <div id="eventsTableWrap"></div>`;
+    main.appendChild(tablePanel);
+
+    renderChips();
+    renderEventsTable();
+
+  } catch (e) {
+    main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>failed to load stream<br><small>${escHtml(e.message)}</small></span></div>`;
+  }
+}
+
+// ── Whole-stream chips (clickable on admin: each opens its edit modal) ──
+function renderChips() {
+  const chipsEl = document.getElementById('manualChips');
+  if (!chipsEl) return;
+  chipsEl.innerHTML = adminManual.wholeStream.map((ev, i) => {
+    const note = typeof ev.note === 'string' ? ev.note.trim() : '';
+    const title = note ? ` title="${escHtml(note)}"` : '';
+    return `<span class="manual-chip" data-idx="${i}"${title}>${escHtml(ev.tag)}</span>`;
+  }).join('');
+  chipsEl.querySelectorAll('.manual-chip').forEach(el => {
+    el.addEventListener('click', () => {
+      const ev = adminManual.wholeStream[Number(el.dataset.idx)];
+      if (ev) openModal({ event: ev });
+    });
+  });
+}
+
+// ── Events table: whole-stream first, then timed ascending ──
+function eventRows() {
+  return adminManual.wholeStream.concat(adminManual.timed);
+}
+
+function fmtEventTime(ev) {
+  if (ev.kind === 'stream') return '<span class="ts-cell">whole stream</span>';
+  const one = (ts) => escHtml(tsToField(ts));   // elapsed h:mm:ss, or raw seconds with no anchor
+  const label = ev.kind === 'range' ? `${one(ev.ts)} – ${one(ev.end_ts)}` : one(ev.ts);
+  const echo = ev.kind === 'range'
+    ? `${escHtml(fmtWall(ev.ts))} – ${escHtml(fmtWall(ev.end_ts))}`
+    : escHtml(fmtWall(ev.ts));
+  return `<span class="ts-cell">${label}<span class="echo">${echo}</span></span>`;
+}
+
+function renderEventsTable() {
+  const wrap = document.getElementById('eventsTableWrap');
+  if (!wrap) return;
+  const rows = eventRows();
+  if (rows.length === 0) {
+    wrap.innerHTML = '<div class="events-empty">No manual events yet.</div>';
+    return;
+  }
+  const body = rows.map((ev, i) => `
+    <tr>
+      <td class="tag-cell">${escHtml(ev.tag)}</td>
+      <td><span class="kind-badge">${escHtml(ev.kind)}</span></td>
+      <td>${fmtEventTime(ev)}</td>
+      <td><span class="msg-cell">${escHtml(typeof ev.note === 'string' ? ev.note : '')}</span></td>
+      <td><button class="admin-btn" type="button" data-act="edit" data-idx="${i}">Edit</button></td>
+      <td><span data-cell="del" data-idx="${i}"><button class="admin-btn danger" type="button" data-act="del" data-idx="${i}">Delete</button></span></td>
+    </tr>`).join('');
+  wrap.innerHTML = `
+    <table class="events-table">
+      <thead><tr>
+        <th>Tag</th><th>Kind</th><th>Time</th><th>Note</th><th>Edit</th><th>Delete</th>
+      </tr></thead>
+      <tbody>${body}</tbody>
+    </table>`;
+
+  wrap.querySelectorAll('button[data-act="edit"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ev = eventRows()[Number(btn.dataset.idx)];
+      if (ev) openModal({ event: ev });
+    });
+  });
+  // Inline are-you-sure (never window.confirm), scoped to the row's Delete cell.
+  wrap.querySelectorAll('button[data-act="del"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = Number(btn.dataset.idx);
+      const cell = wrap.querySelector(`span[data-cell="del"][data-idx="${idx}"]`);
+      if (!cell) return;
+      cell.innerHTML = `<span class="ts-cell">sure?</span>
+        <button class="admin-btn danger" type="button" data-yes="1">Delete</button>
+        <button class="admin-btn" type="button" data-no="1">No</button>`;
+      cell.querySelector('[data-no]').addEventListener('click', () => renderEventsTable());
+      cell.querySelector('[data-yes]').addEventListener('click', async () => {
+        cell.querySelectorAll('button').forEach(b => { b.disabled = true; });
+        const ev = eventRows()[idx];
+        if (ev) await deleteEvent(ev);
+        else renderEventsTable();
+      });
+    });
+  });
+}
+
+// Re-point every manual-event surface at the current in-memory document.
+function refreshManualUI() {
+  if (currentChart) {
+    currentChart.$hasManualEvents = adminManual.timed.length > 0;
+    currentChart.draw();
+    // The legend's Events toggle appears/disappears with $hasManualEvents, so
+    // rebuild it whenever the document changed.
+    if (lastLegendArgs) buildLegend(...lastLegendArgs);
+  }
+  renderChips();
+  renderEventsTable();
+}
+
+function fmtWall(ts) {
+  if (!Number.isFinite(ts)) return '';
+  return new Date(ts * 1000).toLocaleString('en-US', withTZ({
+    month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', second: '2-digit',
+  }));
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// Chart — lifted from streams.html (pie helpers dropped; the manual-events
+// plugin's getState reads admin's live state instead of a captured document).
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Dataset label constants -- used to match datasets in legend toggle and theme update
+const DS = {
+  YT_VIEWERS:       'YouTube Viewers',
+  TW_VIEWERS:       'Twitch Viewers',
+  KICK_VIEWERS:     'Kick Viewers',
+  TOTAL_VIEWERS:    'Total Viewers',
+  DONATIONS:        'Donations',
+  DON_YT:           'Donations (YT)',
+  DON_TW:           'Donations (TW)',
+  DON_KICK:         'Donations (Kick)',
+  YT_CHAT:          'YouTube Chat',
+  TW_CHAT:          'Twitch Chat',
+  KICK_CHAT:        'Kick Chat',
+  TOTAL_CHAT:       'Total Chat',
+  YT_ACTIVE_CHATTERS: 'YT Active Chatters',
+  TW_ACTIVE_CHATTERS: 'TW Active Chatters',
+  KICK_ACTIVE_CHATTERS: 'Kick Active Chatters',
+  TOTAL_ACTIVE_CHATTERS: 'Total Active Chatters',
+};
+
+// Canonical ordering for tooltip rows -- mirrors the legend grouping in
+// buildLegend (Donations | Viewers | Active Chatters | Msg/Min, Total first).
+const LEGEND_ORDER = [
+  DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK,
+  DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS,
+  DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS,
+  DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT,
+];
+
+// Per-platform cumulative donation lines: dataset label, line colour and legend
+// text for each donation platform.
+const DON_PLATFORM_META = {
+  youtube: { ds: DS.DON_YT,   color: '#e84040', legend: 'YouTube' },
+  twitch:  { ds: DS.DON_TW,   color: '#6650d8', legend: 'Twitch'  },
+  kick:    { ds: DS.DON_KICK, color: '#53fc18', legend: 'Kick'    },
+};
+
+// Tooltip keys: Chart.js can't dash its built-in line glyph, but pointStyle
+// accepts a canvas (drawPoint renders it verbatim). So we draw a small line
+// with the dataset's exact color + dash pattern and use it as the key. Cached
+// by color+dash so we don't rebuild one every tooltip render.
+const _lineKeyCache = {};
+function lineKeyCanvas(color, dash) {
+  const pattern = (dash && dash.length) ? dash.join(',') : 'solid';
+  const cacheKey = color + '|' + pattern;
+  if (_lineKeyCache[cacheKey]) return _lineKeyCache[cacheKey];
+  const w = 26, h = 10;
+  const cv = document.createElement('canvas');
+  cv.width = w; cv.height = h;
+  const cx = cv.getContext('2d');
+  cx.strokeStyle = color;
+  cx.lineWidth = 2;
+  cx.setLineDash((dash && dash.length) ? dash : []);
+  cx.beginPath();
+  cx.moveTo(1, h / 2);
+  cx.lineTo(w - 1, h / 2);
+  cx.stroke();
+  _lineKeyCache[cacheKey] = cv;
+  return cv;
+}
+
+// Persisted set of dataset labels the user has toggled off; survives stream changes.
+// Same localStorage key as streams.html, deliberately: one shared preference.
+const hiddenDatasets = new Set(
+  JSON.parse(localStorage.getItem('stream-chart-hidden') || '[]')
+);
+
+// Show/hide each y-axis based on whether any of its datasets are currently visible.
+function syncAxisDisplay() {
+  if (!currentChart) return;
+  const axisMap = {
+    yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS],
+    yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
+    yDonations:      [DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK],
+    yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT],
+  };
+  for (const [axisId, labels] of Object.entries(axisMap)) {
+    const anyVisible = labels.some(label => {
+      const idx = currentChart.data.datasets.findIndex(d => d.label === label);
+      return idx !== -1 && currentChart.isDatasetVisible(idx);
+    });
+    currentChart.options.scales[axisId].display = anyVisible;
+  }
+  currentChart.update('none');
+}
+
+// ── Smooth (non-snapping) y-axis auto-fit ───────────────────────────────────
+// When the x-axis is zoomed/panned, Chart.js fits each y-axis to ONLY the points
+// inside the visible x-window. That inclusion is binary, so the y-scale snaps the
+// instant a tall/short point crosses the visible edge. To make the scale move
+// continuously, smoothYExtent() computes each axis's min/max itself, letting
+// off-screen points still contribute with a weight that decays with distance past
+// the edge -- so a peak's influence fades in/out instead of popping. The plugin
+// that applies this lives inline in the Chart config (see "smoothYFit").
+const MARGIN_FRAC = 0.6;       // off-screen influence band, as a fraction of the visible range
+const Y_HEADROOM = 0.05;       // top padding, mirroring Chart.js's auto headroom
+const ANCHOR_MIN_ZERO = false; // keep the floating min (set true to floor every axis at 0)
+
+// Smoothstep falloff: 1 at the visible edge (u<=0), 0 beyond the band (u>=1), with a
+// continuous slope between. w=1 exactly at the edge so an off-screen point matches its
+// own value the moment it scrolls into view -- that equality at the crossing is what
+// removes the snap.
+function falloff(u) {
+  if (u <= 0) return 1;
+  if (u >= 1) return 0;
+  return 1 - (3 * u * u - 2 * u * u * u);
+}
+
+// Pin the smoothYFit x-window to the live x-scale. The scrollbar paths set $xWindow
+// explicitly before each instant zoomScale; the zoom plugin's chart-body pan/pinch
+// instead move the live x-scale directly, so call this from their onPan/onZoom so the
+// y-axes refit to the new region instead of staying pinned to the old window.
+function syncXWindow(chart) {
+  const x = chart.scales && chart.scales.x;
+  if (!x || !isFinite(x.min) || !isFinite(x.max)) return;
+  chart.$xWindow = { min: x.min, max: x.max };
+}
+
+// Set true (or `currentChart.$smoothYDebug = true` from devtools) to cross-check
+// the bounded fast path against the linear reference on every call and warn on any
+// divergence. Off in production -- the bounded path is proven equivalent below.
+const SMOOTH_Y_DEBUG = false;
+
+// First index i with xs[i] >= target (in [0, xs.length]). xs is sorted ascending.
+function lowerBound(xs, target) {
+  let lo = 0, hi = xs.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (xs[mid] < target) lo = mid + 1; else hi = mid; }
+  return lo;
+}
+// First index i with xs[i] > target (in [0, xs.length]).
+function upperBound(xs, target) {
+  let lo = 0, hi = xs.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (xs[mid] <= target) lo = mid + 1; else hi = mid; }
+  return lo;
+}
+
+// Reference implementation: a full linear scan of every point of every visible set.
+// O(N x datasets). Used as the fallback when sets don't share the chart's x-grid,
+// and as the oracle for SMOOTH_Y_DEBUG. The bounded path returns identical results.
+function windowExtentLinear(sets, xmin, xmax) {
+  const R = xmax - xmin;
+  const M = MARGIN_FRAC * R;
+
+  // Pass 1: extent of points strictly inside the window.
+  let visMin = Infinity, visMax = -Infinity, haveInterior = false;
+  // Track the nearest bracketing point on each side for the empty-interior fallback.
+  let leftPt = null, leftDist = Infinity, rightPt = null, rightDist = Infinity;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) {
+      haveInterior = true;
+      if (p.y < visMin) visMin = p.y;
+      if (p.y > visMax) visMax = p.y;
+    } else if (p.x < xmin) {
+      const d = xmin - p.x;
+      if (d < leftDist) { leftDist = d; leftPt = p; }
+    } else {
+      const d = p.x - xmax;
+      if (d < rightDist) { rightDist = d; rightPt = p; }
+    }
+  }
+
+  if (!haveInterior) {
+    // Window sits between samples: seed the extent from the nearest bracketing
+    // point(s) at full value so the axis stays meaningful (it can't fade to a
+    // collapsed range). It meets the interior case continuously: the instant such
+    // a point scrolls in it becomes visMin/visMax directly.
+    const seeds = [];
+    if (leftPt)  seeds.push(leftPt.y);
+    if (rightPt) seeds.push(rightPt.y);
+    if (seeds.length === 0) return null;
+    visMin = Math.min(...seeds);
+    visMax = Math.max(...seeds);
+  }
+
+  // Pass 2: let off-screen points pull the envelope outward, fading with distance.
+  // Each point's faded candidate is measured from the interior extent (visMin/visMax),
+  // and we keep the most extreme candidate -- a nearer, lower peak must not overwrite a
+  // farther, taller one, so compare candidates, not raw values.
+  let yMin = visMin, yMax = visMax;
+  for (const data of sets) for (const p of data) {
+    if (p.y == null || Number.isNaN(p.y)) continue;
+    if (p.x >= xmin && p.x <= xmax) continue;
+    const d = p.x < xmin ? xmin - p.x : p.x - xmax;
+    const w = M > 0 ? falloff(d / M) : 0;
+    if (w === 0) continue;
+    if (p.y > visMax) {
+      const cand = visMax + w * (p.y - visMax);
+      if (cand > yMax) yMax = cand;
+    } else if (p.y < visMin) {
+      const cand = visMin + w * (p.y - visMin);
+      if (cand < yMin) yMin = cand;
+    }
+  }
+
+  return padExtent(yMin, yMax);
+}
+
+// Bounded fast path: identical result to windowExtentLinear, but binary-searches the
+// shared x-grid `xs` (data[i].x === xs[i] for every set) so it only touches the visible
+// window plus the off-screen margin band [edge-M, edge]. Points beyond M have falloff
+// weight 0 (skipped today too), so excluding them changes nothing; min/max are
+// order-independent, so scanning point-major instead of dataset-major is equivalent.
+function windowExtentBounded(sets, xs, xmin, xmax) {
+  const n = xs.length;
+  const R = xmax - xmin;
+  const M = MARGIN_FRAC * R;
+
+  const iLo   = lowerBound(xs, xmin);   // first index inside the window (x >= xmin)
+  const iHiEx = upperBound(xs, xmax);   // one past the window (first x > xmax)
+
+  // Pass 1: interior extent, scanning only [iLo, iHiEx). haveInterior tracks a real
+  // non-null sample (an all-null interior must still fall through to the bracket seed).
+  let visMin = Infinity, visMax = -Infinity, haveInterior = false;
+  for (const data of sets) {
+    for (let i = iLo; i < iHiEx; i++) {
+      const y = data[i].y;
+      if (y == null || Number.isNaN(y)) continue;
+      haveInterior = true;
+      if (y < visMin) visMin = y;
+      if (y > visMax) visMax = y;
+    }
+  }
+
+  if (!haveInterior) {
+    // Nearest non-null sample just left, then just right, of the window. Walking
+    // outward from the boundary and taking the first set with a value at that index
+    // reproduces the linear scan's nearest-by-distance, iteration-order tiebreak.
+    let leftY = null, rightY = null;
+    for (let i = iLo - 1; i >= 0 && leftY === null; i--) {
+      for (const data of sets) {
+        const y = data[i].y;
+        if (y != null && !Number.isNaN(y)) { leftY = y; break; }
+      }
+    }
+    for (let i = iHiEx; i < n && rightY === null; i++) {
+      for (const data of sets) {
+        const y = data[i].y;
+        if (y != null && !Number.isNaN(y)) { rightY = y; break; }
+      }
+    }
+    const seeds = [];
+    if (leftY !== null)  seeds.push(leftY);
+    if (rightY !== null) seeds.push(rightY);
+    if (seeds.length === 0) return null;
+    visMin = Math.min(...seeds);
+    visMax = Math.max(...seeds);
+  }
+
+  // Pass 2: off-screen falloff, restricted to the margin bands. leftStart/rightEnd
+  // bound the scan to x within M of the edge; the w === 0 guard still drops the exact
+  // boundary, so the band may be a harmless superset of the contributing points.
+  let yMin = visMin, yMax = visMax;
+  const apply = (i, d) => {
+    const w = M > 0 ? falloff(d / M) : 0;
+    if (w === 0) return;
+    for (const data of sets) {
+      const y = data[i].y;
+      if (y == null || Number.isNaN(y)) continue;
+      if (y > visMax) {
+        const cand = visMax + w * (y - visMax);
+        if (cand > yMax) yMax = cand;
+      } else if (y < visMin) {
+        const cand = visMin + w * (y - visMin);
+        if (cand < yMin) yMin = cand;
+      }
+    }
+  };
+  const leftStart = lowerBound(xs, xmin - M);
+  for (let i = leftStart; i < iLo; i++) apply(i, xmin - xs[i]);
+  const rightEnd = upperBound(xs, xmax + M);
+  for (let i = iHiEx; i < rightEnd; i++) apply(i, xs[i] - xmax);
+
+  return padExtent(yMin, yMax);
+}
+
+// Distance-weighted [min,max] for one y-axis over its currently-visible datasets.
+// Returns null when the axis has no usable data (caller then leaves Chart's default).
+function smoothYExtent(chart, axisId) {
+  // Resolve the intended x-window. $xWindow is stashed wherever the window is driven
+  // (pan/zoom/reset); fall back to the live x-scale, then to the full data extent so
+  // the very first render (before the scrollbar is wired) matches today's full fit.
+  let xmin, xmax;
+  if (chart.$xWindow) { xmin = chart.$xWindow.min; xmax = chart.$xWindow.max; }
+  else if (chart.scales.x && isFinite(chart.scales.x.min)) { xmin = chart.scales.x.min; xmax = chart.scales.x.max; }
+
+  const sets = [];
+  chart.data.datasets.forEach((ds, i) => {
+    if (ds.yAxisID === axisId && chart.isDatasetVisible(i)) sets.push(ds.data);
+  });
+  if (sets.length === 0) return null;
+
+  // If we still have no x-window, fit the full extent of the visible data.
+  if (xmin == null || !isFinite(xmin) || !isFinite(xmax)) {
+    let lo = Infinity, hi = -Infinity;
+    for (const data of sets) for (const p of data) {
+      if (p.y == null || Number.isNaN(p.y)) continue;
+      if (p.y < lo) lo = p.y;
+      if (p.y > hi) hi = p.y;
+    }
+    if (lo > hi) return null;
+    return padExtent(lo, hi);
+  }
+
+  // Fast path requires the shared x-grid with every visible set aligned to it.
+  const xs = chart.$xs;
+  let aligned = Array.isArray(xs) && xs.length > 0;
+  if (aligned) for (const data of sets) { if (data.length !== xs.length) { aligned = false; break; } }
+  if (!aligned) return windowExtentLinear(sets, xmin, xmax);
+
+  const result = windowExtentBounded(sets, xs, xmin, xmax);
+
+  if (SMOOTH_Y_DEBUG || chart.$smoothYDebug) {
+    const ref = windowExtentLinear(sets, xmin, xmax);
+    const close = (a, b) => (a == null && b == null) ||
+      (a != null && b != null && Math.abs(a.min - b.min) < 1e-9 && Math.abs(a.max - b.max) < 1e-9);
+    if (!close(result, ref)) console.warn('[smoothYExtent] bounded != linear', { axisId, xmin, xmax, result, ref });
+  }
+
+  return result;
+}
+
+// Add headroom and guarantee min < max for a finite [lo,hi] pair.
+function padExtent(lo, hi) {
+  let range = hi - lo;
+  if (range <= 0) range = Math.max(Math.abs(hi), 1) * 0.1;
+  hi += Y_HEADROOM * range;
+  if (ANCHOR_MIN_ZERO) lo = Math.min(lo, 0);
+  if (hi <= lo) hi = lo + (Math.max(Math.abs(lo), 1) * 0.1);
+  return { min: lo, max: hi };
+}
+
+// Tick label callback that clamps tick values to whole numbers. With bounds:'data'
+// the axis edges (and thus the first/last tick) sit at the exact smooth min/max,
+// which are fractional -- so round every tick to an integer and drop a label that
+// repeats the previous tick's rounded value (the fractional edge tick can collide
+// with its neighbour in tight ranges). `fmt` renders the final integer.
+function intTick(fmt) {
+  return (v, i, ticks) => {
+    const r = Math.round(v);
+    if (i > 0 && Math.round(ticks[i - 1].value) === r) return null;
+    return fmt(r);
+  };
+}
+
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents = { timed: [], wholeStream: [] }) {
+  if (currentChart) { currentChart.destroy(); currentChart = null; }
+
+  const ctx = document.getElementById('streamChart');
+  if (!ctx) return;
+
+  const snapshotData = snapshots.map(s => ({
+    x:          s.ts * 1000,
+    yt:         s.youtube ?? null,
+    tw:         s.twitch  ?? null,
+    kick:       s.kick    ?? null,
+    ytMpm:      s.youtube_messages_per_minute ?? null,
+    twMpm:      s.twitch_messages_per_minute  ?? null,
+    kickMpm:    s.kick_messages_per_minute    ?? null,
+    ytActive:   s.active_youtube_chatters     ?? null,
+    twActive:   s.active_twitch_chatters      ?? null,
+    kickActive: s.active_kick_chatters        ?? null,
+    inFrame:    s.in_frame_view ?? null,
+    paused:     s.source_paused ?? null,
+  }));
+
+  // Pausing band: contiguous time runs where the source was in frame view
+  // (in_frame_view >= 0.5), coloured green (playing) / yellow (paused, when
+  // source_paused >= 0.5). Each minute spans [x, nextX] (last extends +60s).
+  // Adjacent same-state minutes merge into one run. Empty for pre-detector
+  // streams (fields null). Read by the `pausingBand` plugin.
+  const pausingSegments = [];
+  for (let i = 0; i < snapshotData.length; i++) {
+    const s = snapshotData[i];
+    if (s.inFrame == null || s.inFrame < 0.5) continue;
+    const state = (s.paused != null && s.paused >= 0.5) ? 'paused' : 'playing';
+    const x0 = s.x;
+    const x1 = (i + 1 < snapshotData.length) ? snapshotData[i + 1].x : s.x + 60000;
+    const last = pausingSegments[pausingSegments.length - 1];
+    if (last && last.state === state && last.x1 === x0) last.x1 = x1;
+    else pausingSegments.push({ x0, x1, state });
+  }
+
+  // Bucket donations onto the snapshot index grid so the bar dataset shares the
+  // same index space as the line series. This keeps mode:'index' tooltips
+  // coherent (every dataset's index i is the same timestamp) and prevents a
+  // sparse donation bar from hijacking the nearest-index lookup.
+  const donationByIndex = new Array(snapshotData.length).fill(0);
+  // Per-platform buckets ride along on the same nearest-index search, and only
+  // when 2+ platforms have donations -- a lone platform's line duplicates the
+  // total, mirroring the Total Viewers / Total Msg-Min gating.
+  const splitPlatforms = donPlatforms.length >= 2 ? donPlatforms : [];
+  const donationByPlatformIndex = new Map(
+    splitPlatforms.map(p => [p, new Array(snapshotData.length).fill(0)])
+  );
+  if (snapshotData.length > 0) {
+    for (const d of donations) {
+      const dx = d.ts * 1000;
+      let nearest = 0, best = Infinity;
+      for (let i = 0; i < snapshotData.length; i++) {
+        const dist = Math.abs(snapshotData[i].x - dx);
+        if (dist < best) { best = dist; nearest = i; }
+        else if (dist > best) break;  // x is sorted ascending; distance is convex
+      }
+      donationByIndex[nearest] += (d.amount_usd || 0);
+      const platformBucket = donationByPlatformIndex.get(d.platform);
+      if (platformBucket) platformBucket[nearest] += (d.amount_usd || 0);
+    }
+  }
+  // Running total across the snapshot grid: the donation line is the cumulative
+  // money raised up to each point, so it climbs with each donation and plateaus
+  // at the stream total. Every index carries a value, making the line solid.
+  const donationCumByIndex = new Array(snapshotData.length).fill(0);
+  {
+    let running = 0;
+    for (let i = 0; i < snapshotData.length; i++) {
+      running += donationByIndex[i];
+      donationCumByIndex[i] = running;
+    }
+  }
+  const donationCumByPlatform = new Map();
+  for (const [p, bucket] of donationByPlatformIndex) {
+    const cum = new Array(snapshotData.length).fill(0);
+    let running = 0;
+    for (let i = 0; i < snapshotData.length; i++) {
+      running += bucket[i];
+      cum[i] = running;
+    }
+    donationCumByPlatform.set(p, cum);
+  }
+  const hasDonations = donations.length > 0 && snapshotData.length > 0;
+
+  // Time label for the chart x-axis ticks and tooltip, in the active timezone
+  // (Ogre/Local/UTC -- see config.js withTZ). Chart.js reformats every tick on every
+  // pan/zoom frame, so cache the Intl formatter (rebuilt only when the TZ changes) and
+  // memoize per millisecond rather than constructing a formatter on each call.
+  let _dtfTz = false, _dtf = null;
+  const _dtMemo = new Map();
+  function fmtET(ms) {
+    const tz = getTimeZone();
+    if (tz !== _dtfTz) {
+      _dtfTz = tz;
+      _dtf = new Intl.DateTimeFormat('en-US', withTZ({ hour: 'numeric', minute: '2-digit' }));
+      _dtMemo.clear();
+    }
+    let s = _dtMemo.get(ms);
+    if (s === undefined) { s = _dtf.format(new Date(ms)); _dtMemo.set(ms, s); }
+    return s;
+  }
+
+  // Cached + memoized integer tick formatters for the y-axes. Same reason as fmtET:
+  // ticks are reformatted every frame, and a fresh Intl.NumberFormat per call (which is
+  // what Number.toLocaleString() does) dominated the pan profile. One shared formatter
+  // (default locale, matching the old toLocaleString) plus a per-value memo.
+  const _tickNumFmt = new Intl.NumberFormat();
+  const _numMemo = new Map();
+  const fmtTickInt = v => { let s = _numMemo.get(v); if (s === undefined) { s = _tickNumFmt.format(v); _numMemo.set(v, s); } return s; };
+  const _dollarMemo = new Map();
+  const fmtTickDollar = v => { let s = _dollarMemo.get(v); if (s === undefined) { s = '$' + _tickNumFmt.format(v); _dollarMemo.set(v, s); } return s; };
+
+  const t = THEMES[localStorage.getItem('swamp-theme') || 'green'] || THEMES.green;
+  const datasets = [];
+
+  // ── Viewer series ──
+  // A null viewer sample means the collector had no data for that minute, not
+  // zero viewers. Nulls stay null and spanGaps bridges them; the bridged
+  // segment is drawn dashed (gapDash) so interpolation is visible as such.
+  const gapDash = { borderDash: c => (c.p0.skip || c.p1.skip) ? [5, 5] : undefined };
+
+  if (hasYTViewers && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.YT_VIEWERS,
+      hidden: hiddenDatasets.has(DS.YT_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.yt })),
+      type: 'line',
+      borderColor: '#e84040',
+      backgroundColor: 'rgba(232,64,64,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  if (hasTWViewers && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.TW_VIEWERS,
+      hidden: hiddenDatasets.has(DS.TW_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.tw })),
+      type: 'line',
+      borderColor: '#6650d8',
+      backgroundColor: 'rgba(102,80,216,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // Kick viewers -- mirrors the YT/TW path; renders for streams whose
+  // snapshots carry the backend's kick viewer field (added 2026-07).
+  if (hasKickViewers && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.KICK_VIEWERS,
+      hidden: hiddenDatasets.has(DS.KICK_VIEWERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.kick })),
+      type: 'line',
+      borderColor: '#53fc18',
+      backgroundColor: 'rgba(83,252,24,0.08)',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: true, spanGaps: true, segment: gapDash,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // Total viewers -- shown when 2+ platforms have viewer data; sums the platforms
+  // that have data this stream. An index where any of them is null becomes a gap
+  // (bridged by spanGaps like the per-platform lines) -- summing the survivors
+  // would understate the total exactly where a collector dropped out.
+  const totalViewerKeys = [hasYTViewers && 'yt', hasTWViewers && 'tw', hasKickViewers && 'kick'].filter(Boolean);
+  if (totalViewerKeys.length >= 2 && snapshotData.length > 0) {
+    datasets.push({
+      label: DS.TOTAL_VIEWERS,
+      hidden: hiddenDatasets.has(DS.TOTAL_VIEWERS),
+      data: snapshotData.map(s => ({
+        x: s.x,
+        y: totalViewerKeys.some(k => s[k] == null)
+          ? null
+          : totalViewerKeys.reduce((sum, k) => sum + s[k], 0),
+      })),
+      type: 'line',
+      borderColor: '#40c4ff',
+      backgroundColor: 'transparent',
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true, segment: gapDash,
+      yAxisID: 'yViewers',
+    });
+  }
+
+  // ── Active chatter series ──
+  // Built from the full snapshotData (null where missing) so indices stay
+  // aligned with the viewer series; spanGaps bridges the nulls visually.
+  if (hasActiveYT) {
+    datasets.push({
+      label: DS.YT_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.YT_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.ytActive })),
+      type: 'line',
+      borderColor: '#e84040',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
+  if (hasActiveTW) {
+    datasets.push({
+      label: DS.TW_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.TW_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.twActive })),
+      type: 'line',
+      borderColor: '#6650d8',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
+  if (hasActiveKick) {
+    datasets.push({
+      label: DS.KICK_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.KICK_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({ x: s.x, y: s.kickActive })),
+      type: 'line',
+      borderColor: '#53fc18',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
+  // Combined active chatters -- sum of every platform with data. Only shown when
+  // 2+ platforms are live (a single-platform total duplicates that line). Null at
+  // a point only when all present platforms are missing that sample; otherwise a
+  // missing side counts as 0.
+  if ([hasActiveYT, hasActiveTW, hasActiveKick].filter(Boolean).length >= 2) {
+    datasets.push({
+      label: DS.TOTAL_ACTIVE_CHATTERS,
+      hidden: hiddenDatasets.has(DS.TOTAL_ACTIVE_CHATTERS),
+      data: snapshotData.map(s => ({
+        x: s.x,
+        y: (s.ytActive == null && s.twActive == null && s.kickActive == null)
+          ? null : (s.ytActive ?? 0) + (s.twActive ?? 0) + (s.kickActive ?? 0),
+      })),
+      type: 'line',
+      borderColor: '#909090',
+      backgroundColor: 'transparent',
+      borderWidth: 2, borderDash: [2, 2],
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0.3, fill: false, spanGaps: true,
+      yAxisID: 'yActiveChatters',
+    });
+  }
+
+  // ── Donations (cumulative) ──
+  if (hasDonations) {
+    datasets.push({
+      label: DS.DONATIONS,
+      hidden: hiddenDatasets.has(DS.DONATIONS),
+      data: snapshotData.map((s, i) => ({
+        x: s.x,
+        y: donationCumByIndex[i],
+      })),
+      type: 'line',
+      borderColor: '#e8c020',
+      backgroundColor: 'rgba(232,192,32,0.12)',
+      borderWidth: 2,
+      pointRadius: 0, pointHoverRadius: 4,
+      // Stepped, not interpolated: the total is flat between donations and jumps
+      // at the snapshot that first includes the money ('after' puts the riser at
+      // that snapshot's x, where the donation was bucketed).
+      tension: 0,
+      stepped: 'after',
+      fill: true,
+      yAxisID: 'yDonations',
+    });
+
+    for (const p of splitPlatforms) {
+      const meta = DON_PLATFORM_META[p];
+      const cum = donationCumByPlatform.get(p);
+      datasets.push({
+        label: meta.ds,
+        hidden: hiddenDatasets.has(meta.ds),
+        data: snapshotData.map((s, i) => ({
+          x: s.x,
+          y: cum[i],
+        })),
+        type: 'line',
+        borderColor: meta.color,
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0,
+        stepped: 'after',
+        fill: false,
+        yAxisID: 'yDonations',
+      });
+    }
+  }
+
+  // ── Chat rate series ──
+  // Built from the full snapshotData so indices align with the viewer series
+  // (mode:'index' tooltips match by index, not by x). Missing samples map to
+  // null and are bridged with spanGaps; the tooltip filter drops null entries.
+  if (hasChatRate && snapshotData.length > 0) {
+    if (hasYTChat) {
+      datasets.push({
+        label: DS.YT_CHAT,
+        hidden: hiddenDatasets.has(DS.YT_CHAT),
+        data: snapshotData.map(s => ({ x: s.x, y: s.ytMpm })),
+        type: 'line',
+        borderColor: '#e84040',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    if (hasTWChat) {
+      datasets.push({
+        label: DS.TW_CHAT,
+        hidden: hiddenDatasets.has(DS.TW_CHAT),
+        data: snapshotData.map(s => ({ x: s.x, y: s.twMpm })),
+        type: 'line',
+        borderColor: '#6650d8',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    if (hasKickChat) {
+      datasets.push({
+        label: DS.KICK_CHAT,
+        hidden: hiddenDatasets.has(DS.KICK_CHAT),
+        data: snapshotData.map(s => ({ x: s.x, y: s.kickMpm })),
+        type: 'line',
+        borderColor: '#53fc18',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5, borderDash: [8, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
+
+    // Combined -- sum of every platform with data. Null at a point only when all
+    // present platforms are missing that sample; otherwise treat a missing side as
+    // 0. Only shown when 2+ platforms are present (a single-platform total would
+    // duplicate that platform's line, mirroring Total Active Chatters).
+    if ([hasYTChat, hasTWChat, hasKickChat].filter(Boolean).length >= 2) {
+      datasets.push({
+        label: DS.TOTAL_CHAT,
+        hidden: hiddenDatasets.has(DS.TOTAL_CHAT),
+        data: snapshotData.map(s => ({
+          x: s.x,
+          y: (s.ytMpm == null && s.twMpm == null && s.kickMpm == null)
+            ? null : (s.ytMpm ?? 0) + (s.twMpm ?? 0) + (s.kickMpm ?? 0),
+        })),
+        type: 'line',
+        borderColor: '#82b1ff',
+        backgroundColor: 'transparent',
+        borderWidth: 2, borderDash: [12, 3],
+        pointRadius: 0, pointHoverRadius: 4,
+        tension: 0.3, fill: false, spanGaps: true,
+        yAxisID: 'yChatRate',
+      });
+    }
+  }
+
+  // For a series with gaps (null y at some indices), return the value at idx,
+  // or the nearest non-null value by index distance. Lets the tooltip show every
+  // stat at the hovered position even where that stat has no exact sample.
+  function nearestValue(dataArr, idx) {
+    const at = dataArr[idx];
+    if (at && at.y != null && !Number.isNaN(at.y)) return at.y;
+    for (let d = 1; d < dataArr.length; d++) {
+      const lo = dataArr[idx - d];
+      if (lo && lo.y != null && !Number.isNaN(lo.y)) return lo.y;
+      const hi = dataArr[idx + d];
+      if (hi && hi.y != null && !Number.isNaN(hi.y)) return hi.y;
+    }
+    return null;
+  }
+
+  // Is at least one dataset for this axis group present in this stream AND not hidden by the user?
+  function axisHasVisibleDs(labels) {
+    return labels.some(l => datasets.some(d => d.label === l) && !hiddenDatasets.has(l));
+  }
+
+  // Pausing band visibility (persisted; default on). Closed over by the
+  // pausingBand plugin below and toggled from the legend.
+  let showPausingBand = localStorage.getItem('stream-chart-pausing') !== '0';
+
+  // Manual event overlay visibility (persisted; default on), same shape as the
+  // pausing band. Closed over by the manualEvents plugin below.
+  let showManualEvents = localStorage.getItem('stream-chart-manualevents') !== '0';
+
+  currentChart = new Chart(ctx, {
+    type: 'bar',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      // Data is already pre-sorted, unique-by-x {x,y} (the shared snapshot grid),
+      // so skip Chart.js's per-update parse/sort pass entirely.
+      parsing: false,
+      normalized: true,
+      interaction: { mode: 'index', intersect: false },
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: t.tooltipBg,
+          borderColor: t.tooltipBorder,
+          borderWidth: 1,
+          titleColor: t.tooltipTitle,
+          bodyColor: t.tooltipBody,
+          titleFont: { family: "'Share Tech Mono', monospace", size: 11 },
+          bodyFont:  { family: "'Lora', serif", size: 13 },
+          // Draw each row's key as a line matching the dataset's color AND dash
+          // pattern (see lineKeyCanvas) so the tooltip key mirrors the chart line.
+          usePointStyle: true,
+          boxWidth: 26,
+          boxHeight: 10,
+          boxPadding: 6,
+          // Order tooltip rows to match the legend on top of the chart.
+          itemSort: (a, b) => LEGEND_ORDER.indexOf(a.dataset.label) - LEGEND_ORDER.indexOf(b.dataset.label),
+          // Donations only show when that bucket actually has a donation.
+          // Continuous series always show -- the label callback fills gaps with
+          // the nearest sample, so every stat appears whenever the tooltip is up.
+          filter: item => {
+            if (item.dataset.yAxisID === 'yDonations') {
+              return item.parsed.y != null && !Number.isNaN(item.parsed.y);
+            }
+            return true;
+          },
+          callbacks: {
+            title: items => fmtET(items[0].parsed.x),
+            // Key = a short line in the dataset's color + dash pattern.
+            labelPointStyle: item => ({
+              pointStyle: lineKeyCanvas(item.dataset.borderColor, item.dataset.borderDash),
+              rotation: 0,
+            }),
+            label: item => {
+              const isDon = item.dataset.yAxisID === 'yDonations';
+              let y = item.parsed.y;
+              if (!isDon && (y == null || Number.isNaN(y))) {
+                y = nearestValue(item.dataset.data, item.dataIndex);
+              }
+              if (y == null || Number.isNaN(y)) return null;
+              switch (item.dataset.label) {
+                case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
+                case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
+                case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
+                case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
+                case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
+                case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
+                case DS.KICK_CHAT:          return ` Kick chat: ${y.toFixed(1)} mpm`;
+                case DS.TOTAL_CHAT:         return ` Total chat: ${y.toFixed(1)} mpm`;
+                case DS.YT_ACTIVE_CHATTERS: return ` YT active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.TW_ACTIVE_CHATTERS: return ` TW active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.KICK_ACTIVE_CHATTERS: return ` Kick active chatters: ${Math.round(y).toLocaleString()}`;
+                case DS.TOTAL_ACTIVE_CHATTERS: return ` Total active chatters: ${Math.round(y).toLocaleString()}`;
+                default:                    return ` ${item.dataset.label}: ${Math.round(y).toLocaleString()} viewers`;
+              }
+            }
+          }
+        },
+        // X-axis zoom/pan. Wheel + pinch zoom and drag-to-pan, clamped to the
+        // stream's own time range. Double-click the chart to reset (see below).
+        // Armed mode disables pan.enabled so a drag draws a range instead.
+        zoom: {
+          pan: {
+            enabled: true, mode: 'x',
+            // Sync $xWindow to the live x-scale so smoothYFit refits the y-axes to the
+            // panned region (the scrollbar drag does the same). Without this the
+            // y-scale stays pinned to the pre-drag window.
+            onPan: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
+          },
+          zoom: {
+            // Wheel zoom is handled manually in setupScrollbar so it can be eased
+            // and less sensitive; pinch stays on the plugin for touch devices.
+            wheel: { enabled: false },
+            pinch: { enabled: true },
+            mode: 'x',
+            onZoom: ({ chart }) => { syncXWindow(chart); chart.$updateScrollbar && chart.$updateScrollbar(); },
+          },
+          limits: { x: { min: 'original', max: 'original' } },
+        },
+      },
+      scales: {
+        x: {
+          type: 'linear',
+          offset: false, // override the bar-chart default so lines span edge-to-edge (no slot padding that grows when zoomed)
+          grid: { color: t.chartGrid },
+          ticks: {
+            color: t.chartTick,
+            font: { family: "'Share Tech Mono', monospace", size: 15 },
+            callback: v => fmtET(v),
+            maxTicksLimit: 10,
+          }
+        },
+        yViewers: {
+          type: 'linear',
+          position: 'left',
+          display: axisHasVisibleDs([DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS]),
+          bounds: 'data', // keep smoothYFit's exact min/max; 'ticks' (default) would round them to tick steps and re-snap the scale
+          grid: { color: t.chartGrid },
+          ticks: {
+            color: '#40c4ff',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: intTick(fmtTickInt),
+            precision: 0,
+            maxTicksLimit: 6,
+          },
+          title: {
+            display: true,
+            text: 'viewers',
+            color: '#40c4ff',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+          },
+        },
+        yActiveChatters: {
+          type: 'linear',
+          position: 'left',
+          display: axisHasVisibleDs([DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS]),
+          bounds: 'data',
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#909090',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: intTick(fmtTickInt),
+            precision: 0,
+            maxTicksLimit: 5,
+          },
+          title: {
+            display: true,
+            text: 'chatters',
+            color: '#909090',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+          },
+        },
+        yDonations: {
+          type: 'linear',
+          position: 'right',
+          display: axisHasVisibleDs([DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK]),
+          bounds: 'data',
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#e8c020',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: intTick(fmtTickDollar),
+            precision: 0,
+            maxTicksLimit: 5,
+          },
+          title: { display: false },
+        },
+        yChatRate: {
+          type: 'linear',
+          position: 'right',
+          display: axisHasVisibleDs([DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT]),
+          bounds: 'data',
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#82b1ff',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: intTick(fmtTickInt),
+            precision: 0,
+            maxTicksLimit: 5,
+          },
+          title: {
+            display: true,
+            text: 'msg / min',
+            color: '#82b1ff',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+          },
+        },
+      }
+    },
+    plugins: [{
+      // Override each y-axis's auto-fit with the distance-weighted envelope so the
+      // scale moves continuously during x zoom/pan instead of snapping. Runs on every
+      // update (incl. the 'none'-mode zoomScale frames), reads state and writes
+      // scale.min/max in place -- no re-entrant update(), so no animation loop.
+      id: 'smoothYFit',
+      afterDataLimits(chart, args) {
+        const scale = args.scale;
+        if (!scale || scale.axis !== 'y') return;       // leave the x-axis to the zoom plugin
+        if (scale.options.display === false) return;     // skip hidden axes
+        const ext = smoothYExtent(chart, scale.id);      // scale.id === 'yViewers', etc.
+        if (!ext) return;
+        scale.min = ext.min;
+        scale.max = ext.max;
+      },
+    }, {
+      // Pausing band: drawn BEHIND the data lines (beforeDatasetsDraw) as a
+      // vertical alpha-gradient fill (0.7 top -> 0.1 bottom) over each in-frame-
+      // view run -- green=playing, yellow=paused. chartArea height is constant
+      // under this chart's x-only zoom, so the band is always full height;
+      // getPixelForValue maps x under zoom/pan, so runs clip to the visible window.
+      id: 'pausingBand',
+      beforeDatasetsDraw(chart) {
+        if (!showPausingBand || !pausingSegments.length) return;
+        const xs = chart.scales.x;
+        const { left, right, top, bottom } = chart.chartArea;
+        const ctx = chart.ctx;
+        const RGB = { playing: '76,175,80', paused: '255,213,79' };
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(left, top, right - left, bottom - top);
+        ctx.clip();
+        for (const seg of pausingSegments) {
+          let x1 = xs.getPixelForValue(seg.x0);
+          let x2 = xs.getPixelForValue(seg.x1);
+          if (x2 < left || x1 > right) continue;
+          x1 = Math.max(x1, left);
+          x2 = Math.min(x2, right);
+          if (x2 <= x1) continue;
+          const g = ctx.createLinearGradient(0, top, 0, bottom);
+          g.addColorStop(0, `rgba(${RGB[seg.state]},0.7)`);
+          g.addColorStop(1, `rgba(${RGB[seg.state]},0.1)`);
+          ctx.fillStyle = g;
+          ctx.fillRect(x1, top, x2 - x1, bottom - top);
+        }
+        ctx.restore();
+      },
+    },
+    // Curator-authored point/range markers, drawn by the shared overlay plugin
+    // (manual-events.js). ADMIN EDIT vs streams.html: getState reads the page's
+    // LIVE state -- adminManual is replaced on every save, and dragSelection is
+    // the in-flight drag band.
+    ManualEvents.makePlugin(() => ({ events: adminManual.timed, visible: showManualEvents, selection: dragSelection })),
+    ],
+  });
+
+  // Shared sorted x-grid for the whole chart: every dataset is built from
+  // snapshotData.map(s => ({x: s.x, ...})), so all data arrays share these x
+  // values index-for-index. smoothYExtent binary-searches this once per frame to
+  // bound its scan to the visible window instead of walking every series in full.
+  currentChart.$xs = snapshotData.map(s => s.x);
+
+  // Legend hooks for the (non-dataset) Pausing band.
+  currentChart.$hasPausingData = pausingSegments.length > 0;
+  currentChart.$pausingBandVisible = () => showPausingBand;
+  currentChart.$togglePausingBand = () => {
+    showPausingBand = !showPausingBand;
+    localStorage.setItem('stream-chart-pausing', showPausingBand ? '1' : '0');
+    currentChart.draw();
+    return showPausingBand;
+  };
+
+  // Legend hooks for the (non-dataset) manual event overlay.
+  currentChart.$hasManualEvents = manualEvents.timed.length > 0;
+  currentChart.$manualEventsVisible = () => showManualEvents;
+  currentChart.$toggleManualEvents = () => {
+    showManualEvents = !showManualEvents;
+    try { localStorage.setItem('stream-chart-manualevents', showManualEvents ? '1' : '0'); } catch (e) {}
+    currentChart.draw();
+    return showManualEvents;
+  };
+
+  // Double-click anywhere on the chart to reset an x-axis zoom/pan.
+  ctx.ondblclick = () => {
+    // ADMIN EDIT: while armed the canvas belongs to the event gesture, so a
+    // double-click there must not also reset the zoom.
+    if (armed) return;
+    if (currentChart && currentChart.resetZoom) {
+      if (currentChart.$stopZoomAnim) currentChart.$stopZoomAnim();
+      currentChart.resetZoom('none');  // instant reset; afterDataLimits fits y to the (stale) window here
+      currentChart.$xWindow = { min: currentChart.scales.x.min, max: currentChart.scales.x.max };
+      currentChart.update('none');     // re-run smoothYFit against the restored full window so y refits too
+      if (currentChart.$updateScrollbar) currentChart.$updateScrollbar();
+    }
+  };
+
+  setupScrollbar();
+}
+
+// ── Scrub-and-zoom scrollbar ───────────────────────────────────────────────────
+// A track under the chart whose thumb shows the visible x-window: drag the thumb
+// body to scroll/pan, drag a handle to resize (zoom). Stays in sync with wheel
+// zoom and chart panning via the zoom plugin's onZoom/onPan callbacks.
+function setupScrollbar() {
+  const track = document.getElementById('chartScrollbar');
+  const thumb = document.getElementById('chartScrollbarThumb');
+  if (!track || !thumb || !currentChart) return;
+
+  const fullMin = currentChart.scales.x.min;
+  const fullMax = currentChart.scales.x.max;
+  const fullRange = (fullMax - fullMin) || 1;
+  const minRange = fullRange * 0.02; // smallest window the thumb can shrink to
+  currentChart.$xWindow = { min: fullMin, max: fullMax }; // smoothYFit reads this for the y-fit
+
+
+
+  function updateScrollbar() {
+    const xs = currentChart.scales.x;
+    let lo = Math.max(0, Math.min(1, (xs.min - fullMin) / fullRange));
+    let hi = Math.max(0, Math.min(1, (xs.max - fullMin) / fullRange));
+    thumb.style.left = (lo * 100) + '%';
+    thumb.style.width = Math.max(0, (hi - lo) * 100) + '%';
+  }
+
+  function clampRange(min, max) {
+    if (max - min < minRange) max = min + minRange;
+    if (min < fullMin) { max += (fullMin - min); min = fullMin; }
+    if (max > fullMax) { min -= (max - fullMax); max = fullMax; }
+    return { min: Math.max(fullMin, min), max: Math.min(fullMax, max) };
+  }
+
+  // Instant apply -- used for resize (zoom) where immediate feedback feels best.
+  function applyRange(min, max) {
+    const r = clampRange(min, max);
+    currentChart.$xWindow = { min: r.min, max: r.max };
+    currentChart.zoomScale('x', r, 'none');
+    updateScrollbar();
+  }
+
+  // Smoothed apply -- used for scrolling/panning. Drags are damped (less
+  // sensitive) and the view eases toward the target instead of snapping.
+  const PAN_SENSITIVITY = 0.6; // < 1 => view moves less than the cursor
+  const PAN_SMOOTH = 0.5;      // fraction eased toward target per frame (higher => snappier, fewer full updates per gesture)
+  const ZOOM_STEP = 0.0007;    // wheel-zoom sensitivity (smaller => less sensitive)
+  let targetMin = null, targetMax = null, rafId = null;
+
+  function animateToward() {
+    if (!currentChart || !currentChart.scales || !currentChart.scales.x) { rafId = null; return; }
+    const xs = currentChart.scales.x;
+    let min = xs.min + (targetMin - xs.min) * PAN_SMOOTH;
+    let max = xs.max + (targetMax - xs.max) * PAN_SMOOTH;
+    const eps = fullRange * 0.0004;
+    if (Math.abs(targetMin - min) < eps && Math.abs(targetMax - max) < eps) {
+      min = targetMin; max = targetMax; rafId = null;
+    } else {
+      rafId = requestAnimationFrame(animateToward);
+    }
+    currentChart.$xWindow = { min, max };
+    currentChart.zoomScale('x', { min, max }, 'none');
+    updateScrollbar();
+  }
+
+  function smoothTo(min, max) {
+    const r = clampRange(min, max);
+    targetMin = r.min; targetMax = r.max;
+    if (rafId == null) rafId = requestAnimationFrame(animateToward);
+  }
+
+  // Let the zoom plugin's callbacks refresh the thumb during wheel/drag on the chart.
+  currentChart.$updateScrollbar = updateScrollbar;
+  // Cancel any in-flight easing so a reset isn't fought by a pending animation.
+  currentChart.$stopZoomAnim = () => {
+    if (rafId != null) { cancelAnimationFrame(rafId); rafId = null; }
+    targetMin = targetMax = null;
+  };
+
+  function startDrag(e, mode) {
+    e.preventDefault();
+    e.stopPropagation();
+    const trackW = track.clientWidth || 1;
+    const startX = e.touches ? e.touches[0].clientX : e.clientX;
+    const startMin = currentChart.scales.x.min;
+    const startMax = currentChart.scales.x.max;
+    function onMove(ev) {
+      const cx = ev.touches ? ev.touches[0].clientX : ev.clientX;
+      const dxVal = ((cx - startX) / trackW) * fullRange;
+      if (mode === 'pan')        smoothTo(startMin + dxVal * PAN_SENSITIVITY, startMax + dxVal * PAN_SENSITIVITY);
+      else if (mode === 'left')  applyRange(Math.min(startMin + dxVal, startMax - minRange), startMax);
+      else if (mode === 'right') applyRange(startMin, Math.max(startMax + dxVal, startMin + minRange));
+    }
+    function onUp() {
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onUp);
+    }
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onUp);
+  }
+
+  thumb.addEventListener('mousedown', e => startDrag(e, 'pan'));
+  thumb.addEventListener('touchstart', e => startDrag(e, 'pan'), { passive: false });
+  const hLeft = thumb.querySelector('.chart-scrollbar-handle.left');
+  const hRight = thumb.querySelector('.chart-scrollbar-handle.right');
+  if (hLeft)  { hLeft.addEventListener('mousedown', e => startDrag(e, 'left'));   hLeft.addEventListener('touchstart', e => startDrag(e, 'left'), { passive: false }); }
+  if (hRight) { hRight.addEventListener('mousedown', e => startDrag(e, 'right')); hRight.addEventListener('touchstart', e => startDrag(e, 'right'), { passive: false }); }
+
+  // Click empty track to recenter the current window where you clicked.
+  track.addEventListener('mousedown', e => {
+    if (e.target !== track) return; // ignore clicks that land on the thumb/handles
+    const rect = track.getBoundingClientRect();
+    const frac = (e.clientX - rect.left) / (rect.width || 1);
+    const xs = currentChart.scales.x;
+    const half = (xs.max - xs.min) / 2;
+    const center = fullMin + frac * fullRange;
+    smoothTo(center - half, center + half);
+  });
+
+  // Eased, less-sensitive wheel zoom toward the cursor (replaces the plugin's
+  // built-in wheel zoom, which is instant and steppy). Normalizes wheel delta
+  // across devices, caps each step, then eases toward the target via smoothTo.
+  const canvas = currentChart.canvas;
+  if (canvas) {
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      let d = e.deltaY;
+      if (e.deltaMode === 1) d *= 16;        // line units -> approx pixels
+      else if (e.deltaMode === 2) d *= 400;  // page units -> approx pixels
+      d = Math.max(-80, Math.min(80, d));    // cap the per-event zoom step
+      const factor = Math.exp(d * ZOOM_STEP); // >1 zoom out, <1 zoom in
+      // Build on the in-flight target while animating so fast scrolls accumulate.
+      const animating = rafId != null && targetMin != null;
+      const baseMin = animating ? targetMin : currentChart.scales.x.min;
+      const baseMax = animating ? targetMax : currentChart.scales.x.max;
+      const area = currentChart.chartArea;
+      const rect = canvas.getBoundingClientRect();
+      const frac = Math.max(0, Math.min(1, (e.clientX - rect.left - area.left) / ((area.right - area.left) || 1)));
+      const cursor = baseMin + frac * (baseMax - baseMin);
+      smoothTo(cursor - (cursor - baseMin) * factor, cursor + (baseMax - cursor) * factor);
+    }, { passive: false });
+  }
+
+  updateScrollbar();
+}
+
+// ── Interactive legend ─────────────────────────────────────────────────────────
+function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasDonations, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms) {
+  const container = document.getElementById('chartLegend');
+  if (!container || !currentChart) return;
+
+  // Each category is a column: { title, items }. title=null renders header-less
+  // (single-item Donations / Pausing columns); empty columns are dropped. A
+  // "Total" entry appears only when 2+ platforms in that category have data,
+  // matching the dataset gating in buildChart.
+  // Item: { label, type ('line'|'dashed'|'dotted'|'bar'), color, ds } or
+  // { special:'pausing'|'manualevents' }.
+  const groups = [];
+
+  const gDonations = [];
+  const splitDonations = hasDonations && donPlatforms.length >= 2;
+  if (splitDonations) {
+    gDonations.push({ label: 'Total', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
+    for (const p of donPlatforms) {
+      const meta = DON_PLATFORM_META[p];
+      gDonations.push({ label: meta.legend, type: 'dashed', color: meta.color, ds: meta.ds });
+    }
+  } else if (hasDonations) {
+    gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
+  }
+  groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
+
+  const gViewers = [];
+  if ([hasYTViewers, hasTWViewers, hasKickViewers].filter(Boolean).length >= 2)
+    gViewers.push({ label: 'Total Viewers', type: 'line', color: '#40c4ff', ds: DS.TOTAL_VIEWERS });
+  if (hasYTViewers)   gViewers.push({ label: 'YT Viewers',   type: 'line', color: '#e84040', ds: DS.YT_VIEWERS });
+  if (hasTWViewers)   gViewers.push({ label: 'TW Viewers',   type: 'line', color: '#6650d8', ds: DS.TW_VIEWERS });
+  if (hasKickViewers) gViewers.push({ label: 'Kick Viewers', type: 'line', color: '#53fc18', ds: DS.KICK_VIEWERS });
+  groups.push({ title: 'Viewers', items: gViewers });
+
+  const gActive = [];
+  if ([hasActiveYT, hasActiveTW, hasActiveKick].filter(Boolean).length >= 2)
+    gActive.push({ label: 'Total Active Chatters', type: 'dotted', color: '#909090', ds: DS.TOTAL_ACTIVE_CHATTERS });
+  if (hasActiveYT)   gActive.push({ label: 'YT Active Chatters',   type: 'dotted', color: '#e84040', ds: DS.YT_ACTIVE_CHATTERS });
+  if (hasActiveTW)   gActive.push({ label: 'TW Active Chatters',   type: 'dotted', color: '#6650d8', ds: DS.TW_ACTIVE_CHATTERS });
+  if (hasActiveKick) gActive.push({ label: 'Kick Active Chatters', type: 'dotted', color: '#53fc18', ds: DS.KICK_ACTIVE_CHATTERS });
+  groups.push({ title: 'Active Chatters', items: gActive });
+
+  const gChat = [];
+  if (hasChatRate) {
+    if ([hasYTChat, hasTWChat, hasKickChat].filter(Boolean).length >= 2)
+      gChat.push({ label: 'Total Msg/Min', type: 'dashed', color: '#82b1ff', ds: DS.TOTAL_CHAT });
+    if (hasYTChat)   gChat.push({ label: 'YT Msg/Min',   type: 'dashed', color: '#e84040', ds: DS.YT_CHAT });
+    if (hasTWChat)   gChat.push({ label: 'TW Msg/Min',   type: 'dashed', color: '#6650d8', ds: DS.TW_CHAT });
+    if (hasKickChat) gChat.push({ label: 'Kick Msg/Min', type: 'dashed', color: '#53fc18', ds: DS.KICK_CHAT });
+  }
+  groups.push({ title: 'Msg/Min', items: gChat });
+
+  // Pausing band (non-dataset overlay) -- only when this stream has frame data.
+  const gPausing = [];
+  if (currentChart.$hasPausingData) gPausing.push({ special: 'pausing' });
+  if (currentChart.$hasManualEvents) gPausing.push({ special: 'manualevents' });
+  groups.push({ title: null, items: gPausing });
+
+  container.innerHTML = '';
+
+  // One dataset toggle element (indicator + label + click-to-hide/persist).
+  function makeItem(item) {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.dataset.ds = item.ds;
+
+    let indicator;
+    if (item.type === 'bar') {
+      indicator = `<span class="legend-swatch" style="background:${item.color};"></span>`;
+    } else if (item.type === 'dashed') {
+      // Dashed line indicator: two short segments with a gap
+      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="7" y2="4" stroke="${item.color}" stroke-width="2"/><line x1="11" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2"/></svg>`;
+    } else if (item.type === 'dotted') {
+      // Dotted line indicator: matches the [2,2] dash on the active-chatter lines
+      indicator = `<svg width="20" height="8" style="flex-shrink:0;"><line x1="0" y1="4" x2="20" y2="4" stroke="${item.color}" stroke-width="2" stroke-dasharray="2 2"/></svg>`;
+    } else {
+      indicator = `<span class="legend-line" style="background:${item.color};"></span>`;
+    }
+
+    span.innerHTML = `${indicator}${item.label}`;
+    if (hiddenDatasets.has(item.ds)) span.classList.add('hidden');
+
+    span.addEventListener('click', () => {
+      const dsIndex = currentChart.data.datasets.findIndex(d => d.label === item.ds);
+      if (dsIndex === -1) return;
+      const nowVisible = currentChart.isDatasetVisible(dsIndex);
+      currentChart.setDatasetVisibility(dsIndex, !nowVisible);
+      span.classList.toggle('hidden', nowVisible);
+      if (nowVisible) hiddenDatasets.add(item.ds);
+      else hiddenDatasets.delete(item.ds);
+      localStorage.setItem('stream-chart-hidden', JSON.stringify([...hiddenDatasets]));
+      syncAxisDisplay();
+    });
+
+    return span;
+  }
+
+  // Non-dataset Pausing overlay toggle: green play / yellow pause glyphs.
+  function makePausing() {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.innerHTML = `Pausing <span style="color:#4caf50;font-weight:bold;">&#9654;</span><span style="color:#ffd54f;font-weight:bold;">||</span>`;
+    if (!currentChart.$pausingBandVisible()) span.classList.add('hidden');
+    span.addEventListener('click', () => {
+      const visible = currentChart.$togglePausingBand();
+      span.classList.toggle('hidden', !visible);
+    });
+    return span;
+  }
+
+  // Non-dataset manual event overlay toggle: the same accent as the marks.
+  function makeManualEventsToggle() {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    span.innerHTML = `Events <span style="color:rgba(255,120,200,0.95);font-weight:bold;">&#9662;</span>`;
+    if (!currentChart.$manualEventsVisible()) span.classList.add('hidden');
+    span.addEventListener('click', () => {
+      const visible = currentChart.$toggleManualEvents();
+      span.classList.toggle('hidden', !visible);
+    });
+    return span;
+  }
+
+  // Render each non-empty category as a vertical column; columns sit side-by-side.
+  for (const group of groups) {
+    if (group.items.length === 0) continue;
+    const col = document.createElement('div');
+    col.className = 'legend-group';
+    for (const item of group.items) {
+      if (item.special === 'pausing')           col.appendChild(makePausing());
+      else if (item.special === 'manualevents') col.appendChild(makeManualEventsToggle());
+      else                                      col.appendChild(makeItem(item));
+    }
+    container.appendChild(col);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — "Add Event" armed mode
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function setArmed(on) {
+  armed = !!on;
+  dragging = false;
+  dragSelection = null;
+
+  const btn = document.getElementById('addEventBtn');
+  if (btn) btn.classList.toggle('active', armed);
+
+  const hint = document.getElementById('chartHint');
+  if (hint && currentChart) hint.textContent = armed ? HINT_ARMED : HINT_DEFAULT;
+
+  if (currentChart) {
+    const canvas = currentChart.canvas;
+    if (canvas) canvas.style.cursor = armed ? 'crosshair' : '';
+    // Armed: a drag draws a range band, so the zoom plugin must not also pan.
+    currentChart.options.plugins.zoom.pan.enabled = !armed;
+    currentChart.update('none');
+  }
+}
+
+function onAddEventClick() {
+  // A snapshot-less stream has no canvas to gesture on -- go straight to a
+  // whole-stream entry (the modal's kind switch can still change it).
+  if (!currentChart) { openModal({ kind: 'stream' }); return; }
+  setArmed(!armed);
+}
+
+// Canvas pixel -> unix seconds on the chart's x-scale (which is epoch millis).
+function pxToTs(px) {
+  return Math.round(currentChart.scales.x.getValueForPixel(px) / 1000);
+}
+
+// Gesture listeners live on the canvas for the chart's whole lifetime and check
+// `armed` themselves, so arming/disarming never rebinds anything. Coordinates
+// use offsetX/offsetY, matching how streams.html reads pointer coords.
+function wireCanvasGestures() {
+  const canvas = currentChart && currentChart.canvas;
+  if (!canvas) return;
+
+  canvas.addEventListener('mousedown', ev => {
+    if (!armed || ev.button !== 0) return;
+    const area = currentChart.chartArea;
+    if (ev.offsetX < area.left || ev.offsetX > area.right
+        || ev.offsetY < area.top || ev.offsetY > area.bottom) return;
+    ev.preventDefault();
+    dragging = true;
+    dragX0 = ev.offsetX;
+    dragSelection = null;
+  });
+
+  canvas.addEventListener('mousemove', ev => {
+    if (!armed || !dragging) return;
+    dragSelection = { x0px: dragX0, x1px: ev.offsetX };
+    currentChart.draw();
+  });
+
+  canvas.addEventListener('mouseup', ev => {
+    if (!armed || !dragging) return;
+    dragging = false;
+    const x0 = dragX0, x1 = ev.offsetX;
+    dragSelection = null;
+    currentChart.draw();
+    if (Math.abs(x1 - x0) < 5) {
+      openModal({ kind: 'point', ts: pxToTs(x0) });
+    } else {
+      const lo = Math.min(x0, x1), hi = Math.max(x0, x1);
+      openModal({ kind: 'range', ts: pxToTs(lo), end_ts: pxToTs(hi) });
+    }
+  });
+
+  // Leaving the canvas mid-drag cancels it rather than committing a range whose
+  // far edge the curator never chose.
+  canvas.addEventListener('mouseleave', () => {
+    if (!dragging) return;
+    dragging = false;
+    dragSelection = null;
+    currentChart.draw();
+  });
+}
+
+// ── Hotkeys ──
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (modalIsOpen()) { closeModal(); return; }
+    if (armed) { setArmed(false); return; }
+    return;
+  }
+  if (modalIsOpen() || gateIsOpen()) return;
+  const el = e.target;
+  const tag = (el && el.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea' || tag === 'select' || (el && el.isContentEditable)) return;
+  if (e.key === 'a' || e.key === 'A') {
+    if (!activeStreamId) return;
+    e.preventDefault();
+    onAddEventClick();
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Elapsed-time helpers
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Always h:mm:ss (fmtElapsed drops the hour field; manual-event times don't).
+function fmtHMS(secs) {
+  const s = Math.max(0, Math.floor(secs));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+  return `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+}
+function fmtSignedHMS(secs) {
+  return (secs < 0 ? '-' : '') + fmtHMS(Math.abs(secs));
+}
+
+// Accepts h:mm:ss, m:ss or bare seconds. Negatives and junk -> null.
+function parseElapsedInput(str) {
+  const s = String(str == null ? '' : str).trim();
+  if (!s) return null;
+  const parts = s.split(':');
+  if (parts.length > 3) return null;
+  const nums = [];
+  for (const p of parts) {
+    const q = p.trim();
+    if (!/^\d+(\.\d+)?$/.test(q)) return null;   // a leading '-' fails here too
+    nums.push(parseFloat(q));
+  }
+  let secs;
+  if (nums.length === 3)      secs = nums[0] * 3600 + nums[1] * 60 + nums[2];
+  else if (nums.length === 2) secs = nums[0] * 60 + nums[1];
+  else                        secs = nums[0];
+  if (!Number.isFinite(secs) || secs < 0) return null;
+  return Math.round(secs);
+}
+
+// A stream with neither start_ts nor snapshots has no elapsed origin, so the
+// time fields take raw unix seconds instead.
+function hasAnchor() { return activeAnchorTs != null; }
+
+// Field text -> unix seconds (or null when unparseable).
+function fieldToTs(text) {
+  if (!hasAnchor()) {
+    const s = String(text == null ? '' : text).trim();
+    if (!/^\d+$/.test(s)) return null;
+    return parseInt(s, 10);
+  }
+  const secs = parseElapsedInput(text);
+  return secs == null ? null : activeAnchorTs + secs;
+}
+
+// Unix seconds -> field text.
+function tsToField(ts) {
+  if (!Number.isFinite(ts)) return '';
+  return hasAnchor() ? fmtSignedHMS(ts - activeAnchorTs) : String(ts);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Event modal
+// ═══════════════════════════════════════════════════════════════════════════════
+
+let modalKind      = 'stream';
+let modalEditing   = null;   // the existing event object being edited, or null
+let modalBusy      = false;
+let tagFilePool    = null;   // tags from data/manual_event_tags.json (+ seeds), fetched once
+let comboOptions   = [];
+let comboIndex     = -1;
+
+function modalIsOpen() {
+  const el = document.getElementById('modalOverlay');
+  return !!el && !el.hidden;
+}
+
+// Option pool: the tag file (+ seeds) unioned with whatever this stream already uses.
+function currentTagPool() {
+  const streamTags = eventRows().map(ev => ev.tag);
+  return ManualEvents.mergeTags(tagFilePool || ManualEvents.SEED_TAGS, streamTags);
+}
+
+async function ensureTagPool() {
+  if (tagFilePool) return tagFilePool;
+  let fileTags = [];
+  try {
+    const { json } = await ghGetFile('data/manual_event_tags.json');
+    if (json && Array.isArray(json.tags)) fileTags = json.tags;
+    else if (Array.isArray(json)) fileTags = json;
+  } catch (e) {
+    // 404-tolerant, and an unreachable API just means seeds-only this session.
+    console.warn('[admin] tag list unavailable:', e.message);
+  }
+  tagFilePool = ManualEvents.mergeTags(ManualEvents.SEED_TAGS, fileTags);
+  return tagFilePool;
+}
+
+function openModal(init) {
+  const ev = init && init.event ? init.event : null;
+  modalEditing = ev;
+  modalBusy = false;
+
+  document.getElementById('modalTitle').textContent = ev ? 'Edit event' : 'Add event';
+  document.getElementById('evTag').value = ev ? ev.tag : '';
+  document.getElementById('evNote').value = (ev && typeof ev.note === 'string') ? ev.note : '';
+  document.getElementById('evWarn').textContent = '';
+  document.getElementById('evError').textContent = '';
+
+  const kind = ev ? ev.kind : ((init && init.kind) || 'stream');
+  document.getElementById('evStart').value =
+    (ev && ev.kind !== 'stream') ? tsToField(ev.ts)
+    : (init && init.ts != null) ? tsToField(init.ts) : '';
+  document.getElementById('evEnd').value =
+    (ev && ev.kind === 'range') ? tsToField(ev.end_ts)
+    : (init && init.end_ts != null) ? tsToField(init.end_ts) : '';
+
+  setModalKind(kind);
+  setDeleteVisible(!!ev);
+  setModalBusy(false);
+
+  document.getElementById('modalOverlay').hidden = false;
+  closeCombo();
+  ensureTagPool().catch(() => {});
+  document.getElementById('evTag').focus();
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').hidden = true;
+  closeCombo();
+  modalEditing = null;
+}
+
+function setDeleteVisible(on) {
+  document.getElementById('evDelete').hidden = !on;
+  document.getElementById('evDeleteConfirm').hidden = true;
+  // The confirm button disables itself while a delete is in flight; clear that
+  // here so the next expand isn't dead.
+  document.getElementById('evDeleteYes').disabled = false;
+}
+
+function setModalBusy(busy) {
+  modalBusy = busy;
+  const save = document.getElementById('evSave');
+  save.disabled = busy;
+  save.textContent = busy ? 'Saving…' : 'Save';
+  document.getElementById('evCancel').disabled = busy;
+  document.getElementById('evDelete').disabled = busy;
+}
+
+function setModalKind(kind) {
+  modalKind = (kind === 'point' || kind === 'range') ? kind : 'stream';
+  document.querySelectorAll('#evKind button').forEach(b => {
+    b.classList.toggle('active', b.dataset.kind === modalKind);
+  });
+  const startField = document.getElementById('evStartField');
+  const endField   = document.getElementById('evEndField');
+  const unit = hasAnchor() ? '(h:mm:ss)' : '(unix seconds)';
+  startField.hidden = (modalKind === 'stream');
+  endField.hidden   = (modalKind !== 'range');
+  document.getElementById('evStartLabel').textContent =
+    (modalKind === 'range' ? 'Start ' : 'Timestamp ') + unit;
+  document.getElementById('evEndLabel').textContent = 'End ' + unit;
+  // Values carry across a kind switch: Timestamp and Start share one field, so
+  // Timestamp->Range keeps the time as Start and Range->Timestamp keeps Start.
+  updateEchoes();
+}
+
+function updateEchoes() {
+  const startTsVal = fieldToTs(document.getElementById('evStart').value);
+  const endTsVal   = fieldToTs(document.getElementById('evEnd').value);
+  document.getElementById('evStartEcho').textContent =
+    startTsVal == null ? '' : fmtWall(startTsVal);
+  document.getElementById('evEndEcho').textContent =
+    endTsVal == null ? '' : fmtWall(endTsVal);
+  updateWindowWarning(startTsVal, endTsVal);
+}
+
+// Non-blocking: a time outside the stream window still saves.
+function updateWindowWarning(startTsVal, endTsVal) {
+  const warn = document.getElementById('evWarn');
+  if (modalKind === 'stream' || !hasAnchor()) { warn.textContent = ''; return; }
+  const lo = activeAnchorTs - 3600;
+  const hi = (activeEndTs != null ? activeEndTs : activeAnchorTs) + 3600;
+  const outside = [startTsVal, modalKind === 'range' ? endTsVal : null]
+    .some(v => v != null && (v < lo || v > hi));
+  warn.textContent = outside ? 'outside stream window' : '';
+}
+
+// ── Tag combobox ──
+function closeCombo() {
+  const list = document.getElementById('evTagList');
+  list.hidden = true;
+  list.innerHTML = '';
+  comboOptions = [];
+  comboIndex = -1;
+  document.getElementById('evTag').setAttribute('aria-expanded', 'false');
+}
+
+function renderCombo() {
+  const input = document.getElementById('evTag');
+  const list  = document.getElementById('evTagList');
+  const typed = input.value.trim();
+  const lower = typed.toLowerCase();
+  const pool  = currentTagPool();
+  const matches = typed ? pool.filter(t => t.toLowerCase().includes(lower)) : pool.slice();
+  const exact = pool.some(t => t.toLowerCase() === lower);
+
+  comboOptions = [];
+  if (typed && !exact) comboOptions.push({ value: typed, create: true });
+  for (const t of matches) comboOptions.push({ value: t, create: false });
+
+  if (comboOptions.length === 0) { closeCombo(); return; }
+  comboIndex = 0;
+  list.innerHTML = comboOptions.map((o, i) =>
+    `<div class="combo-opt${o.create ? ' create' : ''}${i === 0 ? ' active' : ''}" role="option" data-i="${i}">${
+      o.create ? `Create "${escHtml(o.value)}"` : escHtml(o.value)
+    }</div>`).join('');
+  list.hidden = false;
+  input.setAttribute('aria-expanded', 'true');
+  list.querySelectorAll('.combo-opt').forEach(el => {
+    el.addEventListener('mousedown', e => {
+      e.preventDefault();   // don't blur the input before the click lands
+      pickCombo(Number(el.dataset.i));
+    });
+  });
+}
+
+function highlightCombo() {
+  const list = document.getElementById('evTagList');
+  list.querySelectorAll('.combo-opt').forEach((el, i) => {
+    el.classList.toggle('active', i === comboIndex);
+  });
+  const active = list.querySelector('.combo-opt.active');
+  if (active) active.scrollIntoView({ block: 'nearest' });
+}
+
+// Picking an existing option snaps the input to that option's stored casing.
+function pickCombo(i) {
+  const opt = comboOptions[i];
+  if (!opt) return;
+  document.getElementById('evTag').value = opt.value;
+  closeCombo();
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Persistence (per-stream events file + the shared tag list)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Read-modify-write of data/streams/<id>/events_manual.json. The first GET is
+// seeded from page state; a conflict re-GETs and replays `mutate`.
+async function persistEvents(mutate, message) {
+  const path = `data/streams/${activeStreamId}/events_manual.json`;
+  const result = await ghSaveWithRetry(path, (json) => {
+    const events = (json && typeof json === 'object' && Array.isArray(json.events))
+      ? json.events.slice()
+      : (Array.isArray(json) ? json.slice() : []);
+    const doc = { version: 1, events };
+    mutate(doc);
+    return doc;
+  }, message, 3, { json: manualState.doc, sha: manualState.sha });
+  manualState = { doc: result.doc, sha: result.sha };
+  adminManual = ManualEvents.normalize(result.doc);
+}
+
+// Merge a brand-new tag into data/manual_event_tags.json. Non-fatal on failure:
+// the tag still lives on the event, and stays in this session's option pool.
+async function persistTagIfNew(tag) {
+  const key = tag.toLowerCase();
+  const pool = tagFilePool || ManualEvents.SEED_TAGS;
+  if (pool.some(t => t.toLowerCase() === key)) return;
+  try {
+    const result = await ghSaveWithRetry('data/manual_event_tags.json', (json) => {
+      const existing = (json && Array.isArray(json.tags)) ? json.tags
+        : (Array.isArray(json) ? json : []);
+      return { version: 1, tags: ManualEvents.mergeTags(existing, [tag]) };
+    }, `Manual event tags: add '${tag}'`);
+    // Union, not replace: the session pool also carries SEED_TAGS, which a
+    // freshly-created (or trimmed) remote file need not list.
+    tagFilePool = ManualEvents.mergeTags(pool, result.doc.tags);
+  } catch (e) {
+    tagFilePool = ManualEvents.mergeTags(pool, [tag]);
+    toast(`Tag list not updated: ${e.message}`, 'warn');
+  }
+}
+
+async function saveEventFromModal() {
+  if (modalBusy) return;
+  const errEl = document.getElementById('evError');
+  errEl.textContent = '';
+
+  const tag = document.getElementById('evTag').value.trim();
+  if (!tag) { errEl.textContent = 'Tag is required.'; return; }
+
+  const note = document.getElementById('evNote').value.trim();
+  let ts = null, endTs = null;
+  if (modalKind !== 'stream') {
+    ts = fieldToTs(document.getElementById('evStart').value);
+    if (ts == null) { errEl.textContent = 'Enter a valid time.'; return; }
+    if (modalKind === 'range') {
+      endTs = fieldToTs(document.getElementById('evEnd').value);
+      if (endTs == null) { errEl.textContent = 'Enter a valid end time.'; return; }
+      if (!(ts < endTs)) { errEl.textContent = 'End must be after start.'; return; }
+    }
+  }
+
+  const now = Math.floor(Date.now() / 1000);
+  const event = {
+    id: modalEditing ? modalEditing.id : ManualEvents.newId(),
+    tag,
+    kind: modalKind,
+    ts: modalKind === 'stream' ? null : ts,
+    end_ts: modalKind === 'range' ? endTs : null,
+    note,
+    created_ts: (modalEditing && Number.isFinite(modalEditing.created_ts)) ? modalEditing.created_ts : now,
+    updated_ts: now,
+  };
+  const editing = modalEditing;
+
+  setModalBusy(true);
+  try {
+    await persistEvents(doc => {
+      const i = editing ? doc.events.findIndex(e => e && e.id === editing.id) : -1;
+      if (i >= 0) doc.events[i] = event;
+      else doc.events.push(event);
+    }, `Manual event: ${editing ? 'update' : 'add'} '${tag}' on ${activeStreamId}`);
+  } catch (e) {
+    setModalBusy(false);
+    errEl.textContent = e.message;
+    toast(`Save failed: ${e.message}`, 'err');
+    return;
+  }
+
+  await persistTagIfNew(tag);
+
+  setModalBusy(false);
+  closeModal();               // the page stays armed, per design
+  refreshManualUI();
+  toast(editing ? 'Event updated' : 'Event saved', 'ok');
+}
+
+async function deleteEvent(ev) {
+  try {
+    await persistEvents(doc => {
+      doc.events = doc.events.filter(e => !(e && e.id === ev.id));
+    }, `Manual event: delete '${ev.tag}' on ${activeStreamId}`);
+  } catch (e) {
+    toast(`Delete failed: ${e.message}`, 'err');
+    refreshManualUI();
+    return;
+  }
+  if (modalIsOpen() && modalEditing && modalEditing.id === ev.id) closeModal();
+  refreshManualUI();
+  toast('Event deleted', 'ok');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — Wiring + boot
+// ═══════════════════════════════════════════════════════════════════════════════
+(function wireAdmin() {
+  // ── Gate ──
+  document.getElementById('gateBtn').addEventListener('click', () => { unlock(); });
+  document.getElementById('gateInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); unlock(); }
+  });
+  document.getElementById('signOutBtn').addEventListener('click', signOut);
+
+  // ── Modal: kind switch ──
+  document.getElementById('evKind').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-kind]');
+    if (btn) setModalKind(btn.dataset.kind);
+  });
+
+  // ── Modal: time fields ──
+  for (const id of ['evStart', 'evEnd']) {
+    document.getElementById(id).addEventListener('input', updateEchoes);
+  }
+
+  // ── Modal: tag combobox ──
+  const tagInput = document.getElementById('evTag');
+  tagInput.addEventListener('input', renderCombo);
+  tagInput.addEventListener('focus', renderCombo);
+  tagInput.addEventListener('blur', () => { setTimeout(closeCombo, 120); });
+  tagInput.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      if (comboOptions.length === 0) { renderCombo(); return; }
+      e.preventDefault();
+      comboIndex = (comboIndex + (e.key === 'ArrowDown' ? 1 : -1) + comboOptions.length) % comboOptions.length;
+      highlightCombo();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (comboOptions.length && comboIndex >= 0) pickCombo(comboIndex);
+      else closeCombo();
+    } else if (e.key === 'Escape') {
+      // Close only the dropdown; the document handler closes the modal when the
+      // dropdown is already shut.
+      if (comboOptions.length) { e.stopPropagation(); closeCombo(); }
+    }
+  });
+
+  // ── Modal: buttons ──
+  document.getElementById('evSave').addEventListener('click', saveEventFromModal);
+  document.getElementById('evCancel').addEventListener('click', closeModal);
+  document.getElementById('evDelete').addEventListener('click', () => {
+    document.getElementById('evDelete').hidden = true;
+    document.getElementById('evDeleteConfirm').hidden = false;
+  });
+  document.getElementById('evDeleteNo').addEventListener('click', () => setDeleteVisible(true));
+  document.getElementById('evDeleteYes').addEventListener('click', async () => {
+    if (!modalEditing) return;
+    setModalBusy(true);
+    document.getElementById('evDeleteYes').disabled = true;
+    await deleteEvent(modalEditing);
+    setModalBusy(false);
+  });
+  // Click the scrim (not the panel) to dismiss.
+  document.getElementById('modalOverlay').addEventListener('mousedown', e => {
+    if (e.target === e.currentTarget && !modalBusy) closeModal();
+  });
+
+  // ── Sidebar search (the input lives outside the rebuilt list, so this binds
+  //    once and its value/focus survive timezone-switch rebuilds). ──
+  const searchInput = document.getElementById('streamSearch');
+  if (searchInput) {
+    let searchDebounce = null;
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(() => applyFilter(searchInput.value), 120);
+    });
+  }
+
+  if (DRYRUN) document.getElementById('dryrunBadge').hidden = false;
+
+  // ── Boot: the page stays inert behind the gate until a token is stored. ──
+  if (storedToken()) { hideGate(); loadStreamList(); }
+  else { showGate(''); }
+})();
+</script>
+</body>
+</html>
