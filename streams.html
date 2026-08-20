@@ -1449,8 +1449,9 @@ async function loadStream(streamId) {
       typePie = buildPie('typePie', typeLabels, typeData, typeColors);
     }
 
-    // ── Donation log ──
-    if (donations.length > 0) {
+    // ── Event log ──
+    // Donations and the curator's manual events share one table.
+    if (donations.length > 0 || manualEvents.timed.length > 0 || manualEvents.wholeStream.length > 0) {
       const panel = document.createElement('div');
       panel.className = 'donations-panel';
 
@@ -1505,40 +1506,76 @@ async function loadStream(streamId) {
         return chosen;
       }
 
-      const sorted = [...donations].sort((a,b) => a.ts - b.ts);
-      const rows = sorted.map(d => {
-        const elapsedText = startTs ? fmtElapsed(startTs, d.ts) : fmtTime(d.ts);
-        // The displayed time stays on the overall stream timeline; only the link
-        // target is per-segment, so a post-split donation reads as its true stream
-        // time but jumps to the correct video at its offset within that video.
-        // Prefer our archive (per-segment offset); fall back to the source
-        // streamer's own VOD (stream-wide elapsed) when no archive exists; plain
-        // text only when neither is available.
-        const seg = segmentFor(d.ts);
+      const elapsedText = ts => startTs ? fmtElapsed(startTs, ts) : fmtTime(ts);
+
+      // The displayed time stays on the overall stream timeline; only the link
+      // target is per-segment, so a post-split row reads as its true stream time
+      // but jumps to the correct video at its offset within that video.
+      // Prefer our archive (per-segment offset); fall back to the source
+      // streamer's own VOD (stream-wide elapsed) when no archive exists; plain
+      // text only when neither is available.
+      function tsLink(ts, text) {
+        const seg = segmentFor(ts);
         let href = null;
         if (seg && seg.start_ts != null) {
-          href = buildVodLink(seg, Math.max(0, Math.floor(d.ts - seg.start_ts)));
+          href = buildVodLink(seg, Math.max(0, Math.floor(ts - seg.start_ts)));
         }
         if (!href && startTs != null) {
-          href = buildSourceLink(Math.max(0, Math.floor(d.ts - startTs)));
+          href = buildSourceLink(Math.max(0, Math.floor(ts - startTs)));
         }
-        const tsCell = href
-          ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${elapsedText}</a>`
-          : elapsedText;
+        return href
+          ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`
+          : text;
+      }
+
+      function donationRow(d) {
         const typeKey = typeKeyFor(d);
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr>
-          <td class="ts-cell">${tsCell}</td>
+          <td class="ts-cell">${tsLink(d.ts, elapsedText(d.ts))}</td>
           <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
           <td><span class="type-badge" style="--type-color:${TYPE_COLORS[typeKey] || TYPE_COLORS._other}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
           <td>${usd}</td>
           <td>${msg}</td>
         </tr>`;
-      }).join('');
+      }
+
+      // A manual event reads as a donation-shaped row: one badge in the same
+      // magenta the chart's manual-event plugin draws in (ACCENT in
+      // manual-events.js) for every tag, the goal integer in the Amount column,
+      // and the curator's note as the message. A range shows both bounds but
+      // links only its start; a whole-stream event has no time to link.
+      function manualRow(ev) {
+        const tsCell = ev.kind === 'stream'
+          ? 'whole stream'
+          : (ev.kind === 'range'
+              ? `${tsLink(ev.ts, elapsedText(ev.ts))} – ${elapsedText(ev.end_ts)}`
+              : tsLink(ev.ts, elapsedText(ev.ts)));
+        const goal  = Math.floor(Number(ev.value));
+        const value = (ManualEvents.isGoalTag(ev.tag) && Number.isFinite(goal))
+          ? `<span class="amount-usd">${goal}</span>` : '';
+        const note  = ev.note ? `<span class="msg-cell" title="${String(ev.note).replace(/"/g,'&quot;')}">${escHtml(String(ev.note))}</span>` : '';
+        return `<tr>
+          <td class="ts-cell">${tsCell}</td>
+          <td><span class="username">—</span></td>
+          <td><span class="type-badge" style="--type-color:rgb(255,120,200)">${escHtml(ev.tag)}</span></td>
+          <td>${value}</td>
+          <td>${note}</td>
+        </tr>`;
+      }
+
+      // Whole-stream events pin to the top; everything else interleaves by ts.
+      // The sort is stable, so a manual event sharing a donation's second follows it.
+      const timeline = [
+        ...donations.map(d => ({ ts: d.ts, html: donationRow(d) })),
+        ...manualEvents.timed.map(ev => ({ ts: ev.ts, html: manualRow(ev) })),
+      ].sort((a, b) => a.ts - b.ts);
+      const rows = manualEvents.wholeStream.map(manualRow).join('')
+                 + timeline.map(r => r.html).join('');
 
       panel.innerHTML = `
-        <div class="donations-title">Donation Log</div>
+        <div class="donations-title">Event Log</div>
         <table class="donations-table">
           <thead><tr>
             <th>Time</th><th>User</th><th>Type</th><th>Amount</th><th>Message</th>
