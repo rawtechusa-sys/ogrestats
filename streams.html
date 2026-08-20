@@ -462,13 +462,44 @@
     padding: 16px 20px;
   }
 
+  .donations-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
   .donations-title {
     font-family: 'Rye', serif;
     font-size: 14px;
     color: var(--text-primary);
-    margin-bottom: 12px;
     letter-spacing: 0.04em;
   }
+
+  .log-type-badges { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+
+  .log-filter-badge { cursor: pointer; user-select: none; }
+  .log-filter-badge.off { opacity: 0.35; }
+
+  .donations-table tr.row-hidden { display: none; }
+
+  /* Quiet pill matching .type-badge's metrics, but neutral so it doesn't read
+     as one of the type filters. */
+  .log-toggle-all {
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid var(--border-default);
+    background: var(--bg-subtle);
+    color: var(--text-muted);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+
+  .log-toggle-all:hover { color: var(--accent); }
 
   .donations-table {
     width: 100%;
@@ -1528,14 +1559,24 @@ async function loadStream(streamId) {
           : text;
       }
 
+      // Filter key space for the header badges, populated as rows are built so the
+      // strip lists exactly the types this stream contains, in encounter order.
+      // Donation and manual keys are namespaced apart -- a manual tag named
+      // "superchat" is still its own filter.
+      const logTypes = new Map();   // key -> { label, color }
+      const MANUAL_COLOR = 'rgb(255,120,200)';
+
       function donationRow(d) {
         const typeKey = typeKeyFor(d);
+        const evType  = `don:${typeKey}`;
+        const color   = TYPE_COLORS[typeKey] || TYPE_COLORS._other;
+        if (!logTypes.has(evType)) logTypes.set(evType, { label: TYPE_LABELS[typeKey] || typeKey, color });
         const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
-        return `<tr>
+        return `<tr data-evtype="${escHtml(evType)}">
           <td class="ts-cell">${tsLink(d.ts, elapsedText(d.ts))}</td>
           <td><span class="username">${escHtml((d.username || '').replace(/^@+/, ''))}</span></td>
-          <td><span class="type-badge" style="--type-color:${TYPE_COLORS[typeKey] || TYPE_COLORS._other}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
+          <td><span class="type-badge" style="--type-color:${color}">${escHtml(TYPE_LABELS[typeKey] || typeKey)}</span></td>
           <td>${usd}</td>
           <td>${msg}</td>
         </tr>`;
@@ -1547,6 +1588,8 @@ async function loadStream(streamId) {
       // and the curator's note as the message. A range shows both bounds but
       // links only its start; a whole-stream event has no time to link.
       function manualRow(ev) {
+        const evType = `man:${String(ev.tag || '').trim().toLowerCase()}`;
+        if (!logTypes.has(evType)) logTypes.set(evType, { label: ev.tag, color: MANUAL_COLOR });
         const tsCell = ev.kind === 'stream'
           ? 'whole stream'
           : (ev.kind === 'range'
@@ -1556,10 +1599,10 @@ async function loadStream(streamId) {
         const value = (ManualEvents.isGoalTag(ev.tag) && Number.isFinite(goal))
           ? `<span class="amount-usd">${goal}</span>` : '';
         const note  = ev.note ? `<span class="msg-cell" title="${String(ev.note).replace(/"/g,'&quot;')}">${escHtml(String(ev.note))}</span>` : '';
-        return `<tr>
+        return `<tr data-evtype="${escHtml(evType)}">
           <td class="ts-cell">${tsCell}</td>
           <td><span class="username">—</span></td>
-          <td><span class="type-badge" style="--type-color:rgb(255,120,200)">${escHtml(ev.tag)}</span></td>
+          <td><span class="type-badge" style="--type-color:${MANUAL_COLOR}">${escHtml(ev.tag)}</span></td>
           <td>${value}</td>
           <td>${note}</td>
         </tr>`;
@@ -1574,8 +1617,19 @@ async function loadStream(streamId) {
       const rows = manualEvents.wholeStream.map(manualRow).join('')
                  + timeline.map(r => r.html).join('');
 
+      // logTypes is populated by the row builders above, so the strip is only
+      // meaningful once the rows exist. A single-type log needs no filter.
+      const badges = logTypes.size > 1
+        ? [...logTypes].map(([key, t]) =>
+            `<span class="type-badge log-filter-badge" data-evtype="${escHtml(key)}" style="--type-color:${t.color}">${escHtml(t.label)}</span>`).join('')
+        : '';
+
       panel.innerHTML = `
-        <div class="donations-title">Event Log</div>
+        <div class="donations-header">
+          <div class="donations-title">Event Log</div>
+          <div class="log-type-badges">${badges}</div>
+          <button class="log-toggle-all" type="button">Toggle All</button>
+        </div>
         <table class="donations-table">
           <thead><tr>
             <th>Time</th><th>User</th><th>Type</th><th>Amount</th><th>Message</th>
@@ -1583,6 +1637,32 @@ async function loadStream(streamId) {
           <tbody>${rows}</tbody>
         </table>`;
       main.appendChild(panel);
+
+      // Filter state lives with the panel, which #main discards on every stream
+      // switch, so selecting another stream resets it.
+      const hiddenTypes = new Set();
+      const badgeStrip  = panel.querySelector('.log-type-badges');
+
+      function applyLogFilter() {
+        for (const tr of panel.querySelectorAll('.donations-table tbody tr'))
+          tr.classList.toggle('row-hidden', hiddenTypes.has(tr.dataset.evtype));
+        for (const b of badgeStrip.querySelectorAll('.log-filter-badge'))
+          b.classList.toggle('off', hiddenTypes.has(b.dataset.evtype));
+      }
+
+      badgeStrip.addEventListener('click', e => {
+        const badge = e.target.closest('.log-filter-badge');
+        if (!badge) return;
+        const key = badge.dataset.evtype;
+        if (hiddenTypes.has(key)) hiddenTypes.delete(key); else hiddenTypes.add(key);
+        applyLogFilter();
+      });
+
+      panel.querySelector('.log-toggle-all').addEventListener('click', () => {
+        if (hiddenTypes.size < logTypes.size) for (const key of logTypes.keys()) hiddenTypes.add(key);
+        else hiddenTypes.clear();
+        applyLogFilter();
+      });
     }
 
   } catch (e) {
