@@ -365,8 +365,10 @@
           } else if (ev.kind === 'range') {
             const x1 = Math.max(xs.getPixelForValue(ev.ts * 1000), left);
             const x2 = Math.min(xs.getPixelForValue(ev.end_ts * 1000), right);
-            if (x2 - x1 < width) continue;
-            const x = (x1 + x2) / 2 - width / 2;
+            if (x2 <= x1) continue;   // band not visible at all
+            // A label wider than its band overflows it; clamp into the chart
+            // area so it stays readable at the edges.
+            const x = Math.min(Math.max((x1 + x2) / 2 - width / 2, left), Math.max(right - width, left));
             placeBottomLabel(text, x, width, `rgba(${ACCENT},0.95)`);
           }
         }
