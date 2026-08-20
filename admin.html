@@ -854,6 +854,12 @@
       <span class="field-echo" id="evEndEcho"></span>
     </div>
 
+    <div class="field" id="evValueField">
+      <span class="field-label">Goal (members/subs)</span>
+      <input class="admin-input" id="evValue" type="text" inputmode="numeric"
+             autocomplete="off" spellcheck="false" placeholder="e.g. 20">
+    </div>
+
     <div class="field">
       <span class="field-label">Note</span>
       <input class="admin-input" id="evNote" type="text" placeholder="optional"
@@ -899,6 +905,11 @@ let activeEndTs    = null;   // window end: meta.end_ts ?? last snapshot ts
 let manualState    = { doc: { version: 1, events: [] }, sha: null };
 let adminManual    = { timed: [], wholeStream: [] };   // ManualEvents.normalize(manualState.doc)
 let lastLegendArgs = null;   // re-applied when the manual-event legend entry must appear/disappear
+// Goal-hit markers are DERIVED from the goal events' `value`, so editing one
+// changes them: buildChart records the inputs and refreshManualUI recomputes the
+// cache the overlay plugin reads.
+let goalHitsInputs = { donations: [], startTs: null };
+let goalHitsCache  = [];
 
 // Armed-mode state, read live by the shared overlay plugin's getState.
 let armed = false;
@@ -1578,6 +1589,8 @@ async function loadStream(streamId) {
   adminManual    = { timed: [], wholeStream: [] };
   activeAnchorTs = null;
   activeEndTs    = null;
+  goalHitsInputs = { donations: [], startTs: null };
+  goalHitsCache  = [];
   if (modalIsOpen()) closeModal();
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
@@ -1783,6 +1796,7 @@ function renderEventsTable() {
       <td class="tag-cell">${escHtml(ev.tag)}</td>
       <td><span class="kind-badge">${escHtml(ev.kind)}</span></td>
       <td>${fmtEventTime(ev)}</td>
+      <td><span class="ts-cell">${Number.isFinite(ev.value) ? escHtml(String(ev.value)) : ''}</span></td>
       <td><span class="msg-cell">${escHtml(typeof ev.note === 'string' ? ev.note : '')}</span></td>
       <td><button class="admin-btn" type="button" data-act="edit" data-idx="${i}">Edit</button></td>
       <td><span data-cell="del" data-idx="${i}"><button class="admin-btn danger" type="button" data-act="del" data-idx="${i}">Delete</button></span></td>
@@ -1790,7 +1804,7 @@ function renderEventsTable() {
   wrap.innerHTML = `
     <table class="events-table">
       <thead><tr>
-        <th>Tag</th><th>Kind</th><th>Time</th><th>Note</th><th>Edit</th><th>Delete</th>
+        <th>Tag</th><th>Kind</th><th>Time</th><th>Value</th><th>Note</th><th>Edit</th><th>Delete</th>
       </tr></thead>
       <tbody>${body}</tbody>
     </table>`;
@@ -1825,6 +1839,9 @@ function renderEventsTable() {
 function refreshManualUI() {
   if (currentChart) {
     currentChart.$hasManualEvents = adminManual.timed.length > 0;
+    // A saved/deleted goal event moves (or removes) its hit marker, so recompute
+    // the cache the plugin reads BEFORE the repaint below.
+    goalHitsCache = ManualEvents.computeGoalHits(goalHitsInputs.donations, adminManual, goalHitsInputs.startTs);
     currentChart.draw();
     // The legend's Events toggle appears/disappears with $hasManualEvents, so
     // rebuild it whenever the document changed.
@@ -1856,6 +1873,7 @@ const DS = {
   DON_YT:           'Donations (YT)',
   DON_TW:           'Donations (TW)',
   DON_KICK:         'Donations (Kick)',
+  MEMBERS:          'members/subs',
   YT_CHAT:          'YouTube Chat',
   TW_CHAT:          'Twitch Chat',
   KICK_CHAT:        'Kick Chat',
@@ -1869,7 +1887,7 @@ const DS = {
 // Canonical ordering for tooltip rows -- mirrors the legend grouping in
 // buildLegend (Donations | Viewers | Active Chatters | Msg/Min, Total first).
 const LEGEND_ORDER = [
-  DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK,
+  DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK, DS.MEMBERS,
   DS.TOTAL_VIEWERS, DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS,
   DS.TOTAL_ACTIVE_CHATTERS, DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS,
   DS.TOTAL_CHAT, DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT,
@@ -1920,6 +1938,7 @@ function syncAxisDisplay() {
     yViewers:        [DS.YT_VIEWERS, DS.TW_VIEWERS, DS.KICK_VIEWERS, DS.TOTAL_VIEWERS],
     yActiveChatters: [DS.YT_ACTIVE_CHATTERS, DS.TW_ACTIVE_CHATTERS, DS.KICK_ACTIVE_CHATTERS, DS.TOTAL_ACTIVE_CHATTERS],
     yDonations:      [DS.DONATIONS, DS.DON_YT, DS.DON_TW, DS.DON_KICK],
+    yMembers:        [DS.MEMBERS],
     yChatRate:       [DS.YT_CHAT, DS.TW_CHAT, DS.KICK_CHAT, DS.TOTAL_CHAT],
   };
   for (const [axisId, labels] of Object.entries(axisMap)) {
@@ -2278,6 +2297,43 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   }
   const hasDonations = donations.length > 0 && snapshotData.length > 0;
 
+  // Members/subs: the same nearest-index bucketing and running total as the
+  // donation series, but counting heads instead of money (ManualEvents.subCount:
+  // 1 per membership/sub, N per gift, 0 for everything else). This is what the
+  // streamer's sub goals are measured against.
+  const memberByIndex = new Array(snapshotData.length).fill(0);
+  if (snapshotData.length > 0) {
+    for (const d of donations) {
+      const count = ManualEvents.subCount(d);
+      if (count <= 0) continue;
+      const dx = d.ts * 1000;
+      let nearest = 0, best = Infinity;
+      for (let i = 0; i < snapshotData.length; i++) {
+        const dist = Math.abs(snapshotData[i].x - dx);
+        if (dist < best) { best = dist; nearest = i; }
+        else if (dist > best) break;  // x is sorted ascending; distance is convex
+      }
+      memberByIndex[nearest] += count;
+    }
+  }
+  const memberCumByIndex = new Array(snapshotData.length).fill(0);
+  {
+    let running = 0;
+    for (let i = 0; i < snapshotData.length; i++) {
+      running += memberByIndex[i];
+      memberCumByIndex[i] = running;
+    }
+  }
+  const hasMembers = memberCumByIndex.length > 0 && memberCumByIndex[memberCumByIndex.length - 1] > 0;
+
+  // Goal-hit markers: the moments the running members/subs count first met the
+  // goal that was active then (see ManualEvents.computeGoalHits). ADMIN EDIT vs
+  // streams.html: the goal events are editable here, so the hits cannot be
+  // captured at build time -- refreshManualUI recomputes goalHitsCache from
+  // these inputs after every save or delete.
+  goalHitsInputs = { donations, startTs };
+  goalHitsCache = ManualEvents.computeGoalHits(donations, manualEvents, startTs);
+
   // Time label for the chart x-axis ticks and tooltip, in the active timezone
   // (Ogre/Local/UTC -- see config.js withTZ). Chart.js reformats every tick on every
   // pan/zoom frame, so cache the Intl formatter (rebuilt only when the TZ changes) and
@@ -2500,6 +2556,29 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     }
   }
 
+  // ── Members/subs (cumulative count) ──
+  // Stepped like the donation total, on its own count axis -- it is heads, not
+  // dollars, and the two scales have nothing to do with each other.
+  if (hasMembers) {
+    datasets.push({
+      label: DS.MEMBERS,
+      hidden: hiddenDatasets.has(DS.MEMBERS),
+      data: snapshotData.map((s, i) => ({
+        x: s.x,
+        y: memberCumByIndex[i],
+      })),
+      type: 'line',
+      borderColor: '#ffb74d',
+      backgroundColor: 'transparent',
+      borderWidth: 2,
+      pointRadius: 0, pointHoverRadius: 4,
+      tension: 0,
+      stepped: 'after',
+      fill: false,
+      yAxisID: 'yMembers',
+    });
+  }
+
   // ── Chat rate series ──
   // Built from the full snapshotData so indices align with the viewer series
   // (mode:'index' tooltips match by index, not by x). Missing samples map to
@@ -2660,6 +2739,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
                 case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
                 case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
                 case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
+                case DS.MEMBERS:            return ` ${Math.round(y).toLocaleString()} members/subs`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
                 case DS.KICK_CHAT:          return ` Kick chat: ${y.toFixed(1)} mpm`;
@@ -2762,6 +2842,26 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           },
           title: { display: false },
         },
+        yMembers: {
+          type: 'linear',
+          position: 'right',
+          display: axisHasVisibleDs([DS.MEMBERS]),
+          bounds: 'data',
+          grid: { drawOnChartArea: false },
+          ticks: {
+            color: '#ffb74d',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+            callback: intTick(fmtTickInt),
+            precision: 0,
+            maxTicksLimit: 5,
+          },
+          title: {
+            display: true,
+            text: 'members / subs',
+            color: '#ffb74d',
+            font: { family: "'Share Tech Mono', monospace", size: 14 },
+          },
+        },
         yChatRate: {
           type: 'linear',
           position: 'right',
@@ -2834,9 +2934,9 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     },
     // Curator-authored point/range markers, drawn by the shared overlay plugin
     // (manual-events.js). ADMIN EDIT vs streams.html: getState reads the page's
-    // LIVE state -- adminManual is replaced on every save, and dragSelection is
-    // the in-flight drag band.
-    ManualEvents.makePlugin(() => ({ events: adminManual.timed, visible: showManualEvents, selection: dragSelection })),
+    // LIVE state -- adminManual is replaced on every save, goalHitsCache is
+    // recomputed from it, and dragSelection is the in-flight drag band.
+    ManualEvents.makePlugin(() => ({ events: adminManual.timed, visible: showManualEvents, selection: dragSelection, goalHits: goalHitsCache })),
     ],
   });
 
@@ -2845,6 +2945,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   // values index-for-index. smoothYExtent binary-searches this once per frame to
   // bound its scan to the visible window instead of walking every series in full.
   currentChart.$xs = snapshotData.map(s => s.x);
+
+  // Legend hook for the members/subs line: the legend is built separately, so it
+  // reads the same gate the dataset did.
+  currentChart.$hasMembers = hasMembers;
 
   // Legend hooks for the (non-dataset) Pausing band.
   currentChart.$hasPausingData = pausingSegments.length > 0;
@@ -3055,6 +3159,10 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   } else if (hasDonations) {
     gDonations.push({ label: 'Donations', type: 'line', color: '#e8c020', ds: DS.DONATIONS });
   }
+  // Members/subs rides in the Donations column: same origin (donation events),
+  // different unit. $hasMembers mirrors buildChart's dataset gate.
+  if (currentChart.$hasMembers)
+    gDonations.push({ label: 'Members/Subs', type: 'line', color: '#ffb74d', ds: DS.MEMBERS });
   groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
 
   const gViewers = [];
@@ -3378,6 +3486,7 @@ function openModal(init) {
 
   document.getElementById('modalTitle').textContent = ev ? 'Edit event' : 'Add event';
   document.getElementById('evTag').value = ev ? ev.tag : '';
+  document.getElementById('evValue').value = (ev && Number.isFinite(ev.value)) ? String(ev.value) : '';
   document.getElementById('evNote').value = (ev && typeof ev.note === 'string') ? ev.note : '';
   document.getElementById('evWarn').textContent = '';
   document.getElementById('evError').textContent = '';
@@ -3391,6 +3500,7 @@ function openModal(init) {
     : (init && init.end_ts != null) ? tsToField(init.end_ts) : '';
 
   setModalKind(kind);
+  syncGoalField();
   setDeleteVisible(!!ev);
   setModalBusy(false);
 
@@ -3440,6 +3550,17 @@ function setModalKind(kind) {
   // Values carry across a kind switch: Timestamp and Start share one field, so
   // Timestamp->Range keeps the time as Start and Range->Timestamp keeps Start.
   updateEchoes();
+}
+
+// The goal field belongs to the two goal tags only, so it follows whatever the
+// tag box currently holds (typing, picking from the combo, or opening an event).
+function syncGoalField() {
+  const tag = document.getElementById('evTag').value;
+  document.getElementById('evValueField').hidden = !ManualEvents.isGoalTag(tag);
+}
+
+function goalFieldVisible() {
+  return !document.getElementById('evValueField').hidden;
 }
 
 function updateEchoes() {
@@ -3516,6 +3637,7 @@ function pickCombo(i) {
   const opt = comboOptions[i];
   if (!opt) return;
   document.getElementById('evTag').value = opt.value;
+  syncGoalField();
   closeCombo();
 }
 
@@ -3588,6 +3710,18 @@ async function saveEventFromModal() {
     }
   }
 
+  // A goal tag must carry its threshold: the chart's hit marker has nothing to
+  // compare against without one.
+  let goalValue = null;
+  if (goalFieldVisible()) {
+    const raw = document.getElementById('evValue').value.trim();
+    goalValue = /^\d+$/.test(raw) ? parseInt(raw, 10) : NaN;
+    if (!Number.isFinite(goalValue) || goalValue <= 0) {
+      errEl.textContent = 'Enter the goal as a whole number above 0.';
+      return;
+    }
+  }
+
   const now = Math.floor(Date.now() / 1000);
   const event = {
     id: modalEditing ? modalEditing.id : ManualEvents.newId(),
@@ -3595,6 +3729,9 @@ async function saveEventFromModal() {
     kind: modalKind,
     ts: modalKind === 'stream' ? null : ts,
     end_ts: modalKind === 'range' ? endTs : null,
+    // Rebuilt from scratch on every edit, so `value` must be re-added here or an
+    // edited goal event would silently lose its threshold.
+    ...(goalValue != null ? { value: goalValue } : {}),
     note,
     created_ts: (modalEditing && Number.isFinite(modalEditing.created_ts)) ? modalEditing.created_ts : now,
     updated_ts: now,
@@ -3676,7 +3813,7 @@ async function deleteEvent(ev) {
 
   // ── Modal: tag combobox ──
   const tagInput = document.getElementById('evTag');
-  tagInput.addEventListener('input', renderCombo);
+  tagInput.addEventListener('input', () => { renderCombo(); syncGoalField(); });
   tagInput.addEventListener('focus', renderCombo);
   tagInput.addEventListener('blur', () => { setTimeout(closeCombo, 120); });
   tagInput.addEventListener('keydown', e => {
