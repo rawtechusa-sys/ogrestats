@@ -1579,6 +1579,15 @@ function selectStreamById(id) {
 // ═══════════════════════════════════════════════════════════════════════════════
 async function loadStream(streamId) {
   activeStreamId = streamId;
+  // Every piece of per-stream state resets WITH the id, not on the success path.
+  // A load that fails (or that a newer selection supersedes) must not leave the
+  // previous stream's document, sha or anchor behind: a save would then write
+  // those events -- and that stale sha -- to THIS stream's path.
+  manualState    = { doc: { version: 1, events: [] }, sha: null };
+  adminManual    = { timed: [], wholeStream: [] };
+  activeAnchorTs = null;
+  activeEndTs    = null;
+  if (modalIsOpen()) closeModal();
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
   document.getElementById('streamTitle').textContent = '';
@@ -1727,6 +1736,13 @@ async function loadStream(streamId) {
     renderEventsTable();
 
   } catch (e) {
+    // Same staleness check as the success path: a slow failing load must not
+    // paint its error over a newer stream's panel.
+    if (streamId !== activeStreamId) return;
+    // This stream's document never loaded, so there is nothing safe to edit
+    // here. Dropping the id disables the Add Event hotkey too, so a save can't
+    // create a file for a stream we could not read. Re-click the row to retry.
+    activeStreamId = null;
     main.innerHTML = `<div class="error-state"><span class="loading-glyph">✕</span><span>failed to load stream<br><small>${escHtml(e.message)}</small></span></div>`;
   }
 }
@@ -3277,24 +3293,33 @@ function fmtSignedHMS(secs) {
   return (secs < 0 ? '-' : '') + fmtHMS(Math.abs(secs));
 }
 
-// Accepts h:mm:ss, m:ss or bare seconds. Negatives and junk -> null.
+// Accepts h:mm:ss, m:ss or bare seconds, with an optional leading sign. Junk -> null.
+// A NEGATIVE elapsed value is legitimate here: stream_stats realigns start_ts
+// forward post-hoc (to the output broadcast's actualStartTime), so the leftmost
+// chart region routinely predates the anchor. fmtSignedHMS prefills such a click
+// as "-0:01:05" and this must round-trip it, or the modal would reject its own
+// prefill.
 function parseElapsedInput(str) {
-  const s = String(str == null ? '' : str).trim();
+  let s = String(str == null ? '' : str).trim();
+  if (!s) return null;
+  let sign = 1;
+  if (s[0] === '-')      { sign = -1; s = s.slice(1).trim(); }
+  else if (s[0] === '+') {            s = s.slice(1).trim(); }
   if (!s) return null;
   const parts = s.split(':');
   if (parts.length > 3) return null;
   const nums = [];
   for (const p of parts) {
     const q = p.trim();
-    if (!/^\d+(\.\d+)?$/.test(q)) return null;   // a leading '-' fails here too
+    if (!/^\d+(\.\d+)?$/.test(q)) return null;   // an inner sign fails here
     nums.push(parseFloat(q));
   }
   let secs;
   if (nums.length === 3)      secs = nums[0] * 3600 + nums[1] * 60 + nums[2];
   else if (nums.length === 2) secs = nums[0] * 60 + nums[1];
   else                        secs = nums[0];
-  if (!Number.isFinite(secs) || secs < 0) return null;
-  return Math.round(secs);
+  if (!Number.isFinite(secs)) return null;
+  return sign * Math.round(secs);
 }
 
 // A stream with neither start_ts nor snapshots has no elapsed origin, so the
@@ -3414,7 +3439,8 @@ function setModalKind(kind) {
   });
   const startField = document.getElementById('evStartField');
   const endField   = document.getElementById('evEndField');
-  const unit = hasAnchor() ? '(h:mm:ss)' : '(unix seconds)';
+  // The sign is part of the format: a time before the anchor is enterable.
+  const unit = hasAnchor() ? '(±h:mm:ss)' : '(unix seconds)';
   startField.hidden = (modalKind === 'stream');
   endField.hidden   = (modalKind !== 'range');
   document.getElementById('evStartLabel').textContent =
@@ -3508,8 +3534,14 @@ function pickCombo(i) {
 
 // Read-modify-write of data/streams/<id>/events_manual.json. The first GET is
 // seeded from page state; a conflict re-GETs and replays `mutate`.
+// Returns true when the result was applied to page state, false when the
+// curator switched streams while the write was in flight -- the write itself
+// still landed on the stream it started on, but its {doc, sha} must NOT be
+// assigned over whatever loadStream has since installed.
 async function persistEvents(mutate, message) {
-  const path = `data/streams/${activeStreamId}/events_manual.json`;
+  const streamId = activeStreamId;   // captured: the path must not follow a stream switch
+  if (!streamId) throw new Error('no stream selected');
+  const path = `data/streams/${streamId}/events_manual.json`;
   const result = await ghSaveWithRetry(path, (json) => {
     const events = (json && typeof json === 'object' && Array.isArray(json.events))
       ? json.events.slice()
@@ -3518,8 +3550,10 @@ async function persistEvents(mutate, message) {
     mutate(doc);
     return doc;
   }, message, 3, { json: manualState.doc, sha: manualState.sha });
+  if (streamId !== activeStreamId) return false;
   manualState = { doc: result.doc, sha: result.sha };
   adminManual = ManualEvents.normalize(result.doc);
+  return true;
 }
 
 // Merge a brand-new tag into data/manual_event_tags.json. Non-fatal on failure:
@@ -3577,8 +3611,9 @@ async function saveEventFromModal() {
   const editing = modalEditing;
 
   setModalBusy(true);
+  let applied;
   try {
-    await persistEvents(doc => {
+    applied = await persistEvents(doc => {
       const i = editing ? doc.events.findIndex(e => e && e.id === editing.id) : -1;
       if (i >= 0) doc.events[i] = event;
       else doc.events.push(event);
@@ -3594,13 +3629,20 @@ async function saveEventFromModal() {
 
   setModalBusy(false);
   closeModal();               // the page stays armed, per design
-  refreshManualUI();
-  toast(editing ? 'Event updated' : 'Event saved', 'ok');
+  // `applied` is false when the curator switched streams mid-write: the save
+  // landed on the stream it started on, but this page now shows another one.
+  if (applied) {
+    refreshManualUI();
+    toast(editing ? 'Event updated' : 'Event saved', 'ok');
+  } else {
+    toast('Saved to the previous stream — you switched mid-save', 'warn');
+  }
 }
 
 async function deleteEvent(ev) {
+  let applied;
   try {
-    await persistEvents(doc => {
+    applied = await persistEvents(doc => {
       doc.events = doc.events.filter(e => !(e && e.id === ev.id));
     }, `Manual event: delete '${ev.tag}' on ${activeStreamId}`);
   } catch (e) {
@@ -3609,8 +3651,14 @@ async function deleteEvent(ev) {
     return;
   }
   if (modalIsOpen() && modalEditing && modalEditing.id === ev.id) closeModal();
-  refreshManualUI();
-  toast('Event deleted', 'ok');
+  // A delete that finished after a stream switch must not repaint the new
+  // stream's table from the old stream's document.
+  if (applied) {
+    refreshManualUI();
+    toast('Event deleted', 'ok');
+  } else {
+    toast('Deleted from the previous stream — you switched mid-delete', 'warn');
+  }
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
