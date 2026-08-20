@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787114056,
+  "updated_ts": 1787202594,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -841,7 +841,8 @@
     "lets_just_lose_our_minds_2026-08-13_223319",
     "old_man_makes_music_live_part_2_2026-08-16_222507",
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
-    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
+    "an_evening_of_men_2026-08-19_223648"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15123,6 +15124,23 @@
       "avg_chat_mpm": 9.87,
       "avg_active_chatters": 23.14,
       "percent_paused": 61.9
+    },
+    "an_evening_of_men_2026-08-19_223648": {
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "title": "An Evening Of Men",
+      "start_ts": 1787158728,
+      "end_ts": 1787202372,
+      "duration_sec": 43644,
+      "youtube_archive_id": "hz4HAhbbC6w",
+      "source_platform": "youtube",
+      "total_donations_usd": 494.18,
+      "donation_count": 101,
+      "donations_per_min": 0.6794,
+      "peak_viewers": 361,
+      "avg_viewers": 321.84,
+      "avg_chat_mpm": 9.89,
+      "avg_active_chatters": 23.97,
+      "percent_paused": 68.5
     }
   }
 }
