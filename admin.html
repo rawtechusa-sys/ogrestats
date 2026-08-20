@@ -855,7 +855,7 @@
     </div>
 
     <div class="field" id="evValueField">
-      <span class="field-label">Goal (members/subs)</span>
+      <span class="field-label">Goal (members+subs)</span>
       <input class="admin-input" id="evValue" type="text" inputmode="numeric"
              autocomplete="off" spellcheck="false" placeholder="e.g. 20">
     </div>
@@ -2739,7 +2739,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
                 case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
                 case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
                 case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
-                case DS.MEMBERS:            return ` ${Math.round(y).toLocaleString()} members/subs`;
+                case DS.MEMBERS:            return ` ${Math.round(y).toLocaleString()} members+subs`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;
                 case DS.KICK_CHAT:          return ` Kick chat: ${y.toFixed(1)} mpm`;
@@ -2857,7 +2857,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           },
           title: {
             display: true,
-            text: 'members / subs',
+            text: 'members + subs',
             color: '#ffb74d',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
@@ -3162,7 +3162,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   // Members/subs rides in the Donations column: same origin (donation events),
   // different unit. $hasMembers mirrors buildChart's dataset gate.
   if (currentChart.$hasMembers)
-    gDonations.push({ label: 'Members/Subs', type: 'line', color: '#ffb74d', ds: DS.MEMBERS });
+    gDonations.push({ label: 'Members+Subs', type: 'line', color: '#ffb74d', ds: DS.MEMBERS });
   groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
 
   const gViewers = [];
