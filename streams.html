@@ -2552,7 +2552,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
         y: memberCumByIndex[i],
       })),
       type: 'line',
-      borderColor: '#ffb74d',
+      borderColor: 'rgb(255,120,200)',
       backgroundColor: 'transparent',
       borderWidth: 2,
       pointRadius: 0, pointHoverRadius: 4,
@@ -2832,7 +2832,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           bounds: 'data',
           grid: { drawOnChartArea: false },
           ticks: {
-            color: '#ffb74d',
+            color: 'rgb(255,120,200)',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
             callback: intTick(fmtTickInt),
             precision: 0,
@@ -2841,7 +2841,7 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
           title: {
             display: true,
             text: 'members + subs',
-            color: '#ffb74d',
+            color: 'rgb(255,120,200)',
             font: { family: "'Share Tech Mono', monospace", size: 14 },
           },
         },
@@ -3140,7 +3140,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   // Members/subs rides in the Donations column: same origin (donation events),
   // different unit. $hasMembers mirrors buildChart's dataset gate.
   if (currentChart.$hasMembers)
-    gDonations.push({ label: 'Members+Subs', type: 'line', color: '#ffb74d', ds: DS.MEMBERS });
+    gDonations.push({ label: 'Members+Subs', type: 'line', color: 'rgb(255,120,200)', ds: DS.MEMBERS });
   groups.push({ title: splitDonations ? 'Donations' : null, items: gDonations });
 
   const gViewers = [];
