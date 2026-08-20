@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787114047,
+  "updated_ts": 1787202583,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -841,21 +841,22 @@
     "lets_just_lose_our_minds_2026-08-13_223319",
     "old_man_makes_music_live_part_2_2026-08-16_222507",
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
-    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126"
+    "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
+    "an_evening_of_men_2026-08-19_223648"
   ],
   "commands": {
     "men": 3,
-    "eric": 172,
-    "phil": 363,
-    "stan": 293,
-    "masterchief": 133,
-    "harman": 95,
-    "trump": 132,
-    "moist": 24,
+    "eric": 174,
+    "phil": 378,
+    "stan": 295,
+    "masterchief": 139,
+    "harman": 97,
+    "trump": 133,
+    "moist": 26,
     "dagoth": 3,
     "zesty": 33,
-    "linus": 35,
-    "grandpa": 24,
+    "linus": 36,
+    "grandpa": 27,
     "girlfriend": 9,
     "twist": 8,
     "johnny": 6,
@@ -863,14 +864,14 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 15,
+    "doom": 16,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 41,
+    "dsp": 43,
     "something": 3,
     "witch": 3,
     "agreement": 1,
@@ -1237,7 +1238,7 @@
     "jeremy": 1,
     "battle": 1,
     "superior": 1,
-    "quartering": 2,
+    "quartering": 3,
     "westside": 1,
     "aka": 1,
     "same": 1,
@@ -9976,9 +9977,344 @@
       ],
       "source_vod_id": "csnIpZYXfk4",
       "source_platform": "youtube"
+    },
+    "an_evening_of_men_2026-08-19_223648": {
+      "title": "An Evening Of Men",
+      "start_ts": 1787158728,
+      "youtube_archive_id": "hz4HAhbbC6w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "Ie4c3tAZqgk",
+          "start_ts": 1787158728
+        },
+        {
+          "archive_id": "hz4HAhbbC6w",
+          "start_ts": 1787179089
+        }
+      ],
+      "source_vod_id": "OBiGA20G3Xo",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1787201822,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Linus: This reminds me that at GDC for god of war they used DSP's gameplay to show how games should be built. I'm not kidding.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1787199731,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: don't forget your hydration elements.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787198034,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: Have your chat troubleshoot it for you",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787195044,
+      "username": "@Orange_Yoshi_64",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Eric: Dickers has gone off the deep end. He's back to drinking his weed beer. he will make a whole stream about me if I wanna enjoy a beer on stream.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787194901,
+      "username": "@PakAmericanPiousKnight",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Trump: I'm pusi unapologetic for starting warcrime",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787194686,
+      "username": "@Toast935",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: just look at it as I stroalk the meet",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787191332,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Stan: Listen, in the dark where we are now. we're looking real good with Rodrigo, the robustness black bird watching with pure anguish",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787188950,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Moist: you still got DSP's snort soundbite? i love and miss that sound.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1787187765,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil's face in the thumbnail reminds me of those images of Jesus found in the woodgrain of furniture. Phil: My face will appear on May 1st.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787187587,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Quartering: Alex, after talking to tonight, I just wanted to compliment you on flashing me with both headlights. I'd put some sauce on those zingers.",
+      "commands": [
+        "quartering"
+      ]
+    },
+    {
+      "ts": 1787186946,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: Tonight, I am announcing my candidacy for President of the United States. We will make America burst again! Harman: Nintendo Knights, stand back and stand by. Stan: Oh, Philly! OH! Burnell 2028",
+      "commands": [
+        "phil",
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787186896,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Grandpa: no you speak lies! there is no future! I am stuck on the last starship that survived the war. everything will be destroyed. nothing survives. Masterchief: lies! I survived. no victory with sacrifice. the empire lives",
+      "commands": [
+        "grandpa",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787186578,
+      "username": "@nycbatista94",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Grandpa: Rich, its me again, you from the future, It is confirmed, Phil will win his primary as president of the United States, we need to leave, fast",
+      "commands": [
+        "grandpa"
+      ]
+    },
+    {
+      "ts": 1787186421,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Grandpa: the holy oracle foretold the truth! all the grifters will destroy eachother! there are those that said this day would never come. what are they to say now. Masterchief: my ropes are imminent!",
+      "commands": [
+        "grandpa",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787184670,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Harman: listen put bisexual lighting and love me Rich. Pikachu can watch.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787183728,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Doom: Darth dickers returns",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1787183123,
+      "username": "@bammersvabamm822",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: Rich , Look at how successful I am now. They go on vacation with detractors money , yet i buy more cards and eat Chili turkey dogs that are frozen in my freezer and I got a god pack from EBAY!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787183017,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: I'm so successful. Watch as I quit games because I get no money or engagement. (disappointed)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787182779,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: men, I farted as well. Ooops I got those Hershey stains. Masterchief: I think I need a cigarette.",
+      "commands": [
+        "phil",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787182557,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Masterchief: men, I farted. it was beautiful. mmm!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787182479,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: I am just completely fucking pissed, I was gonna write a script for this video. Why am I still getting hate.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787182245,
+      "username": "@compositefrylock2973",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "DSP: what Derich does outside of my livestream is none of my business. Also DSP: hey Iron chef Sakai you wanna tell us what you were doing In strangely lex\u2019s livestream?",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1787182162,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: Nothing beats watching Rich travel to another planet while Boogie and Mutahar yell at each other. Where is your weed seltzer brand Rich?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787182026,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: BANNED BANNED BANNED GONE FOREVER! (fail)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787181963,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Moist: listen do a asmr video about final fantasy 13 while talking about a fire alarm while its going off for 15 minutes lets go. Phil: I'm a man",
+      "commands": [
+        "moist",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787181665,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: My cats name is Derich, I mean Jasper. I need 2000 dollars for you to see him though.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787180298,
+      "username": "@ReviewTechAzerbaijan",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: it\u2019s an advanced lesson from the Burnell School of Tax Fraud. Next week, we go over writing off Pok\u00e9mon cards as a business expense",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787179870,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Masterchief: son of a bitch! Who the fuck gave me the wrong lettuce! I wanted the good shit, not the stuff that gives you the shits! evacuate the area, my anus is about to blow brown like no ones seen",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787179818,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Eric: Rich you'll never be a pantspisser this way",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787179197,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Masterchief: listen, fuck it. do all the drugs. do all the lines, all the devils lettuce, all the meth, drink multiple bottles, smoke whatever you got. be a man. then croak.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787178871,
+      "username": "@885thBatmanFan",
+      "platform": "youtube",
+      "stream_id": "an_evening_of_men_2026-08-19_223648",
+      "message": "Phil: I wish I knew how to quit you.",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1787110519,
       "username": "@BloodyGB175",
