@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787202583,
+  "updated_ts": 1787280007,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -842,20 +842,21 @@
     "old_man_makes_music_live_part_2_2026-08-16_222507",
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
     "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
-    "an_evening_of_men_2026-08-19_223648"
+    "an_evening_of_men_2026-08-19_223648",
+    "pure_unadulterated_menlive_2026-08-20_213103"
   ],
   "commands": {
-    "men": 3,
-    "eric": 174,
-    "phil": 378,
-    "stan": 295,
-    "masterchief": 139,
-    "harman": 97,
-    "trump": 133,
-    "moist": 26,
+    "men": 4,
+    "eric": 177,
+    "phil": 394,
+    "stan": 304,
+    "masterchief": 146,
+    "harman": 99,
+    "trump": 135,
+    "moist": 29,
     "dagoth": 3,
     "zesty": 33,
-    "linus": 36,
+    "linus": 38,
     "grandpa": 27,
     "girlfriend": 9,
     "twist": 8,
@@ -864,7 +865,7 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 16,
+    "doom": 17,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
@@ -888,7 +889,7 @@
     "ones": 1,
     "harmon": 2,
     "rage": 1,
-    "bill": 7,
+    "bill": 8,
     "gnome": 2,
     "kanye": 2,
     "post": 1,
@@ -1411,7 +1412,8 @@
     "narrator": 1,
     "uploaded": 1,
     "joerogan": 1,
-    "kermit": 1
+    "kermit": 1,
+    "bonus": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9996,9 +9998,441 @@
       ],
       "source_vod_id": "OBiGA20G3Xo",
       "source_platform": "youtube"
+    },
+    "pure_unadulterated_menlive_2026-08-20_213103": {
+      "title": "Pure, Unadulterated Men...LIVE!",
+      "start_ts": 1787260842,
+      "youtube_archive_id": "Sr1_oN5OQyY",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "Sr1_oN5OQyY",
+          "start_ts": 1787260842
+        }
+      ],
+      "source_vod_id": "HGKFE4woc9E",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1787279416,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: See what happens when you don\u2019t beg enough?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787278251,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "stan: try purple next time for that bi lighting",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787277281,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Masterchief: 4 twisted teas down, I can see the future! I am all knowing! I am a man, a man among men! fear power of the farts! the force of my loads can punch clean through a covenant capital ship!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787276783,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: (yoda) aeieil my chaulk rich! mmmm yes rich!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787276564,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Stan: (gnome)AeieiE(honk)(gnome)IaeieI(honk)fartN",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787276256,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Steven Crowder bonus: crossdressing repeatedly",
+      "commands": [
+        "bonus"
+      ]
+    },
+    {
+      "ts": 1787275934,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Alex Jones wants to look at the logs with me and my ISP. Hmm. Those are some robust logs. Stan: indeed. I credit the almighty Taco Bell. (Bong)",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787275631,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Moist: Listen I'm at target and literally a lady farted as I walked by her at the parking lot.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1787273753,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Eric: (stab)weee eeeee:jeans:(stab):jeans:eww uuuww(boom)",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787273420,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Bill: my windows software is superior to all. imagine the possibilitys! Stan: oooohhhhh ill imagine all the possibilities billy!",
+      "commands": [
+        "bill",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787273113,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Stan: become the ass made of man....always.",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787273013,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Linus: If smashgpt ends up watching this turn it purple lighting to make it bisexual to taunt him.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1787272598,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Trump: I'm beating off to a diaper ad, ffffuck.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787272372,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Masterchief: have you tried shoving it up your ass and screaming profanities yet? usually works.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787272253,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Have you tried turning it on and off again?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787272158,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Harman: This is why you need to throw away your PC",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787272072,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Ask us what what to do and just sit there.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787271460,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Masterchief: holy shit you have overembraced the dark side of the farts. everything is darkness. what has dark carlos done. the heretical corruption must be eradicated! send in the naked cowboys!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787271316,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Masterchief: my god, these are truly dark times. it appears that dark carlos corruption has infected rich and has created... DARTH DICKERS. he has embraced the dark side of the farts. god help us all!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787270627,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Moist: For context. That was Asmongold doing research to Kyle in his one video he did a response to him.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1787270478,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Rich, can you quack like a duck when you stoke the meet?? Eric: i can quack for ya! Stan: I'll quack for you all. Night. Long BANY Yeeeeaaaah!!",
+      "commands": [
+        "phil",
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787270434,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Moist: Asmongold doesn't read articles. By the way let me read a article that says that the Texas national weather service did its job.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1787270261,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: can you quack like a duck when wheef huk?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787269325,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Eric: Weee, are gooing, to kiw em. Wake up, dad",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787267509,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Trump: oouoouououooouououou (fart)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787267420,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Stan: (slap)oouououuouoo(slap)eeieieiieiee(slap):pea_pod:",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787266987,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: I'm struggling on those logs.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787266369,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "phil: wait until I play the pachinko level",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787266267,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Stan: Listen here, your video was banned last night because our lack of session with Rodrigo, embrace my hydration of a harvest. Phil: What tar is it",
+      "commands": [
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787266210,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: I struggle in ocean water.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787265930,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Linus: I played Half life 2 on the og xbox. Despite the framerate the audio in the game was so amazing. I still have the cd to this day.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1787265437,
+      "username": "@PakAmericanPiousKnight",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: listen rich I am gonna take leak like a savage and its gonna be entire urinatecolor gta 6 game play. you feel me. Trump:I'm gonna open my mouth",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787265373,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Masterchief: Attention all men! attention ALL men! a man among men has arrived. I repeat a man among men has arrived! embrace the farts and bust yuge!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787265177,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: listen be a man like me. Quit games and complain about support aka give me money. Harman: I'll be your man phil talk good about mario please.",
+      "commands": [
+        "phil",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787263787,
+      "username": "@ZG49389",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Listen, support my hydration elements",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787263651,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: Robust urban waterboarding w/ marinara sauce",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787262727,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "masterchief: did you see Tim Pool get his shit pushed in by a bunch of 20 year olds? He's such a bald little man. Doom: He also rage quit mid debate",
+      "commands": [
+        "masterchief",
+        "doom"
+      ]
+    },
+    {
+      "ts": 1787262647,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Stan: I like licking inverted nipples. POOOPY",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787262568,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Phil: I came. I saw. I came again.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787262328,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "masterchief: Ban me, unban me. Mod me, unmod me.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787262186,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "pure_unadulterated_menlive_2026-08-20_213103",
+      "message": "Council of men: I am currently on a plane heading to Ohio. Carlos Twin is all alone at home. Please send him well wishes.",
+      "commands": [
+        "men"
+      ]
+    },
     {
       "ts": 1787201822,
       "username": "@yapyapjr8908",
