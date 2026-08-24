@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787280011,
+  "updated_ts": 1787553432,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -843,7 +843,8 @@
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
     "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
     "an_evening_of_men_2026-08-19_223648",
-    "pure_unadulterated_menlive_2026-08-20_213103"
+    "pure_unadulterated_menlive_2026-08-20_213103",
+    "a_sunday_night_drama_stream_2026-08-24_003135"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9439,6 +9440,21 @@
       ],
       "source_vod_id": "HGKFE4woc9E",
       "source_platform": "youtube"
+    },
+    "a_sunday_night_drama_stream_2026-08-24_003135": {
+      "title": "A Sunday Night Drama Stream",
+      "start_ts": 1787530838,
+      "youtube_archive_id": "7iYvSI4dDac",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "7iYvSI4dDac",
+          "start_ts": 1787530838
+        }
+      ],
+      "source_vod_id": "cuntHGopBu4",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -9669,6 +9685,14 @@
       }
     ],
     "mphickman": [
+      {
+        "ts": 1787540088,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Why is Carlos wearing blackface in the thumbnail of today\u2019s video?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787262377,
         "type": "superchat",
@@ -10071,6 +10095,22 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1787552211,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Eric: thinking is hard Rich, I\u2019d much rather surrender control and let someone else do it !",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787537502,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787279416,
         "type": "superchat",
@@ -12005,6 +12045,14 @@
       }
     ],
     "ZG49389": [
+      {
+        "ts": 1787532831,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "What happened to lechero and lebrowski?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787263787,
         "type": "superchat",
@@ -15388,6 +15436,14 @@
     ],
     "kaynewoolley9104": [
       {
+        "ts": 1787545633,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "I\u2019m a detractor too. Where were you on the first of May 2016? Explain yourself",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786581349,
         "type": "superchat",
         "amount_usd": 5.3,
@@ -15893,6 +15949,22 @@
       }
     ],
     "throbbingat37pakamerican": [
+      {
+        "ts": 1787533086,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what's up chats and Rich. Hows it going? What happened to keemstar? He is becoming fatter. And white beard. Did boogie bite him and he is now turning into boogie himsef? \ud83d\ude06",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532897,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (3 months)!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787275941,
         "type": "bits",
@@ -20224,6 +20296,70 @@
     ],
     "Austin_Norris": [
       {
+        "ts": 1787543577,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: men, brace yourselves, the dipshits are trying to stir shit. in other news, I have survived the white castle aftermath. my ass hurts",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538352,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: men, I just took a risk. I farted, a really warm one that almost burned. embrace the farts, no matter how questionable. for the betterment of menkind.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787536417,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: buy my pedo fantasy books now! Stan: oh ill make it more than a fantasy daddy! mmmmm ahhhhh ohhhh ahhhh! butt bubbles!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532874,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: the lolcow ship is sinking beyond saving. Bill: what, no way! I don't believe it!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532524,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: damn, dudes on a diabetus speed run",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532165,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: plot twist, eating ass is the fountain of youth. next thing we know rich will have a full blown mullet.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531944,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531838,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: men, assemble the councils. embrace the true power of the farts, and fart proudly. no matter the cost. its time for men! boobs are life!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787277281,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -22591,6 +22727,38 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1787536546,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "That\u2019s the same shirt he wore in his workout vid.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787533327,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Just keep the mustache and grow your hair like Bob",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532558,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "He like the 50 year old at the college bar that tries to get laid by the girls half his age. Eric: I know that, but there are no middle school bars.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532263,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "BROWN",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787272158,
         "type": "superchat",
@@ -27753,6 +27921,62 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1787542988,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "bring back umds",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787541116,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "this is how kids got gta btw",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787540866,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "looking it up gamefly has a 2 disc plan for $28 a month. that sounds like a pretty good deal to me. maybe thats why its still in business?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787540324,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "do watch abandoned malls and buildings vids?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787539275,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "when bureaucracy and stockholders stifle creativity and passion, the only safe bet is technology. and it takes a long time to develop that properly",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538770,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan:we laugh but phil really think he looks like his ai thumb nails. thats what cognitive dissonance and narcissism does to you(slow_clap)(sm64_hurt)",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787536647,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "did you hear about nitro Camden? he was raided on twitch and his mom suffered a narcissistic injury to put it super chat friendly",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787278251,
         "type": "superchat",
@@ -41295,6 +41519,70 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1787533977,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phanton actually gave a shit in life, Keem doesnt",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787533620,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787533348,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You should do the Lot Lizard face, it's cheaper",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532831,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "KeemFat is going on a journey bro, just like DSP",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532524,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Look in the mirror it's your turn bro (burp)(fart)",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532269,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "My Gf hates you, I have to watch in secret",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531961,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Earth People is a sick track",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531849,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dad tell us how to make Earth People music",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787105818,
         "type": "giftmembership",
@@ -55812,6 +56100,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1787538386,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786581611,
         "type": "membership",
         "amount_usd": 1.99,
@@ -60576,6 +60872,14 @@
     ],
     "karasub2836": [
       {
+        "ts": 1787532550,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "my wife thinks u and DSP are in on u giving him crap",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786486698,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -61684,6 +61988,54 @@
     ],
     "respergu13": [
       {
+        "ts": 1787546728,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich do you know ppl who live in the sewers ?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787545122,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Careful Mr Rich! The detractors are derailing the stream! Maybe they didn\u2019t like your new beard!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538952,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich you should 1v1 Harman Smith",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787536523,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich, had no idea about Harman Smith! Thanks",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787536054,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich your B circuit show is not too bad! 100%",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787534808,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Let\u2019s not forget when Linx exposed Keemstar , poor girl had to deal with his basic instincts",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787274149,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -61781,6 +62133,14 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1787532013,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Hollywood Rich Hogan beard vibes.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787110182,
         "type": "superchat",
@@ -62369,6 +62729,14 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1787538156,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Listen me and Eric are dating. Eric: mmm Harman you looking like a snack.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787275631,
         "type": "superchat",
@@ -63840,6 +64208,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1787532971,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: HE'S FAT! HE'S AN ALCOHOLIC! WOAAAAH BUDDYYY",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787277613,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -64006,6 +64382,22 @@
     ],
     "Webbz517": [
       {
+        "ts": 1787542241,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "remember all the bisexual colored compaq presarios",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538356,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1785805154,
         "type": "membership",
         "amount_usd": 1.99,
@@ -64039,6 +64431,30 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1787545446,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 42 months",
+        "message": "I think a recent kino rtu segment explains the weirdos bump here tonight",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787542843,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Napoleon Dynamite feels like proof that the 90s survived till 2004",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787535941,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "These kids don\u2019t get it. You think you can just work hard and one day you\u2019ll wake up and be Phil? Forget about it",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787276256,
         "type": "superchat",
@@ -68748,6 +69164,14 @@
     ],
     "EvistoSF": [
       {
+        "ts": 1787532555,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Stan: Good evening Richard. May I say your new brown beard makes you look younger. MUCH younger. Oooooohh Uhhhhhh Oh yeah baby!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1785821348,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -72594,6 +73018,14 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1787542896,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Sony needs to bring back S.O.C.O.M.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786318161,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -73089,6 +73521,22 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1787546601,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: I am Phillip Paul Burnell, a man!!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787537806,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "Harman: 40 months of stroking Pikachu off. Phil: Someone call Pokemon Protective Services on this man! The camera was on the whole time!!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1785809996,
         "type": "giftmembership",
@@ -76480,6 +76928,14 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1787532041,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Rich, just go with Mutton Chps",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787193396,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -77525,6 +77981,14 @@
       }
     ],
     "End-Logic_1": [
+      {
+        "ts": 1787542565,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Dreamcast underrated",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1786666332,
         "type": "superchat",
@@ -82945,6 +83409,14 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1787532370,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Trump: Tim Apple, Tim Banana, Tim Kumquat",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787262568,
         "type": "superchat",
@@ -90124,6 +90596,14 @@
     ],
     "Spoderman75": [
       {
+        "ts": 1787538483,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "What up rich , people r being mean to me for giving dsp money , I miss donating to wings to make him do jumping jacks",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787276186,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -90641,6 +91121,46 @@
       }
     ],
     "change1ing": [
+      {
+        "ts": 1787551222,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harmon: WHUHLAPPPP!!!!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787550707,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Let's fast forward to the end of the Jim Jones era",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787537372,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787537168,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen : smoke as much as me and you wont need monjero",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787533735,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Finally got my 27\" CRT hooked up in the gameroom playing some Need for Speed Most Wanted on Gamecube and watching a man talk about other men. Let's go",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787272253,
         "type": "superchat",
@@ -92534,6 +93054,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1787547805,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "George Washington started the US while trump is destroying it and yes they\u2019re both terrible people",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787265702,
         "type": "superchat",
         "amount_usd": 5.02,
@@ -93132,6 +93660,22 @@
     ],
     "octropia": [
       {
+        "ts": 1787532482,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 You know alcohol puffs up your face right? Its catching up btw this ozzy video is hilarious how the hosts freak out",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532419,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786581246,
         "type": "bits",
         "amount_usd": 0.5,
@@ -93245,6 +93789,14 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1787533650,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1786671519,
         "type": "membership",
@@ -93947,6 +94499,30 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1787531894,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531764,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787531694,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787272690,
         "type": "superchat",
@@ -95003,6 +95579,14 @@
       }
     ],
     "marihdimitri7219": [
+      {
+        "ts": 1787550678,
+        "type": "superchat",
+        "amount_usd": 0.99,
+        "amount_raw": "$0.99",
+        "message": "Super Sticker",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1785474360,
         "type": "superchat",
@@ -115882,6 +116466,14 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1787550751,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "u like pushing the limit have u ever watched",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787110933,
         "type": "membership",
         "amount_usd": 1.99,
@@ -116684,6 +117276,14 @@
     ],
     "BRS_v": [
       {
+        "ts": 1787532304,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 38 months",
+        "message": "torrent will get new skins :racehorse: on the 28th",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1785292585,
         "type": "superchat",
         "amount_usd": 3.65,
@@ -116997,6 +117597,38 @@
       }
     ],
     "DeportedSicilianGamer": [
+      {
+        "ts": 1787534699,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Tech Talk was peak lolcow. That show was so good :popcorn:",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787534252,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "rich go to Conway and bring back WingsofRedemption to save the business. Kelly and the table can come too.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787534035,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "force Phantom to date becky as punishment",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787533891,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "he's like the opposite of a \"phantom\"",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787278822,
         "type": "superchat",
@@ -126152,6 +126784,14 @@
     ],
     "MrInternetMan": [
       {
+        "ts": 1787533544,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "listen, become a lot lizard for weed seltzer",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1784948350,
         "type": "membership",
         "amount_usd": 1.99,
@@ -126281,6 +126921,14 @@
       }
     ],
     "Ms.Sparkles": [
+      {
+        "ts": 1787533963,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Who is this guy? I don't like his voice or face",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1784950849,
         "type": "superchat",
@@ -126805,6 +127453,14 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1787542592,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "this takes me back to when I was a kid. Walmart had demos for ps2, gamecube, xbox. a McDonald's near me had a little game section with gamcube and n64",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1784952757,
         "type": "giftmembership",
@@ -130344,6 +131000,30 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1787541108,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They are looking for Heterosexual Rebirth",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538316,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532212,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "R U going as a fatter Heisenberg for Halloween?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787201986,
         "type": "membership",
         "amount_usd": 1.99,
@@ -131933,6 +132613,22 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1787538795,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "redos that just show that they care about product",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538659,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Sony should look to Disney Parks for how to win back your fans and get good will. everything they announced last weekend was things fans wanted years",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787186032,
         "type": "superchat",
@@ -137832,6 +138528,14 @@
     ],
     "JeremysBlackWalMartBouncer": [
       {
+        "ts": 1787547136,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "The problem of the US cutting ties with Israel is that they would start losing their war and start launching nukes, totally kill the global economy.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786588682,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -138171,6 +138875,14 @@
       }
     ],
     "venomizedmarkus3236": [
+      {
+        "ts": 1787536463,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "Phil: Stan please not tonight! Stan: MHMMHMM PHIL!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1786316574,
         "type": "superchat",
@@ -139029,6 +139741,22 @@
       }
     ],
     "insomniac416": [
+      {
+        "ts": 1787532416,
+        "type": "bits",
+        "amount_usd": 0.7,
+        "amount_raw": "70 bits",
+        "message": "cheer70 keem glazed a few too many donuts",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787532240,
+        "type": "bits",
+        "amount_usd": 0.75,
+        "amount_raw": "75 bits",
+        "message": "Cheer75 honestly thank god you didn\u2019t shave it just as a goatee, fatter guys and goatees to me do not go well",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787265573,
         "type": "bits",
@@ -140338,6 +141066,14 @@
     ],
     "danithefoot633": [
       {
+        "ts": 1787537300,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 50 months",
+        "message": "hows it going Rich",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1784586306,
         "type": "membership",
         "amount_usd": 1.99,
@@ -140560,6 +141296,14 @@
     ],
     "EHGAMER96": [
       {
+        "ts": 1787533713,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (3 months)!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1784598651,
         "type": "sub",
         "amount_usd": 5.99,
@@ -140678,6 +141422,14 @@
     ],
     "apks94": [
       {
+        "ts": 1787546325,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "It sucks that a lot of my family is MAGA, even now",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1786311747,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -140780,6 +141532,14 @@
     ],
     "daniel7th": [
       {
+        "ts": 1787537582,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1784269784,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -140869,6 +141629,30 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1787542116,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "9/11 didn't help with getting 2000s off the ground",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787538286,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787535937,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "i am a robust loud mouth Italian from new jersey!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1787111993,
         "type": "superchat",
@@ -150186,6 +150970,14 @@
     ],
     "Easilypleased23": [
       {
+        "ts": 1787542063,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "These were probably my happiest memories going to best buy to buy a new game or tv. I think we bought my dads Emachines PC from best buy",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1784157000,
         "type": "membership",
         "amount_usd": 1.99,
@@ -150739,6 +151531,14 @@
       }
     ],
     "Billy-Dillinger": [
+      {
+        "ts": 1787538306,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1784165257,
         "type": "giftmembership",
@@ -161246,6 +162046,14 @@
     ],
     "JackOfFlames": [
       {
+        "ts": 1787531874,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1782788507,
         "type": "giftmembership",
         "amount_usd": 39.8,
@@ -161867,6 +162675,14 @@
       }
     ],
     "respergu": [
+      {
+        "ts": 1787533253,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Mr Rich you dyed your beard? looking like a man",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1782610926,
         "type": "sub",
@@ -162983,6 +163799,22 @@
       }
     ],
     "mcnasty72": [
+      {
+        "ts": 1787552999,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "politcs are so divisive I heard 2 preteen arguing at the beach. one said I hate trump bla blah the other siad I love gos America blah blah blah.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787552350,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "I accidentally joined the 3 percenters. left when I realized they were racist af. when j6 hit i recognized the symbols and sure enough people from the group were there.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1782540229,
         "type": "superchat",
@@ -164745,6 +165577,14 @@
       }
     ],
     "dsmush": [
+      {
+        "ts": 1787545172,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Have you watched Silo on Apple TV? Think I'd rather get erased with the nuke than live underground post apocalypse",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1786669219,
         "type": "sub",
@@ -256385,6 +257225,14 @@
       }
     ],
     "platinummanchannel": [
+      {
+        "ts": 1787535604,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "we should watch Jay Williams prison stories. nuts",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
       {
         "ts": 1710902622,
         "type": "superchat",
@@ -439024,6 +439872,14 @@
     ],
     "Dad_Brad": [
       {
+        "ts": 1787549047,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "Hey Rich, enjoying the stream tonight. Stay :flexed_biceps: bro",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1679534274,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -530438,6 +531294,14 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1787532365,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Say my name. Harman: Heisenbird. Stan: Ooh",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
         "ts": 1787187587,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -531210,6 +532074,136 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "pure_unadulterated_menlive_2026-08-20_213103"
+      }
+    ],
+    "solidpakamericanhorseman": [
+      {
+        "ts": 1787550748,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Trump and genocidal Nazi symphtizer once they die it should be every anti Zionist wish they should be buried next Adolf Hitler grave holding his hands!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787536091,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich did you checked out blood of dawnwalker released demo on PS5  and PS5 Pro and they did not show option for 60fps performance mode. Gamers as rightfully be outrage about it. I mean the new witcher game has shown tier gameplay in 60fps and also the other frame that came out in March which I skipped playing what is called? That game had MASSIVE map but still had performance option.",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "Okezii47": [
+      {
+        "ts": 1787539503,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "subscribed!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "SolidPakAmericanHorseman": [
+      {
+        "ts": 1787546889,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Saudi Arabia has nuclear weapon but they actually don't know how it use it most fking lazy leaders allowing genocide. Half of their army are from Pak",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787546535,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "i'm still Solid Crusader aka Pakistani American",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787546399,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Phil: Listen Rich. Listen did I say Fck apartheid parasitic demonic Israel? what the fudge am I hearing Natalie Harp she declined to renew her clearance?!!yeah she is definitely Mossad literal shill",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787543058,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Any PS5 blackout participation data yet for today?",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "Ones2Cents": [
+      {
+        "ts": 1787543070,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bring Back Content. At least its not Politics",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "RenewTechUSA": [
+      {
+        "ts": 1787544987,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Hi Rich Why did you want Ones2Cents to Dox Snort Hogan? Why cover politics when literally everyone that watched you hates it. BTW Hi its Ones!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "rngdtriketra-g2k": [
+      {
+        "ts": 1787545310,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Its not Just Ones2Cents. We are Legion. You Lied",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "OnesGonnaGiveIt2U": [
+      {
+        "ts": 1787546263,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "F's in the head is watching a man everyday",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      },
+      {
+        "ts": 1787546181,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'd Rather Watch Paint Dry. RTU cant cant take criticism and has to be always right. No one like yours Politics or your obession of DSP. We laugh",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "Ciph3r_nu11": [
+      {
+        "ts": 1787546370,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Ones needs professional help! He\u2019s a real fan",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
+      }
+    ],
+    "hmoleman1": [
+      {
+        "ts": 1787549524,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135"
       }
     ]
   }
