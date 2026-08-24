@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787280018,
+  "updated_ts": 1787553438,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -843,7 +843,8 @@
     "the_robust_bob_lavari_twitch_sub_a_thon_2026-08-17_212457",
     "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
     "an_evening_of_men_2026-08-19_223648",
-    "pure_unadulterated_menlive_2026-08-20_213103"
+    "pure_unadulterated_menlive_2026-08-20_213103",
+    "a_sunday_night_drama_stream_2026-08-24_003135"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15159,6 +15160,23 @@
       "avg_chat_mpm": 9.93,
       "avg_active_chatters": 23.1,
       "percent_paused": 55.9
+    },
+    "a_sunday_night_drama_stream_2026-08-24_003135": {
+      "stream_id": "a_sunday_night_drama_stream_2026-08-24_003135",
+      "title": "A Sunday Night Drama Stream",
+      "start_ts": 1787530838,
+      "end_ts": 1787553106,
+      "duration_sec": 22268,
+      "youtube_archive_id": "7iYvSI4dDac",
+      "source_platform": "youtube",
+      "total_donations_usd": 456.94,
+      "donation_count": 120,
+      "donations_per_min": 1.2312,
+      "peak_viewers": 444,
+      "avg_viewers": 359.89,
+      "avg_chat_mpm": 10.2,
+      "avg_active_chatters": 25.14,
+      "percent_paused": 70.9
     }
   }
 }
