@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787553428,
+  "updated_ts": 1787640581,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -844,19 +844,20 @@
     "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
     "an_evening_of_men_2026-08-19_223648",
     "pure_unadulterated_menlive_2026-08-20_213103",
-    "a_sunday_night_drama_stream_2026-08-24_003135"
+    "a_sunday_night_drama_stream_2026-08-24_003135",
+    "were_so_screwed_2026-08-25_002950"
   ],
   "commands": {
     "men": 4,
-    "eric": 180,
-    "phil": 399,
-    "stan": 309,
-    "masterchief": 153,
-    "harman": 102,
-    "trump": 136,
+    "eric": 181,
+    "phil": 406,
+    "stan": 310,
+    "masterchief": 156,
+    "harman": 104,
+    "trump": 137,
     "moist": 29,
     "dagoth": 3,
-    "zesty": 33,
+    "zesty": 34,
     "linus": 38,
     "grandpa": 27,
     "girlfriend": 9,
@@ -866,7 +867,7 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 17,
+    "doom": 19,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
@@ -875,7 +876,7 @@
     "theory": 5,
     "dsp": 43,
     "something": 3,
-    "witch": 3,
+    "witch": 4,
     "agreement": 1,
     "asmrguy": 1,
     "chewbacca": 1,
@@ -1332,7 +1333,7 @@
     "solid": 1,
     "hebrew": 1,
     "rockstar": 2,
-    "face": 1,
+    "face": 2,
     "exposed": 1,
     "kendal": 1,
     "confession": 1,
@@ -10025,9 +10026,210 @@
       ],
       "source_vod_id": "cuntHGopBu4",
       "source_platform": "youtube"
+    },
+    "were_so_screwed_2026-08-25_002950": {
+      "title": "We're So Screwed",
+      "start_ts": 1787618144,
+      "youtube_archive_id": "Aeqra3PD-XA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "phOVKwOnZFc",
+          "start_ts": 1787618144
+        },
+        {
+          "archive_id": "Aeqra3PD-XA",
+          "start_ts": 1787637913
+        }
+      ],
+      "source_vod_id": "gkfYCYq_vos",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1787636270,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Zesty: The bird man watching birds with his birds!",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1787634489,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Witch: Boots and pants. Boots and pants.",
+      "commands": [
+        "witch"
+      ]
+    },
+    {
+      "ts": 1787630423,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: no one hates games more than I do !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787629772,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Eric: Rich! put it in a bottle so I can feed!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787629337,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: let me show you my robust calves !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787628413,
+      "username": "@jorethor",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "donald trump: iPhillip Birdman is a bird, birds more bird tarrifs, tarrifs all men and bird, birds",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787627654,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Cheer50 Farmers are PISSED after Trump is allowing Argentina (don't forget they are Pro Genocidal Israel) allowing to import 300,000 beef. What trump just did now is he slapped on American farmers face: \u201cMany of these farmers voted for the president, and you know, he wants to slash prices of beef cattle,\u201d he told Haeberle. \u201cYou\u2019re taking away what really was the only stable market in the United States for farmers was beef prices, and now you\u2019re taking that away.\u201d",
+      "commands": [
+        "face"
+      ]
+    },
+    {
+      "ts": 1787625743,
+      "username": "@ZG49389",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: robust moobs",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787624501,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Harman: Careful Mr Rich, a guy named Smash JT has been running his mouth!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787624383,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Harman: listen soulja boy will have Heterosexual rebirth the sequel on his new console that'll sell them.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787623503,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: listen I'm the editor. I made a amazing dead space remake comparison video on my channel. (fail)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787622347,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: Im a robust man.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787620335,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Doom: rise my dark cocks, rise! it is time to fully embrace the darkness of the night! our salvation is at hand! darth carlos has awakened! Masterchief: fuck! contact light carlos! only he can stop this corruptions spread!",
+      "commands": [
+        "doom",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787619675,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Doom: rise, rise my dark cocks. embrace the darkness. we are inevitable. we are your fure. we are your salvation. join your voice with ours, and seek victory everlasting. Masterchief: resist this heretical corruption men!",
+      "commands": [
+        "doom",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787619289,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: Listen, I make wholesome meaningful content, I don\u2019t spread toxic or hate unless it\u2019s people like Rich, LTG, or Keemstar then it\u2019s acceptable!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787619027,
+      "username": "@bonedragon7665",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Phil: Name the new bird Pedro Fartinez",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787618568,
+      "username": "@zachbischoff1853",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Stan: what did I miss. What did scotus rule on",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787618549,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "message": "Masterchief: men, embrace the farts. fart proudly",
+      "commands": [
+        "masterchief"
+      ]
+    },
     {
       "ts": 1787552211,
       "username": "@BloodyGB175",
