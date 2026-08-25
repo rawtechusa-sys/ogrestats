@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787553438,
+  "updated_ts": 1787640591,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -844,7 +844,8 @@
     "an_exceptionally_robust_and_meaningful_stream_2026-08-18_223126",
     "an_evening_of_men_2026-08-19_223648",
     "pure_unadulterated_menlive_2026-08-20_213103",
-    "a_sunday_night_drama_stream_2026-08-24_003135"
+    "a_sunday_night_drama_stream_2026-08-24_003135",
+    "were_so_screwed_2026-08-25_002950"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15177,6 +15178,23 @@
       "avg_chat_mpm": 10.2,
       "avg_active_chatters": 25.14,
       "percent_paused": 70.9
+    },
+    "were_so_screwed_2026-08-25_002950": {
+      "stream_id": "were_so_screwed_2026-08-25_002950",
+      "title": "We're So Screwed",
+      "start_ts": 1787618144,
+      "end_ts": 1787640361,
+      "duration_sec": 22217,
+      "youtube_archive_id": "Aeqra3PD-XA",
+      "source_platform": "youtube",
+      "total_donations_usd": 360.24,
+      "donation_count": 82,
+      "donations_per_min": 0.9729,
+      "peak_viewers": 430,
+      "avg_viewers": 320.5,
+      "avg_chat_mpm": 11.28,
+      "avg_active_chatters": 26.24,
+      "percent_paused": 66.6
     }
   }
 }
