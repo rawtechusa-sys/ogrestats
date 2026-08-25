@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787640581,
+  "updated_ts": 1787646887,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -845,15 +845,16 @@
     "an_evening_of_men_2026-08-19_223648",
     "pure_unadulterated_menlive_2026-08-20_213103",
     "a_sunday_night_drama_stream_2026-08-24_003135",
-    "were_so_screwed_2026-08-25_002950"
+    "were_so_screwed_2026-08-25_002950",
+    "late_night_stream_until_430_2026-08-25_070049"
   ],
   "commands": {
     "men": 4,
-    "eric": 181,
-    "phil": 406,
+    "eric": 183,
+    "phil": 407,
     "stan": 310,
     "masterchief": 156,
-    "harman": 104,
+    "harman": 105,
     "trump": 137,
     "moist": 29,
     "dagoth": 3,
@@ -10045,9 +10046,64 @@
       ],
       "source_vod_id": "gkfYCYq_vos",
       "source_platform": "youtube"
+    },
+    "late_night_stream_until_430_2026-08-25_070049": {
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787641277,
+      "youtube_archive_id": "h-UyyJ7vW9w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "h-UyyJ7vW9w",
+          "start_ts": 1787641277
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1787645005,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "late_night_stream_until_430_2026-08-25_070049",
+      "message": "Eric: Pull my tab Dickers so I can squirt in your face ! It\u2019s gonna happen Richie !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787643887,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "late_night_stream_until_430_2026-08-25_070049",
+      "message": "Phil: Just got back from work. What in the hell did I just walk into?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787643333,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "late_night_stream_until_430_2026-08-25_070049",
+      "message": "Eric: hey I just met you, and this is crazy, but here\u2019s my number, so call me maybe Dickers ?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787643133,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "late_night_stream_until_430_2026-08-25_070049",
+      "message": "Harman: It\u2019s gonna happen Richie !",
+      "commands": [
+        "harman"
+      ]
+    },
     {
       "ts": 1787636270,
       "username": "@BloodyGB175",
