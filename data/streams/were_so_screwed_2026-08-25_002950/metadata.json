@@ -6,8 +6,8 @@
   "end_ts": null,
   "platforms": [
     "youtube",
-    "twitch",
-    "kick"
+    "kick",
+    "twitch"
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
@@ -17,6 +17,10 @@
     {
       "archive_id": "phOVKwOnZFc",
       "start_ts": 1787618144
+    },
+    {
+      "archive_id": "Aeqra3PD-XA",
+      "start_ts": 1787637913
     }
   ],
   "youtube_archive_id": "phOVKwOnZFc",
