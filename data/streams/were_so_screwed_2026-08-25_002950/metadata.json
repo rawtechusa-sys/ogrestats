@@ -2,8 +2,8 @@
   "stream_id": "were_so_screwed_2026-08-25_002950",
   "slug": "were_so_screwed",
   "title": "We're So Screwed",
-  "start_ts": 1787617790,
-  "end_ts": 1787617939,
+  "start_ts": 1787618144,
+  "end_ts": null,
   "platforms": [
     "youtube",
     "twitch",
@@ -11,5 +11,14 @@
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
-  "source_vod_id": "gkfYCYq_vos"
+  "source_vod_id": "gkfYCYq_vos",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "phOVKwOnZFc",
+      "start_ts": 1787618144
+    }
+  ],
+  "youtube_archive_id": "phOVKwOnZFc",
+  "archive_is_source_vod": false
 }
