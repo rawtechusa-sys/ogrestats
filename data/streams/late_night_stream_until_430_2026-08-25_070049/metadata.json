@@ -3,7 +3,7 @@
   "slug": "late_night_stream_until_430",
   "title": "LATE NIGHT STREAM UNTIL 4:30",
   "start_ts": 1787641277,
-  "end_ts": null,
+  "end_ts": 1787646670,
   "platforms": [
     "youtube",
     "twitch",
@@ -17,5 +17,7 @@
       "archive_id": "h-UyyJ7vW9w",
       "start_ts": 1787641277
     }
-  ]
+  ],
+  "youtube_archive_id": "h-UyyJ7vW9w",
+  "archive_is_source_vod": false
 }
