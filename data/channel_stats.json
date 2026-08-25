@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787640591,
+  "updated_ts": 1787646897,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -845,7 +845,8 @@
     "an_evening_of_men_2026-08-19_223648",
     "pure_unadulterated_menlive_2026-08-20_213103",
     "a_sunday_night_drama_stream_2026-08-24_003135",
-    "were_so_screwed_2026-08-25_002950"
+    "were_so_screwed_2026-08-25_002950",
+    "late_night_stream_until_430_2026-08-25_070049"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15195,6 +15196,23 @@
       "avg_chat_mpm": 11.28,
       "avg_active_chatters": 26.24,
       "percent_paused": 66.6
+    },
+    "late_night_stream_until_430_2026-08-25_070049": {
+      "stream_id": "late_night_stream_until_430_2026-08-25_070049",
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787641277,
+      "end_ts": 1787646670,
+      "duration_sec": 5393,
+      "youtube_archive_id": "h-UyyJ7vW9w",
+      "source_platform": "twitch",
+      "total_donations_usd": 24.51,
+      "donation_count": 8,
+      "donations_per_min": 0.2727,
+      "peak_viewers": 169,
+      "avg_viewers": 139.38,
+      "avg_chat_mpm": 8.5,
+      "avg_active_chatters": 18.63,
+      "percent_paused": 51.2
     }
   }
 }
