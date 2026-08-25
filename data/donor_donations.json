@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787640585,
+  "updated_ts": 1787646892,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -845,7 +845,8 @@
     "an_evening_of_men_2026-08-19_223648",
     "pure_unadulterated_menlive_2026-08-20_213103",
     "a_sunday_night_drama_stream_2026-08-24_003135",
-    "were_so_screwed_2026-08-25_002950"
+    "were_so_screwed_2026-08-25_002950",
+    "late_night_stream_until_430_2026-08-25_070049"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9475,6 +9476,21 @@
       ],
       "source_vod_id": "gkfYCYq_vos",
       "source_platform": "youtube"
+    },
+    "late_night_stream_until_430_2026-08-25_070049": {
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787641277,
+      "youtube_archive_id": "h-UyyJ7vW9w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "h-UyyJ7vW9w",
+          "start_ts": 1787641277
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -10131,6 +10147,30 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1787645005,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Eric: Pull my tab Dickers so I can squirt in your face ! It\u2019s gonna happen Richie !",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
+      {
+        "ts": 1787643333,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Eric: hey I just met you, and this is crazy, but here\u2019s my number, so call me maybe Dickers ?",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
+      {
+        "ts": 1787643133,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Harman: It\u2019s gonna happen Richie !",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
       {
         "ts": 1787636270,
         "type": "superchat",
@@ -36617,6 +36657,22 @@
       }
     ],
     "Beard-CatT": [
+      {
+        "ts": 1787645162,
+        "type": "superchat",
+        "amount_usd": 1.49,
+        "amount_raw": "$1.49",
+        "message": "Super Sticker",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
+      {
+        "ts": 1787645033,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": "hoot wireless",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
       {
         "ts": 1786503050,
         "type": "giftmembership",
@@ -73309,6 +73365,14 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1787643887,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Just got back from work. What in the hell did I just walk into?",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
       {
         "ts": 1787542896,
         "type": "superchat",
@@ -187533,6 +187597,14 @@
       }
     ],
     "GeneralNutcase": [
+      {
+        "ts": 1787646187,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 58 months",
+        "message": "youtube being youtube",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      },
       {
         "ts": 1739511814,
         "type": "superchat",
@@ -532888,6 +532960,16 @@
         "amount_raw": "$2.00",
         "message": "5 years older than me. U sound more knowledgeable.",
         "stream_id": "were_so_screwed_2026-08-25_002950"
+      }
+    ],
+    "cheerforhatred": [
+      {
+        "ts": 1787642457,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "hey buddy, I sold you 10 birds, can I get eggs plz",
+        "stream_id": "late_night_stream_until_430_2026-08-25_070049"
       }
     ]
   }
