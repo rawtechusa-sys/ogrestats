@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787801799,
+  "updated_ts": 1787808930,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -848,7 +848,8 @@
     "were_so_screwed_2026-08-25_002950",
     "late_night_stream_until_430_2026-08-25_070049",
     "the_bob_lavari_late_stream_2026-08-27_022739",
-    "late_night_stream_until_430_2026-08-27_030013"
+    "late_night_stream_until_430_2026-08-27_030013",
+    "im_so_confused_2026-08-27_030318"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9523,6 +9524,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "im_so_confused_2026-08-27_030318": {
+      "title": "I'm So Confused....",
+      "start_ts": 1787799798,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": "L44Qu4QIyL8",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10179,6 +10195,46 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1787808283,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "The Amico port of GTA 6 will be the best version.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787807495,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Harman: stroke the birds while I stroke Pikachu !",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787805064,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: I have to come clean: I have no ass ! I\u2019m an ass less man ! That\u2019s why I overcompensate with my robust moobs and muscular calves. Please support",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787800902,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: I was just touching my thigh on may first!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787800083,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Harman: YouTube is afraid you\u2019ll go rogue and show Neil Breen scenes again !",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787645005,
         "type": "superchat",
@@ -19414,6 +19470,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1787800091,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Rich I need advice on how to deal with my detractors calling my pack rips fake, I am freaking out",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787797965,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -19703,6 +19767,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1787801239,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787638354,
         "type": "giftmembership",
@@ -20492,12 +20564,44 @@
     ],
     "Austin_Norris": [
       {
+        "ts": 1787805655,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: men, please support me. the taco bell is being purged. may the machine spirit bless my shitter. for the brown will be everywhere.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787800185,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: sharting on the new couch Kristen's it. break it in by shootin buckshot on it. then burn it. one may call it, a shit show.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787799879,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: pulling out is for chumps. be a man",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787799714,
         "type": "superchat",
         "amount_usd": 2.0,
         "amount_raw": "$2.00",
         "message": "Masterchief: men, it works. stroke the meat mmmm!",
         "stream_id": "late_night_stream_until_430_2026-08-27_030013"
+      },
+      {
+        "ts": 1787799714,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: men, it works. stroke the meat mmmm!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
       },
       {
         "ts": 1787623448,
@@ -22963,6 +23067,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1787800182,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Some SmashJT tonight? ChatGPT rotted his brain.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787797945,
         "type": "giftmembership",
@@ -28189,6 +28301,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1787808099,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the price for next Gen consoles aren't taking into account scalpers",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787807042,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "but hey at least he stuck through Disney dreamlight valley. thats a real man's game",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787636331,
         "type": "superchat",
@@ -38491,6 +38619,14 @@
       }
     ],
     "silkyone12": [
+      {
+        "ts": 1787805723,
+        "type": "superchat",
+        "amount_usd": 3.14,
+        "amount_raw": "\u00a5500",
+        "message": "hearing Phil say donations: if Phil and Umar Johnson ever were in the same room, the world would implode from the sheer amount of begging.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787180086,
         "type": "superchat",
@@ -61876,6 +62012,14 @@
     ],
     "nevablowingbubbles1337": [
       {
+        "ts": 1787804619,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 It amazes me that in today's world where people are getting fed up with AI content slop, Philip Burnell manages to have the ability to make content slop naturally. The literal quantity-over-quality approach.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1786669042,
         "type": "superchat",
         "amount_usd": 1.4,
@@ -62336,6 +62480,38 @@
     ],
     "respergu13": [
       {
+        "ts": 1787807431,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: wage quitting is not a crime",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787805108,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Chris Hansen has an interesting interview",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787804602,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: I am paying for this top quality content!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787801091,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Pikachu you are mine!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787624501,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -62489,6 +62665,14 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1787800009,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Need advice I sharted on the new couch Freakin out",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787629923,
         "type": "superchat",
@@ -62836,6 +63020,22 @@
     ],
     "qb3540": [
       {
+        "ts": 1787801985,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I just dont get all these dumb bass restrictions, isnt that what YouTube kids is for? Also I need more Phil raging out to Super Mario Sunshine",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787801100,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Are u gonna finish the EDP documentary?",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787192507,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -63093,6 +63293,38 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1787808408,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Listen Gabe is gonna announce Half life 3 coming a week before gta 6 taking the sales away maybe. Two major games clashing.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787806927,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: tremendous ocean water.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787805680,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: listen lets get some coffee rich you seem stressed. I'll get pikachu and dress up like princess peach.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787801025,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Golden showered bob.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787624383,
         "type": "superchat",
@@ -78064,6 +78296,14 @@
     ],
     "evistosf": [
       {
+        "ts": 1787804382,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Just change the word \"Support\" to \"Money\" and count the number of times he asks for it, nay DEMANDS it!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787626620,
         "type": "bits",
         "amount_usd": 0.5,
@@ -78937,6 +79177,14 @@
       }
     ],
     "eazypz9124": [
+      {
+        "ts": 1787804427,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "If his dents ever snapped out of it and they all got together stopped tipping, he\u2019ll beg for them and do whatever they ask him, they are dents though",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1785816077,
         "type": "superchat",
@@ -91040,12 +91288,28 @@
     ],
     "Spoderman75": [
       {
+        "ts": 1787801335,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Seems like dsp replaced wwe champions with tcg and he admitted on stream that he has no idea what he\u2019s spent total, bankruptcy part 2 incoming maybe",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787799766,
         "type": "superchat",
         "amount_usd": 1.99,
         "amount_raw": "$1.99",
         "message": "My girl is pregnant n I need advice ,freaking out",
         "stream_id": "late_night_stream_until_430_2026-08-27_030013"
+      },
+      {
+        "ts": 1787799766,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "My girl is pregnant n I need advice ,freaking out",
+        "stream_id": "im_so_confused_2026-08-27_030318"
       },
       {
         "ts": 1787538483,
@@ -91573,6 +91837,22 @@
       }
     ],
     "change1ing": [
+      {
+        "ts": 1787802745,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dude looks like an Easter Island statue.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787802511,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "AI's gay, thank you.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787619517,
         "type": "superchat",
@@ -92315,6 +92595,14 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1787805282,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787636236,
         "type": "superchat",
@@ -96151,6 +96439,14 @@
       }
     ],
     "marihdimitri7219": [
+      {
+        "ts": 1787802132,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787550678,
         "type": "superchat",
@@ -127370,6 +127666,14 @@
     ],
     "ricfatino26": [
       {
+        "ts": 1787801662,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "T Police busted a guy literally called MrChildCorn",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1784948305,
         "type": "membership",
         "amount_usd": 1.99,
@@ -132717,6 +133021,22 @@
       }
     ],
     "tougeruzbay": [
+      {
+        "ts": 1787801209,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Stan: Richerd we\u2019re evolving hahahaha",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787800814,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hobo: I barely touched my ps5 and been trying to finish dead island recently. Stan: these thugs in this game are hard and robust.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787266267,
         "type": "superchat",
@@ -139534,6 +139854,14 @@
     ],
     "MissleKaBoom26": [
       {
+        "ts": 1787801344,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "My Cucumber is GOLD! :pink_heart::red_heart:",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1784670497,
         "type": "membership",
         "amount_usd": 1.99,
@@ -142305,6 +142633,14 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1787799921,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I tried to relax my anus but got caught up in the robust feeling of breasts and now chasing large man birds. Listen restart the stream for no reason!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787542116,
         "type": "superchat",
@@ -159882,6 +160218,14 @@
     ],
     "aessay": [
       {
+        "ts": 1787804299,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 he always belittles his kick, and then says, I'm not getting money from kick today. I don't know why?",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787096494,
         "type": "bits",
         "amount_usd": 0.5,
@@ -161950,6 +162294,14 @@
     ],
     "Green-J3ster": [
       {
+        "ts": 1787804585,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I\u2019m very tarnished, Rich. Need to polish my rod.",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1786225335,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -163504,6 +163856,38 @@
     ],
     "WebTechSimplified": [
       {
+        "ts": 1787806806,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "anything that is a big hit that is opened off stream is likely a fake card he brought",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787806472,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "would be funny if he spilled soda over the cards",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787805471,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He works his biceps when opening the packs",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787804469,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "The funny thing is he is hated so much in the pokemon community for his streams.. kids can't afford to open packs and here is a grown as man is begging for money to open cards",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1786312959,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -164101,6 +164485,14 @@
       }
     ],
     "rafaelchicas7635": [
+      {
+        "ts": 1787801409,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 34 months",
+        "message": "bird father im harrd",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787105576,
         "type": "membership",
@@ -166233,6 +166625,22 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1787806794,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the Gameboy advance not the SP lady didn't know what she had crazy",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787806657,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "found a Gameboy Dvvance and a bunch of games for $60 at a yard sale in my neighborhood so much nostalgia",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787635807,
         "type": "superchat",
@@ -174713,6 +175121,14 @@
       }
     ],
     "macmega2149": [
+      {
+        "ts": 1787804814,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Do you REALLY think Phil pulled the God Pack?",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1739945626,
         "type": "superchat",
@@ -257973,6 +258389,14 @@
       }
     ],
     "platinummanchannel": [
+      {
+        "ts": 1787807151,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Watch Professor Dave Explains destroy Destiny :folded_hands:",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787535604,
         "type": "superchat",
@@ -440628,6 +441052,14 @@
     ],
     "Dad_Brad": [
       {
+        "ts": 1787807951,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "When Phil said alalalalala I\u2019ve always wondered if that was supposed to be making fun of Arabs?",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787622575,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -532850,6 +533282,22 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1787808597,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 GTA 6 will be digital scalped and it will be impossible to find on day one. Also I think some YouTuber mentioned this Gta 6 will absolutely have full nudity and strong sexual themes...so yeah if you ehave kids around you better take what ever you are playing on and find room to stay in motel or somewhere in Epstein island",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787808200,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 GTA 6 will work better on Nintendo switch 2 and even better on Atari and Gameboy advance! All of them has 10000000 horsepower!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787636069,
         "type": "bits",
         "amount_usd": 0.5,
@@ -532917,6 +533365,22 @@
       }
     ],
     "SolidPakAmericanHorseman": [
+      {
+        "ts": 1787803593,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "play crimson desert on ps5 pro it's 20% discount",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787803432,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "what's cooking? doin 12 hour stream? gta6 at 3pm",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
       {
         "ts": 1787546889,
         "type": "superchat",
@@ -533040,6 +533504,14 @@
     ],
     "DrTSanchez1": [
       {
+        "ts": 1787801325,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "Stan: I like ladybugs Richie! wooooooohhhweeeeeee",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
         "ts": 1787623565,
         "type": "membership",
         "amount_usd": 1.99,
@@ -533074,6 +533546,24 @@
         "amount_raw": "$2.00",
         "message": "hey buddy, I sold you 10 birds, can I get eggs plz",
         "stream_id": "late_night_stream_until_430_2026-08-25_070049"
+      }
+    ],
+    "jameswalters130": [
+      {
+        "ts": 1787801590,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "im_so_confused_2026-08-27_030318"
+      },
+      {
+        "ts": 1787801216,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I like turtles",
+        "stream_id": "im_so_confused_2026-08-27_030318"
       }
     ]
   }
