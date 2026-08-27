@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787646897,
+  "updated_ts": 1787798695,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -846,7 +846,8 @@
     "pure_unadulterated_menlive_2026-08-20_213103",
     "a_sunday_night_drama_stream_2026-08-24_003135",
     "were_so_screwed_2026-08-25_002950",
-    "late_night_stream_until_430_2026-08-25_070049"
+    "late_night_stream_until_430_2026-08-25_070049",
+    "the_bob_lavari_late_stream_2026-08-27_022739"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15213,6 +15214,23 @@
       "avg_chat_mpm": 8.5,
       "avg_active_chatters": 18.63,
       "percent_paused": 51.2
+    },
+    "the_bob_lavari_late_stream_2026-08-27_022739": {
+      "stream_id": "the_bob_lavari_late_stream_2026-08-27_022739",
+      "title": "The Bob Lavari Late Stream",
+      "start_ts": 1787797688,
+      "end_ts": 1787798456,
+      "duration_sec": 768,
+      "youtube_archive_id": "yWUnYhGm0iQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 71.64,
+      "donation_count": 6,
+      "donations_per_min": 5.5969,
+      "peak_viewers": 146,
+      "avg_viewers": 92.83,
+      "avg_chat_mpm": 12.46,
+      "avg_active_chatters": 19.92,
+      "percent_paused": null
     }
   }
 }
