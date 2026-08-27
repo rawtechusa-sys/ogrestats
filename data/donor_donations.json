@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787798690,
+  "updated_ts": 1787801799,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -847,7 +847,8 @@
     "a_sunday_night_drama_stream_2026-08-24_003135",
     "were_so_screwed_2026-08-25_002950",
     "late_night_stream_until_430_2026-08-25_070049",
-    "the_bob_lavari_late_stream_2026-08-27_022739"
+    "the_bob_lavari_late_stream_2026-08-27_022739",
+    "late_night_stream_until_430_2026-08-27_030013"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9507,6 +9508,21 @@
       ],
       "source_vod_id": "G8HpYVDGt_w",
       "source_platform": "youtube"
+    },
+    "late_night_stream_until_430_2026-08-27_030013": {
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787799642,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -20475,6 +20491,14 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1787799714,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: men, it works. stroke the meat mmmm!",
+        "stream_id": "late_night_stream_until_430_2026-08-27_030013"
+      },
       {
         "ts": 1787623448,
         "type": "giftmembership",
@@ -38957,6 +38981,14 @@
       }
     ],
     "Dublinpapi": [
+      {
+        "ts": 1787799630,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "tppowerZedd",
+        "stream_id": "late_night_stream_until_430_2026-08-27_030013"
+      },
       {
         "ts": 1787192727,
         "type": "giftsub",
@@ -91007,6 +91039,14 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1787799766,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "My girl is pregnant n I need advice ,freaking out",
+        "stream_id": "late_night_stream_until_430_2026-08-27_030013"
+      },
       {
         "ts": 1787538483,
         "type": "superchat",
