@@ -2,13 +2,22 @@
   "stream_id": "late_night_stream_until_430_2026-08-27_030013",
   "slug": "late_night_stream_until_430",
   "title": "LATE NIGHT STREAM UNTIL 4:30",
-  "start_ts": 1787799613,
-  "end_ts": null,
+  "start_ts": 1787799642,
+  "end_ts": 1787799792,
   "platforms": [
     "youtube",
     "twitch",
     "kick"
   ],
   "source_channel": "rtustreams",
-  "source_platform": "twitch"
+  "source_platform": "twitch",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "fMr3G3Cx2k0",
+      "start_ts": 1787799642
+    }
+  ],
+  "youtube_archive_id": "fMr3G3Cx2k0",
+  "archive_is_source_vod": false
 }
