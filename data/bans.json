@@ -1,9 +1,10 @@
 {
   "version": 1,
-  "updated_ts": 1787798697,
+  "updated_ts": 1787801809,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
-    "the_bob_lavari_late_stream_2026-08-27_022739"
+    "the_bob_lavari_late_stream_2026-08-27_022739",
+    "late_night_stream_until_430_2026-08-27_030013"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -30,6 +31,21 @@
       ],
       "source_vod_id": "G8HpYVDGt_w",
       "source_platform": "youtube"
+    },
+    "late_night_stream_until_430_2026-08-27_030013": {
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787799642,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "users": {}
