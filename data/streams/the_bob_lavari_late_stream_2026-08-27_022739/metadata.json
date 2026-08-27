@@ -3,7 +3,7 @@
   "slug": "the_bob_lavari_late_stream",
   "title": "The Bob Lavari Late Stream",
   "start_ts": 1787797688,
-  "end_ts": null,
+  "end_ts": 1787798456,
   "platforms": [
     "youtube",
     "twitch",
@@ -18,5 +18,7 @@
       "archive_id": "yWUnYhGm0iQ",
       "start_ts": 1787797688
     }
-  ]
+  ],
+  "youtube_archive_id": "yWUnYhGm0iQ",
+  "archive_is_source_vod": false
 }
