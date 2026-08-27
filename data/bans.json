@@ -1,10 +1,11 @@
 {
   "version": 1,
-  "updated_ts": 1787801809,
+  "updated_ts": 1787808937,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
-    "late_night_stream_until_430_2026-08-27_030013"
+    "late_night_stream_until_430_2026-08-27_030013",
+    "im_so_confused_2026-08-27_030318"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -46,6 +47,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "im_so_confused_2026-08-27_030318": {
+      "title": "I'm So Confused....",
+      "start_ts": 1787799798,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": "L44Qu4QIyL8",
+      "source_platform": "youtube"
     }
   },
   "users": {}
