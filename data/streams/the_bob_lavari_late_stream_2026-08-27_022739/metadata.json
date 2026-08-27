@@ -1,0 +1,22 @@
+{
+  "stream_id": "the_bob_lavari_late_stream_2026-08-27_022739",
+  "slug": "the_bob_lavari_late_stream",
+  "title": "The Bob Lavari Late Stream",
+  "start_ts": 1787797688,
+  "end_ts": null,
+  "platforms": [
+    "youtube",
+    "twitch",
+    "kick"
+  ],
+  "source_channel": "rtustreams",
+  "source_platform": "youtube",
+  "source_vod_id": "G8HpYVDGt_w",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "yWUnYhGm0iQ",
+      "start_ts": 1787797688
+    }
+  ]
+}
