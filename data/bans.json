@@ -1,8 +1,9 @@
 {
   "version": 1,
-  "updated_ts": 1787781910,
+  "updated_ts": 1787798697,
   "counted_streams": [
-    "lets_discuss_my_budget_pc_build"
+    "lets_discuss_my_budget_pc_build",
+    "the_bob_lavari_late_stream_2026-08-27_022739"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -13,6 +14,21 @@
       "archive_start_ts": 1568072272,
       "segments": null,
       "source_vod_id": "_XNGe0Htg5g",
+      "source_platform": "youtube"
+    },
+    "the_bob_lavari_late_stream_2026-08-27_022739": {
+      "title": "The Bob Lavari Late Stream",
+      "start_ts": 1787797688,
+      "youtube_archive_id": "yWUnYhGm0iQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yWUnYhGm0iQ",
+          "start_ts": 1787797688
+        }
+      ],
+      "source_vod_id": "G8HpYVDGt_w",
       "source_platform": "youtube"
     }
   },
