@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787801807,
+  "updated_ts": 1787808935,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -848,7 +848,8 @@
     "were_so_screwed_2026-08-25_002950",
     "late_night_stream_until_430_2026-08-25_070049",
     "the_bob_lavari_late_stream_2026-08-27_022739",
-    "late_night_stream_until_430_2026-08-27_030013"
+    "late_night_stream_until_430_2026-08-27_030013",
+    "im_so_confused_2026-08-27_030318"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15249,6 +15250,23 @@
       "avg_chat_mpm": 19.5,
       "avg_active_chatters": 17.5,
       "percent_paused": null
+    },
+    "im_so_confused_2026-08-27_030318": {
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "title": "I'm So Confused....",
+      "start_ts": 1787799798,
+      "end_ts": 1787808706,
+      "duration_sec": 8908,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "source_platform": "youtube",
+      "total_donations_usd": 174.46,
+      "donation_count": 59,
+      "donations_per_min": 1.1751,
+      "peak_viewers": 355,
+      "avg_viewers": 310.13,
+      "avg_chat_mpm": 10.21,
+      "avg_active_chatters": 24.64,
+      "percent_paused": 58.1
     }
   }
 }
