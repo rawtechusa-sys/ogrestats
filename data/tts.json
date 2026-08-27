@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787798686,
+  "updated_ts": 1787801794,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -847,14 +847,15 @@
     "a_sunday_night_drama_stream_2026-08-24_003135",
     "were_so_screwed_2026-08-25_002950",
     "late_night_stream_until_430_2026-08-25_070049",
-    "the_bob_lavari_late_stream_2026-08-27_022739"
+    "the_bob_lavari_late_stream_2026-08-27_022739",
+    "late_night_stream_until_430_2026-08-27_030013"
   ],
   "commands": {
     "men": 4,
     "eric": 183,
     "phil": 407,
     "stan": 310,
-    "masterchief": 156,
+    "masterchief": 157,
     "harman": 105,
     "trump": 137,
     "moist": 29,
@@ -10077,9 +10078,34 @@
       ],
       "source_vod_id": "G8HpYVDGt_w",
       "source_platform": "youtube"
+    },
+    "late_night_stream_until_430_2026-08-27_030013": {
+      "title": "LATE NIGHT STREAM UNTIL 4:30",
+      "start_ts": 1787799642,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1787799714,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "late_night_stream_until_430_2026-08-27_030013",
+      "message": "Masterchief: men, it works. stroke the meat mmmm!",
+      "commands": [
+        "masterchief"
+      ]
+    },
     {
       "ts": 1787645005,
       "username": "@BloodyGB175",
