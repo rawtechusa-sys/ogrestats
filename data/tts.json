@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787801794,
+  "updated_ts": 1787808926,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -848,16 +848,17 @@
     "were_so_screwed_2026-08-25_002950",
     "late_night_stream_until_430_2026-08-25_070049",
     "the_bob_lavari_late_stream_2026-08-27_022739",
-    "late_night_stream_until_430_2026-08-27_030013"
+    "late_night_stream_until_430_2026-08-27_030013",
+    "im_so_confused_2026-08-27_030318"
   ],
   "commands": {
     "men": 4,
     "eric": 183,
-    "phil": 407,
-    "stan": 310,
-    "masterchief": 157,
-    "harman": 105,
-    "trump": 137,
+    "phil": 410,
+    "stan": 313,
+    "masterchief": 161,
+    "harman": 114,
+    "trump": 138,
     "moist": 29,
     "dagoth": 3,
     "zesty": 34,
@@ -885,7 +886,7 @@
     "chewbacca": 1,
     "drdisrespect": 2,
     "rich": 30,
-    "hobo": 10,
+    "hobo": 11,
     "ideas": 1,
     "carlos": 1,
     "tate": 7,
@@ -1418,7 +1419,9 @@
     "uploaded": 1,
     "joerogan": 1,
     "kermit": 1,
-    "bonus": 1
+    "bonus": 1,
+    "clean": 1,
+    "donations": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10093,14 +10096,241 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "im_so_confused_2026-08-27_030318": {
+      "title": "I'm So Confused....",
+      "start_ts": 1787799798,
+      "youtube_archive_id": "fMr3G3Cx2k0",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "fMr3G3Cx2k0",
+          "start_ts": 1787799642
+        }
+      ],
+      "source_vod_id": "L44Qu4QIyL8",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1787808408,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: Listen Gabe is gonna announce Half life 3 coming a week before gta 6 taking the sales away maybe. Two major games clashing.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787807495,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: stroke the birds while I stroke Pikachu !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787807431,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: wage quitting is not a crime",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787806927,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Trump: tremendous ocean water.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787805723,
+      "username": "@silkyone12",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "hearing Phil say donations: if Phil and Umar Johnson ever were in the same room, the world would implode from the sheer amount of begging.",
+      "commands": [
+        "donations"
+      ]
+    },
+    {
+      "ts": 1787805680,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: listen lets get some coffee rich you seem stressed. I'll get pikachu and dress up like princess peach.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787805655,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Masterchief: men, please support me. the taco bell is being purged. may the machine spirit bless my shitter. for the brown will be everywhere.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787805108,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: Chris Hansen has an interesting interview",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787805064,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Phil: I have to come clean: I have no ass ! I\u2019m an ass less man ! That\u2019s why I overcompensate with my robust moobs and muscular calves. Please support",
+      "commands": [
+        "phil",
+        "clean"
+      ]
+    },
+    {
+      "ts": 1787804602,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: I am paying for this top quality content!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787801325,
+      "username": "@DrTSanchez1",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Stan: I like ladybugs Richie! wooooooohhhweeeeeee",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787801209,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Stan: Richerd we\u2019re evolving hahahaha",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787801091,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: Pikachu you are mine!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787801025,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: Golden showered bob.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787800902,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Phil: I was just touching my thigh on may first!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787800814,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Hobo: I barely touched my ps5 and been trying to finish dead island recently. Stan: these thugs in this game are hard and robust.",
+      "commands": [
+        "hobo",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787800185,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Masterchief: sharting on the new couch Kristen's it. break it in by shootin buckshot on it. then burn it. one may call it, a shit show.",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787800091,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Phil: Rich I need advice on how to deal with my detractors calling my pack rips fake, I am freaking out",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787800083,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Harman: YouTube is afraid you\u2019ll go rogue and show Neil Breen scenes again !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787799879,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
+      "message": "Masterchief: pulling out is for chumps. be a man",
+      "commands": [
+        "masterchief"
+      ]
+    },
     {
       "ts": 1787799714,
       "username": "@Austin_Norris",
       "platform": "youtube",
       "stream_id": "late_night_stream_until_430_2026-08-27_030013",
+      "message": "Masterchief: men, it works. stroke the meat mmmm!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787799714,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "im_so_confused_2026-08-27_030318",
       "message": "Masterchief: men, it works. stroke the meat mmmm!",
       "commands": [
         "masterchief"
