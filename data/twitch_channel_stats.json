@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787875203,
+  "updated_ts": 1787961627,
   "snapshots": [
     {
       "ts": 1787021636,
@@ -76,6 +76,13 @@
       "ts": 1787875203,
       "date": "2026-08-28",
       "followers": 23613,
+      "subs": null,
+      "source": "daily"
+    },
+    {
+      "ts": 1787961625,
+      "date": "2026-08-29",
+      "followers": 23614,
       "subs": null,
       "source": "daily"
     }
