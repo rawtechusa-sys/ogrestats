@@ -1,11 +1,12 @@
 {
   "version": 1,
-  "updated_ts": 1787808937,
+  "updated_ts": 1787978128,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
     "late_night_stream_until_430_2026-08-27_030013",
-    "im_so_confused_2026-08-27_030318"
+    "im_so_confused_2026-08-27_030318",
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -61,6 +62,21 @@
         }
       ],
       "source_vod_id": "L44Qu4QIyL8",
+      "source_platform": "youtube"
+    },
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738": {
+      "title": "ELDEN RING: TARNISHED EDITION (A ROBUST MARATHON LIVESTREAM) #ELDENRING",
+      "start_ts": 1787942858,
+      "youtube_archive_id": "PhNlRFUpDWs",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "PhNlRFUpDWs",
+          "start_ts": 1787941247
+        }
+      ],
+      "source_vod_id": "4XOdrQ69sNk",
       "source_platform": "youtube"
     }
   },
