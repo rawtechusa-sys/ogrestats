@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787808926,
+  "updated_ts": 1787978117,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -849,21 +849,22 @@
     "late_night_stream_until_430_2026-08-25_070049",
     "the_bob_lavari_late_stream_2026-08-27_022739",
     "late_night_stream_until_430_2026-08-27_030013",
-    "im_so_confused_2026-08-27_030318"
+    "im_so_confused_2026-08-27_030318",
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738"
   ],
   "commands": {
     "men": 4,
-    "eric": 183,
-    "phil": 410,
-    "stan": 313,
-    "masterchief": 161,
-    "harman": 114,
-    "trump": 138,
+    "eric": 190,
+    "phil": 424,
+    "stan": 323,
+    "masterchief": 164,
+    "harman": 123,
+    "trump": 144,
     "moist": 29,
-    "dagoth": 3,
-    "zesty": 34,
+    "dagoth": 5,
+    "zesty": 35,
     "linus": 38,
-    "grandpa": 27,
+    "grandpa": 28,
     "girlfriend": 9,
     "twist": 8,
     "johnny": 6,
@@ -871,29 +872,29 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 19,
+    "doom": 20,
     "emoguy": 3,
     "chat": 2,
     "grandma": 3,
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 43,
+    "dsp": 44,
     "something": 3,
-    "witch": 4,
+    "witch": 5,
     "agreement": 1,
     "asmrguy": 1,
     "chewbacca": 1,
     "drdisrespect": 2,
-    "rich": 30,
-    "hobo": 11,
+    "rich": 31,
+    "hobo": 12,
     "ideas": 1,
     "carlos": 1,
     "tate": 7,
     "gums": 1,
     "message": 3,
     "ones": 1,
-    "harmon": 3,
+    "harmon": 4,
     "rage": 1,
     "bill": 9,
     "gnome": 2,
@@ -901,7 +902,7 @@
     "post": 1,
     "tired": 1,
     "specs": 2,
-    "phill": 5,
+    "phill": 6,
     "warmy": 1,
     "translation": 4,
     "tomorrow": 34,
@@ -1414,14 +1415,15 @@
     "w": 2,
     "dog": 1,
     "man": 1,
-    "prime": 1,
+    "prime": 3,
     "narrator": 1,
     "uploaded": 1,
     "joerogan": 1,
     "kermit": 1,
     "bonus": 1,
     "clean": 1,
-    "donations": 1
+    "donations": 1,
+    "optimus": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10111,9 +10113,479 @@
       ],
       "source_vod_id": "L44Qu4QIyL8",
       "source_platform": "youtube"
+    },
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738": {
+      "title": "ELDEN RING: TARNISHED EDITION (A ROBUST MARATHON LIVESTREAM) #ELDENRING",
+      "start_ts": 1787942858,
+      "youtube_archive_id": "PhNlRFUpDWs",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "PhNlRFUpDWs",
+          "start_ts": 1787941247
+        }
+      ],
+      "source_vod_id": "4XOdrQ69sNk",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1787977247,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Eric: I await your Elden harvest !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787976828,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Cheer1000 Phil: Rich you know I can beat you in a fight! Eric: Rich you know I can beat you in a wrestling match! Harman: Rich you know I can beat you in a Pokemon Battle! Stan: Richie you know I can beat your meat, but you are like an aged beef steak! I am more into fresh veal, is that politically incorrect as well as gross? Tee hee ho ho ho I am a strange and creepy man! AAAAAAGGGGHHHHHHH!!!!",
+      "commands": [
+        "phil",
+        "eric",
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787976717,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: review tech USA is attacking me live !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787976562,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: we can do it the easy way or the hard way",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787976103,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phill: DarkSouls should have easy mode right Rich?",
+      "commands": [
+        "phill"
+      ]
+    },
+    {
+      "ts": 1787976023,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Stan: Mhmmm, we lookin good arent we Rich",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787975850,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Stan: Damnit Rich, did you listen to the songs",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787971473,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Eric: Damn ! Elden Bob is a desirable man !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787971321,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Eric: An Elden man is still playing Elden Ring",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787967726,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Doom: darth carlos shall rise again! rise dark cocks, for the dark crusades are inevitable! embrace the darkness! the war of the cocks is imminent!",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1787966436,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: Andy you up? I miss you. PS, don't tell PPP",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787966328,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Dagoth: differentiating a milestone from a goal is like differentiating a pig from a swine. Phil: did someone call me? Dagoth: no. Go back to begging.",
+      "commands": [
+        "dagoth",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787965293,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Masterchief: i farted. Stan: mmmmm butt bubbles!",
+      "commands": [
+        "masterchief",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787964608,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Cheer1000 Trump: Am I fuking things up? Phil: shut the f up and give me money for making you shut up. You are banned! Oh the camera was on all this time. Listen up let's see how many GTA 6 fans are cancelling their preorders on PS5/Pro not only for disc reason but 30fps run. Not even 40fps. Trump: GameStop and Best Buy actually stopped stocking new PS5/Pro units that could hit Sony's supply chain directly. Retailers are the gatekeepers; to fight for physical disc. Trump: I am pusy",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787964466,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Cheer1000 Harman: Rich please send me a Zoom link and I will explain to you in real time why Nintendo is superior and why I am super successful and you are not! I am so much better than you and my new super fan friend got me a MacBook Neo in Citrus color! Zesty: Harman baby try to calm down and don't let your blood pressure spike! By the way did you shower today? Stan: Harman bathe? Don't me laugh! Hah hah Hee See Hoo Hoo lah dee freakin' dah!",
+      "commands": [
+        "harman",
+        "zesty",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787963891,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: I'm watching you on my stream right now.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787963522,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: I'm a fascinating robust man, but Harman is a best selling author, and an enigma with breasts. That basement must smell like ball-sweat.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787963359,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Cheer1000 Phil: Harman is just jealous that you chose to kiss ME Rich and not him! Harman: I am NOT jealous I love Pokemon and not Human men! Stan: Guys, guys, please don't fight over Rich! We can ALL kiss each other and stroll lovingly though horses! Ugh, oh yeah baby, men!",
+      "commands": [
+        "phil",
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787962985,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: Oh Burnellll, pleasey beeee, my bulllllll",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787958111,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: (slap)0oo,pikachu(slip)W(slap)hmf(pipes)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1787956091,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Grandpa: what is happening! the holy oracle foretold of massive storms, but why are ropes raining down from space?! Masterchief: these are the loads from the emperor of menkind. embrace them or perish",
+      "commands": [
+        "grandpa",
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787955784,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "DSP: I think we need a Wings TTS. Ban our lord and savior please. Stan: Don't ban Jesus. I want to eat a Georgia Red Hot out of his ass. Spicy! Yowie!",
+      "commands": [
+        "dsp",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787955302,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Optimus_Prime: men, its time to get hard and blow a load! I, am Optimus prime and i send these loads across the stars to bring menkind across the galaxy!",
+      "commands": [
+        "prime"
+      ]
+    },
+    {
+      "ts": 1787955249,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Optimus_prime: Till all are one. Roll out!",
+      "commands": [
+        "prime"
+      ]
+    },
+    {
+      "ts": 1787954955,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Optimus: men, its time to get hard and blow a load! rip Peter Cullen.",
+      "commands": [
+        "optimus"
+      ]
+    },
+    {
+      "ts": 1787954790,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Masterchief: men, a man among men has arrived",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1787954266,
+      "username": "@devinlyda",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Witch: I\u2019m not going to put it in a bottle and brest feed it to you. Bring on the filthy. Birds.",
+      "commands": [
+        "witch"
+      ]
+    },
+    {
+      "ts": 1787952961,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harman: I have arrived. Took a dump this morning and didn't have to wipe. No brown around the hole. Stan: A clean hole, you say?! Ohh daddy! YEEEAAHH!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787952614,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Eric: howya Dooin stanley, doin Goood? Stan: I thought I banned you, Eric. Get that bodywax yet, ya lil Sasquatch? Eric: Oww! It Hurts, my Yass!! :pea_pod:",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787952482,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: I'm here. Restart the stream. Listen, stare at a porcelain bird and shoot ropes. Trump: Robust ropes, with Frank, right onto your controller.",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787951967,
+      "username": "@jeffery-tucker",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Trump: LOATHSOME DUNGEATER!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787950094,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Stan: (honk)inmyhairyass(gnome)(honk)OeieaY(gnome)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1787948605,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: reacting to GTA 6.It will save the business",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787948412,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: alalalalalalalalalalalalalalalalalalala ack!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787948325,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: rich! baby! I've been bad. spank me! (yoda)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787948167,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: You are now picturing me with nipple tassels",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787946623,
+      "username": "@Newhouseestates",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Harmon: Pokemon legends ZA looks better than this",
+      "commands": [
+        "harmon"
+      ]
+    },
+    {
+      "ts": 1787946564,
+      "username": "@jorethor",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: Oh elden ring! elden ring! birds",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787946198,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: Shut thuff huck up and eet it!! Eat It!! :banana:",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787945697,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Eric: \u82ad\u82ad\u82ad\u82ad\u82ad\u82ado\u82ado(noice)o\u82ado\u82ad\u82ad\u82ad\u82ad\u82ado\u82ado(quack)o\u82ado\u82ad\u82ad\u82ad\u82ad\u82ad\u82ad",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1787944645,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Phil: ack-ack ack AckAck Ack-Ack Ack Ack!!o(honk)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1787943410,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Hobo: two things you tarnished flashing man, I got a iphone 17 pro after traded it from my note 20 and check your email for the songs I sent you.",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1787943028,
+      "username": "@SirReginaldFannybottom",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "TRUMP: elden ring is my all time favorite game.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1787943003,
+      "username": "@TheTenoray",
+      "platform": "youtube",
+      "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+      "message": "Elden Rich: Birdished Edition with DLC Shadow of the Bob Tree",
+      "commands": [
+        "rich"
+      ]
+    },
     {
       "ts": 1787808408,
       "username": "@yapyapjr8908",
