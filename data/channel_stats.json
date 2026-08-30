@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787978126,
+  "updated_ts": 1788064756,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -850,7 +850,8 @@
     "the_bob_lavari_late_stream_2026-08-27_022739",
     "late_night_stream_until_430_2026-08-27_030013",
     "im_so_confused_2026-08-27_030318",
-    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738"
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15285,6 +15286,23 @@
       "avg_chat_mpm": 6.15,
       "avg_active_chatters": 15.81,
       "percent_paused": 83.8
+    },
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558": {
+      "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
+      "title": "I Think Lolcow Live Is Really Dying #lcu",
+      "start_ts": 1788053167,
+      "end_ts": 1788064546,
+      "duration_sec": 11379,
+      "youtube_archive_id": "uhoUcZGfYCo",
+      "source_platform": "youtube",
+      "total_donations_usd": 385.82,
+      "donation_count": 89,
+      "donations_per_min": 2.0344,
+      "peak_viewers": 441,
+      "avg_viewers": 388.74,
+      "avg_chat_mpm": 14.83,
+      "avg_active_chatters": 34.39,
+      "percent_paused": 92.0
     }
   }
 }
