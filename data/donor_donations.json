@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1787978121,
+  "updated_ts": 1788064751,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -850,7 +850,8 @@
     "the_bob_lavari_late_stream_2026-08-27_022739",
     "late_night_stream_until_430_2026-08-27_030013",
     "im_so_confused_2026-08-27_030318",
-    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738"
+    "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9555,6 +9556,21 @@
       ],
       "source_vod_id": "4XOdrQ69sNk",
       "source_platform": "youtube"
+    },
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558": {
+      "title": "I Think Lolcow Live Is Really Dying #lcu",
+      "start_ts": 1788053167,
+      "youtube_archive_id": "uhoUcZGfYCo",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "uhoUcZGfYCo",
+          "start_ts": 1788053167
+        }
+      ],
+      "source_vod_id": "g2slvwU3-7A",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -12419,6 +12435,14 @@
       }
     ],
     "885thBatmanFan": [
+      {
+        "ts": 1788055337,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Thought the OG Gameboy shell was boring. Re-shelled it to translucent black. Screen protector is crimson. Keep the OG battery cover panel as a spare.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787197382,
         "type": "superchat",
@@ -17022,6 +17046,14 @@
     ],
     "evildetrution5426": [
       {
+        "ts": 1788062245,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Spaceballs eat your heart out",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1786675624,
         "type": "membership",
         "amount_usd": 1.99,
@@ -19392,6 +19424,14 @@
     ],
     "TonyThePony452": [
       {
+        "ts": 1788062335,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: I agree with 1316 killer. OG Xbox 1 better",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1786500222,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -19831,6 +19871,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1788054587,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787954403,
         "type": "superchat",
@@ -20667,6 +20715,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1788059412,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Masterchief: listen, remember to embrace the farts. in other news the councils have elected a new therapist for the empire. Stan: oh l love this new job! now spread em! its for your health Doom: do it",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054914,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Grandpa: jesus christ, the holy oracle said ages ago that lolcow live would be purged like a turd from my ass. why is it still here? Masterchief: it wont be for long. all ships, ready the MEC cannons!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053150,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Masterchief: listen you old fart, het out the cellophane and ill prove it had baked beans. Stan: ohhh yeaaa daddy, ill take those turds!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053008,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: men, I had baked beans. embrace farts",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787967726,
         "type": "superchat",
@@ -23227,6 +23307,46 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1788061001,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Miyamoto revealed Nutty Professor is coming to Switch Online. If you were a real gamer and not a tourist.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788058960,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I don't understand the issue. I use AI for shit as a tool for creativity. I hate AI, I see it's benefits, and I understand the bad outweighs the good.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053375,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Did you see Bill Gates's AI warning?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053183,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788052879,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I beat Blasphemous. Congratulate me.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787969348,
         "type": "superchat",
@@ -28501,6 +28621,14 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1788063051,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: I beat condemned: criminal origins, as part of the ps blackout. its a great horror game. you'd like the parrying mechanic in this game",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787808099,
         "type": "superchat",
@@ -39627,6 +39755,22 @@
       }
     ],
     "burrito_massuci": [
+      {
+        "ts": 1788060919,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Just got approved to deliver for door dash just to buy myself a 4tb nvme. Never had to do this before",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788055396,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787951422,
         "type": "sub",
@@ -56808,6 +56952,22 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1788061611,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "they would make a game almost out of anything back then. Remember when they made an unreleasd NES Dracula game spondered by Reebok?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788060918,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "this was supposed to be a real game never released",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787623850,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -56873,6 +57033,14 @@
       }
     ],
     "SeymourDemonica": [
+      {
+        "ts": 1788059171,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I hate/tolerate AI usage, but I also am not stupid enough to ignore the point was not about AI usage but wasting time not being our president.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787946767,
         "type": "superchat",
@@ -62752,6 +62920,54 @@
     ],
     "respergu13": [
       {
+        "ts": 1788062063,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman:Rich, let\u2019s have a debate about video games",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788058443,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Rich , would you forgive one 2 cents?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788055234,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich, my Pokemon God Pack is 100% legit",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054510,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA , I hate you!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054015,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: it\u2019s generative AI",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053422,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Harman: Rich, is it true huge dil does in the arse is bad for your health!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787976717,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -63605,6 +63821,38 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1788060410,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Becky is going to show the messages now.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053867,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: in terminator 2 skynet becomes self aware on Aug 29, 2029 at 2:14am. we go almost 3 years now.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053518,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: well he's dead so.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788052904,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: the nepal flood looked terrifying those poor people.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787808408,
         "type": "superchat",
@@ -65396,6 +65644,38 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1788063205,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Uncle Rico",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788058360,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "He\u2019s why shampoo bottles have instructions huh",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788057494,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Wow Trump only got 59 ReTruths on that one he really fell off",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054158,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Generative AI is already here. All the LLMs are examples of it. Artificial General Intelligence is not the same thing. Harmen is a moron",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787634622,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -65967,6 +66247,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1788060114,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Good night assholes....hope everyone's safe!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787957834,
         "type": "superchat",
@@ -84550,6 +84838,22 @@
     ],
     "niallwilliamson3540": [
       {
+        "ts": 1788053404,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Imagine putting the most notorious anti vaxxer in the world as the Secretary of Health and Human Services. Like what could go wrong?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788052937,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Trump: Jay got fired and his PC hacked. But Rich gave up his planned attack. Phil: Code was broken but bounds like blue balls.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787954410,
         "type": "superchat",
         "amount_usd": 6.74,
@@ -91322,6 +91626,22 @@
     ],
     "Marzrep": [
       {
+        "ts": 1788058301,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I absolutely hate AI, but even all the platforms we use now all use it. So by that logic where do we set the limits",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788055648,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Really good review today, hope to see more",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787961967,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -91759,6 +92079,14 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1788053954,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Keem is a :beverage_box: he takes 50% of shows that make 100$:face_with_tears_of_joy:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787801335,
         "type": "superchat",
@@ -92866,6 +93194,14 @@
     ],
     "Keldoh3ad": [
       {
+        "ts": 1788057437,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Doom: I farted and swear the lights flickered.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787618351,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -93067,6 +93403,14 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1788060967,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "If you ever banned me, I'd be forced to take my business to Phil. So please don't ban me.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787805282,
         "type": "giftmembership",
@@ -93557,6 +93901,14 @@
       }
     ],
     "RushilPatel-oe7hn": [
+      {
+        "ts": 1788053715,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "As for lolcows and making fun of them, I mean it is inevitable because continuously making fun of the same type of person eventually gets old and it doesn\u2019t really contribute much to society",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787629588,
         "type": "superchat",
@@ -94734,6 +95086,14 @@
     ],
     "superSONIC_star": [
       {
+        "ts": 1788053167,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 31 months",
+        "message": "RFK Jr said people should die quicker in hospices.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787797995,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -95806,6 +96166,14 @@
     ],
     "Hellrazer8504": [
       {
+        "ts": 1788057410,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787631536,
         "type": "membership",
         "amount_usd": 1.99,
@@ -95831,6 +96199,22 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1788056271,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "\ud83e\udd77\ud83c\udffb",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788056207,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": ":sweat_droplets:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787797955,
         "type": "giftmembership",
@@ -117812,6 +118196,14 @@
     ],
     "Toast935": [
       {
+        "ts": 1788054675,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "I\u2019m a 17 month man. Clap my yass and call me sally!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787944773,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -119430,6 +119822,14 @@
     ],
     "jorethor": [
       {
+        "ts": 1788057721,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "trump: i own the birds now, birds",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787946564,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -119495,6 +119895,14 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1788061263,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I saw Becky\u2019s dimples and I have great regrets",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787630786,
         "type": "superchat",
@@ -121557,6 +121965,22 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1788053160,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "More importantly I have a dark sense of humor from my trauma & I don\u2019t find anything this hateful bearded creep does as amusing whatsoever! Love you bird family and bird father! Thank you rich :peace_symbol:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788052986,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I hope this is true; all keem does is take advantage of miserable situations and for some reason there\u2019s enough sadists who watch it for reasons:pensive_face:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787951698,
         "type": "membership",
@@ -128352,6 +128776,14 @@
     ],
     "assmangold": [
       {
+        "ts": 1788058370,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 23 months",
+        "message": "Phil: They twitted my tipples as part of the abuse",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1784949009,
         "type": "membership",
         "amount_usd": 1.99,
@@ -128479,6 +128911,14 @@
       }
     ],
     "EzraBones420": [
+      {
+        "ts": 1788061830,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I had the 7-Up game Cool Spot on Sega Genesis \ud83e\udd18\ud83c\udffc",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787638415,
         "type": "giftmembership",
@@ -132662,6 +133102,14 @@
     ],
     "Sphericalman01": [
       {
+        "ts": 1788061795,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: Rich will you milk MY cow?? Harman: I want to stoke Pikachu's meat! Phil: band band band band! Stan: milk my cow in the backdoor, uggh! Trump: Y",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787270478,
         "type": "membership",
         "amount_usd": 1.99,
@@ -133630,6 +134078,22 @@
     ],
     "tougeruzbay": [
       {
+        "ts": 1788060697,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "My PlayStation email, label song suggestions",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788060487,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Stan: Rich, play my songs, waiting hard with birds",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787976023,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -134225,6 +134689,30 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1788057691,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I pulled a Jeremy except it was an Olive Garden",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054988,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "It means that if you pre-order \u201cphysical\u201d GTA 6 from Target it\u2019ll be here by the pre load date",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788054817,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Physical GTA 6 is being delivered by Pre load date",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787538795,
         "type": "membership",
@@ -140172,6 +140660,14 @@
     ],
     "JeremysBlackWalMartBouncer": [
       {
+        "ts": 1788057889,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: win or lose, you all can go to hell with me",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787547136,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -140255,6 +140751,14 @@
       }
     ],
     "zachbischoff1853": [
+      {
+        "ts": 1788054498,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: sup rich! just started playing elden ring, i'm having so much fun! haven't played a souls game before. you should play more on stream",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787963052,
         "type": "giftmembership",
@@ -143193,6 +143697,22 @@
       }
     ],
     "apks94": [
+      {
+        "ts": 1788053173,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788053159,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787546325,
         "type": "membership",
@@ -164794,6 +165314,14 @@
     ],
     "Rassleholic": [
       {
+        "ts": 1788057621,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 55 months",
+        "message": "And remember folks, this man has access to nuclear weapons...",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1786494457,
         "type": "membership",
         "amount_usd": 1.99,
@@ -170210,6 +170738,22 @@
     ],
     "bonedragon7665": [
       {
+        "ts": 1788063889,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I hear that the LCU is tanking so bad that Keem had to sell his zehx shed",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788059553,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich checkout Streamerbot it is free and includes a combined chat for Twitch Youtube and Kick",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787623519,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -172043,6 +172587,14 @@
       }
     ],
     "joshk9317": [
+      {
+        "ts": 1788062918,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "Phil: Rich listen, just ban the entire audience and make them pay to be unbanned",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1781141356,
         "type": "membership",
@@ -176025,6 +176577,14 @@
       }
     ],
     "macmega2149": [
+      {
+        "ts": 1788063946,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Just joined the stream. Can you give the TL:DR on why LCL is dead or dying? Also, WTF is a 8 Bit Eric?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787957499,
         "type": "superchat",
@@ -197619,6 +198179,14 @@
       }
     ],
     "1BUFFWEEB": [
+      {
+        "ts": 1788059456,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 9 months",
+        "message": "as a previous host of the LCU this is funny",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1786489844,
         "type": "membership",
@@ -228169,6 +228737,30 @@
       }
     ],
     "UglyNacho": [
+      {
+        "ts": 1788059235,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Trump is a traitor to this country and the people.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788058447,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "My bad. Whatever that guy said was dumb as hell",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788058292,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Trump making AI videos of him pooping on protestors = you using AI thumbnails. Wut",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787945689,
         "type": "superchat",
@@ -329423,6 +330015,14 @@
       }
     ],
     "RealGhostbuster": [
+      {
+        "ts": 1788054944,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Rich, Google Sony may delay digital future, because Microsoft is now putting pressure on them for disc to digital program. Plus all the pressure!",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1704500138,
         "type": "superchat",
@@ -499034,6 +499634,14 @@
     ],
     "WithDreday": [
       {
+        "ts": 1788053048,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Most have too much going on to watch Lol Cow Live",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1651712837,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -534130,6 +534738,14 @@
     ],
     "Orange_Yoshi_64": [
       {
+        "ts": 1788060983,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: I support People's desire to download roms and emulators. I am in favor of 60 FPS GC mods. The Retroid has a better screen than the switch 2.",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
         "ts": 1787266937,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -534225,6 +534841,30 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1788061502,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 why hand \ud83d\udc4c\ud83c\udffb when you have mouth to oral milk \ud83d\udc04 cow \ud83d\ude08\ud83e\udd23\ud83e\udd23\ud83e\udd23. Phil will 1000% enjoy watching that on May 1st \ud83d\ude06",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788061142,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich did you saw the email I sent yesterday of Trump trash talk recycle bin statue. I think Ireland or was it wales build that. U will enjoy it",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788059117,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 hey Rich, diving into politics? I'm all in. Real talk: what's actually behind Iran's long-running anti-US/Israel chants? Given Israel's decades of civilian casualties and aggression, and let's not forget every year these zios chant all the time. The privilege and audacity western countries has provided to them and then blame on Islam and Muslim why do Republicans and corpate Democrats re-tard-s blame Iran for chanting while Trump makes AI making himself foolish by bombing Iran?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787965391,
         "type": "bits",
@@ -534341,6 +534981,38 @@
       }
     ],
     "SolidPakAmericanHorseman": [
+      {
+        "ts": 1788064026,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "$900 PS5 Pro selling out quick cuz of 30fps gta6 :grinning_squinting_face:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788061786,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: ah ah ah ah ah ah! I'm comin. Trump: grab it",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788060545,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "DSP: Chat say I\u2019m washed they r so mean. Trump: Phil, biggest washed-up loser ever. Build a huge beautiful wall around that toxic chat. Best wall. People will say wow. DSP: Donation goal for the wall?",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
+      {
+        "ts": 1788059268,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "hey Rich. happy seeing u streaming.missed cheer100",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      },
       {
         "ts": 1787803593,
         "type": "superchat",
@@ -534616,6 +535288,76 @@
         "amount_raw": "$10.00",
         "message": "Hi Richie! I was wanting to ask this for awhile. I remember Jer had a lot of beef with u some years back, what's your thoughts about him today after all the feltering he has gotten.",
         "stream_id": "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738"
+      }
+    ],
+    "pneuma-mz1lx": [
+      {
+        "ts": 1788052886,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Exposed sir",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "carlwilson82": [
+      {
+        "ts": 1788053817,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Why am I here also? \ud83d\ude1c",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "programmable_mouse5583": [
+      {
+        "ts": 1788058009,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Bad when trump does it, based when you use A.I LOL",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "AshtonKaston": [
+      {
+        "ts": 1788059084,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: (slap)0oo,pikachu(slip)W(slap)hmf(pipes)",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "JackieFuckingChan": [
+      {
+        "ts": 1788059184,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Boogie is NOT as bad as ppl say, I root for him",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "iBLUEmyself": [
+      {
+        "ts": 1788060164,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "I need that Money! I JUST DO DAMMIT! rtuCucumbers",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "Gamerfreak-MLP-Lover20248": [
+      {
+        "ts": 1788064393,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "I almost guarantee keem nuked labrowski because he knew eventually he would expose him for having cows donate to other shows to get dents to donate then refund the cows plus money on top of that. :poultry_leg: :poultry_leg:",
+        "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
       }
     ]
   }
