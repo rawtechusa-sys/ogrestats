@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788201056,
+  "updated_ts": 1788202452,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -18,7 +18,8 @@
     "i_got_screwed",
     "man_and_birds_vs_karens",
     "man_versus_carolina_reaper_jerky",
-    "lets_discuss_xbox_and_activision"
+    "lets_discuss_xbox_and_activision",
+    "men_birds_and_samurai_cop"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -214,6 +215,16 @@
       "archive_start_ts": 1642555954,
       "segments": null,
       "source_vod_id": "xwiMObajnyA",
+      "source_platform": "youtube"
+    },
+    "men_birds_and_samurai_cop": {
+      "title": "Men, Birds And Samurai Cop",
+      "start_ts": 1642455022,
+      "youtube_archive_id": "WuJpv9EXJj8",
+      "archive_org_id": "ogrewatch-men_birds_and_samurai_cop",
+      "archive_start_ts": 1642455022,
+      "segments": null,
+      "source_vod_id": "kmrKt2riDlQ",
       "source_platform": "youtube"
     }
   },
