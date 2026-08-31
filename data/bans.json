@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788195372,
+  "updated_ts": 1788199590,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -16,7 +16,8 @@
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
     "more_predator_roasting",
     "i_got_screwed",
-    "man_and_birds_vs_karens"
+    "man_and_birds_vs_karens",
+    "man_versus_carolina_reaper_jerky"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -192,6 +193,16 @@
       "archive_start_ts": 1642814069,
       "segments": null,
       "source_vod_id": "jcLJL4X1Wmk",
+      "source_platform": "youtube"
+    },
+    "man_versus_carolina_reaper_jerky": {
+      "title": "Man Versus Carolina Reaper Jerky",
+      "start_ts": 1642727617,
+      "youtube_archive_id": "rlcTupHB4EY",
+      "archive_org_id": "ogrewatch-man_versus_carolina_reaper_jerky",
+      "archive_start_ts": 1642727617,
+      "segments": null,
+      "source_vod_id": "vd0P-fyhqVs",
       "source_platform": "youtube"
     }
   },
