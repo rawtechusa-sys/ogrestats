@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788176080,
+  "updated_ts": 1788179535,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -11,7 +11,8 @@
     "an_important_announcements",
     "lets_laugh_at_crap_crowdfunding_campaigns",
     "just_watching_some_butt_slapping_competitions",
-    "playing_wii_u_launch_games_like_a_man"
+    "playing_wii_u_launch_games_like_a_man",
+    "reddit_cringe_feat_birds"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -137,6 +138,16 @@
       "archive_start_ts": 1644863094,
       "segments": null,
       "source_vod_id": "eiC3Ea7xy0k",
+      "source_platform": "youtube"
+    },
+    "reddit_cringe_feat_birds": {
+      "title": "Reddit Cringe (Feat. Birds)",
+      "start_ts": 1643591530,
+      "youtube_archive_id": "QraP1o0ju7Y",
+      "archive_org_id": "ogrewatch-reddit_cringe_feat_birds",
+      "archive_start_ts": 1643591530,
+      "segments": null,
+      "source_vod_id": "doyVMIFdShE",
       "source_platform": "youtube"
     }
   },
