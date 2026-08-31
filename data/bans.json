@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788209989,
+  "updated_ts": 1788214402,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -21,7 +21,8 @@
     "lets_discuss_xbox_and_activision",
     "men_birds_and_samurai_cop",
     "come_ask_questions_no_vids_tonight",
-    "a_birdman_family_friendly_love_stream"
+    "a_birdman_family_friendly_love_stream",
+    "come_ask_a_man_questions_poultry_edition"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -247,6 +248,16 @@
       "archive_start_ts": 1641868752,
       "segments": null,
       "source_vod_id": "jqNfTaLXdrI",
+      "source_platform": "youtube"
+    },
+    "come_ask_a_man_questions_poultry_edition": {
+      "title": "Come Ask A Man Questions (Poultry Edition)",
+      "start_ts": 1641600531,
+      "youtube_archive_id": "y7w_3z-oCjY",
+      "archive_org_id": "ogrewatch-come_ask_a_man_questions_poultry_edition",
+      "archive_start_ts": 1641600531,
+      "segments": null,
+      "source_vod_id": "WGSA5Eaw1Vw",
       "source_platform": "youtube"
     }
   },
