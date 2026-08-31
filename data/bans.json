@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788182047,
+  "updated_ts": 1788185162,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -13,7 +13,8 @@
     "just_watching_some_butt_slapping_competitions",
     "playing_wii_u_launch_games_like_a_man",
     "reddit_cringe_feat_birds",
-    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes"
+    "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
+    "more_predator_roasting"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -159,6 +160,16 @@
       "archive_start_ts": 1643404631,
       "segments": null,
       "source_vod_id": "YnGOIjZAncg",
+      "source_platform": "youtube"
+    },
+    "more_predator_roasting": {
+      "title": "More Predator Roasting",
+      "start_ts": 1643332202,
+      "youtube_archive_id": "5f7IKZouTJA",
+      "archive_org_id": "ogrewatch-more_predator_roasting",
+      "archive_start_ts": 1643332202,
+      "segments": null,
+      "source_vod_id": "ixspitz-awo",
       "source_platform": "youtube"
     }
   },
