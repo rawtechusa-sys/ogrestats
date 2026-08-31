@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788185162,
+  "updated_ts": 1788190517,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -14,7 +14,8 @@
     "playing_wii_u_launch_games_like_a_man",
     "reddit_cringe_feat_birds",
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
-    "more_predator_roasting"
+    "more_predator_roasting",
+    "i_got_screwed"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -170,6 +171,16 @@
       "archive_start_ts": 1643332202,
       "segments": null,
       "source_vod_id": "ixspitz-awo",
+      "source_platform": "youtube"
+    },
+    "i_got_screwed": {
+      "title": "I Got Screwed",
+      "start_ts": 1642902538,
+      "youtube_archive_id": "iAembEpzYDs",
+      "archive_org_id": "ogrewatch-i_got_screwed",
+      "archive_start_ts": 1642902538,
+      "segments": null,
+      "source_vod_id": "lRoNYW1h-ig",
       "source_platform": "youtube"
     }
   },
