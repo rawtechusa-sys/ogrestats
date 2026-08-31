@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788174382,
+  "updated_ts": 1788176080,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -10,7 +10,8 @@
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "an_important_announcements",
     "lets_laugh_at_crap_crowdfunding_campaigns",
-    "just_watching_some_butt_slapping_competitions"
+    "just_watching_some_butt_slapping_competitions",
+    "playing_wii_u_launch_games_like_a_man"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -126,6 +127,16 @@
       "archive_start_ts": 1645415893,
       "segments": null,
       "source_vod_id": "uRajRPWAV04",
+      "source_platform": "youtube"
+    },
+    "playing_wii_u_launch_games_like_a_man": {
+      "title": "Playing Wii U Launch Games Like A Man",
+      "start_ts": 1644863094,
+      "youtube_archive_id": "EorpbVva1bE",
+      "archive_org_id": "ogrewatch-playing_wii_u_launch_games_like_a_man",
+      "archive_start_ts": 1644863094,
+      "segments": null,
+      "source_vod_id": "eiC3Ea7xy0k",
       "source_platform": "youtube"
     }
   },
