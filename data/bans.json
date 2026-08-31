@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788214402,
+  "updated_ts": 1788216837,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -22,7 +22,8 @@
     "men_birds_and_samurai_cop",
     "come_ask_questions_no_vids_tonight",
     "a_birdman_family_friendly_love_stream",
-    "come_ask_a_man_questions_poultry_edition"
+    "come_ask_a_man_questions_poultry_edition",
+    "lets_chat_plus_birds"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -258,6 +259,16 @@
       "archive_start_ts": 1641600531,
       "segments": null,
       "source_vod_id": "WGSA5Eaw1Vw",
+      "source_platform": "youtube"
+    },
+    "lets_chat_plus_birds": {
+      "title": "Let's Chat (Plus Birds)",
+      "start_ts": 1641432207,
+      "youtube_archive_id": "d6Xmpb8NSi0",
+      "archive_org_id": "ogrewatch-lets_chat_plus_birds",
+      "archive_start_ts": 1641432207,
+      "segments": null,
+      "source_vod_id": "oAJsMyHmsio",
       "source_platform": "youtube"
     }
   },
