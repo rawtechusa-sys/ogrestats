@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788190517,
+  "updated_ts": 1788195372,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -15,7 +15,8 @@
     "reddit_cringe_feat_birds",
     "a_stoned_irrelevant_youtuber_plays_sim_city_on_the_snes",
     "more_predator_roasting",
-    "i_got_screwed"
+    "i_got_screwed",
+    "man_and_birds_vs_karens"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -181,6 +182,16 @@
       "archive_start_ts": 1642902538,
       "segments": null,
       "source_vod_id": "lRoNYW1h-ig",
+      "source_platform": "youtube"
+    },
+    "man_and_birds_vs_karens": {
+      "title": "Man And Birds Vs. Karens",
+      "start_ts": 1642814069,
+      "youtube_archive_id": "l-eQJhIVh10",
+      "archive_org_id": "ogrewatch-man_and_birds_vs_karens",
+      "archive_start_ts": 1642814069,
+      "segments": null,
+      "source_vod_id": "jcLJL4X1Wmk",
       "source_platform": "youtube"
     }
   },
