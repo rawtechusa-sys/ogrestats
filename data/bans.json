@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788247490,
+  "updated_ts": 1788248749,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -32,7 +32,8 @@
     "sssniperwolf_and_lindsay_ellis_drama",
     "middle_aged_men_complain_about_video_games",
     "the_christmas_man",
-    "a_xmas_eve_bird_stream_pt2"
+    "a_xmas_eve_bird_stream_pt2",
+    "a_xmas_eve_bird_stream"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -368,6 +369,16 @@
       "archive_start_ts": 1640395923,
       "segments": null,
       "source_vod_id": "L-p3yUl6Buo",
+      "source_platform": "youtube"
+    },
+    "a_xmas_eve_bird_stream": {
+      "title": "A Xmas Eve Bird Stream",
+      "start_ts": 1640379739,
+      "youtube_archive_id": "4f3pngchTE4",
+      "archive_org_id": "ogrewatch-a_xmas_eve_bird_stream",
+      "archive_start_ts": 1640379739,
+      "segments": null,
+      "source_vod_id": "bcpmvqBLjJI",
       "source_platform": "youtube"
     }
   },
