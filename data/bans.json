@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788223829,
+  "updated_ts": 1788229236,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -25,7 +25,8 @@
     "come_ask_a_man_questions_poultry_edition",
     "lets_chat_plus_birds",
     "its_all_about_keemstar_and_birds",
-    "lets_laugh_at_qvc"
+    "lets_laugh_at_qvc",
+    "im_back_and_on_a_warpath"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -291,6 +292,16 @@
       "archive_start_ts": 1641256836,
       "segments": null,
       "source_vod_id": "iwTmvZwUSno",
+      "source_platform": "youtube"
+    },
+    "im_back_and_on_a_warpath": {
+      "title": "I'm Back And On A Warpath",
+      "start_ts": 1641168322,
+      "youtube_archive_id": "WPDyEFfGvRg",
+      "archive_org_id": "ogrewatch-im_back_and_on_a_warpath",
+      "archive_start_ts": 1641168322,
+      "segments": null,
+      "source_vod_id": "7rPn8JoNSbY",
       "source_platform": "youtube"
     }
   },
