@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788231986,
+  "updated_ts": 1788235068,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -27,7 +27,8 @@
     "its_all_about_keemstar_and_birds",
     "lets_laugh_at_qvc",
     "im_back_and_on_a_warpath",
-    "nye_with_a_man_and_birds"
+    "nye_with_a_man_and_birds",
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -313,6 +314,16 @@
       "archive_start_ts": 1641000448,
       "segments": null,
       "source_vod_id": "ZoX5otQCh54",
+      "source_platform": "youtube"
+    },
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream": {
+      "title": "An EDP445 Exposed (SunnyV2) New Years Eve Livestream",
+      "start_ts": 1640980324,
+      "youtube_archive_id": "_hra5CWPr7I",
+      "archive_org_id": "ogrewatch-an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+      "archive_start_ts": 1640980324,
+      "segments": null,
+      "source_vod_id": "8AuBhUkpkbQ",
       "source_platform": "youtube"
     }
   },
