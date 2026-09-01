@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788221534,
+  "updated_ts": 1788223829,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -24,7 +24,8 @@
     "a_birdman_family_friendly_love_stream",
     "come_ask_a_man_questions_poultry_edition",
     "lets_chat_plus_birds",
-    "its_all_about_keemstar_and_birds"
+    "its_all_about_keemstar_and_birds",
+    "lets_laugh_at_qvc"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -280,6 +281,16 @@
       "archive_start_ts": 1641346931,
       "segments": null,
       "source_vod_id": "4b80dTR7law",
+      "source_platform": "youtube"
+    },
+    "lets_laugh_at_qvc": {
+      "title": "Let's Laugh At QVC",
+      "start_ts": 1641256836,
+      "youtube_archive_id": "0-_P3-Fm5Cw",
+      "archive_org_id": "ogrewatch-lets_laugh_at_qvc",
+      "archive_start_ts": 1641256836,
+      "segments": null,
+      "source_vod_id": "iwTmvZwUSno",
       "source_platform": "youtube"
     }
   },
