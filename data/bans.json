@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788254732,
+  "updated_ts": 1788255965,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -36,7 +36,8 @@
     "a_xmas_eve_bird_stream",
     "the_fallout_3_marathon_man_stream",
     "come_ask_me_whatever_the_hell_you_want",
-    "a_jodi_arias_holiday_special"
+    "a_jodi_arias_holiday_special",
+    "chris_watts_in_4k"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -412,6 +413,16 @@
       "archive_start_ts": 1640135169,
       "segments": null,
       "source_vod_id": "QzGxuST3mhA",
+      "source_platform": "youtube"
+    },
+    "chris_watts_in_4k": {
+      "title": "Chris Watts In 4K",
+      "start_ts": 1639796551,
+      "youtube_archive_id": "fiFsNRa6VmI",
+      "archive_org_id": "ogrewatch-chris_watts_in_4k",
+      "archive_start_ts": 1639796551,
+      "segments": null,
+      "source_vod_id": "fSNpaaK9FMk",
       "source_platform": "youtube"
     }
   },
