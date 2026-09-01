@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788235068,
+  "updated_ts": 1788237720,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -28,7 +28,8 @@
     "lets_laugh_at_qvc",
     "im_back_and_on_a_warpath",
     "nye_with_a_man_and_birds",
-    "an_edp445_exposed_sunnyv2_new_years_eve_livestream"
+    "an_edp445_exposed_sunnyv2_new_years_eve_livestream",
+    "sssniperwolf_and_lindsay_ellis_drama"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -324,6 +325,16 @@
       "archive_start_ts": 1640980324,
       "segments": null,
       "source_vod_id": "8AuBhUkpkbQ",
+      "source_platform": "youtube"
+    },
+    "sssniperwolf_and_lindsay_ellis_drama": {
+      "title": "SSSniperWolf And Lindsay Ellis Drama",
+      "start_ts": 1640823392,
+      "youtube_archive_id": "raP_TLoLDGs",
+      "archive_org_id": "ogrewatch-sssniperwolf_and_lindsay_ellis_drama",
+      "archive_start_ts": 1640823392,
+      "segments": null,
+      "source_vod_id": "N_0Kz238Tis",
       "source_platform": "youtube"
     }
   },
