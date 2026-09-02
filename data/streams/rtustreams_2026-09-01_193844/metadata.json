@@ -3,7 +3,7 @@
   "slug": "rtustreams",
   "title": "rtustreams",
   "start_ts": 1788291552,
-  "end_ts": null,
+  "end_ts": 1788327066,
   "platforms": [
     "youtube",
     "twitch",
@@ -17,5 +17,7 @@
       "archive_id": "aTEGaizXPk4",
       "start_ts": 1788291552
     }
-  ]
+  ],
+  "youtube_archive_id": "aTEGaizXPk4",
+  "archive_is_source_vod": false
 }
