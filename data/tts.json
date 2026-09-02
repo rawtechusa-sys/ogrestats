@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788064748,
+  "updated_ts": 1788327295,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -851,19 +851,20 @@
     "late_night_stream_until_430_2026-08-27_030013",
     "im_so_confused_2026-08-27_030318",
     "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
-    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
+    "rtustreams_2026-09-01_193844"
   ],
   "commands": {
-    "men": 4,
-    "eric": 191,
-    "phil": 432,
-    "stan": 327,
+    "men": 5,
+    "eric": 193,
+    "phil": 433,
+    "stan": 331,
     "masterchief": 168,
-    "harman": 134,
-    "trump": 150,
+    "harman": 135,
+    "trump": 151,
     "moist": 31,
     "dagoth": 5,
-    "zesty": 35,
+    "zesty": 36,
     "linus": 38,
     "grandpa": 29,
     "girlfriend": 9,
@@ -10144,9 +10145,97 @@
       ],
       "source_vod_id": "g2slvwU3-7A",
       "source_platform": "youtube"
+    },
+    "rtustreams_2026-09-01_193844": {
+      "title": "rtustreams",
+      "start_ts": 1788291552,
+      "youtube_archive_id": "aTEGaizXPk4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "aTEGaizXPk4",
+          "start_ts": 1788291552
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1788314779,
+      "username": "TNMGaming_",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Council of men: This is mphickman. What are we watching tonight? My Carlos twin is a bird and he\u2019s ready to watch",
+      "commands": [
+        "men"
+      ]
+    },
+    {
+      "ts": 1788312078,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer1000 Phil: Richard, it\u2019s King Phil. I don\u2019t why you\u2019re on Twitch only tonight and not on YouTube. Nevertheless I must charge you the King\u2019s Tax as I would for anyone in order to open Pokemon card packs. Also, please don\u2019t sexualize my wife, she should be respected! Harman: I would respect Pikachu even more even if I could legally marry a fictional Nintendo character, but since it\u2019s not possible I guess I\u2019ll have to settle for spooging all over him time and time again! Excelsior! (thwomp)",
+      "commands": [
+        "phil",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788306063,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer1000 Trump: Attention all men! Attention all women! I your beloved President For Life Donald J. Trump have an announcement to make! I am through promoting Trump Phones, and Trump Bitcoin! My new favorite product is called Chris Hansen's Old Fashioned Chocolate Chip Cookies! They are beloved by all my friends like Jeffrey Epstein, Bill Gates, and many other Pedos! As seen on NBC\u2019s To Catch A Predator! And for some completely unrelated reason, I seem to love them too! (eating)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788303841,
+      "username": "thechange1ing",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer100 Stan: How do you do, fellow pedophiles?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788303183,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer1000 Stan: Richie I just heard about your ambitious plans to use me in your new music album. I am going to have to insist on you sending me some royalty checks ASAP. After all, even down here in the flames of Hell having a bit of cash comes in handy! Please write the check on asbestos stationary though, just to be safe! Now if you excuse me I have a double date with Jeffrey Dahmer! (sad_trombone)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788294523,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer1000 (door_knock) Stan: Happy PDF Stream Rich! It\u2019s me your old buddy Stanley! I brought a surprise for my new friend Mr. Citrus from the Home Shopping Network! (pants_unzip) Zesty: How you feelin\u2019 Stanley, you feelin\u2019 good? (slow_clap) Stan: I have a green salad that I want you to toss Mr. Citrus! (whipcrack) Eric: Wow, that is so gay! I would never do any of this stuff with a guy\u2026 unless I get to be the top! Rich, do you want to join me in the ring for some good old fashioned wrasslin\u2019?",
+      "commands": [
+        "stan",
+        "zesty",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1788292561,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "message": "Cheer1000 Eric: Rich, you are not allowed to take edibles to feel better when you are stressed... that is pathetic and weak! Dad?! Where did you hide the key to the liquor cabinet? And also the key to the gun cabinet? Alcohol plus guns equals justice for this hairy little gnome! Look out you Woke Tards!",
+      "commands": [
+        "eric"
+      ]
+    },
     {
       "ts": 1788063051,
       "username": "@lyokowarrior4296",
