@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788064751,
+  "updated_ts": 1788327299,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -851,7 +851,8 @@
     "late_night_stream_until_430_2026-08-27_030013",
     "im_so_confused_2026-08-27_030318",
     "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
-    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
+    "rtustreams_2026-09-01_193844"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9571,6 +9572,21 @@
       ],
       "source_vod_id": "g2slvwU3-7A",
       "source_platform": "youtube"
+    },
+    "rtustreams_2026-09-01_193844": {
+      "title": "rtustreams",
+      "start_ts": 1788291552,
+      "youtube_archive_id": "aTEGaizXPk4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "aTEGaizXPk4",
+          "start_ts": 1788291552
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -39158,6 +39174,14 @@
     ],
     "misslekaboom": [
       {
+        "ts": 1788313923,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 rtuCucumbers",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1787011952,
         "type": "bits",
         "amount_usd": 1.0,
@@ -39470,6 +39494,22 @@
     ],
     "Dublinpapi": [
       {
+        "ts": 1788313539,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788313452,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1787950606,
         "type": "giftsub",
         "amount_usd": 29.95,
@@ -39577,6 +39617,30 @@
       }
     ],
     "nialldude3": [
+      {
+        "ts": 1788293677,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Robert Pattison will get getting grandpa excited",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788292696,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 TTS can suck my dick. If this plays then sorry TTS.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788292133,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 a movie about Chris Hanson called Primetime is actually coming out soon. Robert Pattinson is playing Chris.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787011007,
         "type": "bits",
@@ -39816,6 +39880,22 @@
     ],
     "BloodyGB2": [
       {
+        "ts": 1788318384,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "I support a large man no matter where he streams !",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788317746,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1787024760,
         "type": "giftsub",
         "amount_usd": 29.95,
@@ -39905,6 +39985,22 @@
       }
     ],
     "J0stler": [
+      {
+        "ts": 1788310986,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788297155,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787002575,
         "type": "giftsub",
@@ -70504,6 +70600,30 @@
     ],
     "EvistoSF": [
       {
+        "ts": 1788310918,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "gifted a sub to sirreginaldfannybottom!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788298635,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "gifted a sub to nevablowingbubbles1337!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788297305,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "gifted a sub to dl5fse!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1787532555,
         "type": "sub",
         "amount_usd": 5.99,
@@ -78991,6 +79111,46 @@
       }
     ],
     "evistosf": [
+      {
+        "ts": 1788312078,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Richard, it\u2019s King Phil. I don\u2019t why you\u2019re on Twitch only tonight and not on YouTube. Nevertheless I must charge you the King\u2019s Tax as I would for anyone in order to open Pokemon card packs. Also, please don\u2019t sexualize my wife, she should be respected! Harman: I would respect Pikachu even more even if I could legally marry a fictional Nintendo character, but since it\u2019s not possible I guess I\u2019ll have to settle for spooging all over him time and time again! Excelsior! (thwomp)",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788306063,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Trump: Attention all men! Attention all women! I your beloved President For Life Donald J. Trump have an announcement to make! I am through promoting Trump Phones, and Trump Bitcoin! My new favorite product is called Chris Hansen's Old Fashioned Chocolate Chip Cookies! They are beloved by all my friends like Jeffrey Epstein, Bill Gates, and many other Pedos! As seen on NBC\u2019s To Catch A Predator! And for some completely unrelated reason, I seem to love them too! (eating)",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788303183,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Stan: Richie I just heard about your ambitious plans to use me in your new music album. I am going to have to insist on you sending me some royalty checks ASAP. After all, even down here in the flames of Hell having a bit of cash comes in handy! Please write the check on asbestos stationary though, just to be safe! Now if you excuse me I have a double date with Jeffrey Dahmer! (sad_trombone)",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788294523,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 (door_knock) Stan: Happy PDF Stream Rich! It\u2019s me your old buddy Stanley! I brought a surprise for my new friend Mr. Citrus from the Home Shopping Network! (pants_unzip) Zesty: How you feelin\u2019 Stanley, you feelin\u2019 good? (slow_clap) Stan: I have a green salad that I want you to toss Mr. Citrus! (whipcrack) Eric: Wow, that is so gay! I would never do any of this stuff with a guy\u2026 unless I get to be the top! Rich, do you want to join me in the ring for some good old fashioned wrasslin\u2019?",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788292561,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Eric: Rich, you are not allowed to take edibles to feel better when you are stressed... that is pathetic and weak! Dad?! Where did you hide the key to the liquor cabinet? And also the key to the gun cabinet? Alcohol plus guns equals justice for this hairy little gnome! Look out you Woke Tards!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787976828,
         "type": "bits",
@@ -100756,6 +100916,14 @@
     ],
     "RandyRen6": [
       {
+        "ts": 1788314066,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "I'm back baby",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1785280095,
         "type": "sub",
         "amount_usd": 5.99,
@@ -119812,6 +119980,14 @@
     ],
     "gimphandjeff": [
       {
+        "ts": 1788292140,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Lick my cock and suck on my balls.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1785298976,
         "type": "sub",
         "amount_usd": 5.99,
@@ -134690,6 +134866,22 @@
     ],
     "darce2019": [
       {
+        "ts": 1788309051,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 They later cleared the friend, because he was the only person in history TCAP to actually be innocent",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788308927,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Remember the guy who brought his friend",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1788057691,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -141150,6 +141342,14 @@
     ],
     "0xym0r0nic": [
       {
+        "ts": 1788326838,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "melatonin baby",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1784675746,
         "type": "sub",
         "amount_usd": 5.99,
@@ -143892,6 +144092,14 @@
     ],
     "TNMGaming_": [
       {
+        "ts": 1788314779,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Council of men: This is mphickman. What are we watching tonight? My Carlos twin is a bird and he\u2019s ready to watch",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1784247295,
         "type": "sub",
         "amount_usd": 5.99,
@@ -143911,6 +144119,22 @@
       }
     ],
     "selene_graves": [
+      {
+        "ts": 1788292755,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Listen, suck my girlcock. Then waterboard me with marinara sauce. Let's go.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788292504,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 How much to nut on stream? Be a thirsty bursty man. Also I heard the Hansen movie is unauthorised, he had nothing to do with it.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1784250491,
         "type": "bits",
@@ -155598,6 +155822,14 @@
     ],
     "hobbymanmike_ogshowtime": [
       {
+        "ts": 1788308727,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1783992588,
         "type": "sub",
         "amount_usd": 5.99,
@@ -155749,6 +155981,38 @@
       }
     ],
     "thechange1ing": [
+      {
+        "ts": 1788303841,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Stan: How do you do, fellow pedophiles?",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788301009,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "EDP's face legit looks like Mr Potato Head Cheer100 Cheer100",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788296236,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788295689,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 \"Have a seat\". \"Have a cupcake.\"",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787016568,
         "type": "bits",
@@ -156043,6 +156307,22 @@
       }
     ],
     "notmoondust": [
+      {
+        "ts": 1788322497,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 HE'S WATCHING TCAP, HE'S STONED HE'S HIGH HE'S RUNNING OUT OF JOKES WOOOOOOOOAH BUDDDDY",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788322165,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 \"i was gonna kill myself but then I saw how ugly this guys dick was and I felt better about myself after that\"",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1783646169,
         "type": "bits",
@@ -156586,6 +156866,14 @@
     ],
     "nukacolaxeon": [
       {
+        "ts": 1788310572,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Oh Christopher!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1783649663,
         "type": "sub",
         "amount_usd": 5.99,
@@ -156639,6 +156927,14 @@
       }
     ],
     "chainlubeandbaddecisions": [
+      {
+        "ts": 1788300153,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (2 months)!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1783654345,
         "type": "sub",
@@ -159040,6 +159336,14 @@
     ],
     "randomemeposter": [
       {
+        "ts": 1788310856,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "afternoon RTU hope you're having an amazing day and a great stream!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1783561996,
         "type": "sub",
         "amount_usd": 5.99,
@@ -159752,6 +160056,14 @@
     ],
     "phillippaulburnell": [
       {
+        "ts": 1788293714,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "men",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1783388360,
         "type": "bits",
         "amount_usd": 1.0,
@@ -159805,6 +160117,14 @@
       }
     ],
     "brendensutton2000": [
+      {
+        "ts": 1788301767,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (2 months)!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1783393273,
         "type": "sub",
@@ -162704,6 +163024,14 @@
     ],
     "chevydude454": [
       {
+        "ts": 1788314891,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 men i farted",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1787094862,
         "type": "bits",
         "amount_usd": 1.0,
@@ -162827,6 +163155,14 @@
       }
     ],
     "Ryan_Stav": [
+      {
+        "ts": 1788296847,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (3 months)!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1783039456,
         "type": "sub",
@@ -162990,6 +163326,22 @@
     ],
     "DJJailbreak": [
       {
+        "ts": 1788313856,
+        "type": "giftsub",
+        "amount_usd": 11.98,
+        "amount_raw": "2 1000",
+        "message": "gifted 2 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788313726,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1782952731,
         "type": "sub",
         "amount_usd": 5.99,
@@ -163027,6 +163379,14 @@
       }
     ],
     "PPPsHRT": [
+      {
+        "ts": 1788301357,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "NO RUBER",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1782953398,
         "type": "sub",
@@ -163187,6 +163547,14 @@
       }
     ],
     "Ampyre37": [
+      {
+        "ts": 1788314034,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "I am a 5 month man",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787018615,
         "type": "sub",
@@ -163419,6 +163787,14 @@
       }
     ],
     "KweefHuffer": [
+      {
+        "ts": 1788292461,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "What a difference EQing your audio equipment makes as opposed to just using it out of the box.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1786568444,
         "type": "sub",
@@ -165143,6 +165519,14 @@
       }
     ],
     "respergu": [
+      {
+        "ts": 1788323723,
+        "type": "bits",
+        "amount_usd": 3.0,
+        "amount_raw": "300 bits",
+        "message": "Cheer100 Cheer100 Cheer100 careful Mr Rich with those detractor videos !",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1787533253,
         "type": "sub",
@@ -534196,6 +534580,22 @@
     ],
     "lostrenegade": [
       {
+        "ts": 1788311056,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788292397,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
         "ts": 1786480708,
         "type": "bits",
         "amount_usd": 1.0,
@@ -534279,6 +534679,14 @@
       }
     ],
     "ReviewDSPhilUSA": [
+      {
+        "ts": 1788318259,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Phil sucks ass at Call Of Duty.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1786498474,
         "type": "membership",
@@ -534439,6 +534847,14 @@
       }
     ],
     "JackOfBarbs": [
+      {
+        "ts": 1788296280,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1786662621,
         "type": "sub",
@@ -534841,6 +535257,30 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1788322999,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 That's it I am calling out for national law whenever husband and wife gets into fight. The moment they end fight they have to make out right away and sx aggressively hrl out of each other. Take out frustration inside each other like Mr and Mrs Smith Brad Smith and Angelina Jolie kind of thing. \ud83d\ude06",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788322394,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich please get tits on 50 cheers come on. I miss tits on twitch or set to cheer 100. Fking Trump piece of sht and fking diabolical pete hegseth. I bet they fking like zio-naziist wet dream over FKING war crime they are getting away doing. I hope whole other country call out to permanently sanction Trump. Meanwhile Russia and China both watching the end of democracy",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
+      {
+        "ts": 1788321183,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what's up rich. Man I didn't get notification at all. What the fudge?! I don't know why hating today Chris hansen voice. That piece of sht Epstein bootlicker Trump and Pete Hegseth again did FKING WAR CRIME yesterday and striked Iran wedding event murdering 5 civlians!!\ud83e\udd2c I'm sure there is mossad agent deployed by Israel and U.S. in Iran and coordinating stirking full intention civilians sites. 1000% certain!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      },
       {
         "ts": 1788061502,
         "type": "bits",
@@ -535358,6 +535798,56 @@
         "amount_raw": "$10.00",
         "message": "I almost guarantee keem nuked labrowski because he knew eventually he would expose him for having cows donate to other shows to get dents to donate then refund the cows plus money on top of that. :poultry_leg: :poultry_leg:",
         "stream_id": "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+      }
+    ],
+    "ANONm1lfhunter69": [
+      {
+        "ts": 1788292801,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Richie, plug your usb c in my port.",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      }
+    ],
+    "Pan_OF_Jello": [
+      {
+        "ts": 1788297358,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      }
+    ],
+    "keldohead": [
+      {
+        "ts": 1788298275,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "birds",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      }
+    ],
+    "regulus_realms": [
+      {
+        "ts": 1788303943,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Eyyyy 3 months of birds",
+        "stream_id": "rtustreams_2026-09-01_193844"
+      }
+    ],
+    "xviperchaosx91": [
+      {
+        "ts": 1788305887,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "rtustreams_2026-09-01_193844"
       }
     ]
   }
