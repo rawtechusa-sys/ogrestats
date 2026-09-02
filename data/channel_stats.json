@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788064756,
+  "updated_ts": 1788327304,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -851,7 +851,8 @@
     "late_night_stream_until_430_2026-08-27_030013",
     "im_so_confused_2026-08-27_030318",
     "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
-    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558"
+    "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
+    "rtustreams_2026-09-01_193844"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15303,6 +15304,23 @@
       "avg_chat_mpm": 14.83,
       "avg_active_chatters": 34.39,
       "percent_paused": 92.0
+    },
+    "rtustreams_2026-09-01_193844": {
+      "stream_id": "rtustreams_2026-09-01_193844",
+      "title": "rtustreams",
+      "start_ts": 1788291552,
+      "end_ts": 1788327066,
+      "duration_sec": 35514,
+      "youtube_archive_id": "aTEGaizXPk4",
+      "source_platform": "twitch",
+      "total_donations_usd": 378.5,
+      "donation_count": 58,
+      "donations_per_min": 0.6395,
+      "peak_viewers": 226,
+      "avg_viewers": 170.82,
+      "avg_chat_mpm": 4.23,
+      "avg_active_chatters": 10.86,
+      "percent_paused": 78.3
     }
   }
 }
