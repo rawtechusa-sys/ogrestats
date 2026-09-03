@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788392198,
+  "updated_ts": 1788396729,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -42,7 +42,8 @@
     "a_jcs_and_dsp_stream",
     "rtustreams_2026-09-01_193844",
     "being_terrible_at_halo_infinite_live",
-    "a_jcs_stream"
+    "a_jcs_stream",
+    "birds_pot_halo_infinite_and_the_game_awards_discussion"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -483,6 +484,16 @@
       "archive_start_ts": 1639443333,
       "segments": null,
       "source_vod_id": "lAq0o_rx49g",
+      "source_platform": "youtube"
+    },
+    "birds_pot_halo_infinite_and_the_game_awards_discussion": {
+      "title": "Birds, Pot, Halo Infinite And The Game Awards Discussion",
+      "start_ts": 1639166125,
+      "youtube_archive_id": "QhMlUStjKZ4",
+      "archive_org_id": "ogrewatch-birds_pot_halo_infinite_and_the_game_awards_discussion",
+      "archive_start_ts": 1639166125,
+      "segments": null,
+      "source_vod_id": "m_dn6LNqnC0",
       "source_platform": "youtube"
     }
   },
