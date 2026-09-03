@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788451209,
+  "updated_ts": 1788453510,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -51,7 +51,8 @@
     "random_afternoon_stream",
     "the_giga_chad_of_youtube_is_streaming",
     "the_dspgaming_chickengate_saga_continues",
-    "a_baked_middle_aged_man_plays_video_games_again"
+    "a_baked_middle_aged_man_plays_video_games_again",
+    "a_thequartering_man_experience"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -601,6 +602,16 @@
       "archive_start_ts": 1638754554,
       "segments": null,
       "source_vod_id": "M61SI72fxmA",
+      "source_platform": "youtube"
+    },
+    "a_thequartering_man_experience": {
+      "title": "A TheQuartering Man Experience",
+      "start_ts": 1637631541,
+      "youtube_archive_id": "ILScC305gHc",
+      "archive_org_id": "ogrewatch-a_thequartering_man_experience",
+      "archive_start_ts": 1637631541,
+      "segments": null,
+      "source_vod_id": "z81OL_uawFw",
       "source_platform": "youtube"
     }
   },
