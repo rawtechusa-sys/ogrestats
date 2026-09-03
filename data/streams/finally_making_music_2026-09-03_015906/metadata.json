@@ -2,7 +2,7 @@
   "stream_id": "finally_making_music_2026-09-03_015906",
   "slug": "finally_making_music",
   "title": "Finally Making Music",
-  "start_ts": 1788400746,
+  "start_ts": 1788400818,
   "end_ts": null,
   "platforms": [
     "youtube",
@@ -10,5 +10,12 @@
     "kick"
   ],
   "source_channel": "rtustreams",
-  "source_platform": "twitch"
+  "source_platform": "twitch",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "aGyQNBhDF3c",
+      "start_ts": 1788400818
+    }
+  ]
 }
