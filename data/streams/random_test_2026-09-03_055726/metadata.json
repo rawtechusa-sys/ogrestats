@@ -3,7 +3,7 @@
   "slug": "random_test",
   "title": "Random Test",
   "start_ts": 1788415116,
-  "end_ts": null,
+  "end_ts": 1788420463,
   "platforms": [
     "youtube",
     "twitch",
@@ -17,5 +17,7 @@
       "archive_id": "mitxksXJpJE",
       "start_ts": 1788415116
     }
-  ]
+  ],
+  "youtube_archive_id": "mitxksXJpJE",
+  "archive_is_source_vod": false
 }
