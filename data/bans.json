@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788475954,
+  "updated_ts": 1788477226,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -60,7 +60,8 @@
     "a_grand_theft_auto_trilogy_bird_stream",
     "a_middle_aged_man_plays_video_games_with_birds",
     "a_middle_aged_man_plays_halo_infinite",
-    "come_speak_to_a_man"
+    "come_speak_to_a_man",
+    "come_talk_with_liana_k_and_i_about_video_games"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -700,6 +701,16 @@
       "archive_start_ts": 1637202837,
       "segments": null,
       "source_vod_id": "Zcd5OBM7NZ4",
+      "source_platform": "youtube"
+    },
+    "come_talk_with_liana_k_and_i_about_video_games": {
+      "title": "Come Talk With Liana K And I About Video Games",
+      "start_ts": 1637026697,
+      "youtube_archive_id": "ktbVoZnNOyI",
+      "archive_org_id": "ogrewatch-come_talk_with_liana_k_and_i_about_video_games",
+      "archive_start_ts": 1637026697,
+      "segments": null,
+      "source_vod_id": "_dcnEWzfKDI",
       "source_platform": "youtube"
     }
   },
