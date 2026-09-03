@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788413520,
+  "updated_ts": 1788420798,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -45,7 +45,8 @@
     "a_jcs_stream",
     "birds_pot_halo_infinite_and_the_game_awards_discussion",
     "finally_making_music_2026-09-03_015906",
-    "audio_failed_so_more_tcap_2026-09-03_034700"
+    "audio_failed_so_more_tcap_2026-09-03_034700",
+    "random_test_2026-09-03_055726"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -531,6 +532,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "random_test_2026-09-03_055726": {
+      "title": "Random Test",
+      "start_ts": 1788415116,
+      "youtube_archive_id": "mitxksXJpJE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "mitxksXJpJE",
+          "start_ts": 1788415116
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -603,6 +619,54 @@
           "moderator": null,
           "reason": null,
           "stream_id": "finally_making_music_2026-09-03_015906"
+        }
+      ]
+    },
+    "crazyates55": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788417085,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1381565216"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788417085,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "random_test_2026-09-03_055726"
+        }
+      ]
+    },
+    "exclusivessx": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788419377,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1536662823"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788419377,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "random_test_2026-09-03_055726"
         }
       ]
     }
