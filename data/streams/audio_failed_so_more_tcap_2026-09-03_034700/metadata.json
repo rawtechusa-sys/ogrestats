@@ -3,7 +3,7 @@
   "slug": "audio_failed_so_more_tcap",
   "title": "Audio Failed. So more TCAP",
   "start_ts": 1788407220,
-  "end_ts": null,
+  "end_ts": 1788413294,
   "platforms": [
     "youtube",
     "twitch",
@@ -16,5 +16,7 @@
       "archive_id": "YjiI_2gtncY",
       "start_ts": 1788402137
     }
-  ]
+  ],
+  "youtube_archive_id": "YjiI_2gtncY",
+  "archive_is_source_vod": false
 }
