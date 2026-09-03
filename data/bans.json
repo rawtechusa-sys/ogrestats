@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788445200,
+  "updated_ts": 1788451209,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -50,7 +50,8 @@
     "the_game_awards_and_a_man_with_birds",
     "random_afternoon_stream",
     "the_giga_chad_of_youtube_is_streaming",
-    "the_dspgaming_chickengate_saga_continues"
+    "the_dspgaming_chickengate_saga_continues",
+    "a_baked_middle_aged_man_plays_video_games_again"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -590,6 +591,16 @@
       "archive_start_ts": 1638845933,
       "segments": null,
       "source_vod_id": "ME8Vga4i3EE",
+      "source_platform": "youtube"
+    },
+    "a_baked_middle_aged_man_plays_video_games_again": {
+      "title": "A Baked, Middle-Aged Man Plays Video Games (Again)",
+      "start_ts": 1638754554,
+      "youtube_archive_id": "MzzEd7vP85I",
+      "archive_org_id": "ogrewatch-a_baked_middle_aged_man_plays_video_games_again",
+      "archive_start_ts": 1638754554,
+      "segments": null,
+      "source_vod_id": "M61SI72fxmA",
       "source_platform": "youtube"
     }
   },
