@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788458634,
+  "updated_ts": 1788461611,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -54,7 +54,8 @@
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_thequartering_man_experience",
     "more_gta_iii_remastered_with_birds",
-    "sunday_night_hangout"
+    "sunday_night_hangout",
+    "come_hang_out_for_a_bit"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -634,6 +635,16 @@
       "archive_start_ts": 1637545762,
       "segments": null,
       "source_vod_id": "z2urOa6zF7w",
+      "source_platform": "youtube"
+    },
+    "come_hang_out_for_a_bit": {
+      "title": "Come Hang Out (For A Bit)",
+      "start_ts": 1637457261,
+      "youtube_archive_id": "rtFTrCbakbk",
+      "archive_org_id": "ogrewatch-come_hang_out_for_a_bit",
+      "archive_start_ts": 1637457261,
+      "segments": null,
+      "source_vod_id": "gF84SRNlrWY",
       "source_platform": "youtube"
     }
   },
