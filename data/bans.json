@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788439517,
+  "updated_ts": 1788445200,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -49,7 +49,8 @@
     "random_test_2026-09-03_055726",
     "the_game_awards_and_a_man_with_birds",
     "random_afternoon_stream",
-    "the_giga_chad_of_youtube_is_streaming"
+    "the_giga_chad_of_youtube_is_streaming",
+    "the_dspgaming_chickengate_saga_continues"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -579,6 +580,16 @@
       "archive_start_ts": 1638933032,
       "segments": null,
       "source_vod_id": "F2szeStWCy8",
+      "source_platform": "youtube"
+    },
+    "the_dspgaming_chickengate_saga_continues": {
+      "title": "The DSPGaming #ChickenGate Saga Continues",
+      "start_ts": 1638845933,
+      "youtube_archive_id": "Lqg5I9EgzR8",
+      "archive_org_id": "ogrewatch-the_dspgaming_chickengate_saga_continues",
+      "archive_start_ts": 1638845933,
+      "segments": null,
+      "source_vod_id": "ME8Vga4i3EE",
       "source_platform": "youtube"
     }
   },
