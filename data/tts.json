@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788413510,
+  "updated_ts": 1788420785,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -854,15 +854,16 @@
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
-    "audio_failed_so_more_tcap_2026-09-03_034700"
+    "audio_failed_so_more_tcap_2026-09-03_034700",
+    "random_test_2026-09-03_055726"
   ],
   "commands": {
     "men": 5,
-    "eric": 193,
+    "eric": 194,
     "phil": 436,
-    "stan": 332,
+    "stan": 333,
     "masterchief": 168,
-    "harman": 135,
+    "harman": 136,
     "trump": 155,
     "moist": 31,
     "dagoth": 5,
@@ -10197,9 +10198,45 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "random_test_2026-09-03_055726": {
+      "title": "Random Test",
+      "start_ts": 1788415116,
+      "youtube_archive_id": "mitxksXJpJE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "mitxksXJpJE",
+          "start_ts": 1788415116
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1788419076,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "random_test_2026-09-03_055726",
+      "message": "Cheer1000 Harman: Hi Rich I heard about losing the applause. In solidarity I am going to give up my plush Pikachu. In other news, I have ordered a 1 to 1 scale real sex doll. I am going to name her Richina... is that too creepy? Eric: No dude that ain't creepy... can I borrow it some time bro? (slip)",
+      "commands": [
+        "harman",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1788417726,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "random_test_2026-09-03_055726",
+      "message": "Cheer1000 Rich, have you ever tried Helldivers 2 on PS5 or PC? They added it to PS Plus and I can't get enough. Simple to learn and no 2 games turn out quite the same. A nice hit of dopamine. Also, Stanley says hi! Stan: Richie wanna go for a coffee?",
+      "commands": [
+        "stan"
+      ]
+    },
     {
       "ts": 1788412742,
       "username": "solidpakamericanhorseman",
