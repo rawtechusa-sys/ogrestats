@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788413514,
+  "updated_ts": 1788420789,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -854,7 +854,8 @@
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
-    "audio_failed_so_more_tcap_2026-09-03_034700"
+    "audio_failed_so_more_tcap_2026-09-03_034700",
+    "random_test_2026-09-03_055726"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9619,6 +9620,21 @@
         {
           "archive_id": "YjiI_2gtncY",
           "start_ts": 1788402137
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "random_test_2026-09-03_055726": {
+      "title": "Random Test",
+      "start_ts": 1788415116,
+      "youtube_archive_id": "mitxksXJpJE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "mitxksXJpJE",
+          "start_ts": 1788415116
         }
       ],
       "source_vod_id": null,
@@ -79172,6 +79188,30 @@
     ],
     "evistosf": [
       {
+        "ts": 1788419076,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Harman: Hi Rich I heard about losing the applause. In solidarity I am going to give up my plush Pikachu. In other news, I have ordered a 1 to 1 scale real sex doll. I am going to name her Richina... is that too creepy? Eric: No dude that ain't creepy... can I borrow it some time bro? (slip)",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
+      {
+        "ts": 1788417947,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Why not have a 'Find RTU's New Applause Sound Byte\" Contest?",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
+      {
+        "ts": 1788417726,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Rich, have you ever tried Helldivers 2 on PS5 or PC? They added it to PS Plus and I can't get enough. Simple to learn and no 2 games turn out quite the same. A nice hit of dopamine. Also, Stanley says hi! Stan: Richie wanna go for a coffee?",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
+      {
         "ts": 1788402523,
         "type": "bits",
         "amount_usd": 10.0,
@@ -96401,6 +96441,14 @@
       }
     ],
     "Hellrazer8504": [
+      {
+        "ts": 1788415982,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
       {
         "ts": 1788057410,
         "type": "sub",
@@ -122207,6 +122255,14 @@
       }
     ],
     "SpartanPhazed": [
+      {
+        "ts": 1788417280,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Listen. Peg my anus with Carlos and give me more Elden Ring. Im begging you!",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
       {
         "ts": 1785187798,
         "type": "sub",
@@ -153631,6 +153687,14 @@
       }
     ],
     "AnAnonymousGifter": [
+      {
+        "ts": 1788416933,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "gifted a sub to 8bit_eric!",
+        "stream_id": "random_test_2026-09-03_055726"
+      },
       {
         "ts": 1784155864,
         "type": "giftsub",
@@ -536006,6 +536070,16 @@
         "amount_raw": "5 1000",
         "message": "gifted 5 subs to the community!",
         "stream_id": "audio_failed_so_more_tcap_2026-09-03_034700"
+      }
+    ],
+    "shupdo": [
+      {
+        "ts": 1788416187,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (2 months)!",
+        "stream_id": "random_test_2026-09-03_055726"
       }
     ]
   }
