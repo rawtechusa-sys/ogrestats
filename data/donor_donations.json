@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788409190,
+  "updated_ts": 1788413514,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -853,7 +853,8 @@
     "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "rtustreams_2026-09-01_193844",
-    "finally_making_music_2026-09-03_015906"
+    "finally_making_music_2026-09-03_015906",
+    "audio_failed_so_more_tcap_2026-09-03_034700"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9603,6 +9604,21 @@
         {
           "archive_id": "YjiI_2gtncY",
           "start_ts": 1788402127
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "audio_failed_so_more_tcap_2026-09-03_034700": {
+      "title": "Audio Failed. So more TCAP",
+      "start_ts": 1788407220,
+      "youtube_archive_id": "YjiI_2gtncY",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "YjiI_2gtncY",
+          "start_ts": 1788402137
         }
       ],
       "source_vod_id": null,
@@ -40143,6 +40159,14 @@
       }
     ],
     "BradicalPrime": [
+      {
+        "ts": 1788411610,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "audio_failed_so_more_tcap_2026-09-03_034700"
+      },
       {
         "ts": 1785896865,
         "type": "giftsub",
@@ -535334,6 +535358,14 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1788412742,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Chris Hansen: Why don\u2019t you have a seat right over there. Trump: I don\u2019t sit. Sitting is for losers. I stand. Tremendous standing. Phil: You said you\u2019d pick someone up in your big beautiful limo. Trump: Best limo. Gold. Better than Oprah\u2019s. Phil: You brought a MAGA hat and McDonald\u2019s. Trump: worst-quality McDonald\u2019s ever gives me explosive diarrhea love it. That why White House is disaster. Chris Hansen: The police are here. Trump: Police love me. Stream 3am",
+        "stream_id": "audio_failed_so_more_tcap_2026-09-03_034700"
+      },
+      {
         "ts": 1788405910,
         "type": "bits",
         "amount_usd": 0.5,
@@ -535964,6 +535996,16 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "rtustreams_2026-09-01_193844"
+      }
+    ],
+    "ThorEffect": [
+      {
+        "ts": 1788411835,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "audio_failed_so_more_tcap_2026-09-03_034700"
       }
     ]
   }
