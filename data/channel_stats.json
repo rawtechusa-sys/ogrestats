@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788409195,
+  "updated_ts": 1788413519,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -853,7 +853,8 @@
     "elden_ring_tarnished_edition_a_robust_marathon_livestream_eldenring_2026-08-28_184738",
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "rtustreams_2026-09-01_193844",
-    "finally_making_music_2026-09-03_015906"
+    "finally_making_music_2026-09-03_015906",
+    "audio_failed_so_more_tcap_2026-09-03_034700"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15339,6 +15340,23 @@
       "avg_chat_mpm": 6.08,
       "avg_active_chatters": 15.07,
       "percent_paused": 72.8
+    },
+    "audio_failed_so_more_tcap_2026-09-03_034700": {
+      "stream_id": "audio_failed_so_more_tcap_2026-09-03_034700",
+      "title": "Audio Failed. So more TCAP",
+      "start_ts": 1788407220,
+      "end_ts": 1788413294,
+      "duration_sec": 6074,
+      "youtube_archive_id": "YjiI_2gtncY",
+      "source_platform": "twitch",
+      "total_donations_usd": 69.9,
+      "donation_count": 3,
+      "donations_per_min": 0.6905,
+      "peak_viewers": 146,
+      "avg_viewers": 134.3,
+      "avg_chat_mpm": 2.65,
+      "avg_active_chatters": 6.51,
+      "percent_paused": 59.2
     }
   }
 }
