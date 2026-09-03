@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788454757,
+  "updated_ts": 1788458634,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -53,7 +53,8 @@
     "the_dspgaming_chickengate_saga_continues",
     "a_baked_middle_aged_man_plays_video_games_again",
     "a_thequartering_man_experience",
-    "more_gta_iii_remastered_with_birds"
+    "more_gta_iii_remastered_with_birds",
+    "sunday_night_hangout"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -623,6 +624,16 @@
       "archive_start_ts": 1637555347,
       "segments": null,
       "source_vod_id": "Kk3ZfdCKP5Q",
+      "source_platform": "youtube"
+    },
+    "sunday_night_hangout": {
+      "title": "Sunday Night Hangout",
+      "start_ts": 1637545762,
+      "youtube_archive_id": "SGl-GXVIO2k",
+      "archive_org_id": "ogrewatch-sunday_night_hangout",
+      "archive_start_ts": 1637545762,
+      "segments": null,
+      "source_vod_id": "z2urOa6zF7w",
       "source_platform": "youtube"
     }
   },
