@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788463076,
+  "updated_ts": 1788464350,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -56,7 +56,8 @@
     "more_gta_iii_remastered_with_birds",
     "sunday_night_hangout",
     "come_hang_out_for_a_bit",
-    "more_games_and_a_man"
+    "more_games_and_a_man",
+    "a_grand_theft_auto_trilogy_bird_stream"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -656,6 +657,16 @@
       "archive_start_ts": 1637452726,
       "segments": null,
       "source_vod_id": "Q_kYn---zJY",
+      "source_platform": "youtube"
+    },
+    "a_grand_theft_auto_trilogy_bird_stream": {
+      "title": "A Grand Theft Auto Trilogy Bird Stream",
+      "start_ts": 1637438336,
+      "youtube_archive_id": "kYLAxJS8mQU",
+      "archive_org_id": "ogrewatch-a_grand_theft_auto_trilogy_bird_stream",
+      "archive_start_ts": 1637438336,
+      "segments": null,
+      "source_vod_id": "0X2SSUFVBAc",
       "source_platform": "youtube"
     }
   },
