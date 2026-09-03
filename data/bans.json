@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788464350,
+  "updated_ts": 1788466508,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -57,7 +57,8 @@
     "sunday_night_hangout",
     "come_hang_out_for_a_bit",
     "more_games_and_a_man",
-    "a_grand_theft_auto_trilogy_bird_stream"
+    "a_grand_theft_auto_trilogy_bird_stream",
+    "a_middle_aged_man_plays_video_games_with_birds"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -667,6 +668,16 @@
       "archive_start_ts": 1637438336,
       "segments": null,
       "source_vod_id": "0X2SSUFVBAc",
+      "source_platform": "youtube"
+    },
+    "a_middle_aged_man_plays_video_games_with_birds": {
+      "title": "A Middle-Aged Man Plays Video Games With Birds",
+      "start_ts": 1637430834,
+      "youtube_archive_id": "Oe8UOLZLOso",
+      "archive_org_id": "ogrewatch-a_middle_aged_man_plays_video_games_with_birds",
+      "archive_start_ts": 1637430834,
+      "segments": null,
+      "source_vod_id": "Pg89RGVlVV0",
       "source_platform": "youtube"
     }
   },
