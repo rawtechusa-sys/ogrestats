@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788466508,
+  "updated_ts": 1788470680,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -58,7 +58,8 @@
     "come_hang_out_for_a_bit",
     "more_games_and_a_man",
     "a_grand_theft_auto_trilogy_bird_stream",
-    "a_middle_aged_man_plays_video_games_with_birds"
+    "a_middle_aged_man_plays_video_games_with_birds",
+    "a_middle_aged_man_plays_halo_infinite"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -678,6 +679,16 @@
       "archive_start_ts": 1637430834,
       "segments": null,
       "source_vod_id": "Pg89RGVlVV0",
+      "source_platform": "youtube"
+    },
+    "a_middle_aged_man_plays_halo_infinite": {
+      "title": "A Middle-Aged Man Plays Halo Infinite",
+      "start_ts": 1637256625,
+      "youtube_archive_id": "CI-B3QC4SAk",
+      "archive_org_id": "ogrewatch-a_middle_aged_man_plays_halo_infinite",
+      "archive_start_ts": 1637256625,
+      "segments": null,
+      "source_vod_id": "44xyHdIKpIE",
       "source_platform": "youtube"
     }
   },
