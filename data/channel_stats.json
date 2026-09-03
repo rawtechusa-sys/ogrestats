@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788413519,
+  "updated_ts": 1788420796,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -854,7 +854,8 @@
     "i_think_lolcow_live_is_really_dying_lcu_2026-08-30_012558",
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
-    "audio_failed_so_more_tcap_2026-09-03_034700"
+    "audio_failed_so_more_tcap_2026-09-03_034700",
+    "random_test_2026-09-03_055726"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15357,6 +15358,23 @@
       "avg_chat_mpm": 2.65,
       "avg_active_chatters": 6.51,
       "percent_paused": 59.2
+    },
+    "random_test_2026-09-03_055726": {
+      "stream_id": "random_test_2026-09-03_055726",
+      "title": "Random Test",
+      "start_ts": 1788415116,
+      "end_ts": 1788420463,
+      "duration_sec": 5347,
+      "youtube_archive_id": "mitxksXJpJE",
+      "source_platform": "twitch",
+      "total_donations_usd": 44.46,
+      "donation_count": 7,
+      "donations_per_min": 0.4989,
+      "peak_viewers": 54,
+      "avg_viewers": 40.17,
+      "avg_chat_mpm": 3.82,
+      "avg_active_chatters": 8.57,
+      "percent_paused": 98.7
     }
   }
 }
