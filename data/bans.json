@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788396729,
+  "updated_ts": 1788409197,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -43,7 +43,8 @@
     "rtustreams_2026-09-01_193844",
     "being_terrible_at_halo_infinite_live",
     "a_jcs_stream",
-    "birds_pot_halo_infinite_and_the_game_awards_discussion"
+    "birds_pot_halo_infinite_and_the_game_awards_discussion",
+    "finally_making_music_2026-09-03_015906"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -495,7 +496,99 @@
       "segments": null,
       "source_vod_id": "m_dn6LNqnC0",
       "source_platform": "youtube"
+    },
+    "finally_making_music_2026-09-03_015906": {
+      "title": "Finally Making Music",
+      "start_ts": 1788400818,
+      "youtube_archive_id": "YjiI_2gtncY",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "aGyQNBhDF3c",
+          "start_ts": 1788400818
+        },
+        {
+          "archive_id": "YjiI_2gtncY",
+          "start_ts": 1788402127
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
-  "users": {}
+  "users": {
+    "monkyskunk": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788401275,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "174293934"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788401275,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "finally_making_music_2026-09-03_015906"
+        }
+      ]
+    },
+    "selstreams": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788403367,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "131810495"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788403367,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "finally_making_music_2026-09-03_015906"
+        }
+      ]
+    },
+    "money_teammmmm": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788406259,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "96420610"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788406259,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "finally_making_music_2026-09-03_015906"
+        }
+      ]
+    }
+  }
 }
