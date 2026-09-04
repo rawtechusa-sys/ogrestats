@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788551607,
+  "updated_ts": 1788554500,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -70,7 +70,8 @@
     "friday_night_man_stream",
     "a_late_night_middle_aged_youtuber_is_livestreaming",
     "qvc_vs_man",
-    "come_ask_a_man_and_bird_questions"
+    "come_ask_a_man_and_bird_questions",
+    "a_man_with_birds_streams_on_halloween"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -815,6 +816,16 @@
       "archive_start_ts": 1635811880,
       "segments": null,
       "source_vod_id": "4GbrXoRdgqo",
+      "source_platform": "youtube"
+    },
+    "a_man_with_birds_streams_on_halloween": {
+      "title": "A MAN WITH BIRDS STREAMS ON HALLOWEEN",
+      "start_ts": 1635730809,
+      "youtube_archive_id": "1XnVOAERhms",
+      "archive_org_id": "ogrewatch-a_man_with_birds_streams_on_halloween",
+      "archive_start_ts": 1635730809,
+      "segments": null,
+      "source_vod_id": "WcJZuaL6yBs",
       "source_platform": "youtube"
     }
   },
