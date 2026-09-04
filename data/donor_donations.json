@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788420789,
+  "updated_ts": 1788503382,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -855,7 +855,8 @@
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
     "audio_failed_so_more_tcap_2026-09-03_034700",
-    "random_test_2026-09-03_055726"
+    "random_test_2026-09-03_055726",
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9639,6 +9640,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222": {
+      "title": "A Drama Mongering Boomer Livestreams",
+      "start_ts": 1788480215,
+      "youtube_archive_id": "YN0Cs5uSlMA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "YN0Cs5uSlMA",
+          "start_ts": 1788480215
+        }
+      ],
+      "source_vod_id": "jgv_GgTfp00",
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -10295,6 +10311,30 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1788494260,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Narrator: man, the stupidity of these people should be funny but it makes me angry because they vote and do real damage !",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492943,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Eric: rich tomorrow: the applause is back with a vengeance, let's get into it !",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492749,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Phil: see ? the begging works !",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787977247,
         "type": "superchat",
@@ -12857,6 +12897,38 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1788495384,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Did you know Canada burned down the white house in the war of 1812",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492587,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492567,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492504,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 55 months",
+        "message": "here i am",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787180344,
         "type": "superchat",
@@ -19634,6 +19706,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1788494081,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787953782,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -19939,6 +20019,22 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1788483187,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: bust bust bust buuust bust bust buuuust bust",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788480940,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788054587,
         "type": "giftmembership",
@@ -20783,6 +20879,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1788493669,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: the council of men has a perfect place to imprison this man. we have acquired nude beach. the naked cowboys are the security, and they are hard",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788493288,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: no more masterchief? this is bullshit! Biden: shut up you cockwaffle, you are full of shit! where am I? I need to sniff some hair. Stan: mmm!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492931,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: replace the applause with farts!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788484663,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Masterchief: men, I have arrived. Also, I farted",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788059412,
         "type": "superchat",
@@ -23375,6 +23503,78 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1788499032,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "That was almost you with the Nissan Juke.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788496780,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If it were Intro Guy it'd be more intimidating.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788493312,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: be me, spend your whole day tweeting to 3 people until someone larger sees one of my stupid posts and makes fun of me. Harman: Wow! What a life.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492665,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich messaged me to gift. I said no and he yelled.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492587,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788491162,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490160,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: I figured it out! I look like the Cinco Party Snoozer guy. Sent you a pic. Stan: Oooh Harman, I hope it's a pic of you plowing Pikachu. Yummy!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788486287,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788481915,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 43 months",
+        "message": "Listen, I fit into 30 jeans now. I sent Jay a picture of my ass in leather pants. If he sends it to you, it's not his ass. It is my ass. Thank you.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788061001,
         "type": "superchat",
@@ -39324,6 +39524,30 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1788483529,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Charlie Kirk TTS?Bit ofa pain in the neck to setup",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483051,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: Arnold Schwarzenegger TTS. DO IT NOAAWW!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482867,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Tommy Tallarico TTS. Literally gaming racists.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787955249,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -41254,6 +41478,14 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1788485062,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "dont dare disrespect comic book villians, they serve a purpose this man does not",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787187345,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -42535,6 +42767,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1788488022,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "The problem with Scottland, is it's full of Scotts",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788487328,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Maybe Phil might be gradually dividing in two",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788486743,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen Play my mortal ass like a bongo drum let go",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788486504,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen I don't care about your math, 6AM MF",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788485419,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "How come ICE wears masks? thought masks were woke",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483570,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Only have Switch2, $70 U.S for Elden Ring worth?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482389,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Goal 2:30am 50 Subs as a punishment 4 no schedule",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787533977,
         "type": "superchat",
@@ -57198,6 +57486,14 @@
     ],
     "SeymourDemonica": [
       {
+        "ts": 1788484175,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You mean a backup plan to the backup plan, to backup the backup plan?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788059171,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -63066,6 +63362,14 @@
     ],
     "Gaminglechuga": [
       {
+        "ts": 1788481033,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Hello bird father",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1785801274,
         "type": "sub",
         "amount_usd": 5.99,
@@ -63083,6 +63387,22 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1788491220,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA I hate you!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490030,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Rich, you must admit that I never accepted joining Lolcow live. I dodged the bullet!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788062063,
         "type": "superchat",
@@ -63985,6 +64305,94 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1788499682,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: I remember you made that video of the guy in Japan marrying the hologram and people in your comments were defending him. Oh my god.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788499153,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: Also I don't know if you mentioned it. But here in Texas they are trying to cut polling sites they are scared Texas will go blue.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788498809,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: I don't like Biden, but I love this line from the first debate he had with trump. Biden: Will you shut up, man?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788491431,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Linus: Moist mentions it in his vid. But Micheal one of the lead characters in gta 5 stays with his cheating wife after catching her.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490605,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Forrest: cornhub.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490085,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Girlfriend: Listen if you had to choose would you go out with Harman in a Pikachu costume or download a ai girlfriend? (uwu)",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788489495,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Emoguy: Jay got fired and his pc hacked.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788488179,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Forrest: listen do a goal to wear a mullet wig.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483189,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Girlfriend: beavis and butthead tts?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482669,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: i love that andypants is doubling down about his gta 6 video.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482167,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: what's up rich. milo yiannopoulos being deported when he was wanting deportations is so ironic and funny.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788060410,
         "type": "superchat",
@@ -65076,6 +65484,22 @@
     ],
     "SmokingSocks220": [
       {
+        "ts": 1788490434,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "Rich can you please reenact one of your meltdowns?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788485915,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "RICHES MOAN COUNTER INCOMING",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1785804820,
         "type": "membership",
         "amount_usd": 1.99,
@@ -65568,6 +65992,22 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1788486444,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "Are you excited for the first Kirkiversary? Gumjob",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788481610,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787966436,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -65749,6 +66189,22 @@
       }
     ],
     "Webbz517": [
+      {
+        "ts": 1788487704,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'm 33 with a strong luscious robust hairline. But I did just find out I have Sleep apnea. Can't win em all. Hairy Birds!!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788486588,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787623970,
         "type": "superchat",
@@ -66411,6 +66867,22 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1788482074,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You should make the tip notification an AI voice of you.....",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788481153,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Don't make me churn your butter.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788060114,
         "type": "superchat",
@@ -79188,6 +79660,14 @@
     ],
     "evistosf": [
       {
+        "ts": 1788483003,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Eric: Hi Richie. It\u2019s me again. I\u2019m sorry to keep dropping by with no warning but you keep ignoring my invites to wrestle. I promise I will let you start on top and I will be the bottom guy, then we\u2019ll switch it up! Stan: Trust me honey he\u2019s not a gnome of honor, once he gets his hands on your hairy moobs he will suck them harder than Boogie\u2019s nipples! (drinking)",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788419076,
         "type": "bits",
         "amount_usd": 10.0,
@@ -80273,6 +80753,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1788493281,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "i\u2019m in the girlfriend doesnt want me playing GTA6 because you have to maintain the relationship with Lucia in it camp. LOL",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787093642,
         "type": "superchat",
@@ -85113,6 +85601,14 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1788481794,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Tim \"Beanie\" Pool",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788053404,
         "type": "superchat",
@@ -91902,6 +92398,14 @@
     ],
     "Marzrep": [
       {
+        "ts": 1788480832,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Will richsapplusecounter get a nice retirement package? Also hopefully you and family are doing well.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788058301,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -94178,6 +94682,22 @@
     ],
     "RushilPatel-oe7hn": [
       {
+        "ts": 1788481502,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hopefully they do a bully 2",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788481367,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "What do you think is rockstar games next project after grand theft auto 6?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788053715,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -95362,6 +95882,14 @@
     ],
     "superSONIC_star": [
       {
+        "ts": 1788492587,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788053167,
         "type": "membership",
         "amount_usd": 1.99,
@@ -95579,6 +96107,22 @@
       }
     ],
     "octropia": [
+      {
+        "ts": 1788490020,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Party50 Boogie wants both, he said he wants idubbz+ his wife. As well as anita sarkeesian. Also rastov",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788488546,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Party100 REST IN PEACE : Joann, Toys R Us, KB Toys, Sports authority, Radio shack, Bed Bath & Beyond,  Ames, Payless, Borders, Circuit City, Ride Aid. And Last but not least KMART",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787532482,
         "type": "bits",
@@ -96483,6 +97027,30 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1788489249,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "\ud83e\udd77\ud83c\udffb",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788486931,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Ban and then mod",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788485684,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "\ud83e\udd77\ud83c\udffb",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788056271,
         "type": "superchat",
@@ -103376,6 +103944,46 @@
     ],
     "Rayzor_Blaydez": [
       {
+        "ts": 1788495543,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "As a Canadian, remember the North!!!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788494192,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "they hate anyone not Yt.. it's that's simple",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788494004,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "I'll let you know, it's Anbernic but niiice AF",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788493821,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Hey Rich, do you play handhelds other than switch? just bought Rg556 and I'm excited. Also your mini PC vids are nice I have a bosgame mini PC, luv it",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788493556,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Phil is a man.. love the streams. ack ack ack ack",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1786489776,
         "type": "superchat",
         "amount_usd": 1.42,
@@ -103595,6 +104203,14 @@
       }
     ],
     "FrankkCozmo": [
+      {
+        "ts": 1788499264,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 43 months",
+        "message": "Rich u should watch Asmon laughing at DSP video :face_with_tears_of_joy:",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1785286552,
         "type": "membership",
@@ -118488,6 +119104,14 @@
     ],
     "Toast935": [
       {
+        "ts": 1788482629,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Love ya bird man",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788054675,
         "type": "membership",
         "amount_usd": 1.99,
@@ -119718,6 +120342,38 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1788494901,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "General Sherman didn't go far enough in the South",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492951,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "this guy really wants \"a bunch of dudes together\":thinking_face:",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788491798,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "most of Phil's shirts make him look like Weekend at Bernie's",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788489858,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich would you live stream a date with BeckyBoop from the insane asylum?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787534699,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -120195,6 +120851,14 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1788489891,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Who would win in a fight, Rich or Philip?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788061263,
         "type": "superchat",
@@ -122273,6 +122937,62 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1788492687,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Thank you mister troll love from Carlos",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492554,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did we make the goal?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788488853,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Yes it was called windows on the world and there was also the greatest bar on earth! The south tower had the snack sky bar and sky lobby gift shop!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788488745,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "You know what man; I just found out that there\u2019s a book written about what was the five star restaurant on the 107th floor of the trade towers north tower! Vintage NYC was a vibe for sure",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483011,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I have an audiobook audible converter to mp3 file program & I love this software! I can listen to books & game all on the same audio channel! Books & birds ! Books about birds? Perhaps not! Cheers fam",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482464,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Anyways; so I got a disposable cart today that tastes like strawberry lemonade and I\u2019m faded! Very relaxed & quite pleasantly in a vibe tonight so I have you to bang out my homework tonight! Birds!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482228,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I just got my 1st check in over a year and a half from an actual job, not college aide, not mileage reimbursement for my ma\u2019s college commute for myself but an actual check! I feel proud! Cheers guys!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788053160,
         "type": "superchat",
@@ -128466,6 +129186,14 @@
     ],
     "comicbookprodigy995": [
       {
+        "ts": 1788482436,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "Next month is 9 months. We could've had a baby.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1784954225,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -129194,6 +129922,14 @@
     ],
     "Ms.Sparkles": [
       {
+        "ts": 1788480358,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787533963,
         "type": "membership",
         "amount_usd": 1.99,
@@ -129741,6 +130477,14 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1788491965,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787638374,
         "type": "giftmembership",
@@ -134386,6 +135130,22 @@
     ],
     "tougeruzbay": [
       {
+        "ts": 1788483537,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Use those Nutty songs right damn now Rich",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483037,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hobo: Video stayed stuck, had to refresh and here you are you MAN. You gonna use those nutty songs for your streams. Phil: support this damn stream",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788060697,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -134997,6 +135757,14 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1788480536,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Don Matrick can take a W because DRM decision made in 2013 is how Microsoft can offer disc to digital and Sony didn\u2019t do it so they can\u2019t in same way",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1788309051,
         "type": "bits",
@@ -142756,6 +143524,70 @@
     ],
     "violationentertainment": [
       {
+        "ts": 1788490059,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788489593,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:mama Miyamoto (slip):plunger:o:joystick:(gnome):turkey:o:pie:(burp)",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788488326,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Trump: :poodle::chess_pawn: . :horse::cocktail_glass: . :ear_of_corn::hole: . :poodle::princess::chocolate_bar::hole: . :horse::hole:",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788487085,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: I offer jars of my robust aromas, Order Now",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788484422,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Eric:Howaraya Doin Stanley, doin good?Stan:oh fah cough,Eric.u stinkn the place up & thats comin from Meee!!Wash yor holl!!Eric:1 day Stanley.1 day.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483629,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788483014,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Harman: It's leg day,Pikachu. So,Spreddem!!Who's yer daddy,who's yer Daddy,who's Yer daddy who's yer Daddy,your Demolition Daddy.Where Yooo At??chooo",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788482526,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "OStan:help me check something,EricEric:dee znuts??",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787962985,
         "type": "superchat",
         "amount_usd": 1.41,
@@ -147153,6 +147985,22 @@
       }
     ],
     "PutoPlatano": [
+      {
+        "ts": 1788497509,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Sacha did an interview with Jimmy Kimmel explaining how he got Jason Spencer to go along with it. It's amazing. Check it out.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788496624,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "That was Sacha Baron Cohen",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1787096053,
         "type": "superchat",
@@ -153429,6 +154277,22 @@
       }
     ],
     "Xenokaji": [
+      {
+        "ts": 1788492481,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "She allegedly un-alive her 3 kids",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788492307,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Thoughts on Lindsay trial?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1784162803,
         "type": "superchat",
@@ -162086,6 +162950,14 @@
     ],
     "aessay": [
       {
+        "ts": 1788487342,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 He calls someone the R word because they make fun of his shirt. Insecurity must be at an all time low",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787804299,
         "type": "bits",
         "amount_usd": 1.0,
@@ -164337,6 +165209,14 @@
       }
     ],
     "ZenMaster335": [
+      {
+        "ts": 1788481367,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1782764120,
         "type": "sub",
@@ -166856,6 +167736,14 @@
     ],
     "mcnasty72": [
       {
+        "ts": 1788492649,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "tommy vercetti makes it rise",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787552999,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -167617,6 +168505,22 @@
       }
     ],
     "Vito_Scaletta-h6d": [
+      {
+        "ts": 1788482337,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Joe Biden 2028. Cornpop",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788481871,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I heard Tim wear his beanie 95F weather &in shower",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1786225859,
         "type": "superchat",
@@ -173109,6 +174013,22 @@
       }
     ],
     "rubesmagoobs": [
+      {
+        "ts": 1788492689,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Hey Rich, are you looking for music samples?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788489917,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I\u2019ve noticed a lot of people making videos of Phil recently. I\u2019m watching Alex the fiction\u2019s video on phil, seein non detractors is interesting",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
       {
         "ts": 1781139997,
         "type": "superchat",
@@ -483660,6 +484580,14 @@
     ],
     "Say-No-To-Panda-Slander": [
       {
+        "ts": 1788498253,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "What borders on insanity? Mexico and Canada.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1657251999,
         "type": "superchat",
         "amount_usd": 3.3,
@@ -534836,6 +535764,14 @@
     ],
     "ReviewDSPhilUSA": [
       {
+        "ts": 1788480917,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 9 months",
+        "message": "Glad you are turning over a new leaf, dude. Birds",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788318259,
         "type": "sub",
         "amount_usd": 5.99,
@@ -535422,6 +536358,30 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1788498454,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 u know who used to say that? \"I have very intelligent brain\"? Adolf Hitler \ud83d\ude06.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788498286,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 VivaSumudPakresistor is correct and yeah that's me....tell me one Muslim who is infamous serial killer within America. yeah that's what I thought to all these white \ud83d\uddd1\ufe0f Republicans and sellout democrats Zio traitor. U should check out today's piers Morgan show. prof Mirandi fully exposes the reality about Israel and US how Benjamin Satanyahu 40 years of lie is now finally backbiting to western",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490499,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Hey Rich. Hows it going? Have you ever thought and maybe compared in the end how these zip apartheid genocidal bootlicker using \u201cGod promised it to us 3,000 years ago\u201d as justification for Sacralized violence / holy ethnic cleansing of Palestine make Taliban and Al-Qaeda look like amateurs or inexperienced at weaponizing religion. I am refering to tyt covering story of Dave Smith shutting down him on Mario Nawafal debate",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1788412742,
         "type": "bits",
         "amount_usd": 10.0,
@@ -535804,6 +536764,14 @@
     ],
     "DrTSanchez1": [
       {
+        "ts": 1788482775,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: listen, take your strong hand and turn me into a hand puppet big daddy! Can you make me sound like EDP instead. ooooowwwww hurts so good gghhuuu",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
         "ts": 1787801325,
         "type": "membership",
         "amount_usd": 1.99,
@@ -536080,6 +537048,82 @@
         "amount_raw": "Prime",
         "message": "resubscribed (2 months)!",
         "stream_id": "random_test_2026-09-03_055726"
+      }
+    ],
+    "ReviewFlybygirl": [
+      {
+        "ts": 1788480819,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Do you get why people like 8biteric think your a false flagger? When you get caught lying once no one believes you when you say the truth",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "user-kn2hx6do4e": [
+      {
+        "ts": 1788481487,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich I like the content, give me some eyeballs yum",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "DAWNK3Y": [
+      {
+        "ts": 1788491154,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich you look skinny and call of duty, pragmata",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788490677,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Im having trouble getting into the switch 2 downgraded ports, 1st party phenomenal, 3rd party looks muddy but im trying, what\u2019s your opinion?",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "dosmaen": [
+      {
+        "ts": 1788490842,
+        "type": "bits",
+        "amount_usd": 0.69,
+        "amount_raw": "69 bits",
+        "message": "Cheer69 listen oil me up and invite me onto your show at 3am lets go",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "crunchy_denim": [
+      {
+        "ts": 1788492703,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (3 months)!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "VivaSumudPAKResistor": [
+      {
+        "ts": 1788497742,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "for a sec streamed crashed it's thunder here. also in response to Rudy Giuliani u know what else rised after September 11? school mass shootings.MF!",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      },
+      {
+        "ts": 1788497486,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Phil: I just asked Gemini if there is any constitution for even law one has to swear oath in Bible to serve in Congress and then take bribe from AIPAC to serve foreign nation. Gemini replied fk u nothing such exist.",
+        "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
       }
     ]
   }
