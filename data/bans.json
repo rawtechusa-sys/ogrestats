@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788527964,
+  "updated_ts": 1788536525,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -67,7 +67,8 @@
     "ask_a_man_random_things_while_you_stare_at_birds",
     "bird_and_man_mayhem",
     "lets_argue_about_nintendo",
-    "friday_night_man_stream"
+    "friday_night_man_stream",
+    "a_late_night_middle_aged_youtuber_is_livestreaming"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -782,6 +783,16 @@
       "archive_start_ts": 1636167497,
       "segments": null,
       "source_vod_id": "oCbXX1jwzXk",
+      "source_platform": "youtube"
+    },
+    "a_late_night_middle_aged_youtuber_is_livestreaming": {
+      "title": "A Late Night Middle-Aged YouTuber Is Livestreaming",
+      "start_ts": 1636081151,
+      "youtube_archive_id": "lm-tG5ed2-k",
+      "archive_org_id": "ogrewatch-a_late_night_middle_aged_youtuber_is_livestreaming",
+      "archive_start_ts": 1636081151,
+      "segments": null,
+      "source_vod_id": "Q0fzvMN2_6Y",
       "source_platform": "youtube"
     }
   },
