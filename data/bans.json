@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788542255,
+  "updated_ts": 1788551607,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -69,7 +69,8 @@
     "lets_argue_about_nintendo",
     "friday_night_man_stream",
     "a_late_night_middle_aged_youtuber_is_livestreaming",
-    "qvc_vs_man"
+    "qvc_vs_man",
+    "come_ask_a_man_and_bird_questions"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -804,6 +805,16 @@
       "archive_start_ts": 1635986617,
       "segments": null,
       "source_vod_id": "_hfHK7ISfeA",
+      "source_platform": "youtube"
+    },
+    "come_ask_a_man_and_bird_questions": {
+      "title": "Come Ask A Man And Bird Questions",
+      "start_ts": 1635811880,
+      "youtube_archive_id": "wkIBwTr2Tck",
+      "archive_org_id": "ogrewatch-come_ask_a_man_and_bird_questions",
+      "archive_start_ts": 1635811880,
+      "segments": null,
+      "source_vod_id": "4GbrXoRdgqo",
       "source_platform": "youtube"
     }
   },
