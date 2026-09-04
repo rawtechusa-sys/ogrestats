@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788420796,
+  "updated_ts": 1788503389,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -855,7 +855,8 @@
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
     "audio_failed_so_more_tcap_2026-09-03_034700",
-    "random_test_2026-09-03_055726"
+    "random_test_2026-09-03_055726",
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15375,6 +15376,23 @@
       "avg_chat_mpm": 3.82,
       "avg_active_chatters": 8.57,
       "percent_paused": 98.7
+    },
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222": {
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "title": "A Drama Mongering Boomer Livestreams",
+      "start_ts": 1788480215,
+      "end_ts": 1788501406,
+      "duration_sec": 21191,
+      "youtube_archive_id": "YN0Cs5uSlMA",
+      "source_platform": "twitch",
+      "total_donations_usd": 541.67,
+      "donation_count": 127,
+      "donations_per_min": 1.5337,
+      "peak_viewers": 411,
+      "avg_viewers": 323.42,
+      "avg_chat_mpm": 9.65,
+      "avg_active_chatters": 22.86,
+      "percent_paused": 84.1
     }
   }
 }
