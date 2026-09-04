@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788554500,
+  "updated_ts": 1788559392,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -71,7 +71,8 @@
     "a_late_night_middle_aged_youtuber_is_livestreaming",
     "qvc_vs_man",
     "come_ask_a_man_and_bird_questions",
-    "a_man_with_birds_streams_on_halloween"
+    "a_man_with_birds_streams_on_halloween",
+    "a_new_bird_approaches"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -826,6 +827,16 @@
       "archive_start_ts": 1635730809,
       "segments": null,
       "source_vod_id": "WcJZuaL6yBs",
+      "source_platform": "youtube"
+    },
+    "a_new_bird_approaches": {
+      "title": "A New Bird Approaches...",
+      "start_ts": 1635640634,
+      "youtube_archive_id": "MuseYV5zb7U",
+      "archive_org_id": "ogrewatch-a_new_bird_approaches",
+      "archive_start_ts": 1635640634,
+      "segments": null,
+      "source_vod_id": "TQ1k1faDphc",
       "source_platform": "youtube"
     }
   },
