@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788479754,
+  "updated_ts": 1788503390,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -62,7 +62,8 @@
     "a_middle_aged_man_plays_halo_infinite",
     "come_speak_to_a_man",
     "come_talk_with_liana_k_and_i_about_video_games",
-    "a_fun_dspgaming_man_stream"
+    "a_fun_dspgaming_man_stream",
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -723,6 +724,21 @@
       "segments": null,
       "source_vod_id": "0DT5OOoIKgw",
       "source_platform": "youtube"
+    },
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222": {
+      "title": "A Drama Mongering Boomer Livestreams",
+      "start_ts": 1788480215,
+      "youtube_archive_id": "YN0Cs5uSlMA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "YN0Cs5uSlMA",
+          "start_ts": 1788480215
+        }
+      ],
+      "source_vod_id": "jgv_GgTfp00",
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -843,6 +859,126 @@
           "moderator": null,
           "reason": null,
           "stream_id": "random_test_2026-09-03_055726"
+        }
+      ]
+    },
+    "peachesnkeem": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788486753,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "762144"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788486753,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+        }
+      ]
+    },
+    "Bill_Gates_Adrenochome": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788487756,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "28315429"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788487756,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+        }
+      ]
+    },
+    "Generated97": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788494796,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "31190946"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788494796,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+        }
+      ]
+    },
+    "gearsfanftw": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788495041,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "3130667"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788495041,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+        }
+      ]
+    },
+    "shroomdookum": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788499865,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "45029568"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788499865,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
         }
       ]
     }
