@@ -3,10 +3,10 @@
   "slug": "a_drama_mongering_boomer_livestreams",
   "title": "A Drama Mongering Boomer Livestreams",
   "start_ts": 1788480215,
-  "end_ts": 1788491031,
+  "end_ts": null,
   "platforms": [
-    "youtube",
     "twitch",
+    "youtube",
     "kick"
   ],
   "source_channel": "rtustreams",
@@ -19,5 +19,6 @@
     }
   ],
   "youtube_archive_id": "YN0Cs5uSlMA",
-  "archive_is_source_vod": false
+  "archive_is_source_vod": false,
+  "source_vod_id": "jgv_GgTfp00"
 }
