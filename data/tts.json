@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788420785,
+  "updated_ts": 1788503379,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -855,22 +855,23 @@
     "rtustreams_2026-09-01_193844",
     "finally_making_music_2026-09-03_015906",
     "audio_failed_so_more_tcap_2026-09-03_034700",
-    "random_test_2026-09-03_055726"
+    "random_test_2026-09-03_055726",
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
   ],
   "commands": {
     "men": 5,
-    "eric": 194,
-    "phil": 436,
-    "stan": 333,
-    "masterchief": 168,
-    "harman": 136,
-    "trump": 155,
-    "moist": 31,
+    "eric": 197,
+    "phil": 444,
+    "stan": 337,
+    "masterchief": 170,
+    "harman": 140,
+    "trump": 158,
+    "moist": 35,
     "dagoth": 5,
     "zesty": 36,
-    "linus": 38,
+    "linus": 40,
     "grandpa": 29,
-    "girlfriend": 9,
+    "girlfriend": 11,
     "twist": 8,
     "johnny": 6,
     "guys": 1,
@@ -878,7 +879,7 @@
     "glados": 4,
     "kratos": 19,
     "doom": 22,
-    "emoguy": 3,
+    "emoguy": 4,
     "chat": 2,
     "grandma": 3,
     "hour": 2,
@@ -892,7 +893,7 @@
     "chewbacca": 1,
     "drdisrespect": 2,
     "rich": 31,
-    "hobo": 12,
+    "hobo": 13,
     "ideas": 1,
     "carlos": 1,
     "tate": 7,
@@ -910,7 +911,7 @@
     "phill": 6,
     "warmy": 1,
     "translation": 4,
-    "tomorrow": 34,
+    "tomorrow": 35,
     "show": 1,
     "speech": 1,
     "collection": 1,
@@ -1421,7 +1422,7 @@
     "dog": 1,
     "man": 1,
     "prime": 3,
-    "narrator": 1,
+    "narrator": 2,
     "uploaded": 1,
     "joerogan": 1,
     "kermit": 1,
@@ -1429,7 +1430,9 @@
     "clean": 1,
     "donations": 1,
     "optimus": 1,
-    "language": 1
+    "language": 1,
+    "forrest": 2,
+    "biden": 2
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10213,9 +10216,352 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222": {
+      "title": "A Drama Mongering Boomer Livestreams",
+      "start_ts": 1788480215,
+      "youtube_archive_id": "YN0Cs5uSlMA",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "YN0Cs5uSlMA",
+          "start_ts": 1788480215
+        }
+      ],
+      "source_vod_id": "jgv_GgTfp00",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1788499682,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Moist: I remember you made that video of the guy in Japan marrying the hologram and people in your comments were defending him. Oh my god.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1788499153,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Moist: Also I don't know if you mentioned it. But here in Texas they are trying to cut polling sites they are scared Texas will go blue.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1788498809,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Linus: I don't like Biden, but I love this line from the first debate he had with trump. Biden: Will you shut up, man?",
+      "commands": [
+        "linus",
+        "biden"
+      ]
+    },
+    {
+      "ts": 1788497486,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: I just asked Gemini if there is any constitution for even law one has to swear oath in Bible to serve in Congress and then take bribe from AIPAC to serve foreign nation. Gemini replied fk u nothing such exist.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788494260,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Narrator: man, the stupidity of these people should be funny but it makes me angry because they vote and do real damage !",
+      "commands": [
+        "narrator"
+      ]
+    },
+    {
+      "ts": 1788493669,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Trump: the council of men has a perfect place to imprison this man. we have acquired nude beach. the naked cowboys are the security, and they are hard",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788493312,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Eric: be me, spend your whole day tweeting to 3 people until someone larger sees one of my stupid posts and makes fun of me. Harman: Wow! What a life.",
+      "commands": [
+        "eric",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788493288,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Trump: no more masterchief? this is bullshit! Biden: shut up you cockwaffle, you are full of shit! where am I? I need to sniff some hair. Stan: mmm!",
+      "commands": [
+        "trump",
+        "biden",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788492943,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Eric: rich tomorrow: the applause is back with a vengeance, let's get into it !",
+      "commands": [
+        "eric",
+        "tomorrow"
+      ]
+    },
+    {
+      "ts": 1788492931,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Masterchief: replace the applause with farts!",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1788492749,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: see ? the begging works !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788491431,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Linus: Moist mentions it in his vid. But Micheal one of the lead characters in gta 5 stays with his cheating wife after catching her.",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1788491220,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Harman: Review Tech USA I hate you!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788490605,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Forrest: cornhub.",
+      "commands": [
+        "forrest"
+      ]
+    },
+    {
+      "ts": 1788490160,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Harman: I figured it out! I look like the Cinco Party Snoozer guy. Sent you a pic. Stan: Oooh Harman, I hope it's a pic of you plowing Pikachu. Yummy!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788490085,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Girlfriend: Listen if you had to choose would you go out with Harman in a Pikachu costume or download a ai girlfriend? (uwu)",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1788490030,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: Rich, you must admit that I never accepted joining Lolcow live. I dodged the bullet!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788489495,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Emoguy: Jay got fired and his pc hacked.",
+      "commands": [
+        "emoguy"
+      ]
+    },
+    {
+      "ts": 1788488326,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Trump: :poodle::chess_pawn: . :horse::cocktail_glass: . :ear_of_corn::hole: . :poodle::princess::chocolate_bar::hole: . :horse::hole:",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788488179,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Forrest: listen do a goal to wear a mullet wig.",
+      "commands": [
+        "forrest"
+      ]
+    },
+    {
+      "ts": 1788487085,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: I offer jars of my robust aromas, Order Now",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788484663,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Masterchief: men, I have arrived. Also, I farted",
+      "commands": [
+        "masterchief"
+      ]
+    },
+    {
+      "ts": 1788483537,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: Use those Nutty songs right damn now Rich",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788483189,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Girlfriend: beavis and butthead tts?",
+      "commands": [
+        "girlfriend"
+      ]
+    },
+    {
+      "ts": 1788483187,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: bust bust bust buuust bust bust buuuust bust",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788483051,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Phil: Arnold Schwarzenegger TTS. DO IT NOAAWW!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788483037,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Hobo: Video stayed stuck, had to refresh and here you are you MAN. You gonna use those nutty songs for your streams. Phil: support this damn stream",
+      "commands": [
+        "hobo",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788483014,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Harman: It's leg day,Pikachu. So,Spreddem!!Who's yer daddy,who's yer Daddy,who's Yer daddy who's yer Daddy,your Demolition Daddy.Where Yooo At??chooo",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788483003,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Cheer1000 Eric: Hi Richie. It\u2019s me again. I\u2019m sorry to keep dropping by with no warning but you keep ignoring my invites to wrestle. I promise I will let you start on top and I will be the bottom guy, then we\u2019ll switch it up! Stan: Trust me honey he\u2019s not a gnome of honor, once he gets his hands on your hairy moobs he will suck them harder than Boogie\u2019s nipples! (drinking)",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788482775,
+      "username": "@DrTSanchez1",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Stan: listen, take your strong hand and turn me into a hand puppet big daddy! Can you make me sound like EDP instead. ooooowwwww hurts so good gghhuuu",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788482669,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Moist: i love that andypants is doubling down about his gta 6 video.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1788482167,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+      "message": "Moist: what's up rich. milo yiannopoulos being deported when he was wanting deportations is so ironic and funny.",
+      "commands": [
+        "moist"
+      ]
+    },
     {
       "ts": 1788419076,
       "username": "evistosf",
