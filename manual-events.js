@@ -1,8 +1,14 @@
-// ── Manual stream events ───────────────────────────────────────────────────────
-// Curator-authored markers for a stream: point events, time ranges, and
-// whole-stream tags. Shared by the public chart (streams.html) and the hidden
-// admin editor (admin.html), so this file holds the parse rules, the tag-list
-// helpers and the Chart.js overlay plugin -- everything both pages must agree on.
+// ── Stream chart marker overlay ────────────────────────────────────────────────
+// Every timestamped mark drawn over a stream chart, and the parse rules behind
+// them. Shared by the public chart (streams.html) and the hidden admin editor
+// (admin.html), so this file holds everything both pages must agree on.
+//
+// Two sources, deliberately in one file because they share the drawing and the
+// label-collision machinery:
+//   - CURATOR-AUTHORED events (point / range / whole-stream tags), edited in
+//     admin.html and stored per stream in events_manual.json. Magenta.
+//   - PIPELINE-DERIVED moderation events (bans / timeouts / unbans), read
+//     straight out of the stream's events.jsonl. Red, and nobody edits them.
 //
 // Per-stream document (data/streams/<id>/events_manual.json):
 //   { "version": 1, "events": [
@@ -34,6 +40,10 @@
   // Goal hits get their own accent (red) and a solid line -- the manual events
   // are dashed magenta, so the two never read as the same kind of mark.
   const GOAL_ACCENT = '229,57,53';
+  // Moderation is red too, so it is kept apart from goal hits by POSITION
+  // rather than colour: its marker head sits on the bottom edge and its labels
+  // use the bottom rows, while both top-anchored styles keep the top rows.
+  const MOD_ACCENT = '255,82,82';
   const LABEL_FONT = '11px "Share Tech Mono", monospace';
   // Three stacked label rows (px below chartArea.top) before a label is dropped.
   const LABEL_ROW_OFFSETS = [4, 18, 32];
@@ -41,6 +51,7 @@
   // ABOVE chartArea.bottom, same 14px row pitch, same drop-on-collision rule.
   const LABEL_BOTTOM_ROW_OFFSETS = [6, 20, 34];
   const LABEL_GAP = 4;      // px of clear space required between two labels in a row
+  const LABEL_LINE_HEIGHT = 11;   // px, matches LABEL_FONT -- sizes the label backing plate
   const MARKER_SIZE = 6;    // px, the point event's triangle head
 
   // Tolerant parse of an events_manual.json document: accepts the versioned
@@ -68,6 +79,62 @@
 
   function newId() {
     return 'me_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+  }
+
+  // ── Moderation events ─────────────────────────────────────────────────────
+  // Rows the pipeline wrote into the stream's events.jsonl. The backend records
+  // what each platform actually reports, which differs: Twitch and Kick give an
+  // exact ban-vs-timeout (with a duration), while YouTube can only say a
+  // moderator removed the user -- hence `removed`. `unban` rows are inferred by
+  // the backend, never reported by any platform.
+
+  const MOD_TYPE_LABELS = {
+    ban:     'Ban',
+    timeout: 'Timeout',
+    unban:   'Unban',
+    removed: 'Removed',
+  };
+
+  function modTypeLabel(type) {
+    const key = String(type == null ? '' : type).trim().toLowerCase();
+    return MOD_TYPE_LABELS[key] || (key ? key : 'Moderation');
+  }
+
+  // Compact duration for a timeout label: 45s / 10m / 2h / 1d.
+  function modDuration(seconds) {
+    const s = Math.floor(Number(seconds));
+    if (!Number.isFinite(s) || s <= 0) return '';
+    if (s < 60) return `${s}s`;
+    if (s < 3600) return `${Math.round(s / 60)}m`;
+    if (s < 86400) return `${Math.round(s / 3600)}h`;
+    return `${Math.round(s / 86400)}d`;
+  }
+
+  // "Ban: someone", or "Timeout: someone (10m)" when a duration is known.
+  // Type-first so a stack of labels lines up on the left.
+  function modLabel(ev) {
+    const dur = modDuration(ev && ev.duration);
+    return `${modTypeLabel(ev && ev.type)}: ${(ev && ev.username) || ''}`
+         + (dur ? ` (${dur})` : '');
+  }
+
+  // Pull the moderation rows out of a parsed events.jsonl. Filters, never
+  // rewrites (mirroring normalize() above).
+  //
+  // A row with no username is dropped: that is a YouTube removal whose channel
+  // id never appeared in chat, so there is no name to put on the marker. The
+  // raw event still lives in events.jsonl.
+  function normalizeModeration(events) {
+    const out = [];
+    for (const ev of (Array.isArray(events) ? events : [])) {
+      if (!ev || typeof ev !== 'object' || Array.isArray(ev)) continue;
+      if (ev.event !== 'moderation') continue;
+      if (!Number.isFinite(ev.ts)) continue;
+      if (typeof ev.username !== 'string' || !ev.username.trim()) continue;
+      out.push(ev);
+    }
+    out.sort((a, b) => a.ts - b.ts);
+    return out;
   }
 
   // Case-insensitive union of two tag lists; the first list's order and the
@@ -203,21 +270,31 @@
     return hits;
   }
 
-  // Chart.js inline plugin. getState() -> { events, visible, selection, goalHits }:
-  //   events    -- the `timed` array (kind point/range), ts in unix seconds
-  //   visible   -- legend toggle
-  //   selection -- null, or { x0px, x1px } for a live drag band (admin only;
-  //                already in canvas pixels, so no scale conversion)
-  //   goalHits  -- optional [{ts, value, tag}] from computeGoalHits
+  // Chart.js inline plugin. getState() -> { events, visible, selection,
+  //                                         goalHits, modEvents, modVisible }:
+  //   events     -- the `timed` array (kind point/range), ts in unix seconds
+  //   visible    -- legend toggle for the curator events
+  //   selection  -- null, or { x0px, x1px } for a live drag band (admin only;
+  //                 already in canvas pixels, so no scale conversion)
+  //   goalHits   -- optional [{ts, value, tag}] from computeGoalHits
+  //   modEvents  -- optional moderation rows from normalizeModeration
+  //   modVisible -- separate legend toggle for those (they have their own
+  //                 source and their own legend item, so `visible` must not
+  //                 hide them too)
   function makePlugin(getState) {
     function readState() {
       const state = getState ? getState() : null;
-      if (!state || !state.visible) return null;
-      const events = Array.isArray(state.events) ? state.events : [];
-      const goalHits = Array.isArray(state.goalHits) ? state.goalHits : [];
-      const selection = state.selection || null;
-      if (events.length === 0 && goalHits.length === 0 && !selection) return null;
-      return { events, goalHits, selection };
+      if (!state) return null;
+      const curatorOn = !!state.visible;
+      const events = (curatorOn && Array.isArray(state.events)) ? state.events : [];
+      const goalHits = (curatorOn && Array.isArray(state.goalHits)) ? state.goalHits : [];
+      const selection = curatorOn ? (state.selection || null) : null;
+      const modEvents = (state.modVisible !== false && Array.isArray(state.modEvents))
+        ? state.modEvents : [];
+      if (events.length === 0 && goalHits.length === 0 && modEvents.length === 0 && !selection) {
+        return null;
+      }
+      return { events, goalHits, selection, modEvents };
     }
 
     // A goal event's label carries its threshold: "Initial Goal: 20".
@@ -323,6 +400,31 @@
           ctx.fill();
         }
 
+        // Moderation: DOTTED, and its square head sits on the BOTTOM edge. Red
+        // like the goal hits, so position and line style are what tell the two
+        // apart -- see MOD_ACCENT.
+        ctx.strokeStyle = `rgba(${MOD_ACCENT},0.8)`;
+        ctx.fillStyle = `rgba(${MOD_ACCENT},0.9)`;
+        ctx.lineWidth = 2;
+        ctx.setLineDash([2, 3]);
+        for (const ev of state.modEvents) {
+          const x = xs.getPixelForValue(ev.ts * 1000);
+          if (x < left || x > right) continue;
+          ctx.beginPath();
+          ctx.moveTo(x, top);
+          ctx.lineTo(x, bottom);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          ctx.fillRect(x - MARKER_SIZE / 2, bottom - MARKER_SIZE, MARKER_SIZE, MARKER_SIZE);
+          ctx.strokeStyle = 'rgba(0,0,0,0.55)';
+          ctx.lineWidth = 1;
+          ctx.strokeRect(x - MARKER_SIZE / 2, bottom - MARKER_SIZE, MARKER_SIZE, MARKER_SIZE);
+          ctx.strokeStyle = `rgba(${MOD_ACCENT},0.8)`;
+          ctx.lineWidth = 2;
+          ctx.setLineDash([2, 3]);
+        }
+        ctx.setLineDash([]);
+
         // Labels, left to right, greedily stacked into the first row that has
         // horizontal space; an event that collides in all rows loses its label
         // (its line/band is already drawn). POINT labels and goal-hit labels
@@ -347,12 +449,21 @@
           ctx.textBaseline = 'top';
           ctx.fillText(text, x, top + LABEL_ROW_OFFSETS[rowIndex]);
         }
-        function placeBottomLabel(text, x, width, color) {
+        // `backing` draws a dark plate behind the text first. The bottom rows sit
+        // in the busiest part of the canvas -- right on top of the viewer and
+        // msg/min series near the axis -- where bare coloured text is unreadable.
+        // The top rows don't need it: that end of the chart is mostly empty.
+        function placeBottomLabel(text, x, width, color, backing) {
           const rowIndex = claimRow(bottomRows, x, width);
           if (rowIndex === -1) return;
+          const y = bottom - LABEL_BOTTOM_ROW_OFFSETS[rowIndex];
+          if (backing) {
+            ctx.fillStyle = 'rgba(0,0,0,0.62)';
+            ctx.fillRect(x - 3, y - LABEL_LINE_HEIGHT, width + 6, LABEL_LINE_HEIGHT + 3);
+          }
           ctx.fillStyle = color;
           ctx.textBaseline = 'bottom';
-          ctx.fillText(text, x, bottom - LABEL_BOTTOM_ROW_OFFSETS[rowIndex]);
+          ctx.fillText(text, x, y);
         }
         for (const ev of state.events) {
           const text = labelText(ev);
@@ -380,6 +491,16 @@
           const x = (at + 2 + width > right) ? at - 2 - width : at + 2;
           placeLabel(text, x, width, `rgba(${GOAL_ACCENT},0.95)`);
         }
+        // Moderation labels claim the BOTTOM rows, beside their marker head --
+        // so a run of bans can never crowd out the curator/goal labels above.
+        for (const ev of state.modEvents) {
+          const at = xs.getPixelForValue(ev.ts * 1000);
+          if (at < left || at > right) continue;
+          const text = modLabel(ev);
+          const width = ctx.measureText(text).width;
+          const x = (at + 4 + width > right) ? at - 4 - width : at + 4;
+          placeBottomLabel(text, x, width, `rgba(${MOD_ACCENT},1)`, true);
+        }
         ctx.restore();
       },
     };
@@ -389,6 +510,8 @@
     SEED_TAGS, GOAL_TAGS, isGoalTag,
     normalize, newId, mergeTags,
     subCount, computeGoalHits,
+    MOD_ACCENT, MOD_TYPE_LABELS,
+    normalizeModeration, modLabel, modTypeLabel, modDuration,
     makePlugin,
   };
 })(window);

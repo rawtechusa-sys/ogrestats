@@ -1164,6 +1164,9 @@ async function loadStream(streamId) {
     const events    = parseJSONL(eventsText);
     const snapshots = events.filter(e => e.event === 'viewer_snapshot');
     const donations = events.filter(e => e.event === 'donation');
+    // Bans / timeouts / inferred unbans the pipeline recorded. Same file, no
+    // extra fetch; drops rows with no username (see normalizeModeration).
+    const moderation = ManualEvents.normalizeModeration(events);
 
     const startTs   = meta.start_ts;
     const endTs     = meta.end_ts;
@@ -1419,7 +1422,7 @@ async function loadStream(streamId) {
         </div>`;
       main.appendChild(panel);
 
-      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents);
+      buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents, moderation);
       const chipsEl = document.getElementById('manualChips');
       if (chipsEl) {
         chipsEl.innerHTML = manualEvents.wholeStream.map(ev => {
@@ -1482,7 +1485,7 @@ async function loadStream(streamId) {
 
     // ── Event log ──
     // Donations and the curator's manual events share one table.
-    if (donations.length > 0 || manualEvents.timed.length > 0 || manualEvents.wholeStream.length > 0) {
+    if (donations.length > 0 || manualEvents.timed.length > 0 || manualEvents.wholeStream.length > 0 || moderation.length > 0) {
       const panel = document.createElement('div');
       panel.className = 'donations-panel';
 
@@ -1608,11 +1611,38 @@ async function loadStream(streamId) {
         </tr>`;
       }
 
+      // A moderation event reads as a donation-shaped row too: the red the
+      // chart draws its markers in, the timeout duration in the Amount column,
+      // and whatever context the platform gave (Kick reports a moderator and a
+      // reason; Twitch and YouTube report neither) as the message.
+      function moderationRow(ev) {
+        const label  = ManualEvents.modTypeLabel(ev.type);
+        const evType = `mod:${String(ev.type || '').trim().toLowerCase()}`;
+        const color  = `rgb(${ManualEvents.MOD_ACCENT})`;
+        if (!logTypes.has(evType)) logTypes.set(evType, { label, color });
+        const dur    = ManualEvents.modDuration(ev.duration);
+        const amount = dur ? `<span class="amount-usd">${escHtml(dur)}</span>` : '<span class="amount-usd">—</span>';
+        const parts  = [];
+        if (ev.moderator) parts.push(`by ${ev.moderator}`);
+        if (ev.reason)    parts.push(ev.reason);
+        if (ev.platform)  parts.push(`on ${ev.platform}`);
+        const note   = parts.join(' · ');
+        const msg    = note ? `<span class="msg-cell" title="${note.replace(/"/g,'&quot;')}">${escHtml(note)}</span>` : '';
+        return `<tr data-evtype="${escHtml(evType)}">
+          <td class="ts-cell">${tsLink(ev.ts, elapsedText(ev.ts))}</td>
+          <td><span class="username">${escHtml(String(ev.username || '').replace(/^@+/, ''))}</span></td>
+          <td><span class="type-badge" style="--type-color:${color}">${escHtml(label)}</span></td>
+          <td>${amount}</td>
+          <td>${msg}</td>
+        </tr>`;
+      }
+
       // Whole-stream events pin to the top; everything else interleaves by ts.
       // The sort is stable, so a manual event sharing a donation's second follows it.
       const timeline = [
         ...donations.map(d => ({ ts: d.ts, html: donationRow(d) })),
         ...manualEvents.timed.map(ev => ({ ts: ev.ts, html: manualRow(ev) })),
+        ...moderation.map(ev => ({ ts: ev.ts, html: moderationRow(ev) })),
       ].sort((a, b) => a.ts - b.ts);
       const rows = manualEvents.wholeStream.map(manualRow).join('')
                  + timeline.map(r => r.html).join('');
@@ -2196,7 +2226,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
   return chart;
 }
 
-function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents = { timed: [], wholeStream: [] }) {
+function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms, manualEvents = { timed: [], wholeStream: [] }, moderation = []) {
   if (currentChart) { currentChart.destroy(); currentChart = null; }
 
   const ctx = document.getElementById('streamChart');
@@ -2664,6 +2694,9 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
   // Manual event overlay visibility (persisted; default on), same shape as the
   // pausing band. Closed over by the manualEvents plugin below.
   let showManualEvents = localStorage.getItem('stream-chart-manualevents') !== '0';
+  // Moderation markers toggle independently of the curator events -- different
+  // source, different legend item.
+  let showModeration = localStorage.getItem('stream-chart-moderation') !== '0';
 
   currentChart = new Chart(ctx, {
     type: 'bar',
@@ -2917,7 +2950,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     },
     // Curator-authored point/range markers, drawn by the shared overlay plugin
     // (manual-events.js). streams.html is read-only: no live drag selection.
-    ManualEvents.makePlugin(() => ({ events: manualEvents.timed, visible: showManualEvents, selection: null, goalHits })),
+    ManualEvents.makePlugin(() => ({
+      events: manualEvents.timed, visible: showManualEvents, selection: null, goalHits,
+      modEvents: moderation, modVisible: showModeration,
+    })),
     ],
   });
 
@@ -2949,6 +2985,16 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
     try { localStorage.setItem('stream-chart-manualevents', showManualEvents ? '1' : '0'); } catch (e) {}
     currentChart.draw();
     return showManualEvents;
+  };
+
+  // Legend hooks for the (non-dataset) moderation overlay.
+  currentChart.$hasModeration = moderation.length > 0;
+  currentChart.$moderationVisible = () => showModeration;
+  currentChart.$toggleModeration = () => {
+    showModeration = !showModeration;
+    try { localStorage.setItem('stream-chart-moderation', showModeration ? '1' : '0'); } catch (e) {}
+    currentChart.draw();
+    return showModeration;
   };
 
   // Double-click anywhere on the chart to reset an x-axis zoom/pan.
@@ -3123,7 +3169,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
   // "Total" entry appears only when 2+ platforms in that category have data,
   // matching the dataset gating in buildChart.
   // Item: { label, type ('line'|'dashed'|'dotted'|'bar'), color, ds } or
-  // { special:'pausing'|'manualevents' }.
+  // { special:'pausing'|'manualevents'|'moderation' }.
   const groups = [];
 
   const gDonations = [];
@@ -3173,6 +3219,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
     gPausing.push({ label: 'Members+Subs', type: 'line', color: 'rgb(255,120,200)', ds: DS.MEMBERS });
   if (currentChart.$hasPausingData) gPausing.push({ special: 'pausing' });
   if (currentChart.$hasManualEvents) gPausing.push({ special: 'manualevents' });
+  if (currentChart.$hasModeration) gPausing.push({ special: 'moderation' });
   groups.push({ title: null, items: gPausing });
 
   container.innerHTML = '';
@@ -3240,6 +3287,20 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
     return span;
   }
 
+  function makeModerationToggle() {
+    const span = document.createElement('span');
+    span.className = 'legend-item';
+    // Square glyph, matching the square marker head the plugin draws (the
+    // curator-event toggle uses a triangle, like its own head).
+    span.innerHTML = `Moderation <span style="color:rgba(${ManualEvents.MOD_ACCENT},0.95);font-weight:bold;">&#9642;</span>`;
+    if (!currentChart.$moderationVisible()) span.classList.add('hidden');
+    span.addEventListener('click', () => {
+      const visible = currentChart.$toggleModeration();
+      span.classList.toggle('hidden', !visible);
+    });
+    return span;
+  }
+
   // Render each non-empty category as a vertical column; columns sit side-by-side.
   for (const group of groups) {
     if (group.items.length === 0) continue;
@@ -3248,6 +3309,7 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
     for (const item of group.items) {
       if (item.special === 'pausing')           col.appendChild(makePausing());
       else if (item.special === 'manualevents') col.appendChild(makeManualEventsToggle());
+      else if (item.special === 'moderation')   col.appendChild(makeModerationToggle());
       else                                      col.appendChild(makeItem(item));
     }
     container.appendChild(col);
