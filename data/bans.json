@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788523469,
+  "updated_ts": 1788526349,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -65,7 +65,8 @@
     "a_fun_dspgaming_man_stream",
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
     "ask_a_man_random_things_while_you_stare_at_birds",
-    "bird_and_man_mayhem"
+    "bird_and_man_mayhem",
+    "lets_argue_about_nintendo"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -760,6 +761,16 @@
       "archive_start_ts": 1636424385,
       "segments": null,
       "source_vod_id": "UlxBqgVrXKA",
+      "source_platform": "youtube"
+    },
+    "lets_argue_about_nintendo": {
+      "title": "Let's Argue About Nintendo",
+      "start_ts": 1636249041,
+      "youtube_archive_id": "oQtJwdnHFWE",
+      "archive_org_id": "ogrewatch-lets_argue_about_nintendo",
+      "archive_start_ts": 1636249041,
+      "segments": null,
+      "source_vod_id": "NUpPKZZAacQ",
       "source_platform": "youtube"
     }
   },
