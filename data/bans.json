@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788641097,
+  "updated_ts": 1788650792,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -78,7 +78,8 @@
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
     "a_beautiful_man_becomes_more_beautiful_live",
     "the_perfect_man_stream",
-    "its_over_2024-10-25"
+    "its_over_2024-10-25",
+    "breaking_news_im_an_idiot"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -903,6 +904,16 @@
       "archive_start_ts": 1729896540,
       "segments": null,
       "source_vod_id": "vf95_NUinKs",
+      "source_platform": "youtube"
+    },
+    "breaking_news_im_an_idiot": {
+      "title": "Breaking News: I'm An Idiot",
+      "start_ts": 1629765587,
+      "youtube_archive_id": "O_J9w03y_sU",
+      "archive_org_id": "ogrewatch-breaking_news_im_an_idiot",
+      "archive_start_ts": 1629765587,
+      "segments": null,
+      "source_vod_id": "4xORIzvzAkU",
       "source_platform": "youtube"
     }
   },
