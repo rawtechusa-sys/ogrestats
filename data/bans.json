@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788606858,
+  "updated_ts": 1788641097,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -77,7 +77,8 @@
     "come_ask_questions_watching_my_old_keemstar_debate",
     "come_stare_at_me_talk_into_a_microphone_and_say_words",
     "a_beautiful_man_becomes_more_beautiful_live",
-    "the_perfect_man_stream"
+    "the_perfect_man_stream",
+    "its_over_2024-10-25"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -892,6 +893,16 @@
       "archive_start_ts": 1632612400,
       "segments": null,
       "source_vod_id": "9oraohQ8gIo",
+      "source_platform": "youtube"
+    },
+    "its_over_2024-10-25": {
+      "title": "It's Over",
+      "start_ts": 1729896540,
+      "youtube_archive_id": null,
+      "archive_org_id": "rtustreams7",
+      "archive_start_ts": 1729896540,
+      "segments": null,
+      "source_vod_id": "vf95_NUinKs",
       "source_platform": "youtube"
     }
   },
