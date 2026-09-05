@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788561073,
+  "updated_ts": 1788567369,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -73,7 +73,8 @@
     "come_ask_a_man_and_bird_questions",
     "a_man_with_birds_streams_on_halloween",
     "a_new_bird_approaches",
-    "the_middle_aged_man_stream"
+    "the_middle_aged_man_stream",
+    "come_ask_questions_watching_my_old_keemstar_debate"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -848,6 +849,16 @@
       "archive_start_ts": 1636510627,
       "segments": null,
       "source_vod_id": "KtNYlHpuXWk",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_watching_my_old_keemstar_debate": {
+      "title": "Come Ask Questions (Watching My Old Keemstar Debate)",
+      "start_ts": 1635470549,
+      "youtube_archive_id": "Fp1YDJQPS80",
+      "archive_org_id": "ogrewatch-come_ask_questions_watching_my_old_keemstar_debate",
+      "archive_start_ts": 1635470549,
+      "segments": null,
+      "source_vod_id": "eKd5nwNk-XE",
       "source_platform": "youtube"
     }
   },
