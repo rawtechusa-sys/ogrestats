@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788567369,
+  "updated_ts": 1788572551,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -74,7 +74,8 @@
     "a_man_with_birds_streams_on_halloween",
     "a_new_bird_approaches",
     "the_middle_aged_man_stream",
-    "come_ask_questions_watching_my_old_keemstar_debate"
+    "come_ask_questions_watching_my_old_keemstar_debate",
+    "come_stare_at_me_talk_into_a_microphone_and_say_words"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -859,6 +860,16 @@
       "archive_start_ts": 1635470549,
       "segments": null,
       "source_vod_id": "eKd5nwNk-XE",
+      "source_platform": "youtube"
+    },
+    "come_stare_at_me_talk_into_a_microphone_and_say_words": {
+      "title": "Come Stare At Me Talk Into A Microphone And Say Words",
+      "start_ts": 1634517044,
+      "youtube_archive_id": "2YEcIzDVKLQ",
+      "archive_org_id": "ogrewatch-come_stare_at_me_talk_into_a_microphone_and_say_words",
+      "archive_start_ts": 1634517044,
+      "segments": null,
+      "source_vod_id": "0AY-rvUu6Mo",
       "source_platform": "youtube"
     }
   },
