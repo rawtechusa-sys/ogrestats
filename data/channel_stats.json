@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788503389,
+  "updated_ts": 1788641094,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -856,7 +856,8 @@
     "finally_making_music_2026-09-03_015906",
     "audio_failed_so_more_tcap_2026-09-03_034700",
     "random_test_2026-09-03_055726",
-    "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+    "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
+    "its_over_2024-10-25"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -15393,6 +15394,23 @@
       "avg_chat_mpm": 9.65,
       "avg_active_chatters": 22.86,
       "percent_paused": 84.1
+    },
+    "its_over_2024-10-25": {
+      "stream_id": "its_over_2024-10-25",
+      "title": "It's Over",
+      "start_ts": 1729896540,
+      "end_ts": 1729914819,
+      "duration_sec": 18279,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 0.0,
+      "donation_count": 0,
+      "donations_per_min": 0.0,
+      "peak_viewers": null,
+      "avg_viewers": null,
+      "avg_chat_mpm": 45.87,
+      "avg_active_chatters": 105.07,
+      "percent_paused": null
     }
   }
 }
