@@ -1317,10 +1317,16 @@ async function loadStream(streamId) {
           ? `https://www.twitch.tv/videos/${encodeURIComponent(meta.source_vod_id)}`
           : `https://youtu.be/${encodeURIComponent(meta.source_vod_id)}`)
       : null;
+    // An archive.org item we created holds exactly one video, but a stream
+    // linked to the third-party rtustreams<N> corpus points at a shared item of
+    // several hundred, so the filename has to be part of the path or the player
+    // just loads whichever file sorts first.
+    const iaPath = (id, file) => encodeURIComponent(id) +
+      (file ? '/' + encodeURIComponent(file) : '');
     const archiveHref =
       (meta.youtube_archive_id && meta.archive_is_source_vod !== true)
         ? `https://youtu.be/${encodeURIComponent(meta.youtube_archive_id)}`
-        : (meta.archive_org_id ? `https://archive.org/details/${encodeURIComponent(meta.archive_org_id)}` : null);
+        : (meta.archive_org_id ? `https://archive.org/details/${iaPath(meta.archive_org_id, meta.archive_org_file)}` : null);
     const vodRow = (id, label, href, missing) =>
       `<span class="vod-row" id="${id}">${href
          ? `<a class="ts-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
@@ -1332,7 +1338,7 @@ async function loadStream(streamId) {
     const segArchiveHref = (seg) =>
       seg.archive_id
         ? `https://youtu.be/${encodeURIComponent(seg.archive_id)}`
-        : (seg.archive_org_id ? `https://archive.org/details/${encodeURIComponent(seg.archive_org_id)}` : null);
+        : (seg.archive_org_id ? `https://archive.org/details/${iaPath(seg.archive_org_id, seg.archive_org_file)}` : null);
     const archiveParts = (Array.isArray(meta.segments) && meta.segments.length > 1)
       ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
       : null;
@@ -1380,6 +1386,19 @@ async function loadStream(streamId) {
     }
 
     // ── Combined chart ──
+    // Streams recovered from the third-party archive.org corpus have a video but
+    // no recorded stats at all (their chat replay died with the source VOD), so
+    // say that rather than leaving the page to trail off into nothing.
+    if (snapshots.length === 0 && donations.length === 0) {
+      const note = document.createElement('div');
+      note.className = 'chart-panel';
+      note.innerHTML = `<div class="empty-state" style="height:auto;padding:28px 16px;text-align:center">`
+        + (meta.video_source === 'rtustreams'
+            ? 'recovered from the archive — the video survived, the chat and donation record did not'
+            : 'no chat or donation data was recorded for this stream')
+        + `</div>`;
+      main.appendChild(note);
+    }
     if (snapshots.length > 0 || donations.length > 0) {
       const panel = document.createElement('div');
       panel.className = 'chart-panel';
@@ -1500,6 +1519,7 @@ async function loadStream(streamId) {
         : ((meta.youtube_archive_id || meta.archive_org_id)
             ? [{ archive_id: meta.youtube_archive_id || null,
                  archive_org_id: meta.archive_org_id || null,
+                 archive_org_file: meta.archive_org_file || null,
                  start_ts: meta.archive_start_ts != null ? meta.archive_start_ts : startTs }]
             : []);
 
@@ -1510,7 +1530,8 @@ async function loadStream(streamId) {
         if (seg.archive_id)
           return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
         if (seg.archive_org_id)
-          return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}?start=${tSec}`;
+          return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}${
+            seg.archive_org_file ? '/' + encodeURIComponent(seg.archive_org_file) : ''}?start=${tSec}`;
         return null;
       }
 

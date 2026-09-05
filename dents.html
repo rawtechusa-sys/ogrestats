@@ -621,8 +621,12 @@ function fmtElapsed(startTs, ts) {
 function buildVodLink(seg, tSec) {
   if (seg.archive_id)
     return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+  // archive_org_file is set when the item is the shared third-party rtustreams
+  // corpus rather than a one-video item we made; without it the player loads
+  // whichever of its several hundred files sorts first.
   if (seg.archive_org_id)
-    return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}?start=${tSec}`;
+    return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}${
+      seg.archive_org_file ? '/' + encodeURIComponent(seg.archive_org_file) : ''}?start=${tSec}`;
   return null;
 }
 
@@ -650,6 +654,7 @@ function streamSegments(smeta) {
   if (smeta.youtube_archive_id || smeta.archive_org_id)
     return [{ archive_id: smeta.youtube_archive_id || null,
               archive_org_id: smeta.archive_org_id || null,
+              archive_org_file: smeta.archive_org_file || null,
               start_ts: smeta.archive_start_ts != null ? smeta.archive_start_ts : smeta.start_ts }];
   return [];
 }
