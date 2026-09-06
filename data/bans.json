@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788699333,
+  "updated_ts": 1788702337,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -84,7 +84,8 @@
     "come_ask_shirtless_men_questions",
     "so_much_man_so_much_stream_chris_chans_troll_is_psycho",
     "saturday_night_with_dad_mike_lindelldave_pakman_reaction",
-    "friday_night_new_york_man_stream"
+    "friday_night_new_york_man_stream",
+    "come_ask_a_man_and_a_bird_questions"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -974,6 +975,16 @@
       "archive_start_ts": 1628300200,
       "segments": null,
       "source_vod_id": "vdMEP0C2_UA",
+      "source_platform": "youtube"
+    },
+    "come_ask_a_man_and_a_bird_questions": {
+      "title": "Come Ask A Man And A Bird Questions",
+      "start_ts": 1628208922,
+      "youtube_archive_id": "BTfsnKGanbU",
+      "archive_org_id": "ogrewatch-come_ask_a_man_and_a_bird_questions",
+      "archive_start_ts": 1628208922,
+      "segments": null,
+      "source_vod_id": "1fkURq0nZFQ",
       "source_platform": "youtube"
     }
   },
