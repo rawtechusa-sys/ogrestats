@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788641071,
+  "updated_ts": 1788676527,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -857,17 +857,18 @@
     "audio_failed_so_more_tcap_2026-09-03_034700",
     "random_test_2026-09-03_055726",
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
-    "its_over_2024-10-25"
+    "its_over_2024-10-25",
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
   ],
   "commands": {
     "men": 5,
-    "eric": 197,
-    "phil": 444,
-    "stan": 337,
+    "eric": 200,
+    "phil": 459,
+    "stan": 344,
     "masterchief": 170,
-    "harman": 140,
-    "trump": 158,
-    "moist": 35,
+    "harman": 144,
+    "trump": 163,
+    "moist": 37,
     "dagoth": 5,
     "zesty": 36,
     "linus": 40,
@@ -920,7 +921,7 @@
     "out": 4,
     "source": 4,
     "homer": 2,
-    "stanley": 1,
+    "stanley": 2,
     "s": 1,
     "krato": 1,
     "masucci": 1,
@@ -10242,9 +10243,339 @@
       "segments": null,
       "source_vod_id": "vf95_NUinKs",
       "source_platform": "youtube"
+    },
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215": {
+      "title": "Playing Some Elden Ring: Tarnished Edition Again...",
+      "start_ts": 1788656742,
+      "youtube_archive_id": "wxEMFW0tKw4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "wxEMFW0tKw4",
+          "start_ts": 1788656742
+        }
+      ],
+      "source_vod_id": "ihN-zD-QM1c",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1788676057,
+      "username": "@nevablowingbubbles1337",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: It comes in denim, it comes in denim, DENIM!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788675420,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: 4 hours to go and we hit the 9 hours goal!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788673973,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: hey Rich can I mail you a spoon. From me ree",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788673923,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Moist: I feel like ever since he lost his friends he just secluded himself for so long with his wife that he lost social skills because of it.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1788673399,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: everything I ever did was correct. It\u2019s the viewers fault if it failed because they made it weird. I don\u2019t see what was funny at all !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788673374,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: I'm a robust man rich.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788671624,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: Bubbles! bubbles! bubbles! bubbles! burst!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788670935,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Stan: oh ill do more than blow bubbles daddy! uhhh",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788669016,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: what a robust looking bust !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788668447,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: I invented live streaming, you should all pay me royalties !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788667441,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Harman: Review Tech USA n\u00famero dos",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788667201,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: You better kiss that 4090 before it goes in your PC!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788666281,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: Rich my channel has more subscribers Eat it",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788665256,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "I'm pretty pumped for Belmont's Curse next month. Halloween stream this year? Stan: Richie in a Sypha costume? Oh ! Oh ! I think I finally got hard !",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788663676,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Eric: say what you will about quantum but he is quite the matchmaker. He matched you with the dream game you didn\u2019t know you wanted. I wish he\u2019d match me with something. Even a man, I don\u2019t care !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1788662845,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Trump: men, I have a question of major importance. which is worse? severe swap ass with ass cramps, or your sweaty balls sticking to your leg and then getting pulled taunt while moving?",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788662235,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "it been 101 for since Monday with high humidity 115 heat index. nothing but swamp ass in the shop. Stan: oh yea daddy i want some of that saugy ass Crack mmmmmm! bubble farts! bend over daddy im ready",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788661969,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Eric: No protection? just the way I like it, who's with me?? Trump: you have my full support! Harman: You have my Pikachu!! Stan: And my ash mmmhhmmmm",
+      "commands": [
+        "eric",
+        "trump",
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788661828,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Moist: Remember he was on his ex wife's car in the deadpool mask? I truly still believe he is still a ticking time bomb of lunacy.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1788661714,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Trump: men, I farted. wait, it was a shart damn it",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788660838,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Harman: Review Tech USA I hate Elden Ring on Swtch",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788659683,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: listen your not getting support now complain to your audience, pause the game and stare at the screen.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788659528,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: Update the goal you man, start that ebegging",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788659223,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: missed solidPak cheer50 otherwise I'll ban u",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788659078,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Stan: oh yea daddy, embrace the power of the farts. lick my ass while im fartin! Trump: no damn it! stay away! you make get more then a fart from me if you touch my hole. Stan: mmmmm sharts!",
+      "commands": [
+        "stan",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788658914,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: Rich are you streaming 9 hours today ?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788658767,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Cheer1000 Eric: Rich, you need to start your merchandise store by selling those 3D busts of Bob Lavari! My e-book on Amazon is very successful and was 100% NOT written by AI!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1788658707,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Harman: Review Tech USA new amico is happening!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788658381,
+      "username": "@ZorkMetal",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Phil: theirs a rod and it shot lightning. Oh yeaa!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788658096,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Stan: I spelt it wrong. Grandpa isn't excited.",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788657967,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "message": "Trump: Trump Steaks are the best tasting steaks ever know to mankind. I love putting them in my mouth. Stanley: I love putting them in my ass.",
+      "commands": [
+        "trump",
+        "stanley"
+      ]
+    },
     {
       "ts": 1788499682,
       "username": "@yapyapjr8908",
