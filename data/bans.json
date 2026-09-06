@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788706849,
+  "updated_ts": 1788710153,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -86,7 +86,8 @@
     "saturday_night_with_dad_mike_lindelldave_pakman_reaction",
     "friday_night_new_york_man_stream",
     "come_ask_a_man_and_a_bird_questions",
-    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions"
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+    "come_ask_a_man_anything_8_3_2021"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -996,6 +997,16 @@
       "archive_start_ts": 1628122077,
       "segments": null,
       "source_vod_id": "dy_OwsgbTS8",
+      "source_platform": "youtube"
+    },
+    "come_ask_a_man_anything_8_3_2021": {
+      "title": "Come Ask A Man Anything 8-3-2021",
+      "start_ts": 1628034947,
+      "youtube_archive_id": "L77sJruYc5M",
+      "archive_org_id": "ogrewatch-come_ask_a_man_anything_8_3_2021",
+      "archive_start_ts": 1628034947,
+      "segments": null,
+      "source_vod_id": "B1Eipt-zak0",
       "source_platform": "youtube"
     }
   },
