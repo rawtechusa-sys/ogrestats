@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788702337,
+  "updated_ts": 1788706849,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -85,7 +85,8 @@
     "so_much_man_so_much_stream_chris_chans_troll_is_psycho",
     "saturday_night_with_dad_mike_lindelldave_pakman_reaction",
     "friday_night_new_york_man_stream",
-    "come_ask_a_man_and_a_bird_questions"
+    "come_ask_a_man_and_a_bird_questions",
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -985,6 +986,16 @@
       "archive_start_ts": 1628208922,
       "segments": null,
       "source_vod_id": "1fkURq0nZFQ",
+      "source_platform": "youtube"
+    },
+    "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions": {
+      "title": "A Man Unboxes The Retail Aya Neo  Console (Come Ask Questions)",
+      "start_ts": 1628122077,
+      "youtube_archive_id": "fSzeYg6x8Sc",
+      "archive_org_id": "ogrewatch-a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
+      "archive_start_ts": 1628122077,
+      "segments": null,
+      "source_vod_id": "dy_OwsgbTS8",
       "source_platform": "youtube"
     }
   },
