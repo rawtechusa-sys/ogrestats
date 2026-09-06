@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788641078,
+  "updated_ts": 1788676531,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -857,7 +857,8 @@
     "audio_failed_so_more_tcap_2026-09-03_034700",
     "random_test_2026-09-03_055726",
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
-    "its_over_2024-10-25"
+    "its_over_2024-10-25",
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9666,6 +9667,21 @@
       "segments": null,
       "source_vod_id": "vf95_NUinKs",
       "source_platform": "youtube"
+    },
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215": {
+      "title": "Playing Some Elden Ring: Tarnished Edition Again...",
+      "start_ts": 1788656742,
+      "youtube_archive_id": "wxEMFW0tKw4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "wxEMFW0tKw4",
+          "start_ts": 1788656742
+        }
+      ],
+      "source_vod_id": "ihN-zD-QM1c",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10322,6 +10338,54 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1788673399,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: everything I ever did was correct. It\u2019s the viewers fault if it failed because they made it weird. I don\u2019t see what was funny at all !",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788669016,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Phil: what a robust looking bust !",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788668537,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788668447,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Phil: I invented live streaming, you should all pay me royalties !",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788666721,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788663676,
+        "type": "superchat",
+        "amount_usd": 10.04,
+        "amount_raw": "CA$13.99",
+        "message": "Eric: say what you will about quantum but he is quite the matchmaker. He matched you with the dream game you didn\u2019t know you wanted. I wish he\u2019d match me with something. Even a man, I don\u2019t care !",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788494260,
         "type": "superchat",
@@ -19609,6 +19673,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1788673973,
+        "type": "superchat",
+        "amount_usd": 2.11,
+        "amount_raw": "A$2.99",
+        "message": "Phil: hey Rich can I mail you a spoon. From me ree",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1787182026,
         "type": "superchat",
         "amount_usd": 2.11,
@@ -19716,6 +19788,22 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1788668637,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788657621,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788494081,
         "type": "giftmembership",
@@ -20030,6 +20118,22 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1788671624,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Bubbles! bubbles! bubbles! bubbles! burst!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788658886,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788483187,
         "type": "superchat",
@@ -20890,6 +20994,46 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1788670935,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: oh ill do more than blow bubbles daddy! uhhh",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788662845,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: men, I have a question of major importance. which is worse? severe swap ass with ass cramps, or your sweaty balls sticking to your leg and then getting pulled taunt while moving?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788662235,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "it been 101 for since Monday with high humidity 115 heat index. nothing but swamp ass in the shop. Stan: oh yea daddy i want some of that saugy ass Crack mmmmmm! bubble farts! bend over daddy im ready",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788661714,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: men, I farted. wait, it was a shart damn it",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788659078,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Stan: oh yea daddy, embrace the power of the farts. lick my ass while im fartin! Trump: no damn it! stay away! you make get more then a fart from me if you touch my hole. Stan: mmmmm sharts!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788493669,
         "type": "superchat",
@@ -23514,6 +23658,30 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1788665256,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'm pretty pumped for Belmont's Curse next month. Halloween stream this year? Stan: Richie in a Sypha costume? Oh ! Oh ! I think I finally got hard !",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788659528,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Update the goal you man, start that ebegging",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788657601,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788499032,
         "type": "superchat",
@@ -42778,6 +42946,46 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1788674244,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Please stay up until 6am, you're like my real dad",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788673056,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "$70 for Elden cuck is steep. Even 4 Switch2",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788672212,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen 6am or else I become a lot lizard..up 2 u",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788672005,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dad stay up, come on...we love you",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788671485,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Whats your experience with Elden Ring on Switch2?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788488022,
         "type": "superchat",
@@ -62915,6 +63123,14 @@
     ],
     "nevablowingbubbles1337": [
       {
+        "ts": 1788676057,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: It comes in denim, it comes in denim, DENIM!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1787965154,
         "type": "bits",
         "amount_usd": 0.5,
@@ -63398,6 +63614,62 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1788675420,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: 4 hours to go and we hit the 9 hours goal!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788667441,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA n\u00famero dos",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788666281,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich my channel has more subscribers Eat it",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788660838,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA I hate Elden Ring on Swtch",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788658914,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich are you streaming 9 hours today ?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788658707,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA new amico is happening!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788658459,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 43 months",
+        "message": "Keem is back to the LCU!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788491220,
         "type": "superchat",
@@ -64316,6 +64588,38 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1788673923,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: I feel like ever since he lost his friends he just secluded himself for so long with his wife that he lost social skills because of it.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788673374,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I'm a robust man rich.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788661828,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: Remember he was on his ex wife's car in the deadpool mask? I truly still believe he is still a ticking time bomb of lunacy.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788659683,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: listen your not getting support now complain to your audience, pause the game and stare at the screen.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788499682,
         "type": "superchat",
@@ -66878,6 +67182,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1788663048,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "A man is here... how's it going?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788482074,
         "type": "superchat",
@@ -75045,6 +75357,14 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1788667201,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: You better kiss that 4090 before it goes in your PC!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1787643887,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -75222,6 +75542,14 @@
       }
     ],
     "shogunluffy": [
+      {
+        "ts": 1788668898,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1785809078,
         "type": "membership",
@@ -79670,6 +79998,22 @@
       }
     ],
     "evistosf": [
+      {
+        "ts": 1788658859,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich, in all seriousness I would TOTALLY buy a 3D Bob Lavari bust... and I totally will NOT put it in my ass! rtuRobust",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788658767,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Eric: Rich, you need to start your merchandise store by selling those 3D busts of Bob Lavari! My e-book on Amazon is very successful and was 100% NOT written by AI!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788483003,
         "type": "bits",
@@ -85612,6 +85956,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1788658096,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Stan: I spelt it wrong. Grandpa isn't excited.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788657967,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Trump: Trump Steaks are the best tasting steaks ever know to mankind. I love putting them in my mouth. Stanley: I love putting them in my ass.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788481794,
         "type": "superchat",
@@ -92870,6 +93230,22 @@
       }
     ],
     "Spoderman75": [
+      {
+        "ts": 1788666712,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did u react to asmon watch dsp clips, twas funny",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788666224,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can u sell ur sealed farts in a jar like belle?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788053954,
         "type": "superchat",
@@ -120031,6 +120407,14 @@
     ],
     "BRS_v": [
       {
+        "ts": 1788658590,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "rich you can find the horse skin after godrick :racehorse:",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1787532304,
         "type": "membership",
         "amount_usd": 1.99,
@@ -120862,6 +121246,14 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1788672754,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I enjoy the postnasal drip It\u2019s like a faucet.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788489891,
         "type": "superchat",
@@ -122948,6 +123340,30 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1788662225,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I\u2019m excited for Ashoka season 2 on Disney plus also interested to see how much people will either love or hate the new Harry Potter HBO series for reasons that are beyond just JK Rowling\u2019s views; sad!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788661934,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "For some cursed reason in this wicked heatwave we tried having our first :american_football: home game at my college, It lasted 1 hour! Love it! Stay hydrated bird fam",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788661622,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "The council of men is here! Hi everyone! I have a lot of homework but we grind on nights like these! Quantum TV? Sheesh fam, that guy brings back not so funny memories from act man\u2019s lawyer arc! Birds",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788492687,
         "type": "superchat",
@@ -130489,6 +130905,14 @@
     ],
     "Ysusha116": [
       {
+        "ts": 1788668908,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1788491965,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -134164,6 +134588,14 @@
       }
     ],
     "Sphericalman01": [
+      {
+        "ts": 1788661969,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: No protection? just the way I like it, who's with me?? Trump: you have my full support! Harman: You have my Pikachu!! Stan: And my ash mmmhhmmmm",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788061795,
         "type": "superchat",
@@ -143461,6 +143893,14 @@
     ],
     "quasarblade2556": [
       {
+        "ts": 1788660714,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "who's your cheap ass?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1784695738,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -144998,6 +145438,14 @@
       }
     ],
     "daniel7th": [
+      {
+        "ts": 1788668838,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1787537582,
         "type": "membership",
@@ -148212,6 +148660,14 @@
       }
     ],
     "ScottWoodford76": [
+      {
+        "ts": 1788660604,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 53 months",
+        "message": "I love lamp amd roosters I\u2019m high asg right now is this the new echo the dolphin",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1784151205,
         "type": "membership",
@@ -165929,6 +166385,14 @@
     ],
     "JackOfFlames": [
       {
+        "ts": 1788668657,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1787531874,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -166558,6 +167022,14 @@
       }
     ],
     "respergu": [
+      {
+        "ts": 1788663645,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 are you really good at souls games ?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1788402425,
         "type": "bits",
@@ -172193,6 +172665,22 @@
     ],
     "bonedragon7665": [
       {
+        "ts": 1788668888,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788661992,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Boogie, I mean Keem should hire Quantum for the LCU",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1788063889,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -177072,6 +177560,14 @@
       }
     ],
     "theshinynickell": [
+      {
+        "ts": 1788667959,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 7 months",
+        "message": "Robust Elden man",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1739944714,
         "type": "superchat",
@@ -213998,6 +214494,22 @@
       }
     ],
     "RSk3pt1c": [
+      {
+        "ts": 1788666645,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "apparently Sony can only says plays best on PS5 for about 6 months after launch because Nvidia has the marketing rights for the PC releases",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788666523,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "whta happens if Cyberleek releases the PC build of GTA 6 and it floods torrent sites",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
       {
         "ts": 1720916738,
         "type": "superchat",
@@ -536369,6 +536881,30 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1788672730,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 BREAST YOUR HEART PHIL...BREAST AND NIPPLES PHIL. SPAM ALL SOUNDS.",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788672508,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 BREAST YOUR HEART PHIL...BREAST AND LARGE FART PLEASE",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788659022,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich what's up hate to bring bad news as always. Did you hear Zionist genocidal defenders in Capitol Hill Congress passed last that if any college actively participates boycotting the fact that Israel is a genocidla apartheid state than that public college will be defunded. 33 demoncrats signed that bill and one of them is from my state Virginia and I fking threw backlash on his x account. That's the least of least they should be concerned right now! Where are the trump Insurrectionist?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1788498454,
         "type": "bits",
         "amount_usd": 0.5,
@@ -536775,6 +537311,14 @@
     ],
     "DrTSanchez1": [
       {
+        "ts": 1788668938,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1788482775,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -537121,6 +537665,14 @@
     ],
     "VivaSumudPAKResistor": [
       {
+        "ts": 1788659223,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: missed solidPak cheer50 otherwise I'll ban u",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
         "ts": 1788497742,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -537135,6 +537687,72 @@
         "amount_raw": "$20.00",
         "message": "Phil: I just asked Gemini if there is any constitution for even law one has to swear oath in Bible to serve in Congress and then take bribe from AIPAC to serve foreign nation. Gemini replied fk u nothing such exist.",
         "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+      }
+    ],
+    "ZorkMetal": [
+      {
+        "ts": 1788658381,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: theirs a rod and it shot lightning. Oh yeaa!",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      }
+    ],
+    "aor5030": [
+      {
+        "ts": 1788658881,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "to take the tshrt off n k1ss chickn",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      }
+    ],
+    "biffysrevenge": [
+      {
+        "ts": 1788662939,
+        "type": "bits",
+        "amount_usd": 0.95,
+        "amount_raw": "95 bits",
+        "message": "Cheer95 this has gone on too far. unban biffy rich he misses you and has served his punishment like a man. #JUSTICE4BIFFY #BiffyLovesYouRich",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      }
+    ],
+    "RaedBinYousef": [
+      {
+        "ts": 1788663950,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did you watched the EDP documentary?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788663073,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "When will you rerelease that Oh yes! &Exposed song",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      }
+    ],
+    "AkiraDa3mon": [
+      {
+        "ts": 1788668984,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "Would you react to my two minutes Elden ring fight video?",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+      },
+      {
+        "ts": 1788668163,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I have videos of my lvl 1 play through",
+        "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
       }
     ]
   }
