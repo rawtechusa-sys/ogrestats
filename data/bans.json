@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788695955,
+  "updated_ts": 1788697671,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -82,7 +82,8 @@
     "breaking_news_im_an_idiot",
     "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
     "come_ask_shirtless_men_questions",
-    "so_much_man_so_much_stream_chris_chans_troll_is_psycho"
+    "so_much_man_so_much_stream_chris_chans_troll_is_psycho",
+    "saturday_night_with_dad_mike_lindelldave_pakman_reaction"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -952,6 +953,16 @@
       "archive_start_ts": 1628469359,
       "segments": null,
       "source_vod_id": "bGsn_Lftg8w",
+      "source_platform": "youtube"
+    },
+    "saturday_night_with_dad_mike_lindelldave_pakman_reaction": {
+      "title": "Saturday Night With Dad Mike Lindell/Dave Pakman Reaction",
+      "start_ts": 1628380712,
+      "youtube_archive_id": "LvdxUyv-2GM",
+      "archive_org_id": "ogrewatch-saturday_night_with_dad_mike_lindelldave_pakman_reaction",
+      "archive_start_ts": 1628380712,
+      "segments": null,
+      "source_vod_id": "RMdM1lstqlw",
       "source_platform": "youtube"
     }
   },
