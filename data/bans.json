@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788712279,
+  "updated_ts": 1788717626,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -89,7 +89,8 @@
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
     "come_ask_a_man_anything_8_3_2021",
     "come_ask_questions_day_time_edition",
-    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update"
+    "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
+    "come_ask_questions_822021"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1029,6 +1030,16 @@
       "archive_start_ts": 1628011281,
       "segments": null,
       "source_vod_id": "p_HRN6TPCBY",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_822021": {
+      "title": "Come Ask Questions 8/2/2021",
+      "start_ts": 1627951250,
+      "youtube_archive_id": "aJD3PQMBkxQ",
+      "archive_org_id": "ogrewatch-come_ask_questions_822021",
+      "archive_start_ts": 1627951250,
+      "segments": null,
+      "source_vod_id": "iEBYcmv5Mew",
       "source_platform": "youtube"
     }
   },
