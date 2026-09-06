@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788647783,
+  "updated_ts": 1788676541,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1930,7 +1930,8 @@
     "your_favorite_demon_is_streaming_2026-07-20_215933",
     "youtube_has_a_big_problem_and_im_part_of_it_2018-08-10",
     "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
-    "youtubes_most_blatant_anti_woke_gaming_grifter_gets_exposed_as_a_fraud_smashjt_2025-11-10"
+    "youtubes_most_blatant_anti_woke_gaming_grifter_gets_exposed_as_a_fraud_smashjt_2025-11-10",
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34725,6 +34726,23 @@
       "avg_chat_mpm": null,
       "avg_active_chatters": null,
       "percent_paused": null
+    },
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215": {
+      "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+      "title": "Playing Some Elden Ring: Tarnished Edition Again...",
+      "start_ts": 1788656742,
+      "end_ts": 1788676317,
+      "duration_sec": 19575,
+      "youtube_archive_id": "wxEMFW0tKw4",
+      "source_platform": "youtube",
+      "total_donations_usd": 335.72,
+      "donation_count": 74,
+      "donations_per_min": 1.029,
+      "peak_viewers": 294,
+      "avg_viewers": 256.89,
+      "avg_chat_mpm": 6.61,
+      "avg_active_chatters": 16.89,
+      "percent_paused": 85.6
     }
   }
 }
