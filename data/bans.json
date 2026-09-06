@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788650792,
+  "updated_ts": 1788676542,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -79,7 +79,8 @@
     "a_beautiful_man_becomes_more_beautiful_live",
     "the_perfect_man_stream",
     "its_over_2024-10-25",
-    "breaking_news_im_an_idiot"
+    "breaking_news_im_an_idiot",
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -915,6 +916,21 @@
       "segments": null,
       "source_vod_id": "4xORIzvzAkU",
       "source_platform": "youtube"
+    },
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215": {
+      "title": "Playing Some Elden Ring: Tarnished Edition Again...",
+      "start_ts": 1788656742,
+      "youtube_archive_id": "wxEMFW0tKw4",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "wxEMFW0tKw4",
+          "start_ts": 1788656742
+        }
+      ],
+      "source_vod_id": "ihN-zD-QM1c",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -1155,6 +1171,198 @@
           "moderator": "ReviewTechUSALIVE",
           "reason": "No reason provided",
           "stream_id": "a_drama_mongering_boomer_livestreams_2026-09-04_000222"
+        }
+      ]
+    },
+    "8BitEric93": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788660673,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "128106148"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788660673,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "9BitEric": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788661189,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "128108870"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788661189,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "IndridColdRGBtattoo": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788664900,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "50124906"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788664900,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "biffysrevenge": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1788664999,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1518532404"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788664999,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "A1C_beezz": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788666340,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "117715745"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788666340,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "ALToutsider": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788667010,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "48242708"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788667010,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "DrFart_PhD": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788669718,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "45029975"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788669718,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "holdmyglock925": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1788671207,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "28830275"
+        }
+      },
+      "events": [
+        {
+          "ts": 1788671207,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": "No reason provided",
+          "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
         }
       ]
     }
