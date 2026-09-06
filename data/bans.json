@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788710153,
+  "updated_ts": 1788711953,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -87,7 +87,8 @@
     "friday_night_new_york_man_stream",
     "come_ask_a_man_and_a_bird_questions",
     "a_man_unboxes_the_retail_aya_neo_console_come_ask_questions",
-    "come_ask_a_man_anything_8_3_2021"
+    "come_ask_a_man_anything_8_3_2021",
+    "come_ask_questions_day_time_edition"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1007,6 +1008,16 @@
       "archive_start_ts": 1628034947,
       "segments": null,
       "source_vod_id": "B1Eipt-zak0",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_day_time_edition": {
+      "title": "Come Ask Questions (Day Time Edition)",
+      "start_ts": 1628013620,
+      "youtube_archive_id": "2dwAOhovI44",
+      "archive_org_id": "ogrewatch-come_ask_questions_day_time_edition",
+      "archive_start_ts": 1628013620,
+      "segments": null,
+      "source_vod_id": "6vpgXnV-Mtc",
       "source_platform": "youtube"
     }
   },
