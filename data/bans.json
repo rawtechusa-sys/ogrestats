@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788800136,
+  "updated_ts": 1788803283,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -100,7 +100,8 @@
     "another_swatting_disaster_and_activisionubisoft_allegations",
     "dad_had_some_ipas_come_ask_questions",
     "come_ask_questions_7202021",
-    "im_a_baked_man_come_discuss_tech_with_your_dad"
+    "im_a_baked_man_come_discuss_tech_with_your_dad",
+    "come_hang_out_with_a_man_freedom_phone"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1150,6 +1151,16 @@
       "archive_start_ts": 1626739570,
       "segments": null,
       "source_vod_id": "-hnNodmuNp4",
+      "source_platform": "youtube"
+    },
+    "come_hang_out_with_a_man_freedom_phone": {
+      "title": "Come Hang Out With A Man (Freedom Phone)",
+      "start_ts": 1626573164,
+      "youtube_archive_id": "75098z57ycQ",
+      "archive_org_id": "ogrewatch-come_hang_out_with_a_man_freedom_phone",
+      "archive_start_ts": 1626573164,
+      "segments": null,
+      "source_vod_id": "2LXV3_6HqME",
       "source_platform": "youtube"
     }
   },
