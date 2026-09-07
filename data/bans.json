@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788781922,
+  "updated_ts": 1788789057,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -93,7 +93,8 @@
     "come_ask_questions_822021",
     "come_ask_questions_812021",
     "the_chris_chan_and_activision_disasters",
-    "come_look_at_this_man_and_chat_with_him"
+    "come_look_at_this_man_and_chat_with_him",
+    "lets_talk_about_blizzard_developers_bill_cosby_suite"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1073,6 +1074,16 @@
       "archive_start_ts": 1627606802,
       "segments": null,
       "source_vod_id": "xH-5dyzyByw",
+      "source_platform": "youtube"
+    },
+    "lets_talk_about_blizzard_developers_bill_cosby_suite": {
+      "title": "Let's Talk About Blizzard Developers' Bill 'Cosby Suite'",
+      "start_ts": 1627519802,
+      "youtube_archive_id": "X-D_5Py7M_A",
+      "archive_org_id": "ogrewatch-lets_talk_about_blizzard_developers_bill_cosby_suite",
+      "archive_start_ts": 1627519802,
+      "segments": null,
+      "source_vod_id": "1OhL02hqwGE",
       "source_platform": "youtube"
     }
   },
