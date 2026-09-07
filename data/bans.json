@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788793020,
+  "updated_ts": 1788794129,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -96,7 +96,8 @@
     "come_look_at_this_man_and_chat_with_him",
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
     "come_ask_questions_and_stare_at_me",
-    "im_so_sorry"
+    "im_so_sorry",
+    "another_swatting_disaster_and_activisionubisoft_allegations"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1106,6 +1107,16 @@
       "archive_start_ts": 1627175923,
       "segments": null,
       "source_vod_id": "sOoguesUiaw",
+      "source_platform": "youtube"
+    },
+    "another_swatting_disaster_and_activisionubisoft_allegations": {
+      "title": "Another Swatting Disaster, And Activision/Ubisoft Allegations",
+      "start_ts": 1627000326,
+      "youtube_archive_id": "xAVqzxQMHEU",
+      "archive_org_id": "ogrewatch-another_swatting_disaster_and_activisionubisoft_allegations",
+      "archive_start_ts": 1627000326,
+      "segments": null,
+      "source_vod_id": "d6t9RpLmBaw",
       "source_platform": "youtube"
     }
   },
