@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788792055,
+  "updated_ts": 1788793020,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -95,7 +95,8 @@
     "the_chris_chan_and_activision_disasters",
     "come_look_at_this_man_and_chat_with_him",
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
-    "come_ask_questions_and_stare_at_me"
+    "come_ask_questions_and_stare_at_me",
+    "im_so_sorry"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1095,6 +1096,16 @@
       "archive_start_ts": 1627345503,
       "segments": null,
       "source_vod_id": "dlj75VzwXLU",
+      "source_platform": "youtube"
+    },
+    "im_so_sorry": {
+      "title": "I'm So Sorry...",
+      "start_ts": 1627175923,
+      "youtube_archive_id": "LGO8aWohSA0",
+      "archive_org_id": "ogrewatch-im_so_sorry",
+      "archive_start_ts": 1627175923,
+      "segments": null,
+      "source_vod_id": "sOoguesUiaw",
       "source_platform": "youtube"
     }
   },
