@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788794129,
+  "updated_ts": 1788796506,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -97,7 +97,8 @@
     "lets_talk_about_blizzard_developers_bill_cosby_suite",
     "come_ask_questions_and_stare_at_me",
     "im_so_sorry",
-    "another_swatting_disaster_and_activisionubisoft_allegations"
+    "another_swatting_disaster_and_activisionubisoft_allegations",
+    "dad_had_some_ipas_come_ask_questions"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1117,6 +1118,16 @@
       "archive_start_ts": 1627000326,
       "segments": null,
       "source_vod_id": "d6t9RpLmBaw",
+      "source_platform": "youtube"
+    },
+    "dad_had_some_ipas_come_ask_questions": {
+      "title": "Dad Had Some IPAs. Come Ask Questions!",
+      "start_ts": 1626913217,
+      "youtube_archive_id": "qqXyJdy4tJY",
+      "archive_org_id": "ogrewatch-dad_had_some_ipas_come_ask_questions",
+      "archive_start_ts": 1626913217,
+      "segments": null,
+      "source_vod_id": "0CFQO6lzWY0",
       "source_platform": "youtube"
     }
   },
