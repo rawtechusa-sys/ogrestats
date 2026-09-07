@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788776467,
+  "updated_ts": 1788780208,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -91,7 +91,8 @@
     "come_ask_questions_day_time_edition",
     "man_electrocuted_through_controller_j_allen_brack_runs_ps5_availability_update",
     "come_ask_questions_822021",
-    "come_ask_questions_812021"
+    "come_ask_questions_812021",
+    "the_chris_chan_and_activision_disasters"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1051,6 +1052,16 @@
       "archive_start_ts": 1627866688,
       "segments": null,
       "source_vod_id": "RwT15wgAdcA",
+      "source_platform": "youtube"
+    },
+    "the_chris_chan_and_activision_disasters": {
+      "title": "The Chris Chan And Activision Disasters",
+      "start_ts": 1627692456,
+      "youtube_archive_id": "d4UJSSlIwoM",
+      "archive_org_id": "ogrewatch-the_chris_chan_and_activision_disasters",
+      "archive_start_ts": 1627692456,
+      "segments": null,
+      "source_vod_id": "YUF17w7tRas",
       "source_platform": "youtube"
     }
   },
