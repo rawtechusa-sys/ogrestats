@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788805146,
+  "updated_ts": 1788826883,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -102,7 +102,8 @@
     "come_ask_questions_7202021",
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "come_hang_out_with_a_man_freedom_phone",
-    "lets_discuss_the_steam_deck"
+    "lets_discuss_the_steam_deck",
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1172,6 +1173,21 @@
       "archive_start_ts": 1626482998,
       "segments": null,
       "source_vod_id": "xXdFOk6IX9g",
+      "source_platform": "youtube"
+    },
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624": {
+      "title": "A Music Making And Mortal Shell II Labor Day Mini-Marathon Stream",
+      "start_ts": 1788805237,
+      "youtube_archive_id": "tAwMaCIwdOg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "tAwMaCIwdOg",
+          "start_ts": 1788805237
+        }
+      ],
+      "source_vod_id": "F8k7C7WfAoE",
       "source_platform": "youtube"
     }
   },
