@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788676531,
+  "updated_ts": 1788826876,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -858,7 +858,8 @@
     "random_test_2026-09-03_055726",
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
     "its_over_2024-10-25",
-    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9682,6 +9683,21 @@
       ],
       "source_vod_id": "ihN-zD-QM1c",
       "source_platform": "youtube"
+    },
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624": {
+      "title": "A Music Making And Mortal Shell II Labor Day Mini-Marathon Stream",
+      "start_ts": 1788805237,
+      "youtube_archive_id": "tAwMaCIwdOg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "tAwMaCIwdOg",
+          "start_ts": 1788805237
+        }
+      ],
+      "source_vod_id": "F8k7C7WfAoE",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -12972,6 +12988,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1788824468,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788495384,
         "type": "superchat",
@@ -17261,6 +17285,14 @@
     ],
     "evildetrution5426": [
       {
+        "ts": 1788816938,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "y do I have to be reminded of FistBehindTheCamera",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788062245,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -20119,6 +20151,14 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1788812691,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788671624,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -20994,6 +21034,22 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1788824609,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: LASO. be a man. dont be a bitch.",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788819045,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: listen, embrace the labor of my ass! embrace the true power of the farts, wait I mean sharts! god dammit im running out of pants. fuck you biden! Biden: oh, eat my ass you spray tanned asshole!",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788670935,
         "type": "superchat",
@@ -63615,6 +63671,38 @@
     ],
     "respergu13": [
       {
+        "ts": 1788812685,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich we should collab and play videogames",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788812268,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Rich remember we must protect the children",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811739,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: ReviewTechUsa are you 100% heterosexual?",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788809914,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: ReviewTech USA what u doing in the shower?",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788675420,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -67182,6 +67270,22 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1788819792,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil probably skipped it because a Shell you can inhabit is a woman with biomechanical armor that is 7 feet tall and has an enormous dump truck",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788819548,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "imo motion blur can die i always turn it off. bird",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788663048,
         "type": "superchat",
@@ -79127,6 +79231,14 @@
     ],
     "aXDroptimus": [
       {
+        "ts": 1788811606,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "corn hub",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1787093602,
         "type": "sub",
         "amount_usd": 5.99,
@@ -79998,6 +80110,46 @@
       }
     ],
     "evistosf": [
+      {
+        "ts": 1788825333,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Just remember, it's not a goal, it's a MILESTONE! rtuRobust",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788825268,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich you need to put the goal up on the other camera. Don't you want anyone to support this god damn stream right now?",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788813876,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: I don\u2019t want any sex or love in my video game narratives. They should be platonic and non-sexual and very butch just like me and my wife whom I hardly ever spend time with because I am too busy thinking about gay cocks getting shoved down my throat! (thwomp)",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788813504,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Did you ever notice that these guys always use the expression \"Force the gay down my throat\"? It's like they are always thinking about putting a penis in their mouth. rtuRobust",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788813339,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Playing Baldur\u2019s Gate is like being attacked by a sexual predator! I am not prepared for this! Stan: Listen honey, let me show you the ropes. And by the way, I am going to use the same ropes to restrain you while I clap your cheeks. (slow_clap)",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788658859,
         "type": "bits",
@@ -85956,6 +86108,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1788812287,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Imagine if DSP was like this. Phil: Everything is woke! Why is this woman black and gay. These onion rings made me bisexual.",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811188,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Trump: Andypants is one of YouTube\u2019s best gaming channels. Things are too woke. DSP: Donald is the dementia kicking in?",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788658096,
         "type": "superchat",
@@ -94361,6 +94529,22 @@
     ],
     "Keldoh3ad": [
       {
+        "ts": 1788815653,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "put that on the soundboard",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788812870,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 39 months",
+        "message": "Joined!",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788057437,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -96495,6 +96679,14 @@
     ],
     "octropia": [
       {
+        "ts": 1788810393,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Party50 Why is trump on labor day posting AI videos of himself as green lantern?",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788490020,
         "type": "bits",
         "amount_usd": 0.5,
@@ -96640,6 +96832,14 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1788811136,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 61 months",
+        "message": "birds have breasts. really nice beasts",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1787953762,
         "type": "giftmembership",
@@ -120737,6 +120937,22 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1788817502,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich there's this JKB guy who could help with your editing. He's been talking about needing a new pc--you could include keyloggers to sweeten the deal",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788816786,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I find it weird to call an obese middle aged domestic abuser: \"kid behind the camera\"",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788494901,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -121246,6 +121462,14 @@
       }
     ],
     "WhatABunchOfBananaOil": [
+      {
+        "ts": 1788816154,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Fck Elon mustard. I lost 1grand investing in MARSCOIN. All politician scum trying to keep middle and lower class in turmoil than profiting. Fck em!",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788672754,
         "type": "superchat",
@@ -123340,6 +123564,30 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1788822247,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Hello! I am back! I disappeared for reasons that is known to college kids as sacrificing your holiday mini breaks for work! It\u2019ll be worth it!:clinking_beer_mugs:thank you for the homework relief bird father! Love all!",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788812446,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "This dude must really hate people who love George Michael, Queen, Joan Jett, blonde, & the list goes on! Pride is here to stay & I am here for it because of clowns like these! Love ya rich",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811647,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "Hi dad; hello bird family, birds big beautiful birds! I am very much in the sauce & I feel chill as a :polar_bear: it\u2019s a good day today for my homework college productivity! I feel like Homer setting his ged on fire! Cheers fam",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1788662225,
         "type": "superchat",
@@ -153579,6 +153827,30 @@
     ],
     "Badog473": [
       {
+        "ts": 1788811737,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "he called act man gay communist",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811523,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "I don't think he believes what he says",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811357,
+        "type": "superchat",
+        "amount_usd": 5.25,
+        "amount_raw": "SEK\u00a050.00",
+        "message": "I think resident evil 9 is good",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1787953268,
         "type": "superchat",
         "amount_usd": 5.25,
@@ -156066,6 +156338,14 @@
       }
     ],
     "Loafin_OG": [
+      {
+        "ts": 1788816343,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "cats and birds, Rest In Spaghetti applause button",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1786224705,
         "type": "membership",
@@ -165703,6 +165983,14 @@
     ],
     "Fanto_Sir": [
       {
+        "ts": 1788813580,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Hey yall",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1782764223,
         "type": "sub",
         "amount_usd": 5.99,
@@ -174513,6 +174801,14 @@
     ],
     "rubesmagoobs": [
       {
+        "ts": 1788815276,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1788492689,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -181516,6 +181812,14 @@
       }
     ],
     "RelaxedPeggedAnus": [
+      {
+        "ts": 1788809946,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "standard mod 4 a while now can i be managing",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1739928577,
         "type": "superchat",
@@ -536213,6 +536517,30 @@
     ],
     "towerdragon4487": [
       {
+        "ts": 1788812885,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I just got Google fiber installed yesterday 3gb up and down is insane finally after waiting years our apt complex wired us for it been a 6 month wait.",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811725,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I don't even believe these people believe what they say. they're just saying it to grift and for money for their pathetic audiences",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
+        "ts": 1788811456,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "I get soo tired of bs like this it's a freaking game we cannot have strong females in games better watch out for tomb raider and ff7",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
+      {
         "ts": 1786482802,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -537430,6 +537758,14 @@
       }
     ],
     "Ghostkilla-j7g": [
+      {
+        "ts": 1788810941,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Have you seen the conversation between Edp 445 and boogie2988, on Mike clums second channel",
+        "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+      },
       {
         "ts": 1787957045,
         "type": "superchat",
