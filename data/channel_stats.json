@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788676541,
+  "updated_ts": 1788826881,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1931,7 +1931,8 @@
     "youtube_has_a_big_problem_and_im_part_of_it_2018-08-10",
     "youtube_your_platform_is_very_broken_and_needs_to_be_fixed",
     "youtubes_most_blatant_anti_woke_gaming_grifter_gets_exposed_as_a_fraud_smashjt_2025-11-10",
-    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34743,6 +34744,23 @@
       "avg_chat_mpm": 6.61,
       "avg_active_chatters": 16.89,
       "percent_paused": 85.6
+    },
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624": {
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "title": "A Music Making And Mortal Shell II Labor Day Mini-Marathon Stream",
+      "start_ts": 1788805237,
+      "end_ts": 1788826657,
+      "duration_sec": 21420,
+      "youtube_archive_id": "tAwMaCIwdOg",
+      "source_platform": "youtube",
+      "total_donations_usd": 195.71,
+      "donation_count": 40,
+      "donations_per_min": 0.5482,
+      "peak_viewers": 282,
+      "avg_viewers": 223.56,
+      "avg_chat_mpm": 6.41,
+      "avg_active_chatters": 16.55,
+      "percent_paused": 87.7
     }
   }
 }
