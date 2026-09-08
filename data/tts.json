@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788826872,
+  "updated_ts": 1788851514,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -859,16 +859,17 @@
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
     "its_over_2024-10-25",
     "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
-    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+    "reacting_to_men_live_2026-09-08_010234"
   ],
   "commands": {
     "men": 5,
-    "eric": 200,
-    "phil": 463,
-    "stan": 345,
+    "eric": 201,
+    "phil": 468,
+    "stan": 350,
     "masterchief": 170,
     "harman": 147,
-    "trump": 166,
+    "trump": 169,
     "moist": 37,
     "dagoth": 5,
     "zesty": 36,
@@ -930,7 +931,7 @@
     "said": 13,
     "deadpool": 1,
     "news": 39,
-    "guy": 4,
+    "guy": 5,
     "thing": 2,
     "platform": 1,
     "order": 1,
@@ -1435,7 +1436,7 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 3,
+    "biden": 4,
     "abuser": 1
   },
   "streams": {
@@ -10275,9 +10276,148 @@
       ],
       "source_vod_id": "F8k7C7WfAoE",
       "source_platform": "youtube"
+    },
+    "reacting_to_men_live_2026-09-08_010234": {
+      "title": "Reacting To Men LIVE",
+      "start_ts": 1788828625,
+      "youtube_archive_id": "7u9OMKjmBxg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "7u9OMKjmBxg",
+          "start_ts": 1788828625
+        }
+      ],
+      "source_vod_id": "JICmVChgAF0",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1788843201,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Eric: think he\u2019d share a beer with me ? He looks like my kind of guy: mentally unstable and a pdf, just like my favorite president !",
+      "commands": [
+        "eric",
+        "guy"
+      ]
+    },
+    {
+      "ts": 1788841622,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Phil: this man begging is making me blush.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788836204,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Trump: hear me out.... 3d porn. tremendous idea",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788834011,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Phil: Rich let\u2019s admit it,we are both SEGA fanboys",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788833673,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "phil: never forget that phil said he went to the original Pete's subs before the name brand. then said his dad went there. classic narcissism",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788831567,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Phil: listen be like me have no common sense and try to eat a cup of noodles with a spoon.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788831278,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Trump: oh god the pain! my anus burns! Who put laxatives in my tacobell? the brown is exploding everywhere! I cant control it! why must I suffer? Biden: Good, drown in shit, there are fates worse than death.",
+      "commands": [
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "ts": 1788830301,
+      "username": "@iamseanmccarthy",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Stan: Do you think you could help me move a couch?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788830144,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Stan: I want a girl with big anime eyes like \u200b\u200bElizabeth Holmes. Btw I can't get hard but I can cum! Phil: funny Kat has the same problem.",
+      "commands": [
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788830119,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Stan: did someone say their hard and about to cum? ohhh yeaaa daddy let's shoot those ropes! Trump: its time for a duel of the thobbing cocks ropes!",
+      "commands": [
+        "stan",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788830037,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "stan: where did you get the fart in your face sound?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788829899,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "reacting_to_men_live_2026-09-08_010234",
+      "message": "Cheer1000 Stan: Did someone say that you shouldn't fill up all the holes? Sorry, I am using all the ones I have till the cows (and I) come home! Oh yeah baby spread those cheeks and go to town! (slip)",
+      "commands": [
+        "stan"
+      ]
+    },
     {
       "ts": 1788824609,
       "username": "@Austin_Norris",
