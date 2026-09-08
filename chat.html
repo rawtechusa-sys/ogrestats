@@ -730,11 +730,19 @@ function dateToTs(v, endOfDay) {
 //   · chat.json        — live chat, anchored to the RESTREAM broadcast rather than the
 //     source VOD, so those links land on the source timeline only approximately.
 // Both chat files are in the published corpus, so mixed-accuracy rows are expected.
-function vodLink(smeta, offset, label, title) {
+//
+// A restream-VOD transcript (`origin: "restream"`) is the third provenance: its
+// captions come from OUR rebroadcast VOD, not the source, so each row carries its
+// own `vod` id and an offset that is native time inside THAT VOD — exact, and one
+// VOD per output broadcast (a mid-stream restart cuts a new one). That row-level
+// `vodId` therefore wins over smeta.source_vod_id and bypasses the Twitch guard:
+// the stream's source may be Twitch, but a restream VOD is always YouTube.
+function vodLink(smeta, offset, label, title, vodId) {
   const t = Math.max(0, Math.floor(offset ?? 0));
   const tt = title ? ` title="${escHtml(title)}"` : '';
-  if (smeta && smeta.source_vod_id && smeta.source_platform !== 'twitch') {
-    const href = `https://youtu.be/${encodeURIComponent(smeta.source_vod_id)}?t=${t}`;
+  const id = vodId || (smeta && smeta.source_platform !== 'twitch' ? smeta.source_vod_id : null);
+  if (id) {
+    const href = `https://youtu.be/${encodeURIComponent(id)}?t=${t}`;
     return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer"${tt}>${escHtml(label)}</a>`;
   }
   // No source VOD (or a Twitch source): the elapsed time is still worth showing,
@@ -872,13 +880,28 @@ async function hydrateTranscript(smeta) {
   try {
     const p = await fetchJSON(`${RAW}/data/streams/${encodeURIComponent(smeta.id)}/transcript.json`);
     if (p && p.status === 'ok' && Array.isArray(p.segments)) {
-      // Caption offsets are native source-VOD time; the anchor only converts them
-      // to wall clock so transcript lines interleave with chat by ts.
+      // Legacy (source-VOD) payload: caption offsets are native source-VOD time, and
+      // the anchor only converts them to wall clock so transcript lines interleave
+      // with chat by ts.
+      //
+      // A restream payload (`origin: "restream"`) instead carries `vods` — one entry
+      // per output broadcast, ascending by start_ts — and its offsets run from
+      // start_anchor (= vods[0].start_ts) across the whole stream. Each line picks the
+      // last VOD that started at or before it (the same rule streams.html uses for a
+      // donation's segment) and re-bases its offset inside that VOD.
       const anchor = p.start_anchor ?? smeta.start_ts ?? 0;
-      msgs = p.segments.map(s => ({
-        kind: 'tr', author: null, text: s.t,
-        offset: s.o, ts: anchor + (s.o || 0), platform: null,
-      }));
+      const vods = Array.isArray(p.vods) && p.vods.length ? p.vods : null;
+      msgs = p.segments.map(s => {
+        const ts = anchor + (s.o || 0);
+        if (!vods) return { kind: 'tr', author: null, text: s.t, offset: s.o, ts, platform: null };
+        let vod = vods[0];
+        for (const v of vods) if ((v.start_ts ?? 0) <= ts) vod = v;
+        return {
+          kind: 'tr', author: null, text: s.t,
+          offset: Math.max(0, ts - (vod.start_ts ?? 0)), ts, platform: null,
+          vod: vod.vod_id,
+        };
+      });
     }
   } catch (e) { /* no transcript for this stream — zero rows, not an error */ }
   hydrateCache.set(key, msgs);
@@ -1130,9 +1153,11 @@ function renderRow(smeta, m, tokens) {
   // VOD (see the comment above vodLink), so mark its elapsed time as approximate.
   const approx = m.kind !== 'tr' && m.src === 'live';
   const label = (approx ? '~' : '') + fmtElapsed(m.offset);
+  // `m.vod` is set only by a restream-VOD transcript row; it overrides the stream's
+  // source VOD (see vodLink).
   const link = vodLink(smeta, m.offset, label, approx
     ? 'live-chat offset is anchored to the restream broadcast — the VOD timestamp is approximate'
-    : null);
+    : null, m.vod);
   const clock = fmtClock(m.ts);
   // A transcript line has no author — just the badge, the text and the deep link.
   const head = m.kind === 'tr'
