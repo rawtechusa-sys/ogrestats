@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788676527,
+  "updated_ts": 1788826872,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -858,16 +858,17 @@
     "random_test_2026-09-03_055726",
     "a_drama_mongering_boomer_livestreams_2026-09-04_000222",
     "its_over_2024-10-25",
-    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+    "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
   ],
   "commands": {
     "men": 5,
     "eric": 200,
-    "phil": 459,
-    "stan": 344,
+    "phil": 463,
+    "stan": 345,
     "masterchief": 170,
-    "harman": 144,
-    "trump": 163,
+    "harman": 147,
+    "trump": 166,
     "moist": 37,
     "dagoth": 5,
     "zesty": 36,
@@ -887,7 +888,7 @@
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 46,
+    "dsp": 47,
     "something": 3,
     "witch": 5,
     "agreement": 1,
@@ -1434,7 +1435,8 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 2
+    "biden": 3,
+    "abuser": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10258,9 +10260,137 @@
       ],
       "source_vod_id": "ihN-zD-QM1c",
       "source_platform": "youtube"
+    },
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624": {
+      "title": "A Music Making And Mortal Shell II Labor Day Mini-Marathon Stream",
+      "start_ts": 1788805237,
+      "youtube_archive_id": "tAwMaCIwdOg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "tAwMaCIwdOg",
+          "start_ts": 1788805237
+        }
+      ],
+      "source_vod_id": "F8k7C7WfAoE",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1788824609,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Trump: LASO. be a man. dont be a bitch.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1788819045,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Trump: listen, embrace the labor of my ass! embrace the true power of the farts, wait I mean sharts! god dammit im running out of pants. fuck you biden! Biden: oh, eat my ass you spray tanned asshole!",
+      "commands": [
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "ts": 1788816786,
+      "username": "@DeportedSicilianGamer",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "I find it weird to call an obese middle aged domestic abuser: \"kid behind the camera\"",
+      "commands": [
+        "abuser"
+      ]
+    },
+    {
+      "ts": 1788813876,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Cheer1000 Phil: I don\u2019t want any sex or love in my video game narratives. They should be platonic and non-sexual and very butch just like me and my wife whom I hardly ever spend time with because I am too busy thinking about gay cocks getting shoved down my throat! (thwomp)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788813339,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Cheer1000 Phil: Playing Baldur\u2019s Gate is like being attacked by a sexual predator! I am not prepared for this! Stan: Listen honey, let me show you the ropes. And by the way, I am going to use the same ropes to restrain you while I clap your cheeks. (slow_clap)",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1788812685,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Phil: Rich we should collab and play videogames",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788812287,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Imagine if DSP was like this. Phil: Everything is woke! Why is this woman black and gay. These onion rings made me bisexual.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1788812268,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Harman: Rich remember we must protect the children",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788811739,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Harman: ReviewTechUsa are you 100% heterosexual?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1788811188,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Trump: Andypants is one of YouTube\u2019s best gaming channels. Things are too woke. DSP: Donald is the dementia kicking in?",
+      "commands": [
+        "trump",
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1788809914,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+      "message": "Harman: ReviewTech USA what u doing in the shower?",
+      "commands": [
+        "harman"
+      ]
+    },
     {
       "ts": 1788676057,
       "username": "@nevablowingbubbles1337",
