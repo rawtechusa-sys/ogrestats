@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788907857,
+  "updated_ts": 1788910277,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -111,7 +111,8 @@
     "the_four_hour_man_stream",
     "the_alex_jones_experience",
     "come_be_tired_and_miserable_with_me",
-    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed"
+    "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
+    "come_ask_questions_752021"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1281,6 +1282,16 @@
       "archive_start_ts": 1625619247,
       "segments": null,
       "source_vod_id": "LtE63VFWrO4",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_752021": {
+      "title": "Come Ask Questions! 7/5/2021",
+      "start_ts": 1625541372,
+      "youtube_archive_id": "xzXc0FamdYQ",
+      "archive_org_id": "ogrewatch-come_ask_questions_752021",
+      "archive_start_ts": 1625541372,
+      "segments": null,
+      "source_vod_id": "ieBOP8DTlu8",
       "source_platform": "youtube"
     }
   },
