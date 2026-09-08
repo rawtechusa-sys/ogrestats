@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788866022,
+  "updated_ts": 1788867588,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -105,7 +105,8 @@
     "lets_discuss_the_steam_deck",
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
     "reacting_to_men_live_2026-09-08_010234",
-    "dads_40th_birthday_stream"
+    "dads_40th_birthday_stream",
+    "come_ask_questions_7142021"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1215,6 +1216,16 @@
       "archive_start_ts": 1626396637,
       "segments": null,
       "source_vod_id": "JGjqnuh7SrQ",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_7142021": {
+      "title": "Come Ask Questions! 7/14/2021",
+      "start_ts": 1626310242,
+      "youtube_archive_id": "ZJ3k1PZz4jg",
+      "archive_org_id": "ogrewatch-come_ask_questions_7142021",
+      "archive_start_ts": 1626310242,
+      "segments": null,
+      "source_vod_id": "4H2jpyM6Jhg",
       "source_platform": "youtube"
     }
   },
