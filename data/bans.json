@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788867588,
+  "updated_ts": 1788868986,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -106,7 +106,8 @@
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
     "reacting_to_men_live_2026-09-08_010234",
     "dads_40th_birthday_stream",
-    "come_ask_questions_7142021"
+    "come_ask_questions_7142021",
+    "the_ouya_console_failure_experience"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1226,6 +1227,16 @@
       "archive_start_ts": 1626310242,
       "segments": null,
       "source_vod_id": "4H2jpyM6Jhg",
+      "source_platform": "youtube"
+    },
+    "the_ouya_console_failure_experience": {
+      "title": "The Ouya Console Failure Experience",
+      "start_ts": 1626046018,
+      "youtube_archive_id": "mc0wv2SEer4",
+      "archive_org_id": "ogrewatch-the_ouya_console_failure_experience",
+      "archive_start_ts": 1626046018,
+      "segments": null,
+      "source_vod_id": "dW6uZmTO5aI",
       "source_platform": "youtube"
     }
   },
