@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788876121,
+  "updated_ts": 1788906700,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -109,7 +109,8 @@
     "come_ask_questions_7142021",
     "the_ouya_console_failure_experience",
     "the_four_hour_man_stream",
-    "the_alex_jones_experience"
+    "the_alex_jones_experience",
+    "come_be_tired_and_miserable_with_me"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1259,6 +1260,16 @@
       "archive_start_ts": 1625874301,
       "segments": null,
       "source_vod_id": "lfM6xXZYvOw",
+      "source_platform": "youtube"
+    },
+    "come_be_tired_and_miserable_with_me": {
+      "title": "Come Be Tired And Miserable With Me",
+      "start_ts": 1625703797,
+      "youtube_archive_id": "32XhtzvLUhM",
+      "archive_org_id": "ogrewatch-come_be_tired_and_miserable_with_me",
+      "archive_start_ts": 1625703797,
+      "segments": null,
+      "source_vod_id": "6IpgwlHOKvY",
       "source_platform": "youtube"
     }
   },
