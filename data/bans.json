@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788826883,
+  "updated_ts": 1788851525,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -103,7 +103,8 @@
     "im_a_baked_man_come_discuss_tech_with_your_dad",
     "come_hang_out_with_a_man_freedom_phone",
     "lets_discuss_the_steam_deck",
-    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624"
+    "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
+    "reacting_to_men_live_2026-09-08_010234"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1188,6 +1189,21 @@
         }
       ],
       "source_vod_id": "F8k7C7WfAoE",
+      "source_platform": "youtube"
+    },
+    "reacting_to_men_live_2026-09-08_010234": {
+      "title": "Reacting To Men LIVE",
+      "start_ts": 1788828625,
+      "youtube_archive_id": "7u9OMKjmBxg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "7u9OMKjmBxg",
+          "start_ts": 1788828625
+        }
+      ],
+      "source_vod_id": "JICmVChgAF0",
       "source_platform": "youtube"
     }
   },
