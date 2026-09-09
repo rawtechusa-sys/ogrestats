@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788922785,
+  "updated_ts": 1788923464,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -117,7 +117,8 @@
     "come_ask_questions_742021",
     "come_ask_questions_712021",
     "slow_news_day_and_reviewing_things",
-    "a_large_man_is_streaming"
+    "a_large_man_is_streaming",
+    "ask_me_anything_992019"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1347,6 +1348,16 @@
       "archive_start_ts": 1569113362,
       "segments": null,
       "source_vod_id": "zm2J2frZA9A",
+      "source_platform": "youtube"
+    },
+    "ask_me_anything_992019": {
+      "title": "Ask Me Anything 9/9/2019",
+      "start_ts": 1568309077,
+      "youtube_archive_id": "HZxk9RIqAh8",
+      "archive_org_id": "ogrewatch-ask_me_anything_992019",
+      "archive_start_ts": 1568309077,
+      "segments": null,
+      "source_vod_id": "UE275lqmB_k",
       "source_platform": "youtube"
     }
   },
