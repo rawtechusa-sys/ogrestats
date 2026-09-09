@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788950592,
+  "updated_ts": 1788951891,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -123,7 +123,8 @@
     "the_first_stream",
     "lets_discuss_e3_and_next_gen_consoles",
     "large_freshly_showered_man_streams",
-    "more_e3_talk"
+    "more_e3_talk",
+    "ask_me_anything"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1413,6 +1414,16 @@
       "archive_start_ts": 1528423335,
       "segments": null,
       "source_vod_id": "CY2C8oX1dYc",
+      "source_platform": "youtube"
+    },
+    "ask_me_anything": {
+      "title": "Ask Me Anything!",
+      "start_ts": 1527119093,
+      "youtube_archive_id": "3jEG6H4C0hU",
+      "archive_org_id": "ogrewatch-ask_me_anything",
+      "archive_start_ts": 1527119093,
+      "segments": null,
+      "source_vod_id": "EA05yEUZZ2w",
       "source_platform": "youtube"
     }
   },
