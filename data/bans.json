@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788954213,
+  "updated_ts": 1788955286,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -125,7 +125,8 @@
     "large_freshly_showered_man_streams",
     "more_e3_talk",
     "ask_me_anything",
-    "a_large_man_with_seltzer_livestreams"
+    "a_large_man_with_seltzer_livestreams",
+    "the_livestreams_return"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1435,6 +1436,16 @@
       "archive_start_ts": 1525306613,
       "segments": null,
       "source_vod_id": "c8iwRG2XrOY",
+      "source_platform": "youtube"
+    },
+    "the_livestreams_return": {
+      "title": "The Livestreams Return",
+      "start_ts": 1525217410,
+      "youtube_archive_id": "QeMqseTALOk",
+      "archive_org_id": "ogrewatch-the_livestreams_return",
+      "archive_start_ts": 1525217410,
+      "segments": null,
+      "source_vod_id": "0mzrx-YQSYc",
       "source_platform": "youtube"
     }
   },
