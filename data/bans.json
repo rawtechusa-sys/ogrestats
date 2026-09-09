@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788931403,
+  "updated_ts": 1788932429,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -121,7 +121,8 @@
     "ask_me_anything_992019",
     "drinking_stories_with_intro_guy",
     "the_first_stream",
-    "lets_discuss_e3_and_next_gen_consoles"
+    "lets_discuss_e3_and_next_gen_consoles",
+    "large_freshly_showered_man_streams"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1391,6 +1392,16 @@
       "archive_start_ts": 1529108149,
       "segments": null,
       "source_vod_id": "OIJofrObuD8",
+      "source_platform": "youtube"
+    },
+    "large_freshly_showered_man_streams": {
+      "title": "Large, Freshly Showered Man Streams",
+      "start_ts": 1527214324,
+      "youtube_archive_id": "0a6eI9XC4cs",
+      "archive_org_id": "ogrewatch-large_freshly_showered_man_streams",
+      "archive_start_ts": 1527214324,
+      "segments": null,
+      "source_vod_id": "By_Eqf0-Bl4",
       "source_platform": "youtube"
     }
   },
