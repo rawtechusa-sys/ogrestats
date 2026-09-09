@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788919790,
+  "updated_ts": 1788919873,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -115,7 +115,8 @@
     "come_ask_questions_752021",
     "the_bill_gates_experience",
     "come_ask_questions_742021",
-    "come_ask_questions_712021"
+    "come_ask_questions_712021",
+    "slow_news_day_and_reviewing_things"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1325,6 +1326,16 @@
       "archive_start_ts": 1625355916,
       "segments": null,
       "source_vod_id": "H9T9tBWXzt0",
+      "source_platform": "youtube"
+    },
+    "slow_news_day_and_reviewing_things": {
+      "title": "Slow News Day And Reviewing Things",
+      "start_ts": 1569520602,
+      "youtube_archive_id": "DdrRGdBcu34",
+      "archive_org_id": "ogrewatch-slow_news_day_and_reviewing_things",
+      "archive_start_ts": 1569520602,
+      "segments": null,
+      "source_vod_id": "wnhImYQ0kZM",
       "source_platform": "youtube"
     }
   },
