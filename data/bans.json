@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788923464,
+  "updated_ts": 1788925014,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -118,7 +118,8 @@
     "come_ask_questions_712021",
     "slow_news_day_and_reviewing_things",
     "a_large_man_is_streaming",
-    "ask_me_anything_992019"
+    "ask_me_anything_992019",
+    "drinking_stories_with_intro_guy"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1358,6 +1359,16 @@
       "archive_start_ts": 1568309077,
       "segments": null,
       "source_vod_id": "UE275lqmB_k",
+      "source_platform": "youtube"
+    },
+    "drinking_stories_with_intro_guy": {
+      "title": "Drinking Stories With Intro Guy",
+      "start_ts": 1556062673,
+      "youtube_archive_id": "7k1nkXGGkFk",
+      "archive_org_id": "ogrewatch-drinking_stories_with_intro_guy",
+      "archive_start_ts": 1556062673,
+      "segments": null,
+      "source_vod_id": "NH643bmMdEs",
       "source_platform": "youtube"
     }
   },
