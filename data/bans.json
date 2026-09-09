@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788919873,
+  "updated_ts": 1788922785,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -116,7 +116,8 @@
     "the_bill_gates_experience",
     "come_ask_questions_742021",
     "come_ask_questions_712021",
-    "slow_news_day_and_reviewing_things"
+    "slow_news_day_and_reviewing_things",
+    "a_large_man_is_streaming"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1336,6 +1337,16 @@
       "archive_start_ts": 1569520602,
       "segments": null,
       "source_vod_id": "wnhImYQ0kZM",
+      "source_platform": "youtube"
+    },
+    "a_large_man_is_streaming": {
+      "title": "A Large Man Is Streaming...",
+      "start_ts": 1569113362,
+      "youtube_archive_id": "AbmHlKQ67MQ",
+      "archive_org_id": "ogrewatch-a_large_man_is_streaming",
+      "archive_start_ts": 1569113362,
+      "segments": null,
+      "source_vod_id": "zm2J2frZA9A",
       "source_platform": "youtube"
     }
   },
