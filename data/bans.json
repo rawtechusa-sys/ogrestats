@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788913169,
+  "updated_ts": 1788916052,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -113,7 +113,8 @@
     "come_be_tired_and_miserable_with_me",
     "lets_discuss_the_nintendo_switch_oled_nintendoswitcholed",
     "come_ask_questions_752021",
-    "the_bill_gates_experience"
+    "the_bill_gates_experience",
+    "come_ask_questions_742021"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1303,6 +1304,16 @@
       "archive_start_ts": 1625532670,
       "segments": null,
       "source_vod_id": "4950xMWnPgU",
+      "source_platform": "youtube"
+    },
+    "come_ask_questions_742021": {
+      "title": "Come Ask Questions 7/4/2021",
+      "start_ts": 1625453619,
+      "youtube_archive_id": "dQm_k_eSmZ0",
+      "archive_org_id": "ogrewatch-come_ask_questions_742021",
+      "archive_start_ts": 1625453619,
+      "segments": null,
+      "source_vod_id": "rYbzwuwfbtw",
       "source_platform": "youtube"
     }
   },
