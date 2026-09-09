@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788925014,
+  "updated_ts": 1788928586,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -119,7 +119,8 @@
     "slow_news_day_and_reviewing_things",
     "a_large_man_is_streaming",
     "ask_me_anything_992019",
-    "drinking_stories_with_intro_guy"
+    "drinking_stories_with_intro_guy",
+    "the_first_stream"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1369,6 +1370,16 @@
       "archive_start_ts": 1556062673,
       "segments": null,
       "source_vod_id": "NH643bmMdEs",
+      "source_platform": "youtube"
+    },
+    "the_first_stream": {
+      "title": "The First Stream",
+      "start_ts": 1555106156,
+      "youtube_archive_id": "kNY02uPIjbA",
+      "archive_org_id": "ogrewatch-the_first_stream",
+      "archive_start_ts": 1555106156,
+      "segments": null,
+      "source_vod_id": "XrQuFGxWvmk",
       "source_platform": "youtube"
     }
   },
