@@ -5,9 +5,9 @@
   "start_ts": 1789080358,
   "end_ts": null,
   "platforms": [
-    "youtube",
+    "kick",
     "twitch",
-    "kick"
+    "youtube"
   ],
   "source_channel": "rtustreams",
   "source_platform": "twitch",
@@ -17,5 +17,8 @@
       "archive_id": "LWimD8CL3-U",
       "start_ts": 1789080358
     }
-  ]
+  ],
+  "youtube_archive_id": "LWimD8CL3-U",
+  "archive_is_source_vod": false,
+  "source_vod_id": "K6M0gZ4575s"
 }
