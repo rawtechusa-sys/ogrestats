@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788851514,
+  "updated_ts": 1789103103,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -860,16 +860,17 @@
     "its_over_2024-10-25",
     "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
-    "reacting_to_men_live_2026-09-08_010234"
+    "reacting_to_men_live_2026-09-08_010234",
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517"
   ],
   "commands": {
     "men": 5,
-    "eric": 201,
-    "phil": 468,
-    "stan": 350,
+    "eric": 212,
+    "phil": 473,
+    "stan": 357,
     "masterchief": 170,
-    "harman": 147,
-    "trump": 169,
+    "harman": 158,
+    "trump": 176,
     "moist": 37,
     "dagoth": 5,
     "zesty": 36,
@@ -897,7 +898,7 @@
     "chewbacca": 1,
     "drdisrespect": 2,
     "rich": 31,
-    "hobo": 13,
+    "hobo": 15,
     "ideas": 1,
     "carlos": 1,
     "tate": 7,
@@ -906,7 +907,7 @@
     "ones": 1,
     "harmon": 4,
     "rage": 1,
-    "bill": 9,
+    "bill": 10,
     "gnome": 2,
     "kanye": 2,
     "post": 1,
@@ -1436,8 +1437,9 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 4,
-    "abuser": 1
+    "biden": 5,
+    "abuser": 1,
+    "dickers": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10291,9 +10293,367 @@
       ],
       "source_vod_id": "JICmVChgAF0",
       "source_platform": "youtube"
+    },
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517": {
+      "title": "The Patron Saint of Meaningful Robustness",
+      "start_ts": 1789080358,
+      "youtube_archive_id": "LWimD8CL3-U",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "LWimD8CL3-U",
+          "start_ts": 1789080358
+        }
+      ],
+      "source_vod_id": "K6M0gZ4575s",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1789101845,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: I\u2019m with my pikachu ready to go to bed",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789100302,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: cum today while you still can ! Harman: will do ! come here Pikachu ! Phil: but may first is still so far away dood !",
+      "commands": [
+        "eric",
+        "harman",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789097486,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: Review Tech Usa, you are a Nintendo hater!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789096754,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: do you think my videos would do better if I showed some cleavage ? it would distract from my greasy hair.robust moobs shouldn't be contained !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789096705,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Trump: Jesus christ he's rubbing one out aggressively until raw to Nintendo in this video. Harman: ohhhhh pickachu its commming!",
+      "commands": [
+        "trump",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789096400,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: it's not like the white house or any organisations have socials explicitly for PR and propaganda reasons ! You're so paranoid !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789096158,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: I do believe in something Dickers: Robust Men ! I'm so obsessed with you because I love you ! Can I pledge allegiance to the Masucci micro ?",
+      "commands": [
+        "eric",
+        "dickers"
+      ]
+    },
+    {
+      "ts": 1789093569,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Listen Rich, send me a zoom link. I\u2019m ready!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789092572,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Bill: Bears. Beets. Battlestar Galactica",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1789092399,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Rich, I\u2019m joining forces with Harman Smith!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789092226,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Trump: in other news, I farted. wait, fuck there's dingleberries in thathing. damn I liked that thong. Stan: mmmm chocolate! warm and fresh!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789091230,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Rich I have a job, I\u2019m a YouTuber and gamer",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789090675,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Biden: I didn't do that",
+      "commands": [
+        "biden"
+      ]
+    },
+    {
+      "ts": 1789090264,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Rich, you are a Trump and Pokemon detractor!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789089681,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Review Tech USA, show YouTube Flag History!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789089199,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Cheer1000 Trump: A.A.A.A.A.A.A.A.A A..AAAAAAAH come inside me Satanyahu. Brainwash me. Phil: ooooooo yeah. Oh hey Rich what up my bad I was watching trump gettin bumped by demon genocidal war criminal. How have you been. Is there anything nice happening in this world? Sony canceling their kojima production. What else? Sony shutting down PlayStation volunteer decision next? Listen Rich buy PlayStation and make an exclusive horse and bird exclusive game. Also houthis took over US army base Saudi",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789088538,
+      "username": "@BossIog",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Dad, I can't believe you confiscated my alcohol. Hobo: I had to, son. You only leave the house to oil up and wrestle youngins. Stan: UH . UHH",
+      "commands": [
+        "eric",
+        "hobo",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789088503,
+      "username": "@ItsUpUpDownDown",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: We have to vote Republican in November. Nintendo has blessed us with tariff refund discounts. Daddy Trump delivered. $5000 dividend checks too? OH, PIKACHU! I CHOOSE YOU! Stan: Oh, Harmy! OH!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789087477,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Phil: remember it doesn't matter if its the truth or not its still a answer.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789084444,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Trump: emergency announcement from the galactic empire of men! our main storage facility of viagra and Adderall has been compromised! wait, oh Jesus christ, it was the council of naked cowboys! all forces fall back now!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789083948,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: Rich! Let's debate about Trump and politics!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789083798,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Trump: attention all Americans, attention all men! a man among men has arrived! all men get hard! Stan: oh yea its time to blow some loads! yeaa buddy",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789083593,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Eric: SmashJt said that Trump broke ReviewTechUSA!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789083366,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: I own Review Tech USA number 1, you are 2",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789082612,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: ReviewTechUSA, AI will clone my pikachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789082454,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: your interested in Zelda and the switch more? Oh please rich love me now. (ripping)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789081860,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: Review Tech USA! I am joining forces with 8 Bit Eric and we will destroy you ! I will avenge Pikachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789081650,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Phil: Rich, do you think Kojima betrayed Sony ?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789081448,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Yeah, after the obviousness of Sony saying you dont own your digital games, Im checked out at this point, PC with Steam all the way. Stan: Good lord",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789081393,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Harman: ReviewTech USA, why do you hate Nintendo ?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789081295,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Stan: Listen, whatever goes in my mouth, uhh, eventually comes out of my ass. Trump: Merry Kirkmass Stan. Jerk it for Kirk! Phil: Jam doughnut anyone?",
+      "commands": [
+        "stan",
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789081024,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Trump: I miss Charlies gum jobs. Stan: mm gum jobs",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789080865,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+      "message": "Hobo: Rodrigo and Carlos are staring hard and i'm getting herd too. Sony is hurting bad and Xbox is starting to look good at this point with Kojima's new game Physint and OD. PS5 my last console Rich",
+      "commands": [
+        "hobo"
+      ]
+    },
     {
       "ts": 1788843201,
       "username": "@BloodyGB175",
