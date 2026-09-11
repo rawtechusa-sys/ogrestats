@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1788955286,
+  "updated_ts": 1789103116,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -126,7 +126,8 @@
     "more_e3_talk",
     "ask_me_anything",
     "a_large_man_with_seltzer_livestreams",
-    "the_livestreams_return"
+    "the_livestreams_return",
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1447,6 +1448,21 @@
       "segments": null,
       "source_vod_id": "0mzrx-YQSYc",
       "source_platform": "youtube"
+    },
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517": {
+      "title": "The Patron Saint of Meaningful Robustness",
+      "start_ts": 1789080358,
+      "youtube_archive_id": "LWimD8CL3-U",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "LWimD8CL3-U",
+          "start_ts": 1789080358
+        }
+      ],
+      "source_vod_id": "K6M0gZ4575s",
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -1879,6 +1895,30 @@
           "moderator": "ReviewTechUSALIVE",
           "reason": "No reason provided",
           "stream_id": "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215"
+        }
+      ]
+    },
+    "evistosf": {
+      "platforms": {
+        "twitch": {
+          "status": "timed_out",
+          "since": 1789097927,
+          "expires_ts": 1789097957,
+          "bans": 0,
+          "timeouts": 1,
+          "user_id": "178173209"
+        }
+      },
+      "events": [
+        {
+          "ts": 1789097927,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1789097957,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_patron_saint_of_meaningful_robustness_2026-09-10_224517"
         }
       ]
     }
