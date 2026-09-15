@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789103103,
+  "updated_ts": 1789455843,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -861,16 +861,17 @@
     "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
     "reacting_to_men_live_2026-09-08_010234",
-    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517"
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+    "where_do_you_want_to_go_today_2026-09-14_235742"
   ],
   "commands": {
     "men": 5,
-    "eric": 212,
-    "phil": 473,
-    "stan": 357,
+    "eric": 216,
+    "phil": 486,
+    "stan": 365,
     "masterchief": 170,
-    "harman": 158,
-    "trump": 176,
+    "harman": 168,
+    "trump": 184,
     "moist": 37,
     "dagoth": 5,
     "zesty": 36,
@@ -883,7 +884,7 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 22,
+    "doom": 24,
     "emoguy": 4,
     "chat": 2,
     "grandma": 3,
@@ -901,7 +902,7 @@
     "hobo": 15,
     "ideas": 1,
     "carlos": 1,
-    "tate": 7,
+    "tate": 8,
     "gums": 1,
     "message": 3,
     "ones": 1,
@@ -1437,9 +1438,13 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 5,
+    "biden": 6,
     "abuser": 1,
-    "dickers": 1
+    "dickers": 1,
+    "pirate": 1,
+    "butler": 1,
+    "discs": 1,
+    "twain": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10308,9 +10313,451 @@
       ],
       "source_vod_id": "K6M0gZ4575s",
       "source_platform": "twitch"
+    },
+    "where_do_you_want_to_go_today_2026-09-14_235742": {
+      "title": "Where Do You Want To Go Today?",
+      "start_ts": 1789429826,
+      "youtube_archive_id": "kRb8E7mGGXc",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "kRb8E7mGGXc",
+          "start_ts": 1789429826
+        }
+      ],
+      "source_vod_id": "N5dMxT8MXYg",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1789454830,
+      "username": "@ShadowFox10587O",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Say my name Trump: heisengout",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789454557,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: i got tips from the quartering about the cards since he is banned from the magic the gathering events.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789453531,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: I'm a man collecting men !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789450342,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: it would be like me hosting sexaholic anonymous meetings !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789448649,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Tate: real men have Thanksgiving shirtless together. Remember that?",
+      "commands": [
+        "tate"
+      ]
+    },
+    {
+      "ts": 1789448442,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: embrace the poopoo, become the poopoo !",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789448314,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: De puupuu you say? Fascinating research!!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789448002,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Eric: Rich, are you against the poo poo ?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789447906,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Eric: but Dickers, how am i supposed to avoid it if I've never watched someone do it ... for research purposes of course ! educate yourself like me !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789446915,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "to quote Mark Twain: \u201cReligion was invented when the first con man met the first fool\u201d lmfao",
+      "commands": [
+        "twain"
+      ]
+    },
+    {
+      "ts": 1789446563,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: WLAAAAP! WLAAAAAAAP! (fart)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789445874,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: if i couldn't get help, nobody else can get it, ever ! And if I do get it, you don't deserve it !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789445576,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Oowuwu Right tup my yaz baybee I luff it!!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789444999,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: Other than John Fetterman, I am proof positive there's a link to brain damage and MAGA. Stan: I'm a link to MAGA for other reasons. Oooohweeee",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789443101,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: It's simple Rich, my fat thighs are squeezing my balls now. It's the perfect example of why you shouldn't skip leg day !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789442974,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: Rich, let\u2019s make great things happen!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789441999,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: all this AI talk is reminding me of Johnny Depp 2014 movie and my favorite director Chris Nolan Transcendence movie. Listen comprehend my aaazz",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789441424,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Trump: fuck it! ive already made the world so great, lets give artificial intelligence access to quantum computing. what could go wrong. Doom: we are a monument to all your sins!",
+      "commands": [
+        "trump",
+        "doom"
+      ]
+    },
+    {
+      "ts": 1789441187,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Doom: the turds are inevitable. embrace the farts, they are a glimpse into the future. feel the power flow from your anus. relax your anus, no matter the cost. Trump: oh dear God it wont stop!",
+      "commands": [
+        "doom",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789441140,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: ReviewTechUSA, we can do it the easy way or the hard way! THE CHOICE IS YOURS!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789441073,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: thanks for nothing you bunch of freeloaders. Support was not robust so you don\u2019t get to watch me indulge in my addiction ! Serves you right !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789441069,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: ah man my life is hard I sit here and play video games in comfort of my home its exhausting that we don't hit the goal. (disappointed)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789440502,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Eric: Rich,Did you see Trump kissing Natasha Harp?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789440064,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: I just want to talk about my hairy....",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789438542,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Trump: men, ever have a fart so powerful your ass is sore afterwards? Stan: oh ill make your ass feel better daddy! Trump: why Stan why!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789438505,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: Exposed,E X P O S E D ,Exposed, E X P O S",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789436551,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Cheer50 People miss another problem with physical discs: tax plus an extra $5. You can skip that just by buying digital from the PS Store. The real issue now is the license dispute. If Sony walks that back, they can win trust back. If they don\u2019t, PlayStation dies by suicide. I checked out Wolverine at GameStop \u2014 $74 after tax. That\u2019s why digital is way to go. Capiche?",
+      "commands": [
+        "discs"
+      ]
+    },
+    {
+      "ts": 1789436512,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Rich, I need banana, tasty banana, squeeze the peel, here comes the nana / squeeze banana!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789436233,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: I'm gay, I'm gay, I'm gay we are totally gay!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789435789,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Rich, Are you jealous of my hawaiian shirts?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789435474,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: listen! im gona flop my massive sword around and do alot of damage! ooooh yeaaa I can feel the final attack coming soon! here we gooo!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789435087,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Are you exited for the new Starcrat in 2030?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789434296,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Harman: Review Tech Usa, leave my Pikachu alone!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789433390,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Eric: Rich, I am joining forces with Smash JT!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789432641,
+      "username": "@ZG49389",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: Listen, Rich. I\u2019m going to permanently ban you and laugh at you. Ack ack ack ack ack ack ack ack ack ack ack ack ack ack ack ack ack ack ack",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789432205,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Cheer1000 Listen America I made that gas price through the roof. Now fill up gas half way and rest by penetrate into fuel door and relieve yourself. Make sure you hydrate yourself with plenty gallons of water \ud83d\udca6 before you start fueling up car. For diesel truck just release seamen enough inside your truck. Phil: listen American I'll show first hand how's it done.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789431864,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: fuck my nipple is vibrating WITNESS ME DADDY",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789431845,
+      "username": "@GlamerousFrog",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Pirate: I've been messing around with my new RG557 android, playing the warriors on it is such a blast. Butler: After GTA 6 sony can eat my arse :fork_and_knife::toilet:",
+      "commands": [
+        "pirate",
+        "butler"
+      ]
+    },
+    {
+      "ts": 1789431581,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Trump: listen we need the introfarts this loud",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789431162,
+      "username": "@bammersvabamm822",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Phil: I sent you the clap to your email. You know you can always make it 100 members to add it back , or charge 500 to open packs of cards. Like ME!!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789431074,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Stan: did someone say they want to finger me? ohhhh yeaaaaa daddy let's get some! im high on viagra and ready!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789430912,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "message": "Trump: i am a man, a man among men! im so hard! Biden: oh shit the fuck up and shart yourself to sleep! Trump: bite my ass, you ass hair sniffer!",
+      "commands": [
+        "trump",
+        "biden"
+      ]
+    },
     {
       "ts": 1789101845,
       "username": "@respergu13",
