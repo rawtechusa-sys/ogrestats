@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789103114,
+  "updated_ts": 1789455851,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1934,7 +1934,8 @@
     "playing_some_elden_ring_tarnished_edition_again_2026-09-06_011215",
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
     "reacting_to_men_live_2026-09-08_010234",
-    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517"
+    "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
+    "where_do_you_want_to_go_today_2026-09-14_235742"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34797,6 +34798,23 @@
       "avg_chat_mpm": 6.66,
       "avg_active_chatters": 17.28,
       "percent_paused": 92.2
+    },
+    "where_do_you_want_to_go_today_2026-09-14_235742": {
+      "stream_id": "where_do_you_want_to_go_today_2026-09-14_235742",
+      "title": "Where Do You Want To Go Today?",
+      "start_ts": 1789429826,
+      "end_ts": 1789455648,
+      "duration_sec": 25822,
+      "youtube_archive_id": "kRb8E7mGGXc",
+      "source_platform": "youtube",
+      "total_donations_usd": 490.59,
+      "donation_count": 129,
+      "donations_per_min": 1.1399,
+      "peak_viewers": 388,
+      "avg_viewers": 319.24,
+      "avg_chat_mpm": 7.73,
+      "avg_active_chatters": 19.11,
+      "percent_paused": 72.6
     }
   }
 }
