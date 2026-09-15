@@ -328,6 +328,18 @@
     letter-spacing: 0.02em;
   }
 
+  /* Narrow panel: the centred legend would run under the absolutely-placed
+     title block, so fitChartHeader() stacks the title above the legend. */
+  .chart-header.stacked {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .chart-header.stacked .chart-title-wrap {
+    position: static;
+    align-self: flex-start;
+  }
+
   /* Whole-stream manual event tags. Fixed low-alpha accent (not a theme var):
      one colour for every manual-event mark, chart overlay included. */
   .manual-chips {
@@ -1451,6 +1463,7 @@ async function loadStream(streamId) {
         }).join('');
       }
       buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, donations.length > 0, hasActiveYT, hasActiveTW, hasActiveKick, hasYTChat, hasTWChat, hasKickChat, donPlatforms);
+      watchChartHeader(panel.querySelector('.chart-header'));
     }
 
     // ── Contributor & type breakdown pies ──
@@ -3334,6 +3347,49 @@ function buildLegend(hasYTViewers, hasTWViewers, hasKickViewers, hasChatRate, ha
       else                                      col.appendChild(makeItem(item));
     }
     container.appendChild(col);
+  }
+}
+
+// ── Chart header fit ───────────────────────────────────────────────────────────
+// The title block sits absolutely at the header's top-left while the legend is
+// centred, so a narrow panel slides the legend's first column under the title.
+// When the two would meet, the header switches to a stacked layout (title row
+// above the legend). The check measures the legend's columns rather than its
+// container: column positions are identical in both layouts, so the result
+// never flip-flops between them.
+const CHART_HEADER_GAP = 16;
+let chartHeaderWidth = -1;
+
+function fitChartHeader(header, force) {
+  if (!header || !header.isConnected) return;
+  const width = header.clientWidth;
+  if (!force && width === chartHeaderWidth) return;
+  chartHeaderWidth = width;
+  const titleWrap = header.querySelector('.chart-title-wrap');
+  const groups = header.querySelectorAll('.legend-group');
+  if (!titleWrap || groups.length === 0) return;
+  const titleRight = titleWrap.getBoundingClientRect().right;
+  let legendLeft = Infinity;
+  groups.forEach(g => { legendLeft = Math.min(legendLeft, g.getBoundingClientRect().left); });
+  header.classList.toggle('stacked', titleRight + CHART_HEADER_GAP > legendLeft);
+}
+
+// One observer, re-pointed at each newly rendered header. Toggling the class
+// changes only the header's height, and the width guard above ignores that.
+const chartHeaderObserver = (typeof ResizeObserver === 'function')
+  ? new ResizeObserver(entries => fitChartHeader(entries[0].target, false))
+  : null;
+
+function watchChartHeader(header) {
+  if (!header) return;
+  fitChartHeader(header, true);
+  if (chartHeaderObserver) {
+    chartHeaderObserver.disconnect();
+    chartHeaderObserver.observe(header);
+  }
+  // The Rye title font can land after the first measurement.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => fitChartHeader(header, true));
   }
 }
 
