@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789455854,
+  "updated_ts": 1789626931,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -128,7 +128,8 @@
     "a_large_man_with_seltzer_livestreams",
     "the_livestreams_return",
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
-    "where_do_you_want_to_go_today_2026-09-14_235742"
+    "where_do_you_want_to_go_today_2026-09-14_235742",
+    "lets_discuss_the_nerd_reich_2026-09-17_001712"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1478,6 +1479,21 @@
         }
       ],
       "source_vod_id": "N5dMxT8MXYg",
+      "source_platform": "youtube"
+    },
+    "lets_discuss_the_nerd_reich_2026-09-17_001712": {
+      "title": "Let's Discuss \"The Nerd Reich\"",
+      "start_ts": 1789603543,
+      "youtube_archive_id": "I3DjUszhmzM",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "I3DjUszhmzM",
+          "start_ts": 1789603543
+        }
+      ],
+      "source_vod_id": "ARmIWIerMJk",
       "source_platform": "youtube"
     }
   },
