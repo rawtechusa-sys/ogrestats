@@ -6,7 +6,7 @@
 <!-- Standalone guard: these pages live inside the index.html shell. If loaded
      top-level, bounce into the shell at this page's tab, carrying any sub-slug
      (a channel slug here) so discord.html#<slug> -> index.html#discord/<slug>
-     stays shareable. #discord is a hidden route: no visible tab points here. -->
+     stays shareable. -->
 <script>(function(){
   if (window.self !== window.top) return;            // embedded in the shell -> normal
   var slug = 'discord';

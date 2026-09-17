@@ -194,8 +194,8 @@
       <button class="tab" data-page="dents.html" data-slug="dents">Dents</button>
       <button class="tab" data-page="tts.html" data-slug="tts">TTS</button>
       <button class="tab" data-page="chat.html" data-slug="chat">Search</button>
-      <!-- Hidden route: reachable via #discord only, deliberately not in the visible nav. -->
-      <button class="tab" data-page="discord.html" data-slug="discord" data-hidden="1" style="display:none" aria-hidden="true"></button>
+      <button class="tab" data-page="discord.html" data-slug="discord">Discord</button>
+      <!-- Hidden route: reachable via #admin only, deliberately not in the visible nav. -->
       <button class="tab" data-page="admin.html" data-slug="admin" data-hidden="1" style="display:none" aria-hidden="true"></button>
     </nav>
     <label class="bg-toggle" title="Toggle background critters">
@@ -352,7 +352,7 @@ function activateTab(tab) {
     try { frame.contentWindow.location.replace(tab.dataset.page); }
     catch (e) { frame.src = tab.dataset.page; } // fallback (same-origin: shouldn't happen)
   }
-  // Hidden tabs (#discord) are never remembered: after visiting one, a hashless
+  // Hidden tabs (#admin) are never remembered: after visiting one, a hashless
   // visit must open the last VISIBLE tab, not silently reopen a hidden page with
   // no tab highlighted.
   if (!tab.dataset.hidden) localStorage.setItem('swamp-tab', tab.dataset.slug);
