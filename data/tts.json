@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789455843,
+  "updated_ts": 1789626920,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -862,17 +862,18 @@
     "a_music_making_and_mortal_shell_ii_labor_day_mini_marathon_stream_2026-09-07_193624",
     "reacting_to_men_live_2026-09-08_010234",
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
-    "where_do_you_want_to_go_today_2026-09-14_235742"
+    "where_do_you_want_to_go_today_2026-09-14_235742",
+    "lets_discuss_the_nerd_reich_2026-09-17_001712"
   ],
   "commands": {
-    "men": 5,
-    "eric": 216,
-    "phil": 486,
-    "stan": 365,
+    "men": 6,
+    "eric": 218,
+    "phil": 497,
+    "stan": 369,
     "masterchief": 170,
-    "harman": 168,
-    "trump": 184,
-    "moist": 37,
+    "harman": 172,
+    "trump": 187,
+    "moist": 38,
     "dagoth": 5,
     "zesty": 36,
     "linus": 40,
@@ -1075,7 +1076,7 @@
     "rule": 2,
     "devs": 1,
     "unity": 2,
-    "announcement": 3,
+    "announcement": 4,
     "sets": 1,
     "reviewphilosphyusa": 1,
     "states": 2,
@@ -1444,7 +1445,8 @@
     "pirate": 1,
     "butler": 1,
     "discs": 1,
-    "twain": 1
+    "twain": 1,
+    "world": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10328,9 +10330,239 @@
       ],
       "source_vod_id": "N5dMxT8MXYg",
       "source_platform": "youtube"
+    },
+    "lets_discuss_the_nerd_reich_2026-09-17_001712": {
+      "title": "Let's Discuss \"The Nerd Reich\"",
+      "start_ts": 1789603543,
+      "youtube_archive_id": "I3DjUszhmzM",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "I3DjUszhmzM",
+          "start_ts": 1789603543
+        }
+      ],
+      "source_vod_id": "ARmIWIerMJk",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1789625212,
+      "username": "@eazypz9124",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: come watch me plays games I ll never finish",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789624781,
+      "username": "@nevablowingbubbles1337",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: I tough it out for you, support this stream.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789624629,
+      "username": "@eazypz9124",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: Im a true blue collar internet worker. My back and hands are tired I still work hard for my money, begging ain\u2019t easy but someone\u2019s gotta do it",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789624362,
+      "username": "@Ysusha116",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: my live streams are not on easy, I work hard. that is so disrespectful to say.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789624242,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Stan: Rich, I heard something that will rock your world: apparently Phillip Burnell is a man. Disturbing isn\u2019t it ?",
+      "commands": [
+        "stan",
+        "world"
+      ]
+    },
+    {
+      "ts": 1789623078,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: for you the day you watched DarkSydePhil was the most important day of your life, for me it was Tuesday ! I am a man among men on YouTube !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789616026,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: I\u2019m a construct to make others look smart !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789615884,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: Trapped Somewhere between a beg and a peg",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789614190,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "phil: remember when god of war developers( developers developers developers) used Phil's gameplay to design their game.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789613152,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: I am testing the pleasure coefficient in relation of the playing of this entertainment software ! Very robust experiment indeed.Choose science !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789612212,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Eric: Did someone mention asthless chaps? Squeeky!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789611954,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Trump: men, you heard birdfather. assemble the army of naked cowboys! we must form a perimeter around jaysus church and close in... there is no escape",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789610943,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Trump: men, I just ripped ass. it was beautiful.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789608696,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Moist: I looked at chatgpt yes it knows about bob lavari and apparently has a LinkedIn profile of the \u201cGalactic Empire Of Men.\u201d Harman: HE LIVES!!",
+      "commands": [
+        "moist",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789608630,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Harman: How ya doin Stanly, doin good? Stan: Harman, your books suck, u look like leatherface, & I shall not be, your pikachu. Harman: What?! No way!!",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1789607390,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Stan: oh phil just blow your load already! Phil: I cant! Kat will cry! I need more hogans to keep me hard! Stan: oh ill keep you hard sonny!",
+      "commands": [
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789607007,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Trump: men, today officially marks 7 years as being a auto tech. I've learned a lot, and still have a lot to learn. one can say I am a semi pro fucking fessional. embrace all the farts and shotgun twisted teas! be a man",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1789606696,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Phil: Rich ! I am not a clown dude! Send help !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789606360,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Eric: I'm comin for yer, Rich. Mm! Chew ya like a schnitzel, my tongue a typhoon. Hoon from the saloon, scratchin at ya door n howlin at da moon! Soon I will gewn for some, froo-teeba bewn!! Booon!!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1789605492,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Harman: ReviewTechusa, Did you watch Mitch McConnell being told what to vote today at the senate?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1789604895,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "lets_discuss_the_nerd_reich_2026-09-17_001712",
+      "message": "Council of men: I have an important announcement: dating apps suck!",
+      "commands": [
+        "men",
+        "announcement"
+      ]
+    },
     {
       "ts": 1789454830,
       "username": "@ShadowFox10587O",
