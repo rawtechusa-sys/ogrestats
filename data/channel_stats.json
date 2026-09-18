@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789626929,
+  "updated_ts": 1789764713,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1936,7 +1936,8 @@
     "reacting_to_men_live_2026-09-08_010234",
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
     "where_do_you_want_to_go_today_2026-09-14_235742",
-    "lets_discuss_the_nerd_reich_2026-09-17_001712"
+    "lets_discuss_the_nerd_reich_2026-09-17_001712",
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34833,6 +34834,23 @@
       "avg_chat_mpm": 9.24,
       "avg_active_chatters": 21.91,
       "percent_paused": 79.0
+    },
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229": {
+      "stream_id": "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+      "title": "This Is How You Don't Play #DSPGaming",
+      "start_ts": 1789762847,
+      "end_ts": 1789764509,
+      "duration_sec": 1662,
+      "youtube_archive_id": "cA6ZOfGXMFQ",
+      "source_platform": "youtube",
+      "total_donations_usd": 193.89,
+      "donation_count": 13,
+      "donations_per_min": 6.9996,
+      "peak_viewers": 226,
+      "avg_viewers": 168.92,
+      "avg_chat_mpm": 8.44,
+      "avg_active_chatters": 24.8,
+      "percent_paused": null
     }
   }
 }
