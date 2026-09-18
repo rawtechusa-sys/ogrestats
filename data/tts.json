@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789626920,
+  "updated_ts": 1789764702,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -863,16 +863,17 @@
     "reacting_to_men_live_2026-09-08_010234",
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
     "where_do_you_want_to_go_today_2026-09-14_235742",
-    "lets_discuss_the_nerd_reich_2026-09-17_001712"
+    "lets_discuss_the_nerd_reich_2026-09-17_001712",
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229"
   ],
   "commands": {
     "men": 6,
     "eric": 218,
-    "phil": 497,
-    "stan": 369,
-    "masterchief": 170,
+    "phil": 500,
+    "stan": 370,
+    "masterchief": 171,
     "harman": 172,
-    "trump": 187,
+    "trump": 188,
     "moist": 38,
     "dagoth": 5,
     "zesty": 36,
@@ -10345,9 +10346,57 @@
       ],
       "source_vod_id": "ARmIWIerMJk",
       "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229": {
+      "title": "This Is How You Don't Play #DSPGaming",
+      "start_ts": 1789762847,
+      "youtube_archive_id": "cA6ZOfGXMFQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "cA6ZOfGXMFQ",
+          "start_ts": 1789762847
+        }
+      ],
+      "source_vod_id": "vWN3ulX1rLk",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1789764018,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+      "message": "Stan: Even I see Niall\u2019s superchat down here in hell! Btw it\u2019s too hot in hell. Phil: Did you see Niall\u2019s new superchat Rich?",
+      "commands": [
+        "stan",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789763955,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+      "message": "You big proxy e-begger you. Phil: Breasts.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1789763773,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+      "message": "Phil: Masterchief that was the most amazing sex I\u2019ve ever had. Masterchief: Phil it was an honour to penetrate you. Trump: why wasn\u2019t I invited?",
+      "commands": [
+        "phil",
+        "masterchief",
+        "trump"
+      ]
+    },
     {
       "ts": 1789625212,
       "username": "@eazypz9124",
