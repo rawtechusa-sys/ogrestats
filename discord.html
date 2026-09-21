@@ -72,6 +72,22 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  /* Name + "archive updated" notice stack beside the icon; min-width lets the
+     name's ellipsis work inside the flex row. */
+  .server-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .server-updated {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10.5px;
+    color: var(--text-muted);
+    line-height: 1.35;
+  }
+  /* The stamp never breaks mid-date: the notice wraps between label and stamp. */
+  .server-updated time { white-space: nowrap; }
 
   /* Sticky filter (floats at the top of the list while it scrolls). */
   .sidebar-search {
@@ -1015,6 +1031,25 @@ function fmtStamp(ts) {
     return new Date(ts * 1000).toLocaleString('en-US',
       withTZ({ year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }));
   } catch (e) { return ''; }
+}
+// "3 days ago" for the archive-updated tooltip. Coarse on purpose: the archive
+// runs on a daily-ish timer, so anything finer than hours is noise.
+function fmtAge(ts) {
+  const s = Math.max(0, Date.now() / 1000 - ts);
+  const n = s < 3600 ? [Math.floor(s / 60), 'minute']
+          : s < 86400 ? [Math.floor(s / 3600), 'hour']
+          : [Math.floor(s / 86400), 'day'];
+  return n[0] < 1 ? 'just now' : `${n[0]} ${n[1]}${n[0] === 1 ? '' : 's'} ago`;
+}
+// Sidebar notice: when the backend last rebuilt the archive (manifest.updated_ts,
+// stamped by discord_site_build.build_manifest on every run). A manifest without a
+// usable stamp renders nothing rather than "Invalid Date".
+function updatedNotice(raw) {
+  const ts = Number(raw);
+  if (!Number.isFinite(ts) || ts <= 0) return '';
+  const stamp = fmtStamp(ts);
+  if (!stamp) return '';
+  return `<span class="server-updated" title="${escHtml(fmtAge(ts))}">archive updated <time datetime="${new Date(ts * 1000).toISOString()}">${escHtml(stamp)}</time></span>`;
 }
 // A YYYY-MM-DD <input type=date> value -> unix seconds, interpreted in UTC so the
 // message-level bound and the chunk-level month bound (chunks are bucketed by UTC
@@ -2543,7 +2578,10 @@ async function load() {
     head.innerHTML = (iconUrl
         ? `<img class="server-icon" id="serverIcon" src="${escHtml(iconUrl)}" alt="">`
         : '') +
-      `<span class="server-name" title="${escHtml(name)}">${escHtml(name)}</span>`;
+      `<div class="server-text">` +
+      `<span class="server-name" title="${escHtml(name)}">${escHtml(name)}</span>` +
+      updatedNotice(MANIFEST?.updated_ts) +
+      `</div>`;
     const icon = document.getElementById('serverIcon');
     if (icon) icon.addEventListener('error', () => { icon.style.display = 'none'; });
 
