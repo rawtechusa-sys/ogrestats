@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790048916,
+  "updated_ts": 1790057160,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -865,16 +865,17 @@
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
   ],
   "commands": {
     "men": 6,
-    "eric": 222,
-    "phil": 517,
-    "stan": 379,
+    "eric": 226,
+    "phil": 519,
+    "stan": 380,
     "masterchief": 171,
-    "harman": 177,
-    "trump": 195,
+    "harman": 179,
+    "trump": 196,
     "moist": 38,
     "dagoth": 5,
     "zesty": 36,
@@ -10378,9 +10379,124 @@
       ],
       "source_vod_id": "_nuXXiDQ2hI",
       "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254": {
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming PT.2",
+      "start_ts": 1790048878,
+      "youtube_archive_id": "0lm6Wzyvcnk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "0lm6Wzyvcnk",
+          "start_ts": 1790048878
+        }
+      ],
+      "source_vod_id": "-uN2hvnpHlM",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1790056177,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Phil: Ever watch Drive? Awesome movie, and also the last movie to be shot when LA had the original warm HPS street lights and the difference is insane",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790052906,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Harman: Review Tech USA, can I send you a fax?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790052409,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Stan: e-machines and windows ME make me go wooweee",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790051809,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Phil: Rich, dono goal to watch ghosts videos?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790050262,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Eric: Rich, you should watch ur 6,I know wresling!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790050034,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Eric: Lick! Lick! Lick! Rich! Lick! Lick! Lick! MM",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790049828,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Eric: I'll reach around anybody if it gets me clout and fame. Even you Dickers. Please let me give you a reach around ! Smash let me !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790049695,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Harman: Ding Dong Ding Dong, the witch is dead!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790049514,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Eric: Rich, it wans't me ! I didn't flag you !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790049323,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "message": "Trump: executive order 69. fart spam. embrace them. all of them. no matter the cost",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1790048217,
       "username": "@BloodyGB175",
