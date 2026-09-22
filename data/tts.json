@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789764702,
+  "updated_ts": 1790048916,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -864,16 +864,17 @@
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
-    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229"
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
   ],
   "commands": {
     "men": 6,
-    "eric": 218,
-    "phil": 500,
-    "stan": 370,
+    "eric": 222,
+    "phil": 517,
+    "stan": 379,
     "masterchief": 171,
-    "harman": 172,
-    "trump": 188,
+    "harman": 177,
+    "trump": 195,
     "moist": 38,
     "dagoth": 5,
     "zesty": 36,
@@ -886,7 +887,7 @@
     "chief": 4,
     "glados": 4,
     "kratos": 19,
-    "doom": 24,
+    "doom": 25,
     "emoguy": 4,
     "chat": 2,
     "grandma": 3,
@@ -916,7 +917,7 @@
     "post": 1,
     "tired": 1,
     "specs": 2,
-    "phill": 6,
+    "phill": 7,
     "warmy": 1,
     "translation": 4,
     "tomorrow": 35,
@@ -1440,14 +1441,15 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 6,
+    "biden": 7,
     "abuser": 1,
     "dickers": 1,
     "pirate": 1,
     "butler": 1,
     "discs": 1,
     "twain": 1,
-    "world": 1
+    "world": 1,
+    "chatgpt": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10361,9 +10363,447 @@
       ],
       "source_vod_id": "vWN3ulX1rLk",
       "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152": {
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming",
+      "start_ts": 1790013036,
+      "youtube_archive_id": "ZvV3CYGsIo8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "ZvV3CYGsIo8",
+          "start_ts": 1790013036
+        }
+      ],
+      "source_vod_id": "_nuXXiDQ2hI",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1790048217,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Eric: I don't get it, i followed your ways, kissed your ass and even changed my X profile pic to mirror yours and I'm still a nobody ! Please notice me Smash Senpai, I'm desperate ! I want to be you !",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790047941,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: listen, my balls itch. Stan: oh ill do more then scratch em daddy mmmmm! Biden: Jesus H Christ, what the fuck! Trump: oh sniff some hair fucker",
+      "commands": [
+        "trump",
+        "stan",
+        "biden"
+      ]
+    },
+    {
+      "ts": 1790046012,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: I thought tonight was all about me ? I was counting on you hyping me up. No wonder support is low ! Give me the attention I deserve ! Stan: I'll give you some attention, Oh Yeah ! mmmmm he he he",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790045563,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: daaaddyy! immm haaarrrrd! your hole is mine!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790041713,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: i am the way, the truth, and the life! I am a monument to all your sins! kneel before your master, and embrace the true power of the farts!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790039970,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Harman: Free Palestine and Free Pikcachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790038219,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Rich, We need drama! Any kind of drama!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790037239,
+      "username": "@SeanOnHere",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: Wanna grab that coffee, Richie? OH RICHIE!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790033198,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: listen try going super saiyan and let out a intro guy fart.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790030252,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Eric: (alert) That, Wasn't just a fart (boowomp)",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790029292,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: attention all men! attention all men! all men rise, get hard, and embrace the true power of the farts! a man among men has arrived!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790028704,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: listen mods ban CNN, MS NOW and politico from the chat please.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790026837,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "stan: if you think about it, phil was ahead of the curve giving away collector edition without the physical game(goofy_yell) (gta_mission_fail)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790026702,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Eric: Rich ! Tell me the truth about the flagging!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790025494,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Bon appetit Rich! Did you get your seltzer?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790024696,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil playing Beat Em and Eat Em. Phil: Why won\u2019t the white stuff go in the mouth. You\u2019re wasting babies.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790024237,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: Kojimas genius isn't as big as MINE",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790023947,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Why is human trafficking such an issue? I have to deal with traffic but we use cars now you dumbass, Just walk around each other, problem solved",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790023272,
+      "username": "@SeanOnHere",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Homeless? Just mortgage two condos. Be a man",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790023230,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: I donate all my uneaten fast food to charity",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790023206,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Harman: Review Tech USA, Me and my Pikachu hate you ! Anti Nintendo thug ! You will never complete Mario Bros on the NES!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790023166,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Why are kids going hungry? Just use doordash",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790023047,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Why don't homeless people just buy a house?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790023040,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: Will you eat salsa and chips off my nips DAD",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790022949,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: bla bla bla bla bla im gagging bla blah blah",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790022492,
+      "username": "@aajmc",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phill: banana",
+      "commands": [
+        "phill"
+      ]
+    },
+    {
+      "ts": 1790021919,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: My explosion of satisfact-ack-action(quack)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790021398,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Review Tech USA, Are you having technical difficulties ? Maybe you should call Mutahar , he knows a lot about gaming hardware!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790018681,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Harman: It's not Nintendo,it shouldn't exist !::cut_of_meat:!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790017373,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "doom: I just shaved my beard after 100lbs lost.",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1790017277,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAART. (fart)",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790017198,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Im not gonna put it in a bottle RICH! YEEOW!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790016911,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: Ohhh DSP! Time to get clobbered from behind",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790016867,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Harman: Pikachu & Wolverine can tagteam my beans!!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790016826,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Stan: I sniff ball sacks in my free time wooooooo",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790016550,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Now that QTV is back, can we check in on the SweetTasteOfAyuss guy?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790016342,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Harman: seems quantum Tv is transforming into EDP!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790015827,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: Rich do you remember the Terminator movie?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790015340,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Phil: I\u2019m obsessed with everything that has gatcha mechanics. Give me all the trading cards. I swear I really pulled a GOD pack!!! I just burst",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790015020,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "ChatGPT: \u201cDSP is operating in a completely different weight class as a lolcow than ReviewTechUSA\u201d \u2026 well that settles it :smiling_face_with_tear: ChatGPT was also able to explain the king snake arc spectacularly well",
+      "commands": [
+        "chatgpt"
+      ]
+    },
+    {
+      "ts": 1790014618,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Eric: Listen, ever since I looked at Michelle Sogucci I haven't been the same, but I hear Michelle is going out with Bob Lavari now, ever since taking Norad to Defcon 5. Bob is going nuclear, baby",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790014425,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+      "message": "Trump: Let the Manathon begin. My diaper is ready...oh wait, now it's not.",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1789764018,
       "username": "@niallwilliamson3540",
