@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790048920,
+  "updated_ts": 1790057164,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -865,7 +865,8 @@
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9794,6 +9795,21 @@
       ],
       "source_vod_id": "_nuXXiDQ2hI",
       "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254": {
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming PT.2",
+      "start_ts": 1790048878,
+      "youtube_archive_id": "0lm6Wzyvcnk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "0lm6Wzyvcnk",
+          "start_ts": 1790048878
+        }
+      ],
+      "source_vod_id": "-uN2hvnpHlM",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10474,6 +10490,22 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1790056098,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "have bisexual lighting in the streets, be a man !",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790049828,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Eric: I'll reach around anybody if it gets me clout and fame. Even you Dickers. Please let me give you a reach around ! Smash let me !",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1790048217,
         "type": "superchat",
@@ -20575,6 +20607,14 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1790050034,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Lick! Lick! Lick! Rich! Lick! Lick! Lick! MM",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1790017198,
         "type": "membership",
         "amount_usd": 1.99,
@@ -21498,6 +21538,14 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1790049323,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: executive order 69. fart spam. embrace them. all of them. no matter the cost",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1790047941,
         "type": "superchat",
@@ -64799,6 +64847,46 @@
     ],
     "respergu13": [
       {
+        "ts": 1790052906,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Review Tech USA, can I send you a fax?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790051809,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich, dono goal to watch ghosts videos?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790050262,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich, you should watch ur 6,I know wresling!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790049695,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Ding Dong Ding Dong, the witch is dead!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790049514,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich, it wans't me ! I didn't flag you !",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1790039970,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -96053,6 +96141,14 @@
     ],
     "change1ing": [
       {
+        "ts": 1790052409,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: e-machines and windows ME make me go wooweee",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1790039495,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -123569,6 +123665,14 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1790051393,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich just start the marathon over",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1789615093,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -134137,6 +134241,14 @@
     ],
     "Ysusha116": [
       {
+        "ts": 1790056652,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "remember ghost ride the whip",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1790031684,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -137818,6 +137930,22 @@
       }
     ],
     "adambuskirk1990": [
+      {
+        "ts": 1790052144,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You can get the clap from a cheap xmas knick-knack",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
+        "ts": 1790050232,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "There's regular logic, and then there's MAGA Logic",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1789617842,
         "type": "superchat",
@@ -161191,6 +161319,14 @@
     ],
     "fiftypesos03": [
       {
+        "ts": 1790055911,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
+      {
         "ts": 1787001959,
         "type": "sub",
         "amount_usd": 5.99,
@@ -167362,6 +167498,14 @@
       }
     ],
     "videotasticz": [
+      {
+        "ts": 1790056177,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Ever watch Drive? Awesome movie, and also the last movie to be shot when LA had the original warm HPS street lights and the difference is insane",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1788830830,
         "type": "membership",
@@ -292508,6 +292652,14 @@
       }
     ],
     "Stephanie_Rose": [
+      {
+        "ts": 1790050290,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "recent news feels like something from infowars",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1790029335,
         "type": "superchat",
@@ -542106,6 +542258,14 @@
       }
     ],
     "DAWNK3Y": [
+      {
+        "ts": 1790049502,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": "What happened last steam and glory hole Jerry",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+      },
       {
         "ts": 1789088445,
         "type": "superchat",
