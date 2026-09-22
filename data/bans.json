@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790048928,
+  "updated_ts": 1790057172,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -131,7 +131,8 @@
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1526,6 +1527,21 @@
         }
       ],
       "source_vod_id": "_nuXXiDQ2hI",
+      "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254": {
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming PT.2",
+      "start_ts": 1790048878,
+      "youtube_archive_id": "0lm6Wzyvcnk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "0lm6Wzyvcnk",
+          "start_ts": 1790048878
+        }
+      ],
+      "source_vod_id": "-uN2hvnpHlM",
       "source_platform": "youtube"
     }
   },
