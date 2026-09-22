@@ -590,7 +590,7 @@ function refreshOpenPanels() {
 }
 
 function fmtUSD(n) {
-  return n > 0 ? '$' + n.toFixed(2) : '—';
+  return n > 0 ? '$' + fmtMoney(n) : '—';
 }
 
 function fmtDateTime(ts) {

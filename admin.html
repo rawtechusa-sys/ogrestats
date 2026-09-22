@@ -2735,10 +2735,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
               }
               if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
-                case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
-                case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
-                case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
-                case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
+                case DS.DONATIONS:          return ` $${fmtMoney(y)} raised so far`;
+                case DS.DON_YT:             return ` $${fmtMoney(y)} raised (YT)`;
+                case DS.DON_TW:             return ` $${fmtMoney(y)} raised (TW)`;
+                case DS.DON_KICK:           return ` $${fmtMoney(y)} raised (Kick)`;
                 case DS.MEMBERS:            return ` ${Math.round(y).toLocaleString()} members+subs`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;

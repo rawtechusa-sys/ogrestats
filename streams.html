@@ -1248,7 +1248,7 @@ async function loadStream(streamId) {
     function platformSubUSD(parts) {
       const present = parts.filter(p => p.has);
       if (present.length < 2) return '';
-      return present.map(p => `${p.tag} $${p.value.toFixed(2)}`).join(' · ');
+      return present.map(p => `${p.tag} $${fmtMoney(p.value)}`).join(' · ');
     }
 
     let cards = '';
@@ -1260,14 +1260,14 @@ async function loadStream(streamId) {
         { tag: 'TW',   value: peakTW,   has: hasTWViewers },
         { tag: 'Kick', value: peakKick, has: hasKickViewers },
       ]));
-    cards += card('Total Raised', '$' + totalUSD.toFixed(2), `${donCount} donation${donCount !== 1 ? 's' : ''}`,
+    cards += card('Total Raised', '$' + fmtMoney(totalUSD), `${donCount} donation${donCount !== 1 ? 's' : ''}`,
       platformSubUSD([
         { tag: 'YT',   value: donUSDBy.youtube, has: donCountBy.youtube > 0 },
         { tag: 'TW',   value: donUSDBy.twitch,  has: donCountBy.twitch  > 0 },
         { tag: 'Kick', value: donUSDBy.kick,    has: donCountBy.kick    > 0 },
       ]));
     cards += card('Hourly Wage',
-      duration ? '$' + (totalUSD / (duration / 3600)).toFixed(2) : '—', 'per hour');
+      duration ? '$' + fmtMoney(totalUSD / (duration / 3600)) : '—', 'per hour');
 
     // Average over the samples that exist -- a null snapshot is a collector
     // gap, not zero viewers, and counting it would drag the average down.
@@ -1608,7 +1608,7 @@ async function loadStream(streamId) {
         const evType  = `don:${typeKey}`;
         const color   = TYPE_COLORS[typeKey] || TYPE_COLORS._other;
         if (!logTypes.has(evType)) logTypes.set(evType, { label: TYPE_LABELS[typeKey] || typeKey, color });
-        const usd     = d.amount_usd != null ? `<span class="amount-usd">$${d.amount_usd.toFixed(2)}</span>` : '<span class="amount-usd">—</span>';
+        const usd     = d.amount_usd != null ? `<span class="amount-usd">$${fmtMoney(d.amount_usd)}</span>` : '<span class="amount-usd">—</span>';
         const msg     = d.message ? `<span class="msg-cell" title="${d.message.replace(/"/g,'&quot;')}">${escHtml(d.message)}</span>` : '';
         return `<tr data-evtype="${escHtml(evType)}">
           <td class="ts-cell">${tsLink(d.ts, elapsedText(d.ts))}</td>
@@ -2236,7 +2236,7 @@ function buildPie(canvasId, labels, dataArr, colors, opts) {
             label: (ctx) => {
               const v = ctx.parsed || 0;
               const pct = total ? (v / total * 100).toFixed(1) : '0.0';
-              return `${ctx.label}: $${v.toFixed(2)} (${pct}%)`;
+              return `${ctx.label}: $${fmtMoney(v)} (${pct}%)`;
             },
           },
         },
@@ -2786,10 +2786,10 @@ function buildChart(snapshots, donations, startTs, hasYTViewers, hasTWViewers, h
               }
               if (y == null || Number.isNaN(y)) return null;
               switch (item.dataset.label) {
-                case DS.DONATIONS:          return ` $${y.toFixed(2)} raised so far`;
-                case DS.DON_YT:             return ` $${y.toFixed(2)} raised (YT)`;
-                case DS.DON_TW:             return ` $${y.toFixed(2)} raised (TW)`;
-                case DS.DON_KICK:           return ` $${y.toFixed(2)} raised (Kick)`;
+                case DS.DONATIONS:          return ` $${fmtMoney(y)} raised so far`;
+                case DS.DON_YT:             return ` $${fmtMoney(y)} raised (YT)`;
+                case DS.DON_TW:             return ` $${fmtMoney(y)} raised (TW)`;
+                case DS.DON_KICK:           return ` $${fmtMoney(y)} raised (Kick)`;
                 case DS.MEMBERS:            return ` ${Math.round(y).toLocaleString()} members+subs`;
                 case DS.YT_CHAT:            return ` YT chat: ${y.toFixed(1)} mpm`;
                 case DS.TW_CHAT:            return ` TW chat: ${y.toFixed(1)} mpm`;

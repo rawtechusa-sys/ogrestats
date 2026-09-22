@@ -9,6 +9,14 @@ const GITHUB_OWNER = 'rawtechusa-sys';
 const GITHUB_REPO  = 'ogrestats';
 const BRANCH       = 'main';
 
+// ── Money ────────────────────────────────────────────────────────────────────────
+// Two decimals WITH thousands separators: 150994.24 -> "150,994.24". Shared by
+// every page, so a dollar figure reads the same on each tab. No "$": callers add it.
+// (Do not define a page-local fmtMoney: it shadows this one -- that printed "$$".)
+function fmtMoney(n) {
+  return Number(n || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
 // ── Timezone ─────────────────────────────────────────────────────────────────────
 // Shared by every page. The header dropdown (index.html) writes localStorage
 // 'swamp-tz'; date helpers call getTimeZone()/withTZ() at render time, so any

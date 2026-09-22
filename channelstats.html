@@ -605,9 +605,7 @@ function intTick(fmt) {
 }
 
 // ── Build ──────────────────────────────────────────────────────────────────────
-function fmtMoney(n) {
-  return '$' + Number(n).toLocaleString('en-US', { maximumFractionDigits: 0 });
-}
+// Dollar amounts use fmtMoney() from config.js (callers add the "$").
 
 // Header + legacy-data toggle, rendered on every path (including the empty state)
 // so the checkbox stays reachable even when the filter hides all data.
@@ -693,8 +691,8 @@ function buildPage(channelStats, subsData, twitchData) {
   cards += card('Twitch Followers', latestTwFollowers != null ? latestTwFollowers.toLocaleString() : '—',
                 latestTwSubsPoint ? `${latestTwSubsPoint.subs.toLocaleString()} subs`
                                   : (latestTwFollowers != null ? 'latest tracked' : 'no data yet'));
-  cards += card('Lifetime Raised', '$' + lifetimeUSD.toFixed(2), `${streams.length} stream${streams.length !== 1 ? 's' : ''}`);
-  cards += card('Avg $/hr', avgRate != null ? '$' + (avgRate * 60).toFixed(2) : '—', 'per-stream average');
+  cards += card('Lifetime Raised', '$' + fmtMoney(lifetimeUSD), `${streams.length} stream${streams.length !== 1 ? 's' : ''}`);
+  cards += card('Avg $/hr', avgRate != null ? '$' + fmtMoney(avgRate * 60) : '—', 'per-stream average');
   cards += card('Peak Reach', peakReach ? peakReach.toLocaleString() : '—', 'best concurrent viewers');
 
   main.innerHTML = HEADER_HTML + `
@@ -892,9 +890,9 @@ function buildChart(streams, subs, tw) {
                 case DS.SUBSCRIBERS:     return ` ${Math.round(y).toLocaleString()} subscribers`;
                 case DS.TW_FOLLOWERS:    return ` ${Math.round(y).toLocaleString()} Twitch followers`;
                 case DS.TW_SUBS:         return ` ${Math.round(y).toLocaleString()} Twitch subs`;
-                case DS.DON_PER_STREAM:  return ` $${y.toFixed(2)} raised`;
-                case DS.DON_CUMULATIVE:  return ` ${fmtMoney(y)} all-time`;
-                case DS.DON_PER_HR:      return ` $${y.toFixed(2)} / hr`;
+                case DS.DON_PER_STREAM:  return ` $${fmtMoney(y)} raised`;
+                case DS.DON_CUMULATIVE:  return ` $${fmtMoney(y)} all-time`;
+                case DS.DON_PER_HR:      return ` $${fmtMoney(y)} / hr`;
                 case DS.PEAK_VIEWERS:    return ` peak ${Math.round(y).toLocaleString()} viewers`;
                 case DS.AVG_VIEWERS:     return ` avg ${Math.round(y).toLocaleString()} viewers`;
                 case DS.CHAT_MPM:        return ` ${y.toFixed(1)} msg/min`;
