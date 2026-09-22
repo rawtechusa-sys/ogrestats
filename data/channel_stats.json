@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790048926,
+  "updated_ts": 1790057170,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1938,7 +1938,8 @@
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34869,6 +34870,23 @@
       "avg_chat_mpm": 8.81,
       "avg_active_chatters": 21.43,
       "percent_paused": 70.7
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254": {
+      "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming PT.2",
+      "start_ts": 1790048878,
+      "end_ts": 1790056944,
+      "duration_sec": 8066,
+      "youtube_archive_id": "0lm6Wzyvcnk",
+      "source_platform": "youtube",
+      "total_donations_usd": 46.98,
+      "donation_count": 18,
+      "donations_per_min": 0.3495,
+      "peak_viewers": 252,
+      "avg_viewers": 220.67,
+      "avg_chat_mpm": 6.98,
+      "avg_active_chatters": 17.14,
+      "percent_paused": 80.9
     }
   }
 }
