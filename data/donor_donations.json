@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1789764705,
+  "updated_ts": 1790048920,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -864,7 +864,8 @@
     "the_patron_saint_of_meaningful_robustness_2026-09-10_224517",
     "where_do_you_want_to_go_today_2026-09-14_235742",
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
-    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229"
+    "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9778,10 +9779,33 @@
       ],
       "source_vod_id": "vWN3ulX1rLk",
       "source_platform": "youtube"
+    },
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152": {
+      "title": "This Is How You Don't Play 12-HOUR MARATHAN #DSPGaming",
+      "start_ts": 1790013036,
+      "youtube_archive_id": "ZvV3CYGsIo8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "ZvV3CYGsIo8",
+          "start_ts": 1790013036
+        }
+      ],
+      "source_vod_id": "_nuXXiDQ2hI",
+      "source_platform": "youtube"
     }
   },
   "donors": {
     "DougSavona": [
+      {
+        "ts": 1790016846,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "Joined!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1785899692,
         "type": "superchat",
@@ -10450,6 +10474,22 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1790048217,
+        "type": "superchat",
+        "amount_usd": 7.18,
+        "amount_raw": "CA$10.00",
+        "message": "Eric: I don't get it, i followed your ways, kissed your ass and even changed my X profile pic to mirror yours and I'm still a nobody ! Please notice me Smash Senpai, I'm desperate ! I want to be you !",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790046012,
+        "type": "superchat",
+        "amount_usd": 7.18,
+        "amount_raw": "CA$10.00",
+        "message": "Phil: I thought tonight was all about me ? I was counting on you hyping me up. No wonder support is low ! Give me the attention I deserve ! Stan: I'll give you some attention, Oh Yeah ! mmmmm he he he",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789624242,
         "type": "superchat",
@@ -12583,6 +12623,14 @@
     ],
     "djjailbreak": [
       {
+        "ts": 1790016119,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "it's because free open source models are getting just as good and they are free if you have the hardware I'm not okay with a local ai ban!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787971847,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -13244,6 +13292,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1790014999,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789447091,
         "type": "superchat",
@@ -17515,6 +17571,22 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1790037151,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I mean, like look at what they\u2019re doing with the",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790036880,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "dude lets just keep it real, you know theyre gonna",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787639388,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -20141,6 +20213,22 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1790016555,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014651,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "Rich listen, make another goal, hit it within 5 minutes of starting the stream then immediately leave to go play Elden Ring on the top bunk, lets go.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789763062,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -20486,6 +20574,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1790017198,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Phil: Im not gonna put it in a bottle RICH! YEEOW!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789604755,
         "type": "giftmembership",
@@ -21402,6 +21498,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1790047941,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: listen, my balls itch. Stan: oh ill do more then scratch em daddy mmmmm! Biden: Jesus H Christ, what the fuck! Trump: oh sniff some hair fucker",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790045563,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: daaaddyy! immm haaarrrrd! your hole is mine!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790041713,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: i am the way, the truth, and the life! I am a monument to all your sins! kneel before your master, and embrace the true power of the farts!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790029292,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: attention all men! attention all men! all men rise, get hard, and embrace the true power of the farts! a man among men has arrived!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789611954,
         "type": "superchat",
@@ -29684,6 +29812,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1790027840,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "sony slapped a marvel ip on an uncharted game",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790026837,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: if you think about it, phil was ahead of the curve giving away collector edition without the physical game(goofy_yell) (gta_mission_fail)",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789614190,
         "type": "superchat",
@@ -40375,6 +40519,22 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1790019941,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Figure it out dude.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016685,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789763955,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -41168,6 +41328,14 @@
       }
     ],
     "J0stler": [
+      {
+        "ts": 1790026129,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "men",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1788310986,
         "type": "giftsub",
@@ -42384,6 +42552,14 @@
       }
     ],
     "DarthOmegas": [
+      {
+        "ts": 1790029396,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "got my 7800x3d in my rig with the 5070, my wallet is glad im done with building the thing, now to see if it runs the whitehouse arcade games.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1788485062,
         "type": "superchat",
@@ -43674,6 +43850,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1790034040,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "My account has a bug, I don't get ads either lol",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033850,
+        "type": "superchat",
+        "amount_usd": 1.49,
+        "amount_raw": "$1.49",
+        "message": "Super Sticker",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033524,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phils is a Permanent child, he hates ethnic food",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033036,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dementia onset will lead Phil to his true self",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790032625,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "PG-free weed pen, no fake smoke no irritation",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790032084,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "My theory is that Phil blamed May 1st on sexy female video game characters to Cat. Now he has to permanently act disgusted by it because she watches",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790031363,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Whats your honest take on Phils future in 15years",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789613143,
         "type": "superchat",
@@ -58609,6 +58841,14 @@
     ],
     "SeymourDemonica": [
       {
+        "ts": 1790027858,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil said that clippers sound be in jail. Serious.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788832076,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -64559,6 +64799,78 @@
     ],
     "respergu13": [
       {
+        "ts": 1790039970,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Free Palestine and Free Pikcachu!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790038219,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Rich, We need drama! Any kind of drama!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790026702,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich ! Tell me the truth about the flagging!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790025494,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Bon appetit Rich! Did you get your seltzer?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023206,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Review Tech USA, Me and my Pikachu hate you ! Anti Nintendo thug ! You will never complete Mario Bros on the NES!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790021398,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Review Tech USA, Are you having technical difficulties ? Maybe you should call Mutahar , he knows a lot about gaming hardware!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016342,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: seems quantum Tv is transforming into EDP!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015827,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich do you remember the Terminator movie?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015535,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich are u gonna do a midterm elections stream?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789609638,
         "type": "superchat",
         "amount_usd": 1.49,
@@ -65844,6 +66156,30 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1790033198,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: listen try going super saiyan and let out a intro guy fart.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790028704,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: listen mods ban CNN, MS NOW and politico from the chat please.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790028365,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "tipples",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789608696,
         "type": "superchat",
@@ -67635,6 +67971,30 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1790028318,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "apparently panda lee was his first, he was incel",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023047,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: Why don't homeless people just buy a house?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015791,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "UK government is telling us to prepare for war",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789081024,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -67930,6 +68290,38 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1790045011,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Um this is also illegal to do in high school sir",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790031579,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "\u201cThis doesn\u2019t make sense within my framework, which explicitly puts faith above evidence. Therefore, the evidence must be wrong. Checkmate, evidence.\u201d",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790028371,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Just saw Trump\u2019s big head roll up Madison for the UN. I swear it\u2019s always just after 5pm so he can gridlock as many people as possible for an hour :loudly_crying_face:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015020,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "ChatGPT: \u201cDSP is operating in a completely different weight class as a lolcow than ReviewTechUSA\u201d \u2026 well that settles it :smiling_face_with_tear: ChatGPT was also able to explain the king snake arc spectacularly well",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789447458,
         "type": "membership",
@@ -68542,6 +68934,62 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1790023040,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Will you eat salsa and chips off my nips DAD",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790021927,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "wtf is playing on his screen. a man shitting?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790019736,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Give phil a call....",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016826,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: I sniff ball sacks in my free time wooooooo",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016389,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Watch you love Wolverine too, then curse Quantan",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014442,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Btw its true. go to chatgpt and ask it who bob lavari is, you're known by it",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014309,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Imagine the Horse",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789434119,
         "type": "superchat",
@@ -72665,6 +73113,14 @@
     ],
     "REDIVY78": [
       {
+        "ts": 1790043430,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "how are you and the kiddos doing?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1786488370,
         "type": "membership",
         "amount_usd": 1.99,
@@ -72698,6 +73154,14 @@
       }
     ],
     "jeffery-tucker": [
+      {
+        "ts": 1790017778,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Here's the It's A Gundam video. https://www.youtube.com/watch?v=Eju7c...",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1787970283,
         "type": "superchat",
@@ -77317,6 +77781,14 @@
     ],
     "Phillippaulburnell": [
       {
+        "ts": 1790015340,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 41 months",
+        "message": "Phil: I\u2019m obsessed with everything that has gatcha mechanics. Give me all the trading cards. I swear I really pulled a GOD pack!!! I just burst",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787546601,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -81439,6 +81911,38 @@
     ],
     "evistosf": [
       {
+        "ts": 1790033169,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Phil accuses everyone else of misrepresentation but he claimed those were fresh napkins when they are clearly paper towels he pulled on the roll! rtuRobust",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790026646,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Please note that here Phil's hairline actually goes from left to right without \"arcing' into a widow's peak! rtuRobust",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790025791,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer50 Phil wants a game where he can grab and choke a snake and then eat it! Cheer50",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790020960,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Phillip Paul Burnell has been using DLSS 5 for months to take away the wrinkles on his face during live streams! rtuRobust",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789608870,
         "type": "bits",
         "amount_usd": 1.0,
@@ -82056,6 +82560,14 @@
       }
     ],
     "End-Logic_1": [
+      {
+        "ts": 1790019926,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "ADHD Confirmed. Hyperfocus Activated",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789618626,
         "type": "membership",
@@ -82684,6 +83196,22 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1790016912,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "breaking news bungie is crawling back to destiny 2",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016693,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "This is how you be a man, lets get into it.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789446915,
         "type": "superchat",
@@ -86727,6 +87255,14 @@
     ],
     "Jayhooft": [
       {
+        "ts": 1790017788,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "LISTEN, JOEY WILL CUM",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789620914,
         "type": "membership",
         "amount_usd": 1.99,
@@ -87548,6 +88084,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1790024696,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Phil playing Beat Em and Eat Em. Phil: Why won\u2019t the white stuff go in the mouth. You\u2019re wasting babies.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015271,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "California has settled its lawsuit with Paramount over its merger with Warner Bros. The MAGA billionaires are controlling the media now.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789764018,
         "type": "superchat",
@@ -95501,6 +96053,86 @@
     ],
     "change1ing": [
       {
+        "ts": 1790039495,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I love ALL of this for him. :smiling_face_with_hearts:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023230,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I donate all my uneaten fast food to charity",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790022132,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, shit on stream, get a Hyrox sponsorship",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790019525,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "The stream will begin as planned...Mr. President.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790018577,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Quantum looks like DLSS5 was used on EDP",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790017277,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAART. (fart)",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016746,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016550,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Now that QTV is back, can we check in on the SweetTasteOfAyuss guy?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015421,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil with a new daily show to cover his gas costs.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014425,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 53 months",
+        "message": "Trump: Let the Manathon begin. My diaper is ready...oh wait, now it's not.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789446806,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -96137,6 +96769,14 @@
     ],
     "Keldoh3ad": [
       {
+        "ts": 1790017373,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "doom: I just shaved my beard after 100lbs lost.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788815653,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -96362,6 +97002,38 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1790045132,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790036792,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790030049,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790027644,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 31 months",
+        "message": "31 months of Rich Tomorrow :beaming_face_with_smiling_eyes:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789089016,
         "type": "giftmembership",
@@ -98537,6 +99209,30 @@
     ],
     "rtusburritoeattingbrother": [
       {
+        "ts": 1790036001,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "one name JAFFE",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790034167,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "my recent favorite clip of Phil is when he was talking about tracking his Pok\u00e9mon cards on stream he said they were in \"AURA GONE\" instead of Oregon.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033822,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789621008,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -99342,6 +100038,38 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1790037716,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I make bank taking a shit",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790037043,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033791,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "S T E A L T H",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790033748,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 28 months",
+        "message": "cats",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789610807,
         "type": "superchat",
@@ -100550,6 +101278,14 @@
       }
     ],
     "marihdimitri7219": [
+      {
+        "ts": 1790016645,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1787802132,
         "type": "giftmembership",
@@ -103120,6 +103856,38 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1790024237,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Kojimas genius isn't as big as MINE",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023947,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Why is human trafficking such an issue? I have to deal with traffic but we use cars now you dumbass, Just walk around each other, problem solved",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023166,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Why are kids going hungry? Just use doordash",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790022949,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: bla bla bla bla bla im gagging bla blah blah",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1785279612,
         "type": "superchat",
@@ -123325,6 +124093,14 @@
     ],
     "jorethor": [
       {
+        "ts": 1790017340,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "8/10 birds like wolverine birds",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788057721,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -125524,6 +126300,78 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1790044841,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Anyways, side note! Star Wars has two anniversaries next year! The original turns 50 and attack of the clowns turns 25! My shoulders hurt, birds!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790044713,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I came back at the weirdest time :eyes: but I\u2019ll say this much I hope that these creeps feel what they deserve! I get to say that as I have my own story!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790026927,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I have to be honest, the council of men is rather depressed with the midterms looming! I dread these times fam! I love you all & want to say regardless we are bird family & council members! Birds!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790019667,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Have you tried shouting at the computer like DMX or Ja Rule? I\u2019m going to shout at you til you work right! :loudly_crying_face: I might be a hit stooooooooooned",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790018240,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I may be a bit lost in the cart sauce in class but hey we got this! It\u2019s not important today, your stream is getting me through this lecture! :clinking_glasses:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790017993,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I want to say I\u2019m throughly tickled this man is back! Second; he has kids? Sheesh; can we alert act man? I kinda want to do exactly that :rolling_on_the_floor_laughing:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014901,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I don\u2019t advocate for legal snow or anything else but the war on drugs was a war on minorities that is it! This is a failed idea :light_bulb: thanks Nixon! On top of watergate he is responsible for that too",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014602,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I saw a post from my local news channel\u2026 300 pounds of snow seized in Chicago! I hate living in the middle of the country Bible Belt state of Kansas",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014229,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I\u2019m on my college campus until I can catch a ride home from my ma! I have class at 2 pm & I have a fresh penjamin to puff on! Big beautiful birds! Love all! Thank you father for the stream of comedy!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789763543,
         "type": "superchat",
@@ -130855,6 +131703,14 @@
     ],
     "lukaskrauss4664": [
       {
+        "ts": 1790042905,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1785205988,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -132709,6 +133565,22 @@
     ],
     "Ms.Sparkles": [
       {
+        "ts": 1790027828,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Christopher being mean can I put him in time out?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790026022,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "1 year let's go! I am the favorite! Hi Chris! bff!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788480358,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -133264,6 +134136,22 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1790031684,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I know its phil, but he could use thermal goggles",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790027250,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 53 months",
+        "message": "if you ever want a scare, watch the ai codec call for mgs 2. It really put into perspective the Ai thing we are dealing with now.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789624362,
         "type": "superchat",
@@ -143971,6 +144859,22 @@
     ],
     "HaunchoJackHD": [
       {
+        "ts": 1790038669,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Found the limit of my 5080, dlss5 maxed on cyberpunk dlss quality ultra with path tracing . Got 24fps , ran ok then crashed when a car exploded lol",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014105,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Bought a 5080 yesterday and used dlss5 on cyberpunk, still haven\u2019t picked my jaw up lol. It was $1420 though :crying_face:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787960770,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -145151,6 +146055,14 @@
     ],
     "venomizedmarkus3236": [
       {
+        "ts": 1790016911,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "Stan: Ohhh DSP! Time to get clobbered from behind",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787619289,
         "type": "superchat",
         "amount_usd": 5.02,
@@ -145278,6 +146190,30 @@
       }
     ],
     "ITSJFE": [
+      {
+        "ts": 1790017465,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the same people complaining that it's too easy, are the same people who also said that From Software games should have a easy mode",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016914,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "how does it feel to have 100 k hard men supporting your channel?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016413,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "quantum has bisexual lighting behind him..exposed",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1786309950,
         "type": "superchat",
@@ -146551,6 +147487,54 @@
     ],
     "violationentertainment": [
       {
+        "ts": 1790030252,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric: (alert) That, Wasn't just a fart (boowomp)",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790022815,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Eric:How ya doin Stanly doin Good? Stan:I was until You showed up, ya rodent. Now, Begone!! The power of Logs compels you!! Logs(gnome)logs(gnome)logs",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790021919,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: My explosion of satisfact-ack-action(quack)",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790018681,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman: It's not Nintendo,it shouldn't exist !::cut_of_meat:!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790016867,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman: Pikachu & Wolverine can tagteam my beans!!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790014618,
+        "type": "superchat",
+        "amount_usd": 7.06,
+        "amount_raw": "A$10.00",
+        "message": "Eric: Listen, ever since I looked at Michelle Sogucci I haven't been the same, but I hear Michelle is going out with Bob Lavari now, ever since taking Norad to Defcon 5. Bob is going nuclear, baby",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789624970,
         "type": "superchat",
         "amount_usd": 1.41,
@@ -147605,6 +148589,14 @@
     ],
     "danithefoot633": [
       {
+        "ts": 1790032088,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "I keep trying 2 gift a membership, it just buffers",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787537300,
         "type": "membership",
         "amount_usd": 1.99,
@@ -147853,6 +148845,14 @@
     ],
     "kasjamm": [
       {
+        "ts": 1790029478,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Sony is in their late XBOX 360 era. They don't know what they want to be right now. The PS5 is a multiplat console with 1 to 2 exclusives a year",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789611969,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -148008,6 +149008,14 @@
       }
     ],
     "apks94": [
+      {
+        "ts": 1790016892,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Joined!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1788053173,
         "type": "giftmembership",
@@ -151026,6 +152034,14 @@
       }
     ],
     "aajmc": [
+      {
+        "ts": 1790022492,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "Phill: banana",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1786662321,
         "type": "membership",
@@ -157827,6 +158843,30 @@
     ],
     "AnAnonymousGifter": [
       {
+        "ts": 1790035864,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023780,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023609,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788416933,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -157844,6 +158884,14 @@
       }
     ],
     "Easilypleased23": [
+      {
+        "ts": 1790016061,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "It\u2019s a Gundam thinks it\u2019s woke",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1787542063,
         "type": "membership",
@@ -169125,6 +170173,22 @@
     ],
     "DarkScamPhil": [
       {
+        "ts": 1790015364,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "He said that since you can go to a gas station and get gas, there isn\u2019t an oil scarcity and the war has nothing to do with oil prices. He\u2019s not bright",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790015061,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Per DSP iran war has nothing to do with oil prices",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1786481000,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -169911,6 +170975,14 @@
     ],
     "respergu": [
       {
+        "ts": 1790022539,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "DSP has the best shirts",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1788663645,
         "type": "bits",
         "amount_usd": 1.0,
@@ -170054,6 +171126,22 @@
       }
     ],
     "WebTechSimplified": [
+      {
+        "ts": 1790028067,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Is she a submarine sandwich or a pizza?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790027675,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Those jokes are because he is always jack'in it",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1787806806,
         "type": "superchat",
@@ -176024,6 +177112,14 @@
       }
     ],
     "mrgibb1003": [
+      {
+        "ts": 1790033383,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Imagine Phil eating at an actual restaurant lol",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1789082014,
         "type": "membership",
@@ -232870,6 +233966,14 @@
       }
     ],
     "ericliriano23": [
+      {
+        "ts": 1790026897,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1720484518,
         "type": "membership",
@@ -291404,6 +292508,30 @@
       }
     ],
     "Stephanie_Rose": [
+      {
+        "ts": 1790029335,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "DSPs game play is hurting me.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790027651,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I was working nights and lost almost all my free time. but I quit because I felt like I was missing life. 13 hour shifts 6 days a week for 2 years ew",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790027454,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "haven't actually watched you in like 2 years. :loudly_crying_face:",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
       {
         "ts": 1706580099,
         "type": "superchat",
@@ -447627,6 +448755,14 @@
     ],
     "Dad_Brad": [
       {
+        "ts": 1790031831,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "I sure wish Panda would do an interview abojt Phil",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787807951,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -540049,6 +541185,46 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1790047106,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich did you saw Lauren Bobert has been caught in another major sx scandal?! I think it's high time Chris Hansen should visit capitol hill and investigate everyone there starting with most horny Lauren boobert \ud83d\ude06. Watch Kyle kulisnki he made video on it.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790044445,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Imagine if Chris Hansen is in Israel and he is running this show over there. Holy God I will assure you he would not a single moment sleep knowing the entire population defends pedophile and rapist. Just imagine\ud83d\ude06",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790043967,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 United Nation and Amnesty declared Palestine has largest population of child and baby amputee when they were on ground. And trump and all these sick piece of shit still assume its Hamas propaganda. Because they r too coward to step in Gaza and then blame US security forces when they are deployed and come back saying the reality on ground!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790035883,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 I can't believe how Zohran Mamdani went through his meeting today at his place sitting next to fat fuk Trump that is literally demolishing everything he utters word. I think he is the biggest curse ever happened in history of USA. Siiigh I can't find any gas station in 35 miles radius that is under 4.20/gallon. Guess I would have to push my car God forbid if my car stops anywhere. I would blame Phil and entire fking Republicans and zio shills Democrats.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790035441,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what's up Rich",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789623741,
         "type": "bits",
         "amount_usd": 0.5,
@@ -540701,6 +541877,22 @@
     ],
     "abbhi93": [
       {
+        "ts": 1790042681,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  And yet people support these people and listen to these people songs. I knew Ed Sheeren is a POS. But most people are sheeps and he knows it. It's sad. There is a reason why he was homeless.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790018327,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  This feels like Elden Ring 2.0 RIch. And can't belive he is still pulling that after 4 years.",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1787951952,
         "type": "sub",
         "amount_usd": 5.99,
@@ -541339,6 +542531,30 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1790045645,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "rehabilitation for these people or death sentence?",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790042886,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Do u think we r at the early stages of WW3",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790040579,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "if Ed said Free Pal they might b-u-m-p him off",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
         "ts": 1789620936,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -541535,6 +542751,84 @@
         "amount_raw": "1000",
         "message": "resubscribed (3 months)!",
         "stream_id": "this_is_how_you_dont_play_dspgaming_2026-09-18_202229"
+      }
+    ],
+    "danwolfe238": [
+      {
+        "ts": 1790017112,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "i left the casino behind because theyve just been milking the quartering. oh he farted 10 hour live stream",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "SignalRegulus": [
+      {
+        "ts": 1790023211,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "Did you see the VP begging for another chance? Fucking embarrassing. This whole regime is embarrassing and pathetic",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "SeanOnHere": [
+      {
+        "ts": 1790037239,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Wanna grab that coffee, Richie? OH RICHIE!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      },
+      {
+        "ts": 1790023272,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Homeless? Just mortgage two condos. Be a man",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "DemolitionDaddy": [
+      {
+        "ts": 1790041974,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Stan:Intro guy farts give me tingles, (fart)",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "jaquanbutler148": [
+      {
+        "ts": 1790045906,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "Joined!",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "About_50_Wizards": [
+      {
+        "ts": 1790048502,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "smellyjellysamich": [
+      {
+        "ts": 1790048543,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
       }
     ]
   }
