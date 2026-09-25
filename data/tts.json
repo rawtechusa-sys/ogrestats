@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790057160,
+  "updated_ts": 1790309104,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -866,16 +866,17 @@
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
   ],
   "commands": {
     "men": 6,
-    "eric": 226,
-    "phil": 519,
-    "stan": 380,
+    "eric": 240,
+    "phil": 527,
+    "stan": 386,
     "masterchief": 171,
-    "harman": 179,
-    "trump": 196,
+    "harman": 186,
+    "trump": 200,
     "moist": 38,
     "dagoth": 5,
     "zesty": 36,
@@ -887,7 +888,7 @@
     "guys": 1,
     "chief": 4,
     "glados": 4,
-    "kratos": 19,
+    "kratos": 20,
     "doom": 25,
     "emoguy": 4,
     "chat": 2,
@@ -902,8 +903,8 @@
     "asmrguy": 1,
     "chewbacca": 1,
     "drdisrespect": 2,
-    "rich": 31,
-    "hobo": 15,
+    "rich": 32,
+    "hobo": 16,
     "ideas": 1,
     "carlos": 1,
     "tate": 8,
@@ -912,7 +913,7 @@
     "ones": 1,
     "harmon": 4,
     "rage": 1,
-    "bill": 10,
+    "bill": 11,
     "gnome": 2,
     "kanye": 2,
     "post": 1,
@@ -988,7 +989,7 @@
     "cartoon": 1,
     "superchat": 3,
     "reviewrodneykingusa": 2,
-    "update": 9,
+    "update": 10,
     "gates": 1,
     "question": 14,
     "point": 3,
@@ -1450,7 +1451,8 @@
     "discs": 1,
     "twain": 1,
     "world": 1,
-    "chatgpt": 1
+    "chatgpt": 1,
+    "doc": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10394,9 +10396,456 @@
       ],
       "source_vod_id": "-uN2hvnpHlM",
       "source_platform": "youtube"
+    },
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129": {
+      "title": "Smash JT: A Soulless, Talentless Man (MARATHON)",
+      "start_ts": 1790272225,
+      "youtube_archive_id": "l0PtM2H0BDQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "l0PtM2H0BDQ",
+          "start_ts": 1790272225
+        }
+      ],
+      "source_vod_id": "bd3_hzZlPpk",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1790308516,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Cheer50 \ud83d\udea8UPDATE: an hour ago genocidal defenders 'Senate votes down resolution to end Iran war' 49 to 50. One Democrat was traitor and we all know who that very likely maybe ogre \ud83d\udc79 john fetterman but the rest republicans wants to go in history books of first time taking stance with adolf htlr.",
+      "commands": [
+        "update"
+      ]
+    },
+    {
+      "ts": 1790305457,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: review tech USA, smashJt is a Nintendo bro",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790304756,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: Cologne reviews during a fire alarm when?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790302561,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Trump: oh dear God! it's happening! that fart was the precursor to something bigger! all men, the storm of brown is inevitable. brace yourselves!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790302075,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Hey Kids you like Yo-Yo's? Come to my van!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790302012,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Trump: attention all men! attention all men! I have the biggest, most tremendously tremendous yuge announcement like no ones ever seen believe me! I farted! it was robust and meaningful! ass bubbles!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790299387,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Listen you lot lizard, I'm waiting real hard",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790299264,
+      "username": "@SventheArcticFox",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: I do this because I like money. money money.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790299193,
+      "username": "@aajmc",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: me and smash are better than you rich",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790297876,
+      "username": "@cyanrazorCel",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "New Mike Clum doc: The Sad Life of Jeffrey Tarzia",
+      "commands": [
+        "doc"
+      ]
+    },
+    {
+      "ts": 1790296823,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich, you are a Smashjt detractor! Stop it!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790295891,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Stan: fuck you Eric! big daddy's mine! ooh yeaa!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790295636,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Review Tech Usa! I'm coming for you big boy!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790294140,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich, I am sipping a beer and watching you!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790293568,
+      "username": "@luisramirez-or5vg",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Stan: My jaw's hitting the ground. mmmm man mmmeat",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790290795,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Stan: oh I'll itch those cheeks daddy! maybe a little more.... your hole is mine! now bend over!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790290598,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Trump: men, forgive my tardiness. my phone died today. had to fist myself and get a new one. embrace the farts. no matter the cost.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790288439,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: My videos are on par with ScottTheWoz too!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790287897,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich, I am not drunk ! You are jealous of my boy Smashjt because he has a huge retro collection ! And you only have 2 birds!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790287825,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: up in da ropes, I got might aint in yor face",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790285579,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "harman: just occured to me ive never heard DSP interact with his audience outside of financial purposes.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790284840,
+      "username": "@PunkGam3r",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Stan: Open wide, here comes your drinky! AWFGYEAH!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790284791,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: Here is your mandatory khantribution, sir.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790282004,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: Review Tech usa,I think I am 100% asexual",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790281217,
+      "username": "@PeterGriffinTAD",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Trump: Red Bull gives you cancer!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790280437,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: Rich , I\u2019m streaming Control Resonant! Kakak",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790280367,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "I\u2019m out of the loop. What is going on with Jeremy? Eric: He peed in my basement that\u2019s what he did! Phil: He also humped Steven Crowder!",
+      "commands": [
+        "eric",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790279967,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: Rich, you need a pikachu next to that cock",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790279888,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: Rich I\u2019m late. Restart the stream and smash me in the ass like I do to Jeff. Stan: oooo I kinda want that type of smashing.",
+      "commands": [
+        "harman",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790279873,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Stan: OK. I'm in a better place now. Lil warm tho",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790277132,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Harman: I'm oo Super-glue some bress onto Pikachu",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790276541,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich are you getting some pizza and seltzer?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790275396,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: Rich, you hit the goal, grab the bag and run",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790275295,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Rich: You hit the milestone, time to shut off the stream and go play Elden Ring",
+      "commands": [
+        "rich"
+      ]
+    },
+    {
+      "ts": 1790275156,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Review Techusa! I\u2019m coming for your arse!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790274753,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich , would u accept wrestling match 1v1?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790274474,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: Rich, did you see the Pok\u00e9mon cards I got?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790274472,
+      "username": "@MrZEEsterious",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: give me money or I can't enjoy wolverine",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790274355,
+      "username": "@Orange_Yoshi_64",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Bill: I will be working for Microsoft again. I am opening back up the 360 store at 5 pm today. Orange Yoshi needs his songs to play in Rock Band 3.",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1790274177,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Eric: Rich, leave my buddy SmashJT alone! I",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790273694,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Hobo: lord we bout to buss, Rich, Im gonna need Ricardo the black lushful bird for a about a few minutes, need to rub out the genie out of me",
+      "commands": [
+        "hobo"
+      ]
+    },
+    {
+      "ts": 1790273377,
+      "username": "@BoodyChew1999",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Kratos: rich, when you talked about the Ed Sheeran debacle it was a wake-up call for me. I'm scared of what's happening, Israel needs to be discussed.",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1790273223,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+      "message": "Phil: I skip-flipped it up in yer raz all day!!!",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1790056177,
       "username": "@videotasticz",
