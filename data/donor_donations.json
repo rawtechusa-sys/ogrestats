@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790057164,
+  "updated_ts": 1790309108,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -866,7 +866,8 @@
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9810,6 +9811,21 @@
       ],
       "source_vod_id": "-uN2hvnpHlM",
       "source_platform": "youtube"
+    },
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129": {
+      "title": "Smash JT: A Soulless, Talentless Man (MARATHON)",
+      "start_ts": 1790272225,
+      "youtube_archive_id": "l0PtM2H0BDQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "l0PtM2H0BDQ",
+          "start_ts": 1790272225
+        }
+      ],
+      "source_vod_id": "bd3_hzZlPpk",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10490,6 +10506,30 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1790305684,
+        "type": "superchat",
+        "amount_usd": 14.36,
+        "amount_raw": "CA$20.00",
+        "message": "Speaking of Sidescrollers, they were planning a live show in Vegas but looks like they cancelled because they barely sold any tickets. People don't want to pay money to watch Craig be a douche and Blabs be silent ? who knew !",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790304885,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "listen, replace membirds with men-bers, be a man !",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790303887,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "handouts are fine for me because i have a good reason, all others asking for one are parasites who take advantage of the system. Maga in a nutshell !",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790056098,
         "type": "superchat",
@@ -13324,6 +13364,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1790275173,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790014999,
         "type": "giftmembership",
@@ -16327,6 +16375,14 @@
     ],
     "kaynewoolley9104": [
       {
+        "ts": 1790307090,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "Oh look it\u2019s that tine of the month again. I might need a tampon",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1787545633,
         "type": "membership",
         "amount_usd": 1.99,
@@ -17668,6 +17724,14 @@
       }
     ],
     "evildetrution5426": [
+      {
+        "ts": 1790276483,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "we all know Combat Evolved cortana is the best",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789612072,
         "type": "superchat",
@@ -20245,6 +20309,30 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1790284724,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790275295,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich: You hit the milestone, time to shut off the stream and go play Elden Ring",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273136,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790016555,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -20606,6 +20694,30 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1790285918,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790284814,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790277892,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790050034,
         "type": "superchat",
@@ -21538,6 +21650,46 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1790302561,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: oh dear God! it's happening! that fart was the precursor to something bigger! all men, the storm of brown is inevitable. brace yourselves!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790302012,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: attention all men! attention all men! I have the biggest, most tremendously tremendous yuge announcement like no ones ever seen believe me! I farted! it was robust and meaningful! ass bubbles!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790295891,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: fuck you Eric! big daddy's mine! ooh yeaa!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790290795,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: oh I'll itch those cheeks daddy! maybe a little more.... your hole is mine! now bend over!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790290598,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: men, forgive my tardiness. my phone died today. had to fist myself and get a new one. embrace the farts. no matter the cost.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790049323,
         "type": "superchat",
@@ -24418,6 +24570,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1790300189,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I talked to Spectrebull in Airbagged's Twitch yesterday. He's planning on doing vids on more anti-woke grifters, including 8-Bit Eric. He needs dirt:grinning_squinting_face:",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789613957,
         "type": "giftmembership",
@@ -38457,6 +38617,14 @@
     ],
     "Beard-CatT": [
       {
+        "ts": 1790275742,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "listen review the drinky",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1787645162,
         "type": "superchat",
         "amount_usd": 1.49,
@@ -38838,6 +39006,14 @@
       }
     ],
     "iswordlogici7760": [
+      {
+        "ts": 1790303338,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dear Elon, I wrote you, but you still ain't callin",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789430697,
         "type": "membership",
@@ -40566,6 +40742,30 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1790304756,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: Cologne reviews during a fire alarm when?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790284791,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: Here is your mandatory khantribution, sir.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273899,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Behold my robust and meaningful golden cucumber!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790019941,
         "type": "superchat",
@@ -42601,6 +42801,30 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1790293924,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "smash and 8bit crying in Hamblyburglers basement",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790292558,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Steven Tyler and his mom are very proud",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790288165,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 28 months",
+        "message": "SmashJT is yellimg notice me senpai to chatgpt",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790029396,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -43898,6 +44122,86 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1790304878,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He's an NPC that got AI and became alive",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790303435,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Channel deletilization with the penalization Mofo",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790303052,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If I was your boss you'd work 8am-8pm no breaks",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790302075,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Hey Kids you like Yo-Yo's? Come to my van!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790301242,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Texas Gov. Abbot defunded FLOCK cameras",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790301063,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen, Jeff antagonizes women he likes in order to build a parasocial connection with them. Like a teenager pulling a girls hair for attention.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790300508,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "AI hacked in to the Australian Healthcare system",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790299387,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Listen you lot lizard, I'm waiting real hard",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790294614,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Interview Tommy until sun goes down in real time",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790293474,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Now now, you listen to me Toe Tickler Timmy!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790034040,
         "type": "superchat",
@@ -58791,6 +59095,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1790273648,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "ps3 store so broken the search bar isn't working",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789094333,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -58888,6 +59200,22 @@
       }
     ],
     "SeymourDemonica": [
+      {
+        "ts": 1790290365,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You see Regular Car Reviews' Crazi Taxi? Jealous.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790285148,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "To celebrate Jim Henson's birthday, give us a verse from Mean Green Mother From Outer Space. Or just Matt fart in our face.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790027858,
         "type": "superchat",
@@ -63659,6 +63987,14 @@
     ],
     "karasub2836": [
       {
+        "ts": 1790275241,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 33 months",
+        "message": "Hey Big Bird what's up",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1787943285,
         "type": "membership",
         "amount_usd": 1.99,
@@ -64323,6 +64659,14 @@
     ],
     "nevablowingbubbles1337": [
       {
+        "ts": 1790300771,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 @RTUStreams To be more precise, OpenAI has a rogue agent that peeked into a database with pharmaceuticals with one of Australia's largest public service departments. The prime minister told Altman that he was not happy.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789624781,
         "type": "superchat",
         "amount_usd": 1.41,
@@ -64846,6 +65190,126 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1790305457,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: review tech USA, smashJt is a Nintendo bro",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790301652,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich, tell the truth, would you hit Nancy Mace ?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790296823,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich, you are a Smashjt detractor! Stop it!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790295636,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech Usa! I'm coming for you big boy!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790294140,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich, I am sipping a beer and watching you!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790287897,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: Rich, I am not drunk ! You are jealous of my boy Smashjt because he has a huge retro collection ! And you only have 2 birds!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790282004,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Review Tech usa,I think I am 100% asexual",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790280437,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich , I\u2019m streaming Control Resonant! Kakak",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790279967,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Rich, you need a pikachu next to that cock",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790276541,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich are you getting some pizza and seltzer?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790275396,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich, you hit the goal, grab the bag and run",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790275156,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: Review Techusa! I\u2019m coming for your arse!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790274753,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: Rich , would u accept wrestling match 1v1?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790274474,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich, did you see the Pok\u00e9mon cards I got?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790274177,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: Rich, leave my buddy SmashJT alone! I",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790052906,
         "type": "superchat",
@@ -68059,6 +68523,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1790276105,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "I think Melonie is in the closet, jokes aside",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790028318,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -68378,6 +68850,38 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1790303286,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "He\u2019s Elon\u2019s \u201cRalph\u201d",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790302952,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "This guy talks like professor Dave",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790302279,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "This guy sits in the chair for sure",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790301978,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "He looks and dresses like an old child",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790045011,
         "type": "superchat",
@@ -73243,6 +73747,14 @@
     ],
     "jeffery-tucker": [
       {
+        "ts": 1790273944,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "I made an AI image for you to possibly use in your thumbnails. It's in the AI channel. Also, I'm thinking of buying a Lexus IS 350. Thoughts?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790017778,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -73422,6 +73934,14 @@
       }
     ],
     "EvistoSF": [
+      {
+        "ts": 1790273646,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Good afternoon Ricardo! I feel the need for a Phil-A-Tizer... His random brain farts feed my soul! rtuRobust",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1788402613,
         "type": "giftsub",
@@ -77081,6 +77601,14 @@
     ],
     "xcasder7885": [
       {
+        "ts": 1790273622,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "rich i fucking love you man, also you look slim :(",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1785807509,
         "type": "membership",
         "amount_usd": 1.99,
@@ -77316,6 +77844,22 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1790301186,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Don't let The Quartering or Smash near the Misses Butterworth bottle",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790279004,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Bibi calling people moral cowards at the U.N. summit, is like O.J. Simpson calling someone a murderer.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789091877,
         "type": "superchat",
@@ -81118,6 +81662,14 @@
       }
     ],
     "aXDroptimus": [
+      {
+        "ts": 1790283367,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "EAT THAT GRIFTING HOOOOLLLEE",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1788811606,
         "type": "superchat",
@@ -88173,6 +88725,30 @@
     ],
     "niallwilliamson3540": [
       {
+        "ts": 1790289980,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Jeff\u2019s videos have bisexual lighting.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790280367,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "I\u2019m out of the loop. What is going on with Jeremy? Eric: He peed in my basement that\u2019s what he did! Phil: He also humped Steven Crowder!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790279888,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Harman: Rich I\u2019m late. Restart the stream and smash me in the ass like I do to Jeff. Stan: oooo I kinda want that type of smashing.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790024696,
         "type": "superchat",
         "amount_usd": 6.74,
@@ -95179,6 +95755,22 @@
     ],
     "BoodyChew1999": [
       {
+        "ts": 1790274416,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "I've always wanted to go to NY, recommend it?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273377,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Kratos: rich, when you talked about the Ed Sheeran debacle it was a wake-up call for me. I'm scared of what's happening, Israel needs to be discussed.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1788830037,
         "type": "superchat",
         "amount_usd": 6.75,
@@ -96141,6 +96733,30 @@
     ],
     "change1ing": [
       {
+        "ts": 1790288439,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: My videos are on par with ScottTheWoz too!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790286105,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Turkey Toms got a new vid out on Chris Hansen",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790285579,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "harman: just occured to me ive never heard DSP interact with his audience outside of financial purposes.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790052409,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -97098,6 +97714,14 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1790290162,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790045132,
         "type": "giftmembership",
@@ -98441,6 +99065,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1790281217,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Trump: Red Bull gives you cancer!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1788832559,
         "type": "superchat",
         "amount_usd": 5.02,
@@ -98877,6 +99509,14 @@
     ],
     "superSONIC_star": [
       {
+        "ts": 1790290192,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789613978,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -99304,6 +99944,22 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1790281171,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Jay said you're fucking fired. That is all",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790280935,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen. Watch Jay and RTU and work all at once",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790036001,
         "type": "superchat",
@@ -100134,6 +100790,14 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1790298614,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790037716,
         "type": "superchat",
@@ -103617,6 +104281,38 @@
     ],
     "WiiklyReviews": [
       {
+        "ts": 1790300315,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Just know im not bragging. Im very proud.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790300198,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "It was from BestBuy and I got a NVME 2TB for $90. It was discounted from $600 and i had rewards from them of about 305 and $140 credit back pricematch",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790299895,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "32GB and its a Intel Core Ultra 7 265K",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790299728,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hey Rich. I wanted to tell u I finally got me a new PC. Its an Acer Predator Orion 6000 (5070 series one) I got it for under $1800. and im LOVING IT.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1785474604,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -104902,6 +105598,14 @@
       }
     ],
     "alexroberts3613": [
+      {
+        "ts": 1790296758,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 59 months",
+        "message": "ohhh baby baby",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789431558,
         "type": "superchat",
@@ -107308,6 +108012,22 @@
       }
     ],
     "SventheArcticFox": [
+      {
+        "ts": 1790299264,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: I do this because I like money. money money.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790286701,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "I don't understand how these grifters still exist",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1787192427,
         "type": "superchat",
@@ -123665,6 +124385,14 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1790296165,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "he looks like a peewee herman enormous child",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790051393,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -124530,6 +125258,14 @@
       }
     ],
     "JustChris-00": [
+      {
+        "ts": 1790292951,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Enjoying a nice bowl of pasta and glad to be here. Have you ever considered making a playlist on the channel with your beats? They slap.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789609796,
         "type": "membership",
@@ -126404,6 +127140,22 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1790299057,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I love you all! It\u2019s been a long day here in my head, the herb helps on days like today! We are bird council members & online friends matter! :clinking_glasses:",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790298902,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Hey Rich; been watching for hours doing homework & wanted to say thank you for a long marathon! Tomorrow marks the day we lost the legend drummer John Bonham Led Zeppelin\u2019s drummer! September 25 1980",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790044841,
         "type": "superchat",
@@ -131835,6 +132587,14 @@
     ],
     "devinlyda": [
       {
+        "ts": 1790301363,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Funny considering my pastor preached about how since complements scripture and evidence of God.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1787954266,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -133507,6 +134267,14 @@
     ],
     "MrInternetMan": [
       {
+        "ts": 1790275936,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "listen look like Pinocchio from lies of p & grift",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789099704,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -133626,6 +134394,14 @@
       }
     ],
     "PunkGam3r": [
+      {
+        "ts": 1790284840,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "Stan: Open wide, here comes your drinky! AWFGYEAH!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1787630836,
         "type": "membership",
@@ -134240,6 +135016,22 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1790275444,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I watched American history x. good movie but sad.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273834,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I just posted a pic of harman smiths stream. he has so much stuff covering the game. its in the general chat",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790056652,
         "type": "superchat",
@@ -137931,6 +138723,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1790306124,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "What SmashJT lied about something? No Way",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790052144,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -139076,6 +139876,30 @@
       }
     ],
     "tougeruzbay": [
+      {
+        "ts": 1790275460,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "$400 on Rockstar site for Vice City package Rich",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790274832,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "$400 for Vice City package on R star site Rich",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273694,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hobo: lord we bout to buss, Rich, Im gonna need Ricardo the black lushful bird for a about a few minutes, need to rub out the genie out of me",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789100913,
         "type": "superchat",
@@ -145669,6 +146493,14 @@
     ],
     "Pocketdocket1": [
       {
+        "ts": 1790303759,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "I need money, I just do!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1784856685,
         "type": "membership",
         "amount_usd": 1.99,
@@ -146182,6 +147014,22 @@
       }
     ],
     "venomizedmarkus3236": [
+      {
+        "ts": 1790307062,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "I lost even more respect when he made fun of your daughters illness, yet if it was the other way around, he wouldn't stop milking sympathy.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790305981,
+        "type": "superchat",
+        "amount_usd": 7.18,
+        "amount_raw": "CA$10.00",
+        "message": "And yet when you call these people out. They properly can't come back to you with receipts it's always Rich dropbox, go take of your kids, you're so felted people in their 40s admiring Kino Casino",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790016911,
         "type": "membership",
@@ -147131,6 +147979,14 @@
     ],
     "RazorSharpRust": [
       {
+        "ts": 1790281074,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Jeremys career is lower than twumps neck fupa",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1784691111,
         "type": "superchat",
         "amount_usd": 2.53,
@@ -147614,6 +148470,54 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1790287825,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric: up in da ropes, I got might aint in yor face",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790283452,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil:gubgubgubgub. Snake? Snaake! Snaaaaaaaaake!!!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790279873,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Stan: OK. I'm in a better place now. Lil warm tho",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790277132,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman: I'm oo Super-glue some bress onto Pikachu",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790274637,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:I'm da boss now. Pressure tho. Yes pressure!!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273223,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: I skip-flipped it up in yer raz all day!!!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790030252,
         "type": "superchat",
@@ -149094,6 +149998,14 @@
       }
     ],
     "jonhardwick98": [
+      {
+        "ts": 1790305539,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "DSP reviewed Simpsons Jack in The Box meals yet?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1787179006,
         "type": "membership",
@@ -151651,6 +152563,46 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1790286580,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790275233,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273808,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "plan on streaming any gta 6 when it comes out?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273277,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790273116,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789763634,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -152163,6 +153115,14 @@
     ],
     "aajmc": [
       {
+        "ts": 1790299193,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Eric: me and smash are better than you rich",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790022492,
         "type": "membership",
         "amount_usd": 1.99,
@@ -152572,6 +153532,14 @@
       }
     ],
     "ScottWoodford76": [
+      {
+        "ts": 1790273325,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "You use blue chee for streaming? GTA six for collectors edition with no disc is ridiculous.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1788660604,
         "type": "membership",
@@ -154112,6 +155080,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1790302007,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "\u201cI need money, I just do\u2026\u201d",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789432745,
         "type": "superchat",
@@ -157507,6 +158483,14 @@
     ],
     "Badog473": [
       {
+        "ts": 1790282562,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 50 months",
+        "message": "hi Rich I dream about you and Phil jerking off each other",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1788811737,
         "type": "superchat",
         "amount_usd": 5.25,
@@ -160050,6 +161034,14 @@
       }
     ],
     "Loafin_OG": [
+      {
+        "ts": 1790273974,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789440471,
         "type": "superchat",
@@ -165045,6 +166037,14 @@
     ],
     "86-panda": [
       {
+        "ts": 1790273471,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 62 months",
+        "message": "are we getting a phillitizer for the 12hr man stream?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1783567531,
         "type": "membership",
         "amount_usd": 1.99,
@@ -168677,6 +169677,14 @@
     ],
     "redbeard_55": [
       {
+        "ts": 1790301526,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1783038051,
         "type": "sub",
         "amount_usd": 5.99,
@@ -170146,6 +171154,14 @@
       }
     ],
     "luisramirez-or5vg": [
+      {
+        "ts": 1790293568,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: My jaw's hitting the ground. mmmm man mmmeat",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1782781511,
         "type": "superchat",
@@ -171925,6 +172941,14 @@
     ],
     "rafaelchicas7635": [
       {
+        "ts": 1790273482,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "can you read the weather report from your tv plz",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1788832249,
         "type": "superchat",
         "amount_usd": 1.49,
@@ -173526,6 +174550,22 @@
       }
     ],
     "BlackMetalGamerr": [
+      {
+        "ts": 1790284951,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "shill ur new product. rich's robust Seltzer drinky",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790283757,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Atari/3d realms made gr8t fps called Cultic :check_mark_button: it",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1789431133,
         "type": "superchat",
@@ -177571,6 +178611,14 @@
     ],
     "MrZEEsterious": [
       {
+        "ts": 1790274472,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "Phil: give me money or I can't enjoy wolverine",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1781228886,
         "type": "membership",
         "amount_usd": 1.99,
@@ -178729,6 +179777,14 @@
     ],
     "rubesmagoobs": [
       {
+        "ts": 1790293211,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Smash is doing videos of Phil too, he\u2019s desperate",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1789097726,
         "type": "membership",
         "amount_usd": 1.99,
@@ -179292,6 +180348,14 @@
       }
     ],
     "cyanrazorCel": [
+      {
+        "ts": 1790297876,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "New Mike Clum doc: The Sad Life of Jeffrey Tarzia",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1781140534,
         "type": "superchat",
@@ -186350,6 +187414,14 @@
       }
     ],
     "TheEmery223": [
+      {
+        "ts": 1790278079,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Please notice how all of these \"Conservative Grifters\" are JUST NOW fleeing the arena now that Trump's \"Presidency\" is circling the fucking drain.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1739929123,
         "type": "superchat",
@@ -234111,6 +235183,14 @@
     ],
     "ericliriano23": [
       {
+        "ts": 1790293701,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "Hoot Wireless",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790026897,
         "type": "membership",
         "amount_usd": 1.99,
@@ -259898,6 +260978,14 @@
       }
     ],
     "TheLastLineOfficial": [
+      {
+        "ts": 1790275216,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Drink e",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1710980820,
         "type": "superchat",
@@ -541233,6 +542321,14 @@
     ],
     "Orange_Yoshi_64": [
       {
+        "ts": 1790274355,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 33 months",
+        "message": "Bill: I will be working for Microsoft again. I am opening back up the 360 store at 5 pm today. Orange Yoshi needs his songs to play in Rock Band 3.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1788060983,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -541336,6 +542432,54 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1790308516,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 \ud83d\udea8UPDATE: an hour ago genocidal defenders 'Senate votes down resolution to end Iran war' 49 to 50. One Democrat was traitor and we all know who that very likely maybe ogre \ud83d\udc79 john fetterman but the rest republicans wants to go in history books of first time taking stance with adolf htlr.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790307702,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 just curious rich has Mamdani effect reached to your area? U are close to nyc right?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790307574,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Meanwhile did Zohran Mamdani rejected pay raise to $305k something. REJECTED! And all these scumbags right winter and corporate democrats labeling him jihadist and islamist. If thats what you call to him. Then he is actually doing God's work. And every single day despite all false allegation...even Alex Jones former staff like owen shroyer defending him NOW!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790301127,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 I mean there maybe point if game developers use AI for next generation making high quality 4K texture games and it does heavy duty stuff especially for third party games and then sell games for $60 or $70 on PS6 or Xbox. Makes sense?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790290863,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 trump is literally giving blow job to Satanyahu as we speak as AIPAC and billionaire zios panicking. \ud83d\ude06",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790286835,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Hey Rich how's it going? Did u saw more than half UN delegates walked out of when the demon Satanyahu came to podium? He also displayed pager he used in Lebanon. Shouldnt he be charged for that for bringing weapon even if that was prop?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790047106,
         "type": "bits",
@@ -542029,6 +543173,30 @@
     ],
     "abbhi93": [
       {
+        "ts": 1790293067,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 It's the photos od the Intellivision Ammico counsel. Parts and pieces. Even down to the starting of the counsel. It's 2 set s",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790292522,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  RIch I have a photo set of the Intellivision Ammico showing all the parts and pieces of the counsel and the controller. If you can check your Discord in 5 minutes. That will be great. And it is as crap as you said it is.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790291975,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Hey Rich. Just got home from work. I wonder what happned to his mom his proud Tommy. I found out he lives in a shue box of a gated apartment community. And are we talking about Jeff. And didn't he got most of his money from the GameStop stock.",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790042681,
         "type": "bits",
         "amount_usd": 1.0,
@@ -542258,6 +543426,14 @@
       }
     ],
     "DAWNK3Y": [
+      {
+        "ts": 1790308702,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Sweet baby ink and Anita killed gaming",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
       {
         "ts": 1790049502,
         "type": "membership",
@@ -542691,6 +543867,22 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1790302052,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "EXPOSED - EXPOSED - EXPOSED! love that song",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790300054,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Do you care if game graphics never get better?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790045645,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -542983,12 +544175,68 @@
     ],
     "smellyjellysamich": [
       {
+        "ts": 1790302291,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "smash j.t. tweeted about you seven hours ago lol",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
+        "ts": 1790292577,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "How was your sushi rich?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      },
+      {
         "ts": 1790048543,
         "type": "giftmembership",
         "amount_usd": 9.95,
         "amount_raw": "5 gifted memberships",
         "message": "Sent 5 ReviewTechUSA2  gift memberships",
         "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+      }
+    ],
+    "Bug-Catcher-Nik": [
+      {
+        "ts": 1790274525,
+        "type": "superchat",
+        "amount_usd": 3.1,
+        "amount_raw": "DKK\u00a020.00",
+        "message": "Hi Rich! Good to see you! Hope you're doing well!",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      }
+    ],
+    "AshxBashem": [
+      {
+        "ts": 1790278226,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Sony ending physical media is now bleeding into blu ray scarcity for anime since Sony owns crunchyroll & crunchy roll bought funimation leaving only a few companies who legally print DVDs/blu rays",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      }
+    ],
+    "glassdoorgamer6344": [
+      {
+        "ts": 1790282436,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Rich you see XBOX wants to spy on you and put ads?",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+      }
+    ],
+    "shakezkilla": [
+      {
+        "ts": 1790301004,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50  the quartering said he purposefully liked playing co-Ed flag  football so he can \"touch some boobs\"",
+        "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
       }
     ]
   }
