@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790057172,
+  "updated_ts": 1790309115,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -132,7 +132,8 @@
     "lets_discuss_the_nerd_reich_2026-09-17_001712",
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
-    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254"
+    "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1543,6 +1544,21 @@
       ],
       "source_vod_id": "-uN2hvnpHlM",
       "source_platform": "youtube"
+    },
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129": {
+      "title": "Smash JT: A Soulless, Talentless Man (MARATHON)",
+      "start_ts": 1790272225,
+      "youtube_archive_id": "l0PtM2H0BDQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "l0PtM2H0BDQ",
+          "start_ts": 1790272225
+        }
+      ],
+      "source_vod_id": "bd3_hzZlPpk",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2023,6 +2039,30 @@
           "moderator": null,
           "reason": null,
           "stream_id": "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152"
+        }
+      ]
+    },
+    "dublinpapi": {
+      "platforms": {
+        "twitch": {
+          "status": "timed_out",
+          "since": 1790283464,
+          "expires_ts": 1790283494,
+          "bans": 0,
+          "timeouts": 1,
+          "user_id": "58902697"
+        }
+      },
+      "events": [
+        {
+          "ts": 1790283464,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1790283494,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
         }
       ]
     }
