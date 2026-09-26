@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790309113,
+  "updated_ts": 1790427464,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1940,7 +1940,8 @@
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
-    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+    "a_robust_marathon_for_men_2026-09-25_183832"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34905,6 +34906,23 @@
       "avg_chat_mpm": 6.24,
       "avg_active_chatters": 16.17,
       "percent_paused": 87.1
+    },
+    "a_robust_marathon_for_men_2026-09-25_183832": {
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "title": "A Robust Marathon (For Men)",
+      "start_ts": 1790360447,
+      "end_ts": 1790427240,
+      "duration_sec": 66793,
+      "youtube_archive_id": "1gSf1FViaXE",
+      "source_platform": "youtube",
+      "total_donations_usd": 792.21,
+      "donation_count": 158,
+      "donations_per_min": 0.7116,
+      "peak_viewers": 537,
+      "avg_viewers": 208.94,
+      "avg_chat_mpm": 4.86,
+      "avg_active_chatters": 11.63,
+      "percent_paused": 77.3
     }
   }
 }
