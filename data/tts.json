@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790309104,
+  "updated_ts": 1790427454,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -867,16 +867,17 @@
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
-    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+    "a_robust_marathon_for_men_2026-09-25_183832"
   ],
   "commands": {
     "men": 6,
-    "eric": 240,
-    "phil": 527,
-    "stan": 386,
+    "eric": 245,
+    "phil": 534,
+    "stan": 395,
     "masterchief": 171,
-    "harman": 186,
-    "trump": 200,
+    "harman": 192,
+    "trump": 201,
     "moist": 38,
     "dagoth": 5,
     "zesty": 36,
@@ -910,7 +911,7 @@
     "tate": 8,
     "gums": 1,
     "message": 3,
-    "ones": 1,
+    "ones": 2,
     "harmon": 4,
     "rage": 1,
     "bill": 11,
@@ -1452,7 +1453,10 @@
     "twain": 1,
     "world": 1,
     "chatgpt": 1,
-    "doc": 1
+    "doc": 1,
+    "lisa": 1,
+    "tyson": 1,
+    "quater": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10411,9 +10415,307 @@
       ],
       "source_vod_id": "bd3_hzZlPpk",
       "source_platform": "youtube"
+    },
+    "a_robust_marathon_for_men_2026-09-25_183832": {
+      "title": "A Robust Marathon (For Men)",
+      "start_ts": 1790360447,
+      "youtube_archive_id": "1gSf1FViaXE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "1gSf1FViaXE",
+          "start_ts": 1790360447
+        }
+      ],
+      "source_vod_id": "JNhx_xx3GK0",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1790401649,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: Pikachu, let\u2019s go to bed, stream is over",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790400272,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: what do you mean we haven't hit the goal ? Can't you smell how great that cologne smells ? that's gotta be worth it you freeloading morons !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790398125,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: Rich, This is not how you install a game",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790396902,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: review tech USA, you Nintendo detractor",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790395816,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: Kojima will use your gameplay to make physint. He hears your complaints but since he doesn\u2019t speak English. He\u2019ll just add more cutscenes.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790390849,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: And once again, instead of embracing it, I let everyone but me make bank with it ! I am a 220 man and don\u2019t you forget it !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790388667,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: Do you think Jeremy made his wife get on her knees and swear fealty to him before calling the bull over the first time ? I did that with kat !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790386598,
+      "username": "@aajmc",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Quater: I like them two scooped",
+      "commands": [
+        "quater"
+      ]
+    },
+    {
+      "ts": 1790385077,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Stan: oh ill give you some warm nuts daddy! woooo!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790384997,
+      "username": "@zachbischoff1853",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Stan: listen, review my sweet craveable drinkie!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790384122,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Trump: men, the time has cum! operation brown storm is in effect! embrace the power of the farts, no matter how questionable! Stan: mmmmmm brownies!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790383489,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Cheer1000 Stan: Good evening Richie! In light of all this, don\u2019t you think that I was unfairly targeted by that disreputable Chris Hansen? I am just a simple man who was looking to get some serious ass play from VERY young men! Eric: Ass play with young men? Oh man I am totally on board guys\u2026 but I am NOT a bottom, got it? Stan: Bottoms up Eric! Just spread those cheeks and go to town! (slow_clap)",
+      "commands": [
+        "stan",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790381891,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: you went to give me another strike from the safety of your throne didn't you ? I'm onto you. Pikachu ! shake the crust off your fur and use thunderbolt !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790380420,
+      "username": "@Ysusha116",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Stan: I look up to glory hole Jerry. yippie",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790380158,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: Review Tech USA! I will have my revenge!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790378601,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: ChatGPT. show me video Nancy Mace in catsuit",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790378380,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Stan: ohhhhh yeaaaa daddy! a real man among men has arrived! and I'm fucking hard! your hole is mine daddy! it's inevitable!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790378049,
+      "username": "@FoilGrimTimmy",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: You see Pikachu, I'm famous now open up",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790374178,
+      "username": "@SirReginaldFannybottom",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "tyson: im really stoned, the guy in the mullet is eye f*cking my soul",
+      "commands": [
+        "tyson"
+      ]
+    },
+    {
+      "ts": 1790373309,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Eric: Rich are you having technical difficulties?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790372965,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Cheer50 Don't buy anymore Apple products. Apple has been fking buying Israeli companies Over the years Apple bought Israeli startups and folded their tech into products. The well-known ones: - Anobit\u2014 flash-memory / storage-controller tech used across iPhones, iPads, Macs   - PrimeSense \u2014 3D sensing that fed into depth-camera / Face ID\u2013type system",
+      "commands": [
+        "ones"
+      ]
+    },
+    {
+      "ts": 1790371764,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Eric: I don't wanna Imagine if they got my ChatGPT logs. After drinking my cheap vodka, I might have undressed crushes of all ages. Stan: Oh wowwie!!!",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790368858,
+      "username": "@SeymourDemonica",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "LISA: The Painful was a Kickstarted GameMaker JRPG. You'd probably not gel with it, but that break music is similar to it. Lots of potential backing beats. Weird vibes. Check out \"Summer Love.\"",
+      "commands": [
+        "lisa"
+      ]
+    },
+    {
+      "ts": 1790366862,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Phil: Rich you\u2019re doing another marathon stream? You\u2019re like a teenage boy with a hard cock because you keep cummmmmmmmmiiiiiiiinnnnnnnnggggggg!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790364115,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Eric: Review Tech USA, are you not gonna congratulate me for my 100K subs and my Youtube Silver Play Button ? We are in the same league!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790363666,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Eric: Rich,My buddy SmashJT is not happy with you!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790363404,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Harman: It's pizza night Rich, where you at? efdc",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790362408,
+      "username": "@DrTSanchez1",
+      "platform": "youtube",
+      "stream_id": "a_robust_marathon_for_men_2026-09-25_183832",
+      "message": "Stan: seduce me with your funny tasting drinkie",
+      "commands": [
+        "stan"
+      ]
+    },
     {
       "ts": 1790308516,
       "username": "solidpakamericanhorseman",
