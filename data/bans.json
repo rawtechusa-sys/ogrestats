@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790309115,
+  "updated_ts": 1790427466,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -133,7 +133,8 @@
     "this_is_how_you_dont_play_dspgaming_2026-09-18_202229",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
-    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+    "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
+    "a_robust_marathon_for_men_2026-09-25_183832"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1558,6 +1559,21 @@
         }
       ],
       "source_vod_id": "bd3_hzZlPpk",
+      "source_platform": "youtube"
+    },
+    "a_robust_marathon_for_men_2026-09-25_183832": {
+      "title": "A Robust Marathon (For Men)",
+      "start_ts": 1790360447,
+      "youtube_archive_id": "1gSf1FViaXE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "1gSf1FViaXE",
+          "start_ts": 1790360447
+        }
+      ],
+      "source_vod_id": "JNhx_xx3GK0",
       "source_platform": "youtube"
     }
   },
