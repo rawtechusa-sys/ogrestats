@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790427454,
+  "updated_ts": 1790661933,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -868,17 +868,18 @@
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
-    "a_robust_marathon_for_men_2026-09-25_183832"
+    "a_robust_marathon_for_men_2026-09-25_183832",
+    "another_man_marathon_now_extra_robust_2026-09-28_170031"
   ],
   "commands": {
     "men": 6,
-    "eric": 245,
-    "phil": 534,
-    "stan": 395,
+    "eric": 248,
+    "phil": 548,
+    "stan": 406,
     "masterchief": 171,
-    "harman": 192,
-    "trump": 201,
-    "moist": 38,
+    "harman": 198,
+    "trump": 208,
+    "moist": 39,
     "dagoth": 5,
     "zesty": 36,
     "linus": 40,
@@ -888,9 +889,9 @@
     "johnny": 6,
     "guys": 1,
     "chief": 4,
-    "glados": 4,
+    "glados": 5,
     "kratos": 20,
-    "doom": 25,
+    "doom": 27,
     "emoguy": 4,
     "chat": 2,
     "grandma": 3,
@@ -920,7 +921,7 @@
     "post": 1,
     "tired": 1,
     "specs": 2,
-    "phill": 7,
+    "phill": 8,
     "warmy": 1,
     "translation": 4,
     "tomorrow": 35,
@@ -1434,7 +1435,7 @@
     "dog": 1,
     "man": 1,
     "prime": 3,
-    "narrator": 2,
+    "narrator": 3,
     "uploaded": 1,
     "joerogan": 1,
     "kermit": 1,
@@ -1456,7 +1457,9 @@
     "doc": 1,
     "lisa": 1,
     "tyson": 1,
-    "quater": 1
+    "quater": 1,
+    "obiwan": 1,
+    "braco": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10430,9 +10433,414 @@
       ],
       "source_vod_id": "JNhx_xx3GK0",
       "source_platform": "youtube"
+    },
+    "another_man_marathon_now_extra_robust_2026-09-28_170031": {
+      "title": "Another Man Marathon (Now Extra Robust)",
+      "start_ts": 1790614243,
+      "youtube_archive_id": "KfyR4zJqANM",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "KfyR4zJqANM",
+          "start_ts": 1790614243
+        }
+      ],
+      "source_vod_id": "-laqjXnqdSg",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1790661314,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "listen not matter how hard ohil goes on pizza huts in this video. never forget kat's pizza bombs. phil: they're delicious handheld held treats",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790660894,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Narrator: Here we can see that the piping hot breadsticks have reacting with the cold empty air of Phil\u2019s home causing condensation to form and make the paper bag wet. In other words, if had just shut the fuck up and eaten them when delivered this wouldn\u2019t have happened.",
+      "commands": [
+        "narrator"
+      ]
+    },
+    {
+      "ts": 1790660740,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "phil: imaging phil reviewing a buffet. Just10 minutes of him explaining all of the options a buffet has.(disapointed)(not_that_guy)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790660405,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: a man does not simply eat a pizza !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790660165,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: as a man, pulsating chicken sandwiches are unsatisfactory to me ! And so is regular old Pizza Hut! And how dare it get cold while I talk ?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790660064,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Glados: Warning! Warning! Your pizza will reach absolute zero degrees in less than 10 minutes. Let the synthesized disco elevator music play as your personal pan pizza turns to a block of ice.",
+      "commands": [
+        "glados"
+      ]
+    },
+    {
+      "ts": 1790659763,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: Its not a pizza unless it has that ROBUST Urban Garlic Flavor. Stan: What is that white sause? Oh yea, its mine. Phill: Ack Ack Ack",
+      "commands": [
+        "trump",
+        "stan",
+        "phill"
+      ]
+    },
+    {
+      "ts": 1790659478,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Phil: Just look at it as I stretch it! This breadstick is not a long crisp stick, it\u2019s a small doughy lump. Stan: Sorry to disappoint you honey, but it\u2019s the best I can manage these days. Here, try some of my secret dipping sauce! (drinking)",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790657691,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: Rich, the stream needs more positivity",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790653865,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Eric: Rich, my buddy SmashJT did a react video!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790653005,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Stan: I'm going to need you to grab the stick in the center and activate the rumble pack! Oh yeah mmmmmm uuuuhhh yeah!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790652416,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: men, I have an announcement! i farted! Phil: was it robust? did you embrace it's power? Stan: oh yeah daddy i Wana smell that hole! mmm cocoa!",
+      "commands": [
+        "trump",
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790650762,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Harman: Listen, you should touch the birds more to make the streams sexier, it would pull more viewers in for sure ! I touch Pikachu all the time !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790649889,
+      "username": "@Orange_Yoshi_64",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: I have signed an executive order to outlaw the oh Christopher meme. I also declare that the muscular chicken in your room is named John.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790647512,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Phil: May I make a suggestion Rich? Try opening packs of trading cards for money! Remember, tonight's cash is tomorrow's Door Dash!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790647111,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Phil: Oh Rich, now you see why they laughed at me and gave me ZERO support! rtuRobust",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790646910,
+      "username": "evistosf",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Stan: Good evening Richie! In light of all this, don\u2019t you think that I was unfairly targeted by that disreputable Chris Hansen? I am just a simple man who was looking to get some serious ass play from VERY young men! Eric: Ass play with young men? Oh man I am totally on board guys\u2026 but I am NOT a bottom, got it? Stan: Bottoms up Eric! Just spread those cheeks and go to town! (slow_clap) rtuRobust",
+      "commands": [
+        "stan",
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790643246,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: Rich,I mastered this game, I can give u tips",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790642667,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "stan: rich you're looking extra bald tonight mmm?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790641969,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "stan: experience my HOLE daddy??!!!!?!!!!!?!!! MEN",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790641463,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Harman: listen show me your gaming manhood.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790641320,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Harman: You know, Rich, my mom has some Richard Simmons work out tapes I could lend you. They're upstairs. Pikachu and I watch them all the time.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790641175,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: listen you ol fuck! go to the gym. pump some iron, get hard, transcend mankind, and become...... Doom: a muscular massuchi!",
+      "commands": [
+        "trump",
+        "doom"
+      ]
+    },
+    {
+      "ts": 1790640978,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Stan: Philly, you came and you took without taking. But you blamed it on Tevin. Philly, you burst on May 1st and you got grandpa excited. Oh, Philly!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790640800,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: listen asshole! how dare you insult me by calling me human. I am a man, a man among men! i am the pinnacle of mankind. bow before my big beautiful balls! they are the biggest, believe me! yuge!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790637569,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Cheer1000 Phil: Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael. What's up Rich. Oh did I forgot to say  Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael. I hope they suffered painful...Aaaahhh..Trump: I agreed I like to fudge shtrael. Eh",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790633112,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: men, a robust and meaningful man among men has arrived... oh shit! and he's hard, look out! Stan: ohhh yeaaa here comes the macho man!!",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790632679,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "stan: there is no greater force than a man with a horse",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790626443,
+      "username": "@Selene_Graves",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Trump: Fuck Israel. Fuck the right. Fuck me.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790624873,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Harman: New diet, now I toss salad. mm ladybugs mm",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790622821,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: Owowahowow!!! Now my yass is in her body!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790617356,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Eric: Pick meee!! Ice ucked Boogie snipple! :pea_pod::pea_pod:",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790616278,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Moist: whats up rich. Nicki minaj wants voters to vote red. Hell no!",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1790616017,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Braco: *staring intensifies",
+      "commands": [
+        "braco"
+      ]
+    },
+    {
+      "ts": 1790615854,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Phil: Rich you absolutely maniac. You keep doing marathon streams like you\u2019re addicted to heroin. Harman: I\u2019ve got some crack in the ass.",
+      "commands": [
+        "phil",
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790615608,
+      "username": "@Keldoh3ad",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "doom: Richie it's Ralph. how are you? fuck Israel.",
+      "commands": [
+        "doom"
+      ]
+    },
+    {
+      "ts": 1790615438,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Obiwan: Incoming message from Bob Lavari. wash your hole!. Bob's spirit is with us. It, surrounds us, penetrates us, it, binds the galaxy together.",
+      "commands": [
+        "obiwan"
+      ]
+    },
+    {
+      "ts": 1790615049,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "message": "Harman: Review Tech USA, you are a robust male! m",
+      "commands": [
+        "harman"
+      ]
+    },
     {
       "ts": 1790401649,
       "username": "@respergu13",
