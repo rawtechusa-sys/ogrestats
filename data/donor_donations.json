@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790427458,
+  "updated_ts": 1790661937,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -868,7 +868,8 @@
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
-    "a_robust_marathon_for_men_2026-09-25_183832"
+    "a_robust_marathon_for_men_2026-09-25_183832",
+    "another_man_marathon_now_extra_robust_2026-09-28_170031"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9842,6 +9843,21 @@
       ],
       "source_vod_id": "JNhx_xx3GK0",
       "source_platform": "youtube"
+    },
+    "another_man_marathon_now_extra_robust_2026-09-28_170031": {
+      "title": "Another Man Marathon (Now Extra Robust)",
+      "start_ts": 1790614243,
+      "youtube_archive_id": "KfyR4zJqANM",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "KfyR4zJqANM",
+          "start_ts": 1790614243
+        }
+      ],
+      "source_vod_id": "-laqjXnqdSg",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10522,6 +10538,38 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1790660405,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: a man does not simply eat a pizza !",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790660165,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: as a man, pulsating chicken sandwiches are unsatisfactory to me ! And so is regular old Pizza Hut! And how dare it get cold while I talk ?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790659392,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Thank god Phil explained pizza to me. I now finally know what that mysterious substance I\u2019ve been stuffing my face with all these years is called.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790650762,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Harman: Listen, you should touch the birds more to make the streams sexier, it would pull more viewers in for sure ! I touch Pikachu all the time !",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790400272,
         "type": "superchat",
@@ -13452,6 +13500,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1790639405,
+        "type": "superchat",
+        "amount_usd": 2.51,
+        "amount_raw": "CA$3.50",
+        "message": "So would Profa be its apposing party?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790275173,
         "type": "giftmembership",
@@ -17747,6 +17803,14 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1790646623,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "\u201chey dl5, y do u only play souls\u201d\u2026 like cmon dude",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790037151,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -17812,6 +17876,22 @@
       }
     ],
     "evildetrution5426": [
+      {
+        "ts": 1790645276,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "and spiderman was a reskinned Arkham game",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790636945,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bayonetta she is not",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790362165,
         "type": "superchat",
@@ -20347,6 +20427,14 @@
     ],
     "JRsGAM": [
       {
+        "ts": 1790617458,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Men. With. Mustaches",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1787022890,
         "type": "sub",
         "amount_usd": 5.99,
@@ -20404,6 +20492,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1790614981,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790393664,
         "type": "superchat",
@@ -20798,6 +20894,22 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1790657792,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616877,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790362536,
         "type": "giftmembership",
@@ -21762,6 +21874,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1790652416,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: men, I have an announcement! i farted! Phil: was it robust? did you embrace it's power? Stan: oh yeah daddy i Wana smell that hole! mmm cocoa!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641175,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: listen you ol fuck! go to the gym. pump some iron, get hard, transcend mankind, and become...... Doom: a muscular massuchi!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640800,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: listen asshole! how dare you insult me by calling me human. I am a man, a man among men! i am the pinnacle of mankind. bow before my big beautiful balls! they are the biggest, believe me! yuge!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790633112,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: men, a robust and meaningful man among men has arrived... oh shit! and he's hard, look out! Stan: ohhh yeaaa here comes the macho man!!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790385077,
         "type": "superchat",
@@ -24465,6 +24609,14 @@
     ],
     "eskeroutcome2229": [
       {
+        "ts": 1790649390,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 25 months",
+        "message": "I'd love to see you play Blood of the Dawnwalker",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1789610553,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -24706,6 +24858,30 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1790642642,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790619880,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bro got the Judy Funnie fit",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790618660,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Sup man! Speaking of Wings, the 3 hour Wings007 doc by john john goes in pretty deep. What a vile piece of shit he is. I'm prob on his list now lol",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790371764,
         "type": "superchat",
@@ -30164,6 +30340,70 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1790661314,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen not matter how hard ohil goes on pizza huts in this video. never forget kat's pizza bombs. phil: they're delicious handheld held treats",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790661133,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what's next, is phil gonna complain that oreos makes you take apart and dip the cookies in milk yourself?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790660841,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "its foccacia bread. half of it weight is oil",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790660740,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: imaging phil reviewing a buffet. Just10 minutes of him explaining all of the options a buffet has.(disapointed)(not_that_guy)",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790659883,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "be a man like philip, take 8 minutes to explain what a calzone is, then complain that the calzone is just a pizza with more crust. extra robustness",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790659563,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what is this music philip? it sounds like spy music for a pizza review. maybe phil is an international puzzle piece man of mystery.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790659225,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil is the kind of guy to explain to you what a pool table is because he just started getting into (card pulls) playing pool. (slow_clap) (sm64_hurt)",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790658866,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "In the early 90's there was the big pizza wars. little ceasers big big cheese and pizza huts Bigfoot pizza. so Phil's narcitism is on display here",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790027840,
         "type": "superchat",
@@ -40887,6 +41127,14 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1790626443,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Trump: Fuck Israel. Fuck the right. Fuck me.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790398331,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -42985,6 +43233,14 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1790635609,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I got a crow fund for a game Carlos ReBird clucking mad edition, just a small goal of 1 million",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790293924,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -44306,6 +44562,46 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1790641975,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich I go 2 da gym 2 de stress with some beats",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641613,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "What if some one is filming, and they capture you",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641335,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Watch you get sniped as a gym creep day one lol",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790638902,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They can only interact with women in video games",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616697,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Dad, who was that old couple that sing shitty karaoke with a green screen. We watched it like a month ago...back up back up keep rollin rollin rollin",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790395745,
         "type": "superchat",
@@ -59449,6 +59745,22 @@
     ],
     "SeymourDemonica": [
       {
+        "ts": 1790631867,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "After 300 years of no gifted sub, I've had enough",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790631780,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790377620,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -65471,6 +65783,62 @@
     ],
     "respergu13": [
       {
+        "ts": 1790657691,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Rich, the stream needs more positivity",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790653865,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: Rich, my buddy SmashJT did a react video!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643864,
+        "type": "superchat",
+        "amount_usd": 1.49,
+        "amount_raw": "$1.49",
+        "message": "Super Sticker",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643246,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Rich,I mastered this game, I can give u tips",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616813,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich, can we open some Pokemon cards today?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616107,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Wings of redemption posted on X after 3 months",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615049,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Review Tech USA, you are a robust male! m",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790401649,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -67100,6 +67468,22 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1790641463,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: listen show me your gaming manhood.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616278,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: whats up rich. Nicki minaj wants voters to vote red. Hell no!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790033198,
         "type": "superchat",
@@ -68915,6 +69299,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1790620928,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "sorry but your rough childhood isn't my problem",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790377852,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -69258,6 +69650,14 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1790651577,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "When people get older they seem to lose their filter and self awareness. It\u2019s kind of sad actually",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790303286,
         "type": "superchat",
@@ -69934,6 +70334,62 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1790642667,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "stan: rich you're looking extra bald tonight mmm?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641969,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "stan: experience my HOLE daddy??!!!!?!!!!!?!!! MEN",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790633230,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "this guy looks like a rejected Ubisoft villain",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790632679,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: there is no greater force than a man with a horse",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790630715,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "breaking news snort Hogan has a video. DSP has told smash JT to stop grifting.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790628591,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "As an owner of an adorable lhasa apso mix (who has heart disease now) ...i would never post a picture of her coughing attacks. Fuck jeremy",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616411,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Whats up rich, @ work...hate it here. Save me",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790394086,
         "type": "superchat",
@@ -78301,6 +78757,14 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1790622990,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Facts don't care about your feelings Ben",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790380214,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -82127,6 +82591,14 @@
     ],
     "aXDroptimus": [
       {
+        "ts": 1790629949,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "Love the marathons Rich!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790283367,
         "type": "sub",
         "amount_usd": 5.99,
@@ -82306,6 +82778,14 @@
       }
     ],
     "Various_Melons": [
+      {
+        "ts": 1790643142,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "Just got here. oh we're playing this :pile_of_poo: show :eyes: :popcorn:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1787532041,
         "type": "membership",
@@ -83015,6 +83495,62 @@
     ],
     "evistosf": [
       {
+        "ts": 1790660894,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Narrator: Here we can see that the piping hot breadsticks have reacting with the cold empty air of Phil\u2019s home causing condensation to form and make the paper bag wet. In other words, if had just shut the fuck up and eaten them when delivered this wouldn\u2019t have happened.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790660064,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Glados: Warning! Warning! Your pizza will reach absolute zero degrees in less than 10 minutes. Let the synthesized disco elevator music play as your personal pan pizza turns to a block of ice.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790659478,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Just look at it as I stretch it! This breadstick is not a long crisp stick, it\u2019s a small doughy lump. Stan: Sorry to disappoint you honey, but it\u2019s the best I can manage these days. Here, try some of my secret dipping sauce! (drinking)",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790653005,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Stan: I'm going to need you to grab the stick in the center and activate the rumble pack! Oh yeah mmmmmm uuuuhhh yeah!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790647512,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: May I make a suggestion Rich? Try opening packs of trading cards for money! Remember, tonight's cash is tomorrow's Door Dash!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790647111,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Oh Rich, now you see why they laughed at me and gave me ZERO support! rtuRobust",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790646910,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Stan: Good evening Richie! In light of all this, don\u2019t you think that I was unfairly targeted by that disreputable Chris Hansen? I am just a simple man who was looking to get some serious ass play from VERY young men! Eric: Ass play with young men? Oh man I am totally on board guys\u2026 but I am NOT a bottom, got it? Stan: Bottoms up Eric! Just spread those cheeks and go to town! (slow_clap) rtuRobust",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790383489,
         "type": "bits",
         "amount_usd": 10.0,
@@ -83672,6 +84208,14 @@
       }
     ],
     "End-Logic_1": [
+      {
+        "ts": 1790637234,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "AI is taking over the world but\u2026\u2026.censorship?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790019926,
         "type": "superchat",
@@ -89204,6 +89748,30 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1790620219,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Who is that beatnik looking guy?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790619525,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "These new Lolcow hosts seem like rejects from Jersey Shore. Also why is it called Lolcow Cafe?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615854,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Phil: Rich you absolutely maniac. You keep doing marathon streams like you\u2019re addicted to heroin. Harman: I\u2019ve got some crack in the ass.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790366862,
         "type": "superchat",
@@ -96243,6 +96811,22 @@
     ],
     "BoodyChew1999": [
       {
+        "ts": 1790622536,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "imagine if bang bang song was played at TP event",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790622263,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "all of these horrible wars, caused by religion and the rich. I don't align with left or right, but I have a progressive mindset",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790371193,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -96372,6 +96956,30 @@
       }
     ],
     "DaveCalzone": [
+      {
+        "ts": 1790640244,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640234,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790618720,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 38 months",
+        "message": "I 100% love watching grown adults lose their shit like children.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1786500584,
         "type": "membership",
@@ -97237,6 +97845,38 @@
     ],
     "change1ing": [
       {
+        "ts": 1790622287,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Shapiro loves eye dee eff postnaitul aborshuns",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790619594,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "When I hear them all scream I think of my girls...",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790618118,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "gotta pay them bills to keep their doublewide warm",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616017,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Braco: *staring intensifies",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790385709,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -97993,6 +98633,14 @@
     ],
     "Keldoh3ad": [
       {
+        "ts": 1790615608,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "doom: Richie it's Ralph. how are you? fuck Israel.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790017373,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -98226,6 +98874,30 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1790653608,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790642672,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790639783,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790398251,
         "type": "giftmembership",
@@ -100465,6 +101137,14 @@
     ],
     "rtusburritoeattingbrother": [
       {
+        "ts": 1790650136,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "you can touch my insides with your tongue :burrito:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790364724,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -102566,6 +103246,14 @@
       }
     ],
     "marihdimitri7219": [
+      {
+        "ts": 1790615705,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 39 months",
+        "message": "Rich is a man. A man with an ass. Also BIRDS!!! :peach:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790016645,
         "type": "giftmembership",
@@ -105005,6 +105693,22 @@
     ],
     "TheTenoray": [
       {
+        "ts": 1790616707,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616122,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Xbox has a lot to prove if they promise exclusives and a console that has windows that let's me play Steam or GOG it might make a nice home theatre PC",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1787971810,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -105224,6 +105928,14 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1790626530,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Sonys worst nightmare really has come to fruition",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790024237,
         "type": "superchat",
@@ -106114,6 +106826,14 @@
       }
     ],
     "RandyRen6": [
+      {
+        "ts": 1790658012,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1788314066,
         "type": "sub",
@@ -108466,6 +109186,14 @@
       }
     ],
     "Rayzor_Blaydez": [
+      {
+        "ts": 1790640314,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Rich, I'm awaiting for your ROBUST harvest !!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1788495543,
         "type": "superchat",
@@ -123749,6 +124477,54 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1790641336,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "how will u know if it did suck u play with updates that most not play with",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641197,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "it will play better then launch because of updates it sounds like do not know wolverine",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640951,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "hotfix smaller then 2Gbwolverine websitepatchnotes",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640616,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "it is gigabytes in size",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640445,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "there a new update for the crashes to turn handheld, line on and off and performance wolverine",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616624,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "if u politician and Republican know a days u likely have something to really to hide",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790401567,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -127865,6 +128641,14 @@
     ],
     "nocturnova-exe": [
       {
+        "ts": 1790650850,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Can you sing \"Put your cocc on my shoulder?\"",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1785186883,
         "type": "membership",
         "amount_usd": 1.99,
@@ -127892,6 +128676,54 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1790640748,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "The council of manly masculine men is in session & puzzles are dumb they\u2019re designed for a different level of smart! Tetris is classic tho! Big birds!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790620596,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hey jay? You can umm speak for your own self here but you probably shouldn\u2019t project! Hardcore projection detected, opinions like these hold progress",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790620380,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "The herb helps me focus! Let me explain, I have adhd am on the spectrum and my meds do work but the herb makes me socially feeling and I like that! Vote! Vote for change, because this is paramount :potted_plant:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615812,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 37 months",
+        "message": "I love being here! Thank you dad! Relaxed, yes! Pegged? No! Love to all! :rolling_on_the_floor_laughing::smiling_face_with_hearts::loudly_crying_face:it\u2019s been a long morning but a productive one of a late homework grind",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615524,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Go listen to animals, go listen to machine gun by Hendrix, go listen to rage against the machine, lights out turn that up loud because the day that art ceased that questions authority is when they won",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615255,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "You know what concerns me? The amount of people who claim to have listened to political music like the wall by Pink Floyd which was grossly misinterpreted by MAGA it makes me sick to be honest",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790382725,
         "type": "superchat",
@@ -134253,6 +135085,14 @@
     ],
     "bradicalprime": [
       {
+        "ts": 1790657541,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1785037602,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -134534,6 +135374,14 @@
       }
     ],
     "KevinBelmontLuna": [
+      {
+        "ts": 1790642762,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "Yippy Ki-yay, Mr. Falcon!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1787621379,
         "type": "membership",
@@ -139523,6 +140371,22 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1790637550,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "We R adults but R acting like entitled manchildren",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790636685,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "even with that cloth u still see t and a",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790306124,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -140162,6 +141026,14 @@
       }
     ],
     "GlamerousFrog": [
+      {
+        "ts": 1790633741,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Have you seen the RG557 handheld? I got ps2, wii and gamecube games on mine. It can even do ps3 and pc if you set it up correctly. What a fun device to have all of that on an android device.  Ribbit Ribbit OSFrog",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1789431845,
         "type": "membership",
@@ -146611,6 +147483,14 @@
     ],
     "HaunchoJackHD": [
       {
+        "ts": 1790645220,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "This feels like a dlc to the spider man game where you can play as wolverine but its just a spider man reskin",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790038669,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -148153,6 +149033,14 @@
     ],
     "gunkiller77": [
       {
+        "ts": 1790649971,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Bill is harrd hoot wireless hoot wireless",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1787096857,
         "type": "membership",
         "amount_usd": 1.99,
@@ -149358,6 +150246,54 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1790660626,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil:I demand satisfact-ack-action, af huckin fact",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790626559,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790624873,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman: New diet, now I toss salad. mm ladybugs mm",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790622821,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: Owowahowow!!! Now my yass is in her body!!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790617356,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric: Pick meee!! Ice ucked Boogie snipple! :pea_pod::pea_pod:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790615438,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Obiwan: Incoming message from Bob Lavari. wash your hole!. Bob's spirit is with us. It, surrounds us, penetrates us, it, binds the galaxy together.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790287825,
         "type": "superchat",
@@ -151200,6 +152136,14 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1790659763,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: Its not a pizza unless it has that ROBUST Urban Garlic Flavor. Stan: What is that white sause? Oh yea, its mine. Phill: Ack Ack Ack",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790382498,
         "type": "superchat",
@@ -154204,6 +155148,30 @@
       }
     ],
     "PutoPlatano": [
+      {
+        "ts": 1790658801,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Imagine phil doing a show like Anthony Bourdain Parts Unknown. It would be some of the most ridiculous entertainment for all the wrong reasons",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790646393,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Have you scientifically tested the game yet? :rooster::rooster:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790630730,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "The most memorable part of that fight was the camera guy catching Tyson off guard with ussless caps before the fight started :peach:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790364542,
         "type": "superchat",
@@ -161995,6 +162963,22 @@
     ],
     "Loafin_OG": [
       {
+        "ts": 1790657882,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790657731,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790273974,
         "type": "membership",
         "amount_usd": 1.99,
@@ -167622,6 +168606,14 @@
       }
     ],
     "HimejoshiNat": [
+      {
+        "ts": 1790615169,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (3 months)!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1786314530,
         "type": "sub",
@@ -173901,6 +174893,14 @@
     ],
     "rafaelchicas7635": [
       {
+        "ts": 1790615373,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "bird father don't forget to read todays weather",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790362078,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -176376,6 +177376,14 @@
       }
     ],
     "timmarcoux": [
+      {
+        "ts": 1790633695,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "The birds must relax their holes",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1781925532,
         "type": "superchat",
@@ -451019,6 +452027,14 @@
     ],
     "Dad_Brad": [
       {
+        "ts": 1790657261,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Rich, do you think silent Hill townfall will come to switch 2 or XBOX Series S/X? I think it would be cool if you did a playthrough, no pressure",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790031831,
         "type": "membership",
         "amount_usd": 1.99,
@@ -473926,6 +474942,14 @@
       }
     ],
     "EldenPickle": [
+      {
+        "ts": 1790642742,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790386733,
         "type": "giftmembership",
@@ -542537,6 +543561,22 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1790641320,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: You know, Rich, my mom has some Richard Simmons work out tapes I could lend you. They're upstairs. Pikachu and I watch them all the time.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640978,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: Philly, you came and you took without taking. But you blamed it on Tevin. Philly, you burst on May 1st and you got grandpa excited. Oh, Philly!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1787532365,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -542779,6 +543819,22 @@
     ],
     "Ghastlyhallows-g6n": [
       {
+        "ts": 1790629575,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790629302,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Screw the casino! Glad to be around again Rich. Thanks for recommending minisforum um890! Hooked it up w GPU extender and its replaced my PS5! Love it",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1786493977,
         "type": "superchat",
         "amount_usd": 9.99,
@@ -542960,6 +544016,14 @@
       }
     ],
     "RichieDubbz": [
+      {
+        "ts": 1790615746,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "shout out to my boy Drew Peacock",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1789082238,
         "type": "membership",
@@ -543369,6 +544433,14 @@
     ],
     "Orange_Yoshi_64": [
       {
+        "ts": 1790649889,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: I have signed an executive order to outlaw the oh Christopher meme. I also declare that the muscular chicken in your room is named John.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790274355,
         "type": "membership",
         "amount_usd": 1.99,
@@ -543480,6 +544552,22 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1790651893,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 The very serious issue is sitting next to sociopathic pathological geu reflect especially if you are 18 or 17 years old. Get the f out of there! \ud83d\ude06",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790637569,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael  Fuk Shtrael Fuk Shtrael. What's up Rich. Oh did I forgot to say  Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael Fuk Shtrael. I hope they suffered painful...Aaaahhh..Trump: I agreed I like to fudge shtrael. Eh",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790392157,
         "type": "bits",
@@ -544285,6 +545373,118 @@
     ],
     "abbhi93": [
       {
+        "ts": 1790650806,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 Listen 3 Bills are creepy and potential PDF Rich.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790650425,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 He is really talking about this to a 20 to 25 years old girl. What a freak of nature. And I never got him back like 10 to 15 years ago. F off.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643885,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Why are you shocked Rich. It's a Mervel game. It has a to appel to the general avarge Joe people. What you expect. I won't $85.00 to $90.00 on this game though. Because of that reason.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643508,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Patrick Stewart is no longer in Wolverine movies or acting in general. He was a good actor in Star Trak also.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790642710,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 cheer 50 I have this 63 to 65 years old co woker who talks to girls that are 20 to 27 years old. It\u2019s kinda werid. He makes sure they\u2019re ok also. They feel weird also.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641716,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 I have this 63 to 65 years old co woker who talks to girls that are 20 to 27 years old. It's kinda werid. He makes sure they're ok also. They feel weird also.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790640585,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Listen Rich. He is the same age as my late dad. And yet he acts like a 30 years old incel.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790638246,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 Where do these people come from RIch. And where do they get the money to pay for going on the internet if they don't go out for work.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790637473,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 THese people remind me of Smash JT. And these people have guts to make videos lije this. Do they want to stay single forever. And the F cares. If creator of the game wants his wife to look like that. So be it. Jesus.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790634381,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 This is the same guy that told DSP not to go into people DM at 3:00 AM. And yet he does this. POS big.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790633754,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (8 months)!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790633665,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 THis is the same thing Dsp was doing with you RIch at like 3:00 AM. And he is doing this same thing with this person. Oh the irony.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790633498,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 Keep in mind. Voush wanted to have a horse c9ock. And want to bang a girl with ahving the horse cock. And he likes loli also Rich. And he doesn't give a crap what people think about it.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790621756,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 Hey Rich. I barely use my gaming laptop for the past month to month and a half. Been using my Samsung Galaxy S20 Ultra 5G in DEX mode. WIth a 1080p 60fps $80 bucks portable monitor in my room. Haven't gone back to my gaming laptop yet. Ever since I saw you having portable monitor. I got one. Made this set up in my room.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790293067,
         "type": "bits",
         "amount_usd": 1.0,
@@ -545027,6 +546227,38 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1790651179,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Remember Ralph love you Rich!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790644229,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Game undersold what the chance it will come to PC!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643250,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Sick & Tired of super hero games want originality",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790635846,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Why cant Trump just take an L to Iran!?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790398304,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -545309,6 +546541,14 @@
     ],
     "SignalRegulus": [
       {
+        "ts": 1790619931,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "Idk about you, but edibles help with my ADHD. seems to make thoughts flow easier and less like they're all fighting for dominance. Just my experience.",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790023211,
         "type": "membership",
         "amount_usd": 1.99,
@@ -545336,6 +546576,14 @@
       }
     ],
     "DemolitionDaddy": [
+      {
+        "ts": 1790643730,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Pirate:arnt ye, thee saltiest lot lizard at sea. R",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790041974,
         "type": "superchat",
@@ -545374,6 +546622,70 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1790647082,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "thought it played itself hahahaha",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790646477,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich the budget is cause they restarted",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790645441,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "it cost so much cause they restarted half way",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790645324,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich you know they restarted development on this",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790643830,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "naw its cause wolverine and sabertooth make out",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790641104,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "yes silent hill is all puzzles chat not lying",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790618901,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich please play control right now",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616042,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 2 months",
+        "message": "in phils defense i 30 and my reflexes are slow lol",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790370545,
         "type": "superchat",
@@ -545425,6 +546737,14 @@
     ],
     "Bug-Catcher-Nik": [
       {
+        "ts": 1790619274,
+        "type": "superchat",
+        "amount_usd": 7.75,
+        "amount_raw": "DKK\u00a050.00",
+        "message": "Hi Rich! Hope you're having a good day! What's your first impressions on the Ocarina of Time remake? Also, will you be playing Metroid Ravenous?",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
         "ts": 1790370170,
         "type": "superchat",
         "amount_usd": 3.1,
@@ -545462,6 +546782,14 @@
       }
     ],
     "shakezkilla": [
+      {
+        "ts": 1790621643,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Ben \"WAP is actually bacterial vaginosis\" Shapiro",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
       {
         "ts": 1790301004,
         "type": "bits",
@@ -545529,6 +546857,54 @@
         "amount_raw": "Member",
         "message": "Welcome to Large Man Supporter!",
         "stream_id": "a_robust_marathon_for_men_2026-09-25_183832"
+      }
+    ],
+    "mst3k1138": [
+      {
+        "ts": 1790616922,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 I saw someone streaming the new Silent Hill game and someone in the chat said \"the fart trails are there for guys like DSP, he wouldn't be able to find the phone booth checkpoint before giving up and saying the game is too hard\"",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      },
+      {
+        "ts": 1790616172,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 I saw someone streaming the new Silent Hill game and someone in the chat said \"the fart trails are there for guys like DSP, he wouldn't be able to find the phone booth checkpoint before giving up and saying the game is too hard\"",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      }
+    ],
+    "SkrataFPS": [
+      {
+        "ts": 1790634405,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      }
+    ],
+    "talllavatory": [
+      {
+        "ts": 1790658364,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
+      }
+    ],
+    "t.eli.s": [
+      {
+        "ts": 1790659717,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": ":smiling_face_with_tear::pizza:",
+        "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031"
       }
     ]
   }
