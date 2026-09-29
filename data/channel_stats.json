@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790427464,
+  "updated_ts": 1790661943,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1941,7 +1941,8 @@
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_2026-09-21_180152",
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
-    "a_robust_marathon_for_men_2026-09-25_183832"
+    "a_robust_marathon_for_men_2026-09-25_183832",
+    "another_man_marathon_now_extra_robust_2026-09-28_170031"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34923,6 +34924,23 @@
       "avg_chat_mpm": 4.86,
       "avg_active_chatters": 11.63,
       "percent_paused": 77.3
+    },
+    "another_man_marathon_now_extra_robust_2026-09-28_170031": {
+      "stream_id": "another_man_marathon_now_extra_robust_2026-09-28_170031",
+      "title": "Another Man Marathon (Now Extra Robust)",
+      "start_ts": 1790614243,
+      "end_ts": 1790661711,
+      "duration_sec": 47468,
+      "youtube_archive_id": "KfyR4zJqANM",
+      "source_platform": "youtube",
+      "total_donations_usd": 665.67,
+      "donation_count": 169,
+      "donations_per_min": 0.8414,
+      "peak_viewers": 368,
+      "avg_viewers": 283.08,
+      "avg_chat_mpm": 7.2,
+      "avg_active_chatters": 17.96,
+      "percent_paused": 78.7
     }
   }
 }
