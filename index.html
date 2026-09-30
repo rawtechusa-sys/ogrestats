@@ -397,6 +397,11 @@ function syncTabFromHash() {
   if (slug === 'discord' && sub) {
     try { sessionStorage.setItem('selected-discord-channel', decodeURIComponent(sub)); } catch (e) {}
   }
+  // #dents/<user> deep link (the JKB site's "RTU Dent?" column links here).
+  // dents.html reads 'selected-dent' once on load and filters to that dent.
+  if (slug === 'dents' && sub) {
+    try { sessionStorage.setItem('selected-dent', decodeURIComponent(sub)); } catch (e) {}
+  }
   // #admin/<stream_id> deep link. admin.html reads this key once on load,
   // same as streams.html (shared selection).
   if (slug === 'admin' && sub) {
