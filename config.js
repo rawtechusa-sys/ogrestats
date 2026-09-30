@@ -9,6 +9,12 @@ const GITHUB_OWNER = 'rawtechusa-sys';
 const GITHUB_REPO  = 'ogrestats';
 const BRANCH       = 'main';
 
+// ── JKB stats site (Dents tab "JKB Dent?" column) ─────────────────────────────
+// dents.html joins our donors against JKB's leaderboard + chat authors, read
+// straight from that site's repo, and links JKB donors to its Donors tab.
+const JKB_DATA_BASE = 'https://raw.githubusercontent.com/rawtechusa-sys/jkbstats/main';
+const JKB_SITE_URL  = 'https://rtudaycare.center';
+
 // ── Money ────────────────────────────────────────────────────────────────────────
 // Two decimals WITH thousands separators: 150994.24 -> "150,994.24". Shared by
 // every page, so a dollar figure reads the same on each tab. No "$": callers add it.

@@ -507,18 +507,69 @@ function cssEscape(s) {
 
 // ── DSP Dent? cross-reference ────────────────────────────────────────────────
 // The backend (leaderboard.py update_dsp_dent_info) queries renton.report
-// and stamps user.dsp_dent / user.dsp_chatter / user.renton_viewer_id into
-// leaderboard.json on every refresh. We just read those fields directly here.
+// and stamps user.dsp_dent / user.dsp_chatter / user.dsp_banned /
+// user.renton_viewer_id into leaderboard.json on every refresh. We just read
+// those fields directly here.
 //
 // Glyph precedence:
 //   💵  has donated to DSP        (dsp_dent)
 //   💬  has chatted in DSP's stream but not donated  (dsp_chatter only)
 //   ❌  neither, or not found on renton
+// plus 🚫 when DSP currently bans them (dsp_banned). A ban is itself a DSP
+// connection, so a banned user with no chat or donation shows 🚫 alone, not ❌🚫.
 
 function dspDentGlyph(row) {
-  if (row.dsp_dent)    return '💵';
-  if (row.dsp_chatter) return '💬';
-  return '❌';
+  const base = row.dsp_dent ? '💵' : row.dsp_chatter ? '💬' : '';
+  if (row.dsp_banned) return base + '🚫';
+  return base || '❌';
+}
+
+// ── JKB Dent? cross-reference ────────────────────────────────────────────────
+// Joined client-side against the JKB stats site (rtudaycare.center): its
+// leaderboard.json (donors) and chat_authors.json (everyone who chatted). Both
+// key users by lowercase name without '@', the same form as our leaderboard.
+//   💵  has donated to JKB   (links to that donor on rtudaycare.center)
+//   💬  has chatted in JKB's stream but not donated
+//   ❌  neither
+//   ?   JKB data failed to load
+// foldJkbStatus stamps row.jkb_dent (2/1/0, or null on failure) and
+// row.jkb_user (JKB's own spelling of the name, for the link).
+const JKB_GLYPHS = { 2: '💵', 1: '💬', 0: '❌' };
+
+function jkbDentCell(row) {
+  if (row.jkb_dent == null) return '?';
+  const glyph = JKB_GLYPHS[row.jkb_dent];
+  if (row.jkb_dent === 2 && row.jkb_user) {
+    const href = `${JKB_SITE_URL}/#donors/${encodeURIComponent(row.jkb_user)}`;
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer"
+              title="View ${escHtml(row.username)} on rtudaycare.center">${glyph}</a>`;
+  }
+  return glyph;
+}
+
+async function foldJkbStatus() {
+  const norm = s => String(s || '').replace(/^@+/, '').toLowerCase();
+  let donors = null, chatters = null;
+  try {
+    const [board, authors] = await Promise.all([
+      fetchJSON(`${JKB_DATA_BASE}/data/leaderboard.json`),
+      fetchJSON(`${JKB_DATA_BASE}/data/chat_authors.json`),
+    ]);
+    // A Map, not an object: `in` on a plain object matches names like "constructor".
+    donors = new Map();
+    for (const [key, u] of Object.entries(board.users || {})) {
+      // A YouTube Gift has no USD value, so count donations as well as total.
+      if ((u.donations || 0) > 0 || (u.total || 0) > 0) donors.set(norm(key), u.username || key);
+    }
+    chatters = new Set(Object.keys(authors.authors || {}).map(norm));
+  } catch (e) { /* leave donors null -> every cell shows '?' */ }
+  for (const row of tableData) {
+    if (!donors) { row.jkb_dent = null; continue; }
+    const k = norm(row.username);
+    if (donors.has(k))        { row.jkb_dent = 2; row.jkb_user = donors.get(k); }
+    else if (chatters.has(k)) { row.jkb_dent = 1; }
+    else                      { row.jkb_dent = 0; }
+  }
 }
 
 function dspDentCell(row) {
@@ -542,7 +593,7 @@ let searchQuery = '';
 // Total column count of the outer table, used for the expanded detail row's
 // colspan. Static (TYPES is fixed) so it lives at module scope — toggleDonor
 // needs it to build a detail row without a full re-render.
-const COLS = 6 + TYPES.length + 1;   // +1 leading col vs before: the TTS Messages column
+const COLS = 6 + TYPES.length + 2;   // +2 vs before: the TTS Messages and JKB Dent? columns
 
 // ── Windowed rendering ───────────────────────────────────────────────────────
 // There are 4000+ donors. Putting every row in the DOM at once costs ~4s of
@@ -952,6 +1003,7 @@ function rowGroupHTML(row, i) {
       ${ttsCell}
       ${typeCells}
       <td class="dsp-dent">${dspDentCell(row)}</td>
+      <td class="dsp-dent">${jkbDentCell(row)}</td>
     </tr>`;
 
   const detailRow = isOpen
@@ -1023,8 +1075,15 @@ function renderTable() {
       return sortAsc ? cmp : -cmp;
     }
     if (sortKey === 'dsp_dent') {
-      // 3-tier rank: donor (2) > chatter only (1) > neither (0).
-      const rank = u => u.dsp_dent ? 2 : u.dsp_chatter ? 1 : 0;
+      // 3-tier rank: donor (2) > chatter only (1) > neither (0); a current
+      // ban ranks first within its tier.
+      const rank = u => (u.dsp_dent ? 2 : u.dsp_chatter ? 1 : 0) + (u.dsp_banned ? 0.5 : 0);
+      const cmp  = rank(a) - rank(b);
+      return sortAsc ? cmp : -cmp;
+    }
+    if (sortKey === 'jkb_dent') {
+      // Same tiers; a failed JKB load (null) sorts below "neither".
+      const rank = u => u.jkb_dent ?? -1;
       const cmp  = rank(a) - rank(b);
       return sortAsc ? cmp : -cmp;
     }
@@ -1051,7 +1110,8 @@ function renderTable() {
         <th class="${thClass('donations')}" data-key="donations">Donations${sortArrow('donations')}</th>
         <th class="${thClass('tts')}" data-key="tts" title="TTS messages sent (click a number to view them on the TTS tab)">TTS Messages${sortArrow('tts')}</th>
         ${typeHeaders}
-        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found">DSP Dent?${sortArrow('dsp_dent')}</th>
+        <th class="${thClass('dsp_dent')}" data-key="dsp_dent" title="renton.report: 💵 has donated to DSP, 💬 has chatted in DSP's stream, ❌ neither / not found, 🚫 currently banned from DSP's chat">DSP Dent?${sortArrow('dsp_dent')}</th>
+        <th class="${thClass('jkb_dent')}" data-key="jkb_dent" title="rtudaycare.center: 💵 has donated to JKB, 💬 has chatted in JKB's stream, ❌ neither, ? JKB data unavailable">JKB Dent?${sortArrow('jkb_dent')}</th>
       </tr>
     </thead>
   </table>`;
@@ -1111,8 +1171,8 @@ function setupDelegation() {
       jumpToTts(tl.dataset.user);
       return;
     }
-    // Ignore clicks on links inside a row (e.g. the renton.report DSP-dent
-    // link) so they navigate instead of toggling the panel.
+    // Ignore clicks on links inside a row (e.g. the renton.report DSP-dent or
+    // rtudaycare.center JKB-dent link) so they navigate instead of toggling the panel.
     if (e.target.closest('a')) return;
     // Expand/collapse a donor's itemized donations on row click.
     const tr = e.target.closest('tr.dent-row');
@@ -1197,7 +1257,9 @@ async function load() {
     // of fetches (~tens of MB) and hang the browser.
     const board = await fetchJSON(`${RAW}/data/leaderboard.json`);
     loadFromLeaderboard(board);
-    await foldTtsCounts();   // adds row.tts (per-donor TTS message count)
+    // row.tts (per-donor TTS message count) and row.jkb_dent (JKB Dent?),
+    // fetched in parallel; both are best-effort and never throw.
+    await Promise.all([foldTtsCounts(), foldJkbStatus()]);
     setupDelegation();
     renderTable();
     // A pie-legend username link (streams.html) stashes the donor here; consume
