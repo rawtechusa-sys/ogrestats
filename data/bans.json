@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790661945,
+  "updated_ts": 1790843518,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -135,7 +135,8 @@
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
     "a_robust_marathon_for_men_2026-09-25_183832",
-    "another_man_marathon_now_extra_robust_2026-09-28_170031"
+    "another_man_marathon_now_extra_robust_2026-09-28_170031",
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1591,6 +1592,21 @@
       ],
       "source_vod_id": "-laqjXnqdSg",
       "source_platform": "youtube"
+    },
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948": {
+      "title": "A Marathon Stream To Enjoy While You're Bird Watching",
+      "start_ts": 1790796025,
+      "youtube_archive_id": "ACRNpNCOF6U",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "ACRNpNCOF6U",
+          "start_ts": 1790796025
+        }
+      ],
+      "source_vod_id": "npxQIgRyO0A",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2078,14 +2094,24 @@
       "platforms": {
         "twitch": {
           "status": "timed_out",
-          "since": 1790625261,
-          "expires_ts": 1790625291,
+          "since": 1790803730,
+          "expires_ts": 1790803760,
           "bans": 0,
-          "timeouts": 2,
+          "timeouts": 3,
           "user_id": "58902697"
         }
       },
       "events": [
+        {
+          "ts": 1790803730,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1790803760,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
+        },
         {
           "ts": 1790625261,
           "platform": "twitch",
@@ -2105,6 +2131,30 @@
           "moderator": null,
           "reason": null,
           "stream_id": "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129"
+        }
+      ]
+    },
+    "jaunty02": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1790828978,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1539638249"
+        }
+      },
+      "events": [
+        {
+          "ts": 1790828978,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
         }
       ]
     }
