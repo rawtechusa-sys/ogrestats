@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790661943,
+  "updated_ts": 1790843516,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1942,7 +1942,8 @@
     "this_is_how_you_dont_play_12_hour_marathan_dspgaming_pt2_2026-09-22_035254",
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
     "a_robust_marathon_for_men_2026-09-25_183832",
-    "another_man_marathon_now_extra_robust_2026-09-28_170031"
+    "another_man_marathon_now_extra_robust_2026-09-28_170031",
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34941,6 +34942,23 @@
       "avg_chat_mpm": 7.2,
       "avg_active_chatters": 17.96,
       "percent_paused": 78.7
+    },
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948": {
+      "stream_id": "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
+      "title": "A Marathon Stream To Enjoy While You're Bird Watching",
+      "start_ts": 1790796025,
+      "end_ts": 1790843490,
+      "duration_sec": 47465,
+      "youtube_archive_id": "ACRNpNCOF6U",
+      "source_platform": "youtube",
+      "total_donations_usd": 583.81,
+      "donation_count": 146,
+      "donations_per_min": 0.738,
+      "peak_viewers": 357,
+      "avg_viewers": 298.79,
+      "avg_chat_mpm": 6.9,
+      "avg_active_chatters": 17.28,
+      "percent_paused": 79.3
     }
   }
 }
