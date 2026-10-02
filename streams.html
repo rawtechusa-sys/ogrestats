@@ -1182,7 +1182,13 @@ async function loadStream(streamId) {
 
     const startTs   = meta.start_ts;
     const endTs     = meta.end_ts;
-    const duration  = (endTs && startTs) ? endTs - startTs : null;
+    const isLive    = endTs == null;
+    // A live stream has no end yet: measure up to the newest recorded event
+    // (the uploader pushes events.jsonl every STATS_LIVE_UPLOAD_INTERVAL, so this
+    // trails the real clock by at most that plus the raw CDN cache).
+    const lastTs    = events.reduce((m, e) => Math.max(m, e.ts || 0), 0);
+    const duration  = (endTs && startTs) ? endTs - startTs
+                    : (isLive && startTs && lastTs > startTs) ? lastTs - startTs : null;
     const peakYT    = snapshots.reduce((m, s) => Math.max(m, s.youtube || 0), 0);
     const peakTW    = snapshots.reduce((m, s) => Math.max(m, s.twitch  || 0), 0);
     const peakKick  = snapshots.reduce((m, s) => Math.max(m, s.kick    || 0), 0);
@@ -1252,7 +1258,8 @@ async function loadStream(streamId) {
     }
 
     let cards = '';
-    cards += card('Duration',     duration ? fmtDuration(duration) : '—',  fmtDate(startTs));
+    cards += card('Duration',     duration ? fmtDuration(duration) : '—',
+      fmtDate(startTs) + (isLive ? ' · live now' : ''));
     cards += card('Peak Viewers',
       hasViewers ? peakTotal.toLocaleString() : 'N/A',
       platformSub([
