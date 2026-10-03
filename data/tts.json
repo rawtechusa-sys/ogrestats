@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790843506,
+  "updated_ts": 1791039414,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -870,19 +870,20 @@
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
     "a_robust_marathon_for_men_2026-09-25_183832",
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
-    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817"
   ],
   "commands": {
     "men": 6,
-    "eric": 261,
-    "phil": 566,
-    "stan": 414,
+    "eric": 265,
+    "phil": 577,
+    "stan": 420,
     "masterchief": 171,
-    "harman": 204,
-    "trump": 219,
+    "harman": 207,
+    "trump": 222,
     "moist": 39,
     "dagoth": 5,
-    "zesty": 36,
+    "zesty": 37,
     "linus": 40,
     "grandpa": 29,
     "girlfriend": 11,
@@ -922,7 +923,7 @@
     "post": 1,
     "tired": 1,
     "specs": 2,
-    "phill": 8,
+    "phill": 9,
     "warmy": 1,
     "translation": 4,
     "tomorrow": 35,
@@ -1461,7 +1462,8 @@
     "quater": 1,
     "obiwan": 1,
     "braco": 1,
-    "requesting": 1
+    "requesting": 1,
+    "wow": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10465,9 +10467,296 @@
       ],
       "source_vod_id": "npxQIgRyO0A",
       "source_platform": "youtube"
+    },
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
+      "title": "A Marathon Stream To Watch While Twitting Your Tipples",
+      "start_ts": 1790973662,
+      "youtube_archive_id": "kouxWfRWxJU",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "kouxWfRWxJU",
+          "start_ts": 1790973662
+        }
+      ],
+      "source_vod_id": "FJVz65--s_U",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1791011276,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Is this the catalina collection?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791008957,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Eric: oh yeah Dickers ! show me your software baby ! how many ports do you have ? give me all your gigahertz ! Stan: wanna charge me up ?",
+      "commands": [
+        "eric",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1791008097,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Zesty: Clutterbuns, is totally, my gaming soulmate",
+      "commands": [
+        "zesty"
+      ]
+    },
+    {
+      "ts": 1791003734,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Eric: Jeff has no substance. he should abuse a substance like me ! that's the same thing, right ? Oh, BRB someone's at the door, I have an ass to eat!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790997902,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Cheer50 this just happened lol Trump: My Administration will, immediately, begin sending 'Checks' of nearly $100 to over 20 MILLION wonderful Seniors to help pay for their Medicare Part B premium ... This money will come from the Medicare Improvement Fund, a pointless 'Slush Fund' that has only been used by Dumocrats ... There is more to it and he ends by literally saying he will bribe anyone who votes Republicans. Totally illegal TOTALLY ILLEGAL",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790997843,
+      "username": "@josephburris8656",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "phill: I\"m never going to Lowcal again",
+      "commands": [
+        "phill"
+      ]
+    },
+    {
+      "ts": 1790995607,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Bost you must. Bost you will.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790992760,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Eric: Rich, my pronouns are alpha/male. yours?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790990758,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Eric: I'm great at Waverace64, nonstop watersports",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1790990286,
+      "username": "@BossIog",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Stan: A hole in the neck you say?! Woo baby! Yeah!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790986256,
+      "username": "@callmeanimu",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Harman needs a heroic dose of edibles",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790985959,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Stan: carefull daddy, you never said how to get laid! mmm! do animals count? Trump: Jesus what the fuck stan! Stan: i will achieve world penetration!",
+      "commands": [
+        "stan",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790985555,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Stan: I'm not racist daddy. I dont discriminate holes or hogs. my goal is your hole daddy. no matter the size or color. I will penitrate the world!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790985218,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Trump: attention all men! attention all men! all men rise! a man among men has arrived! men ready your MECS! stroke the meat, aim, annnnnd bust! embrace the power of the farts, no matter the cost!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1790984739,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Harman: Rich, Keep my Pikachu out your mouth!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790984381,
+      "username": "@End-Logic_1",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "WoW: Fr created add on to mute Asmongold guilds",
+      "commands": [
+        "wow"
+      ]
+    },
+    {
+      "ts": 1790983910,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Listen, take that receipe, fly to Israel, and serve to people on stolen state. You'll do world favor & stop world war3. I'll pay for ticket",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790983691,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Harman: My ass is on fire right now. Food here in Mexico is going through me. (goofy_yell)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790980852,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: That\u2019s how you marinate the roast beef rich",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790979807,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Harman: Review Tech USA, where are you tough boy?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1790978779,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Rich, you and I would never work with Keem!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790977201,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Stan: I'll show you my magic bullet. Oh, Richie!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1790976137,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Rotten Brisket is fresh Arby\u2019s brisket. Phil: mmmm",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790974768,
+      "username": "@JRsGAM",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Wow this pizza sucks i cant wait to eat more",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790974137,
+      "username": "@justnutz67",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: I had 2 bursts, this camera won\u2019t turn off!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790973977,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: I got aids Rich. Yes people that help me.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1790973897,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "message": "Phil: Ban robots making my pizza! Unsatisfactory!!",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1790842780,
       "username": "evistosf",
