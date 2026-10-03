@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790843516,
+  "updated_ts": 1791039425,
   "counted_streams": [
     "100_certified_man_stream_feat_beautiful_birds",
     "12_hour_man_stream_feat_men",
@@ -1943,7 +1943,8 @@
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
     "a_robust_marathon_for_men_2026-09-25_183832",
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
-    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817"
   ],
   "streams": {
     "100_certified_man_stream_feat_beautiful_birds": {
@@ -34959,6 +34960,23 @@
       "avg_chat_mpm": 6.9,
       "avg_active_chatters": 17.28,
       "percent_paused": 79.3
+    },
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+      "title": "A Marathon Stream To Watch While Twitting Your Tipples",
+      "start_ts": 1790973662,
+      "end_ts": 1791039222,
+      "duration_sec": 65560,
+      "youtube_archive_id": "kouxWfRWxJU",
+      "source_platform": "twitch",
+      "total_donations_usd": 394.78,
+      "donation_count": 106,
+      "donations_per_min": 0.3613,
+      "peak_viewers": 352,
+      "avg_viewers": 196.87,
+      "avg_chat_mpm": 4.29,
+      "avg_active_chatters": 10.31,
+      "percent_paused": 66.1
     }
   }
 }
