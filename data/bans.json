@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1790843518,
+  "updated_ts": 1791039427,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -136,7 +136,8 @@
     "smash_jt_a_soulless_talentless_man_marathon_2026-09-24_180129",
     "a_robust_marathon_for_men_2026-09-25_183832",
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
-    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948"
+    "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1607,6 +1608,21 @@
       ],
       "source_vod_id": "npxQIgRyO0A",
       "source_platform": "youtube"
+    },
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
+      "title": "A Marathon Stream To Watch While Twitting Your Tipples",
+      "start_ts": 1790973662,
+      "youtube_archive_id": "kouxWfRWxJU",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "kouxWfRWxJU",
+          "start_ts": 1790973662
+        }
+      ],
+      "source_vod_id": "FJVz65--s_U",
+      "source_platform": "twitch"
     }
   },
   "users": {
