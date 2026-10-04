@@ -741,11 +741,22 @@ function vodLink(smeta, offset, label, title, vodId) {
   const t = Math.max(0, Math.floor(offset ?? 0));
   const tt = title ? ` title="${escHtml(title)}"` : '';
   const id = vodId || (smeta && smeta.source_platform !== 'twitch' ? smeta.source_vod_id : null);
-  if (id) {
-    const href = `https://youtu.be/${encodeURIComponent(id)}?t=${t}`;
+  let href = null;
+  if (vodId) {
+    href = `https://youtu.be/${encodeURIComponent(vodId)}?t=${t}`;
+  } else if (smeta && smeta.archive_org_file) {
+    // A stream linked to the rtustreams<N> archive.org corpus: that file IS the
+    // source VOD (which is usually deleted), so offsets land on the same moment.
+    // Same embed URL streams.html / dents.html build for their deep links.
+    href = `https://archive.org/embed/${encodeURIComponent(smeta.archive_org_id)}/${
+      encodeURIComponent(smeta.archive_org_file)}?start=${t}`;
+  } else if (id) {
+    href = `https://youtu.be/${encodeURIComponent(id)}?t=${t}`;
+  }
+  if (href) {
     return `<a class="vod-link" href="${href}" target="_blank" rel="noopener noreferrer"${tt}>${escHtml(label)}</a>`;
   }
-  // No source VOD (or a Twitch source): the elapsed time is still worth showing,
+  // No VOD (or a Twitch source): the elapsed time is still worth showing,
   // but as plain text — no anchor, and no play glyph pretending it is clickable.
   return `<span class="elapsed-plain"${tt}>${escHtml(label)}</span>`;
 }
