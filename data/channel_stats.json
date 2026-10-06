@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791088688,
+  "updated_ts": 1791326378,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1944,7 +1944,8 @@
     "nintendo_switch_presentation_livestream_nintendoswitchpresentation_2017-01-13",
     "playing_some_fear_pc_version_pt3_2017-01-11",
     "playing_some_bulletstorm_pc_2017-01-05",
-    "playing_some_fear_pc_version_pt2_2017-01-03"
+    "playing_some_fear_pc_version_pt2_2017-01-03",
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -34977,6 +34978,23 @@
       "avg_chat_mpm": null,
       "avg_active_chatters": null,
       "percent_paused": null
+    },
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808": {
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+      "title": "A Marathon Stream To Watch While Twitting Your Tipples",
+      "start_ts": 1791313688,
+      "end_ts": 1791324372,
+      "duration_sec": 10684,
+      "youtube_archive_id": null,
+      "source_platform": "twitch",
+      "total_donations_usd": 197.68,
+      "donation_count": 28,
+      "donations_per_min": 1.1101,
+      "peak_viewers": 172,
+      "avg_viewers": 130.64,
+      "avg_chat_mpm": 4.44,
+      "avg_active_chatters": 12.02,
+      "percent_paused": 60.4
     }
   }
 }
