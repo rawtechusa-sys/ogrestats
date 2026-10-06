@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791039414,
+  "updated_ts": 1791326357,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -871,7 +871,8 @@
     "a_robust_marathon_for_men_2026-09-25_183832",
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
-    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817"
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
   ],
   "commands": {
     "men": 6,
@@ -879,7 +880,7 @@
     "phil": 577,
     "stan": 420,
     "masterchief": 171,
-    "harman": 207,
+    "harman": 208,
     "trump": 222,
     "moist": 39,
     "dagoth": 5,
@@ -10482,9 +10483,29 @@
       ],
       "source_vod_id": "FJVz65--s_U",
       "source_platform": "twitch"
+    },
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808": {
+      "title": "A Marathon Stream To Watch While Twitting Your Tipples",
+      "start_ts": 1791313688,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1791317760,
+      "username": "thechange1ing",
+      "platform": "twitch",
+      "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+      "message": "Cheer100 Harman: just shut the fuck up and badly play video games, Phil! Cheer100",
+      "commands": [
+        "harman"
+      ]
+    },
     {
       "ts": 1791011276,
       "username": "@AK86-e4l",
