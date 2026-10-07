@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791326378,
+  "updated_ts": 1791357708,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1945,7 +1945,8 @@
     "playing_some_fear_pc_version_pt3_2017-01-11",
     "playing_some_bulletstorm_pc_2017-01-05",
     "playing_some_fear_pc_version_pt2_2017-01-03",
-    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+    "the_tcap_man_marathon_stream_2026-10-06_220620"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -34995,6 +34996,23 @@
       "avg_chat_mpm": 4.44,
       "avg_active_chatters": 12.02,
       "percent_paused": 60.4
+    },
+    "the_tcap_man_marathon_stream_2026-10-06_220620": {
+      "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620",
+      "title": "The TCAP MAN MARATHON STREAM",
+      "start_ts": 1791324410,
+      "end_ts": 1791357521,
+      "duration_sec": 33111,
+      "youtube_archive_id": "TM-UxJ9NUjQ",
+      "source_platform": "twitch",
+      "total_donations_usd": 124.33,
+      "donation_count": 30,
+      "donations_per_min": 0.2253,
+      "peak_viewers": 198,
+      "avg_viewers": 161.81,
+      "avg_chat_mpm": 5.84,
+      "avg_active_chatters": 13.69,
+      "percent_paused": 50.4
     }
   }
 }
