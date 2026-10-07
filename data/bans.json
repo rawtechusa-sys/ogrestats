@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791326380,
+  "updated_ts": 1791357711,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -138,7 +138,8 @@
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
-    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+    "the_tcap_man_marathon_stream_2026-10-06_220620"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1632,6 +1633,25 @@
       "archive_org_id": null,
       "archive_start_ts": null,
       "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "the_tcap_man_marathon_stream_2026-10-06_220620": {
+      "title": "The TCAP MAN MARATHON STREAM",
+      "start_ts": 1791324410,
+      "youtube_archive_id": "TM-UxJ9NUjQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yHWUi4m2Ito",
+          "start_ts": 1791324410
+        },
+        {
+          "archive_id": "TM-UxJ9NUjQ",
+          "start_ts": 1791346205
+        }
+      ],
       "source_vod_id": null,
       "source_platform": "twitch"
     }
