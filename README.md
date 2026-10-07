@@ -5,9 +5,9 @@
 <!-- archive-progress:start -->
 ## Archive progress
 
-![Archived VODs: 1,720 / 1,943 (88.5%)](data/progress/vods.svg)
+![Archived VODs: 1,720 / 1,945 (88.4%)](data/progress/vods.svg)
 
-![Captions: 821 / 1,791 (45.8%)](data/progress/captions.svg)
+![Captions: 832 / 1,792 (46.4%)](data/progress/captions.svg)
 
-**152** of 1,943 streams are completely missing: no archive copy, no restream VOD, and the YouTube VOD is gone.
+**153** of 1,945 streams are completely missing: no archive copy, no restream VOD, and the YouTube VOD is gone.
 <!-- archive-progress:end -->
