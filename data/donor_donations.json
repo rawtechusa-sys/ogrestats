@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791326369,
+  "updated_ts": 1791357703,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -872,7 +872,8 @@
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
-    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+    "the_tcap_man_marathon_stream_2026-10-06_220620"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9899,6 +9900,25 @@
       "archive_org_id": null,
       "archive_start_ts": null,
       "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "the_tcap_man_marathon_stream_2026-10-06_220620": {
+      "title": "The TCAP MAN MARATHON STREAM",
+      "start_ts": 1791324410,
+      "youtube_archive_id": "TM-UxJ9NUjQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yHWUi4m2Ito",
+          "start_ts": 1791324410
+        },
+        {
+          "archive_id": "TM-UxJ9NUjQ",
+          "start_ts": 1791346205
+        }
+      ],
       "source_vod_id": null,
       "source_platform": "twitch"
     }
@@ -42066,6 +42086,14 @@
     ],
     "VariousMelons": [
       {
+        "ts": 1791334071,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Oh big Tex",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1785889984,
         "type": "sub",
         "amount_usd": 5.99,
@@ -42083,6 +42111,30 @@
       }
     ],
     "nialldude3": [
+      {
+        "ts": 1791336936,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Man Robert Pattinson has aged badly! What no way!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791335897,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Did you hear Bobby Kotick is going to be a member of the board of directors for the new WB/Paramount company? Fucking hell!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791324944,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 I\u2019m gonna ban anyone giving me advice.",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1791314603,
         "type": "bits",
@@ -42310,6 +42362,14 @@
     ],
     "burrito_massuci": [
       {
+        "ts": 1791340858,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 I'm sorry",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1788060919,
         "type": "bits",
         "amount_usd": 1.0,
@@ -42369,6 +42429,14 @@
       }
     ],
     "BloodyGB2": [
+      {
+        "ts": 1791341742,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Hello birdfather ! hope you're doing well this evening !",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1788318384,
         "type": "sub",
@@ -42475,6 +42543,14 @@
       }
     ],
     "J0stler": [
+      {
+        "ts": 1791334503,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (9 months)!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1790026129,
         "type": "sub",
@@ -103096,6 +103172,14 @@
     ],
     "Hellrazer8504": [
       {
+        "ts": 1791326074,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (6 months)!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1790815811,
         "type": "sub",
         "amount_usd": 5.99,
@@ -153606,6 +153690,14 @@
     ],
     "TNMGaming_": [
       {
+        "ts": 1791338058,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Yo! did you ever watch that Mr Beast stuff?",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1788314779,
         "type": "sub",
         "amount_usd": 5.99,
@@ -165924,6 +166016,14 @@
     ],
     "sean_reagan": [
       {
+        "ts": 1791337914,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1783995224,
         "type": "bits",
         "amount_usd": 1.0,
@@ -165951,6 +166051,14 @@
       }
     ],
     "thechange1ing": [
+      {
+        "ts": 1791345689,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 WHAT DO YOU DOOOOOOO...WITH THE DOODOO?",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1791317760,
         "type": "bits",
@@ -166301,6 +166409,14 @@
       }
     ],
     "notmoondust": [
+      {
+        "ts": 1791334131,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 BAH GAWD ITS CHRIS HANSEN WITH MY CHATLOGS",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1788322497,
         "type": "bits",
@@ -170142,6 +170258,22 @@
     ],
     "bloodygb2": [
       {
+        "ts": 1791350691,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 \"I am reverend Cornholio ! I need TP for my mouth hole !\" hangtimeLmao",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791343014,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 we had an election yesterday in Quebec and I have never seen results like this. the incumbent party went from a majority government ( 79 out of 127 seats) to zero elected representatives. it's wild ! let's hope something similar happens to Trump in november !",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1783400743,
         "type": "bits",
         "amount_usd": 1.0,
@@ -173858,6 +173990,14 @@
     ],
     "ryuzentalfuse1": [
       {
+        "ts": 1791339390,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (8 months)!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1782958547,
         "type": "sub",
         "amount_usd": 5.99,
@@ -173867,6 +174007,14 @@
       }
     ],
     "rafach187": [
+      {
+        "ts": 1791331300,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1782960828,
         "type": "sub",
@@ -546214,6 +546362,14 @@
     ],
     "thenightmancometh101": [
       {
+        "ts": 1791328812,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Men",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1787009001,
         "type": "sub",
         "amount_usd": 5.99,
@@ -546507,6 +546663,78 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1791356437,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791354049,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich next time on your thumbnail have chris hansen interrogating Trump and Epstein obviously AI generated",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791352630,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 WAIT HOLD EVERYONE HORSES. My local gamestop is selling new for $899.99 and pre-owned or refurbished $1329.99 DUDE I thought that rate was supposed to happen for PS6 Pro!! \ud83d\ude06",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791342758,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Activision CEO has joined with David Ellison as co director Skydance. Forget Call of duty I am out.",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791342158,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 hey Rich should we check some recent Alex Jones reaction video his take on trump after this? I don't think we have done that before",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791336976,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 on next episode with Chris Hansen it will be Barron Trump in his small diaper \ud83d\ude06. I hope I am alive for that to watch.",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791336735,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 why is this guy hiding his tiny kippah hat? This is America. Don't hide you are jew. What worse could happen? deported to Israel? \ud83d\ude06",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791335475,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 White House lawyers warn midterm stress could seriously put Trump\u2019s health at risk . White houese lawyer claims that he cries like a baby in his massive diaper realizung he has fallen much down in history of any untied states. Meanwhile his 20 years old son is receiving death threat from Iran and he is scared from that not realizing that his father killed and committed war crime killing not only Iran supreme leader but also his baby infant granddaughter and his son family.",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
+        "ts": 1791333650,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000  Trump: Attention American I have established umbilical cord with Israel. Israel is now out father nation now. Fuk geu Israel Fuk geu Israel Fuk geu Israel I have officially declared Hollywood Ziowood.  Trump: Our founding father promised to us this very moment America will serve apartheid colonizer state. Phil: well WB games can go to bin mortal Kombat & rocksteady games . Phil: initiate the stage 5 apocalyptic  invasion on zios in America. Phil: oh hey Rich what's good?",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
       {
         "ts": 1790997902,
         "type": "bits",
@@ -548754,6 +548982,14 @@
     ],
     "smellyjellysamich": [
       {
+        "ts": 1791334176,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      },
+      {
         "ts": 1790996556,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -549216,6 +549452,36 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
+      }
+    ],
+    "Determined_Hero": [
+      {
+        "ts": 1791327103,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "determ12In just know \u261d\ufe0fHero \ud83d\udc40 \"Come on in\"",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      }
+    ],
+    "solidus_xl": [
+      {
+        "ts": 1791336999,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      }
+    ],
+    "ReelSpoilers": [
+      {
+        "ts": 1791338359,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
       }
     ]
   }
