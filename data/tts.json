@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791326357,
+  "updated_ts": 1791357698,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -872,16 +872,17 @@
     "another_man_marathon_now_extra_robust_2026-09-28_170031",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
-    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808"
+    "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
+    "the_tcap_man_marathon_stream_2026-10-06_220620"
   ],
   "commands": {
     "men": 6,
     "eric": 265,
-    "phil": 577,
+    "phil": 580,
     "stan": 420,
     "masterchief": 171,
     "harman": 208,
-    "trump": 222,
+    "trump": 224,
     "moist": 39,
     "dagoth": 5,
     "zesty": 37,
@@ -10493,9 +10494,39 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "the_tcap_man_marathon_stream_2026-10-06_220620": {
+      "title": "The TCAP MAN MARATHON STREAM",
+      "start_ts": 1791324410,
+      "youtube_archive_id": "TM-UxJ9NUjQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yHWUi4m2Ito",
+          "start_ts": 1791324410
+        },
+        {
+          "archive_id": "TM-UxJ9NUjQ",
+          "start_ts": 1791346205
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1791333650,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620",
+      "message": "Cheer1000  Trump: Attention American I have established umbilical cord with Israel. Israel is now out father nation now. Fuk geu Israel Fuk geu Israel Fuk geu Israel I have officially declared Hollywood Ziowood.  Trump: Our founding father promised to us this very moment America will serve apartheid colonizer state. Phil: well WB games can go to bin mortal Kombat & rocksteady games . Phil: initiate the stage 5 apocalyptic  invasion on zios in America. Phil: oh hey Rich what's good?",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
     {
       "ts": 1791317760,
       "username": "thechange1ing",
