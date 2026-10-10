@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791357703,
+  "updated_ts": 1791615863,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -873,7 +873,8 @@
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
-    "the_tcap_man_marathon_stream_2026-10-06_220620"
+    "the_tcap_man_marathon_stream_2026-10-06_220620",
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9921,6 +9922,16 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228": {
+      "title": "WHAT THE HELL JUST HAPPENED WITH THE LCU?!?!?!?!",
+      "start_ts": 1791568948,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "any9_NeD7Dg",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10625,6 +10636,30 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1791608158,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "That moment was lightning on the tipples !",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596401,
+        "type": "superchat",
+        "amount_usd": 1.44,
+        "amount_raw": "CA$2.00",
+        "message": "Why is Bob Lavari turning his back on us ?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791594536,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "Eric: why can't I suck a friend's nipple to comfort him without being made fun of? his were tender from being twitted. want me to suck yours dickers?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791008957,
         "type": "superchat",
@@ -12998,6 +13033,14 @@
     ],
     "djjailbreak": [
       {
+        "ts": 1791595511,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 32 months",
+        "message": "listen a middle aged man watching men let's go!!!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790016119,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -13183,6 +13226,14 @@
       }
     ],
     "ZG49389": [
+      {
+        "ts": 1791596496,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Hey Rich, why is Wings streaming again?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790825574,
         "type": "superchat",
@@ -18010,6 +18061,14 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1791587365,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "ChatGPT make me a bald 40yo w/ a 20yo personality",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790646623,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -20724,6 +20783,22 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1791585766,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: I don't see Boogie having a successful career post LoLcow live. He should just beg for $500 everyday for Pok\u00e9mon pack rips like me.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791582333,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790985889,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -21165,6 +21240,30 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1791609795,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I was in Katrina years ago but family seems safe",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791608886,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: BURST BURST! (yoda) BURST! BURST BURST BURST",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791570850,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790976458,
         "type": "giftmembership",
@@ -22161,6 +22260,54 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1791600719,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: Jesus christ, she looks like she merged with a demon",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791597187,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: listen, zoom into my yuge ass. be a man",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596115,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: I AM THE LAW! I am the master of war crimes, believe me. I never was on that island. that was crooked Joe. Biden: oh go suck a dick you shriveled orange asshole! Obama: thanks Obama",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791593777,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: men, I farted. it was robust and meaningful",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791590026,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: the LCU can eat shit and die! keem is nothing but a manipulative cock sucker. the galactic empire of men will destroy any remnants of the LCU. Stan: and im gonna get some of keems ass mmmmmmmm!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791589476,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: attention all men! attention, all men! this is a man emergency! a man among men has arrived! and Jesus christ he is hard! embrace the farts men",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790985959,
         "type": "superchat",
@@ -25233,6 +25380,22 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1791599430,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791584926,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 44 months",
+        "message": "You still have more subs than Lolcow Live btw lol Keem doesn't even have a 100k sub plaque to give you when they're gone for good.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790642642,
         "type": "giftmembership",
@@ -30715,6 +30878,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1791576576,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil: i love how phil takes every conceivable opportunity to be a condescending a hole. he is incapable of not insulting someone.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791575620,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I used to work at McDonald's for 4 and half years. shockingly the fries and nuggets and insanely amazing fresh out of the fryer. (yoda)(yoda)",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791002738,
         "type": "superchat",
@@ -39382,6 +39561,22 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1791606700,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "I am in the great state of New York checking out the sleepy hollow Halloween vibes. Just took a gummy now I'm on planet mars. :melting_face:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791606481,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1787179871,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -39829,6 +40024,14 @@
       }
     ],
     "iswordlogici7760": [
+      {
+        "ts": 1791611461,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich. shit in a diaper. be a man",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791005870,
         "type": "superchat",
@@ -41257,6 +41460,14 @@
       }
     ],
     "silkyone12": [
+      {
+        "ts": 1791569427,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "6 months of birds Give me licked boogie on :speaker_low_volume::clipboard:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1789607678,
         "type": "superchat",
@@ -43776,6 +43987,22 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1791579538,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Hot Take anyone still support Trump on a WatchList",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791579065,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: your not fooling your audience They know you take dark money from the Bird Survelience lobby, Flock was all them, was the birds all along",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790986153,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -45153,6 +45380,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1791598838,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen best month and Libras rule. Night Papo chat",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791598561,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, I'll always be honest. Less Phil eating...",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791597303,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen don't be a Neomaxi-zoomdweebie bro",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596750,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen I think you got some shit ends, but just take your time...be smart, move in silence right? Take your time brother. I think DSP is caca man.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596264,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "FDR ghost coming back to tax all their asses",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596141,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "We had a chance to prevent this with Bernie 2016",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791573398,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Dad can you recite the intro track to 1994's Offspring album Smash. \"Ahhh it's time to relax, and you know what that means..\"",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791002147,
         "type": "superchat",
@@ -60262,6 +60545,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1791597486,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "I still believe he took down lebroski",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790273648,
         "type": "membership",
         "amount_usd": 1.99,
@@ -66446,6 +66737,38 @@
     ],
     "respergu13": [
       {
+        "ts": 1791598177,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech USA,remember to wash your hands!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596917,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman:Rich are you afraid to go live with Boogie?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596557,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 44 months",
+        "message": "Mr Rich ! Wings is back and gained some weight!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596294,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric:Review Tech USA, leave my friend Boogie alone",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790992760,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -67504,6 +67827,14 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1791570922,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Bill: BREAKING: There\u2019s a new disease spreading that gives you diarrhea that\u2019s resistant to treatment. Wear a rubber men",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1791000127,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -68347,6 +68678,62 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1791592369,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: release the messages now becky.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791586200,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: if you want a good laugh look up \"Keemstar shut up\" from H3 it's a short 15 second clip and its hilarious.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791581444,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: listen lets go to Rex Kwon Do rich and restart the manoshoere lets go. \"Bow to your sensei!\"",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791575499,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: oh did you see or have seen Dsp's comments on gears e-day? He is getting desperate for a Asmon collabe.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571934,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Listen keem tried to glaze your donut.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571380,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: Didn't keem get some woman about revenge corn about you too before?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791570753,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: I'll never forget boogie getting on all fours and begging and apologized to keemstar because he went on arguing with muta on your stream.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790983691,
         "type": "superchat",
@@ -70202,6 +70589,22 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1791587662,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "he cried and said he found God after Kirks death",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569941,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "I got pizza, MGS3 and an average sized dick, o ye",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790805517,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -70561,6 +70964,14 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1791586578,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Hmmm thoughts? You (and maybe Jay) reboot the \u201cExposed\u201d podcast and interview the dozen or so LCU members who have Keem horror stories? Would be poetic",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790983645,
         "type": "membership",
@@ -79732,6 +80143,14 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1791610699,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: No impulse control.... Like a may first burst",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1791011276,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -80339,6 +80758,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1791571313,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Phil: Keem pulled a QuantumTV calling Lauren",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790015340,
         "type": "membership",
@@ -83778,6 +84205,30 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1791578895,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Worst part I believed the 1st restaurant AI I saw, because it isn't out of the realm of possibility, I saw a 2nd & realized what was up, then 3, 4...",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791578064,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Gordon Ramsey just filmed in Topeka last week and DOZENS of restaurants used A.I. to claim Ramsey \"happened to stop by\" and was in love with their food. Clown behavior, by some of my favorite places.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569756,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I upgraded from GeForce RTX 1660 to GeForce RTX 5070 Ti, it's insanity. Needed to upgrade for Ace Combat 8. Experienced Ray tracing for the first time",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790643142,
         "type": "membership",
         "amount_usd": 1.99,
@@ -84275,6 +84726,14 @@
       }
     ],
     "OnePumpMaan": [
+      {
+        "ts": 1791570309,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 9 months",
+        "message": "6:30am STREAM LETS GO!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1786487460,
         "type": "superchat",
@@ -85223,6 +85682,22 @@
       }
     ],
     "End-Logic_1": [
+      {
+        "ts": 1791600789,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "It\u2019s not just her looks it\u2019s her mannerisms. She doesn\u2019t look real.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791581353,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Did you see that weird Susan Dell clone..thing next to Trump??",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790984381,
         "type": "membership",
@@ -90787,6 +91262,46 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1791580089,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "The FCC blocked interviews with Talarico on late night talk shows. In a Streisand effect, those interviews gain millions of views.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571268,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Rich you seem mad. Buzz with spring fun.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791570764,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Keem also once said he can the N word because he is 2% black. No I\u2019m not kidding.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791570593,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Phil: My mother twitted my fucking tipples as part of the abuse. My dad also twisted my balls and dick.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569271,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "13 months of me. Twist my British tipples.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790992606,
         "type": "superchat",
@@ -98916,6 +99431,22 @@
     ],
     "change1ing": [
       {
+        "ts": 1791600492,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Bill: This subversive advertising for tales from the crypt with the crypt keeper playing this Susan dell character is just unbelievable",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791585331,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I love that MAGA Boogie's enjoying a downfall with the rest of the other MAGATs. Feels like reality and karma are coming for these morons.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790814640,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -99743,6 +100274,14 @@
       }
     ],
     "Keldoh3ad": [
+      {
+        "ts": 1791571813,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "What's up Rich, it's your boy Keldo. I've broken the 100lbs lost mark officially since February. Dating again too, how are you big pimp?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790615608,
         "type": "superchat",
@@ -101594,6 +102133,14 @@
     ],
     "Colin1994-v1v": [
       {
+        "ts": 1791571187,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I was debating to get Call of Duty:registered: or Phantom Blade and I decided to pre-order Phantom",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790987780,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -102311,6 +102858,14 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1791606940,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 62 months",
+        "message": "listen. be a :man:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790991978,
         "type": "superchat",
@@ -106988,6 +107543,14 @@
     ],
     "TheTenoray": [
       {
+        "ts": 1791570944,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "While the mental dumpster fires that Keem abuses were ultimately responsible for their own actions Keem loves to throw gasoline on said dumpster fires",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790982951,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -107239,6 +107802,62 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1791580428,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Worked for Mr. Beast, also defended Cuties movie",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791578270,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'd rather go to a restaurant with a menu drawn by a five year old and a stick figure as its mascot",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791578112,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Mmm its so Hefty, Tangy, and CREAMY uhdsffsf",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791577507,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "AI Tony Hawk Pro Skater ass music",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791573844,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mcdonalds is doing dynamic pricing, thats why Phil",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791573407,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phils BG music sounds like Alvin getting railed",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571996,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hindsight he is partly to blame for Etika. His family may have said it wasn\u2019t his fault but it was probably because they want nothing to do with him",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790975552,
         "type": "superchat",
@@ -110504,6 +111123,14 @@
     ],
     "DeusMat": [
       {
+        "ts": 1791607790,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "birds",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1785284427,
         "type": "membership",
         "amount_usd": 1.99,
@@ -110659,6 +111286,14 @@
       }
     ],
     "SventheArcticFox": [
+      {
+        "ts": 1791606144,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "I hate living in the same state as Keem.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790982855,
         "type": "superchat",
@@ -125844,6 +126479,30 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1791604240,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "games download unlimited if not not gamepass",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791581987,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Columbus Ohio last year use 1 billion gallons of water enough for 16,000 houses",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791579596,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "i think be better to vote early then the 3rd this time around and less worry of people cone after u",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790988683,
         "type": "membership",
         "amount_usd": 1.99,
@@ -126918,6 +127577,14 @@
     ],
     "BRS_v": [
       {
+        "ts": 1791595392,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 39 months",
+        "message": "do the roar",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1788658590,
         "type": "superchat",
         "amount_usd": 1.44,
@@ -127247,6 +127914,14 @@
       }
     ],
     "DeportedSicilianGamer": [
+      {
+        "ts": 1791597151,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "\"Turbo\" is just a less charismatic, more neurally divergent PPP. Just look at that blob. :face_with_tears_of_joy:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790824133,
         "type": "superchat",
@@ -130099,6 +130774,38 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1791586839,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Listen, my dispo is a combination between strawberry cough and amnesia! I love this one! Tastes like :strawberry: jam! I hate this dude with all of my being! Fake laugh detection on full blast you weirdo :rolling_on_the_floor_laughing::loudly_crying_face::winking_face::smiling_face_with_sunglasses:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791581592,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Between heavens gate and Jim Jones I want to say however this has happened is scary but what\u2019s worse what\u2019s worse is these peeps don\u2019t believe that the punch is bad for you! Do not drink that punch!!!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791580915,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I just want to say that the destruction of Sonys flagship product besides the Walkman no other Sony product sold more than the PlayStation lineup is so tragic and funny at the exact same time! :rolling_on_the_floor_laughing:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791580731,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I have a new :shopping_cart: called strawberry amnesia it\u2019s amazing! I am quite peaceful currently, need a Powerade but I got one in the fridge! Cheers bird family!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790975205,
         "type": "superchat",
@@ -137360,6 +138067,14 @@
     ],
     "ricfatino26": [
       {
+        "ts": 1791593102,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Is it true you got a blanket with Phil\u2019s O face?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790798977,
         "type": "membership",
         "amount_usd": 1.99,
@@ -142067,6 +142782,14 @@
       }
     ],
     "Sphericalman01": [
+      {
+        "ts": 1791578971,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: enter code DEVOUR for a ROBUST DSP Tries It!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790800993,
         "type": "membership",
@@ -150018,6 +150741,14 @@
     ],
     "NenoFishy": [
       {
+        "ts": 1791596898,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "Joined!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1786497406,
         "type": "membership",
         "amount_usd": 1.99,
@@ -151256,6 +151987,22 @@
     ],
     "insomniac416": [
       {
+        "ts": 1791569987,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 so actually, the goal is 100 members i uh made a typo",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569400,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1787532416,
         "type": "bits",
         "amount_usd": 0.7,
@@ -151781,6 +152528,30 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1791582560,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:New show! Lolcow Pantspisser!! starring meeee",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791576548,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil:We can ice our golden buns all night. Devour!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571782,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:I'm still awaiting Keemstar's harvest. O keem",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791008097,
         "type": "superchat",
@@ -156018,6 +156789,22 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1791570168,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569766,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790374864,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -158631,6 +159418,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1791587150,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "should we give boogie a chance? ik dumb question",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790362253,
         "type": "superchat",
@@ -162042,6 +162837,14 @@
     ],
     "Badog473": [
       {
+        "ts": 1791569292,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "hi Rich",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790282562,
         "type": "membership",
         "amount_usd": 1.99,
@@ -163514,6 +164317,14 @@
     ],
     "AnAnonymousGifter": [
       {
+        "ts": 1791605163,
+        "type": "giftsub",
+        "amount_usd": 11.98,
+        "amount_raw": "2 1000",
+        "message": "gifted 2 subs to the community!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790035864,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -164809,6 +165620,22 @@
       }
     ],
     "JoshJonesDrums": [
+      {
+        "ts": 1791576539,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Bro, sometimes I have premonition type dreams that come true and 6 months ago I dreamt that there\u2019d be a public ex. I hate when this happens \ud83e\udd26\ud83c\udffe\u200d\u2642",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791576223,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 7 months",
+        "message": "A man appears",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1784174651,
         "type": "membership",
@@ -167217,6 +168044,14 @@
       }
     ],
     "greenmind924": [
+      {
+        "ts": 1791576286,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1783557727,
         "type": "superchat",
@@ -169941,6 +170776,14 @@
       }
     ],
     "PodsPlaysGolf": [
+      {
+        "ts": 1791593985,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Is the i c u finally dead?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1789445218,
         "type": "membership",
@@ -173430,6 +174273,14 @@
     ],
     "The_WWF_Champion": [
       {
+        "ts": 1791582755,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "I am a man.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1783040422,
         "type": "sub",
         "amount_usd": 5.99,
@@ -174542,6 +175393,14 @@
     ],
     "Fanto_Sir": [
       {
+        "ts": 1791569304,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "I'm interested in the LCU like im interested when driving past a car wreck",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1788813580,
         "type": "sub",
         "amount_usd": 5.99,
@@ -175633,6 +176492,30 @@
       }
     ],
     "WilliamMunny1880": [
+      {
+        "ts": 1791572325,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "then what does that say about kalshi",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791572133,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Think about it richie, Disneyland is presented as artificial and imaginary and when you leave you think you've returned to the real america, but what if real america is just as manufufacturd and simulated.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791571466,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "is Disneyland presented as imaginary to convince the rest of America is real?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1782788671,
         "type": "superchat",
@@ -177720,6 +178603,14 @@
     ],
     "No0BKiLLer956": [
       {
+        "ts": 1791595588,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "Rich would you jailbreak your own ps5",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1787944961,
         "type": "membership",
         "amount_usd": 1.99,
@@ -177777,6 +178668,14 @@
       }
     ],
     "xanderskullion": [
+      {
+        "ts": 1791595055,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790975534,
         "type": "superchat",
@@ -202986,6 +203885,14 @@
     ],
     "compositefrylock2973": [
       {
+        "ts": 1791585847,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "You owe keemstar his 200 gold play buttons",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790982506,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -204083,6 +204990,14 @@
       }
     ],
     "sonofapirate": [
+      {
+        "ts": 1791569732,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Did you miss me? Admit it you missed me.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1739496990,
         "type": "superchat",
@@ -206389,6 +207304,22 @@
       }
     ],
     "Gamermeetsworld": [
+      {
+        "ts": 1791605249,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791572429,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "7 Thursdays till thanksgiving",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1739431859,
         "type": "superchat",
@@ -240048,6 +240979,14 @@
     ],
     "UglyNacho": [
       {
+        "ts": 1791570190,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Should I be worried about Trump\u2019s LA/SD comment?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790823758,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -243769,6 +244708,14 @@
       }
     ],
     "techman771": [
+      {
+        "ts": 1791597582,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Why not go all-in Boogie? Feels like he's hiding something and rather not expose himself.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1789614389,
         "type": "superchat",
@@ -297763,6 +298710,22 @@
       }
     ],
     "Stephanie_Rose": [
+      {
+        "ts": 1791612702,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "just imagine this guy had pin worms wiggling out",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791569978,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "it's getting real here, waffle house is now closed",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790802836,
         "type": "superchat",
@@ -384515,6 +385478,14 @@
       }
     ],
     "punkinjack8925": [
+      {
+        "ts": 1791601482,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Lmao art has to be trolling",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1698811948,
         "type": "superchat",
@@ -545792,6 +546763,14 @@
     ],
     "LostRenegade": [
       {
+        "ts": 1791569329,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (6 months)!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1791316065,
         "type": "sub",
         "amount_usd": 5.99,
@@ -546065,6 +547044,14 @@
       }
     ],
     "TamAlavad": [
+      {
+        "ts": 1791610707,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1788401221,
         "type": "sub",
@@ -546663,6 +547650,62 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1791613852,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: I called up manager and yelled at her what the fuk man! Is it because Israel told you soo from 10000 miles away?! Well apparently that was not the case but manager told me she saw my May 1st burst video trailer before they started Samurai cop movie in front of 200 audiences and 20 children. Trump:   Listen Phil. I love you. Meet me up on Epstein Island. I will be there in my leather lingerie and whipping stick. While ghost of Epstein will watch us. Phil: be right there!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791613071,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: I got rejected by Burlington warehouse. They Thank you very much for your recent application to the Seasonal Retail Stocking Associate - Part Time with Burlington Stores. We have reviewed your application and we are sorry to inform you that you do not meet the minimum qualifications for this position.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791612957,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 Phil: Listen Rich I applied for stocker role at Burlingtin warehouse. The next day I got this email:",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791597041,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Rich will you speak to Trump and Satanyahu and Vladimir Putin?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791587957,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what do you think Pete Hegseth bringing back 1940s style firing squad last time was used WW2. while televising entire to entire nation. Would that radicalize more nationalist extremist to what happened after 9/11 against Muslims. I mean there could be possibility. Siiigh",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791587837,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what do you think Pete Hegseth bringing back 1940s executiowe",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791583954,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Hey Rich what's up happy Friday to you and chats here. Did you get tits working on your twitch stream? There is more, Zeteo Mehdi Hasan just dropped huge nuclear truth bomb of what actually happened on October 7th 2023 and Hannibal directive right away implemented... Seem God choose him this very moment with full investigation and journalism exposed to the worse atrocious than what Nazi did to jews. You should see that if you have time on YouTube only if you have time.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791356437,
         "type": "sub",
@@ -547552,6 +548595,22 @@
     ],
     "Spartan_X80": [
       {
+        "ts": 1791577688,
+        "type": "giftsub",
+        "amount_usd": 59.9,
+        "amount_raw": "10 1000",
+        "message": "gifted 10 subs to the community!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791572818,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "gifted a sub to backdoorslot9!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1787948058,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -547561,6 +548620,14 @@
       }
     ],
     "spartan_x80": [
+      {
+        "ts": 1791577803,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Thats the American Hero theme from Hulk Hogan, you were humming Rich Cheer50",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1789763793,
         "type": "bits",
@@ -547742,6 +548809,14 @@
     ],
     "Ghostkilla-j7g": [
       {
+        "ts": 1791570276,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Watching Boogie2988 failing is so beautiful",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1788810941,
         "type": "superchat",
         "amount_usd": 6.74,
@@ -547759,6 +548834,14 @@
       }
     ],
     "BeardyOutpost": [
+      {
+        "ts": 1791572259,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Why tf did I get a free membership when I literally am a detractor...do kissy kissy with Jeff too btw",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790816144,
         "type": "superchat",
@@ -547860,6 +548943,14 @@
     ],
     "iBLUEmyself": [
       {
+        "ts": 1791577253,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "what does CUM on the BIG MAC there Phil???",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1788060164,
         "type": "sub",
         "amount_usd": 5.99,
@@ -547903,6 +548994,14 @@
       }
     ],
     "ANONm1lfhunter69": [
+      {
+        "ts": 1791569682,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Rich can you meet me at your usual Grindr hookup place.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1788292801,
         "type": "sub",
@@ -548079,6 +549178,46 @@
       }
     ],
     "VivaSumudPAKResistor": [
+      {
+        "ts": 1791609114,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "let's watch trump vs Biden debate on twitch.bored",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791608984,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: I can't grab my posi. PHIL HELP ME FIND IT",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791596078,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "It'll take 2 Bernie sander term to fix 10% damage",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791595863,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Trump would you Jailbreak your PS5? Trump: what is that? If jailbreak means breaking law and anticonstitution then sign me up. It'll tremendous",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791587744,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "Trump signed oil deal with Russia. God bless \ud83c\uddfa\ud83c\uddf8",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790983910,
         "type": "superchat",
@@ -548374,6 +549513,14 @@
     ],
     "BossIog": [
       {
+        "ts": 1791577035,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'm atheist and I have better biblical values than they do. The ones praising Hegseth are bloodthirsty sickos. Expect a lot of whataboutism from MAGA.",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
         "ts": 1790990286,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -548513,6 +549660,38 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1791612860,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Check out the u-tuber. omma also catches PDFs",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791602848,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "What u going to do when Trump rigs elections?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791593445,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Ralph expose me, Ralph expose me AHH!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791585607,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "He should show Doctor report that it was true!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1790991913,
         "type": "superchat",
@@ -548981,6 +550160,14 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1791595407,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "whats up rich.....what are we watching tonight",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
       {
         "ts": 1791334176,
         "type": "giftsub",
@@ -549482,6 +550669,64 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "the_tcap_man_marathon_stream_2026-10-06_220620"
+      }
+    ],
+    "AngryBottom": [
+      {
+        "ts": 1791569396,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "How have I been subbed for 6 months. Time flies",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      }
+    ],
+    "Skrata": [
+      {
+        "ts": 1791574555,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "have u seen the FGteeV duddy sitch? Sad tbh",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      }
+    ],
+    "TheGoldenaxer": [
+      {
+        "ts": 1791575922,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Because of these streams, all of my friends have adopted, \"straight christian male\" into our vocabulary. Thanks for reals for all the laughs. ROBUST!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      },
+      {
+        "ts": 1791575680,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich, im not gay okay?! Im a straight christian male!",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      }
+    ],
+    "VinceSteel": [
+      {
+        "ts": 1791597519,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You'll prob block me but legit question. Did you feel this way about lolcow when you said you ended Jay's career or was it the Becky situation?",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      }
+    ],
+    "JayNubbs": [
+      {
+        "ts": 1791598084,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich has better chemistry with Taco Bell than LCU",
+        "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
       }
     ]
   }
