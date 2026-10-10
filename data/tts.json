@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791357698,
+  "updated_ts": 1791615858,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -873,17 +873,18 @@
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
-    "the_tcap_man_marathon_stream_2026-10-06_220620"
+    "the_tcap_man_marathon_stream_2026-10-06_220620",
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
   ],
   "commands": {
     "men": 6,
-    "eric": 265,
-    "phil": 580,
-    "stan": 420,
+    "eric": 267,
+    "phil": 592,
+    "stan": 422,
     "masterchief": 171,
-    "harman": 208,
-    "trump": 224,
-    "moist": 39,
+    "harman": 211,
+    "trump": 234,
+    "moist": 43,
     "dagoth": 5,
     "zesty": 37,
     "linus": 40,
@@ -919,7 +920,7 @@
     "ones": 2,
     "harmon": 5,
     "rage": 1,
-    "bill": 11,
+    "bill": 13,
     "gnome": 2,
     "kanye": 2,
     "post": 1,
@@ -1259,7 +1260,7 @@
     "alert": 1,
     "neurotic": 1,
     "choose": 1,
-    "breaking": 6,
+    "breaking": 7,
     "krill": 1,
     "time": 1,
     "wars": 2,
@@ -1449,7 +1450,7 @@
     "optimus": 1,
     "language": 1,
     "forrest": 2,
-    "biden": 8,
+    "biden": 9,
     "abuser": 1,
     "dickers": 1,
     "pirate": 1,
@@ -1465,7 +1466,9 @@
     "obiwan": 1,
     "braco": 1,
     "requesting": 1,
-    "wow": 1
+    "wow": 1,
+    "obama": 1,
+    "email": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10513,9 +10516,336 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228": {
+      "title": "WHAT THE HELL JUST HAPPENED WITH THE LCU?!?!?!?!",
+      "start_ts": 1791568948,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "any9_NeD7Dg",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1791613852,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Cheer1000 Phil: I called up manager and yelled at her what the fuk man! Is it because Israel told you soo from 10000 miles away?! Well apparently that was not the case but manager told me she saw my May 1st burst video trailer before they started Samurai cop movie in front of 200 audiences and 20 children. Trump:   Listen Phil. I love you. Meet me up on Epstein Island. I will be there in my leather lingerie and whipping stick. While ghost of Epstein will watch us. Phil: be right there!",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791613071,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Cheer1000 Phil: I got rejected by Burlington warehouse. They Thank you very much for your recent application to the Seasonal Retail Stocking Associate - Part Time with Burlington Stores. We have reviewed your application and we are sorry to inform you that you do not meet the minimum qualifications for this position.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791612957,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Cheer1000 Phil: Listen Rich I applied for stocker role at Burlingtin warehouse. The next day I got this email:",
+      "commands": [
+        "phil",
+        "email"
+      ]
+    },
+    {
+      "ts": 1791610699,
+      "username": "@AK86-e4l",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: No impulse control.... Like a may first burst",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791608984,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: I can't grab my posi. PHIL HELP ME FIND IT",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791608886,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: BURST BURST! (yoda) BURST! BURST BURST BURST",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791600719,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: Jesus christ, she looks like she merged with a demon",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791600492,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Bill: This subversive advertising for tales from the crypt with the crypt keeper playing this Susan dell character is just unbelievable",
+      "commands": [
+        "bill"
+      ]
+    },
+    {
+      "ts": 1791598177,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Eric: Review Tech USA,remember to wash your hands!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1791597187,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: listen, zoom into my yuge ass. be a man",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791596115,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: I AM THE LAW! I am the master of war crimes, believe me. I never was on that island. that was crooked Joe. Biden: oh go suck a dick you shriveled orange asshole! Obama: thanks Obama",
+      "commands": [
+        "trump",
+        "biden",
+        "obama"
+      ]
+    },
+    {
+      "ts": 1791595863,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: Trump would you Jailbreak your PS5? Trump: what is that? If jailbreak means breaking law and anticonstitution then sign me up. It'll tremendous",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791594536,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Eric: why can't I suck a friend's nipple to comfort him without being made fun of? his were tender from being twitted. want me to suck yours dickers?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1791593777,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: men, I farted. it was robust and meaningful",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791592369,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Harman: release the messages now becky.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1791590026,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: the LCU can eat shit and die! keem is nothing but a manipulative cock sucker. the galactic empire of men will destroy any remnants of the LCU. Stan: and im gonna get some of keems ass mmmmmmmm!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1791589476,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: attention all men! attention, all men! this is a man emergency! a man among men has arrived! and Jesus christ he is hard! embrace the farts men",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791586200,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Moist: if you want a good laugh look up \"Keemstar shut up\" from H3 it's a short 15 second clip and its hilarious.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1791585766,
+      "username": "@DigitalMelanin",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: I don't see Boogie having a successful career post LoLcow live. He should just beg for $500 everyday for Pok\u00e9mon pack rips like me.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791581444,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Harman: listen lets go to Rex Kwon Do rich and restart the manoshoere lets go. \"Bow to your sensei!\"",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1791579065,
+      "username": "@DarthOmegas",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Trump: your not fooling your audience They know you take dark money from the Bird Survelience lobby, Flock was all them, was the birds all along",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1791578971,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: enter code DEVOUR for a ROBUST DSP Tries It!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791578112,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Stan: Mmm its so Hefty, Tangy, and CREAMY uhdsffsf",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1791576576,
+      "username": "@lyokowarrior4296",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "phil: i love how phil takes every conceivable opportunity to be a condescending a hole. he is incapable of not insulting someone.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791575499,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Moist: oh did you see or have seen Dsp's comments on gears e-day? He is getting desperate for a Asmon collabe.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1791571934,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Harman: Listen keem tried to glaze your donut.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1791571380,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Moist: Didn't keem get some woman about revenge corn about you too before?",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1791571313,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: Keem pulled a QuantumTV calling Lauren",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1791570922,
+      "username": "@KayNubbs",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Bill: BREAKING: There\u2019s a new disease spreading that gives you diarrhea that\u2019s resistant to treatment. Wear a rubber men",
+      "commands": [
+        "bill",
+        "breaking"
+      ]
+    },
+    {
+      "ts": 1791570753,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Moist: I'll never forget boogie getting on all fours and begging and apologized to keemstar because he went on arguing with muta on your stream.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1791570593,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "message": "Phil: My mother twitted my fucking tipples as part of the abuse. My dad also twisted my balls and dick.",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1791333650,
       "username": "solidpakamericanhorseman",
