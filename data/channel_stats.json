@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791357708,
+  "updated_ts": 1791615868,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1946,7 +1946,8 @@
     "playing_some_bulletstorm_pc_2017-01-05",
     "playing_some_fear_pc_version_pt2_2017-01-03",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
-    "the_tcap_man_marathon_stream_2026-10-06_220620"
+    "the_tcap_man_marathon_stream_2026-10-06_220620",
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35013,6 +35014,23 @@
       "avg_chat_mpm": 5.84,
       "avg_active_chatters": 13.69,
       "percent_paused": 50.4
+    },
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228": {
+      "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+      "title": "WHAT THE HELL JUST HAPPENED WITH THE LCU?!?!?!?!",
+      "start_ts": 1791568948,
+      "end_ts": 1791615671,
+      "duration_sec": 46723,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 869.05,
+      "donation_count": 153,
+      "donations_per_min": 1.116,
+      "peak_viewers": 455,
+      "avg_viewers": 360.88,
+      "avg_chat_mpm": 7.34,
+      "avg_active_chatters": 19.05,
+      "percent_paused": 61.9
     }
   }
 }
