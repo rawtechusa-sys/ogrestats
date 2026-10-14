@@ -823,6 +823,25 @@ function fmtElapsed(startTs, ts) {
     : `${m}:${String(sec).padStart(2,'0')}`;
 }
 
+// Our Rumble rebroadcast archive (curator-set metadata `rumble_archive_url`).
+// It is one video for the whole stream, so it is the archive only when no
+// YouTube archive exists: no segment carries a YouTube id, and
+// youtube_archive_id is absent or merely points at the source VOD. Deep-link
+// offsets anchor on rumble_start_ts, else start_ts. Returns null otherwise.
+function rumbleArchive(meta) {
+  const raw = meta && meta.rumble_archive_url;
+  if (!raw) return null;
+  const hasYouTube = (Array.isArray(meta.segments) && meta.segments.some(s => s.archive_id))
+    || (meta.youtube_archive_id && meta.archive_is_source_vod !== true);
+  if (hasYouTube) return null;
+  let url;
+  try { url = new URL(raw); } catch { return null; }
+  if (url.protocol !== 'https:' || !/(^|\.)rumble\.com$/.test(url.hostname)) return null;
+  // Drop the share-tracking query (?e9s=...); deep links append ?start=.
+  return { url: url.origin + url.pathname,
+           start_ts: meta.rumble_start_ts != null ? meta.rumble_start_ts : meta.start_ts };
+}
+
 function escHtml(str) {
   return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
@@ -1342,9 +1361,14 @@ async function loadStream(streamId) {
     // just loads whichever file sorts first.
     const iaPath = (id, file) => encodeURIComponent(id) +
       (file ? '/' + encodeURIComponent(file) : '');
+    // Our Rumble rebroadcast is one video for the whole stream (it never splits
+    // on a YouTube broadcast restart), so it stands in only when no YouTube
+    // archive exists -- see rumbleArchive().
+    const rumble = rumbleArchive(meta);
     const archiveHref =
       (meta.youtube_archive_id && meta.archive_is_source_vod !== true)
         ? `https://youtu.be/${encodeURIComponent(meta.youtube_archive_id)}`
+        : rumble ? rumble.url
         : (meta.archive_org_id ? `https://archive.org/details/${iaPath(meta.archive_org_id, meta.archive_org_file)}` : null);
     const vodRow = (id, label, href, missing) =>
       `<span class="vod-row" id="${id}">${href
@@ -1358,7 +1382,7 @@ async function loadStream(streamId) {
       seg.archive_id
         ? `https://youtu.be/${encodeURIComponent(seg.archive_id)}`
         : (seg.archive_org_id ? `https://archive.org/details/${iaPath(seg.archive_org_id, seg.archive_org_file)}` : null);
-    const archiveParts = (Array.isArray(meta.segments) && meta.segments.length > 1)
+    const archiveParts = (!rumble && Array.isArray(meta.segments) && meta.segments.length > 1)
       ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
       : null;
     const archiveRows = archiveParts
@@ -1534,7 +1558,10 @@ async function loadStream(streamId) {
       // each donation can deep-link into whichever video was live at its moment.
       // A durable archive (archive_builder.py) also carries an archive_org_id
       // Internet Archive mirror used as a fallback, anchored at archive_start_ts.
-      const segments = (Array.isArray(meta.segments) && meta.segments.length)
+      const rumble = rumbleArchive(meta);
+      const segments = rumble
+        ? [{ rumble_url: rumble.url, start_ts: rumble.start_ts }]
+        : (Array.isArray(meta.segments) && meta.segments.length)
         ? [...meta.segments].sort((a, b) => a.start_ts - b.start_ts)
         : ((meta.youtube_archive_id || meta.archive_org_id)
             ? [{ archive_id: meta.youtube_archive_id || null,
@@ -1549,6 +1576,8 @@ async function loadStream(streamId) {
       function buildVodLink(seg, tSec) {
         if (seg.archive_id)
           return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+        if (seg.rumble_url)
+          return `${seg.rumble_url}?start=${tSec}`;
         if (seg.archive_org_id)
           return `https://archive.org/embed/${encodeURIComponent(seg.archive_org_id)}${
             seg.archive_org_file ? '/' + encodeURIComponent(seg.archive_org_file) : ''}?start=${tSec}`;

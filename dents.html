@@ -669,9 +669,30 @@ function fmtElapsed(startTs, ts) {
     : `${m}:${String(sec).padStart(2,'0')}`;
 }
 
+// Our Rumble rebroadcast archive (curator-set metadata `rumble_archive_url`).
+// It is one video for the whole stream, so it is the archive only when no
+// YouTube archive exists: no segment carries a YouTube id, and
+// youtube_archive_id is absent or merely points at the source VOD. Deep-link
+// offsets anchor on rumble_start_ts, else start_ts. Returns null otherwise.
+function rumbleArchive(meta) {
+  const raw = meta && meta.rumble_archive_url;
+  if (!raw) return null;
+  const hasYouTube = (Array.isArray(meta.segments) && meta.segments.some(s => s.archive_id))
+    || (meta.youtube_archive_id && meta.archive_is_source_vod !== true);
+  if (hasYouTube) return null;
+  let url;
+  try { url = new URL(raw); } catch { return null; }
+  if (url.protocol !== 'https:' || !/(^|\.)rumble\.com$/.test(url.hostname)) return null;
+  // Drop the share-tracking query (?e9s=...); deep links append ?start=.
+  return { url: url.origin + url.pathname,
+           start_ts: meta.rumble_start_ts != null ? meta.rumble_start_ts : meta.start_ts };
+}
+
 function buildVodLink(seg, tSec) {
   if (seg.archive_id)
     return `https://youtu.be/${encodeURIComponent(seg.archive_id)}?t=${tSec}`;
+  if (seg.rumble_url)
+    return `${seg.rumble_url}?start=${tSec}`;
   // archive_org_file is set when the item is the shared third-party rtustreams
   // corpus rather than a one-video item we made; without it the player loads
   // whichever of its several hundred files sorts first.
@@ -700,6 +721,8 @@ function buildSourceLink(smeta, tSec) {
 // ids anchored at archive_start_ts ?? start_ts).
 function streamSegments(smeta) {
   if (!smeta) return [];
+  const rumble = rumbleArchive(smeta);
+  if (rumble) return [{ rumble_url: rumble.url, start_ts: rumble.start_ts }];
   if (Array.isArray(smeta.segments) && smeta.segments.length)
     return [...smeta.segments].sort((a, b) => a.start_ts - b.start_ts);
   if (smeta.youtube_archive_id || smeta.archive_org_id)

@@ -12,16 +12,6 @@
   "source_channel": "rtustreams",
   "source_platform": "twitch",
   "start_ts_aligned": true,
-  "segments": [
-    {
-      "archive_id": "yHWUi4m2Ito",
-      "start_ts": 1791324410
-    },
-    {
-      "archive_id": "TM-UxJ9NUjQ",
-      "start_ts": 1791346205
-    }
-  ],
-  "youtube_archive_id": "TM-UxJ9NUjQ",
-  "archive_is_source_vod": false
+  "rumble_archive_url": "https://rumble.com/v7ghkro-rtu-restream.html",
+  "rumble_start_ts": 1791324382
 }
