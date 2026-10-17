@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791615870,
+  "updated_ts": 1792215512,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -140,7 +140,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
-    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+    "the_last_marathon_stream_2026-10-16_163827"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1665,6 +1666,16 @@
       "segments": null,
       "source_vod_id": "any9_NeD7Dg",
       "source_platform": "youtube"
+    },
+    "the_last_marathon_stream_2026-10-16_163827": {
+      "title": "The Last (Marathon) Stream...",
+      "start_ts": 1792168707,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "cKdi4bufjIw",
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -2237,6 +2248,78 @@
           "moderator": null,
           "reason": null,
           "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+        }
+      ]
+    },
+    "dspancakes": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792177786,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1548618848"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792177786,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+        }
+      ]
+    },
+    "zorkmetal": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792177961,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1547744456"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792177961,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+        }
+      ]
+    },
+    "gameshockunderground": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792203751,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1530565423"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792203751,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_last_marathon_stream_2026-10-16_163827"
         }
       ]
     }
