@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791615863,
+  "updated_ts": 1792215505,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -874,7 +874,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
-    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+    "the_last_marathon_stream_2026-10-16_163827"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9932,6 +9933,16 @@
       "segments": null,
       "source_vod_id": "any9_NeD7Dg",
       "source_platform": "youtube"
+    },
+    "the_last_marathon_stream_2026-10-16_163827": {
+      "title": "The Last (Marathon) Stream...",
+      "start_ts": 1792168707,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "cKdi4bufjIw",
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -10636,6 +10647,22 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1792173206,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "He\u2019s mad because he doesn\u2019t remember the last time kat got this wet for him. I don\u2019t know why he\u2019d care since he\u2019s supposedly sexless!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792172781,
+        "type": "superchat",
+        "amount_usd": 10.04,
+        "amount_raw": "CA$13.99",
+        "message": "Eric: Is Phil still going on about Pizza Hut? Are we still waiting for him to take a bite of the pizza he got 2 weeks ago? If it was me, I wouldn\u2019t be able to wait to have your breadstick in my mouth!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791608158,
         "type": "superchat",
@@ -13758,6 +13785,38 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1792200614,
+        "type": "superchat",
+        "amount_usd": 2.51,
+        "amount_raw": "CA$3.50",
+        "message": "the plumber is all about pipes not dolls",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199263,
+        "type": "superchat",
+        "amount_usd": 7.18,
+        "amount_raw": "CA$10.00",
+        "message": "It was a projection as if it was a kid he was projecting",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792195229,
+        "type": "superchat",
+        "amount_usd": 2.51,
+        "amount_raw": "CA$3.50",
+        "message": "Are you exited for the 1500$ 2027 samsung galaxy?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792188654,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 56 months",
+        "message": "56 months the restrictions on messages is real",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790639405,
         "type": "superchat",
@@ -18143,6 +18202,14 @@
     ],
     "evildetrution5426": [
       {
+        "ts": 1792209898,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I wonder whichtestament or denomination she follow",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790645276,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -20627,6 +20694,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1792203398,
+        "type": "superchat",
+        "amount_usd": 2.11,
+        "amount_raw": "A$2.99",
+        "message": "Stan: what do you call a hairy bear? My mr Masucci",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790810316,
         "type": "superchat",
         "amount_usd": 2.11,
@@ -20782,6 +20857,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1792203776,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791585766,
         "type": "superchat",
@@ -21240,6 +21323,38 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1792214326,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: (door_knock) RICH! need some PEA NIS.D I C K",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792213569,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: OH UH AH! OH UM HMM! HA! NO! burst! AH! AHH!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792207088,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792169781,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791609795,
         "type": "superchat",
@@ -22260,6 +22375,70 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1792205483,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: the only thing coming out of me are loads and turds. Stan: hey load up my cake mix, I need some of that special sauce. mmmmm ohhh yeaaa daddy!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792200534,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: one may say those cakes will be...loaded. extra protein!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199633,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: uhh dad, the screen behind you...",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199094,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: wait, dont start this yet. I need more alcohol.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792198024,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: oh ill fill your hole daddy! woooo yeaaaa!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792193052,
+        "type": "superchat",
+        "amount_usd": 50.0,
+        "amount_raw": "$50.00",
+        "message": "Trump: listen, shove that sharpie up yours ass and use the power of the farts to shoot it out at Mach Jesus christ. unleash the nipple, ripple, nipple. all men get hard! it's time for shirtless men! and man women! boobs are life!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792190932,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: men, the baked beans, corn beef hash, and spam are kicking in! I am fully embracing the true power of the farts! oh sweet Jesus, it won't stop! I fear the brown is coming with a vengeance! fuck",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792188445,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "Trump: attention all men! attention all men! a man among men has arrived! its time to rise, get hard, and have sword fights with loads blowing rapidly",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791600719,
         "type": "superchat",
@@ -30878,6 +31057,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1792177224,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "remember phil is so sheltered, he thought meal prepping meant buying from sites like factory (thwomp)(sm64_hurt) (goofy_yell)",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792175530,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 59 months",
+        "message": "prep cooking is an alien concept to phil. (yoda)",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791576576,
         "type": "superchat",
@@ -39709,6 +39904,14 @@
     ],
     "Blaqk_Sheep": [
       {
+        "ts": 1792169358,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "OK POPS YOU KNOW WE AT THE 45 MONTH WHEN DO WE GET NEW CUCUMBERS WHAT ARE WE DOING TODAY I WANT TO HEAR ABOUT THE RECENT HAPPENINGS :soft_ice_cream::pie::cut_of_meat::hole::soft_ice_cream::pie::cut_of_meat::hole::ok_hand:",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1787797744,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -40024,6 +40227,30 @@
       }
     ],
     "iswordlogici7760": [
+      {
+        "ts": 1792200652,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "you just know he didnt clean up the stray ropes",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199140,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "dont be judgey. never gotten horny before?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792175219,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 50 months",
+        "message": "watching with airplane wifi rn. im higher than you. birds.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791611461,
         "type": "superchat",
@@ -43987,6 +44214,14 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1792171722,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I heard there may be a new vaccine called Tardacislon, side effects may include less open racists, return to somewhat normality, and accountability",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791579538,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -45380,6 +45615,46 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1792193663,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "The shit Keem pulls doesn't work outside YouTube",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792193498,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792192961,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, TechTalk was soo good. You gotta try again",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792192846,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "How much to write POO on your shirt with a sharpie",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792192644,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Its been 2years can you tittle fok the sausage now",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791598838,
         "type": "superchat",
@@ -60545,6 +60820,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1792205834,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "wait a sec. didnt she say she cant watch horror movies because of her religion, but can watch Constantine. a movie that shows hell and delves into self deleting and religous themes?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791597486,
         "type": "membership",
         "amount_usd": 1.99,
@@ -65501,6 +65784,22 @@
     ],
     "karasub2836": [
       {
+        "ts": 1792174830,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "not much just working... thought I'd harass you with a super chat lol....:rooster::chicken::turkey::hatching_chick::baby_chick::front_facing_baby_chick:",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792174594,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Big Bird what's up",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790275241,
         "type": "membership",
         "amount_usd": 1.99,
@@ -66736,6 +67035,70 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1792215108,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Careful Review Tech USA #2 (i_see_you)",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792214692,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: (slow_clap) Congrats Rich! 13 hours!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792214059,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: (peeing) Review Tech USA,I am not drunk dude",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792213821,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Rich, You better not mention my Pikachu!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792212305,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: Review Tech USA, I am a bit tipsy but still enjoying the last marathon stream. E X P O S E D , exposed exposed exposed!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179713,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Jay what is the beef with RIch now?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179477,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Review Tech USA, Let's play Nintendo games",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179266,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: Review Tech USA, remember with $5000 you could buy a lot of tech. The choice is yours!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791598177,
         "type": "superchat",
@@ -68679,6 +69042,30 @@
     ],
     "yapyapjr8908": [
       {
+        "ts": 1792207430,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Listen he loved that Elmo just as much as I loved Pikachu.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792176677,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Moist: You ever watched the video called the gooniversary? its on youtube its so bizarre it feels like I'm watching a real life south park skit.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792172257,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: listen watch my a$$ I put the capture card and SSD in my computer for 30 minutes to a hour and not bring the camera closer.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791592369,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -70589,6 +70976,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1792193474,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "its better to com in the sink than sink in the com",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791587662,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -70964,6 +71359,22 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1792213737,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Ok 8BE, the first, second and third stringers all left the LCU. Now\u2019s your chance to shine. Go get \u2018em kid",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792209455,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Ugh I really hate this fodder. If we try to argue we look like devil worshippers Satanism is stupid and we can all roll our eyes together and move on to things that aren\u2019t a blip in size and scope.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791586578,
         "type": "superchat",
@@ -71664,6 +72075,78 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1792200322,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: It's time for the routine poop collection daddy! (pants_unzip) (augh) (augh) (augh)",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199495,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "stan: while I was jorking my peenar I thought something was wrong, then I remembered I lost my hands in a car accident 2 years, who was jorking me?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792197879,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "If you fill our butthole with helium, super glue your cheeks shut you wont float away like a human balloon You will vomit, pass out, wake up in the hospital after they pry you open and deflate you like a meat whoopee cushion",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792184091,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "this halloween dress as chris hansen and watch people give candy to kids then ask the people \"Why don't you have a seat right there\"",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792175480,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "i can't beat the final boss of dead island two, he's too hard.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792174034,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "dont take so much that you stare at the camera in silence for legit 5 minutes straight like last time",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792173489,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: Be strong like the ass hair....no sunlight....no room to grow...is constantly putting up with shit....yet still finds a way to grow!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792172952,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump supposedly fired Katie Zacharia today",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792170477,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Have you thought about Men today?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790982849,
         "type": "superchat",
@@ -75987,6 +76470,14 @@
     ],
     "REDIVY78": [
       {
+        "ts": 1792171303,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "Joined!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790367657,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -79957,6 +80448,14 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1792177053,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "(Eating) Phil: I have inhaled two slices of pizza. And it\u2019s a disgrace to my Italian heritage and American freedom. I\u2019ll try another. (Eating) GROSS!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1787966328,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -80142,6 +80641,22 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1792210649,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "She is blissfully unaware of her contradictions",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792183114,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You and Jay had chemistry. Something LCU fans didn't want. Keem wanted you guys to be at eachothers throats for views",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791610699,
         "type": "superchat",
@@ -80644,6 +81159,14 @@
       }
     ],
     "jiggyjoeryan": [
+      {
+        "ts": 1792170468,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich sorry my banana changed color- my old card expired so my payment failed without me noticing. back to square one :pensive_face:.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1786566737,
         "type": "superchat",
@@ -84205,6 +84728,30 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1792199520,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You can't even just buy your kid a new Elmo after that, because you wouldn't be able to look at your kid playing with any Elmo ever again. :nauseated_face::face_vomiting:",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792198183,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "Listen, get a DJ gig as a joke and spin this",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179931,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Just approved the design for my campaign flyers for my City Commissioner race. There is so much insanity in local elections. I'm gonna win though.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791578895,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -86366,6 +86913,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1792176212,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "Happy Retirement Richie it\u2019s the last stream ever",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790016912,
         "type": "superchat",
@@ -90425,6 +90980,14 @@
     ],
     "Jayhooft": [
       {
+        "ts": 1792179301,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "I\u2019m suing you for using my video Rich.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790798606,
         "type": "membership",
         "amount_usd": 1.99,
@@ -91262,6 +91825,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1792169521,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Also I watched the GamerFromMars vid on Lolcow Live. Didn\u2019t realise DSP was asked to be a host. Imagine him at fat camp.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792169187,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "RIP RJ Mitte aka Walt Jr. from Breaking Bad. So sad when someone so young ends their own life.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791580089,
         "type": "superchat",
@@ -99431,6 +100010,22 @@
     ],
     "change1ing": [
       {
+        "ts": 1792199860,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "the property value went down after that elmo-sode.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199555,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: I tickled Elmo on May First.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791600492,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -100524,6 +101119,38 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1792207169,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792176365,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 32 months",
+        "message": "Just leave the camera on the whole time",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792171045,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792169891,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790835949,
         "type": "giftmembership",
@@ -103668,6 +104295,14 @@
       }
     ],
     "RetroDrew-g6t": [
+      {
+        "ts": 1792200056,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "ive always had the eerie feeling chris will be found to be everything hes against I really truly hope im very wrong",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790835919,
         "type": "giftmembership",
@@ -107291,6 +107926,62 @@
     ],
     "WiiklyReviews": [
       {
+        "ts": 1792214556,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "why im glad i keep alot of my old school games",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792214345,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I will say loved your snes knock off vid hilarious",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792214212,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm just one who plays what i love even if niche.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792214064,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'll admit i got into Youtube (reviews and etc long ago and left.) But i do play on Twitch sometimes..But anyways im glad i never got famous.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792211448,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "sugar free energy drink. but good.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792211385,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "have you ever tried Alani? I like cosmic flavor",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792180308,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Yo Rich. Hope your days going alright. I finished my Trails in the Sky 2nd game last Night and IMO its GOTY. Also hope you all have a great weekend!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790993399,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -107542,6 +108233,14 @@
       }
     ],
     "TheTenoray": [
+      {
+        "ts": 1792188965,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Just copped myself a retroid pocket nova it's my first android emulation handheld. might be a start of a new addiction. birds and men!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791570944,
         "type": "superchat",
@@ -107802,6 +108501,14 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1792203697,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Did you see the dem who did a TV interview sloshed",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791580428,
         "type": "superchat",
@@ -111156,6 +111863,14 @@
       }
     ],
     "Rayzor_Blaydez": [
+      {
+        "ts": 1792209366,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790640314,
         "type": "membership",
@@ -127915,6 +128630,30 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1792198879,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen Rich, for success, u need a Canadian editor",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792194024,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen--become \"more than a roommate\" with Jay",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792193441,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen: I'm gonna need 1 tech talk membership please. Imagine being keem, having ALR, RTU, Jay, David Jaffe, Wings etc and squandering it all.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791597151,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -128860,6 +129599,14 @@
       }
     ],
     "JustChris-00": [
+      {
+        "ts": 1792173700,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790983947,
         "type": "superchat",
@@ -130774,6 +131521,78 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1792213621,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hi dad & bird family I got a 95% on my midterm for human development I nailed it down did it for 30 min and got it knocked out! I love all, big birds!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792200260,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "So I just saw the actman made a post on his feed on YouTube about his mother, act mom has gotten into what appears to be an auto accident and is undergoing a spinal surgery! Go check my dude! :loudly_crying_face:",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199981,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I have a midterm to do later tonight after the stream so I appreciate this break from academics for now! Thank you rich & bird family for the laughter",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792199785,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I am sitting here just got back to the stream after two hours of laundry! Hello! This is absolutely disgusting & I wonder what his hard drive has on it cause dang this is disturbing :flushed_face: thank you father",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792192428,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Is there absolutely nothing that can be legally done about Keem? I\u2019m certain a judge of moral standing would want this man thrown under a jail! This is mind blowing to victims and their families",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189869,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I want to also say that this Christmas break I\u2019m doing a Star Wars clone wars in chronological order! Has anyone else done this? It sounded fun to me!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189638,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I\u2019m going to be real; thank you for all of the streams both normal & marathon because the undue stress all of the college students I know are feeling right now is off the Geiger counter levels! Awful!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792180903,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Took a Friday off from campus to be here & in having a great time! I want to say, between the midterms & dude bro incels that it makes me reach for the herb a little bit more! Stay lifted bird family!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792180402,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Hi there dad! What\u2019s good rich? The council of men is reporting that to all of the dodger fans that the dynasty run lives and dies in New York! Have a beautiful weekend, & remember go vote very soon!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791586839,
         "type": "superchat",
@@ -142783,6 +143602,14 @@
     ],
     "Sphericalman01": [
       {
+        "ts": 1792203681,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Eric: Can't figure out if Halloween is good or not, but tattoos are A Okay!! Phil: My stance on tattoos is make a contribution then I'll berate you!!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791578971,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -143276,6 +144103,14 @@
       }
     ],
     "GlamerousFrog": [
+      {
+        "ts": 1792169700,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "Staring down the barrel of a repair bill of a grand for a new exhaust. How fun. At least GTA6 will be out soon to distract me. Worst timing ever :frog:",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790633741,
         "type": "sub",
@@ -143798,6 +144633,14 @@
       }
     ],
     "tougeruzbay": [
+      {
+        "ts": 1792170311,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Stan: Listen you birdman, new gta trailer came out, still debating to buy it, let\u2019s reenact the scene like Jason and Lucia did and add Carlos",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790275460,
         "type": "superchat",
@@ -150715,6 +151558,14 @@
     ],
     "macthaiguy": [
       {
+        "ts": 1792174645,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1789431247,
         "type": "sub",
         "amount_usd": 5.99,
@@ -151121,6 +151972,14 @@
     ],
     "ITSJFE": [
       {
+        "ts": 1792175959,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen...im lifting weights at home in my undergarments while I watch a man",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790369566,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -151298,6 +152157,14 @@
       }
     ],
     "gunkiller77": [
+      {
+        "ts": 1792203353,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "As the tree said to the lumberjack, I\u2019m stumped",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790649971,
         "type": "membership",
@@ -152528,6 +153395,62 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1792208852,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Eric: I'm going tewf huck ou inda asth about it, Elmo. I hear ya gigglin from the cupboard, I'm gonna give ya some sweet Van Luvens!! Ooof hmrph ouef!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792197249,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:Ey! This has Nothing to do with Nintendo!!!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792183576,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Phil:Kat, now's not the time. No!! Stop, Kat!!(stab)Aowou(oof)ahowAhowO(stab)AwawAhaho(stab)AhwaAhhwahwa(stab)aahOaoofawoh(quack)wOawhauh o oh. ow Ah!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792180538,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179408,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:Gubgub gub gub Gubgub gub Gub Gub gubGub!!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792171091,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Phil: Who's your daddy, who's your daddy. Who's your daddy, who's your daddy. Who's your daddy, who's your daddy. Your Demolition Daddy!!!!!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792170066,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Bress",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791582560,
         "type": "superchat",
@@ -154367,6 +155290,14 @@
     ],
     "Robust_80s_coffeelover": [
       {
+        "ts": 1792176866,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil thinks that because he lost weight he can shit on all food.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1784266826,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -154522,6 +155453,14 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1792186210,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "LOOK HERE, LOOK LISTEN, its been 51 months and your still doing Marathon streams? Thats 51 months of Birds and Men and Breasts! Best combo! Mens asses",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790659763,
         "type": "superchat",
@@ -157559,6 +158498,14 @@
     ],
     "PutoPlatano": [
       {
+        "ts": 1792200950,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 50 months",
+        "message": "That storm that was near you just thunderthucked my whole neighborhood. I saw a bird in the lightning. The storm will henceforth be called thundercok",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790658801,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -157728,6 +158675,14 @@
       }
     ],
     "bammersvabamm822": [
+      {
+        "ts": 1792205752,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 32 months",
+        "message": "Trump: Did you see the greatest street fighter player of all time D S P win the side scrollers versus tournament? Phil now thinks he won EVO.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790833951,
         "type": "superchat",
@@ -171991,6 +172946,14 @@
     ],
     "Omar777i": [
       {
+        "ts": 1792182968,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "Got banned from discord for no reason canceling",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1783194486,
         "type": "membership",
         "amount_usd": 1.99,
@@ -173012,6 +173975,14 @@
       }
     ],
     "videotasticz": [
+      {
+        "ts": 1792214588,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 63 months",
+        "message": "Phil: Almost 12 hours? I can barely last 12 seconds. Can you caress Carlos & give us those clucks? I need to off-load myself iykyk",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790056177,
         "type": "superchat",
@@ -174915,6 +175886,14 @@
     ],
     "thevhsguy": [
       {
+        "ts": 1792176235,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 30 months",
+        "message": "Why no more marathons? Say it ain't so!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1782750958,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -175092,6 +176071,38 @@
       }
     ],
     "SnacCnebs": [
+      {
+        "ts": 1792190205,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "I don\u2019t know what Ive said to deserve to be banned. Why are you being like wings? Why Is just mentioning flagging a trigger for you?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189998,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "But why was mundane Matts career over because of it? If so many other YouTubers did it and nothing happened to it. Why was it a death sentence for him",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189762,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Why on YouTube flagging considered the worse possible thing. Worse than fake giveaways, scam even being a pdf. If you flag its like a death sentence",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189314,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "The big cheese crusaders used to troll Becky boop. And you used to defend her against them calling them losers for doing it. Do you regret that now?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1782750969,
         "type": "superchat",
@@ -176834,6 +177845,14 @@
       }
     ],
     "Mr.Substantial": [
+      {
+        "ts": 1792185881,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 26 months",
+        "message": "FARTAGE please. Bresstz",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1787269719,
         "type": "giftmembership",
@@ -179249,6 +180268,14 @@
     ],
     "BlackMetalGamerr": [
       {
+        "ts": 1792173200,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "pizza rolls are just m1dget Calzones",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790366546,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -180014,6 +181041,14 @@
       }
     ],
     "dsmush": [
+      {
+        "ts": 1792174032,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 the goal was hit for a Twitch grifters marathon but I don\u2019t think we\u2019ve had it yet have we? was supposed to be after TCAP 1",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1787545172,
         "type": "bits",
@@ -184506,6 +185541,14 @@
       }
     ],
     "rubesmagoobs": [
+      {
+        "ts": 1792176657,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "New sample for u, Aloiso - Tema R. Brazilian Funk",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790293211,
         "type": "superchat",
@@ -201877,6 +202920,54 @@
     ],
     "JacobstanfordOCD": [
       {
+        "ts": 1792199200,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "restart your stream & take all the edibles again!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792198150,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "sounds like something in a metal gear level. SNAKE",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792184964,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "castlevania but everytime U die. U take an edible.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792184116,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich. your to high. here's 2 bucks. you're fired",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792184037,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "he better be careful,he's gonna have Hansen knocking on his door before long. hitting him with that. What in the world do you think your doing.breasts",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792182480,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "reminds me of the quartering taking every sponsor.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790830480,
         "type": "membership",
         "amount_usd": 1.99,
@@ -210380,6 +211471,14 @@
       }
     ],
     "1BUFFWEEB": [
+      {
+        "ts": 1792213342,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Daniel never changes. That's why I'm glad I left.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1788059456,
         "type": "membership",
@@ -305609,6 +306708,22 @@
     ],
     "connor1187": [
       {
+        "ts": 1792196645,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "There is probably no fixing the lcu is there rich",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792193489,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "What up rich!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1706485049,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -369208,6 +370323,14 @@
       }
     ],
     "AndyMoranPhoto": [
+      {
+        "ts": 1792179841,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Look here, Richard, Listen! It's Friday and I just washed my nads! Please! Clap!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1701307651,
         "type": "superchat",
@@ -455053,6 +456176,14 @@
     ],
     "Dad_Brad": [
       {
+        "ts": 1792174092,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Phil barely 10 years old when he ate at Pizza Hut",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790798038,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -477976,6 +479107,14 @@
       }
     ],
     "EldenPickle": [
+      {
+        "ts": 1792181863,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790980059,
         "type": "giftmembership",
@@ -515733,6 +516872,14 @@
     ],
     "Pat12345-A": [
       {
+        "ts": 1792196540,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Been watching you since 2015 keep up the good work",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1649817280,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -547651,6 +548798,62 @@
     ],
     "solidpakamericanhorseman": [
       {
+        "ts": 1792211625,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 another Washington Post photojournalists got attacked by Israel terrorist settlers and IDF helped them. Nevermind US congress blocked the bill. Lets watch something entertaining. I need some laugh man",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792208577,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer200 News breaking an hour ago:Sony is now asking PS5 players on firmware 14.00 to update to 14.10 if they want to use PSN. Players who stayed on 14.00 to keep the possibility of a future jailbreak are now being asked to update before they can sign in. And it\u2019s not just PSN. Some players who stayed on 14.00 are now finding that newer games, like Dune: Awakening, won\u2019t even let them play without updating.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792207173,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 RICH I sent you email Leaked CBS audio shows foreign editor Shayndi Raice clashing with Holly Williams over Oct. 7 framing and Gaza death tolls, even threatening \u201cinsubordination.\u201d Clear internal fight over editorial control. Was CBS working all this time for Satanyahu or for America?!!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792205518,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Andy horkins from Maryland his clip going viral after accusing Democrats Biden admin responsible. Every single one of them started booing at him and got confronted by the very journalist he invited to his meeting \ud83d\ude06 absolute hilarious reaction by hasanabi and also check out Indiana drunk senator 3 minute clip",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792205083,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 same right wing grifter would not utter a single letter from Bible verse to pray and protect largelest population orphan and largest amputated children with LIMBS GONE! going through starvation! Newborn babies I don't want say further but u know. While Kyle Kulibnski today reporting that fking trump himself self pardon and entire Republican will be pardoned!! I hope supreme court is monitoring him!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792201466,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 what's up Rich and  chats. Like I said many times anyone who goes to Israel and kiss the wall. you will wake up next morning and  become someone like trump or predator. Can we watch Kyle kulinski reacting to nethyahu calling Obama antiseptic?! I think i saw that clip earlier. I can't believe Satanyahu would call former president that..they are soo screwed!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792185505,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Hey Rich how's it going man. Long time long time. How many decades has it been? Oh I forgot to mention Israel can go and f*k itself since they are nunber one war criminala worse than Nazis worse than Stalin. And compare their atrocious to Al qaeda or Taliban is sky and night difference. Yeah I said it. Anyway good to see u. Just for clarification is this you last stream of this year or marathon stream? Now ride your horse \ud83d\udc0e",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791613852,
         "type": "bits",
         "amount_usd": 10.0,
@@ -548809,6 +550012,14 @@
     ],
     "Ghostkilla-j7g": [
       {
+        "ts": 1792173084,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "If you were asked to fight keemstar,would you",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791570276,
         "type": "superchat",
         "amount_usd": 2.69,
@@ -549179,6 +550390,22 @@
     ],
     "VivaSumudPAKResistor": [
       {
+        "ts": 1792187344,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: this is why I love Israel wall. make america upskirter again. Phil: Trump release Epstin file while everyday will be my May 1st burst moment",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792186251,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "hey Rich solidpak sent you email. did you got it?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791609114,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -549513,6 +550740,22 @@
     ],
     "BossIog": [
       {
+        "ts": 1792201256,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Have Jay dress like Elmo and drive down there.",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792179867,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dude in the corner seems like a jealous loser 2 me",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1791577035,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -549660,6 +550903,46 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1792209806,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "If the Bible told her to harm someone....",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792203097,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "gamer chicks are replaceable, be hot & good voice",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792202256,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "I use to like her then she went MAGA and hateful!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792200736,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Melatonin Mac is a real Christian o just a grifter",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792189610,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Xbox exclusive games been on pc is fine rite?",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791612860,
         "type": "superchat",
@@ -550005,6 +551288,14 @@
     ],
     "ARetiredApplauseCounter": [
       {
+        "ts": 1792203600,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1789608592,
         "type": "sub",
         "amount_usd": 5.99,
@@ -550160,6 +551451,14 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1792189591,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 3 months",
+        "message": "je i could really go for some rotten brisket chili",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1791595407,
         "type": "superchat",
@@ -550331,6 +551630,14 @@
     ],
     "Bug-Catcher-Nik": [
       {
+        "ts": 1792173457,
+        "type": "superchat",
+        "amount_usd": 3.1,
+        "amount_raw": "DKK\u00a020.00",
+        "message": "Hi Rich! How's your day been? Love your streams",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
         "ts": 1790619274,
         "type": "superchat",
         "amount_usd": 7.75,
@@ -550356,6 +551663,14 @@
       }
     ],
     "AshxBashem": [
+      {
+        "ts": 1792169853,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I asked 4 proof in the comment section(Ozzy Cob)latest video about claims about your recent crashouts.since he didn't post any clips of u crashing out",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
       {
         "ts": 1790278226,
         "type": "superchat",
@@ -550727,6 +552042,44 @@
         "amount_raw": "$1.99",
         "message": "Rich has better chemistry with Taco Bell than LCU",
         "stream_id": "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+      }
+    ],
+    "The_Twiggy": [
+      {
+        "ts": 1792169785,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 5 months",
+        "message": "Any info you need hit me up",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      }
+    ],
+    "adrian92apodaca": [
+      {
+        "ts": 1792203432,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      },
+      {
+        "ts": 1792203311,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      }
+    ],
+    "landonbuckanaga6411": [
+      {
+        "ts": 1792212708,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Richard Burnell is a man",
+        "stream_id": "the_last_marathon_stream_2026-10-16_163827"
       }
     ]
   }
