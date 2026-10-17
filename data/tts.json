@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1791615858,
+  "updated_ts": 1792215500,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -874,17 +874,18 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
-    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228"
+    "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
+    "the_last_marathon_stream_2026-10-16_163827"
   ],
   "commands": {
     "men": 6,
-    "eric": 267,
-    "phil": 592,
-    "stan": 422,
+    "eric": 273,
+    "phil": 603,
+    "stan": 431,
     "masterchief": 171,
-    "harman": 211,
-    "trump": 234,
-    "moist": 43,
+    "harman": 215,
+    "trump": 243,
+    "moist": 44,
     "dagoth": 5,
     "zesty": 37,
     "linus": 40,
@@ -1163,7 +1164,7 @@
     "groups": 2,
     "nutshell": 1,
     "birds": 1,
-    "listen": 1,
+    "listen": 2,
     "oldies": 1,
     "opinion": 2,
     "qvc": 2,
@@ -1468,7 +1469,8 @@
     "requesting": 1,
     "wow": 1,
     "obama": 1,
-    "email": 1
+    "email": 1,
+    "dune": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10526,9 +10528,412 @@
       "segments": null,
       "source_vod_id": "any9_NeD7Dg",
       "source_platform": "youtube"
+    },
+    "the_last_marathon_stream_2026-10-16_163827": {
+      "title": "The Last (Marathon) Stream...",
+      "start_ts": 1792168707,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "cKdi4bufjIw",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1792215108,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Harman: Careful Review Tech USA #2 (i_see_you)",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792214692,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: (slow_clap) Congrats Rich! 13 hours!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792214588,
+      "username": "@videotasticz",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: Almost 12 hours? I can barely last 12 seconds. Can you caress Carlos & give us those clucks? I need to off-load myself iykyk",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792214326,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: (door_knock) RICH! need some PEA NIS.D I C K",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792214059,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: (peeing) Review Tech USA,I am not drunk dude",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792213821,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Harman: Rich, You better not mention my Pikachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792213569,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: OH UH AH! OH UM HMM! HA! NO! burst! AH! AHH!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792212305,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: Review Tech USA, I am a bit tipsy but still enjoying the last marathon stream. E X P O S E D , exposed exposed exposed!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792208852,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: I'm going tewf huck ou inda asth about it, Elmo. I hear ya gigglin from the cupboard, I'm gonna give ya some sweet Van Luvens!! Ooof hmrph ouef!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792208577,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Cheer200 News breaking an hour ago:Sony is now asking PS5 players on firmware 14.00 to update to 14.10 if they want to use PSN. Players who stayed on 14.00 to keep the possibility of a future jailbreak are now being asked to update before they can sign in. And it\u2019s not just PSN. Some players who stayed on 14.00 are now finding that newer games, like Dune: Awakening, won\u2019t even let them play without updating.",
+      "commands": [
+        "dune"
+      ]
+    },
+    {
+      "ts": 1792207430,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Harman: Listen he loved that Elmo just as much as I loved Pikachu.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792205752,
+      "username": "@bammersvabamm822",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: Did you see the greatest street fighter player of all time D S P win the side scrollers versus tournament? Phil now thinks he won EVO.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792205483,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: the only thing coming out of me are loads and turds. Stan: hey load up my cake mix, I need some of that special sauce. mmmmm ohhh yeaaa daddy!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792203681,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: Can't figure out if Halloween is good or not, but tattoos are A Okay!! Phil: My stance on tattoos is make a contribution then I'll berate you!!",
+      "commands": [
+        "eric",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792203398,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: what do you call a hairy bear? My mr Masucci",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792200534,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: one may say those cakes will be...loaded. extra protein!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792200322,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "stan: It's time for the routine poop collection daddy! (pants_unzip) (augh) (augh) (augh)",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792199633,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: uhh dad, the screen behind you...",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792199555,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: I tickled Elmo on May First.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792199495,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "stan: while I was jorking my peenar I thought something was wrong, then I remembered I lost my hands in a car accident 2 years, who was jorking me?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792199094,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: wait, dont start this yet. I need more alcohol.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792198024,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: oh ill fill your hole daddy! woooo yeaaaa!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792193441,
+      "username": "@DeportedSicilianGamer",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Listen: I'm gonna need 1 tech talk membership please. Imagine being keem, having ALR, RTU, Jay, David Jaffe, Wings etc and squandering it all.",
+      "commands": [
+        "listen"
+      ]
+    },
+    {
+      "ts": 1792193052,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: listen, shove that sharpie up yours ass and use the power of the farts to shoot it out at Mach Jesus christ. unleash the nipple, ripple, nipple. all men get hard! it's time for shirtless men! and man women! boobs are life!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792190932,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: men, the baked beans, corn beef hash, and spam are kicking in! I am fully embracing the true power of the farts! oh sweet Jesus, it won't stop! I fear the brown is coming with a vengeance! fuck",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792188445,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: attention all men! attention all men! a man among men has arrived! its time to rise, get hard, and have sword fights with loads blowing rapidly",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792187344,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: this is why I love Israel wall. make america upskirter again. Phil: Trump release Epstin file while everyday will be my May 1st burst moment",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792179841,
+      "username": "@AndyMoranPhoto",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: Look here, Richard, Listen! It's Friday and I just washed my nads! Please! Clap!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792179713,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: Jay what is the beef with RIch now?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792179477,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Harman: Review Tech USA, Let's play Nintendo games",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792179266,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Trump: Review Tech USA, remember with $5000 you could buy a lot of tech. The choice is yours!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792177053,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "(Eating) Phil: I have inhaled two slices of pizza. And it\u2019s a disgrace to my Italian heritage and American freedom. I\u2019ll try another. (Eating) GROSS!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792176677,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Moist: You ever watched the video called the gooniversary? its on youtube its so bizarre it feels like I'm watching a real life south park skit.",
+      "commands": [
+        "moist"
+      ]
+    },
+    {
+      "ts": 1792173489,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: Be strong like the ass hair....no sunlight....no room to grow...is constantly putting up with shit....yet still finds a way to grow!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792172781,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Eric: Is Phil still going on about Pizza Hut? Are we still waiting for him to take a bite of the pizza he got 2 weeks ago? If it was me, I wouldn\u2019t be able to wait to have your breadstick in my mouth!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792172257,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: listen watch my a$$ I put the capture card and SSD in my computer for 30 minutes to a hour and not bring the camera closer.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792171091,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Phil: Who's your daddy, who's your daddy. Who's your daddy, who's your daddy. Who's your daddy, who's your daddy. Your Demolition Daddy!!!!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792170477,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: Have you thought about Men today?",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792170311,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "the_last_marathon_stream_2026-10-16_163827",
+      "message": "Stan: Listen you birdman, new gta trailer came out, still debating to buy it, let\u2019s reenact the scene like Jason and Lucia did and add Carlos",
+      "commands": [
+        "stan"
+      ]
+    },
     {
       "ts": 1791613852,
       "username": "solidpakamericanhorseman",
