@@ -137,6 +137,63 @@
     return out;
   }
 
+  // ── A moderated user's last words ─────────────────────────────────────────
+  // A ban row says who and when but never why, so the row is near-useless on
+  // its own. The stream's chat.json holds the message that earned it.
+
+  // Normalized username key. Mirrors bans.py's `_norm_username` (strip a
+  // leading "@", trim) and folds case on top: chat authors are YouTube
+  // @handles / Twitch logins / Kick names, and the moderation row's `username`
+  // for the same person differs in exactly those two ways.
+  function normUsername(raw) {
+    return String(raw == null ? '' : raw).replace(/^@+/, '').trim().toLowerCase();
+  }
+
+  function normPlatform(raw) {
+    return String(raw == null ? '' : raw).trim().toLowerCase();
+  }
+
+  // The last message this user posted on this platform at or before the
+  // moderation event, or null. A message with no usable ts never matches --
+  // there is no way to place it relative to the event.
+  //
+  // The scan keeps the newest match instead of stopping at the first one, so an
+  // unsorted (or partly unsorted) `messages` array still gives the right
+  // answer. chat.json is sorted ascending in practice; this just does not
+  // depend on it.
+  function lastMessageBefore(messages, ev) {
+    if (!ev || typeof ev !== 'object') return null;
+    const user = normUsername(ev.username);
+    const platform = normPlatform(ev.platform);
+    if (!user || !platform || !Number.isFinite(ev.ts)) return null;
+    let best = null;
+    for (const m of (Array.isArray(messages) ? messages : [])) {
+      if (!m || typeof m !== 'object') continue;
+      if (!Number.isFinite(m.ts) || m.ts > ev.ts) continue;
+      if (normPlatform(m.platform) !== platform) continue;
+      if (normUsername(m.author) !== user) continue;
+      if (!best || m.ts > best.ts) best = m;
+    }
+    return best;
+  }
+
+  // Hang `{text, ts}` off every moderation event that has a preceding message,
+  // and return how many got one. An event with no match keeps NO field at all
+  // (absent, not null), so the renderer can test `ev.lastMessage` directly.
+  function attachLastMessages(moderation, messages) {
+    const msgs = Array.isArray(messages) ? messages : [];
+    if (msgs.length === 0) return 0;
+    let attached = 0;
+    for (const ev of (Array.isArray(moderation) ? moderation : [])) {
+      if (!ev || typeof ev !== 'object') continue;
+      const m = lastMessageBefore(msgs, ev);
+      if (!m) continue;
+      ev.lastMessage = { text: String(m.text == null ? '' : m.text), ts: m.ts };
+      attached++;
+    }
+    return attached;
+  }
+
   // Case-insensitive union of two tag lists; the first list's order and the
   // first-seen casing both win.
   function mergeTags(a, b) {
@@ -512,6 +569,7 @@
     subCount, computeGoalHits,
     MOD_ACCENT, MOD_TYPE_LABELS,
     normalizeModeration, modLabel, modTypeLabel, modDuration,
+    lastMessageBefore, attachLastMessages,
     makePlugin,
   };
 })(window);

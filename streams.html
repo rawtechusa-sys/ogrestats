@@ -579,6 +579,9 @@
   .ts-link    { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); transition: color 0.15s ease, border-color 0.15s ease; }
   .ts-link:hover { color: var(--accent-bright); border-bottom-color: var(--accent-bright); text-shadow: 0 0 8px rgba(var(--accent-glow-r),var(--accent-glow-g),var(--accent-glow-b),0.4); }
   .msg-cell   { font-family: 'Lora', serif; color: var(--text-muted); font-size: 14px; word-break: break-word; }
+  /* A moderated user's last chat message, quoted ahead of the row's own note --
+     dimmer and italic so it reads as a quotation, not as our own text. */
+  .mod-last-msg { font-style: italic; opacity: 0.85; }
 
   /* ── States ── */
   .loading-state, .empty-state, .error-state {
@@ -1199,6 +1202,17 @@ async function loadStream(streamId) {
     // extra fetch; drops rows with no username (see normalizeModeration).
     const moderation = ManualEvents.normalizeModeration(events);
 
+    // What each moderated user said just before the hammer fell. chat.json is
+    // a megabyte or more and most streams moderate nobody, so this is fetched
+    // HERE rather than in the Promise.all above -- a stream with no moderation
+    // events pays nothing. 404-tolerant and silent: legacy streams have no
+    // chat.json at all, which just means no message to show.
+    if (moderation.length > 0) {
+      const chat = await fetchJSON(`${RAW}/data/streams/${streamId}/chat.json`).catch(() => null);
+      const messages = (chat && Array.isArray(chat.messages)) ? chat.messages : [];
+      if (messages.length > 0) ManualEvents.attachLastMessages(moderation, messages);
+    }
+
     const startTs   = meta.start_ts;
     const endTs     = meta.end_ts;
     const isLive    = endTs == null;
@@ -1697,7 +1711,21 @@ async function loadStream(streamId) {
         if (ev.reason)    parts.push(ev.reason);
         if (ev.platform)  parts.push(`on ${ev.platform}`);
         const note   = parts.join(' · ');
-        const msg    = note ? `<span class="msg-cell" title="${note.replace(/"/g,'&quot;')}">${escHtml(note)}</span>` : '';
+        // The user's last words come FIRST: the note is platform bookkeeping,
+        // the message is the only thing that says why the ban happened.
+        const cells  = [];
+        const last   = ev.lastMessage;
+        if (last && last.text) {
+          const delta = Math.max(0, Math.round(ev.ts - last.ts));
+          // fmtDuration is minute-grained ("0m" under a minute), and most of
+          // these land seconds before the ban -- so borrow modDuration's
+          // compact seconds for the sub-minute case.
+          const ago   = delta < 60 ? (ManualEvents.modDuration(delta) || '0s') : fmtDuration(delta);
+          const tip   = `last message ${ago} before the ${label.toLowerCase()}`;
+          cells.push(`<span class="msg-cell mod-last-msg" title="${escHtml(tip)}">“${escHtml(String(last.text))}”</span>`);
+        }
+        if (note) cells.push(`<span class="msg-cell" title="${escHtml(note)}">${escHtml(note)}</span>`);
+        const msg    = cells.join(' · ');
         return `<tr data-evtype="${escHtml(evType)}">
           <td class="ts-cell">${tsLink(ev.ts, elapsedText(ev.ts))}</td>
           <td><span class="username">${escHtml(String(ev.username || '').replace(/^@+/, ''))}</span></td>
