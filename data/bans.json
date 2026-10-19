@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792215512,
+  "updated_ts": 1792388099,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -141,7 +141,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
-    "the_last_marathon_stream_2026-10-16_163827"
+    "the_last_marathon_stream_2026-10-16_163827",
+    "grifters_2026-10-18_232926"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1675,6 +1676,16 @@
       "archive_start_ts": null,
       "segments": null,
       "source_vod_id": "cKdi4bufjIw",
+      "source_platform": "twitch"
+    },
+    "grifters_2026-10-18_232926": {
+      "title": "Grifters",
+      "start_ts": 1792366166,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
       "source_platform": "twitch"
     }
   },
