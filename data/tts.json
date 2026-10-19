@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792215500,
+  "updated_ts": 1792388087,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -875,7 +875,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
-    "the_last_marathon_stream_2026-10-16_163827"
+    "the_last_marathon_stream_2026-10-16_163827",
+    "grifters_2026-10-18_232926"
   ],
   "commands": {
     "men": 6,
@@ -883,8 +884,8 @@
     "phil": 603,
     "stan": 431,
     "masterchief": 171,
-    "harman": 215,
-    "trump": 243,
+    "harman": 216,
+    "trump": 244,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -10538,9 +10539,39 @@
       "segments": null,
       "source_vod_id": "cKdi4bufjIw",
       "source_platform": "twitch"
+    },
+    "grifters_2026-10-18_232926": {
+      "title": "Grifters",
+      "start_ts": 1792366166,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1792377437,
+      "username": "respergu",
+      "platform": "twitch",
+      "stream_id": "grifters_2026-10-18_232926",
+      "message": "Cheer100  Harman: Review Tech USA number 2, I am number 1",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792366456,
+      "username": "chevydude454",
+      "platform": "twitch",
+      "stream_id": "grifters_2026-10-18_232926",
+      "message": "Trump: men, it's time go get hard, shoot some ropes, and embrace the true power of the farts!",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1792215108,
       "username": "@respergu13",
