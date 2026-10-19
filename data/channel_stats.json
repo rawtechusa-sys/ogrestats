@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792215510,
+  "updated_ts": 1792388098,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1948,7 +1948,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
-    "the_last_marathon_stream_2026-10-16_163827"
+    "the_last_marathon_stream_2026-10-16_163827",
+    "grifters_2026-10-18_232926"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35049,6 +35050,23 @@
       "avg_chat_mpm": 6.63,
       "avg_active_chatters": 17.74,
       "percent_paused": 74.8
+    },
+    "grifters_2026-10-18_232926": {
+      "stream_id": "grifters_2026-10-18_232926",
+      "title": "Grifters",
+      "start_ts": 1792366166,
+      "end_ts": 1792387893,
+      "duration_sec": 21727,
+      "youtube_archive_id": null,
+      "source_platform": "twitch",
+      "total_donations_usd": 227.16,
+      "donation_count": 43,
+      "donations_per_min": 0.6273,
+      "peak_viewers": 214,
+      "avg_viewers": 177.38,
+      "avg_chat_mpm": 7.05,
+      "avg_active_chatters": 15.87,
+      "percent_paused": 72.7
     }
   }
 }
