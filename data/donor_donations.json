@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792215505,
+  "updated_ts": 1792388091,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -875,7 +875,8 @@
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-06_190808",
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
-    "the_last_marathon_stream_2026-10-16_163827"
+    "the_last_marathon_stream_2026-10-16_163827",
+    "grifters_2026-10-18_232926"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9942,6 +9943,16 @@
       "archive_start_ts": null,
       "segments": null,
       "source_vod_id": "cKdi4bufjIw",
+      "source_platform": "twitch"
+    },
+    "grifters_2026-10-18_232926": {
+      "title": "Grifters",
+      "start_ts": 1792366166,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": null,
       "source_platform": "twitch"
     }
   },
@@ -42012,6 +42023,14 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1792366632,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Gay men.",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1790799670,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -42549,6 +42568,22 @@
       }
     ],
     "nialldude3": [
+      {
+        "ts": 1792366955,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 my bits didn\u2019t show up before so checking if it\u2019s working now",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792366691,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "When I hear Killing in the Name, I think of my girls Cheer100",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1791336936,
         "type": "bits",
@@ -43117,6 +43152,14 @@
       }
     ],
     "webb416": [
+      {
+        "ts": 1792375368,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1788831656,
         "type": "sub",
@@ -76681,6 +76724,14 @@
       }
     ],
     "TheMysteriousDrifter": [
+      {
+        "ts": 1792369029,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": ".",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1789453836,
         "type": "membership",
@@ -151936,6 +151987,14 @@
     ],
     "anythingaevery": [
       {
+        "ts": 1792367552,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1784674156,
         "type": "bits",
         "amount_usd": 0.5,
@@ -154983,6 +155042,14 @@
       }
     ],
     "EHGAMER96": [
+      {
+        "ts": 1792375524,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1787533713,
         "type": "sub",
@@ -165272,6 +165339,14 @@
     ],
     "AnAnonymousGifter": [
       {
+        "ts": 1792376446,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1791605163,
         "type": "giftsub",
         "amount_usd": 11.98,
@@ -167798,6 +167873,14 @@
     ],
     "sean_reagan": [
       {
+        "ts": 1792377525,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer100 Cheer100",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1791337914,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -168096,6 +168179,14 @@
     ],
     "freedomtower_studios": [
       {
+        "ts": 1792367838,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "I keep forgetting i can use my prime to subcribe!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1787004043,
         "type": "sub",
         "amount_usd": 5.99,
@@ -168113,6 +168204,14 @@
       }
     ],
     "superSONICstarrr": [
+      {
+        "ts": 1792378899,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Keep on burstin till the sun rises!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1789608803,
         "type": "sub",
@@ -168766,6 +168865,14 @@
     ],
     "nukacolaxeon": [
       {
+        "ts": 1792375362,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "4am lets go",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1788310572,
         "type": "sub",
         "amount_usd": 5.99,
@@ -168783,6 +168890,14 @@
       }
     ],
     "Masokista93": [
+      {
+        "ts": 1792374986,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1783650371,
         "type": "sub",
@@ -172046,6 +172161,14 @@
     ],
     "vackey23": [
       {
+        "ts": 1792366550,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Long live the destruction of the lcu",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1783388889,
         "type": "sub",
         "amount_usd": 5.99,
@@ -175068,6 +175191,14 @@
     ],
     "chevydude454": [
       {
+        "ts": 1792366456,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Trump: men, it's time go get hard, shoot some ropes, and embrace the true power of the farts!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1788314891,
         "type": "bits",
         "amount_usd": 0.5,
@@ -175428,6 +175559,14 @@
     ],
     "techno_tenore": [
       {
+        "ts": 1792376321,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1791313727,
         "type": "sub",
         "amount_usd": 5.99,
@@ -175639,6 +175778,30 @@
       }
     ],
     "Ampyre37": [
+      {
+        "ts": 1792379382,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792368259,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792368199,
+        "type": "giftsub",
+        "amount_usd": 17.97,
+        "amount_raw": "3 1000",
+        "message": "gifted 3 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1791317354,
         "type": "sub",
@@ -177795,6 +177958,22 @@
       }
     ],
     "respergu": [
+      {
+        "ts": 1792377437,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  Harman: Review Tech USA number 2, I am number 1",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792376863,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1790022539,
         "type": "sub",
@@ -181041,6 +181220,22 @@
       }
     ],
     "dsmush": [
+      {
+        "ts": 1792368592,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 I'm not lying grifters goal was a marathon stream but its whatever man",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792368481,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "You said 8 hours on friday's stream lol",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1792174032,
         "type": "bits",
@@ -548284,6 +548479,14 @@
     ],
     "JackOfBarbs": [
       {
+        "ts": 1792378565,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1790367215,
         "type": "sub",
         "amount_usd": 5.99,
@@ -548425,6 +548628,14 @@
       }
     ],
     "anima_ps5": [
+      {
+        "ts": 1792367763,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Key loggers!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1787003091,
         "type": "sub",
@@ -548797,6 +549008,70 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1792387605,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 now how about that 3:30am. Rich scream from river to sea Palestine will be free and f*k shtrael.",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792387395,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 People like him are soo fking hypocrite PURE HYPOCRITE...Hey Jeremy what do you think mass graveyard in Gaza and Lebanon?! As we speak Israel has completely changed COMPLETELY changed the Holocaust from world war 2! Makes my blood way over boil at those demon in apartheleid war criminal state Shtrael! Imagine Palestine ambassador is coming out now saying that most survivors have to restart their new generation new bloodlines!75 bodies recovered after 3 years just had funeral. 9000 more",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792386243,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 how much till 6am? Or 3:30am",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792380429,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 USA needs political and moral ethinic cleansing and completely fking get policy that Wales has. The very first policy should be if no one follows constitution or LIES once they start job must be arrested and prosecuted to fully extent! Good God! And then the slogan for America is In God we Trust but in reality do completely opposite for a fking pariah cancerous tiny state that has sucked every economy and destroy the basic human rights for Americans.",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792379478,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 this is extremely serious situation. Mossad has infiltrated his tiny intoxicated brain and his scooter. Rich come on get tits working here in twitch",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792377580,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50  did you get email?",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792377432,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 sent you email just now. Abdul sayeed from Michigan viral clip confronting right wing  grifter. Any way I thought you commed a lot. What insurance do you have? Is it through youtube?",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792377308,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what up everyone. Hey Rich what up? Happy Sunday. Exactly one month to go till GTA 6 comes out man. By the way you lose a lot of weight man! U need to share secret with me. How much did you com every day to drop 100 lbs?",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1792211625,
         "type": "bits",
@@ -551222,6 +551497,14 @@
     ],
     "sirlargegaming": [
       {
+        "ts": 1792369374,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "listen make a fake phil blanket post then have people go so nuts over it you get a real phil blanket",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
         "ts": 1789439284,
         "type": "sub",
         "amount_usd": 5.99,
@@ -551451,6 +551734,14 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1792378650,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
       {
         "ts": 1792189591,
         "type": "membership",
@@ -552080,6 +552371,80 @@
         "amount_raw": "$2.00",
         "message": "Richard Burnell is a man",
         "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+      }
+    ],
+    "ampyre37": [
+      {
+        "ts": 1792367475,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "turn on rewind Cheer50",
+        "stream_id": "grifters_2026-10-18_232926"
+      }
+    ],
+    "lookherelookl1sten": [
+      {
+        "ts": 1792372900,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Abbhi should post his feminine elongated nails again in the Discord",
+        "stream_id": "grifters_2026-10-18_232926"
+      }
+    ],
+    "yapyap_jr": [
+      {
+        "ts": 1792380873,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792378268,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792376894,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "grifters_2026-10-18_232926"
+      }
+    ],
+    "sumariangrace": [
+      {
+        "ts": 1792376937,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "grifters_2026-10-18_232926"
+      }
+    ],
+    "robotichero_35": [
+      {
+        "ts": 1792380848,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 A decent amount of those folks have a huge brocrush for elon. they want to suck his Cocka so badly and call him daddy.",
+        "stream_id": "grifters_2026-10-18_232926"
+      },
+      {
+        "ts": 1792378719,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_2026-10-18_232926"
       }
     ]
   }
