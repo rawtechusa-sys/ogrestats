@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792388099,
+  "updated_ts": 1792651058,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -142,7 +142,8 @@
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
-    "grifters_2026-10-18_232926"
+    "grifters_2026-10-18_232926",
+    "dear_daniel_keem_2026-10-21_222823"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1687,6 +1688,16 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "dear_daniel_keem_2026-10-21_222823": {
+      "title": "Dear Daniel Keem...",
+      "start_ts": 1792621703,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "9drNm6uQ0mc",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2331,6 +2342,54 @@
           "moderator": null,
           "reason": null,
           "stream_id": "the_last_marathon_stream_2026-10-16_163827"
+        }
+      ]
+    },
+    "eightydee": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792625399,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "688040314"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792625399,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "dear_daniel_keem_2026-10-21_222823"
+        }
+      ]
+    },
+    "coffeesa96": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792642579,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1166383700"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792642579,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "dear_daniel_keem_2026-10-21_222823"
         }
       ]
     }
