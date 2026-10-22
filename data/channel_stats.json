@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792388098,
+  "updated_ts": 1792651055,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1949,7 +1949,8 @@
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
-    "grifters_2026-10-18_232926"
+    "grifters_2026-10-18_232926",
+    "dear_daniel_keem_2026-10-21_222823"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35067,6 +35068,23 @@
       "avg_chat_mpm": 7.05,
       "avg_active_chatters": 15.87,
       "percent_paused": 72.7
+    },
+    "dear_daniel_keem_2026-10-21_222823": {
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "title": "Dear Daniel Keem...",
+      "start_ts": 1792621703,
+      "end_ts": null,
+      "duration_sec": null,
+      "youtube_archive_id": null,
+      "source_platform": "youtube",
+      "total_donations_usd": 580.34,
+      "donation_count": 153,
+      "donations_per_min": null,
+      "peak_viewers": 479,
+      "avg_viewers": 387.08,
+      "avg_chat_mpm": 8.04,
+      "avg_active_chatters": 20.52,
+      "percent_paused": 76.4
     }
   }
 }
