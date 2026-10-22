@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792388091,
+  "updated_ts": 1792651049,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -876,7 +876,8 @@
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
-    "grifters_2026-10-18_232926"
+    "grifters_2026-10-18_232926",
+    "dear_daniel_keem_2026-10-21_222823"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9954,10 +9955,28 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "dear_daniel_keem_2026-10-21_222823": {
+      "title": "Dear Daniel Keem...",
+      "start_ts": 1792621703,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "9drNm6uQ0mc",
+      "source_platform": "youtube"
     }
   },
   "donors": {
     "DougSavona": [
+      {
+        "ts": 1792630423,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 30 months",
+        "message": "Joined!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790016846,
         "type": "membership",
@@ -10658,6 +10677,62 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1792650140,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: all of these snacks are weak, my may first burst had more protein than that and had a lot more robust flavor too !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792649091,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Phil: I dream of pretzels but only got a chocolate bottom !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792648965,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: time to call corporate and get my pretzels !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792647562,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: Lord I was born a rambling man !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792643772,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: I am a man, I swear.End communication !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792643441,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Phil: I\u2019m a successful online personality !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792638715,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "Harman: You\u2019re into birds with breasts, this is the next logical step! There\u2019s no shame in it, I\u2019m into Pikachus.Don\u2019t knock it before you try it !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792173206,
         "type": "superchat",
@@ -13796,6 +13871,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1792632269,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792200614,
         "type": "superchat",
@@ -18213,6 +18296,22 @@
     ],
     "evildetrution5426": [
       {
+        "ts": 1792647959,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil is an alien from asgard, I swear to Thor",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792646750,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eminem: thats an awfully hot coffee pot",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792209898,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -20705,6 +20804,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1792646558,
+        "type": "superchat",
+        "amount_usd": 2.11,
+        "amount_raw": "A$2.99",
+        "message": "Eminem: back to the lecture at hand. Perfection is",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792203398,
         "type": "superchat",
         "amount_usd": 2.11,
@@ -20868,6 +20975,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1792621993,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792203776,
         "type": "giftmembership",
@@ -21334,6 +21449,30 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1792641486,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Im HARD rich! I WANT that RICH STICK! RAWR!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792637820,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Eric: Mmm burst mmmm burst! mmm burst! mmmm BURST!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626740,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792214326,
         "type": "superchat",
@@ -22386,6 +22525,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1792638572,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: this heresy must be eradicated. furrys are heretical corruption made manifest. they are an enemy of mankind and the galactic empire of men",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792633788,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: a wise man one said, \"rapid butt bubbles are the precursor to something greater.\" Kratos: men, embrace the farts, no matter the cost.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622714,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: ohhh daddy I'm gona tickle me some elmo yea!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622465,
+        "type": "superchat",
+        "amount_usd": 50.0,
+        "amount_raw": "$50.00",
+        "message": "Trump: attention all men! attention all men! this not a drill! I repeat, this not a drill! nipple nukes are incoming! I repeat, nipple nukes are coming! exposure is imminent! all men, take shelter in you man shelters immediately! embrace the farts!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792205483,
         "type": "superchat",
@@ -40239,6 +40410,22 @@
     ],
     "iswordlogici7760": [
       {
+        "ts": 1792647526,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil will drop a vid like this, look you in the eyes and say he isnt autistic.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792633419,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "on the bright side. p p p wont make it to 40",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792200652,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -41699,6 +41886,22 @@
     ],
     "silkyone12": [
       {
+        "ts": 1792622260,
+        "type": "superchat",
+        "amount_usd": 1.26,
+        "amount_raw": "\u00a5200",
+        "message": "see Phil bein trans phob ic on the podcast today?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622083,
+        "type": "superchat",
+        "amount_usd": 1.26,
+        "amount_raw": "\u00a5200",
+        "message": "deadass you should be eggman for Halloween.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791569427,
         "type": "membership",
         "amount_usd": 1.99,
@@ -42022,6 +42225,14 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1792631412,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "X dents say im u on an alt pretending to be female",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792366632,
         "type": "sub",
@@ -45658,6 +45869,134 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1792636290,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stay up, you make more $$ with other time zones",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792636160,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen, im gonna smoke a doobie, stream my ass",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792632367,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "What about the small startup's that try to make next gen games, just using coding. Not A.I . Human Coding will be language that might dissapear",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792632006,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen, started watching in 2017. funny but still going, covid didn't hit me but I found a weird community. I'm glad for and Jay. U guys make me laugh",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792631352,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Wait it looks like a close-up clit with a face",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792631008,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm not strange, I just observe shit lol",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630875,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630684,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "It's weird how gambling is being pushed on us",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630495,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Now LCL is dead Interview Linx.make money off Keem",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630279,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Did you ever play the game Mouse trap? its a bitch",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792629910,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dad, why dont you ever gift us subs like Jay?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627220,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen make a 10min video take 1week lets go",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626930,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen Dad, Raid shadow legends and shave club",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626660,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Is there a DSP schedule for your Twitch streams?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626409,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626191,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Witcher3 on Switch2 is really impressive, u tried?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792193663,
         "type": "superchat",
@@ -60985,6 +61324,14 @@
     ],
     "SeymourDemonica": [
       {
+        "ts": 1792623816,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "An OnlyUseMeBlade video is way more effective than any DARE campaign, I tell ya.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790815775,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -65827,6 +66174,14 @@
     ],
     "karasub2836": [
       {
+        "ts": 1792622605,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792174830,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -67079,6 +67434,70 @@
     ],
     "respergu13": [
       {
+        "ts": 1792650294,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: (eating) Fancy some chips Review Tech USA?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792649911,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dsp: (bong) Review Tech USA, dinner is ready !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792646714,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: Rich, you are really a DSP connoisseur! GG",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792641964,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric:Review Tech USA you know understand my career",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792641183,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Rich you too are engaged in the story !",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792640590,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Rich do you have any Blade's foot update?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792639886,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Review Tech USA, I know you want to debate about Nintendo games and Pikachu. Be careful I'm a die hard fan and will give it all for Nintendo!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792624089,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech USA, You are teasing us dude!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792215108,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -68233,6 +68652,14 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1792624288,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Rich I\u2019m vicariously baked just by watching you",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791570922,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -68763,6 +69190,14 @@
     ],
     "qb3540": [
       {
+        "ts": 1792625828,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "Trump: Attention Americans I have and urgent announcement, BREASTS!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790838413,
         "type": "membership",
         "amount_usd": 1.99,
@@ -69084,6 +69519,14 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1792625161,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 7 months",
+        "message": "Oh the cameras on.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792207430,
         "type": "superchat",
@@ -70495,6 +70938,14 @@
     ],
     "SmokingSocks220": [
       {
+        "ts": 1792623607,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Hi Rich do u sweat profusely during enter. Coarse?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791321860,
         "type": "sub",
         "amount_usd": 5.99,
@@ -71019,6 +71470,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1792639709,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "please don't fock the horses, thank you",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792193474,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -71313,6 +71772,14 @@
     ],
     "Webbz517": [
       {
+        "ts": 1792634958,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "what mic do you use when you may 1st?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1789605345,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -71402,6 +71869,22 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1792640536,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Harman, the root of the problem is between your chair and your keyboard\u2026",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627946,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "This is Boogie\u2019s \u201cwell, he\u2019s dead, so\u2026\u201d",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792213737,
         "type": "superchat",
@@ -72118,6 +72601,30 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1792631713,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "stan: belieeeeve in the nipple flappage, and fart!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630996,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "you just finished credit card swiping your man crack, with a bar of soap, You accidentally sneeze and power fart a fat soapy dookie log, Do not panic, you do not have to waffle stomp it down the drain, just say the cat did it",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792621790,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "you....FUCKING....idiot. Have my continued support",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792200322,
         "type": "superchat",
@@ -80499,6 +81006,14 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1792633876,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Kratos: speaking of Drunken Peasants. You want a new rabbit hole? Look up kid wizard archive. There\u2019s a lot of creepy things about The Amazing Atheist",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792177053,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -81332,6 +81847,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1792626940,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 42 months",
+        "message": "Phil: Rich I\u2019m here. Let me be your editor. Let\u2019s get the Level 666 Podcast off the ground. We need those contributions!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1791571313,
         "type": "superchat",
@@ -91031,6 +91554,30 @@
     ],
     "Jayhooft": [
       {
+        "ts": 1792627246,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "I\u2019m not editing shorts. Fire me. Fuck off",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627110,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "When are you deleting this channel? RTU3 when?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627011,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Listen, fuck up your start time. Let\u2019s go",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792179301,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -91876,6 +92423,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1792625427,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Phil: Boogie, Boogie, Boogie, can\u2019t you see, sometimes your boobs just hypnotise me.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792625130,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Eric: Rich take care of your kids you deadbeat dad. Anyway I\u2019m about to do a speedball while smoking a cigarette. Hope I don\u2019t die.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792169521,
         "type": "superchat",
@@ -99173,6 +99736,14 @@
     ],
     "DaveCalzone": [
       {
+        "ts": 1792633283,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790640244,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -101171,6 +101742,14 @@
     ],
     "Carl.Wilson.82": [
       {
+        "ts": 1792624321,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792207169,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -101804,6 +102383,30 @@
       }
     ],
     "RushilPatel-oe7hn": [
+      {
+        "ts": 1792622261,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Mass effect 3 was meh andromeda was a wet fart anthem was meh as well the two recent dragon age games were not that great",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622058,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Knew that the shut down would happen but it\u2019s sad either way",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792621932,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did you hear about BioWare?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1789613721,
         "type": "superchat",
@@ -102609,6 +103212,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1792624137,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "I played the Mw4 campaign and also DMZ it\u2019s good",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790281217,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -103358,6 +103969,14 @@
       }
     ],
     "octropia": [
+      {
+        "ts": 1792625824,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Party50 Remember the spongebob jacket predator on tcap who met the decoy on the beach",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790809101,
         "type": "bits",
@@ -105727,6 +106346,14 @@
     ],
     "marihdimitri7219": [
       {
+        "ts": 1792641239,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "As a amateur writer, this is cringy af. I hate AI.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790615705,
         "type": "membership",
         "amount_usd": 1.99,
@@ -107976,6 +108603,30 @@
       }
     ],
     "WiiklyReviews": [
+      {
+        "ts": 1792644747,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I was on twitch with my little group on Persona 4.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792644278,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "SOULGLO Phil Version",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792644125,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "How goes it Rich! Birds and Bob Everywhere!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792214556,
         "type": "superchat",
@@ -127131,6 +127782,14 @@
     ],
     "Toast935": [
       {
+        "ts": 1792623328,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "If you need someone to edit your noodz, ill happily volunteer my services.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790798250,
         "type": "membership",
         "amount_usd": 1.99,
@@ -127244,6 +127903,38 @@
       }
     ],
     "anythingandeverything5593": [
+      {
+        "ts": 1792637869,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "cod 7 leave ant I cheat in shoot through wall think what killed the multi player part was dumb thing ever and never patched it called gravemaker",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792637411,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "pual lance got his name.wring",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792637356,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "have u ever watched Paul lane anti trump guy",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627195,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "hear about sick ad Vivek Ramsey did on amy Acton",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1791604240,
         "type": "superchat",
@@ -131572,6 +132263,30 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1792622310,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "One more piece of news; my friend who got a home loan for 50 grand loaned me 3500 USD! He said \u201cI\u2019ve taken so much and it\u2019s time to give back to someone I care about\u201d thank you Keegyn! I love you all",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622073,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Rich; I am doing a project you would very much like! It\u2019s about the healthy ways of dealing with grieving in honor of my gran who passed in 2021! beautiful birds people, love all! One with the herb!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792621850,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Go vote! I saw a t shirt today that said I miss Anthony bourdain and that made me smile; he liked herb and could obviously cook anything from anywhere! Vote blue friends; it\u2019s paramount! Go vote :ballot_box_with_ballot:",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792213621,
         "type": "superchat",
@@ -138373,6 +139088,14 @@
     ],
     "comicbookprodigy995": [
       {
+        "ts": 1792626054,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "I'm out the closet! I LOVED STREET FIGHTER!!!!!!!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790830612,
         "type": "membership",
         "amount_usd": 1.99,
@@ -138995,6 +139718,14 @@
     ],
     "MrInternetMan": [
       {
+        "ts": 1792632165,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "listen, give large queso his $200",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790275936,
         "type": "membership",
         "amount_usd": 1.99,
@@ -139172,6 +139903,14 @@
       }
     ],
     "Ms.Sparkles": [
+      {
+        "ts": 1792646192,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "A year let's go!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790027828,
         "type": "superchat",
@@ -143475,6 +144214,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1792636954,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Safe 2 say the pack rips became the new Hogans",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790637550,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -143652,6 +144399,14 @@
       }
     ],
     "Sphericalman01": [
+      {
+        "ts": 1792638868,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "Harman: Rich, the eyepatch is because i asked my parents for a Red Rider Pikachu, and everyone was right. I played to rough with him and bloo my I out",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792203681,
         "type": "superchat",
@@ -151543,6 +152298,14 @@
     ],
     "zachbischoff1853": [
       {
+        "ts": 1792641939,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "What ai do you use for bob\u2019s voice ?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790384997,
         "type": "membership",
         "amount_usd": 1.99,
@@ -151870,6 +152633,14 @@
       }
     ],
     "venomizedmarkus3236": [
+      {
+        "ts": 1792646169,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Phil: Rich, I'm demanding you support me always!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790307062,
         "type": "superchat",
@@ -153454,6 +154225,70 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1792647391,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Phil: heyahowaheyahowaheyahowaheyahowaheya Yoy!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792634832,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Phil:I'd like toob elch, directly in 2, yorph ace, right now. Stan:Phil? I'd like toof art directly into yorm outh right now! Phil:Stan, u is banned!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792630043,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Eric:Howya doin Stanly, doon gewd? Stan:Alright Eric, step a lil closer. Lil closer. Eric:oo wewee?? (gunshot) ARRRGH!! That wasn't the rope I ordered",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627992,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Trump: :mushroom::peanuts:, :poodle::chocolate_bar::hole:. :microscope::mushroom::peanuts:, :horse_racing::peanuts:, :poodle::pie::hole:",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626888,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:Tickle me Pikachu, lets Van Lovvins!! HAUP!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792623817,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Linus: Tipsters ucked me off for yearrrrs!!!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622728,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:8 Taco Bell & now my shorts are doing numbers",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792621973,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792208852,
         "type": "superchat",
@@ -155190,6 +156025,14 @@
       }
     ],
     "jonhardwick98": [
+      {
+        "ts": 1792632387,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I think Keem wants LOLCow to be Temu Jackass",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790305539,
         "type": "membership",
@@ -157795,6 +158638,30 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1792629319,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792624704,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Boogie: oddly the first stream i ever watch by you was \"i never did!\" stream",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792624231,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791570168,
         "type": "giftmembership",
         "amount_usd": 99.5,
@@ -158564,6 +159431,14 @@
       }
     ],
     "PutoPlatano": [
+      {
+        "ts": 1792648610,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil\u2019s a chocolate bottom man in a robust urban garlic flavor world :chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar::chocolate_bar:",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792200950,
         "type": "membership",
@@ -164967,6 +165842,14 @@
     ],
     "AmberHeardsDung": [
       {
+        "ts": 1792624452,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Rip lol cow is wont miss you",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1786663699,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -165396,6 +166279,14 @@
       }
     ],
     "Easilypleased23": [
+      {
+        "ts": 1792647359,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "Bird father! Listen Dsp tries it Ranking Logs chili turbo edition",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790016061,
         "type": "membership",
@@ -167777,6 +168668,14 @@
     ],
     "RichsApplauseCounter": [
       {
+        "ts": 1792642577,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Just caught up. We're at 65 applauses.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1786919650,
         "type": "sub",
         "amount_usd": 5.99,
@@ -167916,6 +168815,14 @@
       }
     ],
     "thechange1ing": [
+      {
+        "ts": 1792622530,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Whoo look at me, climbin'.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1791345689,
         "type": "bits",
@@ -177959,6 +178866,14 @@
     ],
     "respergu": [
       {
+        "ts": 1792625038,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Any Blade'",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792377437,
         "type": "bits",
         "amount_usd": 1.0,
@@ -179867,6 +180782,22 @@
     ],
     "xanderskullion": [
       {
+        "ts": 1792628072,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "my stoned hotdog is instead of chili I made sloppy joe meat sauce, onions, mustard and cool doritio crushed on top",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792625036,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "weed isnt bad, it helps me talk on my own streams",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791595055,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -181072,6 +182003,22 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1792640820,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "if it's not nukes it's AI if it's not AI it's the climate collapse all of this is the logical endpoint of capitalism and Neoliberalism it's going to get bad",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792621817,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "over an hour late SMH Lies cover ups I'm Jesse ventura",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1789100228,
         "type": "superchat",
@@ -189880,6 +190827,14 @@
       }
     ],
     "macmega2149": [
+      {
+        "ts": 1792627731,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 23 months",
+        "message": "Thought u said Dicks instead of Dips. Had 2 Rewind",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790799910,
         "type": "superchat",
@@ -203115,6 +204070,30 @@
     ],
     "JacobstanfordOCD": [
       {
+        "ts": 1792639444,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "how much do U think he'd have to pay 4 some gash?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792638762,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "then a donkey show must be an amazing site 4 them",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792625894,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "SpongeBob was gonna give u the secret formula.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792199200,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -208590,6 +209569,38 @@
       }
     ],
     "Gamermeetsworld": [
+      {
+        "ts": 1792628988,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792623033,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "It so sweet and delicious when those whom try to USE your life for content, crumble. I visualize this as the mortal kombat 2 next opponent",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622644,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Ohh!!! Elmo",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622503,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hello hope all is well",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1791605249,
         "type": "giftmembership",
@@ -241374,6 +242385,14 @@
       }
     ],
     "ericliriano23": [
+      {
+        "ts": 1792629852,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 25 months",
+        "message": "Hoot Wireless",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790293701,
         "type": "membership",
@@ -336555,6 +337574,14 @@
     ],
     "mistaj24": [
       {
+        "ts": 1792638037,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "Who in the holly name of jack sparrow is this? Lol",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1787100405,
         "type": "membership",
         "amount_usd": 1.99,
@@ -364580,6 +365607,22 @@
       }
     ],
     "Shatterglass23": [
+      {
+        "ts": 1792646796,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm talking bout the Groaning notices!:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing::rolling_on_the_floor_laughing: I can't!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792646678,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Brother u have kids. Stop with all them NOISES!:rolling_on_the_floor_laughing::rolling_on_the_floor_laughing:",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1789616490,
         "type": "superchat",
@@ -547945,6 +548988,14 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1792627420,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Listen, let's make shorts on the top bunk.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790977201,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -548270,6 +549321,14 @@
       }
     ],
     "ReviewDSPhilUSA": [
+      {
+        "ts": 1792628564,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "RIP to the LCU....not. DSP outlasted another one.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1788480917,
         "type": "membership",
@@ -548815,6 +549874,22 @@
     ],
     "TimothyCulhane": [
       {
+        "ts": 1792622776,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792622434,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1789432437,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -548888,6 +549963,14 @@
       }
     ],
     "Orange_Yoshi_64": [
+      {
+        "ts": 1792622679,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 34 months",
+        "message": "Phil: I BEGGED you DANIEL! I BEGGED YOU not to TALK ABOUT THIS!!! I BEGGED YOU DAN! Hey Rich, we outlasted Keemstar. DSP and Rich on exposed podcast??",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1790649889,
         "type": "superchat",
@@ -549008,6 +550091,22 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1792647102,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 full warning in effect Full warning right now! Before this stream gets permanently censored into toast   female andrologist. according to female andrologist who does part time side hustle at papermoon those beautiful creatures claim men seamen is far more protein-ious far more than any sea creature and encourages to suck..I mean literally suck it out and rip it \ud83d\ude06. It pure protein man.! Also Seinfield his children  despise what he said openly admitting its just genocide & been racist",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792626171,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 Phil: What's up Rich. Folks. Trump: Listen Rich, I am gonna hide in bunker as I call for world war 3 because war crime is my middle nam Satanyahu & Putin are my best friends and they fantasiz  Adolf hitlr. Trump: I will do jehad for them \ud83d\ude06. Also I am ending all fun and entertainment in everyday people's lives from Sony and Microsoft jumping next gen console price through the roof to spoil movie industry all because Satanyahu told me. Phil: snort..sounds good to me. can I sleep with u",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792387605,
         "type": "bits",
@@ -550125,6 +551224,14 @@
     ],
     "abbhi93": [
       {
+        "ts": 1792623059,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 Listen. I just got 3 cat 8 ethernet cables. For my new new open box NetGear WiFi 6 router Rich.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1790650806,
         "type": "bits",
         "amount_usd": 0.5,
@@ -550665,6 +551772,14 @@
     ],
     "VivaSumudPAKResistor": [
       {
+        "ts": 1792633086,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Trump Can I access to your bunker once you start world war 3 on behalf of Satanyaha? Trump: Yes, you can, here is the access code: Zio Israel",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792187344,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -551015,6 +552130,14 @@
     ],
     "BossIog": [
       {
+        "ts": 1792630655,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Here's $2 to shut up for 5 seconds thank you.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1792201256,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -551178,6 +552301,38 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1792644780,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Rich you remind me of the WWE's, The BIG SHOW lol",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792636569,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Do you think Trump went younger than 13?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792632076,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "What do u think about PS4 games been ported to PC?",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792629133,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Boogie is the character francies is the real him",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792209806,
         "type": "superchat",
@@ -551637,6 +552792,22 @@
     ],
     "SignalRegulus": [
       {
+        "ts": 1792641024,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "ASMR BOOK READ PLEASE",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792640513,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Do you think the government will eventually step in to remove the general public's access to AI eventually? With the jail breaks and such, I wonder.",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
         "ts": 1791000028,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -551734,6 +552905,30 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1792638407,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "its alright im ganna look for myself",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627315,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "you gatta get to 10 rich like Quentin Tarantino movies",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792625325,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
       {
         "ts": 1792378650,
         "type": "giftsub",
@@ -552445,6 +553640,52 @@
         "amount_raw": "1 1000",
         "message": "gifted 1 subs to the community!",
         "stream_id": "grifters_2026-10-18_232926"
+      }
+    ],
+    "DeadReckoning223": [
+      {
+        "ts": 1792624815,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dude, even stoned you have the high ground",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792624611,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I would stream snipe Boogie right now, he leaked irl info of a mother with a baby irl(Sweet Tea). His stream with Ricky was atrocious",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      }
+    ],
+    "ScramSqueally": [
+      {
+        "ts": 1792627853,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "what\u2019s the craziest thing you ever ate while baked",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      },
+      {
+        "ts": 1792627741,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "damn rich, you went there son!",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      }
+    ],
+    "sagetangent6692": [
+      {
+        "ts": 1792647766,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "16 robust months",
+        "stream_id": "dear_daniel_keem_2026-10-21_222823"
       }
     ]
   }
