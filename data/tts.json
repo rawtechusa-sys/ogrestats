@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792388087,
+  "updated_ts": 1792651045,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -876,20 +876,21 @@
     "the_tcap_man_marathon_stream_2026-10-06_220620",
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
-    "grifters_2026-10-18_232926"
+    "grifters_2026-10-18_232926",
+    "dear_daniel_keem_2026-10-21_222823"
   ],
   "commands": {
     "men": 6,
-    "eric": 273,
-    "phil": 603,
-    "stan": 431,
+    "eric": 277,
+    "phil": 620,
+    "stan": 434,
     "masterchief": 171,
-    "harman": 216,
-    "trump": 244,
+    "harman": 220,
+    "trump": 252,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
-    "linus": 40,
+    "linus": 41,
     "grandpa": 29,
     "girlfriend": 11,
     "twist": 8,
@@ -897,7 +898,7 @@
     "guys": 1,
     "chief": 4,
     "glados": 5,
-    "kratos": 20,
+    "kratos": 22,
     "doom": 27,
     "emoguy": 4,
     "chat": 2,
@@ -905,7 +906,7 @@
     "hour": 2,
     "remember": 3,
     "theory": 5,
-    "dsp": 47,
+    "dsp": 48,
     "something": 3,
     "witch": 5,
     "agreement": 1,
@@ -982,7 +983,7 @@
     "finder": 1,
     "confirmed": 1,
     "reviewmusicusa": 1,
-    "boogie": 1,
+    "boogie": 2,
     "reviewtrumpusa": 4,
     "reviewtrunpusa": 1,
     "idiots": 2,
@@ -1471,7 +1472,9 @@
     "wow": 1,
     "obama": 1,
     "email": 1,
-    "dune": 1
+    "dune": 1,
+    "code": 1,
+    "eminem": 2
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10549,9 +10552,403 @@
       "segments": null,
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "dear_daniel_keem_2026-10-21_222823": {
+      "title": "Dear Daniel Keem...",
+      "start_ts": 1792621703,
+      "youtube_archive_id": null,
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": null,
+      "source_vod_id": "9drNm6uQ0mc",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1792650294,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: (eating) Fancy some chips Review Tech USA?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792650140,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: all of these snacks are weak, my may first burst had more protein than that and had a lot more robust flavor too !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792649911,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Dsp: (bong) Review Tech USA, dinner is ready !",
+      "commands": [
+        "dsp"
+      ]
+    },
+    {
+      "ts": 1792649091,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: I dream of pretzels but only got a chocolate bottom !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792648965,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: time to call corporate and get my pretzels !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792647562,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Lord I was born a rambling man !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792647391,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: heyahowaheyahowaheyahowaheyahowaheya Yoy!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792646750,
+      "username": "@evildetrution5426",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eminem: thats an awfully hot coffee pot",
+      "commands": [
+        "eminem"
+      ]
+    },
+    {
+      "ts": 1792646714,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eric: Rich, you are really a DSP connoisseur! GG",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792646558,
+      "username": "@PhilsLostDoorDashShrimp",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eminem: back to the lecture at hand. Perfection is",
+      "commands": [
+        "eminem"
+      ]
+    },
+    {
+      "ts": 1792646169,
+      "username": "@venomizedmarkus3236",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Rich, I'm demanding you support me always!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792643772,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: I am a man, I swear.End communication !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792643441,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: I\u2019m a successful online personality !",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792641486,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Stan: Im HARD rich! I WANT that RICH STICK! RAWR!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792641183,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Harman: Rich you too are engaged in the story !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792640590,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Rich do you have any Blade's foot update?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792639886,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Harman: Review Tech USA, I know you want to debate about Nintendo games and Pikachu. Be careful I'm a die hard fan and will give it all for Nintendo!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792638868,
+      "username": "@Sphericalman01",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Harman: Rich, the eyepatch is because i asked my parents for a Red Rider Pikachu, and everyone was right. I played to rough with him and bloo my I out",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792638715,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Harman: You\u2019re into birds with breasts, this is the next logical step! There\u2019s no shame in it, I\u2019m into Pikachus.Don\u2019t knock it before you try it !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792638572,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Trump: this heresy must be eradicated. furrys are heretical corruption made manifest. they are an enemy of mankind and the galactic empire of men",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792637820,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eric: Mmm burst mmmm burst! mmm burst! mmmm BURST!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792633876,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Kratos: speaking of Drunken Peasants. You want a new rabbit hole? Look up kid wizard archive. There\u2019s a lot of creepy things about The Amazing Atheist",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1792633788,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Trump: a wise man one said, \"rapid butt bubbles are the precursor to something greater.\" Kratos: men, embrace the farts, no matter the cost.",
+      "commands": [
+        "trump",
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1792633086,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Trump Can I access to your bunker once you start world war 3 on behalf of Satanyaha? Trump: Yes, you can, here is the access code: Zio Israel",
+      "commands": [
+        "phil",
+        "trump",
+        "code"
+      ]
+    },
+    {
+      "ts": 1792631713,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "stan: belieeeeve in the nipple flappage, and fart!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792627992,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Trump: :mushroom::peanuts:, :poodle::chocolate_bar::hole:. :microscope::mushroom::peanuts:, :horse_racing::peanuts:, :poodle::pie::hole:",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792627420,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Listen, let's make shorts on the top bunk.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792626940,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Rich I\u2019m here. Let me be your editor. Let\u2019s get the Level 666 Podcast off the ground. We need those contributions!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792626171,
+      "username": "solidpakamericanhorseman",
+      "platform": "twitch",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Cheer500 Phil: What's up Rich. Folks. Trump: Listen Rich, I am gonna hide in bunker as I call for world war 3 because war crime is my middle nam Satanyahu & Putin are my best friends and they fantasiz  Adolf hitlr. Trump: I will do jehad for them \ud83d\ude06. Also I am ending all fun and entertainment in everyday people's lives from Sony and Microsoft jumping next gen console price through the roof to spoil movie industry all because Satanyahu told me. Phil: snort..sounds good to me. can I sleep with u",
+      "commands": [
+        "phil",
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792625828,
+      "username": "@qb3540",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Trump: Attention Americans I have and urgent announcement, BREASTS!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792625427,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: Boogie, Boogie, Boogie, can\u2019t you see, sometimes your boobs just hypnotise me.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792625130,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eric: Rich take care of your kids you deadbeat dad. Anyway I\u2019m about to do a speedball while smoking a cigarette. Hope I don\u2019t die.",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792624704,
+      "username": "@SirReginaldFannybottom",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Boogie: oddly the first stream i ever watch by you was \"i never did!\" stream",
+      "commands": [
+        "boogie"
+      ]
+    },
+    {
+      "ts": 1792624089,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Eric: Review Tech USA, You are teasing us dude!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792623817,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Linus: Tipsters ucked me off for yearrrrs!!!",
+      "commands": [
+        "linus"
+      ]
+    },
+    {
+      "ts": 1792622714,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Stan: ohhh daddy I'm gona tickle me some elmo yea!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792622679,
+      "username": "@Orange_Yoshi_64",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Phil: I BEGGED you DANIEL! I BEGGED YOU not to TALK ABOUT THIS!!! I BEGGED YOU DAN! Hey Rich, we outlasted Keemstar. DSP and Rich on exposed podcast??",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792622465,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "dear_daniel_keem_2026-10-21_222823",
+      "message": "Trump: attention all men! attention all men! this not a drill! I repeat, this not a drill! nipple nukes are incoming! I repeat, nipple nukes are coming! exposure is imminent! all men, take shelter in you man shelters immediately! embrace the farts!",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1792377437,
       "username": "respergu",
