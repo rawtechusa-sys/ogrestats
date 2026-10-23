@@ -10,5 +10,11 @@
   ],
   "source_channel": "rtustreams",
   "source_platform": "youtube",
-  "source_vod_id": "PX_b2yja63U"
+  "source_vod_id": "PX_b2yja63U",
+  "segments": [
+    {
+      "archive_id": "hvVntYfzpQ8",
+      "start_ts": 1792785083
+    }
+  ]
 }
