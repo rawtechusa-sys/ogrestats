@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792651055,
+  "updated_ts": 1792820060,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1950,7 +1950,8 @@
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
-    "dear_daniel_keem_2026-10-21_222823"
+    "dear_daniel_keem_2026-10-21_222823",
+    "grifters_and_men_and_benchmarking_2026-10-23_184712"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35085,6 +35086,23 @@
       "avg_chat_mpm": 8.04,
       "avg_active_chatters": 20.52,
       "percent_paused": 76.4
+    },
+    "grifters_and_men_and_benchmarking_2026-10-23_184712": {
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "title": "Grifters, And Men, And Benchmarking",
+      "start_ts": 1792781232,
+      "end_ts": 1792819879,
+      "duration_sec": 38647,
+      "youtube_archive_id": "hvVntYfzpQ8",
+      "source_platform": "youtube",
+      "total_donations_usd": 590.56,
+      "donation_count": 129,
+      "donations_per_min": 0.9169,
+      "peak_viewers": 335,
+      "avg_viewers": 283.78,
+      "avg_chat_mpm": 7.42,
+      "avg_active_chatters": 18.2,
+      "percent_paused": null
     }
   }
 }
