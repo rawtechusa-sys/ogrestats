@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792651045,
+  "updated_ts": 1792820049,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -877,16 +877,17 @@
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
-    "dear_daniel_keem_2026-10-21_222823"
+    "dear_daniel_keem_2026-10-21_222823",
+    "grifters_and_men_and_benchmarking_2026-10-23_184712"
   ],
   "commands": {
     "men": 6,
-    "eric": 277,
-    "phil": 620,
-    "stan": 434,
+    "eric": 278,
+    "phil": 626,
+    "stan": 440,
     "masterchief": 171,
-    "harman": 220,
-    "trump": 252,
+    "harman": 224,
+    "trump": 267,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -898,7 +899,7 @@
     "guys": 1,
     "chief": 4,
     "glados": 5,
-    "kratos": 22,
+    "kratos": 23,
     "doom": 27,
     "emoguy": 4,
     "chat": 2,
@@ -936,7 +937,7 @@
     "show": 1,
     "speech": 1,
     "collection": 1,
-    "me": 15,
+    "me": 16,
     "out": 4,
     "source": 4,
     "homer": 2,
@@ -947,7 +948,7 @@
     "watchmojo": 1,
     "said": 13,
     "deadpool": 1,
-    "news": 39,
+    "news": 41,
     "guy": 5,
     "thing": 2,
     "platform": 1,
@@ -1474,7 +1475,8 @@
     "email": 1,
     "dune": 1,
     "code": 1,
-    "eminem": 2
+    "eminem": 2,
+    "batman": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10562,9 +10564,357 @@
       "segments": null,
       "source_vod_id": "9drNm6uQ0mc",
       "source_platform": "youtube"
+    },
+    "grifters_and_men_and_benchmarking_2026-10-23_184712": {
+      "title": "Grifters, And Men, And Benchmarking",
+      "start_ts": 1792781232,
+      "youtube_archive_id": "hvVntYfzpQ8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "hvVntYfzpQ8",
+          "start_ts": 1792785083
+        }
+      ],
+      "source_vod_id": "PX_b2yja63U",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1792817725,
+      "username": "@joshk9317",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: It's raining men! Hallelujah! It's raining men! Amen! I'm gonna go out to run and let myself get Absolutely soaking wet!It's raining men!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792814961,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: as wise man once said, figure it out dood!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792814782,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: listen, do everything. dont have a life. abandon all other responsibilities. ignore your family. be miserable. die. be a man",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792813831,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: dammit! I need more contributions to save my hairline! Stan: Philly, there are other ways to get more contributions! pants_unzip",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792810137,
+      "username": "@jiggyjoeryan",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: I will stop it so big. ClayFighter 63 1/3!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792809786,
+      "username": "@jiggyjoeryan",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: When I'm president, I will end that Russia Ukraine war in less than a day. I will get it settled. Rich believe me it's going to be tremendous.",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792809560,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Stan: Oh eee! ah! AH! EE! MM! AH! AH! OH AH! RICH!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792807345,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: listen, hear me out. anarchy! it could be a beautiful thing. tremendously tremendous!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792805539,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Harman: (alert) Review Tech USA, are you peeing?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792803623,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: i will make sexy adult diapers great again!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792803488,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Kratos: the video Craig is reacting to is by Basic Logic, who is a Nazi sympathizer. Alchemist Soil did multiple videos debunking that guy.",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1792803123,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: a man that wears makeup. is not a man",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792802265,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: Rich, did you know I made $2K on Cameo?",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792802192,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "That therapy clip reminded me: did you ever see Sneako try to explain to a Harvard psychiatrist why therapy is a scam? The reality check he got was cathartic. Video is \u201cSneako Full Therapy Session with HealthyGamerGG...\u201d",
+      "commands": [
+        "me"
+      ]
+    },
+    {
+      "ts": 1792801721,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Eric: Review Tech USA, I know what you're doing!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1792800597,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Stan: listen, pickachus are lame and gey! I'm hard for tickle me elmos. I'm gona tickle you like you won't believe daddy! woooooo yeeeeaaaa buddy mmm!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792798605,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: attention all men! attention all men! attention man among men has arrived. I am a tired man. hit a new pb of flag time of 23 hours today. everything hurts. but dont panic, my beautiful balls are ok. also, I farted. cum",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792798602,
+      "username": "@75.",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: I looked at his as",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792796965,
+      "username": "@VivaSumudPAKResistor",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: sup rich can we watch Paul lance today video",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792796423,
+      "username": "@TheTenoray",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Bad news: A deer jumped out at my car this morning. Good news: I'm setting up my retroid pocket nova while watching a man.",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1792791710,
+      "username": "@yapyapjr8908",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Harman: Listen I goon and save a ton of videos like Randy Pitchford myself, not all of them are just about pikachu.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792790008,
+      "username": "@DarthOmegas",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: Im suing the United States Of America",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792788768,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: amuj amuja, jamuja mujam humuja muhuj a kum!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792785397,
+      "username": "@PPPs_HRT",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: I don't come, I hit the milestone ugh \ud83e\udeeaooh :astonished_face:",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792785295,
+      "username": "@ZG49389",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Harman: Shiver me timbers! Let\u2019s sail, Pikachu!",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792785038,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Phil: Ah! Ahh Ah! AHH! Ah! Ah! AHHH! Ah! Ah! Burst",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1792783935,
+      "username": "@Orange_Yoshi_64",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Harman: I like how people are celebrating this Switch 2 jailbreak when they don't realize Nintendo will catch you and you will all be sent to prison.",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1792783341,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: how\u2019re ya doin\u2019 Stanley? Doin\u2019 good? Stan: terrible! All those good times we had and you talk about every man except me? Don\u2019t you love me?",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792783083,
+      "username": "@niallwilliamson3540",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: I was doing my Kermit impression my bad",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792782971,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: About the governor bleeeeppppppp",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1792782872,
+      "username": "@violationentertainment",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Batman: Bob Lavari, is amman. Amman, with an asth",
+      "commands": [
+        "batman"
+      ]
+    },
+    {
+      "ts": 1792782135,
+      "username": "@tougeruzbay",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Stan: Holding like a lumpy bird Rich is mhmmmmm",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1792781820,
+      "username": "@TheJostler",
+      "platform": "youtube",
+      "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712",
+      "message": "Trump: I am so afraid of losing control of Congress, that if my Alaska Republican incumbent loses, my DOJ will sue. Eh! Eh! Eh! Eh! Stan: Eh! Eh! Eh!",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
     {
       "ts": 1792650294,
       "username": "@respergu13",
