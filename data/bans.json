@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792651058,
+  "updated_ts": 1792820062,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -143,7 +143,8 @@
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
-    "dear_daniel_keem_2026-10-21_222823"
+    "dear_daniel_keem_2026-10-21_222823",
+    "grifters_and_men_and_benchmarking_2026-10-23_184712"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1698,6 +1699,21 @@
       "segments": null,
       "source_vod_id": "9drNm6uQ0mc",
       "source_platform": "youtube"
+    },
+    "grifters_and_men_and_benchmarking_2026-10-23_184712": {
+      "title": "Grifters, And Men, And Benchmarking",
+      "start_ts": 1792781232,
+      "youtube_archive_id": "hvVntYfzpQ8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "hvVntYfzpQ8",
+          "start_ts": 1792785083
+        }
+      ],
+      "source_vod_id": "PX_b2yja63U",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2390,6 +2406,54 @@
           "moderator": null,
           "reason": null,
           "stream_id": "dear_daniel_keem_2026-10-21_222823"
+        }
+      ]
+    },
+    "GUIMARES_39": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1792785157,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1000539101"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792785157,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+        }
+      ]
+    },
+    "web_crawler_": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1792799380,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1561292944"
+        }
+      },
+      "events": [
+        {
+          "ts": 1792799380,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
         }
       ]
     }
