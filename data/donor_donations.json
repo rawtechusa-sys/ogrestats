@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792651049,
+  "updated_ts": 1792820054,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -877,7 +877,8 @@
     "what_the_hell_just_happened_with_the_lcu_2026-10-09_180228",
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
-    "dear_daniel_keem_2026-10-21_222823"
+    "dear_daniel_keem_2026-10-21_222823",
+    "grifters_and_men_and_benchmarking_2026-10-23_184712"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9965,6 +9966,21 @@
       "segments": null,
       "source_vod_id": "9drNm6uQ0mc",
       "source_platform": "youtube"
+    },
+    "grifters_and_men_and_benchmarking_2026-10-23_184712": {
+      "title": "Grifters, And Men, And Benchmarking",
+      "start_ts": 1792781232,
+      "youtube_archive_id": "hvVntYfzpQ8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "hvVntYfzpQ8",
+          "start_ts": 1792785083
+        }
+      ],
+      "source_vod_id": "PX_b2yja63U",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -13339,6 +13355,14 @@
       }
     ],
     "ZG49389": [
+      {
+        "ts": 1792785295,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Harman: Shiver me timbers! Let\u2019s sail, Pikachu!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1791596496,
         "type": "membership",
@@ -20976,6 +21000,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1792816043,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 55 months",
+        "message": "Ban anyone saying that I suplexed Kelly through a table.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792621993,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -21449,6 +21481,38 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1792809560,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stan: Oh eee! ah! AH! EE! MM! AH! AH! OH AH! RICH!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792788768,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: amuj amuja, jamuja mujam humuja muhuj a kum!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792785038,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Ah! Ahh Ah! AHH! Ah! Ah! AHHH! Ah! Ah! Burst",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792781545,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792641486,
         "type": "superchat",
@@ -22525,6 +22589,70 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1792814961,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: as wise man once said, figure it out dood!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792814782,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: listen, do everything. dont have a life. abandon all other responsibilities. ignore your family. be miserable. die. be a man",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792813831,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: dammit! I need more contributions to save my hairline! Stan: Philly, there are other ways to get more contributions! pants_unzip",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792807345,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: listen, hear me out. anarchy! it could be a beautiful thing. tremendously tremendous!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792803623,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: i will make sexy adult diapers great again!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792803123,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: a man that wears makeup. is not a man",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792800597,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Stan: listen, pickachus are lame and gey! I'm hard for tickle me elmos. I'm gona tickle you like you won't believe daddy! woooooo yeeeeaaaa buddy mmm!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792798605,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Trump: attention all men! attention all men! attention man among men has arrived. I am a tired man. hit a new pb of flag time of 23 hours today. everything hurts. but dont panic, my beautiful balls are ok. also, I farted. cum",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792638572,
         "type": "superchat",
@@ -25741,6 +25869,38 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1792811254,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792802582,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If you look closely you can see Mr. Tarzia's head",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792783253,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792781820,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: I am so afraid of losing control of Congress, that if my Alaska Republican incumbent loses, my DOJ will sue. Eh! Eh! Eh! Eh! Stan: Eh! Eh! Eh!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1791599430,
         "type": "giftmembership",
@@ -31239,6 +31399,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1792785872,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "have you seen the video that was ps1 version of elden ring. complete with tank controls",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792785620,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil youre not a professional athlete hitting a milestone. youre getting money to open card packs",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792177224,
         "type": "superchat",
@@ -40410,6 +40586,14 @@
     ],
     "iswordlogici7760": [
       {
+        "ts": 1792785556,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich plays Call of Duty on Easy",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792647526,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -42600,6 +42784,22 @@
     ],
     "Dublinpapi": [
       {
+        "ts": 1792811235,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792804272,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1791320577,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -44467,6 +44667,22 @@
       }
     ],
     "DarthOmegas": [
+      {
+        "ts": 1792790008,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "Trump: Im suing the United States Of America",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792789860,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792171722,
         "type": "superchat",
@@ -66668,6 +66884,22 @@
     ],
     "75.": [
       {
+        "ts": 1792798602,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: I looked at his as",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792781511,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "ETHAN KLEIN IS A CHEATER",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1786570767,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -67433,6 +67665,46 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1792811458,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Careful Rich! Word in the streets is that Becky Boop is not doing good! I remember you interacted with her",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792808512,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman Rich, i identify as a pokemon trainer (oof)",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792805539,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: (alert) Review Tech USA, are you peeing?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792802265,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Rich, did you know I made $2K on Cameo?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792801721,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech USA, I know what you're doing!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792650294,
         "type": "superchat",
@@ -68652,6 +68924,30 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1792810081,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Can\u2019t wait for Rich\u2019s Turkish hair transplant",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792807184,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": ":baguette_bread:",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792802683,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Is this the next gen of Rogan sphere comics?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792624288,
         "type": "membership",
         "amount_usd": 1.99,
@@ -69519,6 +69815,14 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1792791710,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: Listen I goon and save a ton of videos like Randy Pitchford myself, not all of them are just about pikachu.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792625161,
         "type": "membership",
@@ -71470,6 +71774,22 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1792804856,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "the US owes the world reparations for this shit",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792785397,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Phil: I don't come, I hit the milestone ugh \ud83e\udeeaooh :astonished_face:",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792639709,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -71869,6 +72189,38 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1792815769,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "And because income fluctuates, that\u2019s why it\u2019s especially important he saves for those rainy days. Unfortunately, Phil didn\u2019t even know what a rainy day fund was and sets all his disposable income on fire via trading cards.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792807527,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I don\u2019t know who this narrator guy is, but make no mistake. If he makes it big it means we\u2019ll find out in a few years that he cheated with 17 different people. No hate just a law of nature",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792804961,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Hot take but I\u2019ve always thought *most* people need to trip balls and have at least one ego death because there\u2019s too much unearned confidence and certainty out there. Philism, one might call it",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792802192,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": "That therapy clip reminded me: did you ever see Sneako try to explain to a Harvard psychiatrist why therapy is a scam? The reality check he got was cathartic. Video is \u201cSneako Full Therapy Session with HealthyGamerGG...\u201d",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792640536,
         "type": "superchat",
@@ -72592,6 +72944,14 @@
     ],
     "DSPsDailyOzempicShot": [
       {
+        "ts": 1792793199,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hurry up, someone check RTUs dropbox before he bleachbits it",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1785805429,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -72601,6 +72961,22 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1792787762,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Sorry, one of the commenters of that tweet is apparently \"bob lavari's chest hair\"",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792787640,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Check Keemstar's latest tweet....",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792631713,
         "type": "superchat",
@@ -81006,6 +81382,22 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1792803488,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Kratos: the video Craig is reacting to is by Basic Logic, who is a Nazi sympathizer. Alchemist Soil did multiple videos debunking that guy.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792783341,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Trump: how\u2019re ya doin\u2019 Stanley? Doin\u2019 good? Stan: terrible! All those good times we had and you talk about every man except me? Don\u2019t you love me?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792633876,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -81726,6 +82118,30 @@
     ],
     "jiggyjoeryan": [
       {
+        "ts": 1792810240,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792810137,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "Trump: I will stop it so big. ClayFighter 63 1/3!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792809786,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: When I'm president, I will end that Russia Ukraine war in less than a day. I will get it settled. Rich believe me it's going to be tremendous.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792170468,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -81847,6 +82263,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1792782971,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Trump: About the governor bleeeeppppppp",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792626940,
         "type": "membership",
@@ -92424,6 +92848,22 @@
     ],
     "niallwilliamson3540": [
       {
+        "ts": 1792783083,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Trump: I was doing my Kermit impression my bad",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782069,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Not that I care about Ethan cheating on his wife but considering his podcast crew resigned due to this probably means his career is most likely over.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792625427,
         "type": "superchat",
         "amount_usd": 6.74,
@@ -99590,6 +100030,22 @@
     ],
     "BoodyChew1999": [
       {
+        "ts": 1792787235,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "my first dog died of cancer f this guy",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792786483,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "just watched the Ali g movie, it makes fun of maga",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1790622536,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -103970,6 +104426,14 @@
     ],
     "octropia": [
       {
+        "ts": 1792808484,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Ethan is going to grift  becoming a predator catcher and team up with chet goldstein",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792625824,
         "type": "bits",
         "amount_usd": 0.5,
@@ -104155,6 +104619,14 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1792815196,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "MW4 on the MSI Claw EX Ai+ is sex. 10 80 p 120hz Medium settings on my 65 inch Oled . Intel G3 Extreme is going to be shoved up your ass right now",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1791606940,
         "type": "membership",
@@ -104966,6 +105438,14 @@
     ],
     "RetroDrew-g6t": [
       {
+        "ts": 1792795576,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "he can be a mascot the jager one legger",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792200056,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -105089,6 +105569,22 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1792807004,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "\ud83e\udd77\ud83c\udffb",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782567,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": ":sweat_droplets:",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1790298614,
         "type": "giftmembership",
@@ -108604,6 +109100,22 @@
     ],
     "WiiklyReviews": [
       {
+        "ts": 1792804941,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "On a more positive note. Nothing beats on a cheapo night some Dino Nuggets and Homemade Mac and cheese for dinner.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792804708,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I will ask This.... IMO IF we make it past Trump? What else could happen? I mean being honest. So many places closing down people outta jobs its scary",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792644747,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -108936,6 +109448,30 @@
     ],
     "TheTenoray": [
       {
+        "ts": 1792810021,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792797492,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Ethan is done or he goes right-wing calling it now",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792796423,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Bad news: A deer jumped out at my car this morning. Good news: I'm setting up my retroid pocket nova while watching a man.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792188965,
         "type": "membership",
         "amount_usd": 1.99,
@@ -109203,6 +109739,14 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1792806459,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Ethan\u2019s kids are getting the two state solution",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792203697,
         "type": "superchat",
@@ -130090,6 +130634,14 @@
     ],
     "WhatABunchOfBananaOil": [
       {
+        "ts": 1792817750,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "What monitor would you recommend for ps5 shooters?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1789432830,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -132263,6 +132815,22 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1792796183,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "No I don\u2019t have BPD nor multiple of them, I just don\u2019t like a judgement on herb when booze kills more! I stay home & get doing laundry or something not start stuff! Anyways; rich; thank you! One love!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792795974,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Look; I am 3 rips & 2 blinkers into this peaceful & beautiful fall day! The herb gives no bad vibes unlike :tumbler_glass: but hey that\u2019s my opinion! Love you all!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792622310,
         "type": "superchat",
@@ -139162,6 +139730,14 @@
     ],
     "KevinBelmontLuna": [
       {
+        "ts": 1792801106,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "E's mistress looks like she tiptoes by the window",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1790985601,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -140491,6 +141067,14 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1792804428,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "I asked my mom \"is there anything trump could do to make you stop supporting him\".she told me \"I don't know\". im not suprised by that answer",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1790827799,
         "type": "superchat",
@@ -145439,6 +146023,14 @@
       }
     ],
     "tougeruzbay": [
+      {
+        "ts": 1792782135,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Stan: Holding like a lumpy bird Rich is mhmmmmm",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792170311,
         "type": "superchat",
@@ -154226,6 +154818,70 @@
     ],
     "violationentertainment": [
       {
+        "ts": 1792814751,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:Awahawoo oo(bonk)Ooyo awahoo oo(bonk)Owoo!!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792806063,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:No ID huh? well Ben dover & Sbread Em!! MmMmm",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792800300,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Harman:Pikachu where R U, oo U ewe uoo oo(slap)oo!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792797197,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792791407,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:U Get The Thweet Taste of Asth, by Eric Perez",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792788599,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Stan:jamuj amuja, jamuja mujam humuja muhuj a jamuj. amujamu mujamuham mu jamum u jamuhu um hujamuja? mumu jamu hamujum jajmu mujahumu(bong)o o(nani)",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792784664,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Eric:Happens to me sometimes. Urhh! Erh!! Ihrh! Uh",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782872,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Batman: Bob Lavari, is amman. Amman, with an asth",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792647391,
         "type": "superchat",
         "amount_usd": 1.41,
@@ -156083,6 +156739,22 @@
       }
     ],
     "apks94": [
+      {
+        "ts": 1792804176,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792804088,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "even IF voter fraud was 1%, that'd be well over a million votes. why arent there millions of convictions?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1790016892,
         "type": "membership",
@@ -158638,6 +159310,22 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1792783313,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792781310,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 30 months",
+        "message": "great day to not have a pic of my wife on my arm",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792629319,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -159137,6 +159825,14 @@
       }
     ],
     "darkanus2": [
+      {
+        "ts": 1792804790,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 26 months",
+        "message": "vermin supreme 2028 free ponies for everyone",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1784150478,
         "type": "superchat",
@@ -161315,6 +162011,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1792808493,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I think ethan was good to watch until he had beef with keemstar in my opinion",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1791587150,
         "type": "superchat",
@@ -166839,6 +167543,14 @@
       }
     ],
     "josephwadewalters": [
+      {
+        "ts": 1792784658,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "If I fart right now I will spray shit all over",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1784164315,
         "type": "superchat",
@@ -173190,6 +173902,14 @@
     ],
     "jetmaximum90": [
       {
+        "ts": 1792817438,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "let's get some QVC drift",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1787943704,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -178040,6 +178760,14 @@
     ],
     "DarkScamPhil": [
       {
+        "ts": 1792786090,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "\u201cNo we don\u2019t put out candy for Halloween. I live in a private community that doesn\u2019t allow soliciting\u201d-DSP :face_with_tears_of_joy: dude is a Scrooge about everything. Birds",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1790015364,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -181088,6 +181816,22 @@
     ],
     "dublinpapi": [
       {
+        "ts": 1792785100,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792784796,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1782364438,
         "type": "sub",
         "amount_usd": 5.99,
@@ -182004,6 +182748,14 @@
     ],
     "ComicBookChat": [
       {
+        "ts": 1792782512,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Social Media needs to be banned there I said it",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792640820,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -182167,6 +182919,14 @@
       }
     ],
     "dsmush": [
+      {
+        "ts": 1792804197,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "cheer50 hey Richy can you cover some grifter Russell Brand",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792368592,
         "type": "bits",
@@ -186757,6 +187517,14 @@
       }
     ],
     "joshk9317": [
+      {
+        "ts": 1792817725,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 37 months",
+        "message": "Trump: It's raining men! Hallelujah! It's raining men! Amen! I'm gonna go out to run and let myself get Absolutely soaking wet!It's raining men!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1788062918,
         "type": "membership",
@@ -209569,6 +210337,14 @@
       }
     ],
     "Gamermeetsworld": [
+      {
+        "ts": 1792803834,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Damm xilling 4 birds with one stone",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792628988,
         "type": "giftmembership",
@@ -455338,6 +456114,14 @@
     ],
     "madonnasplasticsurgery": [
       {
+        "ts": 1792815355,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil talks more about money more than the Cookie Monster talks about cookies",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1680830667,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -548978,6 +549762,14 @@
     ],
     "GamerForLife514": [
       {
+        "ts": 1792811831,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich, do you still use your Exposed Song?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1786226435,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -549964,6 +550756,14 @@
     ],
     "Orange_Yoshi_64": [
       {
+        "ts": 1792783935,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Harman: I like how people are celebrating this Switch 2 jailbreak when they don't realize Nintendo will catch you and you will all be sent to prison.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792622679,
         "type": "membership",
         "amount_usd": 1.99,
@@ -550091,6 +550891,86 @@
       }
     ],
     "solidpakamericanhorseman": [
+      {
+        "ts": 1792817295,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Jezz man the entire Davidson county in Tennessee is complaining about it the voting changing to to Republican dude! Forbes is covering it! Damn it...Mossad are working on it right Trump and fuking jared Kushner?!!!\ud83d\ude21",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792816528,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Rich did you saw viral  clip of someone tapped Jerri Green three times. The machine said Blackburn every single time. County's fix was coffee stirrers so your finger doesn't drift. Not fraud,and they say  just touchscreen sensitivity. Sure it is. You should see that!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792808166,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Mossad once again posting on X of what's happeing in France...anyone finds that shocking? Not me..anyway since we shtrael love doing conspiracy theory so why not me",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792806785,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 white house ain't white house anymore...it's war criminals house in DC. Every single Republican and Democrats except very few are radicalized extremist with Israel because of AIPAC and Israeli lobbyist. You point one finger four fingers point right back at you. Any way did you saw viral clip trump asked question by fuking Ben Shapiro Daily wire reporter he instantly called out her you are fake news and then instantly back tracks and apologize to zionist daily wire reporter.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792806648,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 white house ain't white house anymore...it's war criminals house in DC. Every single Republican and Democrats except very few are radicalized extremist with Israel because of AIPAC and Israeli lobbyist. You point one finger four fingers point right back at you. Any way did you saw viral clip trump asked question by fuking Ben Shapiro Daily wire reporter he instantly called out her you are fake news and then instantly back tracks and apologize to zionist daily wire reporter. \ud83d\ude06",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792802433,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Let's watch Paul Lance. It's just short video. I sent you email. Meanwhile it's 8:40pm I will take quick nap",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792798254,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 sigh...Two ex-FBI officials (Nikki Floris and Bradley Benavides) got charged today with lying to Congress about the Hunter Biden probe. I hope after midterm we get more Congress who actually values human lives and pass bill to not only shame but within arrest each and individual Republicans and  pro Israel shills!!!!\ud83d\ude21",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792796109,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 oh hey Rich what's up man. What's up folks. Happy Friday. Also late last night at 2am i went out to get wendys only to find myself struck my car tire \ud83d\udede hit curbside and found myself stranded. Dead serious. Uber took me to wendy and drop back home and it was fuking crazy price at 2am",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792795907,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 the whole \"jihadist group\" framing its all backfiring. Bush sent troops in 2001, bled for a quarter century, and the real culprits i.e. Israel were the ones actually steering this only to find themselves exposed,after 30 years, while now Islamist militia are sitting back laughing at a brainwashed US political class It's here a massive political collision, and it's being driven by one tiny, vicious apartheid state shtrael pulling the strings while the whole US politicians just follows.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792794607,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792647102,
         "type": "bits",
@@ -551554,6 +552434,14 @@
     ],
     "Gamerfreak-MLP-Lover20248": [
       {
+        "ts": 1792806882,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the right wingers point at phil 4 things that are also the case with themselves. they have the same lack of self awareness if not worse. craig is 64Y",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1790378962,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -551771,6 +552659,14 @@
       }
     ],
     "VivaSumudPAKResistor": [
+      {
+        "ts": 1792796965,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: sup rich can we watch Paul lance today video",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792633086,
         "type": "superchat",
@@ -552130,6 +553026,14 @@
     ],
     "BossIog": [
       {
+        "ts": 1792782460,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Same sound Kirk made",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792630655,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -552301,6 +553205,30 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1792818927,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "if only the Bible had an age of consent in it laws",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792807934,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "starting to think Israel did nine eleven",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792796319,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "The USA need paper ballot votes only",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1792644780,
         "type": "superchat",
@@ -553150,6 +554078,14 @@
     ],
     "AshxBashem": [
       {
+        "ts": 1792783969,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Hey Rich luv your mini pc reviews. Just want to let you know that the GEEKOM A6($630) gaming performance isn't too far off from the GEKtec X-1Pro($1600)when consoles go away I'm team mini P.C.",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792169853,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -553177,6 +554113,22 @@
       }
     ],
     "shakezkilla": [
+      {
+        "ts": 1792798502,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50  they probably said they were safe because of how volatile he can be?",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792798000,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 the girl he allegedly cheated with basically looks like if they had a grown up daughter",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
       {
         "ts": 1790621643,
         "type": "bits",
@@ -553644,6 +554596,54 @@
     ],
     "DeadReckoning223": [
       {
+        "ts": 1792807312,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Ethan \"TigerWoods\" Klein",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792807158,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Jesus Rich, you were streaming before I went to work and you're streaming when I got home from Walmart after work",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792783096,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "You have disrespected the:chicken:Rich. The :chicken:is a Musk follower",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782841,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "did Craig say no to the:baby_chick:, did he disrespect the:baby_chick:",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782587,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Craig from Sidescrollers didn't do nothing, Craig is a good boy",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792782506,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rick, Craig didn't do nothing, Craig is a god boy",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
         "ts": 1792624815,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -553686,6 +554686,62 @@
         "amount_raw": "Member for 16 months",
         "message": "16 robust months",
         "stream_id": "dear_daniel_keem_2026-10-21_222823"
+      }
+    ],
+    "PANTHER-js1bl": [
+      {
+        "ts": 1792808905,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "You should be propagandists for Iran or Hamas",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792792999,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Remember when Ames owned u, and rode u like a pony",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      }
+    ],
+    "sensfan0101": [
+      {
+        "ts": 1792810851,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Fully conversational AI that sounds extremely human just dropped, Dessa AI, would love to see your reaction. Trained on just 1 NVIDIA rack",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      },
+      {
+        "ts": 1792799895,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "The divorce will end in a two estate solution\u2026",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      }
+    ],
+    "ianjackson6170": [
+      {
+        "ts": 1792811224,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      }
+    ],
+    "determined_hero": [
+      {
+        "ts": 1792817946,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "gotta keep it a buck i bought a benq cuz rich said it was dope back in the day, still got 3 of em still working like it was day one and i had two asus rog strix die in the same time cheer100",
+        "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
       }
     ]
   }
