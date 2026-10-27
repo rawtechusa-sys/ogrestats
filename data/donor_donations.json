@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792820054,
+  "updated_ts": 1793078360,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -878,7 +878,8 @@
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
-    "grifters_and_men_and_benchmarking_2026-10-23_184712"
+    "grifters_and_men_and_benchmarking_2026-10-23_184712",
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9981,6 +9982,21 @@
       ],
       "source_vod_id": "PX_b2yja63U",
       "source_platform": "youtube"
+    },
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254": {
+      "title": "Dave And His Robust Delusions of \"Gran-door\" #dspgaming",
+      "start_ts": 1793059974,
+      "youtube_archive_id": "OQJCX08jjOQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "OQJCX08jjOQ",
+          "start_ts": 1793057007
+        }
+      ],
+      "source_vod_id": "Bk8pXbULsFw",
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -13355,6 +13371,14 @@
       }
     ],
     "ZG49389": [
+      {
+        "ts": 1793066439,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric:Den of Lips\u2019 lips get more red when mad",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792785295,
         "type": "superchat",
@@ -18238,6 +18262,14 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1793076647,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1791587365,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -18319,6 +18351,22 @@
       }
     ],
     "evildetrution5426": [
+      {
+        "ts": 1793071712,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "she likes going down south",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793066072,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "palantir is one hack away from being a liability",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792647959,
         "type": "superchat",
@@ -20999,6 +21047,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1793077893,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil has been in more scandals than more larger content creators combined but he is just irrelevant enough to where no one truly gives a shit.",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792816043,
         "type": "membership",
@@ -31400,6 +31456,14 @@
     ],
     "lyokowarrior4296": [
       {
+        "ts": 1793072559,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "keep in mind this guy doesnt believe married couples buy and wrap Christmas gifts for each other. he just went up to kat and said lets go shopping",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792785872,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -40114,6 +40178,22 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1793075408,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "phil should open a wrestling company with 8bit.",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793074400,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "phil Right wing grift when?",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1791606700,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -42783,6 +42863,14 @@
       }
     ],
     "Dublinpapi": [
+      {
+        "ts": 1793060125,
+        "type": "sub",
+        "amount_usd": 9.99,
+        "amount_raw": "2000",
+        "message": "sup",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792811235,
         "type": "giftsub",
@@ -46085,6 +46173,46 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1793068194,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm scared Phils giant turnip head will explode",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793067250,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Feels like Biff from Back to the Future 2 is Trump",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793066605,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric:Can U Lend Me Ur Beer, A memoir of Eric Perez",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793066492,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793066104,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They keep trying 2 drag us back 2 the 1800's again",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792636290,
         "type": "superchat",
@@ -67666,6 +67794,22 @@
     ],
     "respergu13": [
       {
+        "ts": 1793070639,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Review Tech USA, AstroTurf this bird !",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793069122,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792811458,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -77658,6 +77802,14 @@
     ],
     "EvistoSF": [
       {
+        "ts": 1793067071,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Stan: Listen Rich, I like my superheats long and hard so I will keep this short so I can get back to some long hard wieners. Oh yeah, spread those superchats and just go to town!",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1790273646,
         "type": "sub",
         "amount_usd": 5.99,
@@ -82118,6 +82270,14 @@
     ],
     "jiggyjoeryan": [
       {
+        "ts": 1793075089,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Any thoughts on the retroid pocket nova?",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792810240,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -85726,6 +85886,14 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1793074036,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "All HAIL the POO hoodie!",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792199520,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -87228,6 +87396,14 @@
     ],
     "End-Logic_1": [
       {
+        "ts": 1793065899,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "We live in the absolute universe. All my DC comic fans will understand the reference",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1791600789,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -87911,6 +88087,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1793073542,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "listen 8BE is such a generic looking loser i saw a guy working at mcdonalds in toronto & really thought it was him working in the back of the kitchen",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792176212,
         "type": "membership",
@@ -100030,6 +100214,22 @@
     ],
     "BoodyChew1999": [
       {
+        "ts": 1793069070,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "AI will destroy humanity like Ultron from avengers",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793067498,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "some men just want to watch the world burn",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792787235,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -109739,6 +109939,22 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1793069300,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I just got sent $5 from X. I dont even post there.",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793068629,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil: Jay Z is confirmed gonna be the next host for the 2027 halftime show. I like his music but dunno how I feel optically given his allegations",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792806459,
         "type": "superchat",
@@ -140430,6 +140646,14 @@
     ],
     "PunkGam3r": [
       {
+        "ts": 1793065970,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "Phil: KAT PUT DOWN THE STRAP ON AAH! (amogus_kill)",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1790284840,
         "type": "membership",
         "amount_usd": 1.99,
@@ -156296,6 +156520,22 @@
     ],
     "danithefoot633": [
       {
+        "ts": 1793069694,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793068138,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1790032088,
         "type": "membership",
         "amount_usd": 1.99,
@@ -168038,6 +168278,22 @@
     ],
     "Loafin_OG": [
       {
+        "ts": 1793074022,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "Glide through the skies with your loose skin",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793073819,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1790801704,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -173866,6 +174122,14 @@
     ],
     "HimejoshiNat": [
       {
+        "ts": 1793062271,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "hiya Rich. Haven\u2019t watched the last couple streams been busy.",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1790615169,
         "type": "sub",
         "amount_usd": 5.99,
@@ -177099,6 +177363,22 @@
       }
     ],
     "joshloungin": [
+      {
+        "ts": 1793075001,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "harmen: woo woo woo pika pika pika boot fuhq mewe",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793074460,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "No Dad this is me, I just nuked my old account. also I hope that fart had a devine smell that hit the back of your nostrils making the hairs stick up",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1783048851,
         "type": "sub",
@@ -182747,6 +183027,14 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1793072304,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "are you going to livestream the election in 8 days",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792782512,
         "type": "membership",
@@ -308697,6 +308985,14 @@
       }
     ],
     "connor1187": [
+      {
+        "ts": 1793077347,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Phil looks like he could be in an AI slop video",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792196645,
         "type": "superchat",
@@ -552416,6 +552712,14 @@
     ],
     "iBLUEmyself": [
       {
+        "ts": 1793069490,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Hand Jobs All Around!  rtuCucumbers rtuCucumbers rtuCucumbers ResidentSleeper",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1791577253,
         "type": "sub",
         "amount_usd": 5.99,
@@ -553206,6 +553510,30 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1793072894,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "I just looked up Phil doing what you said! :skull: WTF",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793068929,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Do u really think C-K was taken out by Israel?",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793067551,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Do u wish there was a hell for this billionaires ?",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
         "ts": 1792818927,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -553833,6 +554161,22 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1793074649,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "he should have a cologne called smelly jelly",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793074360,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
       {
         "ts": 1792638407,
         "type": "superchat",
@@ -554742,6 +555086,70 @@
         "amount_raw": "100 bits",
         "message": "gotta keep it a buck i bought a benq cuz rich said it was dope back in the day, still got 3 of em still working like it was day one and i had two asus rog strix die in the same time cheer100",
         "stream_id": "grifters_and_men_and_benchmarking_2026-10-23_184712"
+      }
+    ],
+    "propakistaniamericantitan": [
+      {
+        "ts": 1793070380,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 imagine Chris Hansen walks into the Daily Wire studio, folder in hand: Ben, have a seat. During To Catch a Predator I also arrested a Mossad agent and an Israeli rabbi \u2014 one tried to negotiate with the decoy, the other kept quoting the Talmud. \ud83d\ude06 Now that would be the moment if  only if Chris Hansen brought fact sheet of his entire career. \ud83d\ude06",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793068100,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 nenthyahu, BenGvir, and smotrich all of their body should be into large industrial metal shredar. Now I would pay VVIP exclusive seat and make that broadcast to whole world with children of Gaza and Lebanon to watch that! To that level of my raged I have reached about these creatures since last year it!",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793066871,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 Listen Rich. How's it going? My old man... Listen I haven't eaten anything for 4875 hours because of fuking mounjaro dude. Listen these US politicians are fuking obnoxious and real terrorst piece of sht while each bite I take I think about orphaned and starving children and I will never STOP about it till Palestine and Lebanon are blessed with unlimited shower of food and drink. Fuking basturd re_tard_ican and AIPAC backed Democrats. I can't believe how betrayed anti trump maga silence",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      }
+    ],
+    "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1793069573,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      },
+      {
+        "ts": 1793068340,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: Hey Rich missed cheer50. what are you eating",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      }
+    ],
+    "Mr10_Years_in_the_joint": [
+      {
+        "ts": 1793071581,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Hey review tech usa are you the gdc guy ?",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      }
+    ],
+    "AkiENCh": [
+      {
+        "ts": 1793072637,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": "Hello dad your truly amazing and f the hatters",
+        "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
       }
     ]
   }
