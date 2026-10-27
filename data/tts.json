@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792820049,
+  "updated_ts": 1793078356,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -878,15 +878,16 @@
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
-    "grifters_and_men_and_benchmarking_2026-10-23_184712"
+    "grifters_and_men_and_benchmarking_2026-10-23_184712",
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
   ],
   "commands": {
     "men": 6,
     "eric": 278,
-    "phil": 626,
-    "stan": 440,
+    "phil": 629,
+    "stan": 441,
     "masterchief": 171,
-    "harman": 224,
+    "harman": 225,
     "trump": 267,
     "moist": 44,
     "dagoth": 5,
@@ -1476,7 +1477,9 @@
     "dune": 1,
     "code": 1,
     "eminem": 2,
-    "batman": 1
+    "batman": 1,
+    "hand": 1,
+    "harmen": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10579,9 +10582,94 @@
       ],
       "source_vod_id": "PX_b2yja63U",
       "source_platform": "youtube"
+    },
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254": {
+      "title": "Dave And His Robust Delusions of \"Gran-door\" #dspgaming",
+      "start_ts": 1793059974,
+      "youtube_archive_id": "OQJCX08jjOQ",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "OQJCX08jjOQ",
+          "start_ts": 1793057007
+        }
+      ],
+      "source_vod_id": "Bk8pXbULsFw",
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1793075001,
+      "username": "@joshloungin",
+      "platform": "youtube",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "harmen: woo woo woo pika pika pika boot fuhq mewe",
+      "commands": [
+        "harmen"
+      ]
+    },
+    {
+      "ts": 1793070639,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Harman: Review Tech USA, AstroTurf this bird !",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1793070380,
+      "username": "propakistaniamericantitan",
+      "platform": "twitch",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Cheer100 imagine Chris Hansen walks into the Daily Wire studio, folder in hand: Ben, have a seat. During To Catch a Predator I also arrested a Mossad agent and an Israeli rabbi \u2014 one tried to negotiate with the decoy, the other kept quoting the Talmud. \ud83d\ude06 Now that would be the moment if  only if Chris Hansen brought fact sheet of his entire career. \ud83d\ude06",
+      "commands": [
+        "hand"
+      ]
+    },
+    {
+      "ts": 1793068629,
+      "username": "@rio.brando",
+      "platform": "youtube",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Phil: Jay Z is confirmed gonna be the next host for the 2027 halftime show. I like his music but dunno how I feel optically given his allegations",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793068340,
+      "username": "@ProPakistaniAmerican4Libration",
+      "platform": "youtube",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Phil: Hey Rich missed cheer50. what are you eating",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793067071,
+      "username": "EvistoSF",
+      "platform": "twitch",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Stan: Listen Rich, I like my superheats long and hard so I will keep this short so I can get back to some long hard wieners. Oh yeah, spread those superchats and just go to town!",
+      "commands": [
+        "stan"
+      ]
+    },
+    {
+      "ts": 1793065970,
+      "username": "@PunkGam3r",
+      "platform": "youtube",
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "message": "Phil: KAT PUT DOWN THE STRAP ON AAH! (amogus_kill)",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1792817725,
       "username": "@joshk9317",
