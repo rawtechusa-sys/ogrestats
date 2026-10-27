@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1792820060,
+  "updated_ts": 1793078368,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1951,7 +1951,8 @@
     "the_last_marathon_stream_2026-10-16_163827",
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
-    "grifters_and_men_and_benchmarking_2026-10-23_184712"
+    "grifters_and_men_and_benchmarking_2026-10-23_184712",
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35102,6 +35103,23 @@
       "avg_viewers": 283.78,
       "avg_chat_mpm": 7.42,
       "avg_active_chatters": 18.2,
+      "percent_paused": null
+    },
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254": {
+      "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+      "title": "Dave And His Robust Delusions of \"Gran-door\" #dspgaming",
+      "start_ts": 1793059974,
+      "end_ts": 1793078150,
+      "duration_sec": 18176,
+      "youtube_archive_id": "OQJCX08jjOQ",
+      "source_platform": "twitch",
+      "total_donations_usd": 184.08,
+      "donation_count": 48,
+      "donations_per_min": 0.6077,
+      "peak_viewers": 367,
+      "avg_viewers": 236.69,
+      "avg_chat_mpm": 4.63,
+      "avg_active_chatters": 11.74,
       "percent_paused": null
     }
   }
