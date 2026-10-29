@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793078360,
+  "updated_ts": 1793234678,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -879,7 +879,8 @@
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
-    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -9997,6 +9998,25 @@
       ],
       "source_vod_id": "Bk8pXbULsFw",
       "source_platform": "twitch"
+    },
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956": {
+      "title": "Rich Tomorrow: A Mini-Marathon Stream About Phil And Men",
+      "start_ts": 1793219996,
+      "youtube_archive_id": "4Ker_rhQopk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "PuVM4-hXetQ",
+          "start_ts": 1793218847
+        },
+        {
+          "archive_id": "4Ker_rhQopk",
+          "start_ts": 1793234527
+        }
+      ],
+      "source_vod_id": "nbFBBbGjmPE",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -13541,6 +13561,14 @@
       }
     ],
     "885thBatmanFan": [
+      {
+        "ts": 1793233124,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "What about Larry David in Curb Your Enthusiasm, Rich? My brother likes that show. He used to laugh his ass off at it.",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793062099,
         "type": "superchat",
@@ -18286,6 +18314,22 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1793229624,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich do u think I can fix Nick? I'll make him blue",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793222792,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 24 months",
+        "message": "Ppl \"seen the new X?\" yea I bought it lastweek LOL",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793076647,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -21072,6 +21116,14 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1793220056,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793077893,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -21561,6 +21613,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1793223718,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793060250,
         "type": "giftmembership",
@@ -22677,6 +22737,14 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1793221189,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Trump: my fellow men, mechanically inclined men. I need your approval. should I get a corvette servo for my cateye? is it worth it? anyways, I farted",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793061349,
         "type": "superchat",
@@ -40332,6 +40400,14 @@
     ],
     "Beard-CatT": [
       {
+        "ts": 1793222452,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "hoot wireless",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1791013610,
         "type": "membership",
         "amount_usd": 1.99,
@@ -42561,6 +42637,14 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1793222412,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "New CoD is awesome. Shame you don't like it. Birds",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792631412,
         "type": "superchat",
@@ -66646,6 +66730,38 @@
     ],
     "karasub2836": [
       {
+        "ts": 1793221918,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "LOL that explains why oh no it's Alex doesn't turn off his PCS",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793220768,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793220682,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "bird is the word",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793220496,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 34 months",
+        "message": "wait ten dollars for a Super Chat what's up Big Bird",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1792622605,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -67139,6 +67255,22 @@
       }
     ],
     "75.": [
+      {
+        "ts": 1793224716,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "6 mins ago breaking news kyle kylinski video",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793224146,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "What are the chances hila will take ethan back",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792798602,
         "type": "superchat",
@@ -67921,6 +68053,22 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1793226571,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech USA,I can finally chat with you!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793224386,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harman: Rich, how much for a 36 hours marathon ?",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793070639,
         "type": "superchat",
@@ -69212,6 +69360,14 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1793232666,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "You need to roast Jay back and make fun of him being a 45 year old man showing off his posters and doll collection",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1792810081,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -69773,6 +69929,14 @@
       }
     ],
     "qb3540": [
+      {
+        "ts": 1793234013,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Funny how both Andrew Wilsons are human garbage",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792625828,
         "type": "membership",
@@ -72070,6 +72234,14 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1793227027,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Youre kinda hot when youre angry, Mr Masucci :t_rex::fire::triangular_ruler:",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1792804856,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -73265,6 +73437,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1793221283,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: Greetings bird father. Stan: I like nipples",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792787762,
         "type": "superchat",
@@ -82429,6 +82609,14 @@
       }
     ],
     "jiggyjoeryan": [
+      {
+        "ts": 1793231252,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Behind the curtain ruling class :clown_face: (divide+conquer)",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793075089,
         "type": "superchat",
@@ -93192,6 +93380,22 @@
     ],
     "niallwilliamson3540": [
       {
+        "ts": 1793226468,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "If TTS is working now, I just want Phil to say Phil:?I fart in your general direction, your mother is a hamster.",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793226193,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Men Men Men Men Manly Men",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793061653,
         "type": "superchat",
         "amount_usd": 6.75,
@@ -100389,6 +100593,14 @@
       }
     ],
     "BoodyChew1999": [
+      {
+        "ts": 1793222067,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "I bet it was Carlos who caused the OBS issue :chicken:",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793069070,
         "type": "superchat",
@@ -110163,6 +110375,22 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1793229077,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Nicole was basically bullying people even remotely overweight did the same type of video for Black people. She was the predecessor to Melonie mac",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793226960,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "New Macbook pro is an OLED touchscreen and they brought back the glowing apple. They're also touting 128GB RAM and 16TB of storage. They must be high",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793069300,
         "type": "superchat",
@@ -128912,6 +129140,22 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1793227839,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "tyt still support Candace owns sick tucker thinkto",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793227070,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "good news trump loosing around the world",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1792637869,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -133279,6 +133523,14 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1793224386,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 38 months",
+        "message": "Hi! I am chatting with a lady whose my age and is as nerdy as I am! She wants to see doomsday avengers as a date; I said yes! December 18th Friday!!!!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792796183,
         "type": "superchat",
@@ -155298,6 +155550,38 @@
     ],
     "violationentertainment": [
       {
+        "ts": 1793230521,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": ":poultry_leg:. It's poultry leg day, Rich emoji, where U at? :poultry_leg:,:poultry_leg: Cozy up under the Phil blanket with some sweet bisexual poultry leg.",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793226764,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Try to re try to re try to re try to re try to relax your shoulders, yo rainus, your shoulders, yo rainus. Try to re try to re try to re try to re",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793220678,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793220366,
+        "type": "superchat",
+        "amount_usd": 3.53,
+        "amount_raw": "A$5.00",
+        "message": "Hey Rich, what do you use for benchmarks? I got some free time and could make a tool to visualise stats to composite into videos",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793061578,
         "type": "superchat",
         "amount_usd": 3.53,
@@ -159829,6 +160113,14 @@
       }
     ],
     "SirReginaldFannybottom": [
+      {
+        "ts": 1793220349,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "About to fly to Ireland. Wish me luck bois",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1792783313,
         "type": "giftmembership",
@@ -168822,6 +169114,14 @@
     ],
     "JoshJonesDrums": [
       {
+        "ts": 1793221269,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Amazing news, a drummer I taught since he was 10 years old just won the assistant principal spot in my orchestra! I\u2019m so happy, praise birds and men!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1791576539,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -177676,6 +177976,14 @@
     ],
     "joshloungin": [
       {
+        "ts": 1793230831,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 38 months",
+        "message": "Come",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793075001,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -178361,6 +178669,22 @@
       }
     ],
     "Johntera-o1j": [
+      {
+        "ts": 1793232015,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Do you not see how trump banning msnbc and cnn from White House is similar to you banning people. You both are censoring your critics/ detractors",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793231795,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Opinion on trump banning cnn at White House?",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1782749956,
         "type": "superchat",
@@ -183363,6 +183687,14 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1793231472,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I knew Trump watched DSP on May 1st 2016",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793072304,
         "type": "membership",
@@ -191599,6 +191931,30 @@
       }
     ],
     "FrogForce": [
+      {
+        "ts": 1793232468,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793232081,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Dude how much to ban him?",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793229990,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "How does anyone compete against the big funders of Phil? His massive IQ aside",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1790826188,
         "type": "giftmembership",
@@ -211787,6 +212143,14 @@
       }
     ],
     "Spencerwalker21": [
+      {
+        "ts": 1793226304,
+        "type": "superchat",
+        "amount_usd": 6.66,
+        "amount_raw": "$6.66",
+        "message": "watched a vtuber on twitch saying he leans right like it was secret I said very obvious you cry about modern feminism and trans he banned me instantly",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1739410930,
         "type": "superchat",
@@ -552634,6 +552998,14 @@
     ],
     "DrTSanchez1": [
       {
+        "ts": 1793225462,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 26 months",
+        "message": "maga tried this in WA governor election in 2024",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1790362408,
         "type": "membership",
         "amount_usd": 1.99,
@@ -553894,6 +554266,22 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1793233263,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Every time I C Netanyahu, I flip the screen off!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793226261,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Almost skipped E-Day cause people called it woke!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793072894,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -554404,6 +554792,14 @@
     ],
     "nevilleswitch": [
       {
+        "ts": 1793224933,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Hi al",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1789763197,
         "type": "sub",
         "amount_usd": 5.99,
@@ -554431,6 +554827,14 @@
       }
     ],
     "SignalRegulus": [
+      {
+        "ts": 1793221408,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "It isn't just you. OBS CHANGED settings, not default. It was so messed up I had to fresh install. Let's not even talk about Windows 11 on top of it.",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793064902,
         "type": "membership",
@@ -555102,6 +555506,14 @@
     ],
     "stuckinthebackturds": [
       {
+        "ts": 1793224825,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Yay!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1791315464,
         "type": "sub",
         "amount_usd": 5.99,
@@ -555482,6 +555894,14 @@
     ],
     "propakistaniamericantitan": [
       {
+        "ts": 1793224880,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Israeli AI firm Cognyte sought NYPD phone-tracking deal in NYC. Mayor Zohran Mamdani blocked the no-bid contract. Not happening\u2014Finally good news! It all happened when I watchin TYT",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
         "ts": 1793070380,
         "type": "bits",
         "amount_usd": 1.0,
@@ -555507,6 +555927,22 @@
       }
     ],
     "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1793229321,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": ":police_car_light:Tommy Robinson has been sentenced10 years prison!",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
+      {
+        "ts": 1793223936,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what's up Rich. Trump: Nicki\u2019s bum is hard to miss I put her in charge of morning press Q&A. Reporters won\u2019t know where to look!We love Nicki Minaj",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      },
       {
         "ts": 1793069573,
         "type": "giftmembership",
@@ -555552,6 +555988,26 @@
         "amount_raw": "$5.00",
         "message": "Thing that i noticed about these people is that they dont see Christianity as a religion.They treat it more like a fucking club. i hate it",
         "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+      }
+    ],
+    "JaredSanchez-c3f": [
+      {
+        "ts": 1793222233,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "at least phil isnt lazy & shows up to work lol",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+      }
+    ],
+    "MrDemonsushii": [
+      {
+        "ts": 1793223236,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hi Rich. Last superchat I sent on another channel I got called a clown. Gotta wash the bad taste out. Anyway, W for LoHi hits in your background! :ok_hand:",
+        "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
       }
     ]
   }
