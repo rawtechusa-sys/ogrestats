@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793078356,
+  "updated_ts": 1793234673,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -879,16 +879,17 @@
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
-    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
   ],
   "commands": {
     "men": 6,
-    "eric": 279,
+    "eric": 280,
     "phil": 631,
-    "stan": 441,
+    "stan": 442,
     "masterchief": 171,
-    "harman": 227,
-    "trump": 273,
+    "harman": 228,
+    "trump": 276,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -10597,9 +10598,79 @@
       ],
       "source_vod_id": "Bk8pXbULsFw",
       "source_platform": "twitch"
+    },
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956": {
+      "title": "Rich Tomorrow: A Mini-Marathon Stream About Phil And Men",
+      "start_ts": 1793219996,
+      "youtube_archive_id": "4Ker_rhQopk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "PuVM4-hXetQ",
+          "start_ts": 1793218847
+        },
+        {
+          "archive_id": "4Ker_rhQopk",
+          "start_ts": 1793234527
+        }
+      ],
+      "source_vod_id": "nbFBBbGjmPE",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1793226571,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "message": "Eric: Review Tech USA,I can finally chat with you!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1793224386,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "message": "Harman: Rich, how much for a 36 hours marathon ?",
+      "commands": [
+        "harman"
+      ]
+    },
+    {
+      "ts": 1793223936,
+      "username": "@ProPakistaniAmerican4Libration",
+      "platform": "youtube",
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "message": "what's up Rich. Trump: Nicki\u2019s bum is hard to miss I put her in charge of morning press Q&A. Reporters won\u2019t know where to look!We love Nicki Minaj",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1793221283,
+      "username": "@Phoenix12157",
+      "platform": "youtube",
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "message": "Trump: Greetings bird father. Stan: I like nipples",
+      "commands": [
+        "trump",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1793221189,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "message": "Trump: my fellow men, mechanically inclined men. I need your approval. should I get a corvette servo for my cateye? is it worth it? anyways, I farted",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1793075001,
       "username": "@joshloungin",
