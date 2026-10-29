@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793078370,
+  "updated_ts": 1793234687,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -145,7 +145,8 @@
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
-    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1730,6 +1731,25 @@
       ],
       "source_vod_id": "Bk8pXbULsFw",
       "source_platform": "twitch"
+    },
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956": {
+      "title": "Rich Tomorrow: A Mini-Marathon Stream About Phil And Men",
+      "start_ts": 1793219996,
+      "youtube_archive_id": "4Ker_rhQopk",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "PuVM4-hXetQ",
+          "start_ts": 1793218847
+        },
+        {
+          "archive_id": "4Ker_rhQopk",
+          "start_ts": 1793234527
+        }
+      ],
+      "source_vod_id": "nbFBBbGjmPE",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2518,6 +2538,88 @@
           "moderator": null,
           "reason": null,
           "stream_id": "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+        }
+      ]
+    },
+    "JaredSanchez-c3f": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793222364,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "UC1PYYPXx6SSJTBp9tfatE0w"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793222364,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+        },
+        {
+          "ts": 1793222283,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+        }
+      ]
+    },
+    "Johntera-o1j": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793232087,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCA4o3lbh4B1QRlfMNlRXPyw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793232087,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+        }
+      ]
+    },
+    "carlwhite570": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793233140,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCYOZaXFj3CTxNee-t9pAZCw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793233140,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
         }
       ]
     }
