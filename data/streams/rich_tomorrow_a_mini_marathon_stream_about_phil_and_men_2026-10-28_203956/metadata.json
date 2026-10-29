@@ -3,8 +3,9 @@
   "slug": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men",
   "title": "Rich Tomorrow: A Mini-Marathon Stream About Phil And Men",
   "start_ts": 1793219996,
-  "end_ts": 1793234491,
+  "end_ts": 1793234546,
   "platforms": [
+    "kick",
     "youtube",
     "twitch"
   ],
@@ -15,8 +16,14 @@
     {
       "archive_id": "PuVM4-hXetQ",
       "start_ts": 1793218847
+    },
+    {
+      "archive_id": "4Ker_rhQopk",
+      "start_ts": 1793234527
     }
   ],
-  "youtube_archive_id": "PuVM4-hXetQ",
-  "archive_is_source_vod": false
+  "youtube_archive_id": "4Ker_rhQopk",
+  "archive_is_source_vod": false,
+  "rumble_archive_url": "https://rumble.com/v7hj2aw-rtu-restream.html",
+  "rumble_start_ts": 1793218863
 }
