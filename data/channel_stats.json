@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793078368,
+  "updated_ts": 1793234684,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1952,7 +1952,8 @@
     "grifters_2026-10-18_232926",
     "dear_daniel_keem_2026-10-21_222823",
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
-    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254"
+    "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35121,6 +35122,23 @@
       "avg_chat_mpm": 7.68,
       "avg_active_chatters": 19.7,
       "percent_paused": null
+    },
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956": {
+      "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+      "title": "Rich Tomorrow: A Mini-Marathon Stream About Phil And Men",
+      "start_ts": 1793219996,
+      "end_ts": 1793234546,
+      "duration_sec": 14550,
+      "youtube_archive_id": "4Ker_rhQopk",
+      "source_platform": "youtube",
+      "total_donations_usd": 194.03,
+      "donation_count": 54,
+      "donations_per_min": 0.8001,
+      "peak_viewers": 323,
+      "avg_viewers": 261.74,
+      "avg_chat_mpm": 6.52,
+      "avg_active_chatters": 17.72,
+      "percent_paused": 62.6
     }
   }
 }
