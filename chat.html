@@ -514,6 +514,7 @@
 </div>
 
 <script src="config.js"></script>
+<script src="vod-overrides.js"></script>
 
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
@@ -741,9 +742,14 @@ function vodLink(smeta, offset, label, title, vodId) {
   const t = Math.max(0, Math.floor(offset ?? 0));
   const tt = title ? ` title="${escHtml(title)}"` : '';
   const id = vodId || (smeta && smeta.source_platform !== 'twitch' ? smeta.source_vod_id : null);
+  // A curator's source URL (vod-overrides.js) replaces the source VOD, on any
+  // platform. A row-level vodId is a different video, so it stays.
+  const sourceOverride = !vodId && smeta ? VodOverrides.sourceUrl(smeta.id) : null;
   let href = null;
   if (vodId) {
     href = `https://youtu.be/${encodeURIComponent(vodId)}?t=${t}`;
+  } else if (sourceOverride) {
+    href = VodOverrides.deepLink(sourceOverride, t);
   } else if (smeta && smeta.archive_org_file) {
     // A stream linked to the rtustreams<N> archive.org corpus: that file IS the
     // source VOD (which is usually deleted), so offsets land on the same moment.
@@ -1793,12 +1799,15 @@ async function load() {
   initUI();
 
   try {
-    INDEX = await fetchJSONProgress(`${RAW}/data/chat_search.json`, (received, total) => {
-      const mb = (received / 1048576).toFixed(1);
-      status.textContent = (total && received <= total)
-        ? `loading index… ${Math.round(received / total * 100)}%`
-        : `loading index… ${mb} MB`;
-    });
+    [INDEX] = await Promise.all([
+      fetchJSONProgress(`${RAW}/data/chat_search.json`, (received, total) => {
+        const mb = (received / 1048576).toFixed(1);
+        status.textContent = (total && received <= total)
+          ? `loading index… ${Math.round(received / total * 100)}%`
+          : `loading index… ${mb} MB`;
+      }),
+      VodOverrides.load(RAW),
+    ]);
 
     // Populate the stream picker datalist + status line. The transcript index is
     // lazy, so this holds chat streams only until ensureTranscriptIndex rebuilds it.

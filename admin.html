@@ -512,6 +512,7 @@
   .stream-info {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 6px 10px;
     font-family: 'Share Tech Mono', monospace;
     font-size: 13px;
@@ -519,6 +520,8 @@
   }
   .stream-info .sep { color: var(--border-default); }
   .stream-info .k { color: var(--accent); }
+  /* Source/Archive URL controls: pushed to the row's right edge. */
+  .stream-links { display: flex; gap: 6px; margin-left: auto; flex-shrink: 0; }
 
   .no-chart-note {
     font-family: 'Share Tech Mono', monospace;
@@ -678,6 +681,7 @@
     letter-spacing: 0.04em;
   }
   .modal-actions { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+  .url-current { word-break: break-all; }
   .modal-actions .spacer { flex: 1; }
   .modal-warn {
     font-family: 'Share Tech Mono', monospace;
@@ -883,10 +887,39 @@
   </div>
 </div>
 
+<!-- ── VOD link modal ── -->
+<div class="modal-overlay" id="urlModalOverlay" hidden>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="urlModalTitle">
+    <span class="modal-title" id="urlModalTitle">Replace URL</span>
+
+    <div class="field">
+      <span class="field-label" id="urlCurrentLabel">Current link</span>
+      <span class="field-echo url-current" id="urlCurrent"></span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">New URL</span>
+      <input class="admin-input" id="urlInput" type="text" placeholder="https://…"
+             autocomplete="off" spellcheck="false">
+    </div>
+
+    <span class="modal-warn" id="urlWarn"></span>
+    <span class="modal-error" id="urlError"></span>
+
+    <div class="modal-actions">
+      <button class="admin-btn primary" id="urlSave" type="button">Save</button>
+      <button class="admin-btn" id="urlCancel" type="button">Cancel</button>
+      <span class="spacer"></span>
+      <button class="admin-btn danger" id="urlClear" type="button" hidden>Clear</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast-wrap" id="toastWrap"></div>
 
 <script src="config.js"></script>
 <script src="manual-events.js"></script>
+<script src="vod-overrides.js"></script>
 <script>
 const RAW = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${BRANCH}`;
 
@@ -902,6 +935,7 @@ let searchIndex = [];
 let activeStreamId = null;
 let activeAnchorTs = null;   // elapsed-time origin: meta.start_ts ?? first snapshot ts
 let activeEndTs    = null;   // window end: meta.end_ts ?? last snapshot ts
+let activeMeta     = null;   // metadata.json of the open stream (VOD link modal)
 let manualState    = { doc: { version: 1, events: [] }, sha: null };
 let adminManual    = { timed: [], wholeStream: [] };   // ManualEvents.normalize(manualState.doc)
 let lastLegendArgs = null;   // re-applied when the manual-event legend entry must appear/disappear
@@ -1589,9 +1623,11 @@ async function loadStream(streamId) {
   adminManual    = { timed: [], wholeStream: [] };
   activeAnchorTs = null;
   activeEndTs    = null;
+  activeMeta     = null;
   goalHitsInputs = { donations: [], startTs: null };
   goalHitsCache  = [];
   if (modalIsOpen()) closeModal();
+  if (urlModalIsOpen()) closeUrlModal();
   const main = document.getElementById('main');
   main.innerHTML = `<div class="loading-state"><span class="loading-glyph">~</span><span>wading in...</span></div>`;
   document.getElementById('streamTitle').textContent = '';
@@ -1602,15 +1638,20 @@ async function loadStream(streamId) {
   lastLegendArgs = null;
 
   try {
-    const [meta, eventsText, manual] = await Promise.all([
+    const [meta, eventsText, manual, overrides] = await Promise.all([
       fetchJSON(`${RAW}/data/streams/${streamId}/metadata.json`),
       fetchText(`${RAW}/data/streams/${streamId}/events.jsonl`),
       // Manual events come from the Contents API, never the raw CDN: the editor
       // must read its own writes (the CDN lags ~5 min) and needs the blob sha.
       ghGetFile(`data/streams/${streamId}/events_manual.json`),
+      // Same reason. Optional: an API failure must not block the event editor,
+      // and a later save re-reads this file anyway.
+      ghGetFile(VodOverrides.FILE).catch(() => null),
     ]);
+    if (overrides) VodOverrides.setDoc(overrides.json);
     if (streamId !== activeStreamId) return;   // the curator switched streams mid-fetch
 
+    activeMeta = meta;
     manualState = {
       doc: manual.json || { version: 1, events: [] },
       sha: manual.sha,
@@ -1669,8 +1710,15 @@ async function loadStream(streamId) {
     bits.push(duration ? escHtml(fmtDuration(duration)) : '—');
     if (platforms.length) bits.push(escHtml(platforms.join(' · ')));
     bits.push(`<span class="ts-cell">${escHtml(streamId)}</span>`);
-    info.innerHTML = bits.join('<span class="sep">|</span>');
+    info.innerHTML = bits.join('<span class="sep">|</span>') + `
+      <span class="stream-links">
+        <button class="admin-btn" id="sourceUrlBtn" type="button">Source URL</button>
+        <button class="admin-btn" id="archiveUrlBtn" type="button">Archive URL</button>
+      </span>`;
     main.appendChild(info);
+    document.getElementById('sourceUrlBtn').addEventListener('click', () => openUrlModal('source'));
+    document.getElementById('archiveUrlBtn').addEventListener('click', () => openUrlModal('archive'));
+    refreshUrlButtons();
 
     // ── Chart panel (always present -- it also hosts Add Event / Reload / chips) ──
     const hasChartData = snapshots.length > 0;
@@ -3363,11 +3411,12 @@ function wireCanvasGestures() {
 // ── Hotkeys ──
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
+    if (urlModalIsOpen()) { closeUrlModal(); return; }
     if (modalIsOpen()) { closeModal(); return; }
     if (armed) { setArmed(false); return; }
     return;
   }
-  if (modalIsOpen() || gateIsOpen()) return;
+  if (modalIsOpen() || urlModalIsOpen() || gateIsOpen()) return;
   const el = e.target;
   const tag = (el && el.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea' || tag === 'select' || (el && el.isContentEditable)) return;
@@ -3669,6 +3718,135 @@ async function persistEvents(mutate, message) {
   return true;
 }
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// NEW — VOD link overrides (data/vod_overrides.json, see vod-overrides.js)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+let urlModalKind = null;     // 'source' | 'archive' while the modal is open
+
+function urlModalIsOpen() {
+  const el = document.getElementById('urlModalOverlay');
+  return !!el && !el.hidden;
+}
+
+function currentOverride(kind) {
+  if (!activeStreamId) return null;
+  return kind === 'source'
+    ? VodOverrides.sourceUrl(activeStreamId)
+    : VodOverrides.archiveUrl(activeStreamId);
+}
+
+// A pressed button marks a stream with a saved override.
+function refreshUrlButtons() {
+  for (const kind of ['source', 'archive']) {
+    const btn = document.getElementById(`${kind}UrlBtn`);
+    if (btn) btn.classList.toggle('active', !!currentOverride(kind));
+  }
+}
+
+// The link the pipeline data gives, for display only. streams.html owns the real
+// precedence rules; this names the value a curator is about to replace.
+function pipelineLink(meta, kind) {
+  if (!meta) return null;
+  if (kind === 'source') {
+    if (!meta.source_vod_id) return null;
+    const id = encodeURIComponent(meta.source_vod_id);
+    return meta.source_platform === 'twitch'
+      ? `https://www.twitch.tv/videos/${id}` : `https://youtu.be/${id}`;
+  }
+  const segs = Array.isArray(meta.segments) ? meta.segments.filter(s => s.archive_id) : [];
+  if (segs.length) return segs.map(s => `https://youtu.be/${encodeURIComponent(s.archive_id)}`).join('  ');
+  if (meta.youtube_archive_id && meta.archive_is_source_vod !== true) {
+    return `https://youtu.be/${encodeURIComponent(meta.youtube_archive_id)}`;
+  }
+  if (meta.rumble_archive_url) return meta.rumble_archive_url;
+  if (meta.archive_org_id) {
+    return `https://archive.org/details/${encodeURIComponent(meta.archive_org_id)}`
+      + (meta.archive_org_file ? '/' + encodeURIComponent(meta.archive_org_file) : '');
+  }
+  return null;
+}
+
+function setUrlModalBusy(busy) {
+  for (const id of ['urlSave', 'urlCancel', 'urlClear', 'urlInput']) {
+    document.getElementById(id).disabled = busy;
+  }
+}
+
+function openUrlModal(kind) {
+  if (!activeStreamId) return;
+  urlModalKind = kind;
+  const override = currentOverride(kind);
+  const original = pipelineLink(activeMeta, kind);
+  const parts = (kind === 'archive' && Array.isArray(activeMeta && activeMeta.segments))
+    ? activeMeta.segments.length : 0;
+
+  document.getElementById('urlModalTitle').textContent =
+    `Replace ${kind === 'source' ? 'source' : 'archive'} URL`;
+  document.getElementById('urlCurrentLabel').textContent =
+    override ? 'Current link (override)' : 'Current link (pipeline)';
+  document.getElementById('urlCurrent').textContent = override || original || 'none';
+  document.getElementById('urlInput').value = override || '';
+  document.getElementById('urlWarn').textContent = parts > 1
+    ? `This stream has ${parts} archive parts. One URL replaces all of them.` : '';
+  document.getElementById('urlError').textContent = '';
+  document.getElementById('urlClear').hidden = !override;
+  setUrlModalBusy(false);
+
+  document.getElementById('urlModalOverlay').hidden = false;
+  document.getElementById('urlInput').focus();
+}
+
+function closeUrlModal() {
+  document.getElementById('urlModalOverlay').hidden = true;
+  urlModalKind = null;
+}
+
+// url = a cleaned https URL to set, or null to clear. Never seeded from page state:
+// this one file holds every stream's overrides, so each save reads it fresh and a
+// conflict replays against the newer document. The mutator touches only this stream.
+async function saveUrlOverride(url) {
+  const streamId = activeStreamId;   // captured: the key must not follow a stream switch
+  const kind = urlModalKind;
+  if (!streamId || !kind) return;
+  const field = `${kind}_url`;
+  setUrlModalBusy(true);
+  document.getElementById('urlError').textContent = '';
+  try {
+    const result = await ghSaveWithRetry(VodOverrides.FILE, (json) => {
+      const streams = Object.assign({}, json && json.streams);
+      const entry = Object.assign({}, streams[streamId]);
+      if (url) entry[field] = url; else delete entry[field];
+      if (Object.keys(entry).length) streams[streamId] = entry;
+      else delete streams[streamId];
+      return { version: 1, streams };
+    }, `VOD link: ${url ? 'set' : 'clear'} ${kind} URL for ${streamId}`);
+    // The whole document, so it stays right after a stream switch mid-save.
+    VodOverrides.setDoc(result.doc);
+    refreshUrlButtons();
+    if (urlModalIsOpen() && urlModalKind === kind) closeUrlModal();
+    toast(`${url ? 'Saved' : 'Cleared'}. Public pages update within about 5 minutes.`, 'ok');
+  } catch (e) {
+    if (urlModalIsOpen()) {
+      document.getElementById('urlError').textContent = e.message;
+      setUrlModalBusy(false);
+    } else {
+      toast(`VOD link not saved: ${e.message}`, 'err');
+    }
+  }
+}
+
+function submitUrlModal() {
+  const raw = document.getElementById('urlInput').value.trim();
+  const url = VodOverrides.clean(raw);
+  if (!url) {
+    document.getElementById('urlError').textContent = raw
+      ? 'Enter a full https:// URL.' : 'Enter a URL, or use Clear.';
+    return;
+  }
+  saveUrlOverride(url);
+}
+
 // Merge a brand-new tag into data/manual_event_tags.json. Non-fatal on failure:
 // the tag still lives on the event, and stays in this session's option pool.
 async function persistTagIfNew(tag) {
@@ -3831,6 +4009,14 @@ async function deleteEvent(ev) {
       // dropdown is already shut.
       if (comboOptions.length) { e.stopPropagation(); closeCombo(); }
     }
+  });
+
+  // ── VOD link modal ──
+  document.getElementById('urlSave').addEventListener('click', submitUrlModal);
+  document.getElementById('urlCancel').addEventListener('click', closeUrlModal);
+  document.getElementById('urlClear').addEventListener('click', () => saveUrlOverride(null));
+  document.getElementById('urlInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); submitUrlModal(); }
   });
 
   // ── Modal: buttons ──
