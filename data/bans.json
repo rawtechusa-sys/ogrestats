@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793234687,
+  "updated_ts": 1793424880,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -146,7 +146,8 @@
     "dear_daniel_keem_2026-10-21_222823",
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
-    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+    "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1750,6 +1751,21 @@
       ],
       "source_vod_id": "nbFBBbGjmPE",
       "source_platform": "youtube"
+    },
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113": {
+      "title": "The Roach King Has Completely Lost His Mind #asmongold",
+      "start_ts": 1793400632,
+      "youtube_archive_id": "HiYudDiEto8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "HiYudDiEto8",
+          "start_ts": 1793400632
+        }
+      ],
+      "source_vod_id": "WZg6Y3Nqfpo",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2620,6 +2636,150 @@
           "moderator": null,
           "reason": null,
           "stream_id": "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956"
+        }
+      ]
+    },
+    "asdfasdf-mk3zg": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793407732,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCal4C33ZShjj-vFFNfxsFvQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793407732,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "TokinTurk1": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793409679,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCRV5KSY-T-jXmd9JVupD7aw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793409679,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "TSLR3WiiNDx": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793410442,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCTlCsMBuZaTFOjugksaiAiQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793410442,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "jack634": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793414486,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCV3nyNSqKP6gki-tZjpJVCw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793414486,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "Sucksitlongtime": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793417276,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCLo374zjG7Bo2GaIY7CcsJQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793417276,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "scorpfgc": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793418580,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UC2egLtir89Ul25LLwpSWW5w"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793418580,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
         }
       ]
     }
