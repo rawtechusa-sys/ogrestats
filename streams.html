@@ -1710,8 +1710,10 @@ async function loadStream(streamId) {
 
       // A moderation event reads as a donation-shaped row too: the red the
       // chart draws its markers in, the timeout duration in the Amount column,
-      // and whatever context the platform gave (Kick reports a moderator and a
-      // reason; Twitch and YouTube report neither) as the message.
+      // and as the message the user's last chat line before the action (looked
+      // up by the pipeline -- no platform reports it), then whatever context the
+      // platform gave (Kick reports a moderator and a reason; Twitch and YouTube
+      // report neither).
       function moderationRow(ev) {
         const label  = ManualEvents.modTypeLabel(ev.type);
         const evType = `mod:${String(ev.type || '').trim().toLowerCase()}`;
@@ -1720,6 +1722,7 @@ async function loadStream(streamId) {
         const dur    = ManualEvents.modDuration(ev.duration);
         const amount = dur ? `<span class="amount-usd">${escHtml(dur)}</span>` : '<span class="amount-usd">—</span>';
         const parts  = [];
+        if (ev.last_message) parts.push(`“${ev.last_message}”`);
         if (ev.moderator) parts.push(`by ${ev.moderator}`);
         if (ev.reason)    parts.push(ev.reason);
         if (ev.platform)  parts.push(`on ${ev.platform}`);
