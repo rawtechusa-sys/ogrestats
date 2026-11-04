@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793424867,
+  "updated_ts": 1793774533,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -881,16 +881,17 @@
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
-    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
+    "the_midterm_election_disaster_stream_2026-11-03_203057"
   ],
   "commands": {
     "men": 6,
-    "eric": 287,
-    "phil": 637,
+    "eric": 288,
+    "phil": 642,
     "stan": 444,
     "masterchief": 171,
     "harman": 231,
-    "trump": 283,
+    "trump": 286,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -902,7 +903,7 @@
     "guys": 1,
     "chief": 4,
     "glados": 5,
-    "kratos": 24,
+    "kratos": 25,
     "doom": 27,
     "emoguy": 4,
     "chat": 2,
@@ -951,7 +952,7 @@
     "watchmojo": 1,
     "said": 13,
     "deadpool": 1,
-    "news": 41,
+    "news": 42,
     "guy": 5,
     "thing": 2,
     "platform": 1,
@@ -963,7 +964,7 @@
     "glorious": 1,
     "hence": 1,
     "they": 1,
-    "today": 4,
+    "today": 5,
     "review": 3,
     "voice": 8,
     "severance": 2,
@@ -10633,9 +10634,144 @@
       ],
       "source_vod_id": "WZg6Y3Nqfpo",
       "source_platform": "youtube"
+    },
+    "the_midterm_election_disaster_stream_2026-11-03_203057": {
+      "title": "The Midterm Election (Disaster) Stream",
+      "start_ts": 1793737243,
+      "youtube_archive_id": "B596Mb1QR5I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "B596Mb1QR5I",
+          "start_ts": 1793737243
+        }
+      ],
+      "source_vod_id": "sao5TC2WVMo",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1793763647,
+      "username": "@BloodyGB175",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Trump: the only tremendous things for me tonight are my logs. I need robust diapers ! Vance is no help, he\u2019s relieving his nervousness on the couch !",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1793760838,
+      "username": "@richandthebirds-rk2vc",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Phil: How much to paint yourself blue ! (yoda)",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793759695,
+      "username": "propakistaniamericantitan",
+      "platform": "twitch",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Cheer500 Phil: she is the person who will get married, dream of Israel over night, and then divorce next day, because Israel CAME TO MY DREAM! You can even see even in her eyes she can't sleep until she doesn't dream of Israel. I don't think any man should trust her except me, Phil.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793757134,
+      "username": "@techman771",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Phil: I feel like Florida is now the new GOP center. Texas might be lost for a long time.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793754074,
+      "username": "@DoubleAgentX-1",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Kratos: voted during my lunch break here in Oklahoma. no time to eat, but I would have fought lions to vote for N'Kiyla thomas and Cyndi Munson despite Oklahoma still leaning red. I have to try.",
+      "commands": [
+        "kratos"
+      ]
+    },
+    {
+      "ts": 1793753498,
+      "username": "@HeyTarnished",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Phil: Election Day or Burst of May 1st. Applause??",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793747272,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Trump: attention all men! attention all men! all men rise, get hard, shoot some ropes, and vote! a man among men is here! you better vote for me motherfuckers or the consequences will be yuge! believe me! fear your new god!",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1793747212,
+      "username": "@FreedomtowerStudios",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Breaking News: I VOTED WE NEED a blue wave! now to sit back and watch CNN's Election Night in America and YOU, a large robust urban garlic Italian man",
+      "commands": [
+        "news"
+      ]
+    },
+    {
+      "ts": 1793741598,
+      "username": "@change1ing",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Trump: shooting ropes all over the Repub voters",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1793740781,
+      "username": "@mphickman",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Hey Rich, I\u2019m doing meal prep today: Broccoli beef, chili, and garlic soy chicken. Crossing my fingers for tonight. Any predictions?",
+      "commands": [
+        "today"
+      ]
+    },
+    {
+      "ts": 1793739646,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Phil: Who would win in the ring? Me or Keemstar? Remember, I lift weights and flex in every stream. I\u2019m a robust man who hates Modern Warfare 4!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793738848,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "message": "Eric: review tech usa, I voted red and you?",
+      "commands": [
+        "eric"
+      ]
+    },
     {
       "ts": 1793421824,
       "username": "@lyokowarrior4296",
