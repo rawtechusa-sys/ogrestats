@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793424880,
+  "updated_ts": 1793774546,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -147,7 +147,8 @@
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
-    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
+    "the_midterm_election_disaster_stream_2026-11-03_203057"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1766,6 +1767,21 @@
       ],
       "source_vod_id": "WZg6Y3Nqfpo",
       "source_platform": "youtube"
+    },
+    "the_midterm_election_disaster_stream_2026-11-03_203057": {
+      "title": "The Midterm Election (Disaster) Stream",
+      "start_ts": 1793737243,
+      "youtube_archive_id": "B596Mb1QR5I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "B596Mb1QR5I",
+          "start_ts": 1793737243
+        }
+      ],
+      "source_vod_id": "sao5TC2WVMo",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2253,14 +2269,44 @@
       "platforms": {
         "twitch": {
           "status": "timed_out",
-          "since": 1790803730,
-          "expires_ts": 1790803760,
+          "since": 1793772943,
+          "expires_ts": 1793772973,
           "bans": 0,
-          "timeouts": 3,
+          "timeouts": 6,
           "user_id": "58902697"
         }
       },
       "events": [
+        {
+          "ts": 1793772943,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1793772973,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        },
+        {
+          "ts": 1793765996,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1793766026,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        },
+        {
+          "ts": 1793765051,
+          "platform": "twitch",
+          "type": "timeout",
+          "duration": 30,
+          "expires_ts": 1793765081,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        },
         {
           "ts": 1790803730,
           "platform": "twitch",
@@ -2738,8 +2784,8 @@
     "Sucksitlongtime": {
       "platforms": {
         "youtube": {
-          "status": "banned",
-          "since": 1793417276,
+          "status": "active",
+          "since": 1793764208.132638,
           "expires_ts": null,
           "bans": 1,
           "timeouts": 0,
@@ -2747,6 +2793,17 @@
         }
       },
       "events": [
+        {
+          "ts": 1793764208,
+          "platform": "youtube",
+          "type": "unban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+          "inferred": true
+        },
         {
           "ts": 1793417276,
           "platform": "youtube",
@@ -2780,6 +2837,253 @@
           "moderator": null,
           "reason": null,
           "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+        }
+      ]
+    },
+    "YouShouldBeWelcomeHoor": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1793738599,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "49866192"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793738599,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "xAshe10x": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793738704,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCCpQv4QPAltiLsA0-MvtXtw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793738704,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "NicaMo0287": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793748641,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "UCB5ngLsnkJVKAZurvF_LrQw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793748641,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        },
+        {
+          "ts": 1793748530,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "ReptilianRR": {
+      "platforms": {
+        "youtube": {
+          "status": "active",
+          "since": 1793749877.676688,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCrCAdXYHa7IRTdqvPZ47KIw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793749877,
+          "platform": "youtube",
+          "type": "unban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+          "inferred": true
+        },
+        {
+          "ts": 1793748721,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "Hallenfrosh34": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1793765183,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "1000911109"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793765183,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        },
+        {
+          "ts": 1793749138,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "Allapa-im9jr": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793754641,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCADhxtLXi6_dvgaGTmclhRA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793754641,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "theralphreport": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1793755402,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1441634594"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793755402,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "WingsOfReviewTechUSA": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793774186,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCqpdRmaRzLStG77u3drcqiA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793774186,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "DramaClipVault": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793774226,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCLiw6MxbInGGb2t3c6S_TNg"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793774226,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
         }
       ]
     }
