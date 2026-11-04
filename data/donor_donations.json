@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793424871,
+  "updated_ts": 1793774538,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -881,7 +881,8 @@
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
-    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
+    "the_midterm_election_disaster_stream_2026-11-03_203057"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10033,6 +10034,21 @@
       ],
       "source_vod_id": "WZg6Y3Nqfpo",
       "source_platform": "youtube"
+    },
+    "the_midterm_election_disaster_stream_2026-11-03_203057": {
+      "title": "The Midterm Election (Disaster) Stream",
+      "start_ts": 1793737243,
+      "youtube_archive_id": "B596Mb1QR5I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "B596Mb1QR5I",
+          "start_ts": 1793737243
+        }
+      ],
+      "source_vod_id": "sao5TC2WVMo",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10279,6 +10295,46 @@
       }
     ],
     "mphickman": [
+      {
+        "ts": 1793769701,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Someone made a video of Boogie\u2019s infamous \u201cI\u2019m in so much pain\u201d freak out wearing a maga hat, in front of the election results.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793768583,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "DUDE!!!! WHAT A NIGHT :water_wave::water_wave::water_wave:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793743970,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "If social media and online content creation as we know it completely disappeared tomorrow, what kind of job would you get?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793743073,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Finished my broccoli beef! Tastes great! I have an outdoor wok burner to replicate that wok hei flavor. Much healthier though! Way Less salt and sugar",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740781,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 13 months",
+        "message": "Hey Rich, I\u2019m doing meal prep today: Broccoli beef, chili, and garlic soy chicken. Crossing my fingers for tonight. Any predictions?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790975842,
         "type": "superchat",
@@ -10745,6 +10801,22 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1793768608,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "Jeremy is basement pissing in disappointment",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793763647,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Trump: the only tremendous things for me tonight are my logs. I need robust diapers ! Vance is no help, he\u2019s relieving his nervousness on the couch !",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793420492,
         "type": "superchat",
@@ -13262,6 +13334,30 @@
     ],
     "djjailbreak": [
       {
+        "ts": 1793765177,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "suffa asmangold!! :water_wave::water_wave::water_wave:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754165,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 33 months",
+        "message": "I voted :water_wave::water_wave::water_wave::crossed_fingers:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793744877,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Listen invite Ben and grace Thorpe over show your flag history for the 10th time live once 8bit Eric shows his once :face_with_tears_of_joy:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1791595511,
         "type": "membership",
         "amount_usd": 1.99,
@@ -14051,6 +14147,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1793757952,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 57 months",
+        "message": "talk about milestone",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792632269,
         "type": "giftmembership",
@@ -17110,6 +17214,14 @@
     ],
     "kaynewoolley9104": [
       {
+        "ts": 1793743708,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 53 months",
+        "message": "He looks like if I asked AI to make RTU",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1790307090,
         "type": "membership",
         "amount_usd": 1.99,
@@ -18394,6 +18506,14 @@
     ],
     "dl5fse990": [
       {
+        "ts": 1793761675,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Republicans are so felted today. Suffah MAGA! Men.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793229624,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -18499,6 +18619,22 @@
       }
     ],
     "evildetrution5426": [
+      {
+        "ts": 1793743304,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "David Lynch eat your heart out",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739497,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Donald is abdicating if midterms go bad",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793413684,
         "type": "superchat",
@@ -21032,6 +21168,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1793742998,
+        "type": "superchat",
+        "amount_usd": 2.11,
+        "amount_raw": "A$2.99",
+        "message": "It\u2019s an answer. It doesn\u2019t matter if it is factual",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792646558,
         "type": "superchat",
         "amount_usd": 2.11,
@@ -21122,6 +21266,30 @@
     ],
     "JRsGAM": [
       {
+        "ts": 1793765897,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Im in idaho and votes coming in. maga in trouble.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793745899,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "A man has 2. A man voted blue.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793745819,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "A man voted last Thursday. A man voted Dem.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1790974768,
         "type": "membership",
         "amount_usd": 1.99,
@@ -21203,6 +21371,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1793737981,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793401625,
         "type": "superchat",
@@ -21709,6 +21885,22 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1793760838,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil: How much to paint yourself blue ! (yoda)",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793747868,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793414616,
         "type": "giftmembership",
@@ -22841,6 +23033,22 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1793771605,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "men, I farted. it was robust and meaningful",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793747272,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Trump: attention all men! attention all men! all men rise, get hard, shoot some ropes, and vote! a man among men is here! you better vote for me motherfuckers or the consequences will be yuge! believe me! fear your new god!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793417728,
         "type": "superchat",
@@ -26209,6 +26417,38 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1793761113,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I platinumed Castlevania. Now what do I play?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759225,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Would.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793758198,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793758141,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "Whaddup ya'll. Just got home from work. What'd I miss? I haven't been paying attention. Are men winning?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793416073,
         "type": "superchat",
@@ -31787,6 +32027,22 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1793760709,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "one of the candidates for Nebraska is from legal Marijuana now party. has almost 2 percent of the vote",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759483,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "a mix of Sarah Palin and Sarah Huckabee sanders",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793421824,
         "type": "superchat",
@@ -40518,6 +40774,14 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1793765134,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the relief I feel tonight is like when you take a huge turd after a 10 year bout of constipation.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793075408,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -42748,6 +43012,14 @@
     ],
     "misslekaboom": [
       {
+        "ts": 1793740740,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "rtuRobust rtuRobust rtuRobust",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1788313923,
         "type": "bits",
         "amount_usd": 10.0,
@@ -42845,6 +43117,22 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1793752285,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Sparkles and I will twit your tipples.Clap breasts",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793742741,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Tommy Wiseau could act better than this.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793409368,
         "type": "superchat",
@@ -45128,6 +45416,14 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1793743349,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "did i forget and did a line of blow, hell is this",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792790008,
         "type": "membership",
         "amount_usd": 1.99,
@@ -46545,6 +46841,110 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1793758434,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen just get Jasy to edit your cock",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793758256,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Abdul wins senate with no corportate money",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793757660,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "100 members for a 24hr election stream It's real",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793757452,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "NY went for Trump its over its your fault",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793757268,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "will delete you channel at 200K Subs?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793748922,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dude every country has Healthcare but us..WTF",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793743532,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen rich this a true acting you don't get it",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793743187,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "No rich the Veto puts Republicans on the back foot",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793742090,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen can we watch DSP or Rich? This is boring",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741683,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dead Air, Play \"First Patient\" for us then don't",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741256,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stop talking and just make the show start",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741164,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Al Sayed took no corporate money fights for senate",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741024,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen don't vote then complain about your life",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793068194,
         "type": "superchat",
@@ -61974,6 +62374,14 @@
     ],
     "PhilGatesMay1stOfSpringJoy": [
       {
+        "ts": 1793768807,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "try Better Than Dead. a great revenge fps paying homage to Hong Kong action movies of the 80s and 90s",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793424455,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -66954,6 +67362,14 @@
     ],
     "karasub2836": [
       {
+        "ts": 1793739204,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hey Big Bird house the birds I almost bought a switch 2 until I pulled out my PC handheld and then wondered what I was thinking lol!!!!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793221918,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -67480,6 +67896,14 @@
     ],
     "75.": [
       {
+        "ts": 1793738719,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Blades leg is gone.. :bone:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793224716,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -67713,6 +68137,22 @@
       }
     ],
     "nevablowingbubbles1337": [
+      {
+        "ts": 1793754490,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Birds and horses, and DDR4/DDR5 RAM hoarding",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739903,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "Im hoarding 32Gbs of RAM in my PC away from Altman",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793402051,
         "type": "bits",
@@ -68285,6 +68725,30 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1793754901,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "Am I banned?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793744388,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Careful Mr Rich! 8 bit Eric tried to set you a trap and did a 45 minutes roasting you ! Also he said he voted red!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793738848,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Eric: review tech usa, I voted red and you?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793421308,
         "type": "superchat",
@@ -69648,6 +70112,14 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1793761392,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793232666,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -70218,6 +70690,30 @@
     ],
     "qb3540": [
       {
+        "ts": 1793755920,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Chat ban ComicBook for mentioning my state",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793755689,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Even if Washington is now Blue, u still need a competent candidate, If the best they can do is another Sleepy Joe or Krazy its gonna be a RUFF 2028",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793753575,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I was unable to pre-order the Foil Edition of Ocarina of Time, do u think I'll be able to still get it at retail days after?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793401815,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -70563,6 +71059,22 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1793766062,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Big beautiful blue ocean water",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741210,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Water big water blue ocean water.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793062756,
         "type": "superchat",
@@ -71998,6 +72510,14 @@
     ],
     "SmokingSocks220": [
       {
+        "ts": 1793765747,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "Lets Go Blue Wave! Rich you are a good looking man",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792623607,
         "type": "membership",
         "amount_usd": 1.99,
@@ -72530,6 +73050,22 @@
     ],
     "PPPs_HRT": [
       {
+        "ts": 1793757206,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793742829,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "Phil is a cuk for being in this, king snake :tangerine:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793227027,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -72953,6 +73489,22 @@
       }
     ],
     "sean-reagan": [
+      {
+        "ts": 1793759400,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Kind of sounds like The Waterboy",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793746359,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Did you see Phil\u2019s stellar acting as the grifting sithlord?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793063413,
         "type": "superchat",
@@ -73733,6 +74285,38 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1793750135,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "rich im scared please hug me.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793747404,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "how much to take a buckshot from phil?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793746588,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Good to see you again, missed you. Trying to stay sane lol",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793743255,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I just got off work. what the hell is this?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793221283,
         "type": "superchat",
@@ -78176,6 +78760,22 @@
     ],
     "REDIVY78": [
       {
+        "ts": 1793764539,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793758329,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792171303,
         "type": "membership",
         "amount_usd": 1.99,
@@ -78233,6 +78833,38 @@
       }
     ],
     "jeffery-tucker": [
+      {
+        "ts": 1793769508,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Susan Collins concedes. HISTORICAL FUCKING NIGHT! EAT A BAG OF DICKS, MAGA!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793753217,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Watch the majority report instead. They are highly entertaining.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740103,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen. Tell Altman to RAM a cock in Ramaswamy's arse.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793738893,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Let's go, Blue Tsunami! LGBTQ rights! Fuck ICE! Fuck Republitards!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790367129,
         "type": "superchat",
@@ -82178,6 +82810,30 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1793770617,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Richard Ojeda just won in North Carolina\u2019s 9th U.S. House district. He\u2019s a great candidate and that\u2019s another house seat picked up by dems in Congress",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759285,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "Her Fiance looks like Mr. Potato head",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754074,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Kratos: voted during my lunch break here in Oklahoma. no time to eat, but I would have fought lions to vote for N'Kiyla thomas and Cyndi Munson despite Oklahoma still leaning red. I have to try.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792803488,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -82395,6 +83051,14 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1793739745,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "They need to rerelease the evercade V.S. also, what is the name of the controller?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793411486,
         "type": "superchat",
@@ -83083,6 +83747,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1793739646,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil: Who would win in the ring? Me or Keemstar? Remember, I lift weights and flex in every stream. I\u2019m a robust man who hates Modern Warfare 4!!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792782971,
         "type": "superchat",
@@ -86546,6 +87218,46 @@
     ],
     "Various_Melons": [
       {
+        "ts": 1793761884,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Rich, I lost my election 594 to 368. got clobbered",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793761418,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I lost my election 594 to 368. Got clobbered.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793761307,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Fuk guys. 594 to 368. I got fukin clobbered.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793756112,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I'm headed to the courthouse to wait for the results to see if I won my City election. I campaigned harder than my opponent, knocked on 73% of doors.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740942,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793416189,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -88064,6 +88776,14 @@
     ],
     "End-Logic_1": [
       {
+        "ts": 1793766950,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 27 months",
+        "message": "Gov took their boot off our neck temporarily",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793065899,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -88746,6 +89466,22 @@
     ],
     "Mikey_Today": [
       {
+        "ts": 1793766070,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You gotta imagine how i feel living here in TX.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741205,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "Maybe its just me but Sam Altman is ugly AF",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1785816088,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -88755,6 +89491,14 @@
       }
     ],
     "Insomniac416": [
+      {
+        "ts": 1793773067,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "what senate seat will tommy tellarico have?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793073542,
         "type": "superchat",
@@ -93715,6 +94459,30 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1793746410,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "Like Biggie Smalls, sometimes Boogie\u2019s tipples just hypnotise me.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793742338,
+        "type": "superchat",
+        "amount_usd": 2.69,
+        "amount_raw": "\u00a31.99",
+        "message": "Wait is that Jeremy?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793738818,
+        "type": "superchat",
+        "amount_usd": 6.74,
+        "amount_raw": "\u00a34.99",
+        "message": "As a Brit, I\u2019m going to sit and watch the reactions to the midterms Michael Jackson style. Also are the AI voices gone?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793410676,
         "type": "superchat",
@@ -101140,6 +101908,14 @@
     ],
     "DaveCalzone": [
       {
+        "ts": 1793763557,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 40 months",
+        "message": "Watching from Japan. Love to see it!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792633283,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -101962,6 +102738,14 @@
     ],
     "TheRomanVictor": [
       {
+        "ts": 1793746061,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1788834791,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -102035,6 +102819,22 @@
       }
     ],
     "change1ing": [
+      {
+        "ts": 1793757271,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741598,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump: shooting ropes all over the Repub voters",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793063047,
         "type": "superchat",
@@ -103820,6 +104620,110 @@
     ],
     "RushilPatel-oe7hn": [
       {
+        "ts": 1793772092,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mississippi flipped blue!!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793771387,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Godzilla is coming out of the ocean",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793770796,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Troy Jackson won!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793770300,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "What if you only voted for Trump one time and then afterwards you regret your decision and you voted for the Democrats?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793770094,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Are you talking about ex trump supporters?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793769809,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "It could be 54 to 55 senate seats",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793769502,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Democrats won 255 house seats",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793763960,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "It\u2019s impressive that a Democrat won South Carolina",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793757526,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Florida looks really close",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741131,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I heard Pete Hegseth is eyeing Marsha Blackburn Senate seat because he\u2019s leaving the defense department because he\u2019s getting impeach",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740971,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Also I heard that Sam Altman says that you don\u2019t need to own ram anymore",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740754,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "It\u2019s gonna be such a blue tsunami. Godzilla is gonna jump out of the ocean.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740578,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "You heard about google and discord",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792622261,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -104648,6 +105552,14 @@
     ],
     "PeterGriffinTAD": [
       {
+        "ts": 1793743451,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "CA$2.79",
+        "message": "It sucks that both my parents have gone full MAGA",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792624137,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -104857,6 +105769,14 @@
       }
     ],
     "Colin1994-v1v": [
+      {
+        "ts": 1793738302,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Is going to be 20 years since the world of Warcraft episode of South Park",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1791571187,
         "type": "superchat",
@@ -105123,6 +106043,14 @@
       }
     ],
     "superSONIC_star": [
+      {
+        "ts": 1793744515,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 33 months",
+        "message": "8BE used AI 2 make games on his YT under playables",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1791000078,
         "type": "giftmembership",
@@ -106492,6 +107420,14 @@
     ],
     "Hellrazer8504": [
       {
+        "ts": 1793762275,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "Joined!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1791326074,
         "type": "sub",
         "amount_usd": 5.99,
@@ -106549,6 +107485,14 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1793761272,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": ":sweat_droplets::eyes:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793415760,
         "type": "giftmembership",
@@ -110492,6 +111436,14 @@
     ],
     "TheTenoray": [
       {
+        "ts": 1793768707,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Let's not forget about the real game of the year. Godzilla Destroy All Monsters Melee Remastered!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793060775,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -110791,6 +111743,102 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1793770676,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Red mirage in MI Abdul is still projected to win",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793766999,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Now you can play Big Blue :water_wave::water_wave::water_wave:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793762934,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Harmans good he traded Fascism for a $300 Switch 2",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793761010,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Start playing Big Blue OST from F-Zero on SNES :water_wave:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759568,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "She took Project 7 acting classes with Erika Kirk",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759382,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "She looks more like an ogre than Fiona",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793758214,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754610,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Imagine Phil doing live coverage of the midterms",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754173,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If dems win FL just call it for the rest of them",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740919,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Tim Sweeney must be having AI psychosis. UE6 is removing C++ framework basically forcing devs to vibecode. Also insinuating Steams AI policy is woke",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739501,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Who would win Rich, Becky boop vs Haley Stevens?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739263,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Switch 2 lite rumored to be $299",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793229077,
         "type": "superchat",
@@ -111833,6 +112881,14 @@
       }
     ],
     "RandyRen6": [
+      {
+        "ts": 1793769706,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (10 months)!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790979552,
         "type": "sub",
@@ -114703,6 +115759,78 @@
       }
     ],
     "DBZking119": [
+      {
+        "ts": 1793773132,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I was expecting a blue wave, this is electoral slaughter, democrats put belt to ass today big wins for progressive candidates too",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793772972,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "incoming updates from insider data here in michigan, democrats hold on to their senate seat with progressive candiate abdual al sayed projected to win",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793767344,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "this is pure electoral slaughter, one thing is clear form these results tonight, donald trump, america fucking hates you, suck and fuck my grits",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793766367,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "We are going to truly experience what a lame duck trump is like, we didin't get that in his first term, this is going to be interesting",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793762827,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Another update, annie andrews is projected to win her senate seat in south Carolina, taking the seat heald by deceased piece of shit lindasy grahm",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793762564,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Janes talarico is now projected to win his senate seat in texas, blue texas has arrived ladies and gentlemen, get hard a blow a robust load rich",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793762009,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Imagine how hard you have to fuck the country to get your shit pushed in this badly, i'm grinning from ear to ear right now, trump is fucked",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739671,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "My friend bought me gta 6, so now i can pre load that shit and play it on launch day, i'm super excited, give carlos a kiss on the bird breasts",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793739277,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 51 months",
+        "message": "so i genuinely think the house is basically a lock for the democrats, i'd give them good odds of taking the senate too, but that's not a guarantee",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790977041,
         "type": "membership",
@@ -129434,6 +130562,14 @@
     ],
     "Toast935": [
       {
+        "ts": 1793746592,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 19 months",
+        "message": "Voted early this morning. Got harassed by some maga weirdos asking who I\u2019m voting for. Luckily an officer was there and nothing happened beyond that.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792623328,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -129555,6 +130691,14 @@
       }
     ],
     "anythingandeverything5593": [
+      {
+        "ts": 1793755172,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "we need to give medias touch a big thanks there one of the main reason we went left form right",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793227839,
         "type": "membership",
@@ -131039,6 +132183,22 @@
       }
     ],
     "DeportedSicilianGamer": [
+      {
+        "ts": 1793774008,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Anyone still MAGA needs their hard drives searched",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793769018,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "MAGA cult leaders need to be captured and brought to justice for their many treasons",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792198879,
         "type": "superchat",
@@ -132813,6 +133973,14 @@
       }
     ],
     "Pan-Of-Jello": [
+      {
+        "ts": 1793740687,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 30 months",
+        "message": "Where are the birds? bad felling about today",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790982143,
         "type": "membership",
@@ -136414,6 +137582,14 @@
     ],
     "Little_Ghost_Fr": [
       {
+        "ts": 1793738346,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "sundCHEER citric1Yay sundCHEER",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1785189630,
         "type": "sub",
         "amount_usd": 5.99,
@@ -139546,6 +140722,14 @@
     ],
     "HeyTarnished": [
       {
+        "ts": 1793753498,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 4 months",
+        "message": "Phil: Election Day or Burst of May 1st. Applause??",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1785202717,
         "type": "membership",
         "amount_usd": 1.99,
@@ -141627,6 +142811,30 @@
       }
     ],
     "Ms.Sparkles": [
+      {
+        "ts": 1793759741,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I just got banned from a conservative chat by a wife over my pfp ha ha",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754853,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Don't ban me chat! I loves you!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754680,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Chris is sending me weird things!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792646192,
         "type": "membership",
@@ -145970,6 +147178,22 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1793761694,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793751945,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792636954,
         "type": "membership",
         "amount_usd": 1.99,
@@ -146665,6 +147889,14 @@
       }
     ],
     "GlamerousFrog": [
+      {
+        "ts": 1793740641,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "This stream was brought to you by the Magnavox Odyssey. Hope you're doing well Rich and hopefully your country makes the right choice today. The world economy is utterly screwed because of the last 2 years",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792169700,
         "type": "membership",
@@ -147919,6 +149151,14 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1793773225,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Man who knew the polls would be this wrong.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793065707,
         "type": "membership",
@@ -153970,6 +155210,22 @@
     ],
     "JeremysBlackWalMartBouncer": [
       {
+        "ts": 1793765882,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "GOP gerrymandered like hell and still lost.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793765006,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 43 months",
+        "message": "Joined!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1788838937,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -154193,6 +155449,14 @@
       }
     ],
     "NenoFishy": [
+      {
+        "ts": 1793762299,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 25 months",
+        "message": "Joined!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1791596898,
         "type": "membership",
@@ -155265,6 +156529,14 @@
       }
     ],
     "treverdefelice9684": [
+      {
+        "ts": 1793758032,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 34 months",
+        "message": "BIRD FATHER!!!!! HOW I HAVE MISSED YOU AND YOUR BIG, JUICY, TENDER...BIRDS!!! Hope all is well. I'm a FREAK-O FOR TALARICO, BAY-BEE!!!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1784684709,
         "type": "membership",
@@ -157580,6 +158852,22 @@
     ],
     "danithefoot633": [
       {
+        "ts": 1793767075,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I know we shouldn't celebrate too early because you know politics and all that but this is a good election for once",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754289,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793069694,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -158048,6 +159336,14 @@
     ],
     "apks94": [
       {
+        "ts": 1793749810,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "The amount of money I've had to pay in tariffs is HUGE. But my MAGA family said that the country pays the tariff! I don't care for this timeline.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792804176,
         "type": "giftmembership",
         "amount_usd": 19.9,
@@ -158343,6 +159639,30 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1793758064,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "KATHY HOCHUL WON NEW YORK!!!!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793756006,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "MY STATE SENATOR (COREY BOOKER, NJ) WON!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793747212,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Breaking News: I VOTED WE NEED a blue wave! now to sit back and watch CNN's Election Night in America and YOU, a large robust urban garlic Italian man",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792186210,
         "type": "membership",
@@ -161452,6 +162772,22 @@
     ],
     "PutoPlatano": [
       {
+        "ts": 1793753936,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They announced Bob Lavari is leading nationwide",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793744334,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Hearing 8Bit say...lol Pot meet Kettle :_Carlos:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792648610,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -163335,6 +164671,14 @@
       }
     ],
     "nycbatista94": [
+      {
+        "ts": 1793768532,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "are still willing to bring ALL the epstien files?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1792808493,
         "type": "superchat",
@@ -167976,6 +169320,14 @@
     ],
     "Xenokaji": [
       {
+        "ts": 1793759499,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "She sounds like Ralph Wiggum",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1788492481,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -168399,6 +169751,14 @@
       }
     ],
     "vrakkul9534": [
+      {
+        "ts": 1793752579,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1784162015,
         "type": "superchat",
@@ -170733,6 +172093,14 @@
       }
     ],
     "fiftypesos03": [
+      {
+        "ts": 1793738277,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Birds have breasts",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790055911,
         "type": "sub",
@@ -174268,6 +175636,14 @@
     ],
     "DrummerCream": [
       {
+        "ts": 1793743029,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 31 months",
+        "message": "31 month's wow. Happy shit storm day! hope some good comes out of the mid terms.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1783561921,
         "type": "membership",
         "amount_usd": 1.99,
@@ -174587,6 +175963,14 @@
       }
     ],
     "86-panda": [
+      {
+        "ts": 1793739415,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 63 months",
+        "message": "phillitizer?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790273471,
         "type": "membership",
@@ -178512,6 +179896,30 @@
     ],
     "joshloungin": [
       {
+        "ts": 1793769331,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "holy sheet dad, I just woke up for a min. Texas.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740248,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I will vote for small shelong for president",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740169,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I voted 3rd party. Philip Berne for state senate",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793230831,
         "type": "membership",
         "amount_usd": 1.99,
@@ -179153,6 +180561,14 @@
       }
     ],
     "KweefHuffer": [
+      {
+        "ts": 1793745140,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "tit job",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790999534,
         "type": "sub",
@@ -181062,6 +182478,14 @@
     ],
     "respergu": [
       {
+        "ts": 1793743552,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Mr Rich do you like elephants ?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792625038,
         "type": "sub",
         "amount_usd": 5.99,
@@ -181371,6 +182795,14 @@
       }
     ],
     "GotShot22": [
+      {
+        "ts": 1793754775,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 37 months",
+        "message": "hey Rich happy election day!! hey Google just had an interview for potentially awesome job and got back from voting!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1782615661,
         "type": "membership",
@@ -181916,6 +183348,14 @@
     ],
     "rafaelchicas7635": [
       {
+        "ts": 1793739894,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 36 months",
+        "message": "Bird father what\u2019s today\u2019s weather? Kiss the birds",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1790615373,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -182361,6 +183801,14 @@
       }
     ],
     "mcnasty72": [
+      {
+        "ts": 1793764741,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1788492649,
         "type": "superchat",
@@ -183291,6 +184739,14 @@
       }
     ],
     "dublinpapi": [
+      {
+        "ts": 1793754189,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793411766,
         "type": "giftmembership",
@@ -184239,6 +185695,54 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1793758921,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Hakeem Jefferies wins his primary we are saved",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793756227,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "has trump said anything yet? has he said Fraud yet",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793755837,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "North Carolina flipped",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754786,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "let's bring back Jeb Bush again for the Republican in 2028",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793754626,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "South Carolina is moving more and more blue senate",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793750060,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Rich how are you spending your last day on earth joking but not really joking DSP/RICH2028",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793403053,
         "type": "superchat",
@@ -187495,6 +188999,14 @@
       }
     ],
     "mrgibb1003": [
+      {
+        "ts": 1793739305,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "Hey, im new around here",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790033383,
         "type": "superchat",
@@ -249386,6 +250898,30 @@
     ],
     "techman771": [
       {
+        "ts": 1793770613,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Michigan is a bit too close to comfort but I\u2019m glad we surpassed Fetterman",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759733,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Glad to see Zists get recked. Haley, Ethan Klein, potentially bibi",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793757134,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Phil: I feel like Florida is now the new GOP center. Texas might be lost for a long time.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1791597582,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -310294,6 +311830,14 @@
     ],
     "connor1187": [
       {
+        "ts": 1793770411,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I was brain washed by my preacher father to vote for Trump in 2020 and I know the real truth to this day",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1793413912,
         "type": "membership",
         "amount_usd": 1.99,
@@ -336487,6 +338031,14 @@
       }
     ],
     "YoPeeps85": [
+      {
+        "ts": 1793743061,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "All for Dems winning. But when they're in office Trump going to Veto all of theirs bills.When 2028 roll around Republicans going to frame it they didn't do anything for you.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1705715404,
         "type": "superchat",
@@ -364751,6 +366303,14 @@
       }
     ],
     "NaNa-B00": [
+      {
+        "ts": 1793761852,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "You\u2019re good rich, were all locked in as well",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793411170,
         "type": "membership",
@@ -449883,6 +451443,14 @@
       }
     ],
     "Mailmansson": [
+      {
+        "ts": 1793757897,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 20 months",
+        "message": "Do you like the lot lizard AI videos ? funny ?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1682960592,
         "type": "superchat",
@@ -553684,6 +555252,30 @@
     ],
     "jameswalters130": [
       {
+        "ts": 1793773724,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793772372,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793770767,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Rich, can you please explain why you\u2019re so upset. I just tuned in.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1787801590,
         "type": "membership",
         "amount_usd": 1.99,
@@ -554318,6 +555910,14 @@
     ],
     "crunchy_denim": [
       {
+        "ts": 1793764498,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1788492703,
         "type": "sub",
         "amount_usd": 5.99,
@@ -554889,6 +556489,22 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1793752275,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "sad thing, if stolen, no one will do anything!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793749808,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Israel owns / brought the USA GOVT!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793408590,
         "type": "superchat",
@@ -555611,6 +557227,14 @@
       }
     ],
     "About_50_Wizards": [
+      {
+        "ts": 1793763692,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1790362446,
         "type": "giftmembership",
@@ -556500,6 +558124,14 @@
     ],
     "sagetangent6692": [
       {
+        "ts": 1793769298,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Trump has to live with the fact that he was so terrible he turned Texas blue",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
         "ts": 1792647766,
         "type": "membership",
         "amount_usd": 1.99,
@@ -556565,6 +558197,62 @@
       }
     ],
     "propakistaniamericantitan": [
+      {
+        "ts": 1793769918,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Susan Collin pro Israel lost in Maine. Troy jackson another I think one of few democrat who is anti democrat took her place",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793766545,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 Hey Israel. That old promise is looking real shaky right now. Sure most Democrats stayed pro-Israel but their base is turning and this time they might push a bill calling it an apartheid state and force some real changes. Frame that outside the Capitol and watch the panic. Yeah Republicans how\u2019s that Elon Musk 300 million fund treating you? Rich guys yelling the loudest as always. Can\u2019t wait for Mike Huckabee\u2019s reaction on X. Hey Ben Shapiro, you good?",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793765389,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 TEXAS both house  and senate switched to Blue Greg Abbot biggest islmiphobe is out!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793759695,
+        "type": "bits",
+        "amount_usd": 5.0,
+        "amount_raw": "500 bits",
+        "message": "Cheer500 Phil: she is the person who will get married, dream of Israel over night, and then divorce next day, because Israel CAME TO MY DREAM! You can even see even in her eyes she can't sleep until she doesn't dream of Israel. I don't think any man should trust her except me, Phil.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793751526,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 who in this chat thinks Muslims in America are cause for higher fuel prices and for all problem.. \ud83d\ude06\ud83d\ude06",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793744751,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 hey rich what's up. Did you saw the viral clip from Dr Larissa Portnoff apparently she was 8 years old! 8 years old! who was S word abused by TRUMP himself! Apparently trump wanted to dismiss this case but court denied it! And once again he intimidated her last year and guess what on 9/11 last year. He reached her out on 9/11! Dude all this Zionist Epstein is like greater than anything happened in US politics. It's politics apocalypse..man!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793740711,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 missed my highlight message. Also once again trump blocked $4 billion military aid to genocidal shtrael just an hour or so. Too late a-hole trump...far too late",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793414599,
         "type": "bits",
@@ -556639,6 +558327,30 @@
       }
     ],
     "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1793753576,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "vivek got booed off from stage :grinning_squinting_face: 2 hour ago",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793744005,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "DeSantis is stopping republican to blame Biden for gas prices and telling his voter let's be real its waging Iran war. two snakes now fighting other.:performing_arts:",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793741035,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "dems will nuke republican. missed highlight twitch",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
       {
         "ts": 1793415805,
         "type": "superchat",
@@ -556792,6 +558504,134 @@
         "amount_raw": "$10.00",
         "message": "Hey Rich, I'm a long time viewer of your channel, since 10th grade of highschool. I'm 28 now :skull:. Just wanna say, stumbling upon your channel again has been a huge pleasure. Glad to have you back man :folded_hands:",
         "stream_id": "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+      }
+    ],
+    "midnitdragoon": [
+      {
+        "ts": 1793738961,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "When will you do a Turok 64 playthrough on stream",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      },
+      {
+        "ts": 1793738730,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "Your thoughts on midtermssss",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "maggiealt34": [
+      {
+        "ts": 1793738760,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "can you give my boyfriend @ rich and the birds a shoutout to do well on his interview today! I know hes a huge fan of yours",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "NicaMo0287": [
+      {
+        "ts": 1793747924,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "Mr.Awesome0513": [
+      {
+        "ts": 1793751652,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 63 months",
+        "message": "I have done deliveries in New Rochelle. There's a middle school that looks like a castle.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "vrakkul": [
+      {
+        "ts": 1793752977,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Not looking forward to elections results over here on the west coast. Both candidates for governor are garbage. I voted early by mail. Birds and men.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "hellotheir1427": [
+      {
+        "ts": 1793758350,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "if democrats win, the country doesn't want trillionaires like Elon musk. rejecting oligarchs. his companies will be audited.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "abbadon_diolesion": [
+      {
+        "ts": 1793759737,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "TripleDoubleFine": [
+      {
+        "ts": 1793764426,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "ZoominB": [
+      {
+        "ts": 1793764622,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Virgina passed that in their constitution all reproductive rights are protected and all marriages are equal.",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "superduper7397": [
+      {
+        "ts": 1793764756,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Maybe now I can afford ram & a 5090 (delusional)",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "ifiwan2gugaging": [
+      {
+        "ts": 1793765299,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Mike Lawler lost lmao",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "grimoirewish6068": [
+      {
+        "ts": 1793765389,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I wouldn't put it past me if Donald Trump initiates the 90 days shut down after the midterms",
+        "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
       }
     ]
   }
