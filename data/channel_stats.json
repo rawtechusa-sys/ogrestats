@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793424878,
+  "updated_ts": 1793774544,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1954,7 +1954,8 @@
     "grifters_and_men_and_benchmarking_2026-10-23_184712",
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
-    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113"
+    "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
+    "the_midterm_election_disaster_stream_2026-11-03_203057"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35157,6 +35158,23 @@
       "avg_chat_mpm": 7.66,
       "avg_active_chatters": 19.07,
       "percent_paused": 62.4
+    },
+    "the_midterm_election_disaster_stream_2026-11-03_203057": {
+      "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057",
+      "title": "The Midterm Election (Disaster) Stream",
+      "start_ts": 1793737243,
+      "end_ts": 1793774336,
+      "duration_sec": 37093,
+      "youtube_archive_id": "B596Mb1QR5I",
+      "source_platform": "youtube",
+      "total_donations_usd": 820.83,
+      "donation_count": 225,
+      "donations_per_min": 1.3277,
+      "peak_viewers": 633,
+      "avg_viewers": 467.8,
+      "avg_chat_mpm": 12.11,
+      "avg_active_chatters": 30.99,
+      "percent_paused": 61.4
     }
   }
 }
