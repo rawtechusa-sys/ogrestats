@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793774546,
+  "updated_ts": 1793860534,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -148,7 +148,8 @@
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
-    "the_midterm_election_disaster_stream_2026-11-03_203057"
+    "the_midterm_election_disaster_stream_2026-11-03_203057",
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1782,6 +1783,21 @@
       ],
       "source_vod_id": "sao5TC2WVMo",
       "source_platform": "youtube"
+    },
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948": {
+      "title": "Screw It...Let's Just Celebrate Tonight",
+      "start_ts": 1793838040,
+      "youtube_archive_id": "60cnwmXUF2Y",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "60cnwmXUF2Y",
+          "start_ts": 1793838040
+        }
+      ],
+      "source_vod_id": "Hsu1SiBpgp8",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -3084,6 +3100,194 @@
           "moderator": null,
           "reason": null,
           "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+        }
+      ]
+    },
+    "SpongeBob.Ripped": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793839575,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCKedVzGwAEW8URmFgxKk3uw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793839575,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "zekety888": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793839705,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCHus0_zvKF5YWShovjZwFIA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793839705,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "ShadowsofRlyeh": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793840137,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "UCAsWY2KiqYo4gZEDo-SMMsw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793840137,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        },
+        {
+          "ts": 1793840117,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "RichTheEyeballEater": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793840177,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "UCcu0u2xcJRSOFJNEd7Uq21w"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793840177,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        },
+        {
+          "ts": 1793840167,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "BecStrickland69420": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793846099,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCz50eUXcOmFsSv219niWjqg"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793846099,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "ClarkGuitar": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793849200,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCTGNdVat4srXtawCRZcKnwg"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793849200,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "agrarianpeasant": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1793849732,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCeX8xBf8Ol-4guOeWSzbujA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1793849732,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
         }
       ]
     }
