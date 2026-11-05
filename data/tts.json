@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793774533,
+  "updated_ts": 1793860521,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -882,16 +882,17 @@
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
-    "the_midterm_election_disaster_stream_2026-11-03_203057"
+    "the_midterm_election_disaster_stream_2026-11-03_203057",
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
   ],
   "commands": {
     "men": 6,
-    "eric": 288,
-    "phil": 642,
+    "eric": 289,
+    "phil": 643,
     "stan": 444,
     "masterchief": 171,
     "harman": 231,
-    "trump": 286,
+    "trump": 288,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -10649,9 +10650,55 @@
       ],
       "source_vod_id": "sao5TC2WVMo",
       "source_platform": "youtube"
+    },
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948": {
+      "title": "Screw It...Let's Just Celebrate Tonight",
+      "start_ts": 1793838040,
+      "youtube_archive_id": "60cnwmXUF2Y",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "60cnwmXUF2Y",
+          "start_ts": 1793838040
+        }
+      ],
+      "source_vod_id": "Hsu1SiBpgp8",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1793851345,
+      "username": "@ProPakistaniAmerican4Libration",
+      "platform": "youtube",
+      "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+      "message": "Trump: \"I demand to know exact second ilhan Omar was born. One second later than the certificate shows and you\u2019re deported.\u201d I also demand the hospital clock\u2019s serial number. Phil: yes my zionazst",
+      "commands": [
+        "trump",
+        "phil"
+      ]
+    },
+    {
+      "ts": 1793842853,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+      "message": "Eric: Rich, today is not a good day, please stop!",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1793842577,
+      "username": "@sean-reagan",
+      "platform": "youtube",
+      "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+      "message": "Trump: \u201cI\u2019m not unpopular\u2014 the republicans lost because every one of them was uniquely unpopular at the same time. They lost because they weren\u2019t me.\u201d",
+      "commands": [
+        "trump"
+      ]
+    },
     {
       "ts": 1793763647,
       "username": "@BloodyGB175",
