@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793774538,
+  "updated_ts": 1793860526,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -882,7 +882,8 @@
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
-    "the_midterm_election_disaster_stream_2026-11-03_203057"
+    "the_midterm_election_disaster_stream_2026-11-03_203057",
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10049,6 +10050,21 @@
       ],
       "source_vod_id": "sao5TC2WVMo",
       "source_platform": "youtube"
+    },
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948": {
+      "title": "Screw It...Let's Just Celebrate Tonight",
+      "start_ts": 1793838040,
+      "youtube_archive_id": "60cnwmXUF2Y",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "60cnwmXUF2Y",
+          "start_ts": 1793838040
+        }
+      ],
+      "source_vod_id": "Hsu1SiBpgp8",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10801,6 +10817,14 @@
       }
     ],
     "BloodyGB175": [
+      {
+        "ts": 1793849769,
+        "type": "superchat",
+        "amount_usd": 5.02,
+        "amount_raw": "CA$6.99",
+        "message": "Meanwhile nerdrotic was a litteral burden on taxpayers because he spent a few years in prison :face_with_rolling_eyes:",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793768608,
         "type": "superchat",
@@ -13333,6 +13357,14 @@
       }
     ],
     "djjailbreak": [
+      {
+        "ts": 1793859788,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I\u2019m playing the new zelda game on my pc right now",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793765177,
         "type": "superchat",
@@ -21886,6 +21918,38 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1793858188,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "im messing with you rich I know you aint racist ha",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851880,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850344,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839224,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793760838,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -23033,6 +23097,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1793845201,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "sweet Jesus it's over! the war of brown is finished! my asshole survived, barely. I need to restock my shitpaper reserves. I killed a lot of trees.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793844466,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen, fuck your blue wave. send your prayers. the farts have stopped. that only means one thing. a brown wave is inevitable. god help my asshole!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841893,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "men, send help! the farts won't stop! the big, long and gurthy Cosco hot dogs and baked beans are having their revenge on my hole! I can't breathe!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839663,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "there are those who said this day would never come, what are they to say now.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793771605,
         "type": "superchat",
@@ -26417,6 +26513,30 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1793854488,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Take a blue chew, buy a sombrero and drive 2 Jay's",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850364,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793849252,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Chud is an acronym for Cannibalistic Humanoid Underground Dwellers, classic 80's moviee called C.H.U.D. Like Eric!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793761113,
         "type": "superchat",
@@ -32027,6 +32147,30 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1793850982,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "imagine being upset because you can't play as a buff muscular man",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842198,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "who wants to take bets that phil is gonna explain what Thanksgiving is again this year?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841659,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "someone called phil a antisemitic term Mr \"I despise real rascim\" response to it was im not Jewish",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793760709,
         "type": "superchat",
@@ -40774,6 +40918,14 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1793839547,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Charlie Kirk died?!? all well, GTA is coming soon",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793765134,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -43117,6 +43269,14 @@
       }
     ],
     "Selene_Graves": [
+      {
+        "ts": 1793842390,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Bloodborne on PC is:fire: Fitgirl repack works perfect",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793752285,
         "type": "superchat",
@@ -46841,6 +47001,30 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1793855739,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen follow a guy that wanted 2 nuke a hurricane",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851888,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I wrote in Juicy Booch for board of education",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850820,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dad how much for 4am?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793758434,
         "type": "superchat",
@@ -62512,6 +62696,14 @@
     ],
     "SeymourDemonica": [
       {
+        "ts": 1793851784,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "As a Texan, midterms were tremendously tremendous.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1792623816,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -67896,6 +68088,14 @@
     ],
     "75.": [
       {
+        "ts": 1793843004,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "critikal just uploaded about edp445 arrest",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793738719,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -68725,6 +68925,46 @@
       }
     ],
     "respergu13": [
+      {
+        "ts": 1793856532,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm Wings Of Redemption and I approve this message",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793855364,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Review Tech USA, I heard James Tallarico will finally release a new video game console named the Intellivision Amico in Texas.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793854559,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842853,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Rich, today is not a good day, please stop!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842194,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Mr Rich, You'll get tired of winning, and you'll say, Please, please, it's too much winning, we can't take it anymore,' and I'll say, No, it isn't, we have to keep winning, we have to win more.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793754901,
         "type": "membership",
@@ -70112,6 +70352,14 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1793843791,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Tip for distracting me on 3 mile walk last 2 nites",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793761392,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -70690,6 +70938,62 @@
     ],
     "qb3540": [
       {
+        "ts": 1793859689,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "No Rich, buy the game and transfers the files",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793859445,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Just wait 4 the emulator then dump it from da cart",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793852000,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793847983,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "McCain was the last good candidate on the red side and he voted against MLK day",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793847213,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Didnt Papa Trump have to bail out Donalds failed businesses multiple times?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845992,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "This is good and all but we still need someone competent on the left side who isnt besties with the 1%. Good luck with that.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845237,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "The sad part is the farmers who was screwed over the most by Trump would still vote red",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793755920,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -71059,6 +71363,30 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1793855888,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Its just jokes",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793848769,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793843955,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Do you think edp subconsciously wanted to do the documentary to be arrested because he had no where else to go, he's just a delusional idiot or both?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793766062,
         "type": "superchat",
@@ -73490,6 +73818,38 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1793848208,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Code switching to Obama-era Craig who just loves games dood",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793847959,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "The dems and republicans becoming too comfortable when they\u2019re winning and becoming increasingly out of touch sort of reminds me of Sony and Microsoft. Human nature is funny :upside_down_face:",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845965,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "\u201cThe left overreacts and calls everyone Hitler\u201d +3 years\u2014> \u201cWell what about the radical left? They\u2019re like Hitler too\u201d +3 years\u2014> \u201cAlright just hear me out\u2026 People actually overreact about Hitler.\u201d",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842577,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Trump: \u201cI\u2019m not unpopular\u2014 the republicans lost because every one of them was uniquely unpopular at the same time. They lost because they weren\u2019t me.\u201d",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793759400,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -74285,6 +74645,14 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1793839993,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Alabama State House district 25 elect is a trans woman. this is amazing! I love it.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793750135,
         "type": "superchat",
@@ -82810,6 +83178,14 @@
     ],
     "DoubleAgentX-1": [
       {
+        "ts": 1793842836,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "One thing that makes NYC having a progressive mayor so great now is it gives a progressive presidential candidate a genuine shot in the primary via endorsement. Bernie got stomped in New York in 2016",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793770617,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -83051,6 +83427,14 @@
       }
     ],
     "AK86-e4l": [
+      {
+        "ts": 1793840055,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Does that make you the large bird streamer?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793739745,
         "type": "superchat",
@@ -83375,6 +83759,14 @@
       }
     ],
     "Skyrim1212g": [
+      {
+        "ts": 1793838780,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "Opinion on Sam Altman and ram?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1785810117,
         "type": "giftmembership",
@@ -88776,6 +89168,14 @@
     ],
     "End-Logic_1": [
       {
+        "ts": 1793839154,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Excited to laugh at some grifters",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793766950,
         "type": "membership",
         "amount_usd": 1.99,
@@ -89465,6 +89865,14 @@
       }
     ],
     "Mikey_Today": [
+      {
+        "ts": 1793840170,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Did you see him waving at an empty chopper?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793766070,
         "type": "superchat",
@@ -94459,6 +94867,14 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1793839000,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "Nice to know some Americans aren't batshit crazy. But if you yanks need help, we British can bring back the Thirteen Colonies.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793746410,
         "type": "superchat",
@@ -102820,6 +103236,14 @@
     ],
     "change1ing": [
       {
+        "ts": 1793840906,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "EDP got arrested! Accountability already coming!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793757271,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -106334,6 +106758,22 @@
     ],
     "octropia": [
       {
+        "ts": 1793842584,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Party100 When the main edp arrest drops can we watch it? Jidion on Instagram says its dropping soon btw its for the catch alex rosin did 4 or 5 years ago so they went that far back",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793840469,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Fatfuck445 had to be triple handcuffed cause hes so round btw people saying hes gonna die sooner in custody its the opposite hes probably gonna be forcefully kept alive cause yk prison rules and regulations",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1792808484,
         "type": "bits",
         "amount_usd": 0.5,
@@ -107420,6 +107860,14 @@
     ],
     "Hellrazer8504": [
       {
+        "ts": 1793841969,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793762275,
         "type": "membership",
         "amount_usd": 1.99,
@@ -107485,6 +107933,14 @@
       }
     ],
     "Juicyb00ch": [
+      {
+        "ts": 1793850147,
+        "type": "superchat",
+        "amount_usd": 19.99,
+        "amount_raw": "$19.99",
+        "message": ":sweat_droplets:",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793761272,
         "type": "superchat",
@@ -115412,6 +115868,14 @@
     ],
     "SventheArcticFox": [
       {
+        "ts": 1793847195,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Allison Montgomery won her race and will become the first transgender legislator in Alabama history. I am losing my mind in an amazing way!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1791606144,
         "type": "membership",
         "amount_usd": 1.99,
@@ -115581,6 +116045,22 @@
       }
     ],
     "FrankkCozmo": [
+      {
+        "ts": 1793841988,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 45 months",
+        "message": "Been a crazy 24 hours, everyones melting down lol",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841887,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1788499264,
         "type": "membership",
@@ -130692,6 +131172,46 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1793855156,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "have people pay thousands and thounds dollars for the electric grid when it went out in ice storm no.goverment help texas",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793846187,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "when president veto stuff u can veto some or all",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845936,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "texas looking to raise miume wage to 15 dollars form federal miume wage 7.25-7.35 or so in future under dems ohio to I look it up",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845084,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "good news Elon musk leaves blue California for Texas that turn blue victory he cooked his Business",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839646,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "pre order gta 6 November 10 prre install",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793755172,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -132183,6 +132703,14 @@
       }
     ],
     "DeportedSicilianGamer": [
+      {
+        "ts": 1793851887,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "GOP losing Mississippi Senate is crazy too.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793774008,
         "type": "superchat",
@@ -147178,6 +147706,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1793850535,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793761694,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -149151,6 +149687,22 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1793845492,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Mike Johnson is being kicked out of republican leadership. Republicans FA and found out. Democrats responded by bringing the big belt",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839085,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Democrats swept Ohio statewide races",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793773225,
         "type": "superchat",
@@ -158928,6 +159480,14 @@
     ],
     "Chaoswalker989": [
       {
+        "ts": 1793840263,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 7 months",
+        "message": "genuinely asking do you think anything will change",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1784587947,
         "type": "membership",
         "amount_usd": 1.99,
@@ -159567,6 +160127,14 @@
       }
     ],
     "backdoorslot9": [
+      {
+        "ts": 1793857628,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "Hi man and birds",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1784270211,
         "type": "membership",
@@ -161938,6 +162506,14 @@
     ],
     "SirReginaldFannybottom": [
       {
+        "ts": 1793838863,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "predictations on wg=hat the dems will do moving forward from last night success?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793220349,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -162771,6 +163347,14 @@
       }
     ],
     "PutoPlatano": [
+      {
+        "ts": 1793853709,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bob Lavari is a sleeper cell Mossad agent. Bazinga",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793753936,
         "type": "superchat",
@@ -169213,6 +169797,14 @@
       }
     ],
     "AmberHeardsDung": [
+      {
+        "ts": 1793839281,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "EDP has been arrested let\u2019s celebrate that as well",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1792624452,
         "type": "membership",
@@ -179896,6 +180488,22 @@
     ],
     "joshloungin": [
       {
+        "ts": 1793849853,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "if i remember right Nerdorotic jailed for drugs",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793847859,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trumps power of using Nikkis Arse didnt work",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793769331,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -185695,6 +186303,38 @@
       }
     ],
     "ComicBookChat": [
+      {
+        "ts": 1793859591,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "they need to sell more Skyrim remakes first",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793859434,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Elder scrolls 6 finally got a name get ready only another 6 years before we get an official trailer",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850896,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "we still have to wait to see what Trump does to Iran it terrifies me what he might do",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850575,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793758921,
         "type": "superchat",
@@ -198245,6 +198885,14 @@
       }
     ],
     "TheEmery223": [
+      {
+        "ts": 1793841917,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Of course, everyone is talking about Texas flipping, but how much of a surprise was SC, and now potentially MISSISSIPPI if vote totals hold?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1790278079,
         "type": "superchat",
@@ -214223,6 +214871,14 @@
       }
     ],
     "Spencerwalker21": [
+      {
+        "ts": 1793840470,
+        "type": "superchat",
+        "amount_usd": 6.66,
+        "amount_raw": "$6.66",
+        "message": "when the ai bubble pops recession it wont matter Dems will get 60 plus senators and the presidency in 2028",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793226304,
         "type": "superchat",
@@ -247152,6 +247808,14 @@
     ],
     "UglyNacho": [
       {
+        "ts": 1793842392,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "This pendulum Phil\u2019s talking about never even swung \u201call the way to the left\u201d. It has moved from center to right since forever now. We need it left.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793413044,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -250897,6 +251561,30 @@
       }
     ],
     "techman771": [
+      {
+        "ts": 1793852200,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "The insane margins of Texas might keep it Blue for a long time. RIP GOP",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851405,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "We are gonna see so many of these anti-woke people switch up. They are an embarrassment, that stench will never come off.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851148,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "With the far right losing globally, they will go back into the shadows. Trump turned the boiling water too hot and everyone jumped out.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793770613,
         "type": "superchat",
@@ -338032,6 +338720,14 @@
     ],
     "YoPeeps85": [
       {
+        "ts": 1793841334,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "If A.I. is a danger to human race,Why the fuck are we still building Data Centers?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793743061,
         "type": "superchat",
         "amount_usd": 10.0,
@@ -345991,6 +346687,14 @@
       }
     ],
     "NeoGotYa1111": [
+      {
+        "ts": 1793845078,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Been watching you since the Obama days",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1704853775,
         "type": "superchat",
@@ -451444,6 +452148,14 @@
     ],
     "Mailmansson": [
       {
+        "ts": 1793839141,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Look at jays stream. he is cross playing you",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793757897,
         "type": "membership",
         "amount_usd": 1.99,
@@ -459325,6 +460037,14 @@
       }
     ],
     "madonnasplasticsurgery": [
+      {
+        "ts": 1793856205,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Blue Mississippi before GTA 6:rooster::cucumber:",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1792815355,
         "type": "superchat",
@@ -553000,6 +553720,14 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1793838625,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 15 months",
+        "message": "It wasn\u2019t a Blue Tsunami it was a Burnell Burst!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1792627420,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -553333,6 +554061,14 @@
       }
     ],
     "ReviewDSPhilUSA": [
+      {
+        "ts": 1793840375,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 11 months",
+        "message": "EDP445 is finally getting what's coming to him. :bottle_with_popping_cork:",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1792628564,
         "type": "membership",
@@ -553975,6 +554711,14 @@
       }
     ],
     "Orange_Yoshi_64": [
+      {
+        "ts": 1793844079,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Last year, I bought a Lexar terabyte sd express card for $180. I was apprehensive at first, but ultimately was the best choice. The card is $429 now.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1792783935,
         "type": "superchat",
@@ -555173,6 +555917,14 @@
       }
     ],
     "DrTSanchez1": [
+      {
+        "ts": 1793841632,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793225462,
         "type": "membership",
@@ -556490,6 +557242,46 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1793853538,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "U think Trump will still use a nuke! now he lost?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793852546,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "when people say Daddy Trump i want to puke!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842319,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "u r telling me the founding fathers knew",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841704,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "U think Elon will go 2 Jail now, or he will flee!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839781,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "is it better Trump lives 2 see him empire crumble",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793752275,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -557099,6 +557891,22 @@
       }
     ],
     "SignalRegulus": [
+      {
+        "ts": 1793852080,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851932,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "\"I expect to see groceries and gas prices drop IMMEDIATELY!\" The amount of cope and seething I saw on facebook today. I bathed in the tears of MAGA",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793408515,
         "type": "giftmembership",
@@ -558198,6 +559006,46 @@
     ],
     "propakistaniamericantitan": [
       {
+        "ts": 1793859569,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Dude Rich..we haven't reacted to Quantum TV and both his reaction to election and any lately video gaming reaction! \ud83d\ude06 Also let me know if you got my email SolidPak on your Gmail. Lastly call up Jay sometime and invite him someday and talk how  Canada is feeling about election.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850110,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 hey Rich my message is been blocked",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793848609,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 I mean Muslims are the target. The only thing is that they use October 7th 2023 as an excuse exactly post 9/11 2001 to go after \" radicalized Muslim in USA\" . Imagine if October 7th happened elsewhere. Oh just prayer and condolences to Europe country but for Israel they took exceptional case both sides .",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793847805,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 honestly it has been hard for me to eat each time when I think about children in yemen, Palestine, and Sudan. Yeah American politicians ever since they defeated Nazis became one themselves!\ud83d\ude21\ud83e\udd2c",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793840638,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 what's up Rich. Man...I just sent you email on your Gmail. You should watch that and we have to face reality from next year.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
         "ts": 1793769918,
         "type": "bits",
         "amount_usd": 0.5,
@@ -558327,6 +559175,22 @@
       }
     ],
     "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1793851345,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Trump: \"I demand to know exact second ilhan Omar was born. One second later than the certificate shows and you\u2019re deported.\u201d I also demand the hospital clock\u2019s serial number. Phil: yes my zionazst",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841222,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Rich I sent you email. It's 8 minutes long but covers everythingpeople should know. Anyway when I open X and watch mother hugging her :broken_heart:newborn child emaciated as collective punishment.we need Havoc",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
       {
         "ts": 1793753576,
         "type": "superchat",
@@ -558632,6 +559496,146 @@
         "amount_raw": "$5.00",
         "message": "I wouldn't put it past me if Donald Trump initiates the 90 days shut down after the midterms",
         "stream_id": "the_midterm_election_disaster_stream_2026-11-03_203057"
+      }
+    ],
+    "yamatoisawoman2802": [
+      {
+        "ts": 1793852031,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "1:30 am time now rich it's gonna be fun tonight!",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793851930,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850792,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "There's a term for that, it's called sane washing.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850565,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850324,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793850102,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Twitter beef is the only kind most folk can afford",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793848879,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793846550,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Fun fact cucumbers therefore pickles are fruit",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845828,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I wait for the big beautiful obituary on the daily",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793845376,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Even after last night florida let's down as usual.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793842753,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "On the topic of the EC, we don't need the two party system as well with technology. We can have a liquid democracy with instant recall for our deferred vote to experts in the field on specific policy.",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793841943,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Asmongold has no understanding of the pot calling the kettle black eh?",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793840930,
+        "type": "giftmembership",
+        "amount_usd": 39.8,
+        "amount_raw": "20 gifted memberships",
+        "message": "Sent 20 ReviewTechUSA2  gift memberships",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793840215,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "New hampshire senate has the first openly gay man that won now and no lindsey, graham or lady graham, does not count. Folks closeted till the end yeah",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839587,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "ya know, twenty four would have turned out very differently if we kept the \"There weird\" energy instead of you know, touring with liz. Cheney and such",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      },
+      {
+        "ts": 1793839240,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Lauren brobert could very well lose still btw",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+      }
+    ],
+    "Jasonvoorhees57469": [
+      {
+        "ts": 1793852793,
+        "type": "superchat",
+        "amount_usd": 1.41,
+        "amount_raw": "A$2.00",
+        "message": "You scroll past my reply on Eric's tweet",
+        "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
       }
     ]
   }
