@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793774544,
+  "updated_ts": 1793860532,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1955,7 +1955,8 @@
     "dave_and_his_robust_delusions_of_gran_door_dspgaming_2026-10-27_001254",
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
-    "the_midterm_election_disaster_stream_2026-11-03_203057"
+    "the_midterm_election_disaster_stream_2026-11-03_203057",
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35175,6 +35176,23 @@
       "avg_chat_mpm": 12.11,
       "avg_active_chatters": 30.99,
       "percent_paused": 61.4
+    },
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948": {
+      "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+      "title": "Screw It...Let's Just Celebrate Tonight",
+      "start_ts": 1793838040,
+      "end_ts": 1793860324,
+      "duration_sec": 22284,
+      "youtube_archive_id": "60cnwmXUF2Y",
+      "source_platform": "youtube",
+      "total_donations_usd": 547.89,
+      "donation_count": 123,
+      "donations_per_min": 1.4752,
+      "peak_viewers": 515,
+      "avg_viewers": 444.06,
+      "avg_chat_mpm": 9.18,
+      "avg_active_chatters": 23.24,
+      "percent_paused": 79.7
     }
   }
 }
