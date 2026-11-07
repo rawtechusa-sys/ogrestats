@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793860532,
+  "updated_ts": 1794026104,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1956,7 +1956,8 @@
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
     "the_midterm_election_disaster_stream_2026-11-03_203057",
-    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35193,6 +35194,23 @@
       "avg_chat_mpm": 9.18,
       "avg_active_chatters": 23.24,
       "percent_paused": 79.7
+    },
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237": {
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "title": "More Amazing MAGA Meltdowns Feat. Asmongold",
+      "start_ts": 1794007235,
+      "end_ts": 1794025918,
+      "duration_sec": 18683,
+      "youtube_archive_id": "EopQDMloMtg",
+      "source_platform": "youtube",
+      "total_donations_usd": 493.07,
+      "donation_count": 93,
+      "donations_per_min": 1.5835,
+      "peak_viewers": 483,
+      "avg_viewers": 403.46,
+      "avg_chat_mpm": 10.29,
+      "avg_active_chatters": 25.72,
+      "percent_paused": 76.1
     }
   }
 }
