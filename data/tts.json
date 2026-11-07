@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793860521,
+  "updated_ts": 1794026094,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -883,16 +883,17 @@
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
     "the_midterm_election_disaster_stream_2026-11-03_203057",
-    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
   ],
   "commands": {
     "men": 6,
     "eric": 289,
-    "phil": 643,
-    "stan": 444,
+    "phil": 648,
+    "stan": 445,
     "masterchief": 171,
     "harman": 231,
-    "trump": 288,
+    "trump": 289,
     "moist": 44,
     "dagoth": 5,
     "zesty": 37,
@@ -10665,9 +10666,75 @@
       ],
       "source_vod_id": "Hsu1SiBpgp8",
       "source_platform": "youtube"
+    },
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237": {
+      "title": "More Amazing MAGA Meltdowns Feat. Asmongold",
+      "start_ts": 1794007235,
+      "youtube_archive_id": "EopQDMloMtg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "EopQDMloMtg",
+          "start_ts": 1794007235
+        }
+      ],
+      "source_vod_id": "OWdWQ-0wnrI",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1794022992,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "message": "Phil: America didn\u2019t need a blue tsunami, it needed a Burnell Burst! Stan: Oh, Philly! OH! Phil: I am Phillip Paul Burnell and I approve this message.",
+      "commands": [
+        "phil",
+        "stan"
+      ]
+    },
+    {
+      "ts": 1794012216,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "message": "Phil: As a Christian, I hate seeing people weaponize Christianity as a grift. It fucking pisses me off. Just like when I don\u2019t get any donations!!",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1794010490,
+      "username": "@jorethor",
+      "platform": "youtube",
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "message": "trump: birds have breasts birds",
+      "commands": [
+        "trump"
+      ]
+    },
+    {
+      "ts": 1794010123,
+      "username": "@Insomniac416",
+      "platform": "youtube",
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "message": "Phil: speaking of discord, they are rebuilding their shiddy app with AI so it uses less ram\u2026 chrome should take notes.",
+      "commands": [
+        "phil"
+      ]
+    },
+    {
+      "ts": 1794009862,
+      "username": "@Phillippaulburnell",
+      "platform": "youtube",
+      "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+      "message": "Phil: why does he wear that stupid Mario cappy hat",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1793851345,
       "username": "@ProPakistaniAmerican4Libration",
