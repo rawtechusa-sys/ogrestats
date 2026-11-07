@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1793860534,
+  "updated_ts": 1794026106,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -149,7 +149,8 @@
     "rich_tomorrow_a_mini_marathon_stream_about_phil_and_men_2026-10-28_203956",
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
     "the_midterm_election_disaster_stream_2026-11-03_203057",
-    "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+    "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1798,6 +1799,21 @@
       ],
       "source_vod_id": "Hsu1SiBpgp8",
       "source_platform": "youtube"
+    },
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237": {
+      "title": "More Amazing MAGA Meltdowns Feat. Asmongold",
+      "start_ts": 1794007235,
+      "youtube_archive_id": "EopQDMloMtg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "EopQDMloMtg",
+          "start_ts": 1794007235
+        }
+      ],
+      "source_vod_id": "OWdWQ-0wnrI",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -3288,6 +3304,267 @@
           "moderator": null,
           "reason": null,
           "stream_id": "screw_itlets_just_celebrate_tonight_2026-11-05_002948"
+        }
+      ]
+    },
+    "dl5fse990": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794008568,
+          "expires_ts": null,
+          "bans": 2,
+          "timeouts": 0,
+          "user_id": "UCdbTwCOjnJ0bSv39nfm1xXA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794008568,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        },
+        {
+          "ts": 1794008340,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "TheNitz1976": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794010565,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCKFizaUpEhaWprp22Ua20yw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794010565,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "DSPsDailyOzempicShot": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794010896,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCGJrLCv-zqMkmr2aU1ju3iQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794010896,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "LLcoolDan": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794012803,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UChI6wuSF28B-7Q2awS1KbLQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794012803,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "DrTSanchez1": {
+      "platforms": {
+        "youtube": {
+          "status": "active",
+          "since": 1794014536.070702,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UC4A4APvK4oNwQzOHKF4BPhw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794014536,
+          "platform": "youtube",
+          "type": "unban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+          "inferred": true
+        },
+        {
+          "ts": 1794014148,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "Soliloquium777": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794014238,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCcAN00LTJBSJR_hx-e-Fqvw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794014238,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "Soliloquium77": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794015442,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCI2c8FWxCeunzZpBpbABQwQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794015442,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "andathin": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794015452,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCN27XXiQuXcyySFUOakiXBQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794015452,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "BeardyOutpost": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794023181,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCpgLjBVPTogsmBbxxLAwWbQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794023181,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "KreemStar": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794023984,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UC3yTGK3lOjPkCKszIZSXCjg"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794023984,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
         }
       ]
     }
