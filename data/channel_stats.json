@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794026104,
+  "updated_ts": 1794261966,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1957,7 +1957,8 @@
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
     "the_midterm_election_disaster_stream_2026-11-03_203057",
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
-    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+    "a_new_stream_2026-11-09_212835"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35211,6 +35212,23 @@
       "avg_chat_mpm": 10.29,
       "avg_active_chatters": 25.72,
       "percent_paused": 76.1
+    },
+    "a_new_stream_2026-11-09_212835": {
+      "stream_id": "a_new_stream_2026-11-09_212835",
+      "title": "a new stream",
+      "start_ts": 1794259744,
+      "end_ts": 1794261729,
+      "duration_sec": 1985,
+      "youtube_archive_id": "nUta6TS-4VU",
+      "source_platform": "youtube",
+      "total_donations_usd": 57.85,
+      "donation_count": 11,
+      "donations_per_min": 1.7486,
+      "peak_viewers": 216,
+      "avg_viewers": 155.39,
+      "avg_chat_mpm": 7.7,
+      "avg_active_chatters": 20.7,
+      "percent_paused": null
     }
   }
 }
