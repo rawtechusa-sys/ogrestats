@@ -3,7 +3,7 @@
   "slug": "a_new_stream",
   "title": "a new stream",
   "start_ts": 1794259744,
-  "end_ts": null,
+  "end_ts": 1794261729,
   "platforms": [
     "youtube",
     "twitch",
@@ -18,5 +18,7 @@
       "archive_id": "nUta6TS-4VU",
       "start_ts": 1794259744
     }
-  ]
+  ],
+  "youtube_archive_id": "nUta6TS-4VU",
+  "archive_is_source_vod": false
 }
