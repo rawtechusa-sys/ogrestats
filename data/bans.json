@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794026106,
+  "updated_ts": 1794261968,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -150,7 +150,8 @@
     "the_roach_king_has_completely_lost_his_mind_asmongold_2026-10-30_225113",
     "the_midterm_election_disaster_stream_2026-11-03_203057",
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
-    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+    "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
+    "a_new_stream_2026-11-09_212835"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1813,6 +1814,21 @@
         }
       ],
       "source_vod_id": "OWdWQ-0wnrI",
+      "source_platform": "youtube"
+    },
+    "a_new_stream_2026-11-09_212835": {
+      "title": "a new stream",
+      "start_ts": 1794259744,
+      "youtube_archive_id": "nUta6TS-4VU",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "nUta6TS-4VU",
+          "start_ts": 1794259744
+        }
+      ],
+      "source_vod_id": "ijEZVvyzRz0",
       "source_platform": "youtube"
     }
   },
