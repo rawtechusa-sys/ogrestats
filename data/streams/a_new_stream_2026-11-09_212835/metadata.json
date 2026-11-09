@@ -1,0 +1,22 @@
+{
+  "stream_id": "a_new_stream_2026-11-09_212835",
+  "slug": "a_new_stream",
+  "title": "a new stream",
+  "start_ts": 1794259744,
+  "end_ts": null,
+  "platforms": [
+    "youtube",
+    "twitch",
+    "kick"
+  ],
+  "source_channel": "rtustreams",
+  "source_platform": "youtube",
+  "source_vod_id": "ijEZVvyzRz0",
+  "start_ts_aligned": true,
+  "segments": [
+    {
+      "archive_id": "nUta6TS-4VU",
+      "start_ts": 1794259744
+    }
+  ]
+}
