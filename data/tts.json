@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794261954,
+  "updated_ts": 1794296082,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -885,7 +885,8 @@
     "the_midterm_election_disaster_stream_2026-11-03_203057",
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
-    "a_new_stream_2026-11-09_212835"
+    "a_new_stream_2026-11-09_212835",
+    "grifters_and_legos_live_2026-11-10_001338"
   ],
   "commands": {
     "men": 6,
@@ -1485,7 +1486,8 @@
     "eminem": 2,
     "batman": 1,
     "hand": 1,
-    "harmen": 1
+    "harmen": 1,
+    "lavari": 1
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10697,9 +10699,34 @@
       ],
       "source_vod_id": "ijEZVvyzRz0",
       "source_platform": "youtube"
+    },
+    "grifters_and_legos_live_2026-11-10_001338": {
+      "title": "Grifters And LEGOs Live",
+      "start_ts": 1794269647,
+      "youtube_archive_id": "uc7z66YJPEE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "uc7z66YJPEE",
+          "start_ts": 1794269647
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1794275082,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "grifters_and_legos_live_2026-11-10_001338",
+      "message": "Bob lavari: I am a man, a man, among men. I am the way, the truth, and the life! fear the wrath of my final form! I am.... THE PENTRATOR! your holes are mine! embrace the power of the farts! feel the power flow from your anus! Its time for nipples!",
+      "commands": [
+        "lavari"
+      ]
+    },
     {
       "ts": 1794022992,
       "username": "@ItsSeanMcCarthy",
