@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794261966,
+  "updated_ts": 1794296094,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1958,7 +1958,8 @@
     "the_midterm_election_disaster_stream_2026-11-03_203057",
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
-    "a_new_stream_2026-11-09_212835"
+    "a_new_stream_2026-11-09_212835",
+    "grifters_and_legos_live_2026-11-10_001338"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35229,6 +35230,23 @@
       "avg_chat_mpm": 7.7,
       "avg_active_chatters": 20.7,
       "percent_paused": null
+    },
+    "grifters_and_legos_live_2026-11-10_001338": {
+      "stream_id": "grifters_and_legos_live_2026-11-10_001338",
+      "title": "Grifters And LEGOs Live",
+      "start_ts": 1794269647,
+      "end_ts": 1794295921,
+      "duration_sec": 26274,
+      "youtube_archive_id": "uc7z66YJPEE",
+      "source_platform": "twitch",
+      "total_donations_usd": 370.33,
+      "donation_count": 82,
+      "donations_per_min": 0.8457,
+      "peak_viewers": 417,
+      "avg_viewers": 345.07,
+      "avg_chat_mpm": 7.87,
+      "avg_active_chatters": 19.38,
+      "percent_paused": 69.5
     }
   }
 }
