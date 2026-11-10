@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794261968,
+  "updated_ts": 1794296096,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -151,7 +151,8 @@
     "the_midterm_election_disaster_stream_2026-11-03_203057",
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
-    "a_new_stream_2026-11-09_212835"
+    "a_new_stream_2026-11-09_212835",
+    "grifters_and_legos_live_2026-11-10_001338"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1830,6 +1831,21 @@
       ],
       "source_vod_id": "ijEZVvyzRz0",
       "source_platform": "youtube"
+    },
+    "grifters_and_legos_live_2026-11-10_001338": {
+      "title": "Grifters And LEGOs Live",
+      "start_ts": 1794269647,
+      "youtube_archive_id": "uc7z66YJPEE",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "uc7z66YJPEE",
+          "start_ts": 1794269647
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -3581,6 +3597,126 @@
           "moderator": null,
           "reason": null,
           "stream_id": "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237"
+        }
+      ]
+    },
+    "DSPsAutisticCoolingGel": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794269845,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCinkA4tJaeeyqKt0FKRaU3w"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794269845,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_legos_live_2026-11-10_001338"
+        }
+      ]
+    },
+    "MarcoThePHX": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794270839,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCJIzyDV4Fw6HI73AFXB4UPw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794270839,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_legos_live_2026-11-10_001338"
+        }
+      ]
+    },
+    "wat_up_yo": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1794284679,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "114494963"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794284679,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_legos_live_2026-11-10_001338"
+        }
+      ]
+    },
+    "SSTVdd": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794292065,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCwnEaGdZuIoean2dSmpt1qw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794292065,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_legos_live_2026-11-10_001338"
+        }
+      ]
+    },
+    "dave6386": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794294382,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCeYNnWlJM4-Y-ueE2HWBd2Q"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794294382,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_legos_live_2026-11-10_001338"
         }
       ]
     }
