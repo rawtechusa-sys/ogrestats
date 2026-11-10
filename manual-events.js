@@ -177,15 +177,32 @@
     return best;
   }
 
+  // True when the pipeline already recorded the user's last words on the event
+  // itself (`last_message`, added to events.jsonl in 2026-11). Such an event
+  // needs no chat.json lookup.
+  function hasPipelineLastMessage(ev) {
+    return !!ev && typeof ev.last_message === 'string' && ev.last_message.trim() !== '';
+  }
+
   // Hang `{text, ts}` off every moderation event that has a preceding message,
   // and return how many got one. An event with no match keeps NO field at all
   // (absent, not null), so the renderer can test `ev.lastMessage` directly.
+  //
+  // The pipeline's own `last_message` wins; `messages` (chat.json) is only the
+  // fallback for events recorded before the pipeline stored it. Both paths
+  // feed this one field, so the renderer shows the message exactly once.
   function attachLastMessages(moderation, messages) {
     const msgs = Array.isArray(messages) ? messages : [];
-    if (msgs.length === 0) return 0;
     let attached = 0;
     for (const ev of (Array.isArray(moderation) ? moderation : [])) {
       if (!ev || typeof ev !== 'object') continue;
+      if (hasPipelineLastMessage(ev)) {
+        const ts = Number.isFinite(ev.last_message_ts) ? ev.last_message_ts : ev.ts;
+        ev.lastMessage = { text: ev.last_message, ts };
+        attached++;
+        continue;
+      }
+      if (msgs.length === 0) continue;
       const m = lastMessageBefore(msgs, ev);
       if (!m) continue;
       ev.lastMessage = { text: String(m.text == null ? '' : m.text), ts: m.ts };
@@ -569,7 +586,7 @@
     subCount, computeGoalHits,
     MOD_ACCENT, MOD_TYPE_LABELS,
     normalizeModeration, modLabel, modTypeLabel, modDuration,
-    lastMessageBefore, attachLastMessages,
+    lastMessageBefore, attachLastMessages, hasPipelineLastMessage,
     makePlugin,
   };
 })(window);

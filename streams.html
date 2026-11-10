@@ -1210,10 +1210,18 @@ async function loadStream(streamId) {
     // HERE rather than in the Promise.all above -- a stream with no moderation
     // events pays nothing. 404-tolerant and silent: legacy streams have no
     // chat.json at all, which just means no message to show.
+    // Newer events carry the pipeline's own `last_message`, so chat.json is
+    // fetched only when some event lacks it.
     if (moderation.length > 0) {
-      const chat = await fetchJSON(`${RAW}/data/streams/${streamId}/chat.json`).catch(() => null);
-      const messages = (chat && Array.isArray(chat.messages)) ? chat.messages : [];
-      if (messages.length > 0) ManualEvents.attachLastMessages(moderation, messages);
+      let messages = [];
+      // Guarded: a cached pre-fix manual-events.js lacks the helper, and the
+      // chat.json path alone still renders the message once.
+      const hasPiped = ManualEvents.hasPipelineLastMessage || (() => false);
+      if (!moderation.every(hasPiped)) {
+        const chat = await fetchJSON(`${RAW}/data/streams/${streamId}/chat.json`).catch(() => null);
+        messages = (chat && Array.isArray(chat.messages)) ? chat.messages : [];
+      }
+      ManualEvents.attachLastMessages(moderation, messages);
     }
 
     const startTs   = meta.start_ts;
@@ -1710,8 +1718,9 @@ async function loadStream(streamId) {
 
       // A moderation event reads as a donation-shaped row too: the red the
       // chart draws its markers in, the timeout duration in the Amount column,
-      // and as the message the user's last chat line before the action (looked
-      // up by the pipeline -- no platform reports it), then whatever context the
+      // and as the message the user's last chat line before the action (the
+      // pipeline's `last_message`, else a chat.json lookup -- see
+      // attachLastMessages; no platform reports it), then whatever context the
       // platform gave (Kick reports a moderator and a reason; Twitch and YouTube
       // report neither).
       function moderationRow(ev) {
@@ -1722,7 +1731,6 @@ async function loadStream(streamId) {
         const dur    = ManualEvents.modDuration(ev.duration);
         const amount = dur ? `<span class="amount-usd">${escHtml(dur)}</span>` : '<span class="amount-usd">—</span>';
         const parts  = [];
-        if (ev.last_message) parts.push(`“${ev.last_message}”`);
         if (ev.moderator) parts.push(`by ${ev.moderator}`);
         if (ev.reason)    parts.push(ev.reason);
         if (ev.platform)  parts.push(`on ${ev.platform}`);

@@ -127,6 +127,34 @@ eq('an empty text stays an empty string', blank[0].lastMessage, { text: '', ts: 
 
 // ── Result ───────────────────────────────────────────────────────────────────
 
+// ── pipeline-recorded last_message ───────────────────────────────────────────
+// Since 2026-11 the pipeline stores `last_message` on the event itself. It must
+// win over the chat.json lookup, and it must be the ONLY source of the message,
+// or the row shows it twice (2026-11-06 stream).
+
+const piped = [
+  { event: 'moderation', ts: 200, platform: 'kick', type: 'ban', username: 'someone',
+    last_message: 'from pipeline', last_message_ts: 190 },
+  { event: 'moderation', ts: 200, platform: 'kick', type: 'ban', username: 'someone',
+    last_message: null, last_message_ts: null },
+  { event: 'moderation', ts: 300, platform: 'kick', type: 'ban', username: 'nots',
+    last_message: 'no ts' },
+];
+eq('pipeline last_message attaches even with no chat.json', ME.attachLastMessages(piped, []), 2);
+eq('pipeline last_message wins over chat.json', (() => {
+  const evs = [{ ...piped[0] }];
+  ME.attachLastMessages(evs, messages);
+  return evs[0].lastMessage;
+})(), { text: 'from pipeline', ts: 190 });
+eq('a null last_message falls back to chat.json', (() => {
+  const evs = [{ ...piped[1] }];
+  ME.attachLastMessages(evs, messages);
+  return evs[0].lastMessage;
+})(), { text: 'last words', ts: 199 });
+eq('a missing last_message_ts falls back to the event ts', piped[2].lastMessage, { text: 'no ts', ts: 300 });
+check('hasPipelineLastMessage rejects null and blank',
+      !ME.hasPipelineLastMessage(piped[1]) && !ME.hasPipelineLastMessage({ last_message: '  ' }));
+
 if (failures > 0) {
   console.log(`\n${failures} check(s) FAILED`);
   Deno.exit(1);
