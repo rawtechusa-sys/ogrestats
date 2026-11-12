@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794296096,
+  "updated_ts": 1794465452,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -152,7 +152,8 @@
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
-    "grifters_and_legos_live_2026-11-10_001338"
+    "grifters_and_legos_live_2026-11-10_001338",
+    "legos_and_bloodborne_live_2026-11-12_002459"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1846,6 +1847,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "legos_and_bloodborne_live_2026-11-12_002459": {
+      "title": "Legos (And Bloodborne) Live",
+      "start_ts": 1794442839,
+      "youtube_archive_id": "9uSg6ntBS-E",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "9uSg6ntBS-E",
+          "start_ts": 1794442839
+        }
+      ],
+      "source_vod_id": "KafCxyB83uE",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -2848,15 +2864,25 @@
     "Sucksitlongtime": {
       "platforms": {
         "youtube": {
-          "status": "active",
-          "since": 1793764208.132638,
+          "status": "banned",
+          "since": 1794444598,
           "expires_ts": null,
-          "bans": 1,
+          "bans": 2,
           "timeouts": 0,
           "user_id": "UCLo374zjG7Bo2GaIY7CcsJQ"
         }
       },
       "events": [
+        {
+          "ts": 1794444598,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "legos_and_bloodborne_live_2026-11-12_002459"
+        },
         {
           "ts": 1793764208,
           "platform": "youtube",
@@ -3717,6 +3743,30 @@
           "moderator": null,
           "reason": null,
           "stream_id": "grifters_and_legos_live_2026-11-10_001338"
+        }
+      ]
+    },
+    "RTUsSexSlave": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794446405,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCSGuDHbjilzuuUMXW-zz4GQ"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794446405,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "legos_and_bloodborne_live_2026-11-12_002459"
         }
       ]
     }
