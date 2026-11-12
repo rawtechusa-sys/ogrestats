@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794296082,
+  "updated_ts": 1794465437,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -886,7 +886,8 @@
     "screw_itlets_just_celebrate_tonight_2026-11-05_002948",
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
-    "grifters_and_legos_live_2026-11-10_001338"
+    "grifters_and_legos_live_2026-11-10_001338",
+    "legos_and_bloodborne_live_2026-11-12_002459"
   ],
   "commands": {
     "men": 6,
@@ -1487,7 +1488,7 @@
     "batman": 1,
     "hand": 1,
     "harmen": 1,
-    "lavari": 1
+    "lavari": 2
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10714,9 +10715,34 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "legos_and_bloodborne_live_2026-11-12_002459": {
+      "title": "Legos (And Bloodborne) Live",
+      "start_ts": 1794442839,
+      "youtube_archive_id": "9uSg6ntBS-E",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "9uSg6ntBS-E",
+          "start_ts": 1794442839
+        }
+      ],
+      "source_vod_id": "KafCxyB83uE",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1794444958,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "legos_and_bloodborne_live_2026-11-12_002459",
+      "message": "Bob lavari: I am a man. A man, among men. I'm going to give you a ride, in which you must abide! I'm coming for your soul, and your hole my goal! fear the art of the farts! but beware of the brown, for it will take you down!",
+      "commands": [
+        "lavari"
+      ]
+    },
     {
       "ts": 1794275082,
       "username": "@Austin_Norris",
