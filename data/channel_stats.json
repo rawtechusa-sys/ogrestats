@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794465450,
+  "updated_ts": 1794637202,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1960,7 +1960,8 @@
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
-    "legos_and_bloodborne_live_2026-11-12_002459"
+    "legos_and_bloodborne_live_2026-11-12_002459",
+    "wtf_is_going_on_2026-11-14_010012"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35265,6 +35266,23 @@
       "avg_chat_mpm": 5.06,
       "avg_active_chatters": 12.46,
       "percent_paused": 75.3
+    },
+    "wtf_is_going_on_2026-11-14_010012": {
+      "stream_id": "wtf_is_going_on_2026-11-14_010012",
+      "title": "WTF IS GOING ON?!?!",
+      "start_ts": 1794618041,
+      "end_ts": 1794637010,
+      "duration_sec": 18969,
+      "youtube_archive_id": "t-itSdQvW9I",
+      "source_platform": "twitch",
+      "total_donations_usd": 498.9,
+      "donation_count": 93,
+      "donations_per_min": 1.578,
+      "peak_viewers": 650,
+      "avg_viewers": 396.75,
+      "avg_chat_mpm": 9.57,
+      "avg_active_chatters": 23.33,
+      "percent_paused": 62.0
     }
   }
 }
