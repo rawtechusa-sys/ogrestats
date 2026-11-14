@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794465442,
+  "updated_ts": 1794637196,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -887,7 +887,8 @@
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
-    "legos_and_bloodborne_live_2026-11-12_002459"
+    "legos_and_bloodborne_live_2026-11-12_002459",
+    "wtf_is_going_on_2026-11-14_010012"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10129,6 +10130,21 @@
       ],
       "source_vod_id": "KafCxyB83uE",
       "source_platform": "youtube"
+    },
+    "wtf_is_going_on_2026-11-14_010012": {
+      "title": "WTF IS GOING ON?!?!",
+      "start_ts": 1794618041,
+      "youtube_archive_id": "t-itSdQvW9I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "t-itSdQvW9I",
+          "start_ts": 1794618041
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -14251,6 +14267,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1794618175,
+        "type": "giftmembership",
+        "amount_usd": 99.5,
+        "amount_raw": "50 gifted memberships",
+        "message": "Sent 50 ReviewTechUSA2  gift memberships",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794443977,
         "type": "superchat",
@@ -22102,6 +22126,22 @@
     ],
     "richandthebirds-rk2vc": [
       {
+        "ts": 1794619102,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I've been having a fun 2 weeks in IT lmao.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794618917,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794445025,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -23321,6 +23361,38 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1794631491,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "aww fuck, we're surrounded! boobs and asses are everywhere!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794622095,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "look here look listen, my old super chat with Bob",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620342,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 23 months",
+        "message": "listen, have bob lavari say my last message. otherwise the consequences will be yuge. this message is approved my the galactic empire of men. I farted",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619886,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Bob lavari: the mafia of men warned you not to fuck around you heretical scum! the FAA national grounding is only the beginning! soon I will have to release my final form upon you! the penetrator is an unstoppable force!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794458547,
         "type": "superchat",
@@ -26825,6 +26897,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1794619267,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Real Game Awards is dead. Go anti-woke go broke.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794455337,
         "type": "superchat",
@@ -41302,6 +41382,14 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1794620135,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "\"we hope to have this running normal soon\" ...so what the hell is going on? that didn't sound very confident.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794288688,
         "type": "membership",
         "amount_usd": 1.99,
@@ -43572,6 +43660,14 @@
     ],
     "misslekaboom": [
       {
+        "ts": 1794618275,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "GoldPLZ",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793740740,
         "type": "sub",
         "amount_usd": 5.99,
@@ -44063,6 +44159,14 @@
       }
     ],
     "The_Death_Owl": [
+      {
+        "ts": 1794618412,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "\ud83c\udfb6The world got fired and it's PCs hacked \ud83c\udfb6",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1785889652,
         "type": "sub",
@@ -46008,6 +46112,22 @@
     ],
     "DarthOmegas": [
       {
+        "ts": 1794621538,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "figured it out, there going to use the money to fix the issue for the ballroom, and the arch de dimwit",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621270,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "not defending these ass clowns, but alot of even our technical and power infrastructure is cooked its getting older",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794260175,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -47441,6 +47561,46 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1794632224,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen. Chris Van Hollen from Md..He reps MD here",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794631596,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Stop front'n dad when you titty foking the sausage",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794630917,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Listen they debunked your Bigfoot forest footage",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794630690,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mira, escuche t\u00fa eres el padre de los pollos.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794630496,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Dad, playing OOT remake, it's amazing BTW eat my a",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794455509,
         "type": "superchat",
@@ -69486,6 +69646,46 @@
     ],
     "respergu13": [
       {
+        "ts": 1794623952,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Mr Rich do you envy Pat's hair? He\u2019s retro style",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621583,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Eric: Review Tech USA, where are you ?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619748,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I heard they are gonna announce Alien Invasion !",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619428,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Careful Mr Rich! Tommy Tallarico is back ! :fire:",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794618384,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Careful Mr Rich! 8Bit Eric said you have a small D",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794450903,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -70951,6 +71151,14 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1794632389,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Listen No just listen You listening. 4 real listen",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794446337,
         "type": "superchat",
@@ -79848,6 +80056,14 @@
     ],
     "REDIVY78": [
       {
+        "ts": 1794632437,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 18 months",
+        "message": "How are you and the kiddos doing?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793764539,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -84164,6 +84380,22 @@
     ],
     "AK86-e4l": [
       {
+        "ts": 1794621673,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 12 months",
+        "message": "Duffy sounds like Phil \"I need that money\"",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620821,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "The problem isn't the system. The problem is the firing of people who knew how to operate the software. Also we have PC's from the 80's that control our ICBM's",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794022887,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -84891,6 +85123,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1794625036,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Trump sold 1 mil of Nvidia stock back in August",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794281649,
         "type": "giftmembership",
@@ -107396,6 +107636,14 @@
     ],
     "superSONIC_star": [
       {
+        "ts": 1794618345,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794284891,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -112480,6 +112728,38 @@
     ],
     "WiiklyReviews": [
       {
+        "ts": 1794624835,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I will say this we have a place called Marcos Pizza. They have a Hot Honey Pepperoni Pizza. ITS GOD TIER. Like its one of the best ive ever had ever.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794624729,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I havent had PizzaHut in forever. But its not bad",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794624603,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "We Need That to happen. Rich voice for donations.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794624521,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hey Rich! Just got home. My Boss bought me Pizzahut Cause ive been busting my ass helping them prepare for the holidays. got the cheesy stuffed crust",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794464043,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -113215,6 +113495,54 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1794621655,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Sean duffy needs that money he really really does",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620845,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "\"This is why we had to remove the headphone jack\"",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620755,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They might as well use this to justify a ballroom",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620536,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Transportation sucks -Guy who leads transportation",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619669,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Tommy saw a successful Talarico and thinks hes him",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619159,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen, play Zelda on stream and stare at the grass and volumetric fog. Then have Introguy emit a fart so massive he grounds flights nationwide",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794450408,
         "type": "superchat",
@@ -136804,6 +137132,46 @@
     ],
     "Brenden.Sutton": [
       {
+        "ts": 1794623355,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I\u2019m taking a sociology upper division course about the opioid crisis and the scumbag john kapoor! Anyone remember this guy? I was speechless & it takes a lot to make me lose my tongue watching this",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794622030,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Star Wars is coming back in February 2027 on the 19th of Feb! We scored a major victory for the rebel fleet! The galactic empire of trump is going to be remembered & we will not forgive! Thank you",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621002,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "A baseball game? Baseball games are over :rolling_on_the_floor_laughing: it\u2019s November! What a moronic statement sir; oh yes this will affect us getting home for the holidays!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620724,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "But for real, this effected everything for colleges too outlook is what serves most if not all of the UNI\u2019s and this will hopefully not end in disaster but I don\u2019t know \ud83e\udd37\ud83c\udffb\u200d\u2642 it\u2019s a thing! Big birds",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620474,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "The galactic empire of men is reporting I have 2 days of homework but it\u2019ll be fine! Thank you all for being here for people like I who burn the oil! Outlook being down crippled my college!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794452785,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -141760,6 +142128,14 @@
     ],
     "strangeplains2466": [
       {
+        "ts": 1794618942,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I had to pick up a family member from San Francisco International Airport because her flight got canceled. Traffic on the highway is a nightmare lol",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1787195165,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -144536,6 +144912,14 @@
     ],
     "GarbyTheCat": [
       {
+        "ts": 1794621081,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Maybe Psy-op by NOT Iran, to make more war, or breaking something to sell solution?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1784949085,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -145247,6 +145631,14 @@
       }
     ],
     "Ysusha116": [
+      {
+        "ts": 1794619678,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "did you hear about the neo not see got caught pulling a may 1st. blamed obs and kick",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1792804428,
         "type": "membership",
@@ -148978,6 +149370,14 @@
     ],
     "adambuskirk1990": [
       {
+        "ts": 1794633539,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Remember, God has a special place that is full of burning, fire, smoke, & anguish if you do anything on the 10 commandments....But he loves you.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793850535,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -150244,6 +150644,14 @@
     ],
     "tougeruzbay": [
       {
+        "ts": 1794618518,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen here, be mime for the rest and stream and end the stream with lots of random noises on the soundboard, incredible therapeutically coco says so",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793402047,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -150967,6 +151375,22 @@
       }
     ],
     "darce2019": [
+      {
+        "ts": 1794632342,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "He\u2019s makes less than Phil every stream",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621063,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "The football was updated to ssd under Obama",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794272098,
         "type": "superchat",
@@ -161584,6 +162008,14 @@
     ],
     "FreedomtowerStudios": [
       {
+        "ts": 1794621027,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "not just Amtrak's booking system going down, im getting reports from fellow engineers that Amtrak's Major Northeast Corridor is experiencing major Signal Problems too That affects NJ Transit as well!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794011354,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -164562,6 +164994,14 @@
     ],
     "aajmc": [
       {
+        "ts": 1794620743,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "This guy doesn\u2019t know what he\u2019s talking about.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793402621,
         "type": "membership",
         "amount_usd": 1.99,
@@ -164957,6 +165397,14 @@
       }
     ],
     "bammersvabamm822": [
+      {
+        "ts": 1794618609,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 33 months",
+        "message": "Listen , set up a Bloodborne stream , not have it working . Then when planes get grounded , you get it working. Happy to of helped you",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1792205752,
         "type": "membership",
@@ -185420,6 +185868,14 @@
     ],
     "rafaelchicas7635": [
       {
+        "ts": 1794620524,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich are the birds also grounded today ?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1793739894,
         "type": "membership",
         "amount_usd": 1.99,
@@ -186827,6 +187283,14 @@
       }
     ],
     "dublinpapi": [
+      {
+        "ts": 1794618305,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1793754189,
         "type": "giftmembership",
@@ -191211,6 +191675,14 @@
       }
     ],
     "U3jnwKk": [
+      {
+        "ts": 1794620939,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 10 months",
+        "message": "Fart Large",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1781571361,
         "type": "membership",
@@ -196791,6 +197263,14 @@
       }
     ],
     "macmega2149": [
+      {
+        "ts": 1794626774,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "How are you playing this version? Is this available on Steam? or is it AI enhanced? or with a whole bunch of mods?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1792627731,
         "type": "membership",
@@ -210042,6 +210522,14 @@
     ],
     "JacobstanfordOCD": [
       {
+        "ts": 1794620490,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 41 months",
+        "message": "I knocked the system out with a thunderous fart.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1792639444,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -223278,6 +223766,14 @@
     ],
     "parlock480": [
       {
+        "ts": 1794620882,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I'm no longer a Trump supporter.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1738804112,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -233085,6 +233581,38 @@
       }
     ],
     "RSk3pt1c": [
+      {
+        "ts": 1794628109,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Will you stream the GTA 6 unofficial AI PC Port",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794626903,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I emailed it you take with grain of salt though",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794626707,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "A PC System requirements graphic for GTA 6 was leaked with a launch date of listed as February 12 2027",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794626536,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "how do you think Sony feels about GTA 6 PC version coming Q1 2027. Do you think they still market it a s plays best on PS5",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1793407643,
         "type": "superchat",
@@ -257754,6 +258282,14 @@
     ],
     "The_Oxidizer": [
       {
+        "ts": 1794623711,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Geoff Keighley just announced the game awards will be streamed inside Roblox....why do people continue to associate themselves with Roblox",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1714612793,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -266035,6 +266571,14 @@
       }
     ],
     "requiem7x132": [
+      {
+        "ts": 1794632355,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Hey Rich its Jeremiah! Hope you\u2019re well bud! Dude have you ever seen a game called One More Lawn? Check out the songs on that game, they\u2019re funny af!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1713836754,
         "type": "superchat",
@@ -355852,6 +356396,14 @@
     ],
     "alk4pon3": [
       {
+        "ts": 1794620905,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "They asking for 50 billion self sabotage",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1704340436,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -359811,6 +360363,14 @@
       }
     ],
     "ScottyPimpin69": [
+      {
+        "ts": 1794618814,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1704240127,
         "type": "membership",
@@ -384499,6 +385059,14 @@
       }
     ],
     "nightruler666": [
+      {
+        "ts": 1794620900,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If only we had ram to upgrade the system.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1700884977,
         "type": "superchat",
@@ -555312,6 +555880,14 @@
     ],
     "ItsSeanMcCarthy": [
       {
+        "ts": 1794618740,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 16 months",
+        "message": "Phil: This is why I run Windows 8.1 Outlook flys!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794022992,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -558882,6 +559458,30 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1794628314,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "A.I is good for porting game that is it!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620914,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "there is something sinister is behind all this!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620388,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Unregulated AI is going to cripple society",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794288214,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -559774,6 +560374,14 @@
     ],
     "smellyjellysamich": [
       {
+        "ts": 1794619613,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "red dead 2 is still 30 on ps5 hahaha",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794452358,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -560041,6 +560649,14 @@
       }
     ],
     "AshxBashem": [
+      {
+        "ts": 1794619851,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen the prez is using this announcement just to pitch a new crypto coin/trump web service",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1792783969,
         "type": "superchat",
@@ -560734,6 +561350,38 @@
     ],
     "propakistaniamericantitan": [
       {
+        "ts": 1794636542,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 there was never right or left ever since Israel was formed in 19 l48 since then they established part of US base in Middle East to serve for them only to commit terrorism and to promote terrorism in middle east. And people like Jeremy deep inside sonwhere knows it. Capitol Hill exposed after Oct 7 2023 reality on ground",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621088,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 don't forget Rich maybe Mossad hacked into their server you know after Microsoft terminated specific Azure cloud and AI services for Israel's military intelligence Unit 8200 on September 26, 2025. Just throwing it out there. And now mossad are in DC. Seems very sus \ud83d\ude06",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620088,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 don't forget Rich maybe Mossad hacked into their server you know after Microsoft terminated specific Azure cloud and AI services for Israel's military intelligence Unit 8200 on September 26, 2025. Just throwing it out there. And now mossad are in DC. Seems very sus \ud83d\ude06",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794619598,
+        "type": "bits",
+        "amount_usd": 10.0,
+        "amount_raw": "1000 bits",
+        "message": "Cheer1000 huh we already crossed 80 members? Oh hey folks how's it going Rich. Whats up? In 3 2 1 fuk Shtrael  fuk Shtrael  fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael. fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael fuk Shtrael. Reporters are been abandoned \ud83d\ude02. Trump is busy with mossad agent in DC right now cuz Satanyahu was too chicken to show up. Anyway can we watch the video link I sent to your email?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794275218,
         "type": "bits",
         "amount_usd": 0.5,
@@ -560927,6 +561575,22 @@
       }
     ],
     "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1794621045,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Americans wake up stand up against these creatures. it's no coincidence Mossad is here in White House. mIcrsooft outage yesterday. Rich miss cheer100",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620237,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "missed cheer100 on twitch. scared for passengers",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
       {
         "ts": 1794461188,
         "type": "superchat",
@@ -561348,6 +562012,22 @@
     ],
     "yamatoisawoman2802": [
       {
+        "ts": 1794618395,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 1 month",
+        "message": "Goal reached, so how many members for 3:30 am lol",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794618335,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
         "ts": 1794285045,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -561676,6 +562356,96 @@
         "amount_raw": "$5.00",
         "message": "Rich can you build a giant naked donald trump for your next lego building stream",
         "stream_id": "legos_and_bloodborne_live_2026-11-12_002459"
+      }
+    ],
+    "califpv": [
+      {
+        "ts": 1794618487,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "what up rich, used to watch your channel like 7 or 8 years ago and you randomly pooped in my feed. good to see your still doing your thing.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      }
+    ],
+    "joanpaniagua545": [
+      {
+        "ts": 1794619357,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      }
+    ],
+    "The1andOnlyShrek...": [
+      {
+        "ts": 1794619757,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 9 months",
+        "message": "wen I FART,I ALWAYs FART in your general Direction",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      }
+    ],
+    "Le_Royaliste_Perlino": [
+      {
+        "ts": 1794634329,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Rich I was running late and left my house to go to work my flight but then they cancelled the flight half way through my commute...well back to bed...",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620132,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 54 months",
+        "message": "Hey Rich, it's Nabil, Miss ya. I'm a crewmember for a U.S. airline. I'm probs just not gonna go into work today. These domestic flights will cancel.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      }
+    ],
+    "alexwidder3502": [
+      {
+        "ts": 1794621343,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "Last president was Romulan you didn\u2019t hear?",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794621125,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "That\u2019s why they timed this right before thanksgiving, it\u2019ll get everyone\u2019s attention and make congress look bad a republican congress no less it\u2019s so stupid",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620840,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "They could put the master controls for the faa under the ball room",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620704,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Even if we get the funding to day it will be decade before it\u2019s built, this is a dog and pony show",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      },
+      {
+        "ts": 1794620458,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Who gives a f*ck why this happened how are you fixing it? We can worry about how later. Why play politics.",
+        "stream_id": "wtf_is_going_on_2026-11-14_010012"
       }
     ]
   }
