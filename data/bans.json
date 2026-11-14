@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794465452,
+  "updated_ts": 1794637204,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -153,7 +153,8 @@
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
-    "legos_and_bloodborne_live_2026-11-12_002459"
+    "legos_and_bloodborne_live_2026-11-12_002459",
+    "wtf_is_going_on_2026-11-14_010012"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1862,6 +1863,21 @@
       ],
       "source_vod_id": "KafCxyB83uE",
       "source_platform": "youtube"
+    },
+    "wtf_is_going_on_2026-11-14_010012": {
+      "title": "WTF IS GOING ON?!?!",
+      "start_ts": 1794618041,
+      "youtube_archive_id": "t-itSdQvW9I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "t-itSdQvW9I",
+          "start_ts": 1794618041
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "users": {
@@ -3767,6 +3783,78 @@
           "moderator": null,
           "reason": null,
           "stream_id": "legos_and_bloodborne_live_2026-11-12_002459"
+        }
+      ]
+    },
+    "BegsBunny-n4x": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794621983,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCw-tcPxnoXMzX3LiF9vciEw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794621983,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "wtf_is_going_on_2026-11-14_010012"
+        }
+      ]
+    },
+    "Chockashockagaming": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794631186,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UC1WYHYufRt9j-6Az5zxQIQw"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794631186,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "wtf_is_going_on_2026-11-14_010012"
+        }
+      ]
+    },
+    "terryofficail": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1794631581,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1001202243"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794631581,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "wtf_is_going_on_2026-11-14_010012"
         }
       ]
     }
