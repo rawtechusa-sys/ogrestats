@@ -3,7 +3,7 @@
   "slug": "wtf_is_going_on",
   "title": "WTF IS GOING ON?!?!",
   "start_ts": 1794618041,
-  "end_ts": null,
+  "end_ts": 1794637010,
   "platforms": [
     "youtube",
     "twitch",
@@ -17,5 +17,7 @@
       "archive_id": "t-itSdQvW9I",
       "start_ts": 1794618041
     }
-  ]
+  ],
+  "youtube_archive_id": "t-itSdQvW9I",
+  "archive_is_source_vod": false
 }
