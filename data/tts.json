@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794465437,
+  "updated_ts": 1794637191,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -887,12 +887,13 @@
     "more_amazing_maga_meltdowns_feat_asmongold_2026-11-06_234237",
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
-    "legos_and_bloodborne_live_2026-11-12_002459"
+    "legos_and_bloodborne_live_2026-11-12_002459",
+    "wtf_is_going_on_2026-11-14_010012"
   ],
   "commands": {
     "men": 6,
-    "eric": 289,
-    "phil": 648,
+    "eric": 290,
+    "phil": 649,
     "stan": 445,
     "masterchief": 171,
     "harman": 231,
@@ -1488,7 +1489,7 @@
     "batman": 1,
     "hand": 1,
     "harmen": 1,
-    "lavari": 2
+    "lavari": 3
   },
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10730,9 +10731,54 @@
       ],
       "source_vod_id": "KafCxyB83uE",
       "source_platform": "youtube"
+    },
+    "wtf_is_going_on_2026-11-14_010012": {
+      "title": "WTF IS GOING ON?!?!",
+      "start_ts": 1794618041,
+      "youtube_archive_id": "t-itSdQvW9I",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "t-itSdQvW9I",
+          "start_ts": 1794618041
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1794621583,
+      "username": "@respergu13",
+      "platform": "youtube",
+      "stream_id": "wtf_is_going_on_2026-11-14_010012",
+      "message": "Eric: Review Tech USA, where are you ?",
+      "commands": [
+        "eric"
+      ]
+    },
+    {
+      "ts": 1794619886,
+      "username": "@Austin_Norris",
+      "platform": "youtube",
+      "stream_id": "wtf_is_going_on_2026-11-14_010012",
+      "message": "Bob lavari: the mafia of men warned you not to fuck around you heretical scum! the FAA national grounding is only the beginning! soon I will have to release my final form upon you! the penetrator is an unstoppable force!",
+      "commands": [
+        "lavari"
+      ]
+    },
+    {
+      "ts": 1794618740,
+      "username": "@ItsSeanMcCarthy",
+      "platform": "youtube",
+      "stream_id": "wtf_is_going_on_2026-11-14_010012",
+      "message": "Phil: This is why I run Windows 8.1 Outlook flys!",
+      "commands": [
+        "phil"
+      ]
+    },
     {
       "ts": 1794444958,
       "username": "@Austin_Norris",
