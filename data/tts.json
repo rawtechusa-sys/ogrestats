@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794637191,
+  "updated_ts": 1794904544,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -888,7 +888,8 @@
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
-    "wtf_is_going_on_2026-11-14_010012"
+    "wtf_is_going_on_2026-11-14_010012",
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
   ],
   "commands": {
     "men": 6,
@@ -1135,7 +1136,7 @@
     "ask": 2,
     "subject": 1,
     "horror": 1,
-    "spoiler": 2,
+    "spoiler": 3,
     "title": 4,
     "bubble": 1,
     "reality": 1,
@@ -10746,9 +10747,34 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639": {
+      "title": "Grifters And Frauds Feat. Asmongold (WTF IS GOING AGAIN)",
+      "start_ts": 1794874839,
+      "youtube_archive_id": "-fY3kwosYpg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "-fY3kwosYpg",
+          "start_ts": 1794874839
+        }
+      ],
+      "source_vod_id": "O9_Y568kfbU",
+      "source_platform": "youtube"
     }
   },
   "messages": [
+    {
+      "ts": 1794883233,
+      "username": "propakistaniamericantitan",
+      "platform": "twitch",
+      "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
+      "message": "Cheer100 Every time Trump and his Zionist bankrollers hand out blank-check military aid, Iran holds up the mirror to their faces and shows the world who's really behind the Middle East's refugees and terrorism aka Israel. Spoiler: it's not Hamas or Hezbollah.",
+      "commands": [
+        "spoiler"
+      ]
+    },
     {
       "ts": 1794621583,
       "username": "@respergu13",
