@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794637196,
+  "updated_ts": 1794904549,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -888,7 +888,8 @@
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
-    "wtf_is_going_on_2026-11-14_010012"
+    "wtf_is_going_on_2026-11-14_010012",
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10145,6 +10146,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639": {
+      "title": "Grifters And Frauds Feat. Asmongold (WTF IS GOING AGAIN)",
+      "start_ts": 1794874839,
+      "youtube_archive_id": "-fY3kwosYpg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "-fY3kwosYpg",
+          "start_ts": 1794874839
+        }
+      ],
+      "source_vod_id": "O9_Y568kfbU",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -13842,6 +13858,14 @@
     ],
     "885thBatmanFan": [
       {
+        "ts": 1794877252,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Hey Rich. They gave Robert Pattinson a 3 film contract for James Bond. With the deal of him getting paid more than they would've paid anyone else.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1793416455,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -14267,6 +14291,14 @@
       }
     ],
     "trollmctrollington3693": [
+      {
+        "ts": 1794883755,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794618175,
         "type": "giftmembership",
@@ -21596,6 +21628,22 @@
     ],
     "DigitalMelanin": [
       {
+        "ts": 1794898748,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794878424,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794281619,
         "type": "giftmembership",
         "amount_usd": 9.95,
@@ -22125,6 +22173,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1794875774,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794619102,
         "type": "superchat",
@@ -23361,6 +23417,62 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1794902267,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "the power of surprise buttsex cures all",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794894222,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "a man, watches a man, watching a man from the past",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794893247,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "listen, 24 hour stream. get the Adderall and cocain ready. be a man!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794893169,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794883973,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "the usa republic will be reorganized into the first galactic empire, of men!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794877293,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "men, I got my trucks headliner done finally. I am a tired man. I now hate upholstery. wont do it again. in other news, embrace the power of the farts, no matter the cost. beware of the brown side.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794875992,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "men, I farted. it was a beautiful thing. yuge ass!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794631491,
         "type": "superchat",
@@ -26897,6 +27009,30 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1794885050,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You're on Twitter but someone else isn't.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794878113,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794876251,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "He might need to get that job now :pleading_face: :taco:",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794619267,
         "type": "superchat",
@@ -32603,6 +32739,14 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1794897736,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 60 months",
+        "message": "you are a true man among birds . dont blow bubbles",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794009845,
         "type": "superchat",
@@ -41382,6 +41526,14 @@
     ],
     "gotmilkfunb": [
       {
+        "ts": 1794891888,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "He gave the game away when he said it's about deplatforming the left at all costs. We need to start playing by their rules.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794620135,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -41601,6 +41753,14 @@
       }
     ],
     "Blaqk_Sheep": [
+      {
+        "ts": 1794876369,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 46 months",
+        "message": "ok well now It's 46 month's no tim to :water_pistol::knot::ok_hand::shushing_face::soft_ice_cream::hole::peanuts::water_pistol::knot::peanuts::peanuts::peanuts::soft_ice_cream::pie::hole::handshake:\ud83e\udd1a\ud83c\udffe:sweat_droplets::face_with_steam_from_nose::handshake::sweat_droplets:\ud83e\udd1a\ud83c\udffe:frowning_face::soft_ice_cream:\ud83e\udd1a\ud83c\udffe:handshake:\ud83e\udd1a\ud83c\udffe:smiling_face::peanuts:",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1792169358,
         "type": "membership",
@@ -43774,6 +43934,14 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1794887198,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794446971,
         "type": "superchat",
         "amount_usd": 2.7,
@@ -44681,6 +44849,14 @@
       }
     ],
     "burrito_massuci": [
+      {
+        "ts": 1794880989,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (11 months)!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1791340858,
         "type": "bits",
@@ -47561,6 +47737,22 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1794886215,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Ahmed Moor is primaring Fetterman for Senate.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794882952,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794632224,
         "type": "superchat",
@@ -69646,6 +69838,46 @@
     ],
     "respergu13": [
       {
+        "ts": 1794889016,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Bon Appetit Mr Rich! Devour! Devour! Devour!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794888646,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Review Tech USA!What're you doing in the bathroom?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794884445,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Careful Mr Rich, 8BitEric said you have a small D",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794879852,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich do you consider yourself a game journalist",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794879429,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Justice for DSP! He's backstabbed by his one guild",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794623952,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -71152,6 +71384,30 @@
     ],
     "KayNubbs": [
       {
+        "ts": 1794880337,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 17 months",
+        "message": "TMobile 5G internet no joke. 1.5 hrs GTA 6 at 40%",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794880251,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794875412,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Rich sorry you lost Bond role 2 Robert Pattinson :crying_cat:",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794632389,
         "type": "superchat",
         "amount_usd": 1.99,
@@ -72203,6 +72459,22 @@
       }
     ],
     "yapyapjr8908": [
+      {
+        "ts": 1794891394,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "ocean water.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794875745,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 8 months",
+        "message": "can I get a ocean water?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794271522,
         "type": "superchat",
@@ -74698,6 +74970,14 @@
     ],
     "sean-reagan": [
       {
+        "ts": 1794878694,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Let\u2019s go Phil \u2014 you cut those hydra heads off",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794287828,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -75541,6 +75821,22 @@
       }
     ],
     "Phoenix12157": [
+      {
+        "ts": 1794879028,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "as someone who's been playing World of Warcraft 10 years I do feel bad for Phil because he genuinely may want to just enjoy the game but trolls.....",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794876299,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I watched CLR bruce rivers react to the edp445 arrest and the mike clum doc, it was legendary. Bruce Rivers is the man",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794271222,
         "type": "superchat",
@@ -84954,6 +85250,14 @@
     ],
     "jiggyjoeryan": [
       {
+        "ts": 1794887645,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "where were you when 8bE / boogies nip smooched?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794010411,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -85123,6 +85427,14 @@
       }
     ],
     "Phillippaulburnell": [
+      {
+        "ts": 1794879325,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Did you see how banks had massive outages today?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794625036,
         "type": "superchat",
@@ -90948,6 +91260,14 @@
     ],
     "Insomniac416": [
       {
+        "ts": 1794898106,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794276026,
         "type": "membership",
         "amount_usd": 1.99,
@@ -95931,6 +96251,30 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1794882447,
+        "type": "superchat",
+        "amount_usd": 6.75,
+        "amount_raw": "\u00a35.00",
+        "message": "I saw some politician say recently that the US relationship with Isreal is more important than the UK and Canada. Like what!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794880087,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Gary Dell'Abate's nickname was Baba Looey",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794879784,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "I'm like the White Rabbit cos I'm late",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794444469,
         "type": "superchat",
@@ -104356,6 +104700,22 @@
     ],
     "change1ing": [
       {
+        "ts": 1794878837,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Phil's got that Guiliani drip coming from his hair",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794876054,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 55 months",
+        "message": "Hooray for everything breaking and AI assuming it's new positional role in our daily lives. This isn't even the new norm yet. Go billionaires whoooooo",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794015400,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -105553,6 +105913,14 @@
       }
     ],
     "Carl.Wilson.82": [
+      {
+        "ts": 1794896611,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794277816,
         "type": "giftmembership",
@@ -107362,6 +107730,14 @@
     ],
     "Colin1994-v1v": [
       {
+        "ts": 1794881902,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "Happy the 20th PlayStation3 came out Nov17",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1793738302,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -108151,6 +108527,22 @@
       }
     ],
     "rtusburritoeattingbrother": [
+      {
+        "ts": 1794896591,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794891353,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 63 months",
+        "message": "Does this count?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1792815196,
         "type": "superchat",
@@ -113496,6 +113888,22 @@
     ],
     "rio.brando": [
       {
+        "ts": 1794889919,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "His mustache with mamdanis would cause a supernova",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794888191,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "when did bob lavari get a tan and become mayor",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794621655,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -117607,6 +118015,14 @@
       }
     ],
     "DBZking119": [
+      {
+        "ts": 1794879660,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "Listen, watching MAGA tear itself apart has been amazing, and edp getting arrested too? have we finally moved to the correct timeline?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794016327,
         "type": "superchat",
@@ -134120,6 +134536,14 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1794887910,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "a pregnant US citizen in Modesto California was just assaulted by ICE & rushed to the hospital. This fight is not over. Trump promoted Stephen Miller",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794021055,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -137131,6 +137555,14 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1794876327,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "He can make us all feel Crunchwrap supremes thanks",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794623355,
         "type": "superchat",
@@ -142924,6 +143356,14 @@
     ],
     "0xym0r0n": [
       {
+        "ts": 1794898906,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Large Man Supporter!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1785205857,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -144852,6 +145292,14 @@
     ],
     "mrblackheart818": [
       {
+        "ts": 1794884221,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 5 months",
+        "message": "Rich, I hope your having a good night :rooster:",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1784949002,
         "type": "membership",
         "amount_usd": 1.99,
@@ -144995,6 +145443,14 @@
       }
     ],
     "Ms.Sparkles": [
+      {
+        "ts": 1794877266,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "Juicy strip for me in chat. my Chris isn't here.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1793759741,
         "type": "superchat",
@@ -149369,6 +149825,22 @@
       }
     ],
     "adambuskirk1990": [
+      {
+        "ts": 1794897785,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794893771,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794633539,
         "type": "superchat",
@@ -157680,6 +158152,14 @@
     ],
     "macthaiguy": [
       {
+        "ts": 1794878803,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "BREASTS",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1792174645,
         "type": "sub",
         "amount_usd": 5.99,
@@ -158810,6 +159290,14 @@
     ],
     "treverdefelice9684": [
       {
+        "ts": 1794875899,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 35 months",
+        "message": "Bird Father, are we getting a GTA6 stream? If so, can it be watching Phil have a thirst, for a burst?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1793758032,
         "type": "membership",
         "amount_usd": 1.99,
@@ -159565,6 +160053,14 @@
       }
     ],
     "violationentertainment": [
+      {
+        "ts": 1794875772,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 14 months",
+        "message": "Mmmm, Phillip. Ooooehhhhw Philliiip. You. Complete. Mibe utt holl. o. o. Ooooooohhhhh Philleep!! You oo oo. Complete eat eat. Mibe utt holl!!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794285467,
         "type": "superchat",
@@ -162007,6 +162503,14 @@
       }
     ],
     "FreedomtowerStudios": [
+      {
+        "ts": 1794875752,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 52 months",
+        "message": "52 months of ROBUST men and breasts, Listen Birds are amazing and you sir are a man that has kept me entertained for 52 months! Thank you brother!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794621027,
         "type": "superchat",
@@ -172100,6 +172604,14 @@
     ],
     "Easilypleased23": [
       {
+        "ts": 1794879178,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "rich did you ever fix that PC you could turn off by blowing on it? Listen. Make a list of top 10 intro farts",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1792647359,
         "type": "membership",
         "amount_usd": 1.99,
@@ -174909,6 +175421,14 @@
       }
     ],
     "mrshyguy1979": [
+      {
+        "ts": 1794878308,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (6 months)!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1783998161,
         "type": "sub",
@@ -197264,6 +197784,30 @@
     ],
     "macmega2149": [
       {
+        "ts": 1794898728,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794894473,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "why did Eric get banned from Twitter again?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794893701,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794626774,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -216798,6 +217342,14 @@
     ],
     "alphadaddy3046": [
       {
+        "ts": 1794883072,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 55 months",
+        "message": "I\u2019m gonna say, please vote horse for Congress. Ney ney bitches",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1739409547,
         "type": "membership",
         "amount_usd": 1.99,
@@ -233581,6 +234133,14 @@
       }
     ],
     "RSk3pt1c": [
+      {
+        "ts": 1794898748,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Did you see GTA 6 System requirements I emailed",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794628109,
         "type": "superchat",
@@ -251898,6 +252458,14 @@
     ],
     "pixelboy83": [
       {
+        "ts": 1794880392,
+        "type": "superchat",
+        "amount_usd": 3.59,
+        "amount_raw": "CA$5.00",
+        "message": "I dont mind fill i support plus he cracks me up when he insults someone lol",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1719370524,
         "type": "superchat",
         "amount_usd": 3.65,
@@ -253625,6 +254193,14 @@
       }
     ],
     "techman771": [
+      {
+        "ts": 1794886814,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Someone managed to make a proper port of Astro Bot. No wonder Rockstar wants to release a port sooner rather than later",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1793852200,
         "type": "superchat",
@@ -290543,6 +291119,14 @@
       }
     ],
     "rayne93504": [
+      {
+        "ts": 1794876808,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1710288696,
         "type": "superchat",
@@ -465134,6 +465718,14 @@
     ],
     "wolflike4655": [
       {
+        "ts": 1794877509,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Hi Rich. Does DSP even still like gaming?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1679188196,
         "type": "superchat",
         "amount_usd": 6.35,
@@ -533628,6 +534220,14 @@
     ],
     "ricardovazquez4333": [
       {
+        "ts": 1794881631,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 5 months",
+        "message": "thoughts on MS oil tanker perfect deviation crash",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1642735810,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -558862,6 +559462,14 @@
     ],
     "crunchy_denim": [
       {
+        "ts": 1794878224,
+        "type": "giftsub",
+        "amount_usd": 11.98,
+        "amount_raw": "2 1000",
+        "message": "gifted 2 subs to the community!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794464149,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -559457,6 +560065,30 @@
       }
     ],
     "TheRatzor": [
+      {
+        "ts": 1794886113,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "I say that because of AI porting games to pc!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794886014,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "do u really think GTA6 will be on pc quickly?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794876279,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "I had a right wing friend he just denied reality!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794628314,
         "type": "superchat",
@@ -560373,6 +561005,30 @@
       }
     ],
     "smellyjellysamich": [
+      {
+        "ts": 1794880934,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794880849,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794880807,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (6 months)!",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794619613,
         "type": "superchat",
@@ -561350,6 +562006,30 @@
     ],
     "propakistaniamericantitan": [
       {
+        "ts": 1794883233,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Every time Trump and his Zionist bankrollers hand out blank-check military aid, Iran holds up the mirror to their faces and shows the world who's really behind the Middle East's refugees and terrorism aka Israel. Spoiler: it's not Hamas or Hezbollah.",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794878766,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 Zohran has disband SRG. I don't who those doemstic terrorist are but seems the first critical approach to take and sounds important",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794877212,
+        "type": "bits",
+        "amount_usd": 0.5,
+        "amount_raw": "50 bits",
+        "message": "Cheer50 wait for another 5 years and you will have your first colonoscopy \ud83d\ude06. Right up your \ud83c\udf51 \ud83d\ude06. Hey everyone has to do it",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
         "ts": 1794636542,
         "type": "bits",
         "amount_usd": 0.5,
@@ -561575,6 +562255,54 @@
       }
     ],
     "ProPakistaniAmerican4Libration": [
+      {
+        "ts": 1794899884,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "sent new video on email it's GTA 6 30fps related",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794893097,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Jennifer-Kyle kulinski should go after their sponsors. Their track record of using their platform to demonize minors & promoting Palestine punishment is practically endless.Even AI would crash out",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794882180,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "email you 2 AI trump shorts from Iran. it's funny",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794881074,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Phil says GTA 6 is Gran Turismo Auto 6 at 30fps. If you disagree with that statement I will ban you. Phil doesn't want to invite anyone COD multiplayr",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794878592,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "just sent you another email from Zohran important",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794877503,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "it started with Microsoft than oil tanker hitting cruise ship, FAA system downed, then UPS cargo flight actually struck small jet plane in last 1 week",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1794621045,
         "type": "superchat",
@@ -561923,6 +562651,22 @@
       }
     ],
     "vrakkul": [
+      {
+        "ts": 1794890218,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "Did you see the Trump & Stephen A Smith interview?",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
+      {
+        "ts": 1794888774,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      },
       {
         "ts": 1793752977,
         "type": "superchat",
@@ -562446,6 +563190,26 @@
         "amount_raw": "$9.99",
         "message": "Who gives a f*ck why this happened how are you fixing it? We can worry about how later. Why play politics.",
         "stream_id": "wtf_is_going_on_2026-11-14_010012"
+      }
+    ],
+    "MrHoward888": [
+      {
+        "ts": 1794881398,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I been watching your channel since 2010's brother, im a massive fan, always will be. I see you have good taste in videos",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      }
+    ],
+    "Mishael23s": [
+      {
+        "ts": 1794883002,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
       }
     ]
   }
