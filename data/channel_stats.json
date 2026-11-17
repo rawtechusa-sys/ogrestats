@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794637202,
+  "updated_ts": 1794904555,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1961,7 +1961,8 @@
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
-    "wtf_is_going_on_2026-11-14_010012"
+    "wtf_is_going_on_2026-11-14_010012",
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35283,6 +35284,23 @@
       "avg_chat_mpm": 9.57,
       "avg_active_chatters": 23.33,
       "percent_paused": 62.0
+    },
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639": {
+      "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
+      "title": "Grifters And Frauds Feat. Asmongold (WTF IS GOING AGAIN)",
+      "start_ts": 1794874839,
+      "end_ts": 1794904323,
+      "duration_sec": 29484,
+      "youtube_archive_id": "-fY3kwosYpg",
+      "source_platform": "youtube",
+      "total_donations_usd": 389.9,
+      "donation_count": 93,
+      "donations_per_min": 0.7934,
+      "peak_viewers": 464,
+      "avg_viewers": 382.68,
+      "avg_chat_mpm": 7.55,
+      "avg_active_chatters": 18.29,
+      "percent_paused": 69.4
     }
   }
 }
