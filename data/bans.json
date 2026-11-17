@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794637204,
+  "updated_ts": 1794904558,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -154,7 +154,8 @@
     "a_new_stream_2026-11-09_212835",
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
-    "wtf_is_going_on_2026-11-14_010012"
+    "wtf_is_going_on_2026-11-14_010012",
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1878,6 +1879,21 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639": {
+      "title": "Grifters And Frauds Feat. Asmongold (WTF IS GOING AGAIN)",
+      "start_ts": 1794874839,
+      "youtube_archive_id": "-fY3kwosYpg",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "-fY3kwosYpg",
+          "start_ts": 1794874839
+        }
+      ],
+      "source_vod_id": "O9_Y568kfbU",
+      "source_platform": "youtube"
     }
   },
   "users": {
@@ -3855,6 +3871,30 @@
           "moderator": "ReviewTechUSALIVE",
           "reason": null,
           "stream_id": "wtf_is_going_on_2026-11-14_010012"
+        }
+      ]
+    },
+    "DylioMcGowan": {
+      "platforms": {
+        "youtube": {
+          "status": "banned",
+          "since": 1794880241,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "UCweIEUGjPGvEfV6y_Q4xSKA"
+        }
+      },
+      "events": [
+        {
+          "ts": 1794880241,
+          "platform": "youtube",
+          "type": "removed",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
         }
       ]
     }
