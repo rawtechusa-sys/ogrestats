@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794904549,
+  "updated_ts": 1794974915,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -889,7 +889,8 @@
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
     "wtf_is_going_on_2026-11-14_010012",
-    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
+    "were_being_lied_to_and_im_furious_2026-11-18_000127"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10161,6 +10162,21 @@
       ],
       "source_vod_id": "O9_Y568kfbU",
       "source_platform": "youtube"
+    },
+    "were_being_lied_to_and_im_furious_2026-11-18_000127": {
+      "title": "We're Being Lied To, And I'm Furious",
+      "start_ts": 1794959426,
+      "youtube_archive_id": "sySrZx2mY9w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "sySrZx2mY9w",
+          "start_ts": 1794959426
+        }
+      ],
+      "source_vod_id": "txuHlbHz8vc",
+      "source_platform": "youtube"
     }
   },
   "donors": {
@@ -10407,6 +10423,14 @@
       }
     ],
     "mphickman": [
+      {
+        "ts": 1794967606,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "BIRDS! What\u2019s going on? What are you angry about?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1793769701,
         "type": "superchat",
@@ -21424,6 +21448,14 @@
     ],
     "PhilsLostDoorDashShrimp": [
       {
+        "ts": 1794960879,
+        "type": "superchat",
+        "amount_usd": 5.64,
+        "amount_raw": "A$7.99",
+        "message": "I have a theory about why Keem doesn\u2019t like you. You wrote a banger about him with exposed song. Keem has tried to have a rap career and used AI since",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1793742998,
         "type": "superchat",
         "amount_usd": 2.11,
@@ -21627,6 +21659,14 @@
       }
     ],
     "DigitalMelanin": [
+      {
+        "ts": 1794969589,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794898748,
         "type": "giftmembership",
@@ -22173,6 +22213,14 @@
       }
     ],
     "richandthebirds-rk2vc": [
+      {
+        "ts": 1794960650,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794875774,
         "type": "giftmembership",
@@ -23417,6 +23465,14 @@
       }
     ],
     "Austin_Norris": [
+      {
+        "ts": 1794961083,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "men, a man among men has arrived! its time to get oiled up, get hard, blow loads, and pass some gas! embrace the power of the farts! boobs r life",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794902267,
         "type": "superchat",
@@ -27009,6 +27065,14 @@
       }
     ],
     "TheJostler": [
+      {
+        "ts": 1794971407,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Listen, publicly attack a trans lawyer who is your prosecutor. It's very smart and will not hurt your chances of losing the case. Hail Mary to Elon.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794885050,
         "type": "superchat",
@@ -32739,6 +32803,30 @@
       }
     ],
     "lyokowarrior4296": [
+      {
+        "ts": 1794967209,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "do you think phil was acting like this in an arcade in the late 80's?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794966827,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "someone asked phil if he was okay. he said thats not something you should ask a streamer but if you want him to be better you should support him",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794966659,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "I would love to see phil play a game like hell let loose. if he think cod is bs, he will lose his mind playing a milsim",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794897736,
         "type": "membership",
@@ -47737,6 +47825,62 @@
       }
     ],
     "FoilGrimTimmy": [
+      {
+        "ts": 1794971628,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "You tried to deepfake me dad, a giant bird",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794963303,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Marshel plan after WWII saved Europe and gave universal healthcare with social programs. Time for us to save ourselves",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794962885,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Trump became cult after the Obama birtherism TBH",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961887,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "My theory hear me out, they're just incompetent",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961349,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "NSA secret network got hacked too using AI Artex",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961136,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Keem hates you because he want to glaze your face",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794960388,
+        "type": "giftmembership",
+        "amount_usd": 1.99,
+        "amount_raw": "1 gifted memberships",
+        "message": "Sent 1 ReviewTechUSA2  gift memberships",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794886215,
         "type": "superchat",
@@ -69838,6 +69982,14 @@
     ],
     "respergu13": [
       {
+        "ts": 1794965423,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Mr Rich, Do you think GTA6 will save the business?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794889016,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -71383,6 +71535,22 @@
       }
     ],
     "KayNubbs": [
+      {
+        "ts": 1794965336,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "But hey I\u2019m thankful you\u2019re here providing content",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961524,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "I been having fun OoT remake until water temple:face_with_spiral_eyes:",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794880337,
         "type": "membership",
@@ -74505,6 +74673,22 @@
       }
     ],
     "PPPs_HRT": [
+      {
+        "ts": 1794964897,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "x is blaming you and Jostler for Eric's X suspend",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794964484,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "men, young man, theres no need to feel down. mm ah",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794016371,
         "type": "superchat",
@@ -85250,6 +85434,14 @@
     ],
     "jiggyjoeryan": [
       {
+        "ts": 1794965303,
+        "type": "giftmembership",
+        "amount_usd": 9.95,
+        "amount_raw": "5 gifted memberships",
+        "message": "Sent 5 ReviewTechUSA2  gift memberships",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794887645,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -88945,6 +89137,14 @@
       }
     ],
     "Various_Melons": [
+      {
+        "ts": 1794971906,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 21 months",
+        "message": "Hear about Sony controller patent that reads :credit_card:",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1793761884,
         "type": "superchat",
@@ -96251,6 +96451,22 @@
       }
     ],
     "niallwilliamson3540": [
+      {
+        "ts": 1794968593,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Smash needs Johnnie Cochran. Oh wait he died.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961834,
+        "type": "superchat",
+        "amount_usd": 2.7,
+        "amount_raw": "\u00a32.00",
+        "message": "Rich you pulled me out of Vaush's horse hole",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794882447,
         "type": "superchat",
@@ -104700,6 +104916,22 @@
     ],
     "change1ing": [
       {
+        "ts": 1794974027,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "They just called Alaska - Dems win! Pelltola won.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794965341,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "Gonna watch the GTA6 stream on 2x speed for 60fps!",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794878837,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -113120,6 +113352,38 @@
     ],
     "WiiklyReviews": [
       {
+        "ts": 1794964532,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "If you could have anyone else as pres then who?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794963147,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "she even asked me are we gonna die? and i dunno.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794963049,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Just my opinion. BUT im so glad im not a kid now. I had a talk with my youngest niece..She has anxiety like me and I feel so bad for kids now.:pensive_face:",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794962236,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "I took a shot at a scratch off and just won $50:smiling_face_with_sunglasses:",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794624835,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -113887,6 +114151,22 @@
       }
     ],
     "rio.brando": [
+      {
+        "ts": 1794964366,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "As if the democrats didn\u2019t try to stop Obama from being the first black president. Better reps in the house who deserve the first black speaker title",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961845,
+        "type": "superchat",
+        "amount_usd": 1.99,
+        "amount_raw": "$1.99",
+        "message": "MAGA would eat soylent green atp if trump fed them",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794889919,
         "type": "superchat",
@@ -132964,6 +133244,14 @@
     ],
     "anythingandeverything5593": [
       {
+        "ts": 1794972852,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 28 months",
+        "message": "atf channel gop black trump judges pick",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794462232,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -134536,6 +134824,22 @@
     ],
     "DeportedSicilianGamer": [
       {
+        "ts": 1794971311,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Do u think someone like PPP could benefit from a MAGA counter indoctrination camp? He could really lose some weight & maybe even make a few pals",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794968847,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "hopefully more people sue this douche. All MAGA traitors need rounded up and brought to justice.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794887910,
         "type": "superchat",
         "amount_usd": 5.0,
@@ -135259,6 +135563,14 @@
       }
     ],
     "jorethor": [
+      {
+        "ts": 1794973050,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 29 months",
+        "message": "grand theft birds 6 tomorrow birds",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794010490,
         "type": "membership",
@@ -137555,6 +137867,14 @@
       }
     ],
     "Brenden.Sutton": [
+      {
+        "ts": 1794965545,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "The Star Wars re release of the original cut looks mighty promising & quite fun! I cannot wait to go! The empire of men is here in force! Big birds :swan:",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1794876327,
         "type": "superchat",
@@ -187424,6 +187744,14 @@
     ],
     "No0BKiLLer956": [
       {
+        "ts": 1794961357,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 22 months",
+        "message": "Did you see warski joining stream with dsp",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1791595588,
         "type": "membership",
         "amount_usd": 1.99,
@@ -187717,6 +188045,14 @@
       }
     ],
     "d.c.stranded7134": [
+      {
+        "ts": 1794964007,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member for 6 months",
+        "message": "thinking bout dual screen laptop Lenovo Yoga Book",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1782358138,
         "type": "superchat",
@@ -191703,6 +192039,46 @@
       }
     ],
     "bonedragon7665": [
+      {
+        "ts": 1794969659,
+        "type": "giftmembership",
+        "amount_usd": 19.9,
+        "amount_raw": "10 gifted memberships",
+        "message": "Sent 10 ReviewTechUSA2  gift memberships",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794964204,
+        "type": "superchat",
+        "amount_usd": 4.99,
+        "amount_raw": "$4.99",
+        "message": "I have issues with my folds but not phones it\u2019s my fat",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794963592,
+        "type": "superchat",
+        "amount_usd": 20.0,
+        "amount_raw": "$20.00",
+        "message": "Contact your representatives, engage in petitions that represent your values. This is not to time to be passive. We need to ensure they know what we want because they rely on apathy to let them do what they want",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794963140,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "As someone that grew up in the south with poorly funded education. What was funded was republican youth groups and Military recruitment pipelines",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961633,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "Are we Great yet ya MO RONs?? If not now when?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1790837150,
         "type": "superchat",
@@ -268673,6 +269049,14 @@
       }
     ],
     "idugtofardun": [
+      {
+        "ts": 1794972738,
+        "type": "membership",
+        "amount_usd": 1.99,
+        "amount_raw": "Member",
+        "message": "Welcome to Membirds!",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1713231516,
         "type": "membership",
@@ -349375,6 +349759,14 @@
       }
     ],
     "NeoGotYa1111": [
+      {
+        "ts": 1794965331,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "I see people making physical copies of pc games using small capacity sata ssd\u2019s, with a doc. And using a program to auto boot the game when mounted. Might make a ratchet & clank ultimate collection",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1793845078,
         "type": "membership",
@@ -560066,6 +560458,22 @@
     ],
     "TheRatzor": [
       {
+        "ts": 1794962790,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "How'd Trump get a cult following in the 1st place?",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794961733,
+        "type": "superchat",
+        "amount_usd": 1.17,
+        "amount_raw": "NZ$2.00",
+        "message": "Rich you pulled me out of the WOKE mindset! Cheers",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794886113,
         "type": "superchat",
         "amount_usd": 1.17,
@@ -562256,6 +562664,22 @@
     ],
     "ProPakistaniAmerican4Libration": [
       {
+        "ts": 1794970492,
+        "type": "superchat",
+        "amount_usd": 2.0,
+        "amount_raw": "$2.00",
+        "message": "not shocking Israel Haertz reported. Israel screw",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
+        "ts": 1794970401,
+        "type": "superchat",
+        "amount_usd": 10.0,
+        "amount_raw": "$10.00",
+        "message": "ICJ\u2019s ruling on Myanmar genocide on November 19 that ruling could set the legal precedent needed to hold Israel accountable for Gaza\u2014proving international law still stands for Palestinian justice.",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1794899884,
         "type": "superchat",
         "amount_usd": 2.0,
@@ -562736,6 +563160,14 @@
     ],
     "ifiwan2gugaging": [
       {
+        "ts": 1794961743,
+        "type": "superchat",
+        "amount_usd": 9.99,
+        "amount_raw": "$9.99",
+        "message": "Theory I thought about. The tech issues get worse and Trump eventually steps down to allow Vance to handle it. Trump looks like the martyr & Vance can act like Bush after 9 11, how Bush easily won 04",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
+      {
         "ts": 1793765299,
         "type": "superchat",
         "amount_usd": 4.99,
@@ -562745,6 +563177,14 @@
       }
     ],
     "grimoirewish6068": [
+      {
+        "ts": 1794963252,
+        "type": "superchat",
+        "amount_usd": 5.0,
+        "amount_raw": "$5.00",
+        "message": "Israel, is-it-real... you guys it's been there the whole time",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      },
       {
         "ts": 1793765389,
         "type": "superchat",
@@ -563210,6 +563650,16 @@
         "amount_raw": "1 gifted memberships",
         "message": "Sent 1 ReviewTechUSA2  gift memberships",
         "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+      }
+    ],
+    "Unknown_Gaming_Studios": [
+      {
+        "ts": 1794960838,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "can't wait for the alien invasion next",
+        "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
       }
     ]
   }
