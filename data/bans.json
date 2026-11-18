@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794904558,
+  "updated_ts": 1794974923,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -155,7 +155,8 @@
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
     "wtf_is_going_on_2026-11-14_010012",
-    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
+    "were_being_lied_to_and_im_furious_2026-11-18_000127"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1893,6 +1894,21 @@
         }
       ],
       "source_vod_id": "O9_Y568kfbU",
+      "source_platform": "youtube"
+    },
+    "were_being_lied_to_and_im_furious_2026-11-18_000127": {
+      "title": "We're Being Lied To, And I'm Furious",
+      "start_ts": 1794959426,
+      "youtube_archive_id": "sySrZx2mY9w",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "sySrZx2mY9w",
+          "start_ts": 1794959426
+        }
+      ],
+      "source_vod_id": "txuHlbHz8vc",
       "source_platform": "youtube"
     }
   },
