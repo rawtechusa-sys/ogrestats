@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794904555,
+  "updated_ts": 1794974921,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1962,7 +1962,8 @@
     "grifters_and_legos_live_2026-11-10_001338",
     "legos_and_bloodborne_live_2026-11-12_002459",
     "wtf_is_going_on_2026-11-14_010012",
-    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+    "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
+    "were_being_lied_to_and_im_furious_2026-11-18_000127"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35301,6 +35302,23 @@
       "avg_chat_mpm": 7.55,
       "avg_active_chatters": 18.29,
       "percent_paused": 69.4
+    },
+    "were_being_lied_to_and_im_furious_2026-11-18_000127": {
+      "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127",
+      "title": "We're Being Lied To, And I'm Furious",
+      "start_ts": 1794959426,
+      "end_ts": 1794974720,
+      "duration_sec": 15294,
+      "youtube_archive_id": "sySrZx2mY9w",
+      "source_platform": "youtube",
+      "total_donations_usd": 245.4,
+      "donation_count": 54,
+      "donations_per_min": 0.9627,
+      "peak_viewers": 556,
+      "avg_viewers": 453.76,
+      "avg_chat_mpm": 8.29,
+      "avg_active_chatters": 20.67,
+      "percent_paused": 69.7
     }
   }
 }
