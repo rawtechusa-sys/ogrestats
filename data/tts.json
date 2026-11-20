@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795132921,
+  "updated_ts": 1795149019,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -891,7 +891,8 @@
     "wtf_is_going_on_2026-11-14_010012",
     "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
-    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
+    "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857"
   ],
   "commands": {
     "men": 6,
@@ -1236,7 +1237,7 @@
     "tt": 1,
     "sc": 2,
     "ai": 4,
-    "dad": 3,
+    "dad": 4,
     "tommy": 1,
     "re": 1,
     "check": 1,
@@ -10798,9 +10799,34 @@
       ],
       "source_vod_id": null,
       "source_platform": "twitch"
+    },
+    "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857": {
+      "title": "Exhasuted: Shooting The Sh*t For A Bit",
+      "start_ts": 1795139957,
+      "youtube_archive_id": "88pSAnyWjk8",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "88pSAnyWjk8",
+          "start_ts": 1795139957
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "messages": [
+    {
+      "ts": 1795145136,
+      "username": "iBLUEmyself",
+      "platform": "twitch",
+      "stream_id": "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
+      "message": "Bird Dad: do the BEARS beat the Saints? or the STEELERS beat the EAGLES damnit?!!",
+      "commands": [
+        "dad"
+      ]
+    },
     {
       "ts": 1794883233,
       "username": "propakistaniamericantitan",
