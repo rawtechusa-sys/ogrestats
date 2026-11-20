@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794974915,
+  "updated_ts": 1795132926,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -890,7 +890,8 @@
     "legos_and_bloodborne_live_2026-11-12_002459",
     "wtf_is_going_on_2026-11-14_010012",
     "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
-    "were_being_lied_to_and_im_furious_2026-11-18_000127"
+    "were_being_lied_to_and_im_furious_2026-11-18_000127",
+    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10177,6 +10178,25 @@
       ],
       "source_vod_id": "txuHlbHz8vc",
       "source_platform": "youtube"
+    },
+    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916": {
+      "title": "GRAND THEFT AUTO VI GRAND THEFT AUTO VI GRAND THEFT AUTO VI (Feat. Bob Lavari) #GTAVI",
+      "start_ts": 1795115366,
+      "youtube_archive_id": "OdmRR02gjQo",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "yG1ijm9krvs",
+          "start_ts": 1795115366
+        },
+        {
+          "archive_id": "OdmRR02gjQo",
+          "start_ts": 1795115641
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
     }
   },
   "donors": {
@@ -44022,6 +44042,14 @@
     ],
     "Selene_Graves": [
       {
+        "ts": 1795120077,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Robust 24FPS moobs",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1794887198,
         "type": "giftmembership",
         "amount_usd": 1.99,
@@ -44468,6 +44496,14 @@
     ],
     "Dublinpapi": [
       {
+        "ts": 1795120023,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1793060125,
         "type": "sub",
         "amount_usd": 9.99,
@@ -44671,6 +44707,14 @@
       }
     ],
     "nialldude3": [
+      {
+        "ts": 1795120367,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 hello bird father hope you\u2019re enjoying GTA IV. Fun fact the game is made in Dundee, Scotland",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1792366955,
         "type": "bits",
@@ -111050,6 +111094,14 @@
     ],
     "zachbischoff": [
       {
+        "ts": 1795124846,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "What are you thoughts on the game?",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1790806142,
         "type": "sub",
         "amount_usd": 5.99,
@@ -162744,6 +162796,14 @@
     ],
     "backdoorslot9": [
       {
+        "ts": 1795116230,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Youre an ass",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1793857628,
         "type": "membership",
         "amount_usd": 1.99,
@@ -175538,6 +175598,14 @@
     ],
     "Tostigroover": [
       {
+        "ts": 1795124478,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1783995231,
         "type": "giftsub",
         "amount_usd": 29.95,
@@ -175826,6 +175894,14 @@
     ],
     "freedomtower_studios": [
       {
+        "ts": 1795126357,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "13 Months here, 50 plus months on YouTube, your doing something right to keep me as a member, probably all the birds and men! Enjoy ROBUST Breasts!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1792367838,
         "type": "sub",
         "amount_usd": 5.99,
@@ -175851,6 +175927,22 @@
       }
     ],
     "superSONICstarrr": [
+      {
+        "ts": 1795124609,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
+        "ts": 1795117835,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "You better make sure to keep up on house maintenance. Yes, that is an optional part of the game. Oh and birds!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1792378899,
         "type": "sub",
@@ -176059,6 +176151,14 @@
       }
     ],
     "mars_185": [
+      {
+        "ts": 1795116209,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (10 months)!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1789438387,
         "type": "sub",
@@ -179806,6 +179906,14 @@
     ],
     "phillippaulburnell": [
       {
+        "ts": 1795117352,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Phil me with Phil",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1788293714,
         "type": "sub",
         "amount_usd": 5.99,
@@ -183148,6 +183256,14 @@
     ],
     "davecalzone": [
       {
+        "ts": 1795124226,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Yeah! Game is great so fa.",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1791317481,
         "type": "giftsub",
         "amount_usd": 59.9,
@@ -183182,6 +183298,14 @@
     ],
     "richandthebirds": [
       {
+        "ts": 1795117231,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (4 months)!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1783048764,
         "type": "sub",
         "amount_usd": 5.99,
@@ -183191,6 +183315,14 @@
       }
     ],
     "joshloungin": [
+      {
+        "ts": 1795126487,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Assfart assfart. Fart fart fart fart.",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1794446914,
         "type": "superchat",
@@ -183339,6 +183471,14 @@
       }
     ],
     "DJJailbreak": [
+      {
+        "ts": 1795116581,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Listen men and birds let\u2019s go!!!!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1788313856,
         "type": "giftsub",
@@ -183660,6 +183800,22 @@
     ],
     "Captain_Salt_47": [
       {
+        "ts": 1795129380,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
+        "ts": 1795128861,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "This game looks great but not GOTY great, it is just another GTA game",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1787014580,
         "type": "giftsub",
         "amount_usd": 5.99,
@@ -183677,6 +183833,14 @@
       }
     ],
     "orange_clover": [
+      {
+        "ts": 1795123239,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Did you hear people's ps5s are overheating from playing GTA 6? Looks like the liquid metal and thermal paste are failing due to GTA 6",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1782955082,
         "type": "sub",
@@ -183771,6 +183935,14 @@
       }
     ],
     "G_styl3z617": [
+      {
+        "ts": 1795116302,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1791317335,
         "type": "sub",
@@ -184413,6 +184585,14 @@
       }
     ],
     "Fanto_Sir": [
+      {
+        "ts": 1795116175,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Somw crazy crypto bros trying to pump gta meme coin all day its been a crazy day \ud83d\ude1c",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1793406854,
         "type": "giftsub",
@@ -557462,6 +557642,14 @@
     ],
     "JackOfBarbs": [
       {
+        "ts": 1795121875,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "This game looks like GTA 5 with better graphics to me...",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1792378565,
         "type": "giftsub",
         "amount_usd": 29.95,
@@ -559680,6 +559868,14 @@
     ],
     "ANONm1lfhunter69": [
       {
+        "ts": 1795115883,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Rich is gonna cum",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1791569682,
         "type": "sub",
         "amount_usd": 5.99,
@@ -559717,6 +559913,14 @@
       }
     ],
     "regulus_realms": [
+      {
+        "ts": 1795123206,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1788303943,
         "type": "sub",
@@ -561870,6 +562074,14 @@
     ],
     "SkrataFPS": [
       {
+        "ts": 1795117795,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Sup rich gta 6 has been fun so far in my playthru",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
+      {
         "ts": 1790634405,
         "type": "sub",
         "amount_usd": 5.99,
@@ -562201,6 +562413,14 @@
       }
     ],
     "yapyap_jr": [
+      {
+        "ts": 1795117296,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      },
       {
         "ts": 1792380873,
         "type": "bits",
@@ -563660,6 +563880,56 @@
         "amount_raw": "Prime",
         "message": "can't wait for the alien invasion next",
         "stream_id": "were_being_lied_to_and_im_furious_2026-11-18_000127"
+      }
+    ],
+    "eda471978": [
+      {
+        "ts": 1795116690,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "subscribed!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      }
+    ],
+    "StephLeRef": [
+      {
+        "ts": 1795117473,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Listen toe tickler timmy",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      }
+    ],
+    "twinaxiom2": [
+      {
+        "ts": 1795120063,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (5 months)!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      }
+    ],
+    "shanethefortean": [
+      {
+        "ts": 1795121880,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
+      }
+    ],
+    "machinistjen": [
+      {
+        "ts": 1795132152,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
       }
     ]
   }
