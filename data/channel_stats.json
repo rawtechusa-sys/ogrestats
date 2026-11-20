@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1794974921,
+  "updated_ts": 1795132931,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1963,7 +1963,8 @@
     "legos_and_bloodborne_live_2026-11-12_002459",
     "wtf_is_going_on_2026-11-14_010012",
     "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
-    "were_being_lied_to_and_im_furious_2026-11-18_000127"
+    "were_being_lied_to_and_im_furious_2026-11-18_000127",
+    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35319,6 +35320,23 @@
       "avg_chat_mpm": 8.29,
       "avg_active_chatters": 20.67,
       "percent_paused": 69.7
+    },
+    "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916": {
+      "stream_id": "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
+      "title": "GRAND THEFT AUTO VI GRAND THEFT AUTO VI GRAND THEFT AUTO VI (Feat. Bob Lavari) #GTAVI",
+      "start_ts": 1795115366,
+      "end_ts": 1795132699,
+      "duration_sec": 17333,
+      "youtube_archive_id": "OdmRR02gjQo",
+      "source_platform": "twitch",
+      "total_donations_usd": 217.64,
+      "donation_count": 30,
+      "donations_per_min": 0.7534,
+      "peak_viewers": 150,
+      "avg_viewers": 119.96,
+      "avg_chat_mpm": 4.22,
+      "avg_active_chatters": 11.29,
+      "percent_paused": 99.4
     }
   }
 }
