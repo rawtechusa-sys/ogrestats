@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795149031,
+  "updated_ts": 1795242804,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1965,7 +1965,8 @@
     "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639",
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
     "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
-    "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857"
+    "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35355,6 +35356,23 @@
       "avg_chat_mpm": 0.82,
       "avg_active_chatters": 2.07,
       "percent_paused": 95.6
+    },
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233": {
+      "stream_id": "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233",
+      "title": "Random Stream About Random Things (Looking for Asmongold Wig)",
+      "start_ts": 1795221353,
+      "end_ts": 1795242601,
+      "duration_sec": 21248,
+      "youtube_archive_id": "gpZLev_85ZM",
+      "source_platform": "twitch",
+      "total_donations_usd": 36.96,
+      "donation_count": 10,
+      "donations_per_min": 0.1044,
+      "peak_viewers": 50,
+      "avg_viewers": 39.93,
+      "avg_chat_mpm": 0.69,
+      "avg_active_chatters": 2.01,
+      "percent_paused": 60.5
     }
   }
 }
