@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795242799,
+  "updated_ts": 1795855324,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -893,7 +893,8 @@
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
     "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
     "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
-    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233",
+    "kitchen_fkin_nightmares_2026-11-28_003259"
   ],
   "streams": {
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421": {
@@ -10225,6 +10226,25 @@
         {
           "archive_id": "gpZLev_85ZM",
           "start_ts": 1795221353
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "kitchen_fkin_nightmares_2026-11-28_003259": {
+      "title": "KITCHEN F**KIN NIGHTMARES",
+      "start_ts": 1795826009,
+      "youtube_archive_id": "H6fucYzayeI",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "70DZW9S13Gc",
+          "start_ts": 1795826009
+        },
+        {
+          "archive_id": "H6fucYzayeI",
+          "start_ts": 1795851183
         }
       ],
       "source_vod_id": null,
@@ -44528,6 +44548,22 @@
     ],
     "Dublinpapi": [
       {
+        "ts": 1795835515,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795835375,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1795120023,
         "type": "giftsub",
         "amount_usd": 29.95,
@@ -44713,6 +44749,14 @@
       }
     ],
     "VariousMelons": [
+      {
+        "ts": 1795844013,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Did you buy anything for black Friday",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1791334071,
         "type": "sub",
@@ -45014,6 +45058,22 @@
     ],
     "burrito_massuci": [
       {
+        "ts": 1795830867,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Welcome everybody",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795830821,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1794880989,
         "type": "sub",
         "amount_usd": 5.99,
@@ -45204,6 +45264,14 @@
     ],
     "J0stler": [
       {
+        "ts": 1795829017,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1794277804,
         "type": "sub",
         "amount_usd": 5.99,
@@ -45373,6 +45441,14 @@
       }
     ],
     "BradicalPrime": [
+      {
+        "ts": 1795847341,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1788411610,
         "type": "giftsub",
@@ -158332,6 +158408,14 @@
     ],
     "sphericalman00": [
       {
+        "ts": 1795835629,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Hype Trai\u00eciiiiiiiiiiiiiinnnn rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust rtuRobust",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1790803277,
         "type": "sub",
         "amount_usd": 5.99,
@@ -176660,6 +176744,14 @@
     ],
     "nukacolaxeon": [
       {
+        "ts": 1795829159,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "Ohhhhhh Christopherrrrrr!!!!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1792375362,
         "type": "sub",
         "amount_usd": 5.99,
@@ -179954,6 +180046,14 @@
     ],
     "phillippaulburnell": [
       {
+        "ts": 1795830005,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1795117352,
         "type": "sub",
         "amount_usd": 5.99,
@@ -183082,6 +183182,38 @@
     ],
     "chevydude454": [
       {
+        "ts": 1795841600,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 need some cream in that coffee? Oh I got some cream ready daddy! My secret ingredient! Mmmmmm",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795836274,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer100 Cheer100  men, I just let out the most impressive fart out of my ass. It was drawn out special. It was a beautiful thing, tremendous,  yuge...and now, I gota shit.",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795826968,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  listen, dont be a bitch! Keep the questionable ac running! Amplify it's voltage. Have an electrical fire. Have a smoking hot stream. Be a man!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795826630,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100  good evening fellow men, I ate to many deviled eggs. My ass hurts. Embrace the farts no matter the cost.",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1792366456,
         "type": "sub",
         "amount_usd": 5.99,
@@ -184043,6 +184175,14 @@
       }
     ],
     "rafach187": [
+      {
+        "ts": 1795836991,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "My ass",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1791331300,
         "type": "sub",
@@ -557316,6 +557456,22 @@
     ],
     "LostRenegade": [
       {
+        "ts": 1795847333,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795826737,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "resubscribed (7 months)!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1791569329,
         "type": "sub",
         "amount_usd": 5.99,
@@ -557341,6 +557497,14 @@
       }
     ],
     "lostrenegade": [
+      {
+        "ts": 1795846915,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Breast Cheer100",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1788311056,
         "type": "bits",
@@ -557917,6 +558081,14 @@
       }
     ],
     "darthomegas": [
+      {
+        "ts": 1795827030,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer100 Cheer100",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1787003527,
         "type": "giftsub",
@@ -562500,6 +562672,14 @@
     ],
     "lookherelookl1sten": [
       {
+        "ts": 1795827786,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "1000",
+        "message": "Red Den of Lips",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
         "ts": 1792372900,
         "type": "sub",
         "amount_usd": 5.99,
@@ -562729,6 +562909,46 @@
       }
     ],
     "propakistaniamericantitan": [
+      {
+        "ts": 1795850633,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 did you put on radio? \ud83d\ude06 Where is Joe rogem piece of sht podcast in the game? Wasn't there report about his podcast in the game? I will be if its not there. Also DJ Khaled music haven't encountered so far",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795838525,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer200 all these restaurants should be dedicated to Holocaust denier Israelian occupation cowards. I would personally make sure if I was manager behind close door and right before serving them I would personally spit on each of their food put a sausage even though its my personal dump and introduce them with new menu meal for and best part they will not even acknowledge anything \ud83d\ude06. I would pay extra to Phil and hire him behind kitchen doors to help me out. \ud83d\ude06",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795836858,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer200 just wanted to let you know fake jew judea-Nazi Netanyahu and his wife dined at one of Ramsay\u2019s London restaurants reported in 2023. But Gordon Ramsey personally didn't take any stance though and stayed off. Also take two interactive a subsidar of rockstar provided financial support to Shtrael. Just side info I wanted to share.",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795836155,
+        "type": "bits",
+        "amount_usd": 1.0,
+        "amount_raw": "100 bits",
+        "message": "Cheer100 Hey Rich did you shop anything today. I got messages from Micro Center. Devil came and  whisper in my ear to waste my money and  upgrade my PS5 Pro external \ud83d\ude06 Samsung 990 with heatsink something something \ud83d\ude06. In the end I didn't",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795828362,
+        "type": "bits",
+        "amount_usd": 2.0,
+        "amount_raw": "200 bits",
+        "message": "Cheer200 Hey Rich what's up I sent two email just now to your Gmail because I love to spam YouTube video \ud83d\ude06. Either way one is highly couraging video of children in Gaza going back to school and AJ reporting by Bison does fabulous job and the other  YouTube vid is from American professors giving 50 minute speech in gaza genocide convention. Something to watch out for. I know its still thanksgiving but at least we should have hearts for shelterless children living under colonized.",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
       {
         "ts": 1795240538,
         "type": "bits",
@@ -564060,6 +564280,82 @@
         "amount_raw": "Prime",
         "message": "subscribed!",
         "stream_id": "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
+      }
+    ],
+    "RegulusRealms": [
+      {
+        "ts": 1795827059,
+        "type": "kicks",
+        "amount_usd": 1.0,
+        "amount_raw": "100 kicks",
+        "message": "gifted 100 Kicks!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795826494,
+        "type": "giftsub",
+        "amount_usd": 4.99,
+        "amount_raw": "1",
+        "message": "gifted 1 sub(s) to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      }
+    ],
+    "Ghstmlktoast": [
+      {
+        "ts": 1795830042,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      },
+      {
+        "ts": 1795829478,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      }
+    ],
+    "Vabamm": [
+      {
+        "ts": 1795835666,
+        "type": "sub",
+        "amount_usd": 5.99,
+        "amount_raw": "Prime",
+        "message": "subscribed!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      }
+    ],
+    "sunnybands": [
+      {
+        "ts": 1795835673,
+        "type": "giftsub",
+        "amount_usd": 29.95,
+        "amount_raw": "5 1000",
+        "message": "gifted 5 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      }
+    ],
+    "riostarmie": [
+      {
+        "ts": 1795847151,
+        "type": "giftsub",
+        "amount_usd": 119.8,
+        "amount_raw": "20 1000",
+        "message": "gifted 20 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+      }
+    ],
+    "drtsanchez1": [
+      {
+        "ts": 1795847383,
+        "type": "giftsub",
+        "amount_usd": 5.99,
+        "amount_raw": "1 1000",
+        "message": "gifted 1 subs to the community!",
+        "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
       }
     ]
   }
