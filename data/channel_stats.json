@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795242804,
+  "updated_ts": 1795855336,
   "counted_streams": [
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817",
     "a_marathon_stream_to_enjoy_while_youre_bird_watching_2026-09-30_192948",
@@ -1966,7 +1966,8 @@
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
     "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
     "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
-    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233",
+    "kitchen_fkin_nightmares_2026-11-28_003259"
   ],
   "streams": {
     "a_marathon_stream_to_watch_while_twitting_your_tipples_2026-10-02_203817": {
@@ -35373,6 +35374,23 @@
       "avg_chat_mpm": 0.69,
       "avg_active_chatters": 2.01,
       "percent_paused": 60.5
+    },
+    "kitchen_fkin_nightmares_2026-11-28_003259": {
+      "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259",
+      "title": "KITCHEN F**KIN NIGHTMARES",
+      "start_ts": 1795826009,
+      "end_ts": 1795855100,
+      "duration_sec": 29091,
+      "youtube_archive_id": "H6fucYzayeI",
+      "source_platform": "twitch",
+      "total_donations_usd": 423.32,
+      "donation_count": 33,
+      "donations_per_min": 0.8731,
+      "peak_viewers": 190,
+      "avg_viewers": 155.36,
+      "avg_chat_mpm": 4.85,
+      "avg_active_chatters": 11.51,
+      "percent_paused": 45.5
     }
   }
 }
