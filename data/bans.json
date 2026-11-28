@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795242806,
+  "updated_ts": 1795855339,
   "counted_streams": [
     "lets_discuss_my_budget_pc_build",
     "the_bob_lavari_late_stream_2026-08-27_022739",
@@ -159,7 +159,8 @@
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
     "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
     "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
-    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233",
+    "kitchen_fkin_nightmares_2026-11-28_003259"
   ],
   "streams": {
     "lets_discuss_my_budget_pc_build": {
@@ -1958,6 +1959,25 @@
         {
           "archive_id": "gpZLev_85ZM",
           "start_ts": 1795221353
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "kitchen_fkin_nightmares_2026-11-28_003259": {
+      "title": "KITCHEN F**KIN NIGHTMARES",
+      "start_ts": 1795826009,
+      "youtube_archive_id": "H6fucYzayeI",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "70DZW9S13Gc",
+          "start_ts": 1795826009
+        },
+        {
+          "archive_id": "H6fucYzayeI",
+          "start_ts": 1795851183
         }
       ],
       "source_vod_id": null,
@@ -3963,6 +3983,126 @@
           "moderator": null,
           "reason": null,
           "stream_id": "grifters_and_frauds_feat_asmongold_wtf_is_going_again_2026-11-17_002639"
+        }
+      ]
+    },
+    "thedenoftimbsstudios": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1795826838,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1044015862"
+        }
+      },
+      "events": [
+        {
+          "ts": 1795826838,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+        }
+      ]
+    },
+    "killerjay1989": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1795826952,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "533126139"
+        }
+      },
+      "events": [
+        {
+          "ts": 1795826952,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+        }
+      ]
+    },
+    "Hellojews": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1795827444,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "138291213"
+        }
+      },
+      "events": [
+        {
+          "ts": 1795827444,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+        }
+      ]
+    },
+    "TheCoolestUsernameEva": {
+      "platforms": {
+        "kick": {
+          "status": "banned",
+          "since": 1795829646,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "141781980"
+        }
+      },
+      "events": [
+        {
+          "ts": 1795829646,
+          "platform": "kick",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": "ReviewTechUSALIVE",
+          "reason": null,
+          "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
+        }
+      ]
+    },
+    "reviewlotlizardsusa": {
+      "platforms": {
+        "twitch": {
+          "status": "banned",
+          "since": 1795839004,
+          "expires_ts": null,
+          "bans": 1,
+          "timeouts": 0,
+          "user_id": "1536668300"
+        }
+      },
+      "events": [
+        {
+          "ts": 1795839004,
+          "platform": "twitch",
+          "type": "ban",
+          "duration": null,
+          "expires_ts": null,
+          "moderator": null,
+          "reason": null,
+          "stream_id": "kitchen_fkin_nightmares_2026-11-28_003259"
         }
       ]
     }
