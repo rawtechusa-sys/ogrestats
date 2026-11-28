@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_ts": 1795242794,
+  "updated_ts": 1795855319,
   "counted_streams": [
     "a_meaningful_and_tangy_all_nighter_2026-08-05_031421",
     "a_old_man_makes_music_live_2026-08-05_001339",
@@ -893,7 +893,8 @@
     "were_being_lied_to_and_im_furious_2026-11-18_000127",
     "grand_theft_auto_vi_grand_theft_auto_vi_grand_theft_auto_vi_feat_bob_lavari_gtav_2026-11-19_190916",
     "exhasuted_shooting_the_sht_for_a_bit_2026-11-20_015857",
-    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233"
+    "random_stream_about_random_things_looking_for_asmongold_wig_2026-11-21_003233",
+    "kitchen_fkin_nightmares_2026-11-28_003259"
   ],
   "commands": {
     "men": 6,
@@ -10826,6 +10827,25 @@
         {
           "archive_id": "gpZLev_85ZM",
           "start_ts": 1795221353
+        }
+      ],
+      "source_vod_id": null,
+      "source_platform": "twitch"
+    },
+    "kitchen_fkin_nightmares_2026-11-28_003259": {
+      "title": "KITCHEN F**KIN NIGHTMARES",
+      "start_ts": 1795826009,
+      "youtube_archive_id": "H6fucYzayeI",
+      "archive_org_id": null,
+      "archive_start_ts": null,
+      "segments": [
+        {
+          "archive_id": "70DZW9S13Gc",
+          "start_ts": 1795826009
+        },
+        {
+          "archive_id": "H6fucYzayeI",
+          "start_ts": 1795851183
         }
       ],
       "source_vod_id": null,
